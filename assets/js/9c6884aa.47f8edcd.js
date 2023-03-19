@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhiddify=self.webpackChunkhiddify||[]).push([[9409],{9120:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/hiddify.com/blog/tags/hello","allTagsPath":"/hiddify.com/blog/tags","count":2}')}}]);
