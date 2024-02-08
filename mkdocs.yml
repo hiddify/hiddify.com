@@ -1,11 +1,11 @@
 site_name: Hiddify
 site_author: Hiddify.com
-repo_url: https://github.com/hiddify/docs.hiddify.com
+repo_url: https://github.com/hiddify/Hiddify-Manager
 repo_name: hiddify/Hiddify-Manager
 copyright: Copyright &copy; 2024 Hiddify
 site_description: The proxy manager platform.
 remote_branch: docs
-edit_uri: edit/main/docs/
+edit_uri: https://github.com/hiddify/docs.hiddify.com/edit/main/docs/
 watch:
   - includes
   - overrides
