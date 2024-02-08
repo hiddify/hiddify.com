@@ -1,0 +1,194 @@
+site_name: Hiddify
+site_author: Hiddify.com
+repo_url: https://github.com/hiddify/docs.hiddify.com
+repo_name: hiddify/Hiddify-Manager
+copyright: Copyright &copy; 2024 Hiddify
+site_description: The proxy manager platform.
+remote_branch: docs
+edit_uri: edit/main/docs/
+watch:
+  - includes
+  - overrides
+theme:
+  name: material
+  logo: assets/ic_hiddify.png
+  favicon: assets/ic_hiddify.png
+  custom_dir: overrides
+  font:
+    text: Vazirmatn
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.instant.preview
+
+
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+
+    # - navigation.indexes #for overview of section page
+    - navigation.expand
+    - navigation.path
+    - navigation.sections
+    - toc.follow
+    # - toc.integrate # maybe disable
+    - navigation.top
+    # - header.autohide
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.action.edit
+    - search.suggest
+    - search.share
+    - search.highlight
+    - announce.dismiss
+    - navigation.footer
+    - content.tooltips
+
+
+
+
+
+  icon:
+    admonition:
+      question: material/new-box
+    edit: material/pencil 
+    view: material/eye
+
+markdown_extensions:
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.magiclink
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  homepage: https://hiddify.com
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hiddify/hiddify-manager
+  generator: false
+
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+  analytics:
+    provider: google
+    property: G-1B5433L63G
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/hiddify/docs.hiddify.com/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
+extra_css:
+  - assets/css/site.css
+extra_javascript:
+  - assets/js/site.js    
+plugins:
+  - blog
+  - rss
+  - tags
+  - git-authors
+
+  - privacy
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      languages:
+        - build: true
+          default: true
+          locale: en
+          name: English
+
+        # - name: Help translating
+        #   locale: null
+        #   build: false
+        #   fixed_link: https://github.com/hiddify/docs.hiddify.com/fork
+
+        - build: true
+          default: false
+          locale: zh
+          name: 简体中文
+          # nav_translations:
+          #   Home: 开始
+
+        - build: true
+          default: false
+          locale: fa
+          name: Persian            
+  
+      reconfigure_material: true
+      reconfigure_search: true
+      
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+
+# nav:
+#   - Home:
+#       - index.md
+#       - Change Log: changelog.md
+      

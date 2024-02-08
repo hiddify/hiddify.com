@@ -1,15 +1,21 @@
 ---
-description: Welcome to the wiki page for the sing-box project.
+description: Welcome to the wiki page for the Hiddify project.
+title: Home
 ---
+# Hiddify Docs
+## :material-home: Home
 
-# :material-home: Home
-
-Welcome to the wiki page for the sing-box project.
+Welcome to the wiki page for the Hiddify project.
 
 The universal proxy platform.
 
+A HTML site.
 ## License
 
 ```
 TODO
 ```
+
+## changelogs
+
+[see](changelog.md)
