@@ -5,4 +5,7 @@ prepare:
 	pip install "mkdocs-material[imaging]==9.*" mkdocs-rss-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin  mkdocs-static-i18n=="1.2.*"
 
 docs:
-	mkdocs serve
+	@mkdocs serve
+
+.PHONY: all test clean docs
+
