@@ -152,7 +152,7 @@ plugins:
   - tags
   - git-authors
 
-  - privacy
+  # - privacy
   - search
   - i18n:
       docs_structure: suffix
