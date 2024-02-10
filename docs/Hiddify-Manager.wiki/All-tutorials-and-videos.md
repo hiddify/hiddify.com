@@ -32,7 +32,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 <br>
 <br>
 
-<div dir="ltr" align=center>
+<div dir="ltr" align=center markdown=1>
 
 ## 📚 Contents related to installation and setup
 </div>
@@ -60,7 +60,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 📔 [How to install different versions of Hiddify Manager](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-install-different-versions-of-Hiddify-Manager)
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 **🎥 Videos related to installation and setup**
 
@@ -76,7 +76,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 <br>
 <br>
 
-<div dir="ltr" align=center>
+<div dir="ltr" align=center markdown=1>
 
 ## 📚 Contents related to configuration and advanced settings
 </div>
@@ -104,7 +104,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 📔 [How to use Hiddify Reality Scanner](https://github.com/hiddify/Hiddify_Reality_Scanner/blob/main/README.md)
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 **🎥 Videos related to configuration and advanced settings**
 
@@ -119,7 +119,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 ***
 <br>
 <br>
-<div dir="ltr" align=center>
+<div dir="ltr" align=center markdown=1>
 
 ## 📚 Contents related to domain, Worker, CDN and tunneling
 </div>
@@ -177,7 +177,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 📔 [How to create and use fake domain](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-create-and-use-fake-domain)
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 **🎥 Videos related to domain, Worker, CDN and Tunneling**
 
@@ -196,7 +196,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 ***
 <br>
 <br>
-<div dir="ltr" align=center>
+<div dir="ltr" align=center markdown=1>
 
 ## 📚 Contents related to basic concepts and troubleshooting
 </div>
@@ -240,7 +240,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 ***
 <br>
 <br>
-<div dir="ltr" align=center>
+<div dir="ltr" align=center markdown=1>
 
 ## 📚 Contents related to HiddifyNext App
 </div>
@@ -251,7 +251,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 <!--
 
@@ -273,7 +273,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 ***
 <br>
 <br>
-<div dir="ltr" align=center>
+<div dir="ltr" align=center markdown=1>
 
 ## 📚 Contents related to client software on Android
 </div>
@@ -289,7 +289,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 📔 [Tutorial for Nekobox app](https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-Nekobox-app)
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 
 **🎥 Videos related to client software on Android**
@@ -330,7 +330,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 📔 [Tutorial for Sing-box app](https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-SingBox-app)
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 <!--
 **🎥 Videos related to client software on iOS**
@@ -361,7 +361,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 📔 [Tutorial for QV2ray software](https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-QV2ray-software)
 
 <br>
-<div dir="ltr" align="center">
+<div dir="ltr" align="center" markdown=1>
 
 **🎥 Videos related to client software on Desktop**
 
