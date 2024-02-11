@@ -15,8 +15,7 @@ Because IP version 6 has a wide range, it is much harder to filter than IP versi
 ## How to disable IP version 6 on Hiddify
 Just enter the general settings in the panel settings and activate the `IP version 4 only` option.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/6f2d4977-6e79-4849-9d10-0c765051306c" />
 </div>
 

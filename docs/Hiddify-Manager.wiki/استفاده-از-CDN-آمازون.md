@@ -11,27 +11,23 @@
 * با زدن create distribution یک مقصد ایجاد نمایید.
 * در صفحه باز شده مطابق با تصویر زیر مقادیر را وارد نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="aws settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/9e1623b7-ffdc-4881-be24-b7223c63cb90" width=70% />
 </div>
 
 تمام مقادیر در این صفحه به صورت پیش‌فرض است به جز موارد زیر که باید همانند تصاویر تعیین شوند.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="protocols policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/322d696e-cc53-4272-87ec-b5f77baa1546" width=70% />
 </div>
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="cache policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/404b3134-de2d-4dca-a942-a524b43ed883" width=70% />
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="waf settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/3139e115-5c4f-41df-9d49-766e973a4d14" width=70% />
 </div>
 
@@ -49,8 +45,7 @@
 * در صفحه لیست سرتیفیکت‌ها می‌بینید که وضعیت دامنه مورد نظر بر روی `pending validation` قرار دارد. بر روی ID کلیک کرده و در صفحه باز شده قسمت `Domains` را مشاهده نمایید.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="domain settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/e2a5d38a-efde-45c5-b55b-d2f395aa846a" width=70% />
 </div>
 
@@ -68,8 +63,7 @@
 * در انتها گزینه save changes را بزنید تا تغییرات ذخیره گردد.
 * حالا صبر کنید تا تغییرات انجام شده اعمال گردند و طبق تصویر زیر وضعیت `Last modified` از `Depoloying` به حالت انجام شده به تاریخ و ساعت تغییر می‌کند.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="done page" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/893cfd82-7ccc-4fe6-9b25-09da4272e9a3" width=70% />
 </div>
 

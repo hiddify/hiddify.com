@@ -1,8 +1,7 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-HiddifyClashDesktop-software)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
 
-<div dir=rtl>
-
+<div dir=rtl markdown=1>
 # آموزش کار با نرم‌افزار HiddifyClash برای دسکتاپ
 
 این نرم‌افزار بر پایه کلش توسعه داده شده است و امکانات زیادی در آن قرار داده شده است.
@@ -17,8 +16,7 @@
 ## دانلود برنامه 
 * برای این کار در پنل کاربری خود وارد تب `دسکتاپ` شوید و بخش مربوط به HiddifyClash را باز کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/23039970-ace8-48fd-a5f4-e862577a5bf2" />
 </div>
 
@@ -36,8 +34,7 @@
 
 
 * برای این کار در پنل کاربری خود وارد تب `دسکتاپ` شوید و بخش مربوط به HiddifyClash را باز کنید.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/23039970-ace8-48fd-a5f4-e862577a5bf2" />
 </div>
 
@@ -54,8 +51,7 @@
 * روی نصب پروفایل کلیک کنید، پروفایل به صورت خودکار به برنامه اضافه می‌گردد. همچنین می‌توانید لینک کپی شده را در بخش پروفایل به صورت دستی در بخش ۱ ایمپورت نمایید.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3217c5b9-3e18-4bf1-be22-64742e785bbc" />
 </div>
 
@@ -63,24 +59,21 @@
 
 ## Home
 در این منو می‌توانید با دکمه `Enable anti-censorship` فیلترشکن را روشن یا خاموش کنید.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/966d10ee-efca-4c33-b15c-cd33fa9f50e1" />
 </div>
 
 
 ## Proxy
 در این منو شما می‌توانید نحوه اجرای پروکسی‌ها (کانفیگ‌ها) را مشخص کنید که شامل ۳ بخش اصلی است.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/10db0fa5-9b7a-4ffc-81af-79d8a6448bca" />
 </div>
 
 
 #### Rule
 این حالت پروکسی‌ها را بر اساس Ruleهای موجود در پروفایل ایمپورت شده اجرا می‌کند که خود شامل چندین بخش است.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/0ecb441a-4270-415e-a09d-3c419f066e48" />
 </div>
 
@@ -101,8 +94,7 @@
 #### Global
 این حالت برای انتخاب کانفیگ به صورت دستی است و برای زمانی مفید است که می‌خواهید از یک کانفیگ خاص استفاده نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/d63a2662-2a02-4141-9a3f-e5befc51aa3b" />
 </div>
 
@@ -116,15 +108,13 @@
 این حالت ترافیک را به صورت مستقیم به اینترنت ارسال می‌کند و ترافیک از فیلترشکن عبور نمی‌کند.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/8c96c53e-a95c-4af5-bab7-572c0d09c88c" />
 </div>
 
 ## Settings
 در این منو تنظیمات کلی نرم‌افزار انجام می‌شود.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/6ab482c8-41fb-4ad0-b37f-6cd88f9426cb" />
 </div>
 
@@ -141,8 +131,7 @@
 * می‌توان با استفاده از دکمه شماره ۵ آیپی ورژن ۶ را خاموش کرد.
 * در بخش ۶ می‌توان پورت نرم‌افزار را که دیفالت آن ۷۸۹۰ است، تعیین نمود.
 * در بخش ۷ می‌توان هسته نرم‌افزار را تعیین کرد که دیفالت آن Clash Meta است.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3aedd085-b755-4cbb-a61a-301829b69912" />
 </div>
 
@@ -155,8 +144,7 @@
 در این بخش کانکشن‌هایی که در نرم‌افزار برقرار می‌شود نمایش داده می‌شود. یعنی اگر برنامه ای از فیلترشکن استفاده می‌کند در این بخش نمایش داده می‌شود که این بخش برای عیب‌یابی بسیار مفید است.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/1700bfe0-9a4e-4f4b-ae11-25654d29273b" />
 </div>
 
@@ -164,8 +152,7 @@
 این منو مربوط به Ruleهای موجود در پروفایل ایمپورت شده است که می‌توان مشاهده کرد چه مواردی در این فایل تعیین شده است.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/72b8c5e1-fca5-4f0a-bad0-2e4738975f24" />
 </div>
 
@@ -174,16 +161,14 @@
 
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/deed841f-24f9-452f-b9fb-84301437223a" />
 </div>
 
 ## گراف ترافیک
 در بخش مشخص شده زیر نیز گرافیک مربوط به ترافیک عبوری از فیلترشکن نمایش داده می‌شود.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/2754c9b1-4072-45d7-8326-c1b86c173686" />
 </div>
 

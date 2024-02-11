@@ -12,8 +12,7 @@ To use CDN-based connections, you need to set the TLS version to the highest set
 
 Log in to your `Cloudflare` account and select `SSL/TLS` in the `Domain` section. Then, in `Edge Certificates`, set the minimum TLS version to `TLS 1.3` using the `Minimum TLS Version` field.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243977858-69edd121-028f-43f5-87ca-35cb5be00c0f.png)
 
 
@@ -79,8 +78,7 @@ Windows Registry Editor Version 5.00
 
 - Now go in the path indicated in the image below. TLS-enabled versions are visible like this.
 
-<div align=center>
-
+<div align=center markdown=1>
 
 ![](https://user-images.githubusercontent.com/125398461/243984337-53b259f3-267a-4e7f-90b2-8f5ce3a216ca.png)
 

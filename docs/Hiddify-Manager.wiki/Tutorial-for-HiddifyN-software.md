@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-HiddifyN)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
@@ -10,8 +9,7 @@ This software is developed based on Xray and has many features that will be revi
 ## Software download
 To download the program in your user panel, open the desktop tab and open the section related to HiddifyN and then click on the Windows icon (button number 3) to download the program.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/d3036c0a-2bbd-4e71-a636-06767eb5da45" />
 </div>
 
@@ -23,16 +21,14 @@ Installing the program is very simple. Just install the Runtime 6 program first 
 ## Add a profile to the app
 In the user panel, go to the HiddifyN section again and `Click to import` so that the configurations are automatically added to the program.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/38bb54a9-bdab-45ba-bf0c-cfe1e5592dd9" />
 </div>
 
 ## Proxy modes
 One of the most important parts of this application is the proxy modes, which will be explained about each part below.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/6d50dc2b-f0a1-43a3-87cd-a65de0c9991e" />
 </div>
 
@@ -48,24 +44,21 @@ It is used to set the configs manually. By clicking on it, the advanced settings
 ## Changing the language of the software
 To change the language of the software, click on the menu shown in the image below and select the language. Then close the program once and open it again.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/42a4aecf-1cd0-4d20-86cc-e245828a0d93" />
 </div>
 
 ## Changing the theme of the software
 Click on the specified button to change the software theme.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/b4318d50-8ee1-4724-b2da-0112530dd76d" />
 </div>
 
 ## User profile information
 In the section displayed below, the information related to the imported user profile is displayed, including the expiration time and the total traffic as well as the consumed package.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/94dac157-fd58-4c0c-8df7-3c797b75ae80" />
 </div>
 
@@ -74,8 +67,7 @@ In this section, you can also add new profiles manually. Just click on `Import` 
 ## Connection to the VPN
 You need to click on the middle circular button to connect to the app. The software connects to the configurations based on the selected proxy mode, and the ping related to the configuration is displayed next to this button.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/a994a47b-6751-4d6d-9302-684ea7e35680" />
 </div>
 
@@ -83,16 +75,14 @@ You need to click on the middle circular button to connect to the app. The softw
 ## Advanced settings
 This section is opened by pressing the Manual button in the proxy mode section.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/d04a7717-0072-4912-9154-2633ab4dddbd" />
 </div>
 
 <details><summary><h4>1. Settings</h4></summary>
 The advanced settings of the program are located in this section.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/0f546c7b-3371-4915-8031-088c89c69e38" />
 </div>
 
@@ -103,8 +93,7 @@ In this subsection, there are optional settings of the program, which includes s
 
 that do not need to be changed for everyday use. The only widely used option is the port used for the program, which can be changed in this section.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/1ca46870-cc5e-4102-9a76-8057fa086d73" />
 </div>
 
@@ -114,8 +103,7 @@ If you need to use proxy, you can set socks5 proxy on this port.
 
 This section contains the default settings of the V2rayN program, which is the main basis of the HIddifyN program.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/462a56f3-6d74-44ff-9301-226b22f51200" />
 </div>
 
@@ -125,8 +113,7 @@ This section contains the default settings of the V2rayN program, which is the m
 > * Check for pre release update gives unofficial updates to the program.
 > * Also, in the settings you see in the picture below, which of course are not used for everyday use.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/00b5c622-ab35-42e3-b030-5578458ad0cd" />
 </div>
 
@@ -134,8 +121,7 @@ This section contains the default settings of the V2rayN program, which is the m
 
 This section shows the settings related to the proxy system.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/69b71ac5-dae9-4dca-a937-3cd68719c84c" />
 </div>
 
@@ -143,8 +129,7 @@ This section shows the settings related to the proxy system.
 
 This section contains Tun mode settings that do not need to be changed for everyday use.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/c17b612a-eff6-4d9c-bb86-2183b5c5756f" />
 </div>
 
@@ -152,8 +137,7 @@ This section contains Tun mode settings that do not need to be changed for every
 
 In this section, you can set kernels for different protocols, the default of which is Xray.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/602fa4bf-1d18-4855-9eb9-d212c4fbf223" />
 </div>
 
@@ -162,8 +146,7 @@ In this section, you can set kernels for different protocols, the default of whi
 ###### Routing setting
 In this section, you can view the routing related to the profile imported to the program and make changes to it if needed. But it is suggested not to touch it if possible.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/b87ec29b-ae7d-4e63-8a7f-d33b53a5c3f7" />
 </div>
 
@@ -171,8 +154,7 @@ In this section, you can view the routing related to the profile imported to the
 In this section, you can enter your desired DNS into the software.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/d7ca0641-bab2-450b-9510-d21dfcb8e75d" />
 </div>
 
@@ -196,8 +178,7 @@ In this section, you can enter manual configurations.
 #### 6. Subs group
 This section is related to subscription links. By pressing this button, you can see the links added to the program and edit them.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/6e244634-0a3f-4c89-b2fb-8525f79b0bae" />
 </div>
 

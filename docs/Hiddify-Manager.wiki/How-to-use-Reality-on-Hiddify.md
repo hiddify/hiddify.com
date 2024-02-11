@@ -1,6 +1,5 @@
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-Reality-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
@@ -15,8 +14,7 @@ Reality is one of the new protocols provided by Xray, which does not have the pr
 If you go to the panel settings page and enter the Reality settings, you will see the general settings related to this protocol.
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://github.com/hiddify/hiddify-config/assets/125398461/854639a1-01a3-48d8-be28-1d85b715d6dc)
 
 </div>
@@ -43,8 +41,7 @@ Here, set the mode to reality so that you can make specific settings related to 
 > Important note: Before continuing, you can click on the domain review and suggestion link to open the domains review page. Here, the panel offers you several sites based on your server location and sites that have TLS1.3. You can choose the sites that have better ping.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/233787191-cd855014-0ab2-4872-bce2-05d1ae705082.png)
 
 </div>
@@ -80,15 +77,13 @@ Yellow messages may be given as a result of the server checking your completed f
 
 - That is, you cannot set the return domain to `www.yahoo.com` , but the server name is `www.google.com`. But if you put the name of the server as `blog.yahoo.com`, it is ok.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/2cf9e13b-8091-4a95-ac30-d5a3f9106a58" />
 </div>
 
 Considering the above, it is better to make the settings so that these messages do not appear, but if you did not receive an error message (red) and only received warning messages (yellow warning); You can ignore them and move on.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/235890855-5b159244-1e83-4eaf-97d5-fef455168911.png)
 </div>
 
@@ -106,8 +101,7 @@ For this, go to the proxies menu and view and control Reality proxies in the dir
 If you still don't see these connections in the configuration list despite activating the Reality protocol in the proxies section, you need to go to the subscription domain settings and add your direct domain to that domain.
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://github.com/hiddify/hiddify-config/assets/125398461/9269f0ee-78af-4db6-a75d-64ea01f527fc)
 
 

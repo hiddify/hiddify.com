@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-Stash)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
@@ -10,8 +9,7 @@ This program is written based on Clash for iOS and must be purchased to use it.
 ## Copy profile to the app
 - For this, enter the `iOS` tab in your user panel and open the `Stash` section.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/51f5dfdc-102f-4057-8c0b-33b123d6108b" />
 </div>
 
@@ -25,8 +23,7 @@ This program is written based on Clash for iOS and must be purchased to use it.
 - The second mode is the orange or `Normal` profile, which sends all traffic from the VPN to the server. If domestic sites are blocked on the server, they will not be opened, or if WARP is enabled for all traffic, domestic sites will be opened via the WARP.
 - Finally, choose one of the two profiles.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/8f93711d-27ec-473c-a1d9-928ee3656abd" />
 </div>
 
@@ -37,15 +34,13 @@ This program is written based on Clash for iOS and must be purchased to use it.
 - Enter the Stash application, select the `Config File` section on the `Settings` page.
 - Select the `Download from URL` option.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
 </div>
 
 - Enter the copied link and click `Download`. By doing this, the desired profile will be added to the program.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
 </div>
 
@@ -55,8 +50,7 @@ This program is written based on Clash for iOS and must be purchased to use it.
 - Enter the Stash application, select the `Config File` section on the `Settings` page.
 - Select `Download from QRcode` option.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
 </div>
 
@@ -66,8 +60,7 @@ This program is written based on Clash for iOS and must be purchased to use it.
 ## Policy menu
 In this menu, the policies or the configs in the profiles imported to the program are restored and displayed.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7fd169ea-18b4-4f7f-85b4-ee2073b8c25f" />
 </div>
 
@@ -90,24 +83,21 @@ In this case, it is possible to use several connections at the same time, which 
 #### Connection test
 To do this, click on the lightning icon to test the connection.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7bdb1519-7179-4c6e-a6e9-ee00c3bc06db" />
 </div>
 
 ## Update imported profiles
 For this, enter `Config File` from the `Settings` menu and hold your finger on one of the profiles. In the menu that appears, click `Update Now`.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3ecb0ab1-40b9-40e5-8f93-5a37f9b0a1dd" />
 </div>
 
 ## Automatic update for imported profiles
 - For this, select `More Settings` option in `Settings`.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
 </div>
 
@@ -119,8 +109,7 @@ For this, enter `Config File` from the `Settings` menu and hold your finger on o
 ## Select the mode in the Outbound section
 On the `Home` page of the app and in the `Outbound` section, you can choose three modes.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/51b861c7-2e12-4541-a214-84311270cb8d" />
 </div>
 
@@ -140,8 +129,7 @@ In this case, the traffic is not passed through the VPN, it is as if you have tu
 ## On Demand feature
 To use, enter `On Demand` in `Settings`.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/0854f4f3-3628-41a3-a8b4-3a3a08474370" />
 </div>
 
@@ -160,7 +148,6 @@ If you enable this option, the filter breaker will be active only when the phone
 
 If you need to check more details of the connections, you can enter the `Network Diagnosis` section in the `Utilities` menu. Here, the log is displayed for all connections, which can be useful for troubleshooting. This section contains several subsections that are useful, including `Connectivity` and `Proxy`.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3685baf2-5d0f-4305-a151-12bcc761ab23" />
 </div>

@@ -1,5 +1,4 @@
-<div dir=rtl>
-
+<div dir=rtl markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-DNS-%D8%B3%D8%B1%D9%88%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
@@ -8,8 +7,7 @@
 
 As you probably know, DNS is a service whose task is to convert names to IPs. That is, when you want to open google.com, for example, this letter is first sent to the DNS server set on your computer. Then that server returns the corresponding IP address to your system. And finally, the request to open the site is sent using IP.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=50% src="https://github.com/hiddify/hiddify-config/assets/125398461/8b1ce774-3268-4c42-ae0a-02553feb3b26" />
 </div>
 
@@ -24,8 +22,7 @@ These servers that serve globally belong to big companies including Google and C
 ## Setting DNS server through the Hiddify panel
 To do this, go to the panel settings and in the general settings section, put the desired server in the DNS server field. The work is done.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/1145521a-cfd2-492b-99d0-83559c20ab15" />
 </div>
 
@@ -67,8 +64,7 @@ To test, you must test a domain such as google.com using this tool.
 nslookup google.com
 ```
 If the output of the command was as follows, it means that the work is done correctly and DNS leak does not happen on the server.
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/248440247-3ef15d0b-54b0-43ce-8be5-a5229054d1fb.png)
 </div>
 

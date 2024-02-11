@@ -46,8 +46,7 @@ Here, select the backup file that you saved in the previous step. Enable recover
 ## Changing subdomain settings
 Change your subdomain settings to the new server's IP. That is, go wherever you have defined your domains and enter the new IPs. For example, enter the DNS settings in Cloudflare and go to the previously registered records and just change the IP.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/c572da3a-aafb-4457-b06e-c8870a20e171" />
 </div>
 

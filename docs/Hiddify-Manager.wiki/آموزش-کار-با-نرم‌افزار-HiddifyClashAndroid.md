@@ -1,8 +1,7 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-HiddifyClashAndroid-app)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
 
-<div dir=rtl>
-
+<div dir=rtl markdown=1>
 # آموزش کار با نرم‌افزار HiddifyClashAndroid
 
 <!--
@@ -18,8 +17,7 @@
 
  برای این کار در پنل کاربری خود وارد تب اندروید شوید و بخش مربوط به `هیدیفای کلش` را باز کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/52cdca09-d12d-4b17-a214-2e21c6c77eb4" />
 </div>
 
@@ -31,8 +29,7 @@
 
 ## اضافه کردن پروفایل به برنامه
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/5113a30c-116b-498a-9634-45007e5d1929" />
 </div>
 
@@ -49,16 +46,14 @@
 ##  اضافه کردن دستی پروفایل
 * در اپ HiddifyClash در اندروید روی `Profile`‌ بزنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/18a7595d-fe50-4c6b-96cd-871f96c10be9" />
 </div>
 
 
 *  و در صفحه‌ای که باز می‌شود، دکمه `+` را تپ کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/19501548-8bb9-45f4-bf93-a2a45bf4b052" />
 </div>
 
@@ -66,16 +61,14 @@
 
 * در این صفحه در قسمت `URL` بروید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/f628a291-fb82-4092-bcc6-7c3afcb05247" />
 </div>
 
 
 * و لینک پروفایل انتخاب شده را ازز صفحه کاربری کپی کنید و در اینجا قرار دهید و ذخیره نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/c2719915-f59e-4d7b-989e-6af89be167c9" />
 </div>
 
@@ -85,8 +78,7 @@
 ## اتصال به فیلترشکن
 برای اتصال نیز روی دکمه مشخص شده بزنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/4c041134-3f97-4126-999b-7507a6207cc9" />
 </div>
 
@@ -94,7 +86,6 @@
 ## آپدیت پروفایل
 جهت آپدیت پروفایل و کانفیگ‌ها روی پروفایل بزنید و در صفحه باز شده روی علامت آپدیت بزنید تا پروفایل مطابق با آخرین تغییرات سرور آپدیت گردد.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/114d34de-9eab-40c6-9f97-b92eca3e24a6" />
 </div>
