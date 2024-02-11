@@ -1,4 +1,4 @@
-[**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
+[**🇺🇸 English**](https://docs.hiddify.com/Hiddify-Manager.wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
 <div dir="rtl" markdown=1>
 # آموزش استفاده از CDN GCore بر روی دامنه ثبت شده در Cloudflare
@@ -37,7 +37,7 @@
 
 ![8](https://user-images.githubusercontent.com/125398461/235283679-fbb415e0-5b12-4880-be94-3f2a17ba5895.jpg)
 
-۹.  از آنجایی که شما قصد استفاده از CDN GCore را دارید، نیازی به ثبت nameserverهای GCore بر روی دامنه خود ندارید و فقط بر روی `Confirm` کلیک کنید.
+۹. از آنجایی که شما قصد استفاده از CDN GCore را دارید، نیازی به ثبت nameserverهای GCore بر روی دامنه خود ندارید و فقط بر روی `Confirm` کلیک کنید.
 
 ![9](https://user-images.githubusercontent.com/125398461/235283686-69d71bb4-2c27-4375-8a04-3a7f2f1fac21.jpg)
 
@@ -61,7 +61,7 @@
 
 ![14](https://user-images.githubusercontent.com/125398461/235283921-81cfdb21-b00b-4e94-907d-3a6b95f7b650.jpg)
 
-۱۵. در این مرحله بر روی گزینه `CDN Integration` بزنید تا یکپارچه سازی CDNها را انجام دهید. 
+۱۵. در این مرحله بر روی گزینه `CDN Integration` بزنید تا یکپارچه سازی CDNها را انجام دهید.
 
 ![15](https://user-images.githubusercontent.com/125398461/235284019-0301d8e3-d882-4482-9c75-23a30e4fb2f1.jpg)
 
@@ -95,4 +95,4 @@
 
 ![22](https://user-images.githubusercontent.com/125398461/235284966-63477444-51d0-45dd-be27-2307f43df54f.jpg)
 
-* نکته پایانی و مهم: یادتون نره که CDN GCore در پلن رایگان محدودیت ۱۰۰۰ گیگابایتی دارد.
+- نکته پایانی و مهم: یادتون نره که CDN GCore در پلن رایگان محدودیت ۱۰۰۰ گیگابایتی دارد.

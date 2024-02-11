@@ -1,5 +1,5 @@
 <div dir="rtl" markdown=1>
-[**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D8%B3%D8%AA-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%B1%D9%88%DB%8C-%D8%B3%D8%B1%D9%88%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://docs.hiddify.com/fa/Hiddify-Manager.wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D8%B3%D8%AA-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%B1%D9%88%DB%8C-%D8%B3%D8%B1%D9%88%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 # How to do speed test on server
@@ -17,6 +17,7 @@ In some cases, it is necessary to conduct a speed test on the server to check th
 ```
 sudo apt-get remove speedtest-cli
 ```
+
 - To install, run the following commands to download and install the `speedtest` script.
 
 ```
@@ -32,7 +33,7 @@ sudo apt-get install speedtest
 speedtest
 ```
 
-* When you run the program for the first time, the terms and conditions of use, as well as the data collected by the `Speedtest` website, will appear in the form of two messages, for each of which you should enter `yes` as confirmation.
+- When you run the program for the first time, the terms and conditions of use, as well as the data collected by the `Speedtest` website, will appear in the form of two messages, for each of which you should enter `yes` as confirmation.
 
 <div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243765156-b897f426-e9d6-4f26-b9fb-9e46f6def820.jpg)
@@ -43,30 +44,27 @@ speedtest
 
 ![](https://user-images.githubusercontent.com/125398461/243765299-bab3a3d4-a0c3-478e-8daf-4f3491d44c8b.jpg)
 
-
 </div>
 
-* After that, you will see that your bandwidth test has been executed and after a short time, its output will be displayed. Whenever you need to re-do this test, just type `speedtest` in the command line and hit enter to re-test.
-
+- After that, you will see that your bandwidth test has been executed and after a short time, its output will be displayed. Whenever you need to re-do this test, just type `speedtest` in the command line and hit enter to re-test.
 
 <div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243765887-054e65db-1f12-428b-b9e9-359a69e99044.jpg)
 
 </div>
 
-* In some situations, users need to test from other locations, for this purpose, run the following command to get the list of locations.
+- In some situations, users need to test from other locations, for this purpose, run the following command to get the list of locations.
 
 ```
 speedtest --servers
 ```
-
 
 <div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243766293-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.jpg)
 
 </div>
 
-* As can be seen in the above image, a list of servers with locations close to your server will be displayed to you, in the ID column there is also a 5-digit code for each row, select the desired location for testing and copy its 5-digit code. Then you can use the following command to take a speed test from your desired location, only in the last part replace the ID with the desired code and enter.
+- As can be seen in the above image, a list of servers with locations close to your server will be displayed to you, in the ID column there is also a 5-digit code for each row, select the desired location for testing and copy its 5-digit code. Then you can use the following command to take a speed test from your desired location, only in the last part replace the ID with the desired code and enter.
 
 ```
 speedtest --server-id=ID
@@ -78,7 +76,7 @@ speedtest --server-id=ID
 
 ## The second method: using the bench.sh tool
 
-* Using the above tool, in addition to testing the speed from different locations, you can easily view the server hardware specifications including CPU, storage space, RAM, processor architecture, network port speed, etc. by running the following command.
+- Using the above tool, in addition to testing the speed from different locations, you can easily view the server hardware specifications including CPU, storage space, RAM, processor architecture, network port speed, etc. by running the following command.
 
 ```
 wget -qO- bench.sh | bash
@@ -89,4 +87,4 @@ wget -qO- bench.sh | bash
 
 </div>
 
-* After executing the above command, just wait for a few minutes (about 5 to 8 minutes) until the speed test is taken from several locations in different continents and the results are displayed.
+- After executing the above command, just wait for a few minutes (about 5 to 8 minutes) until the speed test is taken from several locations in different continents and the results are displayed.

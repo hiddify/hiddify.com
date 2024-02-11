@@ -1,12 +1,14 @@
 <div dir="rtl" markdown=1>
-[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1--HiddifyClashDesktop)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://docs.hiddify.com/fa/Hiddify-Manager.wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1--HiddifyClashDesktop)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
 
 # Tutorial for HiddifyClashDesktop software
+
 This software is developed based on Clash and many features are included in it.
 
 ## Downloading the software
+
 For this, enter the `Desktop` tab in your user panel and open the section related to `HiddifyClash`.
 
 <div align=center markdown=1>
@@ -18,23 +20,24 @@ You can download the software based on your operating system from the section nu
 ## Installing the software
 
 #### Windows
+
 Installing the program is very simple and is completed with a few next steps.
 
 #### Mac
+
 For Mac, you must confirm the program in the privacy section.
 
 #### Linux
+
 For Linux, you only need to give executable access to the downloaded AppImage file and run it.
 
-
-
 ## Adding a profile to the app
+
 For this, enter the `Desktop` tab in your user panel and open the section related to `HiddifyClash`.
 
 <div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/7a1055b3-0313-415b-a00b-2b5301bcd65a" />
 </div>
-
 
 - Here you need to get acquainted with a concept called profile. The profile of a yml file includes all the connections that can be accessed in this section. There are two types of profiles
 
@@ -44,8 +47,8 @@ For this, enter the `Desktop` tab in your user panel and open the section relate
 
 - Finally, choose one of the two profiles from section number 4.
 
-
 ## Profile
+
 Click on install profile, the profile will be automatically added to the program. You can also import the copied link in the profile section manually in section 1.
 
 <div align=center markdown=1>
@@ -55,6 +58,7 @@ Click on install profile, the profile will be automatically added to the program
 In section number 2, the information related to the imported profile, including the expiration date and the total traffic volume and the traffic volume consumed, can be seen.
 
 ## Home
+
 In this menu, you can turn the filter breaker on or off with the `Enable anti-censorship` button.
 
 <div align=center markdown=1>
@@ -62,6 +66,7 @@ In this menu, you can turn the filter breaker on or off with the `Enable anti-ce
 </div>
 
 ## Proxy
+
 In this menu, you can specify how to run proxies (configs), which includes 3 main sections.
 
 <div align=center markdown=1>
@@ -69,30 +74,35 @@ In this menu, you can specify how to run proxies (configs), which includes 3 mai
 </div>
 
 ## Rule
+
 This mode executes proxies based on the rules in the imported profile, which contains several sections.
 
 <div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/0ecb441a-4270-415e-a09d-3c419f066e48" />
 </div>
 
-
 ###### PROXY
+
 This subsection executes the proxies in the profile and connects to the first config that pings.
 
-
 ###### automatic
+
 In this case, it connects to the best configuration that has a lower ping.
 
 ###### sequential
+
 In this case, the proxies are connected in turn, that is, the load is divided in a way, but the main difference with Load-balance is that in Load-balance, it is connected to several configurations at the same time, but in this case, it is connected to one configuration at the moment.
 
 ###### Sort by location
+
 By using button number 1, you can sort the configurations based on location.
 
 ###### Connection test
+
 You can test connections by using button number 2.
 
 #### Global
+
 This mode is for manual configuration selection and is useful when you want to use a specific configuration.
 
 <div align=center markdown=1>
@@ -100,12 +110,15 @@ This mode is for manual configuration selection and is useful when you want to u
 </div>
 
 ###### Sort by location
+
 By using button number 1, you can sort the configurations based on location.
 
 ###### Connection test
+
 You can test connections by using button number 2.
 
 #### Direct
+
 This mode sends the traffic directly to the Internet and the traffic does not pass through the filter breaker.
 
 <div align=center markdown=1>
@@ -113,6 +126,7 @@ This mode sends the traffic directly to the Internet and the traffic does not pa
 </div>
 
 ## Settings
+
 In this menu, the general settings of the software are made.
 
 <div align=center markdown=1>
@@ -120,7 +134,6 @@ In this menu, the general settings of the software are made.
 </div>
 
 - Button number 1 or TUN Mode is for tunneling the entire system traffic.
-
 
 > Note: To activate this button, the software must be run with admin access in Windows, i.e. Run as Administrator. It should also be run on Mac and Linux with admin or root access.
 
@@ -148,8 +161,8 @@ In this menu, the general settings of the software are made.
 
 - The software version can be seen in section 10.
 
-
 ## Connections
+
 In this section, the connections established in the software are displayed. That is, if a program uses a filter, it will be displayed in this section, which is very useful for troubleshooting.
 
 <div align=center markdown=1>
@@ -157,6 +170,7 @@ In this section, the connections established in the software are displayed. That
 </div>
 
 ## Rules
+
 This menu is related to the rules in the imported profile, which can be seen in this file.
 
 <div align=center markdown=1>
@@ -164,6 +178,7 @@ This menu is related to the rules in the imported profile, which can be seen in 
 </div>
 
 ## Logs
+
 In this section, the log related to the software can be seen, which is very useful during troubleshooting.
 
 <div align=center markdown=1>
@@ -171,6 +186,7 @@ In this section, the log related to the software can be seen, which is very usef
 </div>
 
 ## Traffic graph
+
 In the specified section below, the graphic related to the traffic passing through the filter breaker is also displayed.
 
 <div align=center markdown=1>

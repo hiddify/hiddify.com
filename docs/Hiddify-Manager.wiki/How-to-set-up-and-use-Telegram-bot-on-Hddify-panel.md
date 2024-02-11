@@ -1,13 +1,15 @@
 <div dir="rtl" markdown=1>
-[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D9%86%D8%AD%D9%88%D9%87-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D9%88-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%AA-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85-%D8%AF%D8%B1-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://docs.hiddify.com/fa/Hiddify-Manager.wiki/%D9%86%D8%AD%D9%88%D9%87-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D9%88-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%AA-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85-%D8%AF%D8%B1-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 # How to set up and use Telegram bot on Hiddify panel
+
 In Hidify, you can connect your panel to a Telegram bot and do a series of tasks related to the user section through it.
 
 For this, you need to first create a bot in Telegram.
 
 ## Making a Telegram bot
+
 Open Telegram and search for `botfather`. Open the bot that creates Telegram bots.
 
 <div align=center markdown=1>
@@ -19,7 +21,6 @@ Click Start to start the bot creation process.
 <div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/235900621-1d8143fa-a56d-4c01-9f7c-3b96b1772191.png)
 </div>
-
 
 Then from the menu that appears; Select `/newbot` option.
 
@@ -34,8 +35,9 @@ In the next step, first choose a desired name for your bot and then choose a uni
 </div>
 
 pay attention:
-* Bot username must end with the word `Bot`.
-* Using `_` for bot username is allowed.
+
+- Bot username must end with the word `Bot`.
+- Using `_` for bot username is allowed.
 
 In the next step, your bot is ready. You must copy the corresponding token to enter it in the next area in your Hiddify panel.
 
@@ -44,6 +46,7 @@ In the next step, your bot is ready. You must copy the corresponding token to en
 </div>
 
 ## Bot setting in Hiddify panel
+
 To do this, go to the settings section and then in advanced settings; Enter the token copied in the previous step into the specified field.
 
 <div align=center markdown=1>
@@ -59,17 +62,15 @@ Telegram bot is available. You can see it in menu.
 
 ![](https://user-images.githubusercontent.com/125398461/235912447-776ce7fd-65ed-4c4a-b6c8-b7b828ab8aea.png)
 
-
 </div>
 
-
 ## How to use Telegram bot
+
 To use this bot, just click on the Telegram bot menu in the Hiddify panel; Here you will be redirected to Telegram and enter your bot. Start the bot.
 
 <div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/235907744-d16631e7-aa15-477e-9f05-34c5a90c80bf.png)
 </div>
-
 
 Note: for safety reasons, the bot will start this way.
 
@@ -129,6 +130,4 @@ You can also click on the update button in the bot to report the user's latest s
 ![](https://user-images.githubusercontent.com/125398461/235909484-c3b6064d-afb5-4654-8c01-84acb55becd4.png)
 </div>
 
-
 This bot is in its early stages and its list of executable commands will be developed in the future.
-
