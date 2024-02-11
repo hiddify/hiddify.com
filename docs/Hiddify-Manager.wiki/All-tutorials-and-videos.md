@@ -313,7 +313,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 <br>
 
 ## 📚 Contents related to client software on iOS
-</div>
+
 
 📔 [Tutorial for ShadowRocket app](https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-ShadowRocket-app)
 
@@ -352,7 +352,7 @@ In this article, we put categorized content of Wiki. In addition to the fact tha
 <br>
 
 ## 📚 Contents related to client software on Desktop
-</div>
+
 
 📔 [Tutorial for HiddifyN software](https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-HiddifyN-software)
 
