@@ -14,8 +14,7 @@ In the picture below, you can see that the request to open `www.bbc.com` is filt
 
 Now, if this request is sent in several pieces, it can bypass this system and after passing through the filtering system, these pieces will join each other on the server.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=70% src="https://github.com/hiddify/hiddify-config/assets/125398461/de4c0b72-cf9b-42a6-a8ea-63990b7f7ddb" />
 </div>
 

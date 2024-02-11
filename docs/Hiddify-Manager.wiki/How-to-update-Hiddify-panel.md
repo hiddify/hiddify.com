@@ -11,8 +11,7 @@ There are 2 ways to update the panel.
 ## Update through admin panel
 In the panel, go to the Actions menu and click `Update`.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![update approach ](https://github.com/hiddify/hiddify-config/assets/125398461/9f482e1c-30ae-4fd3-8d3c-44d72b08155f)
 
 </div>
@@ -26,8 +25,7 @@ This may take between 5 and 10 minutes, after which the operation will finish an
 If you need to change the update mode, you can choose one of the `Release`, `Beta` and `Develop` versions and then `update`.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 ![update mode](https://github.com/hiddify/Hiddify-Server/assets/125398461/dd430784-7e78-4dd3-b549-67f653c02f45)
 
 
@@ -42,8 +40,7 @@ Then select the `Update` option from the `Actions` menu. After about 5 minutes, 
 The panel updates itself daily with the latest version of released version on project's GitHub. Its settings are in the general settings section.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 ![auto update](https://github.com/hiddify/hiddify-config/assets/125398461/9ba845b1-2538-44db-90e2-57c7b31e5c8c)
 
 </div>
@@ -54,8 +51,7 @@ For this, the automatic update option should be enabled in the general settings,
 
 Connect via [SSH to the server](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-to-server-via-SSH) and select Update in the Hiddify menu. There are 3 modes.
 
-<div align=center>
-
+<div align=center markdown=1>
 
 ![](https://user-images.githubusercontent.com/125398461/230083991-e90d579a-5301-49f3-ae5c-645ae5cb6d18.png)
 

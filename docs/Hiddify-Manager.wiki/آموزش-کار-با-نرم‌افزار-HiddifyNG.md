@@ -1,8 +1,7 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-HiddifyNG-app)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 # آموزش کار با نرم‌افزار HiddifyNG
 
 این اپ بهترین نرم‌افزار برای اتصال به پروتکل‌های Xray در سیستم عامل اندروید است.
@@ -11,8 +10,7 @@
 در پنل کاربری خود وارد تب `اندروید` شوید و بخش مربوط به `HiddifyNG` را باز کنید.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7cf32479-99d4-4a16-90e9-d3bf0998866d" />
 </div>
 
@@ -24,8 +22,7 @@
 ## افزودن کانفیگ
 برای این کار در همان بخش مربوط به برنامه `HiddifyNG` روی `کلیک برای افزودن کانفیک` بزنید تا کانفیگ به برنامه اضافه گردد.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7bbdb8e3-2520-4764-9a27-b53f67c7cd49" />
 </div>
 
@@ -35,8 +32,7 @@
 
 ### بخش پروفایل
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/f1562df9-d0bf-4535-b77e-4965ec64e6d6" />
 </div>
 
@@ -56,8 +52,7 @@
 
 امکان استفاده از لینک کپی شده یا اسکن `QR code` آن برای شما فراهم می‌شود.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/52642cc0-6580-4533-89f7-fd66a8428fe0" />
 </div>
 
@@ -66,8 +61,7 @@
 ### اتصال به نرم‌افزار
 برای این کار روی دکمه اتصال وسط صفحه بزنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/f6ee8a9e-5d58-4767-8eb7-2fb27464809a" />
 </div>
 
@@ -79,8 +73,7 @@
 ## کانفیگ‌ها
 در اینجا تک تک کانفیگ‌هایی که با استفاده از لینک سابسکریپشن اضافه شده بودند، نماش داده می‌شوند.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/403c60c9-b53f-4d35-a26b-b49bb61e1493" />
 </div>
 
@@ -99,8 +92,7 @@
 در این منو که زیر مجموعه منوی کانفیگ‌هاست، می‌توانید کارهای مختلفی انجام دهید که در ادامه اشاره می‌شوند.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3ed0c6ec-31f2-46b0-9a11-bbe57eff02b3" />
 </div>
 
@@ -127,8 +119,7 @@
 
 ## منوی پیشرفته
 در این صفحه تنظیمات پیشرفته قرار دارد که در ادامه به آن‌ها اشاره خواهد شد.
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/14681ce8-8d61-4b14-9798-7d1e9318f849" />
 </div>
 
@@ -183,8 +174,7 @@
 ## تنظیمات منوی سه خط نرم‌افزار
 در این بخش چندین تنظیم کلی وجود دارد که کاربردی‌ترین قسمت‌ها این‌ها هستند.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/2a70aeda-7188-4bf2-9f2a-94239a3f7dab" />
 </div>
 

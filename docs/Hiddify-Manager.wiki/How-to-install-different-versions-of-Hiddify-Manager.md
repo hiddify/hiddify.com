@@ -1,6 +1,5 @@
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/Hiddify-Manager/wiki/%D9%86%D8%B5%D8%A8-%D9%86%D8%B3%D8%AE%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C%E2%80%8C%D9%85%D9%86%DB%8C%D8%AC%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
@@ -23,8 +22,7 @@ This version is a version after the version under development, and in fact it is
 
 This version is actually the final version of the software that was released after the final tests and is the most stable version possible. See this figure for a better understanding.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![install versions](https://github.com/hiddify/Hiddify-Manager/assets/125398461/6528a2c5-f938-48c3-a88f-f829d7e3a481)
 
 </div>

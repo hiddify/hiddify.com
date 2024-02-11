@@ -1,13 +1,11 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/How-to-set-DNS-server)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 # آموزش تنظیم DNS سرور
 
 همانطور که احتمالا می‌دانید، DNS سرویسی است که وظیفه آن تبدیل نام‌ها به آیپی‌هاست. یعنی زمانی که شما مثلا `google.com` را می‌خواهید باز کنید، این نامه ابتدا به سرور DNSی که در کامپیوتر شما تنظیم شده است ارسال می‌شود. سپس آن سرور آیپی مربوط به این نام را به سیستم شما برمی‌گرداند. و درنهایت درخواست بازشدن سایت با استفاده از آیپی ارسال می‌گردد.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=50% src="https://github.com/hiddify/hiddify-config/assets/125398461/8b1ce774-3268-4c42-ae0a-02553feb3b26" />
 </div>
 
@@ -25,8 +23,7 @@
 ## تنظیم DNS از طریق پنل
 برای این کار به بخش تنظیمات پنل بروید و در قسمت تنظیمات عمومی سرور مورد نظر خود را قرار در قسمت `سرور DNS` قرار دهید. کار تمام است.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/49b3b5a5-8b7a-42d4-8bac-6593c7c50ada" />
 </div>
 
@@ -38,8 +35,7 @@
 
 * در محیط ترمینال این کامند را تایپ کنید تا تنظیمات DNS سرور با ویرایشگر متنی nano باز شود.
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 sudo nano /etc/resolv.conf
 ```
@@ -47,8 +43,7 @@ sudo nano /etc/resolv.conf
 
 * سپس nameservers که در اینجا به سرور DNS اشاره می‌کند را ادیت نمایید و به شکل زیر تغییر دهید.
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 nameserver 8.8.8.8
 nameserver 1.1.1.1
@@ -59,8 +54,7 @@ nameserver 1.1.1.1
 * حالا باید کاری کنید که این فایل توسط سیستم قابل تغییر نباشد. برای این کار از دستور زیر استفاده کتید.
 
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 chattr +i /etc/resolv.conf
 ```
@@ -74,8 +68,7 @@ chattr +i /etc/resolv.conf
 ساده‌ترین ابزار برای تست نشتی در سرور استفاده از `nslookup` است.
 - ابتدا اگر `nslookup` نصب نیود، با این دستور آن را نصب کنید.
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 sudo apt install dnsutils
 ```
@@ -83,8 +76,7 @@ sudo apt install dnsutils
 
 - برای انجام تست باید  یک دامنه مثلا google.com را با استفاده از این ابزار تست کنید.
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 nslookup google.com
 ```
@@ -92,8 +84,7 @@ nslookup google.com
 
 * اگر خروجی کامند به شکل زیر بود، یعنی کار به درستی انجام شده است و نشتی DNS روی سرور اتفاق نمی‌افتد.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![Screenshot_20230624_064021](https://github.com/hiddify/hiddify-config/assets/125398461/3ef15d0b-54b0-43ce-8be5-a5229054d1fb)
 </div>
 

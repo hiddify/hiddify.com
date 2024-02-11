@@ -3,8 +3,7 @@
 
 
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 # آموزش کار با نرم‌افزار QV2ray
 یکی از برنامه‌هایی که می‌توان برای اتصال به پروتکل‌های Xray روی دسکتاپ از آن استفاده نمود، برنامه QV2ray است.
 
@@ -19,8 +18,7 @@
 
 * نرم افزار را بسته و مجددا اجرا کنید. در مسیر `Plugins` گزینه‌ای تحت عنوان `Trojan-GFW Plugins` اضافه می‌شود.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![Screenshot-from-2020-08-28-09-18-10](https://github.com/hiddify/hiddify-config/assets/125398461/289c4b06-1436-4549-b331-ada3a668a052)
 
 </div>

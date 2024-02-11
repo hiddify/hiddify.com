@@ -1,7 +1,6 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/How-to-use-Cloudflare-CDN)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 # استفاده از CDN کلادفلر
 کلادفلر بزرگترین ارائه دهنده سرویس‌های CDN است که دارای سرویس‌های متعددی است که می‌توان با کمک از این سرویس‌ها، محدودیت‌های اینترنت را دور زد. در ادامه مهم‌ترین سرویس‌ها، توضیح داده می‌شوند.
 
@@ -139,8 +138,7 @@ TLS الگوریتمی است که تمام ترافیک اینترنت را ر�
 ## سرویس QUIC
 این سرویس بر مبنای HTTP/3 پایه‌گذاری شده است و با TLS1.3 کار می‌کند. به همین دلیل خیلی سریع است چون هندشیک آن نسبت به TCP خیلی سریع‌تر است. 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width="60%" alt="http-request-over-quic" src="https://github.com/hiddify/hiddify-config/assets/125398461/5793c28e-7785-4ea5-998d-9695cc11b341" />
 
 </div>

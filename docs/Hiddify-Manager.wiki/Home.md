@@ -53,8 +53,7 @@ Hiddify-Manager is a powerful and professional anti-censorship toolbox. The appr
 
 If you get your server directly from famous data centers; we made it easy and automated for you. In this method, the installation is done automatically very quickly and easily without the need for technical knowledge. Click on one of the buttons below to continue.
 
-<div align=center>
-
+<div align=center markdown=1>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Install%20On-Hetzner-D50C2D?style=flat-square&logo=Hetzner)](https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Hetzner-Servers)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Install%20On-Vultr-007BFC?style=flat-square&logo=vultr)](https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Vultr-Servers)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Install%20On-Oracle%20Cloud-F80000?style=flat-square&logo=oracle)](https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Oracle-Cloud)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Install%20On-OVH-123F6D?style=flat-square&logo=ovh)](https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-OVH-Servers)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Install%20On-Azure-0078D4?style=flat-square&logo=microsoft-azure)](https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Microsoft-Azure)
 
 </div>
@@ -64,8 +63,7 @@ If you get your server directly from famous data centers; we made it easy and au
 
 To install on Ubuntu server, click the button below and follow the article.
 
-<div align=center>
-
+<div align=center markdown=1>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Install%20On-Ubuntu-E95420?style=flat-square&logo=ubuntu)](https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-On-Ubuntu)
 
 <!--
@@ -82,8 +80,7 @@ All tutorial contents of this project are accessible in this page. Please find `
 Also, all tutorials and videos can be accessed by clicking on the image below.
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 <a href="https://github.com/hiddify/Hiddify-Manager/wiki/All-tutorials-and-videos"><img width="100%" alt="All tutorials and videos" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/c2a69673-77fd-4a1e-bd01-d3bd4ee54cc6" /></a>
 
 
@@ -103,8 +100,7 @@ Also, all tutorials and videos can be accessed by clicking on the image below.
 
 ***
 
-<div align=center>
-
+<div align=center markdown=1>
 [![](https://img.shields.io/badge/FAQ-Here-512DA8?style=flat-square&logo=Favro)](https://github.com/hiddify/Hiddify-Manager/discussions/categories/q-a-%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D8%B1%D8%A7%DB%8C%D8%AC)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/Report-Bugs-F67909?style=flat-square&logo=Open-Bug-Bounty)](https://github.com/hiddify/Hiddify-Manager/issues)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/%20Telegram-Channel-26A5E4?style=flat-square&logo=Telegram)](https://t.me/hiddify) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![](https://img.shields.io/badge/%20Telegram-Support%20Group-26A5E4?style=flat-square&logo=Telegram)](https://t.me/hiddify_board/5)
 

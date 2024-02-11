@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C-%D9%88%D8%A7%D8%B1%D9%BE-%D8%AF%D8%B1-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
@@ -15,8 +14,7 @@ Warp has several levels of service, the free service of which has a traffic volu
 ## Setting up WARP on Hiddify
 Go to the panel settings section, in this section you can see the WARP settings. Open it.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![Warp_settings](https://github.com/hiddify/hiddify-config/assets/125398461/ca7fb053-6a1d-4c3d-aa31-90ec98f85534)
 
 </div>
@@ -35,8 +33,7 @@ Only domestic sites and `Google, Spotify, Netflix, Openai, ipinfo.io` use Warp.
 
 To do this, check the `Status` of the panel from the `Actions` menu.
 
-<div align=center>
-
+<div align=center markdown=1>
 
 
 ![status log](https://github.com/hiddify/hiddify-config/assets/125398461/81bf46b8-c265-4dd9-ae38-2995ee6c70f2)
@@ -55,8 +52,7 @@ The system status is displayed on this page. Also, the status of the warp connec
 
 You can also use the [ipinfo](https://ipinfo.io/) site. If the IP displayed on this page belongs to Cloudflare despite the filter breaker being turned on; In this case, the warp is activated correctly.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![ip_info](https://github.com/hiddify/hiddify-config/assets/125398461/5410e3e5-c380-40d5-aa37-ec944a3f2fb8)
 
 
@@ -65,8 +61,7 @@ You can also use the [ipinfo](https://ipinfo.io/) site. If the IP displayed on t
 
 You can also use the [ip.gs](https://ip.gs/) website, and if Cloudflare's IP is displayed, it means that Warp is activated.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![ip_gs](https://github.com/hiddify/hiddify-config/assets/125398461/a807066a-fde6-4659-809f-24e8e3a4a28c)
 
 

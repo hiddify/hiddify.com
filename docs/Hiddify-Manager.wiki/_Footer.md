@@ -1,5 +1,4 @@
-<div align=center>
-<h2> Donation and Support &nbsp;&nbsp;&nbsp;&nbsp; از ما حمایت کنید </h2>
+<div align=center markdown=1><h2> Donation and Support &nbsp;&nbsp;&nbsp;&nbsp; از ما حمایت کنید </h2>
 </div>
 
 
@@ -20,8 +19,7 @@ We also need financial support for our services. All of our activities are done 
 
 </br>
 
-<div align=center>
-<h2> Collaboration and Contact Information &nbsp;&nbsp;&nbsp;&nbsp; راه‌های همکاری و ارتباط با ما </h2>
+<div align=center markdown=1><h2> Collaboration and Contact Information &nbsp;&nbsp;&nbsp;&nbsp; راه‌های همکاری و ارتباط با ما </h2>
 </div>
 
 We need your collaboration in order to develop this project. If you are specialists in these areas, please do not hesitate to contact us and mention your skill.
@@ -37,8 +35,7 @@ We need your collaboration in order to develop this project. If you are speciali
 * Flutter developing &nbsp;&nbsp;&nbsp;&nbsp; برنامه‌نویسی فلاتر
 
 
-<div align=center>
-
+<div align=center markdown=1>
 
 </br>
 

@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](
 https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-HiddifyNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
@@ -12,8 +11,7 @@ Download and install the software
 
 Enter the `Android` tab in your user panel and open the `HiddifyNG` section.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="
 https://github.com/hiddify/hiddify-config/assets/125398461/5e2272ae-86e8-487c-8d09-f3866585c436" />
 </div>
@@ -27,8 +25,7 @@ You can also download and install the program directly from [GitHub](https://git
 ## Add config
 To do this, in the same section related to the `HiddifyNG` program, click on `Click to Import` to add the configuration to the program.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/adf69d91-570b-4fb0-9266-09d3abdd837f" />
 </div>
 
@@ -40,8 +37,7 @@ This plate is designed for quick connection to the filter breaker, which consist
 
 ### Profile section
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3b52550d-4e96-49c7-a966-282dfd48c4cc" />
 </div>
 
@@ -60,8 +56,7 @@ For this, press the `+` button from the profile section or from the top right of
 
 You can use the copied link or scan its QR code.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/a3aa8b25-1500-48c8-8899-b38b31621024" />
 </div>
 
@@ -74,8 +69,7 @@ You can use the copied link or scan its QR code.
 
 To do this, click on the connection button in the middle of the screen.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/937d9d96-9f9f-4bfa-8700-858e161a289d" />
 </div>
 
@@ -83,8 +77,7 @@ To do this, click on the connection button in the middle of the screen.
 ## Configs
 Here are the configs that were added using the subscription link.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/8d68a8aa-fe9b-4396-a66c-7859a44082b8" />
 </div>
 
@@ -100,8 +93,7 @@ In this menu, which is a subset of the config menu, you can do various things th
 
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/afdd5488-99dc-4693-b5a8-6d9861e620e3" />
 </div>
 
@@ -137,8 +129,7 @@ You can edit the imported profiles or add a new profile.
 ## Advanced
 On this page, there are advanced settings that will be mentioned later.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/28a6cdeb-5c7c-4e87-b47d-e3121a318c6a" />
 </div>
 
@@ -189,8 +180,7 @@ Configs are entered manually. By clicking this button, the app opens another pag
 ## Three-line software menu settings
 In this section, there are several general settings, the most useful parts of which are these.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/34534df8-e9a0-4e0d-886e-eaa15a50deec" />
 </div>
 

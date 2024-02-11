@@ -1,7 +1,6 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-to-server-via-SSH)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 # آموزش اتصال به سرور از طریق SSH
 
 <details markdown="1"> <summary><h2> پیش نیاز: نصب SSH در ویندوز</h2> (کلیک کنید)</summary>
@@ -13,8 +12,7 @@
 سپس این دستور را اجرا کنید:
 
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 Add-WindowsCapability -Online -Name OpenSSH.Client
 ```
@@ -42,43 +40,37 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 
 سپس از طریق اجرای دستور زیر به سرور متصل شوید:
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 ssh user@<IP_Address>
 ```
 </div>
 
 معمولا یوزر شما در سروری که خریداری کردید `root` هست فرض کنید IP سرور شما `1.1.1.1` هست پس دستور به شکل زیر میشه 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 ssh root@1.1.1.1
 ```
 </div>
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 اگر پورت دیفالت SSH را تغییر داده اید در این صورت باید کامند فوق را به این شکل تغییر دهید.
 
 </div>
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 ssh root@<IP_Address> -p <port_number>
 ```
 
 </div>
 
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 یعنی مثلا اگر آیپی شما `1.1.1.1`  و پورت `2222` باشد باید به این شکل کامند را اجرا کرد.
 
 </div>
 
-<div dir="ltr">
-
+<div dir="ltr" markdown=1>
 ```
 ssh root@1.1.1.1 -p 2222
 ```

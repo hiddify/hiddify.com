@@ -21,8 +21,7 @@ To do this, open one of the following programs according to your operating syste
 Add-WindowsCapability -Online -Name OpenSSH.Client
 ```
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png" />
 </div>
 
@@ -36,8 +35,7 @@ ls /opt/hiddify-config/hiddify-panel/backup
 
 The output of this command is as follows.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" />
 </div>
 
