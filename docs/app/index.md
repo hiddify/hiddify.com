@@ -1,7 +1,7 @@
 ---
 description: Welcome to the wiki page for the Hiddify project.
 title: App Docs
-weight: 2
+weight: -1
 comments: false
 ---
 

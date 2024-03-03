@@ -1,9 +1,10 @@
 ---
 description: به ویکی هیدیفای خوش آمدید
-title: راهنمای منیجر
-comments: false
-weight: -2
+title: راهنمای اپ
+comments: falseح
+weight: 2
 ---
+# راهنمای اپ
 ## :material-home: خانه
 
 به ویکی هیدیفای خوش آمدید

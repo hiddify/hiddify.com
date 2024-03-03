@@ -163,7 +163,9 @@ plugins:
   
 
   # - privacy
-  - search
+  - search:
+        indexing: 'full' #sections
+        # prebuild_index: true
   
   - mkdocs-nav-weight:
       section_renamed: true

@@ -2,7 +2,7 @@
 description: Welcome to the wiki page for the Hiddify project.
 title: Manager Docs
 comments: false
-weight: 1
+weight: -2
 ---
 
 
