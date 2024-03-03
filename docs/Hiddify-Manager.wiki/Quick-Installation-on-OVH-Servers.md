@@ -26,12 +26,12 @@ packages:
 
 runcmd:
   - cd /opt
-  - bash -c "$(curl -Lfo- https://raw.githubusercontent.com/hiddify/hiddify-config/main/common/download_install.sh)"
+  - bash -c "export CREATE_EASYSETUP_LINK='true';curl i.hiddify.com/release|bash"
 
 final_message: "The system is finally up, after $UPTIME seconds"
 output: { all: "| tee -a /root/cloud-init-output.log" }
 
-# you can see the generated link from the website by using http://yourip/ or https://yourip.sslip.io in one hour, after that, it will be disapear. 
+# you can see the generated link from the website by using https://yourip.sslip.io/hiddify in one hour, after that, it will be disappear. 
 ```
 
 Do not forget to wait at least 10 minutes.
