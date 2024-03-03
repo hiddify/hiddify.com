@@ -15,7 +15,7 @@ comments: false
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image-197.png" alt="image" class="rounded-xl">
+    <img src="/assets/image-197.png" alt="image" class="rounded-xl">
 
     
 
@@ -33,7 +33,7 @@ comments: false
 ## Client software on Android
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image-196.png" alt="image" class="rounded-xl">
+    <img src="/assets/image-196.png" alt="image" class="rounded-xl">
 
     
 
@@ -60,16 +60,16 @@ comments: false
 <h4 class="text-md">Related videos</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ" target="_blank">
-        <img src="https://hiddify.com/assets/235705873-4f6730b7-a23a-4717-95c3-a5a667db1c59.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/235705873-4f6730b7-a23a-4717-95c3-a5a667db1c59.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=mUTfYd1_UCM" target="_blank">
-        <img src="https://hiddify.com/assets/235706386-047d5713-2b07-4aa6-bb6b-6464bdc105ef.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/235706386-047d5713-2b07-4aa6-bb6b-6464bdc105ef.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=5AQgbCwHujk" target="_blank">
-        <img src="https://hiddify.com/assets/235707818-ea5ad5dc-8492-4338-8ec0-fc14993fbaaa.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/235707818-ea5ad5dc-8492-4338-8ec0-fc14993fbaaa.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM" target="_blank">
-        <img src="https://hiddify.com/assets/235707725-a6d73e32-178b-4163-9fe8-8aab4e4458fe.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/235707725-a6d73e32-178b-4163-9fe8-8aab4e4458fe.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
@@ -87,7 +87,7 @@ comments: false
 ## Contents related to client software on iOS
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image-199.png" alt="image" class="rounded-xl">
+    <img src="/assets/image-199.png" alt="image" class="rounded-xl">
 
     
 
@@ -125,7 +125,7 @@ comments: false
 ## Contents related to client software on Desktop
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image-200.png" alt="image" class="rounded-xl">
+    <img src="/assets/image-200.png" alt="image" class="rounded-xl">
 
     
 
@@ -147,10 +147,10 @@ comments: false
 <h4 class="text-md">Related videos</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs" target="_blank">
-        <img src="https://hiddify.com/assets/248152327-846063e3-1827-41bb-b946-8d2687ab5543.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/248152327-846063e3-1827-41bb-b946-8d2687ab5543.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg" target="_blank">
-        <img src="https://hiddify.com/assets/248152095-f107a096-8abe-4f30-a8a6-b2413803dc86.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/248152095-f107a096-8abe-4f30-a8a6-b2413803dc86.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>

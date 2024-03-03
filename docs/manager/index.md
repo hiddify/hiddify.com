@@ -18,7 +18,7 @@ weight: -2
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/1.png" alt="image" class="rounded-xl">
+    <img src="/assets/1.png" alt="image" class="rounded-xl">
 
     
 
@@ -70,10 +70,10 @@ weight: -2
     <h4 class="text-md">Related videos</h4>
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w" target="_blank">
-        <img src="https://hiddify.com/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=XSwCE35lqmU" target="_blank">
-        <img src="https://hiddify.com/assets/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
@@ -94,7 +94,7 @@ weight: -2
 ## Configuration and advanced settings
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image194.png" alt="image" class="rounded-xl">
+    <img src="/assets/image194.png" alt="image" class="rounded-xl">
 
 
     <ul class="my-4 list-disc ml-5 text-secondary">
@@ -153,10 +153,10 @@ weight: -2
 <h4 class="text-md">Related videos</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=nOe7FhajX3g" target="_blank">
-        <img src="https://hiddify.com/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=eFNPBSy8_to" target="_blank">
-        <img src="https://hiddify.com/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
@@ -181,7 +181,7 @@ weight: -2
 ## Domain, Worker, CDN and tunneling
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image-195.png" alt="image" class="rounded-xl">
+    <img src="/assets/image-195.png" alt="image" class="rounded-xl">
 
     
 
@@ -274,10 +274,10 @@ weight: -2
     <h4 class="text-md">Related videos</h4>
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=ea5C93ynkUs" target="_blank">
-        <img src="https://hiddify.com/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://youtu.be/gAyfCJt0jXw?si=QSA8kNy_Ua79sN70" target="_blank">
-        <img src="https://hiddify.com/assets/274807068-2e229b5d-4b3d-4588-8434-aff0b278c66a.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/274807068-2e229b5d-4b3d-4588-8434-aff0b278c66a.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
@@ -299,7 +299,7 @@ weight: -2
 ## Basic concepts and troubleshooting
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="https://hiddify.com/assets/image-196.png" alt="image" class="rounded-xl">
+    <img src="/assets/image-196.png" alt="image" class="rounded-xl">
 
     
 
