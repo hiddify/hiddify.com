@@ -1,0 +1,452 @@
+
+<html lang="fa" class="translated-rtl"><head>
+  <base href="https://hiddify.com/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="favicon" href="../assets/favicon.ico">
+  <meta property="description" content="Hiddify, for a free internet" data-rh="true">
+  <link data-rh="true" rel="canonical" href="https://hiddify.com/">
+  <meta property="og:title" content="Hiddify | Hiddify" data-rh="true">
+  <title>Hiddify |  Hiddify</title>
+  <link href="../assets/output.css" rel="stylesheet">
+  <link href="../assets/fonts/Vazirmatn-font-face.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css"></head>
+
+<body>
+  <header class="border-gray-200 px-4 lg:px-6">
+    <nav class="mx-auto py-2.5 container lg:flex lg:items-center lg:justify-between">
+      <div class="flex flex-wrap justify-between items-center w-full">
+        <a href="/" class="flex items-center">
+          <img src="../assets/hiddify-logo.png" class="h-6 sm:h-9" alt="لوگوی Hiddify">
+        </a>
+
+        <button onclick="toggleShow()" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+          <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">منوی اصلی را باز کنید</font></font></span>
+          <svg id="show-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fillrule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" cliprule="evenodd"></path>
+          </svg>
+          <svg id="hide-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fillrule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" cliprule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-header" class="hidden sm:flex flex-col sm:items-end sm:space-y-2 sm:space-x-0 align-items-center">
+        <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 items-center lg:min-w-[400px]">
+          <li>
+            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              برنامه ها
+            </font></font></a>
+          </li>
+          <li>
+            <a href="/documentation" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              مستندات
+            </font></font></a>
+          </li>
+          <li>
+            <a href="/about" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              درباره ما
+            </font></font></a>
+          </li>
+          <li>
+            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              🇺🇸 انگلیسی
+            </font></font></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="animation-delay-4000 absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-400 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%] md:animate-blob"></div>
+  <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
+  <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"></div>
+  <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"></div>
+  <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"></div>
+
+  <main class="container relative mx-auto p-4 py-52 text-[#212529] pt-40">
+    <h1 class="z-10 text-3xl font-semibold md:text-6xl lg:text-8xl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      Hiddify،
+       </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      راه حل آزادی اینترنت
+    </font></font></h1>
+    <p class="z-10 text-lg text-secondary md:text-2xl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      تمام آنچه برای اینترنت نامحدود نیاز دارید
+    </font></font></p>
+
+    <img alt="قهرمان" src="../assets/globe.png" class="absolute -bottom-12 right-0 lg:-bottom-[120px] lg:-right-20 z-20 w-1/4">
+  </main>
+  <section class="container relative mx-auto py-40 p-4">
+    <h2 class="z-10 text-center text-lg text-secondary md:text-2xl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      دو محصولی که با هم کار می کنند
+    </font></font></h2>
+
+    <div class="mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 py-16 backdrop-blur-xl backdrop-filter flex-col lg:flex-row gap-y-20">
+      <div class="flex-col justify-center px-16">
+        <h3 class="z-10 text-center text-xl text-secondary md:text-2xl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          برنامه مشتری VPN – برای دسترسی به اینترنت
+        </font></font></h3>
+
+        <img src="../assets/hiddify-logo.png" alt="قهرمان" class="mx-auto my-12 w-[178px]">
+        <p class="lg:mx-20 mt-4 text-center text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Hiddify یک برنامه VPN (شبکه خصوصی مجازی) کاربر پسند است که به شما امکان می دهد به سرورهای Hiddify (یا غیر Hiddify) خود متصل شوید. </font><font style="vertical-align: inherit;">برنامه را روی موبایل یا دسکتاپ دانلود کنید و از اینترنت بدون سانسور لذت ببرید.
+        </font></font></p>
+      </div>
+      <div class="flex-col justify-center px-16">
+        <h3 class="text-xl z-10 text-center text-secondary md:text-2xl"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          برنامه مشتری VPN – برای دسترسی به اینترنت
+        </font></font></h3>
+
+        <img src="../assets/hiddify-manager-logo.png" alt="قهرمان" class="mx-auto my-4 h-[64px] lg:h-[109px] w-[399px]">
+        <p class="lg:mx-20 mt-4 text-center text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          Hiddify Manager ایجاد VPN خود را آسان می کند که می توانید آن را روی دسکتاپ یا تلفن همراه مدیریت کنید. </font><font style="vertical-align: inherit;">آن را با گروه های خود، حتی صدها نفر به اشتراک بگذارید.
+        </font></font></p>
+      </div>
+    </div>
+
+    <div class="animation-delay-4000 absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-400 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%] md:top-[20%] md:animate-blob"></div>
+    <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:top-[15%] md:animate-blob"></div>
+    <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:top-24 md:animate-blob"></div>
+    <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"></div>
+    <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"></div>
+  </section>
+
+  <section class="container mx-auto my-40 flex items-center px-20 text-secondary flex-col lg:flex-row">
+    <img src="../assets/hiddify-next.png" alt="بعد پنهان کن" class="w-[391px]">
+
+    <div class="lg:w-1/2 w-full">
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">راحت تر از همیشه به اینترنت متصل شوید</font></font></p>
+      <img src="../assets/hiddify-logo.png" alt="لوگوی hiddify" class="my-4 w-1/4">
+
+      <ul class="list-disc">
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">آسان برای استفاده</font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          از Hysteria2، TUIC، SSH، Reality، VMess، VLESS و
+           </font></font><span class="underline underline-offset-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20 پروتکل دیگر پشتیبانی می کند.</font></font></span>
+        </li>
+      </ul>
+
+      <ul class="my-5 flex gap-5">
+        <li class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white">
+          <img src="../assets/platforms/android.png" alt="اندروید" class="w-12">
+        </li>
+        <li class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white">
+          <img src="../assets/platforms/apple.png" alt="ios" class="w-12">
+        </li>
+        <li class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white">
+          <img src="../assets/platforms/windows.png" alt="پنجره ها" class="w-12">
+        </li>
+        <li class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white">
+          <img src="../assets/platforms/mac.png" alt="مک" class="w-12">
+        </li>
+        <li class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white">
+          <img src="../assets/platforms/linux.png" alt="لینوکس" class="w-12">
+        </li>
+      </ul>
+
+      <div class="mt-5">
+        <button class="text-primary border border-primary focus:outline-none hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary/70 font-medium rounded-lg text-sm px-5 py-2.5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          ادامه مطلب
+        </font></font></button>
+
+        <button class="lg:ml-2 mt-2 lg:mt-0 text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
+          <a href="https://app.hiddify.com/" id="install-btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">روی ویندوز نصب کنید</font></font></a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto my-40 flex items-center gap-7 px-20 text-secondary flex-col lg:flex-row">
+    <img src="../assets/hiddify-manager.png" alt="hiddify manager" class="w-[741px]">
+    <div class="lg:w-1/2">
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VPN خود را برای گروه خود تنظیم کنید</font></font></p>
+
+      <div class="flex items-center gap-2">
+        <img src="../assets/hiddify-logo-white-bg.png" alt="لوگوی hiddify" class="my-4 w-[50px]">
+        <h2 class="text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hiddify Manager</font></font></h2>
+      </div>
+
+      <ul class="my-4 list-disc ml-4">
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">نصب بدون زحمت</font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">یکی از بهترین VPN ها برای ایران، چین، روسیه، برزیل و کل جهان</font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          از Hysteria2، TUIC، SSH، Reality، VMess، VLESS و
+           </font></font><span class="underline underline-offset-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20 پروتکل دیگر پشتیبانی می کند.</font></font></span>
+        </li>
+      </ul>
+
+      <div class="mt-5">
+        <button class="text-primary border border-primary focus:outline-none hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary/70 font-medium rounded-lg text-sm px-5 py-2.5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          ادامه مطلب
+        </font></font></button>
+
+        <button class="lg:ml-2 text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          روی سرور نصب کنید
+        </font></font></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto my-40 flex items-center justify-center gap-4 lg:gap-16 text-center text-secondary">
+    <div class="lg:w-[250px]">
+      <img src="../assets/cross-platform.png" alt="پلت فرم متقابل" class="lg:w-[250px]">
+      <h2 class="my-2 text-xl lg:text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">کراس پلتفرم</font></font></h2>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">در Android، iOS، Window، Linux و macOS موجود است</font></font></p>
+    </div>
+    <div class="lg:w-[250px]">
+      <img src="../assets/secure.png" alt="پلت فرم متقابل" class="lg:w-[250px]">
+      <h2 class="my-2 text-xl lg:text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ایمن و بدون آگهی</font></font></h2>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">منبع باز، غیر تجاری و امنیتی ممیزی شده است</font></font></p>
+    </div>
+
+    <div class="lg:w-[250px]">
+      <img src="../assets/processor.png" alt="پلت فرم متقابل" class="lg:w-[250px]">
+      <h2 class="my-2 text-xl lg:text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ویژگی های قدرتمند</font></font></h2>
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">سرویس گیرنده پروکسی خودکار بر اساس sing-box، پشتیبانی از پروتکل های مختلف</font></font></p>
+    </div>
+  </section>
+
+  <section class="ga-5 container mx-auto my-40 items-center justify-center border-t border-white py-20 text-center text-secondary">
+    <h2 class="text-center text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">اندازه گیری تاثیر</font></font></h2>
+    <p class="mt-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">یکی از قابل اعتمادترین VPN ها</font></font></p>
+
+    <div class="mt-8 w-full grid grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1,000,000+</font></font></h3>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">دانلودهای Hiddify Manager</font></font></p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">400000+</font></font></h3>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">دانلود برنامه Hiddify</font></font></p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4.8 </font></font><span class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ 5</font></font></span></h3>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">رتبه بندی برنامه Hiddify در Google Play</font></font></p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3000 +</font></font></h3>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ستاره های GitHub</font></font></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="16 container relative mx-auto my-20 flex flex-col items-center justify-center gap-5 text-center text-secondary">
+    <div class="clearfix absolute bottom-0 -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-md bg-purple-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-96 md:animate-blob"></div>
+    <div class="animation-delay-2000 clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-pink-400 opacity-30 mix-blend-multiply blur-3xl filter md:right-2 md:animate-blob"></div>
+    <div class="animation-delay-4000 clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-blue-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-56 md:animate-blob"></div>
+    <h2 class="text-center text-3xl font-semibold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">سوالات متداول</font></font></h2>
+    <ul class="relative mx-auto mt-1 w-full max-w-5xl list-none flex-col p-4">
+      <li class="disclosure-item mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 text-secondary shadow-md">
+        <div class="disclosure-title flex items-center justify-between">
+          <span class="title-text text-xl text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">آیا Hiddify با خدمات استریم سازگار است؟</font></font></span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+              <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="disclosure-content mt-3 text-lg text-gray-700 text-left" style="display: none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          بله، Hiddify برای کار یکپارچه با سرویس های پخش محبوب طراحی شده است و اطمینان می دهد که می توانید بدون هیچ زحمتی به محتوای محدود منطقه دسترسی داشته باشید. </font><font style="vertical-align: inherit;">از نمایش ها و فیلم های مورد علاقه خود در هر نقطه از جهان لذت ببرید
+        </font></font></div>
+      </li>
+      <li class="disclosure-item mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 text-secondary shadow-md">
+        <div class="disclosure-title flex items-center justify-between">
+          <span class="title-text text-xl text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">آیا Hiddify با خدمات استریم سازگار است؟</font></font></span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+              <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="disclosure-content mt-3 text-lg text-gray-700 text-left" style="display: none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          بله، Hiddify برای کار یکپارچه با سرویس های پخش محبوب طراحی شده است و اطمینان می دهد که می توانید بدون هیچ زحمتی به محتوای محدود منطقه دسترسی داشته باشید. </font><font style="vertical-align: inherit;">از نمایش ها و فیلم های مورد علاقه خود در هر نقطه از جهان لذت ببرید
+        </font></font></div>
+      </li>
+      <li class="disclosure-item mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 text-secondary shadow-md">
+        <div class="disclosure-title flex items-center justify-between">
+          <span class="title-text text-xl text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">آیا Hiddify با خدمات استریم سازگار است؟</font></font></span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+              <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="disclosure-content mt-3 text-lg text-gray-700 text-left" style="display: none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          بله، Hiddify برای کار یکپارچه با سرویس های پخش محبوب طراحی شده است و اطمینان می دهد که می توانید بدون هیچ زحمتی به محتوای محدود منطقه دسترسی داشته باشید. </font><font style="vertical-align: inherit;">از نمایش ها و فیلم های مورد علاقه خود در هر نقطه از جهان لذت ببرید
+        </font></font></div>
+      </li>
+      <li class="disclosure-item mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 text-secondary shadow-md">
+        <div class="disclosure-title flex items-center justify-between">
+          <span class="title-text text-xl text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">آیا Hiddify با خدمات استریم سازگار است؟</font></font></span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+              <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="disclosure-content mt-3 text-lg text-gray-700 text-left" style="display: none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          بله، Hiddify برای کار یکپارچه با سرویس های پخش محبوب طراحی شده است و اطمینان می دهد که می توانید بدون هیچ زحمتی به محتوای محدود منطقه دسترسی داشته باشید. </font><font style="vertical-align: inherit;">از نمایش ها و فیلم های مورد علاقه خود در هر نقطه از جهان لذت ببرید
+        </font></font></div>
+      </li>
+      <li class="disclosure-item mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 text-secondary shadow-md">
+        <div class="disclosure-title flex items-center justify-between">
+          <span class="title-text text-xl text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">آیا Hiddify با خدمات استریم سازگار است؟</font></font></span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" fill-rule="evenodd">
+              <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+              <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="disclosure-content mt-3 text-lg text-gray-700 text-left" style="display: none"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          بله، Hiddify برای کار یکپارچه با سرویس های پخش محبوب طراحی شده است و اطمینان می دهد که می توانید بدون هیچ زحمتی به محتوای محدود منطقه دسترسی داشته باشید. </font><font style="vertical-align: inherit;">از نمایش ها و فیلم های مورد علاقه خود در هر نقطه از جهان لذت ببرید
+        </font></font></div>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="body-font relative border-white bg-[rgba(255,255,255,0.5)] p-4 text-secondary backdrop-blur-xl backdrop-filter">
+    <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:right-[20%] md:animate-blob"></div>
+
+    <div class="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start">
+      <div class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
+        <a class="title-font flex items-center justify-center font-medium text-white md:justify-start">
+          <img src="../assets/hiddify-logo.png" class="h-11 text-black">
+        </a>
+        <p class="mt-4 text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          برای اطمینان از اینکه همه می توانند با یک ابزار قدرتمند و حرفه ای ضد سانسور به راحتی به اینترنت نامحدود دسترسی داشته باشند
+        </font></font></p>
+      </div>
+      <div class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <h2 class="title-font mb-3 text-lg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">دانلود مشتری</font></font></h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">اندروید</font></font></a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IOS</font></font></a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">پنجره ها</font></font></a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">سیستم عامل مک</font></font></a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">لینوکس</font></font></a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <h2 class="title-font mb-3 text-lg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hiddify Manager را راه اندازی کنید</font></font></h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-On-Ubuntu" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                اوبونتو
+              </font></font></a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Install-Hiddify-using-Docker" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                داکر
+              </font></font></a>
+            </li>
+            <li>
+              <a class="text-sm" href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Hetzner-Servers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                هتزنر
+              </font></font></a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Oracle-Cloud" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Oracle Cloud
+              </font></font></a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Vultr-Servers" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Vultr
+              </font></font></a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-OVH-Servers" class="text-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                OVH
+              </font></font></a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <h2 class="title-font mb-3 text-lg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">حمایت کردن</font></font></h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-sm" href="https://github.com/hiddify/Hiddify-Manager/wiki/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                از ویکی گیت هاب دیدن کنید
+              </font></font></a>
+            </li>
+            <li>
+              <a class="text-sm" href="https://t.me/hiddify"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">عضویت در گروه تلگرام</font></font></a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-center">
+        <p class="text-center text-sm sm:text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          پشتیبانی شده توسط تیم Hiddify 2024. </font><font style="vertical-align: inherit;">تمامی حقوق محفوظ است.
+        </font></font></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleShow() {
+      var mobileHeader = document.getElementById("mobile-header");
+      var showIcon = document.getElementById("show-icon");
+      var hideIcon = document.getElementById("hide-icon");
+
+      if (mobileHeader.classList.contains("hidden")) {
+        mobileHeader.classList.remove("hidden");
+        showIcon.classList.add("hidden");
+        hideIcon.classList.remove("hidden");
+      } else {
+        mobileHeader.classList.add("hidden");
+        showIcon.classList.remove("hidden");
+        hideIcon.classList.add("hidden");
+      }
+    }
+
+    var disclosureItems = document.querySelectorAll(".disclosure-item");
+    disclosureItems.forEach(function (item) {
+      var title = item.querySelector(".disclosure-title");
+      var content = item.querySelector(".disclosure-content");
+      var icon = item.querySelector(".icon");
+
+      title.addEventListener("click", function () {
+        if (content.style.display === "none") {
+          content.style.display = "block";
+          icon.style.transform = "rotate(180deg)";
+        } else {
+          content.style.display = "none";
+          icon.style.transform = "none";
+        }
+      });
+    });
+
+    const installButton = document.getElementById("install-btn");
+
+    var os = "Unknown";
+    if (window.navigator.userAgent.indexOf("Windows") != -1) os = "Windows";
+    if (window.navigator.userAgent.indexOf("Mac") != -1) os = "Mac/iOS";
+    if (window.navigator.userAgent.indexOf("X11") != -1) os = "UNIX";
+    if (window.navigator.userAgent.indexOf("Linux") != -1) os = "Linux";
+
+    installButton.innerText = "Install on " + os;
+  </script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+
+
+</body></html>

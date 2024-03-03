@@ -1,5 +1,6 @@
 ---
 no_title_header: true
+headless: true
 description: Welcome to the wiki page for the Hiddify project.
 ---
 

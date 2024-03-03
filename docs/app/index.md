@@ -1,10 +1,11 @@
 ---
 description: Welcome to the wiki page for the Hiddify project.
-title: Home
+title: App Docs
+weight: 2
 comments: false
-
 ---
-# Hiddify Docs
+
+# App Docs
 ## :material-home: Home
 
 Welcome to the wiki page for the Hiddify project.

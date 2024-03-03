@@ -1,9 +1,11 @@
 ---
 description: به ویکی هیدیفای خوش آمدید
+title: راهنما
 comments: false
+weight: -1
 ---
-
-# :material-home: خانه
+# راهنمای منیجر
+## :material-home: خانه
 
 به ویکی هیدیفای خوش آمدید
 
