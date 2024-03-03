@@ -2,8 +2,7 @@
 
 
 
-<div dir=rtl>
-
+<div dir=rtl markdown=1>
 # نحوه تغییر پورت SSH روی سرور
 
 برای تغییر پورت SSH در ابونتو، باید فایل پیکربندی SSH Daemon را تغییر دهید. در اینجا مراحل انجام این کار وجود دارد:
@@ -11,8 +10,7 @@
 1. **فایل پیکربندی SSH Daemon را باز کنید:**
     فایل پیکربندی SSH daemon یا `sshd_config` را در یک ویرایشگر متن باز کنید. برای ویرایش این فایل معمولاً به سطح دسترسی بالاتری نیاز دارید. می‌توانید از یک ویرایشگر متن خط فرمان مانند `nano` یا `vim` استفاده کنید. مثلا:
 
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
 
     sudo nano /etc/ssh/sshd_config
 </div>
@@ -20,8 +18,7 @@
 2. **بخش `port` را بیابید:**
     به دنبال خطی باشید که با `port` شروع می‌شود. این خط پورتی را مشخص می‌کند که SSH Server به آن گوش می‌دهد. پیش فرض معمولاً `22` است. می‌توانید آن را به هر پورت استفاده نشده تغییر دهید، به عنوان مثال:
 
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
     port 2222
 </div>
 
@@ -31,8 +28,7 @@
 4. **سرویس SSH را راه اندازی مجدد کنید:**
     پس از اصلاح فایل پیکربندی، باید سرویس SSH را مجددا راه اندازی کنید تا تغییرات اعمال شوند. از دستور زیر استفاده کنید:
 
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
 
     sudo service ssh restart
 </div>
@@ -41,16 +37,14 @@
 همچنین، می‌توانید از دستور زیر در نسخه‌های جدیدتر اوبونتو استفاده کنید:
 
 
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
     sudo systemctl restart ssh
 </div>
 
 5. **تغییرات را تأیید کنید:**
 با اجرای دستور زیر می‌توانید چک کنید که SSH اکنون به پورت جدید گوش می‌دهد:
     
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
     netstat -tuln | grep <new_port>
 </div>
 
@@ -59,8 +53,7 @@
 6. **به روز رسانی قوانین فایروال با استفاده از `iptables` در لینوکس:**
     اگر از `iptables` برای مدیریت فایروال استفاده می کنید، مطمئن شوید که قوانین را به روز کنید تا ترافیک در پورت SSH جدید مجاز باشد.
 
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
     sudo iptables -A INPUT -p tcp --dport 2222 -j ACCEPT
 </div>
 
@@ -70,15 +63,13 @@
 
 برای اوبونتو، می توانید از دستورات iptables-save و iptables-restore استفاده کنید:
     
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
     sudo sh -c 'iptables-save > /etc/iptables/rules.v4'
 </div>
 
 این دستور قوانین فعلی iptables را در یک فایل ذخیره می کند و می توانید آنها را با:
 
-<div dir=ltr>
-
+<div dir=ltr markdown=1>
     sudo sh -c 'iptables-restore < /etc/iptables/rules.v4'
 </div>
 

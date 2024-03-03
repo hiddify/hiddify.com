@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1--HiddifyClashDesktop)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
@@ -10,8 +9,7 @@ This software is developed based on Clash and many features are included in it.
 ## Downloading the software
 For this, enter the `Desktop` tab in your user panel and open the section related to `HiddifyClash`.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/ae55cc0f-09fe-4569-bcd8-625c68d66fae" />
 </div>
 
@@ -33,8 +31,7 @@ For Linux, you only need to give executable access to the downloaded AppImage fi
 ## Adding a profile to the app
 For this, enter the `Desktop` tab in your user panel and open the section related to `HiddifyClash`.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/7a1055b3-0313-415b-a00b-2b5301bcd65a" />
 </div>
 
@@ -51,8 +48,7 @@ For this, enter the `Desktop` tab in your user panel and open the section relate
 ## Profile
 Click on install profile, the profile will be automatically added to the program. You can also import the copied link in the profile section manually in section 1.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3217c5b9-3e18-4bf1-be22-64742e785bbc" />
 </div>
 
@@ -61,24 +57,21 @@ In section number 2, the information related to the imported profile, including 
 ## Home
 In this menu, you can turn the filter breaker on or off with the `Enable anti-censorship` button.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/966d10ee-efca-4c33-b15c-cd33fa9f50e1" />
 </div>
 
 ## Proxy
 In this menu, you can specify how to run proxies (configs), which includes 3 main sections.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/10db0fa5-9b7a-4ffc-81af-79d8a6448bca" />
 </div>
 
 ## Rule
 This mode executes proxies based on the rules in the imported profile, which contains several sections.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/0ecb441a-4270-415e-a09d-3c419f066e48" />
 </div>
 
@@ -102,8 +95,7 @@ You can test connections by using button number 2.
 #### Global
 This mode is for manual configuration selection and is useful when you want to use a specific configuration.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/d63a2662-2a02-4141-9a3f-e5befc51aa3b" />
 </div>
 
@@ -116,16 +108,14 @@ You can test connections by using button number 2.
 #### Direct
 This mode sends the traffic directly to the Internet and the traffic does not pass through the filter breaker.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/8c96c53e-a95c-4af5-bab7-572c0d09c88c" />
 </div>
 
 ## Settings
 In this menu, the general settings of the software are made.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/6ab482c8-41fb-4ad0-b37f-6cd88f9426cb" />
 </div>
 
@@ -148,8 +138,7 @@ In this menu, the general settings of the software are made.
 
 - In section 7, you can determine the core of the software, the default of which is Clash Meta.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3aedd085-b755-4cbb-a61a-301829b69912" />
 </div>
 
@@ -163,31 +152,27 @@ In this menu, the general settings of the software are made.
 ## Connections
 In this section, the connections established in the software are displayed. That is, if a program uses a filter, it will be displayed in this section, which is very useful for troubleshooting.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/1700bfe0-9a4e-4f4b-ae11-25654d29273b" />
 </div>
 
 ## Rules
 This menu is related to the rules in the imported profile, which can be seen in this file.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/72b8c5e1-fca5-4f0a-bad0-2e4738975f24" />
 </div>
 
 ## Logs
 In this section, the log related to the software can be seen, which is very useful during troubleshooting.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/deed841f-24f9-452f-b9fb-84301437223a" />
 </div>
 
 ## Traffic graph
 In the specified section below, the graphic related to the traffic passing through the filter breaker is also displayed.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/2754c9b1-4072-45d7-8326-c1b86c173686" />
 </div>

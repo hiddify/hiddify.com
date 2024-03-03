@@ -18,16 +18,14 @@
 
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/f1a0c7d6-ab17-4b82-9018-894675826633" />
 
 </div>
 
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/79262031-045c-4b20-b6da-9c52cdc0b37c" />
 
 </div>
@@ -39,8 +37,7 @@
 
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/d57ce407-f0b6-4b98-ade4-e9b3e40b62e5" />
 
 </div>
@@ -52,8 +49,7 @@
 * `group` ساخته شده را ذخیره کنید و صبر کنید تا اپدیت تمام شود.
 
  
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/0f8151e7-935b-49ba-a3f6-aa40f5b482ac" />
 
 </div>
@@ -68,8 +64,7 @@
 * `Proxy chain` را انتخاب کنید.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/b6f50216-4560-4ca5-97ac-143e14b2f466" />
 
 </div>
@@ -81,8 +76,7 @@
 
 * حالا برای چک کردن اینکه آیا کار به درستی انجام شده است، به [اینجا](https://ip.gs/) بروید. اگر آیپی کلادفلر مشاهده شد، یعنی کار به درستی انجام شده است.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3451ad3c-c87c-47d0-a970-f497450a2af3" />
 
 </div>

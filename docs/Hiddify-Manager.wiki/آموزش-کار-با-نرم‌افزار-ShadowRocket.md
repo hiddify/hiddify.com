@@ -1,7 +1,6 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-ShadowRocket-app)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
-<div dir=rtl>
-
+<div dir=rtl markdown=1>
 # آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 
  این برنامه یکی از برنامه‌های غیر رایگان در سیستم عامل iOS می‌باشد که برای اتصال به VPNهای بر پایه Xray می‌توانید از آن استفاده کنید.
@@ -10,22 +9,19 @@
 
 * برای این کار وارد پنل کاربری خود در پنل شوید و در تب `آی‌اواس` وارد بخش مشخص شده برای برنامه `ShadowRocket` شوید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/c4eb7d80-2685-4288-8d9b-c643d3886cad" />
 </div>
 
 * ابتدا می‌توانید برنامه را در صورت نیاز از لینک قرار داده شده دانلود نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/ac45f39c-b582-4357-9162-e46287c4fd58" />
 </div>
 
 در بخش پایین‌تر کانفیگ‌ها قرار دارند که دو امکان وجود دارد.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/eb7a87ce-3e0f-4825-8401-ffe0747328e8" />
 </div>
 
@@ -38,15 +34,13 @@
 
 * پس از کپی کردن لینک از صفحه کاربری پنل، وارد برنامه شدوراکت شوید و از گوشه سمت راست بالا، دکمه `+` را بزنید. 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/d116347f-31bc-4ca9-a1fc-bdb9364e5e74" />
 </div>
 
 * سپس در صفحه باز شده‌ `Type` را روی `Subscribe` قرار دهید و سپس لینک را در قسمت `URL` کپی کنید و `Save` را بزنید. با ذخیره این لینک، تمامی کانکشن‌ها در برنامه بارگذاری می‌شوند.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/c087970e-aebc-479d-8b8a-bc54a78cc7f8" />
 </div>
 
@@ -55,8 +49,7 @@
 
 * برای این کار در صفحه اصلی روی دکمه اسکنر مثل شکل زیر کلیک کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/cee3abfe-db05-4e2c-925d-fa57010d3465" />
 </div>
 
@@ -69,15 +62,13 @@
 برای تست کانکشن‌ها کافیه در صفحه اصلی برنامه روی `Connectivity Test` کلیک کنید.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/49a37a3c-b1f7-48ba-91e2-0a4ac7dc3e5f" />
 </div>
 
 اگر می‌خواهید تست کانفیگ‌ها واقعی‌تر باشد، در منوهای پایین وارد `Settings` شوید و سپس `Test Method` را روی `Connect` قرار دهید. حالا اگه تست بگیرید نتایج واقعی‌تری نشان داده خواهد شد.
 
-<div align=center>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/8760fd19-9056-4c0c-a4a0-aeebd728656f" />
+<div align=center markdown=1><img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/8760fd19-9056-4c0c-a4a0-aeebd728656f" />
 </div>
 
 
@@ -85,8 +76,7 @@
 ## آپدیت کردن سابسکریپشن و کانفیگ‌ها
 برای این کار کافیه روی علام آپدیت بالای کانفیگ‌های مربو به هر لینک تپ کنید. لینک‌ها و کانفیگ‌ها بر اساس آخرین اطلاعات روی سرور آپدیت خواهند شد.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/0878e805-a24e-4f19-831a-f526b475db4a" />
 </div>
 
@@ -98,8 +88,7 @@
 
 برای این کار در `Subscribe` گزینه `Update on Open` را انتخاب نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/aeb08d16-20d3-424e-8c6d-7d13f06aeb8d" />
 </div>
 
@@ -108,8 +97,7 @@
 ### آپدیت خودکار
 برای آپدیت خودکار لینک‌ها در بازه‌های زمانی مشخص گزینه `Auto Background Update`  را روشن نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/97540ef0-399f-4260-85a1-af0c0594533b" />
 </div>
 
@@ -118,8 +106,7 @@
 ### مرتب‌سازی بر اساس پینگ
 اگر بخواهید بر اساس نتیجه تست پینگ کانفیگ‌ها مرتب شوند گزینه `Sort by ping` را انتخاب نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/afeb9a4d-a12f-49f1-aca7-f5eae5c6bed2" />
 </div>
 
@@ -127,8 +114,7 @@
 ## جلوگیری از نشتی آیپی
 برای این کار در `Settings` و در بخش `UDP` گزینه `Disable STUN` را فعال نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3bd81556-4119-4659-8db7-0826bbdbd6ee" />
 </div>
 
@@ -136,8 +122,7 @@
 ## تنظیم برای رفع مشکل صدا در بعضی برنامه‌ها
 بعضی وقت‌ها ممکنه برای شما اتفاق افتاده باشه که در بعضی برنامه‌ها مثل Club House صدا پخش نمی‌شود. برای رفع این مشکل می‌توانید از `Setting`  وارد `TCP` شوید و سپس `Fingerprint` خود را تغییر دهید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/fe7a7a27-016c-45b9-92b5-2e9427ba165a" />
 </div>
 
@@ -148,8 +133,7 @@
 ## فعال‌سازی Killer Switch
 برای این کار در `Settings` وارد بخش `On Demand` شوید. 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/af641742-dc91-468e-9135-78de911e6703" />
 </div>
 
@@ -167,8 +151,7 @@
 ## اشتراک‌گذاری کانکشن با سایر دستگاه‌ها
 فرض کنید دستگاهی دارید که امکان نصب VPN را ندارد و نیاز است به اینترنت آزاد متصل گردد. برای این کار می‌توانید از گزینه به اشتراک‌گذاری کانکشن در شدوراکت استفاده کر. در منوی `Settings` وارد بخش `Proxy` شوید و `Proxy Share` را انتخاب نمایید. اگر گزینه `Enable Share` را فعال کنید روی آیپی و پورت مشخص شده VPN شما به اشتراک گذاشته می‌شود.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/d764b726-6ddd-4a5a-aa76-f9ad8165e4f1" />
 </div>
 
@@ -180,30 +163,26 @@
 ## ایجاد لودبالانس
 با نگه داشتن انگشت روی صفحه اصلی و کشیدن به سمت پایین منوی مخفی برنامه باز می‌شود. 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/59872f56-e9ff-4c50-85a0-65ccd488e704" />
 </div>
 
 
 
 برای ایجاد لودبالانس دکمه `+` را بزنید. 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/b67bc883-e643-465c-85dc-e6eeb719723c" />
 </div>
 
 یک نام دلخواه بدهید و `Type` را روی `load-balance` قرار دهید. سپس از قسمت `Policy` کانفیگ‌هایی که پینگ بهتری دارند یا حتی همه کانفیگ‌ها را انتخاب نمایید. در قسمت `Interval` می‌توانید مدت زمان بین تست‌های کانکشن لودبالانس را مشخص نمایید. در قسمت `Timeout` نیز می‌توانید مدت زمانی که یک کانکشن قطع می‌ماند و همچنان معتبر در نظر گرفته شود را مشخص کنید. ولی می توانید اگر بار اول است که این قسمت را تنظیم می‌نمایید، تنظیمات تایمرها را فعلا به صورت دیفالت قرار دهید. در نهایت ذخیره نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/be6e132b-d9d4-45ff-ab8a-94b72d764139" />
 </div>
 
 حالا روی لودبالانس ساخته شده بزنید و Test را تپ کنید. با این کار هم تست لودبالانس انجام می‌شود و هم اتصال آن برقرار می‌گردد. با روشن یا خاموش کردن شدوراکت، لودبالانس نیز روشن یا خاموش می‌گردد.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/819da751-8a46-4ab3-88e2-00a5e0b3f724" />
 </div>
 

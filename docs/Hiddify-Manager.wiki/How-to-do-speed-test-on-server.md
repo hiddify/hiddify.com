@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D8%B3%D8%AA-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%B1%D9%88%DB%8C-%D8%B3%D8%B1%D9%88%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
@@ -35,14 +34,12 @@ speedtest
 
 * When you run the program for the first time, the terms and conditions of use, as well as the data collected by the `Speedtest` website, will appear in the form of two messages, for each of which you should enter `yes` as confirmation.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243765156-b897f426-e9d6-4f26-b9fb-9e46f6def820.jpg)
 
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 
 ![](https://user-images.githubusercontent.com/125398461/243765299-bab3a3d4-a0c3-478e-8daf-4f3491d44c8b.jpg)
 
@@ -52,8 +49,7 @@ speedtest
 * After that, you will see that your bandwidth test has been executed and after a short time, its output will be displayed. Whenever you need to re-do this test, just type `speedtest` in the command line and hit enter to re-test.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243765887-054e65db-1f12-428b-b9e9-359a69e99044.jpg)
 
 </div>
@@ -65,8 +61,7 @@ speedtest --servers
 ```
 
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243766293-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.jpg)
 
 </div>
@@ -77,8 +72,7 @@ speedtest --servers
 speedtest --server-id=ID
 ```
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243768284-a319cf89-3ed7-4ea5-90dd-0170cd5926c8.jpg)
 </div>
 
@@ -90,8 +84,7 @@ speedtest --server-id=ID
 wget -qO- bench.sh | bash
 ```
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243768459-b0815e0e-6348-4c0b-9f82-1ae5e6c53646.jpg)
 
 </div>

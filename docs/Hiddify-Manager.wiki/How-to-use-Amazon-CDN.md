@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-CDN-%D8%A2%D9%85%D8%A7%D8%B2%D9%88%D9%86)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
@@ -12,27 +11,23 @@
 * Create a destination by clicking create distribution.
 * Enter the values in the opened page according to the image below.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="aws settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/9e1623b7-ffdc-4881-be24-b7223c63cb90" width=70% />
 </div>
 
 All values on this page are default except for the following which should be set as shown in the images.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="protocols policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/322d696e-cc53-4272-87ec-b5f77baa1546" width=70% />
 </div>
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="cache policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/404b3134-de2d-4dca-a942-a524b43ed883" width=70% />
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="waf settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/3139e115-5c4f-41df-9d49-766e973a4d14" width=70% />
 </div>
 
@@ -50,8 +45,7 @@ In fact, this subdomain will be used for our CDN domain.
 * On the certificate list page, you can see that the desired domain status is `pending validation`. Click on the ID and see the `Domains` section on the opened page.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="domain settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/e2a5d38a-efde-45c5-b55b-d2f395aa846a" width=70% />
 </div>
 
@@ -69,8 +63,7 @@ In fact, this subdomain will be used for our CDN domain.
 * At the end, click the save changes option to save the changes.
 * Now wait until the changes are applied and according to the image below, the state of `Last modified` will change from `Depoloying` to done to the date and time.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img alt="done page" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/893cfd82-7ccc-4fe6-9b25-09da4272e9a3" width=70% />
 </div>
 

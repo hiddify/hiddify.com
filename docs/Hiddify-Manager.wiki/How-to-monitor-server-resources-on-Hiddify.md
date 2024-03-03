@@ -12,8 +12,7 @@ Many times you need to check the status of your server's CPU and RAM resources. 
 
 To know the status of your CPU and RAM usage, go to the dashboard section in the Hiddify panel. Here, various and useful information about the status of system resources as well as network card traffic information and online users can be seen in an integrated manner.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![dashboard](https://github.com/hiddify/hiddify-config/assets/125398461/0e3c9cd4-ea9b-4e0e-83a6-425f4fdc212c)
 </div>
 
@@ -38,8 +37,7 @@ apt install htop
 htop
 ```
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/243195292-38c5ab1f-8fed-49c9-9455-04c7a7e83917.jpg)
 
 </div>
@@ -87,8 +85,7 @@ df -h --total
 
 whose output is as follows.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/248637861-f3552ab5-a105-40b5-8210-65487903c6ba.png)
 
 </div>

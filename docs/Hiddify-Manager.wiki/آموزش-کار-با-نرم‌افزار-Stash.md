@@ -1,15 +1,13 @@
 [**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-Stash-app)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
-<div dir=rtl>
-
+<div dir=rtl markdown=1>
 # آموزش کار با نرم‌افزار Stash
 این برنامه بر پایه کلش برای iOS نوشته شده و برای استفاده از آن باید خریداری شود.
 
 ## اضافه کردن پروفایل به برنامه
 * برای این کار در پنل کاربری خود وارد تب `آی‌اواس` شوید و بخش مربوط به `Stash` را باز کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/77e91556-27a9-47a8-8c90-8099285a571f" />
 </div>
 
@@ -21,8 +19,7 @@
 * حالت دوم پروفایل نارنجی یا normal است که همه ترافیک را از فیلترشکن به سمت سرور می‌فرستد که اگر در سرور سایت‌های ایرانی بلاک شده باشند، باز نمی‌شوند یا اگر وارپ برای همه ترافیک فعال شده باشد،‌سایت‌های ایرانی با وارپ باز می‌شوند.
 * در نهایت یکی از دو پروفایل را انتخاب کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/9ae75a32-1700-466c-872b-393edb870462" />
 </div>
 
@@ -33,15 +30,13 @@
 * گزینه `Download from URL` را انتخاب کنید.
 
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
 </div>
 
 * لینک کپی شده را وارد کنید و `Download` را بزنید. با انجام این کار پروفایل مورد نظر به برنامه اضافه می‌شود.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
 </div>
 
@@ -50,8 +45,7 @@
 * وارد برنامه Stash شوید، در صفحه `Settings` قسمت `Config File` را انتخاب کنید.
 * گزینه `Download from QRcode` را انتخاب کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
 </div>
 
@@ -60,8 +54,7 @@
 ## منوی ‌Policy
 در این منو پالیسی‌ها یا همان کانفیگ‌های موود در پروفایل‌های ایمپورت شده به برنامه بازگذاری می‌شوند و نمایش داده می‌شوند.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7fd169ea-18b4-4f7f-85b4-ee2073b8c25f" />
 </div>
 این حالت‌های مختلف در منوی Policy وابسته به حالت‌های مختلف Outbound است که در ادامه توضیح داده خواهند شد.
@@ -84,24 +77,21 @@
 ### تست کانکشن‌ها
 برای این کار روی آیکون رعد و برق کلیک کنید تا تست کانکشن انجام شود.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7bdb1519-7179-4c6e-a6e9-ee00c3bc06db" />
 </div>
 
 ## آپدیت کردن پروفایل‌های ایمپورت شده
 برای این کار منوی `Settings` وارد `Config File‌` شوید و انگشت خود را روی یکی از پروفایل‌ها نگه دارید. در منوی ظاهر شده، گزینه Update Now را بزنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3ecb0ab1-40b9-40e5-8f93-5a37f9b0a1dd" />
 </div>
 
 ## آپدیت خودکار پروفایل‌های ایمپورت شده
 * برای این کار در Settings گزینه More Settings را انتخاب نمایید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
 </div>
 
@@ -112,8 +102,7 @@
 ## انتخاب حالت در بخش Outbound
 در صفحه `Home` برنامه و در بخش `Outbound` می‌توانید سه حالت را انتخاب کنید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/51b861c7-2e12-4541-a214-84311270cb8d" />
 </div>
 
@@ -129,8 +118,7 @@
 ## استفاده از قابلیت On Demand
 برای استفاده در `Settings` وارد `On Demand` شوید.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/0854f4f3-3628-41a3-a8b4-3a3a08474370" />
 </div>
 
@@ -143,8 +131,7 @@
 ## عیب‌یابی کانکشن‌ها
 در صورت نیاز به چک کردن جزییات بیشتر از اتصالات می‌توانید در منوی `Utilities` وارد بخش `Network Diagnosis` شوید. در اینا لاگ مربو به تمامی کانکشن‌ها نمایش داده می‌شود که می‌تواند برای عیب‌یابی مفید باشد. این بخش شامل چندین زیربخش است که از جمله `Connectivity` و `Proxy` مفید هستند.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3685baf2-5d0f-4305-a151-12bcc761ab23" />
 </div>
 

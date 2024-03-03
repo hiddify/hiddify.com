@@ -133,8 +133,7 @@ After that, it is possible to send `WebSocket` packets from the client to Cloudf
 ## QUIC service
 This service is based on HTTP/3 and works with TLS1.3. That's why it's so fast because its handshake is much faster than TCP.
 
-<div align=center>
-
+<div align=center markdown=1>
 <img width="60%" alt="http-request-over-quic" src="https://github.com/hiddify/hiddify-config/assets/125398461/5793c28e-7785-4ea5-998d-9695cc11b341" />
 
 </div>

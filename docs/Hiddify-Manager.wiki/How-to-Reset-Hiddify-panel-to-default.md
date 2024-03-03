@@ -1,5 +1,4 @@
-<div dir="rtl">
-
+<div dir="rtl" markdown=1>
 [**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%B1%DB%8C%D8%B3%D8%AA-%DA%A9%D8%B1%D8%AF%D9%86-%D8%AA%D9%86%D8%B8%DB%8C%D9%85%D8%A7%D8%AA-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C-%D8%A8%D9%87-%D8%AD%D8%A7%D9%84%D8%AA-%D8%A7%D9%88%D9%84%DB%8C%D9%87)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
@@ -35,8 +34,7 @@ If after entering the subscription link you encounter the problem of reality or 
 
 `Settings > Option Setting > v2rayN settings > Enable Security Protocol TLS v1.3 `
 
-<div align=center>
-
+<div align=center markdown=1>
 ![v2raN settings](https://user-images.githubusercontent.com/125398461/251688034-1e0df0d2-508e-4a6a-91da-79a015947fd5.png)
 
 </div>
@@ -47,16 +45,14 @@ and finally click `Confirm`.
 
 To improve the performance and also update the cores required by the program such as Xray, SingBox, go to the same path as mentioned.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![v2rayN settings](https://github.com/hiddify/hiddify-config/assets/125398461/77180eee-62e9-4a59-8eda-5b9225e6dd87)
 
 </div>
 
 Activate the `Check for pre-release update` option and then update the kernels through the `Check update` option.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![v2rayN settings](https://user-images.githubusercontent.com/125398461/251728362-8ea188b9-e240-48a9-96a8-a1473a9346d3.png)
 
 </div>
@@ -64,14 +60,12 @@ Activate the `Check for pre-release update` option and then update the kernels t
 ### fixing DNS leakage
 - For this, you need to activate the `TunMode` option and it is necessary to use the Sing-box core. Therefore, on the main page of the program, download the `Sing-box core` using the `Check update` button.
 
-<div align=center>
-
+<div align=center markdown=1>
 ![Check update](https://user-images.githubusercontent.com/125398461/251811821-c2f94432-0168-40e9-8d8d-43baa2faf0f7.jpg)
 
 </div>
 
-<div align=center>
-
+<div align=center markdown=1>
 ![TunMode settings](https://github.com/hiddify/hiddify-config/assets/125398461/af2b9542-e8b2-49e9-932e-b247ef8dc5af)
 
 
@@ -99,8 +93,7 @@ To do this, go to this path.
 
 Enter here the addresses you want not to pass through the app. between each address put `;` .
 
-<div align=center>
-
+<div align=center markdown=1>
 ![System proxy settings](https://user-images.githubusercontent.com/125398461/251743253-4c3a9fe5-d641-41e6-8bd1-bd7bfdee19d2.png)
 
 </div>
@@ -113,8 +106,7 @@ To do this, go to the following path.
 
 `Settings > Routing setting`
 
-<div align=center>
-
+<div align=center markdown=1>
 ![Routing Settings](https://user-images.githubusercontent.com/125398461/251744490-acbd0ec2-104a-4b69-a69b-7f37f35ce5a6.png)
 
 </div>
