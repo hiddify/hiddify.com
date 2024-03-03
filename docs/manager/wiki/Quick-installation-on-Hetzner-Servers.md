@@ -19,27 +19,7 @@ In the video below, all the steps are described in full detail. This video is in
 
 - Now copy the following code
 
-```
-#cloud-config
-package_upgrade: true
-packages:
-  - apt-transport-https
-  - ca-certificates
-  - curl
-  - wget
-  - gnupg-agent
-  - software-properties-common
-  - git
-
-runcmd:
-  - cd /opt
-  - bash -c "export CREATE_EASYSETUP_LINK='true';curl i.hiddify.com/release|bash"
-
-final_message: "The system is finally up, after $UPTIME seconds"
-output: { all: "| tee -a /root/cloud-init-output.log" }
-
-# you can see the generated link from the website by using https://yourip.sslip.io/hiddify in one hour, after that, it will be disappear. 
-```
+{% include 'cloud_init.yml' %}
 
 - Put the above code in the place shown in the picture and click on `CREATE & BUY NOW` button. 
 <div align=center markdown=1>

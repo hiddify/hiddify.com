@@ -32,31 +32,8 @@
 <div dir="rtl" markdown=1>
 - حالا کد زیر را کپی کنید
 </div>
-<div dir="ltr" markdown="1">
 
-```
-#cloud-config
-package_upgrade: true
-packages:
-  - apt-transport-https
-  - ca-certificates
-  - curl
-  - wget
-  - gnupg-agent
-  - software-properties-common
-  - git
-
-runcmd:
-  - cd /opt
-  - bash -c "export CREATE_EASYSETUP_LINK='true';curl i.hiddify.com/release|bash"
-
-final_message: "The system is finally up, after $UPTIME seconds"
-output: { all: "| tee -a /root/cloud-init-output.log" }
-
-# you can see the generated link from the website by using https://yourip.sslip.io/hiddify in one hour, after that, it will be disappear. 
-```
-
-</div>
+{% include 'cloud_init.yml' %}
 
 <div dir="rtl" markdown=1>
 - کد بالا را در محل نشان داده در عکس قرار دهید.

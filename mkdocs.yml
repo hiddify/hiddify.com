@@ -166,10 +166,11 @@ plugins:
   - search:
         indexing: 'full' #sections
         # prebuild_index: true
-  
+  - include-markdown
+      
+  - awesome-pages
   - mkdocs-nav-weight:
       section_renamed: true
-  - awesome-pages
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
@@ -184,12 +185,12 @@ plugins:
         #   build: false
         #   fixed_link: https://github.com/hiddify/docs.hiddify.com/fork
 
-        - build: true
-          default: false
-          locale: zh
-          name: 简体中文
-          nav_translations:
-            Hiddify: Hiddify
+        # - build: true
+        #   default: false
+        #   locale: zh
+        #   name: 简体中文
+        #   nav_translations:
+        #     Hiddify: Hiddify
 
         - build: true
           default: false

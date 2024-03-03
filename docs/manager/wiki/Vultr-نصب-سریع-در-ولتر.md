@@ -14,30 +14,8 @@
 ۱. در مرحله انتخاب سیستم عامل، حتما گزینه Ubuntu 22.04 را انتخاب کنید.
 
 ۲. کد زیر را کپی کنید.
-<div dir="ltr" markdown="1">
 
-```
-#cloud-config
-package_upgrade: true
-packages:
-  - apt-transport-https
-  - ca-certificates
-  - curl
-  - wget
-  - gnupg-agent
-  - software-properties-common
-  - git
-
-runcmd:
-  - cd /opt
-  - bash -c "export CREATE_EASYSETUP_LINK='true';curl i.hiddify.com/release|bash"
-
-final_message: "The system is finally up, after $UPTIME seconds"
-output: { all: "| tee -a /root/cloud-init-output.log" }
-
-# you can see the generated link from the website by using https://yourip.sslip.io/hiddify in one hour, after that, it will be disappear. 
-```
-</div>
+{% include 'cloud_init.yml' %}
 
 ۳. در قسمت سرور تیک گزینه Enable Cloud-Init User-Data را بزنید و کد کپی شده را در آن قرار دهید. پس از حداکثر ۱۰ تا ۱۵ دقیقه پروکسی شما فعال خواهد بود.
 

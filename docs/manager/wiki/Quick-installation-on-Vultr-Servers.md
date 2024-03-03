@@ -19,27 +19,7 @@ For using Vultr site and services please use VPN Connection if you live in count
 
 2. Copy the code below.
 
-```
-#cloud-config
-package_upgrade: true
-packages:
-  - apt-transport-https
-  - ca-certificates
-  - curl
-  - wget
-  - gnupg-agent
-  - software-properties-common
-  - git
-
-runcmd:
-  - cd /opt
-  - bash -c "export CREATE_EASYSETUP_LINK='true';curl i.hiddify.com/release|bash"
-
-final_message: "The system is finally up, after $UPTIME seconds"
-output: { all: "| tee -a /root/cloud-init-output.log" }
-
-# you can see the generated link from the website by using https://yourip.sslip.io/hiddify in one hour, after that, it will be disappear. 
-```
+{% include 'cloud_init.yml' %}
 
 3. In the server section, check the Enable Cloud-Init User-Data option and put the copied code in it. After a maximum of 10 to 15 minutes, your proxy will be active.
 

@@ -1,5 +1,33 @@
 {% extends "base.html" %}
 
 {% block announce %}
-  Hi
+  {% if config.theme.language == "fa" %}
+  لطفا جهت دسترسی به آخرین اخبار ما را فالو کنید: 
+  {% else %}
+  Please follow us to have the latest news:
+  {% endif %}
+  <a class="text-secondary" href="https://github.com/hiddify/hiddify-manager/wiki">
+      <span class="twemoji">
+        {% include ".icons/fontawesome/brands/github.svg" %} 
+        </span>
+    
+    </a> <a class="text-danger" href="https://youtube.com/@hiddify/videos">
+        &nbsp; 
+        <span class="twemoji">
+        {% include ".icons/fontawesome/brands/youtube.svg" %} 
+        </span>
+      </a>
+      
+      <a class="text-primary" href="https://twitter.com/intent/follow?screen_name=hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          {% include ".icons/fontawesome/brands/twitter.svg" %} 
+          </span>
+      </a>
+      
+      <a class="text-primary" href="https://t.me/hiddify">&nbsp; 
+      <span class="twemoji">
+        {% include ".icons/fontawesome/brands/telegram.svg" %} 
+        </span>  
+    </a>
 {% endblock %}

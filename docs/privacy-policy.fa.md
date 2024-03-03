@@ -2,88 +2,92 @@
 title: حریم شخصی
 ---
 
-# Privacy Policy
 
-## Summary:
 
-We do not gather any information from you. This app need a private server from you and we do not provide any server.
+#### خلاصه:
 
-Crash Data is transmitted via Sentry (for HiddifyNext) or Crashlytics (for HiddifyNG) and Google Firebase without any sensitive data.
+ما هیچ اطلاعاتی از شما جمع آوری نمی‌کنیم. این برنامه نیاز به سرور خصوصی از جانب شما دارد و ما هیچ سروری فراهم نمی‌کنیم.
 
-# 1. Data Collection
+اطلاعات خطا از طریق Sentry (برای HiddifyNext) یا Crashlytics (برای HiddifyNG) و Google Firebase منتقل می‌شود بدون هیچ اطلاعات حساس.
 
-## 1.1 We do not Collect Sensitive Information
+#### ۱. جمع‌آوری داده‌ها
 
-We do not gather and even has access to the following information:
+#### ۱.۱. ما اطلاعات حساسی جمع آوری نمی‌کنیم
 
-- Names (including subscriber names, usernames, and screen names)
-- Addresses (residential and business)
-- Telephone numbers
-- Payment details (credit card numbers, bank account info, billing records)
-  We don’t store sensitive data and engineered systems avoid this.
+ما اطلاعات زیر را جمع نمی‌کنیم و حتی دسترسی به آن نداریم:
 
-No logs are collected on online activities such as:
+- نام (شامل نام‌های اشتراک‌گذاری، نام‌های کاربری و نام‌های صفحه)
+- آدرس‌ها (آدرس‌های اقامتی و تجاری)
+- شماره‌های تلفن
+- جزئیات پرداخت (شماره کارت اعتباری، اطلاعات حساب بانکی، سوابق صورتحساب)
+  ما اطلاعات حساس را ذخیره نمی‌کنیم و سیستم‌های مهندسی‌شده از این کار اجتناب می‌کنند.
 
-- Browsing history
-- Traffic destination
-- Data content
-- DNS queries
+هیچ گونه لاگی از فعالیت‌های آنلاین مانند:
 
-## 1.2 Data Collection
+- تاریخچه مرور
+- مقصد ترافیک
+- محتوای داده
+- کوئری‌های DNS
 
-This app need a private server from your side and we do not provide any server. So We do not gather any information from you.
-Crash Data is transmitted via Crashlytics and Google Firebase without any sensitive data.
+جمع‌آوری نمی‌شود.
 
-**What information can be sent to your private server that is setup by you or any others?**
-To add a the server link in your client, you need a subscription link. With the subscription link your server can access:
+#### ۱.۲. جمع‌آوری داده‌ها
 
-- Your IP Address
-- Your Hiddify version
+این برنامه نیاز به سرور خصوصی از جانب شما دارد و ما هیچ سروری فراهم نمی‌کنیم. بنابراین ما هیچ اطلاعاتی از شما جمع نمی‌کنیم.
+اطلاعات خطا از طریق Crashlytics و Google Firebase منتقل می‌شود بدون هیچ اطلاعات حساس.
 
-For your best experience, limited anonymous data can be collected in your server or any others, after your explicit permission.
+**چه اطلاعاتی می‌تواند به سرور خصوصی شما که توسط شما یا دیگران راه‌اندازی شده است، ارسال شود؟**
+برای اضافه کردن پیوند سرور به مشتری‌تان، نیاز به پیوند اشتراک دارید. با پیوند اشتراک، سرور شما می‌تواند دسترسی داشته باشد به:
 
-It includes the following:
+- آدرس IP شما
+- نسخه Hiddify شما
 
-- IP Address of the Client
-- Operation System Version
-- App Version
-- Connection Status (TCP ping)
+برای تجربه بهتر، داده‌های ناشناس محدود می‌تواند در سرور شما یا دیگران جمع آوری شود، بعد از اجازه صریح شما.
 
-## 1.3 App Permissions
+این شامل موارد زیر است:
 
-The app does not need any permissions to access your phone’s contacts, location, device id, storage, microphone, camera, etc.
+- آدرس IP مشتری
+- نسخه سیستم‌عامل
+- نسخه برنامه
+- وضعیت اتصال (پینگ TCP)
 
-# 2. Data Usage
+#### ۱.۳. مجوزهای برنامه
 
-Data is used for:
+برنامه هیچ مجوزی را برای دسترسی به مخاطبین تلفن، موقعیت، شناسه دستگاه، ذخیره‌سازی، میکروفون، دوربین و غیره نیاز ندارد.
 
-- We do no collect any data, so we do not use it :D
-- Crash Data is transmitted via Crashlytics and Google Firebase without any sensitive data.
+#### ۲. استفاده از داده‌ها
 
-# 3. Data Sharing and Transfer
+داده برای:
 
-We do not share any data with the any third parties.
+- ما هیچ داده‌ای را جمع آوری نمی‌کنیم، بنابراین از آن استفاده نمی‌کنیم :D
+- اطلاعات خطا از طریق Crashlytics و Google Firebase بدون هیچ داده‌های حساس منتقل می‌شود.
 
-# 4. Security Measures
+#### ۳. به اشتراک گذاشتن و انتقال داده
 
-Strong security measures implemented to protect data. Staff access limited.
+هیچ گونه داده‌ای را با هیچ طرف سومی به اشتراک نمی‌گذاریم.
 
-# 5. Data Retention
+#### ۴. اقدامات امنیتی
 
-We do no collect any data, so it is not related to us.
+اقدامات امنیتی قوی برای حفاظت از داده‌ها اجرا شده‌اند. دسترسی کارکنان محدود شده است.
 
-# 6. Right to Be Forgotten
+#### ۵. نگهداری داده‌ها
 
-We do no collect any data, so it is not related to us.
+ما هیچ داده‌ای را جمع آوری نمی‌کنیم، بنابراین این مورد مربوط به ما نیست.
 
-# 7. Third Party Services
+#### ۶. حق فراموشی
 
-Hiddify is designed to be used with your own deployed server. However, in case of using third party vpn services in our application, you should check their policies.
+ما هیچ
 
-# 8. Advertising
+ داده‌ای را جمع آوری نمی‌کنیم، بنابراین این مورد مربوط به ما نیست.
 
-We do not have any advertising
+#### ۷. خدمات طرف سوم
 
-# 9. Children’s Privacy
+Hiddify برای استفاده با سرور خودتان طراحی شده است. با این حال، در صورت استفاده از خدمات vpn طرف سوم در برنامه ما، باید سیاست‌های آن‌ها را بررسی کنید.
 
-Parents encouraged to teach children about online privacy.
+#### ۸. تبلیغات
+
+هیچ تبلیغی نداریم.
+
+#### ۹. حریم خصوصی کودکان
+
+والدین تشویق می‌شوند که کودکان را درباره حریم خصوصی آنلاین آموزش دهند.
