@@ -1,5 +1,5 @@
 <div dir="rtl" markdown=1>
-[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C-auto_cdn_ip-%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AD%D8%A7%D9%84%D8%AA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C-auto_cdn_ip-%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D8%AD%D8%A7%D9%84%D8%AA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 # Guide for using mode Auto_CDN_IP on Hiddify
@@ -16,7 +16,7 @@ To do this, go to the domains menu and click the create button. The following pa
 In the following, each part will be explained according to the numbers above.
 
 ## 1. Domain
-Here you enter your subdomain registered in Cloudflare. It is necessary to explain that the proxy must be turned on. If you need more information about domain registration, see [this link](https://github.com/hiddify/hiddify-config/wiki/Domain-types-and-how-to-register-them).
+Here you enter your subdomain registered in Cloudflare. It is necessary to explain that the proxy must be turned on. If you need more information about domain registration, see [this link](/manager/wiki/Domain-types-and-how-to-register-them).
 
 ## 2. Alias
 Using this field you can choose a custom name for this domain. Make sure that the chosen name is not already registered for other domains in the panel. It is better to use standard font characters (letters and numbers) for this field.

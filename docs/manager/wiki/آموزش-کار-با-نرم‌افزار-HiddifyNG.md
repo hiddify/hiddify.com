@@ -1,4 +1,4 @@
-[**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-HiddifyNG-app)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
+[**🇺🇸 English**](/manager/wiki/Tutorial-for-HiddifyNG-app)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
 
 <div dir="rtl" markdown=1>
@@ -145,7 +145,7 @@
 
 
 ### فرگمنت
-فرگمنت بسته‌های ارسالی را تکه تکه میکنه. اینطوری SNI از دید سیستم فیلترینگ مخفی میشه و فیلترینگ دور زده می‌شود. [اطلاعات بیشتر](https://github.com/hiddify/hiddify-config/wiki/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D9%81%D8%B1%DA%AF%D9%85%D9%86%D8%AA)
+فرگمنت بسته‌های ارسالی را تکه تکه میکنه. اینطوری SNI از دید سیستم فیلترینگ مخفی میشه و فیلترینگ دور زده می‌شود. [اطلاعات بیشتر](/manager/wiki/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D9%81%D8%B1%DA%AF%D9%85%D9%86%D8%AA)
 
 تنظیمات این بخش نحوه انتقال اطلاعات را در قالب بسته‌های تکه تکه شده تعیین می‌کند. هدف از اعمال این تنظیمات ایجاد مقاومت در برابر سیستم فیلترینگ است.
 

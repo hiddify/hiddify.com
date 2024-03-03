@@ -1,6 +1,6 @@
 <div dir="rtl" markdown="1">
 
-[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%DA%A9%D9%86%D8%AA%D8%B1%D9%84-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D8%B3%D8%B1%D9%88%D8%B1-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%DA%A9%D9%86%D8%AA%D8%B1%D9%84-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D8%B3%D8%B1%D9%88%D8%B1-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 
@@ -19,7 +19,7 @@ To know the status of your CPU and RAM usage, go to the dashboard section in the
 ## Resource control using the htop tool
 One of the tools that can be used to control resources in Linux servers is htop.
 
-- First, connect via [SSH to the server](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-to-server-via-SSH).
+- First, connect via [SSH to the server](/manager/wiki/How-to-connect-to-server-via-SSH).
 
 - and exit Hiddify menu by clicking `Cancel` or pressing `ctrl+c` keys at the same time. If the menu is still displayed after this, type the command `clear` and enter.
 
@@ -58,7 +58,7 @@ From this program, you can see the consumption of your server resources by each 
 bash /opt/hiddify-config/menu.sh
 
 ```
-- Select the `restart` option using the arrow keys (up and down) and wait until the services are restarted and exit the [Hiddify menu](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-and-troubleshoot-via-SSH) again and check `htop`.
+- Select the `restart` option using the arrow keys (up and down) and wait until the services are restarted and exit the [Hiddify menu](/manager/wiki/How-to-connect-and-troubleshoot-via-SSH) again and check `htop`.
 
 ## Free up RAM memory
 RAM memory is actually a temporary memory whose space is occupied by running services. Part of the memory is occupied by the operating system itself.

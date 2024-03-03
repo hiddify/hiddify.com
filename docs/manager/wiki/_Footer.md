@@ -9,11 +9,11 @@ The easiest way to support us is to click on the star (⭐) at the top of this p
 
 </div>
 
-We also need financial support for our services. All of our activities are done voluntarily and financial support will be spent on the development of the project. You can view our support addresses [here](https://github.com/hiddify/hiddify-config/wiki/support). 
+We also need financial support for our services. All of our activities are done voluntarily and financial support will be spent on the development of the project. You can view our support addresses [here](/manager/wiki/support). 
 
 <div dir="rtl" markdown="1">
 
-ما برای سرویس‌هایمان به کمک مالی هم نیاز داریم. تمامی فعالیت‌های ما به صورت داوطلبانه انجام می‌شود و حمایت‌های مالی صرف توسعه پروژه می‌شود. شما می توانید روش حمایت از این پروژه را از [اینجا](https://github.com/hiddify/hiddify-config/wiki/support) ملاحظه فرمایید.
+ما برای سرویس‌هایمان به کمک مالی هم نیاز داریم. تمامی فعالیت‌های ما به صورت داوطلبانه انجام می‌شود و حمایت‌های مالی صرف توسعه پروژه می‌شود. شما می توانید روش حمایت از این پروژه را از [اینجا](/manager/wiki/support) ملاحظه فرمایید.
 
 </div>
 

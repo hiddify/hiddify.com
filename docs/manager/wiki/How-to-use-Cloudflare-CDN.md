@@ -1,6 +1,6 @@
 <div dir="rtl" markdown="1">
 
-[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-CDN-%DA%A9%D9%84%D8%A7%D8%AF%D9%81%D9%84%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-CDN-%DA%A9%D9%84%D8%A7%D8%AF%D9%81%D9%84%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 
@@ -8,7 +8,7 @@
 Cloudflare is the largest provider of CDN services, which has several services that can be used to bypass Internet restrictions. The most important services are explained below.
 
 ## Site or domain service
-It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](https://github.com/hiddify/hiddify-config/wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain).
+It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain).
 
 ### Direct domain registration purchased on Cloudflare
 First, you register using [this link](https://dash.cloudflare.com/signup).
@@ -102,10 +102,10 @@ To do this, go to the SSL/TLS section of the Cloudflare site. A graph is display
 ![PICTURE](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
 
 ## Worker service
-To see details about this service, read [this article](https://github.com/hiddify/hiddify-config/wiki/How-to-set-up-and-use-Cloudflare-workers).
+To see details about this service, read [this article](/manager/wiki/How-to-set-up-and-use-Cloudflare-workers).
 
 ## Domain fronting service
-To see details about this service, read [this article](https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting).
+To see details about this service, read [this article](/manager/wiki/Guide-for-domain-fronting).
 
 This service is currently disabled in Cloudflare.
 

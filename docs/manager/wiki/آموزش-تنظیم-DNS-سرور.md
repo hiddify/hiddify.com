@@ -1,4 +1,4 @@
-[**🇺🇸 English**](https://github.com/hiddify/hiddify-config/wiki/How-to-set-DNS-server)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
+[**🇺🇸 English**](/manager/wiki/How-to-set-DNS-server)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
 
 <div dir="rtl" markdown=1>
 # آموزش تنظیم DNS سرور
@@ -31,7 +31,7 @@
 پنل به صورت خودکار سرور مربوط به کلادفلر را برای شما تنظیم کرده است و البته پیشنهاداتی نیز در پایین آن قرار داده است که می‌توانید آن‌ها را در صورت نیاز اعمال کنید.
 
 ## تنظیم DNS از طریق SSH
-اگر به هر دلیل مایل به استفاده از SSH برای انجام این تنظیمات بودید، [به سرور خود SSH بزنید](https://github.com/hiddify/hiddify-config/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) و سپس با `ctrl+c` از منوی هیدیفای خارج شوید.
+اگر به هر دلیل مایل به استفاده از SSH برای انجام این تنظیمات بودید، [به سرور خود SSH بزنید](/manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) و سپس با `ctrl+c` از منوی هیدیفای خارج شوید.
 
 * در محیط ترمینال این کامند را تایپ کنید تا تنظیمات DNS سرور با ویرایشگر متنی nano باز شود.
 

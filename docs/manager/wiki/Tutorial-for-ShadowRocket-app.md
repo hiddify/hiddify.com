@@ -1,5 +1,5 @@
 <div dir="rtl" markdown=1>
-[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-ShadowRocket)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-ShadowRocket)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
 
@@ -22,7 +22,7 @@ To do this, enter your user panel in the panel and enter the section specified f
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/61500b2d-2947-493e-8a9d-3d8f48cb5e7a" />
 </div>
 
-There are two options. You can choose the `Normal` config marked in orange or use the `Lite` config the green one. `Lite` config do not pass the traffic of domestic sites through the VPN, so when your VPN is active, you do not need to turn it off to go to domestic sites. On the other hand, the `Normal` configuration passes all the traffic through the VPN and. If the option to block domestic sites is enabled in the panel settings, these sites will not be opened, but if [WARP](https://github.com/hiddify/hiddify-config/wiki/How-to-activate-WARP-on-the-Hiddify-panel) is enabled, domestic sites will be opened using WARP.
+There are two options. You can choose the `Normal` config marked in orange or use the `Lite` config the green one. `Lite` config do not pass the traffic of domestic sites through the VPN, so when your VPN is active, you do not need to turn it off to go to domestic sites. On the other hand, the `Normal` configuration passes all the traffic through the VPN and. If the option to block domestic sites is enabled in the panel settings, these sites will not be opened, but if [WARP](/manager/wiki/How-to-activate-WARP-on-the-Hiddify-panel) is enabled, domestic sites will be opened using WARP.
 
 Finally, according to your need, click on one of the links and to transfer the link to the app, either you can use the copy option or scan the displayed QR code.
 

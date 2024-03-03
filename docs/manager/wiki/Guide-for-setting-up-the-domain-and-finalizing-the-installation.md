@@ -1,11 +1,11 @@
 <div dir="rtl" markdown=1>
-[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D9%86%D9%87%D8%A7%DB%8C%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86-%D9%86%D8%B5%D8%A8)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D9%86%D9%87%D8%A7%DB%8C%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86-%D9%86%D8%B5%D8%A8)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 # Guide for setting up the domain and finalizing the installation
-- [First step: Setting domain and subdomain](https://github.com/hiddify/hiddify-config/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#1-how-to-set-domain-and-subdomain)
-- [Second step: reach the admin page after installing the script](https://github.com/hiddify/hiddify-config/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#2-reaching-the-admin-page-after-installing-the-script)
-- [Step 3: Finalize the installation](https://github.com/hiddify/hiddify-config/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#step-3-finalize-the-installation)
+- [First step: Setting domain and subdomain](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#1-how-to-set-domain-and-subdomain)
+- [Second step: reach the admin page after installing the script](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#2-reaching-the-admin-page-after-installing-the-script)
+- [Step 3: Finalize the installation](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#step-3-finalize-the-installation)
 ***
 After [installing the script](https://github.com/hiddify/hiddify-config/wiki#installation-guide); You must finalize the installation. This is done in 3 steps. First you need to register a domain.
 
@@ -38,7 +38,7 @@ It is better to choose domains with these extensions:
 </div>
  - Copy the created subdomain.
 
-> These steps were only for direct domain if you want to know how to register other types of domain; Click [here](https://github.com/hiddify/hiddify-config/wiki/Domain-types-and-how-to-register-them).
+> These steps were only for direct domain if you want to know how to register other types of domain; Click [here](/manager/wiki/Domain-types-and-how-to-register-them).
 
 </details>
 
@@ -71,7 +71,7 @@ You will reach the admin page by opening one time link.
 </details>
 
 <details markdown="1"><summary><h3>2.2. Continue installing directly on Ubuntu</h3></summary>
-If you have used the installation method on Ubuntu; At the end of the installation, admin links will be generated in the terminal for you. Please make sure that the admin link is in the correct format. <a href="https://github.com/hiddify/hiddify-config/wiki/The-correct-format-of-admin-link">More information</a>
+If you have used the installation method on Ubuntu; At the end of the installation, admin links will be generated in the terminal for you. Please make sure that the admin link is in the correct format. <a href="/manager/wiki/The-correct-format-of-admin-link">More information</a>
 
 Open the link in the browser in order to enter the admin page.
 
@@ -82,9 +82,9 @@ When you open the admin page for the first time, quick installation settings wil
 
 ![Screenshot_20230330_114622](https://user-images.githubusercontent.com/125398461/228776688-61847f37-72de-4111-9287-a0a733e62126.png)
 
-Click the Submit button and then click `Apply Configs` to save the settings in the panel. [Go here](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#apply-configs) if you have a problem. If the changes are applied successfully; The panel is almost ready to use. 
+Click the Submit button and then click `Apply Configs` to save the settings in the panel. [Go here](/manager/wiki/How-to-configure-Hiddify-Panel-properly#apply-configs) if you have a problem. If the changes are applied successfully; The panel is almost ready to use. 
 
-For making the best use of this panel please view this [article](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly).
+For making the best use of this panel please view this [article](/manager/wiki/How-to-configure-Hiddify-Panel-properly).
 
 ### Reaching the connections for connecting to the proxy
 For this, go to the users section in the software menu. Click on the user link to reach that user's page.

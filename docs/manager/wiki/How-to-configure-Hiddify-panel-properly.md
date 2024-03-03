@@ -1,15 +1,15 @@
 <div dir="rtl" markdown=1>
-[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D9%86%D8%AD%D9%88%D9%87-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D9%86%D8%AD%D9%88%D9%87-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 # Table of contents
 
 ***
-* [Prerequisites](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#prerequisites)
-* [Getting started](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#getting-started)
-* [Quick installation](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#quick-installation)
-* [Dashboard](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#dashboard)
-* [Users](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#users)
+* [Prerequisites](/manager/wiki/How-to-configure-Hiddify-Panel-properly#prerequisites)
+* [Getting started](/manager/wiki/How-to-configure-Hiddify-Panel-properly#getting-started)
+* [Quick installation](/manager/wiki/How-to-configure-Hiddify-Panel-properly#quick-installation)
+* [Dashboard](/manager/wiki/How-to-configure-Hiddify-Panel-properly#dashboard)
+* [Users](/manager/wiki/How-to-configure-Hiddify-Panel-properly#users)
 * [Admins](#admins)
 * [Settings](#settings)
   - Domains
@@ -53,14 +53,14 @@ Before starting the configuration, it is necessary to explain that this panel is
 
 ## prerequisites
 ### The server's IP is clean
-You have chosen a server whose IP is clean. To be sure of this issue, read how to [test the IP of server](https://github.com/hiddify/hiddify-config/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean). If it is determined after the test that the IP is not clean; You need to change your IP server.
+You have chosen a server whose IP is clean. To be sure of this issue, read how to [test the IP of server](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean). If it is determined after the test that the IP is not clean; You need to change your IP server.
 
 ### The panel is installed correctly
-You have successfully installed the panel using the methods mentioned in the [installation guide](https://github.com/hiddify/Hiddify-Manager/wiki/All-tutorials-and-videos#-contents-related-to-installation-and-setup) and you have received admin links. These links include the admin address and password. For more information about the correct format of the admin link, read [this article](https://github.com/hiddify/hiddify-config/wiki/The-correct-format-of-admin-link).
+You have successfully installed the panel using the methods mentioned in the [installation guide](https://github.com/hiddify/Hiddify-Manager/wiki/All-tutorials-and-videos#-contents-related-to-installation-and-setup) and you have received admin links. These links include the admin address and password. For more information about the correct format of the admin link, read [this article](/manager/wiki/The-correct-format-of-admin-link).
 
 
 ### The domain is registered and accessible
-Before configuring the panel, you must have a registered domain. If you are wondering about domain types and their registration ways, click [here](https://github.com/hiddify/hiddify-config/wiki/Domain-types-and-how-to-register-them). You should also make sure that the registered domain is accessible. [how to test](https://github.com/hiddify/hiddify-config/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean)
+Before configuring the panel, you must have a registered domain. If you are wondering about domain types and their registration ways, click [here](/manager/wiki/Domain-types-and-how-to-register-them). You should also make sure that the registered domain is accessible. [how to test](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean)
 
 ## Getting started
 * If you have used the quick installation links for famous data centers such as Vultr, OVH etc; At the end after about 10 minutes, a one-time link will be generated for you, by which you will reach the admin page.
@@ -78,7 +78,7 @@ Here is a parameter that is very critical; Enter your registered domain in the s
 
 ![](https://user-images.githubusercontent.com/125398461/236670372-500351a3-d829-4665-af29-651451f45c2d.png)
 
-Then click apply changes for saving configurations. If you face with a problem, [Go here](https://github.com/hiddify/hiddify-config/wiki/How-to-configure-Hiddify-Panel-properly#apply-configs). If the changes are applied successfully; The panel is almost ready to use, but it is recommended to read the following contents till the end so that you can take the maximum advantages of this panel.
+Then click apply changes for saving configurations. If you face with a problem, [Go here](/manager/wiki/How-to-configure-Hiddify-Panel-properly#apply-configs). If the changes are applied successfully; The panel is almost ready to use, but it is recommended to read the following contents till the end so that you can take the maximum advantages of this panel.
 
 
 
@@ -135,9 +135,9 @@ There are several admin types:
 
 Note:
 
-> The admin password is also available in the admin page link, which changes the address of the panel completely. To see more information about the correct format of the admin link, click [here](https://github.com/hiddify/hiddify-config/wiki/The-correct-format-of-admin-link)
+> The admin password is also available in the admin page link, which changes the address of the panel completely. To see more information about the correct format of the admin link, click [here](/manager/wiki/The-correct-format-of-admin-link)
 
-Also, on the page of all tutorials on the wiki, you can see the tutorials on how to use client apps based on the OS type [here](https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos#-contents-related-to-client-software-on-android).
+Also, on the page of all tutorials on the wiki, you can see the tutorials on how to use client apps based on the OS type [here](/manager/wiki/All-tutorials-and-videos#-contents-related-to-client-software-on-android).
 
 
 <details><summary><h2>Settings</h2></summary>
@@ -183,14 +183,14 @@ Pay attention:
 
  >If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field. If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field. In the forced to use host field , it is suggested to use a normal domain record (without proxy). In this way, panel settings and configurations remain constant. When changing a new clean IP, it is enough to update the desired DNS record with the new IP (for example, in Cloudflare).
 
->If you need more information about how to find clean Cloudflare IPs, read [this article](https://github.com/hiddify/hiddify-config/wiki/Guide-for-finding-a-clean-Cloudflare-IP).
+>If you need more information about how to find clean Cloudflare IPs, read [this article](/manager/wiki/Guide-for-finding-a-clean-Cloudflare-IP).
 
 >In the domain configuration display field , you can specify which domains users who view the user panel with this domain should see.
 
 </details>
 
 <details><summary><h4>Automatic CDN IP Selector or AUTO_CDN_IP domain</h4></summary>
-Due to the long and detailed description of this mode; You can read [this article](https://github.com/hiddify/hiddify-config/wiki/Guide-for-using-mode-Auto_CDN_IP-in-Hidify) to learn how to set it up.
+Due to the long and detailed description of this mode; You can read [this article](/manager/wiki/Guide-for-using-mode-Auto_CDN_IP-in-Hidify) to learn how to set it up.
 
 </details>
 
@@ -226,12 +226,12 @@ For view more information about this domain, please view [this article](https://
 
 <details><summary><h4>Reality domain</h4></summary>
 
-For view more information about this domain, please view [this article](https://github.com/hiddify/hiddify-config/wiki/How-to-use-Reality-on-Hiddify).
+For view more information about this domain, please view [this article](/manager/wiki/How-to-use-Reality-on-Hiddify).
 
 </details>
 
 <details><summary><h4>Cloudflare worker domain</h4></summary>
-Read this [article](https://github.com/hiddify/hiddify-config/wiki/How-to-use-the-Cloudflare-worker-domain-on-Hiddify) in this regard
+Read this [article](/manager/wiki/How-to-use-the-Cloudflare-worker-domain-on-Hiddify) in this regard
 </details>
 
 > If you use several domains and also a large number of users connect to the panel and you need to assign a specific domain to each user; It is recommended to read [this topic]
@@ -326,7 +326,7 @@ In this section, you can make specific proxy settings.
 * You can choose browser fingerprint emulation from Chrome, Android, Safari and Firefox options.
 
 #### domain Fronting
-This option is used to simulate another website instead of your website in SNI. Therefore, the filtering system cannot detect packets whose main destination is your domain, but fakely pretends to be sent to another destination, and as a result, it can be bypassed. This option may not work on all networks. [more information](https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting)
+This option is used to simulate another website instead of your website in SNI. Therefore, the filtering system cannot detect packets whose main destination is your domain, but fakely pretends to be sent to another destination, and as a result, it can be bypassed. This option may not work on all networks. [more information](/manager/wiki/Guide-for-domain-fronting)
 
 <img width="581" src="https://user-images.githubusercontent.com/125398461/236684655-3d8c0123-c66a-44ae-8e83-599b8f8720da.png">
 
@@ -424,10 +424,10 @@ This is especially important when you use proxies with lower security (http and 
 This is done automatically by the panel, but you can change it if you want
 
 #### WARP
-If you need to get some information related to enabling WARP on Hiddify, read [this link](https://github.com/hiddify/hiddify-config/wiki/How-to-activate-WARP-on-the-Hiddify-panel).
+If you need to get some information related to enabling WARP on Hiddify, read [this link](/manager/wiki/How-to-activate-WARP-on-the-Hiddify-panel).
 
 #### Reality
-For view more information about this protocol, please view [this article](https://github.com/hiddify/hiddify-config/wiki/How-to-use-Reality-on-Hiddify).
+For view more information about this protocol, please view [this article](/manager/wiki/How-to-use-Reality-on-Hiddify).
 
 </details>
 
@@ -480,7 +480,7 @@ Important points related to applying changes:
 
     When the changes are applied, a green message will appear indicating that the operation was successful. If for any reason this message does not appear; And the panel won't open anymore; Use the emergency link to access the server.
 
-    If you have lost the emergency link, you should solve the problem through ssh. [more information](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-and-troubleshoot-via-SSH)
+    If you have lost the emergency link, you should solve the problem through ssh. [more information](/manager/wiki/How-to-connect-and-troubleshoot-via-SSH)
 
 <img width="371" src="https://user-images.githubusercontent.com/125398461/236685271-67ab8704-b3f2-4f08-970d-bf4dceab5ff3.png">
 
@@ -518,7 +518,7 @@ After performing this operation, because the system will be restarted once; The 
 
 
 ## Help
-Through [this link](https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos), you will have access to categorized content and all tutorials and videos.
+Through [this link](/manager/wiki/All-tutorials-and-videos), you will have access to categorized content and all tutorials and videos.
 
 
 

@@ -1,5 +1,5 @@
 <div dir=rtl markdown=1>
-[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-DNS-%D8%B3%D8%B1%D9%88%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-DNS-%D8%B3%D8%B1%D9%88%D8%B1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 
 </div>
 
@@ -30,7 +30,7 @@ To do this, go to the panel settings and in the general settings section, put th
 The panel has automatically set the Cloudflare server for you, and of course, it has also put suggestions at the bottom that you can apply if needed.
 
 ## Setting DNS server via SSH
-If for any reason you wanted to use SSH to do this setup, [connect to your server via SSH](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-to-server-via-SSH) and then press `ctrl+c` to exit the Hiddify menu.
+If for any reason you wanted to use SSH to do this setup, [connect to your server via SSH](/manager/wiki/How-to-connect-to-server-via-SSH) and then press `ctrl+c` to exit the Hiddify menu.
 * In the terminal environment, type this command to open the DNS server settings with the nano text editor.
 
 ```

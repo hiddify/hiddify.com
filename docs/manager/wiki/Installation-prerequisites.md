@@ -1,6 +1,6 @@
 <div dir="rtl" markdown="1">
 
-[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-config/wiki/%D9%BE%DB%8C%D8%B4-%D9%86%DB%8C%D8%A7%D8%B2%D9%87%D8%A7%DB%8C-%D9%86%D8%B5%D8%A8)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
+[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D9%BE%DB%8C%D8%B4-%D9%86%DB%8C%D8%A7%D8%B2%D9%87%D8%A7%DB%8C-%D9%86%D8%B5%D8%A8)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
 </div>
 
 
@@ -22,7 +22,7 @@ Before installation, you need a series of prerequisites:
   - 10 GB Storage
 - The operating system of this virtual server must be Ubuntu 22.04. Ubuntu is a distribution of Linux operating system whose logo is like this. ![](https://img.shields.io/badge/Ubuntu--E95420?style=flat-square&logo=ubuntu)
 
-- Then if you need to connect to your server via SSH please visit [this link](https://github.com/hiddify/hiddify-config/wiki/How-to-connect-to-server-via-SSH) for more information.
+- Then if you need to connect to your server via SSH please visit [this link](/manager/wiki/How-to-connect-to-server-via-SSH) for more information.
 
 - To increase the security of your server when SSH, read these two articles:
   - [Disable SSH Password Authentication](https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-Authentication)
