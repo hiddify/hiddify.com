@@ -58,3 +58,23 @@ sudo bash -c "apt update; apt install -y curl; bash <(curl -sSL https://raw.gith
 ```
 
 * After installation, just restore your backup. [Read more...](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-backup-and-restore-panel-on-Hiddify#restoring-backup-file)
+
+## Install the desired version
+It is possible to install a custom version. Just follow the instructions below.
+
+
+```
+bash <(curl i.hiddify.com/vVERSION)
+```
+
+Here, instead of VERSION, you should enter the desired version. Suppose you want to install version `8`. Just execute the following command to install the latest version `8` for you.
+
+```
+bash <(curl i.hiddify.com/v8)
+```
+
+From version 10, you can install exactly one specific update. For example, to install `10.7.0` version, just use the following command.
+
+```
+bash <(curl i.hiddify.com/v10.7.0)
+```
