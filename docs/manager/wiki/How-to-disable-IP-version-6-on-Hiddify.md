@@ -1,7 +1,4 @@
-<div dir="rtl" markdown="1">
 
-[**![flag_of_Iran](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AE%D8%A7%D9%85%D9%88%D8%B4-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A2%DB%8C%D9%BE%DB%8C-%D9%88%D8%B1%DA%98%D9%86-%DB%B6-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
-</div>
 
 # How to disable IP version 6 on Hiddify
 IP version 6 is a new IP structure that was introduced after IP version 4. This structure is 64 bits and contains 6 sections of 4 hex characters. Hex is based on 16 numbers.

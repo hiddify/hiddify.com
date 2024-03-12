@@ -1,8 +1,3 @@
-<div dir="rtl" markdown=1>
-
-[**![Lang_Farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/Hiddify-Manager/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7)
-</div>
-
 # 🎥 📚 All tutorials and videos
 
 In this article, we put categorized content of Wiki. In addition to the fact that you can click on the links of each article to reach the full explanations of them, there are some videos for these items on our [YouTube channel](https://www.youtube.com/@hiddify/videos), which you can view by clicking on the images below.

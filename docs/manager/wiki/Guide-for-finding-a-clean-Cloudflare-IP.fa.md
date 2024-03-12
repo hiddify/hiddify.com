@@ -1,4 +1,4 @@
-[**🇺🇸 English**](/manager/wiki/Guide-for-finding-a-clean-Cloudflare-IP)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
+
 
 <div dir="rtl" markdown=1>
 # چگونگی یافتن آیپی تمیز کلادفلر

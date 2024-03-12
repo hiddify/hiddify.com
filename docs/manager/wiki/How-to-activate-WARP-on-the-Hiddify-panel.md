@@ -1,6 +1,4 @@
-<div dir="rtl" markdown=1>
-[**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](/manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C-%D9%88%D8%A7%D8%B1%D9%BE-%D8%AF%D8%B1-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/All-tutorials-and-videos"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
-</div>
+
 
 # How to activate WARP on the Hiddify panel
 Many websites, including Google, restrict the access of users through VPN. Because several different connections go from the same IP to Google's server at the same time, this behavior is similar to cyber malicious behavior, and because of this, the connection is disrupted, and Google gives a 403 error, for example. Other websites do not allow communication and use of the service. Here is one way to solve the problem using Cloudflare's WARP service.

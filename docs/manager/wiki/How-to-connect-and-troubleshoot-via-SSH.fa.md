@@ -1,4 +1,4 @@
-[**🇺🇸 English**](/manager/wiki/How-to-connect-and-troubleshoot-via-SSH)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manager/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
+
 
 <div dir="rtl" markdown=1>
 <details markdown="1"> <summary><h1> پیش نیاز: نصب ssh در ویندوز</h1> (کلیک کنید)</summary>
