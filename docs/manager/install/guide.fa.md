@@ -25,13 +25,7 @@
 <div dir="ltr" markdown="1">
 
 ```
-curl https://install.hiddify.com/release |bash
-```
-
-اگر دستور قبلی با مشکل مواجه شد، از دستور زیر استفاده کنید
-
-```
-sudo apt update&&sudo apt install -y curl&& curl -sSL https://raw.githubusercontent.com/hiddify/hiddify-manager/main/common/download.sh | sudo bash -s release
+bash <(curl i.hiddify.com/release)
 ```
 
 </div>
