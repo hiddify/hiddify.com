@@ -1,6 +1,7 @@
-
+<div dir="ltr" markdown="1">
 
 # Tutorial for V2rayNG app
+
 This app is a good app to connect to Xray based configs and replace [HiddifyNG](/manager/wiki/Tutorial-for-HiddifyNG-app) app.
 
 ## Download the app

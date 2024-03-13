@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # What is the fragment and how does it work?
 Normally, when you want to send a request to open sites and apps to the Internet, SNI may be detected by the filtering system. SNI or server name is actually the main destination of the sent packets that we try to keep hidden from the filtering system with different protocols. But many times it can be detected for various reasons, including the use of weak SNI protocols.

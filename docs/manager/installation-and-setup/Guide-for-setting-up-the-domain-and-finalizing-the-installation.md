@@ -1,3 +1,4 @@
+<div dir="ltr" markdown="1">
 
 # Guide for setting up the domain and finalizing the installation
 - [First step: Setting domain and subdomain](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation#1-how-to-set-domain-and-subdomain)

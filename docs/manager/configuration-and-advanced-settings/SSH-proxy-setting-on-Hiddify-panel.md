@@ -1,6 +1,7 @@
+<div dir="ltr" markdown="1">
 
 
-# SSH proxy setting on Hiddify panel
+# SSH proxy setting on Hiddify Manager
 
 As you know, in version 8 of the Hiddify panel, a proxy for the SSH service has been created, which does not have any access to the server and can only be used as a proxy. This proxy is completely secure and has no fingerprints for identification. (except the SSH protocol itself, which is in general use)
 

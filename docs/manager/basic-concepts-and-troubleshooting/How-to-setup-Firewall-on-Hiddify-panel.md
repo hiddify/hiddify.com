@@ -1,7 +1,7 @@
-
-
+<div dir="ltr" markdown="1">
 
 # How to setup Firewall on Hiddify panel
+
 ## What is a firewall?
 
 Firewall refers to software or hardware that prevent access to computers or servers and control the traffic exchanged in the network. A firewall is actually a security tool that can be a software program or a dedicated network device. Here we are dealing with software firewall on Linux servers.

@@ -1,3 +1,6 @@
+<div dir="ltr" markdown="1">
+
+
 # How to configure Hiddify Manager properly
 
 # Table of contents

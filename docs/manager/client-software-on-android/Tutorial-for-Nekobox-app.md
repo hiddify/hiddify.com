@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # Tutorial for Nekobox app
 This application is one of the applications that can be used for Android, which works relatively well for old devices.

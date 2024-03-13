@@ -1,4 +1,5 @@
 
+<div dir="ltr" markdown="1">
 
 # Tutorial for Stash app
 This program is written based on Clash for iOS and must be purchased to use it.

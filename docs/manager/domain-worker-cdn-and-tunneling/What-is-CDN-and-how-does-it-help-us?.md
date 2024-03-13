@@ -1,3 +1,4 @@
+<div dir="ltr" markdown="1">
 
 
 # What is CDN and how does it help us?

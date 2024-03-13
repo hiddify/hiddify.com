@@ -1,7 +1,7 @@
-
-
+<div dir="ltr" markdown="1">
 
 # How to make sure the server's IP or domain is clean
+
 ## 1. Using the site Check-Host
 First, check the server's IP or domain on the Check-Host site.
 

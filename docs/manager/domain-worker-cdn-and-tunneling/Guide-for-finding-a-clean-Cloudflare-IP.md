@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # Guide for finding a clean Cloudflare IP
 The largest CDN service provider in the world is Cloudflare, and you probably know; Due to the severe filtering of the Internet in Iran, there is a lot of disruption to its services because it is not possible for the filter to completely filter it, but it can cause disruption.

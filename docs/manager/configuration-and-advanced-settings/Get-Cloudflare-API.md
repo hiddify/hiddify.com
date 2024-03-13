@@ -1,3 +1,4 @@
+<div dir="ltr" markdown="1">
 
 # Get Cloudflare API
 

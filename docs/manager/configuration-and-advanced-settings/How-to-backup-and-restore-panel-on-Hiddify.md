@@ -1,3 +1,4 @@
+<div dir="ltr" markdown="1">
 
 
 # How to backup and restore panel on Hiddify

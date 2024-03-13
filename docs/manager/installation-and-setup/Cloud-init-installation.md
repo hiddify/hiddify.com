@@ -1,3 +1,6 @@
+<div dir="ltr" markdown="1">
+
+
 # Cloud-init installation
 
 This section is suitable for hosting that supports cloud config

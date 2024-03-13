@@ -1,3 +1,5 @@
+<div dir="ltr" markdown="1">
+
 # Basic concepts
 Because some of the concepts used in the contents of this wiki and also the world of proxies may be unfamiliar to many people; In this article, we try to explain these things in simple language.
 

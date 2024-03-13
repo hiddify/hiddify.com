@@ -1,3 +1,5 @@
+<div dir="ltr" markdown="1">
+
 # Domain types
 
 ## Direct domain

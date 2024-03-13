@@ -1,5 +1,4 @@
-
-
+<div dir="ltr" markdown="1">
 
 # How to transfer files between a server and a computer
 Many times you need to transfer files to/from server. For example, you want to remove the backup file or import a file from your system to the server. There are several methods for this.

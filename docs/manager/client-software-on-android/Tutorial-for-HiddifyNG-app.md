@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyNG app
 This app is the best software for connecting to Xray protocols on Android operating system.

@@ -1,7 +1,5 @@
-
-
-
 <div dir=rtl markdown=1>
+
 # آموزش کار با نرم‌افزار HiddifyClashAndroid
 
 <!--

@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # Guide for domain fronting
 Domain Frontig is one of the CDN services that can be used to bypass the filtering system. For example, what the GFW system sees is discord.com, but by using the host field, we set the main destination of the internet packets to our own server, and in this way, the filtering system is bypassed.

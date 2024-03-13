@@ -1,3 +1,4 @@
+<div dir="ltr" markdown="1">
 
 
 # How to use GCore CDN on Cloudflare registered domain

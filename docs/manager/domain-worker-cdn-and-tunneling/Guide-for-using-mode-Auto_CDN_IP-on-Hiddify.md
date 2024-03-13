@@ -1,3 +1,4 @@
+<div dir="ltr" markdown="1">
 
 
 # Guide for using mode Auto_CDN_IP on Hiddify

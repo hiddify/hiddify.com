@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # TLS setting for increased security
 Due to the intensity of filtering and the ability to detect patterns of Internet packets on TLS-based protocols, it is necessary to devise measures that prevent this. Here are some solutions for this issue.

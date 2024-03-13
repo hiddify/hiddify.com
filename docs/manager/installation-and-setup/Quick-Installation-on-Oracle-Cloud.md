@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # Quick Installation on Oracle Cloud
 If you do not have an Oracle account, the following video explains how to setup from zero to hero Hiddify on Oracle. If you are abroad, you can also need to enter real information and a credit card. This video is in Farsi and if you watch the steps you can handle that. Although We are considering making some English videos for non-Persian people, till then you can visit this or follow the instructions in this article.

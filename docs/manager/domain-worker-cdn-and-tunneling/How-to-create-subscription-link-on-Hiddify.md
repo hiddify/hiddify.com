@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # How to create subscription link on Hiddify
 Hiddify is based on the principle of reducing the possibility of server filtering as much as possible. One of the practical ways in this field is to separate the configs from the subscription links. In this case, your client will always receive the latest configuration information through the subscription link. The schematic related to this work is as follows.

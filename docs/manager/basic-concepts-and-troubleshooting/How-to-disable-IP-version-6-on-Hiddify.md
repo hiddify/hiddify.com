@@ -1,4 +1,4 @@
-
+<div dir="ltr" markdown="1">
 
 # How to disable IP version 6 on Hiddify
 IP version 6 is a new IP structure that was introduced after IP version 4. This structure is 64 bits and contains 6 sections of 4 hex characters. Hex is based on 16 numbers.
