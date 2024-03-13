@@ -1,5 +1,3 @@
-[**🇺🇸 English**](https://github.com/hiddify/hiddify-next/wiki/How-to-contribute-to-this-project)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-next/wiki/Home_fa"><img width="100" src="https://github.com/hiddify/hiddify-next/assets/125398461/359c37d8-4007-4cd3-a66e-595105e19085" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://github.com/hiddify/hiddify-config/assets/125398461/3704cd84-eee6-4c45-abe7-3c02936bbebb" /></a>
-
 <div dir="rtl">
 
 # چگونه می‌توان در این پروژه همکاری نمود

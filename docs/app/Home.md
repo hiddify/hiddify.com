@@ -1,8 +1,3 @@
-<div dir="rtl" markdown="1">
-
-[**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) &nbsp;فارسی**](https://github.com/hiddify/hiddify-next/wiki/Home_fa)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/Hiddify-Manager/wiki/All-tutorials-and-videos"><img width="100" alt="All_Tutorials" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/8ac5b906-105c-4b98-acf5-0e12e39e33f6" /></a>
-</div>
-<br>
 <div align=center markdown="1">
 
 <p align="center"><img src="https://github.com/hiddify/hiddify-next/blob/main/assets/images/logo.svg" width="168"/></p>
