@@ -1,4 +1,5 @@
 
+<div dir="ltr" markdown="1">
 
 # Quick installation on Ubuntu
 
