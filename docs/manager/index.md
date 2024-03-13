@@ -1,11 +1,12 @@
 ---
-description: Welcome to the wiki page for the Hiddify project.
+description: Welcome to the wiki page for HiddifyManager
 title: Manager Docs
 comments: false
 weight: -2
 ---
 
-
+# All tutorials and videos
+In this page, we put categorized content of tutorials and documents. In addition to the fact that you can click on the links of each article to reach out the full explanations of them, there are some videos for these items on our [YouTube channel](https://www.youtube.com/@hiddify/videos), which you can watch by clicking on the images below.
 
 
 
@@ -24,41 +25,41 @@ weight: -2
 
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
-        <a href="/manager/wiki/Installation-prerequisites" target="_blank">Installation prerequisites</a>
+        <a href="/manager/installation-and-setup/Installation-prerequisites" target="_blank">Installation prerequisites</a>
     </li>
     <li>
-        <a href="/manager/wiki/How-to-connect-to-server-via-SSH" target="_blank">How to connect to server via SSH</a>
+        <a href="/manager/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">How to connect to server via SSH</a>
     </li>
     <li>
-        <a href="/manager/wiki/Quick-installation-on-Hetzner-Servers" target="_blank">Hetzner Servers quick installation</a>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">Hetzner Servers quick installation</a>
     </li>
     <li>
-        <a href="/manager/wiki/Quick-installation-on-Vultr-Servers" target="_blank">Vultr Servers quick installation</a>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Vultr Servers quick installation</a>
     </li>
     <li>
-        <a href="/manager/wiki/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick installation on Oracle Cloud</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick installation on Oracle Cloud</a>
     </li>
     <li>
-        <a href="/manager/wiki/Quick-Installation-on-OVH-Servers" target="_blank">Quick installation on OVH Servers</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">Quick installation on OVH Servers</a>
     </li>
 
     <div class="hidden">
         <li>
-        <a href="/manager/wiki/Quick-Installation-on-Microsoft-Azure" target="_blank">Quick installation on Microsoft Azure</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">Quick installation on Microsoft Azure</a>
         </li>
         <li>
-        <a href="/manager/wiki/Cloud-init-installation" target="_blank">Cloud-init installation</a>
+        <a href="/manager/installation-and-setup/Cloud-init-installation" target="_blank">Cloud-init installation</a>
         </li>
         <li>
-        <a href="/manager/wiki/Quick-Installation-On-Ubuntu" target="_blank">Quick installation on Ubuntu</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-On-Ubuntu" target="_blank">Quick installation on Ubuntu</a>
         </li>
         <li>
-        <a href="/manager/wiki/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">
+        <a href="/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">
             Guide for setting up the domain and finalizing the installation
         </a>
         </li>
         <li>
-        <a href="/manager/wiki/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">How to install different versions of Hiddify Manager</a>
+        <a href="/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">How to install different versions of Hiddify Manager</a>
         </li>
     </div>
     </ul>
