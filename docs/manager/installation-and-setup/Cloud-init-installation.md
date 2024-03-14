@@ -1,5 +1,6 @@
 ---
 title: Easy installation through the data center (Cloud-init)
+comments: flase
 ---
 
 <div dir="ltr" markdown="1">
