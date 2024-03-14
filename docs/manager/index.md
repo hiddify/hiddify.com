@@ -15,7 +15,7 @@ In this page, we put categorized content of tutorials and documents. In addition
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"></div>
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"></div>
 
-## How to install Hiddify
+## How to install HiddifyManager
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
@@ -348,7 +348,7 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
         <li>
         <a target="_blank" href="/manager/wiki/Disable-SSH-Password-Authentication">
-            Disabling SSH Password Authentication on SSH
+            Disable SSH Password Authentication on SSH
         </a>
         </li>
         <li>
