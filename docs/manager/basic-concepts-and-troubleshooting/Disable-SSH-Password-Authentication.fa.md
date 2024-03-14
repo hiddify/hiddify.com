@@ -1,3 +1,6 @@
+---
+title: غیرفعال کردن دسترسی با پسورد در SSH
+---
 
 <div dir=rtl markdown=1>
 

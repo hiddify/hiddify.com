@@ -1,3 +1,7 @@
+---
+title: Disable SSH Password Authentication on SSH
+---
+
 <div dir="ltr" markdown="1">
 
 ## Disable SSH Password Authentication
