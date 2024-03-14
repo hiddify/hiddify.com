@@ -4,5 +4,3 @@ title: Client software on android
 comments: false
 weight: -40
 ---
-
-# Client software on android

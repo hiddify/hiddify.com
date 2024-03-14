@@ -4,5 +4,3 @@ title: Basic concepts and troubelshooting
 comments: false
 weight: -50
 ---
-
-# Basic concepts and troubelshooting

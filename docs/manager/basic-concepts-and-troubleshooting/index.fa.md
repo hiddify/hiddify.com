@@ -5,5 +5,4 @@ comments: false
 weight: -50
 ---
 
-# مفاهیم پایه و عیب‌یابی
 
