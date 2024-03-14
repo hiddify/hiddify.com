@@ -1,12 +1,15 @@
+---
+description: پشتیبانی و حمایت مالی
+title: پشتیبانی و حمایت مالی
+comments: false
+weight: -8
+---
+
 <div align="center" markdown="1">
 
-#  Donation  حمایت مالی
+# پشتیبانی و حمایت مالی
 </div>
 
-<div dir="ltr" markdown=1>
-We need financial support for our services. All of our activities are done voluntarily and financial support will be spent on the development of the project. You can make your financial support through one of the following addresses.
-
-</div>
 
 <div dir="rtl" markdown=1>
 ما برای سرویس‌هایمان به کمک مالی نیاز داریم. تمامی فعالیت‌های ما به صورت داوطلبانه انجام می‌شود و حمایت‌های مالی صرف توسعه پروژه می‌شود. شما می توانید حمایت مالی خود را از طریق یکی از آدرس‌های زیر انجام دهید.
