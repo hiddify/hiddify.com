@@ -4,5 +4,3 @@ title: نصب و راه‌اندازی
 comments: false
 weight: -80
 ---
-
-# نصب و راه‌اندازی
