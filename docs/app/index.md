@@ -1,5 +1,5 @@
 ---
-description: Welcome to the wiki page for the Hiddify project.
+description: Welcome to the wiki page for Hiddify App.
 title: App Docs
 weight: -1
 comments: false
@@ -9,7 +9,7 @@ comments: false
 
     
 
-## HiddifyNext App
+## Hiddify App
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
