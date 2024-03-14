@@ -2,7 +2,7 @@
 description: مطالب مرتبط با نصب و راه‌اندازی
 title: نصب و راه‌اندازی
 comments: false
-weight: -1
+weight: -80
 ---
 
 # نصب و راه‌اندازی
