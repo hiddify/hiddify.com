@@ -1,3 +1,7 @@
+---
+title: نصب آسان از طریق دیتاسنتر (Cloud-init)
+---
+
 <div dir="rtl" markdown=1>
 # نصب آسان از طریق دیتاسنتر (Cloud-init)
 

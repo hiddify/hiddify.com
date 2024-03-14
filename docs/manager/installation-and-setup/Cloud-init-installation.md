@@ -1,5 +1,8 @@
-<div dir="ltr" markdown="1">
+---
+title: Easy installation through the data center (Cloud-init)
+---
 
+<div dir="ltr" markdown="1">
 
 # Easy installation through the data center (Cloud-init)
 
