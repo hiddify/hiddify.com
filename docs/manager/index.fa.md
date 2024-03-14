@@ -2,7 +2,7 @@
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای منیجر
 comments: false
-weight: -2
+weight: -90
 ---
 ## :material-home: خانه
 

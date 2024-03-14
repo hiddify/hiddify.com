@@ -1,7 +1,7 @@
 <div dir="ltr" markdown="1">
 
 
-# Cloud-init installation
+# Easy installation through the data center (Cloud-init)
 
 This section is suitable for hosting that supports cloud config
 Copy and paste this code into the appropriate field

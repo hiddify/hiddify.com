@@ -2,7 +2,7 @@
 description: Welcome to the wiki page for HiddifyManager
 title: Manager Docs
 comments: false
-weight: -2
+weight: -90
 ---
 
 # All tutorials and videos
