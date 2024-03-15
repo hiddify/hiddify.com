@@ -7,17 +7,14 @@ comments: false
 
 # App Docs
 
-    
-
 ## Hiddify App
+
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-197.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
@@ -27,15 +24,15 @@ comments: false
         <a href="https://github.com/hiddify/hiddify-next/wiki/How-to-use-HiddifyNext-app" target="_blank">How to use HiddifyNext app</a>
     </li>
     </ul>
+
 </div>
 </div>
 
 ## Client software on Android
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-196.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
@@ -54,9 +51,10 @@ comments: false
         <a href="/manager/wiki/Tutorial-for-Nekobox-app" target="_blank">Tutorial for Nekobox app</a>
     </li>
     </ul>
+
 </div>
 
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto overflow-y-scroll">
+<div class="lg:border-l lg:border-gray-500 lg:p-4 lg:ml-auto overflow-y-scroll">
 <h4 class="text-md">Related videos</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ" target="_blank">
@@ -80,16 +78,11 @@ comments: false
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"></div>
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"></div>
 
-
-
-
-
 ## Contents related to client software on iOS
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-199.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
@@ -118,16 +111,15 @@ comments: false
         <a target="_blank" href="/manager/wiki/Tutorial-for-SingBox-app">Tutorial for Sing-box app</a>
     </li>
     </ul>
-</div>
-</div>
 
+</div>
+</div>
 
 ## Contents related to client software on Desktop
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-200.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
@@ -140,10 +132,10 @@ comments: false
         <a href="/manager/wiki/Tutorial-for-QV2ray-software" target="_blank">Tutorial for QV2ray software</a>
     </li>
     </ul>
+
 </div>
 
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
+<div class="lg:border-l lg:border-gray-500 lg:p-4 lg:ml-auto">
 <h4 class="text-md">Related videos</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs" target="_blank">
@@ -155,9 +147,6 @@ comments: false
     </div>
 </div>
 </div>
-
-
-
 
 <script>
     function toggleShow() {
@@ -190,5 +179,3 @@ comments: false
     }
     });
 </script>
-
-
