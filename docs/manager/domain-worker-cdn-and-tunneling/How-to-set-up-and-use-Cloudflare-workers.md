@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to setup and use Cloudflare workers
 ---
 
 <div dir="ltr" markdown="1">

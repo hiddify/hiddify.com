@@ -1,11 +1,11 @@
 ---
-title: Quick installation on Vultr Servers
+title: Installing HiddifyManager using Docker
 ---
 
 <div dir="ltr" markdown="1">
 
 
-# Installing Hiddify using Docker
+# Installing HiddifyManager using Docker
 Before installation please pay attention that Docker version is still experimental and may have some problems, please let us know about bugs. Docker version is not recommended for permanent use.
 
 For installation this way, just use the following code:

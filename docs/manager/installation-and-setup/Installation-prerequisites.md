@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: Installation prerequisites
 ---
 
 <div dir="ltr" markdown="1">

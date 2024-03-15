@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: راهنمای نصب اصلی
 ---
 
 

@@ -1,11 +1,11 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: How to use Reality on HiddifyManager
 ---
 
 <div dir="ltr" markdown="1">
 
 
-# How to use Reality on Hiddify
+# How to use Reality on HiddifyManager
 Reality is one of the new protocols provided by Xray, which does not have the prerequisites of the previous protocols. This protocol is based on Vless and therefore cannot be used for Vmess or Trojan. On Hiddify, the emphasis is still on simplification, so most of the work is done behind the scenes.
 
 * Very important point: because this protocol is based on TCP, it does not support CDN, so it can only be used in direct or rail modes, and for this reason, it needs a server with a clean IP. If you need information on how to test the server, refer to [this link](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean).

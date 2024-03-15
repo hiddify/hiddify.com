@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: Guide for setting up the domain and finalizing the installation (Initial setting after installation)
 ---
 
 <div dir="ltr" markdown="1">

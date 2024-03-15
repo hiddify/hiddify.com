@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 ---
 
 

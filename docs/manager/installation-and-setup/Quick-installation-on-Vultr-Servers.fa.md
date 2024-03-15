@@ -1,5 +1,5 @@
 ---
-title: نصب سریع در Vultr
+title: نصب سریع و آسان در Vultr
 ---
 
 <div dir="rtl" markdown="1">

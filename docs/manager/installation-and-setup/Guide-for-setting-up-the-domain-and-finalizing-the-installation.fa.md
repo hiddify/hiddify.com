@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب
 ---
 
 <div dir="rtl" markdown="1">

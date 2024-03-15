@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: آموزش استفاده از دامنه AutoCDN
 ---
 
 <div align=center dir="rtl" markdown=1>

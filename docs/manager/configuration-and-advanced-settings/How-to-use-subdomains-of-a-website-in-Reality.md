@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: How to use subdomains of a website in Reality
 ---
 
 <div dir="ltr" markdown="1">

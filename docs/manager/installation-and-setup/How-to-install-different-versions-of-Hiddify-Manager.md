@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to install different versions of Hiddify Manager
 ---
 
 <div dir="ltr" markdown="1">
@@ -7,7 +7,7 @@ title: Quick installation on Vultr Servers
 
 <div dir="ltr" markdown="1">
 
-# How to install different versions of Hiddify Manager
+# How to install different versions of HiddifyManager
 As you know, Hidify Manager is offered in three versions as follows:
 
 * **Develop version:**

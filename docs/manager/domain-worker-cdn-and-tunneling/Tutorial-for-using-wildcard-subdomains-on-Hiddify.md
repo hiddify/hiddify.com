@@ -1,11 +1,11 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to use wildcard subdomains on HiddifyManager
 ---
 
 <div dir="ltr" markdown="1">
 
 
-# Tutorial for using wildcard subdomains on Hiddify
+# How to use wildcard subdomains on HiddifyManager
 
 ## Wildcard domain registration on Cloudflare
 First, create a `*` record on your registered domain on Cloudflare. That is, go to the DNS section and click `Add record`. Then enter a star in the opened page. Fill the field type as A and the value of the IP field with the IP of your server. Make sure the proxy tick is on. That is, if, for example, your domain is `yourdomain.com`, finally register a field `*.yourdomain.com`. [More information on how to register a domain](/manager/wiki/Domain-types-and-how-to-register-them)

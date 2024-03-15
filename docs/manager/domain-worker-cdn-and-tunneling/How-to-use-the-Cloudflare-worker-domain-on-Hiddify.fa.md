@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش خودکار)
 ---
 
 

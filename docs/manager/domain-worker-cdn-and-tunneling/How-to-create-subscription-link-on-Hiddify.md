@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to create subscription link on HiddifyManager
 ---
 
 <div dir="ltr" markdown="1">

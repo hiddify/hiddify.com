@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to create and use fake domain
 ---
 
 <div dir="ltr" markdown="1">

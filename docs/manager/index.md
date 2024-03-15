@@ -34,28 +34,28 @@ In this page, we put categorized content of tutorials and documents. In addition
         <a href="/manager/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">How to connect to server via SSH</a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">Hetzner Servers quick installation</a>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">Quick and easy installation on Hetzner servers </a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Vultr Servers quick installation</a>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Quick and easy installation< on Vultr servers/a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick installation on Oracle Cloud</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick and easy installation on Oracle Cloud</a>
     </li>
 
     <div class="hidden">
         <li>
-        <a href="/manager/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">Quick installation on OVH Servers</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">Quick and easy installation on OVH servers</a>
         </li>
         <li>
-        <a href="/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">Quick installation on Microsoft Azure</a>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">Quick and easy installation on Microsoft Azure</a>
         </li>
         <li>
         <a href="/manager/installation-and-setup/Cloud-init-installation" target="_blank">Easy installation through the data center (Cloud-init)</a>
         </li>
         <li>
         <a href="/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">
-            Guide for setting up the domain and finalizing the installation
+            Guide for setting up the domain and finalizing the installation (Initial setting after installation)
         </a>
         </li>
         <li>
@@ -109,15 +109,15 @@ In this page, we put categorized content of tutorials and documents. In addition
     </li>
     <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">
-        How to use Reality on Hiddify Manager</a>
+        How to use Reality on HiddifyManager</a>
     </li>
     <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel" target="_blank">
-        How to set up and use Telegram bot on Hiddify Manager</a>
+        How to set up and use Telegram bot on HiddifyManager</a>
     </li>
     <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel" target="_blank">
-        How to set up Telegram proxy on Hiddify Manager</a>
+        How to set up Telegram proxy on HiddifyManager</a>
     </li>
     <div class="hidden">
         <li>
@@ -131,6 +131,10 @@ In this page, we put categorized content of tutorials and documents. In addition
         <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
             How to update HiddifyManager</a>
+        </li>
+        <li>
+        <a href="/manager/fa/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default" target="_blank">
+            How to Reset HiddifyManager to default</a>
         </li>
         <li>
         <a href="/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel" target="_blank">
@@ -198,6 +202,11 @@ In this page, we put categorized content of tutorials and documents. In addition
         </a>
     </li>
     <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN">
+        How to use Cloudflare CDN
+        </a>
+    </li>
+    <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain">
         How to use GCore CDN
         </a>
@@ -217,7 +226,7 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify">
-            How to use wildcard subdomains on Hiddify</a>
+            How to use wildcard subdomains on HiddifyManager</a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting">
@@ -233,13 +242,13 @@ In this page, we put categorized content of tutorials and documents. In addition
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to use desired clean IPs based on a specific format</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">How to create subscription link on Hiddify</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">How to create subscription link on HiddifyManager</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/689?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">Using PHP site for subscription link</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify">How to use the Cloudflare worker domain on Hiddify</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify">How to use the Cloudflare worker domain on HiddifyManager (Automated way)</a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers">How to setup and use Cloudflare workers</a>

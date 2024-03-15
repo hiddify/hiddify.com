@@ -1,12 +1,12 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: How to update HiddifyManager
 ---
 
 <div dir="ltr" markdown="1">
 
 
 
-# How to update Hiddify panel
+# How to update HiddifyManager
 There are 2 ways to update the panel.
 
 ## Update through admin panel

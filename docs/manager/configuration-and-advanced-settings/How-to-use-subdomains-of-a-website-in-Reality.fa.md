@@ -1,5 +1,6 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: نحوه استفاده از چندین زیردامنه یک وبسایت در ریالیتی
+
 ---
 
 <div dir=rtl markdown=1>

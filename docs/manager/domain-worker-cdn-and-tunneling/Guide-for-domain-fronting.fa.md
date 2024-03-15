@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: آموزش استفاده از دامین فرانتینگ
 ---
 
 <div dir="rtl" markdown="1">

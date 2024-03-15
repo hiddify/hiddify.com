@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: Tutorial on automating subdomain registration on Cloudflare
 ---
 
 <div dir="ltr" markdown="1">

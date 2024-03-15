@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Oracle Cloud
+title: Quick and easy installation on Oracle Cloud
 ---
 
 <div dir="ltr" markdown="1">

@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: آموزش اتصال به سرور از طریق SSH
 ---
 
 <div dir="rtl" markdown=1>

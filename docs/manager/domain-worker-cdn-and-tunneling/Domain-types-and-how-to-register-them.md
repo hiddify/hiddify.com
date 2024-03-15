@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: Domain types and how to register them
 ---
 
 <div dir="ltr" markdown="1">

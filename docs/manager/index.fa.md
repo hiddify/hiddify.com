@@ -34,26 +34,26 @@ weight: -91
         <a href="/manager/fa/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">نصب سریع در Hetzner</a>
+        <a href="/manager/fa/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">نصب سریع و آسان در Hetzner</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">نصب سریع در Vultr</a>
+        <a href="/manager/fa/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">نصب سریع و آسان در Vultr</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع در Oracle Cloud</a>
+        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
     </li>
     <div class="hidden">
         <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">نصب سریع در OVH</a>
+        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">نصب سریع و آسان در OVH</a>
         </li>
         <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">نصب سریع در Azure</a>
+        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">نصب سریع و آسان در Azure</a>
         </li>
         <li>
         <a href="/manager/fa/installation-and-setup/Cloud-init-installation" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
         </li>
         <li>
-        <a href="/manager/fa/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در پنل و نهایی‌سازی نصب
+        <a href="/manager/fa/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
         </a>
         </li>
         <li>
@@ -100,7 +100,7 @@ weight: -91
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
-        آموزش پیکربندی کامل هیدیفای‌منیجر( آشنایی با بخش‌های مختلف و تنظیمات آن)
+        آموزش کامل پیکربندی هیدیفای‌منیجر (آشنایی با بخش‌های مختلف و تنظیمات آن)
         </a>
     </li>
     <li>
@@ -109,15 +109,15 @@ weight: -91
     </li>
     <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">
-        تنظیمات ریالیتی در پنل</a>
+        تنظیمات ریالیتی در هیدیفای‌منیجر</a>
     </li>
     <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel" target="_blank">
-        تنظیم بات تلگرام در پنل</a>
+        تنظیم بات تلگرام در هیدیفای‌منیجر</a>
     </li>
     <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel" target="_blank">
-       آموزش راه‌اندازی پروکسی تلگرام در هیدیفای</a>
+       آموزش راه‌اندازی پروکسی تلگرام در هیدیفای‌منیجر</a>
     </li>
     <div class="hidden">
         <li>
@@ -133,8 +133,12 @@ weight: -91
             آموزش به‌روزرسانی هیدیفای‌منیجر</a>
         </li>
         <li>
+        <a href="/manager/fa/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default" target="_blank">
+            ریست کردن تنظیمات هیدیفای‌منیجر به حالت اولیه</a>
+        </li>
+        <li>
         <a href="/manager/fa/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel" target="_blank">
-             آموزش تنظیم پروکسی SSH در پنل هیدیفای</a>
+             آموزش تنظیم پروکسی SSH در هیدیفای‌منیجر</a>
         </li>
         <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality" target="_blank">
@@ -222,7 +226,7 @@ weight: -91
         </li>
         <li>
         <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify">
-            آموزش استفاده از زیر دامنه‌های متغیر</a>
+            آموزش استفاده از زیر دامنه‌های متغیر در هیدیفای‌منیجر</a>
         </li>
         <li>
         <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting">
@@ -238,7 +242,7 @@ weight: -91
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص برای فیلد اجبار</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">آموزش ایجاد لینک سابسکریپشن در هیدیفای</a>
+        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/689?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">استفاده از سایت PHP برای لینک سابسکریپشن</a>
@@ -247,7 +251,7 @@ weight: -91
         <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers">آموزش تنظیم و استفاده از ورکرز در هیدیفای</a>
+        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers">آموزش تنظیم و استفاده از ورکرز در (روش خودکار) هیدیفای‌منیجر</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">آموزش راه‌اندازی تانل به روش IP Tables</a>

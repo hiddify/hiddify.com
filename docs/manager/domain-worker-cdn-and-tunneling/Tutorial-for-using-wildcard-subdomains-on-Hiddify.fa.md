@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: آموزش استفاده از زیر دامنه‌های متغیر در هیدیفای‌منیجر
 ---
 
 

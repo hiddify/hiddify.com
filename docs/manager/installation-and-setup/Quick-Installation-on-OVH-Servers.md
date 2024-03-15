@@ -1,6 +1,5 @@
-
 ---
-title: Quick installation on OVH Servers
+title: Quick and easy installation on OVH Servers
 ---
 
 <div dir="ltr" markdown="1">

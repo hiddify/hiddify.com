@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to connect to server via SSH
 ---
 
 <div dir="ltr" markdown="1">

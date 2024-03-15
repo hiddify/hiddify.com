@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: نصب نسخه‌های مختلف هیدیفای‌منیجر
 ---
 
 <div dir="rtl" markdown="1">

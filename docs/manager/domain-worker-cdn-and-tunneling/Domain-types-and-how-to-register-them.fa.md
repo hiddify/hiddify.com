@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: انواع دامنه و آموزش ثبت آن‌ها
 ---
 
 <div dir="rtl" markdown=1>

@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد
 ---
 
 <div dir="rtl" markdown=1>

@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: تنظیمات ریالیتی در هیدیفای‌منیجر
 ---
 
 <div dir=rtl align=center markdown=1>
@@ -14,7 +14,7 @@ title: How to add relay domain to Hiddify manager
 </div>
 
 <div dir="rtl" markdown=1>
-# آموزش استفاده از Reality در هیدیفای
+# آموزش استفاده از Reality در هیدیفای‌منیجر
 
 Reality یکی از پروتکل‌های جدید ارائه شده توسطXray می‌باشد که پیش‌نیازهای پروتکل‌های قبلی را ندارد. این پروتکل بر مبنای Vless پایه‌گذاری شده است، بنابراین برای Vmess یا Trojan قابل استفاده نیست. در هیدیفای همچنان تاکید بر ساده‌سازی بوده است بنابراین بخش اعظم کار در پس‌زمینه انجام می‌شود.
 

@@ -1,10 +1,10 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: How to set up Telegram proxy on HiddifyManager
 ---
 
 <div dir="ltr" markdown="1">
 
-#How to set up Telegram proxy on Hiddify
+# How to set up Telegram proxy on HiddifyManager
 One of the good features of the Hiddify panel is providing a Telegram proxy, which is done using several libraries, which will be explained in the following settings.
 
 ## Telegram proxy activation

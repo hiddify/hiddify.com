@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: Cloudflare worker domain on HiddifyManager (Automated way)
 ---
 
 <div dir="ltr" markdown="1">

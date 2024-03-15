@@ -1,5 +1,5 @@
 ---
-title: How to add relay domain to Hiddify manager
+title: How to use Domain Fronting
 ---
 
 <div dir="ltr" markdown="1">

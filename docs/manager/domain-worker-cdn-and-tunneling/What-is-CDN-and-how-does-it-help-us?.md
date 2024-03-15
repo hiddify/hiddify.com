@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: What is CDN and how does it help us?
 ---
 
 <div dir="ltr" markdown="1">

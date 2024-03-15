@@ -1,5 +1,5 @@
 ---
-title: Quick installation on Vultr Servers
+title: How to use Amazon CDN or Cloudfront
 ---
 
 <div dir="ltr" markdown="1">
