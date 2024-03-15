@@ -25,7 +25,7 @@ weight: -91
 
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
-        <a href="/manager/installation-and-setup/Quick-Installation-On-Ubuntu" target="_blank">راهنمای نصب اصلی</a>
+        <a href="/manager/fa/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
     </li>
     <li>
         <a href="/manager/fa/installation-and-setup/Installation-prerequisites" target="_blank">پیش‌نیازهای نصب</a>
@@ -40,9 +40,8 @@ weight: -91
         <a href="/manager/fa/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">نصب سریع در Vultr</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Qنصب سریع در Oracle Cloud</a>
+        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع در Oracle Cloud</a>
     </li>
-
     <div class="hidden">
         <li>
         <a href="/manager/fa/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">نصب سریع در OVH</a>
@@ -123,11 +122,11 @@ weight: -91
     <div class="hidden">
         <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel" target="_blank">
-            آموزش فعال‌سازی وارپ در پنل هیدیفای</a>
+            آموزش فعال‌سازی وارپ در هیدیفای‌منیجر</a>
         </li>
         <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify" target="_blank">
-            آموزش پشتیبان‌گیری و بازیابی پنل در هیدیفای</a>
+            آموزش پشتیبان‌گیری و بازیابی پنل در هیدیفای‌منیجر</a>
         </li>
         <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
@@ -317,6 +316,9 @@ weight: -91
         </a>
     </li>
     <li>
+        <a href="/manager/fa/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
+    </li>
+    <li>
         <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH">
         آموزش اتصال به سرور از طریق SSH
         </a>
@@ -336,13 +338,13 @@ weight: -91
         آموزش تنظیم فایروال در هیدیفای‌منیجر
         </a>
     </li>
+    <div class="hidden">
     <li>
         <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
         آموزش نحوه کنترل منابع سرور در هیدیفای‌منیجر
         </a>
     </li>
-    <div class="hidden">
-        <li>
+    <li>
         <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
              آموزش تست سرعت روی سرور
         </a>
