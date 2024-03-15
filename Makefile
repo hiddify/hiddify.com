@@ -8,6 +8,9 @@ prepare:
 docs:
 	@mkdocs serve --no-livereload
 
+tw:
+	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
+
 .PHONY: all test clean docs
 
 

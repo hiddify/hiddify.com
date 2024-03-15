@@ -6,22 +6,14 @@ weight: -91
 ---
 
 # :material-home: HiddifyManager Guide
+
 In this page, we put categorized content of tutorials and documents. In addition to the fact that you can click on the links of each article to reach out the full explanations of them, there are some videos for these items on our [YouTube channel](https://www.youtube.com/@hiddify/videos), which you can watch by clicking on the images below.
-
-
-
-<div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
-<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"></div>
-<div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"></div>
-<div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"></div>
 
 ## How to install HiddifyManager
 
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row dark:ray-500">
 <div class="max-w-[552px]">
     <img src="/assets/1.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc ml-5 text-secondary">
      <li>
@@ -63,11 +55,10 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
     </div>
     </ul>
+
 </div>
 
-
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
+<div class="lg:border-l lg:border-gray-500 lg:p-4 lg:ml-auto">
     <h4 class="text-md">Related videos</h4>
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w" target="_blank">
@@ -79,8 +70,8 @@ In this page, we put categorized content of tutorials and documents. In addition
     </div>
 </div>
 
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>Read more</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -93,10 +84,10 @@ In this page, we put categorized content of tutorials and documents. In addition
 </div>
 
 ## Configuration and advanced settings
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image194.png" alt="image" class="rounded-xl">
-
 
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
@@ -150,11 +141,10 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
     </div>
     </ul>
+
 </div>
 
-
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
+<div class="lg:border-l lg:border-gray-500 lg:p-4 lg:ml-auto">
 <h4 class="text-md">Related videos</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=nOe7FhajX3g" target="_blank">
@@ -166,8 +156,8 @@ In this page, we put categorized content of tutorials and documents. In addition
     </div>
 </div>
 
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>Read more</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -182,13 +172,11 @@ In this page, we put categorized content of tutorials and documents. In addition
 <div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
-
 ## Domain, Worker, CDN and tunneling
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-195.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc text-secondary ml-5 max-w-[402px]">
     <li>
@@ -277,10 +265,10 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
     </div>
     </ul>
+
 </div>
 
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
+<div class="lg:border-l lg:border-gray-500 lg:p-4 lg:ml-auto">
     <h4 class="text-md">Related videos</h4>
     <div class="flex gap-4 mt-4 flex-col lg:ml-2">
     <a href="https://www.youtube.com/watch?v=ea5C93ynkUs" target="_blank">
@@ -292,8 +280,8 @@ In this page, we put categorized content of tutorials and documents. In addition
     </div>
 </div>
 
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>Read more</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -305,13 +293,11 @@ In this page, we put categorized content of tutorials and documents. In addition
 </div>
 </div>
 
-
 ## Basic concepts and troubleshooting
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-196.png" alt="image" class="rounded-xl">
-
-    
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
@@ -396,12 +382,11 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
     </div>
     </ul>
+
 </div>
 
-
-
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>Read more</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -412,8 +397,6 @@ In this page, we put categorized content of tutorials and documents. In addition
     </button>
 </div>
 </div>
-
-
 
 <script>
     function toggleShow() {
