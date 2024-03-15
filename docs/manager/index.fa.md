@@ -4,26 +4,18 @@ title: راهنمای منیجر
 comments: false
 weight: -91
 ---
+
 ## :material-home: راهنمای منیجر
 
-در این  صفحه مطالب و ویدئوهای آموزشی به صورت دسته‌بندی شده قرار داده می‌شود. علاوه بر اینکه می‌توانید روی لینک‌های هر مطلب کلیک کنید تا به توضیحات کامل مربوط به هر بخش برسید، برای برخی از این موارد در [کانال یوتیوب](https://www.youtube.com/@hiddify/videos) ما ویدئو وجود دارد که با کلیک روی تصاویر زیر می‌توانید آن‌ها را ملاحظه کنید.
-
-
-<div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
-<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"></div>
-<div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"></div>
-<div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"></div>
-
+در این صفحه مطالب و ویدئوهای آموزشی به صورت دسته‌بندی شده قرار داده می‌شود. علاوه بر اینکه می‌توانید روی لینک‌های هر مطلب کلیک کنید تا به توضیحات کامل مربوط به هر بخش برسید، برای برخی از این موارد در [کانال یوتیوب](https://www.youtube.com/@hiddify/videos) ما ویدئو وجود دارد که با کلیک روی تصاویر زیر می‌توانید آن‌ها را ملاحظه کنید.
 
 ## آموزش نصب هیدیفای‌منیجر
 
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/1.png" alt="image" class="rounded-xl">
 
-    
-
-    <ul class="my-4 list-disc ml-5 text-secondary">
+    <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
         <a href="/manager/fa/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
     </li>
@@ -62,13 +54,12 @@ weight: -91
         </li>
     </div>
     </ul>
+
 </div>
 
-
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
-    <h4 class="text-md">Related videos</h4>
-    <div class="flex gap-4 mt-4 flex-col lg:ml-2">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+    <h4 class="text-md">ویدیو های مرتبط</h4>
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w" target="_blank">
         <img src="/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
@@ -78,8 +69,8 @@ weight: -91
     </div>
 </div>
 
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>بیشتر بخوانید</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -92,12 +83,12 @@ weight: -91
 </div>
 
 ## پیکربندی و تنظیمات پیشرفته
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image194.png" alt="image" class="rounded-xl">
 
-
-    <ul class="my-4 list-disc ml-5 text-secondary">
+    <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
         آموزش کامل پیکربندی هیدیفای‌منیجر (آشنایی با بخش‌های مختلف و تنظیمات آن)
@@ -150,13 +141,12 @@ weight: -91
         </li>
     </div>
     </ul>
+
 </div>
 
-
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
-<h4 class="text-md">Related videos</h4>    
-    <div class="flex gap-4 mt-4 flex-col lg:ml-2">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<h4 class="text-md">ویدیو های مرتبط</h4>    
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=nOe7FhajX3g" target="_blank">
         <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
@@ -166,8 +156,8 @@ weight: -91
     </div>
 </div>
 
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>بیشتر بخوانید</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -182,15 +172,13 @@ weight: -91
 <div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
-
 ## دامنه، ورکر، CDN و تانل
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-195.png" alt="image" class="rounded-xl">
 
-    
-
-    <ul class="my-4 list-disc text-secondary ml-5 max-w-[402px]">
+    <ul class="my-4 list-disc text-secondary mr-5 max-w-[402px]">
     <li>
         <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them">
         انواع دامنه و آموزش ثبت آن‌ها
@@ -277,12 +265,12 @@ weight: -91
         </li>
     </div>
     </ul>
+
 </div>
 
-
-<div class="lg:border-l lg:border-white lg:p-4 lg:ml-auto">
-    <h4 class="text-md">Related videos</h4>
-    <div class="flex gap-4 mt-4 flex-col lg:ml-2">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+    <h4 class="text-md">ویدیو های مرتبط</h4>
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=ea5C93ynkUs" target="_blank">
         <img src="/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
@@ -292,8 +280,8 @@ weight: -91
     </div>
 </div>
 
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>بیشتر بخوانید</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -305,15 +293,13 @@ weight: -91
 </div>
 </div>
 
-
 ## Basic concepts and troubleshooting
-<div class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/image-196.png" alt="image" class="rounded-xl">
 
-    
-
-    <ul class="my-4 list-disc text-secondary ml-5">
+    <ul class="my-4 list-disc text-secondary mr-5">
     <li>
         <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean">
         چک کردن تمیز بودن آیپی یا دامنه سرور
@@ -396,12 +382,11 @@ weight: -91
         </li>
     </div>
     </ul>
+
 </div>
 
-
-
-<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
-    <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>بیشتر بخوانید</span>
     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <g fill="none" fill-rule="evenodd">
@@ -412,8 +397,6 @@ weight: -91
     </button>
 </div>
 </div>
-
-
 
 <script>
     function toggleShow() {
