@@ -1,3 +1,7 @@
+---
+title: Explanations about admin link in HiddifyManager
+---
+
 <div dir="ltr" markdown="1">
 
 # The correct format of admin link

@@ -1,5 +1,8 @@
-<div dir="ltr" markdown="1">
+---
+title: How to add relay domain to Hiddify manager
+---
 
+<div dir="ltr" markdown="1">
 
 # How to Reset Hiddify panel to default
 In this article, we are going to teach how to raw the Hiddify panel (complete reset of the panel and database) similar to the initial installation. If you intend to return the Hiddify panel to its initial settings, this tutorial is prepared for you. Follow these steps to the end.

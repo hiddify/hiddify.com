@@ -1,3 +1,8 @@
+---
+title: آموزش کار با نرم‌افزار SingBox
+
+---
+
 <div dir="rtl" markdown="1">
 
 # آموزش کار با نرم‌افزار SingBox

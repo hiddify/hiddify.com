@@ -1,3 +1,7 @@
+---
+title: Tutorial for HiddifyN software
+---
+
 <div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyN software

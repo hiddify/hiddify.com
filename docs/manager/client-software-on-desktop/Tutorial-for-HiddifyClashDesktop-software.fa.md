@@ -1,3 +1,7 @@
+---
+title: آموزش کار با نرم‌افزار HiddifyClash برای دسکتاپ
+---
+
 <div dir=rtl markdown=1>
 
 # آموزش کار با نرم‌افزار HiddifyClash برای دسکتاپ

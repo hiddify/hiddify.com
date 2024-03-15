@@ -1,3 +1,7 @@
+---
+title: How to transfer files between a server and a computer
+---
+
 <div dir="ltr" markdown="1">
 
 # How to transfer files between a server and a computer

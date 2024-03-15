@@ -1,3 +1,7 @@
+---
+title: How to connect and troubleshoot via SSH (Working with Hiddify Menu)
+---
+
 <div dir="ltr" markdown="1">
 
 # How to connect and troubleshoot via SSH

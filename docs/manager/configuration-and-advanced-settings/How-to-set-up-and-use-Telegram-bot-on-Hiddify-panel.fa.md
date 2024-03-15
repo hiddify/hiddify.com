@@ -1,4 +1,6 @@
-
+---
+title: How to add relay domain to Hiddify manager
+---
 
 <div dir="rtl" markdown=1>
 # نحوه تنظیم و استفاده از بات تلگرام در پنل هیدیفای

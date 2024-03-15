@@ -1,3 +1,8 @@
+---
+title: آموزش کار با نرم‌افزار Stash
+
+---
+
 <div dir=rtl markdown=1>
 
 # آموزش کار با نرم‌افزار Stash

@@ -1,3 +1,7 @@
+---
+title: How to monitor server resources on HiddifyManager
+---
+
 <div dir="ltr" markdown="1">
 
 

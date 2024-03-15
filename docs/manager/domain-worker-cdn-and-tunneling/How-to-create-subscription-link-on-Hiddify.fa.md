@@ -1,4 +1,6 @@
-
+---
+title: Quick installation on Vultr Servers
+---
 
 <div dir="rtl" markdown="1">
 

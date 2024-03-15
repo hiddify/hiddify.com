@@ -1,3 +1,7 @@
+---
+title: آموزش کار با نرم‌افزار QV2ray
+
+---
 
 <div dir="rtl" markdown=1>
 

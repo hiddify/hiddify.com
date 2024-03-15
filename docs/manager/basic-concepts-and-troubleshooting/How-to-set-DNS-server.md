@@ -1,3 +1,7 @@
+---
+title: How to set DNS server on HiddifyManager
+---
+
 <div dir="ltr" markdown="1">
 
 # How to set DNS server

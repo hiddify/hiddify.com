@@ -1,3 +1,7 @@
+---
+title: Tutorial for QV2ray software
+---
+
 <div dir="ltr" markdown="1">
 
 # Tutorial for QV2ray software

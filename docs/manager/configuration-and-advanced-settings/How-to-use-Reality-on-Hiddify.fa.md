@@ -1,5 +1,6 @@
-
-
+---
+title: How to add relay domain to Hiddify manager
+---
 
 <div dir=rtl align=center markdown=1>
 قبل از شروع می‌توانید ویدئوی Reality در هیدیفای را با کلیک روی تصویر زیر مشاهده کنید.

@@ -1,3 +1,7 @@
+---
+title: Tutorial for HiddifyClashAndroid app
+---
+
 <div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyClashAndroid app

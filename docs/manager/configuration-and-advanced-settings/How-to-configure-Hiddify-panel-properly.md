@@ -1,5 +1,8 @@
-<div dir="ltr" markdown="1">
+---
+title: How to configure Hiddify Manager properly (Getting familiar with its different parts)
+---
 
+<div dir="ltr" markdown="1">
 
 # How to configure Hiddify Manager properly
 

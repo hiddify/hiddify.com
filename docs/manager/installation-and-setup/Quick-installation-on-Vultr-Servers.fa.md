@@ -1,4 +1,6 @@
-
+---
+title: نصب سریع در Vultr
+---
 
 <div dir="rtl" markdown="1">
 

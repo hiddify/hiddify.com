@@ -1,3 +1,8 @@
+---
+title: آموزش کار با نرم‌افزار Streisand
+
+---
+
 <div dir="rtl" markdown="1">
 
 

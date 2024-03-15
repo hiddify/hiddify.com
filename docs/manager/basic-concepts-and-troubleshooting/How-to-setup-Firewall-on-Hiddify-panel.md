@@ -1,3 +1,7 @@
+---
+title: How to setup Firewall on HiddifyManager
+---
+
 <div dir="ltr" markdown="1">
 
 # How to setup Firewall on Hiddify panel

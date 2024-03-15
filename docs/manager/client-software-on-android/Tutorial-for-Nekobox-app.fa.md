@@ -1,3 +1,7 @@
+---
+title: آموزش کار با نرم‌‌افزار Nekobox
+---
+
 <div dir="rtl" markdown="1">
 
 

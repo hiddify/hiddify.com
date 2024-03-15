@@ -1,4 +1,7 @@
+---
+title: آموزش کار با نرم‌افزار Fair VPN
 
+---
 
 <div dir=rtl markdown=1>
 

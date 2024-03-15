@@ -1,5 +1,6 @@
-
-
+---
+title: آموزش کار با نرم‌افزار HiddifyN
+---
 
 <div dir=rtl markdown=1>
 # آموزش کار با نرم‌افزار HiddifyN

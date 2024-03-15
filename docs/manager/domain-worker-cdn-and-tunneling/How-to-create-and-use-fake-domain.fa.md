@@ -1,3 +1,6 @@
+---
+title: Quick installation on Vultr Servers
+---
 
 <div dir="rtl" markdown=1>
 # نحوه ایجاد و استفاده از دامنه فیک

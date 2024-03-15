@@ -1,3 +1,7 @@
+---
+title: Tutorial for SingBox app
+---
+
 <div dir="ltr" markdown="1">
 
 

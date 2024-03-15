@@ -1,3 +1,7 @@
+---
+title: Tutorial for FoXray app
+---
+
 <div dir="ltr" markdown="1">
 
 

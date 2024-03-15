@@ -100,7 +100,7 @@ weight: -91
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
         <a href="/manager/fa/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
-        آموزش پیکربندی و آشنایی با بخش‌های مختلف و تنظیمات پنل
+        آموزش پیکربندی کامل هیدیفای‌منیجر( آشنایی با بخش‌های مختلف و تنظیمات آن)
         </a>
     </li>
     <li>
@@ -212,7 +212,7 @@ weight: -91
         آموزش استفاده از CDN Amazon یا Cloudfront</a>
     </li>
     <li>
-        <a target="_blank" href="/manager/wiki/Get-Cloudflare-API">
+        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Get-Cloudflare-API">
          آموزش خودکار کردن ساخت زیردامنه روی کلادفلر</a>
     </li>
     <div class="hidden">
@@ -320,7 +320,8 @@ weight: -91
     </li>
     <li>
         <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH">
-        آموزش اتصال به سرور از طریق SSH
+        آموزش SSH اتصال و رفع عیب از طریق (کار با منوی هیدیفای)
+
         </a>
     </li>
     <li>
@@ -386,7 +387,7 @@ weight: -91
         </li>
         <li>
         <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link">
-            فرمت صحیح لینک ادمین
+            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر
         </a>
         </li>
     </div>

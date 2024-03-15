@@ -101,7 +101,7 @@ In this page, we put categorized content of tutorials and documents. In addition
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
-        How to configure Hiddify Manager properly</a>
+        How to configure Hiddify Manager properly (Getting familiar with its different parts)</a>
     </li>
     <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH" target="_blank">
@@ -122,11 +122,11 @@ In this page, we put categorized content of tutorials and documents. In addition
     <div class="hidden">
         <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel" target="_blank">
-            How to activate WARP on the HiddifyManager</a>
+            How to activate WARP on HiddifyManager</a>
         </li>
         <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify" target="_blank">
-            How to backup and restore the HiddifyManager</a>
+            How to backup and restore HiddifyManager</a>
         </li>
         <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
@@ -315,7 +315,7 @@ In this page, we put categorized content of tutorials and documents. In addition
     </li>
     <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH">
-        How to connect and troubleshoot via SSH
+        How to connect and troubleshoot via SSH (Working with Hiddify Menu)
         </a>
     </li>
     <li>
@@ -382,7 +382,7 @@ In this page, we put categorized content of tutorials and documents. In addition
         </li>
         <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link">
-            The correct format of admin link
+            Explanations about admin link in HiddifyManager
         </a>
         </li>
     </div>

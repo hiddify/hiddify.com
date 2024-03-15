@@ -1,3 +1,8 @@
+
+---
+title: Quick installation on OVH Servers
+---
+
 <div dir="ltr" markdown="1">
 
 

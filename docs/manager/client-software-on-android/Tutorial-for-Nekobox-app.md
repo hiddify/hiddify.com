@@ -1,3 +1,7 @@
+---
+title: Tutorial for Nekobox app
+---
+
 <div dir="ltr" markdown="1">
 
 # Tutorial for Nekobox app

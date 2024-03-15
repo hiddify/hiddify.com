@@ -1,4 +1,6 @@
-
+---
+title: How to add relay domain to Hiddify manager
+---
 
 <div align=center dir="rtl" markdown=1>
 قبل از شروع میتونید ویدئوی زیر را مشاهده کنید تا با کلیت کار آشنا بشید.

@@ -1,3 +1,7 @@
+---
+title: آموزش SSH اتصال و رفع عیب از طریق (کار با منوی هیدیفای)
+---
+
 <div dir="rtl" markdown=1>
 
 <details markdown="1"> <summary><h1> پیش نیاز: نصب ssh در ویندوز</h1> (کلیک کنید)</summary>

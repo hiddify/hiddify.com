@@ -1,3 +1,7 @@
+---
+title: How to add relay domain to Hiddify manager
+---
+
 <div dir="ltr" markdown="1">
 
 # Guide for finding a clean Cloudflare IP

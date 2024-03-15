@@ -1,6 +1,8 @@
+---
+title: Quick installation on Vultr Servers
+---
+
 <div dir="ltr" markdown="1">
-
-
 
 # How to connect and troubleshoot via SSH
 

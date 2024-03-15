@@ -1,3 +1,7 @@
+---
+title: How to add relay domain to Hiddify manager
+---
+
 <div dir="rtl" markdown=1>
 
 # فرمت صحیح لینک ادمین

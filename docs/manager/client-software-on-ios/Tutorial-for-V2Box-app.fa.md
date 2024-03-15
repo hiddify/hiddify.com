@@ -1,3 +1,7 @@
+---
+title: آموزش کار با نرم‌افزار V2Box
+
+---
 
 <div dir=rtl markdown=1>
 

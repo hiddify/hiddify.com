@@ -1,4 +1,7 @@
+---
+title: آموزش کار با نرم‌افزار FoXray
 
+---
 
 <div dir=rtl markdown=1>
 

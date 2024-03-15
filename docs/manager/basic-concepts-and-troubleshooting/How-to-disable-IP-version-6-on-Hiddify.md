@@ -1,3 +1,7 @@
+---
+title: How to disable IP version 6 on HiddifyManager
+---
+
 <div dir="ltr" markdown="1">
 
 # How to disable IP version 6 on Hiddify

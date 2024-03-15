@@ -1,3 +1,6 @@
+---
+title: Quick installation on Vultr Servers
+---
 
 
 

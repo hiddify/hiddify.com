@@ -5,4 +5,3 @@ comments: false
 weight: -30
 ---
 
-# Client software on iOS

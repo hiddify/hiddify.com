@@ -1,3 +1,7 @@
+---
+title: Tutorial for HiddifyClashDesktop software
+---
+
 <div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyClashDesktop software

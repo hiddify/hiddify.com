@@ -1,3 +1,6 @@
+---
+title: آموزش کار با نرم‌افزار HiddifyNG
+---
 
 <div dir="rtl" markdown=1>
 

@@ -1,5 +1,8 @@
-<div dir="ltr" markdown="1">
+---
+title: How to add relay domain to Hiddify manager
+---
 
+<div dir="ltr" markdown="1">
 
 # How to set up and use Telegram bot on Hiddify panel
 In Hidify, you can connect your panel to a Telegram bot and do a series of tasks related to the user section through it.

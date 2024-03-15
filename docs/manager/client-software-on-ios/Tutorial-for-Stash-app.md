@@ -1,3 +1,6 @@
+---
+title: Tutorial for Stash app
+---
 
 <div dir="ltr" markdown="1">
 
