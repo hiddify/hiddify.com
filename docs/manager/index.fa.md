@@ -5,7 +5,7 @@ comments: false
 weight: -1
 ---
 
-# :material-home: راهنمای منیجر
+# :material-home: راهنمای هیدیفای‌منیجر
 
 در این صفحه مطالب و ویدئوهای آموزشی به صورت دسته‌بندی شده قرار داده می‌شود. علاوه بر اینکه می‌توانید روی لینک‌های هر مطلب کلیک کنید تا به توضیحات کامل مربوط به هر بخش برسید، برای برخی از این موارد در [کانال یوتیوب](https://www.youtube.com/@hiddify/videos) ما ویدئو وجود دارد که با کلیک روی تصاویر زیر می‌توانید آن‌ها را ملاحظه کنید.
 
@@ -17,10 +17,10 @@ weight: -1
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/manager/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
+        <a href="/manager/fa/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
+        <a href="/manager/fa/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
         </a>
     </li>
     <li>
@@ -93,7 +93,7 @@ weight: -1
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
+        <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
         آموزش کامل پیکربندی هیدیفای‌منیجر (آشنایی با بخش‌های مختلف و تنظیمات آن)
         </a>
     </li>
