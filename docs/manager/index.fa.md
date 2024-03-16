@@ -20,10 +20,18 @@ weight: -91
         <a href="/manager/fa/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
     </li>
     <li>
+        <a href="/manager/fa/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
+        </a>
+    </li>
+    <li>
         <a href="/manager/fa/installation-and-setup/Installation-prerequisites" target="_blank">پیش‌نیازهای نصب</a>
     </li>
     <li>
         <a href="/manager/fa/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
+    </li>
+    <li>
+        <a href="/manager/fa/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">نصب نسخه‌های مختلف هیدیفای‌منیجر
+        </a>
     </li>
     <li>
         <a href="/manager/fa/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">نصب سریع و آسان در Hetzner</a>
@@ -31,10 +39,11 @@ weight: -91
     <li>
         <a href="/manager/fa/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">نصب سریع و آسان در Vultr</a>
     </li>
-    <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
-    </li>
+
     <div class="hidden">
+        <li>
+        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
+        </li>
         <li>
         <a href="/manager/fa/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">نصب سریع و آسان در OVH</a>
         </li>
@@ -44,14 +53,8 @@ weight: -91
         <li>
         <a href="/manager/fa/installation-and-setup/Cloud-init-installation" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
         </li>
-        <li>
-        <a href="/manager/fa/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
-        </a>
-        </li>
-        <li>
-        <a href="/manager/fa/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">نصب نسخه‌های مختلف هیدیفای‌منیجر
-        </a>
-        </li>
+
+
     </div>
     </ul>
 

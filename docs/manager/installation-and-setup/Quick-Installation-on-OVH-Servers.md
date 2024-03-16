@@ -1,5 +1,6 @@
 ---
 title: Quick and easy installation on OVH Servers
+weight: -55
 ---
 
 <div dir="ltr" markdown="1">

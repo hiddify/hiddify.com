@@ -1,5 +1,6 @@
 ---
 title: نصب سریع و آسان در OVH
+weight: -55
 ---
 
 <div dir="rtl" markdown="1">

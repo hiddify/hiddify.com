@@ -1,5 +1,6 @@
 ---
 title: نصب هیدیفای‌منیجر روی داکر
+weight: -40
 ---
 
 <div dir="rtl" markdown="1">

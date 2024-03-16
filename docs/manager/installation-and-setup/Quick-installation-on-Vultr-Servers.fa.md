@@ -1,5 +1,6 @@
 ---
 title: نصب سریع و آسان در Vultr
+weight: -65
 ---
 
 <div dir="rtl" markdown="1">

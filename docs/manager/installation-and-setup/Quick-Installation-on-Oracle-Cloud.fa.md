@@ -1,5 +1,6 @@
 ---
 title: نصب سریع و آسان در Oracle Cloud
+weight: -60
 ---
 
 

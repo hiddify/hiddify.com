@@ -1,5 +1,6 @@
 ---
 title: Quick and easy installation on Microsoft Azure
+weight: -50
 ---
 
 <div dir="ltr" markdown="1">

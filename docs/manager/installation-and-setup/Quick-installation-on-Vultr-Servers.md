@@ -1,5 +1,6 @@
 ---
 title: Quick and easy installation on Vultr Servers
+weight: -65
 ---
 
 <div dir="ltr" markdown="1">

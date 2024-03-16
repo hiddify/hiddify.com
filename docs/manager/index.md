@@ -20,22 +20,30 @@ In this page, we put categorized content of tutorials and documents. In addition
         <a href="/manager/installation-and-setup/guide" target="_blank">Main installation guide</a>
     </li>
     <li>
+        <a href="/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">
+            Guide for setting up the domain and finalizing the installation (Initial setting after installation)
+        </a>
+    </li>
+    <li>
         <a href="/manager/installation-and-setup/Installation-prerequisites" target="_blank">Installation prerequisites</a>
     </li>
     <li>
         <a href="/manager/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">How to connect to server via SSH</a>
     </li>
     <li>
+        <a href="/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">How to install different versions of Hiddify Manager</a>
+    </li>    
+    <li>
         <a href="/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">Quick and easy installation on Hetzner servers </a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Quick and easy installation< on Vultr servers/a>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Quick and easy installation< on Vultr servers</a>
     </li>
-    <li>
-        <a href="/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick and easy installation on Oracle Cloud</a>
-    </li>
-
+    
     <div class="hidden">
+        <li>
+        <a href="/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick and easy installation on Oracle Cloud</a>
+        </li>    
         <li>
         <a href="/manager/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">Quick and easy installation on OVH servers</a>
         </li>
@@ -45,14 +53,7 @@ In this page, we put categorized content of tutorials and documents. In addition
         <li>
         <a href="/manager/installation-and-setup/Cloud-init-installation" target="_blank">Easy installation through the data center (Cloud-init)</a>
         </li>
-        <li>
-        <a href="/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">
-            Guide for setting up the domain and finalizing the installation (Initial setting after installation)
-        </a>
-        </li>
-        <li>
-        <a href="/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">How to install different versions of Hiddify Manager</a>
-        </li>
+
     </div>
     </ul>
 

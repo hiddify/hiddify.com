@@ -1,5 +1,6 @@
 ---
 title: نصب آسان از طریق دیتاسنتر (Cloud-init)
+weight: -45
 ---
 
 <div dir="rtl" markdown=1>

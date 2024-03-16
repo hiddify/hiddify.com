@@ -1,5 +1,6 @@
 ---
 title: Installing HiddifyManager using Docker
+weight: -40
 ---
 
 <div dir="ltr" markdown="1">

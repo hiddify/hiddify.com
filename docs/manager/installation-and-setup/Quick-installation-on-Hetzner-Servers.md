@@ -1,5 +1,6 @@
 ---
 title: Quick and easy installation on Hetzner Servers
+weight: -70
 ---
 
 

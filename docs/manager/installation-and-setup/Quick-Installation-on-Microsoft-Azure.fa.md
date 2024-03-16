@@ -1,5 +1,6 @@
 ---
 title: نصب سریع و آسان در Microsoft Azure
+weight: -50
 ---
 
 

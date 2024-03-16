@@ -1,5 +1,6 @@
 ---
 title: Quick and easy installation on Oracle Cloud
+weight: -60
 ---
 
 <div dir="ltr" markdown="1">

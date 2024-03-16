@@ -1,6 +1,6 @@
 ---
 title: Easy installation through the data center (Cloud-init)
-comments: flase
+weight: -45
 ---
 
 <div dir="ltr" markdown="1">
