@@ -1,5 +1,6 @@
 ---
 title: How to setup SSH proxy on HiddifyManager
+weight: -70
 ---
 
 <div dir="ltr" markdown="1">

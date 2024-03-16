@@ -1,5 +1,6 @@
 ---
 title: How to activate WARP on HiddifyManager
+weight: -110
 ---
 
 <div dir="ltr" markdown="1">

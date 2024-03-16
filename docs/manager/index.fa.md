@@ -2,7 +2,7 @@
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای منیجر
 comments: false
-weight: -91
+weight: -1
 ---
 
 # :material-home: راهنمای منیجر
@@ -17,41 +17,41 @@ weight: -91
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/manager/fa/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
+        <a href="fa/manager/installation-and-setup/guide" target="_blank">راهنمای نصب اصلی</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
+        <a href="fa/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (انجام تنظیمات ابتدایی بعد از نصب)
         </a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Installation-prerequisites" target="_blank">پیش‌نیازهای نصب</a>
+        <a href="fa/manager/installation-and-setup/Installation-prerequisites" target="_blank">پیش‌نیازهای نصب</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
+        <a href="fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">نصب نسخه‌های مختلف هیدیفای‌منیجر
+        <a href="fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">نصب نسخه‌های مختلف هیدیفای‌منیجر
         </a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">نصب سریع و آسان در Hetzner</a>
+        <a href="fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">نصب سریع و آسان در Hetzner</a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">نصب سریع و آسان در Vultr</a>
+        <a href="fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">نصب سریع و آسان در Vultr</a>
     </li>
 
     <div class="hidden">
         <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
+        <a href="fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
         </li>
         <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">نصب سریع و آسان در OVH</a>
+        <a href="fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers" target="_blank">نصب سریع و آسان در OVH</a>
         </li>
         <li>
-        <a href="/manager/fa/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">نصب سریع و آسان در Azure</a>
+        <a href="fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure" target="_blank">نصب سریع و آسان در Azure</a>
         </li>
         <li>
-        <a href="/manager/fa/installation-and-setup/Cloud-init-installation" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
+        <a href="fa/manager/installation-and-setup/Cloud-init-installation" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
         </li>
 
 
@@ -93,49 +93,49 @@ weight: -91
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
         آموزش کامل پیکربندی هیدیفای‌منیجر (آشنایی با بخش‌های مختلف و تنظیمات آن)
         </a>
     </li>
     <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH" target="_blank">
-        اتصال به سرور با SSH و کار با منوی نرم‌افزار در ترمینال</a>
+        <a href="fa/manager/basic-concepts-and-troubelshooting/How-to-connect-and-troubleshoot-via-SSH" target="_blank">
+        آموزش اتصال به سرور و عیب‌یابی از طریق SSH (کار با منوی هیدیفای‌منیجر)</a>
     </li>
     <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">
         تنظیمات ریالیتی در هیدیفای‌منیجر</a>
     </li>
     <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel" target="_blank">
         تنظیم بات تلگرام در هیدیفای‌منیجر</a>
     </li>
     <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel" target="_blank">
        آموزش راه‌اندازی پروکسی تلگرام در هیدیفای‌منیجر</a>
     </li>
     <div class="hidden">
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel" target="_blank">
             آموزش فعال‌سازی وارپ در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify" target="_blank">
             آموزش پشتیبان‌گیری و بازیابی پنل در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
             آموزش به‌روزرسانی هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default" target="_blank">
             ریست کردن تنظیمات هیدیفای‌منیجر به حالت اولیه</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel" target="_blank">
              آموزش تنظیم پروکسی SSH در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality" target="_blank">
+        <a href="fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality" target="_blank">
             نحوه استفاده از چندین زیردامنه یک وبسایت در ریالیتی</a>
         </li>
         <li>
@@ -183,66 +183,66 @@ weight: -91
 
     <ul class="my-4 list-disc text-secondary mr-5 max-w-[402px]">
     <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them">
         انواع دامنه و آموزش ثبت آن‌ها
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F">
         سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-use-cloudflare-CDN">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-use-cloudflare-CDN">
         آموزش استفاده از CDN Cloudflare
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain">
         آموزش استفاده از CDN GCore
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN">
         آموزش استفاده از CDN Amazon یا Cloudfront</a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Get-Cloudflare-API">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API">
          آموزش خودکار کردن ساخت زیردامنه روی کلادفلر</a>
     </li>
     <div class="hidden">
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify">
             آموزش استفاده از دامنه AutoCDN</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify">
             آموزش استفاده از زیر دامنه‌های متغیر در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting">
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting">
            آموزش استفاده از دامین فرانتینگ</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/332?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to پیشنهاداتی برای مدیریت بهتر چندین دامنه CDN در هیدیفای</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP">آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP">آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص برای فیلد اجبار</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/689?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">استفاده از سایت PHP برای لینک سابسکریپشن</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای</a>
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers">آموزش تنظیم و استفاده از ورکرز در (روش خودکار) هیدیفای‌منیجر</a>
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers">آموزش تنظیم و استفاده از ورکرز در (روش خودکار) هیدیفای‌منیجر</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">آموزش راه‌اندازی تانل به روش IP Tables</a>
@@ -263,7 +263,7 @@ weight: -91
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain">نحوه ایجاد و استفاده از دامنه فیک
+        <a target="_blank" href="fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain">نحوه ایجاد و استفاده از دامنه فیک
         </a>
         </li>
     </div>
@@ -304,21 +304,21 @@ weight: -91
 
     <ul class="my-4 list-disc text-secondary mr-5">
     <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean">
         چک کردن تمیز بودن آیپی یا دامنه سرور
         </a>
     </li>
     <li>
-        <a href="/manager/fa/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
+        <a href="fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH">
         آموزش SSH اتصال و رفع عیب از طریق (کار با منوی هیدیفای)
 
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-set-DNS-server">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server">
         آموزش تنظیم DNS سرور در هیدیفای‌منیجر
         </a>
     </li>
@@ -328,23 +328,23 @@ weight: -91
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel">
         آموزش تنظیم فایروال در هیدیفای‌منیجر
         </a>
     </li>
     <div class="hidden">
     <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
         آموزش نحوه کنترل منابع سرور در هیدیفای‌منیجر
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
              آموزش تست سرعت روی سرور
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify">
             آموزش غیرفعال‌سازی آیپی ورژن ۶ در هیدیفای‌منیجر
         </a>
         </li>
@@ -354,32 +354,32 @@ weight: -91
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server">
             نحوه تغییر پورت SSH روی سرور
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security">
             تنظیم TLS برای افزایش امنیت
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer">
             آموزش انتقال فایل بین سرور و کامپیوتر
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/How-the-fragment-works-and-its-usage">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/How-the-fragment-works-and-its-usage">
             کاربرد و نحوه عملکرد فرگمنت
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/Basic-Concepts">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts">
             مفاهیم پایه مرتبط با اینترنت و استفاده از پروکسی
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/fa/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link">
+        <a target="_blank" href="fa/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link">
             توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر
         </a>
         </li>

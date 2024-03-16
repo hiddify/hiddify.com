@@ -1,5 +1,6 @@
 ---
 title: How to Reset HiddifyManager to default
+weight: -80
 ---
 
 <div dir="ltr" markdown="1">

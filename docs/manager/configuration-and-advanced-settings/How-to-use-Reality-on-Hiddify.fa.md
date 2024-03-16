@@ -1,5 +1,6 @@
 ---
 title: تنظیمات ریالیتی در هیدیفای‌منیجر
+weight: -140
 ---
 
 <div dir=rtl align=center markdown=1>

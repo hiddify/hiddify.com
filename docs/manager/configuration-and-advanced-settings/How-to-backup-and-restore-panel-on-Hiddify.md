@@ -1,5 +1,6 @@
 ---
 title: How to backup and restore HiddifyManager
+weight: -100
 ---
 
 <div dir="ltr" markdown="1">

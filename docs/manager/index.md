@@ -2,7 +2,7 @@
 description: Welcome to the wiki page for HiddifyManager
 title: Manager Guide
 comments: false
-weight: -91
+weight: -1
 ---
 
 # :material-home: HiddifyManager Guide
@@ -96,8 +96,8 @@ In this page, we put categorized content of tutorials and documents. In addition
         How to configure Hiddify Manager properly (Getting familiar with its different parts)</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH" target="_blank">
-        How to connect and troubleshoot via SSH</a>
+        <a href="/manager/basic-concepts-and-troubelshooting/How-to-connect-and-troubleshoot-via-SSH" target="_blank">
+        How to connect and troubleshoot via SSH (working with HiddifyManager Menu)</a>
     </li>
     <li>
         <a href="/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">

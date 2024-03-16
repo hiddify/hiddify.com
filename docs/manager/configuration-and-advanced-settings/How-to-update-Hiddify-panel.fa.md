@@ -1,5 +1,6 @@
 ---
 title: آموزش به‌روزرسانی هیدیفای‌منیجر
+weight: -90
 ---
 
 <div dir="rtl" markdown=1>

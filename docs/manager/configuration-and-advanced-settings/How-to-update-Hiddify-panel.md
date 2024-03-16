@@ -1,5 +1,6 @@
 ---
 title: How to update HiddifyManager
+weight: -90
 ---
 
 <div dir="ltr" markdown="1">

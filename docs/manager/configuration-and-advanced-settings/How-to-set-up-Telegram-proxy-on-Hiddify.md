@@ -1,5 +1,6 @@
 ---
 title: How to set up Telegram proxy on HiddifyManager
+weight: -120
 ---
 
 <div dir="ltr" markdown="1">

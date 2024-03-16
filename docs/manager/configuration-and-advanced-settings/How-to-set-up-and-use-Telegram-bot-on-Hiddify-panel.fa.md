@@ -1,5 +1,6 @@
 ---
 title: تنظیم بات تلگرام در هیدیفای‌منیجر
+weight: -130
 ---
 
 <div dir="rtl" markdown=1>

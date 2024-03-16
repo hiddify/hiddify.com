@@ -2,7 +2,7 @@
 description: پشتیبانی و حمایت مالی
 title: پشتیبانی و حمایت مالی
 comments: false
-weight: 2
+weight: -10
 ---
 
 <div align="center" markdown="1">
