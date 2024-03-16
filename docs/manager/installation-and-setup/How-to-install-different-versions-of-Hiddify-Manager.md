@@ -1,5 +1,6 @@
 ---
 title: How to install different versions of Hiddify Manager
+weight: -75
 ---
 
 <div dir="ltr" markdown="1">

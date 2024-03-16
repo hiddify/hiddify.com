@@ -1,5 +1,6 @@
 ---
 title: Installation prerequisites
+weight: -82
 ---
 
 <div dir="ltr" markdown="1">

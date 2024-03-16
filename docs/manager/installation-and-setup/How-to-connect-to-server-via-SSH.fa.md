@@ -1,5 +1,6 @@
 ---
 title: آموزش اتصال به سرور از طریق SSH
+weight: -80
 ---
 
 <div dir="rtl" markdown=1>

@@ -1,5 +1,6 @@
 ---
 title: نصب نسخه‌های مختلف هیدیفای‌منیجر
+weight: -75
 ---
 
 <div dir="rtl" markdown="1">

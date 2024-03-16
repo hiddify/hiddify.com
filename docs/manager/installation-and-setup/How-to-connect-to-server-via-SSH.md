@@ -1,5 +1,6 @@
 ---
 title: How to connect to server via SSH
+weight: -80
 ---
 
 <div dir="ltr" markdown="1">

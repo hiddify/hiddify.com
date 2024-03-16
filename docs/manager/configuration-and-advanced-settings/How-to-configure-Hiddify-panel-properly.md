@@ -1,5 +1,6 @@
 ---
 title: How to configure Hiddify Manager properly (Getting familiar with its different parts)
+weight: -90
 ---
 
 <div dir="ltr" markdown="1">
