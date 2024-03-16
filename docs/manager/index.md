@@ -92,7 +92,7 @@ In this page, we put categorized content of tutorials and documents. In addition
 
     <ul class="my-4 list-disc ml-5 text-secondary">
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-Panel-properly" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/" target="_blank">
         How to configure Hiddify Manager properly (Getting familiar with its different parts)</a>
     </li>
     <li>
