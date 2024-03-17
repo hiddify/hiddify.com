@@ -33,26 +33,27 @@ weight: -1
         <a href="/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/" target="_blank">نصب نسخه‌های مختلف هیدیفای‌منیجر
         </a>
     </li>
-    <li>
-        <a href="/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/" target="_blank">نصب سریع و آسان در Hetzner</a>
-    </li>
+
 
 
     <div class="hidden">
         <li>
-        <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" target="_blank">نصب سریع و آسان در Vultr</a>
+        <a href="/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/" target="_blank">نصب سریع و آسان در Hetzner</a>
         </li>
         <li>
-        <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
+        <a href="/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" target="_blank">نصب سریع و آسان در Vultr</a>
         </li>
         <li>
-        <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" target="_blank">نصب سریع و آسان در OVH</a>
+        <a href="/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" target="_blank">نصب سریع و آسان در Oracle Cloud</a>
         </li>
         <li>
-        <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" target="_blank">نصب سریع و آسان در Azure</a>
+        <a href="/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" target="_blank">نصب سریع و آسان در OVH</a>
         </li>
         <li>
-        <a href="https://hiddify.com/fa/manager/installation-and-setup/Cloud-init-installation/" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
+        <a href="/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" target="_blank">نصب سریع و آسان در Azure</a>
+        </li>
+        <li>
+        <a href="/fa/manager/installation-and-setup/Cloud-init-installation/" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
         </li>
 
 
@@ -94,49 +95,49 @@ weight: -1
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/" target="_blank">
         آموزش کامل پیکربندی هیدیفای‌منیجر (آشنایی با بخش‌های مختلف و تنظیمات آن)
         </a>
     </li>
     <li>
-        <a href="/manager/basic-concepts-and-troubelshooting/How-to-connect-and-troubleshoot-via-SSH" target="_blank">
+        <a href="/fa/manager/basic-concepts-and-troubelshooting/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
         آموزش اتصال به سرور و عیب‌یابی از طریق SSH (کار با منوی هیدیفای‌منیجر)</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/" target="_blank">
         تنظیمات ریالیتی در هیدیفای‌منیجر</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel/" target="_blank">
         تنظیم بات تلگرام در هیدیفای‌منیجر</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel/" target="_blank">
        آموزش راه‌اندازی پروکسی تلگرام در هیدیفای‌منیجر</a>
     </li>
     <div class="hidden">
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/" target="_blank">
             آموزش فعال‌سازی وارپ در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/" target="_blank">
             آموزش پشتیبان‌گیری و بازیابی پنل در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/" target="_blank">
             آموزش به‌روزرسانی هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" target="_blank">
             ریست کردن تنظیمات هیدیفای‌منیجر به حالت اولیه</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/" target="_blank">
              آموزش تنظیم پروکسی SSH در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/" target="_blank">
             نحوه استفاده از چندین زیردامنه یک وبسایت در ریالیتی</a>
         </li>
         <li>
