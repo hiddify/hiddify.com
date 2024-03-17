@@ -13,7 +13,7 @@ weight: -1
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="/assets/1.png" alt="image" class="rounded-xl">
+    <img src="/assets/install.png" alt="image" class="rounded-xl">
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
@@ -73,6 +73,33 @@ weight: -1
     </a>
     <a href="https://www.youtube.com/watch?v=tRrulSA8rZU&t=41s" target="_blank">
         <img src="/assets/basic-settings.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=GVEHJUOojUY&t=19s" target="_blank">
+        <img src="/assets/purchase_vps2.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=h0yk3Vm3hcI&t=337s" target="_blank">
+        <img src="/assets/install_hiddifymanager_version7.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=DunP8wfctyA" target="_blank">
+        <img src="/assets/hiddifymanager_features.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=l-KKRus2KS0" target="_blank">
+        <img src="/assets/finalize.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=_LYFqrXVupI" target="_blank">
+        <img src="/assets/install.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=tcd1wBUR3cY" target="_blank">
+        <img src="/assets/purchase_vps.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=hRRg10BURJI" target="_blank">
+        <img src="/assets/vutr_install.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=s1QZD1Ujdds" target="_blank">
+        <img src="/assets/oracle_install.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=06fMizOb-DE" target="_blank">
+        <img src="/assets/oracle_install.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
