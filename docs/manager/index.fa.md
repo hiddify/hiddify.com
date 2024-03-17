@@ -333,12 +333,13 @@ weight: -1
         آموزش تست نشتی DNS
         </a>
     </li>
+
+    <div class="hidden">
     <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/">
         آموزش تنظیم فایروال در هیدیفای‌منیجر
         </a>
     </li>
-    <div class="hidden">
     <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/">
         آموزش نحوه کنترل منابع سرور در هیدیفای‌منیجر
