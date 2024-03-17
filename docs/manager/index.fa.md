@@ -65,11 +65,14 @@ weight: -1
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
     <h4 class="text-md">ویدیو های مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
-    <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w" target="_blank">
-        <img src="/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    <a href="https://www.youtube.com/watch?v=pydED363X-o" target="_blank">
+        <img src="/assets/install_version8.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
-    <a href="https://www.youtube.com/watch?v=XSwCE35lqmU" target="_blank">
-        <img src="/assets/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    <a href="https://www.youtube.com/watch?v=sZzXI7BGClI" target="_blank">
+        <img src="/assets/purchase_domain.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=tRrulSA8rZU&t=41s" target="_blank">
+        <img src="/assets/basic-settings.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
