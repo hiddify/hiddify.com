@@ -56,7 +56,6 @@ weight: -1
         <a href="/fa/manager/installation-and-setup/Cloud-init-installation/" target="_blank">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
         </li>
 
-
     </div>
     </ul>
 
@@ -121,7 +120,7 @@ weight: -1
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="/assets/image194.png" alt="image" class="rounded-xl">
+    <img src="/assets/config_hiddifymanager.png" alt="image" class="rounded-xl">
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
@@ -183,11 +182,23 @@ weight: -1
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
 <h4 class="text-md">ویدیو های مرتبط</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
-    <a href="https://www.youtube.com/watch?v=nOe7FhajX3g" target="_blank">
-        <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    <a href="https://www.youtube.com/watch?v=T1SKHk6HDks" target="_blank">
+        <img src="/assets/hiddify_reality_scanner.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
-    <a href="https://www.youtube.com/watch?v=eFNPBSy8_to" target="_blank">
-        <img src="/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    <a href="https://www.youtube.com/watch?v=4o4lDfOtpRw" target="_blank">
+        <img src="/assets/Telegram_Bot.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=Pzk2Y9Q4n_s" target="_blank">
+        <img src="/assets/HiddifyMenu.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=QtS7595cH30" target="_blank">
+        <img src="/assets/reality_on_hiddifymanager.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=N819QPAtkrk" target="_blank">
+        <img src="/assets/quick_reality_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=OfvKL9CaOQU" target="_blank">
+        <img src="/assets/config_hiddifymanager.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
@@ -307,11 +318,39 @@ weight: -1
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
     <h4 class="text-md">ویدیو های مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
-    <a href="https://www.youtube.com/watch?v=ea5C93ynkUs" target="_blank">
-        <img src="/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    <a href="https://www.youtube.com/watch?v=Xn9qwxpWmWQ" target="_blank">
+        <img src="/assets/php_sub_link.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
-    <a href="https://youtu.be/gAyfCJt0jXw?si=QSA8kNy_Ua79sN70" target="_blank">
-        <img src="/assets/274807068-2e229b5d-4b3d-4588-8434-aff0b278c66a.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    <a href="https://www.youtube.com/watch?v=rdzYoOK6j2U" target="_blank">
+        <img src="/assets/subscription_link.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=zq2sq43R1i0" target="_blank">
+        <img src="/assets/domain-types.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=vBrD9iYeIrM" target="_blank">
+        <img src="/assets/cdn_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=r2dlt19OybM" target="_blank">
+        <img src="/assets/ws_tunnel.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=T3yfTqqQqJQ" target="_blank">
+        <img src="/assets/gost_tunnel.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=MiD8FYWwHIc" target="_blank">
+        <img src="/assets/iptables_tunnel.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=147nyGlTuuA" target="_blank">
+        <img src="/assets/cf_worker_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    </a>
+    <a href="https://www.youtube.com/watch?v=HHq4EQoUHXY" target="_blank">
+        <img src="/assets/finding_clean_ip_cf.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=x44qGcnpBSE" target="_blank">
+        <img src="/assets/wilcard_domain.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=kz_Ih__jS9c" target="_blank">
+        <img src="/assets/auto_cdn_ip_domain.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     </div>
 </div>
@@ -420,6 +459,21 @@ weight: -1
     </div>
     </ul>
 
+</div>
+
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+    <h4 class="text-md">ویدیو های مرتبط</h4>
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
+    <a href="https://www.youtube.com/watch?v=MRI3HYfayb4" target="_blank">
+        <img src="/assets/enable_ssh_key.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=vN5sInIIOpU" target="_blank">
+        <img src="/assets/clean_ip.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=UujtFy8YuB4" target="_blank">
+        <img src="/assets/some_points_about_vpn.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    </div>
 </div>
 
 <div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
