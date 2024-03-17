@@ -100,40 +100,40 @@ In this page, we put categorized content of tutorials and documents. In addition
         How to connect and troubleshoot via SSH (working with HiddifyManager Menu)</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/" target="_blank">
         How to use Reality on HiddifyManager</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel/" target="_blank">
         How to set up and use Telegram bot on HiddifyManager</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel/" target="_blank">
         How to set up Telegram proxy on HiddifyManager</a>
     </li>
     <div class="hidden">
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/" target="_blank">
             How to activate WARP on HiddifyManager</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/" target="_blank">
             How to backup and restore HiddifyManager</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/" target="_blank">
             How to update HiddifyManager</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default" target="_blank">
+        <a href="/manager/fa/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" target="_blank">
             How to Reset HiddifyManager to default</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/" target="_blank">
             How to setup SSH proxy on HiddifyManager</a>
         </li>
         <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/" target="_blank">
             How to use subdomains of a website in Reality</a>
         </li>
         <li>
@@ -181,66 +181,66 @@ In this page, we put categorized content of tutorials and documents. In addition
 
     <ul class="my-4 list-disc text-secondary ml-5 max-w-[402px]">
     <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/">
         Domain types and how to register them
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/">
         What is CDN and how does it help us?
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/">
         How to use Cloudflare CDN
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/">
         How to use GCore CDN
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/">
         How to use Amazon CDN or Cloudfront</a>
     </li>
     <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/">
         Tutorial on automating subdomain registration on Cloudflare</a>
     </li>
     <div class="hidden">
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/">
             How to use AutoCDN IP domain</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/">
             How to use wildcard subdomains on HiddifyManager</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting">
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/">
             How to use Domain Fronting</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/332?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to manage multiple CDN domains better on Hiddify</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP">What is Cloudflare's clean IP and how to find it</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">What is Cloudflare's clean IP and how to find it</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to use desired clean IPs based on a specific format</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify">How to create subscription link on HiddifyManager</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">How to create subscription link on HiddifyManager</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/689?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">Using PHP site for subscription link</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify">How to use the Cloudflare worker domain on HiddifyManager (Automated way)</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">How to use the Cloudflare worker domain on HiddifyManager (Automated way)</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers">How to setup and use Cloudflare workers</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">How to setup and use Cloudflare workers</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using IP Tables tunneling</a>
@@ -261,7 +261,7 @@ In this page, we put categorized content of tutorials and documents. In addition
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain">How How to create and use fake domain
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/">How How to create and use fake domain
         </a>
         </li>
     </div>
@@ -302,20 +302,20 @@ In this page, we put categorized content of tutorials and documents. In addition
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/">
         How to make sure the server's IP or domain is clean
         </a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/How-to-connect-to-server-via-SSH" target="_blank">How to connect to server via SSH</a>
+        <a href="/manager/installation-and-setup/How-to-connect-to-server-via-SSH/" target="_blank">How to connect to server via SSH</a>
     </li>
     <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH/">
         How to connect and troubleshoot via SSH (Working with Hiddify Menu)
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/">
         How to set DNS server on HiddifyManager
         </a>
     </li>
@@ -325,59 +325,59 @@ In this page, we put categorized content of tutorials and documents. In addition
         </a>
     </li>
     <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/">
         How to setup Firewall on HiddifyManager
         </a>
     </li>
 
     <div class="hidden">
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/">
         How to monitor server resources on HiddifyManager
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/">
             How to do speed test on server
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/">
             How to disable IP version 6 on HiddifyManager
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/">
             Disable SSH Password Authentication on SSH
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/">
             How to change SSH port on your server
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/">
             TLS setting for increased security
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/">
             How to transfer files between a server and a computer
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-the-fragment-works-and-its-usage">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-the-fragment-works-and-its-usage/">
             How the fragment works and its usage
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Basic-Concepts">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
             Basic concepts related to the internet and using proxies
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link/">
             Explanations about admin link in HiddifyManager
         </a>
         </li>
