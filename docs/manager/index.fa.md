@@ -62,7 +62,7 @@ weight: -1
 </div>
 
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
-    <h4 class="text-md">ویدیو های مرتبط</h4>
+    <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=pydED363X-o" target="_blank">
         <img src="/assets/install_version8.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
@@ -180,7 +180,7 @@ weight: -1
 </div>
 
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
-<h4 class="text-md">ویدیو های مرتبط</h4>    
+<h4 class="text-md">ویدئوهای مرتبط</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=T1SKHk6HDks" target="_blank">
         <img src="/assets/hiddify_reality_scanner.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
@@ -316,7 +316,7 @@ weight: -1
 </div>
 
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
-    <h4 class="text-md">ویدیو های مرتبط</h4>
+    <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=Xn9qwxpWmWQ" target="_blank">
         <img src="/assets/php_sub_link.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
@@ -462,7 +462,7 @@ weight: -1
 </div>
 
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
-    <h4 class="text-md">ویدیو های مرتبط</h4>
+    <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=MRI3HYfayb4" target="_blank">
         <img src="/assets/enable_ssh_key.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
@@ -488,6 +488,228 @@ weight: -1
     </button>
 </div>
 </div>
+
+## نرم‌افزارهای کلاینت در اندروید
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="max-w-[552px]">
+    <img src="/assets/android_tutorials.jpg" alt="image" class="rounded-xl">
+
+    <ul class="my-4 list-disc mr-5 text-secondary">
+    <li>
+        <a href="/fa/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/" target="_blank">
+        آموزش کار با نرم‌افزار HiddifyNG
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" target="_blank">
+        آموزش کار با نرم‌افزار HiddifyClashAndroid
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/" target="_blank">
+        آموزش کار با نرم‌افزار V2rayNG
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/" target="_blank">
+        آموزش کار با نرم‌افزار Sing-box
+        </a>
+    </li>
+        <li>
+        <a href="/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/" target="_blank">
+        آموزش کار با نرم‌افزار Nekobox
+        </a>
+    </li>
+
+    <div class="hidden">
+  
+    </div>
+    </ul>
+
+</div>
+
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<h4 class="text-md">ویدئوهای مرتبط</h4>    
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
+    <a href="https://www.youtube.com/watch?v=qDbI72J-INM" target="_blank">
+        <img src="/assets/hiddifyng_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=8P887E-KMls" target="_blank">
+        <img src="/assets/hiddify_clash_android_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=6HncctDHXVs" target="_blank">
+        <img src="/assets/v2rayng_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=7kqprO7M4eM" target="_blank">
+        <img src="/assets/v2flyng_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://youtube.com/shorts/_-Iyr_RtIH0" target="_blank">
+        <img src="/assets/wpa_android.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    </div>
+</div>
+
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
+    <span>بیشتر بخوانید</span>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+        <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+        <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+        </g>
+    </svg>
+    </button>
+</div>
+</div>
+
+
+## نرم‌افزارهای کلاینت در iOS
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="max-w-[552px]">
+    <img src="/assets/ios_tutorials.jpg" alt="image" class="rounded-xl">
+
+    <ul class="my-4 list-disc mr-5 text-secondary">
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/" target="_blank">
+        آموزش کار با نرم‌افزار ShadowRocket
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-Stash-app/" target="_blank">
+        آموزش کار با نرم‌افزار Stash
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-FoXray-app/" target="_blank">
+        آموزش کار با نرم‌افزار FoXray
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/" target="_blank">
+        آموزش کار با نرم‌افزار FairVPN
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/" target="_blank">
+        آموزش کار با نرم‌افزار V2Box
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-Streisand/" target="_blank">
+        آموزش کار با نرم‌افزار Streisand
+        </a>
+    </li>
+
+    <div class="hidden">
+        <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/" target="_blank">
+        آموزش کار با نرم‌افزار Sing-box
+        </a>
+        </li>
+    </div>
+    </ul>
+
+    <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+    <h4 class="text-md">ویدئوهای مرتبط</h4>
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
+    <a href="https://www.youtube.com/watch?v=knOxCtgvaDA" target="_blank">
+        <img src="/assets/foxray_tutorial.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=jaMkZTLH2QY" target="_blank">
+        <img src="/assets/streisand.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=01m7w-I4JXE" target="_blank">
+        <img src="/assets/fairvpn_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=F2bC_mtbYmQ" target="_blank">
+        <img src="/assets/shadowrocket_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=D0Xv54nRSY8" target="_blank">
+        <img src="/assets/stash_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=qFKv4I-MNQc" target="_blank">
+        <img src="/assets/wingx_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://youtube.com/shorts/GBywNl2KZMM" target="_blank">
+        <img src="/assets/WPA_iPhone.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    </div>
+</div>
+
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
+    <span>بیشتر بخوانید</span>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+        <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+        <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+        </g>
+    </svg>
+    </button>
+</div>
+</div>
+
+## نرم‌افزارهای کلاینت در دسکتاپ
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="max-w-[552px]">
+    <img src="/assets/android_tutorials.jpg" alt="image" class="rounded-xl">
+
+    <ul class="my-4 list-disc mr-5 text-secondary">
+    <li>
+        <a href="/fa/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/" target="_blank">
+         آموزش کار با نرم‌افزار HiddifyN
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" target="_blank">
+        آموزش کار با نرم‌افزار HiddifyClashDesktop
+        </a>
+    </li>
+    <li>
+        <a href="/fa/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/" target="_blank">
+         آموزش کار با نرم‌افزار QV2ray
+        </a>
+    </li>
+   
+    <div class="hidden">
+  
+    </div>
+    </ul>
+    <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+    <h4 class="text-md">ویدئوهای مرتبط</h4>
+    <div class="flex gap-4 mt-4 flex-col lg:mr-2">
+    <a href="https://www.youtube.com/watch?v=o9L2sI2T53Q" target="_blank">
+        <img src="/assets/HiddifyN_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=jaMkZTLH2QY" target="_blank">
+        <img src="/assets/HiddifyClashDesktop_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    <a href="https://www.youtube.com/watch?v=01m7w-I4JXE" target="_blank">
+        <img src="/assets/nekoray.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+    </a>
+    </div>
+</div>
+
+<div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
+    <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
+    <span>بیشتر بخوانید</span>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+        <path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"></path>
+        <path fill="currentColor" d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"></path>
+        </g>
+    </svg>
+    </button>
+</div>
+</div>
+
+
+
+<div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
+<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
 <script>
     function toggleShow() {
