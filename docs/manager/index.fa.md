@@ -655,7 +655,7 @@ weight: -1
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="/assets/android_tutorials.jpg" alt="image" class="rounded-xl">
+    <img src="/assets/desktop_tutorials.jpg" alt="image" class="rounded-xl">
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
