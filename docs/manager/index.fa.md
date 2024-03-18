@@ -611,8 +611,10 @@ weight: -1
     </div>
     </ul>
 
-    <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
-    <h4 class="text-md">ویدئوهای مرتبط</h4>
+</div>
+
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=knOxCtgvaDA" target="_blank">
         <img src="/assets/foxray_tutorial.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
@@ -681,7 +683,7 @@ weight: -1
 </div>
 
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
-    <h4 class="text-md">ویدئوهای مرتبط</h4>
+<h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=o9L2sI2T53Q" target="_blank">
         <img src="/assets/HiddifyN_tutorial.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
