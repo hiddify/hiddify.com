@@ -516,14 +516,14 @@ weight: -1
         آموزش کار با نرم‌افزار Sing-box
         </a>
     </li>
+
+
+    <div class="hidden">
         <li>
         <a href="/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/" target="_blank">
         آموزش کار با نرم‌افزار Nekobox
         </a>
     </li>
-
-    <div class="hidden">
-  
     </div>
     </ul>
 
