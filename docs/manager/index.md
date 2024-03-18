@@ -1,13 +1,13 @@
 ---
 description: Welcome to the wiki page for HiddifyManager
-title: Manager Guide
+title: HiddifyManager Guide
 comments: false
-weight: -1
+weight: -2
 ---
 
 # :material-home: HiddifyManager Guide
 
-In this page, we put categorized content of tutorials and documents. In addition to the fact that you can click on the links of each article to reach out the full explanations of them, there are some videos for these items on our [YouTube channel](https://www.youtube.com/@hiddify/videos), which you can watch by clicking on the images below.
+In this page, we put categorized content of tutorials and documents related to HiddifyManager. In addition to the fact that you can click on the links of each article to reach out the full explanations of them, there are some videos for these items on our [YouTube channel](https://www.youtube.com/@hiddify/videos), which you can watch by clicking on the images below.
 
 ## How to install HiddifyManager
 

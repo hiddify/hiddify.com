@@ -1,13 +1,13 @@
 ---
 description: به ویکی هیدیفای خوش آمدید
-title: راهنمای منیجر
+title: راهنمای هیدیفای‌منیجر
 comments: false
 weight: -1
 ---
 
 # :material-home: راهنمای هیدیفای‌منیجر
 
-در این صفحه مطالب و ویدئوهای آموزشی به صورت دسته‌بندی شده قرار داده می‌شود. علاوه بر اینکه می‌توانید روی لینک‌های هر مطلب کلیک کنید تا به توضیحات کامل مربوط به هر بخش برسید، برای برخی از این موارد در [کانال یوتیوب](https://www.youtube.com/@hiddify/videos) ما ویدئو وجود دارد که با کلیک روی تصاویر زیر می‌توانید آن‌ها را ملاحظه کنید.
+در این صفحه مطالب و ویدئوهای آموزشی مرتبط با هیدیفای‌منیجر به صورت دسته‌بندی شده قرار داده می‌شود. علاوه بر اینکه می‌توانید روی لینک‌های هر مطلب کلیک کنید تا به توضیحات کامل مربوط به هر بخش برسید، برای برخی از این موارد در [کانال یوتیوب](https://www.youtube.com/@hiddify/videos) ما ویدئو وجود دارد که با کلیک روی تصاویر زیر می‌توانید آن‌ها را ملاحظه کنید.
 
 ## آموزش نصب هیدیفای‌منیجر
 
@@ -70,13 +70,13 @@ weight: -1
     <a href="https://www.youtube.com/watch?v=sZzXI7BGClI" target="_blank">
         <img src="/assets/purchase_domain.jpg" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
-    <a href="https://www.youtube.com/watch?v=tRrulSA8rZU&t=41s" target="_blank">
+    <a href="https://www.youtube.com/watch?v=tRrulSA8rZU" target="_blank">
         <img src="/assets/basic-settings.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
-    <a href="https://www.youtube.com/watch?v=GVEHJUOojUY&t=19s" target="_blank">
+    <a href="https://www.youtube.com/watch?v=GVEHJUOojUY" target="_blank">
         <img src="/assets/purchase_vps2.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
-    <a href="https://www.youtube.com/watch?v=h0yk3Vm3hcI&t=337s" target="_blank">
+    <a href="https://www.youtube.com/watch?v=h0yk3Vm3hcI" target="_blank">
         <img src="/assets/install_hiddifymanager_version7.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=DunP8wfctyA" target="_blank">
@@ -368,7 +368,7 @@ weight: -1
 </div>
 </div>
 
-## مفاهیم پایه عیب‌یابی
+## مفاهیم پایه و عیب‌یابی
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
