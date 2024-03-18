@@ -35,6 +35,7 @@ weight: -1
     </ul>
 
 </div>
+
 <div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
     <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
@@ -49,7 +50,7 @@ weight: -1
     </a>
     </div>
 </div>
-
+</div>
 
 <script>
     function toggleShow() {
