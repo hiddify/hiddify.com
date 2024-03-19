@@ -466,6 +466,9 @@ In this page, we put categorized content of tutorials and documents related to H
 </div>
 </div>
 
+<div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
+<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
+
 ## Client software on iOS
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
@@ -524,6 +527,9 @@ In this page, we put categorized content of tutorials and documents related to H
 </div>
 </div>
 
+<div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
+<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
+
 ## Client software on desktop
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
@@ -561,6 +567,7 @@ In this page, we put categorized content of tutorials and documents related to H
     </a>
     </div>
 </div>
+
 <div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
     <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
     <span>Read more</span>
@@ -573,6 +580,9 @@ In this page, we put categorized content of tutorials and documents related to H
     </button>
 </div>
 </div>
+
+<div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
+<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
 <script>
     function toggleShow() {
