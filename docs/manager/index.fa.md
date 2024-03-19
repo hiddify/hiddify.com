@@ -2,7 +2,7 @@
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای هیدیفای‌منیجر
 comments: false
-weight: -1
+weight: -100
 ---
 
 # :material-home: راهنمای هیدیفای‌منیجر

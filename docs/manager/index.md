@@ -2,7 +2,7 @@
 description: Welcome to the wiki page for HiddifyManager
 title: Manager Guide
 comments: false
-weight: -2
+weight: -100
 ---
 
 # :material-home: HiddifyManager Guide
