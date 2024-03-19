@@ -12,7 +12,7 @@ watch:
   - overrides
 theme:
   name: material
-  logo: assets/ic_hiddify.png
+  logo: assets/ic_hiddify_wiki.png
   favicon: assets/ic_hiddify.png
   custom_dir: overrides
   font:
