@@ -1,6 +1,6 @@
 ---
 description: Welcome to the wiki page for HiddifyManager
-title: HiddifyManager Guide
+title: Manager Guide
 comments: false
 weight: -2
 ---

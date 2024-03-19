@@ -1,6 +1,6 @@
 ---
 description: Welcome to the wiki page for Hiddify App.
-title: HiddifyApp Guide
+title: App Guide
 weight: -1
 comments: false
 ---
