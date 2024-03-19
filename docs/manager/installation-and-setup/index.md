@@ -1,4 +1,4 @@
 ---
 title: Installation and setup
-weight: -80
+weight: -100
 ---
