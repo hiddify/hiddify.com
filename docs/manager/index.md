@@ -425,6 +425,8 @@ In this page, we put categorized content of tutorials and documents related to H
         Tutorial for Sing-box app
         </a>
     </li>
+
+    <div class="hidden">
     <li>
         <a target="_blank" href="/manager/client-software-on-android/Tutorial-for-Nekobox-app/">
         Tutorial for Nekobox app
@@ -466,8 +468,7 @@ In this page, we put categorized content of tutorials and documents related to H
 </div>
 </div>
 
-<div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
-<div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
+
 
 ## Client software on iOS
 
@@ -503,6 +504,8 @@ In this page, we put categorized content of tutorials and documents related to H
         Tutorial for Streisand
         </a>
     </li>
+
+     <div class="hidden">
     <li>
         <a target="_blank" href="/manager/client-software-on-ios/Tutorial-for-SingBox-app/">
         Tutorial for Sing-box app
@@ -551,6 +554,8 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
     </li>
 
+    <div class="hidden">
+    
     </div>
     </ul>
 
