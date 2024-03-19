@@ -1,6 +1,10 @@
+---
+title: How to install HiddifyApp
+---
+
 <div dir="ltr" markdown="1">
 
-# How to install Hiddify app
+# How to install HiddifyApp
 This app is a multi-platform client based on Sing-box that serves as a universal proxy toolchain. This app offers a wide range of capabilities. It also supports a large number of protocols. The app is free to use, ad-free, and open-source. It provides a secure and private tool for getting access to the free internet.
 
 🚀 Supporting a wide range of protocols such as: 

@@ -19,13 +19,13 @@ Hiddify-Next is a client based on [Sing-box](https://github.com/SagerNet/sing-bo
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
-        <a href="/app/How-to-install-Hiddify-app/" target="_blank">How to install HiddifyNext app</a>
+        <a href="/app/How-to-install-Hiddify-app/" target="_blank">How to install HiddifyApp</a>
     </li>
     <li>
-        <a href="/app/How-to-use-Hiddify-app/" target="_blank">How to use HiddifyNext app</a>
+        <a href="/app/How-to-use-Hiddify-app/" target="_blank">How to use HiddifyApp</a>
     </li>
     <li>
-        <a href="/app/How-to-use-UDP-Turn-Relay/" target="_blank">How to use UDP Turn Relay</a>
+        <a href="/app/How-to-use-UDP-Turn-Relay/" target="_blank">How to use UDP Turn Relay in HiddifyApp</a>
     </li>
     <li>
         <a href="/app/How-to-contribute-to-this-project/" target="_blank">How to contribute to this project</a>
