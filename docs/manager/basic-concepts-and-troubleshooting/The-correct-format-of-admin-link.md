@@ -9,7 +9,8 @@ Or note that the admin link and other program links are made up of different par
 
 In general, the admin link has the following format:
 
-https://sub.domain.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/admin/
+`https://sub.domain.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/admin/`
+
 ![](https://user-images.githubusercontent.com/125398461/230102115-65b21ce7-bc9f-4a6f-a450-bc531ce19a31.png)
 
 
@@ -27,10 +28,24 @@ Each part is separated from each other with "/" which will be explained below.
 
 Now the sub-pages of this page can be added. For example, the users page can be in this format:
 
-https://sub.domain.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/admin/user/
+`https://sub.domain.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/admin/user/`
 
 - If after the end of the initial installation through the terminal; The given admin links were not in the format mentioned above; It turns out that the installation was not done correctly.
 
 - Also, if there is a change in the admin password, this link will change
 
 - Also, if the hidden proxy path changes, this address will change
+
+## Admin link changes in HiddifyManager version 10
+* In version 10, there has been a slight change in the structure of the links, which is in accordance with the following description:
+   * By default, after installing the long link format, it appears as above in the terminal. This link is your main admin link.
+   * When you open it in the browser, for more security, the admin authentication operation is performed based on the password or ``UUID'' of that admin, and then the long link is converted to a short link:
+     
+
+`https://sub.domain.com/proxy_root/address_of_the_page`
+
+
+  * This shortened link is valid for up to 10 days, in other words, your login with admin user is valid for up to 10 days and then it expires.
+  * After that, if you refresh the shortened link in the browser, the login page with UUID will be displayed. Here you need to enter the UUID of that admin to perform the login operation.
+  * The alternative solution is to open the long link (the link that appeared in the terminal after installation) once again. In this case, you do not need to enter the UUID.
+  > It is recommended to always save the long link in a place where it is available to you when needed and use it.
