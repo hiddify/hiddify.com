@@ -39,13 +39,20 @@ Now the sub-pages of this page can be added. For example, the users page can be 
 ## Admin link changes in HiddifyManager version 10
 * In version 10, there has been a slight change in the structure of the links, which is in accordance with the following description:
    * By default, after installing the long link format, it appears as above in the terminal. This link is your main admin link.
-   * When you open it in the browser, for more security, the admin authentication operation is performed based on the password or ``UUID'' of that admin, and then the long link is converted to a short link:
+   * When you open it in the browser, for more security, the admin authentication operation is performed based on the password or `UUID` of that admin, and then the long link is converted to a short link:
      
 
 `https://sub.domain.com/proxy_root/address_of_the_page`
 
+![short link format](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
+
 
   * This shortened link is valid for up to 10 days, in other words, your login with admin user is valid for up to 10 days and then it expires.
-  * After that, if you refresh the shortened link in the browser, the login page with UUID will be displayed. Here you need to enter the UUID of that admin to perform the login operation.
+  * After that, if you refresh the shortened link in the browser, the login page with UUID will be displayed. Here you need to enter the `UUID` of that admin in the `Secret Code` filed to perform the login operation.
+  
+  <div align=center>
+  <img alt="login via UUID" src="https://github.com/hiddify/hiddify.com/assets/125398461/d8c66248-5b57-419e-a12f-4195501ee84c" width=70% />
+  </div>
+ 
   * The alternative solution is to open the long link (the link that appeared in the terminal after installation) once again. In this case, you do not need to enter the UUID.
   > It is recommended to always save the long link in a place where it is available to you when needed and use it.
