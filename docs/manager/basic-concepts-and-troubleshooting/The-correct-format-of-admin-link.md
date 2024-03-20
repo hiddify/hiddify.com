@@ -22,7 +22,7 @@ Each part is separated from each other with "/" which will be explained below.
 
 > After that, there is a hidden proxy path, which is in the settings menu; The advanced settings section is located and can be changed.
 
-> The next part is the admin password, which can be found in the settings menu; Admin settings edited.
+> The next part is the admin password or `UUID`, which can be found in the settings menu; Admin settings edited.
 
 > The last part of the admin link is the page address that ends with admin. Now the sub-pages of this page can be added. For example, the users page can be in this format.
 
