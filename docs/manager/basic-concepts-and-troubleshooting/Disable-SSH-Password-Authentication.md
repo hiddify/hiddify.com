@@ -1,8 +1,4 @@
 ---
-title: 
----
-
----
 title: Disable SSH Password Authentication on SSH
 ---
 
