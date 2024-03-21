@@ -37,7 +37,7 @@ Hiddifycli run -c <sublink>
 
 ## اجرای کانفیگ یا لینک سابسکریپشن در HiddifyCli با تنظیمات HiddifyApp
 برای این کار ابتدا می‌بایست تنظیمات مربوط به هیدیفای‌اپ خود را استخراج نمایید.
-<details dir="rtl"><summary><h3>استخراج تنظیمات HiddifyApp</h3></summary>
+<details><summary><h3>استخراج تنظیمات HiddifyApp</h3></summary>
 برای این کار هیدیفای‌اپ را باز نمایید و وارد `Config Options` یا `تنظیمات پیکربندی` شوید و منوی سه نقطه را بزنید.
 
 <div align=center>
