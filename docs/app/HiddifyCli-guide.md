@@ -33,13 +33,13 @@ Hiddifycli run -c <sublink>
 ```
 </div>
 
-Put your subscription link here instead of ``<sublink>''.
+Put your subscription link here instead of `<sublink>`.
 
 ## Run config or subscription link in HiddifyCli with HiddifyApp settings
-For this, you must first extract the settings related to your HiFi app.
+For this, you must first extract the settings related to your HiddifyApp.
 <details><summary><h3>Extract HiddifyApp settings</h3></summary>
 
-  - To do this, open HiFiApp and enter ``Config Options'' or ``Configuration Settings'' and click the three-dot menu.
+  - To do this, open HiddifyApp and enter `Config Options` and click the three-dot menu.
 
 <div align=center>
 
@@ -47,7 +47,7 @@ For this, you must first extract the settings related to your HiFi app.
 
 </div>
 
-- Now click the ``Export Settings to Clipboard'' option to save the settings to the clipboard.
+- Now click the `Export Settings to Clipboard` option to save the settings to the clipboard.
 <div align=center>
   
 ![export configs](https://github.com/hiddify/hiddify.com/assets/125398461/b4ff8a34-4a8a-4d93-9c53-d2d928c095e6)
