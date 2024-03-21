@@ -9,7 +9,7 @@ title: آموزش استفاده از HiddifyCli یا هیدیفای‌کامن�
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyManager config file or sublink>
+Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file or URL>
 ```
 </div>
 
@@ -37,18 +37,18 @@ Hiddifycli run -c <sublink>
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -h <HiddifyManager config file>
+Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file>
 ```
 </div>
 
-که دراینجا فایل کانفیگ خود در هیدیفای‌منیجر را به جای `<HiddifyManager config file>` وارد نمایید.
+که دراینجا فایل کانفیگ یا ساب‌لینک خود  را به جای `<config file or sublink>` قرار دهید و فایل تنظیمات مربوط به هیدیفای‌اپ را به جای `<HiddifyApp config file>` وارد نمایید. مقلا فرضا فایل تنظیمات فرگمنت را در اینجا وارد نمایید.
 
-- می‌توانید به جای کانفیگ، سابسکریپشن خود در هیدیفای‌منیجر را استفاده نمایید.
+- می‌توانید به جای کانفیگ، لینک مربوط به تنظیمات در هیدیفای‌اپ را استفاده نمایید.
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -h <HiddifyManager sublink>
+Hiddifycli run -c <config file or sublink> -h <HiddifyApp config URL>
 ```
 </div>
 
-که ساب لینک خود در هیدیفای‌منیجر را به جای `<HiddifyManager sublink>` قرار دهید.
+که دراینجا فایل کانفیگ یا ساب‌لینک خود  را به جای `<config file or sublink>` قرار دهید و لینک مربوط به تنظیمات مورد نظر در هیدیفای‌اپ را به جای `<HiddifyApp config URL>` قرار دهید.
