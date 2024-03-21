@@ -1,6 +1,6 @@
 ---
 description: به ویکی هیدیفای خوش آمدید
-title: راهنمای هیدیفای‌اپ
+title: راهنمای اپ
 comments: false
 weight: -1
 ---
