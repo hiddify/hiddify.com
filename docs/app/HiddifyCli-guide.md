@@ -37,7 +37,7 @@ Put your subscription link here instead of `<sublink>`.
 
 ## Run config or subscription link in HiddifyCli with HiddifyApp settings
 For this, you must first extract the settings related to your HiddifyApp.
-<details><summary><h3>Extract HiddifyApp settings</h3></summary>
+<details markdown="1"><summary><h3>Extract HiddifyApp settings</h3></summary>
 
   - To do this, open HiddifyApp and enter `Config Options` and click the three-dot menu.
 
