@@ -52,7 +52,9 @@ Hiddifycli run -c <sublink>
 ![export configs](https://github.com/hiddify/hiddify.com/assets/125398461/b4ff8a34-4a8a-4d93-9c53-d2d928c095e6)
 </div>
 
+
 - حالا می‌توانید این تنظیمات را در یک فایل با پسوند `json` ذخیره نمایید.
+  
 - همچنین می‌توانید این تنظیمات در گیتهاب قرار دهید و از لینک آن به عنوان `URL` استفاده نمایید.
 
 
