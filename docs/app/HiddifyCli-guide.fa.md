@@ -20,6 +20,7 @@ Hiddifycli run -c <config file or sublink> -h <HiddifyManager config file or sub
 Hiddifycli run -c <config file>
 ```
 </div>
+
 در اینجا کانفیگ مورد نظر خود را به جای `<config file>` قرار دهید.
 
 - همچنین می‌توانید یک سابسکریپشن را در اپ اجرا نمایید.
@@ -29,6 +30,7 @@ Hiddifycli run -c <config file>
 Hiddifycli run -c <sublink>
 ```
 </div>
+
 که در اینجا لینک سابسکریپشن خود را به جای `<sublink>` قرار دهید.
 
 - همچنین اگر بخواهید از کانفیگ‌های هیدیفای‌منیجر خود استفاده کنید می‌بایست از کامند زیر استفاده نمایید.
@@ -38,6 +40,7 @@ Hiddifycli run -c <sublink>
 Hiddifycli run -h <HiddifyManager config file>
 ```
 </div>
+
 که دراینجا فایل کانفیگ خود در هیدیفای‌منیجر را به جای `<HiddifyManager config file>` وارد نمایید.
 
 - می‌توانید به جای کانفیگ، سابسکریپشن خود در هیدیفای‌منیجر را استفاده نمایید.
@@ -47,4 +50,5 @@ Hiddifycli run -h <HiddifyManager config file>
 Hiddifycli run -h <HiddifyManager sublink>
 ```
 </div>
+
 که ساب لینک خود در هیدیفای‌منیجر را به جای `<HiddifyManager sublink>` قرار دهید.
