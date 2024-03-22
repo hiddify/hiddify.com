@@ -6,7 +6,7 @@ comments: false
 ---
 
 # :material-home: HiddifyApp Guide
-Hiddify-Next is a client based on [Sing-box](https://github.com/SagerNet/sing-box) that serves as a universal proxy tool-chain which offers a wide range of features and protocols. The appropriate and detailed information are accessible [here](https://github.com/hiddify/hiddify-next/blob/main/README.md). This page contains tutorial guides related to this project.
+HiddifyApp is a client based on [Sing-box](https://github.com/SagerNet/sing-box) that serves as a universal proxy tool-chain which offers a wide range of features and protocols. The appropriate and detailed information are accessible [here](https://github.com/hiddify/hiddify-next/blob/main/README.md). This page contains tutorial guides related to this project.
 
 ## HiddifyApp
 
