@@ -13,7 +13,7 @@ title: آموزش استفاده از HiddifyCli یا هیدیفای‌کامن�
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file or URL>
+HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file or URL>
 ```
 </div>
 
@@ -21,7 +21,7 @@ Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file or URL>
 <div dir="ltr" markdown="1">
 
 ```
-Hiddifycli run -c <config file>
+HiddifyCli run -c <config file>
 ```
 </div>
 
@@ -31,7 +31,7 @@ Hiddifycli run -c <config file>
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <sublink>
+HiddifyCli run -c <sublink>
 ```
 </div>
 
@@ -69,7 +69,7 @@ Hiddifycli run -c <sublink>
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file>
+HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file>
 ```
 </div>
 
@@ -79,7 +79,7 @@ Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file>
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyApp config URL>
+HiddifyCli run -c <config file or sublink> -h <HiddifyApp config URL>
 ```
 </div>
 
