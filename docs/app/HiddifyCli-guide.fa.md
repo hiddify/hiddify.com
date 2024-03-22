@@ -45,14 +45,14 @@ Hiddifycli run -c <sublink>
 
 <div align=center>
 
-![config-options](https://github.com/hiddify/hiddify.com/assets/125398461/f1822c80-1e2a-4752-aabe-8306b1124874)
+<img alt="config-options" src="https://github.com/hiddify/hiddify.com/assets/125398461/f1822c80-1e2a-4752-aabe-8306b1124874" />
 
 </div>
 
 - حالا گزینه `صادر کردن تنظیمات به کلیپ‌بورد` را بزنید تا تنظیمات وارد کلیپ‌بورد شوند.
 <div align=center>
   
-![export configs](https://github.com/hiddify/hiddify.com/assets/125398461/b4ff8a34-4a8a-4d93-9c53-d2d928c095e6)
+<img alt="export configs" src="https://github.com/hiddify/hiddify.com/assets/125398461/b4ff8a34-4a8a-4d93-9c53-d2d928c095e6" />
 </div>
 
 
