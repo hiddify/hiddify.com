@@ -24,10 +24,10 @@ weight: -1
         <a href="/fa/app/How-to-use-Hiddify-app/" target="_blank">آموزش کار با هیدیفای‌اپ</a>
     </li>
     <li>
-        <a href="/fa/app/How-to-use-UDP-Turn-Relay/" target="_blank">آموزش استفاده از UDP Turn Relay در هیدیفای‌اپ</a>
+        <a href="/fa/app/HiddifyCli-guide/" target="_blank">آموزش استفاده از HiddifyCli یا هیدیفای‌کامندلاین</a>
     </li>
     <li>
-        <a href="/fa/app/HiddifyCli-guide/" target="_blank">آموزش استفاده از HiddifyCli یا هیدیفای‌کامندلاین</a>
+        <a href="/fa/app/How-to-use-UDP-Turn-Relay/" target="_blank">آموزش استفاده از UDP Turn Relay در هیدیفای‌اپ</a>
     </li>
     <li>
         <a href="/fa/app/How-to-contribute-to-this-project/" target="_blank">چگونه می‌توان در این پروژه همکاری نمود</a>
