@@ -11,7 +11,7 @@ To use it, the following command should be used.
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file or URL>
+HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file or URL>
 ```
 </div>
 
@@ -19,7 +19,7 @@ Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file or URL>
 <div dir="ltr" markdown="1">
 
 ```
-Hiddifycli run -c <config file>
+HiddifyCli run -c <config file>
 ```
 </div>
 
@@ -29,7 +29,7 @@ Here, put your desired configuration instead of `<config file>`.
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <sublink>
+HiddifyCli run -c <sublink>
 ```
 </div>
 
@@ -43,14 +43,16 @@ For this, you must first extract the settings related to your HiddifyApp.
 
 <div align=center>
 
-![config-options](https://github.com/hiddify/hiddify.com/assets/125398461/f1822c80-1e2a-4752-aabe-8306b1124874)
+<img alt="config-options" src="https://github.com/hiddify/hiddify.com/assets/125398461/36986f9b-cf00-4aef-a11e-c0461a48d3a8" />
 
 </div>
+
 
 - Now click the `Export Settings to Clipboard` option to save the settings to the clipboard.
 <div align=center>
   
-![export configs](https://github.com/hiddify/hiddify.com/assets/125398461/b4ff8a34-4a8a-4d93-9c53-d2d928c095e6)
+<img alt="export configs" src="https://github.com/hiddify/hiddify.com/assets/125398461/a76e3ed9-cd3d-4746-a5f1-8c8a379856c5" />
+
 </div>
 
 
@@ -67,7 +69,7 @@ For this, you must first extract the settings related to your HiddifyApp.
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyApp config file>
+HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file>
 ```
 </div>
 
@@ -77,7 +79,7 @@ Here, put your config file or sublink instead of `<config file or sublink>` and 
 <div dir="ltr" markdown="1">
   
 ```
-Hiddifycli run -c <config file or sublink> -h <HiddifyApp config URL>
+HiddifyCli run -c <config file or sublink> -h <HiddifyApp config URL>
 ```
 </div>
 
