@@ -33,6 +33,8 @@ The HTTP protocol uses handshaking to send and receive information. In this meth
 
 This protocol is actually the security version of the HTTP protocol. Because information and data are not encrypted in the HTTP protocol, it can be easily hacked and misused. Based on this, if someone like the internet service provider has access to the information exchange route, he can easily see the information that is being exchanged. But in HTTPS, the information exchanged between the website and the user is encrypted. That is, even if someone can access the information exchanged on the site, they cannot use the content on the other side. Because this information is encrypted and can only be seen by someone who has the key to decrypt it. It uses one of two SSL or TLS protocols to encrypt communications, which will be explained later.
 
+## HTTP Upgrade
+Upgarde is a field in HTTP that may be used by clients to request a server to switch to one (or more) of the listed protocols, in descending order of preference. In this way, the client requests the server to upgrade to the HTTP version, which improves the security of the connection. The server can ignore the request for any reason, in which case it MUST respond as if the upgrade header was not sent. If the server supports this feature, the HTTP connection will be upgraded to a higher version.
 
 ## Domain
 
