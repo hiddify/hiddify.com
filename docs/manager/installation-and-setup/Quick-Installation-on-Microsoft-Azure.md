@@ -6,7 +6,7 @@ weight: -50
 <div dir="ltr" markdown="1">
 
 # Quick Installation on Microsoft Azure
- In this article, we will teach you how to create a dedicated VPN server on Azure via Hiddify panel.
+ In this article, we will teach you how to create a dedicated VPN server on Azure via HiddifyManager.
 
 
 ## General idea
