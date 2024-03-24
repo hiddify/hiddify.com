@@ -106,7 +106,7 @@ In this page, we put categorized content of tutorials and documents related to H
         How to set up and use Telegram bot on HiddifyManager</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel/" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/" target="_blank">
         How to set up Telegram proxy on HiddifyManager</a>
     </li>
     <div class="hidden">
@@ -123,7 +123,7 @@ In this page, we put categorized content of tutorials and documents related to H
             How to update HiddifyManager</a>
         </li>
         <li>
-        <a href="/manager/fa/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" target="_blank">
             How to Reset HiddifyManager to default</a>
         </li>
         <li>
