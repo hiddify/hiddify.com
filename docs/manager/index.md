@@ -95,7 +95,7 @@ In this page, we put categorized content of tutorials and documents related to H
         How to configure Hiddify Manager properly (Getting familiar with its different parts)</a>
     </li>
     <li>
-        <a href="/manager/basic-concepts-and-troubleshooting/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
         How to connect and troubleshoot via SSH (working with HiddifyManager Menu)</a>
     </li>
     <li>
