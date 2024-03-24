@@ -20,7 +20,7 @@ In this page, we put categorized content of tutorials and documents related to H
         <a href="/manager/installation-and-setup/guide" target="_blank">Main installation guide</a>
     </li>
     <li>
-        <a href="/manager/installation-and-setup/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation" target="_blank">Guide for setting up the domain and finalizing the installation (Initial setting after installation)</a>
+        <a href="/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation" target="_blank">Guide for setting up the domain and finalizing the installation (Initial setting after installation)</a>
     </li>
     <li>
         <a href="/manager/installation-and-setup/Installation-prerequisites" target="_blank">Installation prerequisites</a>
