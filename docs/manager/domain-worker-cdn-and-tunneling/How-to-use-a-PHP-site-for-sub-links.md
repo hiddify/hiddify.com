@@ -1,38 +1,38 @@
 ---
-title: آموزش استفاده از سایت PHP برای لینک ساب
+title: How to use PHP site for sub links
 ---
 
-# ایجاد یک سایت PHP برای انتقال اطلاعات مربوط به لینک‌های سابسکریپشن
+# Create a PHP site to transfer information of subscription links
 
-## هدف از ایجاد سایت PHP برای لینک‌های سابسکریپشن
-هیدیفای‌منیجر بر این اساس پایه‌گذاری شده است که احتمال فیلتر شدن سرور را تا جای ممکن کاهش یابد. یکی از راه‌های کاربردی در این زمینه، جدا کردن کانفیگ‌ها از لینک‌های سابسکریپشن یا اشتراک است. در این صورت همیشه کلاینت شما آخرین اطلاعات کانفیگ‌ها را از طریق لینک سابسکریپشن دریافت می‌کند. حالا فرض کنید به هر دلیل لینک سابسکریپشن در دسترس نبود، در این صورت می‌توان یک سایت PHP بالا آورد و از آن برای انتقال اطلاعات لینک‌های سابسکریپشن (و نه کانفیگ) استفاده کرد. شماتیک انجام این کار به شکل زیر است.
+## The purpose of creating a PHP site for subscription links
+HiddifyManager is based on the principle of reducing the possibility of server filtering as much as possible. One of the practical ways in this field is to separate configurations from subscription links. In this case, your client will always receive the latest configuration information through the subscription link. Now suppose the subscription link was not available for any reason, in this case a PHP site can be brought up and used to transfer the subscription link information (and not the config). The schematic for doing this is as follows.
 
 <div align=center watermark=1>
   
-![php site for sub-link](https://github.com/hiddify/hiddify.com/assets/125398461/2dc26808-7647-4575-a5bc-8bdcd87f4fe1)
+![php site for sub-link](https://github.com/hiddify/hiddify.com/assets/125398461/401939b1-e937-4b9f-84b3-9d78cecebfea)
 </div>
 
-## مراحل انجام کار
-برای ایجاد یک سایت PHP و استفاده از آن برای لینک سابسکریپشن ابتدا باید در [گوگل سرچ](https://www.google.com/search?q=free+php+hosting) کنید و سایت‌های رایگان ارائه دهنده سرویس PHP رایگان را پیدا کنید. 
+## Steps to do the work
+To create a PHP site and use it for the subscription link, you must first do a [Google search](https://www.google.com/search?q=free+php+hosting) and find free sites that provide free PHP service. find.
 
-- یکی از سایت‌ها را انتخاب کنید. 
-- در آن اکانت خود را ایجاد کنید. 
-- سپس یک سرویس میزبانی PHP را در آن ایجاد کنید. این کار در سایت‌های مختلف مراحل مشابهی دارد و تقریبا ساده است. برای ایجاد این سرویس می‌بایست یک آدرس منحصر به فرد روی یکی از دامنه‌های آن ارائه‌دهنده بسازید. 
-- بعد از آن سرویس شما ایجاد می‌گردد. 
-- بعد از ایجاد سرویس، روی فایل‌های آن ویرایش بزنید و دو فایل زیر را در مسیر اصلی سرویس خود قرار دهید. 
+- Choose one of the sites.
+- Create your account there.
+- Then create a PHP hosting service in it. This work has similar steps in different sites and is almost simple. To create this service, you must create a unique address on one of the domains of that provider.
+- After that, your service will be created.
+- After creating the service, edit its files and place the following two files in the main path of your service.
 
-> - نکته: اگر هر کدام از فایل‌های `htaccess.` و `index.php` را مشاهده نمی‌کنید، باید این فایل‌ها را به صورت دستی ایجاد کنید.
+> - Note: If you don't see any `.htaccess` and `index.php` files, you need to create these files manually.
 
-> - دقت شود که فایل `htaccess.` یک نقطه قبل از اسم آن دارد و اگر آن را ایجاد می‌نمایید، این نکته را در نظر بگیرید.
+> - Make sure that `.htaccess` file has a dot before its name and if you create it, consider this point.
 
-**کد برای فایل `htaccess.`**
+**Code for `.htaccess file`**
 
 ```php
 <?php
 
 if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
-    http_response_code(403);
-    exit('Access Forbidden - HTTPS is required.');
+     http_response_code(403);
+     exit('Access Forbidden - HTTPS is required.');
 }
 
 $server_domain = "https://hiddify-sub-only-domain.com";
@@ -44,33 +44,33 @@ $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
 $ch = curl_init();
 curl_setopt_array($ch, [
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_SSL_VERIFYPEER => false,
-    CURLOPT_SSL_VERIFYHOST => 2,
-    CURLOPT_HEADERFUNCTION => function($curl, $header) {
-        header($header);
-        return strlen($header);
-    },
+     CURLOPT_URL => $url,
+     CURLOPT_RETURNTRANSFER => true,
+     CURLOPT_SSL_VERIFYPEER => false,
+     CURLOPT_SSL_VERIFYHOST => 2,
+     CURLOPT_HEADERFUNCTION => function($curl, $header) {
+         header($header);
+         return strlen($header);
+     },
 ]);
 
 $headers = [
-    "CF-Connecting-IP: $ip",
-    "Host: $domain",
-    "User-Agent: $userAgent",
+     "CF-Connecting-IP: $ip",
+     "Host: $domain",
+     "User-Agent: $userAgent",
 ];
 foreach ($_SERVER as $key => $value) {
-    if (strpos($key, 'HTTP_') === 0) {
-        $header = str_replace('_', '-', substr($key, 5));
-        $headers[] = "$header: $value";
-    }
+     if (strpos($key, 'HTTP_') === 0) {
+         $header = str_replace('_', '-', substr($key, 5));
+         $headers[] = "$header: $value";
+     }
 }
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 $response = curl_exec($ch);
 if (curl_errno($ch)) {
-    http_response_code(500);
-    exit('Internal Server Error');
+     http_response_code(500);
+     exit('Internal Server Error');
 }
 
 curl_close($ch);
@@ -80,36 +80,32 @@ echo $response;
 
 ```
 
-دقت شود:
->  در کد PHP بالا دامنه سابسکریپشن خود را جایگزین نمایید.
+Be careful:
+> Replace your subscription domain in the above PHP code.
 
-> در تنظیمات سایت PHP، ورژن PHP بر روی 8 به بالا باشد.
+> In the PHP site settings, the PHP version should be 8 or higher.
 
-> گزینه CURL در تنظیمات PHP هاست شما روشن باشد.
+> The CURL option should be turned on in the PHP settings of your host.
 
 
-- سپس تنظیمات را ذخیره کنید. 
--  در این مرحله اگر تنظیمات ssl برای دامنه خود در این ارائه‌دهنده PHP را چک کنید؛ احتمالا متوجه خواهید شد که مقداری زمان می‌گیرد تا سرتیفیکت به آن تخصیص داده شود. 
-- حالا برای استفاده؛ لینک مربوط به دامین ساخته شده خود در این ارائه دهنده را کپی کنید و سپس از لینک ادمین خود در پنل بخش بعد از آدرس را کپی کنید و به انتهای لینک PHP خود بچسبانید. پنل با آدرس PHP باز می‌گردد. 
-مثلا فرض کنید دامینه PHP شما این است:
+- Then save the settings.
+- At this point, if you check the ssl settings for your domain in this PHP provider; You will probably notice that it takes some time for the certificate to be assigned.
+- Now to use; Copy the link related to your created domain in this provider and then copy the section after the address from your admin link in the panel and paste it at the end of your PHP link. The panel returns with the PHP address.
+For example, suppose your PHP domain is:
 
 https://hello2freeworld.phpsite.com
 
-و لینک ادمین پنل شما اینطوری باشد:
+And the link of your admin panel should be like this:
 
 https://t1.hiddify.com/koZlk3E8P59Ghf8R/ab56bgt8-737c-4fd6-9oe0-6d4fa4bb84c0/admin/
 
-آدرس PHP شما برای رسیدن به پنل به این صورت خواهد بود:
+Your PHP address to reach the panel will be as follows:
 
 https://hello2freeworld.phpsite.com/koZlk3E8P59Ghf8R/ab56bgt8-737c-4fd6-9oe0-6d4fa4bb84c0/admin/
 
-> نکته خیلی مهم: اگر دامنه PHP شما در سایت ارائه‌دهنده هنوز سرتیفیکت نگرفته باشد؛ این آدرس با https باز نمی‌شود و برای تست می‌توانید با http آن را باز کنید اما برای استفاده حتما از https استفاده نمایید. بنابراین باید منتظر بمانید تا سرتیفیکت تخصیص داده شود.
+> **Very important note:** if your PHP domain is not yet certified on the provider's site; This address does not open with https and you can open it with http for testing, but be sure to use https to use. So you have to wait for the certificate to be assigned.
 
-- بعد از انجام تست بالا، دامنه را در هیدیفای‌منیجر خود در قسمت دامنه‌ها ثبت نمایید تا سرور برای آن SSL بگیرد و ارتباط آن کاملا امن گردد.
+- After performing the above test, register the domain in your HiFi Manager in the Domains section so that the server will get SSL for it and its connection will be completely secure.
 
-- بعد از انجام این کار، این لینک را به عنوان لینک سابسکریپشن می‌توانید به اپ‌های کلاینت خود اضافه نمایید. 
-- کار تمام است. اکنون شما آدرسی دارید که به سرور شما متصل گردیده و عملا غیر قابل فیلتر است.
-
-
-
-
+- After doing this, you can add this link as a subscription link to your client apps.
+- The work is done. Now you have an address that is connected to your server and is practically unfilterable.
