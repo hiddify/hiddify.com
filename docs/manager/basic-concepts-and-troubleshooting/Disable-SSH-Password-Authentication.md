@@ -4,7 +4,7 @@ title: Disable SSH Password Authentication on SSH
 
 <div dir="ltr" markdown="1">
 
-## Disable SSH Password Authentication
+# Disable SSH Password Authentication
 Disabling SSH password authentication is a good practice for enhancing security, especially on a public-facing server. Here is a step-by-step tutorial on how to disable SSH password authentication. This guide assumes you are using a Linux-based system.
 
 ### Step 1: Ensure You Have Key-Based Authentication Set Up
