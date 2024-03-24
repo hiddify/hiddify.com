@@ -385,10 +385,8 @@ weight: -2
         <a href="/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/" target="_blank">آموزش اتصال به سرور از طریق SSH</a>
     </li>
     <li>
-        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH/">
-        آموزش SSH اتصال و رفع عیب از طریق (کار با منوی هیدیفای)
-
-        </a>
+        <a target="_blank" href="/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/">
+        آموزش SSH اتصال و رفع عیب از طریق (کار با منوی هیدیفای)</a>
     </li>
     <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/">
@@ -444,7 +442,7 @@ weight: -2
         </li>
         <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-the-fragment-works-and-its-usage/">
-            کاربرد و نحوه عملکرد فرگمنت
+            کاربرد و نحوه عملکرد TLS Trick
         </a>
         </li>
         <li>
