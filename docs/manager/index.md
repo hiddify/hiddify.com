@@ -336,7 +336,7 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/">
             How to do speed test on server
         </a>
         </li>
