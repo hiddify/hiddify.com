@@ -234,7 +234,7 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">How to create subscription link on HiddifyManager</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/689?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">Using PHP site for subscription link</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/">Using PHP site for subscription link</a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">How to use the Cloudflare worker domain on HiddifyManager (Automated way)</a>
