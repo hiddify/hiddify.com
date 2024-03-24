@@ -137,13 +137,13 @@ weight: -2
         تنظیمات ریالیتی در هیدیفای‌منیجر</a>
     </li>
     <li>
-        <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel/" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/" target="_blank">
         تنظیم بات تلگرام در هیدیفای‌منیجر</a>
     </li>
 
     <div class="hidden">
         <li>
-        <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hddify-panel/" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/" target="_blank">
        آموزش راه‌اندازی پروکسی تلگرام در هیدیفای‌منیجر</a>
         </li>
         <li>
