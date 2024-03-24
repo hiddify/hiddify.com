@@ -280,7 +280,7 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/689">استفاده از سایت PHP برای لینک سابسکریپشن</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/">استفاده از سایت PHP برای لینک سابسکریپشن</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای</a>
