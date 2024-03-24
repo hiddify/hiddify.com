@@ -7,9 +7,9 @@ title: How to use PHP site for sub links
 ## The purpose of creating a PHP site for subscription links
 HiddifyManager is based on the principle of reducing the possibility of server filtering as much as possible. One of the practical ways in this field is to separate configurations from subscription links. In this case, your client will always receive the latest configuration information through the subscription link. Now suppose the subscription link was not available for any reason, in this case a PHP site can be brought up and used to transfer the subscription link information (and not the config). The schematic for doing this is as follows.
 
-<div align=center watermark=1>
+<div align=center markdown=1>
   
-![php site for sub-link](https://github.com/hiddify/hiddify.com/assets/125398461/401939b1-e937-4b9f-84b3-9d78cecebfea)
+![php site for sub-link](https://github.com/hiddify/hiddify.com/assets/125398461/88db7524-3ccf-40ca-b6f2-ffc351bedf80)
 </div>
 
 ## Steps to do the work
