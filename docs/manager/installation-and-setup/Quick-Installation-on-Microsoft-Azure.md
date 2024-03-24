@@ -27,6 +27,7 @@ To view the amount of credit remaining in your user account, use [this link](htt
 Click on this icon <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiddify%2Fconfig%2Fmain%2Ftelegram%2Ftelegram-vm-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a> and continue the steps according to the gif below.
 
 ![](https://github.com/hiddify/hiddify.github.io/raw/main/assets/azure-auto-deploy.gif)
+
 <div class="alert alert-success" markdown=1>
 And copy the link for Telegram proxy from the `output` section. Don't forget that this link will be deleted, so save it in a safe place.
 
