@@ -324,13 +324,14 @@ In this page, we put categorized content of tutorials and documents related to H
         How to check DNS leakage and the way to solve it
         </a>
     </li>
-    <li>
+
+
+    <div class="hidden">
+        <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/">
         How to setup Firewall on HiddifyManager
         </a>
-    </li>
-
-    <div class="hidden">
+        </li>
         <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/">
         How to monitor server resources on HiddifyManager
