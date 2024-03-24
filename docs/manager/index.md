@@ -31,14 +31,15 @@ In this page, we put categorized content of tutorials and documents related to H
     <li>
         <a href="/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager" target="_blank">How to install different versions of Hiddify Manager</a>
     </li>    
-    <li>
-        <a href="/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">Quick and easy installation on Hetzner servers </a>
-    </li>
-    <li>
-        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Quick and easy installation< on Vultr servers</a>
-    </li>
+
     
     <div class="hidden">
+        <li>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers" target="_blank">Quick and easy installation on Hetzner servers </a>
+        </li>
+        <li>
+        <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank">Quick and easy installation< on Vultr servers</a>
+        </li>
         <li>
         <a href="/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud" target="_blank">Quick and easy installation on Oracle Cloud</a>
         </li>    
