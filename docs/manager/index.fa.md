@@ -171,7 +171,7 @@ weight: -2
             نحوه استفاده از چندین زیردامنه یک وبسایت در ریالیتی</a>
         </li>
         <li>
-        <a href="https://github.com/hiddify/Hiddify_Reality_Scanner/blob/main/README.md" target="_blank">
+        <a href="https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/README_fa.md" target="_blank">
             آموزش استفاده از اسکنر ریالیتی هیدیفای</a>
         </li>
     </div>
