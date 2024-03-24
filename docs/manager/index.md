@@ -431,7 +431,7 @@ In this page, we put categorized content of tutorials and documents related to H
 
     <div class="hidden">
         <li>
-        <a href="/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/" target="_blank">
+        <a href="/manager/client-software-on-android/Tutorial-for-Nekobox-app/" target="_blank">
         Tutorial for Nekobox app
         </a>
     </li>
@@ -504,13 +504,14 @@ In this page, we put categorized content of tutorials and documents related to H
         Tutorial for V2Box app
         </a>
     </li>
-    <li>
+
+
+    <div class="hidden">
+        <li>
         <a href="/manager/client-software-on-ios/Tutorial-for-Streisand/" target="_blank">
         Tutorial for Streisand
         </a>
-    </li>
-
-    <div class="hidden">
+        </li>
         <li>
         <a href="/manager/client-software-on-ios/Tutorial-for-SingBox-app/" target="_blank">
         Tutorial for Sing-box app
@@ -547,7 +548,7 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
     </li>
     <li>
-        <a href="/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" target="_blank">
+        <a href="/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/" target="_blank">
         Tutorial for HiddifyClashDesktop software
         </a>
     </li>
