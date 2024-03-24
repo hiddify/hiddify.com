@@ -31,7 +31,7 @@ RewriteEngine On
 RewriteRule ^(.*)$ index.php?url=$1 [L]
 ```
 
-**کد برای فایل `PHP`**
+**کد برای فایل `index.php`**
 
 ```php
 <?php
