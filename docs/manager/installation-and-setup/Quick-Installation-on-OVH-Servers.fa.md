@@ -5,6 +5,7 @@ weight: -55
 
 <div dir="rtl" markdown="1">
 
+# نصب سریع و آسان در OVH
 فیلم زیر را مشاهده کنید
 
 [![OVH](https://img.youtube.com/vi/06fMizOb-DE/maxresdefault.jpg)](https://www.youtube.com/watch?v=06fMizOb-DE)
