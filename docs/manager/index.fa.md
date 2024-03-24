@@ -238,7 +238,7 @@ weight: -2
         </a>
     </li>
     <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-cloudflare-CDN/">
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/">
         آموزش استفاده از CDN Cloudflare
         </a>
     </li>
