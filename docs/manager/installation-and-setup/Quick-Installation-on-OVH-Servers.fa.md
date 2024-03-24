@@ -12,9 +12,13 @@ weight: -55
 
 
 
-حالا کد زیر را کپی کنید
+حالا کد زیر را کپی کنید.
 
+<div dir="ltr" markdown="1">
+  
+```
 {% include 'cloud_init.yml' %}
+```
 
 </div>
 
