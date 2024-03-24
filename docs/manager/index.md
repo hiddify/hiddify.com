@@ -102,7 +102,7 @@ In this page, we put categorized content of tutorials and documents related to H
         How to use Reality on HiddifyManager</a>
     </li>
     <li>
-        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel/" target="_blank">
+        <a href="/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/" target="_blank">
         How to set up and use Telegram bot on HiddifyManager</a>
     </li>
     <li>
