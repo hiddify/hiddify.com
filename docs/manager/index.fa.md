@@ -512,14 +512,15 @@ weight: -2
         آموزش کار با نرم‌افزار V2rayNG
         </a>
     </li>
-    <li>
-        <a href="/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/" target="_blank">
-        آموزش کار با نرم‌افزار Sing-box
-        </a>
-    </li>
+
 
 
     <div class="hidden">
+        <li>
+        <a href="/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/" target="_blank">
+        آموزش کار با نرم‌افزار Sing-box
+        </a>
+        </li>
         <li>
         <a href="/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/" target="_blank">
         آموزش کار با نرم‌افزار Nekobox
@@ -597,13 +598,14 @@ weight: -2
         آموزش کار با نرم‌افزار V2Box
         </a>
     </li>
-    <li>
+
+
+    <div class="hidden">
+        <li>
         <a href="/fa/manager/client-software-on-ios/Tutorial-for-Streisand/" target="_blank">
         آموزش کار با نرم‌افزار Streisand
         </a>
-    </li>
-
-    <div class="hidden">
+        </li>
         <li>
         <a href="/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/" target="_blank">
         آموزش کار با نرم‌افزار Sing-box
@@ -662,12 +664,12 @@ weight: -2
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/fa/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/" target="_blank">
+        <a href="/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/" target="_blank">
          آموزش کار با نرم‌افزار HiddifyN
         </a>
     </li>
     <li>
-        <a href="/fa/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" target="_blank">
+        <a href="/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/" target="_blank">
         آموزش کار با نرم‌افزار HiddifyClashDesktop
         </a>
     </li>
