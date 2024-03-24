@@ -1,5 +1,6 @@
 ---
 title: How to connect and troubleshoot via SSH (Working with Hiddify Menu)
+weight: -145
 ---
 
 <div dir="ltr" markdown="1">
