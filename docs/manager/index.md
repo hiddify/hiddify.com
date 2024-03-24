@@ -369,7 +369,7 @@ In this page, we put categorized content of tutorials and documents related to H
         </li>
         <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-the-fragment-works-and-its-usage/">
-            How the fragment works and its usage
+            How the TLS Trick works and its usage
         </a>
         </li>
         <li>
