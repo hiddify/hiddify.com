@@ -129,7 +129,7 @@ weight: -2
         </a>
     </li>
     <li>
-        <a href="/fa/manager/basic-concepts-and-troubelshooting/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
+        <a href="/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/" target="_blank">
         آموزش اتصال به سرور و عیب‌یابی از طریق SSH (کار با منوی هیدیفای‌منیجر)</a>
     </li>
     <li>
