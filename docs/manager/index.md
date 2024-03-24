@@ -543,7 +543,7 @@ In this page, we put categorized content of tutorials and documents related to H
 
     <ul class="my-4 list-disc mr-5 text-secondary">
     <li>
-        <a href="/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/" target="_blank">
+        <a href="/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/" target="_blank">
          Tutorial for HiddifyN software
         </a>
     </li>
