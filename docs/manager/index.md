@@ -309,7 +309,7 @@ In this page, we put categorized content of tutorials and documents related to H
         <a href="/manager/installation-and-setup/How-to-connect-to-server-via-SSH/" target="_blank">How to connect to server via SSH</a>
     </li>
     <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-connect-to-server-via-SSH/">
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-connect-and-troubleshoot-via-SSH/">
         How to connect and troubleshoot via SSH (Working with Hiddify Menu)
         </a>
     </li>
