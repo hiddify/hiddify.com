@@ -2,7 +2,6 @@
 description: Donation and support
 title: Donation and support
 comments: false
-weight: -10
 ---
 
 <div dir="ltr" markdown="1">
