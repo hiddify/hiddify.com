@@ -4,7 +4,7 @@ title: پشتیبانی و حمایت مالی
 comments: false
 ---
 
-<div align="center" markdown="1">
+<div dir="rtl" markdown="1">
 
 # پشتیبانی و حمایت مالی
 </div>
