@@ -5,6 +5,9 @@ title: How to use HiddifyCli
 # How to use HiddifyCli or Hiddify command line
 This app is developed for cases where there is no desktop, such as servers, and it supports all processors.
 
+## Download
+To download this app, go to [here](https://github.com/hiddify/hiddify-core/releases) and download the file related to your processor.
+
 ## Execution of config or subscription link in HiddifyCli
 
 To use it, the following command should be used.
