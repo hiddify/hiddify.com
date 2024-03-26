@@ -226,7 +226,8 @@ weight: -2
 <div class="max-w-[552px]">
     <img src="/assets/image-195.png" alt="image" class="rounded-xl">
 
-    <ul class="my-4 list-disc text-secondary mr-5 max-w-[402px]">
+    <ul class="my-4 list-disc mr-5 text-secondary">
+    
     <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/">
         انواع دامنه و آموزش ثبت آن‌ها
@@ -371,11 +372,17 @@ weight: -2
 
 ## مفاهیم پایه و عیب‌یابی
 
+
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
-    <img src="/assets/image-196.png" alt="image" class="rounded-xl">
+        <img src="/assets/image-196.png" alt="image" class="rounded-xl">
 
-    <ul class="my-4 list-disc text-secondary mr-5">
+    
+
+    <ul class="my-4 list-disc mr-5 text-secondary">
+    
+    
+    
     <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/">
         چک کردن تمیز بودن آیپی یا دامنه سرور

@@ -18,6 +18,9 @@
 
 
 
+.card-item >div>img{
+    width: 1000px;
+}
 
 .related_videos{
     height:500px;
