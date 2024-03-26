@@ -5,7 +5,7 @@ comments: false
 weight: -2
 ---
 
-# :material-home: راهنمای هیدیفای‌منیجر
+# راهنمای هیدیفای‌منیجر
 
 در این صفحه مطالب و ویدئوهای آموزشی مرتبط با هیدیفای‌منیجر به صورت دسته‌بندی شده قرار داده می‌شود. علاوه بر اینکه می‌توانید روی لینک‌های هر مطلب کلیک کنید تا به توضیحات کامل مربوط به هر بخش برسید، برای برخی از این موارد در [کانال یوتیوب](https://www.youtube.com/@hiddify/videos) ما ویدئو وجود دارد که با کلیک روی تصاویر زیر می‌توانید آن‌ها را ملاحظه کنید.
 
@@ -61,7 +61,7 @@ weight: -2
 
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
     <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=pydED363X-o" target="_blank">
@@ -180,7 +180,7 @@ weight: -2
 
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
 <h4 class="text-md">ویدئوهای مرتبط</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=T1SKHk6HDks" target="_blank">
@@ -316,7 +316,7 @@ weight: -2
 
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
     <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=Xn9qwxpWmWQ" target="_blank">
@@ -460,7 +460,7 @@ weight: -2
 
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
     <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=MRI3HYfayb4" target="_blank">
@@ -529,7 +529,7 @@ weight: -2
 
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
 <h4 class="text-md">ویدئوهای مرتبط</h4>    
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=qDbI72J-INM" target="_blank">
@@ -614,7 +614,7 @@ weight: -2
 
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
 <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=knOxCtgvaDA" target="_blank">
@@ -683,7 +683,7 @@ weight: -2
     </ul>
 </div>
 
-<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto">
+<div class="lg:border-r lg:border-gray-500 lg:p-4 lg:mr-auto related_videos">
 <h4 class="text-md">ویدئوهای مرتبط</h4>
     <div class="flex gap-4 mt-4 flex-col lg:mr-2">
     <a href="https://www.youtube.com/watch?v=o9L2sI2T53Q" target="_blank">
