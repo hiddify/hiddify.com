@@ -46,7 +46,7 @@ theme:
     # - navigation.indexes #for overview of section page
     - navigation.expand
     - navigation.path
-    - navigation.sections
+
     - toc.follow
     # - toc.integrate # maybe disable
     - navigation.top
@@ -168,9 +168,11 @@ plugins:
         # prebuild_index: true
   - include-markdown
       
-  - awesome-pages
+  
   - mkdocs-nav-weight:
       section_renamed: true
+      index_weight: -1000
+  - awesome-pages
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
@@ -198,6 +200,7 @@ plugins:
           name: Persian     
           nav_translations:
             Hiddify: هیدیفای       
+
   
       reconfigure_material: true
       reconfigure_search: true
@@ -211,6 +214,5 @@ plugins:
 nav: #docs/app/install.md
   - Hiddify: index.html
   - ...
-  
   - privacy-policy.md
       
