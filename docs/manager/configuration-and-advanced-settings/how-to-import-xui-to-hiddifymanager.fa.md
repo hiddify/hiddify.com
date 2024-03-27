@@ -10,7 +10,7 @@ title: آموزش ایمپورت کردن پنل X-UI به هیدیفای‌من
 <div dir="ltr">
 
 ```bash
-cd /opt/hiddify-manager/hiddify-panel/&&hiddifypanel xui-importer -x </path/to/db/file.db>
+cd /opt/hiddify-manager/hiddify-panel/&&hiddifypanel xui-importer -x /path/to/db/file.db
 ```
 </div>
 
