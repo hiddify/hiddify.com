@@ -10,7 +10,7 @@ In HiddifyManager version 10, this feature has been added so that the X-UI panel
 - Then use the following command to import the X-UI panel database file.
 
 ```bash
-cd /opt/hiddify-manager/hiddify-panel/&&hiddifypanel xui-importer -x </path/to/db/file.db>
+cd /opt/hiddify-manager/hiddify-panel/&&hiddifypanel xui-importer -x /path/to/db/file.db
 ```
 
 
