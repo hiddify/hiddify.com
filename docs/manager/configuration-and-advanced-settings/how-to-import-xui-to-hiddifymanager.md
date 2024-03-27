@@ -23,3 +23,5 @@ cd /opt/hiddify-manager/hiddify-panel/&&hiddifypanel xui-importer -x </root/file
 ```
 
 - The work is finished. The X-UI panel has been successfully moved to HiFi Manager.
+> [!NOTE] 
+> Due to the different structure of the X-UI panel, users and the amount of traffic consumed by them, which is the most important data related to that panel, are transferred.
