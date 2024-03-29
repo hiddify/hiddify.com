@@ -1,11 +1,11 @@
 ---
-title: How to setup and use Cloudflare workers
+title: How to setup and use Cloudflare workers (Manual way)
 ---
 
 <div dir="ltr" markdown="1">
 
 
-# How to set up and use Cloudflare workers
+# How to set up and use Cloudflare workers (Manual way)
 Workers is one of Cloudflare's famous CDN services, which is actually a server-less service, through which programming codes can be executed without the need for server or infrastructure configuration. In fact, this service is a type of cloud computing based on SaaS.
 
 In other words, the working method of Workers is that instead of trying to open your website (here Hidify panel) directly; You send requests to workers and then workers re-send requests to your domain and server.
