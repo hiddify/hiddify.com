@@ -1,11 +1,11 @@
 ---
-title: How to configure Hiddify Manager properly (Getting familiar with its different parts)
+title: How to configure HiddifyManager properly (Getting familiar with its different parts)
 weight: -150
 ---
 
 <div dir="ltr" markdown="1">
 
-# How to configure Hiddify Manager properly
+# How to configure HiddifyManager properly
 
 # Table of contents
 
