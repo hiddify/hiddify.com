@@ -285,10 +285,10 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/">استفاده از سایت PHP برای لینک سابسکریپشن</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای‌منیجر (روش دستی)</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکرز در (روش خودکار) هیدیفای‌منیجر</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش خودکار)</a>
         </li>
         <li>
         <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/129">آموزش راه‌اندازی تانل به روش IP Tables</a>
