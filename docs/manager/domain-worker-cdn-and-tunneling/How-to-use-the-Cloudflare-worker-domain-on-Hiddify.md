@@ -1,11 +1,11 @@
 ---
-title: Cloudflare worker domain on HiddifyManager (Automated way)
+title: How to use Cloudflare worker domain on HiddifyManager (Automated way)
 ---
 
 <div dir="ltr" markdown="1">
 
 
-# How to use the Cloudflare worker domain on Hiddify
+# How to use Cloudflare worker domain on HiddifyManager (Automated way)
 Previously, in an [article](/manager/wiki/How-to-set-up-and-use-Cloudflare-workers), it was taught how to add Cloudflare workers to the panel. To make it easier to work in version 7, the worker domain was introduced as a separate domain. Follow this article till the end to get familiar with this domain.
 
 ## Add Cloudflare API token
