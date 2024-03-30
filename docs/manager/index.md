@@ -236,10 +236,10 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/">Using PHP site for subscription link</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">How to use the Cloudflare worker domain on HiddifyManager (Automated way)</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">How to use the Cloudflare worker domain on HiddifyManager (Manual way)</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">How to setup and use Cloudflare workers</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">How to setup and use Cloudflare workers (Automated way)</a>
         </li>
         <li>
         <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using IP Tables tunneling</a>
