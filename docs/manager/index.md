@@ -320,8 +320,8 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
     </li>
     <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/859?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">
-        How to check DNS leakage and the way to solve it
+        <a target="_blank" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/">
+        How to check and prevent DNS leaks
         </a>
     </li>
 
