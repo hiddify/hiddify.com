@@ -401,7 +401,7 @@ weight: -2
         </a>
     </li>
     <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/859">
+        <a target="_blank" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/">
         آموزش تست نشتی DNS
         </a>
     </li>
