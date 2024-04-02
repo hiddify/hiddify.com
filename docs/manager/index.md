@@ -227,7 +227,7 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">What is Cloudflare's clean IP and how to find it</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to use desired clean IPs based on a specific format</a>
+        <a target="_blank" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/">How to use desired clean IPs based on a specific format (for the forced to use host field)</a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">How to create subscription link on HiddifyManager</a>
