@@ -373,6 +373,11 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
         </li>
         <li>
+        <a target="_blank" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/">
+            How MUX works and its usage
+        </a>
+        </li>
+        <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
             Basic concepts related to the internet and using proxies
         </a>
