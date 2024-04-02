@@ -3,7 +3,7 @@ title: Insert the desired clean IPs based on the specified format (for the force
 ---
 
 # Insert the desired clean IPs based on the specified format (for the forced to use host field)
-As you probably know, one of HiFi's new features called AutoCDN depends on the subdomains of Cloudflare's clean IPs collected by IRCF. To use it, you must use a suitable format. How to use this format?
+As you probably know, one of new features of HiddifyManager is AutoCDN which depends on the subdomains of Cloudflare's clean IPs collected by IRCF. To use it, you must use a suitable format. How to use this format?
 
 Also, what if you want to use your clean IP range for different operators?
 
