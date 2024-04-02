@@ -453,6 +453,11 @@ weight: -2
         </a>
         </li>
         <li>
+        <a target="_blank" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/">
+            کاربرد و نحوه عملکرد MUX
+        </a>
+        </li>
+        <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
             مفاهیم پایه مرتبط با اینترنت و استفاده از پروکسی
         </a>
