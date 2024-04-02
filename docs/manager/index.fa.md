@@ -276,7 +276,7 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/2009">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص برای فیلد اجبار</a>
+        <a target="_blank" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص (برای فیلد اجبار)</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
