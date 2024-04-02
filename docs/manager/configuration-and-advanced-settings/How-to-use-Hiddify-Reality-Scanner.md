@@ -1,4 +1,8 @@
-# Hiddify Reality Scanner
+---
+title: How to use Hiddify Reality Scanner
+---
+
+# How to use Hiddify Reality Scanner
 This is a TLS scanner that helps you scan across different networks and find the best Reality SNI for you based on a list of SNIs. For more information about development, you can read through our [Contribution Guidelines](https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/CONTRIBUTING.md) .
 
 ## ⚙️ Installation
