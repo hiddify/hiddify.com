@@ -127,4 +127,4 @@ nameserver 1.1.1.1
 در این مرورگرها کافیست افزونه [`WebRTC Leak Prevent`](https://chrome.google.com/webstore/detail/webrtc-leak-prevent/eiadekoaikejlgdbkbdfeijglgfdalml?hl=en) استفاده کنید. پس از نصب تنظیمات `IP handling policy` را بر روی `Disbale non-proxied UPD` بگذارید.
 
 ### ۳. مرورگر Safari : 
-اگر از Safari استفاده می‌کنید، می‌توانید WebRTC را در منوی Preferences غیر فعال کنید. هنگامی که وارد آن شدید، به تب Advanced در پایین بروید و تیک گزینه Show Desktop menu in bar menu را بزنید. پس از آن روی Develop کلیک کرده و `Experimental Features` را انتخاب کنید. گزینه `Remove Lagacy WebRTC API` را پیدا کنید و روی آن کلیک کنید و روی آن کلیک کنید تا WebRTC غیرفعال شود.
+اگر از Safari استفاده می‌کنید، می‌توانید WebRTC را در منوی `Preferences` غیر فعال کنید. هنگامی که وارد آن شدید، به تب `Advanced` در پایین بروید و تیک گزینه `Show Desktop menu in bar menu` را بزنید. پس از آن روی `Develop` کلیک کرده و `Experimental Features` را انتخاب کنید. گزینه `Remove Lagacy WebRTC API` را پیدا کنید و روی آن کلیک کنید تا WebRTC غیرفعال شود.
