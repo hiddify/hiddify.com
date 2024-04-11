@@ -19,7 +19,7 @@ Now, HA-proxy tunnel is used here for the communication between the relay server
 
 - For this you need an relay server to connect to the main server through it. Usually, this relay server is considered in the country of residence.
 
-- SSH to the relay server %A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7% D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) and run the HA-proxy installation command.
+- (Connect via SSH to the relay server)[/manager/installation-and-setup/How-to-connect-to-server-via-SSH/] and run the HA-proxy installation command.
 
 ```bash
 sudo apt-get install haproxy
