@@ -75,14 +75,14 @@ Now, register a subdomain with the proxy turned off for your relay server IP and
 
 ## Adding relay configurations to be used in the subscription link
 
-As always in Hidify, it is better to separate the configs from the subscription link. Therefore, for the registered Relay domain, you can check the Relay domain in the subscription domain settings so that its configurations are added to the subscription domain.
+As always in HidifyManager, it is better to separate the configs from the subscription link. Therefore, for the registered Relay domain, you can check the Relay domain in the subscription domain settings so that its configurations are added to the subscription domain.
 
-Assuming the domain for the subscription is t1.hiddify.com, proceed as shown below to get the job done.
+Assuming the domain for the subscription is `t1.hiddify.com`, proceed as shown below to get the job done.
 <img src="https://user-images.githubusercontent.com/125398461/235342038-cfda2574-2444-4414-843d-2ed507537d1d.png">
 
-Now, if you open the user page with the subscription domain (here t1.hiddify.com), you will see that Relay connections have been added. You can add and use these connections one by one or using normal subscription links or b64 subscription to your client.
+Now, if you open the user page with the subscription domain (here `t1.hiddify.com`), you will see that Relay connections have been added. You can add and use these connections one by one or using normal subscription links or b64 subscription to your client.
 
-## Removing the HAProxy tunnel from the relay server
+## Removing the HA-Proxy tunnel from the relay server
 
 To do this, first run this command.
 ```bash
