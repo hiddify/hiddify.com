@@ -31,7 +31,6 @@ sudo chmod +x wstunnel-linux-x64
 Rename the program with the command and move it to the bin/ folder.
 ```
 sudo mv wstunnel-linux-x64 /bin/wstunnel
-
 ```
 
 ## Running the tunnel on the main server
