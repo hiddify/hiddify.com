@@ -4,20 +4,12 @@ title: Tutorial for setting up IP-Table tunnel as relay server
 
 # Tutorial for setting up IP-Table tunnel as relay server
 
-<div align=center dir="rtl" markdown="1">
-
-You can watch this video first
-
-<a href="https://www.youtube.com/watch?v=kz_Ih__jS9c"><img width="32%" src="https://user-images.githubusercontent.com/125398461/235361165-362e3362 -2fd5-4818-95f3-b076801a3135.png" /></a>
-
-</div>
-
 <div dir="rtl" markdown="1">
 
 For this you need an relay server to connect to the main server. Usually, this relay server is considered in the country of residence.
 <div align=center dir="rtl" markdown="1">
  
-<img src="https://user-images.githubusercontent.com/125398461/235339506-bdd76cec-0378-4942-8352-ebebeb006231.png">
+![Tunnel usage schematic](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
 </div>
 
 It is enough to get a good server with adequate bandwidth and CPU.
@@ -68,7 +60,7 @@ Or delete the created chains using this command.
 iptables -X
 ```
 </div>
-entire!!!!
+
 
 
 </div>
