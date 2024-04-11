@@ -34,7 +34,7 @@ sudo mv wstunnel-linux-x64 /bin/wstunnel
 
 ## Running the tunnel on the main server
 
-On the main server where HiFi is installed, you need to run the installed tunnel. Activate it on port 8080 with this command.
+On the main server where HiddifyManager is installed, you need to run the installed tunnel. Activate it on port 8080 with this command.
 
 ```
 sudo wstunnel --server ws://0.0.0.0:8080 -v
@@ -50,9 +50,9 @@ The work of setting up the tunnel on the main server is also finished.
 
 ## Setting up the tunnel on Relay server
 To set up the tunnel on the middle server using this command, you must provide both the required ports for downloading and the port that the tunnel uses to communicate.
-Here, port 8080 is used for the tunnel itself, which was configured on the main server side. Also, the HiFi program uses ports 443 and 80 automatically, so you can put them in the following command.
+Here, port 8080 is used for the tunnel itself, which was configured on the main server side. Also, the H program uses ports 443 and 80 automatically, so you can put them in the following command.
 
-- If you change the default ports of HiFi panel, change ports 443 and 80 according to the same formula.
+- If you change the default ports of H panel, change ports 443 and 80 according to the same formula.
 
 * If you want to download another port, you can do it with the same formula.
 
