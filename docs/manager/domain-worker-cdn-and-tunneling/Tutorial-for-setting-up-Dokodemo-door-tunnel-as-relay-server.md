@@ -18,7 +18,7 @@ Now here, WS tunnel is used for communication between Iran server and main serve
 
 Also, install HiddifyManager on the main server, whose installation guide is available [here](https://hiddify.com/manager/installation-and-setup/guide/).
 
-## Installing the tunnel on the main and Relay server
+## Installing the tunnel on the main and relay server
 You must install this tunnel program on **both servers**. To do this, first connect to the server with root and run the following codes:
 First, download the program with the following command.
 ```
