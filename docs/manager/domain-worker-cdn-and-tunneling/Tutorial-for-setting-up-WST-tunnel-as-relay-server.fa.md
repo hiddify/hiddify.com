@@ -192,7 +192,7 @@ sudo systemctl daemon-reload
 sudo systemctl stop wstunnel.service
 sudo systemctl disable wstunnel.service
 ```
-سپس برنامه و سرویس ایاد شده را حذف کنید.
+سپس برنامه و سرویس ایجاد شده را حذف کنید.
 ```
 sudo rm -f /etc/systemd/system/wstunnel.service /bin/wstunnel
 ```
