@@ -4,7 +4,7 @@ title: How to manage multiCDN domains in HiddifyManager
 
 <div dir="ltr" markdown="1">
   
-# How to manage multiple CDN domains in HiFiManager
+# How to manage multiple CDN domains in HiddifyManager
 
 When we have several domains, especially the CDN domain, and our users are also on different mobile networks; Irancell; Telecommunications and... are; How can you manage them better and make better configurations by using the capabilities of the HiddifyManager?
 
