@@ -12,19 +12,6 @@ The tunnel usage diagram is as follows.
 ![Tunnel usage schematic](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
 </div>
 
----
-title: Tutorial on setting up the Dokodemo-door tunnel as an relay server
----
-
-# Tutorial on setting up the Dokodemo-door tunnel as an relay server
-
-For this you need an relay server to connect to the main server. Usually this relay server is considered in the country of your residence.
-<div align=center dir="rtl" markdown="1">
- 
-<img src="https://user-images.githubusercontent.com/125398461/235339506-bdd76cec-0378-4942-8352-ebebeb006231.png">
-</div>
-
-
 - [SSH to the relay server](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) and run Xray kernel installation command
 
 ```
