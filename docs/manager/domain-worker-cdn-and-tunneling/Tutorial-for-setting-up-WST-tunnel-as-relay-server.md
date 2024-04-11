@@ -70,13 +70,13 @@ sudo wstunnel -L 0.0.0.0:80:localhost:80 -L 0.0.0.0:443:localhost:443 ws://[cdn_
   ``WAIT for tcp connection on 0.0.0.0:80, WAIT for tcp connection on 0.0.0.0:443'' is given, which means the successful execution of the tunnel and waiting for the connection to be established from the client side.
 
 - If the main tunnel port (here 8080) is filtered on your Iranian data center, you can use other ports.
-- Very important note: If you use CDN domains to establish a tunnel, you are only allowed to use Cloudflare ports. That is, you can only use Cloudflare's https ports for connection, and you can use Cloudflare's http ports for the tunnel itself. [List of Cloudflare ports] (https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/)
+- Very important note: If you use CDN domains to establish a tunnel, you are only allowed to use Cloudflare ports. That is, you can only use Cloudflare's https ports for connection, and you can use Cloudflare's http ports for the tunnel itself. [List of Cloudflare ports](https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/)
 
 Work on setting up the ws tunnel on the relay server is complete.
 
 ## Setting up the tunnel service on the main server
 
-You only need to create its service so that if the server is reset, the tunnel will run automatically. To do this, exit the created tunnel with `ctrl+c`, then with a text editor (here nano) create the service file in the main path of the kernel.
+You only need to create its service so that if the server is reset, the tunnel will run automatically. To do this, exit the created tunnel with `Ctrl+c`, then with a text editor (here nano) create the service file in the main path of the kernel.
 
 ```
 sudo nano /etc/systemd/system/wstunnel.service
@@ -99,7 +99,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-To exit the text editor, press ctrl+s to save the file, then exit the program with ctrl+x.
+To exit the text editor, press `Ctrl+s` to save the file, then exit the program with `Ctrl+x`.
 
 Now reset the main kernel service and activate and start the created service.
 
@@ -139,8 +139,8 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-- Make sure to paste [cdn_or_direct_domain_of_main_server] with your direct domain or CDN specification.
-- To exit the text editor, first press `Ctrl + s' to save the file, then exit the program with `Ctrl + x'.
+- Make sure to paste `cdn_or_direct_domain_of_main_server` with your direct domain or CDN specification.
+- To exit the text editor, first press `Ctrl + s` to save the file, then exit the program with `Ctrl + x`.
 
 Now reset the main kernel service and activate and start the created service.
 
