@@ -115,14 +115,14 @@ sudo systemctl start gost && systemctl enable gost
 
 
 
-## حذف کانفیگ گوست از سرور میانی
+## حذف کانفیگ GOST از سرور میانی
 
 برای این کار ابتدا این کامند را اجرا کنید.
 
 ```
 systemctl daemon-reload
 ```
-و سپس سرویس گوست را متوقف و غیرفعال کنید.
+و سپس سرویس GOST را متوقف و غیرفعال کنید.
 ```
 sudo systemctl stop gost && systemctl disable gost
 ```
