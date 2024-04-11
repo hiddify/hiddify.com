@@ -17,7 +17,7 @@ title: آموزش راه‌اندازی تانل HA-Proxy به عنوان سرو
 
 - برای این کار شما به یک سرور میانی نیاز دارید تا از طریق آن به سرور اصلی متصل شوید. معمولا این سرور میانی در کشور محل اقامت در نظر گرفته می‌شود.
 
-- به سرور میانی [SSH بزنید](https://github.com/hiddify/Hiddify-Manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) و دستور نصب HA-proxy را اجرا کنید‌.
+- به سرور میانی [SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) و دستور نصب HA-proxy را اجرا کنید‌.
 
 ```bash
 sudo apt-get install haproxy
