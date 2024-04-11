@@ -7,8 +7,10 @@ title: Tutorial for setting up Dokodemo-door tunnel as relay server
 For this you need an intermediate server to connect to the main server. Usually this middle server is considered in Iran.
 The tunnel usage diagram is as follows.
 
-![Tunnel usage schematic]
-
+<div align="center" markdown="1">
+  
+![Tunnel usage schematic](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
+</div>
 
 Now here, WS tunnel is used for communication between Iran server and main server. After installation, you will connect to the Iranian server, the Iranian server will connect you to the main server, and then you will have free access to the Internet from the main server.
 
