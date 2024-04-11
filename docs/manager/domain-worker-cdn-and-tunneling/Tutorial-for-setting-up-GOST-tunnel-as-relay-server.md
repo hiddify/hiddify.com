@@ -35,7 +35,6 @@ To install in Relay mode, proceed according to this tutorial.
 
 ```
 sudo apt install wget nano -y && wget https://github.com/ginuerzh/gost/releases/download/v2.11.5/gost-linux-amd64-2.11.5.gz && gunzip gost-linux-amd64-2.11. 5.gz
-
 ```
 
 - Then transfer its files to the executable folder and execute access to it.
