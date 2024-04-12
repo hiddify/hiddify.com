@@ -263,6 +263,11 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/">How How to create and use fake domain
         </a>
         </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">
+            Explanations about admin link in HiddifyManager
+        </a>
+        </li>
     </div>
     </ul>
 
@@ -380,11 +385,6 @@ In this page, we put categorized content of tutorials and documents related to H
         <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
             Basic concepts related to the internet and using proxies
-        </a>
-        </li>
-        <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link/">
-            Explanations about admin link in HiddifyManager
         </a>
         </li>
     </div>
