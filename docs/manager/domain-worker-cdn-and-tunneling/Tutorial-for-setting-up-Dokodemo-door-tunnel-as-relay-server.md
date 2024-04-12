@@ -167,7 +167,7 @@ For this, it is enough to define a new `inbound` in the `config.json` code after
 sudo systemctl restart xray
 ```
 
-## Adding Relay server to HidifyManager
+## Adding Relay server to HiddifyManager
 Now, register a subdomain with the proxy off for your relay server IP and register it in Hiddify Manager on `Relay` mode.
 - Put the registered subdomain in the `Domain` field and you can also set a `Alias` to display in the configurations.
 
