@@ -179,6 +179,7 @@ sudo systemctl restart xray
 فرض شود که دامنه مربوط به سابسکریپشن `sublink.hiddify.com` باشد، مطابق با تصویر زیر جلو بروید تا کار انجام شود.
 
 <img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230">
+
 ## حذف کانفیگ dokodemo از سرور میانی
 
 - برای این کار ابتدا این کامند را اجرا کنید.
