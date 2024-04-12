@@ -157,22 +157,21 @@ sudo systemctl status wstunnel.service
 If for any reason the service was not active, one of the previous steps was probably not done correctly.
 
 
-## relay server definition in Hidify
-Now register **a subdomain with off proxy** for your relay server IP (Iran) and register it in Hidify on Relay mode.
+## Adding Relay server to HiddifyManager
+Now, register a subdomain with the proxy off for your relay server IP and register it in Hiddify Manager on `Relay` mode.
+- Put the registered subdomain in the `Domain` field and you can also set a `Alias` to display in the configurations.
 
- 
-![](https://user-images.githubusercontent.com/125398461/235341283-97c026b7-1d70-4362-8950-1e5c1b79d508.png)
+<img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed">
 
-## Adding relay configurations to be used in the subscription link
-As always in Hidify, it is better to separate the configs from the subscription link. Therefore, for the registered Relay domain, you can check the Relay domain in the subscription domain settings so that its configurations are added to the subscription domain.
+## Adding `Relay` configurations to subscription link
 
-Assuming the domain for the subscription is `t1.hiddify.com`, proceed as shown below to get the job done.
+As always in HiddifyManager, it is better to separate the configs from the subscription link. Therefore, for the registered `Relay` domain, you can check the `Relay` domain in the subscription domain settings so that its configurations are added to the subscription domain.
 
-![Screenshot_20230430_1104341](https://user-images.githubusercontent.com/125398461/235342038-cfda2574-2444-4414-843d-2ed507537d1d.png)
+Assuming that the subscription domain is `sublink.hiddify.com`, proceed as shown below to get the job done.
 
+<img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230">
 
-Now, if you open the user page with the subscription domain (here `t1.hiddify.com`), you will see that Relay connections have been added. You can add and use these connections one by one or using normal subscription links or b64 subscription to your client.
-
+Now, if you open the user page with the subscription domain (here `sublink.hiddify.com`), you will see that the connections related to the `relay server` have also been added. You can add and use these connections individually or using subscription links to your client.
 
 ## Remove the tunnel from the relay server and the main server
 
