@@ -312,6 +312,11 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/">نحوه ایجاد و استفاده از دامنه فیک
         </a>
         </li>
+        <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">
+            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر
+        </a>
+        </li>
     </div>
     </ul>
 
@@ -460,11 +465,6 @@ weight: -2
         <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
             مفاهیم پایه مرتبط با اینترنت و استفاده از پروکسی
-        </a>
-        </li>
-        <li>
-        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link/">
-            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر
         </a>
         </li>
     </div>
