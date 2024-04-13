@@ -314,7 +314,7 @@ weight: -2
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">
-            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر
+            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر و تغییرات آن از نسخه ۱۰
         </a>
         </li>
     </div>
