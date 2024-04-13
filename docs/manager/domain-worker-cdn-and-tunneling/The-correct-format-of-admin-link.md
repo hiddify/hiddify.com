@@ -3,8 +3,9 @@ title: Explanations about admin link in HiddifyManager
 ---
 
 <div dir="ltr" markdown="1">
-
-# The correct format of admin link
+  
+# Explanations about admin link in HiddifyManager and its changes after version 10
+## The correct format of admin link
 Or note that the admin link and other program links are made up of different parts and can be changed in the settings; It is necessary to give an explanation about the correct format of the admin link.
 
 In general, the admin link has the following format:
@@ -36,7 +37,7 @@ Now the sub-pages of this page can be added. For example, the users page can be 
 
 - Also, if the hidden proxy path changes, this address will change
 
-# Admin link changes in HiddifyManager version 10
+## Admin link changes in HiddifyManager version 10
 * In version 10, there has been a slight change in the structure of the links, which is in accordance with the following description:
    * By default, after installing the long link format, it appears as above in the terminal. This link is your main admin link.
    * When you open it in the browser, for more security, the admin authentication operation is performed based on the password or `UUID` of that admin, and then the long link is converted to a short link:
