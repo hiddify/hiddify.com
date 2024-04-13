@@ -6,7 +6,7 @@ title: How to add a relay server to HiddifyManager
 # How to add a relay server to HiddifyManager
 Let's assume that you have set up your middle server using one of the following methods or any other method.
 
-1. [Setting up a relay server using Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-relay-Builder/)
+1. [Setting up a relay server using Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
 2. [Setting up a relay server using the IP-Tables method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
 3. [Setting up a relay server using the GOST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
 4. [Setting up a relay server using the WST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
