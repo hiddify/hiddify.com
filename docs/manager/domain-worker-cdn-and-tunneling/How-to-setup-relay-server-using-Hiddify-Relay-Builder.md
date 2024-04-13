@@ -2,7 +2,7 @@
 title: How to setup relay server using Hiddify Relay Builder (all in one app)
 ---
 
-# How to setup relay server using Hiddify Relay Builder
+# How to setup relay server using Hiddify Relay Builder (all in one app)
 To install and set up the relay server more easily, this application has been created, which starts the server and the tunnel is established using the following methods.
 1. IP-Tables method
 2. GOST method
