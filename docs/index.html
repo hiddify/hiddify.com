@@ -22,13 +22,13 @@
 
   <body class="px-3 md:px-10 lg:px-20">
     <header class="px-10">
-      <nav class="hidden md:flex items-center py-10">
-        <div class="flex justify-start items-center w-full">
-          <a href="/" class="flex items-center">
+      <nav class="flex items-center justify-between py-10">
+        <div class="justify-start items-center w-full hidden md:flex">
+          <a href="/" class="items-center flex">
             <img src="/assets/hiddify-logo.svg" alt="hero" height="40" decoding="async" loading="lazy" />
           </a>
         </div>
-        <div class="w-full flex items-center justify-end gap-3 text-[#212529]">
+        <div class="w-full hidden md:flex items-center justify-end gap-8 text-[#212529]">
             <a href="/app" class="py-2 w-fit no-underline hover:text-primary" >
               App
             </a>
@@ -43,10 +43,41 @@
               <span>فارسی</span> 
             </a>
         </div>
+        <div class="flex justify-start items-center w-fit h-7 md:hidden">
+          <a href="/" class="flex items-center h-7">
+            <img src="/assets/hiddify-logo.svg" alt="hero" height="28" class="h-7" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div id="menu-btn" class="flex justify-center items-center w-fit md:hidden cursor-pointer">
+          <img src="/assets/three-dots.svg" alt="hero" height="24" decoding="async" loading="lazy" />
+        </div>
       </nav>
+      <div id="sidebar" class="w-[250px] hidden max-h-screen h-screen fixed right-0 top-0 px-10 py-20 bg-white flex-col gap-5 z-10">
+        <div id="close-sidebar-btn" class="absolute top-5 left-5 flex justify-center items-center w-fit md:hidden cursor-pointer">
+          <img src="/assets/close-button.svg" alt="hero" height="24" decoding="async" loading="lazy" />
+        </div>
+        <div class="flex justify-start items-center w-fit h-7 md:hidden">
+          <a href="/" class="flex items-center h-7">
+            <img src="/assets/hiddify-logo.svg" alt="hero" height="28" class="h-7" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <a href="/app" class="py-2 w-fit no-underline hover:text-primary" >
+          App
+        </a>
+        <a href="/manager" class="py-2 w-fit no-underline hover:text-primary" >
+          Manager
+        </a>
+        <a href="/about" class="py-2 w-fit no-underline hover:text-primary" >
+          About Us
+        </a>
+        <a href="/fa" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2" >
+          <img style="display:inline" src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png" alt="Lang_farsi">
+          <span>فارسی</span> 
+        </a>
+      </div>
     </header>
     <main class="relative py-24 mb-80 md:py-36 lg:py-52">
-      <div class="absolute z-10 text-[#212529] flex flex-col gap-5">
+      <div class="absolute z-9 text-[#212529] flex flex-col gap-5">
         <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
           Hiddify,
           <br />
@@ -630,6 +661,20 @@
     </footer>
 
     <script>
+      var menuBtn = document.getElementById("menu-btn");
+      var sideBar = document.getElementById("sidebar");
+      var closeSideBarBtn = document.getElementById("close-sidebar-btn")
+
+      menuBtn.addEventListener("click", function () {
+          sideBar.classList.remove("hidden");
+          sideBar.classList.add("flex");
+      });
+
+      closeSideBarBtn.addEventListener("click", function () {
+          sideBar.classList.remove("flex");
+          sideBar.classList.add("hidden");
+      });
+
       var disclosureItems = document.querySelectorAll(".disclosure-item");
       disclosureItems.forEach(function (item) {
         var title = item.querySelector(".disclosure-title");
