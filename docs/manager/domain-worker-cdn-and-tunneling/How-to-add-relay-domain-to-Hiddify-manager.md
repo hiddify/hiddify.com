@@ -1,9 +1,9 @@
 ---
-title: How to add a relay server to HiddifyManager
+title: How to add a relay server (domain) to HiddifyManager
 ---
 
 
-# How to add a relay server to HiddifyManager
+# How to add a relay server (domain) to HiddifyManager
 Let's assume that you have set up your middle server using one of the following methods or any other method.
 
 1. [Setting up a relay server using Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
