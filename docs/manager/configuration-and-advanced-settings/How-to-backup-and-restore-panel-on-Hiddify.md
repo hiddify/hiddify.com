@@ -5,7 +5,7 @@ weight: -100
 
 <div dir="ltr" markdown="1">
 
-# How to backup and restore panel on Hiddify
+# How to backup and restore panel on HiddifyManager
 
 Many times you need to backup the panel and restore it on another server. For example, your server is filtered or there is a problem that you cannot continue on that server. In this case, continue the following steps until the end to learn how to do this.
 Backup current panel via web
