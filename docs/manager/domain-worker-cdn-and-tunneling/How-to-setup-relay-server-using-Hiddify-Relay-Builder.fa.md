@@ -73,7 +73,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 - پس از انتخاب گزینه `Install`، منتظر بمانید تا تانل نصب شود.
 - بعد از اتمان نصب، در قدم اول می‌بایست پورت‌های مورد نظر برای تانل را انتخاب نمایید.
 - سپس ساب‌دامین مربوط به سور راصلی را انتخاب کنید تا تانل آغاز به کار نماید.
-- بعد از آغاز به کار تانل، پیغام `Gost tunnel is installed and activated` به رنگ سبز روی صفحه ظاهر می‌شود.
+- بعد از آغاز به کار تانل، پیغام `Gost tunnel is installed and activated` روی صفحه ظاهر می‌شود.
 
 
 `Status`
@@ -156,7 +156,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 `Status`
 
-با انتخاب گزینه `Check` می‌توان پورت‌های در حال استفاده و وضعیت تانل را چک نمود.
+با انتخاب گزینه `Status` می‌توان پورت‌های در حال استفاده و وضعیت تانل را چک نمود.
 
 
 
