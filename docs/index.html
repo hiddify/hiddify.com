@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="m-0 w-full">
+<html lang="en"
   <head>
 
     <meta charset="UTF-8" />
@@ -14,36 +14,28 @@
     
   </head>
 
-  <body class="m-0 w-full">
-    <header>
-      <nav class="py-5 px-10 hidden md:block">
+  <body class="overflow-x-hidden max-w-screen px-3 md:px-10 lg:px-20">
+    <header class="px-10">
+      <nav class="hidden md:flex items-center py-10">
         <div class="flex justify-start items-center w-full">
           <a href="/" class="flex items-center">
             <img src="/assets/hiddify-logo.svg" alt="hero" height="40" decoding="async" loading="lazy" />
           </a>
         </div>
-        <div class="w-full flex items-center justify-end gap-5">
-          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
-            <a href="/app" class="no-underline" >
+        <div class="w-full flex items-center justify-end gap-3 text-[#212529]">
+            <a href="/app" class="py-2 px-4 no-underline hover:text-primary" >
               App
             </a>
-          </button>
-          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
-            <a href="/manager" class="no-underline" >
+            <a href="/manager" class="py-2 px-4 no-underline hover:text-primary" >
               Manager
             </a>
-          </button>
-          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
-            <a href="/about" class="no-underline" >
+            <a href="/about" class="py-2 px-4 no-underline hover:text-primary" >
               About Us
             </a>
-          </button>
-          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
-            <a href="/fa" class="no-underline flex items-center gap-1" >
+            <a href="/fa" class="py-2 px-4 no-underline hover:text-primary flex items-center gap-2" >
               <img style="display:inline" src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png" alt="Lang_farsi">
-              فارسی 
+              <span>فارسی</span> 
             </a>
-          </button>
         </div>
       </nav>
     </header>
@@ -63,7 +55,7 @@
       class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"
     ></div>
 
-    <main class="container relative mx-auto py-32 md:py-64">
+    <main class="relative py-24 md:py-36 lg:py-52">
       <div class="absolute z-10 text-[#212529] flex flex-col gap-5">
         <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
           Hiddify,
@@ -78,21 +70,21 @@
       <img
         alt="hero"
         src="/assets/globe.png"
-        class="absolute -bottom-48 right-0 lg:-bottom-[300px] lg:-right-20 z-1 min-w-[300px] w-1/4 lg:w-[650px]"
+        class="absolute -bottom-[220px] -right-24 lg:-right-72 z-1 min-w-[300px] w-1/4 md:w-[400px] lg:w-[600px] 2xl:w-[700px]"
       />
     </main>
-    <section class="container relative mx-auto py-40 p-4 pt-60 flex flex-col gap-10">
+    <section class="relative py-40 p-4 pt-60 flex flex-col gap-10">
       <h2 class="text-center text-lg font-semibold text-secondary md:text-2xl">
         Two Products That Work Together
       </h2>
 
       <div class="w-full flex items-center justify-center">
         <div class="max-w-[1120px] flex flex-col lg:flex-row">
-          <div class="w-full px-20 py-10 flex flex-col justify-between items-center gap-10 border-2 border-solid border-white bg-white bg-opacity-25 rounded-tl-[100px] rounded-tr-[100px] lg:rounded-tr-none lg:rounded-bl-[100px]">
-            <h3 class="text-center text-secondary text-base font-normal">
+          <div class="w-full px-5 md:px-20 py-10 flex flex-col justify-between items-center gap-10 border-2 border-solid border-white bg-white bg-opacity-25 rounded-tl-[70px] rounded-tr-[70px] lg:rounded-tr-none lg:rounded-bl-[70px]">
+            <h3 class="text-center text-secondary text-base font-normal hidden md:block">
               VPN client app – to access the internet
             </h3>
-            <div class="h-24 flex items-center justify-center">
+            <div class="h-20 md:h-24 flex items-center justify-center">
               <img src="/assets/hiddify-logo.svg" alt="hero" height="96" decoding="async" loading="lazy" />
             </div>
             <p class="text-start text-secondary text-base font-normal">
@@ -106,16 +98,16 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-20 py-10 flex flex-col justify-between items-center gap-10 lg:border-l-0 border-t-0 border-x-2 border-b-2 lg:border-y-2 lg:border-r-2 border-solid border-white bg-white bg-opacity-25 rounded-br-[100px] rounded-bl-[100px] lg:rounded-bl-none lg:rounded-tr-[100px]">
-            <h3 class="text-center text-secondary text-base font-normal">
+          <div class="w-full px-5 md:px-20 py-10 flex flex-col justify-between items-center gap-10 lg:border-l-0 border-t-0 border-x-2 border-b-2 lg:border-y-2 lg:border-r-2 border-solid border-white bg-white bg-opacity-25 rounded-br-[70px] rounded-bl-[70px] lg:rounded-bl-none lg:rounded-tr-[70px]">
+            <h3 class="text-center text-secondary text-base font-normal hidden md:block">
               Hiddify Manager – to manage users and configs
             </h3>
-            <div class="h-24 flex items-center justify-center">
+            <div class="h-20 md:h-24 flex items-center justify-center">
               <img src="/assets/hiddify-manager-logo.svg" alt="hero" alt="hero" height="96" decoding="async" loading="lazy" />
             </div>
             <p class="text-start text-secondary text-base font-normal">
               Hiddify Manager makes it easy to create your own VPN which you can manage on either
-              desktop or mobile. Share it with your groups, even hundreds of people.
+              desktop or mobile. Share it with your groups, even hundreds of <br class="hidden lg:block" /> people.
             </p>
             <div class="w-full h-fit flex items-end justify-end">
               <div class="h-fit w-fit hover:bg-white rounded-md cursor-pointer">
@@ -144,7 +136,7 @@
     </section>
 
     <section
-      class="container mx-auto my-40 flex items-center px-20 text-secondary flex-col lg:flex-row"
+      class="mb-40 mt-20 flex lg:items-center px-5 md:px-20 text-secondary flex-col lg:flex-row"
     >
       <img src="/assets/hiddify-next.png" alt="hiddify next" class="w-[391px]" />
 
@@ -152,7 +144,7 @@
         <p>Connect to the internet easier than ever with</p>
         <img src="/assets/hiddify-logo.png" alt="hiddify logo" class="my-4 w-1/4" />
 
-        <ul class="list-disc">
+        <ul class="list-disc ml-4 lg:ml-0">
           <li>Easy to use</li>
           <li>
             Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and
@@ -160,25 +152,25 @@
           </li>
         </ul>
 
-        <div class="my-5 flex gap-5">
-          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white bg-opacity-25 border border-solid border-white">
+        <div class="my-5 gap-5 hidden sm:flex">
+          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
             <img src="/assets/platforms/android.svg" alt="android"  class="w-12" decoding="async" loading="lazy" />
           </div>
-          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white bg-opacity-25 border border-solid border-white">
+          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
             <img src="/assets/platforms/apple.svg" alt="ios" class="w-12" decoding="async" loading="lazy" />
           </div>
-          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white bg-opacity-25 border border-solid border-white">
+          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-primary">
             <img src="/assets/platforms/windows.svg" alt="windows" class="w-12" decoding="async" loading="lazy"/>
           </div>
-          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white bg-opacity-25 border border-solid border-white">
+          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
             <img src="/assets/platforms/mac.svg" alt="mac" class="w-12" decoding="async" loading="lazy" />
           </div>
-          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-white bg-opacity-25 border border-solid border-white">
+          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
             <img src="/assets/platforms/linux.svg" alt="linux" class="w-12" decoding="async" loading="lazy" />
           </div>
         </div>
 
-        <div class="mt-5">
+        <div class="mt-5 flex items-center lg:justify-start justify-end gap-3">
           <button
             class="text-primary border border-primary focus:outline-none hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary/70 font-medium rounded-lg text-sm px-5 py-2.5"
           >
@@ -186,7 +178,7 @@
           </button>
 
           <button
-            class="lg:ml-2 mt-2 lg:mt-0 text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            class="text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
           >
             <a href="https://app.hiddify.com/" id="install-btn"> Download for </a>
           </button>
@@ -194,9 +186,9 @@
       </div>
     </section>
     <section
-      class="container mx-auto my-40 flex items-center gap-7 px-20 text-secondary flex-col lg:flex-row"
+      class="my-40 flex 3xl:items-center gap-7 px-5 md:px-20 text-secondary flex-col 2xl:flex-row"
     >
-      <img src="/assets/hiddify-manager.png" alt="hiddify manager" class="w-[741px]" />
+      <img src="/assets/hiddify-manager.png" alt="hiddify manager" class="min-w-[741px] w-[741px]" />
       <div class="lg:w-1/2">
         <p>Set up your own VPN for your group with</p>
 
@@ -214,7 +206,7 @@
           </li>
         </ul>
 
-        <div class="mt-5">
+        <div class="mt-5 flex items-center 2xl:justify-start justify-end gap-3">
           <button
             class="text-primary border border-primary focus:outline-none hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary/70 font-medium rounded-lg text-sm px-5 py-2.5"
           >
@@ -222,7 +214,7 @@
           </button>
 
           <button
-            class="lg:ml-2 mt-2 lg:mt-0 text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            class="text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
           >
             Install on server
           </button>
@@ -230,7 +222,7 @@
       </div>
     </section>
 
-    <section class="w-full flex flex-col gap-16 justify-center items-center container mx-auto my-40 text-center text-secondary">
+    <section class="w-full flex flex-col gap-16 justify-center items-center my-40 text-center text-secondary">
       
       <h2 class="text-center text-2xl font-semibold">Why to choose Hiddify?</h2>
       <div class="w-full flex flex-col lg:flex-row items-center justify-center gap-10">
@@ -254,13 +246,13 @@
       </div>
     </section>
 
-    <section class="flex flex-col gap-16 justify-center items-center container mx-auto my-40 border-t border-white py-20 text-center text-secondary">
+    <section class="flex flex-col gap-16 justify-center items-center my-40 border-t border-white py-20 text-center text-secondary">
       <div>
         <h2 class="text-center text-2xl font-semibold">Measuring Impact</h2>
         <p class="mt-2">One of the most trusted VPNs</p>
       </div>
 
-      <div class="mt-8 w-full grid grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="mt-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <h3 class="text-xl font-semibold">1,000,000+</h3>
           <p>Hiddify Manager downloads</p>
@@ -284,7 +276,7 @@
     </section>
 
     <section
-      class="16 container relative mx-auto my-20 flex flex-col items-center justify-center gap-5 text-center text-secondary"
+      class="relative my-20 flex flex-col items-center justify-center gap-5 text-secondary"
     >
       <div
         class="clearfix absolute bottom-0 -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-md bg-purple-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-96 md:animate-blob"
@@ -296,7 +288,7 @@
         class="animation-delay-4000 clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-blue-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-56 md:animate-blob"
       ></div>
       <h2 class="text-center text-3xl font-semibold">Frequently Asked Questions</h2>
-      <ul class="relative mx-auto mt-1 w-full max-w-5xl list-none flex-col p-4">
+      <ul class="relative mt-1 w-full max-w-5xl list-none flex-col p-4">
         <li
           class="disclosure-item mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 text-secondary shadow-md"
         >
@@ -470,27 +462,45 @@
       </ul>
     </section>
 
-    <footer
-      class="body-font relative border-white bg-[rgba(255,255,255,0.5)] p-4 text-secondary backdrop-blur-xl backdrop-filter"
-    >
-      <div
-        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:right-[20%] md:animate-blob"
-      ></div>
+    <footer class="body-font relative border-white bg-[rgba(255,255,255,0.5)] p-4 text-secondary backdrop-blur-xl backdrop-filter">
+      <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:right-[20%] md:animate-blob"></div>
 
-      <div
-        class="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start"
-      >
-        <div class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
-          <a
-            class="title-font flex items-center justify-center font-medium text-white md:justify-start"
-          >
-            <img src="/assets/hiddify-logo.png" class="h-11 text-black" />
-          </a>
+      <div class="flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start">
+        <div class="w-full md:w-64 flex-shrink-0 md:mx-0 px-4 text-left">
+          <div class="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+            <a
+              class="title-font flex items-center font-medium text-white md:justify-start"
+            >
+              <img src="/assets/hiddify-logo.svg" alt="hero" height="40" decoding="async" loading="lazy" />
+            </a>
+            <div class="items-end justify-start gap-5 flex md:hidden">
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+                <a href="https://www.youtube.com/@hiddify">
+                  <img src="/assets/socials/youtube.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+                </a>
+              </div>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+                <a href="https://twitter.com/hiddify_com">
+                  <img src="/assets/socials/x.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+                </a>            
+              </div>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+                <a href="https://t.me/hiddify">
+                  <img src="/assets/socials/telegram.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+                </a>            
+              </div>
+              <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+                <a href="https://github.com/hiddify/Hiddify-Manager">
+                  <img src="/assets/socials/github.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+                </a>            
+              </div>
+            </div>
+          </div>
           <p class="mt-5 mb-10 text-secondary text-sm">
             To ensure everyone can access the unrestricted internet easily with a powerful and
             professional anti-censorship tool
           </p>
-          <div class="flex items-end justify-start gap-5">
+          <div class="items-end justify-start gap-5 hidden md:flex">
             <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
               <a href="https://www.youtube.com/@hiddify">
                 <img src="/assets/socials/youtube.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
@@ -514,7 +524,7 @@
           </div>
         </div>
         <div
-          class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left"
+          class="-mb-10 mt-10 flex flex-grow flex-wrap md:mt-0 md:pl-20 text-left"
         >
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <h2 class="title-font mb-3 text-lg text-secondary">Download Client</h2>
@@ -614,15 +624,6 @@
     </footer>
 
     <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.querySelector(".mobile-menu-button")
-      const mobileMenu = document.querySelector(".navigation-menu")
-
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden")
-      })
-
-
       var disclosureItems = document.querySelectorAll(".disclosure-item");
       disclosureItems.forEach(function (item) {
         var title = item.querySelector(".disclosure-title");
