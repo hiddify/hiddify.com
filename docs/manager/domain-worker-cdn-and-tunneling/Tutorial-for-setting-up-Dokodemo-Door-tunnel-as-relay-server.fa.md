@@ -1,8 +1,8 @@
 ---
-title: آموزش راه‌اندازی تانل Dokodemo-door به عنوان سرور میانی
+title: آموزش راه‌اندازی تانل Dokodemo-Door به عنوان سرور میانی
 ---
 
-# آموزش راه‌اندازی تانل Dokodemo-door به عنوان سرور میانی
+# آموزش راه‌اندازی تانل Dokodemo-Door به عنوان سرور میانی
 
 برای این کار شما به یک سرور میانی نیاز دارید تا از طریق آن به سرور اصلی متصل شوید. معمولا این سرور میانی در کشور محل اقامت شما در نظر گرفته می‌شود.
 <div align=center dir="rtl" markdown="1">
@@ -23,7 +23,7 @@ sudo bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-re
 nano /usr/local/etc/xray/config.json
 ```
 
-- حالا کد زیر که مربوط به ترافیک `inbound` و `outbound` تانل dokodemo-door است را ملاحظه فرمایید.
+- حالا کد زیر که مربوط به ترافیک `inbound` و `outbound` تانل dokodemo-Door است را ملاحظه فرمایید.
 
 ```
 {
@@ -31,7 +31,7 @@ nano /usr/local/etc/xray/config.json
     {
       "listen": "127.0.0.1",
       "port": 62789,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "127.0.0.1"
       },
@@ -40,7 +40,7 @@ nano /usr/local/etc/xray/config.json
     {
       "listen": null,
       "port": Main_Server_Port,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "MAIN_SERVER_IP",
         "followRedirect": false,
@@ -73,7 +73,7 @@ nano /usr/local/etc/xray/config.json
     {
       "listen": "127.0.0.1",
       "port": 62789,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "127.0.0.1"
       },
@@ -82,7 +82,7 @@ nano /usr/local/etc/xray/config.json
     {
       "listen": null,
       "port": 443,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "10.10.10.10",
         "followRedirect": false,
@@ -117,7 +117,7 @@ nano /usr/local/etc/xray/config.json
     {
       "listen": "127.0.0.1",
       "port": 62789,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "127.0.0.1"
       },
@@ -126,7 +126,7 @@ nano /usr/local/etc/xray/config.json
     {
       "listen": null,
       "port": 443,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "10.10.10.10",
         "followRedirect": false,
@@ -138,7 +138,7 @@ nano /usr/local/etc/xray/config.json
    {
       "listen": null,
       "port": 8443,
-      "protocol": "dokodemo-door",
+      "protocol": "dokodemo-Door",
       "settings": {
         "address": "20.20.20.20",
         "followRedirect": false,
