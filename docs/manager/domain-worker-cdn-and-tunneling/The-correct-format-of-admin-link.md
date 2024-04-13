@@ -1,10 +1,10 @@
 ---
-title: Explanations about admin link in HiddifyManager
+title: Explanations about admin link in HiddifyManager and its changes from version 10
 ---
 
 <div dir="ltr" markdown="1">
   
-# Explanations about admin link in HiddifyManager and its changes after version 10
+# Explanations about admin link in HiddifyManager and its changes from version 10
 ## The correct format of admin link
 Or note that the admin link and other program links are made up of different parts and can be changed in the settings; It is necessary to give an explanation about the correct format of the admin link.
 
