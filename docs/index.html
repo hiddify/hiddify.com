@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="m-0 h-full">
   <head>
 
     <meta charset="UTF-8" />
@@ -14,85 +14,39 @@
     
   </head>
 
-  <body>
-    <header class="border-gray-200 px-4 lg:px-6">
-      <nav class="mx-auto py-2.5 container lg:flex lg:items-center lg:justify-between">
-        <div class="flex flex-wrap justify-between items-center w-full">
+  <body class="m-0 h-full">
+    <header>
+      <nav class="py-5 px-10 hidden lg:block">
+        <div class="flex justify-start items-center w-full">
           <a href="/" class="flex items-center">
-            <img src="/assets/hiddify-logo.png" class="h-6 sm:h-9" alt="Hiddify Logo" />
+            <img src="/assets/hiddify-logo.svg" alt="hero" height="40" decoding="async" loading="lazy" />
           </a>
-
-          <button
-            onclick="toggleShow()"
-            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              id="show-icon"
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <svg
-              id="hide-icon"
-              class="w-6 h-6 hidden"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
         </div>
-
-        <div
-          id="mobile-header"
-          class="hidden sm:flex flex-col sm:items-end sm:space-y-2 sm:space-x-0 align-items-center"
-        >
-          <div
-            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 items-center lg:min-w-[400px]"
-          >
-            <a
-              href="/app"
-              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-            >
+        <div class="w-full flex items-center justify-end gap-5">
+          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
+            <a href="/app" class="no-underline" >
               App
             </a>
-            <a
-              href="/manager"
-              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-            >
+          </button>
+          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
+            <a href="/manager" class="no-underline" >
               Manager
             </a>
-            <a
-              href="/about"
-              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-            >
+          </button>
+          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
+            <a href="/about" class="no-underline" >
               About Us
             </a>
-            <a
-              href="/fa/"
-              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-            >
-            <img style="display:inline" src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png" alt="Lang_farsi">
-            فارسی
+          </button>
+          <button class="hover:text-primary py-2 px-4 border-none bg-transparent">
+            <a href="/fa" class="no-underline flex items-center gap-1" >
+              <img style="display:inline" src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png" alt="Lang_farsi">
+              فارسی 
             </a>
-          </div>
+          </button>
         </div>
       </nav>
     </header>
-
     <div
       class="animation-delay-4000 absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-400 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%] md:animate-blob"
     ></div>
@@ -660,21 +614,14 @@
     </footer>
 
     <script>
-      function toggleShow() {
-        var mobileHeader = document.getElementById("mobile-header");
-        var showIcon = document.getElementById("show-icon");
-        var hideIcon = document.getElementById("hide-icon");
+      // Mobile menu toggle
+      const mobileMenuButton = document.querySelector(".mobile-menu-button")
+      const mobileMenu = document.querySelector(".navigation-menu")
 
-        if (mobileHeader.classList.contains("hidden")) {
-          mobileHeader.classList.remove("hidden");
-          showIcon.classList.add("hidden");
-          hideIcon.classList.remove("hidden");
-        } else {
-          mobileHeader.classList.add("hidden");
-          showIcon.classList.remove("hidden");
-          hideIcon.classList.add("hidden");
-        }
-      }
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden")
+      })
+
 
       var disclosureItems = document.querySelectorAll(".disclosure-item");
       disclosureItems.forEach(function (item) {
