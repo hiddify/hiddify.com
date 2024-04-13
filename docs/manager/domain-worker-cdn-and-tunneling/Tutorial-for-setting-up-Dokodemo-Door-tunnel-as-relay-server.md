@@ -1,8 +1,8 @@
 ---
-title: Tutorial for setting up Dokodemo-door tunnel as relay server
+title: Tutorial for setting up Dokodemo-Door tunnel as relay server
 ---
 
-# Tutorial for setting up Dokodemo-door tunnel as relay server
+# Tutorial for setting up Dokodemo-Door tunnel as relay server
 
 For this you need an relay server to connect to the main server. Usually this middle server is considered in Iran.
 The tunnel usage diagram is as follows.
@@ -24,7 +24,7 @@ sudo bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-re
 nano /usr/local/etc/xray/config.json
 ```
 
-- Now see the code below which is related to the ``inbound'' and ``outbound'' traffic of the dokodemo-door tunnel.
+- Now see the code below which is related to the ``inbound'' and ``outbound'' traffic of the dokodemo-Door tunnel.
 
 ```
 {
@@ -32,7 +32,7 @@ nano /usr/local/etc/xray/config.json
      {
        "listen": "127.0.0.1",
        "port": 62789,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "127.0.0.1"
        },
@@ -41,7 +41,7 @@ nano /usr/local/etc/xray/config.json
      {
        "listen": null,
        "port": Main_Server_Port,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "MAIN_SERVER_IP",
          "followRedirect": false,
@@ -74,7 +74,7 @@ nano /usr/local/etc/xray/config.json
      {
        "listen": "127.0.0.1",
        "port": 62789,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "127.0.0.1"
        },
@@ -83,7 +83,7 @@ nano /usr/local/etc/xray/config.json
      {
        "listen": null,
        "port": 443,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "10.10.10.10",
          "followRedirect": false,
@@ -118,7 +118,7 @@ For this, it is enough to define a new `inbound` in the `config.json` code after
      {
        "listen": "127.0.0.1",
        "port": 62789,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "127.0.0.1"
        },
@@ -127,7 +127,7 @@ For this, it is enough to define a new `inbound` in the `config.json` code after
      {
        "listen": null,
        "port": 443,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "10.10.10.10",
          "followRedirect": false,
@@ -139,7 +139,7 @@ For this, it is enough to define a new `inbound` in the `config.json` code after
     {
        "listen": null,
        "port": 8443,
-       "protocol": "dokodemo-door",
+       "protocol": "dokodemo-Door",
        "settings": {
          "address": "20.20.20.20",
          "followRedirect": false,
@@ -183,7 +183,7 @@ Assuming that the subscription domain is `sublink.hiddify.com`, proceed as shown
 
 Now, if you open the user page with the subscription domain (here `sublink.hiddify.com`), you will see that the connections related to the `relay server` have also been added. You can add and use these connections individually or using subscription links to your client.
 
-## Remove the Dokodemo-door settings from the relay server
+## Remove the Dokodemo-Door settings from the relay server
 - To do this, first run this command.
 
 ```
