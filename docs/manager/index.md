@@ -265,7 +265,7 @@ In this page, we put categorized content of tutorials and documents related to H
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">
-            Explanations about admin link in HiddifyManager
+            Explanations about admin link in HiddifyManager and its changes from version 10
         </a>
         </li>
     </div>
