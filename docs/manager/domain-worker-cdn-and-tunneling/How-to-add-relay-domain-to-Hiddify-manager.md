@@ -10,7 +10,7 @@ Let's assume that you have set up your middle server using one of the following 
 2. [Setting up a relay server using the IP-Tables method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
 3. [Setting up a relay server using the GOST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
 4. [Setting up a relay server using the WST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
-5. [Setting up a relay server using the Dokodemo-door method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-door-tunnel-as-relay-server/)
+5. [Setting up a relay server using the Dokodemo-Door method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/)
 6. [Setting up a relay server using the HA-Proxy method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/)
 
 To add that server to HiFi Manager and use its configurations, just follow the steps below.
