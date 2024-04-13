@@ -732,8 +732,8 @@ video {
   bottom: -12rem;
 }
 
-.-bottom-\[220px\] {
-  bottom: -220px;
+.-bottom-\[250px\] {
+  bottom: -250px;
 }
 
 .-right-24 {
@@ -814,6 +814,10 @@ video {
   margin-bottom: 10rem;
 }
 
+.mb-80 {
+  margin-bottom: 20rem;
+}
+
 .me-2 {
   margin-inline-end: 0.5rem;
 }
@@ -844,10 +848,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -1121,10 +1121,6 @@ video {
   gap: 1.75rem;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1350,6 +1346,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-20 {

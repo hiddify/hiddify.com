@@ -14,7 +14,13 @@
     
   </head>
 
-  <body class="overflow-x-hidden max-w-screen px-3 md:px-10 lg:px-20">
+  <style>
+    html, body {
+        overflow-x: hidden; /* prevents horizontal scroll */
+    }
+  </style>
+
+  <body class="px-3 md:px-10 lg:px-20">
     <header class="px-10">
       <nav class="hidden md:flex items-center py-10">
         <div class="flex justify-start items-center w-full">
@@ -23,39 +29,23 @@
           </a>
         </div>
         <div class="w-full flex items-center justify-end gap-3 text-[#212529]">
-            <a href="/app" class="py-2 px-4 no-underline hover:text-primary" >
+            <a href="/app" class="py-2 w-fit no-underline hover:text-primary" >
               App
             </a>
-            <a href="/manager" class="py-2 px-4 no-underline hover:text-primary" >
+            <a href="/manager" class="py-2 w-fit no-underline hover:text-primary" >
               Manager
             </a>
-            <a href="/about" class="py-2 px-4 no-underline hover:text-primary" >
+            <a href="/about" class="py-2 w-fit no-underline hover:text-primary" >
               About Us
             </a>
-            <a href="/fa" class="py-2 px-4 no-underline hover:text-primary flex items-center gap-2" >
+            <a href="/fa" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2" >
               <img style="display:inline" src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png" alt="Lang_farsi">
               <span>فارسی</span> 
             </a>
         </div>
       </nav>
     </header>
-    <div
-      class="animation-delay-4000 absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-400 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%] md:animate-blob"
-    ></div>
-    <div
-      class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"
-    ></div>
-    <div
-      class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"
-    ></div>
-    <div
-      class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"
-    ></div>
-    <div
-      class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"
-    ></div>
-
-    <main class="relative py-24 md:py-36 lg:py-52">
+    <main class="relative py-24 mb-80 md:py-36 lg:py-52">
       <div class="absolute z-10 text-[#212529] flex flex-col gap-5">
         <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
           Hiddify,
@@ -70,10 +60,26 @@
       <img
         alt="hero"
         src="/assets/globe.png"
-        class="absolute -bottom-[220px] -right-24 lg:-right-72 z-1 min-w-[300px] w-1/4 md:w-[400px] lg:w-[600px] 2xl:w-[700px]"
+        class="absolute -bottom-[250px] -right-24 lg:-right-72 z-1 min-w-[300px] w-1/4 md:w-[400px] lg:w-[600px] 2xl:w-[700px]"
       />
+
+      <div
+      class="animation-delay-4000 absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-400 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%] md:animate-blob"
+      ></div>
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"
+      ></div>
+      <div
+        class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"
+      ></div>
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"
+      ></div>
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mixblend--multiply blur-3xl filter md:left-[40%] md:animate-blob"
+      ></div>
     </main>
-    <section class="relative py-40 p-4 pt-60 flex flex-col gap-10">
+    <section class="relative mb-40 flex flex-col gap-10">
       <h2 class="text-center text-lg font-semibold text-secondary md:text-2xl">
         Two Products That Work Together
       </h2>
@@ -136,7 +142,7 @@
     </section>
 
     <section
-      class="mb-40 mt-20 flex lg:items-center px-5 md:px-20 text-secondary flex-col lg:flex-row"
+      class="mb-40 flex lg:items-center px-5 md:px-20 text-secondary flex-col lg:flex-row"
     >
       <img src="/assets/hiddify-next.png" alt="hiddify next" class="w-[391px]" />
 
