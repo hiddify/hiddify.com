@@ -21,7 +21,7 @@
   </style>
 
   <body class="px-3 md:px-10 lg:px-20">
-    <header class="px-10">
+    <header class="md:px-10 md:mb-36 lg:mb-52">
       <nav class="flex items-center justify-between py-10">
         <div class="justify-start items-center w-full hidden md:flex">
           <a href="/" class="items-center flex">
@@ -52,7 +52,7 @@
           <img src="/assets/three-dots.svg" alt="hero" height="24" decoding="async" loading="lazy" />
         </div>
       </nav>
-      <div id="sidebar" class="w-[250px] hidden max-h-screen h-screen fixed right-0 top-0 px-10 py-20 bg-white flex-col gap-5 z-10">
+      <div id="sidebar" class="w-[250px] hidden max-h-screen h-screen fixed right-0 top-0 px-10 py-20 bg-white flex-col gap-5 z-20">
         <div id="close-sidebar-btn" class="absolute top-5 left-5 flex justify-center items-center w-fit md:hidden cursor-pointer">
           <img src="/assets/close-button.svg" alt="hero" height="24" decoding="async" loading="lazy" />
         </div>
@@ -76,8 +76,8 @@
         </a>
       </div>
     </header>
-    <main class="relative py-24 mb-80 md:py-36 lg:py-52">
-      <div class="absolute z-9 text-[#212529] flex flex-col gap-5">
+    <main class="relative pb-24 mb-80 md:pb-36 lg:pb-52">
+      <div class="absolute z-10 text-[#212529] flex flex-col gap-5">
         <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
           Hiddify,
           <br />
@@ -91,7 +91,7 @@
       <img
         alt="hero"
         src="/assets/globe.png"
-        class="absolute -bottom-[250px] -right-24 lg:-right-72 z-1 min-w-[300px] w-1/4 md:w-[400px] lg:w-[600px] 2xl:w-[700px]"
+        class="absolute -bottom-[250px] -right-24 lg:-right-72 z-0 min-w-[300px] w-1/4 md:w-[400px] lg:w-[600px] 2xl:w-[700px]"
       />
 
       <div
@@ -117,7 +117,7 @@
 
       <div class="w-full flex items-center justify-center">
         <div class="max-w-[1120px] flex flex-col lg:flex-row">
-          <div class="w-full px-5 md:px-20 py-10 flex flex-col justify-between items-center gap-10 border-2 border-solid border-white bg-white bg-opacity-25 rounded-tl-[70px] rounded-tr-[70px] lg:rounded-tr-none lg:rounded-bl-[70px]">
+          <div class="w-full px-5 md:px-20 py-7 md:py-10 flex flex-col justify-between items-center gap-5 md:gap-10 border-2 border-solid border-white bg-white bg-opacity-25 rounded-tl-[30px] md:rounded-tl-[100px] rounded-tr-[30px] md:rounded-tr-[100px] lg:rounded-tr-none lg:rounded-bl-[100px]">
             <h3 class="text-center text-secondary text-base font-normal hidden md:block">
               VPN client app – to access the internet
             </h3>
@@ -135,7 +135,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-5 md:px-20 py-10 flex flex-col justify-between items-center gap-10 lg:border-l-0 border-t-0 border-x-2 border-b-2 lg:border-y-2 lg:border-r-2 border-solid border-white bg-white bg-opacity-25 rounded-br-[70px] rounded-bl-[70px] lg:rounded-bl-none lg:rounded-tr-[70px]">
+          <div class="w-full px-5 md:px-20 py-7 md:py-10 flex flex-col justify-between items-center gap-5 md:gap-10 lg:border-l-0 border-t-0 border-x-2 border-b-2 lg:border-y-2 lg:border-r-2 border-solid border-white bg-white bg-opacity-25 rounded-br-[30px] md:rounded-br-[100px] rounded-bl-[30px] md:rounded-bl-[100px] lg:rounded-bl-none lg:rounded-tr-[100px]">
             <h3 class="text-center text-secondary text-base font-normal hidden md:block">
               Hiddify Manager – to manage users and configs
             </h3>
@@ -175,7 +175,9 @@
     <section
       class="mb-40 flex lg:items-center px-5 md:px-20 text-secondary flex-col lg:flex-row"
     >
-      <img src="/assets/hiddify-next-mobile.svg" alt="hiddify next" class="w-[400px]" decoding="async" loading="lazy" />
+      <div class="flex items-center justify-center lg:items-start lg:justify-start">
+        <img src="/assets/hiddify-next-mobile.svg" alt="hiddify next" class="w-[400px]" decoding="async" loading="lazy" />
+      </div>
 
       <div class="lg:w-1/2 w-full">
         <p>Connect to the internet easier than ever with</p>
@@ -189,7 +191,7 @@
           </li>
         </ul>
 
-        <div class="my-5 gap-5 hidden sm:flex">
+        <div class="my-5 gap-5 hidden sm:flex w-fit">
           <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
             <img src="/assets/platforms/android.svg" alt="android"  class="w-12" decoding="async" loading="lazy" />
           </div>
