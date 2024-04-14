@@ -291,21 +291,28 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/129">آموزش راه‌اندازی تانل به روش IP Tables</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">راه‌اندازی سرور میانی با استفاده از سازنده سرور میانی هیدیفای (همه روش‌ها در یک اپ)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/493">آموزش راه‌اندازی تانل به روش GOST</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش IP Tables</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/851">آموزش راه‌اندازی تانل به روش WST
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش GOST</a>
+        </li>
+        <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش WST
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/3442">آموزش راه‌اندازی تانل به روش Dokodemo-door
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش Dokodemo-Door
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/3443">آموزش راه‌اندازی تانل به روش HA-proxy
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش HA-proxy
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/">نحوه افزودن سرور (دامنه) میانی به هیدیفای منیجر
         </a>
         </li>
         <li>
