@@ -5,7 +5,7 @@ title: How to contribute to this project
 # How to contribute to this project
 For this, you just need to install git on your system.
 
-## Install git on the system
+## Installing git on the system
 Open one of the following based on your operating system.
 <details dir=ltr markdown="1"><summary><h3>Windows</h3></summary>
 
