@@ -6,10 +6,10 @@ title: نحوه افزودن سرور (دامنه) میانی به هیدیفا�
 فرض کنیم که شما سرور میانی خود را با استفاده از یکی از روش‌های زیر و یا هر روش دیگری راه‌اندازی نموده‌اید.
 
 1. [راه‌اندازی سرور میانی با استفاده از Hiddify Relay Builder (همه روش‌ها در یک اپ)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
-2. [راه‌اندازی سرور میانی به روش IP-Tables](fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
-3. [راه‌اندازی سرور میانی به روش GOST](fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
-4. [راه‌اندازی سرور میانی به روش WST](fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
-5. [راه‌اندازی سرور میانی به روش Dokodemo-Door](fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/)
+2. [راه‌اندازی سرور میانی به روش IP-Tables](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
+3. [راه‌اندازی سرور میانی به روش GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+4. [راه‌اندازی سرور میانی به روش WST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
+5. [راه‌اندازی سرور میانی به روش Dokodemo-Door](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/)
 6. [راه‌اندازی سرور میانی به روش HA-Proxy](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/)
 
 برای افزودن آن سرور به هیدیفای‌منیجر و استفاده از کانفیگ های آن کافیست مراحل زیر را دنبال نمایید.
