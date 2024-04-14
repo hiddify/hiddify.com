@@ -5,7 +5,7 @@ title: نحوه افزودن سرور (دامنه) میانی به هیدیفا�
 # نحوه افزودن سرور (دامنه) میانی به هیدیفای منیجر
 فرض کنیم که شما سرور میانی خود را با استفاده از یکی از روش‌های زیر و یا هر روش دیگری راه‌اندازی نموده‌اید.
 
-1. [راه‌اندازی سرور میانی با استفاده از Hiddify Relay Builder (همه روش‌ها در یک اپ)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+1. [راه‌اندازی سرور میانی با استفاده از سازنده سرور میانی هیدیفای (همه روش‌ها در یک اپ)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
 2. [راه‌اندازی سرور میانی به روش IP-Tables](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
 3. [راه‌اندازی سرور میانی به روش GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
 4. [راه‌اندازی سرور میانی به روش WST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
