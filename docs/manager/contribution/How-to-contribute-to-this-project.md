@@ -91,7 +91,7 @@ git version
 
 
 
-## Using git to develop Hidify project
+## Using git to develop HiddifyManager project
 
 - First you have to fork the project. For this, if you intend to fork the panel, execute the following command.
 
