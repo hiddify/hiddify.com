@@ -245,17 +245,17 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">How to setup relay server using Hiddify Relay Builder (all in one app)</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">How to setup relay server using IP Tables tunneling</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">How to setup a relay server using the IP-Tables method</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">How to setup relay server using GOST</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">How to setup relay server using GOST method</a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">How to setup relay server using WST
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">How to setup relay server using WST method
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">How How to setup relay server using Dokodemo-door
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">How to setup relay server using Dokodemo-Door method
         </a>
         </li>
         <li>
