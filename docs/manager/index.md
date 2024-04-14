@@ -242,21 +242,28 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">How to setup and use Cloudflare workers (Manual way)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using IP Tables tunneling</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">How to setup relay server using Hiddify Relay Builder (all in one app)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/493?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using GOST</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">How to setup relay server using IP Tables tunneling</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/851?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using WST
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">How to setup relay server using GOST</a>
+        </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">How to setup relay server using WST
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/3442?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How How to setup relay server using Dokodemo-door
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">How How to setup relay server using Dokodemo-door
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/3443?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How How to setup relay server using HA-proxy
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">How to setup relay server using HA-proxy
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">How to add a relay server (domain) to HiddifyManager
         </a>
         </li>
         <li>
