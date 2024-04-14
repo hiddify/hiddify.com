@@ -730,6 +730,7 @@ weight: -2
         </a>
     </li>
 
+</div>
 
 <div class="read-more-par absolute bottom-0 right-0 left-0 h-20 radient-to-t rounded-b-xl from-white to-white/10 flex items-center justify-center">
     <button class="rounded-3xl  p-2 px-4 flex gap-2 items-center">
