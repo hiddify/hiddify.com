@@ -720,7 +720,7 @@ weight: -2
 
 </div>
 
-## توسعه پروژه
+## مشارکت در توسعه
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
     <img src="/assets/contribution.jpg" alt="image" class="rounded-xl">
