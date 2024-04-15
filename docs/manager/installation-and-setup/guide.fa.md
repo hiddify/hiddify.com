@@ -19,6 +19,7 @@ weight: -90
 ## فیلم آموزش راهنمای نصب
 
 <div align=center markdown=1>
+  
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/_LYFqrXVupI/0.jpg)](https://www.youtube.com/watch?v=_LYFqrXVupI)
 
 </div>
@@ -41,4 +42,4 @@ bash <(curl i.hiddify.com/release)
 
 
 
-> برای استفاده حداکثری از این پنل لطفا [این مقاله](/manager/wiki/%D9%86%D8%AD%D9%88%D9%87-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C) را مطالعه فرمایید.
+> برای استفاده حداکثری از این پنل لطفا [این مقاله](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را مطالعه فرمایید.
