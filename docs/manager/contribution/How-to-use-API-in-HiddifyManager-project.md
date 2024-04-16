@@ -16,7 +16,9 @@ This key must be included in the request as the "Hiddify-API-Key" header value.
     - Ping with panel itself
 
 
-  > The base URL for this section is: domain.com/<admin_proxy_path>/api/v2/panel/
+  > The base URL for this section is:
+  > 
+  > domain.com/<admin_proxy_path>/api/v2/panel/
 
 - Admin section, This section offers operations such as:
     - Retrieving information about the current admin (logged-in admin)
@@ -24,7 +26,9 @@ This key must be included in the request as the "Hiddify-API-Key" header value.
     - Accessing current server statistics
     - Viewing the contents of the Hiddify log files
 
-  > The base URL for this section is: domain.com/<admin_proxy_path>/api/v2/admin/
+  > The base URL for this section is:
+  >
+  > domain.com/<admin_proxy_path>/api/v2/admin/
 
 - User section, This section offers operations such as:
     - Access information about the current user (logged-in user)
@@ -35,9 +39,10 @@ This key must be included in the request as the "Hiddify-API-Key" header value.
   > Notice: Although it is possible to enter the key in the URL section, it is strongly recommended to enter it in the header.
   > 
   > The base URL for this section has two options:
-  >> domain.com/<proxy_path>/api/v2/user/
+  > 
+  >> domain.com/<user_proxy_path>/api/v2/user/
   >> 
-  >> domain.com/<proxy_path>/<uuid>/api/v2/user/
+  >> domain.com/<user_proxy_path>/<uuid>/api/v2/user/
 
 ### Additional Information
 To learn more about each API, its inputs, and outputs, please refer to the API section within the HiddifyManager panel.
