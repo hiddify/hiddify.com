@@ -40,9 +40,9 @@
    > توجه: اگرچه امکان وارد کردن کلید API در قسمت URL وجود دارد، اما توصیه می شود آن را در هدر وارد کنید.
    >
    > شروع URL پایه ی این بخش، بر اساس اینکه کلید API را در کجا قرار میدهید، میتواند یکی از این دو باشد:
-   >> domain.com/<proxy_path>/api/v2/user/
+   >> domain.com/<user_proxy_path>/api/v2/user/
    >>
-   >> domain.com/<proxy_path>/<uuid>/api/v2/user/
+   >> domain.com/<user_proxy_path>/<uuid>/api/v2/user/
 
 ### اطلاعات تکمیلی
 برای کسب اطلاعات بیشتر در مورد هر API، ورودی ها و خروجی های آن، لطفاً به بخش API پنل ادمین خود مراجعه کنید.
