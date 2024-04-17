@@ -30,8 +30,8 @@ weight: -70
 </div>
 
 <div align=center markdown=1>
+  
 ![image](https://user-images.githubusercontent.com/114227601/206861285-58832cec-a2a3-441e-91d4-8300d16584d6.png)
-
 </div>
 <div dir="rtl" markdown=1>
 - حالا کد زیر را کپی کنید
@@ -45,8 +45,8 @@ weight: -70
 </div>
 
 <div align=center markdown=1>
+  
 ![image](https://user-images.githubusercontent.com/114227601/206861304-656682b4-17a3-44c1-89f9-7b0d89566728.png)
-
 </div>
 
 <div dir="rtl" markdown=1>
@@ -55,8 +55,8 @@ weight: -70
 </div>
 
 <div align=center markdown=1>
+  
 ![image](https://user-images.githubusercontent.com/114227601/206861323-1de41700-6ce4-403a-a644-0836e2a22876.png)
-
 </div>
 
 <div dir="rtl" markdown=1>
