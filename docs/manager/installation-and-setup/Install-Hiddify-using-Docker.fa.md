@@ -13,8 +13,8 @@ weight: -40
 </div>
 
 ```
-git clone https://github.com/hiddify/hiddify-config
-cd hiddify-config
+git clone https://github.com/hiddify/Hiddify-Manager
+cd Hiddify-Manager
 docker-compose up -d
 ```
 
