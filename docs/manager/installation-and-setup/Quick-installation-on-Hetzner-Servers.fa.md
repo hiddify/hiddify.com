@@ -34,12 +34,15 @@ weight: -70
 ![image](https://user-images.githubusercontent.com/114227601/206861285-58832cec-a2a3-441e-91d4-8300d16584d6.png)
 </div>
 <div dir="rtl" markdown=1>
+  
 - حالا کد زیر را کپی کنید
+  
 </div>
 
 {% include 'cloud_init.yml' %}
 
 <div dir="rtl" markdown=1>
+  
 - کد بالا را در محل نشان داده در عکس قرار دهید.
 
 </div>
@@ -50,6 +53,7 @@ weight: -70
 </div>
 
 <div dir="rtl" markdown=1>
+  
 * پس از حداکثر 10 تا 15 دقیقه سرور شما آماده و پروکسی فعال خواهد بود. مطابق عکس آی پی خود را کپی کنید و در مرورگر باز کنید.
 
 </div>
@@ -60,6 +64,7 @@ weight: -70
 </div>
 
 <div dir="rtl" markdown=1>
+  
 یادتون نره حداقل 10 دقیقه  صبر کنید
 
 * حالا باید دامنه را تنظیم کنیم. بر روی [این لینک](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) کلیک کنید تا نصب را نهایی کنید.
