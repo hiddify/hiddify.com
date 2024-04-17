@@ -42,9 +42,9 @@ weight: -82
 
 
 <div dir="rtl" markdown=1>
-- سپس اگر نیاز به اتصال به سرور خود از طریق SSH  داشتید؛ [این لینک](/manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) را مطالعه کنید.
+- سپس اگر نیاز به اتصال به سرور خود از طریق SSH  داشتید؛ [این لینک](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) را مطالعه کنید.
 
 - برای افزایش امنیت سرور خود هنگام SSH این دو مقاله را مطالعه نمایید:
-  - [آموزش گام به گام برای غیرفعال کردن رمز عبور SSH](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%BA%DB%8C%D8%B1%D9%81%D8%B9%D8%A7%D9%84-%DA%A9%D8%B1%D8%AF%D9%86-%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B3%D9%88%D8%B1%D8%AF)
-  - [نحوه تغییر پورت SSH روی سرور](https://github.com/hiddify/Hiddify-Manager/wiki/%D9%86%D8%AD%D9%88%D9%87-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1-%D9%BE%D9%88%D8%B1%D8%AA-SSH-%D8%B1%D9%88%DB%8C-%D8%B3%D8%B1%D9%88%D8%B1)
+  - [آموزش گام به گام برای غیرفعال کردن رمز عبور SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+  - [نحوه تغییر پورت SSH روی سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
 </div>
