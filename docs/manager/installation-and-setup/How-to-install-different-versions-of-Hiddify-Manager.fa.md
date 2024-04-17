@@ -19,14 +19,14 @@ weight: -75
 این نسخه در حقیقت ورژن نهایی از نرم‌افزار است که پس از تست‌های نهایی منتشر شده است و پایدارترین نسخه ممکن است.
 برای درک بهتر این شکل را ملاحظه فرمایید.
 
-<div align=center>
+<div align=center markdown="1">
 
 ![install versions](https://github.com/hiddify/Hiddify-Manager/assets/125398461/b5c8a60a-88ce-48e5-a0bb-aaec33f2f5d8)
 
 </div>
 
 ## نصب نسخه پایدار (ریلیز)
-* قبل از نصب اگر از قبل نسخه دیگری از پنل را نصب کرده‌اید، یک بکاپ از پنل بگیرید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%E2%80%8C%DA%AF%DB%8C%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%BE%D9%86%D9%84-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C#%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A7%D8%B2-%D9%BE%D9%86%D9%84-%D9%81%D8%B9%D9%84%DB%8C-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82-%D9%88%D8%A8)
+* قبل از نصب اگر از قبل نسخه دیگری از پنل را نصب کرده‌اید، یک بکاپ از پنل بگیرید. [بیشتر بخوانید ...](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
 * حالا کافیه دستور تک خطی زیر را در ترمینال اجرا نمایید.
 
 
@@ -38,13 +38,13 @@ bash <(curl i.hiddify.com/release)
 
 </div>
 
-* پس از نصب، کافیه بکاپ خود را برگردانید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%E2%80%8C%DA%AF%DB%8C%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%BE%D9%86%D9%84-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C#%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86)
+* پس از نصب، کافیه بکاپ خود را برگردانید. [بیشتر بخوانید ...](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
 
 
 
 
 ## نصب نسخه بتا
-* قبل از نصب اگر از قبل نسخه دیگری از پنل را نصب کرده‌اید، یک بکاپ از پنل بگیرید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%E2%80%8C%DA%AF%DB%8C%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%BE%D9%86%D9%84-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C#%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A7%D8%B2-%D9%BE%D9%86%D9%84-%D9%81%D8%B9%D9%84%DB%8C-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82-%D9%88%D8%A8)
+* قبل از نصب اگر از قبل نسخه دیگری از پنل را نصب کرده‌اید، یک بکاپ از پنل بگیرید. [بیشتر بخوانید ...](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
 * حالا کافیه دستور تک خطی زیر را در ترمینال اجرا نمایید.
 
 <div dir=ltr>
@@ -55,12 +55,12 @@ bash <(curl i.hiddify.com/beta)
 
 </div>
 
-* پس از نصب، کافیه بکاپ خود را برگردانید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%E2%80%8C%DA%AF%DB%8C%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%BE%D9%86%D9%84-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C#%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86)
+* پس از نصب، کافیه بکاپ خود را برگردانید. [بیشتر بخوانید ...](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
 
 
 
 ## نصب نسخه در حال توسعه (دولوپ)
-* قبل از نصب اگر از قبل نسخه دیگری از پنل را نصب کرده‌اید، یک بکاپ از پنل بگیرید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%E2%80%8C%DA%AF%DB%8C%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%BE%D9%86%D9%84-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C#%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A7%D8%B2-%D9%BE%D9%86%D9%84-%D9%81%D8%B9%D9%84%DB%8C-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82-%D9%88%D8%A8)
+* قبل از نصب اگر از قبل نسخه دیگری از پنل را نصب کرده‌اید، یک بکاپ از پنل بگیرید. [بیشتر بخوانید ...](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
 * حالا کافیه دستور تک خطی زیر را در ترمینال اجرا نمایید.
 
 <div dir=ltr>
@@ -72,7 +72,7 @@ bash <(curl i.hiddify.com/dev)
 </div>
 
 
-* پس از نصب، کافیه بکاپ خود را برگردانید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%E2%80%8C%DA%AF%DB%8C%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%BE%D9%86%D9%84-%D8%AF%D8%B1-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C#%D8%A8%D8%A7%D8%B2%DB%8C%D8%A7%D8%A8%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86)
+* پس از نصب، کافیه بکاپ خود را برگردانید. [بیشتر بخوانید ...](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
 
 ## نصب نسخه دلخواه
 این قابلیت وجود دارد که یک نسخه دلخواه را نصب کنید. کافیست طبق دستور زیر عمل کنید.
