@@ -117,7 +117,7 @@ bash /opt/hiddify-config/menu.sh
 # Restart
 این گزینه همه سرویس‌های پنل را بدون تغییر در تنظیمات ریست می‌کند.
 
-![Restart](https://github.com/Pen-hi/me/assets/153191485/11b61f87-ae64-40a2-8e48-8727a4eb9779)
+![Restart](https://github.com/hiddify/hiddify.com/assets/125398461/d0caf625-9f09-4543-bc22-ae3843bf289a)
 
 با فشردن هر کدام از دکمه های روی کیبورد می توانید به منوی اصلی برگردید.
 
@@ -129,7 +129,7 @@ bash /opt/hiddify-config/menu.sh
 ## Apply Configs
 این بخش برای اعمال تنظیمات ذخیره شده استفاده می شود. پس از انتخاب آن پنل شروع به بازنشانی مقادیر می کند.
 
-![Apply Configs](https://github.com/Pen-hi/me/assets/153191485/067484b3-e0ad-4197-a577-a1068c8f354a)
+![Apply Configs](https://github.com/hiddify/hiddify.com/assets/125398461/76446e31-8efd-4d0e-84b9-a1358887a027)
 
 برای بازگشت به منوی اصلی یک کلید را فشار دهید.
 
@@ -141,7 +141,7 @@ bash /opt/hiddify-config/menu.sh
 ## Update
 این گزینه برای آپدیت کردن سیستم استفاده می شود. در صورت انتخاب آن پنل به آخرین نسخه موجود روی گیتهاب پروژه به روزرسانی می گردد. در اینجا سه گزینه وجود دارد که به شکل زیر است.
 
-![Update](https://github.com/Pen-hi/me/assets/153191485/d48f5c2e-8cbd-4fb2-b151-9c146a7c6b52)
+![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
 
 ### Default
 با انتخاب این گزینه برنامه مطابق با تنظیم پنل وب بروز می شود.
@@ -181,9 +181,10 @@ bash /opt/hiddify-config/menu.sh
 ### advanced
 این زیر منو شامل چندین گزینه است.
 
-![advanced](https://github.com/Pen-hi/me/assets/153191485/e03e8719-85c5-48dd-9e84-6dcee27b7606)
+![advanced](https://github.com/hiddify/hiddify.com/assets/125398461/61336508-2dbf-43d8-893c-8d9adbdf3a51)
 
 ### add_remote
+
 این گزینه برای زمانی است که میخواهید از طریق 
 [ربات هیدیفای](hiddifybot.t.me)
 دسترسی
