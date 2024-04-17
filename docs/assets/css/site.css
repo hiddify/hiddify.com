@@ -682,8 +682,8 @@ video {
   position: relative;
 }
 
-.-bottom-\[250px\] {
-  bottom: -250px;
+.-bottom-\[350px\] {
+  bottom: -350px;
 }
 
 .-left-24 {
@@ -937,8 +937,8 @@ video {
   width: 100%;
 }
 
-.min-w-\[300px\] {
-  min-width: 300px;
+.min-w-\[400px\] {
+  min-width: 400px;
 }
 
 .min-w-\[741px\] {
@@ -1546,8 +1546,8 @@ video {
     width: 16rem;
   }
 
-  .md\:w-\[400px\] {
-    width: 400px;
+  .md\:w-\[500px\] {
+    width: 500px;
   }
 
   .md\:grid-cols-2 {
@@ -1638,12 +1638,16 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:-left-72 {
-    left: -18rem;
+  .lg\:-bottom-\[400px\] {
+    bottom: -400px;
   }
 
-  .lg\:-right-72 {
-    right: -18rem;
+  .lg\:-left-56 {
+    left: -14rem;
+  }
+
+  .lg\:-right-56 {
+    right: -14rem;
   }
 
   .lg\:mb-52 {
@@ -1682,8 +1686,8 @@ video {
     width: 33.333333%;
   }
 
-  .lg\:w-\[600px\] {
-    width: 600px;
+  .lg\:w-\[750px\] {
+    width: 750px;
   }
 
   .lg\:max-w-\[250px\] {
@@ -1813,8 +1817,8 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:w-\[700px\] {
-    width: 700px;
+  .\32xl\:w-\[850px\] {
+    width: 850px;
   }
 
   .\32xl\:w-fit {
