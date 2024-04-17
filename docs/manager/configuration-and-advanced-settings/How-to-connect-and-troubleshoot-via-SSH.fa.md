@@ -44,6 +44,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 سپس از طریق اجرای دستور زیر به سرور متصل شوید:
 
 <div dir="ltr" markdown=1>
+  
 ```
 ssh user@<IP_Address>
 ```
@@ -51,6 +52,7 @@ ssh user@<IP_Address>
 
 معمولا یوزر شما در سروری که خریداری کردید `root` هست فرض کنید IP سرور شما 1.1.1.1 هست پس دستور به شکل زیر میشه 
 <div dir="ltr" markdown=1>
+  
 ```
 ssh root@1.1.1.1
 ```
@@ -77,16 +79,18 @@ bash /opt/hiddify-config/menu.sh
 ## Status
 این منو برای اطلاع از وضعیت سیستم استفاده می شود که اگر همه چیز نرمال باشد باید نتیجه به این شکل نمایش داده شود.
 
-![Status](https://github.com/Pen-hi/me/assets/153191485/18e60407-394e-4a34-9576-4d60accc9308)
+
+![Status](https://github.com/hiddify/hiddify.com/assets/125398461/bb5072e7-635b-486e-9dce-024b8479adb8)
 
 برای بازگشت به منوی اصلی باید کلید q را بزنید.
 
 ## Admin
 این قسمت لینک های ادمین را نمایش می دهد. در صورتی که به هر دلیل نیاز به این لینک ها داشتید از این گزینه استفاده نمایید.
 
-![Admin](https://github.com/Pen-hi/me/assets/153191485/2d0e065f-7efd-4a6b-95e8-4c6bc10929a0)
+![Admin](https://github.com/hiddify/hiddify.com/assets/125398461/d15fb764-45b4-40ec-84f2-7dc0ea134f13)
 
 برای بازگشت به منوی اصلی یک کلید را فشار دهید.
+
 
 
 بیشترین کاربرد:
@@ -95,17 +99,19 @@ bash /opt/hiddify-config/menu.sh
 ## Log
 برای مشاهده لاگ های سیستم استفاده می شود. پس از انتخاب آن باید نوع لاگ مورد نظر را نیز انتخاب نمود.
 
-![Log](https://github.com/Pen-hi/me/assets/153191485/2459f997-6c47-4768-885b-9ebb0003579b)
+![Log](https://github.com/hiddify/hiddify.com/assets/125398461/4fa52e34-1f2a-4378-ae1a-881dc81e1269)
 
 مثلا اگر بخواهیم لاگ های مربوط به نصب را مشاهده کنیم می توان گزینه 0-install.log را انتخاب نمود.
 
-![0-install.log](https://github.com/Pen-hi/me/assets/153191485/efa88293-ba55-4891-8471-6ba00a6122eb)
+![0-install.log](https://github.com/hiddify/hiddify.com/assets/125398461/6a980bbf-9d7a-4ef6-aa92-7a4bfeeb34e3)
 
 در اینجا لاگ های نصب به شکل فوق نمایش داده می شود که در انتهای آن وضعیت سیستم و لینک های ادمین نمایش داده می شوند.
 
 
 بیشترین کاربرد:
 > > > در صورتی که یکی از سرویس ها به درستی کار نمی کند و نیاز دارید لاگ آن را چک کنید.
+
+
 
 
 # Restart
