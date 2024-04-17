@@ -20,7 +20,7 @@ docker-compose up -d
 ```
 
 <div dir="rtl" markdown="1">
-توجه کنید داکر هنوز آزمایشی هست و ممکن است اشکالاتی داشته باشد که لطفا به ما اطلاع دهید
+توجه کنید داکر هنوز آزمایشی هست و ممکن است اشکالاتی داشته باشد که لطفا به ما اطلاع دهید.
 
 
 حالا باید دامنه را تنظیم کنیم. بر روی [این لینک](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) کلیک کنید تا نصب را نهایی کنید .
