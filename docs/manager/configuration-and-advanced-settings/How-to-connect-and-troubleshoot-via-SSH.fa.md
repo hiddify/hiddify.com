@@ -167,12 +167,7 @@ bash /opt/hiddify-config/menu.sh
 > > > در صورتی که هنگام آپدیت از طریق پنل دسترسی را از دست دادید.
 
 
-## Install
-در صورت نیاز به نصب مجدد سیستم از این گزینه استفاده نمایید. در انتها وضعیت سیستم و لینک های ادمین نمایش داده می شوند.
 
-![Reinstall](https://user-images.githubusercontent.com/125398461/222899750-3392fdde-95b0-4101-9e94-365c3c5c1eb7.png)
-
-برای بازگشت به منوی اصلی باید کلید q را بزنید.
 
 
 بیشترین کاربرد:
@@ -186,7 +181,7 @@ bash /opt/hiddify-config/menu.sh
 ### add_remote
 
 این گزینه برای زمانی است که میخواهید از طریق 
-[ربات هیدیفای](hiddifybot.t.me)
+[ربات هیدیفای](https://t.me/hiddifybot)
 دسترسی
 SSH
 به تیم هیدیفای بدهید.
@@ -196,7 +191,7 @@ SSH
 دسترسی
 SSH
 را از
-[ربات هیدیفای](hiddifybot.t.me)
+[ربات هیدیفای](https://t.me/hiddifybot)
 بردارید.
 
 ### downgrade 
