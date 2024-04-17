@@ -227,7 +227,7 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">What is Cloudflare's clean IP and how to find it</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to use desired clean IPs based on a specific format</a>
+        <a target="_blank" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/">How to use desired clean IPs based on a specific format (for the forced to use host field)</a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">How to create subscription link on HiddifyManager</a>
@@ -242,25 +242,37 @@ In this page, we put categorized content of tutorials and documents related to H
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">How to setup and use Cloudflare workers (Manual way)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using IP Tables tunneling</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">How to setup relay server using Hiddify Relay Builder (all in one app)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/493?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using GOST</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">How to setup a relay server using the IP-Tables method</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/851?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to setup relay server using WST
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">How to setup relay server using GOST method</a>
+        </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">How to setup relay server using WST method
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/3442?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How How to setup relay server using Dokodemo-door
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">How to setup relay server using Dokodemo-Door method
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/3443?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How How to setup relay server using HA-proxy
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">How to setup relay server using HA-proxy
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">How to add a relay server (domain) to HiddifyManager
         </a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/">How How to create and use fake domain
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">
+            Explanations about admin link in HiddifyManager and its changes from version 10
         </a>
         </li>
     </div>
@@ -320,8 +332,8 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
     </li>
     <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/859?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">
-        How to check DNS leakage and the way to solve it
+        <a target="_blank" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/">
+        How to check and prevent DNS leaks
         </a>
     </li>
 
@@ -373,13 +385,13 @@ In this page, we put categorized content of tutorials and documents related to H
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
-            Basic concepts related to the internet and using proxies
+        <a target="_blank" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/">
+            How MUX works and its usage
         </a>
         </li>
         <li>
-        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link/">
-            Explanations about admin link in HiddifyManager
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
+            Basic concepts related to the internet and using proxies
         </a>
         </li>
     </div>
@@ -576,6 +588,29 @@ In this page, we put categorized content of tutorials and documents related to H
     </div>
 
 </div>
+
+</div>
+
+## Contribution
+
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="max-w-[552px]">
+    <img src="/assets/contribution.jpg" alt="image" class="rounded-xl">
+
+    <ul class="my-4 list-disc text-secondary ml-5">
+    <li>
+        <a target="_blank" href="/manager/contribution/How-to-contribute-to-this-project/">
+        How to contribute to this project
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/manager/contribution/How-to-use-API-in-HiddifyManager-project/">
+        How to use API in HiddifyManager project
+        </a>
+    </li>
+
+</div>
+
 
 </div>
 

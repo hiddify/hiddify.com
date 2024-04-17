@@ -276,7 +276,7 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/2009">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص برای فیلد اجبار</a>
+        <a target="_blank" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص (برای فیلد اجبار)</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
@@ -291,25 +291,37 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/129">آموزش راه‌اندازی تانل به روش IP Tables</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">راه‌اندازی سرور میانی با استفاده از سازنده سرور میانی هیدیفای (همه روش‌ها در یک اپ)</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/493">آموزش راه‌اندازی تانل به روش GOST</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش IP Tables</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/851">آموزش راه‌اندازی تانل به روش WST
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش GOST</a>
+        </li>
+        <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش WST
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/3442">آموزش راه‌اندازی تانل به روش Dokodemo-door
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش Dokodemo-Door
         </a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/3443">آموزش راه‌اندازی تانل به روش HA-proxy
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش HA-proxy
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/">نحوه افزودن سرور (دامنه) میانی به هیدیفای منیجر
         </a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/">نحوه ایجاد و استفاده از دامنه فیک
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">
+            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر و تغییرات آن از نسخه ۱۰
         </a>
         </li>
     </div>
@@ -401,7 +413,7 @@ weight: -2
         </a>
     </li>
     <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/859">
+        <a target="_blank" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/">
         آموزش تست نشتی DNS
         </a>
     </li>
@@ -453,13 +465,13 @@ weight: -2
         </a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
-            مفاهیم پایه مرتبط با اینترنت و استفاده از پروکسی
+        <a target="_blank" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/">
+            کاربرد و نحوه عملکرد MUX
         </a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/The-correct-format-of-admin-link/">
-            توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر
+        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/">
+            مفاهیم پایه مرتبط با اینترنت و استفاده از پروکسی
         </a>
         </li>
     </div>
@@ -707,6 +719,28 @@ weight: -2
 </div>
 
 </div>
+
+## مشارکت در توسعه
+<div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
+<div class="max-w-[552px]">
+    <img src="/assets/contribution.jpg" alt="image" class="rounded-xl">
+
+    <ul class="my-4 list-disc text-secondary ml-5">
+    <li>
+        <a target="_blank" href="/fa/manager/contribution/How-to-contribute-to-this-project/">
+        چگونه می‌توان در این پروژه همکاری نمود
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="/fa/manager/contribution/How-to-use-API-in-HiddifyManager-project/">
+        آموزش استفاده از API در هیدیفای‌منیجر
+        </a>
+    </li>
+
+</div>
+
+</div>
+
 
 
 

@@ -14,11 +14,12 @@ weight: -90
 
 * این کد صرفا بر روی اوبونتو قابل اجرا هست و صرفا بر روی ورژن 22.04 تست شده است. 
 
-* قبل از نصب شما نیاز به یک سری پیش نیازها دارید که در [این مقاله](https://github.com/hiddify/Hiddify-Server/wiki/%D9%BE%DB%8C%D8%B4-%D9%86%DB%8C%D8%A7%D8%B2%D9%87%D8%A7%DB%8C-%D9%86%D8%B5%D8%A8) می‌توانید مطالعه نمایید.
+* قبل از نصب شما نیاز به یک سری پیش نیازها دارید که در [این مقاله](/fa/manager/installation-and-setup/Installation-prerequisites/) می‌توانید مطالعه نمایید.
 
 ## فیلم آموزش راهنمای نصب
 
 <div align=center markdown=1>
+  
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/_LYFqrXVupI/0.jpg)](https://www.youtube.com/watch?v=_LYFqrXVupI)
 
 </div>
@@ -37,8 +38,8 @@ bash <(curl i.hiddify.com/release)
 تبریک نصب تمام شد. 
 
 ## بعد از نصب
-در پایان لینکی ایجاد می‌شود که لینک تنظیم پروکسی شما است. حالا باید دامنه را تنظیم کنیم. بر روی [این لینک](/manager/wiki/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D9%86%D9%87%D8%A7%DB%8C%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86-%D9%86%D8%B5%D8%A8) کلیک کنید تا نصب را نهایی کنید.
+در پایان لینکی ایجاد می‌شود که لینک تنظیم پروکسی شما است. حالا باید دامنه را تنظیم کنیم. بر روی [این لینک](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) کلیک کنید تا نصب را نهایی کنید.
 
 
 
-> برای استفاده حداکثری از این پنل لطفا [این مقاله](/manager/wiki/%D9%86%D8%AD%D9%88%D9%87-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C) را مطالعه فرمایید.
+> برای استفاده حداکثری از این پنل لطفا [این مقاله](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را مطالعه فرمایید.

@@ -5,7 +5,7 @@ weight: -100
 
 <div dir="ltr" markdown="1">
 
-# How to backup and restore panel on Hiddify
+# How to backup and restore panel on HiddifyManager
 
 Many times you need to backup the panel and restore it on another server. For example, your server is filtered or there is a problem that you cannot continue on that server. In this case, continue the following steps until the end to learn how to do this.
 Backup current panel via web
@@ -20,7 +20,7 @@ Here you can specify the storage location of your backup file so that the json f
 
 ## Sending the backup file to Telegram
 
-Every 6 hours, the panel automatically backs up for you, and if you have activated the [Telegram bot](/manager/wiki/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel), it will be sent to the bot.
+Every 6 hours, the panel automatically backs up for you, and if you have activated the [Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel), it will be sent to the bot.
 
 ## Backup during important operations
 
@@ -30,7 +30,7 @@ When updating or reinstalling the panel, it is backed up and you can access and 
 
 `/opt/hiddify-config/hiddify-panel/backup`
 
-and then transfer the file to your PC. [More info here](/manager/wiki/How-to-transfer-files-between-a-server-and-a-computer)
+and then transfer the file to your PC. [More info here](/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer)
 
 ## Restoring backup file
 Now install the panel on the new server and do nothing on the `Quick-setup` page.
