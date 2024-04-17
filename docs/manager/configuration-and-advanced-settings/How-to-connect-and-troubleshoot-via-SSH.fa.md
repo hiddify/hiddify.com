@@ -58,7 +58,7 @@ ssh root@1.1.1.1
 
 پس از اتصال به سرور منوی پنل به این شکل نشان داده می شود.
 
-![Hiddify-Manager](https://github.com/Pen-hi/me/assets/153191485/ec0a7ab4-43a6-401e-9f15-3ee8c352ed11)
+![Hiddify-Manager](https://github.com/hiddify/hiddify.com/assets/125398461/5b3b47fb-4437-4388-b22d-0d2df6359620)
 
 برای آشنایی بیشتر هر کدام از قسمت ها به صورت مجزا توضیح داده خواهند شد.
 
