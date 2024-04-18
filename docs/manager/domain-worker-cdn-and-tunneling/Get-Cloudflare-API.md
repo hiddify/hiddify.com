@@ -8,7 +8,7 @@ title: Tutorial on automating subdomain registration on Cloudflare
 
 The purpose of this work is to connect the panel to the Cloudflare. By doing this, when you create a subdomain in the panel; Cloudflare automatically creates them and gets a certificate for them. Also, the process of creating workers is automated. Follow the steps below in order to get the Cloudflare key token.
 
-1. First of all, log in to your Cloudflare account and register your domain. If you need more information for this, please read [this link](/manager/wiki/Domain-types-and-how-to-register-them).
+1. First of all, log in to your Cloudflare account and register your domain. If you need more information for this, please read [this link](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
 2.  From [here](https://dash.cloudflare.com/profile/api-tokens/) , go to **My Profile** > **API Tokens**.
     
@@ -44,14 +44,15 @@ Proceed as follows to apply changes to your domains and Workers.
 
 ![Token summary screen displaying the resources and permissions selected](https://user-images.githubusercontent.com/114227601/229592071-3faf93c3-b246-4a08-823b-4680a3a4cf5e.png)
     
-7.  Copy the token.
+7. `Copy the token`.
 
 ![](https://user-images.githubusercontent.com/125398461/234892482-293f7505-5c94-4564-b0d6-3337fd435e7c.png)
 
-# Finally, click Continue to summary.
+8. Finally, click `Continue to summary`.
 
-After creating the token; go to the panel and in `Very advanced settings`; paste the token in the specified field as shown in the image below.
+# How to use Cloudflare API in HiddifyManager
+After creating the token; go to the Manager and in `Very Advanced Settings`; paste the token in the specified field as shown in the image below.
 
 ![](https://user-images.githubusercontent.com/125398461/235085172-4a076a7f-5a93-4fce-b572-829608b9609f.png)
 
-Now, if you create a new subdomain in the domains section of the panel; Cloudflare settings are done automatically. Also, workers are created automatically.
+Now, if you create a new subdomain in the domains section of the Manager; Cloudflare settings are done automatically. Also, workers are created automatically.
