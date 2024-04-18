@@ -440,7 +440,7 @@ weight: -2
         </a>
         </li>
         <li>
-        <a target="_blank" href="/fa/managerfa/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/">
+        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/">
             غیرفعال کردن دسترسی با پسورد در SSH
         </a>
         </li>
