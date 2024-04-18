@@ -11,6 +11,7 @@ title: آموزش غیرفعال‌سازی آیپی ورژن ۶ در هیدیف
 ساختار آن به شکل زیر است:
 
 <div dir=ltr markdown=1>
+  
 `1ec2:5b7a:9fab:cdef:cfab:5a7c`
 </div>
 
@@ -21,15 +22,17 @@ title: آموزش غیرفعال‌سازی آیپی ورژن ۶ در هیدیف
 کافیست در تنظیمات پنل وارد تنظیمات عمومی شوید و گزینه `فقط آی‌پی ورژن ۴ ` را فعال کنید.
 
 <div align=center markdown=1>
+  
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/31c459d3-0ec7-4a74-8871-fc742cd73749" />
 </div>
 
 ## خاموش کردن آیپی ورژن ۶ از طریق SSH
-* در صورتی که به هر دلیل نیاز بود از طریق SSH آیپی ورژن ۶ را خاموش کنید، [به سرور خود SSH بزنید](/manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82)، و با `ctrl+c` از منوی هیدیفای خارج شوید.
+* در صورتی که به هر دلیل نیاز بود از طریق SSH آیپی ورژن ۶ را خاموش کنید، [به سرور خود SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/)، و با `ctrl+c` از منوی هیدیفای خارج شوید.
 
 * با ویرایشگر متنی nano فایل تنظیمات سیستم را باز کنید.
 
 <div dir="ltr" markdown=1>
+  
 ```
 sudo nano /etc/sysctl.conf
 ```
@@ -39,6 +42,7 @@ sudo nano /etc/sysctl.conf
 
 
 <div dir="ltr" markdown=1>
+  
 ```
 net.ipv6.conf.all.disable_ipv6=1
 net.ipv6.conf.default.disable_ipv6=1
@@ -51,6 +55,7 @@ net.ipv6.conf.lo.disable_ipv6=1
 * در آخر با کامند زیر فایل تنظیمات را ریست نمایید.
 
 <div dir="ltr" markdown=1>
+  
 ```
 sudo sysctl -p
 ```
