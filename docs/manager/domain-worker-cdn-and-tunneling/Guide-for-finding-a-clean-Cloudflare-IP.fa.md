@@ -55,6 +55,7 @@ https://www.youtube.com/watch?v=BKLRAHolhvM
 
 <div dir="rtl" markdown=1>
 این برنامه پیش نیازهایی دارد که باید از قبل نصب باشند.
+	
 [jq](https://stedolan.github.io/jq/)&nbsp;&nbsp;&nbsp;[git](https://git-scm.com/)&nbsp;&nbsp;&nbsp;[tput](https://command-not-found.com/tput)&nbsp;&nbsp;&nbsp;[bc](https://www.gnu.org/software/bc/)&nbsp;&nbsp;&nbsp;[curl](https://curl.se/download.html)&nbsp;&nbsp;&nbsp;
 [parallel](https://www.gnu.org/software/parallel/)
 
@@ -107,13 +108,18 @@ bash cfScanner.sh SUBNET DOWN threads tryCount config.real speed custom.subnets
 
 
 ![](https://user-images.githubusercontent.com/125398461/222946688-bcec3d65-7bf1-495a-b1bf-fe517f69f882.png)
-<div dir="rtl" markdown=1>مثلا
+
+
+<div dir="rtl" markdown=1>
+	
+	مثلا
 </div>
 
 ```
 bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 ```
 <div dir="rtl" markdown=1>
+	
 در نهایت نتیجه تست در پوشه result قرار می گیرد که میتوانید آن را ملاحظه کنید و از آن استفاده نمایید. اطلاعات بیشتر در [ویکی](https://github.com/MortezaBashsiz/CFScanner/tree/main/bash) برنامه
 
 </div>
@@ -127,7 +133,9 @@ bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 
 <details markdown="1"><summary><h4>پیش‌نیازها<h4></summary>
 
+
 <div dir=rtl markdown=1>
+	
 ابتدا باید پیش‌نیازهایی وجود داشته باشند که به ترتیب توضیح داده خواهند شد:
 
 - دانلود اپ اسکنر ویندوز از [گیتهاب پروژه](https://github.com/MortezaBashsiz/CFScanner/tree/main/windows)
@@ -137,6 +145,7 @@ bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 </div>
 
 <div dir=ltr markdown=1>
+	
 ```
 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 ```
@@ -144,6 +153,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 </div>
 
 <div dir"rtl" markdown=1>
+	
 - چک نمودن TLS Handshake
 
 برای این کار ابتدا باید وارد پوشه برنامه بشید و Command Prompt از داخل آن پوشه را باز نمایید. یعنی در پوشه `شیفت+راست‌کلیک` را بزنید و گزینه `Open in Windows Terminal` را بزنید. 
@@ -153,12 +163,14 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 </div>
 
 <div dir=ltr markdown=1>
+	
 ‍‍`.\v2ray.exe tls ping sub.yourdomain.com`
 
 
 </div>
 
 <div dir="rtl" markdown=1>
+	
 به جای `sub.yourdomain.com` ساب‌دامین خودتون را بذارید. اگر پیغام `handshake succeeded` ظاهر شد؛ یعنی اسکنر آماده استفاده است در غیر اینصورت باید در تنظیمات سرتیفیکت در سایت کلادفلر به صورت موقت تغییراتی اعمال کنید.
 
 ورژن TLS را روی TLS 1.0 بذارید و گزینه TLS 1.3 را غیر فعال کنید.
@@ -192,6 +204,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 </div>
 
 <div dir=rtl markdown=1>
+	
 و همینطور در `outbound` نیز این تغییر اعمال گردد.
 
 </div>
@@ -554,7 +567,8 @@ python start.py
 </details>
 
 <details dir=rtl markdown="1"><summary><h3>ویدئوهای آقای فرید در این زمینه</h3></summary>
-<a href="https://youtu.be/YCSwZG3cjAU"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457940-07eb8105-e8b2-46e6-a617-ebbf7e659af6.png" /></a> <a href="https://youtu.be/OO80Nx1bhOo"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457896-89222a93-00ab-44ef-a90a-526496c519d6.png" /></a> <a href="https://youtu.be/piKS04W6AHE"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457925-7354392b-d4d1-4150-bbc4-27f43e2f326c.png" /></a>
+	
+<a href="https://youtu.be/YCSwZG3cjAU"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457940-07eb8105-e8b2-46e6-a617-ebbf7e659af6.png" /></a>&nbsp;&nbsp;&nbsp;<a href="https://youtu.be/OO80Nx1bhOo"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457896-89222a93-00ab-44ef-a90a-526496c519d6.png" /></a>&nbsp;&nbsp;&nbsp;<a href="https://youtu.be/piKS04W6AHE"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457925-7354392b-d4d1-4150-bbc4-27f43e2f326c.png" /></a>
 
 
 </details>
@@ -584,6 +598,7 @@ python start.py
 </div>
 
 <div dir="ltr" markdown=1>
+	
 ```
 pip install -r ./requirements.txt
 ```
@@ -591,6 +606,7 @@ pip install -r ./requirements.txt
 </div>
 
 <div dir="rtl" markdown=1>
+	
 * بعد از نصب پیش‌نیازها کار تمام است و نوبت به اجرای برنامه می‌رسد.
 
 </div>
@@ -607,28 +623,33 @@ pip install -r ./requirements.txt
 </div>
 
 <div dir="ltr" markdown=1>
+	
 ```
 pkg update -y; pkg install -y python python-pip openssl python-cryptography
 ```
 </div>
 
 <div dir="rtl" markdown=1>
+	
 * سپس کامند زیر را اجرا کنید.
 
 </div>
 
 <div dir="ltr" markdown=1>
+	
 ```
 curl -sLo main.zip https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/heads/main.zip && unzip -qq main.zip && rm main.zip
 ```
 </div>
 
 <div dir="rtl" markdown=1>
+	
 * بعد از آن وارد پوشه برنامه شوید و پیش‌نیازها را نصب کنید.
 
 </div>
 
 <div dir="ltr" markdown=1>
+	
 ```
 cd ss-cloud-scanner-main
 pip install -r ./requirements.txt
@@ -647,6 +668,7 @@ pip install -r ./requirements.txt
 * با دستور زیر، عملکرد برنامه آغاز می‌شود.
 
 <div dir="ltr" markdown=1>
+	
 ```
 python main.py
 ```
@@ -673,8 +695,8 @@ python main.py
 
 
 
-***
-<br>
+
+
 
 <div dir="rtl" markdown=1>
 	
