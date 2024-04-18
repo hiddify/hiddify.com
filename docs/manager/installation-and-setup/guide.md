@@ -15,7 +15,7 @@ weight: -90
 - This code is only applicable on Ubuntu and has been tested only on version 22.04.
 
 
-- If not, you need a series of prerequisites which you can read them [here](https://github.com/hiddify/Hiddify-Server/wiki/Installation-prerequisites). 
+- If not, you need a series of prerequisites which you can read them [here](/manager/installation-and-setup/Installation-prerequisites/). 
 
 
 
