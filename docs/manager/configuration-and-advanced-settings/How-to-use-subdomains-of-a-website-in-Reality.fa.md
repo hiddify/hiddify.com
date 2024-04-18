@@ -11,6 +11,7 @@ weight: -60
 - ابتدا در این [وبسایت](https://subdomainfinder.c99.nl/) وارد شوید و یکی از وبسایت‌های مورد نظر خود را سرچ کنید. مثلا این لیست تمام [زیردامنه‌های مربوط به سایت اسپیدتست](https://subdomainfinder.c99.nl/scans/2023-11-20/speedtest.net) می‌باشد.
 
 <div align=center markdown=1>
+  
 ![speedtest_subdomains](https://github.com/hiddify/Hiddify-Manager/assets/125398461/968b94b3-1899-43b2-a45a-19e71379ad17)
 
 </div>
@@ -18,6 +19,7 @@ weight: -60
 - همچنین می‌توان از این [وبسایت](https://crt.sh/) استفاده نمود. به عنوان مثال [زیردامنه‌های وبسیایت فایرفاکس](https://crt.sh/?q=mozilla.org) در این وبسایت چنین مشخص شده‌اند.
 
 <div align=center markdown=1>
+  
 ![Firefox_subdomains](https://github.com/hiddify/Hiddify-Manager/assets/125398461/234710c2-dec4-436e-a478-c3bb2b0d2de7)
 
 
