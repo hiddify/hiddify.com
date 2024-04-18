@@ -14,6 +14,6 @@ weight: -45
 {% include 'cloud_init.yml' %}
 
 <div dir="rtl" markdown=1>
-بعد از نصب این اسکریپت، از [اینجا](/manager/wiki/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D9%86%D9%87%D8%A7%DB%8C%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86-%D9%86%D8%B5%D8%A8) ادامه نصب را دنبال کنید تا نصب نهایی شود.
+بعد از نصب این اسکریپت، از [اینجا](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) ادامه نصب را دنبال کنید تا نصب نهایی شود.
 
 <div markdown=1>
