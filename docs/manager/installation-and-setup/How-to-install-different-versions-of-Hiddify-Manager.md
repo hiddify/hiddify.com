@@ -3,6 +3,8 @@ title: How to install different versions of Hiddify Manager
 weight: -75
 ---
 
+<div dir="ltr" markdown=1>
+
 # How to install different versions of HiddifyManager
 As you know, Hidify Manager is offered in three versions as follows:
 
@@ -11,10 +13,10 @@ As you know, Hidify Manager is offered in three versions as follows:
 This version is a version of the software that is being developed to create the latest features. This version may have bugs, so it is better to install it on test servers.
 
 * **Beta version:**
+  
 This version is a version after the version under development, and in fact it is the version before the final release, in which part of the bugs have been fixed and it has new features.
 
 * **Release version:**
-
 
 This version is actually the final version of the software that was released after the final tests and is the most stable version possible. See this figure for a better understanding.
 
@@ -75,3 +77,5 @@ From version 10, you can install exactly one specific update. For example, to in
 ```
 bash <(curl i.hiddify.com/v10.7.0)
 ```
+
+</div>
