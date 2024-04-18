@@ -33,12 +33,11 @@ title: آیپی تمیز کلادفلر چیست و چگونه می‌توان �
 
 برای این کار در ابتدا از [اینجا](https://github.com/MortezaBashsiz/CFScanner) نسخه مدنظر خود را دانلود کنید و سپس نحوه اجرای آن را بر اساس سیستم عامل مورد نظر دنبال کنید.
 
-</div>
 
 
-<details dir=rtl markdown="1"><summary><h3>اجرا در نسخه لینوکس</h3>(کلیک کنید)</summary>
+<details dir="rtl" markdown="1"><summary><h3>اجرا در نسخه لینوکس</h3>(کلیک کنید)</summary>
 
-<div dir="rtl" align=center markdown=1>
+<div dir="rtl" align=center markdown="1">
 
 
 
@@ -53,7 +52,6 @@ https://www.youtube.com/watch?v=BKLRAHolhvM
 
 </div>
 
-<div dir="rtl" markdown=1>
 این برنامه پیش نیازهایی دارد که باید از قبل نصب باشند.
 	
 [jq](https://stedolan.github.io/jq/)&nbsp;&nbsp;&nbsp;[git](https://git-scm.com/)&nbsp;&nbsp;&nbsp;[tput](https://command-not-found.com/tput)&nbsp;&nbsp;&nbsp;[bc](https://www.gnu.org/software/bc/)&nbsp;&nbsp;&nbsp;[curl](https://curl.se/download.html)&nbsp;&nbsp;&nbsp;
@@ -62,63 +60,65 @@ https://www.youtube.com/watch?v=BKLRAHolhvM
 
 سپس ابتدا آن را با کد زیر روی سیستم خود clone کنید.
 
-</div>
+<div dir="ltr" markdown=1>
 
 ```
 git clone https://github.com/MortezaBashsiz/CFScanner.git 
 ```
-
-
-<div dir="rtl" markdown=1>
-به پوشه دانلود برنامه بروید و به آن دسترسی اجرا دهید.
 </div>
+
+
+
+
+به پوشه دانلود برنامه بروید و به آن دسترسی اجرا دهید.
+<div dir="ltr" markdown=1>
 
 ```
 cd CFScanner/bash
 chmod +x ../bin/*
 ```
+</div>
 
-<div dir="rtl" markdown=1>
 فایل config.real را دانلود کنید.
 
-</div>
+<div dir="ltr" markdown=1>
 
 ```
 curl -s https://raw.githubusercontent.com/MortezaBashsiz/CFScanner/main/bash/ClientConfig.json -o config.real
 ```
-
-<div dir="rtl" markdown=1>
-توصیه می شود فایل config.real را بر اساس کانفیگ خود تغییر دهید.
 </div>
+
+توصیه می شود فایل config.real را بر اساس کانفیگ خود تغییر دهید.
+
 
 ![Screenshot_20230305_094935](https://user-images.githubusercontent.com/125398461/222945619-756a8a4c-9cd7-4977-8679-c5a3a5b9b96c.png)
 
-<div dir="rtl" markdown=1>
+
 اگر می خواهید فایل کانفیگ خود را داشته باشید آن را به اسم دیگری ذخیره کنید که هنگام آپدیت اسکریپت تغییر نکند.
 
 #### اجرای اسکریپت 
 
 به محل فایل اسکریپت دانلود شده بروید و سپس اسکریپت را به شکل زیر اجرا کنید
 
-</div>
+
+<div dir="ltr" markdown=1>
 
 ```
 bash cfScanner.sh SUBNET DOWN threads tryCount config.real speed custom.subnets
 ```
 
+</div>
 
 ![](https://user-images.githubusercontent.com/125398461/222946688-bcec3d65-7bf1-495a-b1bf-fe517f69f882.png)
 
 
-<div dir="rtl" markdown=1>
 	
 	مثلا
-</div>
+<div dir="ltr" markdown=1>
 
 ```
 bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 ```
-<div dir="rtl" markdown=1>
 	
 در نهایت نتیجه تست در پوشه result قرار می گیرد که میتوانید آن را ملاحظه کنید و از آن استفاده نمایید. اطلاعات بیشتر در [ویکی](https://github.com/MortezaBashsiz/CFScanner/tree/main/bash) برنامه
 
@@ -134,7 +134,6 @@ bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 <details markdown="1"><summary><h4>پیش‌نیازها<h4></summary>
 
 
-<div dir=rtl markdown=1>
 	
 ابتدا باید پیش‌نیازهایی وجود داشته باشند که به ترتیب توضیح داده خواهند شد:
 
@@ -142,7 +141,6 @@ bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 
 - اپ .NET Desktop Runtime 6 را نصب کنید از سایت اصلی برنامه که در زیر آورده شده
 ‍‍‍‍
-</div>
 
 <div dir=ltr markdown=1>
 	
@@ -152,7 +150,6 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 </div>
 
-<div dir"rtl" markdown=1>
 	
 - چک نمودن TLS Handshake
 
@@ -160,7 +157,6 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 در محیط ترمینال کامند زیر را اجرا کنید.
 
-</div>
 
 <div dir=ltr markdown=1>
 	
@@ -169,7 +165,6 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 </div>
 
-<div dir="rtl" markdown=1>
 	
 به جای `sub.yourdomain.com` ساب‌دامین خودتون را بذارید. اگر پیغام `handshake succeeded` ظاهر شد؛ یعنی اسکنر آماده استفاده است در غیر اینصورت باید در تنظیمات سرتیفیکت در سایت کلادفلر به صورت موقت تغییراتی اعمال کنید.
 
@@ -184,7 +179,6 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 اگر می‌خواهید کانفیگ‌های خودتون را تست کنید باید در فایل Json مربوط به کانکشن درون پوشه برنامه اعمال کنید. نیاز است در `inbound` این تغییر اعمال گردد.
 
-</div>
 
 
 <div dir="ltr" markdown=1>
@@ -495,9 +489,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 
 
-<br>
 
-<div dir="rtl" markdown=1>
 
 ## اسکنر آیپی کلادفلر وحید فرید
 این برنامه در نسخه‌های مختلف بر اساس پلتفرم‌های متفاوت تهیه شده است که می‌توانید متناسب با نیازتان از آن‌ها استفاده نمایید.
@@ -515,6 +507,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 * حالا نیاز هست requests را نیز نصب کنید.
 
 <div dir="ltr" markdown=1>
+	
 ```
 pip install requests
 ```
@@ -529,6 +522,7 @@ pip install requests
 - حالا کامند زیر را بزنید تا برنامه اجر شود.
 
 <div dir="ltr" markdown=1>
+	
 ```
 python start.py
 ```
@@ -582,7 +576,7 @@ python start.py
 - ویندوز
 - مک
 - اندروید
-</div>
+
 
 <details dir="rtl" markdown="1"><summary><h3>نصب اسکریپت</h3></summary>
 
@@ -594,7 +588,7 @@ python start.py
 * در مسیر اکسترکت شده یک ترمینال `Command Prompt` باز کنید. یعنی وارد مسیر اکسترکت شده شوید. `شیفت+راست‌کلیک` را بزنید تا ترمینال باز شود.
 * برای  نصب پیش‌نیازها از کامند زیر استفاده کنید.
 
-</div>
+
 
 <div dir="ltr" markdown=1>
 	
@@ -604,11 +598,11 @@ pip install -r ./requirements.txt
 
 </div>
 
-<div dir="rtl" markdown=1>
+
 	
 * بعد از نصب پیش‌نیازها کار تمام است و نوبت به اجرای برنامه می‌رسد.
 
-</div>
+
 
 </details>
 
@@ -619,7 +613,7 @@ pip install -r ./requirements.txt
 * در ادامه با باز کردن برنامه ترموکس، خط فرمان به شما نشان داده میشود به ترتیب دستورات زیر را وارد کنید.
 * در هنگان نصب تمام پرسش‌ها را با `y` جواب دهید.
 
-</div>
+
 
 <div dir="ltr" markdown=1>
 	
@@ -628,11 +622,9 @@ pkg update -y; pkg install -y python python-pip openssl python-cryptography
 ```
 </div>
 
-<div dir="rtl" markdown=1>
 	
 * سپس کامند زیر را اجرا کنید.
 
-</div>
 
 <div dir="ltr" markdown=1>
 	
@@ -641,11 +633,9 @@ curl -sLo main.zip https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/h
 ```
 </div>
 
-<div dir="rtl" markdown=1>
 	
 * بعد از آن وارد پوشه برنامه شوید و پیش‌نیازها را نصب کنید.
 
-</div>
 
 <div dir="ltr" markdown=1>
 	
@@ -697,7 +687,6 @@ python main.py
 
 
 
-<div dir="rtl" markdown=1>
 	
 ## بعد از یافتن آیپی تمیز چه کار کنیم؟
 
@@ -710,5 +699,5 @@ python main.py
 
 ![Screenshot_20230301_095103](https://user-images.githubusercontent.com/125398461/222942200-ce36835f-41d9-4bc9-abf5-a4c35c34d33f.png)
 
-</div>
 
+</div>
