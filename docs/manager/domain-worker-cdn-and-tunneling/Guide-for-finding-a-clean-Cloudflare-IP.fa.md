@@ -14,11 +14,7 @@ title: آیپی تمیز کلادفلر چیست و چگونه می‌توان �
 نکته:
 > قبل از شروع تاکید می شود تمامی این تست ها روی سیستم کلاینت و بدون اتصال به VPN باید انجام شوند.
 
-فهرست مطالب:
-- [اسکنر مرتضی باشسیز](#%D8%A7%D8%B3%DA%A9%D9%86%D8%B1-%D8%A2%DB%8C%D9%BE%DB%8C-%DA%A9%D9%84%D8%A7%D8%AF%D9%81%D9%84%D8%B1-%D9%85%D8%B1%D8%AA%D8%B6%DB%8C-%D8%A8%D8%A7%D8%B4%D8%B3%DB%8C%D8%B2)
-- [اسکنر وحید فرید](#%D8%A7%D8%B3%DA%A9%D9%86%D8%B1-%D8%A2%DB%8C%D9%BE%DB%8C-%DA%A9%D9%84%D8%A7%D8%AF%D9%81%D9%84%D8%B1-%D9%88%D8%AD%DB%8C%D8%AF-%D9%81%D8%B1%DB%8C%D8%AF)
-- [اسکنر صفا صفریان](#%D8%A7%D8%B3%DA%A9%D9%86%D8%B1-%D8%A2%DB%8C%D9%BE%DB%8C-%DA%A9%D9%84%D8%A7%D8%AF%D9%81%D9%84%D8%B1-%D8%B5%D9%81%D8%A7-%D8%B5%D9%81%D8%B1%DB%8C)
-- [بعد از یافتن آیپی تمیز کلادفلر چه کار کنیم](#%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%DB%8C%D8%A7%D9%81%D8%AA%D9%86-%D8%A2%DB%8C%D9%BE%DB%8C-%D8%AA%D9%85%DB%8C%D8%B2-%DA%86%D9%87-%DA%A9%D8%A7%D8%B1-%DA%A9%D9%86%DB%8C%D9%85)
+
 
 <br>
 
@@ -43,7 +39,7 @@ title: آیپی تمیز کلادفلر چیست و چگونه می‌توان �
 </div>
 
 
-<details dir=rtl><summary><h3>اجرا در نسخه لینوکس</h3>(کلیک کنید)</summary>
+<details dir=rtl markdown="1"><summary><h3>اجرا در نسخه لینوکس</h3>(کلیک کنید)</summary>
 
 <div dir="rtl" align=center markdown=1>
 
@@ -128,11 +124,11 @@ bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
 </details>
 
 
-<details dir=rtl><summary><h3>اجرا در نسخه ویندوز</h3>(کلیک کنید)</summary>
+<details dir=rtl markdown="1"><summary><h3>اجرا در نسخه ویندوز</h3>(کلیک کنید)</summary>
 
 
 
-<details><summary><h4>پیش‌نیازها<h4></summary>
+<details markdown="1"><summary><h4>پیش‌نیازها<h4></summary>
 
 <div dir=rtl markdown=1>
 ابتدا باید پیش‌نیازهایی وجود داشته باشند که به ترتیب توضیح داده خواهند شد:
@@ -183,6 +179,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
 
 <div dir="ltr" markdown=1>
+	
 ```
 
 {
@@ -203,6 +200,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 </div>
 
 <div dir=ltr markdown=1>
+	
 ```
 {
 "outbounds": [
@@ -213,6 +211,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
        "address": "IP.IP.IP.IP",
 ...
 ```
+
 </div>
 
 
@@ -223,6 +222,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 - نمونه الگوی Vmess+WS+TLS : 
 
 <div dir=ltr markdown=1>
+	
 ```
 {
   "inbounds": [{
@@ -277,6 +277,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 - نمونه الگوی Vless+GRPC+TLS :
 
 <div dir=ltr markdown=1>
+	
 ```
 {
   "inbounds": [{
@@ -332,6 +333,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 - نمونه الگوی Trojan+WS+TLS :
 
 <div dir=ltr markdown=1>
+	
 ```
 {
   "inbounds": [{
@@ -399,6 +401,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 - نمونه الگوی Vless+WS+TLS :
 
 <div dir=ltr markdown=1>
+	
 ```
 {
 "inbounds": [{
@@ -495,7 +498,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 - اندروید
 - وب
 
-<details dir=rtl><summary><h3>پیش‌نیازها</h3></summary>
+<details dir=rtl markdown="1"><summary><h3>پیش‌نیازها</h3></summary>
 
 * ابتدا پایتون را بر اساس سیستم عامل خود [دانلود](https://www.python.org/downloads/) کنید.
 * فایل فشرده مربوط به کد را از [اینجا](https://github.com/vfarid/cf-ip-scanner-py) دانلود کنید و سپس آن را اکسترکت کنید.
@@ -509,7 +512,7 @@ pip install requests
 
 </details>
 
-<details dir=rtl><summary><h3>اجرای برنامه</h3></summary>
+<details dir=rtl markdown="1"><summary><h3>اجرای برنامه</h3></summary>
 
 - جهت اجرا در پوشه اکسترکت شده برنامه ترمینال را باز نمایید. یعنی مثلا در ویندوز وارد پوشه برنامه شوید و ‍‍`شیفت+راست‌کلیک` کنید و سپس Open in Command Prompt را بزنید تا از آن پوشه وارد ترمینال شوید.
 
@@ -553,7 +556,7 @@ python start.py
 
 </details>
 
-<details dir=rtl><summary><h3>ویدئوهای آقای فرید در این زمینه</h3></summary>
+<details dir=rtl markdown="1"><summary><h3>ویدئوهای آقای فرید در این زمینه</h3></summary>
 <a href="https://youtu.be/YCSwZG3cjAU"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457940-07eb8105-e8b2-46e6-a617-ebbf7e659af6.png" /></a> <a href="https://youtu.be/OO80Nx1bhOo"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457896-89222a93-00ab-44ef-a90a-526496c519d6.png" /></a> <a href="https://youtu.be/piKS04W6AHE"><img width="30%" src="https://user-images.githubusercontent.com/125398461/235457925-7354392b-d4d1-4150-bbc4-27f43e2f326c.png" /></a>
 
 
@@ -571,9 +574,9 @@ python start.py
 - اندروید
 </div>
 
-<details dir="rtl"><summary><h3>نصب اسکریپت</h3></summary>
+<details dir="rtl" markdown="1"><summary><h3>نصب اسکریپت</h3></summary>
 
-<details dir="rtl"><summary><h4>ویندوز</h4></summary>
+<details dir="rtl" markdown="1"><summary><h4>ویندوز</h4></summary>
 
 * ابتدا از [این لینک](https://www.python.org/downloads/windows/) پایتون را دانلود کنید.
 * در هنگام نصب پایتون تیک مربوط به نصب pip و اضافه کردن پایتون به PATH را فراموش نکنید. 
@@ -597,7 +600,7 @@ pip install -r ./requirements.txt
 
 </details>
 
-<details dir="rtl"><summary><h4>اندروید</h4></summary>
+<details dir="rtl" markdown="1"><summary><h4>اندروید</h4></summary>
 
 * برای نصب روی سیستم عامل اندروید، نیاز به برنامه‌ای تحت عنوان ترموکس (Termux) می‌باشد که [از اینجا](https://github.com/termux/termux-app/releases/) می‌توانید دانلود کنید.
 * در اینجا با چندین فایل apk مواجه می‌شوید که باید یکی را بر اساس نوع دستگاه خود انتخاب کنید. اگر نوع دستگاه اندرویدی خود را نمیدانید، نسخه armeabi-v7a را دانلود و نصب کنید.
@@ -642,7 +645,7 @@ pip install -r ./requirements.txt
 
 </details>
 
-<details dir="rtl"><summary><h3>اجرای اسکریپت</h3></summary>
+<details dir="rtl" markdown="1"><summary><h3>اجرای اسکریپت</h3></summary>
 
 * با دستور زیر، عملکرد برنامه آغاز می‌شود.
 
