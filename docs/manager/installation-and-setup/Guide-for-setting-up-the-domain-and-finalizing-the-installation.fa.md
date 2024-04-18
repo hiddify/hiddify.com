@@ -36,14 +36,14 @@ weight: -85
 * ابتدا وارد [این سایت](https://freedns.afraid.org/signup/?plan=starter) شوید و یک اکانت بسازید (لازم نیست که اطلاعاتتان واقعی باشد فقط ایمیل باید درست باشد)
 
 <div align=center markdown=1>
-![221342760-12dc14ed-9a19-45f3-a3f1-bf7d3f969792](https://user-images.githubusercontent.com/125398461/224300370-52b9a063-9265-4ff1-83e7-23970b6a4ecf.png)
+<img src="https://user-images.githubusercontent.com/125398461/224300370-52b9a063-9265-4ff1-83e7-23970b6a4ecf.png">
 </div>
 <div dir="rtl" markdown=1>
 * ایمیلی که به شما ارسال شده را فعال کنید.
 * وارد اکانت ساخته شده شوید و روی [این لینک](https://freedns.afraid.org/domain/registry/) کلیک کنید و یکی از دامین های پابلیک را انتخاب کنید. 
 </div>
 <div align=center markdown=1>
-![Screenshot_20230330_081052](https://user-images.githubusercontent.com/125398461/228731969-b673137a-680e-44ba-a50e-a2156bfae822.png)
+<img src="https://user-images.githubusercontent.com/125398461/228731969-b673137a-680e-44ba-a50e-a2156bfae822.png">
 </div>
 
 
@@ -55,7 +55,7 @@ weight: -85
 </div>
 
 <div align=center markdown=1>
-![221343189-1fe98d0d-7f05-4639-9b51-fb6926f76f2b](https://user-images.githubusercontent.com/125398461/224301533-6743a65d-e45f-475c-a94d-7b6c428ffd84.png)
+<img src="https://user-images.githubusercontent.com/125398461/224301533-6743a65d-e45f-475c-a94d-7b6c428ffd84.png">
 </div>
 
 
@@ -65,7 +65,7 @@ weight: -85
 <div dir="rtl" markdown=1>
 * زیر دامنه ایجاد شده را کپی کنید.
 
-> این مراحل صرفا برای دامنه دایرکت بود اگر می خواهید درباره نحوه ثبت دامنه های مختلف بدانید؛ [اینجا](/manager/wiki/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%AB%D8%A8%D8%AA-%E2%80%8C%D8%A2%D9%86%E2%80%8C%D9%87%D8%A7) کلیک کنید.
+> این مراحل صرفا برای دامنه دایرکت بود اگر می خواهید درباره نحوه ثبت دامنه های مختلف بدانید؛ [اینجا](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/) کلیک کنید.
 
 
 </div>
