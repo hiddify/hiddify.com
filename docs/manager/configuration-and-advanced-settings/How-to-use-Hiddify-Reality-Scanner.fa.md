@@ -130,7 +130,7 @@ hiddify_reality_scanner --jobs 10 --limit 100 --sni yahoo.com,google.com "vless_
 
 <div dir=ltr markdown="1">
  
- ```bash
+```bash
 hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list "vless_link"
 ```
 
