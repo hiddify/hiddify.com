@@ -16,6 +16,7 @@ For using Vultr site and services please use VPN Connection if you live in count
 
 [![vultr](https://img.youtube.com/vi/hRRg10BURJI/maxresdefault.jpg)](https://www.youtube.com/watch?v=hRRg10BURJI)
 
+
 # Proxy installation steps
 
 1. At the operating system selection stage, be sure to select Ubuntu 22.04.
