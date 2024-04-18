@@ -10,6 +10,6 @@ weight: -45
 This section is suitable for hosting that supports cloud config
 Copy and paste this code into the appropriate field
 
-{% include 'cloud_init.yml' %}
+{% include 'https://github.com/hiddify/Hiddify-Manager/cloud_init.yml' %}
 
 After installing this script, follow the installation from [here](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) to complete the installation.
