@@ -203,7 +203,7 @@ git push
 - حالا وارد اکانت خود در گیتهاب شوید و پروژه فورک شده را باز نمایید.
 مسیری به شکل زیر دارد:
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 `https://github.com/<your_username>/Hiddify-Manager`
 
