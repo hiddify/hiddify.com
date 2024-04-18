@@ -6,9 +6,9 @@ weight: -85
 <div dir="ltr" markdown="1">
 
 # Guide for setting up the domain and finalizing the installation
-- [Step 1: Setting domain and subdomain](#1-how-to-set-domain-and-subdomain)
-- [Step 2: Reach the admin page after installing the script](#2-reaching-the-admin-page-after-installing-the-script)
-- [Step 3: Finalize the installation](#step-3-finalize-the-installation)
+- [Step 1: Setting up domain and subdomain](#1-how-to-set-domain-and-subdomain)
+- [Step 2: Reaching the admin page after installing the script](#2-reaching-the-admin-page-after-installing-the-script)
+- [Step 3: Finalizing the installation](#step-3-finalize-the-installation)
 ***
 After [installing the script](/manager/installation-and-setup/guide/); You must finalize the installation. This is done in 3 steps. First you need to register a domain.
 
@@ -52,7 +52,7 @@ It is better to choose domains with these extensions:
 </details>
 
 ## 2. Reaching the admin page after installing the script
-You have done [the initial installation](/manager/installation-and-setup/guide/) i.e. the script stage in 2 ways:
+You have done [the initial installation](https://github-com/hiddify/hiddify-config/wiki/#installation-guide) i.e. the script stage in 2 ways:
   - You have proceeded through the quick installation script in famous data centers (cloud-init);
   - or you have run the direct installation script on Ubuntu using SSH;
 
