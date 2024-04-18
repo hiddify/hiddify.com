@@ -15,10 +15,13 @@ After [installing the script](/manager/installation-and-setup/guide/); You must 
 ## 1. How to set domain and subdomain
 In the video below, all the steps of setting up the domain and subdomain are described in full detail. This video is in Farsi and if you watch the steps you can handle that. Although We are considering making some English videos for non-Persian people, till then you can visit this or follow the instructions in this article.
 
+<!--
 <div align=center markdown=1>
  
 [![subdomain](https://img.youtube.com/vi/l-KKRus2KS0/maxresdefault.jpg)](https://www.youtube.com/watch?v=l-KKRus2KS0)
 </div>
+
+-->
 
 <details><summary><h3>Steps of setting up domain and subdomain</h3></summary>
 - First, go to [this site](https://freedns.afraid.org/signup/) and create an account (It does not need your real information but the email must be correct)
