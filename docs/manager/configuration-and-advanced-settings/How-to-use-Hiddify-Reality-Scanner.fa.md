@@ -116,11 +116,12 @@ hiddify_reality_scanner "vless_link"
 * اگر بخواهید پارامترهای بیشتری را هنگام اسکن در نظر بگیرید، می‌بایست از دستور زیر روی کلاینت خود استفاده نمایید:
 </div>
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```bash
 hiddify_reality_scanner --jobs 10 --limit 100 --sni yahoo.com,google.com "vless_link"
 ```
+
 </div>
 
 <div dir="rtl" align="right" markdown="1">
