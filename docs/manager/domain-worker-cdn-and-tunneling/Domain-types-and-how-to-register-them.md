@@ -10,18 +10,18 @@ title: Domain types and how to register them
 It means you want to use your server directly (for normal use). In fact, this domain name (subdomain) directly points to the IP address of the server. That is, if you ping it, the IP of the server will be answered.
 
 ## CDN domain
-It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain).
+It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/). Also, see [this article](/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/) to view the settings of Amazon CDN domain.
 
 ## Relay domain
-This domain is used when you want to use intermediate servers to send user traffic. For example, you have a server in Iran and you have registered a domain (subdomain) for it. You can register this domain in this section so that the relevant settings are applied in the configurations. [More information](https://github.com/hiddify/hiddify-config/discussions/129)
+This domain is used when you want to use intermediate servers to send user traffic. For example, you have a server in Iran and you have registered a domain (subdomain) for it. You can register this domain in this section so that the relevant settings are applied in the configurations. [More information](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
 
 ## Fake domain
-This domain is used to use the [Header trick](https://github.com/iranxray/hope/blob/main/cloudflare-cdn.md#%D8%B1%D9%88%D8%B4-%D8%A7%D9%88%D9%84-%D8%AD%D9%82%D9%87-%D9%BE%D8%B1%D9%88%DA%A9%D8%B3%DB%8C). A fake domain is used to bypass the SNI whitelist proxy. In this case, you can see the configurations related to this trick by defining this domain. If you use this trick, there is a possibility that the server will be filtered.
+This domain is used to use the Header trick. A fake domain is used to bypass the SNI whitelist proxy. In this case, you can see the configurations related to this trick by defining this domain. If you use this trick, there is a possibility that the server will be filtered. [More information](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain)
 
 # How to register a domain
 Now that we are familiar with the types of domains, how to register these domains will be checked
 
-<details><summary><h2>Direct domain registration</h2></summary>
+<details markdown="1"><summary><h2>Direct domain registration</h2></summary>
 You can register the direct domain in several ways. 
 
 ### Direct domain registration for free
@@ -93,7 +93,7 @@ The easiest test to ensure domain registration is to use the ping command. Thus,
 
 </details>
 
-<details><summary><h2>CDN domain registration</h2></summary>
+<details markdown="1"><summary><h2>CDN domain registration</h2></summary>
 This domain is registered behind the servers of a CDN provider or so-called proxy. For this, the services of one of these sites should be used.
 ### CDN domain registration in Cloudflare
 For example, you can use Cloudflare service. So after following the steps mentioned above; Your domain was activated on the site; You should go to the DNS section and register the desired record. This record is type A for IP version 4 and type AAAA for IP version 6. The only difference with the previous step is that you must turn on the proxy.
@@ -135,8 +135,8 @@ To do this, go to the SSL/TLS section of the Cloudflare site. A graph is display
 </details>
 
 ## Relay domain registration
-In fact, it is a direct domain that is considered for intermediate servers, and therefore the way to register such domains is the same as the direct domain.
+In fact, it is a direct domain that is considered for intermediate servers, and therefore the way to register such domains is the same as the direct domain. [Read more](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
 
 
 ## Fake domain registration
-As the name suggests, we want to use a fake domain that is not related to us, so we don't need to register it in advance. But we can only use it in the panel. Click [here](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-create-and-use-fake-domain) to see the article on registering and using fake domains.
+As the name suggests, we want to use a fake domain that is not related to us, so we don't need to register it in advance. But we can only use it in the panel. Click [here](a/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/) to see the article on registering and using fake domains.
