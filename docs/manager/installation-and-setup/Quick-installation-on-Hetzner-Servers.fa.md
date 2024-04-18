@@ -39,9 +39,8 @@ weight: -70
   
 </div>
 
-```
+
 {% include 'cloud_init.yml' %}
-```
 
 <div dir="rtl" markdown=1>
   
