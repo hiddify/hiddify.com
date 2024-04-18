@@ -16,7 +16,7 @@ Now here, WS tunnel is used for communication between Iran server and main serve
 
 > Note: We tested these scripts on Ubuntu 22.04, so it is better to use this version.
 
-On the main server, install Hidify, whose installation guide is available at [here](https://hiddify.com/fa/manager/installation-and-setup/guide/).
+On the main server, install HiddifyManager, whose installation guide is available at [here](https://hiddify.com/fa/manager/installation-and-setup/guide/).
 
 ## Installing the tunnel on the main and relay server (Iran)
 You must install this tunnel program on **both servers**. To do this, first connect to the server with root and run the following codes:
