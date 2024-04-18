@@ -21,10 +21,10 @@ Before installation, you need a series of prerequisites:
   - 1 GB Ram
   - 1 Core CPU
   - 10 GB Storage
-- The operating system of this virtual server must be Ubuntu 22.04. Ubuntu is a distribution of Linux operating system whose logo is like this. ![](https://img.shields.io/badge/Ubuntu--E95420?style=flat-square&logo=ubuntu)
+- The operating system of this virtual server must be Ubuntu 22.04. Ubuntu is a distribution of Linux operating system whose logo is like this. ![Ubuntu Logo](https://img.shields.io/badge/Ubuntu--E95420?style=flat-square&logo=ubuntu)
 
-- Then if you need to connect to your server via SSH please visit [this link](/manager/wiki/How-to-connect-to-server-via-SSH) for more information.
+- Then if you need to connect to your server via SSH please visit [this link](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) for more information.
 
 - To increase the security of your server when SSH, read these two articles:
-  - [Disable SSH Password Authentication](https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-Authentication)
-  - [How to change SSH port on your server](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-change-SSH-port-on-your-server)
+  - [Disable SSH Password Authentication](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+  - [How to change SSH port on your server](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
