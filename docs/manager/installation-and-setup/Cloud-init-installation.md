@@ -12,4 +12,4 @@ Copy and paste this code into the appropriate field
 
 {% include 'cloud_init.yml' %}
 
-After installing this script, follow the installation from [here](/manager/wiki/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation) to complete the installation.
+After installing this script, follow the installation from [here](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) to complete the installation.
