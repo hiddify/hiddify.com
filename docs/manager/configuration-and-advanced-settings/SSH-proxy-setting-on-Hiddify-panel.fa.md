@@ -41,4 +41,4 @@ weight: -70
 
 </div>
 
-برای استفاده از این پروکسی در کلاینت، در حال حاضر می‌بایست از اپ SingBox استفاده نمایید که در [این آموزش](/manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-SingBox) طریقه استفاده از آن توضیح داده شده است.
+برای استفاده از این پروکسی در کلاینت، در حال حاضر می‌بایست از [هیدیفای‌اپ](/fa/app/How-to-use-Hiddify-app/) و [اپ SingBox](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/) استفاده نمایید.
