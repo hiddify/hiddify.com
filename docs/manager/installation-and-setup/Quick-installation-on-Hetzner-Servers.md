@@ -29,11 +29,13 @@ In the video below, all the steps are described in full detail. This video is in
 
 - Put the above code in the place shown in the picture and click on `CREATE & BUY NOW` button. 
 <div align=center markdown=1>
+  
 ![206861304-656682b4-17a3-44c1-89f9-7b0d89566728](https://user-images.githubusercontent.com/125398461/228821370-f99f7091-e65c-45b5-a2da-df33c9103d06.png)
 </div>
 - After a maximum of 10 to 15 minutes, your server will be ready and the proxy will be active. Copy your IP according to the picture and open it in the browser.
 
 <div align=center markdown=1>
+  
 ![206861323-1de41700-6ce4-403a-a644-0836e2a22876](https://user-images.githubusercontent.com/125398461/228821397-4c762ea9-9215-4f6b-960f-b14d862c1e0c.png)
 </div>
 
