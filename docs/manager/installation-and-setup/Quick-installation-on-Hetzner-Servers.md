@@ -19,6 +19,7 @@ In the video below, all the steps are described in full detail. This video is in
 - First of all, login to your Hetzner account and click on `ADD SERVER` button.
 
 <div align=center markdown=1>
+  
 ![206861285-58832cec-a2a3-441e-91d4-8300d16584d6](https://user-images.githubusercontent.com/125398461/228821324-f873517a-a977-4370-8d35-fb56116f579f.png)
 </div>
 
@@ -38,6 +39,6 @@ In the video below, all the steps are described in full detail. This video is in
 
 Do not forget to wait at least 10 minutes
 
-- Now we need to set the domain. Click on [this link](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation) to complete the installation.
+- Now we need to set the domain. Click on [this link](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) to complete the installation.
 
-For making the best use of this panel please view this [article](/manager/wiki/How-to-configure-Hiddify-Panel-properly).
+For making the best use of this panel please view this [article](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
