@@ -13,6 +13,7 @@ title: آموزش استفاده از زیر دامنه‌های متغیر در
 </div>
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/235417228-97432802-c937-418c-89be-4dce39f2ea6b.png)
 
 </div>
@@ -22,6 +23,7 @@ title: آموزش استفاده از زیر دامنه‌های متغیر در
 </div>
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/235417224-74554680-04f0-402d-af2c-5a7f6d6d11cf.png)
 
 </div>
