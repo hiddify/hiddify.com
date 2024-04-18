@@ -10,6 +10,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
 ابتدا آیپی یا دامنه سرور را در سایت [Check-Host](https://check-host.net/) چک نمایید.
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_145621](https://user-images.githubusercontent.com/125398461/222417159-c62e65e4-b67c-48ca-9f4b-8f1870276308.png)
 </div>
 پس از وارد کردن آیپی یا دامنه در قسمت مشخص شده؛ نوع تست را باید مشخص کنید.
@@ -18,6 +19,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
 این تست زمانی مفید است که سرور خام است و هیچ چیزی روی آن نصب نشده است. در این صورت می توان از این گزینه استفاده نمود.
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_151252](https://user-images.githubusercontent.com/125398461/222420082-2a380c2f-803e-4426-a529-8c09b997c76a.png)
 </div>
 اگر نتیجه تست ۴/۴ بود یعنی آیپی سرور به احتمال زیاد تمیز است. در غیر اینصورت نیاز به تعویض آیپی است.
@@ -26,6 +28,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
  این تست زمانی استفاده می شود که سیستم عامل نصب شده و فایروال آن فعال است و یک سرویس که با پورتهای TCP کار می کند روی آن فعال است. در این حالت می توان سرور را روی آن پورت تست نمود. به عنوان مثال پنل های VPN اکثرا از پورت TCP 443 استفاده می کنند. بنابراین می توان از این پورت نیز جهت تست استفاده نمود.
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_153627](https://user-images.githubusercontent.com/125398461/222426843-82605bb3-d51e-407a-8d92-90bddef896ba.png)
 </div>
 
@@ -34,6 +37,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
  این تست زمانی استفاده می شود که سیستم عامل نصب شده و فایروال آن فعال است و یک سرویس که با پورتهای UDP کار می کند روی آن فعال است. در این حالت می توان سرور را روی آن پورت تست نمود. بعنوان مثال همه سرورها از سرویس DNS استفاده می کنند که این سرویس روی پورت UDP 53 است. می توان از این پورت نیز برای تست استفاده نمود.
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_154522](https://user-images.githubusercontent.com/125398461/222426567-20464d00-cb53-4d8d-87f3-6ab28a45bce3.png)
 </div>
 
@@ -44,6 +48,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
 ابتدا سایت را از [اینجا](https://www.host-tracker.com/en/ic) باز نمایید.
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_155901](https://user-images.githubusercontent.com/125398461/222429170-dbe08724-771e-4910-bbd4-19e3b5bc78f8.png)
 </div>
 
@@ -52,6 +57,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
 ### تست Ping:
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_160236](https://user-images.githubusercontent.com/125398461/222430534-01d5f14e-bf3e-421e-93f5-832ac68307ab.png)
 </div>
 
@@ -61,6 +67,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
 ### تست TCP:
 
 <div align=center markdown=1>
+ 
 ![Screenshot_20230302_161159](https://user-images.githubusercontent.com/125398461/222432212-4a496ba1-aa71-4841-949c-449636b94d84.png)
 
 </div>
@@ -76,6 +83,7 @@ title: چک کردن تمیز بودن آیپی یا دامنه سرور
 در اینجا با مفهومی به اسم `لیست زرد` آشنا می‌شویم.
 
 <div align=center markdown=1>
+ 
 <img width=40% src="https://github.com/hiddify/hiddify-config/assets/125398461/242a64b6-8075-4892-bb0f-de13b158a33a" />
 </div>
 
