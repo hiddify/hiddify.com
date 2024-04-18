@@ -34,4 +34,4 @@ title: آموزش ایجاد لینک سابسکریپشن در ‌هیدیفا�
 
 
 
-برای آموزش آن، [اینجا](https://github.com/hiddify/hiddify-config/discussions/689) بروید.
+برای آموزش آن، [اینجا](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/) بروید.
