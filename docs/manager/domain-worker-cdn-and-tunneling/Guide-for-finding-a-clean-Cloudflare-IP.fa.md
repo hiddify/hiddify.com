@@ -493,7 +493,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 </details>
 
 
-***
+
 
 <br>
 
@@ -573,8 +573,7 @@ python start.py
 
 </details>
 
-***
-<br>
+
 
 ## اسکنر آیپی کلادفلر صفا صفری
 این اسکنر در چند نسخه توسعه داده شده است که می‌توانید متناسب با نیازتون از آن استفاده کنید.
