@@ -20,12 +20,13 @@ title: آموزش نحوه کنترل منابع سرور در هیدیفای‌
 
 
 
-* ابتدا به سرور [SSH بزنید](/manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82).
+* ابتدا به سرور [SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 
 *  و با زدن `Cancel` و یا فشردن همزمان کلیدهای `ctrl+c` از منوی هیدیفای خارج شوید. در صورتی که بعد از اینکار همچنان منو برای شما نمایش داده می‌شود عبارت `clear` رو تایپ و اینتر کنید.
 * سپس اگر `htop` روی سرور شما نصب نیست، از طریق دستور زیر آن را نصب کنید
 
 <div dir=ltr markdown=1>
+  
 ```
 apt install htop
 ```
@@ -36,6 +37,7 @@ apt install htop
 * سپس این دستور را اجرا کنید تا `htop` باز شود.
 
 <div dir="ltr" markdown=1>
+
 ```
 htop
 ```
@@ -57,13 +59,14 @@ htop
 * سپس یکبار از طریق دستور زیر وارد منوی هیدیفای شوید.
 
 <div dir=ltr markdown=1>
+  
 ```
 bash /opt/hiddify-config/menu.sh
 ```
 </div>
 
 
-*  با استفاده از کلیدهای جهتی (بالا و پایین) گزینه‌ی `restart` را انتخاب کنید و صبر کنید تا سرویس‌ها ریستارت شوند و مجددا از [منوی هیدیفای](/manager/wiki/SSH-%D9%86%D8%AD%D9%88%D9%87-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D9%88-%D8%B1%D9%81%D8%B9-%D8%B9%DB%8C%D8%A8-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) خارج شوید و `htop` را بررسی کنید.
+*  با استفاده از کلیدهای جهتی (بالا و پایین) گزینه‌ی `restart` را انتخاب کنید و صبر کنید تا سرویس‌ها ریستارت شوند و مجددا از [منوی هیدیفای](/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/) خارج شوید و `htop` را بررسی کنید.
 
 
 
@@ -80,6 +83,7 @@ bash /opt/hiddify-config/menu.sh
 * یکی از راه‌های بهبود وضعیت رم پر شده سرور، خالی کردن حافظه کش رم است. با این دستور در ترمینال سرور هنگامی که با یوزر روت لاگین کرده‌اید می‌توانید کش را خالی کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 sync && systemctl -w vm.drop_caches=3
 ```
@@ -88,10 +92,9 @@ sync && systemctl -w vm.drop_caches=3
 اگر دستور بالا با خطا مواجه شد، می‌توانید دستور زیر را استفاده کنید. 
 
 <div dir=ltr markdown=1>
+  
 ```
-
 free && sync && echo 3 > /proc/sys/vm/drop_caches && free
-
 ```
 
 </div>
@@ -102,6 +105,7 @@ free && sync && echo 3 > /proc/sys/vm/drop_caches && free
 * علاوه بر داشبورد پنل هیدیفای که وضعیت هارد دیسک را نمایش می‌دهد، می‌توان از دستور زیر نیز در ترمینال استفاده نمود.
 
 <div dir=ltr markdown=1>
+
 ```
 df -h --total
 ```
@@ -110,12 +114,14 @@ df -h --total
 که خروجی آن به شکل زیر است.
 
 <div align=center markdown=1>
+
 ![df command](https://github.com/hiddify/hiddify-config/assets/125398461/f3552ab5-a105-40b5-8210-65487903c6ba)
 </div>
 
 * در ایننجا فضای مربوط به `sda1` مطابق با شکل باید چک شود. اگر به هر دلیلی این فضا پر شده بود و نیاز بود مقداری از فضا را خالی نمایید، می‌توانید اطلاعات مربوط به لاگ‌ها را با دستور زیر پاک نمایید.
 
 <div dir=ltr markdown=1>
+
 ```
 rm -rf /opt/hiddify-config/log/system/*
 ```
