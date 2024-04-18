@@ -17,6 +17,7 @@ title: آموزش تست سرعت روی سرور
 > لازم به ذکر است در صورتی که در گذشته اسکریپت قدیمی `speedtest-cli` را بر روی سرور خود نصب کرده اید، ابتدا از طریق دستور زیر اقدام به حذف آن کنید (در غیر اینصورت به مرحله‌ی بعد بروید).
 
 <div dir=ltr markdown=1>
+  
 ```
 sudo apt-get remove speedtest-cli
 ```
@@ -25,6 +26,7 @@ sudo apt-get remove speedtest-cli
 - برای نصب دستورات زیر را اجرا نمایید تا برنامه `speedtest` دانلود و نصب شود.
 
 <div dir=ltr markdown=1>
+  
 ```
 sudo apt-get install curl
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
@@ -36,6 +38,7 @@ sudo apt-get install speedtest
 * پس از نصب موفقیت آمیز، دستور زیر را وارد کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 speedtest
 ```
@@ -44,6 +47,7 @@ speedtest
 * هنگامی که برای اولین بار برنامه را اجرا می‌کنید، شرایط و قوانین استفاده و همچنین داده‌هایی که توسط وب‌سایت `Speedtest` جمع‌آوری می‌شود در قالب دو پیام ظاهر شده که برای هر کدام می‌بایست عبارت `yes` به منزله‌ی تایید را وارد و اینتر کنید.
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-06_20-01-59](https://github.com/hiddify/hiddify-config/assets/125398461/b897f426-e9d6-4f26-b9fb-9e46f6def820)
 
 
@@ -54,6 +58,7 @@ speedtest
 * پس از آن مشاهده می‌کنید که تست پهنای باند شما اجرا شده و بعد از سپری شدن زمان کوتاهی خروجی آن نمایش داده می‌شود. هر زمان که نیاز به انجام مجدد این تست داشته باشید کافیست عبارت `speedtest` را در خط فرمان تایپ کرده و اینتر کنید تا تست مجدد انجام شود.
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-06_20-05-53](https://github.com/hiddify/hiddify-config/assets/125398461/054e65db-1f12-428b-b9e9-359a69e99044)
 
 
@@ -63,12 +68,14 @@ speedtest
 * در برخی شرایط کاربران نیاز به تست از لوکیشن‌های دیگری را دارند، به این منظور برای دریافت لیست لوکیشن‌ها کامند زیر را اجرا کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 speedtest --servers
 ```
 </div>
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-06_20-05-58](https://github.com/hiddify/hiddify-config/assets/125398461/c2acefcd-f0f2-43e1-8c90-486b465a7cb4)
 
 
@@ -77,12 +84,14 @@ speedtest --servers
 * همانطور که در تصویر فوق قابل مشاهده‌ست لیستی از سرورها با لوکیشن‌های نزدیک به سرورتان به شما نمایش داده می‌شود، در ستون ID نیز یک کد ۵ رقمی برای هر ردیف وجود دارد، لوکیشن مد نظر برای تست را انتخاب و کد ۵ رقمی آنرا کپی کنید، سپس توسط کامند زیر می‌توانید از لوکیشن مد نظر خود اسپیدتست بگیرید، تنها در بخش آخر عبارت ID را با کد مد نظر جایگزین کرده و اینتر کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 speedtest --server-id=ID
 ```
 </div>
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-06_20-15-55](https://github.com/hiddify/hiddify-config/assets/125398461/a319cf89-3ed7-4ea5-90dd-0170cd5926c8)
 
 </div>
@@ -91,13 +100,18 @@ speedtest --server-id=ID
 * با استفاده از ابزار فوق، علاوه بر تست سرعت از لوکیشن‌های مختلف، مشخصات سخت‌افزاری سرور شامل CPU، فضای ذخیره سازی، رم، معماری پردازنده، سرعت پورت شبکه و… را به راحتی و با اجرای کامند زیر می‌توانید مشاهده کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 wget -qO- bench.sh | bash
 ```
 </div>
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-06_20-16-00](https://github.com/hiddify/hiddify-config/assets/125398461/b0815e0e-6348-4c0b-9f82-1ae5e6c53646)
+
+</div>
+
 
 
 </div>
