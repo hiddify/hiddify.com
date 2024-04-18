@@ -15,6 +15,7 @@ weight: -70
 ابتدا در `تنظیمات` پنل به بخش `پروکسی SSH` بروید.
 
 <div align=center markdown=1>
+ 
 ![SSH Proxy](https://github.com/hiddify/hiddify-config/assets/125398461/9ef5adf8-ea02-447f-87b4-1975a1a6db1e)
 
 </div>
@@ -26,6 +27,7 @@ weight: -70
  برای این کار از منوی `تنظیمات`، به بخش `پروکسی‌ها` بروید.
 
 <div align=center markdown=1>
+ 
 ![SSH proxy_proxy](https://github.com/hiddify/hiddify-config/assets/125398461/0c72ddcb-2a4e-4539-af39-2a89f97d89e3)
 
 </div>
@@ -37,6 +39,7 @@ weight: -70
 حالا اگر به صفحه کاربری خود در پنل بروید، می‌بینید که کانفیگ SSH به کانفیگ‌های قبلی اضافه شده است. این کانفیگ به صورت مجزا قابلیت اضافه شدن به نرم‌افزارهای کلاینت را دارد.
 
 <div align=center markdown=1>
+ 
 ![user link](https://github.com/hiddify/hiddify-config/assets/125398461/1ee96839-715d-4660-afd2-d66f4b3a2f5d)
 
 </div>
