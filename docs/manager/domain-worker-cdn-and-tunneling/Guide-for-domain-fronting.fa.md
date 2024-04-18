@@ -25,6 +25,7 @@ title: آموزش استفاده از دامین فرانتینگ
 ## تنظیمات دامین فرانتینگ روی هیدیفای‌منیجر
 برای این کار در هیدیفای‌منیجر به بخش `تنظیمات` و `دامنه‌ها` بروید و سپس روی `ایجاد` کلیک کنید.
 <div align=center markdown=1>
+ 
 ![Domain_registeration](https://github.com/hiddify/hiddify-config/assets/125398461/a8eb971c-abbe-4718-9d6d-5ab3852c619c)
 
 </div>
