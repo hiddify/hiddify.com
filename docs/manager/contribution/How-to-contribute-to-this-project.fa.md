@@ -7,7 +7,7 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 
 ## نصب git روی سیستم 
 بر اساس سیستم عامل خود یکی از موارد زیر را باز نمایید.
-<details dir=rtl><summary><h3>ویندوز</h3></summary>
+<details dir=rtl markdown="1"><summary><h3>ویندوز</h3></summary>
 
 - ابتدا به [اینجا](https://git-scm.com/download/win) بروید و نسخه مخصوص ویندوز را دانلود کنید.
 - سپس فایل دانلود شده را از حالت فشرده خارج نمایید و برای نصب آن را ارا نمایید.
@@ -45,7 +45,7 @@ git version
 - به صورت دیفالت `git` در پوشه `Home` کاربر نصب می‌گردد.
 </details>
 
-<details dir=rtl><summary><h3>مک</h3></summary>
+<details dir=rtl markdown="1"><summary><h3>مک</h3></summary>
 
 - ابتدا از [اینجا](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) فایل نصب را دانلود کنید.
 - سپس آن را جارا نمایید. نصب خیلی ساده‌ای دارد.
@@ -62,7 +62,7 @@ git version
 
 </details>
 
-<details dir=rtl><summary><h3>لینوکس</h3></summary>
+<details dir=rtl  markdown="1"><summary><h3>لینوکس</h3></summary>
 
 در اکثر توزیع‌های سیستم عامل لینوکس git به صورت دیفالت نصب است و نیاز نیست کار خاصی بکنید. اما اگر به هر دلیلی نیاز بود آن را نصب نمایید باید سرچ بزنید و کامند مناسب مربوط به آن توزیع را پیدا کنید. در ادامه کامند نصب مربوط به ند توزیع معروف قرار می‌گیرد.
 <div dir=ltr>
