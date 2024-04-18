@@ -12,15 +12,20 @@ title: نحوه تغییر پورت SSH روی سرور
     فایل پیکربندی SSH daemon یا `sshd_config` را در یک ویرایشگر متن باز کنید. برای ویرایش این فایل معمولاً به سطح دسترسی بالاتری نیاز دارید. می‌توانید از یک ویرایشگر متن خط فرمان مانند `nano` یا `vim` استفاده کنید. مثلا:
 
 <div dir=ltr markdown=1>
-
-    sudo nano /etc/ssh/sshd_config
+    
+```
+sudo nano /etc/ssh/sshd_config
+```
 </div>
 
 2. **بخش `port` را بیابید:**
     به دنبال خطی باشید که با `port` شروع می‌شود. این خط پورتی را مشخص می‌کند که SSH Server به آن گوش می‌دهد. پیش فرض معمولاً `22` است. می‌توانید آن را به هر پورت استفاده نشده تغییر دهید، به عنوان مثال:
 
 <div dir=ltr markdown=1>
-    port 2222
+
+```
+port 2222
+```
 </div>
 
 3. **ذخیره و خروج:**
@@ -31,7 +36,9 @@ title: نحوه تغییر پورت SSH روی سرور
 
 <div dir=ltr markdown=1>
 
-    sudo service ssh restart
+```
+sudo service ssh restart
+```
 </div>
 
 
@@ -39,14 +46,20 @@ title: نحوه تغییر پورت SSH روی سرور
 
 
 <div dir=ltr markdown=1>
-    sudo systemctl restart ssh
+
+```
+sudo systemctl restart ssh
+```
 </div>
 
 5. **تغییرات را تأیید کنید:**
 با اجرای دستور زیر می‌توانید چک کنید که SSH اکنون به پورت جدید گوش می‌دهد:
     
 <div dir=ltr markdown=1>
-    netstat -tuln | grep <new_port>
+
+```
+netstat -tuln | grep <new_port>
+```
 </div>
 
 `<new_port>` را با شماره پورتی که در فایل پیکربندی مشخص کرده‌اید، جایگزین کنید.
@@ -55,7 +68,10 @@ title: نحوه تغییر پورت SSH روی سرور
     اگر از `iptables` برای مدیریت فایروال استفاده می کنید، مطمئن شوید که قوانین را به روز کنید تا ترافیک در پورت SSH جدید مجاز باشد.
 
 <div dir=ltr markdown=1>
-    sudo iptables -A INPUT -p tcp --dport 2222 -j ACCEPT
+
+```
+sudo iptables -A INPUT -p tcp --dport 2222 -j ACCEPT
+```
 </div>
 
 `2222` را با پورت SSH جدید خود جایگزین کنید.
@@ -65,13 +81,19 @@ title: نحوه تغییر پورت SSH روی سرور
 برای اوبونتو، می توانید از دستورات iptables-save و iptables-restore استفاده کنید:
     
 <div dir=ltr markdown=1>
-    sudo sh -c 'iptables-save > /etc/iptables/rules.v4'
+
+```
+sudo sh -c 'iptables-save > /etc/iptables/rules.v4'
+```
 </div>
 
 این دستور قوانین فعلی iptables را در یک فایل ذخیره می کند و می توانید آنها را با:
 
 <div dir=ltr markdown=1>
-    sudo sh -c 'iptables-restore < /etc/iptables/rules.v4'
+
+```
+sudo sh -c 'iptables-restore < /etc/iptables/rules.v4'
+```
 </div>
 
 به یاد داشته باشید که تغییر پورت SSH می تواند امنیت را با کاهش قابل پیش بینی آن افزایش دهد، اما همچنین ضروری است که قوانین فایروال خود را به روز کنید و پورت جدید را هنگام اتصال به خاطر بسپارید.
