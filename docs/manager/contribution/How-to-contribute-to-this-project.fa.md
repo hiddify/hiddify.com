@@ -13,7 +13,7 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 - سپس فایل دانلود شده را از حالت فشرده خارج نمایید و برای نصب آن را ارا نمایید.
 <div align=center markdown="1">
 
-![location-git-windows-download](https://github.com/hiddify/Hiddify-Manager/assets/125398461/cd883726-f340-441c-bbca-df98f0389de2)
+<img alt="location-git-windows-download" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/cd883726-f340-441c-bbca-df98f0389de2" />
 
 </div>
 
@@ -21,7 +21,7 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 
 <div align=center markdown="1">
 
-![read-and-accept-git-license-agreement](https://github.com/hiddify/Hiddify-Manager/assets/125398461/c8220a90-4f88-451f-ac60-ca6280feef20)
+<img alt="read-and-accept-git-license-agreement" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/c8220a90-4f88-451f-ac60-ca6280feef20" />
 
 </div>
 به صورت دیفالت محل نصب git در این مسیر است.
@@ -126,7 +126,7 @@ git clone https://github.com/hiddify/Hiddify-Manager.git
 
 <div align=center markdown="1">
 
-![Screenshot_20230807_180159](https://github.com/hiddify/Hiddify-Manager/assets/125398461/483dde4e-e4fd-470a-be94-552d5c72c2a8)
+<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/483dde4e-e4fd-470a-be94-552d5c72c2a8" />
 
 </div>
 
@@ -134,7 +134,7 @@ git clone https://github.com/hiddify/Hiddify-Manager.git
 
 <div align=center markdown="1">
 
-![Screenshot_20230807_172554](https://github.com/hiddify/Hiddify-Manager/assets/125398461/b4730f3a-3f86-4792-8ccc-6a5789056c1d)
+<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/b4730f3a-3f86-4792-8ccc-6a5789056c1d" />
 
 </div>
 
