@@ -44,7 +44,8 @@ weight: -90
 ## آپدیت از طریق SSH
  [به سرور SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) و در منوی هیدیفای آپدیت را انتخاب کنید. ۳ حالت وجود داره.
 
-![](https://user-images.githubusercontent.com/125398461/230083991-e90d579a-5301-49f3-ae5c-645ae5cb6d18.png)
+![image](https://github.com/Clover-hope/hiddify.com/assets/135863343/b14d6a83-8917-4c5d-a618-bf4a98540e24)
+
 
 * گزینه دیفالت بر اساس `default` پنل آپدیت می‌کند. 
 * گزینه `release` آپدیت بر اساس نسخه پایدار است. 
