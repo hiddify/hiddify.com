@@ -39,7 +39,7 @@ Congratulations, the installation is complete.
 
 
 2. After installation
-At the end, a link will be generated which is the link to setup your proxy. Now we need to set the domain. Click on [this link](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation) to complete the installation.
+At the end, a link will be generated which is the link to setup your proxy. Now we need to set the domain. Click on [this link](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) to complete the installation.
 
 
-> For making the best use of this panel please view this [article](/manager/wiki/How-to-configure-Hiddify-Panel-properly).
+> For making the best use of this panel please view this [article](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
