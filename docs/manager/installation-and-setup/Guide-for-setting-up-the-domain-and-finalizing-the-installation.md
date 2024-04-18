@@ -52,7 +52,7 @@ It is better to choose domains with these extensions:
 </details>
 
 ## 2. Reaching the admin page after installing the script
-You have done [the initial installation](https://github-com/hiddify/hiddify-config/wiki/#installation-guide) i.e. the script stage in 2 ways:
+You have done [the initial installation](/manager/installation-and-setup/guide/) i.e. the script stage in 2 ways:
   - You have proceeded through the quick installation script in famous data centers (cloud-init);
   - or you have run the direct installation script on Ubuntu using SSH;
 
