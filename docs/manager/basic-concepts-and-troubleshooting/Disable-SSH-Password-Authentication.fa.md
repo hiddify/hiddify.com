@@ -12,10 +12,10 @@ title: غیرفعال کردن دسترسی با پسورد در SSH
 1. **تولید یک جفت کلید SSH** (اگر قبلاً انجام نداده‌اید):
 
 <div dir=ltr markdown=1>
-   ```bash
-   ssh-keygen -t rsa -b 4096
-   ```
 
+```bash
+ssh-keygen -t rsa -b 4096
+```
 </div>
 
    Enter را فشار دهید تا مکان فایل پیش‌فرض را قبول کنید. در صورت تمایل، می‌توانید یک عبارت عبور برای امنیت بیشتر تنظیم کنید.
@@ -23,18 +23,19 @@ title: غیرفعال کردن دسترسی با پسورد در SSH
 2. **کپی کلید عمومی به سرور شما**:
 - ویندوز:
 <div dir=ltr markdown=1>
-   ```
-   cat $HOME\.ssh\id_rsa.pub | ssh username@your_server_ip 'cat >> ~/.ssh/authorized_keys'
-   ```
+
+```
+cat $HOME\.ssh\id_rsa.pub | ssh username@your_server_ip 'cat >> ~/.ssh/authorized_keys'
+```
 </div>
 
 - لینوکس و مک:
 
 <div dir=ltr markdown=1>
-   ```bash
-   ssh-copy-id username@your_server_ip
-   ```
 
+```bash
+ssh-copy-id username@your_server_ip
+```
 </div>
 
    `username` را با نام کاربری واقعی خود و `your_server_ip` را با آدرس IP سرور خود جایگزین کنید.
@@ -42,9 +43,10 @@ title: غیرفعال کردن دسترسی با پسورد در SSH
 3. **آزمایش ورود مبتنی بر کلید**: سعی کنید با استفاده از کلید SSH خود وارد شوید.
 
 <div dir=ltr markdown=1>
-   ```bash
-   ssh username@your_server_ip
-   ```
+
+```bash
+ssh username@your_server_ip
+```
 </div>
 
    اگر بدون درخواست برای وارد کردن رمز عبور بتوانید وارد شوید، احراز هویت مبتنی بر کلید در حال کار است.
@@ -55,9 +57,10 @@ title: غیرفعال کردن دسترسی با پسورد در SSH
 1. **دسترسی به فایل پیکربندی SSH**:
 
 <div dir=ltr markdown=1>
-   ```bash
-   sudo nano /etc/ssh/sshd_config
-   ```
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
 </div>
 
    می‌توانید `nano` را با ویرایشگر متنی مورد علاقه خود (مانند `vi` یا `vim`) جایگزین کنید.
@@ -67,9 +70,10 @@ title: غیرفعال کردن دسترسی با پسورد در SSH
 3. **غیرفعال کردن احراز هویت رمز عبور**: این خط را به 
 
 <div dir=ltr markdown=1>
-   ```bash
-   PasswordAuthentication no
-   ```
+
+```bash
+PasswordAuthentication no
+```
 </div>
    تغییر دهید. اگر این خط وجود نداشت، می‌توانید آن را در انتهای فایل اضافه کنید.
 
@@ -94,9 +98,10 @@ sudo systemctl restart sshd
 1. **آزمایش دسترسی SSH**: دوباره سعی کنید از طریق SSH وارد شوید. این بار، سرور نباید اجازه دهد که با رمز عبور وارد شوید.
 
 <div dir=ltr markdown=1>
-   ```bash
-   ssh username@your_server_ip
-   ```
+   
+```bash
+ssh username@your_server_ip
+```
 
 </div>
 
@@ -106,9 +111,9 @@ sudo systemctl restart sshd
 
 ### گام ۵: اقدامات امنیتی اضافی
 
-- در نظر داشته باشید که پورت SSH را از پورت پیش‌فرض (پورت ۲۲) به یک پورت غیراستاندارد تغییر دهید تا احتمال حملات خودکار کاهش یابد. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D9%86%D8%AD%D9%88%D9%87-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1-%D9%BE%D9%88%D8%B1%D8%AA-SSH-%D8%B1%D9%88%DB%8C-%D8%B3%D8%B1%D9%88%D8%B1)
+- در نظر داشته باشید که پورت SSH را از پورت پیش‌فرض (پورت ۲۲) به یک پورت غیراستاندارد تغییر دهید تا احتمال حملات خودکار کاهش یابد. [بیشتر بخوانید ...](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/)
 - به طور منظم سرور و نرم‌افزار SSH خود را به‌روزرسانی کنید.
-- یک دیواره آتش راه‌اندازی کنید و دسترسی به پورت‌های ضروری را محدود کنید. [بیشتر بخوانید ...](https://github.com/hiddify/Hiddify-Manager/wiki/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D9%81%D8%A7%DB%8C%D8%B1%D9%88%D8%A7%D9%84-%D8%AF%D8%B1-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C)
+- یک دیواره آتش راه‌اندازی کنید و دسترسی به پورت‌های ضروری را محدود کنید. [بیشتر بخوانید ...](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
 - تلاش‌های ورود را کنترل کنید و سیستم‌های تشخیص نفوذ را تنظیم کنید.
 
 با دنبال کردن این مراحل، شما باید موفق شده باشید که احراز هویت رمز عبور SSH را غیرفعال کنید و امنیت سرور خود را افزایش دهید. فقط مطمئن شوید که یک روش پشتیبان (مانند احراز هویت مبتنی بر کلید) برای جلوگیری از قفل شدن بیرون از سرور دارید.
