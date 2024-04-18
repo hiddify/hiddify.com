@@ -25,7 +25,7 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 
 </div>
 به صورت دیفالت محل نصب git در این مسیر است.
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 C:/Program Files/Git
@@ -34,7 +34,7 @@ C:/Program Files/Git
 یعنی در مراحل بعد، پروژه‌ها در این مسیر قرار می‌گیرند. کار تمام است.
 - برای چک کردن ورژن `git` نصب شده، `command prompt` را باز نمایید و دستور زیر را اجرا کنید.
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git version
@@ -65,7 +65,7 @@ git version
 <details dir=rtl  markdown="1"><summary><h3>لینوکس</h3></summary>
 
 در اکثر توزیع‌های سیستم عامل لینوکس git به صورت دیفالت نصب است و نیاز نیست کار خاصی بکنید. اما اگر به هر دلیلی نیاز بود آن را نصب نمایید باید سرچ بزنید و کامند مناسب مربوط به آن توزیع را پیدا کنید. در ادامه کامند نصب مربوط به ند توزیع معروف قرار می‌گیرد.
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 **Debian/Ubuntu**
 
@@ -88,7 +88,7 @@ pacman -Syu git-all
 در همه توزیع‌ها git در مسیر Home کاربر نصب می‌گردد.
 - برای چک کردن نسخه git نصب شده در ترمیال این دستور را اجرا کنید.
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git version
@@ -104,7 +104,7 @@ git version
 
 - ابتدا باید پروژه را fork کنید. برای این کار اگر قصد fork کردن پنل را دارید کامند زیر را اجرا کنید.
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git clone https://github.com/hiddify/HiddifyPanel.git
@@ -114,7 +114,7 @@ git clone https://github.com/hiddify/HiddifyPanel.git
 
 اگر قصد fork کردن Hiddify-Manager را دارید، دستور زیر را اجرا کنید.
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git clone https://github.com/hiddify/Hiddify-Manager.git
@@ -140,7 +140,7 @@ git clone https://github.com/hiddify/Hiddify-Manager.git
 
 - حالا باید یک شاخه یا branch از پروژه درست کنید تا روی آن کار کنید. برای این کار ابتدا برای شاخه یک اسم انتخاب کنید. مثلا فرض کنیم اسم شاخه را `Hiddify-develop` انتخاب می‌کنیم. حالا دستورات زیر را اجرا کنید. 
 
-<div dir="ltr" >
+<div dir="ltr" markdown="1">
 
 ```
 git branch Hiddify-develop
@@ -149,7 +149,7 @@ git checkout Hiddify-develop
 
 </div>
 
-<div dir="rtl" >
+<div dir="rtl" markdown="1">
 
 -  حالا تغییرات مورد نظر خود را روی فایل‌ها با استفاده از هر ابزاری اعمال کنید. توصیه می‌شود از `VSCode` استفاده نمایید.
 -  یادتون نره مسیر تمامی فایل‌ها در پوشه‌های گفته شده در مرحله نصب است.
@@ -158,7 +158,7 @@ git checkout Hiddify-develop
 - ابتدا با کامند زیر انجام تغییرات را به `git` اعلام کنید.
 
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git add
@@ -168,7 +168,7 @@ git add
 
 - سپس تغییرات را کامیت نمایید. نیاز است که در اینجا یک توضیح برای تغییرات اعلام نمایید.
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git commit -m "a short description of the change"
@@ -179,7 +179,7 @@ git commit -m "a short description of the change"
 مثلا اگر تغییرات مدنظر شما مربوط به بخش توسعه بات باشد می‌توان چنین توضیحی نوشت.
 
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git commit -m "add some features to the telegram bot"
@@ -190,7 +190,7 @@ git commit -m "add some features to the telegram bot"
 هیچ مشکلی ندارد که توضیحات این بخش زیاد باشد و اتفاقا توصیه می‌شود تا جای ممکن توضیحات کامل و جامع باشد.
 در این مرحله تغییرات با موفقیت وارد سیستم git شد. حالا باید تغییرات را به سمت GitHub بفرستید. برای این کار دستور زیر را اجرا کنید. 
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
 
 ```
 git push
@@ -205,7 +205,7 @@ git push
 
 <div dir=ltr markdown="1">
 
-`https://github.com/<your_username>/Hiddify-Manager`
+`https://github.com/your_username/Hiddify-Manager`
 
 </div>
 
