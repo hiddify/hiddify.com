@@ -6,54 +6,6 @@ weight: -150
 <div dir="ltr" markdown="1">
 
 # How to configure HiddifyManager properly
-
-# Table of contents
-
-***
-* [Prerequisites](/manager/wiki/How-to-configure-Hiddify-Panel-properly#prerequisites)
-* [Getting started](/manager/wiki/How-to-configure-Hiddify-Panel-properly#getting-started)
-* [Quick installation](/manager/wiki/How-to-configure-Hiddify-Panel-properly#quick-installation)
-* [Dashboard](/manager/wiki/How-to-configure-Hiddify-Panel-properly#dashboard)
-* [Users](/manager/wiki/How-to-configure-Hiddify-Panel-properly#users)
-* [Admins](#admins)
-* [Settings](#settings)
-  - Domains
-    - Direct domain
-    - CDN domain
-    - Auto_CDN_IP domain
-    - Relay domain
-    - Fake domain
-    - Sub-only domain
-  - Proxies
-  - Other
-    - Admin settings
-    - Customizing user page
-    - General settings
-    - Proxy settings
-    - Domain Fronting
-    - Telegram proxy
-    - HTTP settings
-    - TLS settings
-    - Shadowsocks settings
-    - ShadowTLS Settings
-    - Advanced settings
-    - Very advanced settings
-    - Reality
-    - WARP
-  - Backup
-- [Actions](#actions)
-  - Status
-  - View Logs
-  - Apply Configs
-  - Update System
-  - Reinstall System
-  - Restart System
-- [Help](#help)
-
-
-***
-
-# How to configure Hiddify Panel properly
 Before starting the configuration, it is necessary to explain that this panel is not supposed to perform miracles, but it is supposed to make things related to the use of proxies easier, and for this there are some prerequisites that should be available. So if you read this article to the end; And you did the configuration correctly, but your connections were not connected, read [this topic](https://github.com.translate.goog/hiddify/hiddify-config/discussions/301).
 
 ## prerequisites
