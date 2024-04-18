@@ -10,6 +10,7 @@ title: آموزش تنظیم فایروال در هیدیفای‌منیجر
 فایروال `Firewall` یا دیواره‌ی آتش به نرم‌افزار یا سخت‌افزارهایی گفته می‌شود که از دسترسی به کامپیوترها یا سرورها جلوگیری کرده و ترافیک رد و بدل شده در شبکه را کنترل می‌کنند. فایروال در حقیقت یک ابزار امنیتی است که می‌تواند یک برنامه‌ی نرم‌افزاری یا یک دستگاه اختصاصی شبکه باشد. در اینجا ما با فایروال نرم‌افزاری روی سرورهای لینوکسی سر و کار داریم. 
 
 <div align=center markdown=1>
+  
 <img width="80%" src="https://github.com/hiddify/hiddify-config/assets/125398461/bd646159-3baa-45eb-8e30-810be5faadcb" />
 
 </div>
@@ -32,7 +33,7 @@ title: آموزش تنظیم فایروال در هیدیفای‌منیجر
 ## تنظیم دستی فایروال سرور
 
 
-* در صورت نیاز به باز نمودن پورت به صورت دستی، ابتدا به سرور خود `SSH` بزنید. اگر نمی‌دانید چگونه `SSH` بزنید [این آموزش](/manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) را ببینید.
+* در صورت نیاز به باز نمودن پورت به صورت دستی، ابتدا به سرور خود `SSH` بزنید. اگر نمی‌دانید چگونه `SSH` بزنید [این آموزش](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) را ببینید.
 
 * پس اتصال `SSH` وارد منوی هیدیفای می‌شوید. در اینجا با زدن `Cancel` یا `ctrl+c` از این منو خارج شوید تا وارد ترمینال شوید. در صورتی که بعد از اینکار همچنان منو برای شما نمایش داده می‌شود عبارت `clear` رو تایپ و اینتر کنید.
 
@@ -40,6 +41,7 @@ title: آموزش تنظیم فایروال در هیدیفای‌منیجر
 *  در ترمینال از دستور زیر استفاده کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 iptables -A INPUT -p tcp --destination-port PORT -j ACCEPT
 ```
@@ -50,6 +52,7 @@ iptables -A INPUT -p tcp --destination-port PORT -j ACCEPT
 
 
 <div dir=ltr markdown=1>
+  
 ```
 iptables -A INPUT -p tcp --destination-port 1234 -j ACCEPT
 ```
@@ -59,6 +62,7 @@ iptables -A INPUT -p tcp --destination-port 1234 -j ACCEPT
 * با وجود اینکه باز کردن پروتکل `ICMP` از نظر امنیتی مشکل دارد، یا اگر خواستید دسترسی پینگ یا بسته‌های `ICMP` را فراهم نمایید؛ کافیه دستور زیر را اجرا کنید.
 
 <div dir=ltr markdown=1>
+  
 ```
 iptables -A INPUT -p ICMP -j ACCEPT
 ```
@@ -67,6 +71,7 @@ iptables -A INPUT -p ICMP -j ACCEPT
 * برای بستن پروتکل `ICMP` نیز ازدستور زیر استفاده نمایید. 
 
 <div dir=ltr markdown=1>
+  
 ```
 iptables -A INPUT -p icmp -j DROP
 ```
