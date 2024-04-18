@@ -6,8 +6,8 @@ weight: -85
 <div dir="ltr" markdown="1">
 
 # Guide for setting up the domain and finalizing the installation
-- [First step: Setting domain and subdomain](#1-how-to-set-domain-and-subdomain)
-- [Second step: reach the admin page after installing the script](#2-reaching-the-admin-page-after-installing-the-script)
+- [Step 1: Setting domain and subdomain](#1-how-to-set-domain-and-subdomain)
+- [Step 2: Reach the admin page after installing the script](#2-reaching-the-admin-page-after-installing-the-script)
 - [Step 3: Finalize the installation](#step-3-finalize-the-installation)
 ***
 After [installing the script](/manager/installation-and-setup/guide/); You must finalize the installation. This is done in 3 steps. First you need to register a domain.
