@@ -42,7 +42,7 @@ weight: -90
 برای این کار در تنظیمات عمومی گزینه آپدیت خودکار فعال باشد، پنل به صورت روزانه آپدیت می‌شود.
 
 ## آپدیت از طریق SSH
- [به سرور SSH بزنید](/manager/wiki/SSH-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%B2-%D8%B7%D8%B1%DB%8C%D9%82) و در منوی هیدیفای آپدیت را انتخاب کنید. ۳ حالت وجود داره.
+ [به سرور SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) و در منوی هیدیفای آپدیت را انتخاب کنید. ۳ حالت وجود داره.
 
 ![](https://user-images.githubusercontent.com/125398461/230083991-e90d579a-5301-49f3-ae5c-645ae5cb6d18.png)
 
