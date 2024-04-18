@@ -1,5 +1,6 @@
 ---
 title: کاربرد و نحوه عملکرد MUX 
+comment: 0
 ---
 
 <div dir="rtl" markdown="1">
