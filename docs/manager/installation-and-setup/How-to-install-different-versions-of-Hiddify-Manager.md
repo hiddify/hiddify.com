@@ -19,6 +19,7 @@ This version is a version after the version under development, and in fact it is
 This version is actually the final version of the software that was released after the final tests and is the most stable version possible. See this figure for a better understanding.
 
 <div align=center markdown=1>
+  
 ![install versions](https://github.com/hiddify/Hiddify-Manager/assets/125398461/6528a2c5-f938-48c3-a88f-f829d7e3a481)
 
 </div>
