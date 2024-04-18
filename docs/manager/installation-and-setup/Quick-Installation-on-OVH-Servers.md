@@ -21,6 +21,6 @@ In the video below, all the steps are described. This video is in Farsi and if y
 
 Do not forget to wait at least 10 minutes.
 
-2. Now we need to setup the domain and finalize the installation. [(visit this article)](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation)
+2. Now we need to setup the domain and finalize the installation. [(visit this article)](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/)
 
-For making the best use of this panel please view this [article](/manager/wiki/How-to-configure-Hiddify-Panel-properly).
+For making the best use of this panel please view this [article](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
