@@ -11,9 +11,9 @@ title: آموزش استفاده از اسکنر ریالتی هیدیفای
 
 #### 🛠️ نصب سمت سرور
 * ابتدا نیاز است شما هسته Xray کاستوم شده ما را روی سرور خود با استفاده از دستور زیر نصب کنید:
-</div>
 
-<div dir=ltr>
+
+<div dir=ltr markdown="1">
  
 ```
 # حذف ایکس‌ری قدیمی
@@ -33,12 +33,12 @@ systemctl start hiddify-xray
 </div>
 
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
  
 * حالا باید یک فایل کانفیگ با SNI خالی را روی پنل خود ایجاد کنید یا از کانفیگ زیر استفاده نمایید:
 </div>
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
  
 ```
 curl -o server_config.json https://raw.githubusercontent.com/hiddify/Hiddify_Reality_Scanner/main/server_config.json
@@ -52,7 +52,7 @@ echo "vless://hiddify@$(curl -4 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84
 ```
 </div>
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
 
 * سپس می‌بایست کانفیگ را با Xray مثل کامند زیر اجرا نمایید. این کار یک سرور Xray موقت برای تست ایجاد می‌کند:
 </div>
@@ -65,7 +65,7 @@ xray run -c server_config.json
 ```
 </div>
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
  
 * می‌توانید کانفیگ ریالیتی را به شکل زیر استفاده نمایید:
 </div>
@@ -77,14 +77,14 @@ vless://hiddify@SERVER_IP:11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8V
 ```
 </div>
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
  
 
 #### 🛠️ نصب سمت کلاینت
 برای سمت کلاینت کافیه از Pypi استفاده نمایید و کامند زیر را ارا نمایید:
 </div>
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
  
 ```bash
 pip install -U hiddify_reality_scanner
@@ -93,7 +93,7 @@ pip install -U hiddify_reality_scanner
 
 <br>
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
 
 ## 🚀 استفاده پایه
 جهت اجرای این اسکنر ابتدا [پایتون](https://www.python.org/downloads/) را روی سیستم خود نصب کنید، سپس یکی از دستورات زیر را روی کلاینت خود اجرا نمایید:
@@ -110,7 +110,7 @@ hiddify_reality_scanner "vless_link"
 
 > دقت شود که به جای `vless_link` می‌بایست کانفیگ ریالیتی خود را جایگزین نمایید.
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
  
 ## 🚀 استفاده پیشرفته
 * اگر بخواهید پارامترهای بیشتری را هنگام اسکن در نظر بگیرید، می‌بایست از دستور زیر روی کلاینت خود استفاده نمایید:
@@ -123,7 +123,7 @@ hiddify_reality_scanner --jobs 10 --limit 100 --sni yahoo.com,google.com "vless_
 ```
 </div>
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
 
 
 - در اینجا:
@@ -134,7 +134,7 @@ hiddify_reality_scanner --jobs 10 --limit 100 --sni yahoo.com,google.com "vless_
 * اگر بخواهید لیستی از SNIها را به اسکنر بدهید، می‌بایست از دستور زیر استفاده نمایید:
 </div>
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
  
  ```bash
 hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list "vless_link"
@@ -142,7 +142,7 @@ hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list "vless_link
 
 </div>
 
-<div dir="rtl" align="right">
+<div dir="rtl" align="right" markdown="1">
  
 - در اینجا:
   - پارامتر ` jobs 10--` تعداد اسکن همزمان را تعیین می‌کند. اگر از این پارامتر استفاده نکنید، مقدار دیفالت اسکن همزمان ۱۰ می‌باشد.
@@ -158,7 +158,7 @@ hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list "vless_link
 
 </div>
 
-<div dir=ltr>
+<div dir=ltr markdown="1">
  
 ```
 systemctl start hiddify-xray
