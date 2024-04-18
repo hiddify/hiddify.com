@@ -23,7 +23,7 @@ In the video below, all the steps of setting up the domain and subdomain are des
 
 -->
 
-<details><summary><h3>Steps of setting up domain and subdomain</h3></summary>
+<details markdown=1><summary><h3>Steps of setting up domain and subdomain</h3></summary>
 - First, go to [this site](https://freedns.afraid.org/signup/) and create an account (It does not need your real information but the email must be correct)
 
  <div align=center markdown=1>
@@ -46,6 +46,7 @@ It is better to choose domains with these extensions:
 
 - Enter your desired subdomain and the IP of your server.
 <div align=center markdown=1>
+ 
 ![224301533-6743a65d-e45f-475c-a94d-7b6c428ffd84](https://user-images.githubusercontent.com/125398461/228729855-a95334af-a87e-4668-be7e-643a4d6a0a83.png)
 </div>
  - Copy the created subdomain.
