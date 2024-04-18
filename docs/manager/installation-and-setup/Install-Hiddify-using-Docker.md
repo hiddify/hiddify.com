@@ -17,7 +17,9 @@ cd hiddify-config
 touch hiddify-panel/hiddifypanel.db
 docker-compose up -d
 ```
+
 Please note that the Docker version is still experimental and may have some bugs, please let us know about errors using [this link](https://github.com/hiddify/Hiddify-Manager/issues). 
+
 Now we need to setup the domain and finalize the installation. [(visit this article)](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/)
 
 For making the best use of this panel visit this [page](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
