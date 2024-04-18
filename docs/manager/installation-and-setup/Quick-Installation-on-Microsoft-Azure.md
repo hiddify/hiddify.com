@@ -34,6 +34,6 @@ Click on this icon <a href="https://portal.azure.com/#create/Microsoft.Template/
  And copy the proxy link from `output` section. Don't forget that this link will be deleted, so save it in a safe place
 Then open the link to display the tutorial on how to use the proxy.
 
-You can finalize the installation using [this link](/manager/wiki/Guide-for-setting-up-the-domain-and-finalizing-the-installation)
+You can finalize the installation using [this link](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/)
 
-For making the best use of this panel please view this [article](/manager/wiki/How-to-configure-Hiddify-Panel-properly).
+For making the best use of this panel please view this [article](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
