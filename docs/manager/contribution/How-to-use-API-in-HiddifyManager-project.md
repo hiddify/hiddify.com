@@ -10,7 +10,9 @@ The HiddifyManager project provides two versions of its APIs for compatibility r
 To use the APIs, authentication is required, which involves using the admin/user UUID (corresponding to the API) as a key.
 
 This key must be included in the request as the "Hiddify-API-Key" header value.
-## The version two API Structure is divided into three main sections:
+
+## API Structure version two 
+This structure is divided into three main sections:
 - Panel section, This section offers operations such as:
     - Retrieving the panel version
     - Ping with panel itself
