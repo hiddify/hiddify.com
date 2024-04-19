@@ -6,66 +6,18 @@ weight: -150
 <div dir="ltr" markdown="1">
 
 # How to configure HiddifyManager properly
-
-# Table of contents
-
-***
-* [Prerequisites](/manager/wiki/How-to-configure-Hiddify-Panel-properly#prerequisites)
-* [Getting started](/manager/wiki/How-to-configure-Hiddify-Panel-properly#getting-started)
-* [Quick installation](/manager/wiki/How-to-configure-Hiddify-Panel-properly#quick-installation)
-* [Dashboard](/manager/wiki/How-to-configure-Hiddify-Panel-properly#dashboard)
-* [Users](/manager/wiki/How-to-configure-Hiddify-Panel-properly#users)
-* [Admins](#admins)
-* [Settings](#settings)
-  - Domains
-    - Direct domain
-    - CDN domain
-    - Auto_CDN_IP domain
-    - Relay domain
-    - Fake domain
-    - Sub-only domain
-  - Proxies
-  - Other
-    - Admin settings
-    - Customizing user page
-    - General settings
-    - Proxy settings
-    - Domain Fronting
-    - Telegram proxy
-    - HTTP settings
-    - TLS settings
-    - Shadowsocks settings
-    - ShadowTLS Settings
-    - Advanced settings
-    - Very advanced settings
-    - Reality
-    - WARP
-  - Backup
-- [Actions](#actions)
-  - Status
-  - View Logs
-  - Apply Configs
-  - Update System
-  - Reinstall System
-  - Restart System
-- [Help](#help)
-
-
-***
-
-# How to configure Hiddify Panel properly
-Before starting the configuration, it is necessary to explain that this panel is not supposed to perform miracles, but it is supposed to make things related to the use of proxies easier, and for this there are some prerequisites that should be available. So if you read this article to the end; And you did the configuration correctly, but your connections were not connected, read [this topic](https://github.com.translate.goog/hiddify/hiddify-config/discussions/301).
+Before starting the configuration, it is necessary to explain that this panel is not supposed to perform miracles, but it is supposed to make things related to the use of proxies easier, and for this there are some prerequisites that should be available. So if you read this article to the end; And you did the configuration correctly, but your connections were not connected, read [this article](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/).
 
 ## prerequisites
 ### The server's IP is clean
 You have chosen a server whose IP is clean. To be sure of this issue, read how to [test the IP of server](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean). If it is determined after the test that the IP is not clean; You need to change your IP server.
 
 ### The panel is installed correctly
-You have successfully installed the panel using the methods mentioned in the [installation guide](https://github.com/hiddify/Hiddify-Manager/wiki/All-tutorials-and-videos#-contents-related-to-installation-and-setup) and you have received admin links. These links include the admin address and password. For more information about the correct format of the admin link, read [this article](/manager/wiki/The-correct-format-of-admin-link).
+You have successfully installed the panel using the methods mentioned in the [installation guide](/manager/installation-and-setup/guide/) and you have received admin links. These links include the admin address and password. For more information about the correct format of the admin link, read [this article](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/).
 
 
 ### The domain is registered and accessible
-Before configuring the panel, you must have a registered domain. If you are wondering about domain types and their registration ways, click [here](/manager/wiki/Domain-types-and-how-to-register-them). You should also make sure that the registered domain is accessible. [how to test](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean)
+Before configuring the Manager, you must have a registered domain. If you are wondering about domain types and their registration ways, click [here](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/). You should also make sure that the registered domain is accessible. [how to test](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/)
 
 ## Getting started
 * If you have used the quick installation links for famous data centers such as Vultr, OVH etc; At the end after about 10 minutes, a one-time link will be generated for you, by which you will reach the admin page.
@@ -83,7 +35,7 @@ Here is a parameter that is very critical; Enter your registered domain in the s
 
 ![](https://user-images.githubusercontent.com/125398461/236670372-500351a3-d829-4665-af29-651451f45c2d.png)
 
-Then click apply changes for saving configurations. If you face with a problem, [Go here](/manager/wiki/How-to-configure-Hiddify-Panel-properly#apply-configs). If the changes are applied successfully; The panel is almost ready to use, but it is recommended to read the following contents till the end so that you can take the maximum advantages of this panel.
+Then click apply changes for saving configurations. If the changes are applied successfully; The panel is almost ready to use, but it is recommended to read the following contents till the end so that you can take the maximum advantages of this panel.
 
 
 
@@ -140,9 +92,9 @@ There are several admin types:
 
 Note:
 
-> The admin password is also available in the admin page link, which changes the address of the panel completely. To see more information about the correct format of the admin link, click [here](/manager/wiki/The-correct-format-of-admin-link)
+> The admin password is also available in the admin page link, which changes the address of the panel completely. To see more information about the correct format of the admin link, click [here](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/)
 
-Also, on the page of all tutorials on the wiki, you can see the tutorials on how to use client apps based on the OS type [here](/manager/wiki/All-tutorials-and-videos#-contents-related-to-client-software-on-android).
+Also, on the page of all tutorials on the wiki, you can see the tutorials on how to use client apps based on the OS type [here](/manager/).
 
 
 <details><summary><h2>Settings</h2></summary>
@@ -173,7 +125,7 @@ This is a bonus tip. You can choose a domain to use as subscription only domain.
 
 After connecting `Sub-only domain` to the `Connection domains`, you can go to the user page via this sub-only domain. You see the configs are connected to this domain.
 
-Tip: We recommend using direct domains as Sub-only domains because they are fast if your server's IP is clean. Moreover direct domains wont be locked if they are used as Sub-only links. Additionally you can use PHP sites as subscription links. [More info](https://github.com/hiddify/hiddify-config/discussions/689)
+Tip: We recommend using direct domains as Sub-only domains because they are fast if your server's IP is clean. Moreover direct domains wont be locked if they are used as Sub-only links. Additionally you can use PHP sites as subscription links. [More info](/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/)
 
 </details>
 
@@ -188,58 +140,45 @@ Pay attention:
 
  >If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field. If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field. In the forced to use host field , it is suggested to use a normal domain record (without proxy). In this way, panel settings and configurations remain constant. When changing a new clean IP, it is enough to update the desired DNS record with the new IP (for example, in Cloudflare).
 
->If you need more information about how to find clean Cloudflare IPs, read [this article](/manager/wiki/Guide-for-finding-a-clean-Cloudflare-IP).
+>If you need more information about how to find clean Cloudflare IPs, read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/).
 
 >In the domain configuration display field , you can specify which domains users who view the user panel with this domain should see.
+
+> If you use several domains and also a large number of users connect to the panel and you need to assign a specific domain to each user; It is recommended to read [this article](/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/)
 
 </details>
 
 <details><summary><h4>Automatic CDN IP Selector or AUTO_CDN_IP domain</h4></summary>
-Due to the long and detailed description of this mode; You can read [this article](/manager/wiki/Guide-for-using-mode-Auto_CDN_IP-in-Hidify) to learn how to set it up.
+ 
+Due to the long and detailed description of this mode; You can read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/) to learn how to set it up.
 
 </details>
 
 <details><summary><h4>Relay domain</h4></summary>
-Click on the create button and follow the instructions on the page that opens.
-
-![](https://user-images.githubusercontent.com/125398461/236683034-66b7b5d8-8ab4-4d53-b5c2-641b92c43543.png)
-
-Note:
-
-    If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field.
-
-    In this case, there is no need to complete the forced use of host field. This field is only used for CDN domains.
-
-    In the domain configuration display field , you can specify which domains users who view the user panel with this domain should see.
+ 
+For view more information about this domain, please view [this article](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
 </details>
 
 <details><summary><h4>Fake site</h4></summary>
 
-For view more information about this domain, please view [this article](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-create-and-use-fake-domain).
-
-
-
-
-
-
-
-
-
+For view more information about this domain, please view [this article](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/).
 
 </details>
 
 <details><summary><h4>Reality domain</h4></summary>
 
-For view more information about this domain, please view [this article](/manager/wiki/How-to-use-Reality-on-Hiddify).
+For view more information about this domain, please view [this article](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
 </details>
 
 <details><summary><h4>Cloudflare worker domain</h4></summary>
-Read this [article](/manager/wiki/How-to-use-the-Cloudflare-worker-domain-on-Hiddify) in this regard
+ 
+Read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/) in this regard
+
 </details>
 
-> If you use several domains and also a large number of users connect to the panel and you need to assign a specific domain to each user; It is recommended to read [this topic]
+
 
 </details>
 
@@ -331,7 +270,7 @@ In this section, you can make specific proxy settings.
 * You can choose browser fingerprint emulation from Chrome, Android, Safari and Firefox options.
 
 #### domain Fronting
-This option is used to simulate another website instead of your website in SNI. Therefore, the filtering system cannot detect packets whose main destination is your domain, but fakely pretends to be sent to another destination, and as a result, it can be bypassed. This option may not work on all networks. [more information](/manager/wiki/Guide-for-domain-fronting)
+This option is used to simulate another website instead of your website in SNI. Therefore, the filtering system cannot detect packets whose main destination is your domain, but fakely pretends to be sent to another destination, and as a result, it can be bypassed. This option may not work on all networks. [more information](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
 
 <img width="581" src="https://user-images.githubusercontent.com/125398461/236684655-3d8c0123-c66a-44ae-8e83-599b8f8720da.png">
 
@@ -419,7 +358,7 @@ In this section, there are configurations that are needed by a few users and are
 ### Very advanced settings
 In this section, you can set the proxy path.
 
-<img width="614" alt="Screen Shot 1402-02-17 at 14 38 59 copy" src="https://user-images.githubusercontent.com/125398461/236685035-9d878767-98fb-464d-8a99-0f056352c0e5.png">
+<img width="614" alt="Very advanced settings" src="https://user-images.githubusercontent.com/125398461/236685035-9d878767-98fb-464d-8a99-0f056352c0e5.png">
 
 
 
@@ -429,7 +368,7 @@ This is especially important when you use proxies with lower security (http and 
 This is done automatically by the panel, but you can change it if you want
 
 #### WARP
-If you need to get some information related to enabling WARP on Hiddify, read [this link](/manager/wiki/How-to-activate-WARP-on-the-Hiddify-panel).
+If you need to get some information related to enabling WARP on Hiddify, read [this link](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/).
 
 #### Reality
 For view more information about this protocol, please view [this article](/manager/wiki/How-to-use-Reality-on-Hiddify).
@@ -523,7 +462,7 @@ After performing this operation, because the system will be restarted once; The 
 
 
 ## Help
-Through [this link](/manager/wiki/All-tutorials-and-videos), you will have access to categorized content and all tutorials and videos.
+Through [this link](/manager/), you will have access to categorized content and all tutorials and videos.
 
 
 
