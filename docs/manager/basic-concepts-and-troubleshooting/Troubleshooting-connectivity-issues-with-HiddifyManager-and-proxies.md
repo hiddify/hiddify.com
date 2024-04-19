@@ -3,6 +3,13 @@ title: Troubleshooting connectivity issues with HiddifyManager and proxies
 ---
 
 # Troubleshooting connectivity issues with HiddifyManager and proxies
+Why don't my connections connect even though HiddifyManager is installed?
+
+Or, what is the story behind this that it connects with One ISP but does not connect with other one, for example?
+
+Follow this article to the end to answer these questions.
+
+
 As mentioned in the preliminaries of HiddifyManager configuration installation, there are several reasons for this issue:
 
 > 1. IP or domain is blocked.
