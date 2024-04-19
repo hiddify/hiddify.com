@@ -48,3 +48,7 @@ This key must be included in the request as the "Hiddify-API-Key" header value.
 To learn more about each API, its inputs, and outputs, please refer to the API section within the HiddifyManager panel.
 
 In conclusion, HiddifyManager's version two API offers a wide range of features and functionality to make managing your panel, admins, users, and more as seamless and efficient as possible.
+
+
+[!NOTE]
+There is a possibility of endpoint or input/output changes in the API, and developers should familiarize themselves with API-related guidelines through updates and changes of HiddifyManager.
