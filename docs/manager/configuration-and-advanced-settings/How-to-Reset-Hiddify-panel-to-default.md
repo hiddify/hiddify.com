@@ -6,7 +6,7 @@ weight: -80
 <div dir="ltr" markdown="1">
 
 # How to Reset HiddifyManager to default
-In this article, we are going to teach how to raw the Hiddify panel (complete reset of the panel and database) similar to the initial installation. If you intend to return the Hiddify panel to its initial settings, this tutorial is prepared for you. Follow these steps to the end.
+In this article, we are going to teach how to raw the HiddifyManager (complete reset of the panel and database) similar to the initial installation. If you intend to return the Hiddify panel to its initial settings, this tutorial is prepared for you. Follow these steps to the end.
 
 * To begin, first [SSH into your server](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 * Then, by using the combination keys `Ctrl+c` or selecting the `Cancel` button, close the Hidیify menu to access the terminal (command line environment) of your server.
