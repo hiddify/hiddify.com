@@ -25,7 +25,7 @@ In the video below, all the steps are described in full detail. This video is in
 
 - Now copy the following code
 
-{% include 'cloud_init.yml' %}
+{% include 'cloud-init.yml' %}
 
 - Put the above code in the place shown in the picture and click on `CREATE & BUY NOW` button. 
 <div align=center markdown=1>

@@ -18,7 +18,7 @@ weight: -65
 
 ۲. کد زیر را کپی کنید.
 
-{% include 'cloud_init.yml' %}
+{% include 'cloud-init.yml' %}
 
 ۳. در قسمت سرور تیک گزینه Enable Cloud-Init User-Data را بزنید و کد کپی شده را در آن قرار دهید. پس از حداکثر ۱۰ تا ۱۵ دقیقه پروکسی شما فعال خواهد بود.
 

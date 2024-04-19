@@ -17,7 +17,7 @@ weight: -55
 <div dir="ltr" markdown="1">
   
 
-{% include 'cloud_init.yml' %}
+{% include 'cloud-init.yml' %}
 
 
 </div>

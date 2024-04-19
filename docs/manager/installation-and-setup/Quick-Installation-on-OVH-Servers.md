@@ -16,7 +16,7 @@ In the video below, all the steps are described. This video is in Farsi and if y
 1. copy the following code:
 
 
-{% include 'cloud_init.yml' %}
+{% include 'cloud-init.yml' %}
 
 
 Do not forget to wait at least 10 minutes.

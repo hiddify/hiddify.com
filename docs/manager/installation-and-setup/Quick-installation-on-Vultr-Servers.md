@@ -23,7 +23,7 @@ For using Vultr site and services please use VPN Connection if you live in count
 
 2. Copy the code below.
 
-{% include 'cloud_init.yml' %}
+{% include 'cloud-init.yml' %}
 
 
 3. In the server section, check the Enable Cloud-Init User-Data option and put the copied code in it. After a maximum of 10 to 15 minutes, your proxy will be active.
