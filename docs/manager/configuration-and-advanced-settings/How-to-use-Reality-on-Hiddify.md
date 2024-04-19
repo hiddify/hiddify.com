@@ -9,7 +9,7 @@ weight: -140
 # How to use Reality on HiddifyManager
 Reality is one of the new protocols provided by Xray, which does not have the prerequisites of the previous protocols. This protocol is based on Vless and therefore cannot be used for Vmess or Trojan. On Hiddify, the emphasis is still on simplification, so most of the work is done behind the scenes.
 
-* Very important point: because this protocol is based on TCP, it does not support CDN, so it can only be used in direct or rail modes, and for this reason, it needs a server with a clean IP. If you need information on how to test the server, refer to [this link](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean).
+* Very important point: because this protocol is based on TCP, it does not support CDN, so it can only be used in direct or rail modes, and for this reason, it needs a server with a clean IP. If you need information on how to test the server, refer to [this link](https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/).
 
 
 ## Reality setup in settings
@@ -17,6 +17,7 @@ If you go to the panel settings page and enter the Reality settings, you will se
 </div>
 
 <div align=center markdown=1>
+  
 ![](https://github.com/hiddify/hiddify-config/assets/125398461/854639a1-01a3-48d8-be28-1d85b715d6dc)
 
 </div>
@@ -44,6 +45,7 @@ Here, set the mode to reality so that you can make specific settings related to 
 
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/233787191-cd855014-0ab2-4872-bce2-05d1ae705082.png)
 
 </div>
@@ -61,7 +63,7 @@ If you want, enter a custom name to display in the configs.
 ## Reality Server Names
 The server name used to simulate the destination of your traffic. You can choose one or more sites from the list on the review page. To use multiple sites, use `,` . Finally, suppose that the sites `www.yahoo.com` and `www.microsoft.com` are in your data center and have a good test result; Put these addresses in this field and leave a comma between them.
 
-To learn how to use multiple server names or SNI, read [this article](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-use-subdomains-of-a-website-in-Reality).
+To learn how to use multiple server names or SNI, read [this article](/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/).
 
 ## gRPC
 Turn on this button if you need to use gRPC in this protocol.
@@ -80,12 +82,14 @@ Yellow messages may be given as a result of the server checking your completed f
 - That is, you cannot set the return domain to `www.yahoo.com` , but the server name is `www.google.com`. But if you put the name of the server as `blog.yahoo.com`, it is ok.
 
 <div align=center markdown=1>
+  
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/2cf9e13b-8091-4a95-ac30-d5a3f9106a58" />
 </div>
 
 Considering the above, it is better to make the settings so that these messages do not appear, but if you did not receive an error message (red) and only received warning messages (yellow warning); You can ignore them and move on.
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/235890855-5b159244-1e83-4eaf-97d5-fef455168911.png)
 </div>
 
@@ -104,6 +108,7 @@ If you still don't see these connections in the configuration list despite activ
 </div>
 
 <div align=center markdown=1>
+  
 ![](https://github.com/hiddify/hiddify-config/assets/125398461/9269f0ee-78af-4db6-a75d-64ea01f527fc)
 
 
