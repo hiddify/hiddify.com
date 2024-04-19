@@ -16,7 +16,7 @@ weight: -85
 ***
 
 
-بعد از [نصب اسکریپت](/manager/wiki/Home_fa/#%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D9%86%D8%B5%D8%A8)؛ باید نصب را نهایی کنید. این کار در ۳ مرحله به انجام می رسد. 
+بعد از [نصب اسکریپت](/fa/manager/installation-and-setup/guide/)؛ باید نصب را نهایی کنید. این کار در ۳ مرحله به انجام می رسد. 
 ابتدا باید یک دامنه ثبت نمایید
 
 
@@ -36,14 +36,14 @@ weight: -85
 * ابتدا وارد [این سایت](https://freedns.afraid.org/signup/?plan=starter) شوید و یک اکانت بسازید (لازم نیست که اطلاعاتتان واقعی باشد فقط ایمیل باید درست باشد)
 
 <div align=center markdown=1>
-![221342760-12dc14ed-9a19-45f3-a3f1-bf7d3f969792](https://user-images.githubusercontent.com/125398461/224300370-52b9a063-9265-4ff1-83e7-23970b6a4ecf.png)
+<img src="https://user-images.githubusercontent.com/125398461/224300370-52b9a063-9265-4ff1-83e7-23970b6a4ecf.png">
 </div>
 <div dir="rtl" markdown=1>
 * ایمیلی که به شما ارسال شده را فعال کنید.
 * وارد اکانت ساخته شده شوید و روی [این لینک](https://freedns.afraid.org/domain/registry/) کلیک کنید و یکی از دامین های پابلیک را انتخاب کنید. 
 </div>
 <div align=center markdown=1>
-![Screenshot_20230330_081052](https://user-images.githubusercontent.com/125398461/228731969-b673137a-680e-44ba-a50e-a2156bfae822.png)
+<img src="https://user-images.githubusercontent.com/125398461/228731969-b673137a-680e-44ba-a50e-a2156bfae822.png">
 </div>
 
 
@@ -55,7 +55,7 @@ weight: -85
 </div>
 
 <div align=center markdown=1>
-![221343189-1fe98d0d-7f05-4639-9b51-fb6926f76f2b](https://user-images.githubusercontent.com/125398461/224301533-6743a65d-e45f-475c-a94d-7b6c428ffd84.png)
+<img src="https://user-images.githubusercontent.com/125398461/224301533-6743a65d-e45f-475c-a94d-7b6c428ffd84.png">
 </div>
 
 
@@ -65,7 +65,7 @@ weight: -85
 <div dir="rtl" markdown=1>
 * زیر دامنه ایجاد شده را کپی کنید.
 
-> این مراحل صرفا برای دامنه دایرکت بود اگر می خواهید درباره نحوه ثبت دامنه های مختلف بدانید؛ [اینجا](/manager/wiki/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%AB%D8%A8%D8%AA-%E2%80%8C%D8%A2%D9%86%E2%80%8C%D9%87%D8%A7) کلیک کنید.
+> این مراحل صرفا برای دامنه دایرکت بود اگر می خواهید درباره نحوه ثبت دامنه های مختلف بدانید؛ [اینجا](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/) کلیک کنید.
 
 
 </div>
@@ -76,7 +76,7 @@ weight: -85
  
 ## ۲. رسیدن به صفحه ادمین بعد از نصب اسکریپت
 
- شما به ۲ حالت [نصب اولیه](/manager/wiki/Home_fa/#%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D9%86%D8%B5%D8%A8) یعنی مرحله اسکریپت را انجام داده اید؛ 
+ شما به ۲ حالت [نصب اولیه](fa/manager/installation-and-setup/guide/) یعنی مرحله اسکریپت را انجام داده اید؛ 
 
 > یا از طریق اسکریپت نصب سریع در دیتاسنترهای معروف (cloud-init) جلو رفته اید؛
 
@@ -140,7 +140,7 @@ weight: -85
 
 ![222660316-6a770a0d-d6f0-453b-b1bd-59e340d26b27](https://user-images.githubusercontent.com/125398461/224301379-cb1a7c97-17b8-4a01-b3eb-b3a4d63a365a.png)
 
-دکمه ثبت را بزنید و سپس اعمال تغییرات را کلیک کنید تا تغییرات در پنل ذخیره گردند. در صورت بروز مشکل به [اینجا](/manager/wiki/نحوه-پیکربندی-پنل-هیدیفای#%D8%A7%D8%B9%D9%85%D8%A7%D9%84-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1%D8%A7%D8%AA) بروید. اگر تغییرات با موفقیت اعمال شد؛ پنل تقریبا آماده استفاده است. 
+دکمه ثبت را بزنید و سپس اعمال تغییرات را کلیک کنید تا تغییرات در پنل ذخیره گردند. در صورت بروز مشکل به [اینجا](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) بروید. اگر تغییرات با موفقیت اعمال شد؛ پنل تقریبا آماده استفاده است. 
 
 ## رسیدن به کانفیگ‌ها جهت اتصال به پروکسی
 
@@ -162,7 +162,7 @@ weight: -85
 
 > پیشنهاد می‌شود:
 
- * جزییات بیشتر را در مطالبی که در مطلب [پیکربندی پنل](/manager/wiki/%D9%86%D8%AD%D9%88%D9%87-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-%D9%BE%D9%86%D9%84-%D9%87%DB%8C%D8%AF%DB%8C%D9%81%D8%A7%DB%8C) نوشته شده مطالعه نمایید تا بتوانید حداکثر کارایی را از این پنل داشته باشید
+ * جزییات بیشتر را در مطالبی که در مطلب [پیکربندی پنل](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) نوشته شده مطالعه نمایید تا بتوانید حداکثر کارایی را از این پنل داشته باشید
 
 
 </div>
