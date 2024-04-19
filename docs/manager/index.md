@@ -339,6 +339,11 @@ In this page, we put categorized content of tutorials and documents related to H
 
 
     <div class="hidden">
+    <li>
+        <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-Proxies/">
+        Troubleshooting connectivity issues with HiddifyManager and Proxies
+        </a>
+        </li>
         <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/">
         How to setup Firewall on HiddifyManager
