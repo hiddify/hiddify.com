@@ -7,7 +7,7 @@ weight: -145
 
 # How to connect and troubleshoot via SSH
 
-<details><summary><h1>Prerequisite: Installing ssh on Windows</h1></summary>
+<details markdown="1"><summary><h1>Prerequisite: Installing ssh on Windows</h1></summary>
 - If your client is Windows; You can use Powershell. First, if you haven't installed the OpenSSH module yet; Open PowerShell with admin access, that is, right-click PowerShell and click Run as Administrator.
 
 ![image](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
@@ -43,7 +43,7 @@ ssh root@1.1.1.1
 ```
 After connecting to the server, the panel menu will be shown like this.
 
-![](https://user-images.githubusercontent.com/125398461/230082495-f2b63ae0-7129-4384-b356-e3c6a94459d6.png)
+![Hiddify-Manager](https://github.com/hiddify/hiddify.com/assets/125398461/5b3b47fb-4437-4388-b22d-0d2df6359620)
 
 For more information, each part will be explained separately.
 
@@ -57,14 +57,14 @@ bash /opt/hiddify-config/menu.sh
 ## Status
 This menu is used to know the status of the system, if everything is normal, the result should be displayed like this.
 
-![Screenshot_20230304_111551](https://user-images.githubusercontent.com/125398461/222884460-e8f2a7fd-5b24-4c2f-93a4-c4b184f2df78.png)
+![Status](https://github.com/hiddify/hiddify.com/assets/125398461/bb5072e7-635b-486e-9dce-024b8479adb8)
 
 To return to the main menu, you must press the `q` key.
 
 ## Admin
 This section displays admin links. If you need these links for any reason, use this option.
 
-![Screenshot_20230304_112037](https://user-images.githubusercontent.com/125398461/222898931-e5cf9dfb-e0f0-4d61-8541-f5db6888c682.png)
+![Admin](https://github.com/hiddify/hiddify.com/assets/125398461/d15fb764-45b4-40ec-84f2-7dc0ea134f13)
 
 Press a key to return to the main menu.
 
@@ -74,11 +74,11 @@ Most used:
 ## Log
 Used to view system logs. After selecting it, you must also select the desired log type.
 
-![Screenshot_20230304_111751](https://user-images.githubusercontent.com/125398461/222884675-918601fc-223a-4786-9a45-7287fbb526a6.png)
+![Log](https://github.com/hiddify/hiddify.com/assets/125398461/4fa52e34-1f2a-4378-ae1a-881dc81e1269)
 
 For example, if we want to see the logs related to the installation, we can choose the `install-log` option.
 
-![Screenshot_20230304_111851](https://user-images.githubusercontent.com/125398461/222884949-50a22e73-3b77-4962-8042-498104dbcf78.png)
+![0-install.log](https://github.com/hiddify/hiddify.com/assets/125398461/6a980bbf-9d7a-4ef6-aa92-7a4bfeeb34e3)
 
 Here, the installation logs are displayed as above, at the end of which the system status and admin links are displayed.
 
@@ -88,7 +88,7 @@ Most used:
 # Restart
 This option resets all panel services without changing the settings.
 
-![Screenshot_20230304_111723](https://user-images.githubusercontent.com/125398461/222884596-1b8cc61e-619b-4729-b6dd-acd4deb57195.png)
+![Restart](https://github.com/hiddify/hiddify.com/assets/125398461/d0caf625-9f09-4543-bc22-ae3843bf289a)
 
 You can return to the main menu by pressing any of the buttons on the keyboard.
 
@@ -98,7 +98,7 @@ Most used:
 ## Apply Configs
 This section is used to apply saved settings. After selecting it, the panel will start resetting the values.
 
-![Screenshot_20230304_111935](https://user-images.githubusercontent.com/125398461/222897786-8173ae47-bcf5-43e7-999c-c0598383b6dc.png)
+![Apply Configs](https://github.com/hiddify/hiddify.com/assets/125398461/76446e31-8efd-4d0e-84b9-a1358887a027)
 
 Press any key to return to the main menu.
 
@@ -108,7 +108,7 @@ Most used:
 ## Update
 This option is used to update the system. If you select that panel, it will be updated to the latest version available on the project's GitHub. There are three options here as follows.
 
-![Screenshot_20230405_160338](https://user-images.githubusercontent.com/125398461/230083991-e90d579a-5301-49f3-ae5c-645ae5cb6d18.png)
+![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
 
 ### Default
 By selecting this option, the program will be updated according to the setting of the web panel.
@@ -119,25 +119,22 @@ By selecting this option, the program will be updated to the latest development 
 
 In all three cases, you will see something like this in the terminal.
 
-![Screenshot_20230304_112008](https://user-images.githubusercontent.com/125398461/222898474-0d72f442-f19a-40a9-9f35-fcad96807fc4.png)
+![Develop](https://user-images.githubusercontent.com/125398461/222898474-0d72f442-f19a-40a9-9f35-fcad96807fc4.png)
 
 Most used:
 > > > If you lost access during the update through the panel.
 
-## Install
-If you need to reinstall the system, use this option. At the end, the system status and admin links are displayed.
 
-![Screenshot_20230304_111851](https://user-images.githubusercontent.com/125398461/222899750-3392fdde-95b0-4101-9e94-365c3c5c1eb7.png)
-
-To return to the main menu, you must press the `q` key.
-
-Most used:
-> > > If during installation one of the scripts is not executed correctly and the panel does not open.
-
-### Submenu
+### Advanced
 This submenu contains several options.
 
-![Screenshot_20230405_160357](https://user-images.githubusercontent.com/125398461/230084850-c874bcb2-1843-46fb-8b9d-0ae271165dad.png)
+![advanced](https://github.com/hiddify/hiddify.com/assets/125398461/61336508-2dbf-43d8-893c-8d9adbdf3a51)
+
+### add_remote
+This option is for when you want to send access to [Hiddifybot](https://t.me/hiddifybot)
+
+### remove_remote
+By using this option you can remove SSH access sent to the [bot](https://t.me/hiddifybot)
 
 ### Enable
 This option is for when you have previously disabled the display of this window and want to re-enable its automatic display at server startup.
