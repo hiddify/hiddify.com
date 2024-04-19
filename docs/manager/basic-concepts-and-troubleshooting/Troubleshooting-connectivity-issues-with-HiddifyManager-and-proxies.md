@@ -1,8 +1,8 @@
 ---
-title: Troubleshooting connectivity issues with HiddifyManager and Proxies
+title: Troubleshooting connectivity issues with HiddifyManager and proxies
 ---
 
-# Troubleshooting connectivity issues with HiddifyManager and Proxies
+# Troubleshooting connectivity issues with HiddifyManager and proxies
 As mentioned in the preliminaries of HiddifyManager configuration installation, there are several reasons for this issue:
 
 > 1. IP or domain is blocked.
