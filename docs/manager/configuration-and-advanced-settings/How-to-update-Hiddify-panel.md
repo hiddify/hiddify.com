@@ -30,8 +30,7 @@ If you need to change the update mode, you can choose one of the `Release`, `Bet
 
 <div align=center markdown=1>
   
-![update mode](https://github.com/hiddify/Hiddify-Server/assets/125398461/dd430784-7e78-4dd3-b549-67f653c02f45)
-
+![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
 
 </div>
 
