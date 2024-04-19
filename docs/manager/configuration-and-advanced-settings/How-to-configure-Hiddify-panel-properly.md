@@ -6,7 +6,7 @@ weight: -150
 <div dir="ltr" markdown="1">
 
 # How to configure HiddifyManager properly
-Before starting the configuration, it is necessary to explain that this panel is not supposed to perform miracles, but it is supposed to make things related to the use of proxies easier, and for this there are some prerequisites that should be available. So if you read this article to the end; And you did the configuration correctly, but your connections were not connected, read [this topic](https://github.com.translate.goog/hiddify/hiddify-config/discussions/301).
+Before starting the configuration, it is necessary to explain that this panel is not supposed to perform miracles, but it is supposed to make things related to the use of proxies easier, and for this there are some prerequisites that should be available. So if you read this article to the end; And you did the configuration correctly, but your connections were not connected, read [this article](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/).
 
 ## prerequisites
 ### The server's IP is clean
