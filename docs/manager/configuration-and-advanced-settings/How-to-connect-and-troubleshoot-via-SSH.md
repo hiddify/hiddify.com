@@ -5,7 +5,6 @@ weight: -145
 
 <div dir="ltr" markdown="1">
 
-# How to connect and troubleshoot via SSH
 
 <details markdown="1"><summary><h1>Prerequisite: Installing ssh on Windows</h1></summary>
 - If your client is Windows; You can use Powershell. First, if you haven't installed the OpenSSH module yet; Open PowerShell with admin access, that is, right-click PowerShell and click Run as Administrator.
