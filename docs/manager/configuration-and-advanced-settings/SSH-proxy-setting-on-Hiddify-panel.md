@@ -45,5 +45,5 @@ Now, if you go to your user page in the panel, you will see that the SSH configu
 
 </div>
 
-To use this proxy in the client, you must currently use the SingBox app, which is explained in [this tutorial]/manager/client-software-on-ios/Tutorial-for-SingBox-app/?h=sing).
+To use this proxy in the client, you must currently use the SingBox app, which is explained in [this tutorial](/manager/client-software-on-ios/Tutorial-for-SingBox-app/).
 
