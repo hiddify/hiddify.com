@@ -29,8 +29,8 @@ If you need to change the update mode, you can choose one of the `Release`, `Bet
 
 
 <div align=center markdown=1>
-  
-![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
+
+![update mode](https://github.com/hiddify/Hiddify-Server/assets/125398461/dd430784-7e78-4dd3-b549-67f653c02f45)
 
 </div>
 
@@ -57,7 +57,7 @@ Connect via [SSH to the server](/manager/installation-and-setup/How-to-connect-t
 
 <div align=center markdown=1>
 
-![](https://user-images.githubusercontent.com/125398461/230083991-e90d579a-5301-49f3-ae5c-645ae5cb6d18.png)
+![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
 
 </div>
 
