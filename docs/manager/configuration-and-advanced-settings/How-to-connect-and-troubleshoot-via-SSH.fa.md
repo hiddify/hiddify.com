@@ -36,7 +36,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 در این حالت نیاز است ابتدا به سرور ssh بزنید.
 برای این کار:
 با توجه به سیستم عامل خود یکی از برنامه های زیر را باز کنید
-- اندروید: `termius`
+- اندروید: `Termius`
 - ویندوز: `PowerShell,PuTTY`
 - مک: `Terminal`
 - لینوکس : `Terminal` 
