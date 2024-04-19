@@ -419,6 +419,11 @@ weight: -2
     </li>
 
     <div class="hidden">
+     <li>
+        <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/">
+        عیب‌یابی مشکلات اتصال با هیدیفای‌منیجر و پراکسی‌ها
+        </a>
+    </li>
     <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/">
         آموزش تنظیم فایروال در هیدیفای‌منیجر
