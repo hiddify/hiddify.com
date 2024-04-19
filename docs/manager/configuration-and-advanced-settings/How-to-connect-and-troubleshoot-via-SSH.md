@@ -31,7 +31,8 @@ If for any reason access to the panel is not available through the web or your a
 In this case, you need to ssh to the server first.
 for this job:
 According to your operating system, open one of the following programs
-- Windows: `PowerShell`
+- Android: `Termius`
+-  Windows: `PowerShell`
 - Mac: `Terminal`
 - Linux: `Terminal`
 
