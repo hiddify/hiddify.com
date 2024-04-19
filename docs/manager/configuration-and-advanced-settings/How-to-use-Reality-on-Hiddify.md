@@ -117,3 +117,4 @@ If you still don't see these connections in the configuration list despite activ
 
 Suppose your subscription domain is `t1.hiddify.com` and your realty domain is `google.com`. You need to go to the `t1.hiddify.com` domain settings and in `Show Configs of Domains` field; Check the `google.com` domain. Now if you open your subscription link on the `t1.hiddify.com` domain; You will see that there are Reality configs.
 
+</div>
