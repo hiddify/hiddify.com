@@ -339,7 +339,7 @@ In this page, we put categorized content of tutorials and documents related to H
 
 
     <div class="hidden">
-    <li>
+        <li>
         <a target="_blank" href="/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/">
         Troubleshooting connectivity issues with HiddifyManager and proxies
         </a>
