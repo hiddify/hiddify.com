@@ -89,7 +89,7 @@ As always in HiddifyManager, it is better to separate the configs from the subsc
 
 Assuming that the subscription domain is `sublink.hiddify.com`, proceed as shown below to get the job done.
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230">
+<img src="https://github.com/hiddify/hiddify.com/assets/125398461/e9fa3756-bb3a-4ee9-8adb-77a9f58f6354">
 
 Now, if you open the user page with the subscription domain (here `sublink.hiddify.com`), you will see that the connections related to the `relay server` have also been added. You can add and use these connections individually or using subscription links to your client.
 
