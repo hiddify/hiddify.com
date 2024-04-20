@@ -11,6 +11,7 @@ title: How to setup Firewall on HiddifyManager
 Firewall refers to software or hardware that prevent access to computers or servers and control the traffic exchanged in the network. A firewall is actually a security tool that can be a software program or a dedicated network device. Here we are dealing with software firewall on Linux servers.
 
 <div align=center markdown=1>
+  
 ![How Firewall works](https://github.com/hiddify/hiddify-config/assets/125398461/2b7c93f0-b868-43c6-8e89-60b36ddb6fb8)
 
 </div>
@@ -27,6 +28,7 @@ By default, Hiddify turns on and controls the system firewall. For example, if y
 The settings related to the firewall panel can be accessed from the `Settings` section, in the `General Settings` section.
 
 <div align=center markdown=1>
+  
 ![Firewall settings](https://github.com/hiddify/hiddify-config/assets/125398461/0a3dce3a-0658-4ecd-887e-bd74c74fea1a)
 
 </div>
@@ -35,7 +37,7 @@ Very important advice: Do not turn off the firewall panel. Turning off the firew
 
 ## Manual configuration of server firewall
 
-- If you need to open the port manually, `SSH` to your server first. If you don't know how to `SSH`, [see this tutorial](/manager/wiki/How-to-connect-to-server-via-SSH).
+- If you need to open the port manually, `SSH` to your server first. If you don't know how to `SSH`, [see this tutorial](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 
 - After `SSH` connection, you enter the `Hiddify menu`. Here, exit this menu by pressing `Cancel` or `ctrl+c` to enter the terminal. If the menu is still displayed after this, type the word `clear` and enter.
 
@@ -55,6 +57,7 @@ iptables -A INPUT -p tcp --destination-port 1234 -j ACCEPT
 * Although it is not recommended  to open the `ICMP` protocol in terms of security, if you want to provide access to ping or `ICMP` packets; Just run the following command.
 
 <div dir=ltr markdown=1>
+  
 ```
 iptables -A INPUT -p ICMP -j ACCEPT
 ```
@@ -63,6 +66,7 @@ iptables -A INPUT -p ICMP -j ACCEPT
 * Use the following command to drop the `ICMP ` protocol.
 
 <div dir=ltr markdown=1>
+  
 ```
 iptables -A INPUT -p icmp -j DROP
 ```
