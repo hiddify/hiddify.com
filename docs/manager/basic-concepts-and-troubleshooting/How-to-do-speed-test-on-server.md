@@ -10,7 +10,7 @@ In some cases, it is necessary to conduct a speed test on the server to check th
 
 ## The first method: install and test through the speedtest script
 
-- To start, first [SSH to your server](/manager/wiki/How-to-connect-to-server-via-SSH), then use the combination keys `ctrl+c` or select the `Cancel` button to exit the Hiddify menu to access the terminal (command line environment) of your server.
+- To start, first [SSH to your server](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/), then use the combination keys `ctrl+c` or select the `Cancel` button to exit the Hiddify menu to access the terminal (command line environment) of your server.
 
 > If the `Hiddify menu` is still displayed after completing the previous steps, type the word `clear` and press enter.
 
@@ -37,6 +37,7 @@ speedtest
 * When you run the program for the first time, the terms and conditions of use, as well as the data collected by the `Speedtest` website, will appear in the form of two messages, for each of which you should enter `yes` as confirmation.
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/243765156-b897f426-e9d6-4f26-b9fb-9e46f6def820.jpg)
 
 </div>
@@ -52,6 +53,7 @@ speedtest
 
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/243765887-054e65db-1f12-428b-b9e9-359a69e99044.jpg)
 
 </div>
@@ -64,6 +66,7 @@ speedtest --servers
 
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/243766293-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.jpg)
 
 </div>
@@ -75,6 +78,7 @@ speedtest --server-id=ID
 ```
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/243768284-a319cf89-3ed7-4ea5-90dd-0170cd5926c8.jpg)
 </div>
 
@@ -87,6 +91,7 @@ wget -qO- bench.sh | bash
 ```
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/243768459-b0815e0e-6348-4c0b-9f82-1ae5e6c53646.jpg)
 
 </div>
