@@ -61,10 +61,11 @@ Why is it that even though the above test was without problems when buying the s
 Here we get acquainted with a concept called `the yellow list`.
 
 <div align=center markdown=1>
+  
 <img width=40% src="https://github.com/hiddify/hiddify-config/assets/125398461/242a64b6-8075-4892-bb0f-de13b158a33a" />
 </div>
 
 IPs that have already been used and detected by the filtering system; They are placed in the red list and filtered. Now, when they do not have traffic for a while, they are placed in the yellow list. As soon as their traffic picks up again, they get blocked or slowed down again.
 
 ## Final point
-Consider a small point. When you install the Hiddify panel, the firewall is turned on by default for added security. Here you should use `tcping` or `http` test to test the IP health, Or turn off the firewall temporarily and do a normal ping test. [More information about configuring the server firewall](/manager/wiki/How-to-setup-Firewall-on-Hiddify-panel)
+Consider a small point. When you install the Hiddify panel, the firewall is turned on by default for added security. Here you should use `tcping` or `http` test to test the IP health, Or turn off the firewall temporarily and do a normal ping test. [More information about configuring the server firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
