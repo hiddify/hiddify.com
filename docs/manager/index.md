@@ -467,7 +467,7 @@ In this page, we put categorized content of tutorials and documents related to H
         <img src="/assets/HiddifyClashAndroid_Tutorial_en.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=5AQgbCwHujk" target="_blank">
-        <img src="//assets/V2rayNG_Tutorial_en.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
+        <img src="/assets/V2rayNG_Tutorial_en.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
     </a>
     <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM" target="_blank">
         <img src="/assets/V2flyng_Tutorial_en.png" alt="image" class="rounded-xl w-[184px] h-[103px]">
