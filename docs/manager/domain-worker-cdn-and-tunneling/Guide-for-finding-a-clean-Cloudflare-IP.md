@@ -29,7 +29,7 @@ This program has been released in several versions including Linux and Windows. 
 To do this, first download the desired version [here](https://github.com/MortezaBashsiz/CFScanner) and then follow how to run it based on the desired operating system.
 
 
-<details><summary><h3>Run on Linux version</h3> (Click here)</summary>
+<details markdown="1"><summary><h3>Run on Linux version</h3> (Click here)</summary>
 
 Download the program files and first see Mr. Bashsiz's explanation of how to run it in the video below (persian).
 
@@ -80,9 +80,10 @@ Finally, the test result is placed in the `result` folder, which you can view an
 
 </details>
 
-<details><summary><h3>Run on Windows version</h3> (Click here)</summary>
+<details markdown="1"><summary><h3>Run on Windows version</h3> (Click here)</summary>
 
-<details><summary><h4>Prerequisites</h4></summary>
+<details markdown="1"><summary><h4>Prerequisites</h4></summary>
+	
 First, there must be prerequisites that will be explained in order:
 
 - Download the Windows scanner app from [the project's GitHub](https://github.com/MortezaBashsiz/CFScanner/tree/main/windows)
@@ -387,12 +388,7 @@ Now suppose you have completed the prerequisites; All you need is the config fil
 * **Suggestion:** You can set the software to scan the entire default IP range once. For the next time, you can just scan this output (with higher accuracy), you will probably get a better result. Also, if you take an upload test, you will probably get a better result. All this depends on your efforts and creativity.
 
 </details>
-<br>
-<br>
 
-***
-<br>
-<br>
 
 ## Using Vahid Farid's scanner
 This program has been prepared in different versions based on different platforms that you can use according to your needs.
@@ -402,7 +398,9 @@ Versions available until the date of editing this article:
 * Windows
 * Android
 * Web
-<details><summary><h3>Prerequisites</h3></summary>
+  
+<details markdown="1"><summary><h3>Prerequisites</h3></summary>
+	
 - First, [download Python](https://www.python.org/downloads/) according to your operating system.
 - Download the compressed file of the code [here](https://github.com/vfarid/cf-ip-scanner-py) and then extract it.
 - Now you need to install requests.
@@ -413,7 +411,8 @@ pip install requests
 
 </details>
 
-<details><summary><h3>Run the program</h3></summary>
+<details markdown="1"><summary><h3>Run the program</h3></summary>
+	
 - Open the terminal program to run in the extracted folder. That is, for example, in Windows, enter the program folder and `Shift+Right click` and then click `Open in Command Prompt` to enter the terminal from that folder. 
 
 - Now type the following command to run the program.
@@ -452,12 +451,7 @@ python start.py
 
 </details>
 
-<br>
-<br>
 
-***
-<br>
-<br>
 
 ## Using Safa Safarian's scanner
 This scanner has been developed in several versions that you can use according to your needs.
@@ -467,9 +461,10 @@ Versions available until the date of editing this article:
 - Mac
 - Android
 
-<details><summary><h3>Script installation</h3></summary>
+<details markdown="1"><summary><h3>Script installation</h3></summary>
 
-<details><summary><h4>Windows</h4></summary>
+<details markdown="1"><summary><h4>Windows</h4></summary>
+	
 * First, download Python from [this link](https://www.python.org/downloads/windows/).
 * When installing Python, don't forget to check pip installation and add Python to PATH.
 * Download the [original compressed scanner](https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/heads/main.zip) file and extract it.
@@ -484,7 +479,7 @@ pip install -r ./requirements.txt
 
 </details>
 
-<details><summary><h4>Android</h4></summary>
+<details markdown="1"><summary><h4>Android</h4></summary>
 
 - To install on the Android operating system, you need a program called Termux, which you can download [here](https://github.com/termux/termux-app/releases/).
 - Here you will come across several apk files from which you should select one based on your device type. If you do not know the type of your Android device, download and install armeabi-v7a version.
@@ -518,7 +513,7 @@ pip install -r ./requirements.txt
 
 
 
-<details><summary><h3>Run the script</h3></summary>
+<details markdown="1"><summary><h3>Run the script</h3></summary>
 
 - With the following command, the program starts.
 
@@ -547,22 +542,17 @@ This scanning model practically simulates a proxy connection by creating a Vmess
 
 
 
-<br>
-<br>
 
-***
-<br>
-<br>
 
 ## What to do after finding a clean IP?
 After finding a clean IP; You can register it with a DNS record without . That is, create a subdomain on Cloudflare. Turn off the proxy and enter the IP.
 
 ![PICTURE](https://user-images.githubusercontent.com/125398461/234565984-a2560018-7106-421f-850d-fb9db5687b26.png)
 
-If you need more information about the domain, [click here](/manager/wiki/Domain-types-and-how-to-register-them).
+If you need more information about the domain, [click here](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
 
 
-Then in the Hiddify panel, you can put it in the CDN domain settings in the `Force to use host field in the CDN configuration`. [More details](/manager/wiki/How-to-configure-Hiddify-Panel-properly#cdn-domain)
+Then in the HiddifyManager, you can put it in the CDN domain settings in the `Force to use host field in the CDN configuration`. [More details](/manager/wiki/How-to-configure-Hiddify-Panel-properly#cdn-domain)
 
 ![Screenshot_20230427_0656192](https://user-images.githubusercontent.com/125398461/234752684-280b90e8-0b00-4106-b744-b06117821b0f.png)
