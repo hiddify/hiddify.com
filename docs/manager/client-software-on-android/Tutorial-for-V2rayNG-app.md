@@ -6,7 +6,7 @@ title: Tutorial for V2rayNG app
 
 # Tutorial for V2rayNG app
 
-This app is a good app to connect to Xray based configs and replace [HiddifyNG](/manager/wiki/Tutorial-for-HiddifyNG-app) app.
+This program is a relatively good app for connecting to Xray-based configurations, but it is recommended to use the [HiddifyNG](/manager/wiki/Tutorial-for-HiddifyNG-app) alternative app. app.
 
 ## Download the app
 To do this, enter the `HiddifyNG` section in your user panel and then open the `Alternative V2rayNG` and click on `Direct Download` to download the program.
