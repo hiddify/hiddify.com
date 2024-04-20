@@ -37,28 +37,3 @@ It is a TCP traffic control algorithm that helps reduce the speed when noise is 
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
