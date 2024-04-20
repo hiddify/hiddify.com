@@ -75,9 +75,9 @@ sudo systemctl restart sshd
 
 ### Step 5: Additional Security Measures
 
-- Consider changing the SSH port from the default (port 22) to a non-standard port to reduce the chance of automated attacks. [read more ...](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-change-SSH-port-on-your-server)
+- Consider changing the SSH port from the default (port 22) to a non-standard port to reduce the chance of automated attacks. [read more ...](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
 - Regularly update your server and SSH software.
-- Set up a firewall and limit access to necessary ports only. [read more ...](https://github.com/hiddify/Hiddify-Manager/wiki/How-to-setup-Firewall-on-Hiddify-panel)
+- Set up a firewall and limit access to necessary ports only. [read more ...](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
 - Monitor login attempts and set up intrusion detection systems.
 
 By following these steps, you should have successfully disabled SSH password authentication, enhancing the security of your server. Just ensure you have a backup method (like key-based authentication) set up to avoid being locked out.
