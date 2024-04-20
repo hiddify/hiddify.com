@@ -33,7 +33,7 @@ In the image below, as you can see, the list of servers displayed corresponds to
 
 
 ### 2. Browserleaks.com website
-After entering the [DNS Leakage Test] (https://browserleaks.com/dns) section, the website will automatically start evaluating and display the results after the evaluation.
+After entering the [DNS Leakage Test](https://browserleaks.com/dns) section, the website will automatically start evaluating and display the results after the evaluation.
 
 In the image below, like the previous site, the list of servers displayed corresponds to the DNS servers of the server provider and the location of our VPN server. So as a result we don't have DNS leak.
 
