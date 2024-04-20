@@ -31,5 +31,5 @@ You can also use a PHP site for the subscription link, in which case the schemat
 ![php sub link schematic](https://github.com/hiddify/hiddify-config/assets/125398461/0eb1634e-f6b9-4f67-86ae-9bc8d239a7b4)
 
 
-For its tutorial, go [here](https://github-com.translate.goog/hiddify/hiddify-config/discussions/689?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp).
+For its tutorial, go [here](/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/).
 
