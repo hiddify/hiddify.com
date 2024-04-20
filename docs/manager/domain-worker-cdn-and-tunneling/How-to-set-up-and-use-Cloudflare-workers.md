@@ -18,7 +18,7 @@ The purpose here is to hide the domain behind the workers.
 To use a Worker you need to have an active domain on the Cloudflare.
 
 ## Domain and subdomain registration on Cloudflare
-Here you need a purchased domain and you need to register it in the Cloudflare. If you have any ambiguity about the domain and how it is registered; Read [this](/manager/wiki/Domain-types-and-how-to-register-them).
+Here you need a purchased domain and you need to register it in the Cloudflare. If you have any ambiguity about the domain and how it is registered; Read [this](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
 Sign in to your account in your account according to the description of how to register your domain.
 
@@ -39,6 +39,7 @@ After registering a sub domain, you must change certificate settings.
 Set the certificate setting of your domain to `Full`.
 
 <div align=center markdown=1>
+   
 ![](https://user-images.githubusercontent.com/125398461/235835085-8d9c9ea5-16f2-4782-bfa2-4cc010d7367c.png)
 </div>
 
@@ -128,6 +129,7 @@ Workers in the free plan only processes 100,000 requests per day, so this servic
 
 
 <div align=center markdown=1>
+   
 ![](https://user-images.githubusercontent.com/125398461/235835675-e454ba05-29ad-4b53-9cf9-f23f4c225ef6.png)
 
 
