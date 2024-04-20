@@ -17,11 +17,12 @@ Because IP version 6 has a wide range, it is much harder to filter than IP versi
 Just enter the general settings in the panel settings and activate the `IP version 4 only` option.
 
 <div align=center markdown=1>
+  
 <img src="https://github.com/hiddify/hiddify-config/assets/125398461/6f2d4977-6e79-4849-9d10-0c765051306c" />
 </div>
 
 ## How to disable IP version 6 via SSH
-* If for any reason you need to turn off IP version 6 via SSH, [connect to your server via SSH](/manager/wiki/How-to-connect-to-server-via-SSH), and exit the Hiddify menu with `ctrl+c`.
+* If for any reason you need to turn off IP version 6 via SSH, [connect to your server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/), and exit the Hiddify menu with `ctrl+c`.
 
 * Open the system settings file with nano text editor.
 
