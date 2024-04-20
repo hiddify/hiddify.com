@@ -8,7 +8,7 @@ title: How to use wildcard subdomains on HiddifyManager
 # How to use wildcard subdomains on HiddifyManager
 
 ## Wildcard domain registration on Cloudflare
-First, create a `*` record on your registered domain on Cloudflare. That is, go to the DNS section and click `Add record`. Then enter a star in the opened page. Fill the field type as A and the value of the IP field with the IP of your server. Make sure the proxy tick is on. That is, if, for example, your domain is `yourdomain.com`, finally register a field `*.yourdomain.com`. [More information on how to register a domain](/manager/wiki/Domain-types-and-how-to-register-them)
+First, create a `*` record on your registered domain on Cloudflare. That is, go to the DNS section and click `Add record`. Then enter a star in the opened page. Fill the field type as A and the value of the IP field with the IP of your server. Make sure the proxy tick is on. That is, if, for example, your domain is `yourdomain.com`, finally register a field `*.yourdomain.com`. [More information on how to register a domain](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
 
 ![image](https://user-images.githubusercontent.com/125398461/235923115-6eaa6bdd-3032-4a9b-aa98-f2fbd8ec4001.png)
 
@@ -24,7 +24,7 @@ To do this, go to the domain settings and create a new domain. Create a CDN or A
 
 * Give the alias a name of your choice.
 
-* Select the mode from CDN or AutoCDN. The difference between CDN domain and AutoCDN is in the way the address field is applied in the configuration, CDN returns the domain name and AutoCDN returns the IP. [More information on this](/manager/wiki/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify)
+* Select the mode from CDN or AutoCDN. The difference between CDN domain and AutoCDN is in the way the address field is applied in the configuration, CDN returns the domain name and AutoCDN returns the IP. [More information on this](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
 
 ![Screenshot_20230503_164s956](https://user-images.githubusercontent.com/125398461/235928869-3b740a41-ffc0-479a-97a5-65a40ac9de34.png)
 
