@@ -17,7 +17,7 @@ Follow the links below to download the program.
 
 ## Add SSH proxy to the app
 
-- First, read [this article](/manager/wiki/SSH-proxy-setting-on-Hiddify-panel) to learn how to activate this proxy.
+- First, read [this article](/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/) to learn how to activate this proxy.
 - Then go to the Profiles menu in the app.
 <div align=center markdown=1>
 <img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/816fbc46-21c2-4109-b2c9-3d9529a5a0ce" />
