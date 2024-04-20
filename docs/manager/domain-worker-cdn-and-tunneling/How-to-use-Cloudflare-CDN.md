@@ -9,7 +9,7 @@ title: How to use Cloudflare CDN
 Cloudflare is the largest provider of CDN services, which has several services that can be used to bypass Internet restrictions. The most important services are explained below.
 
 ## Site or domain service
-It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain).
+It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/).
 
 ### Direct domain registration purchased on Cloudflare
 First, you register using [this link](https://dash.cloudflare.com/signup).
@@ -103,10 +103,10 @@ To do this, go to the SSL/TLS section of the Cloudflare site. A graph is display
 ![PICTURE](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
 
 ## Worker service
-To see details about this service, read [this article](/manager/wiki/How-to-set-up-and-use-Cloudflare-workers).
+To see details about this service, read [this article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/).
 
 ## Domain fronting service
-To see details about this service, read [this article](/manager/wiki/Guide-for-domain-fronting).
+To see details about this service, read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/).
 
 This service is currently disabled in Cloudflare.
 
@@ -135,6 +135,7 @@ After that, it is possible to send `WebSocket` packets from the client to Cloudf
 This service is based on HTTP/3 and works with TLS1.3. That's why it's so fast because its handshake is much faster than TCP.
 
 <div align=center markdown=1>
+  
 <img width="60%" alt="http-request-over-quic" src="https://github.com/hiddify/hiddify-config/assets/125398461/5793c28e-7785-4ea5-998d-9695cc11b341" />
 
 </div>
