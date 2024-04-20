@@ -5,7 +5,7 @@ title: How to use AutoCDN IP domain
 <div dir="ltr" markdown="1">
 
 
-# Guide for using mode Auto_CDN_IP on Hiddify
+# How to use AutoCDN IP domain
 As you know, one of the constant concerns of users when using Cloudflare cdn; Finding clean IPs everyday. We have previously provided tutorials in this regard, which were a step-by-step guide to finding these IPs. You can see it from this link. Many times it is not possible to find these IPs for many reasons. We also provided a solution to solve this problem.
 
 The auto_cdn_ip feature was created to solve this problem for you. Read the description carefully to learn how to set this feature.
@@ -19,7 +19,7 @@ To do this, go to the domains menu and click the create button. The following pa
 In the following, each part will be explained according to the numbers above.
 
 ## 1. Domain
-Here you enter your subdomain registered in Cloudflare. It is necessary to explain that the proxy must be turned on. If you need more information about domain registration, see [this link](/manager/wiki/Domain-types-and-how-to-register-them).
+Here you enter your subdomain registered in Cloudflare. It is necessary to explain that the proxy must be turned on. If you need more information about domain registration, see [this link](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
 ## 2. Alias
 Using this field you can choose a custom name for this domain. Make sure that the chosen name is not already registered for other domains in the panel. It is better to use standard font characters (letters and numbers) for this field.
