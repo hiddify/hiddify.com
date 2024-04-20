@@ -36,7 +36,7 @@ weight: -150
 قبل از شروع به پیکربندی، لازم به توضیح است که این پنل قرار نیست معجزه انجام دهد بلکه قرار است کارهای مربوط به استفاده از پروکسی‌ها را راحت‌تر انجام دهد و برای این کار پیش‌نیازهایی لازم است که می‌بایست فراهم باشند. بنابراین اگر این مقاله را تا انتها مطالعه نمودید؛ و پیکربندی را به صورت صحیح انجام دادید ولی کانکشن‌های شما وصل نشدند، [این تاپیک](https://github.com/hiddify/Hiddify-Manager/discussions/301) را مطالعه فرمایید. 
 
 
-<details><summary><h2>پیش‌نیازها</h2></summary>
+<details markdown="1"><summary><h2>پیش‌نیازها</h2></summary>
 
 فرض بر این است:
 
@@ -77,7 +77,7 @@ weight: -150
 ![](https://user-images.githubusercontent.com/125398461/236671492-9ffc4521-ea2a-4fcb-bfd9-c071ac5a3d4d.png)
 
 
-<details><summary><h2>کاربران</h2></summary>
+<details markdown="1"><summary><h2>کاربران</h2></summary>
 
 در این بخش از پنل شما می‌توانید برای کاربران خود اکانت تعریف نمایید. روی دکمه ایجاد کلیک نمایید.
 ![Screenshot_20230301_104714](https://user-images.githubusercontent.com/125398461/222073827-5c19f60c-7c84-420b-8d5c-0c73321f0269.png)
@@ -105,7 +105,7 @@ weight: -150
 
 </details>
 
-<details><summary><h2>ادمین‌ها</h2></summary>
+<details markdown="1"><summary><h2>ادمین‌ها</h2></summary>
 در این بخش شما می‌توانید برای پنل ادمین تعریف کنید.
 
 ![](https://user-images.githubusercontent.com/125398461/236642587-ab5ef0d0-54f6-4402-8fdc-089cbe13db0f.png)
@@ -129,13 +129,13 @@ weight: -150
 </details>
 
 
-<details><summary><h2>تنظیمات</h2></summary>
+<details markdown="1"><summary><h2>تنظیمات</h2></summary>
 
-<details><summary><h3>دامنه‌ها</h3></summary>
+<details markdown="1"><summary><h3>دامنه‌ها</h3></summary>
 
 برای افزودن دامنه‌های خود به منوی دامنه‌ها بروید. در اینجا ۵ حالت وجود دارد.
 
-<details><summary><h4>دامنه مستقیم یا بدون واسطه یا دایرکت</h4></summary>
+<details markdown="1"><summary><h4>دامنه مستقیم یا بدون واسطه یا دایرکت</h4></summary>
 
  روی دکمه ایجاد کلیک کنید. در صفحه باز شده مطابق با شکل عمل نمایید.
 
@@ -157,7 +157,7 @@ weight: -150
 </details>
 
 
-<details><summary><h4>دامنه فقط برای لینک ساب یا Sub-only</h4></summary>
+<details markdown="1"><summary><h4>دامنه فقط برای لینک ساب یا Sub-only</h4></summary>
 این یک نکته مهم است. شما می توانید دامنه‌ای را برای استفاده به عنوان دامنه لینک‌های اشتراک انتخاب کنید. به این ترتیب می توانید اتصالات را از لینک های اشتراک جدا کنید و ارتباط شما هرگز مسدود نخواهد شد. سپس لینک‌های شما می توانند همیشه به روز شوند.
 
 ![](https://user-images.githubusercontent.com/125398461/236686616-dc4eca99-be6a-4f8e-92cf-20fb4eb341e3.png)
@@ -170,7 +170,7 @@ weight: -150
 </details>
 
 
-<details><summary><h4>دامنه سی‌دی‌اِن CDN</h4></summary>
+<details markdown="1"><summary><h4>دامنه سی‌دی‌اِن CDN</h4></summary>
 
 روی دکمه ایجاد کلیک کنید و در صفحه باز شده مطابق با شکل عمل نمایید.
 
@@ -188,13 +188,13 @@ weight: -150
 
 </details>
 
-<details><summary><h4>دامنه انتخاب‌کننده آیپی CDN به صورت خودکار یا Auto_CDN_IP</h4></summary>
+<details markdown="1"><summary><h4>دامنه انتخاب‌کننده آیپی CDN به صورت خودکار یا Auto_CDN_IP</h4></summary>
 
 به دلیل جزییات زیاد و طولانی بودن توضیحات این حالت؛ برای مطالعه چگونگی انجام تنظیمات آن می توانید [این مقاله](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/) را مطالعه کنید.
 
 </details>
 
-<details><summary><h4>دامنه سرور میانی یا Relay</h4></summary>
+<details markdown="1"><summary><h4>دامنه سرور میانی یا Relay</h4></summary>
 
 
 ه دلیل جزییات زیاد و طولانی بودن توضیحات این حالت؛ برای مطالعه چگونگی انجام تنظیمات آن می توانید [این مقاله](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) را مطالعه کنید.
@@ -203,7 +203,7 @@ weight: -150
 
 </details>
 
-<details><summary><h4>دامنه گمراه‌کننده یا Fake</h4></summary>
+<details markdown="1"><summary><h4>دامنه گمراه‌کننده یا Fake</h4></summary>
 
 
 برای مطالعه جزییات و نحوه تنظیم این دامنه [این مقاله](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/) را مطالعه فرمایید.
@@ -218,13 +218,13 @@ weight: -150
 
 </details>
 
-<details><summary><h4>دامنه ریالیتی</h4></summary>
+<details markdown="1"><summary><h4>دامنه ریالیتی</h4></summary>
 
 برای مطالعه جزییات و نحوه تنظیم این دامنه [این مقاله](/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/) را مطالعه فرمایید.
 
 </details>
 
-<details><summary><h4>دامنه ورکر کلودفلر</h4></summary>
+<details markdown="1"><summary><h4>دامنه ورکر کلودفلر</h4></summary>
 
 جهت استفاده از این دامنه [این مقاله](/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/) را مطالعه نمایید.
 
@@ -235,7 +235,7 @@ weight: -150
 
 </details>
 
-<details><summary><h3>پروکسی‌ها</h3></summary>
+<details markdown="1"><summary><h3>پروکسی‌ها</h3></summary>
 در این بخش از پنل شما می‌توانید تنظیمات عمومی و دقیق برای پروکسی‌ها را مشخص نمایید و هر کدام از آنها را فعال یا غیر فعال کنید.
 تنظیمات عمومی شامل موارد زیر است:
 
@@ -249,7 +249,7 @@ weight: -150
 
 </details>
 
-<details><summary><h3>سایر</h3></summary>
+<details markdown="1"><summary><h3>سایر</h3></summary>
 
 #### تنظیمات ادمین
 در اینجا تنظیمات مربوط به ادمین قرار دارند.
@@ -423,7 +423,7 @@ weight: -150
 
 </details>
 
-<details><summary><h2>اقدامات</h2></summary>
+<details markdown="1"><summary><h2>اقدامات</h2></summary>
 
 در این منو یک ترمینال شبیه‌سازی شده نمایش داده می‌شود که از طریق آن مجموعه‌ای از اقدامات مرتبط با نگهداری، عیب‌یابی و نصب پنل قابل انجام است. 
 
