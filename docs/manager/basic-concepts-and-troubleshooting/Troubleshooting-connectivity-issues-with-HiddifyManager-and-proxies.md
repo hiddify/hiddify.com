@@ -34,12 +34,4 @@ If you have been able to connect from another device, on the same server and the
 - [You can use CDN](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
 - [You can use Relay](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
 - [Use the Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
-
-
-# Related content link for this solution
-
-> [1. How to make sure the server's IP or domain is clean](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/)
-> 
-> [2. How to find a clean Cloudflare IP](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/)
-> 
-> [3. Domain types and how to register them](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+  
