@@ -5,21 +5,22 @@ title: How to monitor server resources on HiddifyManager
 <div dir="ltr" markdown="1">
 
 
-# How to monitor server resources on Hiddify
+# How to monitor server resources on HiddifyManager
 Many times you need to check the status of your server's CPU and RAM resources. For example, when there is a regiment. For this purpose, you can monitor these resources in several ways.
 
-## Using the dashboard section in the panel
+## Using the dashboard section in the Manager
 
 To know the status of your CPU and RAM usage, go to the dashboard section in the Hiddify panel. Here, various and useful information about the status of system resources as well as network card traffic information and online users can be seen in an integrated manner.
 
 <div align=center markdown=1>
+  
 ![dashboard](https://github.com/hiddify/hiddify-config/assets/125398461/0e3c9cd4-ea9b-4e0e-83a6-425f4fdc212c)
 </div>
 
 ## Resource control using the htop tool
 One of the tools that can be used to control resources in Linux servers is htop.
 
-- First, connect via [SSH to the server](/manager/wiki/How-to-connect-to-server-via-SSH).
+- First, connect via [SSH to the server](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 
 - and exit Hiddify menu by clicking `Cancel` or pressing `ctrl+c` keys at the same time. If the menu is still displayed after this, type the command `clear` and enter.
 
@@ -38,6 +39,7 @@ htop
 ```
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/243195292-38c5ab1f-8fed-49c9-9455-04c7a7e83917.jpg)
 
 </div>
@@ -58,12 +60,12 @@ From this program, you can see the consumption of your server resources by each 
 bash /opt/hiddify-config/menu.sh
 
 ```
-- Select the `restart` option using the arrow keys (up and down) and wait until the services are restarted and exit the [Hiddify menu](/manager/wiki/How-to-connect-and-troubleshoot-via-SSH) again and check `htop`.
+- Select the `restart` option using the arrow keys (up and down) and wait until the services are restarted and exit the [Hiddify menu](/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/) again and check `htop`.
 
 ## Free up RAM memory
 RAM memory is actually a temporary memory whose space is occupied by running services. Part of the memory is occupied by the operating system itself.
 
-The amount of RAM is not directly related to the number of users on the panel. No matter how many users are defined in the panel, a series of services must be running in order for the operating system and peripheral services to work. Therefore, the number of users on the panel does not have a direct and linear relationship with the amount of RAM, but the running services have a direct relationship with the amount of RAM used.
+The amount of RAM is not directly related to the number of users on the Manager. No matter how many users are defined in the Manager, a series of services must be running in order for the operating system and peripheral services to work. Therefore, the number of users on the Manager does not have a direct and linear relationship with the amount of RAM, but the running services have a direct relationship with the amount of RAM used.
 
 The operating system is always in charge of managing the server's resources, and if the RAM in your server is filled up to 80%, it is a completely normal thing and you should not worry.
 
@@ -77,7 +79,7 @@ sync && systemctl -w vm.drop_caches=3
 > Be sure to log in as the root user and then execute this command.
 
 ## Hard disk management
-- In addition to Hiddify panel dashboard that displays the status of the hard disk, the following command can also be used in the terminal.
+- In addition to HiddifyManager dashboard that displays the status of the hard disk, the following command can also be used in the terminal.
 
 ```
 df -h --total
@@ -86,6 +88,7 @@ df -h --total
 whose output is as follows.
 
 <div align=center markdown=1>
+  
 ![](https://user-images.githubusercontent.com/125398461/248637861-f3552ab5-a105-40b5-8210-65487903c6ba.png)
 
 </div>
