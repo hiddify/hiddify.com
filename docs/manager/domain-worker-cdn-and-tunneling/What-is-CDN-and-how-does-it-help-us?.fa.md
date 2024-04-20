@@ -18,6 +18,7 @@ title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-07_20-03-37](https://github.com/hiddify/hiddify-config/assets/125398461/d0e44fdf-b494-4881-ad99-13d5824a9f83)
 </div>
 
@@ -27,6 +28,7 @@ title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-07_20-04-15](https://github.com/hiddify/hiddify-config/assets/125398461/09f0c5f3-e5d0-41c6-81da-ac3e016ebc6b)
 
 </div>
@@ -35,6 +37,7 @@ title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 
 
 <div align=center markdown=1>
+  
 ![244136935-16868a83-6991-43f2-9969-1802801eb12f](https://github.com/hiddify/hiddify-config/assets/125398461/bc5757b6-001a-4b08-a678-5264fe60e51b)
 
 </div>
@@ -44,10 +47,12 @@ title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-07_20-04-54](https://github.com/hiddify/hiddify-config/assets/125398461/0705bdaf-2e9a-4f3a-9c76-e966d5b2db6c)
 </div>
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-07_20-05-11](https://github.com/hiddify/hiddify-config/assets/125398461/fa4c2070-3d9c-4e04-9fce-46d3bf501998)
 
 </div>
@@ -56,10 +61,12 @@ title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 همچنین برای درک بهتر چگونگی کاهش پینگ و جیتر و افزایش سرعت در حالت استفاده از سی‌دی‌ان، اقدام به بررسی مسیر طی شده پکت‌ها `Tracing Route` کردیم. تصاویر زیر گویای این مسأله‌ است که در هنگام استفاده از CDN مسیر دسترسی به سرور بسیار کوتاه‌تر شده، به‌طوری که در این مثال پکت‌ها در حالت مستقیم از ۱۰ روتر بیشتر عبور می‌کنند و همین مسئله باعث تاخیر بیشتر و کاهش سرعت و عملکرد آن می‌باشد.
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-07_20-05-37](https://github.com/hiddify/hiddify-config/assets/125398461/a257a199-b7f7-48a5-8734-2364c9338326)
 </div>
 
 <div align=center markdown=1>
+  
 ![photo_2023-06-07_20-05-46](https://github.com/hiddify/hiddify-config/assets/125398461/ebca35d6-0ffa-4ec1-8bf7-87fda03aed7c)
 </div>
 
@@ -67,3 +74,9 @@ title: سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
 حال ممکن است این سوال برایتان پیش بیاید که با این وجود چرا نهادهای دولتی اقدام به فیلترینگ کامل کلادفلر نکرده‌اند و اختلالات دیگری در آیپی‌های تحت نظر آن اعمال شده است؟ لازم به ذکر است کلادفلر یکی از بزرگترین و بی‌نظیرترین شبکه‌های توزیع محتوا در جهان است که خدمات و ابزارهای زیادی را در اختیار کاربران قرار می‌دهد. بسیاری از وب‌سایت‌ها و سرویس دهنده‌های ایرانی نیز از خدمات آن استفاده می‌کنند و در صورت فیلتر شدن کامل کلادفلر، دسترسی به بخش عظیمی از خدمات و سرویس‌های ایرانی نیز مسدود می‌شود. به همین دلیل نهادهای نظارتی از طریق روشهای دیگر برای ایجاد اختلال بر روی این بستر اقدام می‌کنند.
 
 
+# آموزش ثبت دامنه در CDNهای معروف
+- [آموزش استفاده از CDN Cloudflare](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/)
+- [آموزش استفاده از CDN GCore](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/)
+- [آموزش استفاده از CDN Amazon](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/)
+
+  </div>
