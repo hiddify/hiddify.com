@@ -6,17 +6,18 @@ title: How to use Cloudflare worker domain on HiddifyManager (Automated way)
 
 
 # How to use Cloudflare worker domain on HiddifyManager (Automated way)
-Previously, in an [article](/manager/wiki/How-to-set-up-and-use-Cloudflare-workers), it was taught how to add Cloudflare workers to the panel. To make it easier to work in version 7, the worker domain was introduced as a separate domain. Follow this article till the end to get familiar with this domain.
+Previously, in an [article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/), it was taught how to add Cloudflare workers to the panel. To make it easier to work in version 7, the worker domain was introduced as a separate domain. Follow this article till the end to get familiar with this domain.
 
 ## Add Cloudflare API token
 
-For this, you first need to create a Cloudflare development token or key and then add it to the panel. [Follow this article](/manager/wiki/Get-Cloudflare-API).
+For this, you first need to create a Cloudflare development token or key and then add it to the panel. [Follow this article](/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/).
 
 
 ## Add the worker domain to the panel
 Enter the panel `Settings` and click on `Create` in the `Domains` section.
 
 <div align=center markdown=1>
+  
 ![Screenshot_20230531_143400](https://github.com/hiddify/hiddify-config/assets/125398461/1d3d5365-7598-47fb-8ff1-2fdd44e6c328)
 
 </div>
@@ -32,7 +33,7 @@ In this section, choose the domain name you want for the Worker so that this nam
 If you want, you can choose a name to display in the configs.
 
 ### Force Config to Use Following IPs
-In this field, if needed, you can put your Cloudflare clean IPs or use IRCF clean IPs. If you need more information on how to enter IPs in this field, read this [topic](https://github-com.translate.goog/hiddify/hiddify-config/discussions/2009?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp).
+In this field, if needed, you can put your Cloudflare clean IPs or use IRCF clean IPs. If you need more information on how to enter IPs in this field, read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/).
 
 Finally, click Save to save the settings. Then click `Apply Changes`.
 
@@ -41,6 +42,7 @@ As you probably know, it is recommended that the subscription link be separated 
 
 
 <div align=center markdown=1>
+  
 ![Screenshot_20230531_142541-2](https://github.com/hiddify/hiddify-config/assets/125398461/d40edd3b-1a13-45c4-94e1-e285f28e236a)
 
 </div>
