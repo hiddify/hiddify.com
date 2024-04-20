@@ -1,4 +1,4 @@
----
+![235283674-400d9213-029a-429b-9985-699c0bd40ba3](https://github.com/hiddify/hiddify.com/assets/125398461/0e817e62-ef6c-47fb-a6e2-9703e2cc52c1)---
 title: How to use GCore CDN
 ---
 
@@ -31,11 +31,11 @@ As you probably know, in order to use the HiddifyManager optimally, you need to 
 
 6. In this step, enter the domain you have registered in Cloudflare along with the desired subdomain.
 
-![](https://user-images.githubusercontent.com/125398461/235283639-ef21b5ba-5efd-48d5-a852-7aa8050b4316.jpg)
+![](https://github.com/hiddify/hiddify.com/assets/125398461/c206f237-3b9c-411a-9e22-9a7ff048e9ff)
 
 7. Then enter your server's IP and click on `Add` button.
 
-![](https://user-images.githubusercontent.com/125398461/235283674-400d9213-029a-429b-9985-699c0bd40ba3.jpg)
+![](https://github.com/hiddify/hiddify.com/assets/125398461/2766aadb-eef5-4b14-b6d5-c9543fc0f0d7)
 
 8. In the next step, click on `Confirm` again.
 
@@ -71,11 +71,11 @@ As you probably know, in order to use the HiddifyManager optimally, you need to 
 
 16. Now copy the domain that is in the `CDN Integration` section.
 
-![](https://user-images.githubusercontent.com/125398461/235284138-6355a421-a7da-46c8-803a-b4b65cdc8fb1.jpg)
+![](https://github.com/hiddify/hiddify.com/assets/125398461/fe33cf16-40a4-4782-b4c3-229768ebde86)
 
 17. Now log in to your Cloudflare account, enter your domain settings and register a `CNAME` record in the DNS section using the domain you copied in the previous section.
 
-![17](https://user-images.githubusercontent.com/125398461/235284172-560987a3-8528-497a-89c9-58927fddc327.jpg)
+![17](https://github.com/hiddify/hiddify.com/assets/125398461/519004ac-c33e-4489-a224-47cc9d35b3b1)
 
 18. Go your dashboard on the GCore site again and in the CDN section, after making sure it is Active, click on the domain on your domain.
 
@@ -97,6 +97,6 @@ As you probably know, in order to use the HiddifyManager optimally, you need to 
 
 22. Now we can use this subdomain as a CDN domain in HiddifyManager.
 
-![](https://user-images.githubusercontent.com/125398461/235284966-63477444-51d0-45dd-be27-2307f43df54f.jpg)
+![](https://github.com/hiddify/hiddify.com/assets/125398461/73d6e924-9a5a-444a-88d1-07c0ef06623c)
 
 * Final and important point: Don't forget that CDN GCore has a limit of 1000 GB in the free plan.
