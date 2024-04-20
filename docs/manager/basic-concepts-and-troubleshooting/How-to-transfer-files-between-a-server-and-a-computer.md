@@ -22,6 +22,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 ```
 
 <div align=center markdown=1>
+  
 <img src="https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png" />
 </div>
 
@@ -30,13 +31,14 @@ Add-WindowsCapability -Online -Name OpenSSH.Client
 To be able to see the list of backup files on the server, first SSH to the server and run the following command.
 
 ```
-ls /opt/hiddify-config/hiddify-panel/backup
+ls /opt/Hiddify-Manager/hiddify-panel/backup
 ```
 
 The output of this command is as follows.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" />
+  
+<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" />
 </div>
 
 Select one of the backup files to transfer.
@@ -49,7 +51,7 @@ Use this command in the terminal.
 For example, if the user of your server is `root` and its IP is `1.1.1.1`, you want to remove the backup panel file from your server and enter it into the `Backup` folder in the `C` drive of your system, in this case you must enter the following command.
 
 ```
-scp root@1.1.1.1:/opt/hiddify-config/hiddify-panel/backup/2023_05_06__06_00_03.json "C:\Backup"\
+scp root@1.1.1.1:/opt/Hiddify-Manager/hiddify-panel/backup/2023_05_06__06_00_03.json "C:\Backup"\
 ```
 
 The work is done. The desired file was copied to the Backup folder.
@@ -58,12 +60,12 @@ The work is done. The desired file was copied to the Backup folder.
 For this, suppose your server user is `root` and its IP is `1.1.1.1`. Also suppose that the `text.txt` file is located in `C:\File` and you want to transfer it to the server. In this case, use the following command.
 
 ```
-scp "C:\File\text.txt" root@1.1.1.1:/opt/hiddify-config
+scp "C:\File\text.txt" root@1.1.1.1:/opt/Hiddify-Manager
 ```
 In this case, the `text.txt` file will be copied on the server in the desired path and you can view it with the following command.
 
 ```
-ls /opt/hiddify-config
+ls /opt/Hiddify-Manager
 ```
 ## Using the web to transfer files
 
