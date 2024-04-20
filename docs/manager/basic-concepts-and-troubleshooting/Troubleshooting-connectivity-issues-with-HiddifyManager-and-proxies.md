@@ -29,11 +29,11 @@ If you have been able to connect from another device, on the same server and the
 
 
 # Ways to solve the problem
-- Find a healthy IP
-- Use a new domain
-- You can use CDN
-- [You can use Relay](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
-- Use the Fake domain
+- [Find a clean IP](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/)
+- [Use a new domain](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [You can use CDN](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [You can use Relay](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [Use the Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
 
 
 # Related content link for this solution
