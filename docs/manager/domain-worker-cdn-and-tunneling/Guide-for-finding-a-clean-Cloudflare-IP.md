@@ -10,7 +10,7 @@ Here, if you also use CDN Cloudflare services; You will be affected by these dis
 
 Here are some ways of working for this issue. 
 
-Tip:
+> [TIP!]
 > Before starting, it is emphasized that all these tests must be done on the client system without connecting to VPN.
 
 
