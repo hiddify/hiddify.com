@@ -2,7 +2,7 @@
 title: How to use API in HiddifyManager project
 ---
 
-<div dir="ltr" markdown="1">
+
     
 # How to use API in HiddifyManager project
 
@@ -58,4 +58,3 @@ In conclusion, HiddifyManager's version two API offers a wide range of features 
 >
 > There is a possibility of endpoint or input/output changes in the APIs, and developers should familiarize themselves with API-related guidelines through updates and changes of HiddifyManager.
 
-</div>
