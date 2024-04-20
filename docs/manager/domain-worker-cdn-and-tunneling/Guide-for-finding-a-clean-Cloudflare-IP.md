@@ -13,17 +13,7 @@ Here are some ways of working for this issue.
 Tip:
 > Before starting, it is emphasized that all these tests must be done on the client system without connecting to VPN.
 
-**Tables of contents:**
-- [Using Bashsiz scanner](#using-bashsizs-scanner)
-- [Using Farid scanner](#using-vahid-farids-scanner)
-- [Using Safarian scanner](#using-safa-safarians-scanner)
-- [What to do after finding a clean IP](#what-to-do-after-finding-a-clean-ip)
-<br>
-<br>
 
-***
-<br>
-<br>
 
 ## Using Bashsiz's scanner
 Mr. Bashsiz is an Iranian engineer who has developed a program called CFScanner, which can be used to test the list of Cloudflare IPs on different networks and reach the clean Cloudflare IPs.
