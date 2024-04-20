@@ -11,7 +11,7 @@ Open one of the following based on your operating system.
 
 - First, go to [here](https://git-scm.com/download/win) and download the version for Windows.
 - Then unzip the downloaded file and install it.
-<div align=center>
+<div align=center markdown="1">
 
 ![location-git-windows-download](https://github.com/hiddify/Hiddify-Manager/assets/125398461/cd883726-f340-441c-bbca-df98f0389de2)
 
@@ -19,7 +19,7 @@ Open one of the following based on your operating system.
 
 - Then follow the installation wizard until the end with next and yes. It is recommended not to change the default settings.
 
-<div align=center>
+<div align=center markdown="1">
 
 ![read-and-accept-git-license-agreement](https://github.com/hiddify/Hiddify-Manager/assets/125398461/c8220a90-4f88-451f-ac60-ca6280feef20)
 
@@ -109,7 +109,7 @@ git clone https://github.com/hiddify/Hiddify-Manager.git
 ```
 
 
-For other repositories in the same way, it is enough to enter the repository and click on ``Code'' and in the ``Local'' tab, copy the address placed in ``HTTPS'' and put it in the above command.
+For other repositories in the same way, it is enough to enter the repository and click on `Code` and in the `Local` tab, copy the address placed in `HTTPS` and put it in the above command.
 
 <div align=center>
 
@@ -125,7 +125,7 @@ For other repositories in the same way, it is enough to enter the repository and
 
 </div>
 
-- Now you have to create a branch of the project to work on it. To do this, first choose a name for the branch. For example, suppose we choose the name of the branch ``Hiddify-develop''. Now run the following commands.
+- Now you have to create a branch of the project to work on it. To do this, first choose a name for the branch. For example, suppose we choose the name of the branch `Hiddify-develop`. Now run the following commands.
 
 
 ```
@@ -135,11 +135,11 @@ git checkout Hiddify-develop
 
 
 
-- Now apply your desired changes to the files using any tool. It is recommended to use ``VSCode''.
+- Now apply your desired changes to the files using any tool. It is recommended to use `VSCode`.
 - Do not forget that the path of all the files in the said folders is in the installation stage.
 -
-- Now, when you have applied the desired changes, you must also register the changes in ``git''. Therefore, run the following commands in the terminal in order.
-- First, announce the changes to ``git'' with the following command.
+- Now, when you have applied the desired changes, you must also register the changes in `git`. Therefore, run the following commands in the terminal in order.
+- First, announce the changes to `git` with the following command.
 
 
 
@@ -173,7 +173,7 @@ At this point, the changes have been successfully imported into the git system. 
 git push
 ```
 
-Here, your GitHub account details will be asked. You need to enter your ``Username'' and ``Password'' in GitHub.
+Here, your GitHub account details will be asked. You need to enter your `Username` and `Password` in GitHub.
 
 
 - Now log in to your GitHub account and open the forked project.
@@ -183,5 +183,5 @@ It has a path as follows:
 `https://github.com/<your_username>/Hiddify-Manager`
 
 
-- Now you see a banner that informs you that your branch is one step ahead of the main project. To merge the changes with the main project, click ``Contribute'' and click ``Open a pull request''.
+- Now you see a banner that informs you that your branch is one step ahead of the main project. To merge the changes with the main project, click on `Contribute` then `Open a pull request`.
 - The work is done, the changes have been sent to the project. Now, after the approval of the project manager, your changes will be added to the project.
