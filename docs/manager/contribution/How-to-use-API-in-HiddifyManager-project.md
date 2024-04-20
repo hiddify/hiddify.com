@@ -2,10 +2,7 @@
 title: How to use API in HiddifyManager project
 ---
 
-
-    
 # How to use API in HiddifyManager project
-
 The HiddifyManager project provides two versions of its APIs for compatibility reasons. However, it is highly recommended to use version two, as version one may be deprecated in the future. This blog post aims to guide you through the process of using the self-documented version two APIs, which can be explored in the Admin Panel -> Settings -> API section.
 
 ## API Authentication
@@ -55,6 +52,6 @@ In conclusion, HiddifyManager's version two API offers a wide range of features 
 
 
 !!! tip "tip"
->
-> There is a possibility of endpoint or input/output changes in the APIs, and developers should familiarize themselves with API-related guidelines through updates and changes of HiddifyManager.
+
+    There is a possibility of endpoint or input/output changes in the APIs, and developers should familiarize themselves with API-related guidelines through updates and changes of HiddifyManager.
 
