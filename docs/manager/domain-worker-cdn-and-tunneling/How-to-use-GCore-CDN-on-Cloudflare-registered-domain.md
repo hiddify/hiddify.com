@@ -7,7 +7,7 @@ title: How to use GCore CDN
 
 # How to use GCore CDN on Cloudflare registered domain
 
-As you probably know, in order to use the Hiddify panel optimally, you need to use a CDN provider so that filtering can be bypassed using its services. In other articles, we introduced Cloudflare and taught how to work with it. This service is due to widespread disruptions that are applied on it; Sometimes it makes things difficult for users. An alternative way is to use GCore's CDN service. Read this article to the end to learn how to set it up.
+As you probably know, in order to use the HiddifyManager optimally, you need to use a CDN provider so that filtering can be bypassed using its services. In other articles, we introduced Cloudflare and taught how to work with it. This service is due to widespread disruptions that are applied on it; Sometimes it makes things difficult for users. An alternative way is to use GCore's CDN service. Read this article to the end to learn how to set it up.
 
 1. First, go [here](https://gcore.com/) and create your account on GCore website. Then log in to the created account and click on the CDN option in your dashboard.
 
@@ -95,7 +95,7 @@ As you probably know, in order to use the Hiddify panel optimally, you need to u
 
 ![](https://user-images.githubusercontent.com/125398461/235284579-898335c0-28d3-477f-b900-3f8a381bcdda.jpg)
 
-22. Now we can use this subdomain as a CDN domain in Hiddify panel.
+22. Now we can use this subdomain as a CDN domain in HiddifyManager.
 
 ![](https://user-images.githubusercontent.com/125398461/235284966-63477444-51d0-45dd-be27-2307f43df54f.jpg)
 
