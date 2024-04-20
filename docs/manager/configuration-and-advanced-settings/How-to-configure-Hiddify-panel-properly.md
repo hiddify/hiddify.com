@@ -97,12 +97,12 @@ Note:
 Also, on the page of all tutorials on the wiki, you can see the tutorials on how to use client apps based on the OS type [here](/manager/).
 
 
-<details><summary><h2>Settings</h2></summary>
+<details markdown="1"><summary><h2>Settings</h2></summary>
 
-<details><summary><h3>Domains</h3></summary>
+<details markdown="1"><summary><h3>Domains</h3></summary>
 
 Go to the Domains menu to add your domains. There are 5 modes here.
-<details><summary><h4>Direct domain</h4></summary>
+<details markdown="1"><summary><h4>Direct domain</h4></summary>
 Click the Create button. In the opened page, act according to the figure.
 
 ![](https://user-images.githubusercontent.com/125398461/236682821-4b721589-8adc-43e8-b90e-8c096aa27c6e.png)
@@ -118,7 +118,7 @@ Be careful:
 
 </details>
 
-<details><summary><h4>Only for subscription link</h4></summary>
+<details markdown="1"><summary><h4>Only for subscription link</h4></summary>
 This is a bonus tip. You can choose a domain to use as subscription only domain. This way you can separate connections from subscription links and your link will never be blocked. Then your links can be updated all the time.
 
 ![](https://user-images.githubusercontent.com/125398461/236683456-2e99c6f2-ab23-4c54-a5cf-89e565472e8f.png)
@@ -129,7 +129,7 @@ Tip: We recommend using direct domains as Sub-only domains because they are fast
 
 </details>
 
-<details><summary><h4>CDN domain</h4></summary>
+<details markdown="1"><summary><h4>CDN domain</h4></summary>
 Click on the create button and follow the instructions on the page that opens.
 
 ![](https://user-images.githubusercontent.com/125398461/236682963-aa6bf603-7449-43f2-9639-436332043e2a.png)
@@ -148,31 +148,31 @@ Pay attention:
 
 </details>
 
-<details><summary><h4>Automatic CDN IP Selector or AUTO_CDN_IP domain</h4></summary>
+<details markdown="1"><summary><h4>Automatic CDN IP Selector or AUTO_CDN_IP domain</h4></summary>
  
 Due to the long and detailed description of this mode; You can read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/) to learn how to set it up.
 
 </details>
 
-<details><summary><h4>Relay domain</h4></summary>
+<details markdown="1"><summary><h4>Relay domain</h4></summary>
  
 For view more information about this domain, please view [this article](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
 </details>
 
-<details><summary><h4>Fake site</h4></summary>
+<details markdown="1"><summary><h4>Fake site</h4></summary>
 
 For view more information about this domain, please view [this article](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/).
 
 </details>
 
-<details><summary><h4>Reality domain</h4></summary>
+<details markdown="1"><summary><h4>Reality domain</h4></summary>
 
 For view more information about this domain, please view [this article](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
 </details>
 
-<details><summary><h4>Cloudflare worker domain</h4></summary>
+<details markdown="1"><summary><h4>Cloudflare worker domain</h4></summary>
  
 Read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/) in this regard
 
@@ -183,7 +183,7 @@ Read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-u
 </details>
 
 
-<details><summary><h3>Proxies</h3></summary>
+<details markdown="1"><summary><h3>Proxies</h3></summary>
 In this part of the panel, you can specify general and detailed settings for proxies and enable or disable each of them. General settings include the following: 
 
 <img width="1188" src="https://user-images.githubusercontent.com/125398461/236683886-a08db1ce-5939-4d96-80ef-4dd1c40e129b.png">
@@ -200,7 +200,7 @@ Pay attention:
 
 </details>
 
-<details><summary><h3>Other</h3></summary>
+<details markdown="1"><summary><h3>Other</h3></summary>
 
 
 #### Admin settings
@@ -376,7 +376,7 @@ For view more information about this protocol, please view [this article](/manag
 </details>
 
 
-<details><summary><h3>Backup</h3></summary>
+<details markdown="1"><summary><h3>Backup</h3></summary>
 In this menu, you can take a backup from the panel or restore your previous backup.
 
 <img width="1220" src="https://user-images.githubusercontent.com/125398461/236685069-22011cc0-ebdd-4e30-9077-c4237242f32b.png">
@@ -390,7 +390,7 @@ In this menu, you can take a backup from the panel or restore your previous back
 
 </details>
 
-<details><summary><h2>Actions</h2></summary>
+<details markdown="1"><summary><h2>Actions</h2></summary>
 
 In this menu, a simulated terminal is displayed, through which a series of actions related to maintenance, troubleshooting and installation of the panel can be performed.
 
