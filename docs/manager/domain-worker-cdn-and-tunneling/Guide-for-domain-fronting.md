@@ -11,7 +11,7 @@ This feature has been disabled in Cloudflare CDN because malware used to exploit
 
 ## Domain registration on CDN
 
-- First, you need to register on the CDN site of your choice and register a domain in it. [Tutorial for domain registration](/manager/wiki/Domain-types-and-how-to-register-them)
+- First, you need to register on the CDN site of your choice and register a domain in it. [Tutorial for domain registration](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
 
 - After that, register a DNS record and turn on its proxy tick.
 
@@ -20,6 +20,7 @@ This feature has been disabled in Cloudflare CDN because malware used to exploit
 To do this, go to the `Settings` and `Domains` section in the Hiddify panel and then click on `Create`.
 
 <div align=center markdown=1>
+  
 ![Screenshot_20230621_174231](https://github.com/hiddify/hiddify-config/assets/125398461/8a354ba2-a8c6-471b-8ab1-efbd1d189335)
 
 </div>
@@ -34,4 +35,4 @@ To do this, go to the `Settings` and `Domains` section in the Hiddify panel and 
 
 ## Add config to the subscription link
 
-As you know, it is always recommended to keep subscription links separate from configs. Therefore, if you have already created a subscription link, just add the new CDN domain in its settings so that the new domain fronting configurations are also connected to the subscription link. [How to create subscription link on Hiddify](/manager/wiki/How-to-create-subscription-link-on-Hiddify)
+As you know, it is always recommended to keep subscription links separate from configs. Therefore, if you have already created a subscription link, just add the new CDN domain in its settings so that the new domain fronting configurations are also connected to the subscription link. [How to create subscription link on HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/)
