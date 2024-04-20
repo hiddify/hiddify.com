@@ -109,11 +109,11 @@ The word stands for web real time communations and means immediate and real-time
 
 ### Browserleaks.com
 
-After logging in to [Webrtc Leak Test] (https://browserleaks.com/webrtc), the website will automatically evaluate and then show the results.
+After logging in to [Webrtc Leak Test](https://browserleaks.com/webrtc), the website will automatically evaluate and then show the results.
 
 In the picture below, we see that despite the use of VPN, the real IP address is recognized, so we have a leak.
 
-[7] (https://user-images.githubusercontent.com/125398461/235300245-57e4be56-22FB-4030-989B-A5A49F77D533.jpg)
+![7](https://user-images.githubusercontent.com/125398461/235300245-57e4be56-22FB-4030-989B-A5A49F77D533.jpg)
 
 
 ## Fix Webrtc leak
