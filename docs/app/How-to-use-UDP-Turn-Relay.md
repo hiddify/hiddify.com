@@ -48,4 +48,5 @@ hysteria2://87543215-15ac-54f6-3895-34e4e931f5b4@45.120.34.46:11464?hiddify=1&ob
 
 You can import this link in the Hiddify-Next program and because this program supports the UDP Turn Relay protocol, you can use this feature.
 
-Note: Bale messenger disabled the said feature after a short time. Based on the contents explained above, you should find a messenger that supports this feature from the [list of internal messengers of Iran](https://eservices.ito.gov.ir/Page/IPListMessenger) or non-filtered external messengers.
+!!! note "NOTE!"
+    Bale messenger disabled the said feature after a short time. Based on the contents explained above, you should find a messenger that supports this feature from the [list of internal messengers of Iran](https://eservices.ito.gov.ir/Page/IPListMessenger) or non-filtered external messengers.
