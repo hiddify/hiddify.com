@@ -2,7 +2,7 @@
 title: آموزش نصب هیدیفای‌‌اپ 
 ---
 
-<div dir="rtl">
+<div markdown="1" dir="rtl">
 
 
 # آموزش نصب هیدیفای‌‌اپ
@@ -24,7 +24,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 بر اساس سیستم عامل خود یکی از موارد زیر را انتخاب نمایید.
 
 <br>
-<div align=center>
+<div markdown="1" align=center>
  <a href="https://play.google.com/store/apps/details?id=app.hiddify.com"><img width=20% src="https://github.com/hiddify/hiddify-next/blob/main/docs/google-play-badge.png"></a>
 
 <br>
@@ -42,14 +42,14 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * حالا فایل دانلود شده را اجرا نمایید. این پیغام امنیتی ویندوز ظاهر می‌شود که شما باید `Yes` را کلیک کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=30% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e4174de0-10b5-4b46-9baf-2e302162da5a">
 
 </div>
 
 * ممکن است در ویندوز ۱۱ اخطار به این شکل نمایش داده شود، روی `More info` بزنید.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=40% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a3bc452-004d-4be7-a9bb-21aad90db7fc">
 
 </div>
@@ -58,7 +58,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * سپس `Run Anyway` را بزنید تا فایل باز شود.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=40% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/36293a7c-f56a-4811-8302-474874654b70">
 
 </div>
@@ -68,7 +68,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * در مرحله بعد محل نصب برنامه را نمایش می‌دهد که در صورت نیاز می‌توانید آن را تغییر دهید و `Next` کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/7196a86f-3f74-4177-b611-19b484e0da9a">
 
@@ -77,7 +77,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * در این مرحله تنظیمات بیشتر را از شما می‌خواهد مثل ایجاد Shortcut روی دسکتاپ و فعال‌سازی اجرای خودکار برنامه. می‌توانید گزینه‌های مورد نظر خود را انتخاب کنید و `Next` را بزنید.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/bcac0d1e-f8d8-46d9-bedc-4fe04571a504">
 
 </div>
@@ -86,7 +86,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * حالا کافیه `Install` را بزنید تا برنامه شروع به نصب شود.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/980314df-c907-407c-aa4d-a94d4d492b66">
 
@@ -96,7 +96,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * بدین شکل برنامه شروع به نصب می‌کند.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/1aee90d0-dde1-4bf8-b673-058fc0e9204a">
 
@@ -108,7 +108,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 * در پایان نصب، پنجره زیر ظاهر می‌شود که باید روی `Finish` بزنید.
 
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a8849c5-24f0-4376-be4d-355eb754f395">
 
@@ -120,7 +120,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * اولین بار از شما تنظیمات مربوط به زبان و محل سکونت شما را می‌پرسد. برای تغییر زبان روی `Language` بزنید و برای تغییر منطقه روی `Region` بزنید و گزینه‌های مورد نظر خود را انتخاب نمایید و برنامه را اجرا کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/0d50c68f-d6e5-45f3-b86a-0f0217b29867">
 
@@ -130,7 +130,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * در مرحله بعد برنامه باز می‌شود. 
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/9ff5d21c-7fbf-4183-96bb-acd12cebf2a8">
 
@@ -152,7 +152,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * سپس فایل دانلود شده را در `Downloads` پیدا کرده و باز نمایید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% alt="Downloaded_App" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def"><center>
 
@@ -160,33 +160,33 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * حالا فایل برنامه را بگیرید و در `Applications` رها نمایید. با این کار فایل برنامه به بخش `Applications` انتقال می‌یابد.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=60% alt="drag_app" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a">
 </div>
 
 
 * حالا برنامه برای همیشه در `Applications` کپی شد. برای اجرا روی آن دو بار کلیک کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width="60% alt="App in Application" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795">
 </div>
 
 * بار اول که برنامه را باز می‌کنید به دلیل اینکه این برنامه از منبعی به جز `App Store` دانلود شده است، این پیغام داده می‌شود.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=30% alt="Cannot open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1">
 </div>
 
 * به بخش `Security and Privacy` بروید و در تب `General` روی `Open Anyway` بزنید.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=60% alt="open for ever" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81">
 </div>
 
 
 * حالا روی `Open` کلیک کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=60% alt="open for ever" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49">
 </div>
 
@@ -194,7 +194,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * اولین بار از شما تنظیمات مربوط به زبان و محل سکونت شما را می‌پرسد. برای تغییر زبان روی `Language` بزنید و برای تغییر منطقه روی `Region` بزنید و گزینه‌های مورد نظر خود را انتخاب نمایید و برنامه را اجرا کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/0d50c68f-d6e5-45f3-b86a-0f0217b29867">
 
@@ -204,7 +204,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 * صفحه اصلی برنامه به این شکل باز می‌شود.
 
-<div align=center>
+<div markdown="1" align=center>
 <img width=60% alt="Screen Shot 1402-07-10 at 20 26 48" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a33feda-ccdd-4cd0-baaa-4e7c32238a9f">
 </div>
 
@@ -221,7 +221,7 @@ title: آموزش نصب هیدیفای‌‌اپ
 
 فرض شود که فایل دانلود شده در Downloads در پوشه Home باشد، بنابراین دستور زیر را اجرا نمایید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 ls -la ~/Downloads/hiddify-linux-x64.AppImage
@@ -230,7 +230,7 @@ ls -la ~/Downloads/hiddify-linux-x64.AppImage
 
 اگر خروجی به شکل زیر بود،
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 `-rwxr-xr-x 1 user user 26272960 Sep 30 07:55 ~/Downloads/hiddify-linux-x64.AppImage`
 
@@ -238,7 +238,7 @@ ls -la ~/Downloads/hiddify-linux-x64.AppImage
 
 یعنی دسترسی x یا اجرایی را دارد و می‌توانید آن را به راحتی اجرا نمایید. در غیر این صورت برای افزودن دسترسی اجرایی می‌توانید دستور زیر را در ترمینال اجرا نمایید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 chmod +x ~/Downloads/hiddify-linux-x64.AppImage
@@ -249,7 +249,7 @@ chmod +x ~/Downloads/hiddify-linux-x64.AppImage
 * حالا کافیه فایل را اجرا نمایید. 
 * اولین بار از شما تنظیمات مربوط به زبان و محل سکونت شما را می‌پرسد. برای تغییر زبان روی `Language` بزنید و برای تغییر منطقه روی `Region` بزنید و گزینه‌های مورد نظر خود را انتخاب نمایید و برنامه را اجرا کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width=60% src="https://github.com/hiddify/Hiddify-Server/assets/125398461/0d50c68f-d6e5-45f3-b86a-0f0217b29867">
 
