@@ -5,14 +5,12 @@ module.exports = {
     extend: {
       colors: {
         primary: "#455FE9",
-      }
-    },
-    textColors: {
-      'primary': '#212529',
-      'secondary': '#495057',
-    },
-    fontFamily: {
-      lato: ['lato'],
+        primaryText: '#212529',
+        secondaryText: '#495057',
+      },
+      fontFamily: {
+        lato: ['lato'],
+      },
     },
   },
   plugins: [],
