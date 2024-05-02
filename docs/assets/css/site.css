@@ -1158,10 +1158,6 @@ video {
   border-radius: 1.5rem;
 }
 
-.rounded-\[100px\] {
-  border-radius: 100px;
-}
-
 .rounded-\[32px\] {
   border-radius: 32px;
 }
@@ -1851,6 +1847,10 @@ video {
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:rounded-\[100px\] {
+    border-radius: 100px;
   }
 
   .md\:rounded-bl-\[100px\] {
