@@ -892,14 +892,6 @@ video {
   height: 100vh;
 }
 
-.max-h-\[103px\] {
-  max-height: 103px;
-}
-
-.max-h-\[183px\] {
-  max-height: 183px;
-}
-
 .max-h-\[451\] {
   max-height: 451;
 }
@@ -916,10 +908,6 @@ video {
   max-height: 100vh;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
-}
-
 .w-1\/4 {
   width: 25%;
 }
@@ -930,10 +918,6 @@ video {
 
 .w-2 {
   width: 0.5rem;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .w-6 {
@@ -983,14 +967,6 @@ video {
 
 .max-w-\[1120px\] {
   max-width: 1120px;
-}
-
-.max-w-\[184px\] {
-  max-width: 184px;
-}
-
-.max-w-\[326px\] {
-  max-width: 326px;
 }
 
 .max-w-\[402px\] {
@@ -1076,10 +1052,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-10 {
@@ -1185,16 +1157,16 @@ video {
   border-bottom-width: 2px;
 }
 
-.border-l-2 {
-  border-left-width: 2px;
-}
-
 .border-t {
   border-top-width: 1px;
 }
 
 .border-t-0 {
   border-top-width: 0px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-solid {
@@ -1665,8 +1637,32 @@ video {
     height: 6rem;
   }
 
+  .md\:max-h-\[103px\] {
+    max-height: 103px;
+  }
+
+  .md\:max-h-\[183px\] {
+    max-height: 183px;
+  }
+
+  .md\:max-h-\[450px\] {
+    max-height: 450px;
+  }
+
+  .md\:max-h-\[unset\] {
+    max-height: unset;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .md\:w-64 {
@@ -1675,6 +1671,18 @@ video {
 
   .md\:w-\[500px\] {
     width: 500px;
+  }
+
+  .md\:max-w-\[184px\] {
+    max-width: 184px;
+  }
+
+  .md\:max-w-\[326px\] {
+    max-width: 326px;
+  }
+
+  .md\:max-w-\[900px\] {
+    max-width: 900px;
   }
 
   .md\:grid-cols-2 {
@@ -1701,6 +1709,10 @@ video {
     justify-content: flex-end;
   }
 
+  .md\:gap-1 {
+    gap: 0.25rem;
+  }
+
   .md\:gap-10 {
     gap: 2.5rem;
   }
@@ -1719,6 +1731,14 @@ video {
 
   .md\:rounded-tr-\[100px\] {
     border-top-right-radius: 100px;
+  }
+
+  .md\:border-l-2 {
+    border-left-width: 2px;
+  }
+
+  .md\:border-t-0 {
+    border-top-width: 0px;
   }
 
   .md\:px-10 {
