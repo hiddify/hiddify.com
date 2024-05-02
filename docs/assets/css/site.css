@@ -1372,10 +1372,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -1879,6 +1875,10 @@ video {
 
   .md\:border-t-0 {
     border-top-width: 0px;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
   }
 
   .md\:px-10 {
