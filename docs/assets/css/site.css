@@ -1409,6 +1409,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1468,12 +1473,12 @@ video {
   padding-bottom: 6rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-left {
@@ -1896,6 +1901,16 @@ video {
     padding-right: 0.75rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1909,16 +1924,16 @@ video {
     padding-left: 5rem;
   }
 
-  .md\:pl-3 {
-    padding-left: 0.75rem;
+  .md\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .md\:pr-20 {
     padding-right: 5rem;
   }
 
-  .md\:pr-3 {
-    padding-right: 0.75rem;
+  .md\:pr-5 {
+    padding-right: 1.25rem;
   }
 
   .md\:text-2xl {
@@ -2164,21 +2179,8 @@ video {
     padding-right: 1.25rem;
   }
 
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .lg\:pb-52 {
     padding-bottom: 13rem;
-  }
-
-  .lg\:pl-5 {
-    padding-left: 1.25rem;
-  }
-
-  .lg\:pr-5 {
-    padding-right: 1.25rem;
   }
 
   .lg\:text-2xl {
