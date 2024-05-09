@@ -291,7 +291,7 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">راه‌اندازی سرور میانی با استفاده از سازنده سرور میانی هیدیفای (همه روش‌ها در یک اپ)</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">آموزش راه‌اندازی سرور میانی با استفاده از سرور میانی ساز هیدیفای (همه روش‌ها در یک اپ)</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش IP Tables</a>
