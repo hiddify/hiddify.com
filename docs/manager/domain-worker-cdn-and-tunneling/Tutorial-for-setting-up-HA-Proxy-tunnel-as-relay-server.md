@@ -87,9 +87,11 @@ Now, if you open the user page with the subscription domain (here `sublink.hiddi
 ## Removing the HA-Proxy tunnel from the relay server
 
 To do this, first run this command.
+
 ```bash
 sudo systemctl stop haproxy && systemctl disable haproxy
 ````
+
 Finally, click this command to completely remove the program and service.
 
 ```bash
