@@ -31,7 +31,7 @@ sudo apt-get install haproxy
 nano /etc/haproxy/haproxy.cfg
 ```
 
-- When the ``haproxy.cfg'' file opens, go to the end of the file and add the following example:
+- When the `haproxy.cfg` file opens, go to the end of the file and add the following example:
 
 ```bash
 frontend myfrontend
