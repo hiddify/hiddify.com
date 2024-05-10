@@ -7,10 +7,12 @@
 # سرور ایران
 
 برای ایجاد IPv6 لوکال نیاز اول سرویس iproute2 در ایران با دستور پایین نصب کنید:
+
 ```shell
 sudo apt-get install iproute2
 ```
 بعد از نصب سرویس بالا با ادیتور `nano` فایل `tunnel.yaml` ایجاد کنید:
+
 ```shell
 sudo nano /etc/netplan/tunnel.yaml
 ```
@@ -32,6 +34,7 @@ network:
 بجای `IPv4-IRAN` ای پی سرور ایران را قرار دهید و بجای `IPv4-Main` ای پی سرور خارج خود را قرار دهید.
 بعد از اعمال تغییرات با زدن دکمه `ctrl+s` فایل را ذخیره کنید و با زدن دکمه `ctrl+x` از ادیتور خارج شوید.
 در انتها با دستور زیر تغییرات ایجاد شده در `netplan` را اعمال کنید:
+
 ```
 sudo netplan apply
 ```
@@ -39,16 +42,19 @@ sudo netplan apply
 # سرور خارج
 
 برای ایجاد IPv6 لوکال نیاز که سرویس iproute2 در سرور خارج هم نصب کنید:
+
 ```shell
 sudo apt-get install iproute2
 ```
 
 بعد از نصب سرویس بالا با ادیتور `nano` فایل `tunnel.yaml` ایجاد کنید:
+
 ```shell
 sudo nano /etc/netplan/tunnel.yaml
 ```
 
 کد پایین رو در فایل کپی کنید:
+
 ```yaml
 network:
   version: 2
