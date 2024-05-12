@@ -267,6 +267,5 @@ In order to return to the main menu, select `Back` option.
 
 <br>
 
-> [!Tip]
->
-> If you want to add your relay server to HiddifyManager, read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+!!! tip "Tip"
+    If you want to add your relay server to HiddifyManager, read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
