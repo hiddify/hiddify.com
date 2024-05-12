@@ -268,5 +268,5 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <br>
 
 !!! tip "نکته" 
-> نکته: اگر می‌خواهید سرور میانی خود را به `هیدیفای‌منیجر` متصل نمایید، این [مقاله](fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) را مطالعه نمایید.
+    اگر می‌خواهید سرور میانی خود را به `هیدیفای‌منیجر` متصل نمایید، این [مقاله](fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) را مطالعه نمایید.
 
