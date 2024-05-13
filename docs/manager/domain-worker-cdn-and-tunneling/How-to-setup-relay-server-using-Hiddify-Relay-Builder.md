@@ -64,7 +64,7 @@ According to the first image above, select the `GOST` option to manage the `GOST
 
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796 alt="GOST Tunnel Menu">
+<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796" alt="GOST Tunnel Menu">
 
 </div>
 
