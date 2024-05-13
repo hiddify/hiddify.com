@@ -221,7 +221,7 @@ In this page, we put categorized content of tutorials and documents related to H
             How to use Domain Fronting</a>
         </li>
         <li>
-        <a target="_blank" href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/332?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">How to manage multiple CDN domains better on Hiddify</a>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/">How to use multiple CDN domains in HiddifyManager</a>
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">What is Cloudflare's clean IP and how to find it</a>
@@ -264,6 +264,10 @@ In this page, we put categorized content of tutorials and documents related to H
         </li>
         <li>
         <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">How to add a relay server (domain) to HiddifyManager
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/">Tutorial for setting up local IPv6 for Relay server
         </a>
         </li>
         <li>
