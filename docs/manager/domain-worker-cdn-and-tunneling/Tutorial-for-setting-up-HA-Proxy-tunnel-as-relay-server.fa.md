@@ -87,7 +87,7 @@ sudo systemctl restart haproxy
 برای این کار ابتدا این دستور را اجرا کنید.
 ```bash
 sudo systemctl stop haproxy && systemctl disable haproxy
-````
+```
 
 در نهایت برای حذف کامل برنامه و سرویس این دستور را بزنید.
 
