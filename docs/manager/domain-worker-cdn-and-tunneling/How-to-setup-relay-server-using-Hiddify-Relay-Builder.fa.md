@@ -35,7 +35,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
  <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/80a1ebc9-078b-4e42-844e-6da857e25d62" alt="IP-Tables Tunnel Menu">
 
 </div>
-<div align="right">
+<div markdown="1" align="right">
  
 `Install`
 
@@ -63,7 +63,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <details markdown="1" dir="rtl"><summary><h3>🛠️ تانل GOST</h3> (کلیک کنید)</summary>
 طبق تصویر اول بالا، گزینه `GOST` را انتخاب کنید تا بتوانید `GOST tunnel` را مدیریت کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796 alt="GOST Tunnel Menu">
 
@@ -101,7 +101,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <details markdown="1" dir="rtl"><summary><h3>🛠️ تانل Dokodemo-Door</h3> (کلیک کنید)</summary>
 طبق تصویر اول بالا، گزینه `Dekodemo-Door` را انتخاب کنید تا بتوانید `Dekodemo-Door tunnel` را مدیریت کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/7cdae822-4fe7-40b1-a2ee-49e7bf555fed" alt="Dokodemo-Door Tunnel Menu">
 
@@ -139,7 +139,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <details markdown="1" dir="rtl"><summary><h3>🛠️ تانل HA-Proxy</h3> (کلیک کنید)</summary>
 طبق تصویر اول بالا، گزینه `HA-Proxy` را انتخاب کنید تا بتوانید `HA-Proxy tunnel` را مدیریت کنید.
 
-<div align=center>
+<div markdown="1" align=center>
   
 <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/8e94e9d5-6229-46da-afd8-0c1c08787308" alt="HA-Proxy Tunnel Menu">
 
@@ -174,7 +174,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <details markdown="1" dir="rtl"><summary><h3>🛠️ تانل Socat</h3> (کلیک کنید)</summary>
 طبق تصویر اول بالا، گزینه `Socat` را انتخاب کنید تا بتوانید `Socat tunnel` را مدیریت کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width="80%" src="https://github.com/hiddify/hiddify-relay/assets/125398461/d0d55310-f06d-44f2-83df-9b698ee9d0fa" alt="Socat Tunnel Menu">
 
@@ -207,7 +207,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <details markdown="1" dir="rtl"><summary><h3>🛠️ تانل WST</h3> (کلیک کنید)</summary>
 طبق تصویر اول بالا، گزینه `WST` را انتخاب کنید تا بتوانید `WST tunnel` را مدیریت کنید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/f9686f53-7a34-4085-9504-15aac82a29ce" alt="WST Tunnel Menu">
 
@@ -218,7 +218,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 - با انتخاب گزینه `Install` منتظر بمانید تا پکیج WST نصب شود.
 - سپس آیپی و پورت مربوط به سرور اصلی را انتخاب نمایید.
 - سپس اطلاعات مربوط به دسترسی SSH به سرور اصلی را وارد نمایید تا تنظیمات مربوط به تانل سمت آن سرور انجام شود.
-- بعد از انجام صحیح عملیات، با ظاهر شدن پیغام `WSTunnel is installed and activated، تانل به درستی فعال می‌شود.
+- بعد از انجام صحیح عملیات، با ظاهر شدن پیغام `WSTunnel is installed and activate` تانل به درستی فعال می‌شود.
 
   
 `Status`
@@ -238,7 +238,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 <details markdown="1" dir="rtl"><summary><h3>🛠️ گزینه Options</h3> (کلیک کنید)</summary>
 طبق تصویر اول بالا، گزینه `Options` را انتخاب کنید تا بتوانید تنظیمات پایه سرور و تست اتصال را انجام دهید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 
 <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/aea50ed9-94a8-4884-92dd-24ef15067253" alt="Options Menu">
