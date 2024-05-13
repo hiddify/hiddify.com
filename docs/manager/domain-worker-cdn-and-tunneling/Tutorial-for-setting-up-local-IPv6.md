@@ -25,7 +25,7 @@ sudo nano /etc/netplan/tunnel.yaml
 Then copy the following code in the file.
 
 
-```yaml
+```
 network:
    version: 2
    tunnels:
@@ -48,6 +48,8 @@ At the end, apply the changes made in `netplan` with the following command.
 ```
 sudo netplan apply
 ```
+
+P
 
 ## Main server
 To create local IPv6 on the main server, you need to install the `iproute2` service.
