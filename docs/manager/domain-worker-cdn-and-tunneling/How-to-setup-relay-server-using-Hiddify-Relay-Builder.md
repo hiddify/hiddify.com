@@ -175,7 +175,7 @@ According to the first image above, select `Socat` to manage `Socat tunnel`.
 
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify-relay/assets/125398461/d0d55310-f06d-44f2-83df-9b698ee9d0fa" alt="Socat Tunnel Menu">
+<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/1a7af90d-b8aa-4b5b-84a8-af643e835951" alt="Socat Tunnel Menu">
 
 </div>
 
