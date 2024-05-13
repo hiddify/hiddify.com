@@ -65,7 +65,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796 alt="GOST Tunnel Menu">
+<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796" alt="GOST Tunnel Menu">
 
 </div>
 
