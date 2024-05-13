@@ -38,11 +38,11 @@ network:
 ```
 
 
-Instead of `IPv4-RELAY` put your relay server IP and instead of `IPv4-MAIN` put your main server IP.
+- Instead of `IPv4-RELAY` put your relay server IP and instead of `IPv4-MAIN` put your main server IP.
 
-After making the changes, save the file by pressing the `Ctrl+s` button and exit the editor by pressing the `Ctrl+x` button.
+- After making the changes, save the file by pressing the `Ctrl+s` button and exit the editor by pressing the `Ctrl+x` button.
 
-At the end, apply the changes made in `netplan` with the following command.
+- At the end, apply the changes made in `netplan` with the following command.
 
 
 ```
