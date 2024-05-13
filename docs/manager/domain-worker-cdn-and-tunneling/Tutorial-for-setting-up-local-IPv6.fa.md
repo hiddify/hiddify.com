@@ -48,7 +48,7 @@ sudo netplan apply
 ```
 
 ## سرور اصلی
-برای ایجاد IPv6 لوکال در سرور اصلی نیز نیاز است که سرویس iproute2 نصب کنید.
+برای ایجاد IPv6 لوکال در سرور اصلی نیز نیاز است که سرویس `iproute2` نصب کنید.
 
 ```shell
 sudo apt-get install iproute2
