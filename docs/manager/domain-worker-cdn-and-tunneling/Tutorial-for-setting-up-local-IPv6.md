@@ -113,8 +113,7 @@ ping 2001:db9:900::1
     
 ## How to use
 
-You can use [`Dokodemo-Door'](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server) in your relay server /) or use [`GOST`](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
-And instead of IP or domain, use the local IPv6 that you created for the main and external server.
+You can use [`Dokodemo-Door`](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server) or use [`GOST`](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/) on your relay server and instead of IP or domain, use the local IPv6 that you created for the main server.
 
 Example `Dokodemo-Door`:
 
