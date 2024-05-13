@@ -316,6 +316,10 @@ weight: -2
         </a>
         </li>
         <li>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/">آموزش ایجاد IPv6 لوکال برای سرور میانی
+        </a>
+        </li>
+        <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/">نحوه ایجاد و استفاده از دامنه فیک
         </a>
         </li>
