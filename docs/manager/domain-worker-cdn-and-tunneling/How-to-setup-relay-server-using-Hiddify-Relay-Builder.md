@@ -3,13 +3,13 @@ title: How to setup relay server using Hiddify Relay Builder (all in one app)
 ---
 
 # How to setup relay server using Hiddify Relay Builder (all in one app)
-To install and set up the relay server more easily, this application has been created, which starts the server and the tunnel is established using the following methods.
-1. IP-Tables method
-2. GOST method
-3. Dokodemo-Door method
-4. HA-Proxy method
-5. Socat method
-6. WST method
+To install and set up the relay server more easily, this application has been created, which starts the server and the tunnel is established using the following methods.<br>
+1. IP-Tables method<br>
+2. GOST method<br>
+3. Dokodemo-Door method<br>
+4. HA-Proxy method<br>
+5. Socat method<br>
+6. WST method<br>
  
 Next, follow one of the mentioned methods according to your needs so that the relay server is created on your server in the desired way.
 
