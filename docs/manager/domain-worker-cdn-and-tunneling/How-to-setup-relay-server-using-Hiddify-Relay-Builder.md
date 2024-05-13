@@ -48,9 +48,8 @@ This option will show you the ports used in the IP-Tables tunnel.
 
 This option deletes all rules created in IP-Tables.
 
-> [Tip!]
->
-> Be careful that if you have created special rules next to the tunnel manually, they will be deleted with this command.
+!!! tip "Tip!"
+    Be careful that if you have created special rules next to the tunnel manually, they will be deleted with this command.
 
 `Back`
 
@@ -165,6 +164,7 @@ By selecting `Status` option, you can check the ports in use and the tunnel stat
 Use this option to remove the HA-Proxy tunnel from the relay server.
 
 `Back`
+
 In order to return to the main menu, select `Back` option.
 
 
@@ -197,7 +197,9 @@ By selecting this option, the Socat tunnel can be removed from the relay server.
 
 
 `Back`
+
 In order to return to the main menu, select `Back` option.
+
 </details>
 
 
@@ -231,7 +233,9 @@ By selecting this option, the WST tunnel can be removed from the relay server.
 
 
 `Back`
+
 In order to return to the main menu, select ``Back'' option.
+
 </details>
 
 <details markdown="1" dir="ltr"><summary><h3>🛠️ Options</h3> (click)</summary>
@@ -261,7 +265,9 @@ By choosing this option, you can test the server's connection to the Internet.
 
 
 `Back`
+
 In order to return to the main menu, select `Back` option.
+
 </details>
 
 
