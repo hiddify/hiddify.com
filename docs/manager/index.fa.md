@@ -270,7 +270,7 @@ weight: -2
            آموزش استفاده از دامین فرانتینگ</a>
         </li>
         <li>
-        <a target="_blank" href="https://github.com/hiddify/Hiddify-Manager/discussions/332">پیشنهاداتی برای مدیریت بهتر چندین دامنه CDN در هیدیفای</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/">آموزش استفاده از چندین دامنه CDN در هیدیفای‌منیجر</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
