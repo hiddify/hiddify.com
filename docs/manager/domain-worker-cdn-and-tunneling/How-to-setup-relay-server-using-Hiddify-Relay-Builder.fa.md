@@ -111,6 +111,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 </div>
 
 `Install`
+
 - بعد از انتخاب گزینه `Install` در این منو، منتظر بمانید تا هسته Xray روی سرور میانی نصب گردد.
 - بعد از اتمام نصب، آیپی آدرس یا دامنه مربوط به سرور اصلی را انتخاب نمایید.
 - در بخش مربوط به پورت‌ها، پورت‌های مورد نظر خود برای ایجاد تانل را انتخاب نمایید. (پیشنهادی: 443,80)
@@ -152,6 +153,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 `Install`
 
+
 - بعد از انتخاب گزینه `Install`، منتظر بمانید تا پکیج مربوط به HA-Proxy نصب گردد.
 - بعد از نصب، در بخش پورت مربوط به Relay server، پورت مورد نظر خود برای سرور میانی را انتخاب نمایید. (پیشنهادی: 443)
 - سپس آیپی آدرس مربوط به سرور اصی را انتخاب نمایید.
@@ -187,6 +189,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 `Install`
 
+
 - با انتخاب گزینه `Install` منتظر بمانید تا پکیج Socat نصب شود.
 - سپس آیپی و پورت مربوط به سرور اصلی را انتخاب نمایید.
 - بعد از انجام صحیح عملیات، با ظاهر شدن پیغام `Socat tunnel is installed and activated، تانل به درستی فعال می‌شود.
@@ -220,6 +223,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 </div>
 
 `Install`
+
 
 - با انتخاب گزینه `Install` منتظر بمانید تا پکیج WST نصب شود.
 - سپس آیپی و پورت مربوط به سرور اصلی را انتخاب نمایید.
