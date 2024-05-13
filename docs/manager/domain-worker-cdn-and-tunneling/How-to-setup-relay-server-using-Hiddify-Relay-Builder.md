@@ -11,7 +11,7 @@ To install and set up the relay server more easily, this application has been cr
 5. Socat method<br>
 6. WST method<br>
  
-Next, follow one of the mentioned methods according to your needs so that the relay server is created on your server in the desired way.
+Next, follow one of the mentioned methods according to your needs so that the relay server is created in the desired way.
 
 Also, in this tool, it is possible to perform basic settings and test communication.
 
