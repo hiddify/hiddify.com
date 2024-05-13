@@ -163,6 +163,6 @@ Example `Dokodemo-Door`:
 
 If you pay attention, in the example above, the local IPv6 value created for the main server is placed in the `address` field, and 443 is entered in the `port` field, which you can change the `port` to the tunneled port.
 
-
+To learn how to add a relay server (domain) to HiddifyManager, read [this article](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) do it
 
 </div>
