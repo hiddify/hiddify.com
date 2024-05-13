@@ -106,6 +106,7 @@ According to the first image above, select `Dekodemo-Door` to manage the `Dekode
 </div>
 
 `Install`
+
 - After selecting `Install` option in this menu, wait for the Xray core to be installed on the relay server.
 - After completing the installation, select the IP address or domain of the main server.
 - In the section related to ports, select the ports you want to create a tunnel. (Offer: 443,80)
@@ -117,6 +118,7 @@ According to the first image above, select `Dekodemo-Door` to manage the `Dekode
 By selecting `Status` option, the used ports and tunnel status will be displayed on the screen.
 
 `Add`
+
 - By selecting the `Add` option in the Dokodemo-Door tunnel menu, another inbound connection can be set to connect the relay server to another external server.
 - After selecting the `Add` option, you must select the IP address or domain of the new main server.
 - In the next step, select the port for this server.
