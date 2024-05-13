@@ -55,6 +55,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 `Back`
 
+
 به منظور بازگشت به منوی اصلی گزینه `Back` را انتخاب نمایید.
 
 </details>
@@ -92,6 +93,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 با استفاده از این گزینه می‌توان تانل GOST را از سرور میانی حذف نمود.
 
 `Back`
+
 
 به منظور بازگشت به منوی اصلی گزینه `Back` را انتخاب نمایید.
 
@@ -133,6 +135,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 `Back`
 
+
 به منظور بازگشت به منوی اصلی گزینه `Back‌` را انتخاب نمایید.
 </details>
 
@@ -166,6 +169,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 برای حذف تانل HA-Proxy از سرور میانی از این گزینه استفاده نمایید.
 
 `Back`
+
 به منظور بازگشت به منوی اصلی گزینه `Back` را انتخاب نمایید.
 
 
@@ -176,7 +180,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify-relay/assets/125398461/d0d55310-f06d-44f2-83df-9b698ee9d0fa" alt="Socat Tunnel Menu">
+<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/51bb5e9d-9580-454f-90ca-988a95385c4a" alt="Socat Tunnel Menu">
 
 </div>
 
@@ -198,6 +202,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 
 `Back`
+
 به منظور بازگشت به منوی اصلی گزینه `Back` را انتخاب نمایید.
 </details>
 
@@ -232,6 +237,7 @@ bash -c "$(curl -L https://raw.githubusercontent.com/hiddify/hiddify-relay/main/
 
 
 `Back`
+
 به منظور بازگشت به منوی اصلی گزینه `Back` را انتخاب نمایید.
 </details>
 
