@@ -112,6 +112,8 @@ According to the first image above, select `Dekodemo-Door` to manage the `Dekode
 - In the section related to ports, select the ports you want to create a tunnel. (Offer: 443,80)
 - At the end, the message `Inbound added and tunnel started` appears on the screen, which means that the operation is successful.
 
+!!! warning "very important point"
+    Be careful when adding a port in this step, enter only one port so that the desired `inbound` is created for it correctly. To add more ports, use `Add` option and add each port in one step.
 
 `Status`
 
