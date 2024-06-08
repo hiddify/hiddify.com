@@ -936,6 +936,10 @@ video {
   height: 100vh;
 }
 
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
 .max-h-\[451\] {
   max-height: 451;
 }
@@ -1801,6 +1805,10 @@ video {
 
   .md\:h-24 {
     height: 6rem;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:max-h-\[103px\] {
