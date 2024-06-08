@@ -36,6 +36,29 @@
       background-attachment: scroll;
     }
   </style>
+
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      border-radius: 20px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: white;
+      border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -53,10 +76,10 @@
         <a href="/manager" class="py-2 w-fit no-underline hover:text-primary">
           Manager
         </a>
-        <a href="/about" class="py-2 w-fit no-underline hover:text-primary">
+        <a href="/about-us" class="py-2 w-fit no-underline hover:text-primary">
           About Us
         </a>
-        <a href="/fa" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
+        <a href="/fa/manager" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
           <img style="display:inline"
             src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png"
             alt="Lang_farsi">
@@ -91,10 +114,10 @@
       <a href="/manager" class="py-2 w-fit no-underline hover:text-primary">
         Manager
       </a>
-      <a href="/about" class="py-2 w-fit no-underline hover:text-primary">
+      <a href="/about-us" class="py-2 w-fit no-underline hover:text-primary">
         About Us
       </a>
-      <a href="/fa" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
+      <a href="/fa/manager" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
         <img style="display:inline"
           src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png"
           alt="Lang_farsi">
@@ -210,23 +233,27 @@
           </div>
 
           <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
-            <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <div class="flex flex-col gap-3 md:gap-1">
-              <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://www.youtube.com/watch?v=XSwCE35lqmU">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-2 py-2 w-full md:w-1/3">
+            <div class="px-6 overflow-y-auto overflow-x-hidden h-full">
+              <div class="pt-6">
+                <h1 class="text-secondaryText title-font text-base">Related videos</h1>
+              </div>
+              <div class="flex flex-col gap-3 md:gap-1">
+                <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=XSwCE35lqmU">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -234,7 +261,7 @@
         <div id="section-bottom-1"
           class="hidden md:flex bg-gradient-to-t from-white bg-opacity-80 h-24 rounded-b-3xl w-full absolute bottom-0 justify-center items-start py-3">
           <button id="read-more-1" onclick="readMore(1)"
-            class="bg-gray-400 bg-opacity-25 flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
+            class="bg-[#E2E2E2] flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
             <span>Read more</span>
             <svg id="arrow-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
@@ -357,23 +384,27 @@
           </div>
 
           <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
-            <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <div class="flex flex-col gap-3 md:gap-1">
-              <a href="https://www.youtube.com/watch?v=nOe7FhajX3g">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://www.youtube.com/watch?v=eFNPBSy8_to">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-2 py-2 w-full md:w-1/3">
+            <div class="px-6 overflow-y-auto overflow-x-hidden h-full">
+              <div class="pt-6">
+                <h1 class="text-secondaryText title-font text-base">Related videos</h1>
+              </div>
+              <div class="flex flex-col gap-3 md:gap-1">
+                <a href="https://www.youtube.com/watch?v=nOe7FhajX3g">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=eFNPBSy8_to">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -381,7 +412,7 @@
         <div id="section-bottom-2"
           class="hidden md:flex bg-gradient-to-t from-white bg-opacity-80 h-24 rounded-b-3xl w-full absolute bottom-0 justify-center items-start py-3">
           <button id="read-more-2" onclick="readMore(2)"
-            class="bg-gray-400 bg-opacity-25 flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
+            class="bg-[#E2E2E2] flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
             <span>Read more</span>
             <svg id="arrow-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
@@ -606,23 +637,27 @@
           </div>
 
           <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
-            <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <div class="flex flex-col gap-3 md:gap-1">
-              <a href="https://www.youtube.com/watch?v=ea5C93ynkUs">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://youtu.be/gAyfCJt0jXw?si=QSA8kNy_Ua79sN70">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/274807068-2e229b5d-4b3d-4588-8434-aff0b278c66a.jpg"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-2 py-2 w-full md:w-1/3">
+            <div class="px-6 overflow-y-auto overflow-x-hidden h-full">
+              <div class="pt-6">
+                <h1 class="text-secondaryText title-font text-base">Related videos</h1>
+              </div>
+              <div class="flex flex-col gap-3 md:gap-1">
+                <a href="https://www.youtube.com/watch?v=ea5C93ynkUs">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://youtu.be/gAyfCJt0jXw?si=QSA8kNy_Ua79sN70">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/274807068-2e229b5d-4b3d-4588-8434-aff0b278c66a.jpg"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -630,7 +665,7 @@
         <div id="section-bottom-3"
           class="hidden md:flex bg-gradient-to-t from-white bg-opacity-80 h-24 rounded-b-3xl w-full absolute bottom-0 justify-center items-start py-3">
           <button id="read-more-3" onclick="readMore(3)"
-            class="bg-gray-400 bg-opacity-25 flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
+            class="bg-[#E2E2E2] flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
             <span>Read more</span>
             <svg id="arrow-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
@@ -793,16 +828,16 @@
             </div>
           </div>
 
-          <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
+          <!-- <div
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-          </div>
+          </div> -->
         </div>
 
         <div id="section-bottom-4"
           class="hidden md:flex bg-gradient-to-t from-white bg-opacity-80 h-24 rounded-b-3xl w-full absolute bottom-0 justify-center items-start py-3">
           <button id="read-more-4" onclick="readMore(4)"
-            class="bg-gray-400 bg-opacity-25 flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
+            class="bg-[#E2E2E2] flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
             <span>Read more</span>
             <svg id="arrow-4" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
@@ -866,37 +901,41 @@
           </div>
 
           <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
-            <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <div class="flex flex-col gap-3 md:gap-1">
-              <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/HiddifyNG_Tutorial_en.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://www.youtube.com/watch?v=mUTfYd1_UCM">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/HiddifyClashAndroid_Tutorial_en.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://www.youtube.com/watch?v=5AQgbCwHujk">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/V2rayNG_Tutorial_en.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/V2flyng_Tutorial_en.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 px-2 py-2 border-white w-full md:w-1/3">
+            <div class="px-6 overflow-y-auto overflow-x-hidden h-full">
+              <div class="pt-6">
+                <h1 class="text-secondaryText title-font text-base">Related videos</h1>
+              </div>
+              <div class="flex flex-col gap-3 md:gap-1">
+                <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/HiddifyNG_Tutorial_en.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=mUTfYd1_UCM">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/HiddifyClashAndroid_Tutorial_en.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=5AQgbCwHujk">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/V2rayNG_Tutorial_en.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/V2flyng_Tutorial_en.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -970,17 +1009,16 @@
             </div>
           </div>
 
-          <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
+          <!-- <div
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <!-- realted videos goes here -->
-          </div>
+          </div> -->
         </div>
 
         <div id="section-bottom-6"
           class="hidden md:flex bg-gradient-to-t from-white bg-opacity-80 h-24 rounded-b-3xl w-full absolute bottom-0 justify-center items-start py-3">
           <button id="read-more-6" onclick="readMore(6)"
-            class="bg-gray-400 bg-opacity-25 flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
+            class="bg-[#E2E2E2] flex h-fit py-2 px-5 rounded-full items-center justify-center gap-2">
             <span>Read more</span>
             <svg id="arrow-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
@@ -1031,23 +1069,27 @@
           </div>
 
           <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
-            <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <div class="flex flex-col gap-3 md:gap-1">
-              <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/HiddifyN_Tutorial_en.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
-              <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg">
-                <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/HiddifyClashDesktop_tutorial_en.png"
-                    class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                  <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-                </div>
-              </a>
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-2 py-2 w-full md:w-1/3">
+            <div class="px-6 overflow-y-auto overflow-x-hidden h-full">
+              <div class="pt-6">
+                <h1 class="text-secondaryText title-font text-base">Related videos</h1>
+              </div>
+              <div class="flex flex-col gap-3 md:gap-1">
+                <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/HiddifyN_Tutorial_en.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg">
+                  <div class="relative p-2 flex justify-center items-center">
+                    <img src="/assets/HiddifyClashDesktop_tutorial_en.png"
+                      class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                    <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1083,11 +1125,10 @@
             </div>
           </div>
 
-          <div
-            class="max-h-[500px] md:max-h-[unset]  md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
+          <!-- <div
+            class="max-h-[500px] md:max-h-[unset] rounded-r-3xl md:border-l-2 border-t-2 md:border-t-0 border-white px-8 py-8 w-full md:w-1/3 overflow-y-auto overflow-x-hidden">
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
-            <!-- related videos goes here -->
-          </div>
+          </div> -->
         </div>
 
         <!-- read more button -->
