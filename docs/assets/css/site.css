@@ -1216,16 +1216,6 @@ video {
   border-bottom-left-radius: 0.75rem;
 }
 
-.rounded-l-3xl {
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-.rounded-r-3xl {
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-}
-
 .rounded-bl-\[30px\] {
   border-bottom-left-radius: 30px;
 }
