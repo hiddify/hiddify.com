@@ -2254,6 +2254,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:flex {
+    display: flex;
+  }
+
   .\32xl\:w-\[850px\] {
     width: 850px;
   }
@@ -2273,5 +2277,9 @@ video {
 
   .\32xl\:justify-start {
     justify-content: flex-start;
+  }
+
+  .\32xl\:justify-center {
+    justify-content: center;
   }
 }
