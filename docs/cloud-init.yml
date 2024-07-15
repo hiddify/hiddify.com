@@ -11,6 +11,7 @@ packages:
   - gnupg-agent
   - software-properties-common
   - git
+  - jq
 
 runcmd:
   - cd /opt
@@ -21,6 +22,6 @@ output: { all: "| tee -a /root/cloud-init-output.log" }
 
 # you can see the generated link from the website by using 
 # https://yourip.sslip.io/hiddify in one hour, after that,
-# it will be disappear. 
+# it will be disappear.
 ```
 </div>
