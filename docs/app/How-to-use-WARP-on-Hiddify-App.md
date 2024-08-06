@@ -1,1 +1,65 @@
-# How to use WARP on Hiddify App
+# How to Use Warp on Hiddify App
+Warp is a service based on WireGuard provided by Cloudflare. By using this protocol, you can bypass the filtering system through creating a proxy. The Hiddify app also supports this protocol. Below are the instructions for setting up and using this protocol.
+
+## Warp Parameters
+In the HiddifyApp, various parameters can be set, which are explained in order below.
+
+### Different Modes:
+There are 6 main modes and 2 advanced modes that create a header (noise) for Warp to help bypass filtering.
+- m1: In this mode, the header is created randomly.
+- m2: In this mode, the header is created randomly and remains unchanged, with no traces of WireGuard and Warp in the header.
+- m3: In this mode, the QUIC protocol is used to create the header.
+- m4: This mode uses QUIC and is unchangeable, with no traces of WireGuard and Warp in the header.
+- m5: This mode uses LQUIC.
+- m6: This mode uses LQUIC and remains unchanged, with no traces of WireGuard and Warp in the header.
+- gHEX: This advanced mode uses a HEX number for the Warp header to create noise.
+- hHEX: This advanced mode also uses a HEX number for the Warp header but remains unchanged, with no traces of WireGuard and Warp in the header.
+
+These headers are defined with the IFPM parameter in Warp. For example: `ifpm=m4` or `ifpm=h04ad5d` or `ifpm=g04ad5d`
+
+!!! tip:
+     The recommended mode is `m4`.
+
+### Number, Size, and Delay of Noise Packets
+These parameters are as follows:
+- Number of noise packets: The number of noise packets can be defined in Warp using `ifp`, which is defined as a range, and each time a random number within this range is selected. For example: `ifp=40-80` means between 40 to 80 noise packets are created randomly.
+- Size of noise packets: The size of the packets can be defined with the `ifps` parameter, which is also defined as a range, and each time a random size within this range is selected. For example: `ifps=40-100` means each time a noise packet with a random size between 40 to 100 bits is created.
+- Delay in sending noise packets: The delay is defined using the `ifpd` parameter, which is also defined as a range, and each time the packets are sent with a random delay within this range. For example: `ifpd=4-8` means the packets are sent with a random delay between 4 to 8 seconds. Obviously, the smaller this range, the better.
+
+### IP Settings
+IP configuration settings are done in several ways:
+- auto4: An automatic IPv4 is assigned to the config by Cloudflare.
+- auto6: An automatic IPv6 is assigned to the config by Cloudflare.
+- auto: Both IPv4 and IPv6 ranges are assigned to the config by Cloudflare.
+- Clean IPv4: IPv4 can be directly entered into the config. For example: `188.114.97.170`
+- Clean IPv6: IPv6 must be entered into the config using `[]`. For example: `[2a01:4ef:f0:10a5::1]`
+  !!! tip:
+     To find clean IPs, various scanners can be used. For example, these scanners: [1](https://github.com/MortezaBashsiz/CFScanner), [2](https://github.com/azavaxhuman/Quick_Warp_on_Warp), [3](https://github.com/Ptechgithub/warp)
+
+### Display Name for Config:
+To create a display name or remark the config, a `#` can be used at the end of the config followed by the desired name. The name should be a single piece. For example:
+
+`warp://auto#NAME`
+
+### Warp in Warp
+With this feature, you can use two different Warps and place one at the end of the other. In this way, you first connect to the first Warp, then connect to the second Warp from there, and the final IP becomes the IP of the second Warp. To use this feature, the `detour` parameter should be used, and it should be added at the end of the first Warp with `&&`, followed by the second Warp. For example:
+
+`warp://auto&&detour=warp://auto`
+
+### General Formula for Warp Config:
+The Warp config can be built using this formula. In this case, a fixed config is imported into the software.
+
+`warp://License@IP:port?ifp=s1-s2&ifpd=d1-d2&ifpm=mode`
+
+Example:
+
+`warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4`
+
+In this case, a Warp config with the display name `m4` is imported into the software.
+
+You can also detour two Warps. For example:
+`warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=warp://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3`
+
+In this case, a config with the name `m4` and a detoured config for Warp in Warp (WoW) with the name `m3` is created in the software.
+
+Finally, it is recommended to check out sample Warp configs from [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp) and [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp2).
