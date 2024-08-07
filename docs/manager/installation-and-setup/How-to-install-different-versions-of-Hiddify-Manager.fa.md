@@ -102,3 +102,19 @@ bash <(curl i.hiddify.com/v8)
 bash <(curl i.hiddify.com/v10.7.0)
 ```
 </div>
+
+همچنین می‌توان نسخه‌های دلخواه با اجرای دستور زیر به صورت منوی گرافیکی مشاهده نمود و برای نصب انتخاب کرد.
+
+<div dir=ltr>
+
+```
+bash <(curl i.hiddify.com/custom)
+```
+</div>
+
+که در نتیجه این منوی گرافیکی ظاهر می‌شود. نسخه مورد نظر خود را انتخاب نمایید تا نصب انجام شود.
+
+<div align=center markdown="1">
+  
+![نصب نسخه دلخواه](https://github.com/user-attachments/assets/fa9c1a28-ef58-44b4-8a9f-9afbdb04c40c)
+</div>
