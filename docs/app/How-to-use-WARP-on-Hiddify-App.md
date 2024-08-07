@@ -63,3 +63,8 @@ You can also detour two WARPs. For example:
 In this case, a config with the name `m4` and a detoured config for WARP in WARP (WoW) with the name `m3` is created in the software.
 
 Finally, it is recommended to check out sample WARP configs from [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP) and [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP2).
+
+!!! tip Final Tip:
+  - To achieve a suitable configuration, use the above scanners to find a clean IP suitable for your network and then build the Warp configuration according to the formula.
+  
+  - Also, adjust the range of parameters to achieve the desired result.
