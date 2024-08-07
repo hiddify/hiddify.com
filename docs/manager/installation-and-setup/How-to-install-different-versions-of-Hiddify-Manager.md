@@ -79,3 +79,19 @@ bash <(curl i.hiddify.com/v10.7.0)
 ```
 
 </div>
+
+You can also view and select desired versions for installation via a graphical menu by running the following command:
+
+<div dir=ltr>
+
+```
+bash <(curl i.hiddify.com/custom)
+```
+</div>
+
+This will result in the appearance of a graphical menu. Select your desired version to proceed with the installation.
+
+<div align=center markdown="1">
+  
+![Install Desired Version](https://github.com/user-attachments/assets/fa9c1a28-ef58-44b4-8a9f-9afbdb04c40c)
+</div>
