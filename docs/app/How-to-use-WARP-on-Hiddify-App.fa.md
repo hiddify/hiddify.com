@@ -61,5 +61,9 @@
 
 در این حالت یک کانفیگ با نام `m4` و یک کانفیگ detour شده برای وارپ در وارپ (WoW) با نام `m3` در نرم‌افزار ایجاد می‌شود.
 
-در پایان توصیه می‌شود نمونه کانفیگ‌های وارپ از [اینجا](کانفیگ‌های نمونه برای وارپ (https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp)) و [اینجا](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp2) ملاحظه شوند.
-  
+در نهایت توصیه می‌شود نمونه کانفیگ‌های وارپ از [اینجا](کانفیگ‌های نمونه برای وارپ (https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp)) و [اینجا](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp2) ملاحظه شوند.
+
+!!! tip نکته پایانی:
+  - برای رسیدن به کانفیگ مناسب باید با استفاده از اسکنرهای بالا آیپی تمیز مناسب شبکه خود را پیدا کنید و سپس مطابق با فرمول وارپ کانفیگ را بسازید. 
+
+  - همچنین رنج پارامترها را دستکاری کنید تا به نتیجه مطلوب برسید. 
