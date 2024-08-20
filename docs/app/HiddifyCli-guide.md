@@ -72,7 +72,7 @@ For this, you must first extract the settings related to your HiddifyApp.
 <div dir="ltr" markdown="1">
   
 ```
-HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file>
+HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file>
 ```
 </div>
 
@@ -82,7 +82,7 @@ Here, put your config file or sublink instead of `<config file or sublink>` and 
 <div dir="ltr" markdown="1">
   
 ```
-HiddifyCli run -c <config file or sublink> -h <HiddifyApp config URL>
+HiddifyCli run -c <config file or sublink> -d <HiddifyApp config URL>
 ```
 </div>
 
