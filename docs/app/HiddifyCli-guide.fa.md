@@ -72,7 +72,7 @@ HiddifyCli run -c <sublink>
 <div dir="ltr" markdown="1">
   
 ```
-HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file>
+HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file>
 ```
 </div>
 
@@ -82,7 +82,7 @@ HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file>
 <div dir="ltr" markdown="1">
   
 ```
-HiddifyCli run -c <config file or sublink> -h <HiddifyApp config URL>
+HiddifyCli run -c <config file or sublink> -d <HiddifyApp config URL>
 ```
 </div>
 
