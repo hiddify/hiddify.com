@@ -40,6 +40,8 @@
   `188.114.97.170`
   
 - IPv6 تمیز: آیپی ورژن ۶ را بایستی با استفاده از `[]` وارد کانفیگ نمود. مثلا: `[2a01:4ef:f0:10a5::1]`
+
+
   !!! tip نکته:
   
      برای یافتن آیپی‌های تمیز می‌توان از اسکنرهای مختلف استفاده نمود. مثلا این اسکنرها: [1](https://github.com/MortezaBashsiz/CFScanner) ، [2](https://github.com/azavaxhuman/Quick_Warp_on_Warp) ، [3](https://github.com/Ptechgithub/warp)
