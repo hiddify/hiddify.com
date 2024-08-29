@@ -33,7 +33,7 @@ network:
     tunnel98:
       mode: sit
       local: IPv4-RELAY
-      remote: IPv4-Main
+      remote: IPv4-MAIN
       addresses:
         - 2001:db9:900::1/64
 ```
@@ -69,8 +69,8 @@ network:
   tunnels:
     tunnel98:
       mode: sit
-      local: IPv4-Main
-      remote: IPv4-IRAN
+      local: IPv4-MAIN
+      remote: IPv4-RELAY
       addresses:
         - 2001:db9:900::2/64
 ```
