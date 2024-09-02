@@ -45,28 +45,28 @@
 
 ### نام نمایشی کانفیگ:
 برای ایجاد نام نمایشی یا ریمارک نمودن کانفیگ می‌توان در انتهای کانفیگ از یک `#‍` استفاده نمود و اسم مورد نظر را اضافه نمود. دقت شود که اسم باید به صورت یک تکه باشد. مثلا:
-<div markdown=1 direction=ltr>
+<div dir=ltr markdown=1>
     
 `warp://auto#NAME`
 </div>
  ### وارپ در وارپ
  با استفاده از این قابلیت می‌توان از دو وارپ مختلف استفاده نمود و یکی را در انتهای دیگری قرار داد. بدین ترتیب فرضا شما با وارپ اول متصل می‌شوید سپس از آنجا به وارپ دوم متصل می‌شوید و آیپی نهایی، آیپی وارپ دوم می‌شود. برای استفاده از این قابلیت باید از پارامتر `detour` استفاده نمود و ان را با `&&` در انتهای وارپ اول قرار داد و سپس وارپ دوم را اضافه نمود. مثلا:
 
-<div markdown=1 direction=ltr>
+<div dir=ltr markdown=1>
     
 `warp://auto&&detour=warp://auto`
 </div>
 
 ### فرمول کلی کانفیگ وارپ:
 کانفیگ وارپ را می‌توان با استفاده از این فرمول ساخت. در این حالت یک کانفیگ ثابت در نرم‌افزار ایمپورت می‌شود.
-<div markdown=1 direction=ltr>
+<div dir=ltr markdown=1>
     
 `warp://License@IP:port?ifp=s1-s2&ifpd=d1-d2&ifpm=mode`
 </div>
 
 مثال:
 
-<div markdown=1 direction=ltr>
+<div dir=ltr markdown=1>
     
 `warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4`
 </div>
@@ -75,7 +75,7 @@
 
 همچنین می‌توان دو وارپ را detour نمود. مثلا:
 
-<div markdown=1 direction=ltr>
+<div dir=ltr markdown=1>
     
 `warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=warp://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3`
 </div>
