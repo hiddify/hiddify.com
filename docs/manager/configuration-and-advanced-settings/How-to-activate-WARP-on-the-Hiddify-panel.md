@@ -70,9 +70,19 @@ You can also use the [ip.gs](https://ip.gs/) website, and if Cloudflare's IP is 
 
 </div> 
 
+## How to reinstall WARP service?
 
+- To do this, SSH to your server; Press ctrl+c and click Cancel to exit Hiddify menu.
 
-## How to change IP Warp?
+- Now run this command.
+
+```
+
+cd /opt/hiddify-manager/other/warp/wireguard && bash install.sh
+
+```
+
+## How to change IP WARP?
 
 - To do this, SSH to your server; Press ctrl+c and click Cancel to exit Hidify menu.
 
