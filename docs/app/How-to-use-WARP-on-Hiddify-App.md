@@ -18,7 +18,7 @@ There are 6 main modes and 2 advanced modes that create a header (noise) for WAR
 
 These headers are defined with the IFPM parameter in WARP. For example: `ifpm=m4` or `ifpm=h04ad5d` or `ifpm=g04ad5d`
 
-!!! tip:
+!!! tip "Tip"
      The recommended mode is `m4`.
 
 ### Number, Size, and Delay of Noise Packets
@@ -37,7 +37,7 @@ IP configuration settings are done in several ways:
 - Clean IPv4: IPv4 can be directly entered into the config. For example: `188.114.97.170`
 - Clean IPv6: IPv6 must be entered into the config using `[]`. For example: `[2a01:4ef:f0:10a5::1]`
 
-!!! tip:
+!!! tip "Tip"
      To find clean IPs, various scanners can be used. For example, these scanners: [1](https://github.com/MortezaBashsiz/CFScanner), [2](https://github.com/azavaxhuman/Quick_WARP_on_WARP), [3](https://github.com/Ptechgithub/WARP)
 
 ### Display Name for Config:
@@ -68,7 +68,7 @@ In this case, a config with the name `m4` and a detoured config for WARP in WARP
 
 Finally, it is recommended to check out sample WARP configs from [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP) and [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP2).
 
-!!! tip Final Tip:
+!!! tip "Final Tip"
 
   - To achieve a suitable configuration, use the above scanners to find a clean IP suitable for your network and then build the Warp configuration according to the formula.
   
