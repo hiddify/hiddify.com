@@ -40,9 +40,8 @@
 - IPv6 تمیز: آیپی ورژن ۶ را بایستی با استفاده از `[]` وارد کانفیگ نمود. مثلا: `[2a01:4ef:f0:10a5::1]`
 
 
-  !!! tip نکته:
-  
-     برای یافتن آیپی‌های تمیز می‌توان از اسکنرهای مختلف استفاده نمود. مثلا این اسکنرها: [1](https://github.com/MortezaBashsiz/CFScanner) ، [2](https://github.com/azavaxhuman/Quick_Warp_on_Warp) ، [3](https://github.com/Ptechgithub/warp)
+!!! tip "نکته!"
+    برای یافتن آیپی‌های تمیز می‌توان از اسکنرهای مختلف استفاده نمود. مثلا این اسکنرها: [1](https://github.com/MortezaBashsiz/CFScanner) ، [2](https://github.com/azavaxhuman/Quick_Warp_on_Warp) ، [3](https://github.com/Ptechgithub/warp)
 
 ### نام نمایشی کانفیگ:
 برای ایجاد نام نمایشی یا ریمارک نمودن کانفیگ می‌توان در انتهای کانفیگ از یک `#‍` استفاده نمود و اسم مورد نظر را اضافه نمود. دقت شود که اسم باید به صورت یک تکه باشد. مثلا:
@@ -73,7 +72,7 @@
 
 در نهایت توصیه می‌شود نمونه کانفیگ‌های وارپ از [اینجا](کانفیگ‌های نمونه برای وارپ (https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp)) و [اینجا](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/warp2) ملاحظه شوند.
 
-!!! tip نکته پایانی:
+!!! tip "نکته پایانی!"
 
   - برای رسیدن به کانفیگ مناسب باید با استفاده از اسکنرهای بالا آیپی تمیز مناسب شبکه خود را پیدا کنید و سپس مطابق با فرمول وارپ کانفیگ را بسازید. 
 
