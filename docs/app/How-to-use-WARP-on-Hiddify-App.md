@@ -43,33 +43,31 @@ IP configuration settings are done in several ways:
 ### Display Name for Config:
 To create a display name or remark the config, a `#` can be used at the end of the config followed by the desired name. The name should be a single piece. For example:
 
-`WARP://auto#NAME`
+`warp://auto#NAME`
 
 ### WARP in WARP
 With this feature, you can use two different WARPs and place one at the end of the other. In this way, you first connect to the first WARP, then connect to the second WARP from there, and the final IP becomes the IP of the second WARP. To use this feature, the `detour` parameter should be used, and it should be added at the end of the first WARP with `&&`, followed by the second WARP. For example:
 
-`WARP://auto&&detour=WARP://auto`
+`warp://auto&&detour=WARP://auto`
 
 ### General Formula for WARP Config:
 The WARP config can be built using this formula. In this case, a fixed config is imported into the software.
 
-`WARP://License@IP:port?ifp=s1-s2&ifpd=d1-d2&ifpm=mode`
+`warp://License@IP:port?ifp=s1-s2&ifpd=d1-d2&ifpm=mode`
 
 Example:
 
-`WARP://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4`
+`warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4`
 
 In this case, a WARP config with the display name `m4` is imported into the software.
 
 You can also detour two WARPs. For example:
-`WARP://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=WARP://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3`
+`warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=WARP://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3`
 
 In this case, a config with the name `m4` and a detoured config for WARP in WARP (WoW) with the name `m3` is created in the software.
 
 Finally, it is recommended to check out sample WARP configs from [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP) and [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP2).
 
 !!! tip "Final Tip"
-
-  - To achieve a suitable configuration, use the above scanners to find a clean IP suitable for your network and then build the Warp configuration according to the formula.
-  
-  - Also, adjust the range of parameters to achieve the desired result.
+    - To achieve a suitable configuration, use the above scanners to find a clean IP suitable for your network and then build the Warp configuration according to the formula.
+    - Also, adjust the range of parameters to achieve the desired result.
