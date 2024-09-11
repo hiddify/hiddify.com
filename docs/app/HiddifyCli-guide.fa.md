@@ -16,7 +16,7 @@ title: آموزش استفاده از HiddifyCli یا هیدیفای‌کامن�
 <div dir="ltr" markdown="1">
   
 ```
-HiddifyCli run -c <config file or sublink> -h <HiddifyApp config file or URL>
+HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file or URL>
 ```
 </div>
 
