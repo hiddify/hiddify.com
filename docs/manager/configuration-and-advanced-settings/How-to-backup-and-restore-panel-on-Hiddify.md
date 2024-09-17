@@ -28,7 +28,7 @@ When updating or reinstalling the panel, it is backed up and you can access and 
 
 > Note: If for any reason the Telegram bot was not available to you and you were not able to backup via the web, you can access the previous backups of the system from the following path.
 
-`/opt/hiddify-config/hiddify-panel/backup`
+`/opt/hiddify-manager/hiddify-panel/backup`
 
 and then transfer the file to your PC. [More info here](/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer)
 
