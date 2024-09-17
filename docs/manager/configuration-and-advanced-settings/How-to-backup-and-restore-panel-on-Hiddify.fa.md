@@ -28,8 +28,10 @@ weight: -100
 
 <div dir=ltr markdown=1>
  
-`/opt/hiddify-config/hiddify-panel/backup`
+`/opt/hiddify-manager/hiddify-panel/backup`
 </div>
+
+
 
 و سپس فایل را خارج کنید. [اطلاعات بیشتر در اینجا](/fa/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/)
 
