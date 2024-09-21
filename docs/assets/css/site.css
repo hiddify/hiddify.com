@@ -1630,7 +1630,7 @@ video {
 
 .text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .underline {
@@ -2282,4 +2282,59 @@ video {
   .\32xl\:justify-center {
     justify-content: center;
   }
+}
+
+
+
+
+
+
+
+html,    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    body[data-md-color-scheme="default"] {
+      /* تنظیم تصویر پس‌زمینه */
+      background-image: url('/assets/background-color.webp');
+
+      /* پوشش تمام صفحه */
+      background-size: cover;
+
+      /* مرکز تصویر پس‌زمینه */
+      background-position: center;
+
+      /* عدم تکرار تصویر */
+      background-repeat: repeat;
+
+      /* ثابت نگه داشتن پس‌زمینه (همراه محتوا اسکرول نمی‌شود) */
+      background-attachment: scroll;
+    }
+
+
+
+    .md-header{
+      background-color: transparent;
+      color: var(--md-typeset-color);
+    }
+
+    .md-tabs{
+      background-color: transparent;
+      color: var(--md-typeset-color);
+    }
+
+    .md-copyright__highlight{
+      color: var(--md-typeset-color);
+    }
+
+    @media screen and (max-width: 76.1875em) {
+      .md-header__button.md-logo {
+          display: inline-block;
+      }
+  }
+
+
+.video-card div:first-child {
+    overflow: auto;
 }
