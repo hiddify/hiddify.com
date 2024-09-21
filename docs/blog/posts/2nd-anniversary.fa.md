@@ -15,11 +15,8 @@ description: Birthday
 
 # دو سالگی هیدیفای
 
-<div markdpwn="1" align=center>
-  
 ![Logo](https://github.com/user-attachments/assets/15e0dba5-bbc0-48e3-b467-916ad1bd93a5)
-</div>
-  
+
 ## داستان هیدیفای از تولد تا امروز
 
 _گزارشی تشریحی به همراهان عزیز از اقدامات صورت گرفته در این دو سال_
