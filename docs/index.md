@@ -1,7 +1,7 @@
 ---
 title: Hiddify
 hide:
-  - navigation
+  # - navigation
   - toc
   - feedback
 ---

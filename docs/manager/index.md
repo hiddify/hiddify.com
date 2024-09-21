@@ -1,11 +1,13 @@
 ---
 title: Manager
+weight: -20
 hide:
-  - navigation
+  # - navigation
   - feedback
 #  - toc
 ---
-    <div class="px-3 md:px-10 lg:px-20 2xl:max-w-[1920px]">
+
+<div>
       <h1 class="text-primaryText title-font text-4xl">All tutorials and videos</h1>
       <section class="flex flex-col gap-5 items-center justify-center py-10">
         <section

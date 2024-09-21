@@ -1,9 +1,10 @@
 ---
 title: کلاینت
 hide:
-  - navigation
-  - toc
+  # - navigation
+  # - toc
   - feedback
+weight: -19
 ---
 
   <main class="2xl:flex 2xl:justify-center">

@@ -1,14 +1,14 @@
 ---
 title: منیجر
 hide:
-  - navigation
-  - toc
+  # - navigation
+  # - toc
   - feedback
+weight: -20
 ---
 
+<div>
 
-  <main class="2xl:flex 2xl:justify-center">
-    <div class="px-3 md:px-10 lg:px-20 2xl:max-w-[1920px]">
       <h1 class="text-primaryText title-font text-4xl">همه آموزش‌ها و ویدیوها</h1>
       <section class="flex flex-col gap-5 items-center justify-center py-10">
         <section
@@ -1023,7 +1023,7 @@ hide:
 
       </section>
     </div>
-  </main>
+  
 
   <script>
     
