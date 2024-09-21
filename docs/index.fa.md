@@ -7,7 +7,7 @@ hide:
 ---
 <style>@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}</style>
 <div class="relative pb-24 mb-80 md:pb-36 lg:pb-52">
-  <div class="absolute z-10  flex flex-col gap-5">
+  <div class="absolute z-1  flex flex-col gap-5">
     <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
       هیدیفای
       <br>
