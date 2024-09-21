@@ -1,11 +1,23 @@
-<div markdpwn="1" dir="rtl">
+---
+draft: false
+date: 2024-09-23 
+# authors:
+#   - hiddify
+categories:
+  - Hello
+
+tags:
+  - Hiddify
+  - Free Internet Solution
+description: Birthday.
+
+---
 
 # دو سالگی هیدیفای
 
-<div markdpwn="1" align=center>
   
 ![Logo](https://github.com/user-attachments/assets/15e0dba5-bbc0-48e3-b467-916ad1bd93a5)
-</div>
+
   
 ## داستان هیدیفای از تولد تا امروز
 
@@ -29,6 +41,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 در اواخر شهریور ۱۴۰۱ پس از محدودتر شدن دسترسی مردم به اینترنت آزاد، تصمیم گرفتیم ما هم به نوبه خود کاری که از دستمون بر میاد را بکنیم و با ایجاد دسترسی ساده به اینترنت، شرایط را برای مردم عزیز کشورمون ساده‌تر کنیم و این آغاز راه این پروژه بود و هیدیفای در همین روزها متولد شد. 
 
+<!-- more -->
 
 روزهای اول سعی کردیم یه [ریویو روی روش‌های فیلترینگ بکنیم](https://github.com/hiddify/awesome-freedom) و یه لیستی از [سایت هایی که vps](https://github.com/hiddify/awesome-freedom/blob/main/vps-providers.md) میدن تهیه کنیم و در ریپوی Awesome-Freedom بذاریم که هر کس که یک مقدار دانش فنی داره بتونه سرور بخره و فیلترشکن درست کنه. 
 
