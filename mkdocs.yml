@@ -212,7 +212,7 @@ plugins:
       post_readtime: true
 
 nav: #docs/app/install.md
-  - Hiddify: index.html
+  #- Hiddify: index.html
   - ...
   - privacy-policy.md
       
