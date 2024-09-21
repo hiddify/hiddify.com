@@ -1,21 +1,17 @@
 ---
 draft: false
-date: 2024-09-23
-authors:
- - Hiddify Team
+date: 2024-09-23 
+# authors:
+#   - hiddify
 categories:
- - Anniversary
+  - Hello
+
 tags:
- - Hiddify
- - Internet Freedom Solution
- - Anniversary
- - Second
- - سالگرد
- - دوم
- - هیدیفای
- - راهکار آزادی اینترنت
-description: دو سالگی هیدیفای
+  - Hiddify
+  - Free Internet Solution
+description: Birthday
 ---
+
 
 # دو سالگی هیدیفای
 
