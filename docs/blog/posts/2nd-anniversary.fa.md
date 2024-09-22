@@ -150,7 +150,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyMananger_V4" src="https://github.com/user-attachments/assets/7876f1e2-3281-47e5-a910-59eb2e2e223c" width=80% />
+<img alt="HiddifyMananger_V4" src="https://github.com/user-attachments/assets/7876f1e2-3281-47e5-a910-59eb2e2e223c" width=50% />
 </div>
 
 
@@ -172,7 +172,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyNG" src="https://github.com/user-attachments/assets/0ce0cd67-30cc-49f7-87f8-a8ebfd252844" width=80% />
+<img alt="HiddifyNG" src="https://github.com/user-attachments/assets/0ce0cd67-30cc-49f7-87f8-a8ebfd252844" width=40% />
 </div>
 
 
@@ -202,7 +202,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyNG_LB_Routing" src="https://github.com/user-attachments/assets/bcb74626-4fbf-4e4c-940c-2f0f4211cc08" width=80% />
+<img alt="HiddifyNG_LB_Routing" src="https://github.com/user-attachments/assets/bcb74626-4fbf-4e4c-940c-2f0f4211cc08" width=50% />
 </div>
 
 
@@ -215,8 +215,8 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 - ساده سازی فرایند فعال سازی فیلترشکن در پنل کاربری
 
 <div align=center>
-  
-<img alt="HiddifyManager_V8" src="https://github.com/user-attachments/assets/ef977f1d-19ce-48f7-9886-0d31be610b4b" width=80% />
+
+<img alt="HiddifyManager_V8" src="https://github.com/user-attachments/assets/92293f87-80f3-4df6-8db5-7c1c5643dca2" width=80% />
 </div>
 
 
@@ -234,7 +234,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_Starting" src="https://github.com/user-attachments/assets/a0eec500-411a-4914-8ab5-d81d82cebbaa" width=80% />
+<img alt="HiddifyApp_Starting" src="https://github.com/user-attachments/assets/34829e2e-89b8-457f-ba8c-b66fe184e9dd" width=40% />
 </div>
 
 
@@ -244,8 +244,9 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Hiddify_Reality_Scanner" src="https://github.com/user-attachments/assets/18eca2da-48e6-4dfd-beb0-eabf98ea7a2e" width=80% />
+<img alt="Hiddify_Reality_Scanner" src="https://github.com/user-attachments/assets/18eca2da-48e6-4dfd-beb0-eabf98ea7a2e" width=50% />
 </div>
+
 
 
 ### انتشار HiddifyApp در گوگل‌پلی
@@ -254,7 +255,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp" src="https://github.com/user-attachments/assets/5e61ab89-1329-455f-9aaa-958a99d3c1f3" width=80% />
+<img alt="HiddifyApp" src="https://github.com/user-attachments/assets/5e61ab89-1329-455f-9aaa-958a99d3c1f3" width=40% />
 </div>
 
 
@@ -284,7 +285,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_V0.13" src="https://github.com/user-attachments/assets/cd405de2-427a-4b97-940f-1a5aae7ba7a7" width=80% />
+<img alt="HiddifyApp_V0.13" src="https://github.com/user-attachments/assets/aa7b9d35-f731-4b24-9c7d-10fd485374e6" width=80% />
 </div>
 
 
@@ -317,10 +318,10 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 - بازطراحی صفحه کاربری نوآورانه
 
 <div align=center>
-  
-<img alt="HiddifyManager_X_1" src="https://github.com/user-attachments/assets/fa751305-e720-4e76-88b9-9b13093bdec2" width=80% />
 
-<img alt="HiddifyManager_X_2" src="https://github.com/user-attachments/assets/a9845527-44b6-4135-b602-07816edee820" width=80% />
+<img alt="HiddifyManager_X_1" src="https://github.com/user-attachments/assets/caa0870e-31d3-432f-8db1-701006dee151" width=50% />
+
+<img alt="HiddifyManager_X_2" src="https://github.com/user-attachments/assets/a9845527-44b6-4135-b602-07816edee820" width=50% />
 </div>
 
 
@@ -337,7 +338,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_on_TestFlight" src="https://github.com/user-attachments/assets/556bd786-678e-4687-84b4-f499c252130b" width=80% />
+<img alt="HiddifyApp_on_TestFlight" src="https://github.com/user-attachments/assets/556bd786-678e-4687-84b4-f499c252130b" width=50% />
 </div>
 
 
@@ -357,7 +358,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_v1" src="https://github.com/user-attachments/assets/ffcf1f13-b9cc-47f7-8ec9-2986937256de" width=80% />
+<img alt="HiddifyApp_v1" src="https://github.com/user-attachments/assets/ffcf1f13-b9cc-47f7-8ec9-2986937256de" width=50% />
 </div>
 
 
@@ -377,7 +378,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Hiddify_Relay_Builder" src="https://github.com/user-attachments/assets/16171834-1f3d-4fe4-ab90-0666d9487f48" width=80% />
+<img alt="Hiddify_Relay_Builder" src="https://github.com/user-attachments/assets/16171834-1f3d-4fe4-ab90-0666d9487f48" width=50% />
 </div>
 
 
@@ -403,7 +404,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_V1.5" src="https://github.com/user-attachments/assets/6cea5e80-e123-48ed-be3e-05bf5c15051a" width=80% />
+<img alt="HiddifyApp_V1.5" src="https://github.com/user-attachments/assets/bfee64bf-4793-4e6d-a6d9-5d4ad6ad727d" width=80% />
 </div>
 
 
@@ -424,7 +425,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Stonning_Record_for_HiddifyApp" src="https://github.com/user-attachments/assets/3d6f44b9-1ebf-4fcc-b41d-3d605ebed093" width=80% />
+<img alt="Stonning_Record_for_HiddifyApp" src="https://github.com/user-attachments/assets/3d6f44b9-1ebf-4fcc-b41d-3d605ebed093" width=50% />
 </div>
 
 
