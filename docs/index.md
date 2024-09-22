@@ -5,6 +5,17 @@ hide:
   - feedback
   # - navigation
 ---
+<script>
+function checkTimezoneAndRedirect() {
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (timezone === 'Asia/Tehran') {
+        window.location.href = '/fa/'; 
+    }
+}
+
+window.onload = checkTimezoneAndRedirect;
+</script>
+
 <style>@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}</style>
 <div class="relative pb-24 mb-80 md:pb-36 lg:pb-52">
   <div class="absolute z-1  flex flex-col gap-5">
@@ -318,4 +329,5 @@ if (window.navigator.userAgent.indexOf("X11") != -1) os = "UNIX";
 if (window.navigator.userAgent.indexOf("Linux") != -1) os = "Linux";
 
 installButton.innerText = "Download for " + os;
+
 </script>
