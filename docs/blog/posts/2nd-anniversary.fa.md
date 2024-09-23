@@ -447,8 +447,8 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 و خلاصه مسیری که طی کردیم به صورت زیر بوده است:
 
 <div align=center>
-  
-<img alt="Hiddify_History" src="https://github.com/user-attachments/assets/30028fd5-742a-4004-9aee-e0d0323a0e3c" width=80% />
+
+<img alt="Hiddify_History" src="https://github.com/user-attachments/assets/33e00f80-5464-4e1d-bc8b-61a0e92d1fa7" width=80% />
 </div>
 
 
