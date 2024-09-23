@@ -9,7 +9,7 @@ categories:
 tags:
   - Hiddify
   - Internet Freedom Solution
-description: Birthday
+description: Hiddify's Second Anniversary
 ---
 
 
