@@ -8,7 +8,7 @@ categories:
 
 tags:
   - Hiddify
-  - Free Internet Solution
+  - Internet Freedom Solution
 description: Hiddify's Second Anniversary
 ---
 
