@@ -4,7 +4,7 @@ date: 2024-09-23
 # authors:
 #   - hiddify
 categories:
-  - Hello
+  - Anniversary
 
 tags:
   - Hiddify
