@@ -61,7 +61,7 @@
 کانفیگ وارپ را می‌توان با استفاده از این فرمول ساخت. در این حالت یک کانفیگ ثابت در نرم‌افزار ایمپورت می‌شود.
 <div dir=ltr markdown=1>
     
-`warp://License@IP:port?ifp=s1-s2&ifpd=d1-d2&ifpm=mode`
+`warp://License@IP:port?ifp=n1-n2&ifps=s1-s2&ifpd=d1-d2&ifpm=mode#name`
 </div>
 
 مثال:
