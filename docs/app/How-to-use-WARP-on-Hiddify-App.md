@@ -53,7 +53,7 @@ With this feature, you can use two different WARPs and place one at the end of t
 ### General Formula for WARP Config:
 The WARP config can be built using this formula. In this case, a fixed config is imported into the software.
 
-`warp://License@IP:port?ifp=s1-s2&ifpd=d1-d2&ifpm=mode`
+`warp://License@IP:port?ifp=n1-n2&ifps=s1-s2&ifpd=d1-d2&ifpm=mode#name`
 
 Example:
 
