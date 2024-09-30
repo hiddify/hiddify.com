@@ -66,7 +66,7 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
   gap: 15px;
 }
 
@@ -81,9 +81,9 @@ h1 {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for mobile */
   }
   
   .profile-section {
@@ -94,11 +94,5 @@ h1 {
   .profile-info {
     text-align: center;
     margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
   }
 }
