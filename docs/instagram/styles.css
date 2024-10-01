@@ -1,3 +1,11 @@
+/* Step 2: Load the JURRA Font */
+@font-face {
+  font-family: 'Jura';
+  src: url('fonts/Jura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +49,7 @@ body {
 .profile-info h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: 'JURRA', sans-serif; /* Apply the JURRA font to the title */
 }
 
 .bio {
@@ -64,9 +73,10 @@ h1 {
   color: #333;
 }
 
+/* Grid Layout */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -81,16 +91,28 @@ h1 {
   transform: scale(1.05);
 }
 
+/* Mobile-specific styling */
 @media (max-width: 480px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for mobile */
+  .container {
+    width: 90%;
+    padding: 10px;
   }
-  
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .post img {
+    width: 100%;
+    border-radius: 3px;
+  }
+
   .profile-section {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .profile-info {
     text-align: center;
     margin-top: 10px;
