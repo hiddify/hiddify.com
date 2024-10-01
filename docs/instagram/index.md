@@ -3,6 +3,7 @@ title: Hiddify
 hide:
   - toc
   - feedback
+  - comments
   # - navigation
 ---
 
