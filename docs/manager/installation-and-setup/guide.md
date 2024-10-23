@@ -32,7 +32,7 @@ weight: -90
 1. Connect to your server through ssh and copy and run the following command in the terminal
 
 ```
-bash <(curl i.hiddify.com/release)
+bash <(curl https://i.hiddify.com/release)
 ```
 
 Congratulations, the installation is complete. 
