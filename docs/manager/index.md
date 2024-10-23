@@ -21,7 +21,7 @@ hide:
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/manager/installation-and-setup/guide" target="_blank"
-              class="text-secondaryText text-sm">Main
+              class="text-lg">Main
               installation guide</a>
           </div>
           <div class="flex items-center gap-2">
