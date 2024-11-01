@@ -37,13 +37,13 @@ description: AppStore
 
 ## روش‌های حمایت از هیدیفای:
 
-🌟 امتیاز ۵ ستاره در اپ استور و گوگل پلی
-🌟 ستاره‌ دادن در  گیت‌هاب
-💬 ریتوییت در توییتر  و به اشتراک‌گذاری پست‌ها و ویدیوها در یوتیوب
-💕 لایک و کامنت گذاشتن در اینستاگرام 
-💢 مشارکت در توسعه
-💡 تولید محتوای آموزشی
-💵 حمایت مالی
+- 🌟 امتیاز ۵ ستاره در اپ استور و گوگل پلی
+- 🌟 ستاره‌ دادن در  [گیت‌هاب](https://github.com/hiddify/hiddify-app)
+- 💬 ریتوییت در [توییتر](https://x.com/hiddify_com)  و به اشتراک‌گذاری پست‌ها و ویدیوها در [یوتیوب](https://youtube.com/@hiddify)
+- 💕 لایک و کامنت گذاشتن در [اینستاگرام](https://www.instagram.com/hiddify_com) 
+- 💢 [مشارکت در توسعه](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDQmbGFuZz1lbg)
+- 💡 [تولید محتوای آموزشی](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDUmbGFuZz1lbg)
+- 💵 [حمایت مالی](https://hiddify.com/fa/donation-and-support/)
 
 پیشاپیش برای حمایتی که می‌کنید، سپاسگزاریم! ❤️
 
