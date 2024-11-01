@@ -18,7 +18,7 @@ description: AppStore
 <img src="https://github.com/user-attachments/assets/47ccccf3-77d3-43e4-b95e-a29ca862ce51" alt="App published on the AppStore" width="50%" />
 </div>
 <br>
-Hiddify is now approved and available on the AppStore! 🎆
+# Hiddify is now approved and available on the AppStore! 🎆
 
 🔐 Hiddify is the only free, ad-free, and open-source software (licensed under GPL v3) that provides unrestricted access and works on all platforms, including  iOS, Android, Windows, Linux and Mac.
 
