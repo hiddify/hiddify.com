@@ -33,13 +33,13 @@ Our path is clear: free internet is everyone’s right. With your support, we ca
 
 
 ## How to support Hiddify:
-🌟 Give us a 5-star rating on the AppStore and Google Play
-🌟 Star us on [GitHub](https://github.com/hiddify/hiddify-app)
-💬 [Retweet](https://x.com/hiddify_com) and share posts and videos on [YouTube](https://youtube.com/@hiddify)
-💕 Like and comment on [instagram](https://www.instagram.com/hiddify_com)
-💢 [Contribute to development](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDQmbGFuZz1lbg)
-💡 [Create educational content](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDUmbGFuZz1lbg)
-💵 [Make a donation](https://hiddify.com/donation-and-support/)
+- 🌟 Give us a 5-star rating on the AppStore and Google Play
+- 🌟 Star us on [GitHub](https://github.com/hiddify/hiddify-app)
+- 💬 [Retweet](https://x.com/hiddify_com) and share posts and videos on [YouTube](https://youtube.com/@hiddify)
+- 💕 Like and comment on [instagram](https://www.instagram.com/hiddify_com)
+- 💢 [Contribute to development](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDQmbGFuZz1lbg)
+- 💡 [Create educational content](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDUmbGFuZz1lbg)
+- 💵 [Make a donation](https://hiddify.com/donation-and-support/)
 
 Thank you in advance for your support! ❤️
 
