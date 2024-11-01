@@ -28,11 +28,11 @@ Our path is clear: free internet is everyone’s right. With your support, we ca
 
 
 
-☀️ Download now!
+[Download now!](https://app.hiddify.com)
 
 
 
-How to support Hiddify:
+## How to support Hiddify:
 🌟 Give us a 5-star rating on the AppStore and Google Play
 🌟 Star us on [GitHub](https://github.com/hiddify/hiddify-app)
 💬 [Retweet](https://x.com/hiddify_com) and share posts and videos on [YouTube](https://youtube.com/@hiddify)
