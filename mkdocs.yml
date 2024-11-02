@@ -165,7 +165,7 @@ plugins:
       glob:
         - app/*
         - manager/*
-      enabled: true
+      enabled: false
   - rss
   - tags
   - git-authors
