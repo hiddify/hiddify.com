@@ -4,76 +4,64 @@ hide:
   - toc
   - feedback
   # - navigation
+  
 comments: false
 ---
 
-<style>@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}</style>
-<div class="relative pb-24 mb-80 md:pb-36 lg:pb-52">
-  <div class="absolute z-1  flex flex-col gap-5">
-    <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
-      Hiddify,
-      <br />
-      Internet Freedom Solution
-    </h1>
-    <p class="text-lg text-secondary md:text-2xl">
-      All you need for an unrestricted internet
-    </p>
-  </div>
+<style>
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+</style>
 
-  <img alt="hero" src="/assets/globe.png"
-    class="absolute -bottom-[350px] lg:-bottom-[400px] -right-24 lg:-right-56 z-0 min-w-[400px] w-1/4 md:w-[500px] lg:w-[750px] 2xl:w-[850px]" />
-</div>
-<section class="relative mb-40 flex flex-col gap-10">
-  <h2 class="text-center text-lg font-semibold text-secondary md:text-2xl">
-    Two Products That Work Together
-  </h2>
 
-  <div class="w-full flex items-center justify-center">
-    <div class="max-w-[1120px] flex flex-col lg:flex-row">
-      <div
-        class="w-full px-5 md:px-20 py-7 md:py-10 flex flex-col justify-between items-center gap-5 md:gap-10 border-2 border-solid border-white bg-white bg-opacity-25 rounded-tl-[30px] md:rounded-tl-[100px] rounded-tr-[30px] md:rounded-tr-[100px] lg:rounded-tr-none lg:rounded-bl-[100px]">
-        <h3 class="text-center text-secondary text-base font-normal hidden md:block">
-          VPN client app – to access the internet
-        </h3>
-        <div class="h-20 md:h-24 flex items-center justify-center">
+  <section class="products-section">
+
+    <h1 class="hero-title"><img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
+    Internet Freedom Solution</h1>
+
+    <h2 class="products-title">All you need for an unrestricted internet</h2>
+    
+    <div class="products-grid">
+      <a href="#app" class="product-card">
+        
+        <h3 class="product-title">Hiddify Application – in your device</h3>
+        <div class="product-logo-wrapper">
           <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
         </div>
-        <p class="text-start text-secondary text-base font-normal">
-          Hiddify is a user-friendly VPN (virtual private network) app that lets you connect to
-          your Hiddify (or non-Hiddify) servers. Download the app on mobile or desktop and enjoy
-          an uncensored internet.
+        <p class="product-description">
+          Hiddify is a user-friendly VPN app for Android, iOS, Windows, macOS, and Linux that lets you connect to your Hiddify (or non-Hiddify) servers. Download the app on mobile or desktop and enjoy an uncensored internet.
         </p>
-        <div class="w-full h-fit flex items-end justify-end">
-          <div class="h-fit w-fit hover:bg-white rounded-md cursor-pointer">
-            <img src="/assets/arrow-right.svg" alt="right-arrow" class="w-6" decoding="async" loading="lazy" />
-          </div>
+        <div class="product-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
         </div>
-      </div>
-      <div
-        class="w-full px-5 md:px-20 py-7 md:py-10 flex flex-col justify-between items-center gap-5 md:gap-10 lg:border-l-0 border-t-0 border-x-2 border-b-2 lg:border-y-2 lg:border-r-2 border-solid border-white bg-white bg-opacity-25 rounded-br-[30px] md:rounded-br-[100px] rounded-bl-[30px] md:rounded-bl-[100px] lg:rounded-bl-none lg:rounded-tr-[100px]">
-        <h3 class="text-center text-secondary text-base font-normal hidden md:block">
-          VPN server – to manage the users
-        </h3>
-        <div class="h-20 md:h-24 flex items-center justify-center">
-          <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"
-            loading="lazy" />
+      </a>
+
+      <a href="#manager" class="product-card">
+        
+        <h3 class="product-title">Hiddify Manager - in your server to manage the users</h3>
+        <div class="product-logo-wrapper">
+        <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
         </div>
-        <p class="text-start text-secondary text-base font-normal">
-          Hiddify Manager makes it easy to create your own VPN which you can manage on either
-          desktop or mobile. Share it with your groups, even hundreds of <br class="hidden lg:block" /> people.
+        <p class="product-description">
+          Hiddify Manager makes it easy to create your own VPN which you can manage on either desktop or mobile. Share it with your groups, even hundreds of<br>people.
         </p>
-        <div class="w-full h-fit flex items-end justify-end">
-          <div class="h-fit w-fit hover:bg-white rounded-md cursor-pointer">
-            <img src="/assets/arrow-right.svg" alt="right-arrow" class="w-6" decoding="async" loading="lazy" />
-          </div>
+        <div class="product-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
         </div>
-      </div>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
+
+
 
 <section  id="app" class="hiddify-container" >
-  <h1  class="d-md-block"><img src="/assets/ic_hiddify_wiki.png" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Application</h1>
+  <h1  class="d-md-block"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
     
       
         <div class="hiddify-image">
@@ -81,7 +69,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-          <h1 id="app" class="d-md-none"><img src="/assets/ic_hiddify_wiki.png" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Application</h1>
+          <h1  class="d-md-none"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>Connect to the internet easier than ever with Hiddify</h2>
           
           <ul class="md-typeset__list">
@@ -124,8 +112,8 @@ comments: false
 </section>
 
 
-<section class="hiddify-container" >
-  <h1 id="manager" class="d-md-block"><img src="/assets/hiddify-logo-white.svg" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Manager </h1>
+<section id="manager" class="hiddify-container" >
+  <h1  class="d-md-block"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
     
       
         <div class="hiddify-image">
@@ -133,7 +121,7 @@ comments: false
         </div>
 
   <div class="hiddify-content">
-  <h1 class="d-md-none"><img src="/assets/hiddify-logo-white.svg" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Manager </h1>
+  <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1></h1>
     <p>Set up your own VPN Server for your group with Hiddify Manager</p>
 
 

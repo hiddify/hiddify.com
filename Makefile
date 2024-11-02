@@ -7,6 +7,8 @@ prepare:
 docs:
 	@mkdocs serve --no-livereload
 
+live:
+	@env DEV=true mkdocs serve 
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 

@@ -10,13 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Calculate the target position minus 100 pixels
                 const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 100;
 
-                // Smoothly scroll to the calculated position
                 window.scrollTo({ top: offsetTop, behavior: 'smooth' });
             }
-        }, 500); // Adjust the timeout as necessary
+        }, 500); 
     }
 
-    SVGInject(document.querySelectorAll(".platform-button img"));
+    SVGInject(document.querySelectorAll("img"));
 
     if (document.getElementById('show-protocols')){
     document.getElementById('show-protocols').addEventListener('click', function(e) {
@@ -26,24 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    
       const platformButtons = document.querySelectorAll('.platform-button');
       const downloadButton = document.getElementById('download-button');
       
-      
-      
       platformButtons.forEach(button => {
         button.addEventListener('click', () => {
-            Swal.fire({
-                title: "Downloading",
-                icon:"info"
-            });
+            Swal.fire({title: "Downloading", icon:"info"});
           platformButtons.forEach(btn => btn.classList.remove('selected'));
           button.classList.add('selected');
-          
           const platform = button.dataset.platform;
-          
-          
           downloadButton.textContent = `${downloadButton.dataset.prefix} ${platform}`;
           downloadButton.href = button.attributes['href'].value;
         });
@@ -59,12 +49,13 @@ else if (window.navigator.userAgent.indexOf("Android") != -1) btnid = "btn-andro
 else if (window.navigator.userAgent.indexOf("X11") != -1) btnid = "btn-linux";
 else if (window.navigator.userAgent.indexOf("Linux") != -1) btnid = "btn-linux";
 button=document.getElementById(btnid);
-platformButtons.forEach(btn => btn.classList.remove('selected'));
-button.classList.add('selected');
+if (button && downloadButton){
+  platformButtons.forEach(btn => btn.classList.remove('selected'));
+  button.classList.add('selected');
 
-downloadButton.textContent = `${downloadButton.dataset.prefix} ${button.dataset.platform}`;
-downloadButton.href = button.attributes['href'].value;
-
+  downloadButton.textContent = `${downloadButton.dataset.prefix} ${button.dataset.platform}`;
+  downloadButton.href = button.attributes['href'].value;
+}
 });
 
 

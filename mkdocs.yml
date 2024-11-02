@@ -12,7 +12,7 @@ watch:
   - overrides
 theme:
   name: material
-  logo: assets/ic_hiddify_wiki.png
+  logo: assets/hiddify-logo.svg
   favicon: assets/ic_hiddify.png
   custom_dir: overrides
   font:
@@ -165,7 +165,7 @@ plugins:
       glob:
         - app/*
         - manager/*
-      enabled: false
+      enabled: !ENV [DEV,false]
   - rss
   - tags
   - git-authors
