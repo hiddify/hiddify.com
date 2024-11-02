@@ -7,78 +7,55 @@ hide:
 comments: false
 ---
 <style>@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}</style>
-<div class="relative pb-24 mb-80 md:pb-36 lg:pb-52">
-  <div class="absolute z-1  flex flex-col gap-5">
-    <h1 class="text-3xl font-semibold md:text-5xl lg:text-7xl">
-      هیدیفای
-      <br>
-      راهکار آزادی اینترنت
-    </h1>
-    <p class="text-lg text-secondary md:text-2xl">
-      تمام آنچه برای اینترنت نامحدود نیاز دارید
-    </p>
-  </div>
 
-  <img alt="hero" src="/assets/globe-fa.png"
-    class="absolute -bottom-[350px] lg:-bottom-[400px] -left-24 lg:-left-56 z-0 min-w-[400px] w-1/4 md:w-[500px] lg:w-[750px] 2xl:w-[850px]" />
-</div>
 
-<section class="relative mb-40 flex flex-col gap-10">
-  <h2 class="text-center text-lg font-semibold text-secondary md:text-2xl">
-    دو محصولی که با هم کار می کنند
-  </h2>
+  <section class="products-section">
 
-  <div class="w-full flex items-center justify-center">
-    <div class="max-w-[1120px] flex flex-col lg:flex-row">
-      <div
-        class="w-full px-5 md:px-20 py-7 md:py-10 flex flex-col justify-between items-center gap-5 md:gap-10 border-2 border-solid border-white bg-white bg-opacity-25 rounded-tr-[30px] md:rounded-tr-[100px] rounded-tl-[30px] md:rounded-tl-[100px] lg:rounded-tl-none lg:rounded-br-[100px]">
-        <h3 class="text-center text-secondary text-base font-normal hidden md:block">
-          برنامه کاربر VPN – برای دسترسی به اینترنت
-        </h3>
-        <div class="h-20 md:h-24 flex items-center justify-center">
-          <img src="/assets/hiddify-logo.png" alt="لوگوی Hiddify" height="96" />
+    <h1 class="hero-title"><img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
+          راهکار آزادی اینترنت
+</h1>
+
+    <h2 class="products-title">      تمام آنچه برای اینترنت آزاد نیاز دارید
+</h2>
+    
+    <div class="products-grid">
+      <a href="#app" class="product-card">
+        
+        <h3 class="product-title">نرم افزار هیدیفای - برای گوشی و کامپیوتر</h3>
+        <div class="product-logo-wrapper">
+          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
         </div>
-        <p class="text-start text-secondary text-base font-normal">
-          Hiddify یک برنامه VPN (شبکه خصوصی مجازی) کاربر پسند است که به شما امکان می دهد به سرورهای Hiddify (یا
-          غیر
-          Hiddify) خود متصل شوید. برنامه را روی موبایل یا دسکتاپ دانلود کنید و از اینترنت بدون سانسور لذت ببرید.
+        <p class="product-description">
+          هیدیفای یک اپلیکیشن وی‌پی‌ان کاربرپسند برای اندروید، iOS، ویندوز، مک‌اواس و لینوکس است که به شما امکان می‌دهد به سرورهای هیدیفای (یا <b>غیرهیدیفای</b>) خود متصل شوید. این اپلیکیشن را بر روی موبایل یا دسکتاپ دانلود کنید و از اینترنت بدون سانسور لذت ببرید.
         </p>
-        <div class="w-full h-fit flex items-end justify-end">
-          <div class="h-fit w-fit hover:bg-white rounded-md cursor-pointer">
-            <img src="/assets/arrow-right.svg" alt="right-arrow" class="w-6 rotate-180" decoding="async"
-              loading="lazy" />
-          </div>
+        <div class="product-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 12h14M12 5l7 7-7 7" transform="scale(-1, 1) translate(-24, 0)"/>
+</svg>
         </div>
-      </div>
-      <div
-        class="w-full px-5 md:px-20 py-7 md:py-10 flex flex-col justify-between items-center gap-5 md:gap-10 lg:border-r-0 border-t-0 border-x-2 border-b-2 lg:border-y-2 lg:border-l-2 border-solid border-white bg-white bg-opacity-25 rounded-bl-[30px] md:rounded-bl-[100px] rounded-br-[30px] md:rounded-br-[100px] lg:rounded-br-none lg:rounded-tl-[100px]">
-        <h3 class="text-center text-secondary text-base font-normal hidden md:block">
-          برنامه سرور VPN – برای مدیریت کاربران
-        </h3>
-        <div class="h-20 md:h-24 flex items-center justify-center">
-          <img src="/assets/hiddify-manager-logo.svg" alt="لوگوی Hiddify" height="96" decoding="async"
-            loading="lazy" />
+      </a>
+
+      <a href="#manager" class="product-card">
+        
+        <h3 class="product-title">          هیدیفای منیجر – برای مدیریت کاربران</h3>
+        <div class="product-logo-wrapper">
+        <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
         </div>
-        <p class="text-start text-secondary text-base font-normal">
-          Hiddify Manager ایجاد VPN خود را آسان می کند که می توانید آن را روی دسکتاپ یا تلفن همراه مدیریت کنید.
-          <br class="hidden md:block" />آن
-          را
-          با گروه های خود، حتی صدها نفر به <br class="hidden md:block" />اشتراک بگذارید.
+        <p class="product-description">
+         هیدیفای منیجر ایجاد وی‌پی‌ان شخصی و اختصاصی شما را آسان می‌کند و شما می‌توانید آن را از همه جا حتی با موبایل مدیریت کنید. و آن را با خانواده، دوستان، آشنایان حتی صدها نفر، به اشتراک بگذارید.
         </p>
-        <div class="w-full h-fit flex items-end justify-end">
-          <div class="h-fit w-fit hover:bg-white rounded-md cursor-pointer">
-            <img src="/assets/arrow-right.svg" alt="right-arrow" class="w-6 rotate-180" decoding="async"
-              loading="lazy" />
-          </div>
+        <div class="product-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M5 12h14M12 5l7 7-7 7" transform="scale(-1, 1) translate(-24, 0)"/>
+</svg>
         </div>
-      </div>
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <section id="app"  class="hiddify-container" >
-  <h1 class="d-md-block"><img src="/assets/ic_hiddify_wiki.png" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline">برنامه هیدیفای</h1>
+   <h1  class="d-md-block"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
     
       
         <div class="hiddify-image">
@@ -86,7 +63,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-          <h1 id="app" class="d-md-none"><img src="/assets/ic_hiddify_wiki.png" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> برنامه هیدیفای</h1>
+            <h1  class="d-md-none"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>راحت تر از همیشه به اینترنت متصل شوید</h2>
           
           <ul >
@@ -130,7 +107,7 @@ comments: false
 
 
 <section id="manager" class="hiddify-container" >
-  <h1  class="d-md-block"><img src="/assets/hiddify-logo-white.svg" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> هیدیفای منیجر </h1>
+    <h1  class="d-md-block"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
     
       
         <div class="hiddify-image">
@@ -138,7 +115,7 @@ comments: false
         </div>
 
   <div class="hiddify-content">
-  <h1 class="d-md-none"><img src="/assets/hiddify-logo-white.svg" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Manager </h1>
+   <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
     <p>سرور فیلترشکن شخصی و اختصاصی خود را ایجاد کنید</p>
 
 
