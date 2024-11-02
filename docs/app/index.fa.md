@@ -1,5 +1,5 @@
 ---
-title: کلاینت
+title: اپ
 hide:
   # - navigation
   - toc
