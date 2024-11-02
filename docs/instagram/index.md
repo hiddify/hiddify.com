@@ -3,9 +3,9 @@ title: Instagram
 hide:
   - toc
   - feedback
-  - comments
-  # - navigation
+comments: false
 ---
+
 <link rel="stylesheet" href="/instagram/styles.css">
  <div class="instagram">
     <!-- Profile Section -->
@@ -15,9 +15,9 @@ hide:
      
  </div>
       <div class="profile-info">
-        <p class="bio">هیدیفای، راهکار آزای اینترنت</p>
+        
         <p class="bio">Hiddify, Internet Freedom Solution</p>
-        <a href="https://hiddify.com" class="website-link" target="_blank">www.hiddify.com</a>
+        <a href="https://hiddify.com" class="website-link" target="_blank">https://hiddify.com</a>
       </div>
     </div>
     <!-- Post Grid Section -->

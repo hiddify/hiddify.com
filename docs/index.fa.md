@@ -6,7 +6,12 @@ hide:
 #  - navigation
 comments: false
 ---
-<style>@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}</style>
+<style>
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+</style>
 
 
   <section class="products-section">

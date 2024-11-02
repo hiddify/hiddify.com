@@ -1,3 +1,7 @@
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
 /* Step 2: Load the JURRA Font */
 @font-face {
   font-family: 'Jura';
@@ -40,6 +44,7 @@
 .instagram .bio {
   font-size: 16px;
   margin-bottom: 5px;
+  margin-right: 22px;
 }
 
 .instagram .website-link {

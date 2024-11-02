@@ -3,7 +3,7 @@ title: اینستاگرام
 hide:
   - toc
   - feedback
-  - comments
+comments: false
   # - navigation
 ---
 <link rel="stylesheet" href="/instagram/styles.css">
@@ -16,8 +16,8 @@ hide:
       </div>
       <div class="profile-info">
         <p class="bio">هیدیفای، راهکار آزای اینترنت</p>
-        <p class="bio">Hiddify, Internet Freedom Solution</p>
-        <a href="https://hiddify.com" class="website-link" target="_blank">www.hiddify.com</a>
+     
+        <a href="https://hiddify.com" class="website-link" target="_blank">https://hiddify.com</a>
       </div>
     </div>
 
