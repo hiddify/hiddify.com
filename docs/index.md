@@ -99,7 +99,7 @@ comments: false
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="Android">
               <img src="/assets/platforms/android.svg" alt="Android">
             </a>
-            <a id="btn-ios" href="https://apps.apple.com/app/hiddify/id123456789" role="button"  class="platform-button" data-platform="iOS & macOS > 2021">
+            <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="iOS & macOS > 2021">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
             <a id="btn-windows" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
