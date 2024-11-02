@@ -2,7 +2,7 @@
 title: منیجر
 hide:
   # - navigation
-  # - toc
+  - toc
   - feedback
 weight: -20
 ---
