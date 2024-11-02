@@ -4,7 +4,7 @@ weight: -20
 hide:
   # - navigation
   - feedback
-#  - toc
+  - toc
 ---
 
 # All tutorials and videos
