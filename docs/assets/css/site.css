@@ -2612,6 +2612,10 @@ object-fit: cover;
      border-top: 2px solid rgba(255, 255, 255, 0.5);
      border-left: none;
    }
+   [dir="rtl"] .product-card:last-child {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+   }
 
    .product-title {
      font-size: 1.2rem;
