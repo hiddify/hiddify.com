@@ -103,6 +103,9 @@ comments: false
           <div class="button-container">
             
             <a href="#" class="md-button md-button--primary md-button-fill" id="download-button" data-prefix="دانلود برای"></a>
+            
+<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">کانفیگ رایگان تست وارپ</a>
+
           </div>
         </div>
       
