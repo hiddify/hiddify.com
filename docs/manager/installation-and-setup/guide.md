@@ -11,6 +11,7 @@ weight: -90
 ## Before installation
 
 - If you have important information or an important service, note that installing this configuration may interfere with your other services. Therefore, please do not install any special service on your server.
+- It is strongly recommended that **Hiddify only be deployed on a single-use host**.
 
 - This code is only applicable on Ubuntu and has been tested only on version 22.04.
 
