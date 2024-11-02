@@ -2,7 +2,7 @@
 title: App
 hide:
   # - navigation
-  # - toc
+  - toc
   - feedback
 
 weight: -19
