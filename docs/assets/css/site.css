@@ -2338,3 +2338,143 @@ html,    body {
 .video-card div:first-child {
     overflow: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*new hiddify*/
+
+.hidden-features {
+  display: none;
+  color: var(--md-primary-fg-color);
+  padding-left: 0.5rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hiddify-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hiddify-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hiddify-image {
+    flex: 1;
+  }
+
+  .hiddify-content {
+    flex: 1;
+  }
+}
+.d-md-block{
+  display: none;
+}
+.d-md-none{
+  display: block;
+}
+@media (max-width: 767px) {
+  .hiddify-image {
+    margin: 0 auto;
+    
+  }
+  .d-md-none{
+    display: none;
+  }
+  .d-md-block{
+    display: block;
+  }
+  .hiddify-image img{
+object-fit: cover;
+    height:40vh;
+    
+  }
+
+  .hiddify-content {
+    
+    margin: 0 auto;
+  }
+}
+
+.platform-grid {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .platform-grid {
+    gap: 0.5rem;
+  }
+}
+
+.platform-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 480px) {
+  .platform-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .platform-button img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.platform-button:hover {
+  transform: translateY(-2px);
+}
+
+.platform-button.selected {
+  border-color: var(--md-primary-fg-color);
+}
+
+.platform-button.selected svg path {
+  fill: var(--md-primary-fg-color);
+}
+
+
+  #download-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  section{
+    margin-top: 4rem;
+  }

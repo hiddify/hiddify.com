@@ -4,17 +4,8 @@ hide:
   - toc
   - feedback
   # - navigation
+comments: false
 ---
-<script>
-function checkTimezoneAndRedirect() {
-    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    if (timezone === 'Asia/Tehran') {
-        window.location.href = '/fa/'; 
-    }
-}
-
-window.onload = checkTimezoneAndRedirect;
-</script>
 
 <style>@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}</style>
 <div class="relative pb-24 mb-80 md:pb-36 lg:pb-52">
@@ -81,115 +72,89 @@ window.onload = checkTimezoneAndRedirect;
   </div>
 </section>
 
-<section class="mb-40 flex lg:items-center px-5 md:px-20 text-secondary flex-col lg:flex-row">
-  <div class="flex items-center justify-center lg:items-start lg:justify-start">
-    <img src="/assets/hiddify-next-mobile.svg" alt="hiddify next" class="w-[400px]" decoding="async"
-      loading="lazy" />
-  </div>
+<section  id="app" class="hiddify-container" >
+  <h1  class="d-md-block"><img src="/assets/ic_hiddify_wiki.png" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Application</h1>
+    
+      
+        <div class="hiddify-image">
+          <img src="/assets/hiddify-next-mobile.svg" alt="hiddify next" decoding="async" loading="lazy" />
+        </div>
+        
+        <div class="hiddify-content">
+          <h1 id="app" class="d-md-none"><img src="/assets/ic_hiddify_wiki.png" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Application</h1>
+          <h2>Connect to the internet easier than ever with Hiddify</h2>
+          
+          <ul class="md-typeset__list">
+            <li>Easy to use</li>
+            <li>
+              Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and 
+              <a href="#" class="md-typeset__link" id="show-protocols">20 more protocols</a>
+              <span class="hidden-features">
+                web-socket, gRPC, http-split, Trojan, and more...
+              </span>
+            </li>
+          </ul>
+          <a href="https://github.com/hiddify/hiddify-app" >Read more about Hiddify and see the source codes</a>
+          <div class="platform-grid">
+            <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="Android">
+              <img src="/assets/platforms/android.svg" alt="Android">
+            </a>
+            <a id="btn-ios" href="https://apps.apple.com/app/hiddify/id123456789" role="button"  class="platform-button" data-platform="iOS & macOS > 2021">
+              <img src="/assets/platforms/apple.svg" alt="iOS">
+            </a>
+            <a id="btn-windows" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
+              <img src="/assets/platforms/windows.svg" alt="Windows">
+            </a>
+            <a id="btn-macos" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
+              <img src="/assets/platforms/mac.svg" alt="macOS">
+            </a>
+            <a id="btn-linux" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="Linux">
+              <img src="/assets/platforms/linux.svg" alt="Linux">
+            </a>
+          </div>
 
-  <div class="lg:w-1/2 w-full">
-    <p>Connect to the internet easier than ever with</p>
-    <img src="/assets/hiddify-logo.png" alt="hiddify logo" height="96" class="my-4" />
-
-    <ul class="list-disc ml-4 lg:ml-0">
-      <li>Easy to use</li>
-      <li>
-        Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and
-        <span class="underline underline-offset-4"> 20 more protocols. </span>
-      </li>
-    </ul>
-
-    <div class="my-5 gap-5 hidden sm:flex w-fit">
-      <div
-        class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
-        <img src="/assets/platforms/android.svg" alt="android" class="w-12" decoding="async" loading="lazy" />
-      </div>
-      <div
-        class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
-        <img src="/assets/platforms/apple.svg" alt="ios" class="w-12" decoding="async" loading="lazy" />
-      </div>
-      <div
-        class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-primary">
-        <img src="/assets/platforms/windows.svg" alt="windows" class="w-12" decoding="async" loading="lazy" />
-      </div>
-      <div
-        class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
-        <img src="/assets/platforms/mac.svg" alt="mac" class="w-12" decoding="async" loading="lazy" />
-      </div>
-      <div
-        class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-gray-500 bg-opacity-5 border border-solid border-white">
-        <img src="/assets/platforms/linux.svg" alt="linux" class="w-12" decoding="async" loading="lazy" />
-      </div>
-    </div>
-
-    <div class="mt-5 flex items-center lg:justify-start justify-end gap-3">
-      <button
-        class="text-primary border border-primary focus:outline-none hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary/70 font-medium rounded-lg text-sm px-5 py-2.5">
-        Read more
-      </button>
-
-      <button
-        class="text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none">
-        <a href="https://app.hiddify.com/" class="text-white" id="install-btn"> Download for </a>
-      </button>
-    </div>
-  </div>
+          <div class="button-container">
+            
+            <a href="#" class="md-button md-button--primary" id="download-button" data-prefix="Download For"></a>
+          </div>
+        </div>
+      
+    
+  
 </section>
 
-<section class="my-30 flex 3xl:items-center gap-7  text-secondar">
-  <img src="/assets/hiddify-manager.png" alt="hiddify manager" class="lg:w-1/2">
-  <div class="lg:w-1/2">
-    <p>Set up your own VPN for your group with</p>
 
-    <div class="flex items-center gap-2">
-      <img src="/assets/hiddify-logo-white.svg" alt="hiddify logo" class="my-4" height="50" decoding="async" loading="lazy">
-      <h2 class="text-2xl font-semibold">Hiddify Manager</h2>
-    </div>
+<section class="hiddify-container" >
+  <h1 id="manager" class="d-md-block"><img src="/assets/hiddify-logo-white.svg" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Manager </h1>
+    
+      
+        <div class="hiddify-image">
+          <img src="/assets/hiddify-manager.png" alt="hiddify next" decoding="async" loading="lazy" />
+        </div>
+
+  <div class="hiddify-content">
+  <h1 class="d-md-none"><img src="/assets/hiddify-logo-white.svg" alt="hiddify" height="96" class="my-4" style="width:64px;display:inline"> Hiddify Manager </h1>
+    <p>Set up your own VPN Server for your group with Hiddify Manager</p>
+
 
     <ul class="my-4 list-disc ml-4">
       <li>Effortless installation</li>
       <li>One of the best VPNs for Iran, China, Russia, Brazil and the whole world</li>
       <li>
         Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and
-        <span class="underline underline-offset-4"> 20 more protocols. </span>
-      </li>
+ <span class="hidden-features">
+                web-socket, gRPC, http-split, Trojan, and more...
+              </span>      </li>
     </ul>
-
-    <div class="mt-5 flex items-center 2xl:justify-start justify-end gap-3">
-      <button class="text-primary border border-primary focus:outline-none hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary/70 font-medium rounded-lg text-sm px-5 py-2.5">
-        Read more
-      </button>
-
-      <button class="text-white bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none">
-        Install on server
-      </button>
-    </div>
+    <a hred="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
+    
+        <div class="button-container">
+            <a href="/manager" class="md-button md-button--primary">Install on server</a>
+          </div>
   </div>
 </section>
 
-<section class="w-full flex flex-col gap-16 justify-center items-center my-40 text-center text-secondary">
 
-  <h2 class="text-center text-2xl font-semibold">Why to choose Hiddify?</h2>
-  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
-    <div class="w-full flex flex-col items-center justify-center gap-2">
-      <img src="/assets/cross-platform.png" alt="cross platform" class="lg:max-w-[250px]" />
-      <h2 class="text-xl lg:text-2xl font-semibold">Cross-platform</h2>
-      <p>Available on Android, iOS,<br /> Window, Linux and macOS</p>
-    </div>
-
-    <div class="w-full flex flex-col items-center justify-center gap-2">
-      <img src="/assets/secure.png" alt="cross platform" class="lg:max-w-[250px]" />
-      <h2 class="text-xl lg:text-2xl font-semibold">Secure and Ad-free</h2>
-      <p>Open-source, non-commercial,<br /> and security audited</p>
-    </div>
-
-    <div class="w-full flex flex-col items-center justify-center gap-2">
-      <img src="/assets/processor.png" alt="cross platform" class="lg:max-w-[250px]" />
-      <h2 class="text-xl lg:text-2xl font-semibold">Powerful Features</h2>
-      <p>Auto-proxy client based on sing-box,<br /> supporting various protocols</p>
-    </div>
-  </div>
-</section>
 
 <section class="flex flex-col gap-16 justify-center items-center my-40 py-20 text-center text-secondary">
   <div>
@@ -318,16 +283,3 @@ window.onload = checkTimezoneAndRedirect;
 
 
 
-<script>
-
-const installButton = document.getElementById("install-btn");
-
-var os = "Unknown";
-if (window.navigator.userAgent.indexOf("Windows") != -1) os = "Windows";
-if (window.navigator.userAgent.indexOf("Mac") != -1) os = "Mac/iOS";
-if (window.navigator.userAgent.indexOf("X11") != -1) os = "UNIX";
-if (window.navigator.userAgent.indexOf("Linux") != -1) os = "Linux";
-
-installButton.innerText = "Download for " + os;
-
-</script>

@@ -1,0 +1,107 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- Site language selector -->
+<div class="md-header__option">
+    <div class="md-select">
+      {% set icon = config.theme.icon.alternate or "material/translate" %}
+      <button
+        class="md-header__button md-icon"
+        aria-label="{{ lang.t('select.language') }}"
+      >
+        {% include ".icons/" ~ icon ~ ".svg" %}
+      </button>
+      <div class="md-select__inner">
+        <ul class="md-select__list">
+          {% for alt in config.extra.alternate %}
+            <li class="md-select__item">
+              <a id="langselect-{{alt.lang}}"
+                href="{{ alt.link | url }}"
+                hreflang="{{ alt.lang }}"
+                class="md-select__link"
+              >
+                {{ alt.name }}
+              </a>
+            </li>
+            {% if config.theme.language=="en" and alt.lang == "fa" %}
+                <script>
+                    function detectPersianLanguageOrRegion() {
+                        // List of timezones related to Iran, Afghanistan, and Tajikistan
+                        const relevantTimezones = [
+                            'Asia/Tehran', // Iran
+                            'Asia/Kabul', // Afghanistan
+                            'Asia/Dushanbe' // Tajikistan
+                        ];
+
+                        // Check user languages
+                        const languages = navigator.languages || [navigator.language];
+                        const isPersianLanguage = languages.some(lang => lang.startsWith('fa'));
+
+                        // Check user timezone
+                        const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                        const isRelevantTimezone = relevantTimezones.includes(userTimezone);
+
+                        // Return the result
+                        return isPersianLanguage || isRelevantTimezone;
+                    }
+                    function getCookie(name) {
+                        const value = `; ${document.cookie}`;
+                        const parts = value.split(`; ${name}=`);
+                        if (parts.length === 2) return parts.pop().split(';').shift();
+                    }
+
+                    // Function to set a cookie
+                    function setCookie(name, value, days) {
+                        const expires = new Date(Date.now() + days * 864e5).toUTCString();
+                        document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+                    }
+                    const cookieName = "languagePreference"; // Name of the cookie to check
+                    if (!getCookie(cookieName) && detectPersianLanguageOrRegion() && document.location.href.indexOf("fo1rce_lang")<0){
+                        console.log("rrrrr",document.referrer)
+                        if (document.referrer!=null && document.referrer.indexOf("https://hiddify.com")<0 && document.referrer.indexOf(".app.github.dev")<0)
+                        document.location=document.getElementById("langselect-{{alt.lang}}").attributes['href'].value+window.location.hash;
+                    }
+
+                    if ( 0 &&!getCookie(cookieName) && detectPersianLanguageOrRegion())
+                        Swal.fire({
+                        title: "مشاهده سایت به زبان فارسی؟",
+                        text: "به نظر شما فارسی زبان هستید. آیا میخواهید سایت را به زبان فارسی مشاهده کنید؟",
+                        icon: "warning",
+                        showCancelButton: true,
+                        showDenyButton:true,
+                        confirmButtonText: "فارسی",
+                        denyButtonText:"English",
+                        cancelButtonText: "Cancel",
+                        reverseButtons: true,
+                        // input: "checkbox",
+                        // inputValue: 1,
+                        // inputPlaceholder: `
+                        //     Do not show this dialog again
+                        // `,
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                            document.location=document.getElementById("langselect-{{alt.lang}}").attributes['href'].value;
+                        } else if (result.dismiss === Swal.DismissReason.deny) {
+                            Swal.fire({
+                                title: "Show the dialog again?",
+                                text: "Do you want to always show this dialog to select between english and persian?",
+                                icon: "warning",
+                                showDenyButton: true,
+                                denyButtonText:"Keep this dialog",
+                                confirmButtonText: "Always English"
+                                     
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    setCookie(cookieName, "english", 30); // Set cookie to remember th
+                                };
+                             });
+                        }
+                    });
+                </script>
+            {%endif%}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+

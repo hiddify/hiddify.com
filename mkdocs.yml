@@ -122,11 +122,14 @@ extra:
 
   alternate:
     - name: English
-      link: /en/ 
+      link: / 
       lang: en
+      
     - name: فارسی
       link: /fa/
       lang: fa
+      tz: 210
+
   consent:
     title: Cookie consent
     description: >- 
@@ -155,8 +158,14 @@ extra:
 extra_css:
   - assets/css/site.css
 extra_javascript:
-  - assets/js/site.js    
+  - assets/js/site.js
+  - assets/js/svginject.js    
 plugins:  
+  - exclude:
+      glob:
+        - app/*
+        - manager/*
+      enabled: true
   - rss
   - tags
   - git-authors
@@ -210,6 +219,7 @@ plugins:
       fallback_to_build_date: true
   - blog:
       post_readtime: true
+  
 
 nav: #docs/app/install.md
   #- Hiddify: index.html
