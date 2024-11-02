@@ -31,7 +31,7 @@ comments: false
           <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
         </div>
         <p class="product-description">
-          Hiddify is a user-friendly VPN app for Android, iOS, Windows, macOS, and Linux that lets you connect to your Hiddify (or non-Hiddify) servers. Download the app on mobile or desktop and enjoy an uncensored internet.
+          Hiddify is a user-friendly VPN app for Android, iOS, Windows, macOS, and Linux that lets you connect to your Hiddify (or <b>non-Hiddify</b>) servers. Download the app on mobile or desktop and enjoy an uncensored internet.
         </p>
         <div class="product-arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -47,7 +47,7 @@ comments: false
         <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
         </div>
         <p class="product-description">
-          Hiddify Manager makes it easy to create your own VPN which you can manage on either desktop or mobile. Share it with your groups, even hundreds of<br>people.
+          Hiddify Manager makes it easy to create your own VPN which you can manage on even mobile. Share it with your family, friends, groups, even hundreds of people.
         </p>
         <div class="product-arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
