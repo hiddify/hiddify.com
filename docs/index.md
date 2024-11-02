@@ -26,7 +26,7 @@ comments: false
     <div class="products-grid">
       <a href="#app" class="product-card">
         
-        <h3 class="product-title">Hiddify Application – in your device</h3>
+        <h3 class="product-title">HiddifyApp – on your device</h3>
         <div class="product-logo-wrapper">
           <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
         </div>
@@ -42,7 +42,7 @@ comments: false
 
       <a href="#manager" class="product-card">
         
-        <h3 class="product-title">HiddifyManager - in your server to manage proxies and users</h3>
+        <h3 class="product-title">HiddifyManager - on your server to manage proxies and users</h3>
         <div class="product-logo-wrapper">
         <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
         </div>
