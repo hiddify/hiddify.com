@@ -2470,7 +2470,7 @@ object-fit: cover;
 }
 
 
-  #download-button {
+.md-button-fill {
     width: 100%;
     text-align: center;
   }

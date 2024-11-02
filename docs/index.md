@@ -103,7 +103,7 @@ comments: false
 
           <div class="button-container">
             
-            <a href="#" class="md-button md-button--primary" id="download-button" data-prefix="Download For"></a>
+            <a href="#" class="md-button md-button--primary md-button-fill" id="download-button" data-prefix="Download For"></a>
           </div>
         </div>
       
@@ -137,7 +137,7 @@ comments: false
     <a hred="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
     
         <div class="button-container">
-            <a href="/manager" class="md-button md-button--primary">Install on server</a>
+            <a href="/manager" class="md-button md-button--primary md-button-fill">Install on server</a>
           </div>
   </div>
 </section>
