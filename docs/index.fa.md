@@ -26,12 +26,12 @@ comments: false
     <div class="products-grid">
       <a href="#app" class="product-card">
         
-        <h3 class="product-title">نرم افزار هیدیفای - برای گوشی و کامپیوتر</h3>
+        <h3 class="product-title">هیدیفای‌اپ - برای گوشی و کامپیوتر</h3>
         <div class="product-logo-wrapper">
           <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
         </div>
         <p class="product-description">
-          هیدیفای یک اپلیکیشن وی‌پی‌ان کاربرپسند برای اندروید، iOS، ویندوز، مک‌اواس و لینوکس است که به شما امکان می‌دهد به سرورهای هیدیفای (یا <b>غیرهیدیفای</b>) خود متصل شوید. این اپلیکیشن را بر روی موبایل یا دسکتاپ دانلود کنید و از اینترنت بدون سانسور لذت ببرید.
+          هیدیفای‌اپ یک اپلیکیشن VPN ساده و کاربرپسند است که برای iOS، اندروید، ویندوز، مک‌اواس و لینوکس در دسترس است. به‌راحتی به <b>هیدیفای‌منیجر</b> یا هر پنل VPN دیگری متصل شوید. این اپلیکیشن را روی موبایل یا دسکتاپ دانلود کنید و از دسترسی آزاد به اینترنت لذت ببرید.
         </p>
         <div class="product-arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -42,12 +42,12 @@ comments: false
 
       <a href="#manager" class="product-card">
         
-        <h3 class="product-title">          هیدیفای منیجر – برای مدیریت کاربران</h3>
+        <h3 class="product-title">          هیدیفای‌منیجر – برای مدیریت پروکسی‌ها و کاربران</h3>
         <div class="product-logo-wrapper">
         <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
         </div>
         <p class="product-description">
-         هیدیفای منیجر ایجاد وی‌پی‌ان شخصی و اختصاصی شما را آسان می‌کند و شما می‌توانید آن را از همه جا حتی با موبایل مدیریت کنید. و آن را با خانواده، دوستان، آشنایان حتی صدها نفر، به اشتراک بگذارید.
+         هیدیفای‌منیجر ایجاد سرور VPN شخصی را برای شما ساده می‌کند و به شما امکان می‌دهد حتی از طریق موبایل آن را مدیریت کنید. به‌راحتی می‌توانید پروکسی‌ها را با خانواده، دوستان، گروه‌ها یا حتی صدها نفر به اشتراک بگذارید.
         </p>
         <div class="product-arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
