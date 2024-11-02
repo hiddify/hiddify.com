@@ -67,8 +67,8 @@ theme:
 
 
   icon:
-    admonition:
-      question: material/new-box
+    # admonition:
+      # question: material/new-box
     edit: material/pencil 
     view: material/eye
 
