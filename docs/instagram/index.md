@@ -27,21 +27,18 @@ comments: false
       <a href="https://hiddify.com/fa/blog/2023/09/23/app-published-on-the-appstore" target="_blank" class="post">
         <figure markdown="span">
           <img src="/instagram/img/App_published_on_AppStore.png" alt="Profile Picture">
-          <figcaption>Image caption</figcaption>
         </figure>
       </a>
       <!-- Post 2 -->
       <a href="https://www.youtube.com/watch?v=Br3lIHIaUVc" target="_blank" class="post">
         <figure markdown="span">
           <img src="/instagram/img/WarpFreeConnection.jpg" alt="Profile Picture">
-          <figcaption>Image caption</figcaption>
         </figure>
         </a>
       <!-- Post 1 -->
       <a href="https://hiddify.com/fa/blog/2024/09/23/" target="_blank" class="post">
         <figure markdown="span">
           <img src="/instagram/img/Hiddify_2nd_Anniversary.jpg" alt="Profile Picture">
-          <figcaption>Image caption</figcaption>
         </figure>
          </a>
     </div>
