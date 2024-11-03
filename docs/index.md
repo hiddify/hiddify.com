@@ -28,7 +28,7 @@ comments: false
         
         <h3 class="product-title">HiddifyApp – on your device</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
+          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="50" />
         </div>
         <p class="product-description">
           HiddifyApp is an easy-to-use VPN application available for iOS, Android, Windows, macOS, and Linux. Connect seamlessly to your <b>HiddifyManager</b> or any other VPN panel. Download it on mobile or desktop and enjoy unrestricted internet access.
