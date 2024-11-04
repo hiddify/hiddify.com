@@ -33,7 +33,7 @@ weight: -75
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/release)
+bash <(curl https://i.hiddify.com/release)
 ```
 
 </div>
@@ -50,7 +50,7 @@ bash <(curl i.hiddify.com/release)
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/beta)
+bash <(curl https://i.hiddify.com/beta)
 ```
 
 </div>
@@ -66,7 +66,7 @@ bash <(curl i.hiddify.com/beta)
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/dev)
+bash <(curl https://i.hiddify.com/dev)
 ```
 
 </div>
@@ -81,7 +81,7 @@ bash <(curl i.hiddify.com/dev)
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/vVERSION)
+bash <(curl https://i.hiddify.com/vVERSION)
 ```
 </div>
 
@@ -90,7 +90,7 @@ bash <(curl i.hiddify.com/vVERSION)
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/v8)
+bash <(curl https://i.hiddify.com/v8)
 ```
 </div>
 
@@ -99,7 +99,7 @@ bash <(curl i.hiddify.com/v8)
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/v10.7.0)
+bash <(curl https://i.hiddify.com/v10.7.0)
 ```
 </div>
 
@@ -108,7 +108,7 @@ bash <(curl i.hiddify.com/v10.7.0)
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/custom)
+bash <(curl https://i.hiddify.com/custom)
 ```
 </div>
 
