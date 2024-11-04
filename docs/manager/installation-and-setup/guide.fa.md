@@ -31,7 +31,7 @@ weight: -90
 <div dir="ltr" markdown="1">
 
 ```
-bash <(curl i.hiddify.com/release)
+bash <(curl https://i.hiddify.com/release)
 ```
 
 </div>
