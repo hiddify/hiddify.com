@@ -63,7 +63,7 @@ It is possible to install a custom version. Just follow the instructions below.
 
 
 ```
-bash <(curl i.hiddify.com/vVERSION)
+bash <(curl https://i.hiddify.com/vVERSION)
 ```
 
 Here, instead of VERSION, you should enter the desired version. Suppose you want to install version `8`. Just execute the following command to install the latest version `8` for you.
@@ -85,7 +85,7 @@ You can also view and select desired versions for installation via a graphical m
 <div dir=ltr>
 
 ```
-bash <(curl i.hiddify.com/custom)
+bash <(curl https://i.hiddify.com/custom)
 ```
 </div>
 
