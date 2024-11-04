@@ -31,7 +31,7 @@ This version is actually the final version of the software that was released aft
 * Now just run the following one-line command in the terminal.
 
 ```
-sudo bash -c "apt update; apt install -y curl; bash <(curl -sSL https://raw.githubusercontent.com/hiddify/hiddify-manager/main/common/download.sh) release"
+bash <(curl https://i.hiddify.com/release)
 ```
 
 * After installation, just restore your backup. [Read more...](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
@@ -42,7 +42,7 @@ sudo bash -c "apt update; apt install -y curl; bash <(curl -sSL https://raw.gith
 * Now just run the following one-line command in the terminal.
 
 ```
-sudo bash -c "apt update; apt install -y curl; bash <(curl -sSL https://raw.githubusercontent.com/hiddify/hiddify-manager/main/common/download.sh) beta"
+bash <(curl https://i.hiddify.com/beta)
 ```
 
 * After installation, just restore your backup. [Read more...](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
@@ -53,7 +53,7 @@ sudo bash -c "apt update; apt install -y curl; bash <(curl -sSL https://raw.gith
 * Now just run the following one-line command in the terminal.
 
 ```
-sudo bash -c "apt update; apt install -y curl; bash <(curl -sSL https://raw.githubusercontent.com/hiddify/hiddify-manager/main/common/download.sh) develop"
+bash <(curl https://i.hiddify.com/dev)
 ```
 
 * After installation, just restore your backup. [Read more...](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
@@ -69,13 +69,13 @@ bash <(curl https://i.hiddify.com/vVERSION)
 Here, instead of VERSION, you should enter the desired version. Suppose you want to install version `8`. Just execute the following command to install the latest version `8` for you.
 
 ```
-bash <(curl i.hiddify.com/v8)
+bash <(curl https://i.hiddify.com/v8)
 ```
 
 From version 10, you can install exactly one specific update. For example, to install `10.7.0` version, just use the following command.
 
 ```
-bash <(curl i.hiddify.com/v10.7.0)
+bash <(curl https://i.hiddify.com/v10.7.0)
 ```
 
 </div>
