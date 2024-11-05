@@ -24,6 +24,18 @@ comments: false
     <!-- Post Grid Section -->
     <h1>Instagram Posts</h1>
     <div class="grid">
+      <!-- Post 5 -->
+      <a href="https://www.youtube.com/watch?v=eCYgD-BDRlA" target="_blank" class="post">
+        <figure markdown="span">
+          <img src="/instagram/img/Tunnel_Strengthening.jpg" alt="Post 5">
+        </figure>
+      </a>
+      <!-- Post 4 -->
+      <a href="https://www.youtube.com/watch?v=Xv_7TDo80k4" target="_blank" class="post">
+        <figure markdown="span">
+          <img src="/instagram/img/Using_WARP_on_HiddifyApp.jpg" alt="Post 4">
+        </figure>
+      </a>
       <!-- Post 3 -->
       <a href="https://hiddify.com/fa/blog/2023/09/23/app-published-on-the-appstore" target="_blank" class="post">
         <figure markdown="span">
