@@ -24,7 +24,7 @@ comments: false
     <h1>Instagram Posts</h1>
     <div class="grid">
       <!-- Post 5 -->
-      <a href="https://www.youtube.com/watch?v=eCYgD-BDRlA" target="_blank" class="post">
+      <a href="https://youtu.be/YPDMFU2nJK0" target="_blank" class="post">
         <figure markdown="span">
           <img src="/instagram/img/Tunnel_Strengthening.jpg" alt="Post 5">
         </figure>
