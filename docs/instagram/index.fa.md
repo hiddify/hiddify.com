@@ -15,9 +15,9 @@ comments: false
      
       </div>
       <div class="profile-info">
-        <p class="bio">هیدیفای، راهکار آزای اینترنت</p>
+        <p class="bio">هیدیفای، راهکار آزادی اینترنت</p>
      
-        <a href="https://instagram.com/hiddify_com" class="website-link" target="_blank">Instagram</a>
+        <a href="https://instagram.com/hiddify_com" class="website-link" target="_blank">صفحه اینستاگرام</a>
       </div>
     </div>
 
