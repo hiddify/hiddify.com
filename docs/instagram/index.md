@@ -17,7 +17,7 @@ comments: false
       <div class="profile-info">
         
         <p class="bio">Hiddify, Internet Freedom Solution</p>
-        <a href="https://hiddify.com" class="website-link" target="_blank">https://hiddify.com</a>
+        <a href="https://instagram.com/hiddify_com" class="website-link" target="_blank">Instagram Page</a>
       </div>
     </div>
     <!-- Post Grid Section -->
