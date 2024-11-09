@@ -47,7 +47,7 @@ comments: false
         <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
         </div>
         <p class="product-description">
-         هیدیفای‌منیجر ایجاد سرور VPN شخصی را برای شما ساده می‌کند و به شما امکان می‌دهد حتی از طریق موبایل آن را مدیریت کنید. به‌راحتی می‌توانید پروکسی‌ها را با خانواده، دوستان، گروه‌ها یا حتی صدها نفر به اشتراک بگذارید.
+         <b>هیدیفای‌منیجر</b> ایجاد سرور VPN شخصی را برای شما ساده می‌کند و به شما امکان می‌دهد حتی از طریق موبایل آن را مدیریت کنید. به‌راحتی می‌توانید پروکسی‌ها را با خانواده، دوستان، گروه‌ها یا حتی صدها نفر به اشتراک بگذارید.
         </p>
         <div class="product-arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
