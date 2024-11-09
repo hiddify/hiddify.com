@@ -26,12 +26,12 @@ comments: false
     <div class="products-grid">
       <a href="#app" class="product-card">
         
-        <h3 class="product-title">HiddifyApp – on your device</h3>
+        <h3 class="product-title">Hiddify – on your device</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="50" />
+          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="40" />
         </div>
         <p class="product-description">
-          <b>HiddifyApp</b> is an easy-to-use VPN application available for iOS, Android, Windows, macOS, and Linux. Connect seamlessly to your <b>HiddifyManager</b> or any other VPN panel. Download it on mobile or desktop and enjoy unrestricted internet access.
+          <b>Hiddify</b> is an easy-to-use VPN application available for iOS, Android, Windows, macOS, and Linux. Connect seamlessly to your <b>HiddifyManager</b> or any other VPN panel. Download it on mobile or desktop and enjoy unrestricted internet access.
         </p>
         <div class="product-arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
