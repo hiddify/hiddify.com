@@ -230,7 +230,7 @@ One of the most secure and trusted solutions for using VPN
     By following these steps, you can be more confident in Hiddify’s security as a privacy and anti-censorship tool.
 
 
-??? success "Which devices does Hiddify support??"
+??? question "Which devices does Hiddify support??"
     Hiddify is designed to work across a range of devices and operating systems, covering both server-side and client-side needs:
 
     1. **Server-Side Compatibility (Hiddify Manager)**  
@@ -249,7 +249,7 @@ One of the most secure and trusted solutions for using VPN
     With this structure, Hiddify provides a comprehensive solution for bypassing internet censorship and filtering, allowing users to set up servers independently and connect across multiple devices, all while expanding accessibility on various platforms.
 
 
-??? info "Is Hiddify free, ads-free, and open-source?"
+??? success "Is Hiddify free, ads-free, and open-source?"
     Yes, Hiddify is:
 
     1. **Free**  
@@ -287,38 +287,35 @@ One of the most secure and trusted solutions for using VPN
     These channels offer multiple ways to connect with the Hiddify support team and community members, keeping you informed about the latest updates and providing help when needed.
 
 ??? info "How can we support Hiddify?"
-Here’s the translation of the question and answers into English:
 
----
-
-### **How can we support Hiddify?**
-
-    1. **Financial Support**  
-       You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](https://hiddify.com/fa/donation-and-support/).
+    ### **How can we support Hiddify?**
     
-    2. **Starring the Hiddify Project**  
-       By starring the Hiddify project, especially the repositories for [Hiddify application](https://github.com/hiddify/hiddify-app) and [Hiddify Manager](https://github.com/hiddify/hiddify-manager), you can help increase the project's visibility and credibility on GitHub.
-    
-    3. **Contributing to Development**  
-       If you have technical skills, you can contribute to the development of Hiddify. By helping to improve the code, adding new features, or fixing bugs, you can play an active role in the progress of this project. To contribute, simply visit the [Hiddify GitHub](https://github.com/hiddify).
-    
-    4. **Giving a Five-Star Rating and Writing Reviews in Application Stores**  
-       By giving a five-star rating and writing reviews for the Hiddify app in various app stores, you can help increase its credibility and popularity, bringing it to the attention of more users. You can rate the app through the following links:  
-       - [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
-       - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
-       - [Microsoft Store](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
-    
-    5. **Sharing and Raising Awareness**  
-       By sharing Hiddify’s products, especially the Hiddify and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.
-    
-    6. **Joining Social Channels and Groups**  
-       By joining the [Hiddify Telegram Channel](https://t.me/hiddify) and the [Support Group](https://t.me/hiddify_board), you can connect with other users and stay updated on the latest news and updates about the project. Also, follow the latest educational videos on the [Hiddify YouTube Channel](https://youtube.com/@hiddify). Follow us on [Instagram](https://instagram.com/hiddify_com) and [X](https://x.com/hiddify_com) to stay informed about the latest project updates.
-    
-    7. **Helping with Content Creation, Especially Video Content**  
-       You can help spread awareness and attract new users by creating educational and promotional content about Hiddify. Video content, such as tutorials on how to use and install Hiddify and highlighting its benefits, can be highly valuable for users. These videos can be shared on social media platforms and video-sharing sites like YouTube and Instagram to assist in better outreach and engagement.
-    
-    8. **Providing Feedback and Reporting Issues**  
-       By using the Hiddify app and submitting your feedback on the [Hiddify repos](https://github.com/hiddify), you can help improve the app's functionality and identify any issues.
+        1. **Financial Support**  
+           You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](https://hiddify.com/fa/donation-and-support/).
+        
+        2. **Starring the Hiddify Project**  
+           By starring the Hiddify project, especially the repositories for [Hiddify application](https://github.com/hiddify/hiddify-app) and [Hiddify Manager](https://github.com/hiddify/hiddify-manager), you can help increase the project's visibility and credibility on GitHub.
+        
+        3. **Contributing to Development**  
+           If you have technical skills, you can contribute to the development of Hiddify. By helping to improve the code, adding new features, or fixing bugs, you can play an active role in the progress of this project. To contribute, simply visit the [Hiddify GitHub](https://github.com/hiddify).
+        
+        4. **Giving a Five-Star Rating and Writing Reviews in Application Stores**  
+           By giving a five-star rating and writing reviews for the Hiddify app in various app stores, you can help increase its credibility and popularity, bringing it to the attention of more users. You can rate the app through the following links:  
+           - [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
+           - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
+           - [Microsoft Store](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
+        
+        5. **Sharing and Raising Awareness**  
+           By sharing Hiddify’s products, especially the Hiddify and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.
+        
+        6. **Joining Social Channels and Groups**  
+           By joining the [Hiddify Telegram Channel](https://t.me/hiddify) and the [Support Group](https://t.me/hiddify_board), you can connect with other users and stay updated on the latest news and updates about the project. Also, follow the latest educational videos on the [Hiddify YouTube Channel](https://youtube.com/@hiddify). Follow us on [Instagram](https://instagram.com/hiddify_com) and [X](https://x.com/hiddify_com) to stay informed about the latest project updates.
+        
+        7. **Helping with Content Creation, Especially Video Content**  
+           You can help spread awareness and attract new users by creating educational and promotional content about Hiddify. Video content, such as tutorials on how to use and install Hiddify and highlighting its benefits, can be highly valuable for users. These videos can be shared on social media platforms and video-sharing sites like YouTube and Instagram to assist in better outreach and engagement.
+        
+        8. **Providing Feedback and Reporting Issues**  
+           By using the Hiddify app and submitting your feedback on the [Hiddify repos](https://github.com/hiddify), you can help improve the app's functionality and identify any issues.
 
 
 </section>
