@@ -2,7 +2,6 @@
 title: How to contribute to this project
 ---
 
-<div dir="ltr" markdown="1">
 
 # How to contribute to this project
 
@@ -13,7 +12,7 @@ For this, you just need to install git on your system.
 Open one of the following based on your operating system.
 
 <br>
-<details dir=ltr><summary><b>Install git on Windows</b></summary>
+<details markdown="1" dir=ltr><summary><b>Install git on Windows</b></summary>
 
 - First, go [here](https://git-scm.com/download/win) and download the Windows version.
 - Then unzip the downloaded file and install it.
@@ -41,7 +40,7 @@ git version
 </details>
 
 <br>
-<details dir=ltr><summary><b>Install git on Mac</b></summary>
+<details markdown="1" dir=ltr><summary><b>Install git on Mac</b></summary>
 
 - First, go [here](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) and download the Mac version.
 - Then run it. It has a very simple installation.
@@ -52,7 +51,7 @@ git version
 </details>
 
 <br>
-<details dir=ltr><summary><b>Install git on Linux</b></summary>
+<details markdown="1" dir=ltr><summary><b>Install git on Linux</b></summary>
 
 In most distributions of the Linux operating system, git is installed by default and you do not need to do anything special. But if you need to install it for any reason, you should search and find the appropriate command for that distribution. Next is the installation command related to the famous Ned distribution.
 
@@ -78,11 +77,11 @@ git version
 ```
 </details>
 
-## Using `git` to develop HiddifyNext
+## Using `git` to develop Hiddify app
 - First you need to `fork` the project. For this, if you intend to `fork` the project, execute the following command.
 
 ```
-git clone https://github.com/hiddify/hiddify-next.git
+git clone https://github.com/hiddify/hiddify-app.git
 ```
 - Wait a while for the project files to be copied.
 - Now you have to create a branch of the project to work on it. To do this, first choose a name for the branch. For example, suppose we choose the branch name `Hiddify-develop`. Now run the following commands.
@@ -121,11 +120,11 @@ Here, your GitHub account details will be asked. You need to enter your `usernam
 
 - Now log in to your GitHub account and open the forked project. It has a path as follows:
 
-`https://github.com/<your_username>/hiddify-next`
+`https://github.com/<your_username>/hiddify-app`
 
 - Now you will see a `banner` that informs you that your `branch` is one step ahead of the main project. To `merge` the changes with the main project, click `Contribute` and `Open a pull request`.
 - It's done, the changes have been sent to the project. Now, after the approval of the project manager, your changes will be added to the project.
 
 <br>
 
-**The app is developed using [Flutter](https://flutter.dev) and [Go](https://go.dev). For more information you can read through our [Contribution Guidelines](https://github.com/hiddify/hiddify-next/blob/main/CONTRIBUTING.md) for development.**
+**The app is developed using [Flutter](https://flutter.dev) and [Go](https://go.dev). For more information you can read through our [Contribution Guidelines](https://github.com/hiddify/hiddify-app/blob/main/CONTRIBUTING.md) for development.**
