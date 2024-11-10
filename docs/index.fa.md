@@ -75,7 +75,7 @@ comments: false
             <li>استفاده آسان</li>
             <li>
               پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
-              <a href="#" id="show-protocols">بیش از ۲۰ پروتکل دیگر</a>
+              <a href="#" id="show-protocols">بیش از ۳۰ پروتکل دیگر</a>
               <span class="hidden-features">
                 web-socket, gRPC, http-split, Trojan, و ...
               </span>
@@ -132,7 +132,7 @@ comments: false
       <li>یکی از بهترین VPN ها برای ایران، چین، روسیه، برزیل و کل جهان</li>
       <li>
        پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
-              <a href="#" id="show-protocols">بیش از ۲۰ پروتکل دیگر</a>
+              <a href="#" id="show-protocols">بیش از ۳۰ پروتکل دیگر</a>
               <span class="hidden-features">
                 web-socket, gRPC, http-split, Trojan, و ...
               </span>    </li>
@@ -153,19 +153,19 @@ comments: false
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">کراس پلتفرم</h2>
-    <p>در Android، iOS،<br /> Window، Linux و macOS موجود است</p>
+    <p>در اندروید، iOS،<br /> ویندوز، لینوکس و مک موجود است</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/secure.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">ایمن و بدون آگهی</h2>
-    <p>منبع باز، غیر تجاری <br /> و امنیتی ممیزی شده است</p>
+    <p>منبع باز، غیر تجاری <br /> و از نظر امنیتی ممیزی شده است</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/processor.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
-    <h2 class="text-xl lg:text-2xl font-semibold">ویژگی های قدرتمند</h2>
-    <p>سرویس گیرنده پروکسی خودکار بر اساس sing-box، <br /> پشتیبانی از پروتکل های مختلف</p>
+    <h2 class="text-xl lg:text-2xl font-semibold">ویژگی‌های قدرتمند</h2>
+    <p>کلاینت پروکسی خودکار <br>مبتنی بر Sing-box و Xray، <br> با پشتیبانی از بیش از ۳۰ پروتکل مختلف</p>
   </div>
 </div>
 </section>
@@ -178,12 +178,12 @@ comments: false
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
     
-    <h3 class="text-xl font-semibold">۲,۰۰۰,۰۰۰+</h3>
-    <p>تعداد دانلود هیدیفای‌منیجر</p>
+    <h3 class="text-xl font-semibold">+۲,۰۰۰,۰۰۰</h3>
+    <p>تعداد دانلودهای هیدیفای‌منیجر</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">۷,۰۰۰,۰۰۰+</h3>
-    <p>تعداد دانلود هیدیفای</p>
+    <h3 class="text-xl font-semibold">+۷,۰۰۰,۰۰۰</h3>
+    <p>تعداد دانلودهای هیدیفای</p>
   </div>
   <div>
     <h3 class="text-xl font-semibold">۴.۹/۵</h3>
