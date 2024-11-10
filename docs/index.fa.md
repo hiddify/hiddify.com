@@ -174,8 +174,7 @@ comments: false
 
 <section markdown=1>
 ## سنجش میزان اثرگذاری
-One of the most trusted VPNs
-
+یکی از امن‌ترین و مورد اعتمادترین راه‌کارهای استفاده از VPN
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
     
