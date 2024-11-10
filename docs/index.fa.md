@@ -203,7 +203,7 @@ comments: false
   </div>
 <div>
     <h3 class="text-xl font-semibold">+۸۰k</h3>
-    <p>تعداد اعضاء کامیونیتی در تلگرام</p>
+    <p>تعداد اعضاء کامیونیتی تلگرام</p>
   </div>
   <div>
     <h3 class="text-xl font-semibold">+۴۶۰k</h3>
