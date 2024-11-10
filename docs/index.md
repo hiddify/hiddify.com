@@ -307,10 +307,10 @@ Here’s the translation of the question and answers into English:
        By joining the [Hiddify Telegram Channel](https://t.me/hiddify) and the [Support Group](https://t.me/hiddify_board), you can connect with other users and stay updated on the latest news and updates about the project. Also, follow the latest educational videos on the [Hiddify YouTube Channel](https://youtube.com/@hiddify). Follow us on [Instagram](https://instagram.com/hiddify_com) and [X](https://x.com/hiddify_com) to stay informed about the latest project updates.
     
     7. **Helping with Content Creation, Especially Video Content**  
-       You can help spread awareness and attract new users by creating educational and promotional content about Hiddify. Video content, such as tutorials on how to use and install Hiddify and highlighting its benefits, can be highly valuable for users. These videos can be shared on social media platforms or video-sharing sites like YouTube and Aparat to assist in better outreach and engagement.
+       You can help spread awareness and attract new users by creating educational and promotional content about Hiddify. Video content, such as tutorials on how to use and install Hiddify and highlighting its benefits, can be highly valuable for users. These videos can be shared on social media platforms and video-sharing sites like YouTube and Instagram to assist in better outreach and engagement.
     
     8. **Providing Feedback and Reporting Issues**  
-       By using the Hiddify app and submitting your feedback on the [Hiddify GitHub repository](https://github.com/hiddify), you can help improve the app's functionality and identify any issues.
+       By using the Hiddify app and submitting your feedback on the [Hiddify repos](https://github.com/hiddify), you can help improve the app's functionality and identify any issues.
 
 
 </section>
