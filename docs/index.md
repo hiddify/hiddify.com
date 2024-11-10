@@ -204,7 +204,7 @@ One of the most secure and trusted solutions for using VPN
 
 <section markdown=1>
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
 ??? question "How can I make sure that Hiddify is safe?"
     To make sure Hiddify is secure, you can take the following steps:
