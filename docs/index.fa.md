@@ -193,8 +193,12 @@ comments: false
     <h3 class="text-xl font-semibold">۴.۸/۵</h3>
     <p>امتیاز هیدیفای در گوگل‌پلی</p>
   </div>
+  <div>
+    <h3 class="text-xl font-semibold">+۵۰۰,۰۰۰</h3>
+    <p> تعداد نصب قعال در گوگل‌پلی</p>
+  </div>
 <div>
-    <h3 class="text-xl font-semibold">۲۶k+</h3>
+    <h3 class="text-xl font-semibold">+۲۶k</h3>
     <p>تعداد ستاره‌های گیتهاب</p>
   </div>
 </div>
