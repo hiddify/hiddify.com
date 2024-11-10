@@ -67,7 +67,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-          <h1  class="d-md-none"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
+          <h1  class="d-md-none"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>Connect to the internet easier than ever with Hiddify</h2>
           
           <ul class="md-typeset__list">
@@ -145,24 +145,24 @@ comments: false
 
 <section markdown=1>
 
-# Why to choose Hiddify?
+## Why to choose Hiddify?
 <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Cross-platform</h2>
-    <p>Available on Android, iOS,<br /> Window, Linux and macOS</p>
+    <p>Available on iOS, Android,<br> Window, Linux and macOS</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/secure.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Secure and Ad-free</h2>
-    <p>Open-source, non-commercial,<br /> and security audited</p>
+    <p>Open-source, non-commercial,<br> and security audited</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/processor.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Powerful Features</h2>
-    <p>Auto-proxy client based on sing-box,<br /> supporting various protocols</p>
+    <p>Auto-proxy client <br>ased on Sing-box and Xray,<br> Supporting more than 30 protocols</p>
   </div>
 </div>
 </section>
@@ -197,6 +197,14 @@ One of the most secure and trusted solutions for using VPN
 <div>
     <h3 class="text-xl font-semibold">26k+</h3>
     <p>Project's GitHub stars</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">80k+</h3>
+    <p>Telegram Community Members</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">460k+</h3>
+    <p>Youtube Tutorials' views</p>
   </div>
 </div>
 </section>
