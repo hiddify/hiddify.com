@@ -6,8 +6,14 @@ hide:
   - feedback
 weight: -20
 ---
+<style>
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+</style>
 
-# همه آموزش‌ها و ویدیوها
+# همه آموزش‌ها و ویدیوهای مرتبط به هیدیفای‌منیجر
 
 <section class="flex flex-col gap-5 items-center justify-center py-10">
   <section
