@@ -196,18 +196,87 @@ One of the most trusted VPNs
 
 <section markdown=1>
 
-# Frequently Asked Questions
+### Frequently Asked Questions
 
 ??? question "How can I make sure that Hiddify is safe?"
-    This is the content for the first accordion.
+    To make sure Hiddify is secure, you can take the following steps:
+    
+    1. **Review the Source Code**  
+       Since Hiddify is open-source, you can examine the code directly on [GitHub](https://github.com/hiddify) for any security issues or concerns. Reviewing the code yourself or consulting with a developer you trust is a good practice.
+    
+    2. **Check Community Feedback and Contributions**  
+       The Hiddify GitHub page and repositories often have contributions, issue reports, and discussions from other developers and users. By reading these discussions, you can gain insights into the software’s security and any potential vulnerabilities that may have been addressed or raised by the community.
+    
+    3. **Use the Latest Version**  
+       Ensure you’re using the latest version of Hiddify, as it may include security patches and improvements. You can check the release notes on GitHub to see updates related to security.
+    
+    4. **Follow Standard Security Practices**  
+       Using Hiddify in a secure environment involves applying good security practices, such as:
+       - Restricting access
+       - Regularly monitoring activity
+       - Keeping both your operating system and Hiddify software up-to-date
+    
+    5. **Transparency of Configuration**  
+       Hiddify allows users to configure their own servers, giving you full control over proxy settings and data. This transparency ensures you can maintain secure configurations and adjust them as needed.
+    
+    By following these steps, you can be more confident in Hiddify’s security as a privacy and anti-censorship tool.
 
-??? info "Is Hiddify free, ads-free, and open-source"
-    Here is some information in the second accordion.
 
-??? danger "Warning Accordion"
-    This section contains a warning or important information.
+??? success "Which devices does Hiddify support??"
+    Hiddify is designed to work across a range of devices and operating systems, covering both server-side and client-side needs:
 
-??? success "How do I contact Hiddify’s customer support?"
-    This section contains a warning or important information.
+    1. **Server-Side Compatibility (Hiddify Manager)**  
+       Hiddify includes a server-side application, called **Hiddify Manager**, which installs on an Ubuntu server. Hiddify Manager can be quickly set up with Cloud-init, making it easy to deploy on popular cloud providers and datacenters. This server-side application manages configurations and connections for clients, offering a powerful backend for those seeking secure and stable internet access.
+    
+    2. **Client-Side Compatibility (Hiddify App)**  
+       The Hiddify client-side application, simply called **Hiddify**, is versatile and supports all major operating systems, including:
+       - **iOS**
+       - **Android**
+       - **Windows**
+       - **Linux**
+       - **macOS**  
+    
+       The development team is actively expanding compatibility to support additional device types, such as **routers** and **32-bit devices**, to make Hiddify accessible to an even wider audience.  
+    
+    With this structure, Hiddify provides a comprehensive solution for bypassing internet censorship and filtering, allowing users to set up servers independently and connect across multiple devices, all while expanding accessibility on various platforms.
+
+
+??? info "Is Hiddify free, ads-free, and open-source?"
+    Yes, Hiddify is:
+
+    1. **Free**  
+       Hiddify is offered for free, with no subscription fees, especially for users worldwide who face internet filtering. It enables users to connect immediately by importing proxies from personal VPN servers or free services like Cloudflare WARP without any payment.
+    
+    2. **Ads-Free**  
+       Hiddify does not include advertisements, providing a clean, distraction-free experience for its users.
+    
+    3. **Open-Source**  
+       Hiddify is fully open-source, with its code available on [GitHub](https://github.com/hiddify). This transparency allows developers to review, contribute to, and customize the code, ensuring security and flexibility. 
+    
+    These features make Hiddify a reliable and accessible tool for users seeking privacy and internet freedom without any cost or interruptions from ads.
+
+??? info "How do I contact Hiddify’s support team?"
+    To contact Hiddify’s support team, you can use the following channels:
+
+    1. **GitHub Issues**  
+       For technical support or to report bugs, you can open an issue on the following GitHub repositories:
+       - **Hiddify application Repository**: [github.com/hiddify/hiddify-app](https://github.com/hiddify/hiddify-app)
+       - **Hiddify Manager Repository**: [github.com/hiddify/hiddify-manager](https://github.com/hiddify/hiddify-manager)  
+       Opening an issue here allows the development team and the community to assist you directly.
+    
+    2. **Hiddify Website**  
+       Visit [hiddify.com](https://hiddify.com) for additional contact information, resources, and documentation. The website also provides FAQs and updates to help with common questions.
+    
+    3. **Community Forums/Channels**  
+       You can also find support or ask questions in Hiddify’s community channels:
+       - **Hiddify Telegram Channel**: [https://t.me/hiddify](https://t.me/hiddify)
+       - **Hiddify Support Group**: [https://t.me/hiddify_board](https://t.me/hiddify_board)
+       - **Hiddify YouTube Channel**: [youtube.com/@hiddify](https://youtube.com/@hiddify)
+       - **Hiddify Instagram Page**: [instagram.com/hiddify_com](https://instagram.com/hiddify_com)
+       - **Hiddify X Account (formerly Twitter)**: [x.com/hiddify_com](https://x.com/hiddify_com)  
+    
+    These channels offer multiple ways to connect with the Hiddify support team and community members, keeping you informed about the latest updates and providing help when needed.
+
+
 
 </section>
