@@ -24,7 +24,7 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 
 </div>
 
-- سپس wizard نصب را تا انتها با next و yes دنبال کنید. پیشنهاد می‌شود تنظیمات دیفالت را تغییر ندهید.
+- سپس wizard نصب را تا انتها با `next` و `yes` دنبال کنید. پیشنهاد می‌شود تنظیمات دیفالت را تغییر ندهید.
 
 <div markdown="1" align=center>
 
@@ -116,7 +116,7 @@ git version
 <div markdown="1" dir=ltr>
 
 ```
-git clone https://github.com/hiddify/hiddify-next.git
+git clone https://github.com/hiddify/hiddify-app.git
 ```
 
 </div>
@@ -197,7 +197,7 @@ git push
 
 <div markdown="1" dir=ltr>
 
-`https://github.com/<your_username>/hiddify-next`
+`https://github.com/<your_username>/hiddify-app`
 
 </div>
 
@@ -206,5 +206,5 @@ git push
 
 <br>
 
-**این برنامه با استفاده از [Flutter](https://flutter.dev/) و [Go](https://go.dev/) توسعه یافته است. برای اطلاعات بیشتر در خصوص توسعه می‌توانید [دستورالعمل‌های مشارکت](https://github.com/hiddify/hiddify-next/blob/main/CONTRIBUTING.md) در پروژه ما را مطالعه نمایید.**
+**این برنامه با استفاده از [Flutter](https://flutter.dev/) و [Go](https://go.dev/) توسعه یافته است. برای اطلاعات بیشتر در خصوص توسعه می‌توانید [دستورالعمل‌های مشارکت](https://github.com/hiddify/hiddify-app/blob/main/CONTRIBUTING.md) در پروژه ما را مطالعه نمایید.**
 
