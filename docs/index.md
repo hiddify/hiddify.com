@@ -268,8 +268,8 @@ One of the most trusted VPNs
     2. **Hiddify Website**  
        Visit [hiddify.com](https://hiddify.com) for additional contact information, resources, and documentation. The website also provides FAQs and updates to help with common questions.
     
-    3. **Community Forums/Channels**  
-       You can also find support or ask questions in Hiddify’s community channels:
+    3. **Community Forums/Social Media**  
+       You can also find support or ask questions in Hiddify’s community channels and social media:
        - **Hiddify Telegram Channel**: [https://t.me/hiddify](https://t.me/hiddify)
        - **Hiddify Support Group**: [https://t.me/hiddify_board](https://t.me/hiddify_board)
        - **Hiddify YouTube Channel**: [youtube.com/@hiddify](https://youtube.com/@hiddify)
