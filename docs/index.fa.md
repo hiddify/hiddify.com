@@ -72,7 +72,7 @@ comments: false
           <h2>راحت تر از همیشه به اینترنت متصل شوید</h2>
           
           <ul >
-            <li>آسان برای استفاده</li>
+            <li>استفاده آسان</li>
             <li>
               پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
               <a href="#" id="show-protocols">بیش از ۲۰ پروتکل دیگر</a>
@@ -141,7 +141,7 @@ comments: false
     <a hred="https://github.com/hiddify/hiddify-manager">اطلاعات بیشتر و مشاهده کد برنامه</a>
     
         <div class="button-container">
-            <a href="/manager" class="md-button md-button--primary md-button-fill">نصب بر روی سرور</a>
+            <a href="https://hiddify.com/fa/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">نصب بر روی سرور</a>
           </div>
   </div>
 </section>
