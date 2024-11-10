@@ -184,19 +184,19 @@ One of the most secure and trusted solutions for using VPN
   </div>
   <div>
     <h3 class="text-xl font-semibold">4.9/5</h3>
-    <p>Rating on AppStore</p>
+    <p>Hiddify Rating on AppStore</p>
   </div>
 <div>
     <h3 class="text-xl font-semibold">4.8/5</h3>
-    <p>Rating on Google Play</p>
+    <p>Hiddify Rating on Google Play</p>
   </div>
   <div>
     <h3 class="text-xl font-semibold">500,000+</h3>
-    <p>Active Installs on Google Play</p>
+    <p>Hiddify Active Installs on Google Play</p>
   </div>
 <div>
     <h3 class="text-xl font-semibold">26k+</h3>
-    <p>GitHub stars</p>
+    <p>Project's GitHub stars</p>
   </div>
 </div>
 </section>
