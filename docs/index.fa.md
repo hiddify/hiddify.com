@@ -68,7 +68,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-            <h1  class="d-md-none"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
+            <h1  class="d-md-none"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>راحت تر از همیشه به اینترنت متصل شوید</h2>
           
           <ul >
@@ -153,7 +153,7 @@ comments: false
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">کراس پلتفرم</h2>
-    <p>در اندروید، iOS،<br /> ویندوز، لینوکس و مک موجود است</p>
+    <p>در iOS، اندروید،<br /> ویندوز، لینوکس و مک موجود است</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
