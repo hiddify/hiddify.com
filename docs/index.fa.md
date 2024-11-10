@@ -28,7 +28,7 @@ comments: false
         
         <h3 class="product-title">هیدیفای - برای گوشی و کامپیوتر</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" />
+          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Logo" height="96" />
         </div>
         <p class="product-description">
           <b>هیدیفای</b> یک برنامه VPN ساده و کاربرپسند است که برای iOS، اندروید، ویندوز، مک‌اواس و لینوکس در دسترس است. به‌راحتی به <b>هیدیفای‌منیجر</b> یا هر پنل VPN دیگری متصل شوید. این اپلیکیشن را روی موبایل یا دسکتاپ دانلود کنید و از دسترسی آزاد به اینترنت لذت ببرید.
@@ -60,7 +60,7 @@ comments: false
 
 
 <section id="app"  class="hiddify-container" >
-   <h1  class="d-md-block"><img src="/assets/hiddify-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
+   <h1  class="d-md-block"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
     
       
         <div class="hiddify-image">
@@ -200,6 +200,15 @@ comments: false
 <div>
     <h3 class="text-xl font-semibold">+۲۶k</h3>
     <p>تعداد ستاره‌های پروژه در گیتهاب</p>
+  </div>
+</div>
+<div>
+    <h3 class="text-xl font-semibold">+۸۰k</h3>
+    <p>تعداد اعضاء کامیونیتی در تلگرام</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">+۴۶۰k</h3>
+    <p>تعداد بازپخش ویدیوهای آموزشی در یوتیوب</p>
   </div>
 </div>
 </section>
