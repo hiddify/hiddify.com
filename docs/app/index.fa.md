@@ -6,9 +6,16 @@ hide:
   - feedback
 weight: -19
 ---
-# راهنمای هیدیفای‌اپ
+<style>
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+</style>
 
-HiddifyApp یک کلاینت مبتنی بر <a class="underline underline-offset-2"
+# همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
+
+اپ هیدیفای یک کلاینت مبتنی بر <a class="underline underline-offset-2"
   href="https://github.com/SagerNet/sing-box">Sing-box</a> است که به عنوان یک
 زنجیره ابزار پروکسی جهانی عمل می‌کند و ویژگی‌ها و پروتکل‌های متنوعی را ارائه می‌دهد. اطلاعات مناسب و دقیق
 <a class="underline underline-offset-2"
