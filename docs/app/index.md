@@ -8,10 +8,16 @@ hide:
 weight: -19
 
 ---
+<style>
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+</style>
 
-# Hiddify App Guide
+# All tutorials and videos related to Hiddify application
 
-HiddifyApp is a client based on <a class="underline underline-offset-2"
+Hiddify app is a client based on <a class="underline underline-offset-2"
   href="https://github.com/SagerNet/sing-box">Sing-box</a> that serves as a
 universal proxy tool-chain which offers a wide
 range
