@@ -296,7 +296,7 @@ One of the most secure and trusted solutions for using VPN
 
 ??? info "How can we support Hiddify?"
 
-    ### **How can we support Hiddify?**
+    ### **How can I support Hiddify?**
     
         1. **Financial Support**  
            You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](https://hiddify.com/fa/donation-and-support/).
