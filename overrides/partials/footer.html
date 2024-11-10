@@ -95,11 +95,9 @@
         </div>
         <p class="mt-5 mb-10 text-secondary text-sm">
             {% if i18n_page_locale == 'fa' %}
-            برای اطمینان از اینکه همه می‌توانند با یک ابزار قدرتمند و حرفه ای ضد سانسور به راحتی به اینترنت نامحدود دسترسی
-            داشته باشند، ما را فالو کنید:  
-            {%else%}
-          To ensure everyone can access the unrestricted internet easily with a powerful and
-          professional anti-censorship tool, subscribe us in:
+          برای اطمینان از دسترسی آسان به اینترنت بدون محدودیت با یک ابزار قدرتمند و حرفه‌ای ضد سانسور، ما را در شبکه‌های اجتماعی دنبال کنید:
+          {%else%}
+          To ensure seamless access to an unrestricted internet experience with a powerful and professional anti-censorship tool, follow us on social media:
           {%endif%}
         </p>
         <div class="items-end justify-start gap-5 hidden md:flex">
@@ -134,9 +132,9 @@
         <div class="px-4 md:w-1/2 lg:w-1/3">
           <h2 class="title-font mb-3 text-lg text-secondary">
             {% if i18n_page_locale == 'fa' %}
-            دانلود اپلیکیشن
+             اپ هیدیفای
             {%else%}
-            Download Client
+            Hiddify app
             {%endif%}
 
         </h2>
@@ -161,48 +159,88 @@
         <div class="px-4 md:w-1/2 lg:w-1/3">
           <h2 class="title-font mb-3 text-lg text-secondary">
             {% if i18n_page_locale == 'fa' %}
-            هیدیفای منیجر
+            هیدیفای‌منیجر
             {%else%}
             Hiddify Manager
             {%endif%}
 </h2>
+          {% if i18n_page_locale == 'fa' %}
           <nav class="mb-10 list-none">
             <li>
-              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-On-Ubuntu"
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/guide/"
                 class="text-sm text-secondary">
-                Ubuntu
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Install-Hiddify-using-Docker"
-                class="text-sm text-secondary">
-                Docker
+                راهنمای نصب اصلی
               </a>
             </li>
             <li>
               <a class="text-sm text-secondary"
-                href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Hetzner-Servers">
-                Hetzner
+                href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/">
+                نصب سریع در هتزنر
               </a>
             </li>
             <li>
-              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Oracle-Cloud"
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/"
                 class="text-sm text-secondary">
-                Oracle Cloud
+                نصب سریع در اوراکل
               </a>
             </li>
             <li>
-              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Vultr-Servers"
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/"
                 class="text-sm text-secondary">
-                Vultr
+                نصب سریع در والتر
               </a>
             </li>
             <li>
-              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-OVH-Servers"
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/"
                 class="text-sm text-secondary">
-                OVH
+                نصب سریع در OVH
               </a>
             </li>
+            <li>
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/"
+                class="text-sm text-secondary">
+                نصب سریع در مایکروسافت آژور
+              </a>
+            </li>
+            {%else%}
+            <nav class="mb-10 list-none">
+            <li>
+              <a href="https://hiddify.com/manager/installation-and-setup/guide/"
+                class="text-sm text-secondary">
+                Main Installation Guide
+              </a>
+            </li>
+            <li>
+              <a class="text-sm text-secondary"
+                href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/">
+                Quick Installation on Hetzner
+              </a>
+            </li>
+            <li>
+              <a href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/"
+                class="text-sm text-secondary">
+                Quick Installation on Oracle
+              </a>
+            </li>
+            <li>
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/"
+                class="text-sm text-secondary">
+               Quick Installation on Vultre
+              </a>
+            </li>
+            <li>
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/"
+                class="text-sm text-secondary">
+                Quick Installation on OVH
+              </a>
+            </li>
+            <li>
+              <a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/"
+                class="text-sm text-secondary">
+                Quick Installation on Microsoft Azure
+              </a>
+            </li>
+            {%endif%}
           </nav>
         </div>
         <div class="px-4 md:w-1/2 lg:w-1/3">
