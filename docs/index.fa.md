@@ -207,7 +207,7 @@ comments: false
 
 <section markdown=1>
 
-# Frequently Asked Questions
+## سوالات پر تکرار
 
 ??? question "چگونه می‌توانم مطمئن شوم که هیدیفای امن است؟"
     برای اطمینان از امنیت هیدیفای، می‌توانید مراحل زیر را دنبال کنید:
