@@ -5,6 +5,9 @@ hide:
   - feedback
 comments: false
   # - navigation
+
+no_title_header: true
+headless: true
 ---
 <link rel="stylesheet" href="/instagram/styles.css">
  <div class="instagram">
