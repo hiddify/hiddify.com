@@ -299,8 +299,8 @@ One of the most trusted VPNs
     4. **امتیازدهی پنج ستاره و نوشتن ریویو در فروشگاه‌های اپلیکیشن**  
        با دادن امتیاز پنج ستاره و نوشتن ریویو برای اپ هیدیفای در فروشگاه‌های مختلف، می‌توانید به افزایش اعتبار و محبوبیت این اپلیکیشن کمک کنید و افراد بیشتری را با آن آشنا سازید. برای امتیازدهی، می‌توانید از لینک‌های زیر استفاده کنید:  
        - [اپ‌استور](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
-       - [گوگل پلی](https://play.google.com/store/apps/details?id=app.hiddify.com)  
-       - [مایکروسافت استور](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
+       - [گوگل‌پلی](https://play.google.com/store/apps/details?id=app.hiddify.com)  
+       - [مایکروسافت‌استور](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
     
     5. **به اشتراک‌گذاری و آگاهی‌رسانی**  
        با اشتراک‌گذاری محصولات هیدیفای، به‌ویژه هیدیفای و هیدیفای‌منیجر، در شبکه‌های اجتماعی و معرفی آن به افرادی که به ابزارهای ضد سانسور نیاز دارند، می‌توانید به گسترش این پروژه و افزایش کاربران آن کمک کنید.
