@@ -18,17 +18,16 @@ comments: false
 
   <section class="products-section">
 
-    <h1 class="hero-title"><img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
+    <h1 class="hero-title"><img src="/assets/hiddify-Logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
     Internet Freedom Solution</h1>
 
     <h2 class="products-title">All you need for an unrestricted internet</h2>
     
     <div class="products-grid">
       <a href="#app" class="product-card">
-        
-        <h3 class="product-title">Hiddify – on your device</h3>
+       <h3 class="product-title">Hiddify – on your device</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="40" />
+          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Logo" height="96" />
         </div>
         <p class="product-description">
           <b>Hiddify</b> is an easy-to-use VPN application available for iOS, Android, Windows, macOS, and Linux. Connect seamlessly to your <b>HiddifyManager</b> or any other VPN panel. Download it on mobile or desktop and enjoy unrestricted internet access.
@@ -41,7 +40,6 @@ comments: false
       </a>
 
       <a href="#manager" class="product-card">
-        
         <h3 class="product-title">HiddifyManager - on your server to manage proxies and users</h3>
         <div class="product-logo-wrapper">
         <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
