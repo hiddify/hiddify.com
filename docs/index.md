@@ -138,7 +138,7 @@ comments: false
     <a hred="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
     
         <div class="button-container">
-            <a href="/manager" class="md-button md-button--primary md-button-fill">Install on server</a>
+            <a href="https://hiddify.com/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
           </div>
   </div>
 </section>
