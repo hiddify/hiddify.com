@@ -88,13 +88,13 @@ comments: false
             <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="iOS & macOS > 2021">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
-            <a id="btn-windows" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
+            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
-            <a id="btn-macos" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
+            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
-            <a id="btn-linux" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="Linux">
+            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="Linux">
               <img src="/assets/platforms/linux.svg" alt="Linux">
             </a>
           </div>
@@ -169,21 +169,25 @@ comments: false
 
 
 <section markdown=1>
-# Measuring Impact
-One of the most trusted VPNs
+## Measuring Impact
+One of the most secure and trusted solutions for VPN
 
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
     
-    <h3 class="text-xl font-semibold">1,000,000+</h3>
-    <p>Hiddify Manager downloads</p>
+    <h3 class="text-xl font-semibold"2,000,000+</h3>
+    <p>HiddifyManager downloads</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">1,200,000+</h3>
-    <p>Hiddify app downloads</p>
+    <h3 class="text-xl font-semibold">7,000,000+</h3>
+    <p>Hiddify downloads</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">4.9/5</h3>
+    <p>Rating on AppStore</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">4.8 / 5</h3>
+    <h3 class="text-xl font-semibold">4.8/5</h3>
     <p>Rating on Google Play</p>
   </div>
 <div>
