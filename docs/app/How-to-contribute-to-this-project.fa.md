@@ -2,7 +2,6 @@
 title: چگونه می‌توان در این پروژه همکاری نمود
 ---
 
-<div dir="rtl">
 
 # چگونه می‌توان در این پروژه همکاری نمود
 
@@ -12,13 +11,14 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 بر اساس سیستم عامل خود یکی از موارد زیر را باز نمایید.
 
 <br>
-<details dir=rtl><summary><b>ویندوز</b></summary>
+
+<details markdown="1" dir=rtl><summary><b>ویندوز</b></summary>
 
 
 
 - ابتدا به [اینجا](https://git-scm.com/download/win) بروید و نسخه مخصوص ویندوز را دانلود کنید.
 - سپس فایل دانلود شده را از حالت فشرده خارج نمایید و برای نصب آن را ارا نمایید.
-<div align=center>
+<div markdown="1" align=center>
 
 ![location-git-windows-download](https://github.com/hiddify/hiddify-config/assets/125398461/cd883726-f340-441c-bbca-df98f0389de2)
 
@@ -26,13 +26,13 @@ title: چگونه می‌توان در این پروژه همکاری نمود
 
 - سپس wizard نصب را تا انتها با next و yes دنبال کنید. پیشنهاد می‌شود تنظیمات دیفالت را تغییر ندهید.
 
-<div align=center>
+<div markdown="1" align=center>
 
 ![read-and-accept-git-license-agreement](https://github.com/hiddify/hiddify-config/assets/125398461/c8220a90-4f88-451f-ac60-ca6280feef20)
 
 </div>
 به صورت دیفالت محل نصب git در این مسیر است.
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 C:/Program Files/Git
@@ -41,7 +41,7 @@ C:/Program Files/Git
 یعنی در مراحل بعد، پروژه‌ها در این مسیر قرار می‌گیرند. کار تمام است.
 - برای چک کردن ورژن `git` نصب شده، `command prompt` را باز نمایید و دستور زیر را اجرا کنید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git version
@@ -53,13 +53,13 @@ git version
 </details>
 
 <br>
-<details dir=rtl><summary><b>مک</b></summary>
+<details markdown="1" dir=rtl><summary><b>مک</b></summary>
 
 - ابتدا از [اینجا](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) فایل نصب را دانلود کنید.
 - سپس آن را جارا نمایید. نصب خیلی ساده‌ای دارد.
 - بعد از نصب برای چک کردن ورژن `git` نصب شده، `terminal` را باز نمایید و دستور زیر را اجرا کنید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git version
@@ -71,10 +71,10 @@ git version
 </details>
 
 <br>
-<details dir=rtl><summary><h3>لینوکس</h3></summary>
+<details markdown="1" dir=rtl><summary><h3>لینوکس</h3></summary>
 
 در اکثر توزیع‌های سیستم عامل لینوکس git به صورت دیفالت نصب است و نیاز نیست کار خاصی بکنید. اما اگر به هر دلیلی نیاز بود آن را نصب نمایید باید سرچ بزنید و کامند مناسب مربوط به آن توزیع را پیدا کنید. در ادامه کامند نصب مربوط به ند توزیع معروف قرار می‌گیرد.
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 **Debian/Ubuntu**
 
@@ -97,7 +97,7 @@ pacman -Syu git-all
 در همه توزیع‌ها git در مسیر Home کاربر نصب می‌گردد.
 - برای چک کردن نسخه git نصب شده در ترمیال این دستور را اجرا کنید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git version
@@ -113,7 +113,7 @@ git version
 
 - ابتدا باید پروژه را fork کنید. برای این کار اگر قصد fork کردن پنل را دارید کامند زیر را اجرا کنید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git clone https://github.com/hiddify/hiddify-next.git
@@ -124,7 +124,7 @@ git clone https://github.com/hiddify/hiddify-next.git
 
 - اندکی صبر کنید تا فایل‌های پروژه کپی شود.
 
-<div align=center>
+<div markdown="1" align=center>
 
 ![Screenshot_20230807_172554](https://github.com/hiddify/hiddify-config/assets/125398461/b4730f3a-3f86-4792-8ccc-6a5789056c1d)
 
@@ -132,7 +132,7 @@ git clone https://github.com/hiddify/hiddify-next.git
 
 - حالا باید یک شاخه یا branch از پروژه درست کنید تا روی آن کار کنید. برای این کار ابتدا برای شاخه یک اسم انتخاب کنید. مثلا فرض کنیم اسم شاخه را `Hiddify-develop` انتخاب می‌کنیم. حالا دستورات زیر را اجرا کنید. 
 
-<div dir="ltr" >
+<div markdown="1" dir="ltr" >
 
 ```
 git branch Hiddify-develop
@@ -141,7 +141,7 @@ git checkout Hiddify-develop
 
 </div>
 
-<div dir="rtl" >
+<div markdown="1" dir="rtl" >
 
 -  حالا تغییرات مورد نظر خود را روی فایل‌ها با استفاده از هر ابزاری اعمال کنید. توصیه می‌شود از `VSCode` استفاده نمایید.
 -  یادتون نره مسیر تمامی فایل‌ها در پوشه‌های گفته شده در مرحله نصب است.
@@ -150,7 +150,7 @@ git checkout Hiddify-develop
 - ابتدا با کامند زیر انجام تغییرات را به `git` اعلام کنید.
 
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git add
@@ -160,7 +160,7 @@ git add
 
 - سپس تغییرات را کامیت نمایید. نیاز است که در اینجا یک توضیح برای تغییرات اعلام نمایید.
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git commit -m "a short description of the change"
@@ -171,7 +171,7 @@ git commit -m "a short description of the change"
 مثلا اگر تغییرات مدنظر شما مربوط به بخش توسعه بات باشد می‌توان چنین توضیحی نوشت.
 
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git commit -m "a short description of the change"
@@ -182,7 +182,7 @@ git commit -m "a short description of the change"
 هیچ مشکلی ندارد که توضیحات این بخش زیاد باشد و اتفاقا توصیه می‌شود تا جای ممکن توضیحات کامل و جامع باشد.
 در این مرحله تغییرات با موفقیت وارد سیستم git شد. حالا باید تغییرات را به سمت GitHub بفرستید. برای این کار دستور زیر را اجرا کنید. 
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 ```
 git push
@@ -195,7 +195,7 @@ git push
 - حالا وارد اکانت خود در گیتهاب شوید و پروژه فورک شده را باز نمایید.
 مسیری به شکل زیر دارد:
 
-<div dir=ltr>
+<div markdown="1" dir=ltr>
 
 `https://github.com/<your_username>/hiddify-next`
 
