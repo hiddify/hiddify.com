@@ -289,19 +289,19 @@ Here’s the translation of the question and answers into English:
        You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](https://hiddify.com/fa/donation-and-support/).
     
     2. **Starring the Hiddify Project**  
-       By starring the Hiddify project, especially the repositories for [Hiddify App](https://github.com/hiddify/hiddify-app) and [Hiddify Manager](https://github.com/hiddify/hiddify-manager), you can help increase the project's visibility and credibility on GitHub.
+       By starring the Hiddify project, especially the repositories for [Hiddify application](https://github.com/hiddify/hiddify-app) and [Hiddify Manager](https://github.com/hiddify/hiddify-manager), you can help increase the project's visibility and credibility on GitHub.
     
     3. **Contributing to Development**  
        If you have technical skills, you can contribute to the development of Hiddify. By helping to improve the code, adding new features, or fixing bugs, you can play an active role in the progress of this project. To contribute, simply visit the [Hiddify GitHub](https://github.com/hiddify).
     
-    4. **Giving a Five-Star Rating and Writing Reviews in App Stores**  
+    4. **Giving a Five-Star Rating and Writing Reviews in Application Stores**  
        By giving a five-star rating and writing reviews for the Hiddify app in various app stores, you can help increase its credibility and popularity, bringing it to the attention of more users. You can rate the app through the following links:  
-       - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
        - [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
+       - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
        - [Microsoft Store](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
     
     5. **Sharing and Raising Awareness**  
-       By sharing Hiddify’s products, especially the Hiddify App and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.
+       By sharing Hiddify’s products, especially the Hiddify and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.
     
     6. **Joining Social Channels and Groups**  
        By joining the [Hiddify Telegram Channel](https://t.me/hiddify) and the [Support Group](https://t.me/hiddify_board), you can connect with other users and stay updated on the latest news and updates about the project. Also, follow the latest educational videos on the [Hiddify YouTube Channel](https://youtube.com/@hiddify). Follow us on [Instagram](https://instagram.com/hiddify_com) and [X](https://x.com/hiddify_com) to stay informed about the latest project updates.
