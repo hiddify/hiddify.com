@@ -201,7 +201,6 @@ comments: false
     <h3 class="text-xl font-semibold">+۲۶k</h3>
     <p>تعداد ستاره‌های پروژه در گیتهاب</p>
   </div>
-</div>
 <div>
     <h3 class="text-xl font-semibold">+۸۰k</h3>
     <p>تعداد اعضاء کامیونیتی در تلگرام</p>
