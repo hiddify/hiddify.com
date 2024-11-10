@@ -217,7 +217,7 @@ One of the most trusted VPNs
        - Keeping both your operating system and Hiddify software up-to-date
     
     5. **Transparency of Configuration**  
-       Hiddify allows users to configure their own servers, giving you full control over proxy settings and data. This transparency ensures you can maintain secure configurations and adjust them as needed.
+       Hiddify Manager enables users to configure their own servers, providing complete control over proxy settings and data. This transparency ensures that users can maintain secure configurations and modify them as needed. Similarly, the Hiddify app offers users and developers the flexibility to customize and adjust settings, including proxy configurations and connection management, to meet their specific needs. Being open-source, the app allows visibility of any modifications or improvements, ensuring that users retain full control over their app experience while safeguarding security and privacy at every stage.
     
     By following these steps, you can be more confident in Hiddify’s security as a privacy and anti-censorship tool.
 
@@ -245,13 +245,14 @@ One of the most trusted VPNs
     Yes, Hiddify is:
 
     1. **Free**  
-       Hiddify is offered for free, with no subscription fees, especially for users worldwide who face internet filtering. It enables users to connect immediately by importing proxies from personal VPN servers or free services like Cloudflare WARP without any payment.
+       The Hiddify app is offered for free and has no subscription fees, especially for users worldwide who face internet filtering. It allows users to quickly connect by importing proxies obtained from personal VPN servers (created by Hiddify Manager or any other VPN panel) or free services like Cloudflare WARP without any payment.  
+       Additionally, Hiddify Manager is a free VPN server-building tool designed for non-commercial use.
     
     2. **Ads-Free**  
-       Hiddify does not include advertisements, providing a clean, distraction-free experience for its users.
+       Both the Hiddify app and Hiddify Manager are ads-free, providing a clean and distraction-free experience for users.
     
     3. **Open-Source**  
-       Hiddify is fully open-source, with its code available on [GitHub](https://github.com/hiddify). This transparency allows developers to review, contribute to, and customize the code, ensuring security and flexibility. 
+       Hiddify products are fully open-source, with the code available on [GitHub](https://github.com/hiddify). This transparency allows developers to review, contribute to, and customize the code, ensuring security and flexibility.
     
     These features make Hiddify a reliable and accessible tool for users seeking privacy and internet freedom without any cost or interruptions from ads.
 
