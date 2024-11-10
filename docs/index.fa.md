@@ -89,13 +89,13 @@ comments: false
             <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="آیفون و مک جدید">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
-            <a id="btn-windows" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="ویندوز">
+            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="ویندوز">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
-            <a id="btn-macos" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
+            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
-            <a id="btn-linux" href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="لینوکس">
+            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="لینوکس">
               <img src="/assets/platforms/linux.svg" alt="Linux">
             </a>
           </div>
@@ -119,7 +119,7 @@ comments: false
     
       
         <div class="hiddify-image">
-          <img src="/assets/hiddify-manager.png" alt="hiddify next" decoding="async" loading="lazy" />
+          <img src="/assets/hiddify-manager.png" alt="Hiddify Manager" decoding="async" loading="lazy" />
         </div>
 
   <div class="hiddify-content">
@@ -173,26 +173,30 @@ comments: false
 
 
 <section markdown=1>
-# Measuring Impact
+## سنجش میزان اثرگذاری
 One of the most trusted VPNs
 
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
     
-    <h3 class="text-xl font-semibold">1,000,000+</h3>
-    <p>Hiddify Manager downloads</p>
+    <h3 class="text-xl font-semibold">۲,۰۰۰,۰۰۰+</h3>
+    <p>تعداد دانلود هیدیفای‌منیجر</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">1,200,000+</h3>
-    <p>Hiddify app downloads</p>
+    <h3 class="text-xl font-semibold">۷,۰۰۰,۰۰۰+</h3>
+    <p>تعداد دانلود هیدیفای</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">۴.۹/۵</h3>
+    <p>امتیاز هیدیفای در اپ‌استور</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">4.8 / 5</h3>
-    <p>Rating on Google Play</p>
+    <h3 class="text-xl font-semibold">۴.۸/۵</h3>
+    <p>امتیاز هیدیفای در گوگل‌پلی</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">26k+</h3>
-    <p>GitHub stars</p>
+    <h3 class="text-xl font-semibold">۲۶k+</h3>
+    <p>تعداد ستاره‌های گیتهاب</p>
   </div>
 </div>
 </section>
