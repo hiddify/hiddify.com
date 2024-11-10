@@ -6,8 +6,14 @@ hide:
   - feedback
   - toc
 ---
+<style>
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+</style>
 
-# All tutorials and videos
+# All tutorials and videos related to HiddifyManager
 <section class="flex flex-col gap-5 items-center justify-center py-10">
   <section
     class=" video-card  relative w-full md:max-w-[900px] rounded-3xl border-2 border-white bg-white bg-opacity-20 shadow-lg">
