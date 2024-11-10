@@ -170,7 +170,7 @@ comments: false
 
 <section markdown=1>
 ## Measuring Impact
-One of the most secure and trusted solutions for VPN
+One of the most secure and trusted solutions for using VPN
 
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
