@@ -174,53 +174,69 @@ One of the most secure and trusted solutions for using VPN
 
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
+  <a href="https://github.com/hiddify/Hiddify-Manager">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://static.pepy.tech/personalized-badge/hiddifypanel?period=total&style=flat-square&left_text=" style="transform: translateX(-5px);">
     </h3>
-    <p>HiddifyManager downloads</p>
+    <p>HiddifyManager GitHub Downloads</p>
+  </a>
   </div>
 <div>
+  <a href="https://github.com/hiddify/hiddify-app">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/github/downloads/hiddify/hiddify-next/total?style=flat-square&logo=&label=">
     </h3>
-    <p>Hiddify GitHub downloads</p>
+    <p>Hiddify GitHub Downloads</p>
+  </a>
   </div>
   <div>
+    <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone">
     <h3 class="text-xl font-semibold">
     
     <img class="badge-value-only" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&cacheSeconds=36000&style=flat-square&suffix=%20/%205&query=message&url=https%3A%2F%2Fbadge.hiddify.com%2Fappstore">
     </h3>
     <p>Hiddify Rating on AppStore</p>
+    </a>
   </div>
 <div>
+  <a href="https://play.google.com/store/apps/details?id=app.hiddify.com">
     <h3 class="text-xl font-semibold">
      <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24rating%2520%252F%25205&style=flat-square">
      </h3>
     <p>Hiddify Rating on Google Play</p>
+  </a>
   </div>
   <div>
+    <a href="https://play.google.com/store/apps/details?id=app.hiddify.com">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24shortinstalls&style=flat-square">
     </h3>
     <p>Hiddify Active Installs on Google Play</p>
+    </a>
   </div>
 <div>
+  <a href="https://github.com/hiddify">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/github/stars/hiddify?style=flat-square&label=">
     </h3>
-    <p>Project's GitHub stars</p>
+    <p>Project's GitHub Stars</p>
+  </a>
   </div>
   <div>
+    <a href="https://t.me/hiddify">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/endpoint?label=&logo=1&style=flat-square&cacheSeconds=36000&url=https%3A%2F%2Fbadge.hiddify.com%2Ftg">
     </h3>
     <p>Telegram Community Members</p>
+    </a>
   </div>
   <div>
+    <a href="https://youtube.com/@hiddify">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=&style=flat-square&logo=">
     </h3>
     <p>Youtube Tutorials' views</p>
+     </a>
   </div>
 </div>
 </section>
