@@ -150,19 +150,19 @@ comments: false
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Cross-platform</h2>
-    <p>Available on iOS, Android,<br> Window, Linux and macOS</p>
+    <p>Available on iOS, Android,<br> Window, Linux and macOS.</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/secure.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Secure and Ad-free</h2>
-    <p>Open-source, non-commercial,<br> and security audited</p>
+    <p>Open-source, non-commercial,<br> and security audited.</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/processor.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Powerful Features</h2>
-    <p>Auto-proxy client <br>ased on Sing-box and Xray,<br> Supporting more than 30 protocols</p>
+    <p>Auto-proxy client <br>providing a wide range of features,<br> Supporting more than 30 protocols.</p>
   </div>
 </div>
 </section>
