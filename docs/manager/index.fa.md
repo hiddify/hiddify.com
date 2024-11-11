@@ -5,6 +5,8 @@ hide:
   - toc
   - feedback
 weight: -20
+no_title_header: true
+headless: true
 ---
 <style>
 @media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
