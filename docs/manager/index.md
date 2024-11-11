@@ -14,7 +14,10 @@ hide:
 </style>
 
 # All tutorials and videos related to HiddifyManager
-HiddifyManager is an application for server installation to create a VPN server that supports multiple protocols. This page contains all the categorized tutorials related to HiddifyManager.
+HiddifyManager is an application for server installation to create a VPN server that supports multiple protocols. translate to farsi:
+The appropriate and detailed information are accessible <a
+  class="underline underline-offset-2"
+  href="https://github.com/hiddify/Hiddify-Manager/blob/main/README.md">here</a>. This page contains all the categorized tutorials related to HiddifyManager.
 
 <section class="flex flex-col gap-5 items-center justify-center py-10">
   <section
