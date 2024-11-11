@@ -148,8 +148,9 @@ comments: false
 
 
 <section  markdown=1>
+
+  #‌‌# چرا هیدیفای را انتخاب کنیم؟
   
-#‌‌# چرا هیدیفای را انتخاب کنیم؟
 <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
