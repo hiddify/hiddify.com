@@ -155,19 +155,19 @@ comments: false
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">کراس پلتفرم</h2>
-    <p>در iOS، اندروید،<br /> ویندوز، لینوکس و مک موجود است</p>
+    <p>در iOS، اندروید،<br /> ویندوز، لینوکس و مک موجود است.</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/secure.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">ایمن و بدون آگهی</h2>
-    <p>منبع باز، غیر تجاری <br /> و از نظر امنیتی ممیزی شده است</p>
+    <p>منبع باز، غیر تجاری <br /> و از نظر امنیتی ممیزی شده است.</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/processor.png" alt="پلتفرم متقابل" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">ویژگی‌های قدرتمند</h2>
-    <p>کلاینت پروکسی خودکار <br>مبتنی بر Sing-box و Xray، <br> با پشتیبانی از بیش از ۳۰ پروتکل مختلف</p>
+    <p>کلاینت پروکسی خودکار <br>با قابلیت‌های فراوان، <br>و با پشتیبانی از بیش از ۳۰ پروتکل مختلف است.</p>
   </div>
 </div>
 </section>
