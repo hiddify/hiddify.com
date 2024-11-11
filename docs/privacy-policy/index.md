@@ -9,7 +9,7 @@ Services provided by Hiddify are intended for use as is.
 
 We do not gather any information from you. This app need a private server from you and we do not provide any server.
 
-Crash Data is transmitted via Sentry In Hiddify Client Application without any sensitive data.
+Crash Data is transmitted via Sentry In Hiddify Application without any sensitive data.
 
 # 1. Data Collection
 
