@@ -177,27 +177,33 @@ comments: false
 یکی از امن‌ترین و مورد اعتمادترین راه‌کارهای استفاده از VPN
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
+  <a href="https://github.com/hiddify/Hiddify-Manager">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://static.pepy.tech/personalized-badge/hiddifypanel?period=total&left_text=" style="transform: translateX(-5px);">
     </h3>
     
     
     <p>تعداد دانلودهای هیدیفای‌منیجر از گیتهاب</p>
+    </a>
   </div>
 <div>
+  <a href="https://github.com/hiddify/hiddify-app">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/github/downloads/hiddify/hiddify-next/total?style=flat-square&logo=&label=">
     
     </h3>
     <p>تعداد دانلودهای هیدیفای از گیتهاب</p>
+    </a>
   </div>
   <div>
+    <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&prefix=5%20/%20&query=message&url=https%3A%2F%2Fbadge.hiddify.com%2Fappstore">
   
     
     </h3>
     <p>امتیاز هیدیفای در اپ‌استور</p>
+    </a>
   </div>
 <div>
     <a href="https://play.google.com/store/apps/details?id=app.hiddify.com">
@@ -213,23 +219,28 @@ comments: false
     <p> تعداد نصب فعال هیدیفای در گوگل‌پلی</p>
   </div>
 <div>
+  <a href="https://play.google.com/store/apps/details?id=app.hiddify.com">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/github/stars/hiddify?style=flat-square&label=">
     </h3>
     <p>تعداد ستاره‌های پروژه در گیتهاب</p>
+  </a>
   </div>
 <div>
+  <a href="https://t.me/hiddify">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/endpoint?label=&logo=1&cacheSeconds=36000&style=flat-square&url=https%3A%2F%2Fbadge.hiddify.com%2Ftg">
     </h3>
     <p>تعداد اعضاء کامیونیتی تلگرام</p>
-
+  </a>
   </div>
   <div>
+    <a href="https://youtube.com/@hiddify">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=&style=flat-square&logo=">
     </h3>
     <p>تعداد نمایش ویدیوها در یوتیوب</p>
+    </a>
   </div>
 </div>
 </section>
