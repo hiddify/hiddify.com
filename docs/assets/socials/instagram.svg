@@ -1,0 +1,19 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle (White) -->
+  <circle cx="10" cy="10" r="10" fill="#FFFFFF"/>
+
+  <!-- Outer Rounded Rectangle for the Camera Frame (Blue) -->
+  <rect x="5.75" y="5.75" width="8.5" height="8.5" rx="2.5" fill="#455FE9"/>
+
+  <!-- Inner Rectangle (White) inside the Camera Frame -->
+  <rect x="6.75" y="6.75" width="6.5" height="6.5" rx="1.5" fill="#FFFFFF"/>
+
+  <!-- Flash Circle (Blue), positioned between the inner rectangle and outer camera lens -->
+  <circle cx="12.25" cy="8" r="0.5" fill="#455FE9"/>
+
+  <!-- Outer Camera Lens (Blue) -->
+  <circle cx="10" cy="10" r="2" fill="#455FE9"/>
+
+  <!-- Inner Camera Lens (White) -->
+  <circle cx="10" cy="10" r="1" fill="#FFFFFF"/>
+</svg>
