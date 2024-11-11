@@ -2689,3 +2689,9 @@ svg.badge-value-only{
   height:20px;
   margin: auto;
 }
+
+footer {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
