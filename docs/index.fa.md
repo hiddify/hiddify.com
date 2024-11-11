@@ -182,7 +182,7 @@ comments: false
     </h3>
     
     
-    <p>تعداد دانلودهای هیدیفای‌منیجر</p>
+    <p>تعداد دانلودهای هیدیفای‌منیجر از گیتهاب</p>
   </div>
 <div>
     <h3 class="text-xl font-semibold">
@@ -200,10 +200,12 @@ comments: false
     <p>امتیاز هیدیفای در اپ‌استور</p>
   </div>
 <div>
+    <a href="https://play.google.com/store/apps/details?id=app.hiddify.com">
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&cacheSeconds=36000&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D5%2520%252F%2520%24rating&style=flat-square">
     </h3>
     <p>امتیاز هیدیفای در گوگل‌پلی</p>
+    </a>
   </div>
   <div>
     <h3 class="text-xl font-semibold"></h3>
