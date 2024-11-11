@@ -2,7 +2,6 @@
   
   <!-- Footer inner container with language-based text alignment -->
   <div class="md-footer__inner md-grid flex flex-col flex-wrap md:flex-row md:flex-nowrap {{ 'text-right' if i18n_page_locale == 'fa' else 'text-left' }}">
-    
     <!-- Social media links and description -->
     <div class="md:w-64 flex-shrink-0 md:mx-0 px-4">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
@@ -38,7 +37,7 @@
           </div>
         </div>
       </div>
-      <p class="mt-5 mb-10 text-secondary text-sm {{ 'text-right' if i18n_page_locale == 'fa' else 'text-left' }}">
+      <p class="mt-5 mb-5 text-secondary text-sm {{ 'text-right' if i18n_page_locale == 'fa' else 'text-left' }}">
         {% if i18n_page_locale == 'fa' %}
           برای اطمینان از دسترسی آسان به اینترنت بدون محدودیت با یک ابزار قدرتمند و حرفه‌ای ضد سانسور، ما را در شبکه‌های اجتماعی دنبال کنید:
         {% else %}
