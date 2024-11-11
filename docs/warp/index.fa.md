@@ -10,4 +10,4 @@ headless: true
 <a href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">افزودن کانفیگ وارپ به اپ هیدیفای</a>
 
 !!! tip "نکته"
-  قبل از کلیک روی لینک بالا، می‌بایست اپ را نصب داشته باشید. اگر نصب ندارید، [اینجا](https://app.hiddify.com) کلیک کنید تا نصب آغاز شود.
+   قبل از کلیک روی لینک بالا، می‌بایست اپ را نصب داشته باشید. اگر نصب ندارید، [اینجا](https://app.hiddify.com) کلیک کنید تا نصب آغاز شود.
