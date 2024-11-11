@@ -4,6 +4,9 @@ hide:
   - toc
   - feedback
 comments: false
+
+no_title_header: true
+headless: true
 ---
 
 <link rel="stylesheet" href="/instagram/styles.css">
