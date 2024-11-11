@@ -16,10 +16,10 @@ weight: -19
 # همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
 
 اپ هیدیفای یک کلاینت مبتنی بر <a class="underline underline-offset-2"
-  href="https://github.com/SagerNet/sing-box">Sing-box</a> است که به عنوان یک
-زنجیره ابزار پروکسی جهانی عمل می‌کند و ویژگی‌ها و پروتکل‌های متنوعی را ارائه می‌دهد. اطلاعات مناسب و دقیق
+  href="https://github.com/SagerNet/sing-box">Sing-box</a> است که به عنوان 
+ ابزار پروکسی جهانی عمل می‌کند و ویژگی‌ها و پروتکل‌های متنوعی را ارائه می‌دهد. اطلاعات مناسب و دقیق
 <a class="underline underline-offset-2"
-  href="https://github.com/hiddify/hiddify-next/blob/main/README.md">اینجا</a> در دسترس است. این صفحه شامل
+  href="https://github.com/hiddify/hiddify-app/blob/main/README_fa.md">اینجا</a> در دسترس است. این صفحه شامل
 راهنماهای آموزشی مرتبط با این پروژه می‌باشد.
 
 <section class="flex flex-col gap-5 items-center justify-center py-10">
