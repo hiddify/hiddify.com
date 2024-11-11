@@ -18,7 +18,8 @@ weight: -19
 # All tutorials and videos related to Hiddify application
 
 Hiddify app is a client based on <a class="underline underline-offset-2"
-  href="https://github.com/SagerNet/sing-box">Sing-box</a> that serves as a
+  href="https://github.com/SagerNet/sing-box">Sing-box</a> and <a class="underline underline-offset-2"
+  href="https://github.com/XTLS/Xray-core">Xray</a> that serves as a
 universal proxy tool-chain which offers a wide
 range
 of features and protocols. The appropriate and detailed information are accessible <a
