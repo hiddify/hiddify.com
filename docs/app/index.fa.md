@@ -15,9 +15,7 @@ weight: -19
 
 # همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
 
-هیدیفای یک اپ کلاینت مبتنی بر <a class="underline underline-offset-2"
-  href="https://github.com/SagerNet/sing-box">Sing-box</a> و <a class="underline underline-offset-2"
-  href="https://github.com/XTLS/Xray-core">Xray</a> است که به عنوان 
+هیدیفای یک اپ کلاینت VPN است که به عنوان 
  ابزار پروکسی جهانی عمل می‌کند و ویژگی‌ها و پروتکل‌های متنوعی را ارائه می‌دهد. اطلاعات مناسب و دقیق
 <a class="underline underline-offset-2"
   href="https://github.com/hiddify/hiddify-app/blob/main/README_fa.md">اینجا</a> در دسترس است. این صفحه شامل
