@@ -1,7 +1,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-Thin.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-Thin.woff2") format("woff2");
 
   font-weight: 100;
 
@@ -11,9 +11,18 @@
 }
 
 @font-face {
+  font-family: VazirmatnUIFDNL;
+  src: url('/assets/webfonts/Vazirmatn-UI-FD-NL-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-ExtraLight.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-ExtraLight.woff2") format("woff2");
 
   font-weight: 200;
 
@@ -25,7 +34,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-Light.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-Light.woff2") format("woff2");
 
   font-weight: 300;
 
@@ -37,7 +46,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-Regular.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-Regular.woff2") format("woff2");
 
   font-weight: 400;
 
@@ -49,7 +58,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-Medium.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-Medium.woff2") format("woff2");
 
   font-weight: 500;
 
@@ -61,7 +70,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-SemiBold.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-SemiBold.woff2") format("woff2");
 
   font-weight: 600;
 
@@ -73,7 +82,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-Bold.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-Bold.woff2") format("woff2");
 
   font-weight: 700;
 
@@ -85,7 +94,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-ExtraBold.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-ExtraBold.woff2") format("woff2");
 
   font-weight: 800;
 
@@ -97,7 +106,7 @@
 @font-face {
   font-family: Vazirmatn RD;
 
-  src: url("docs/assets/webfonts/Vazirmatn-RD-Black.woff2") format("woff2");
+  src: url("/assets/webfonts/Vazirmatn-RD-Black.woff2") format("woff2");
 
   font-weight: 900;
 
@@ -2653,3 +2662,30 @@ object-fit: cover;
  [data-md-color-scheme=slate] .hiddify-logo-text{
   fill:#FFF
  }
+
+
+
+ svg.badge-value-only g {
+  display: none;
+}
+
+svg.badge-value-only g[text-anchor="middle"]{
+  display: block;
+}
+
+svg.badge-value-only text{
+  fill:#000;
+  
+}
+[dir="rtl"] svg.badge-value-only text{
+font-family: VazirmatnUIFDNL;
+}
+[data-md-color-scheme=slate] svg.badge-value-only text{
+  fill:#FFF;
+}
+
+svg.badge-value-only{
+  zoom:4;
+  height:20px;
+  margin: auto;
+}

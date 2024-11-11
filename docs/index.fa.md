@@ -177,37 +177,57 @@ comments: false
 یکی از امن‌ترین و مورد اعتمادترین راه‌کارهای استفاده از VPN
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://static.pepy.tech/personalized-badge/hiddifypanel?period=total&left_text=" style="transform: translateX(-5px);">
+    </h3>
     
-    <h3 class="text-xl font-semibold">+۲,۰۰۰,۰۰۰</h3>
+    
     <p>تعداد دانلودهای هیدیفای‌منیجر</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">+۷,۰۰۰,۰۰۰</h3>
-    <p>تعداد دانلودهای هیدیفای</p>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/github/downloads/hiddify/hiddify-next/total?style=flat-square&logo=&label=">
+    
+    </h3>
+    <p>تعداد دانلودهای هیدیفای از گیتهاب</p>
   </div>
   <div>
-    <h3 class="text-xl font-semibold">۴.۹/۵</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&prefix=5%20/%20&query=message&url=https%3A%2F%2Fbadge.hiddify.com%2Fappstore">
+  
+    
+    </h3>
     <p>امتیاز هیدیفای در اپ‌استور</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">۴.۸/۵</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&cacheSeconds=36000&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D5%2520%252F%2520%24rating&style=flat-square">
+    </h3>
     <p>امتیاز هیدیفای در گوگل‌پلی</p>
   </div>
   <div>
-    <h3 class="text-xl font-semibold">+۵۰۰,۰۰۰</h3>
-    <p> تعداد نصب قعال هیدیفای در گوگل‌پلی</p>
+    <h3 class="text-xl font-semibold"></h3>
+    <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24shortinstalls&style=flat-square">
+    <p> تعداد نصب فعال هیدیفای در گوگل‌پلی</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">+۲۶k</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/github/stars/hiddify?style=flat-square&label=">
+    </h3>
     <p>تعداد ستاره‌های پروژه در گیتهاب</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">+۸۰k</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/endpoint?label=&logo=1&cacheSeconds=36000&style=flat-square&url=https%3A%2F%2Fbadge.hiddify.com%2Ftg">
+    </h3>
     <p>تعداد اعضاء کامیونیتی تلگرام</p>
+
   </div>
   <div>
-    <h3 class="text-xl font-semibold">+۴۶۰k</h3>
-    <p>تعداد بازپخش ویدیوهای آموزشی در یوتیوب</p>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=&style=flat-square&logo=">
+    </h3>
+    <p>تعداد نمایش ویدیوها در یوتیوب</p>
   </div>
 </div>
 </section>

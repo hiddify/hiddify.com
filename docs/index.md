@@ -174,36 +174,52 @@ One of the most secure and trusted solutions for using VPN
 
 <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center ">
 <div>
-    
-    <h3 class="text-xl font-semibold"2,000,000+</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://static.pepy.tech/personalized-badge/hiddifypanel?period=total&style=flat-square&left_text=" style="transform: translateX(-5px);">
+    </h3>
     <p>HiddifyManager downloads</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">7,000,000+</h3>
-    <p>Hiddify downloads</p>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/github/downloads/hiddify/hiddify-next/total?style=flat-square&logo=&label=">
+    </h3>
+    <p>Hiddify GitHub downloads</p>
   </div>
   <div>
-    <h3 class="text-xl font-semibold">4.9/5</h3>
+    <h3 class="text-xl font-semibold">
+    
+    <img class="badge-value-only" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&cacheSeconds=36000&style=flat-square&suffix=%20/%205&query=message&url=https%3A%2F%2Fbadge.hiddify.com%2Fappstore">
+    </h3>
     <p>Hiddify Rating on AppStore</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">4.8/5</h3>
+    <h3 class="text-xl font-semibold">
+     <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24rating%2520%252F%25205&style=flat-square">
+     </h3>
     <p>Hiddify Rating on Google Play</p>
   </div>
   <div>
-    <h3 class="text-xl font-semibold">500,000+</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24shortinstalls&style=flat-square">
+    </h3>
     <p>Hiddify Active Installs on Google Play</p>
   </div>
 <div>
-    <h3 class="text-xl font-semibold">26k+</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/github/stars/hiddify?style=flat-square&label=">
+    </h3>
     <p>Project's GitHub stars</p>
   </div>
   <div>
-    <h3 class="text-xl font-semibold">80k+</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/endpoint?label=&logo=1&style=flat-square&cacheSeconds=36000&url=https%3A%2F%2Fbadge.hiddify.com%2Ftg">
+    </h3>
     <p>Telegram Community Members</p>
   </div>
   <div>
-    <h3 class="text-xl font-semibold">460k+</h3>
+    <h3 class="text-xl font-semibold">
+    <img class="badge-value-only" src="https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=&style=flat-square&logo=">
+    </h3>
     <p>Youtube Tutorials' views</p>
   </div>
 </div>
