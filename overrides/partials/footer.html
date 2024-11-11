@@ -9,9 +9,33 @@
         <a class="title-font flex items-center font-medium text-white md:justify-start">
           <img src="/assets/hiddify-logo.png" alt="hero" height="40" />
         </a>
-        <!-- Social icons -->
+        <!-- Social icons for mobile view -->
         <div class="items-end justify-start gap-5 flex md:hidden">
-          <!-- Social icon structure repeated for each social link -->
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://www.youtube.com/@hiddify">
+              <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://twitter.com/hiddify_com">
+              <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://t.me/hiddify">
+              <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://instagram.com/hiddify_com">
+              <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://github.com/hiddify/Hiddify-Manager">
+              <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
         </div>
       </div>
       <p class="mt-5 mb-10 text-secondary text-sm {{ 'text-right' if i18n_page_locale == 'fa' else 'text-left' }}">
@@ -21,8 +45,33 @@
           To ensure seamless access to an unrestricted internet experience with a powerful and professional anti-censorship tool, follow us on social media:
         {% endif %}
       </p>
+      <!-- Desktop social icons -->
       <div class="items-end justify-start gap-5 hidden md:flex">
-        <!-- Desktop social icons structure repeated for each link -->
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://www.youtube.com/@hiddify">
+            <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://x.com/hiddify_com">
+            <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://t.me/hiddify">
+            <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://instagram.com/hiddify_com">
+            <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://github.com/hiddify/Hiddify-Manager">
+            <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
       </div>
     </div>
 
@@ -39,7 +88,19 @@
           {% endif %}
         </h2>
         <nav class="mb-10 list-none">
-          <!-- Links for each platform based on language -->
+          {% if i18n_page_locale == 'fa' %}
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> iOS </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> اندروید </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> ویندوز </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> مک </a></li>
+          <li><a href="https://app.hiddify.com/e" target="_blank" class="text-sm text-secondary"> لینوکس </a></li>
+          {% else %}
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> iOS </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> Android </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> Windows </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> macOS </a></li>
+          <li><a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> Linux </a></li>
+          {% endif %}
         </nav>
       </div>
 
@@ -53,7 +114,22 @@
           {% endif %}
         </h2>
         <nav class="mb-10 list-none">
-          <!-- Installation links based on language -->
+          {% if i18n_page_locale == 'fa' %}
+           <li><a href="https://hiddify.com/fa/manager/installation-and-setup/guide/" class="text-sm text-secondary"> راهنمای اصلی </a></li>
+            <li><a class="text-sm text-secondary" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"> هتزنر </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="text-sm text-secondary"> اوراکل </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" class="text-sm text-secondary"> والتر </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" class="text-sm text-secondary"> OVH </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="text-sm text-secondary"> آژور </a></li>
+            {% else %}
+            <li><a href="https://hiddify.com/manager/installation-and-setup/guide/" class="text-sm text-secondary"> Main Guide </a></li>
+            <li><a class="text-sm text-secondary" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"> Hetzner </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="text-sm text-secondary"> Oracle </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" class="text-sm text-secondary"> Vultre </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" class="text-sm text-secondary"> OVH </a></li>
+            <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="text-sm text-secondary"> Azure </a></li>
+
+          {% endif %}
         </nav>
       </div>
 
