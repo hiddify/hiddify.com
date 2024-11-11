@@ -15,7 +15,7 @@ weight: -19
 
 # همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
 
-اپ هیدیفای یک کلاینت مبتنی بر <a class="underline underline-offset-2"
+هیدیفای یک اپ کلاینت مبتنی بر <a class="underline underline-offset-2"
   href="https://github.com/SagerNet/sing-box">Sing-box</a> و <a class="underline underline-offset-2"
   href="https://github.com/XTLS/Xray-core">Xray</a> است که به عنوان 
  ابزار پروکسی جهانی عمل می‌کند و ویژگی‌ها و پروتکل‌های متنوعی را ارائه می‌دهد. اطلاعات مناسب و دقیق
