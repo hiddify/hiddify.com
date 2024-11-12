@@ -246,115 +246,121 @@ One of the most secure and trusted solutions for using VPN
 
 ## Frequently Asked Questions
 
-??? question "How can I make sure that Hiddify is safe?"
+Here’s the updated text with emojis for added engagement:
+
+---
+
+??? question "How can I make sure that Hiddify is safe? 🔒"
     To make sure Hiddify is secure, you can take the following steps:
-    
-    1. **Review the Source Code**  
+
+    1. **Review the Source Code** 📝  
        Since Hiddify is open-source, you can examine the code directly on [GitHub](https://github.com/hiddify) for any security issues or concerns. Reviewing the code yourself or consulting with a developer you trust is a good practice.
-    
-    2. **Check Community Feedback and Contributions**  
+
+    2. **Check Community Feedback and Contributions** 👥  
        The Hiddify GitHub page and repositories often have contributions, issue reports, and discussions from other developers and users. By reading these discussions, you can gain insights into the software’s security and any potential vulnerabilities that may have been addressed or raised by the community.
-    
-    3. **Use the Latest Version**  
+
+    3. **Use the Latest Version** 📥  
        Ensure you’re using the latest version of Hiddify, as it may include security patches and improvements. You can check the release notes on GitHub to see updates related to security.
-    
-    4. **Follow Standard Security Practices**  
+
+    4. **Follow Standard Security Practices** 🔐  
        Using Hiddify in a secure environment involves applying good security practices, such as:
-       - Restricting access
-       - Regularly monitoring activity
-       - Keeping both your operating system and Hiddify software up-to-date
-    
-    5. **Transparency of Configuration**  
+       - Restricting access 🔒
+       - Regularly monitoring activity 📊
+       - Keeping both your operating system and Hiddify software up-to-date 🔄
+
+    5. **Transparency of Configuration** 🛠️  
        Hiddify Manager enables users to configure their own servers, providing complete control over proxy settings and data. This transparency ensures that users can maintain secure configurations and modify them as needed. Similarly, the Hiddify app offers users and developers the flexibility to customize and adjust settings, including proxy configurations and connection management, to meet their specific needs. Being open-source, the app allows visibility of any modifications or improvements, ensuring that users retain full control over their app experience while safeguarding security and privacy at every stage.
-    
-    By following these steps, you can be more confident in Hiddify’s security as a privacy and anti-censorship tool.
+
+    By following these steps, you can be more confident in Hiddify’s security as a privacy and anti-censorship tool. 🚀
 
 
-??? question "Which devices does Hiddify support??"
+??? question "Which devices does Hiddify support? 📲"
     Hiddify is designed to work across a range of devices and operating systems, covering both server-side and client-side needs:
 
-    1. **Server-Side Compatibility (Hiddify Manager)**  
+    1. **Server-Side Compatibility (Hiddify Manager)** 🖥️  
        Hiddify includes a server-side application, called **Hiddify Manager**, which installs on an Ubuntu server. Hiddify Manager can be quickly set up with Cloud-init, making it easy to deploy on popular cloud providers and datacenters. This server-side application manages configurations and connections for clients, offering a powerful backend for those seeking secure and stable internet access.
-    
-    2. **Client-Side Compatibility (Hiddify App)**  
+
+    2. **Client-Side Compatibility (Hiddify App)** 📱  
        The Hiddify client-side application, simply called **Hiddify**, is versatile and supports all major operating systems, including:
-       - **iOS**
-       - **Android**
-       - **Windows**
-       - **Linux**
-       - **macOS**  
-    
-       The development team is actively expanding compatibility to support additional device types, such as **routers** and **32-bit devices**, to make Hiddify accessible to an even wider audience.  
-    
-    With this structure, Hiddify provides a comprehensive solution for bypassing internet censorship and filtering, allowing users to set up servers independently and connect across multiple devices, all while expanding accessibility on various platforms.
+       - **iOS** 🍎
+       - **Android** 🤖
+       - **Windows** 🪟
+       - **Linux** 🐧
+       - **macOS** 💻  
+
+       The development team is actively expanding compatibility to support additional device types, such as **routers** 📡 and **32-bit devices** 🧩, to make Hiddify accessible to an even wider audience.  
+
+    With this structure, Hiddify provides a comprehensive solution for bypassing internet censorship and filtering, allowing users to set up servers independently and connect across multiple devices, all while expanding accessibility on various platforms. 🌐
 
 
-??? success "Is Hiddify free, ads-free, and open-source?"
+??? success "Is Hiddify free, ads-free, and open-source? 🎉"
     Yes, Hiddify is:
 
-    1. **Free**  
+    1. **Free** 🆓  
        The Hiddify app is offered for free and has no subscription fees, especially for users worldwide who face internet filtering. It allows users to quickly connect by importing proxies obtained from personal VPN servers (created by Hiddify Manager or any other VPN panel) or free services like Cloudflare WARP without any payment.  
        Additionally, Hiddify Manager is a free VPN server-building tool designed for non-commercial use.
-    
-    2. **Ads-Free**  
-       Both the Hiddify app and Hiddify Manager are ads-free, providing a clean and distraction-free experience for users.
-    
-    3. **Open-Source**  
-       Hiddify products are fully open-source, with the code available on [GitHub](https://github.com/hiddify). This transparency allows developers to review, contribute to, and customize the code, ensuring security and flexibility.
-    
-    These features make Hiddify a reliable and accessible tool for users seeking privacy and internet freedom without any cost or interruptions from ads.
 
-??? info "How do I contact Hiddify’s support team?"
+    2. **Ads-Free** 🚫📢  
+       Both the Hiddify app and Hiddify Manager are ads-free, providing a clean and distraction-free experience for users.
+
+    3. **Open-Source** 💻🔍  
+       Hiddify products are fully open-source, with the code available on [GitHub](https://github.com/hiddify). This transparency allows developers to review, contribute to, and customize the code, ensuring security and flexibility.
+
+    These features make Hiddify a reliable and accessible tool for users seeking privacy and internet freedom without any cost or interruptions from ads. 🛡️
+
+
+??? info "How do I contact Hiddify’s support team? 📞"
     To contact Hiddify’s support team, you can use the following channels:
 
-    1. **GitHub Issues**  
+    1. **GitHub Issues** 🐛  
        For technical support or to report bugs, you can open an issue on the following GitHub repositories:
        - **Hiddify application Repository**: [github.com/hiddify/hiddify-app](https://github.com/hiddify/hiddify-app)
        - **Hiddify Manager Repository**: [github.com/hiddify/hiddify-manager](https://github.com/hiddify/hiddify-manager)  
        Opening an issue here allows the development team and the community to assist you directly.
-    
-    2. **Hiddify Website**  
+
+    2. **Hiddify Website** 🌐  
        Visit [hiddify.com](https://hiddify.com) for additional contact information, resources, and documentation. The website also provides FAQs and updates to help with common questions.
-    
-    3. **Community Forums/Social Media**  
+
+    3. **Community Forums/Social Media** 📣  
        You can also find support or ask questions in Hiddify’s community channels and social media:
        - **Hiddify Telegram Channel**: [https://t.me/hiddify](https://t.me/hiddify)
        - **Hiddify Support Group**: [https://t.me/hiddify_board](https://t.me/hiddify_board)
        - **Hiddify YouTube Channel**: [youtube.com/@hiddify](https://youtube.com/@hiddify)
        - **Hiddify Instagram Page**: [instagram.com/hiddify_com](https://instagram.com/hiddify_com)
        - **Hiddify X Account (formerly Twitter)**: [x.com/hiddify_com](https://x.com/hiddify_com)  
-    
-    These channels offer multiple ways to connect with the Hiddify support team and community members, keeping you informed about the latest updates and providing help when needed.
 
-??? info "How can we support Hiddify?"
+    These channels offer multiple ways to connect with the Hiddify support team and community members, keeping you informed about the latest updates and providing help when needed. 📬
+
+
+??? info "How can we support Hiddify? 🤝"
 
     ### **How can I support Hiddify?**
-    
-        1. **Financial Support**  
+
+        1. **Financial Support** 💸  
            You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](https://hiddify.com/fa/donation-and-support/).
         
-        2. **Starring the Hiddify Project**  
+        2. **Starring the Hiddify Project** ⭐  
            By starring the Hiddify project, especially the repositories for [Hiddify application](https://github.com/hiddify/hiddify-app) and [Hiddify Manager](https://github.com/hiddify/hiddify-manager), you can help increase the project's visibility and credibility on GitHub.
         
-        3. **Contributing to Development**  
+        3. **Contributing to Development** 💻  
            If you have technical skills, you can contribute to the development of Hiddify. By helping to improve the code, adding new features, or fixing bugs, you can play an active role in the progress of this project. To contribute, simply visit the [Hiddify GitHub](https://github.com/hiddify).
         
-        4. **Giving a Five-Star Rating and Writing Reviews in Application Stores**  
+        4. **Giving a Five-Star Rating and Writing Reviews in Application Stores** 🌟  
            By giving a five-star rating and writing reviews for the Hiddify app in various app stores, you can help increase its credibility and popularity, bringing it to the attention of more users. You can rate the app through the following links:  
            - [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
            - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
            - [Microsoft Store](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
         
-        5. **Sharing and Raising Awareness**  
+        5. **Sharing and Raising Awareness** 📢  
            By sharing Hiddify’s products, especially the Hiddify and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.
         
-        6. **Joining Social Channels and Groups**  
+        6. **Joining Social Channels and Groups** 👥  
            By joining the [Hiddify Telegram Channel](https://t.me/hiddify) and the [Support Group](https://t.me/hiddify_board), you can connect with other users and stay updated on the latest news and updates about the project. Also, follow the latest educational videos on the [Hiddify YouTube Channel](https://youtube.com/@hiddify). Follow us on [Instagram](https://instagram.com/hiddify_com) and [X](https://x.com/hiddify_com) to stay informed about the latest project updates.
         
-        7. **Helping with Content Creation, Especially Video Content**  
+        7. **Helping with Content Creation, Especially Video Content** 🎥  
            You can help spread awareness and attract new users by creating educational and promotional content about Hiddify. Video content, such as tutorials on how to use and install Hiddify and highlighting its benefits, can be highly valuable for users. These videos can be shared on social media platforms and video-sharing sites like YouTube and Instagram to assist in better outreach and engagement.
         
-        8. **Providing Feedback and Reporting Issues**  
+        8. **Providing Feedback and Reporting Issues** 📝
            By using the Hiddify app and submitting your feedback on the [Hiddify repos](https://github.com/hiddify), you can help improve the app's functionality and identify any issues.
 
 
