@@ -1,5 +1,5 @@
 ---
-title: About-Us
+title: About Us
 hide:
   - toc
   - feedback
