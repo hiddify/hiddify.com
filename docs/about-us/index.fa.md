@@ -1,5 +1,5 @@
 ---
-title: Hiddify
+title: درباره-ما
 hide:
   - toc
   - feedback
@@ -17,44 +17,6 @@ comments: false
 
 
   <section class="products-section">
-  <main class="2xl:flex 2xl:justify-center">
-    <div class="flex justify-start items-center w-fit h-7 md:hidden">
-        <a href="/fa" class="flex items-center h-7">
-          <img src="/assets/hiddify-logo.png" alt="لوگوی هیدیفای" height="28" class="h-7" />
-        </a>
-      </div>
-      <div id="menu-btn" class="flex justify-center items-center w-fit md:hidden cursor-pointer">
-        <img src="/assets/three-dots.svg" alt="منو" height="24" decoding="async" loading="lazy" />
-      </div>
-    </nav>
-    <div dir="ltr" id="sidebar"
-      class="w-[250px] bg-[#e8cff1] hidden max-h-screen h-screen fixed left-0 top-0 px-10 py-20 flex-col gap-5 z-50">
-      <div id="close-sidebar-btn"
-        class="absolute top-5 right-5 flex justify-center items-center w-fit md:hidden cursor-pointer">
-        <img src="/assets/close-button.svg" alt="hero" height="24" decoding="async" loading="lazy" />
-      </div>
-      <div class="flex justify-start items-center w-fit h-7 md:hidden">
-        <a href="/fa" class="flex items-center h-7">
-          <img src="/assets/hiddify-logo.png" alt="لوگوی Hiddify" height="28" class="h-7" />
-        </a>
-      </div>
-      <a href="/fa/app" class="py-2 w-fit no-underline hover:text-primary">
-        اپ
-      </a>
-      <a href="/fa/manager" class="py-2 w-fit no-underline hover:text-primary">
-        منیجر
-      </a>
-      <a href="/fa/about-us" class="py-2 w-fit no-underline hover:text-primary">
-        درباره ما
-      </a>
-      <a href="/about-us" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
-        <div class="w-6 h-3">
-          <img src="/assets/united-states-flag-icon.png" class="w-6 h-3" />
-        </div>
-        <span>English</span>
-      </a>
-    </div>
-  </header>
   <main class="2xl:flex 2xl:justify-center">
     <div class="px-3 md:px-10 lg:px-20 py-10 flex flex-col gap-40 2xl:max-w-[1920px]">
       <section class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
