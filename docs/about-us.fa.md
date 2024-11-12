@@ -6,6 +6,7 @@ hide:
   # - navigation
   
 comments: false
+weight: -1
 ---
 
 <style>
@@ -22,7 +23,7 @@ comments: false
       <section class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div class="flex flex-col gap-10 w-full">
           <h1 class="text-primaryText text-6xl font-semibold">داستان هیدیفای</h1>
-          <h1 class="text-primaryText text-4xl font-medium">راهکار آزادی اینترنت</h1>
+          <h2 class="text-primaryText text-4xl font-medium">راهکار آزادی اینترنت</h2>
           <p class="text-secondaryText text-base font-medium">
             در ایران، دسترسی به اینترنت به شدت سانسور می‌شود، حتی بیشتر پس از مرگ <a
               href="https://en.wikipedia.org/wiki/Death_of_Mahsa_Amini" class="underline underline-offset-4">مهسا
