@@ -138,7 +138,7 @@ comments: false
               </span>    </li>
               <li>مدیریت یکپارچه کاربران</li>
     </ul>
-    <a hred="https://github.com/hiddify/hiddify-manager">اطلاعات بیشتر و مشاهده کد برنامه</a>
+    <a hred="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر و مشاهده کد برنامه</a>
     
         <div class="button-container">
             <a href="https://hiddify.com/fa/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">نصب بر روی سرور</a>
