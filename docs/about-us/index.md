@@ -1,5 +1,5 @@
 ---
-title: Hiddify
+title: About-Us
 hide:
   - toc
   - feedback
