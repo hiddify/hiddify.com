@@ -17,68 +17,6 @@ comments: false
 
 
   <section class="products-section">
-
-<header class="md:mb-10 lg:mb-24 px-3 md:px-10 lg:px-20">
-    <nav class="flex items-center justify-between py-10">
-      <div class="justify-start items-center w-full hidden md:flex">
-        <a href="/" class="items-center flex">
-          <img src="/assets/hiddify-logo.png" alt="Hiddify Logo" height="40" />
-        </a>
-      </div>
-      <div class="w-full hidden md:flex items-center justify-end gap-8 text-[#212529]">
-        <a href="/app" class="py-2 w-fit no-underline hover:text-primary">
-          App
-        </a>
-        <a href="/manager" class="py-2 w-fit no-underline hover:text-primary">
-          Manager
-        </a>
-        <a href="/about-us" class="py-2 w-fit no-underline hover:text-primary">
-          About Us
-        </a>
-        <a href="/fa/about-us" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
-          <img style="display:inline"
-            src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png"
-            alt="Lang_farsi">
-          <span>فارسی</span>
-        </a>
-      </div>
-      <div class="flex justify-start items-center w-fit h-7 md:hidden">
-        <a href="/" class="flex items-center h-7">
-          <img src="/assets/hiddify-logo.png" alt="Hiddify Logo" height="28" class="h-7" />
-        </a>
-      </div>
-      <div id="menu-btn" class="flex justify-center items-center w-fit md:hidden cursor-pointer">
-        <img src="/assets/three-dots.svg" alt="hero" height="24" decoding="async" loading="lazy" />
-      </div>
-    </nav>
-    <div id="sidebar"
-      class="w-[250px] bg-[#e8cff1] hidden max-h-screen h-screen fixed right-0 top-0 px-10 py-20 flex-col gap-5 z-50">
-      <div id="close-sidebar-btn"
-        class="absolute top-5 left-5 flex justify-center items-center w-fit md:hidden cursor-pointer">
-        <img src="/assets/close-button.svg" alt="hero" height="24" decoding="async" loading="lazy" />
-      </div>
-      <div class="flex justify-start items-center w-fit h-7 md:hidden">
-        <a href="/" class="flex items-center h-7">
-          <img src="/assets/hiddify-logo.png" alt="Hiddify Logo" height="28" class="h-7" />
-        </a>
-      </div>
-      <a href="/app" class="py-2 w-fit no-underline hover:text-primary">
-        App
-      </a>
-      <a href="/manager" class="py-2 w-fit no-underline hover:text-primary">
-        Manager
-      </a>
-      <a href="/about-us" class="py-2 w-fit no-underline hover:text-primary">
-        About Us
-      </a>
-      <a href="/fa/about-us" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
-        <img style="display:inline"
-          src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png"
-          alt="Lang_farsi">
-        <span>فارسی</span>
-      </a>
-    </div>
-  </header>
   <main class="2xl:flex 2xl:justify-center">
     <div class="px-3 md:px-10 lg:px-20 py-10 flex flex-col gap-40 2xl:max-w-[1920px]">
       <section class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
