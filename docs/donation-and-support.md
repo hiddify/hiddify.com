@@ -8,7 +8,7 @@ weight: -8
 
 <div dir="ltr" markdown="1">
 
-!!! info "<h1>Donation and support</h2>"
+!!! info "<h1>Donation and support</h1>"
 
           We need financial support for our services. All of our activities are done voluntarily and financial support will be spent on the development of the project. You can make your financial support through one of the following addresses.
           
