@@ -1,5 +1,5 @@
 ---
-title: Hiddify
+title: خانه
 hide:
   - toc
   - feedback
