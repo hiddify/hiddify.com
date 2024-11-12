@@ -1,5 +1,5 @@
 ---
-title: درباره-ما
+title: درباره ما
 hide:
   - toc
   - feedback
