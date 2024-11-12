@@ -17,7 +17,8 @@ comments: false
 
 
   <section class="products-section">
- <div class="flex justify-start items-center w-fit h-7 md:hidden">
+  <main class="2xl:flex 2xl:justify-center">
+    <div class="flex justify-start items-center w-fit h-7 md:hidden">
         <a href="/fa" class="flex items-center h-7">
           <img src="/assets/hiddify-logo.png" alt="لوگوی هیدیفای" height="28" class="h-7" />
         </a>
