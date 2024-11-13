@@ -72,9 +72,9 @@ comments: false
           <h2>راحت‌تر از همیشه به اینترنت آزاد متصل شوید.</h2>
           
           <ul class="my-4 list-disc ml-4">
-           <li>نصب آسان</li>
-           <li>یکی از بهترین سرورهای VPN برای ایران، چین، روسیه، برزیل و سراسر جهان</li>
-           <li>پشتیبانی از چند هسته، چند دامنه و مدیریت یکپارچه کاربران</li>
+           <li>استفاده آسان</li>
+           <li>بدون تبلیغات، امن و متن‌باز</li>
+           <li>ارائه ویژگی‌های پیشرفته مانند پشتیبانی از IPv6، انواع مختلف لینک اشتراک و بیشتر</li>
            <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols">و</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
          </ul>
 
@@ -125,9 +125,9 @@ comments: false
 
 
     <ul class="md-typeset__list">
-     <li>استفاده آسان</li>
-     <li>بدون تبلیغات، امن و متن‌باز</li>
-     <li>ارائه ویژگی‌های پیشرفته مانند پشتیبانی از IPv6، انواع مختلف لینک اشتراک و بیشتر</li>
+     <li>نصب آسان</li>
+     <li>یکی از بهترین سرورهای VPN برای ایران، چین، روسیه، برزیل و سراسر جهان</li>
+     <li>پشتیبانی از چند هسته، چند دامنه و مدیریت یکپارچه کاربران</li>
      <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols">و</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
     </ul>
 
