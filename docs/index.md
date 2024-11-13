@@ -68,7 +68,7 @@ comments: false
         
         <div class="hiddify-content">
           <h1  class="d-md-none"><img src="/assets/hiddify-app-logo.svg" alt="Hiddify app Logo" height="76" decoding="async"            loading="lazy" /></h1>
-          <h2>Connect to the internet easier than ever with Hiddify</h2>
+          <h2>Connect to the unrestricted internet easier than ever.</h2>
           
           <ul class="md-typeset__list">
             <li>Easy to use</li>
