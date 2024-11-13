@@ -71,10 +71,13 @@ comments: false
             <h1  class="d-md-none"><img src="/assets/hiddify-app-logo.svg" alt="Hiddify Application" height="96" decoding="async" loading="lazy" /></h1>
           <h2>راحت تر از همیشه به اینترنت آزاد متصل شوید.</h2>
           
-          <ul >
-            <li>استفاده آسان</li>
-             <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and many others</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
-          </ul>
+          <ul class="my-4 list-disc ml-4">
+           <li>نصب آسان</li>
+           <li>یکی از بهترین سرورهای VPN برای ایران، چین، روسیه، برزیل و سراسر جهان</li>
+           <li>پشتیبانی از چند هسته، چند دامنه و مدیریت یکپارچه کاربران</li>
+           <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols">و</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
+         </ul>
+
           <a href="https://github.com/hiddify/hiddify-app" >اطلاعات بیشتر درباره هیدیفای و مشاهده کد برنامه</a>
           <div class="platform-grid">
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="اندروید">
@@ -121,15 +124,13 @@ comments: false
     <h2>سرور فیلترشکن شخصی و اختصاصی خود را ایجاد کنید.</h2>
 
 
-    <ul>
-      <li>نصب و راه اندازی آسان</li>
-      <li>یکی از بهترین VPN ها برای ایران، چین، روسیه، برزیل و کل جهان</li>
-      <li>پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
-              <a href="#" id="show-protocols">بیش از ۳۰ پروتکل دیگر</a>
-              <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, و ...</span></li>
-              <li>مدیریت یکپارچه کاربران</li>
+    <ul class="md-typeset__list">
+     <li>استفاده آسان</li>
+     <li>بدون تبلیغات، امن و متن‌باز</li>
+     <li>ارائه ویژگی‌های پیشرفته مانند پشتیبانی از IPv6، انواع مختلف لینک اشتراک و بیشتر</li>
+     <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols">و</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
     </ul>
+
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">اطلاعات بیشتر درباره هیدیفای‌منیجر و مشاهده کد برنامه</a>
     
         <div class="button-container">
