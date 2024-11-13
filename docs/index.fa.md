@@ -69,7 +69,7 @@ comments: false
         
         <div class="hiddify-content">
             <h1  class="d-md-none"><img src="/assets/hiddify-app-logo.svg" alt="Hiddify Application" height="96" decoding="async" loading="lazy" /></h1>
-          <h2>راحت تر از همیشه به اینترنت آزاد متصل شوید.</h2>
+          <h2>راحت‌تر از همیشه به اینترنت آزاد متصل شوید.</h2>
           
           <ul class="my-4 list-disc ml-4">
            <li>نصب آسان</li>
