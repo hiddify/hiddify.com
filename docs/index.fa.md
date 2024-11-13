@@ -372,11 +372,3 @@ comments: false
 </section>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll("img.badge-value-only text").forEach(function(textElement) {
-      // Replace lowercase 'k' and 'm' with uppercase 'K' and 'M'
-      textElement.textContent = textElement.textContent.replace(/k/g, "K").replace(/m/g, "M");
-    });
-  });
-</script>
