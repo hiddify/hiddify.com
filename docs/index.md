@@ -128,6 +128,7 @@ comments: false
       <li>One of the best VPN Servers for Iran, China, Russia, Brazil and the whole world</li>
       <li>Multi-Core, Multi-Domain and Unified User Management</li>
       <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
+      </ul>
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more about the HiddifyManager and see the source code</a>
 
         <div tm="20px" class="button-container">
