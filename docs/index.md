@@ -27,7 +27,7 @@ comments: false
       <a href="#app" class="product-card">
        <h3 class="product-title">Hiddify – on your device</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="96" />
+          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="76" />
         </div>
         <p class="product-description">
           <b>Hiddify</b> is an easy-to-use VPN application available for iOS, Android, Windows, macOS, and Linux. Connect seamlessly to your <b>HiddifyManager</b> or any other VPN panel. Download it on mobile or desktop and enjoy unrestricted internet access.
@@ -40,7 +40,7 @@ comments: false
       </a>
 
       <a href="#manager" class="product-card">
-        <h3 class="product-title">HiddifyManager - on your server to manage proxies and users</h3>
+        <h3 class="product-title">HiddifyManager - to manage proxies and users</h3>
         <div class="product-logo-wrapper">
         <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Manager Logo" height="96" decoding="async"            loading="lazy" />
         </div>
@@ -81,6 +81,9 @@ comments: false
             </li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about Hiddify and see the source codes</a>
+
+           <br>
+          
           <div class="platform-grid">
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="Android">
               <img src="/assets/platforms/android.svg" alt="Android">
