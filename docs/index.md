@@ -71,12 +71,10 @@ comments: false
           <h2>Connect to the unrestricted internet easier than ever.</h2>
           
           <ul class="md-typeset__list">
-            <li>Easy to use</li>
-            <li>
-              Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and 
-              <a href="#" class="md-typeset__link" id="show-protocols">30 more protocols</a>
-              <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, and more...</span></li>
+            <li>Easy to Use</li>
+            <li>Ad-Free, Secure and Open-Source</li>
+            <li>Offers advanced features such as support for IPv6, multiple subscription link types and more
+            <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and many others</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
           
@@ -126,14 +124,10 @@ comments: false
 
 
     <ul class="my-4 list-disc ml-4">
-      <li>Effortless installation</li>
-      <li>One of the best VPNs for Iran, China, Russia, Brazil and the whole world</li>
-      <li>
-        Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and <a href="#" class="md-typeset__link" id="show-protocols">30 more protocols</a>
-              <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, and more...</span>      </li>
-        <li>Unified User Management</li>
-    </ul>
+      <li>Effortless Installation</li>
+      <li>One of the best VPN Server Tool for Iran, China, Russia, Brazil and the whole world</li>
+      <li>Multi-Core, Multi-Domain and Unified User Management</li>
+      <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and many others</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more about the HiddifyManager and see the source code</a>
 
         <div tm="20px" class="button-container">
