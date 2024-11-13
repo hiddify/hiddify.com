@@ -27,7 +27,7 @@ comments: false
       <a href="#app" class="product-card">
        <h3 class="product-title">Hiddify – on your device</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Logo" height="150" />
+          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="96" />
         </div>
         <p class="product-description">
           <b>Hiddify</b> is an easy-to-use VPN application available for iOS, Android, Windows, macOS, and Linux. Connect seamlessly to your <b>HiddifyManager</b> or any other VPN panel. Download it on mobile or desktop and enjoy unrestricted internet access.
@@ -42,7 +42,7 @@ comments: false
       <a href="#manager" class="product-card">
         <h3 class="product-title">HiddifyManager - on your server to manage proxies and users</h3>
         <div class="product-logo-wrapper">
-        <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
+        <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Manager Logo" height="96" decoding="async"            loading="lazy" />
         </div>
         <p class="product-description">
           <b>HiddifyManager</b> simplifies setting up your own VPN server, allowing you to manage it even from your mobile device. Easily share proxies with family, friends, groups, or even hundreds of users.
