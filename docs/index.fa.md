@@ -124,18 +124,16 @@ comments: false
 
   <div class="hiddify-content">
    <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
-    <p>سرور فیلترشکن شخصی و اختصاصی خود را ایجاد کنید</p>
+    <h2>سرور فیلترشکن شخصی و اختصاصی خود را ایجاد کنید</h2>
 
 
     <ul>
       <li>نصب و راه اندازی آسان</li>
       <li>یکی از بهترین VPN ها برای ایران، چین، روسیه، برزیل و کل جهان</li>
-      <li>
-       پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
+      <li>پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
               <a href="#" id="show-protocols">بیش از ۳۰ پروتکل دیگر</a>
               <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, و ...
-              </span>    </li>
+                web-socket, gRPC, http-split, Trojan, و ...</span></li>
               <li>مدیریت یکپارچه کاربران</li>
     </ul>
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر و مشاهده کد برنامه</a>
