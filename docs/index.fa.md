@@ -60,7 +60,7 @@ comments: false
 
 
 <section id="app"  class="hiddify-container" >
-   <h1  class="d-md-block"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="76" decoding="async"            loading="lazy" /></h1>
+   <h1  class="d-md-block"><img src="/assets/hiddify-app-logo.svg" alt="Hiddify app Logo" height="76" decoding="async"            loading="lazy" /></h1>
     
       
         <div class="hiddify-image">
