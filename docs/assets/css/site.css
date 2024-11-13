@@ -2684,7 +2684,7 @@ font-family: VazirmatnUIFDNL;
 }
 
 svg.badge-value-only text{
-text-transform: capitalize;
+text-transform: uppercase;
 }
 
 svg.badge-value-only{
