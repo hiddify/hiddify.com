@@ -81,8 +81,6 @@ comments: false
             </li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about Hiddify and see the source codes</a>
-
-           <br>
           
           <div class="platform-grid">
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="Android">
@@ -106,7 +104,7 @@ comments: false
             
             <a href="#" class="md-button md-button--primary md-button-fill" id="download-button" data-prefix="Download For"></a>
 
-<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">Free testing config (WARP config)</a>
+<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">Free Testing Proxy - WARP Config</a>
 
           </div>
         </div>
@@ -138,7 +136,9 @@ comments: false
                 web-socket, gRPC, http-split, Trojan, and more...
               </span>      </li>
     </ul>
-    <a hred="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
+    <a href="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
+
+    <br>
     
         <div class="button-container">
             <a href="https://hiddify.com/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
