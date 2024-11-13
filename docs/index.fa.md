@@ -73,26 +73,20 @@ comments: false
           
           <ul >
             <li>استفاده آسان</li>
-            <li>
-              پشتیبانی از پروتکل‌های Hysteria2, TUIC, SSH, Reality, VMess, VLESS و 
-              <a href="#" id="show-protocols">بیش از ۳۰ پروتکل دیگر</a>
-              <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, و ...
-              </span>
-            </li>
+             <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and many others</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >اطلاعات بیشتر درباره هیدیفای و مشاهده کد برنامه</a>
           <div class="platform-grid">
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="اندروید">
               <img src="/assets/platforms/android.svg" alt="Android">
             </a>
-            <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="آیفون و مک جدید">
+            <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform=" آیفون و مکد‌اواس (سری ام)">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
             <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="ویندوز">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
-            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
+            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="مک‌اواس (سری اینتل)">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
             <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="لینوکس">
