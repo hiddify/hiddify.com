@@ -67,7 +67,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-          <h1  class="d-md-none"><img src="hiddify-app-logo.svg" alt="Hiddify app Logo" height="96" decoding="async"            loading="lazy" /></h1>
+          <h1  class="d-md-none"><img src="/assets/hiddify-app-logo.svg" alt="Hiddify app Logo" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>Connect to the internet easier than ever with Hiddify</h2>
           
           <ul class="md-typeset__list">
@@ -121,8 +121,8 @@ comments: false
         </div>
 
   <div class="hiddify-content">
-  <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1></h1>
-    <p>Set up your own VPN Server for your group with Hiddify Manager</p>
+  <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
+    <h2>Set up your own VPN Server for a group of users with HiddifyManager</h2>
 
 
     <ul class="my-4 list-disc ml-4">
