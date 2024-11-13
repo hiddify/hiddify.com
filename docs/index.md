@@ -67,7 +67,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-          <h1  class="d-md-none"><img src="/assets/hiddify-appمlogo.svg" alt="Hiddify app Logo" height="96" decoding="async"            loading="lazy" /></h1>
+          <h1  class="d-md-none"><img src="hiddify-app-logo.svg" alt="Hiddify app Logo" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>Connect to the internet easier than ever with Hiddify</h2>
           
           <ul class="md-typeset__list">
@@ -76,9 +76,7 @@ comments: false
               Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and 
               <a href="#" class="md-typeset__link" id="show-protocols">20 more protocols</a>
               <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, and more...
-              </span>
-            </li>
+                web-socket, gRPC, http-split, Trojan, and more...</span></li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about Hiddify and see the source codes</a>
           
@@ -131,14 +129,12 @@ comments: false
       <li>Effortless installation</li>
       <li>One of the best VPNs for Iran, China, Russia, Brazil and the whole world</li>
       <li>
-        Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and
- <span class="hidden-features">
-                web-socket, gRPC, http-split, Trojan, and more...
-              </span>      </li>
+        Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and <span class="hidden-features">web-socket, gRPC, http-split, Trojan, and more...</span>      </li>
+        <li>Unified User Management</li>
     </ul>
     <a href="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
 
-    <br>
+        <br>
     
         <div class="button-container">
             <a href="https://hiddify.com/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
