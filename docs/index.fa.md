@@ -28,7 +28,7 @@ comments: false
         
         <h3 class="product-title">هیدیفای - برای گوشی و کامپیوتر</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="96" />
+          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="76" />
         </div>
         <p class="product-description">
           <b>هیدیفای</b> یک برنامه VPN ساده و کاربرپسند است که برای iOS، اندروید، ویندوز، مک‌اواس و لینوکس در دسترس است. به‌راحتی به <b>هیدیفای‌منیجر</b> یا هر پنل VPN دیگری متصل شوید. این اپلیکیشن را روی موبایل یا دسکتاپ دانلود کنید و از دسترسی آزاد به اینترنت لذت ببرید.
@@ -60,7 +60,7 @@ comments: false
 
 
 <section id="app"  class="hiddify-container" >
-   <h1  class="d-md-block"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
+   <h1  class="d-md-block"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="76" decoding="async"            loading="lazy" /></h1>
     
       
         <div class="hiddify-image">
@@ -104,7 +104,7 @@ comments: false
             
             <a href="#" class="md-button md-button--primary md-button-fill" id="download-button" data-prefix="دانلود برای"></a>
             
-<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">کانفیگ رایگان تست وارپ</a>
+<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">(کانفیگ رایگان تستی (کانفیگ وارپ</a>
 
           </div>
         </div>
