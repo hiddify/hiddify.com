@@ -78,7 +78,7 @@ comments: false
               <span class="hidden-features">
                 web-socket, gRPC, http-split, Trojan, and more...</span></li>
           </ul>
-          <a href="https://github.com/hiddify/hiddify-app" >Read more about Hiddify and see the source codes</a>
+          <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
           
           <div class="platform-grid">
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="Android">
@@ -132,7 +132,7 @@ comments: false
         Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and <span class="hidden-features">web-socket, gRPC, http-split, Trojan, and more...</span>      </li>
         <li>Unified User Management</li>
     </ul>
-    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more and see source code</a>
+    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more about the HiddifyManager and see the source code</a>
 
         <div tm="20px" class="button-container">
             <a href="https://hiddify.com/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
