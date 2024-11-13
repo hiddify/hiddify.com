@@ -28,7 +28,7 @@ comments: false
         
         <h3 class="product-title">هیدیفای - برای گوشی و کامپیوتر</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="76" />
+          <img src="/assets/hiddify-app-logo.svg" alt="Hiddify app Logo" height="76" />
         </div>
         <p class="product-description">
           <b>هیدیفای</b> یک برنامه VPN ساده و کاربرپسند است که برای iOS، اندروید، ویندوز، مک‌اواس و لینوکس در دسترس است. به‌راحتی به <b>هیدیفای‌منیجر</b> یا هر پنل VPN دیگری متصل شوید. این اپلیکیشن را روی موبایل یا دسکتاپ دانلود کنید و از دسترسی آزاد به اینترنت لذت ببرید.
@@ -68,7 +68,7 @@ comments: false
         </div>
         
         <div class="hiddify-content">
-            <h1  class="d-md-none"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
+            <h1  class="d-md-none"><img src="/assets/hiddify-app-logo.svg" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
           <h2>راحت تر از همیشه به اینترنت متصل شوید</h2>
           
           <ul >
