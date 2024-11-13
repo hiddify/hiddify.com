@@ -104,7 +104,7 @@ comments: false
             
             <a href="#" class="md-button md-button--primary md-button-fill" id="download-button" data-prefix="دانلود برای"></a>
             
-<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">(کانفیگ رایگان تستی (کانفیگ وارپ</a>
+<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">پروکسی رایگان تستی - کانفیگ وارپ</a>
 
           </div>
         </div>
@@ -138,7 +138,9 @@ comments: false
               </span>    </li>
               <li>مدیریت یکپارچه کاربران</li>
     </ul>
-    <a hred="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر و مشاهده کد برنامه</a>
+    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر و مشاهده کد برنامه</a>
+    
+    <br>
     
         <div class="button-container">
             <a href="https://hiddify.com/fa/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">نصب بر روی سرور</a>
