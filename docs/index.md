@@ -74,7 +74,7 @@ comments: false
             <li>Easy to Use</li>
             <li>Ad-Free, Secure and Open-Source</li>
             <li>Offers advanced features such as support for IPv6, multiple subscription link types and more
-            <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and many others</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
+            <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
           
@@ -82,13 +82,13 @@ comments: false
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="Android">
               <img src="/assets/platforms/android.svg" alt="Android">
             </a>
-            <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="iOS & macOS > 2021">
+            <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="iOS & macOS (M-Series)">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
             <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
-            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
+            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS (Intel Series)">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
             <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="Linux">
@@ -125,9 +125,9 @@ comments: false
 
     <ul class="my-4 list-disc ml-4">
       <li>Effortless Installation</li>
-      <li>One of the best VPN Server Tool for Iran, China, Russia, Brazil and the whole world</li>
+      <li>One of the best VPN Servers for Iran, China, Russia, Brazil and the whole world</li>
       <li>Multi-Core, Multi-Domain and Unified User Management</li>
-      <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and many others</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
+      <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more about the HiddifyManager and see the source code</a>
 
         <div tm="20px" class="button-container">
