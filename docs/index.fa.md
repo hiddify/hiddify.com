@@ -81,7 +81,7 @@ comments: false
               </span>
             </li>
           </ul>
-          <a href="https://github.com/hiddify/hiddify-app" >اطلاعات بیشتر و مشاهده کد برنامه</a>
+          <a href="https://github.com/hiddify/hiddify-app" >اطلاعات بیشتر درباره هیدیفای و مشاهده کد برنامه</a>
           <div class="platform-grid">
             <a id="btn-android" href="https://play.google.com/store/apps/details?id=app.hiddify.com" role="button" class="platform-button" data-platform="اندروید">
               <img src="/assets/platforms/android.svg" alt="Android">
@@ -136,7 +136,7 @@ comments: false
                 web-socket, gRPC, http-split, Trojan, و ...</span></li>
               <li>مدیریت یکپارچه کاربران</li>
     </ul>
-    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر و مشاهده کد برنامه</a>
+    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر درباره هیدیفای‌منیجر و مشاهده کد برنامه</a>
     
     <br>
     
