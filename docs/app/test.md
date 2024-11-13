@@ -1,30 +1,53 @@
-<div class="platform-grid">
-    <a id="btn-android" href="#" onclick="showButtons('android')" class="platform-button">
-        <img src="/assets/platforms/android.svg" alt="Android">
-    </a>
-    <a id="btn-ios" href="#" onclick="showButtons('ios')" class="platform-button">
-        <img src="/assets/platforms/apple.svg" alt="iOS">
-    </a>
-    <a id="btn-windows" href="#" onclick="showButtons('windows')" class="platform-button">
-        <img src="/assets/platforms/windows.svg" alt="Windows">
-    </a>
-    <a id="btn-macos" href="#" onclick="showButtons('macos')" class="platform-button">
-        <img src="/assets/platforms/mac.svg" alt="macOS">
-    </a>
-    <a id="btn-linux" href="#" onclick="showButtons('linux')" class="platform-button">
-        <img src="/assets/platforms/linux.svg" alt="Linux">
-    </a>
+<div class="platform-section">
+    <div class="platform-grid">
+        <a id="btn-android" href="#" onclick="showButtons('android')" class="platform-button">
+            <img src="/assets/platforms/android.svg" alt="Android">
+        </a>
+        <a id="btn-ios" href="#" onclick="showButtons('ios')" class="platform-button">
+            <img src="/assets/platforms/apple.svg" alt="iOS">
+        </a>
+        <a id="btn-windows" href="#" onclick="showButtons('windows')" class="platform-button">
+            <img src="/assets/platforms/windows.svg" alt="Windows">
+        </a>
+        <a id="btn-macos" href="#" onclick="showButtons('macos')" class="platform-button">
+            <img src="/assets/platforms/mac.svg" alt="macOS">
+        </a>
+        <a id="btn-linux" href="#" onclick="showButtons('linux')" class="platform-button">
+            <img src="/assets/platforms/linux.svg" alt="Linux">
+        </a>
+    </div>
+
+    <div class="download-section" id="download-buttons">
+        <!-- Buttons for each platform will be inserted here -->
+    </div>
 </div>
 
-<div class="button-container" id="download-buttons"></div>
-
 <style>
-.button-container {
+.platform-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.platform-grid {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.download-section {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
+
 .md-button {
     padding: 10px 20px;
     margin: 5px;
@@ -37,7 +60,7 @@
 </style>
 
 <script>
-// Detect OS and display relevant buttons
+// Automatically detect the OS and display relevant buttons
 document.addEventListener("DOMContentLoaded", function () {
     const os = getOS();
     showButtons(os);
@@ -90,7 +113,6 @@ function showButtons(platform) {
     container.innerHTML = buttonsHTML;
 }
 
-// Function to show "Downloading..." text when a download button is clicked
 function showDownloading(button) {
     button.innerText = "Downloading...";
 }
