@@ -136,9 +136,7 @@ comments: false
                 web-socket, gRPC, http-split, Trojan, و ...</span></li>
               <li>مدیریت یکپارچه کاربران</li>
     </ul>
-    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px;">اطلاعات بیشتر درباره هیدیفای‌منیجر و مشاهده کد برنامه</a>
-    
-    <br>
+    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">اطلاعات بیشتر درباره هیدیفای‌منیجر و مشاهده کد برنامه</a>
     
         <div class="button-container">
             <a href="https://hiddify.com/fa/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">نصب بر روی سرور</a>
