@@ -74,7 +74,7 @@ comments: false
             <li>Easy to use</li>
             <li>
               Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and 
-              <a href="#" class="md-typeset__link" id="show-protocols">20 more protocols</a>
+              <a href="#" class="md-typeset__link" id="show-protocols">30 more protocols</a>
               <span class="hidden-features">
                 web-socket, gRPC, http-split, Trojan, and more...</span></li>
           </ul>
@@ -129,7 +129,9 @@ comments: false
       <li>Effortless installation</li>
       <li>One of the best VPNs for Iran, China, Russia, Brazil and the whole world</li>
       <li>
-        Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and <span class="hidden-features">web-socket, gRPC, http-split, Trojan, and more...</span>      </li>
+        Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and <a href="#" class="md-typeset__link" id="show-protocols">30 more protocols</a>
+              <span class="hidden-features">
+                web-socket, gRPC, http-split, Trojan, and more...</span>      </li>
         <li>Unified User Management</li>
     </ul>
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more about the HiddifyManager and see the source code</a>
