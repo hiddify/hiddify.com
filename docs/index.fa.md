@@ -215,8 +215,9 @@ comments: false
   </div>
   <div>
     <a href="https://play.google.com/store/apps/details?id=app.hiddify.com">
-    <h3 class="text-xl font-semibold"></h3>
+    <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/endpoint?color=green&label=&logo=&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24shortinstalls&style=flat-square">
+      </h3>
     <p> تعداد نصب فعال هیدیفای در گوگل‌پلی</p>
     </a>
   </div>
