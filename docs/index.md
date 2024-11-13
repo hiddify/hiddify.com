@@ -122,7 +122,7 @@ comments: false
 
   <div class="hiddify-content">
   <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
-    <h2>Set up your own VPN Server for a group of users with HiddifyManager</h2>
+    <h2>Setup your own personal and dedicated VPN server.</h2>
 
 
     <ul class="my-4 list-disc ml-4">
