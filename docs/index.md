@@ -195,7 +195,6 @@ One of the most secure and trusted solutions for using VPN
   <div>
     <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone">
     <h3 class="text-xl font-semibold">
-    
     <img class="badge-value-only" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&cacheSeconds=36000&style=flat-square&suffix=%20/%205&query=message&url=https%3A%2F%2Fbadge.hiddify.com%2Fappstore">
     </h3>
     <p>Hiddify Rating on AppStore</p>
