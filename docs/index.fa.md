@@ -28,7 +28,7 @@ comments: false
         
         <h3 class="product-title">هیدیفای - برای گوشی و کامپیوتر</h3>
         <div class="product-logo-wrapper">
-          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify Logo" height="96" />
+          <img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="96" />
         </div>
         <p class="product-description">
           <b>هیدیفای</b> یک برنامه VPN ساده و کاربرپسند است که برای iOS، اندروید، ویندوز، مک‌اواس و لینوکس در دسترس است. به‌راحتی به <b>هیدیفای‌منیجر</b> یا هر پنل VPN دیگری متصل شوید. این اپلیکیشن را روی موبایل یا دسکتاپ دانلود کنید و از دسترسی آزاد به اینترنت لذت ببرید.
@@ -44,7 +44,7 @@ comments: false
         
         <h3 class="product-title">          هیدیفای‌منیجر – برای مدیریت پروکسی‌ها و کاربران</h3>
         <div class="product-logo-wrapper">
-        <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Logo" height="96" decoding="async"            loading="lazy" />
+        <img src="/assets/hiddify-manager-logo.svg" alt="Hiddify Mananger Logo" height="96" decoding="async"            loading="lazy" />
         </div>
         <p class="product-description">
          <b>هیدیفای‌منیجر</b> ایجاد سرور VPN شخصی را برای شما ساده می‌کند و به شما امکان می‌دهد حتی از طریق موبایل آن را مدیریت کنید. به‌راحتی می‌توانید پروکسی‌ها را با خانواده، دوستان، گروه‌ها یا حتی صدها نفر به اشتراک بگذارید.
