@@ -59,7 +59,7 @@ comments: false
 
 
 <section  id="app" class="hiddify-container" >
-  <h1  class="d-md-block"><img src="/assets/Hiddify-Logo2.sv" alt="Hiddify Application" height="96" decoding="async"            loading="lazy" /></h1>
+  <h1  class="d-md-block"><img src="/assets/Hiddify-Logo2.svg" alt="Hiddify app Logo" height="76" decoding="async"            loading="lazy" /></h1>
     
       
         <div class="hiddify-image">
@@ -106,7 +106,7 @@ comments: false
             
             <a href="#" class="md-button md-button--primary md-button-fill" id="download-button" data-prefix="Download For"></a>
 
-<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">Free test WARP config</a>
+<a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">Free testing config (WARP config)</a>
 
           </div>
         </div>
