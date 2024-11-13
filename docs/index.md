@@ -132,11 +132,9 @@ comments: false
         Supports Hysteria2, TUIC, SSH, Reality, VMess, VLESS, and <span class="hidden-features">web-socket, gRPC, http-split, Trojan, and more...</span>      </li>
         <li>Unified User Management</li>
     </ul>
-    <a href="https://github.com/hiddify/hiddify-manager">Read more and see source code</a>
+    <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more and see source code</a>
 
-        <br>
-    
-        <div class="button-container">
+        <div tm="20px" class="button-container">
             <a href="https://hiddify.com/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
           </div>
   </div>
