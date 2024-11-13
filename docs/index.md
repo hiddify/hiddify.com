@@ -250,7 +250,7 @@ Here’s the updated text with emojis for added engagement:
 
 ---
 
-??? question "How can I make sure that Hiddify is safe? 🔒"
+??? question "How can I make sure that Hiddify is safe?"
     To make sure Hiddify is secure, you can take the following steps:
 
     1. **Review the Source Code** 🛠️  
