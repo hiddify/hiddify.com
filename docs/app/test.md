@@ -78,31 +78,33 @@ comments: false
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
           <div class="platform-section">
+<div class="platform-section">
     <div class="platform-grid">
-        <a id="btn-android" href="#" onclick="showButtons('android')" class="platform-button">
+        <a id="btn-android" href="#" onclick="selectPlatform('android')" class="platform-button">
             <img src="/assets/platforms/android.svg" alt="Android">
         </a>
-        <a id="btn-ios" href="#" onclick="showButtons('ios')" class="platform-button">
+        <a id="btn-ios" href="#" onclick="selectPlatform('ios')" class="platform-button">
             <img src="/assets/platforms/apple.svg" alt="iOS">
         </a>
-        <a id="btn-windows" href="#" onclick="showButtons('windows')" class="platform-button">
+        <a id="btn-windows" href="#" onclick="selectPlatform('windows')" class="platform-button">
             <img src="/assets/platforms/windows.svg" alt="Windows">
         </a>
-        <a id="btn-macos" href="#" onclick="showButtons('macos')" class="platform-button">
+        <a id="btn-macos" href="#" onclick="selectPlatform('macos')" class="platform-button">
             <img src="/assets/platforms/mac.svg" alt="macOS">
         </a>
-        <a id="btn-linux" href="#" onclick="showButtons('linux')" class="platform-button">
+        <a id="btn-linux" href="#" onclick="selectPlatform('linux')" class="platform-button">
             <img src="/assets/platforms/linux.svg" alt="Linux">
         </a>
     </div>
 
     <div class="download-section" id="download-buttons">
-        <!-- Buttons for each platform will be inserted here -->
-
+        <!-- Download buttons will display here based on platform selection -->
         <a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">Free Testing Proxy - WARP Config</a>
-        
     </div>
 </div>
+
+        
+
 
 <!--    
           <div class="platform-grid">
@@ -372,6 +374,8 @@ One of the most secure and trusted solutions for using VPN
 
 
 
+
+
 <style>
 .platform-section {
     display: flex;
@@ -389,6 +393,16 @@ One of the most secure and trusted solutions for using VPN
     justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.platform-button {
+    padding: 10px;
+    border-radius: 50%;
+    transition: border 0.3s ease;
+}
+
+.selected-platform {
+    border: 2px solid #007BFF; /* Bluish border for selected platform */
 }
 
 .download-section {
@@ -410,10 +424,10 @@ One of the most secure and trusted solutions for using VPN
 </style>
 
 <script>
-// Automatically detect the OS and display relevant buttons
+// Detect and highlight the user's OS platform
 document.addEventListener("DOMContentLoaded", function () {
     const os = getOS();
-    showButtons(os);
+    selectPlatform(os);
 });
 
 function getOS() {
@@ -423,9 +437,24 @@ function getOS() {
     if (platform.includes("linux")) return "linux";
     if (/iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase())) return "ios";
     if (/android/.test(navigator.userAgent.toLowerCase())) return "android";
-    return "windows"; // default if unknown
+    return "windows"; // Default if unknown
 }
 
+// Highlight selected platform and show buttons
+function selectPlatform(platform) {
+    clearSelection(); // Remove previous highlights
+    const button = document.getElementById(`btn-${platform}`);
+    if (button) button.classList.add("selected-platform");
+    showButtons(platform);
+}
+
+// Remove the highlight from all platform icons
+function clearSelection() {
+    const buttons = document.querySelectorAll(".platform-button");
+    buttons.forEach(button => button.classList.remove("selected-platform"));
+}
+
+// Display relevant download buttons for the selected platform
 function showButtons(platform) {
     const container = document.getElementById("download-buttons");
     container.innerHTML = ""; // Clear previous buttons
@@ -463,6 +492,7 @@ function showButtons(platform) {
     container.innerHTML = buttonsHTML;
 }
 
+// Set "Downloading..." feedback only when a download button is clicked
 function showDownloading(button) {
     button.innerText = "Downloading...";
 }
