@@ -78,25 +78,27 @@ comments: false
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
           <div class="platform-section">
-<div class="platform-section">
-    <div class="platform-grid">
-        <a id="btn-android" href="#" onclick="selectPlatform('android')" class="platform-button">
-            <img src="/assets/platforms/android.svg" alt="Android">
-        </a>
-        <a id="btn-ios" href="#" onclick="selectPlatform('ios')" class="platform-button">
-            <img src="/assets/platforms/apple.svg" alt="iOS">
-        </a>
-        <a id="btn-windows" href="#" onclick="selectPlatform('windows')" class="platform-button">
-            <img src="/assets/platforms/windows.svg" alt="Windows">
-        </a>
-        <a id="btn-macos" href="#" onclick="selectPlatform('macos')" class="platform-button">
-            <img src="/assets/platforms/mac.svg" alt="macOS">
-        </a>
-        <a id="btn-linux" href="#" onclick="selectPlatform('linux')" class="platform-button">
-            <img src="/assets/platforms/linux.svg" alt="Linux">
-        </a>
-    </div>
+<div class="platform-grid">
+    <a id="btn-windows" href="#" role="button" class="platform-button" data-platform="windows">
+        <img src="/assets/platforms/windows.svg" alt="Windows"> Windows
+    </a>
+    <a id="btn-macos" href="#" role="button" class="platform-button" data-platform="macos">
+        <img src="/assets/platforms/mac.svg" alt="macOS"> MacOS
+    </a>
+    <a id="btn-ios" href="#" role="button" class="platform-button" data-platform="ios">
+        <img src="/assets/platforms/apple.svg" alt="iOS"> iOS
+    </a>
+    <a id="btn-android" href="#" role="button" class="platform-button" data-platform="android">
+        <img src="/assets/platforms/android.svg" alt="Android"> Android
+    </a>
+    <a id="btn-linux" href="#" role="button" class="platform-button" data-platform="linux">
+        <img src="/assets/platforms/linux.svg" alt="Linux"> Linux
+    </a>
+</div>
 
+<div id="download-buttons" class="download-buttons-container"></div>
+
+<!--
     <div class="download-section" id="download-buttons">
         <!-- Download buttons will display here based on platform selection -->
         <a class="md-button md-button-outline-primary md-button-fill"  href="hiddify://import/https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp">Free Testing Proxy - WARP Config</a>
@@ -106,7 +108,7 @@ comments: false
         
 
 
-<!--    
+    
           <div class="platform-grid">
            
 
@@ -377,115 +379,107 @@ One of the most secure and trusted solutions for using VPN
 
 
 <style>
-.platform-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 400px;
-}
+    .platform-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+        transition: all 0.3s;
+        text-align: center;
+    }
+    
+    .selected-platform {
+        border: 2px solid #00aaff; /* Bluish circle for selected platform */
+        border-radius: 50%; /* Circle around icon */
+    }
 
-.platform-grid {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 20px;
-}
+    .download-buttons-container {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-.platform-button {
-    padding: 10px;
-    border-radius: 50%;
-    transition: border 0.3s ease;
-}
-
-.selected-platform {
-    border: 2px solid #007BFF; /* Bluish border for selected platform */
-}
-
-.download-section {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.md-button {
-    padding: 10px 20px;
-    margin: 5px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .download-buttons-container a {
+        margin: 0 10px;
+        padding: 10px 20px;
+        display: inline-block;
+    }
 </style>
 
-<script>
-// Detect and highlight the user's OS platform without triggering "Downloading..."
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const os = getOS();
     selectPlatform(os);
 });
 
+document.querySelectorAll(".platform-button").forEach(button => {
+    button.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        const platform = button.getAttribute("data-platform");
+        selectPlatform(platform);
+    });
+});
+
 function selectPlatform(platform) {
-    clearSelection(); // Remove previous highlights
+    clearSelection();
     const button = document.getElementById(`btn-${platform}`);
     if (button) button.classList.add("selected-platform");
     showButtons(platform);
 }
 
-// Remove the highlight from all platform icons
 function clearSelection() {
-    const buttons = document.querySelectorAll(".platform-button");
-    buttons.forEach(button => button.classList.remove("selected-platform"));
+    document.querySelectorAll(".platform-button").forEach(button => button.classList.remove("selected-platform"));
 }
 
-// Display relevant download buttons for the selected platform
 function showButtons(platform) {
     const container = document.getElementById("download-buttons");
-    container.innerHTML = ""; // Clear previous buttons
+    container.innerHTML = ""; // Clear existing buttons
 
     let buttonsHTML = "";
     if (platform === "windows") {
         buttonsHTML = `
-            <a href="https://microsoft.com/store" class="md-button md-button--primary" onclick="showDownloading(this)">Microsoft Store</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe" class="md-button md-button--primary" onclick="showDownloading(this)">Download EXE</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable.zip" class="md-button md-button--primary" onclick="showDownloading(this)">Portable Version</a>
-        `;
-    } else if (platform === "ios") {
-        buttonsHTML = `
-            <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" class="md-button md-button--primary" onclick="showDownloading(this)">App Store</a>
+            <a href="https://microsoft.com/store" onclick="showDownloading(this)">Microsoft Store</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe" onclick="showDownloading(this)">Download EXE</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable.zip" onclick="showDownloading(this)">Portable Version</a>
         `;
     } else if (platform === "android") {
         buttonsHTML = `
-            <a href="https://play.google.com/store/apps/details?id=app.hiddify.com" class="md-button md-button--primary" onclick="showDownloading(this)">Google Play</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android.apk" class="md-button md-button--primary" onclick="showDownloading(this)">Download APK</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases" class="md-button md-button--primary" onclick="showDownloading(this)">Other APKs</a>
+            <a href="https://play.google.com/store/apps/details?id=app.hiddify.com" onclick="showDownloading(this)">Google Play</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android.apk" onclick="showDownloading(this)">Download APK</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases" onclick="showDownloading(this)">Other APKs</a>
+        `;
+    } else if (platform === "ios") {
+        buttonsHTML = `
+            <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" onclick="showDownloading(this)">App Store</a>
         `;
     } else if (platform === "macos") {
         buttonsHTML = `
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" class="md-button md-button--primary" onclick="showDownloading(this)">Download DMG</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.pkg" class="md-button md-button--primary" onclick="showDownloading(this)">Download PKG</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" onclick="showDownloading(this)">Download DMG</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.pkg" onclick="showDownloading(this)">Download PKG</a>
         `;
     } else if (platform === "linux") {
         buttonsHTML = `
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" class="md-button md-button--primary" onclick="showDownloading(this)">AppImage</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux.deb" class="md-button md-button--primary" onclick="showDownloading(this)">Deb Package</a>
-            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux.rpm" class="md-button md-button--primary" onclick="showDownloading(this)">RPM Package</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" onclick="showDownloading(this)">AppImage</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux.deb" onclick="showDownloading(this)">Deb Package</a>
+            <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux.rpm" onclick="showDownloading(this)">RPM Package</a>
         `;
     }
 
     container.innerHTML = buttonsHTML;
 }
 
-// Show "Downloading..." only on download button clicks
 function showDownloading(button) {
     button.innerText = "Downloading...";
 }
 
-</script>
+
+
+
+
+
+
+
+
 
 
