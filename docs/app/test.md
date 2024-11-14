@@ -494,6 +494,9 @@ function showButtons(platform) {
 
 // Set "Downloading..." feedback only when a download button is clicked
 function showDownloading(button) {
+  if (button.classList.contains('md-button')) 
     button.innerText = "Downloading...";
 }
 </script>
+
+
