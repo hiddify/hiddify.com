@@ -77,8 +77,7 @@ comments: false
             <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols">and</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
-          <div class="platform-section">
-<div class="platform-section">
+          <div class="platform-section" class="hiddify-container">
     <div class="platform-grid">
         <a id="btn-android" href="#" onclick="selectPlatform('android')" class="platform-button">
             <img src="/assets/platforms/android.svg" alt="Android">
@@ -424,23 +423,12 @@ One of the most secure and trusted solutions for using VPN
 </style>
 
 <script>
-// Detect and highlight the user's OS platform
+// Detect and highlight the user's OS platform without triggering "Downloading..."
 document.addEventListener("DOMContentLoaded", function () {
     const os = getOS();
     selectPlatform(os);
 });
 
-function getOS() {
-    const platform = navigator.platform.toLowerCase();
-    if (platform.includes("win")) return "windows";
-    if (platform.includes("mac")) return "macos";
-    if (platform.includes("linux")) return "linux";
-    if (/iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase())) return "ios";
-    if (/android/.test(navigator.userAgent.toLowerCase())) return "android";
-    return "windows"; // Default if unknown
-}
-
-// Highlight selected platform and show buttons
 function selectPlatform(platform) {
     clearSelection(); // Remove previous highlights
     const button = document.getElementById(`btn-${platform}`);
@@ -492,11 +480,11 @@ function showButtons(platform) {
     container.innerHTML = buttonsHTML;
 }
 
-// Set "Downloading..." feedback only when a download button is clicked
+// Show "Downloading..." only on download button clicks
 function showDownloading(button) {
-  if (button.classList.contains('md-button')) 
     button.innerText = "Downloading...";
 }
+
 </script>
 
 
