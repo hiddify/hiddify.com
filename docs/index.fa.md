@@ -75,7 +75,7 @@ comments: false
            <li>استفاده آسان</li>
            <li>بدون تبلیغات، امن و متن‌باز</li>
            <li>ارائه ویژگی‌های پیشرفته مانند پشتیبانی از IPv6، انواع مختلف لینک اشتراک و بیشتر</li>
-           <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols-app">و بیشتر</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
+           <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols-app">و ...</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
          </ul>
 
           <a href="https://github.com/hiddify/hiddify-app" >اطلاعات بیشتر درباره هیدیفای و مشاهده کد برنامه</a>
@@ -128,7 +128,7 @@ comments: false
      <li>نصب آسان</li>
      <li>یکی از بهترین سرورهای VPN برای ایران، چین، روسیه، برزیل و سراسر جهان</li>
      <li>پشتیبانی از چند هسته، چند دامنه و مدیریت یکپارچه کاربران</li>
-     <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols-manager">و بیشتر</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
+     <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، SSH، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols-manager">و ...</a><span class="hidden-features"> WebSocket، Quic، gRPC، http-split، httpupgrade، ECH، Sing-box، V2ray، Xray و بسیاری دیگر</span></li>
     </ul>
 
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">اطلاعات بیشتر درباره هیدیفای‌منیجر و مشاهده کد برنامه</a>
