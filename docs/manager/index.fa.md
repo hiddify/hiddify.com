@@ -1,5 +1,5 @@
 ---
-title: منیجر
+title: راهنمای منیجر
 hide:
   # - navigation
   - toc
