@@ -68,7 +68,7 @@ For this, you must first extract the settings related to your HiddifyApp.
 </details>
 
 ### Run config or subscription link in HiddifyCli with settings extracted from HiddifyApp
-- Also, if you want to use your HDIFYAP settings, you should use the following command.
+- Also, if you want to use your Hiddify app settings, you should use the following command.
 <div dir="ltr" markdown="1">
   
 ```
