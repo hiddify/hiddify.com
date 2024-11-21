@@ -1,5 +1,5 @@
 ---
-title: App
+title: App Guide
 hide:
   # - navigation
   - toc
