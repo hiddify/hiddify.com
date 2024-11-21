@@ -1,5 +1,5 @@
 ---
-title: اپ
+title: راهنمای اپ
 hide:
   # - navigation
   - toc
