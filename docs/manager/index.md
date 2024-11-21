@@ -1,5 +1,5 @@
 ---
-title: Manager
+title: Manager Guide
 weight: -20
 hide:
   # - navigation
