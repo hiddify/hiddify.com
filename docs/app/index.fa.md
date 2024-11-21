@@ -7,11 +7,7 @@ hide:
 weight: -19
 ---
 <style>
-@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
-  .md-content__button {
-    display: none;
-  }
-</style>
+  @media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}} {.md-content__button {display: none;}}</style>
 
 # همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
 
