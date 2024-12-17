@@ -166,3 +166,4 @@ reboot
   ```
 </div>
 
+در [مقاله دیگری](/fa/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/) نحوه استفاده از این اینترنت آزاد برای کلاینت‌های پشت روتر را آموزش خواهیم داد.
