@@ -3,26 +3,42 @@ title: نصب هیدیفای‌منیجر روی داکر
 weight: -40
 ---
 
-<div dir="rtl" markdown="1">
 
 # نصب هیدیفای‌منیجر روی داکر
-توجه کنید نسخه داکر هنوز آزمایشی هست و ممکن است اشکالاتی داشته باشد که لطفا به ما اطلاع دهید یا لطفا پول ریکوئست  بزنید و اصلاح کنید.
 
-نسخه داکر برای استفاده پیشنهاد نمی‌شود و [لطفا از نصب معمول استفاده کنید](/fa/manager/installation-and-setup/guide/)
+یک روش جایگزین نصب مستقیم روی سرور، استفاده از نسخه داکر می‌باشد.
 
-برای داکر کافی است کد زیر را اجرا کنید:
-</div>
+در این نسخه همه کارا به صورت خودکار انجام می‌شود. حتی نیاز به نصب داکر نیست چون اسکریپت خودش آن را نصب می‌کند.
 
+برای این کار کافیست کد زیر را اجرا کنید.
+
+
+
+- نسخه پایدار:
 ```
-git clone https://github.com/hiddify/Hiddify-Manager
-cd Hiddify-Manager
-docker-compose up -d
+bash <(curl https://i.hiddify.com/docker/latest)
 ```
 
-<div dir="rtl" markdown="1">
-توجه کنید داکر هنوز آزمایشی هست و ممکن است اشکالاتی داشته باشد که لطفا به ما اطلاع دهید.
+
+- نسخه بتا:
+```
+bash <(curl https://i.hiddify.com/docker/beta)
+```
 
 
-حالا باید دامنه را تنظیم کنیم. بر روی [این لینک](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) کلیک کنید تا نصب را نهایی کنید .
+- نسخه دوولوپ:
+```
+bash <(curl https://i.hiddify.com/docker/dev)
+```
 
-</div>
+- نسخه خاص:
+```
+bash <(curl https://i.hiddify.com/docker/v10.80.0)
+```
+
+
+توجه کنید داکر هنوز آزمایشی هست و ممکن است اشکالاتی داشته باشد که لطفا در کامنت‌ها به ما اطلاع دهید.
+
+
+در آخر باید دامنه را تنظیم کنیم. بر روی [این لینک](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) کلیک کنید تا نصب را نهایی کنید .
+
