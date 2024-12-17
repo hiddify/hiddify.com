@@ -13,7 +13,7 @@ To install **HiddifyCli** on OpenWrt, follow all the steps below in order. This 
 To download the version suitable for your router’s architecture, use the following command for direct download:  
 <div dir="ltr">  
    ```bash  
-   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/latest/HiddifyCli-{ARCH}.tar.gz  
+   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/latest/hiddify-cli-linux-{ARCH}.tar.gz  
    ```  
 </div>  
 **Explanation:**  
