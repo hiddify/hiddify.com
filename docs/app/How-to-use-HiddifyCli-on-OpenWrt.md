@@ -12,11 +12,10 @@ To install **HiddifyCli** on OpenWrt, follow all the steps below in order. This 
 To download the version suitable for your router’s architecture, use the following command for direct download:  
 <div dir="ltr">  
    ```bash  
-   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/{VERSION}/HiddifyCli-{ARCH}.tar.gz  
+   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/latest/HiddifyCli-{ARCH}.tar.gz  
    ```  
 </div>  
 **Explanation:**  
-- Replace `{VERSION}` with the desired version (e.g., `v1.0.0`).  
 - Replace `{ARCH}` with your router’s architecture (e.g., `mips`, `arm`, or `x86_64`).  
 
 ---
@@ -162,3 +161,5 @@ After rebooting, the HiddifyCli service will be active, and the **Socks5 Proxy**
   logread | grep HiddifyCli  
   ```  
 </div>  
+
+In [another article](/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/), we will explain how to enable free internet access for clients behind the router.
