@@ -1,5 +1,5 @@
 ---
-title: **Complete Guide to Installing and Setting Up HiddifyCli on OpenWrt**  
+title: How to use HiddifyCli on OpenWrt  
 ---
 
 ### **Complete Guide to Installing and Setting Up HiddifyCli on OpenWrt**
