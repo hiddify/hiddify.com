@@ -37,9 +37,15 @@ bash <(curl https://i.hiddify.com/release)
 </div>
 تبریک نصب تمام شد. 
 
+!!! note "نکته"
+    برای نصب روی داکر [این مقاله](https://hiddify.com/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/) را مطالعه نمایید.
+
 ## بعد از نصب
 در پایان لینکی ایجاد می‌شود که لینک تنظیم پروکسی شما است. حالا باید دامنه را تنظیم کنیم. بر روی [این لینک](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) کلیک کنید تا نصب را نهایی کنید.
 
 
 
 > برای استفاده حداکثری از این پنل لطفا [این مقاله](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را مطالعه فرمایید.
+
+
+
