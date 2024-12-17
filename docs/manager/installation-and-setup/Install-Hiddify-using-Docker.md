@@ -3,23 +3,34 @@ title: Installing HiddifyManager using Docker
 weight: -40
 ---
 
-<div dir="ltr" markdown="1">
-
 
 # Installing HiddifyManager using Docker
-Before installation please pay attention that Docker version is still experimental and may have some problems, please let us know about bugs. Docker version is not recommended for permanent use.
+An alternative to direct installation on the server is using the Docker version.  
 
-For installation this way, just use the following code:
+In this version, everything is done automatically. There's no need to install Docker manually, as the script will handle that for you.  
 
+To proceed, simply run the following commands:  
+
+- **Stable version:**  
 ```
-git clone https://github.com/hiddify/hiddify-config
-cd hiddify-config
-touch hiddify-panel/hiddifypanel.db
-docker-compose up -d
+bash <(curl https://i.hiddify.com/docker/latest)
+```  
+
+- **Beta version:**  
 ```
+bash <(curl https://i.hiddify.com/docker/beta)
+```  
 
-Please note that the Docker version is still experimental and may have some bugs, please let us know about errors using [this link](https://github.com/hiddify/Hiddify-Manager/issues). 
+- **Development version:**  
+```
+bash <(curl https://i.hiddify.com/docker/dev)
+```  
 
-Now we need to setup the domain and finalize the installation. [(visit this article)](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/)
+- **Specific version:**  
+```
+bash <(curl https://i.hiddify.com/docker/v10.80.0)
+```  
 
-For making the best use of this panel visit this [page](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+Please note that Docker support is still experimental and may have some issues. If you encounter any, kindly let us know in the comments.  
+
+Finally, you need to configure the domain. Click on [this link](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) to finalize the installation.
