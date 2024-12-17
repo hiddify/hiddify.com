@@ -14,7 +14,7 @@ title: آموزش کامل نصب و راه‌اندازی HiddifyCli در سی�
 برای دانلود نسخه مناسب معماری روتر، ابتدا از دستور زیر برای دانلود مستقیم فایل استفاده کنید:
 <div dir="ltr">
    ```bash
-   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/latest/HiddifyCli-{معماری}.tar.gz
+   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/latest/hiddify-cli-linux-{معماری}.tar.gz
    ```
 </div>
    **توضیح:**
