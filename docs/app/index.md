@@ -1,13 +1,15 @@
 ---
 title: App Guide
 hide:
-  # - navigation
   - toc
   - feedback
+  # - navigation
+  
+comments: false
 
 weight: -19
-
 ---
+
 <style>
 @media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
   .md-content__button {
