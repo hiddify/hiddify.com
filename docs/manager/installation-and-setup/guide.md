@@ -38,6 +38,8 @@ bash <(curl https://i.hiddify.com/release)
 
 Congratulations, the installation is complete. 
 
+!!! note "Note"  
+    To install using Docker, please refer to [this article](https://hiddify.com/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/).
 
 2. After installation
 At the end, a link will be generated which is the link to setup your proxy. Now we need to set the domain. Click on [this link](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/) to complete the installation.
