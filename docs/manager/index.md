@@ -5,6 +5,8 @@ hide:
   # - navigation
   - feedback
   - toc
+comments: false
+
 ---
 <style>
 @media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
