@@ -14,24 +14,24 @@ weight: -40
 
 
 
-- نسخه پایدار:
+- **نسخه پایدار:**
 ```
 bash <(curl https://i.hiddify.com/docker/latest)
 ```
 
 
-- نسخه بتا:
+- **نسخه بتا:**
 ```
 bash <(curl https://i.hiddify.com/docker/beta)
 ```
 
 
-- نسخه دوولوپ:
+- **نسخه دوولوپ:**
 ```
 bash <(curl https://i.hiddify.com/docker/dev)
 ```
 
-- نسخه خاص:
+- **نسخه خاص:**
 ```
 bash <(curl https://i.hiddify.com/docker/v10.80.0)
 ```
