@@ -15,27 +15,34 @@ weight: -40
 
 
 - **نسخه پایدار:**
+  <div dir="ltr">
 ```
 bash <(curl https://i.hiddify.com/docker/latest)
 ```
+</div>
 
 
 - **نسخه بتا:**
+  <div dir="ltr">
 ```
 bash <(curl https://i.hiddify.com/docker/beta)
 ```
+</div>
 
 
 - **نسخه دوولوپ:**
+  <div dir="ltr">
 ```
 bash <(curl https://i.hiddify.com/docker/dev)
 ```
-
+</div>
 - **نسخه خاص:**
+
+<div dir="ltr">
 ```
 bash <(curl https://i.hiddify.com/docker/v10.80.0)
 ```
-
+</div>
 
 توجه کنید داکر هنوز آزمایشی هست و ممکن است اشکالاتی داشته باشد که لطفا در کامنت‌ها به ما اطلاع دهید.
 
