@@ -4,7 +4,7 @@ title: How to Enable Free Internet Access for Clients Behind an OpenWrt Router U
 
 ### **Enabling Free Internet Access for Clients Behind OpenWrt Router Using HiddifyCli**
 
-In [another article](/fa/app/How-to-use-HiddifyCli-on-OpenWrt/), we explained how to download and install HiddifyCli on an OpenWrt router. In this article, we will guide you on enabling free internet access for the clients behind that router.
+In [another article](/app/How-to-use-HiddifyCli-on-OpenWrt/), we explained how to download and install HiddifyCli on an OpenWrt router. In this article, we will guide you on enabling free internet access for the clients behind that router.
 
 There are two main methods to allow clients behind the router to use free internet:
 
