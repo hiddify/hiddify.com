@@ -17,6 +17,7 @@ To download the version suitable for your router’s architecture, use the follo
    ```  
 </div>  
 **Explanation:**  
+
 - Replace `{ARCH}` with your router’s architecture (e.g., `mips`, `arm`, or `x86_64`).  
 
 ---
@@ -30,6 +31,7 @@ tar -xvzf /tmp/HiddifyCli.tar.gz -C /tmp
 ```  
 </div>  
 **Command Explanation:**  
+
 - `x-` extracts the file.  
 - `v-` displays extraction details.  
 - `z-` opens gzip-compressed files.  
