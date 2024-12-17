@@ -32,6 +32,7 @@ iptables -A FORWARD -i br-lan -p tcp --dport 12334 -j ACCEPT
 ```
 
 **Explanation:**
+
 - `br-lan`: The LAN interface of the router.
 - `12334`: HiddifyCli proxy port.
 
