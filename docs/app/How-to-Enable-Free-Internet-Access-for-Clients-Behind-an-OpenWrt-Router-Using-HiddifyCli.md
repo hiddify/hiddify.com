@@ -4,7 +4,7 @@ title: How to Enable Free Internet Access for Clients Behind an OpenWrt Router U
 
 <markdown ="1">
 
-### **Enabling Free Internet Access for Clients Behind OpenWrt Router Using HiddifyCli**
+## **Enabling Free Internet Access for Clients Behind OpenWrt Router Using HiddifyCli**
 
 In [another article](/app/How-to-use-HiddifyCli-on-OpenWrt/), we explained how to download and install HiddifyCli on an OpenWrt router. In this article, we will guide you on enabling free internet access for the clients behind that router.
 
@@ -12,7 +12,7 @@ There are two main methods to allow clients behind the router to use free intern
 
 ---
 
-### **1. Using Proxy for Clients Behind OpenWrt Router**
+## ** Method 1. Using Proxy for Clients Behind OpenWrt Router**
 
 If you want devices connected to the router (like laptops, phones, and other devices) to use the proxy **127.0.0.1:12334**, you can configure the following settings to make this proxy accessible as a central service for the entire network.
 
@@ -102,7 +102,7 @@ The PAC file allows you to define routes and exceptions for using the proxy.
 
 ---
 
-### **2. Routing All Traffic via Socks5 Proxy in OpenWrt**
+## ** Method 2. Routing All Traffic via Socks5 Proxy in OpenWrt**
 
 To route all internet traffic through **Socks5 Proxy**, you can use tools like `redsocks` or `iptables`. Follow these steps:
 
