@@ -2,6 +2,8 @@
 title: آموزش کامل نصب و راه‌اندازی HiddifyCli در سیستم‌عامل OpenWrt 
 ---
 
+<markdown ="1">
+
 
 ### آموزش کامل نصب و راه‌اندازی HiddifyCli در سیستم‌عامل OpenWrt
 
