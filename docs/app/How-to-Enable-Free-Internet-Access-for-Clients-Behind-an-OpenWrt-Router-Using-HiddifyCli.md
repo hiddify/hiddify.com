@@ -20,20 +20,20 @@ If you want devices connected to the router (like laptops, phones, and other dev
 
 #### **1.1 Enabling Port Forwarding on the Router**
 
-The proxy **127.0.0.1:2334** configured on the router is, by default, only accessible on the router itself. To allow clients to access it, the port must be opened on the router’s LAN interface.
+The proxy **127.0.0.1:12334** configured on the router is, by default, only accessible on the router itself. To allow clients to access it, the port must be opened on the router’s LAN interface.
 
 1. **Add a NAT Rule:**
 
 You need to direct incoming traffic on this port to the proxy:
 
 ```bash
-iptables -t nat -A PREROUTING -i br-lan -p tcp --dport 2334 -j DNAT --to-destination 127.0.0.1:12334
+iptables -t nat -A PREROUTING -i br-lan -p tcp --dport 12334 -j DNAT --to-destination 127.0.0.1:12334
 iptables -A FORWARD -i br-lan -p tcp --dport 12334 -j ACCEPT
 ```
 
 **Explanation:**
 - `br-lan`: The LAN interface of the router.
-- `2334`: HiddifyCli proxy port.
+- `12334`: HiddifyCli proxy port.
 
 2. **Save the Iptables Rules:**
 
@@ -54,7 +54,7 @@ Connected devices need to configure **manual proxy settings**. Follow these step
   2. Navigate to **Network & Internet** > **Proxy**.
   3. Under **Manual proxy setup**:
      - Set **Address** to the router's LAN IP (usually `192.168.1.1`).
-     - Set **Port** to `2334`.
+     - Set **Port** to `12334`.
   4. Save the settings.
 
 - **Android:**
@@ -62,13 +62,13 @@ Connected devices need to configure **manual proxy settings**. Follow these step
   2. Tap the connected network and select **Modify Network** or **Advanced Settings**.
   3. Set **Proxy** to **Manual**:
      - **Proxy hostname**: LAN IP of the router (e.g., `192.168.1.1`).
-     - **Proxy port**: `2334`.
+     - **Proxy port**: `12334`.
   4. Save the settings.
 
 - **iOS:**
   1. Open Wi-Fi settings.
   2. Tap the connected network and set **Configure Proxy** to **Manual**.
-  3. Enter the router IP in **Server** and `2334` as the **Port**.
+  3. Enter the router IP in **Server** and `12334` as the **Port**.
   4. Save the settings.
 
 - **macOS:**
@@ -76,7 +76,7 @@ Connected devices need to configure **manual proxy settings**. Follow these step
   2. Select your current connection and click **Advanced**.
   3. Under the **Proxies** tab, enable **SOCKS Proxy**:
      - **SOCKS Proxy Server**: Router IP (e.g., `192.168.1.1`).
-     - **Port**: `2334`.
+     - **Port**: `12334`.
   4. Save the settings.
 
 ---
@@ -151,7 +151,7 @@ redsocks {
 local_ip = 127.0.0.1;
 local_port = 12345; # Local port for proxy traffic
 ip = 127.0.0.1;     # Socks5 server address
-port = 2334;        # Socks5 server port
+port = 12334;        # Socks5 server port
 type = socks5;
 }
 ```
