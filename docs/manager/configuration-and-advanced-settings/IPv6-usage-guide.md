@@ -16,7 +16,7 @@ IPv6 stands for "Internet Protocol Version 6" and is designed as a replacement f
    - IPv6 must be enabled by the datacenter. Please contact your server provider to ensure this.
 
 2. **Operator Support:**
-   - IPv6 is only supported by certain operators (Irancell and Rightel). It may not be available on others, like Hamrah Aval and Telecommunication Company of Iran, either regionally or entirely.
+   - IPv6 is only supported by certain operators. It might be available on others, either regionally or entirely.
 
 3. **Valid IPv6 Format:**
    - If IPv6 is enabled on the server, its correct format will be displayed on the homepage of Hiddify Manager after installation. Be sure to note it down for use.
@@ -38,10 +38,8 @@ IPv6 stands for "Internet Protocol Version 6" and is designed as a replacement f
 1. Create a domain with "Reality" mode in the panel's domain section.
 2. In the "Fallback Domain" field, enter your desired address (recommended: www.speedtest.net).
 3. In the "Reality Server Name" field, enter the fallback domain or subdomain (recommended: www.speedtest.net).
-4. In the "Force to Use..." field, enter the server's IPv6 address in the following format:
-   ```
-   [IPv6]
-   ```
+4. In the "Force to Use..." field, enter the server's IPv6 address.
+   
 
 **Recommended Proxies:**
 - Reality XTLS Direct Vless
