@@ -1,5 +1,5 @@
 ---
-عنوان: نحوه استفاده از API در پروژه HiddifyManager
+title: نحوه استفاده از API در پروژه HiddifyManager
 ---
 
 <div dir="rtl" markdown="1">
