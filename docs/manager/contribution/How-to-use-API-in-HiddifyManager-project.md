@@ -3,55 +3,95 @@ title: How to use API in HiddifyManager project
 ---
 
 # How to use API in HiddifyManager project
-The HiddifyManager project provides two versions of its APIs for compatibility reasons. However, it is highly recommended to use version two, as version one may be deprecated in the future. This blog post aims to guide you through the process of using the self-documented version two APIs, which can be explored in the Admin Panel -> Settings -> API section.
+### Comprehensive Documentation for API in Hiddify Manager
 
-## API Authentication
-To use the APIs, authentication is required, which involves using the admin/user UUID (corresponding to the API) as a key.
+---
 
-This key must be included in the request as the "Hiddify-API-Key" header value.
+#### **Introduction**
 
-## API Structure version two 
-This structure is divided into three main sections:
-- Panel section, This section offers operations such as:
-    - Retrieving the panel version
-    - Ping with panel itself
+The API in Hiddify Manager is designed to enable remote control of the panel and provide easier access through programming and integration with applications and bots. This document will introduce you to how to use version 2 APIs, along with security considerations and definitions required for their implementation.
 
+---
 
-  > The base URL for this section is:
-  > 
-  > domain.com/<admin_proxy_path>/api/v2/panel/
+#### **Accessing API Documentation**
 
-- Admin section, This section offers operations such as:
-    - Retrieving information about the current admin (logged-in admin)
-    - Managing (get/create/edit/delete) admins and users
-    - Accessing current server statistics
-    - Viewing the contents of the Hiddify log files
+To view and utilize the API documentation, navigate to:  
+`Admin Panel -> Settings -> API`  
+Here, you can explore different sections of the API and obtain request codes tailored to your programming language.
 
-  > The base URL for this section is:
-  >
-  > domain.com/<admin_proxy_path>/api/v2/admin/
+---
 
-- User section, This section offers operations such as:
-    - Access information about the current user (logged-in user)
-    - Obtain suggested clients and their relevant details
-    - Retrieve links for all active subscriptions
-    - Get Mtproto proxy links
-    - Acquire temporary (short) links for the user's panel
-  > Notice: Although it is possible to enter the key in the URL section, it is strongly recommended to enter it in the header.
-  > 
-  > The base URL for this section has two options:
-  > 
-  >> domain.com/<user_proxy_path>/api/v2/user/
-  >> 
-  >> domain.com/<user_proxy_path>/<uuid>/api/v2/user/
+#### **Definitions Needed for API Usage**
 
-### Additional Information
-To learn more about each API, its inputs, and outputs, please refer to the API section within the HiddifyManager panel.
+1. **Hiddify-API-Key**  
+   This value represents the admin or user UUID, which must be obtained through the admin or settings section and used in the header of requests.
 
-In conclusion, HiddifyManager's version two API offers a wide range of features and functionality to make managing your panel, admins, users, and more as seamless and efficient as possible.
+2. **Admin Proxy Path**  
+   Admin proxy path is used for secure communication with the admin panel. This value can be obtained from:  
+   `Settings -> Advanced Settings -> Admin Proxy Path`
 
+---
 
-!!! tip "tip"
+#### **Structure of Version 2 API**
 
-    There is a possibility of endpoint or input/output changes in the APIs, and developers should familiarize themselves with API-related guidelines through updates and changes of HiddifyManager.
+Version 2 API is divided into three main sections:
 
+##### **1. Panel Section**  
+This section handles operations related to the panel, such as:
+- Retrieving panel version
+- Pinging to ensure panel is running  
+
+**Base URL:**  
+```plaintext
+/domain.com/admin_proxy_path/api/v2/panel
+```
+
+##### **2. Admin Section**  
+This section manages admin and server operations:
+- Retrieving current admin information
+- Managing admins (create/edit/delete)
+- Accessing server statistics
+- Viewing Hiddify logs  
+
+**Base URL:**  
+```plaintext
+/domain.com/admin_proxy_path/api/v2/admin
+```
+
+##### **3. User Section**  
+This section provides functionalities for users:
+- Retrieving current user information
+- Fetching suggested clients
+- Viewing MTProto proxy links and subscription links
+- Generating a temporary link for user panel  
+
+**Base URL:**  
+```plaintext
+/domain.com/user_proxy_path/api/v2/user/
+```
+
+**Note:** For enhanced security, it is recommended to include the `Hiddify-API-Key` in the header of requests rather than directly in the URL.
+
+---
+
+#### **Security and Development Notes**
+
+- Always use version 2 of the API, as version 1 may be deprecated in the future.  
+- Changes in **endpoints**, inputs, and outputs may occur in each API version, so developers should continuously review the most up-to-date panel documentation.
+
+---
+
+#### **Authentication Example**
+
+```bash
+curl -X GET "https://domain.com/admin_proxy_path/api/v2/panel/version" \
+-H "Hiddify-API-Key: YOUR_ADMIN_UUID"
+```
+
+---
+
+### Conclusion
+
+Version 2 of Hiddify Manager API provides a comprehensive set of tools for managing panels, admins, and users. By using these APIs, you can maintain a more integrated and controlled approach to your project. For more information, refer to the documentation within the admin panel.
+
+If you have any questions or suggestions for improving this documentation, please let us know! 😊
