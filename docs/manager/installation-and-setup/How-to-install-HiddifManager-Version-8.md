@@ -2,9 +2,9 @@
 title: How to install HiddifyManager Version 8
 ---
 
-### Hiddify Manager Version 8 Installation Guide
+### HiddifyManager Version 8 Installation Guide
 
-To install Hiddify Manager Version 8, follow these essential steps:
+To install HiddifyManager Version 8, follow these essential steps:
 
 ---
 
@@ -31,13 +31,13 @@ To install Version 8, execute the following commands in order:
    ```bash
    pip install pyTelegramBotAPI==4.22.0
    ```
-   - **Description:** This command installs a specific version of the **pyTelegramBotAPI** library. Hiddify Manager Version 8 is only compatible with this version (4.22.0).
+   - **Description:** This command installs a specific version of the **pyTelegramBotAPI** library. HiddifyManager Version 8 is only compatible with this version (4.22.0).
 
-3. **Install Hiddify Manager Version 8:**
+3. **Install HiddifyManager Version 8:**
    ```bash
    bash <(curl i.hiddify.com/v8.99.0)
    ```
-   - **Description:** This command installs the latest release of Hiddify Manager Version 8. It also properly detects and configures the associated database.
+   - **Description:** This command installs the latest release of HiddifyManager Version 8. It also properly detects and configures the associated database.
 
 ---
 
@@ -47,5 +47,5 @@ To install Version 8, execute the following commands in order:
 
 ---
 
-By following this guide, Hiddify Manager Version 8 will be correctly installed on your server.
+By following this guide, HiddifyManager Version 8 will be correctly installed on your server.
 
