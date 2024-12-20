@@ -11,7 +11,7 @@ Abuse on virtual servers is a common issue in the **VPN** and network field, pot
 ---
 
 ### **The Problem with Direct IP Usage**  
-One primary reason for abuse reports is the direct use of Cloudflare IPs (such as IPv6 server IPs or intermediate server IPs connected to the main server) in the "Force IP Usage" field in the **Hiddify** panel.  
+One primary reason for abuse reports is the direct use of Cloudflare clean IPs or IPv6 server IPs or Relay server IPs connected to the main server in the "Force IP Usage" field in the **HiddifyManager**.  
 
 This approach leads to outgoing traffic being sent or received directly and without encryption on the IPs, lacking the protective layer of HTTP/HTTPS. Datacenters often identify such unprotected activity as suspicious, resulting in abuse reports.  
 
