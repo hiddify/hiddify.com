@@ -2,7 +2,7 @@
 title: How to manage multiCDN domains in HiddifyManager
 ---
 
-### Managing Clean IPs and Multiple CDN Domains in Hiddify Manager  
+### Managing Clean IPs and Multiple CDN and AutoCDN Domains in Hiddify Manager  
 
 In this article, we explore strategies for managing clean IPs tailored to different operators and setting up multiple CDN domains in **Hiddify Manager**. These methods optimize configuration and improve connection stability for users.  
 
