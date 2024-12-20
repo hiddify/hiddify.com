@@ -63,3 +63,5 @@ In this application, according to the different conditions, different numbers sh
 **Be careful:**
     > Depending on the operator, you may need to change the parameters.
     > Do not use the TLS fragment and TLS Padding parameters at the same time because they cancel each other out.
+
+In [this article](/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/), a suitable method for finding these values and configuring them in Hiddify Manager and the Hiddify app is introduced.
