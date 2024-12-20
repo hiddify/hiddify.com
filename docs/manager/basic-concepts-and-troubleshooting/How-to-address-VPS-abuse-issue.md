@@ -4,11 +4,36 @@ title: How to address VPS abuse issue
 
 ### Resolving Abuse Issues on Virtual Servers
 
-One of the common issues with virtual servers from data centers, especially in the VPN and networking field, is the frequent abuse reports and related warnings. If not managed properly, these issues may lead to account suspension by the data center. To address this problem, the following script is recommended.
+### Preventing Abuse on Virtual Servers Using Advanced Methods  
+
+Abuse on virtual servers is a common issue in the **VPN** and network field, potentially leading to account suspension by datacenters. This article explores the reasons behind this issue and provides optimized solutions, including proper IP management and the use of the **Abuse Defender** script.  
 
 ---
 
-#### **Script Installation Command**
+### **The Problem with Direct IP Usage**  
+One primary reason for abuse reports is the direct use of Cloudflare IPs (such as IPv6 server IPs or intermediate server IPs connected to the main server) in the "Force IP Usage" field in the **Hiddify** panel.  
+
+This approach leads to outgoing traffic being sent or received directly and without encryption on the IPs, lacking the protective layer of HTTP/HTTPS. Datacenters often identify such unprotected activity as suspicious, resulting in abuse reports.  
+
+---
+
+### **Proposed Solutions for Managing IPs**  
+
+1. **Using Subdomains:**  
+   Place the relevant IPs behind the subdomains of your domain. Then, enter these subdomains in the "Force IP Usage" field.  
+
+2. **Configuring TLS/SSL:**  
+   Properly configured TLS/SSL settings in Cloudflare can enhance security and reduce abuse incidents. Ensure these settings are correctly applied.  
+
+---
+
+### **Using the Abuse Defender Script**  
+To reduce security risks and prevent abuse caused by suspicious IP ranges, you can use the **Abuse Defender** script. This script helps enforce appropriate firewall rules to block unwanted IP ranges.  
+
+---
+
+#### **Step 1: Installing the Script**  
+To install the script, follow these steps:  
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/Kiya6955/Abuse-Defender/main/abuse-defender.sh)
@@ -16,36 +41,40 @@ bash <(curl -s https://raw.githubusercontent.com/Kiya6955/Abuse-Defender/main/ab
 
 ---
 
-#### **How to Use the Script on Virtual Servers**
+#### **Step 2: Running the Script**  
 
-1. First, log into your server via **SSH**. If **Hiddify Manager** is installed, exit its menu.
+1. Log in to your server via **SSH** and exit any applications like **Hiddify Manager**.  
 
-2. Enter the following command to navigate to the server’s root directory:
-
+2. Navigate to the root directory:  
 ```bash
 cd /
 ```
 
-3. Execute the script installation command:
-
+3. Run the installation command:  
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/Kiya6955/Abuse-Defender/main/abuse-defender.sh)
 ```
 
-4. After running the command and completing the installation, enter the number **1**.
-
-5. The script will begin blocking ranges of IP addresses commonly associated with abuse reports on your server. During this process, the server's firewall will display **two warnings**, which you must approve by selecting **yes** or pressing **Enter**. These confirmations are necessary for the firewall rules to be correctly applied.
-
-6. After approving the two warnings, **two additional questions** will appear. For each, type the letter **y** to ensure the firewall rules are applied successfully.
-
-7. Upon completion, you will be redirected to the script’s main menu.
+4. Once installed, enter **1** to initiate the script, which will start blocking suspicious IP ranges.  
 
 ---
 
-#### **Options Available in the Script Menu**
+#### **Important Notes During Usage**  
 
-- **Option 4:** View the applied firewall rules.
-- **Option 3:** Manually block a specific range of IP addresses.
-- **Option 5:** Remove all firewall rules applied by the script from the server.
+- **Firewall Warnings:** The firewall will display two warnings during the process. Press **Enter** or select **yes** to confirm them.  
+- **Additional Questions:** Two additional questions will follow. Answer both by entering **y** to ensure firewall rules are applied correctly.  
 
 ---
+
+### **Script Menu Features**  
+
+Once the script completes its operation, you’ll see a menu with the following options:  
+
+- **Option 4:** View the applied firewall rules.  
+- **Option 3:** Manually block a specific IP range.  
+- **Option 5:** Remove all rules applied by the script.  
+
+---
+
+### **Conclusion**  
+By implementing these solutions, including proper IP management and the installation of the **Abuse Defender** script, you can significantly enhance the security of your virtual servers and prevent abuse reports from datacenters. These straightforward yet effective actions ensure the stability and performance of your servers.  
