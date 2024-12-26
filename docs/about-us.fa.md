@@ -51,96 +51,72 @@ weight: 5
         </div>
       </section>
 
-      <section class="flex items-center justify-center" dir="ltr">
-        <div class="flex flex-col gap-10 w-full max-w-[1200px] items-center justify-center">
-          <div class="flex items-center justify-center flex-col gap-3">
-            <h1 class="text-primaryText text-2xl font-semibold">جدول زمانی</h1>
-            <h3 class="text-secondaryText text-lg font-medium">از ابتدا تا اکنون</h3>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-4 w-[350px] lg:w-full h-[800px] lg:h-fit">
+<section class="flex items-center justify-center py-10">
+  <div class="flex flex-col gap-10 w-full max-w-[1200px] items-center justify-center">
+    <!-- Timeline Header -->
+    <div class="flex items-center justify-center flex-col gap-3">
+      <h1 class="text-primaryText text-2xl font-semibold">داستان هیدیفای از تولد تا امروز</h1>
+    </div>
 
-            <div class="relative flex flex-col justify-center lg:justify-start lg:items-center">
-              <div class="rounded-full h-3 w-3 absolute -right-[6px] lg:-top-[6px] lg:right-[unset] bg-[#504A82]">
-              </div>
-              <div class="w-full">
-                <div
-                  class="absolute right-0 lg:left-[unset] bottom-0 lg:bottom-[unset] lg:right-0 h-1/2 w-1/2 lg:h-full border-r-2 lg:border-r-0 lg:border-t-2 border-[#504A82]">
-                </div>
-                <div class="py-5 w-full flex items-center justify-center flex-col">
-                  <span class="text-black font-light text-sm mb-3">اکنون</span>
-                  <h3 class="text-secondaryText font-medium text-base">کار بر روی x و y</h3>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border-r-2 lg:border-r-0 lg:border-t-2 border-[#504A82] relative flex flex-col justify-center lg:justify-start lg:items-center">
-              <div class="rounded-full h-3 w-3 absolute -right-[8px] lg:right-[unset] lg:-top-[8px] bg-[#504A82]">
-              </div>
-              <div class="py-5 flex flex-col items-center lg:items-[unset]">
-                <span class="text-black font-light text-sm w-full flex items-center justify-center mb-3">ژوئن
-                  ۲۰۲۳</span>
-                <div class="w-[230px] mr-20 lg:mr-0 lg:w-fit" dir="rtl">
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    هیدیفای منیجر نسخه ۷
-                  </span>
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    افزودن حسابداری
-                  </span>
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    انتخاب خودکار آی‌پی
-                  </span>
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2 whitespace-nowrap">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    برنامه‌های کلاینت برای سیستم‌عامل‌های مختلف
-                  </span>
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    مستندات در ویکی
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border-r-2 lg:border-r-0 lg:border-t-2 border-[#504A82] relative flex flex-col justify-center lg:justify-start lg:items-center">
-              <div class="rounded-full h-3 w-3 absolute -right-[8px] lg:right-[unset] lg:-top-[8px] bg-[#504A82]">
-              </div>
-              <div class="py-5 flex flex-col items-center lg:items-[unset]">
-                <span class="text-black font-light text-sm w-full flex items-center justify-center mb-3">دسامبر
-                  ۲۰۲۲</span>
-                <div class="w-[230px] mr-20 lg:mr-0 lg:w-fit" dir="rtl">
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    هیدیفای منیجر نسخه ۱
-                  </span>
-                  <span class="text-secondaryText font-medium text-base flex items-center gap-2">
-                    <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    ارائه ۶ پروتکل
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="relative flex flex-col justify-center lg:justify-start lg:items-center">
-              <div class="rounded-full h-3 w-3 absolute -right-[6px] lg:-top-[6px] lg:right-[unset] bg-[#504A82]">
-              </div>
-              <div class="w-full">
-                <div
-                  class="absolute right-0 lg:right-[unset] lg:left-0 top-0 lg:top-[unset] w-1/2 h-1/2 lg:h-full border-r-2 lg:border-r-0 lg:border-t-2 border-[#504A82]">
-                </div>
-                <div class="py-5 w-full flex items-center justify-center flex-col">
-                  <span class="text-black font-light text-sm mb-3">سپتامبر ۲۰۲۲</span>
-                  <h3 class="text-secondaryText font-medium text-base">اولین نسخه کاری</h3>
-                </div>
-              </div>
-            </div>
+    <!-- Timeline Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 w-[350px] lg:w-full gap-6">
+      <!-- Example Timeline Item -->
+      <div class="relative flex flex-col justify-center lg:justify-start lg:items-center">
+        <div class="rounded-full h-3 w-3 absolute -left-[6px] lg:-top-[6px] lg:left-[unset] bg-[#504A82]"></div>
+        <div class="w-full">
+          <div class="absolute left-0 lg:right-[unset] top-0 lg:top-[unset] lg:left-0 h-1/2 w-1/2 lg:h-full border-l-2 lg:border-l-0 lg:border-t-2 border-[#504A82]"></div>
+          <div class="py-5 w-full flex items-center justify-center flex-col">
+            <span class="text-black font-light text-sm mb-3">شهریور ۱۴۰۱</span>
+            <h3 class="text-secondaryText font-medium text-base">تولد هیدیفای</h3>
+            <p class="text-secondaryText text-sm">توسعه نسخه اولیه با الهام از Awesome Freedom</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Additional Timeline Items -->
+      <div class="relative flex flex-col justify-center lg:justify-start lg:items-center">
+        <div class="rounded-full h-3 w-3 absolute -left-[8px] lg:left-[unset] lg:-top-[8px] bg-[#504A82]"></div>
+        <div class="py-5 flex flex-col items-center lg:items-[unset]">
+          <span class="text-black font-light text-sm w-full flex items-center justify-center mb-3">آذر ۱۴۰۱</span>
+          <div class="w-[230px] ml-20 lg:ml-0 lg:w-fit">
+            <span class="text-secondaryText font-medium text-base flex items-center gap-2">
+              <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
+              انتشار HiddifyManager نسخه اولیه
+            </span>
+            <p class="text-secondaryText text-sm">شروع استفاده از روش‌های مختلف پروکسی</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col justify-center lg:justify-start lg:items-center">
+        <div class="rounded-full h-3 w-3 absolute -left-[8px] lg:left-[unset] lg:-top-[8px] bg-[#504A82]"></div>
+        <div class="py-5 flex flex-col items-center lg:items-[unset]">
+          <span class="text-black font-light text-sm w-full flex items-center justify-center mb-3">تیر ۱۴۰۲</span>
+          <div class="w-[230px] ml-20 lg:ml-0 lg:w-fit">
+            <span class="text-secondaryText font-medium text-base flex items-center gap-2">
+              <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
+              ارائه نسخه ۷ HiddifyManager
+            </span>
+            <p class="text-secondaryText text-sm">افزودن پشتیبانی از پروتکل‌های جدید</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Continue with additional events -->
+      <div class="relative flex flex-col justify-center lg:justify-start lg:items-center">
+        <div class="rounded-full h-3 w-3 absolute -left-[6px] lg:-top-[6px] lg:left-[unset] bg-[#504A82]"></div>
+        <div class="w-full">
+          <div class="absolute left-0 lg:right-[unset] top-0 lg:top-[unset] lg:left-0 h-1/2 w-1/2 lg:h-full border-l-2 lg:border-l-0 lg:border-t-2 border-[#504A82]"></div>
+          <div class="py-5 w-full flex items-center justify-center flex-col">
+            <span class="text-black font-light text-sm mb-3">اکنون</span>
+            <h3 class="text-secondaryText font-medium text-base">در حال کار روی نسخه‌های بعدی</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section class="flex flex-col items-center">
         <h1 class="text-primaryText text-2xl font-semibold mb-10">تیم‌های ما</h1>
