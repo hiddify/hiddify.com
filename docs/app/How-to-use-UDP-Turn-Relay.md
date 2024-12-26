@@ -7,9 +7,10 @@ title: How to use UDP Turn Relay in HiddifyApp
 # How to use UDP Turn Relay
 Recently, a feature called UDP Turn Relay is used in messengers to bypass filtering. That is, in this case, messengers are used as intermediate servers (relay) and traffic is sent to the main server through them. This can be used for messengers that are active inside Iran and support this protocol, or for foreign messengers that are not filtered. The diagram of free internet connection in this case is as follows.
 
-<div alifn=center>
+<div align=center>
 
-![UDP Turn Relay_en](https://github.com/hiddify/hiddify-next/assets/125398461/037262d4-ad89-45c0-bcab-c6504c08d3df)
+<img width=100% src="https://github.com/hiddify/hiddify-next/assets/125398461/037262d4-ad89-45c0-bcab-c6504c08d3df">
+
 </div>
 
 Note that this feature only works for configurations that are on the UDP protocol. This means that this feature can be used on Hysteria2 or TUIC v5, but it cannot be used for reality.
