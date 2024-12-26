@@ -228,7 +228,7 @@ One of the most secure and trusted solutions for using VPN
     <h3 class="text-xl font-semibold">
     <img class="badge-value-only" src="https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=&style=flat-square&logo=">
     </h3>
-    <p>Youtube Tutorials' views</p>
+    <p>YouTube Tutorials' views</p>
      </a>
   </div>
 </div>
