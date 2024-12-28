@@ -96,7 +96,7 @@ whose output is as follows.
 Here, the space related to `sda1` should be checked according to the figure. If for any reason this space was full and you need to free up some space, you can delete the information related to the logs with the following command.
 
 ```
-rm-rf /opt/hiddify-config/log/system/*
+rm-rf /opt/hiddify-manager/log/system/*
 ```
 
 - The work is done
