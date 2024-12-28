@@ -123,7 +123,7 @@ df -h --total
 <div dir=ltr markdown=1>
 
 ```
-rm -rf /opt/hiddify-config/log/system/*
+rm -rf /opt/hiddify-manager/log/system/*
 ```
 </div>
 
