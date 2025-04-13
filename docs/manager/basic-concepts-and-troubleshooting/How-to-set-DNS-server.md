@@ -33,25 +33,30 @@ To do this, go to the panel settings and in the general settings section, put th
 The panel has automatically set the Cloudflare server for you, and of course, it has also put suggestions at the bottom that you can apply if needed.
 
 ## Setting DNS server via SSH
-If for any reason you wanted to use SSH to do this setup, [connect to your server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) and then press `ctrl+c` to exit the Hiddify menu.
-* In the terminal environment, type this command to open the DNS server settings with the nano text editor.
+If for any reason you prefer to configure DNS settings using SSH, [connect to your server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) and exit the Hiddify menu using `ctrl+c`.
+* In the terminal, type the following command to remove the previous DNS settings.
+
+```
+sudo rm /etc/resolv.conf
+```
+* Then, to create and edit the DNS server settings, use the following command to open the nano text editor.
 
 ```
 sudo nano /etc/resolv.conf
 ```
-* Then edit nameservers, which refers to the DNS server here, and change it as follows.
+* Now, edit the nameservers (which refer to the DNS servers) and change them as follows.
 
 ```
 nameserver 8.8.8.8
 nameserver 1.1.1.1
 ```
-* Press `ctrl+s` to save and `ctrl+x` to exit.
-* Now you have to make this file cannot be changed by the system. For this, use the following command.
+* To save, press `ctrl+s`, and to exit, press `ctrl+x`.
+* Now, to prevent the system from modifying this file, use the following command.
 
 ```
 chattr +i /etc/resolv.conf
 ```
-* The work is done.
+* You're all set.
 
 ## DNS leak test on server
 The easiest tool to test leaks on the server is to use `nslookup`.
