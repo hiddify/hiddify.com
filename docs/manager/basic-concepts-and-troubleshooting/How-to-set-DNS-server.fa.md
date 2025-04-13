@@ -38,7 +38,16 @@ title: آموزش تنظیم DNS سرور در هیدیفای‌منیجر
 ## تنظیم DNS از طریق SSH
 اگر به هر دلیل مایل به استفاده از SSH برای انجام این تنظیمات بودید، [به سرور خود SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) و سپس با `ctrl+c` از منوی هیدیفای خارج شوید.
 
-* در محیط ترمینال این کامند را تایپ کنید تا تنظیمات DNS سرور با ویرایشگر متنی nano باز شود.
+* در محیط ترمینال این کامند را تایپ کنید تا تنظیمات قبلی DNS سرور حذف شود.
+
+<div dir="ltr" markdown=1>
+  
+```
+sudo rm /etc/resolv.conf
+```
+</div>
+
+* سپس برای ایجاد و تغییر تنظیمات DNS سرور، این کامند را تایپ کنید تا ویرایشگر متنی nano باز شود.
 
 <div dir="ltr" markdown=1>
   
@@ -62,6 +71,7 @@ nameserver 1.1.1.1
 
 
 <div dir="ltr" markdown=1>
+  
 ```
 chattr +i /etc/resolv.conf
 ```
