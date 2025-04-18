@@ -26,6 +26,12 @@ headless: true
     <!-- Post Grid Section -->
     <h1>Instagram Posts</h1>
     <div class="grid">
+    <!-- Post 7 -->
+      <a href="https://youtu.be/ywxx5AzQl-s" target="_blank" class="post">
+        <figure markdown="span">
+          <img src="/instagram/img/Hiddify Free VPN_Site_Post.png" alt="Post 5">
+        </figure>
+      </a>
       <!-- Post 6 -->
       <a href="https://youtu.be/jrvQD5xo6PU" target="_blank" class="post">
         <figure markdown="span">
