@@ -70,4 +70,4 @@ title: کاربرد و نحوه عملکرد TLS Trick
    > پارامتر TLS fragment و TLS Padding را به صورت همزمان استفاده ننمایید زیرا اثر همدیگر را خنثی می‌کنند.
 
 
-در [این مقاله](/fa/manager/basic-concepts-and-troubleshooting/A-good-way-to%20find-TLS-trick-values/)، یک روش مناسب برای پیدا کردن این مقادیر و تنظیم آن در هیدیفای‌منیجر و اپ هیدیفای معرفی شده است.
+در [این مقاله](/fa/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/)، یک روش مناسب برای پیدا کردن این مقادیر و تنظیم آن در هیدیفای‌منیجر و اپ هیدیفای معرفی شده است.
