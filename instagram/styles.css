@@ -1,0 +1,110 @@
+@media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}}
+  .md-content__button {
+    display: none;
+  }
+/* Step 2: Load the JURRA Font */
+@font-face {
+  font-family: 'Jura';
+  src: url('fonts/Jura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.instagram {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.instagram .profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.instagram .profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.instagram .profile-info {
+  text-align: left;
+}
+
+.instagram .profile-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'JURRA', sans-serif; /* Apply the JURRA font to the title */
+}
+
+.instagram .bio {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-right: 22px;
+}
+
+.instagram .website-link {
+  color: #3897f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.instagram .website-link:hover {
+  text-decoration: underline;
+}
+
+.instagram h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Grid Layout */
+.instagram .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.instagram .post img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.instagram .post:hover img {
+  transform: scale(1.05);
+}
+
+/* Mobile-specific styling */
+@media (max-width: 480px) {
+  .instagram {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .instagram .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .instagram .post img {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .instagram .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instagram .profile-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
