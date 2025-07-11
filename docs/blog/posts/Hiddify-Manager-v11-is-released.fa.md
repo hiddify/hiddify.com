@@ -1,3 +1,17 @@
+---
+draft: false
+date: 2025-07-11 
+# authors:
+#   - hiddify
+categories:
+  - Manager
+
+tags:
+  - Hiddify
+  - Free Internet Solution
+description: HiddifyManager v11 released
+
+---
 # 🎉 نسخه ۱۱ هیدیفای‌منیجر منتشر شد!
 
 

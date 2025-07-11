@@ -1,3 +1,18 @@
+---
+draft: false
+date: 2025-07-11 
+# authors:
+#   - hiddify
+categories:
+  - Manager
+
+tags:
+  - Hiddify
+  - Free Internet Solution
+description: HiddifyManager v11 released
+
+---
+
 # 🎉 HiddifyManager Version 11 Released!
 
 Packed with exciting improvements and updates. Here’s a summary of the key changes:
