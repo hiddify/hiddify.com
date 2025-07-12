@@ -45,7 +45,8 @@ Packed with exciting improvements and updates. Here’s a summary of the key cha
 - 🔹 **Reduced RAM and CPU usage**  
   RAM consumption reduced by up to 50%, with optimized resource management. 💪
 
-- 🔹 **Added bulk actions for users**
+- 🔹 **Added bulk actions for managing users**
+
   You can now delete, activate, deactivate, or reset day and traffic for selected users — all at once! 🚀
 
 - 🔹 **Improved installation and setup process**  
