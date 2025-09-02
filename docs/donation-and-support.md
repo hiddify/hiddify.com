@@ -23,11 +23,6 @@ weight: -8
     ltc1qwyd2hdn5wc04fkvp2mj7glayy5galxfm3luftg
     ```
     <br>
-    ![BNB (smart chain)](https://img.shields.io/badge/BNB%20(smart%20chain)-Address-lightgreen?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAphJREFUSEuVVVtS20AQ7JFjQiGqbJ0g3CDOCQI/UfjTDSJOgHwCKyewOQHmBs4Xln9i3wBuACeQqLJTwQ9NalavtSwhor/V7M7OdPf0Ehq+8He3a6zX1wxyGBhZ9uqu6UwWp7c2hjPTJcYAwFm+jzBnoG99Wz00XVKZPJyZPQKGYJxrCR4BfM6rYozjj+2+dRFFdZccJH+ZmiMmXGsHFhyTb10u56oTwAfjUxqPmFQX46oL8uRSrbQqGGO99YjYZcDPDh7EwR4TvHJcv4TC+9NzMvg2wZUmHG/71uXfp2zTXlzw3u2u3hunKDC5YJd+xfHWOzjc4rFAQaiJGzzS+Fh07ZXiKk/OhCtpMZHeZsCAwOJl0tNhSaUpsAhsN5LoJTDHDPwAsJdc2O5wTBdCWhSYaq1h98Ax9XNCGUMAXb3bjr10wuDUJ/BAupO1qlxV+rrxY6ZJmjyHqaQA4aHQexFUlYZT05Nf1veVQKQ+Cu+Pz3SMdQ6ahiSN5zDIWs8nmEcEHsZHRzcyEGFw4hDRSNPyW3csON65UpwkJePDEGDrkNAU81yCCYbSqo5/2i+emdmz7D+T0n6xigq1FITO0+FQA0XrTVgq/bFrr3oKguDEMUBOx165GaFNyRWhTPgiE1vBQU4gkVJOsk7V0pS8LM2yevaSEXDXXLk2ROItiDGvkWYhPQNR5i11Q1RUVuEddbBUek/ysyBUGVPqHcXUYRQftX8qaSbGprxD9xYlvVbrVvf8svcUljs1PSL4mfQyO8grTC05W0eBOQfwNRlFPPOOXIFRV9beY5FZgTwWmteIt3iZtxgs0ls6afIeM3x95GuTFzgeKw+RydMwlzdT9J0QOjNdtNuT/3rmyrMezcwn3Qoy6b3Hd/4BcS/7J0DVxCsAAAAASUVORK5CYII=)<br>[Scan QRcode](https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=bnb:0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0) or copy the address directly:
-    ```
-    0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0
-    ```
-    <br>
     ![BitCoin](https://img.shields.io/badge/BitCoin-Address-orange?style=flat-square&logo=bitcoin)<br>[Scan QRCode](https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=bitcoin:bc1quepmxl4pmfvy5sdrnmd4sxgnn83xd70lu30gkx) or copy the address directly:
     ```
     bc1quepmxl4pmfvy5sdrnmd4sxgnn83xd70lu30gkx
