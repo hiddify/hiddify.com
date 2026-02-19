@@ -1,6 +1,7 @@
 ---
 title: حریم شخصی
 weight: 3
+comments: false
 ---
 
 
