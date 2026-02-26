@@ -3,7 +3,7 @@ title: How to set up and use Telegram bot on HiddifyManager
 weight: -130
 ---
 
-<div dir="ltr" markdown="1">
+<div dir="ltr" make ="1">
 
 # How to set up and use Telegram bot on HiddifyManager
 This page shows you how to connect your Hiddify Manager panel to your own Telegram bot. With the bot you can create and manage users from Telegram, check the server status, and receive the panel's automatic backups. Your users can also link their Telegram to get notices when their package is about to end.
