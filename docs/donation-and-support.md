@@ -32,7 +32,10 @@ weight: -8
     ```
     TMfrMgzY4DrjhyZh5s67YvCyrcHvJAkXjb
     ```
-
-
-
+    
+    <br>
+    ![Tether](https://img.shields.io/badge/Tether-Address-50AF95?logo=tether?style=flat-square)<br>[  کیوآر کد را اسکن کنید](https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=tether:0x2036cBd7e0fb883c8614FA14f5182e2828Fd90a5) یا آدرس را مستقیما کپی نمایید:
+    ```
+    0x2036cBd7e0fb883c8614FA14f5182e2828Fd90a5
+    ```
 
