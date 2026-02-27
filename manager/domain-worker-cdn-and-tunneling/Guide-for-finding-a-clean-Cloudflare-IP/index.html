@@ -1,0 +1,4915 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The proxy manager platform.">
+      
+      
+        <meta name="author" content="Hiddify.com">
+      
+      
+        <link rel="canonical" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">
+      
+      
+        <link rel="prev" href="../Guide-for-domain-fronting/">
+      
+      
+        <link rel="next" href="../Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/ic_hiddify.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.5">
+    
+    
+      
+        <title>What is Cloudflare's clean IP and how to find it - Hiddify</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      
+    
+
+  <script src="https://guru-widget.pages.dev/guru_widget.latest.min.js" 
+  data-text="Ask AI" 
+  data-link="https://gurubase.io/g/hiddify-manager" 
+  data-bg-color="#d5d0f8" 
+  data-icon-url="https://avatars.githubusercontent.com/u/126981719?s=48&v=4" 
+  data-font-color="#958fb5" 
+  data-margins='{"bottom": "1rem", "right": "1rem"}'>
+  </script>
+  <!-- Add scripts that need to run afterwards here -->
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/site.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-1B5433L63G"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-1B5433L63G",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-1B5433L63G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guide-for-finding-a-clean-cloudflare-ip" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  
+  Please follow us to keep pace with the latest news:
+  
+  <a class="text-secondary" href="https://github.com/hiddify/hiddify-manager/wiki">
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> 
+        </span>
+    
+    </a> <a class="text-danger" href="https://youtube.com/@hiddify/videos">
+        &nbsp; 
+        <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg> 
+        </span>
+      </a>
+
+  <a class="text-primary" href="https://instagram.com/hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> 
+          </span>
+      </a>
+
+      <a class="text-primary" href="https://twitter.com/intent/follow?screen_name=hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> 
+          </span>
+      </a>
+      
+      <a class="text-primary" href="https://t.me/hiddify">&nbsp; 
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"/></svg> 
+        </span>  
+    </a>
+
+
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+     
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      </label>
+  
+    <!-- Link to home -->
+    <a
+    href="https://hiddify.com"
+    title="Hiddify"
+    class="md-header__button md-logo"
+    aria-label="Hiddify"
+    data-md-component="logo"
+  >
+    
+  <img src="../../../assets/hiddify-logo.svg" alt="logo">
+
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis" style="display:none">
+            Hiddify
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What is Cloudflare's clean IP and how to find it
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette toggle -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+
+    <!-- User preference: color palette -->
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+
+    <!-- Site language selector -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- Site language selector -->
+<div class="md-header__option">
+    <div class="md-select">
+      
+      <button
+        class="md-header__button md-icon"
+        aria-label="Select language"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+      </button>
+      <div class="md-select__inner">
+        <ul class="md-select__list">
+          
+            <li class="md-select__item">
+              <a id="langselect-en"
+                href="./"
+                hreflang="en"
+                class="md-select__link"
+              >
+                English
+              </a>
+            </li>
+            
+          
+            <li class="md-select__item">
+              <a id="langselect-fa"
+                href="../../../fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/"
+                hreflang="fa"
+                class="md-select__link"
+              >
+                فارسی
+              </a>
+            </li>
+            
+                <script>
+                    function detectPersianLanguageOrRegion() {
+                        // List of timezones related to Iran, Afghanistan, and Tajikistan
+                        const relevantTimezones = [
+                            'Asia/Tehran', // Iran
+                            'Asia/Kabul', // Afghanistan
+                            'Asia/Dushanbe' // Tajikistan
+                        ];
+
+                        // Check user languages
+                        const languages = navigator.languages || [navigator.language];
+                        const isPersianLanguage = languages.some(lang => lang.startsWith('fa'));
+
+                        // Check user timezone
+                        const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                        const isRelevantTimezone = relevantTimezones.includes(userTimezone);
+
+                        // Return the result
+                        return isPersianLanguage || isRelevantTimezone;
+                    }
+                    function getCookie(name) {
+                        const value = `; ${document.cookie}`;
+                        const parts = value.split(`; ${name}=`);
+                        if (parts.length === 2) return parts.pop().split(';').shift();
+                    }
+
+                    // Function to set a cookie
+                    function setCookie(name, value, days) {
+                        const expires = new Date(Date.now() + days * 864e5).toUTCString();
+                        document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+                    }
+                    const cookieName = "languagePreference"; // Name of the cookie to check
+                    if (!getCookie(cookieName) && detectPersianLanguageOrRegion() && document.location.href.indexOf("fo1rce_lang")<0){
+                        console.log("rrrrr",document.referrer)
+                        if (document.referrer!=null && document.referrer.indexOf("https://hiddify.com")<0 && document.referrer.indexOf(".app.github.dev")<0)
+                        document.location=document.getElementById("langselect-fa").attributes['href'].value+window.location.hash;
+                    }
+
+                    if ( 0 &&!getCookie(cookieName) && detectPersianLanguageOrRegion())
+                        Swal.fire({
+                        title: "مشاهده سایت به زبان فارسی؟",
+                        text: "به نظر شما فارسی زبان هستید. آیا میخواهید سایت را به زبان فارسی مشاهده کنید؟",
+                        icon: "warning",
+                        showCancelButton: true,
+                        showDenyButton:true,
+                        confirmButtonText: "فارسی",
+                        denyButtonText:"English",
+                        cancelButtonText: "Cancel",
+                        reverseButtons: true,
+                        // input: "checkbox",
+                        // inputValue: 1,
+                        // inputPlaceholder: `
+                        //     Do not show this dialog again
+                        // `,
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                            document.location=document.getElementById("langselect-fa").attributes['href'].value;
+                        } else if (result.dismiss === Swal.DismissReason.deny) {
+                            Swal.fire({
+                                title: "Show the dialog again?",
+                                text: "Do you want to always show this dialog to select between english and persian?",
+                                icon: "warning",
+                                showDenyButton: true,
+                                denyButtonText:"Keep this dialog",
+                                confirmButtonText: "Always English"
+                                     
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    setCookie(cookieName, "english", 30); // Set cookie to remember th
+                                };
+                             });
+                        }
+                    });
+                </script>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hiddify" target="_blank">
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/hiddify?style=social">
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Manager Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../app/" class="md-tabs__link">
+          
+  
+  App Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../donation-and-support/" class="md-tabs__link">
+        
+  
+    
+  
+  Donation and support
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about-us/" class="md-tabs__link">
+        
+  
+    
+  
+  About Us
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../privacy-policy/" class="md-tabs__link">
+        
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+
+<script src="https://raw.githubusercontent.com/iconfu/svg-inject/v1.2.3/dist/svg-inject.min.js"></script>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://hiddify.com" title="Hiddify" class="md-nav__button md-logo" aria-label="Hiddify" data-md-component="logo">
+      
+  <img src="../../../assets/hiddify-logo.svg" alt="logo">
+
+    </a>
+    Hiddify
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hiddify" target="_blank">
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/hiddify?style=social">
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Manager Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation and setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation and setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation and setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main installation guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for setting up the domain and finalizing the installation (Initial setting after installation)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Installation-prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation prerequisites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/How-to-connect-to-server-via-SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect to server via SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install different versions of Hiddify Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-installation-on-Hetzner-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Hetzner Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-installation-on-Vultr-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Vultr Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Oracle Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-Installation-on-OVH-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on OVH Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Microsoft Azure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Cloud-init-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Easy installation through the data center (Cloud-init)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Install-Hiddify-using-Docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing HiddifyManager using Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/How-to-install-HiddifManager-Version-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install HiddifyManager Version 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Configuration and advanced settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration and advanced settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration and advanced settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to configure HiddifyManager properly (Getting familiar with its different parts)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect and troubleshoot via SSH (Working with Hiddify Menu)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Reality on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set up and use Telegram bot on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set up Telegram proxy on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to activate WARP on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to backup and restore HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-update-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to update HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Reset HiddifyManager to default
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup SSH proxy on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use subdomains of a website in Reality
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Hiddify Reality Scanner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/IPv6-usage-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 Usage Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to import X-UI to HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Domain, Worker, CDN and tunneling
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Domain, Worker, CDN and tunneling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain, Worker, CDN and tunneling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Domain-types-and-how-to-register-them/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain types and how to register them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Get-Cloudflare-API/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial on automating subdomain registration on Cloudflare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide-for-domain-fronting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Domain Fronting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    What is Cloudflare's clean IP and how to find it
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    What is Cloudflare's clean IP and how to find it
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-bashsizs-scanner" class="md-nav__link">
+    Using Bashsiz's scanner
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Bashsiz's scanner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-on-linux-version" class="md-nav__link">
+    Run on Linux version
+  </a>
+  
+    <nav class="md-nav" aria-label="Run on Linux version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-script" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-on-windows-version" class="md-nav__link">
+    Run on Windows version
+  </a>
+  
+    <nav class="md-nav" aria-label="Run on Windows version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-vahid-farids-scanner" class="md-nav__link">
+    Using Vahid Farid's scanner
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Vahid Farid's scanner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites_1" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-program" class="md-nav__link">
+    Run the program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-safa-safarians-scanner" class="md-nav__link">
+    Using Safa Safarian's scanner
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Safa Safarian's scanner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-installation" class="md-nav__link">
+    Script installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Script installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-script_1" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-do-after-finding-a-clean-ip" class="md-nav__link">
+    What to do after finding a clean IP?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use AutoCDN IP domain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-add-relay-domain-to-Hiddify-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add a relay server (domain) to HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-create-and-use-fake-domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create and use fake domain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-create-subscription-link-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create subscription link on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-set-up-and-use-Cloudflare-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup and use Cloudflare workers (Manual way)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-setup-relay-server-using-Hiddify-Relay-Builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup relay server using Hiddify Relay Builder (all in one app)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-Amazon-CDN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Amazon CDN or Cloudfront
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-Cloudflare-CDN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Cloudflare CDN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-GCore-CDN-on-Cloudflare-registered-domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use GCore CDN on Cloudflare registered domain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-a-PHP-site-for-sub-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use PHP site for sub links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-desired-clean-IPs-based-on-a-specific-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use desired clean IPs based on the specified format (for the forced to use host field)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-multiCDN-domains-in-HiddifyManager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to manage multiCDN domains in HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-the-Cloudflare-worker-domain-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Cloudflare worker domain on HiddifyManager (Automated way)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Setup-ip4toip6-tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4to6 Tunnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The-correct-format-of-admin-link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Explanations about admin link in HiddifyManager and its changes from version 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up Dokodemo-Door tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-GOST-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up GOST tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up HA-Proxy tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up IP-Table tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up IPv6 to improve Relay stability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-WST-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up WST tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-local-IPv6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up local IPv6 for Relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-using-wildcard-subdomains-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use wildcard subdomains on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../What-is-CDN-and-how-does-it-help-us%3F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is CDN and how does it help us?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic concepts and troubelshooting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Basic concepts and troubelshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic concepts and troubelshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Suitable Method for Finding TLS Trick Values and How to Configure Them from HiddifyManager and Hiddify app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/Basic-Concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Disable SSH Password Authentication on SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How MUX works and its usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How the TLS Trick works and its usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to address VPS abuse issue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change SSH port on your server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to check and prevent DNS leaks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time Zone Leak
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to disable IP version 6 on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to do speed test on server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to enbale Swap on Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to make sure the server's IP or domain is clean
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to monitor server resources on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-set-DNS-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set DNS server on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup Firewall on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to transfer files between a server and a computer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TLS setting for increased security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting connectivity issues with HiddifyManager and proxies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client software on android
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Client software on android
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client software on android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyClashAndroid app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-HiddifyNG-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyNG app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-Nekobox-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Nekobox app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-V2rayNG-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for V2rayNG app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client software on iOS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Client software on iOS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client software on iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-Fair-VPN-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Fair VPN app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-FoXray-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for FoXray app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-ShadowRocket-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for ShadowRocket app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-SingBox-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for SingBox app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-Stash-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Stash app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-Streisand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Streisand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-V2Box-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for V2Box app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client software on desktop
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Client software on desktop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client software on desktop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyClashDesktop software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/Tutorial-for-HiddifyN-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyN software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/Tutorial-for-QV2ray-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for QV2ray software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    contribution
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            contribution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    contribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribution/How-to-contribute-to-this-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to contribute to this project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribution/How-to-use-API-in-HiddifyManager-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use API in HiddifyManager project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index-old/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    App Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            App Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/old-index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/HiddifyCli-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use HiddifyCli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Enable Free Internet Access for Clients Behind an OpenWrt Router Using HiddifyCli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-contribute-to-this-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to contribute to this project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-install-Hiddify-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-Hiddify-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-HiddifyCli-on-OpenWrt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use HiddifyCli on OpenWrt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-UDP-Turn-Relay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use UDP Turn Relay in HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-WARP-on-Hiddify-App/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Use WARP on HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/URL-Scheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    URL scheme in HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/anniversary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anniversary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/hello/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../donation-and-support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donation and support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Us
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../privacy-policy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-bashsizs-scanner" class="md-nav__link">
+    Using Bashsiz's scanner
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Bashsiz's scanner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-on-linux-version" class="md-nav__link">
+    Run on Linux version
+  </a>
+  
+    <nav class="md-nav" aria-label="Run on Linux version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-script" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-on-windows-version" class="md-nav__link">
+    Run on Windows version
+  </a>
+  
+    <nav class="md-nav" aria-label="Run on Windows version">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-vahid-farids-scanner" class="md-nav__link">
+    Using Vahid Farid's scanner
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Vahid Farid's scanner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites_1" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-program" class="md-nav__link">
+    Run the program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-safa-safarians-scanner" class="md-nav__link">
+    Using Safa Safarian's scanner
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Safa Safarian's scanner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-installation" class="md-nav__link">
+    Script installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Script installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-script_1" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-do-after-finding-a-clean-ip" class="md-nav__link">
+    What to do after finding a clean IP?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/hiddify/hiddify.com/edit/main/docs/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<div dir="ltr">
+<h1 id="guide-for-finding-a-clean-cloudflare-ip">Guide for finding a clean Cloudflare IP</h1>
+<p>The largest CDN service provider in the world is Cloudflare, and you probably know; Due to the severe filtering of the Internet in Iran, there is a lot of disruption to its services because it is not possible for the filter to completely filter it, but it can cause disruption.
+Here, if you also use CDN Cloudflare services; You will be affected by these disorders. To reduce the impact of these disturbances, you should find clean IPs (IPs that are not disturbed).</p>
+<p>Here are some ways of working for this issue. </p>
+<div class="admonition tip">
+<p class="admonition-title">tip</p>
+<p>Before starting, it is emphasized that all these tests must be done on the client system without connecting to VPN.</p>
+</div>
+<h2 id="using-bashsizs-scanner">Using Bashsiz's scanner</h2>
+<p>Mr. Bashsiz is an Iranian engineer who has developed a program called CFScanner, which can be used to test the list of Cloudflare IPs on different networks and reach the clean Cloudflare IPs.</p>
+<p>This program has been released in several versions including Linux and Windows. Versions available until the date of editing this article:
+- Bash
+- Docker
+- Windows
+- Python
+- Golang
+- Android</p>
+<p>To do this, first download the desired version <a href="https://github.com/MortezaBashsiz/CFScanner">here</a> and then follow how to run it based on the desired operating system.</p>
+<details>
+<summary>
+<h3 id="run-on-linux-version">Run on Linux version</h3> (Click here)</summary>
+<p>Download the program files and first see Mr. Bashsiz's explanation of how to run it in the video below (persian).</p>
+<p><a href="https://www.youtube.com/watch?v=BKLRAHolhvM"><img alt="" src="https://user-images.githubusercontent.com/125398461/229997889-eaf51d2c-e5e1-4899-aa34-6c2c73375f10.png" /></a></p>
+<p>This program has prerequisites that must be installed in advance.
+<a href="https://stedolan.github.io/jq/">jq</a>&nbsp;&nbsp;&nbsp;<a href="https://git-scm.com/">git</a>&nbsp;&nbsp;&nbsp;<a href="https://command-not-found.com/tput">tput</a>&nbsp;&nbsp;&nbsp;<a href="https://www.gnu.org/software/bc/">bc</a>&nbsp;&nbsp;&nbsp;<a href="https://curl.se/download.html">curl</a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.gnu.org/software/parallel/">parallel</a></p>
+<p>Then first clone it on your system with the following code.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git clone https://github.com/MortezaBashsiz/CFScanner.git 
+</span></code></pre></div>
+Go to the app download folder and run access to it. 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cd CFScanner/bash
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>chmod +x ../bin/*
+</span></code></pre></div>
+Download the config.real file. 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl -s https://raw.githubusercontent.com/MortezaBashsiz/CFScanner/main/bash/ClientConfig.json -o config.real
+</span></code></pre></div>
+It is recommended to change the config.real file based on your configuration.</p>
+<p><img alt="PICTURE" src="https://user-images.githubusercontent.com/125398461/234565256-4ebeb511-4876-483a-84c5-cb39d62a12ae.png" /></p>
+<p>If you want to have your own configuration file, save it under a different name that will not change when the script is updated.</p>
+<h4 id="run-the-script">Run the script</h4>
+<p>Go to the location of the downloaded script file and then run the script as shown below.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>bash cfScanner.sh SUBNET DOWN threads tryCount config.real speed custom.subnets
+</span></code></pre></div>
+<p><img alt="222946688-bcec3d65-7bf1-495a-b1bf-fe517f69f8822" src="https://user-images.githubusercontent.com/125398461/234751332-e0fa6e6b-5b97-445b-bd50-12c9d603d556.png" /></p>
+<p>For example:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>bash cfScanner.sh SUBNET DOWN 8 1 config.real 100 custom.subnets
+</span></code></pre></div>
+Finally, the test result is placed in the <code>result</code> folder, which you can view and use. More information on the program <a href="https://github.com/MortezaBashsiz/CFScanner/tree/main/bash">wiki</a>.</p>
+</details>
+<details>
+<summary>
+<h3 id="run-on-windows-version">Run on Windows version</h3> (Click here)</summary>
+<details>
+<summary>
+<h4 id="prerequisites">Prerequisites</h4>
+</summary>
+<p>First, there must be prerequisites that will be explained in order:</p>
+<ul>
+<li>Download the Windows scanner app from <a href="https://github.com/MortezaBashsiz/CFScanner/tree/main/windows">the project's GitHub</a></li>
+<li>Install .NET Desktop Runtime 6 app from the main application site given below</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+</span></code></pre></div>
+<ul>
+<li>Checking TLS Handshake
+For this, you must first enter the program folder and open <code>Command Prompt</code> inside that folder. That is, <code>Shift+Right click</code> on the folder and select <code>Open in Windows Terminal</code>.</li>
+</ul>
+<p>Run the following command in the terminal environment.</p>
+<p><code>‍‍.\v2ray.exe tls ping sub.yourdomain.com</code></p>
+<p>Put your subdomain instead of <code>sub.yourdomain.com</code>. If handshake <code>succeeded</code> message appears; It means that the scanner is ready to use, otherwise you should make temporary changes in the certificate settings on Cloudflare website.</p>
+<p>Set the TLS version to TLS 1.0 and disable the TLS 1.3 option.</p>
+<p><img alt="Image" src="https://user-images.githubusercontent.com/125398461/234774581-c1a07bdb-352f-43cc-97f7-2ce6c87a761d.png" /></p>
+<ul>
+<li>Note: Don't forget to return these options to the first state after testing.</li>
+<li>Prepare the config template structures for testing.
+If you want to test your configurations, you must apply them in the Json file related to the connection in the program folder. This change needs to be applied in <code>inbound</code>.</li>
+</ul>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  &quot;inbounds&quot;: [{
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    &quot;port&quot;: &quot;PORTPORT&quot;, 
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    &quot;tag&quot;: &quot;socks-inbound&quot;,
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    &quot;protocol&quot;: &quot;socks&quot;,
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    &quot;settings&quot;: {
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>...
+</span></code></pre></div>
+And also apply this change in <code>outbound</code>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>&quot;outbounds&quot;: [
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>   {
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>   &quot;protocol&quot;: &quot;vmess&quot;,
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>   &quot;settings&quot;: {
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>     &quot;vnext&quot;: [{
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>       &quot;address&quot;: &quot;IP.IP.IP.IP&quot;,
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>...
+</span></code></pre></div>
+<p>Now, for ease of work, some examples of configuration templates that iSegaro has worked hard to present; You can choose one according to your needs.</p>
+<ul>
+<li>
+<p>Be careful, in these structures, only in the <code>outbounds</code> part, you should change the configuration specifications including 5 parts <code>Port, UUID, PATH, HOST, SNI</code>, which are marked with the word <code>xxxxx</code>, so wherever there is the word <code>xxxxx</code>, change it only depending on your configuration. And do not change the rest of the codes.</p>
+</li>
+<li>
+<p>Example template for Vmess+WS+TLS :</p>
+</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  &quot;inbounds&quot;: [{
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    &quot;port&quot;: &quot;PORTPORT&quot;, 
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    &quot;tag&quot;: &quot;socks-inbound&quot;,
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    &quot;protocol&quot;: &quot;socks&quot;,
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    &quot;settings&quot;: {
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>      &quot;auth&quot;: &quot;noauth&quot;,
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>      &quot;udp&quot;: false,
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>      &quot;ip&quot;: &quot;127.0.0.1&quot;
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    },
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    &quot;sniffing&quot;: {
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>      &quot;enabled&quot;: true,
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>      &quot;destOverride&quot;: [&quot;http&quot;, &quot;tls&quot;]
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>    }
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>  }],
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  &quot;outbounds&quot;: [
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>    {
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>    &quot;protocol&quot;: &quot;vmess&quot;,
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>    &quot;settings&quot;: {
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>      &quot;vnext&quot;: [{
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>        &quot;address&quot;: &quot;IP.IP.IP.IP&quot;, 
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>        &quot;port&quot;: xxxxx,
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>        &quot;users&quot;: [{&quot;id&quot;: &quot;xxxxx&quot; }]
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>      }]
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>    },
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>        &quot;streamSettings&quot;: {
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>        &quot;network&quot;: &quot;ws&quot;,
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>        &quot;security&quot;: &quot;tls&quot;,
+</span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>        &quot;wsSettings&quot;: {
+</span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>            &quot;headers&quot;: {
+</span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>                &quot;Host&quot;: &quot;xxxxx&quot;
+</span><span id="__span-8-33"><a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>            },
+</span><span id="__span-8-34"><a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>            &quot;path&quot;: &quot;xxxxx&quot;
+</span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>        },
+</span><span id="__span-8-36"><a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>        &quot;tlsSettings&quot;: {
+</span><span id="__span-8-37"><a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>            &quot;serverName&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-8-38"><a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>            &quot;allowInsecure&quot;: false,
+</span><span id="__span-8-39"><a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>            &quot;fingerprint&quot;: &quot;chrome&quot;,
+</span><span id="__span-8-40"><a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a>            &quot;alpn&quot;: [
+</span><span id="__span-8-41"><a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a>            &quot;http/1.1&quot;
+</span><span id="__span-8-42"><a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a>            ]
+</span><span id="__span-8-43"><a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a>        }
+</span><span id="__span-8-44"><a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a>    }
+</span><span id="__span-8-45"><a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a>    }],
+</span><span id="__span-8-46"><a id="__codelineno-8-46" name="__codelineno-8-46" href="#__codelineno-8-46"></a>  &quot;other&quot;: {}
+</span><span id="__span-8-47"><a id="__codelineno-8-47" name="__codelineno-8-47" href="#__codelineno-8-47"></a>}
+</span></code></pre></div>
+<ul>
+<li>Example template for Vless+GRPC+TLS :</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>{
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  &quot;inbounds&quot;: [{
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    &quot;port&quot;: &quot;PORTPORT&quot;, 
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    &quot;tag&quot;: &quot;socks-inbound&quot;,
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    &quot;protocol&quot;: &quot;socks&quot;,
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    &quot;settings&quot;: {
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>      &quot;auth&quot;: &quot;noauth&quot;,
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>      &quot;udp&quot;: false,
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>      &quot;ip&quot;: &quot;127.0.0.1&quot;
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    },
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    &quot;sniffing&quot;: {
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>      &quot;enabled&quot;: true,
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>      &quot;destOverride&quot;: [&quot;http&quot;, &quot;tls&quot;]
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    }
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>  }],
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>  &quot;outbounds&quot;: [
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>    {
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>    &quot;protocol&quot;: &quot;vless&quot;,
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>    &quot;settings&quot;: {
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>      &quot;vnext&quot;: [{
+</span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>        &quot;address&quot;: &quot;IP.IP.IP.IP&quot;, 
+</span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>        &quot;port&quot;: xxxxx,
+</span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>        &quot;users&quot;: [{&quot;id&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>        &quot;encryption&quot;: &quot;none&quot;
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>            }]
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>      }]
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>    },
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>        &quot;streamSettings&quot;: {
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>        &quot;network&quot;: &quot;grpc&quot;,
+</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>        &quot;security&quot;: &quot;tls&quot;,
+</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>        &quot;tlsSettings&quot;: {
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>          &quot;allowInsecure&quot;: false,
+</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>          &quot;serverName&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>          &quot;alpn&quot;: [
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a>            &quot;http/1.1&quot;
+</span><span id="__span-9-37"><a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a>          ],
+</span><span id="__span-9-38"><a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>          &quot;fingerprint&quot;: &quot;chrome&quot;
+</span><span id="__span-9-39"><a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a>        },
+</span><span id="__span-9-40"><a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a>        &quot;grpcSettings&quot;: {
+</span><span id="__span-9-41"><a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a>          &quot;serviceName&quot;: &quot;&quot;,
+</span><span id="__span-9-42"><a id="__codelineno-9-42" name="__codelineno-9-42" href="#__codelineno-9-42"></a>          &quot;multiMode&quot;: false
+</span><span id="__span-9-43"><a id="__codelineno-9-43" name="__codelineno-9-43" href="#__codelineno-9-43"></a>        }
+</span><span id="__span-9-44"><a id="__codelineno-9-44" name="__codelineno-9-44" href="#__codelineno-9-44"></a>      }
+</span><span id="__span-9-45"><a id="__codelineno-9-45" name="__codelineno-9-45" href="#__codelineno-9-45"></a>    }],
+</span><span id="__span-9-46"><a id="__codelineno-9-46" name="__codelineno-9-46" href="#__codelineno-9-46"></a>  &quot;other&quot;: {}
+</span><span id="__span-9-47"><a id="__codelineno-9-47" name="__codelineno-9-47" href="#__codelineno-9-47"></a>}
+</span></code></pre></div>
+<ul>
+<li>Example template for Trojan+WS+TLS :</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>{
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  &quot;inbounds&quot;: [{
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    &quot;port&quot;: &quot;PORTPORT&quot;, 
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    &quot;tag&quot;: &quot;socks-inbound&quot;,
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    &quot;protocol&quot;: &quot;socks&quot;,
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    &quot;settings&quot;: {
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>      &quot;auth&quot;: &quot;noauth&quot;,
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>      &quot;udp&quot;: false,
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>      &quot;ip&quot;: &quot;127.0.0.1&quot;
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    },
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    &quot;sniffing&quot;: {
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>      &quot;enabled&quot;: true,
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>      &quot;destOverride&quot;: [&quot;http&quot;, &quot;tls&quot;]
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>    }
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>  }],
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>  &quot;outbounds&quot;: [
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>    {
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>      &quot;tag&quot;: &quot;proxy&quot;,
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>      &quot;protocol&quot;: &quot;trojan&quot;,
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>      &quot;settings&quot;: {
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>        &quot;servers&quot;: [
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>          {
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>            &quot;address&quot;: &quot;IP.IP.IP.IP&quot;,
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>            &quot;method&quot;: &quot;chacha20&quot;,
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>            &quot;ota&quot;: false,
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>            &quot;password&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>            &quot;port&quot;: xxxxx,
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>            &quot;level&quot;: 1,
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>            &quot;flow&quot;: &quot;&quot;
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>          }
+</span><span id="__span-10-32"><a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>        ]
+</span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>      },
+</span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>      &quot;streamSettings&quot;: {
+</span><span id="__span-10-35"><a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>        &quot;network&quot;: &quot;ws&quot;,
+</span><span id="__span-10-36"><a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>        &quot;security&quot;: &quot;tls&quot;,
+</span><span id="__span-10-37"><a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>        &quot;tlsSettings&quot;: {
+</span><span id="__span-10-38"><a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>          &quot;allowInsecure&quot;: false,
+</span><span id="__span-10-39"><a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>          &quot;serverName&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-10-40"><a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>          &quot;alpn&quot;: [
+</span><span id="__span-10-41"><a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>            &quot;http/1.1&quot;
+</span><span id="__span-10-42"><a id="__codelineno-10-42" name="__codelineno-10-42" href="#__codelineno-10-42"></a>          ],
+</span><span id="__span-10-43"><a id="__codelineno-10-43" name="__codelineno-10-43" href="#__codelineno-10-43"></a>          &quot;fingerprint&quot;: &quot;chrome&quot;
+</span><span id="__span-10-44"><a id="__codelineno-10-44" name="__codelineno-10-44" href="#__codelineno-10-44"></a>        },
+</span><span id="__span-10-45"><a id="__codelineno-10-45" name="__codelineno-10-45" href="#__codelineno-10-45"></a>        &quot;wsSettings&quot;: {
+</span><span id="__span-10-46"><a id="__codelineno-10-46" name="__codelineno-10-46" href="#__codelineno-10-46"></a>          &quot;path&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-10-47"><a id="__codelineno-10-47" name="__codelineno-10-47" href="#__codelineno-10-47"></a>          &quot;headers&quot;: {
+</span><span id="__span-10-48"><a id="__codelineno-10-48" name="__codelineno-10-48" href="#__codelineno-10-48"></a>            &quot;Host&quot;: &quot;xxxxx&quot;
+</span><span id="__span-10-49"><a id="__codelineno-10-49" name="__codelineno-10-49" href="#__codelineno-10-49"></a>          }
+</span><span id="__span-10-50"><a id="__codelineno-10-50" name="__codelineno-10-50" href="#__codelineno-10-50"></a>        }
+</span><span id="__span-10-51"><a id="__codelineno-10-51" name="__codelineno-10-51" href="#__codelineno-10-51"></a>      },
+</span><span id="__span-10-52"><a id="__codelineno-10-52" name="__codelineno-10-52" href="#__codelineno-10-52"></a>      &quot;mux&quot;: {
+</span><span id="__span-10-53"><a id="__codelineno-10-53" name="__codelineno-10-53" href="#__codelineno-10-53"></a>        &quot;enabled&quot;: false,
+</span><span id="__span-10-54"><a id="__codelineno-10-54" name="__codelineno-10-54" href="#__codelineno-10-54"></a>        &quot;concurrency&quot;: -1
+</span><span id="__span-10-55"><a id="__codelineno-10-55" name="__codelineno-10-55" href="#__codelineno-10-55"></a>      }
+</span><span id="__span-10-56"><a id="__codelineno-10-56" name="__codelineno-10-56" href="#__codelineno-10-56"></a>    }
+</span><span id="__span-10-57"><a id="__codelineno-10-57" name="__codelineno-10-57" href="#__codelineno-10-57"></a>  ],
+</span><span id="__span-10-58"><a id="__codelineno-10-58" name="__codelineno-10-58" href="#__codelineno-10-58"></a>  &quot;other&quot;: {}
+</span><span id="__span-10-59"><a id="__codelineno-10-59" name="__codelineno-10-59" href="#__codelineno-10-59"></a>}
+</span></code></pre></div>
+<ul>
+<li>Example template for Vless+WS+TLS :</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>{
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>&quot;inbounds&quot;: [{
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    &quot;port&quot;: &quot;PORTPORT&quot;, 
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    &quot;tag&quot;: &quot;socks-inbound&quot;,
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    &quot;protocol&quot;: &quot;socks&quot;,
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    &quot;settings&quot;: {
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>      &quot;auth&quot;: &quot;noauth&quot;,
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>      &quot;udp&quot;: false,
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>      &quot;ip&quot;: &quot;127.0.0.1&quot;
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    },
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>    &quot;sniffing&quot;: {
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>      &quot;enabled&quot;: true,
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>      &quot;destOverride&quot;: [&quot;http&quot;, &quot;tls&quot;]
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>    }
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>  }],
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>  &quot;outbounds&quot;: [
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>    {
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>      &quot;tag&quot;: &quot;proxy&quot;,
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>      &quot;protocol&quot;: &quot;vless&quot;,
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a>      &quot;settings&quot;: {
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>        &quot;vnext&quot;: [{
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>        &quot;address&quot;: &quot;IP.IP.IP.IP&quot;, 
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>        &quot;port&quot;: xxxxx,
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>        &quot;users&quot;: [{&quot;id&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>        &quot;encryption&quot;: &quot;none&quot;
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a>            }]
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a>      }]
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>      },
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a>      &quot;streamSettings&quot;: {
+</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a>        &quot;network&quot;: &quot;ws&quot;,
+</span><span id="__span-11-32"><a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>        &quot;security&quot;: &quot;tls&quot;,
+</span><span id="__span-11-33"><a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a>        &quot;tlsSettings&quot;: {
+</span><span id="__span-11-34"><a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a>          &quot;allowInsecure&quot;: false,
+</span><span id="__span-11-35"><a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a>          &quot;serverName&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-11-36"><a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a>          &quot;alpn&quot;: [
+</span><span id="__span-11-37"><a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a>            &quot;http/1.1&quot;
+</span><span id="__span-11-38"><a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a>          ],
+</span><span id="__span-11-39"><a id="__codelineno-11-39" name="__codelineno-11-39" href="#__codelineno-11-39"></a>          &quot;fingerprint&quot;: &quot;chrome&quot;
+</span><span id="__span-11-40"><a id="__codelineno-11-40" name="__codelineno-11-40" href="#__codelineno-11-40"></a>        },
+</span><span id="__span-11-41"><a id="__codelineno-11-41" name="__codelineno-11-41" href="#__codelineno-11-41"></a>        &quot;wsSettings&quot;: {
+</span><span id="__span-11-42"><a id="__codelineno-11-42" name="__codelineno-11-42" href="#__codelineno-11-42"></a>          &quot;path&quot;: &quot;xxxxx&quot;,
+</span><span id="__span-11-43"><a id="__codelineno-11-43" name="__codelineno-11-43" href="#__codelineno-11-43"></a>          &quot;headers&quot;: {
+</span><span id="__span-11-44"><a id="__codelineno-11-44" name="__codelineno-11-44" href="#__codelineno-11-44"></a>            &quot;Host&quot;: &quot;xxxxx&quot;
+</span><span id="__span-11-45"><a id="__codelineno-11-45" name="__codelineno-11-45" href="#__codelineno-11-45"></a>          }
+</span><span id="__span-11-46"><a id="__codelineno-11-46" name="__codelineno-11-46" href="#__codelineno-11-46"></a>        }
+</span><span id="__span-11-47"><a id="__codelineno-11-47" name="__codelineno-11-47" href="#__codelineno-11-47"></a>      }
+</span><span id="__span-11-48"><a id="__codelineno-11-48" name="__codelineno-11-48" href="#__codelineno-11-48"></a>    }
+</span><span id="__span-11-49"><a id="__codelineno-11-49" name="__codelineno-11-49" href="#__codelineno-11-49"></a>  ],
+</span><span id="__span-11-50"><a id="__codelineno-11-50" name="__codelineno-11-50" href="#__codelineno-11-50"></a>    &quot;other&quot;: {}
+</span><span id="__span-11-51"><a id="__codelineno-11-51" name="__codelineno-11-51" href="#__codelineno-11-51"></a>}
+</span></code></pre></div>
+<p>Finally, present your configuration according to the examples for the next step or use the default configuration.</p>
+</details>
+<p>Now suppose you have completed the prerequisites; All you need is the config file of the sample program or the config file created by yourself, which is in Json format; From the menu <code>Tools &gt; Add custom v2ray config</code>, put it in the program so that the scan is done based on it, otherwise the program will scan with the default configuration.</p>
+<p><img alt="App" src="https://user-images.githubusercontent.com/125398461/234803794-7c7f5bb9-0967-4f1b-b519-9db266b7a0e7.png" /></p>
+<ol>
+<li>
+<p>From <code>Tools &gt; Add custom v2ray config</code>, you can give the desired file according to the described pattern to the software so that the scan can be done based on it.</p>
+</li>
+<li>
+<p>You can specify the download or upload test type or both.</p>
+</li>
+<li>
+<p>In this section, you can specify the number of simultaneous IPs to be tested by the scanner. It is suggested to increase this number step by step and increase or decrease it based on the CPU processing power of your system. Its default value is 4.</p>
+</li>
+<li>
+<p>The fastest IP will be displayed after the scan is completed</p>
+</li>
+<li>
+<p>The range of tested IPs is displayed</p>
+</li>
+<li>
+<p>From this section, you can give the software the IP range you want to scan based on it.</p>
+</li>
+<li>
+<p><strong>Suggestion:</strong> You can set the software to scan the entire default IP range once. For the next time, you can just scan this output (with higher accuracy), you will probably get a better result. Also, if you take an upload test, you will probably get a better result. All this depends on your efforts and creativity.</p>
+</li>
+</ol>
+</details>
+<h2 id="using-vahid-farids-scanner">Using Vahid Farid's scanner</h2>
+<p>This program has been prepared in different versions based on different platforms that you can use according to your needs.</p>
+<p>Versions available until the date of editing this article:
+* Mac
+* Windows
+* Android
+* Web</p>
+<details>
+<summary>
+<h3 id="prerequisites_1">Prerequisites</h3>
+</summary>
+<ul>
+<li>First, <a href="https://www.python.org/downloads/">download Python</a> according to your operating system.</li>
+<li>Download the compressed file of the code <a href="https://github.com/vfarid/cf-ip-scanner-py">here</a> and then extract it.</li>
+<li>Now you need to install requests.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pip install requests
+</span></code></pre></div>
+</details>
+<details>
+<summary>
+<h3 id="run-the-program">Run the program</h3>
+</summary>
+<ul>
+<li>
+<p>Open the terminal program to run in the extracted folder. That is, for example, in Windows, enter the program folder and <code>Shift+Right click</code> and then click <code>Open in Command Prompt</code> to enter the terminal from that folder. </p>
+</li>
+<li>
+<p>Now type the following command to run the program.</p>
+</li>
+</ul>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>python start.py
+</span></code></pre></div>
+- At first, you enter the required IP number.
+- In the next step, enter the maximum delay you want in milliseconds. For example, 500 means 500 milliseconds
+- You can choose the range you want to scan. Use comma to select multiple ranges and use <code>-</code> to ignore one range.
+- You can exclude multiple sufferings from the search. Use comma to select multiple ranges and use <code>-</code> to ignore one range.
+- In the next step, you can specify the size of the packets sent for scanning in kilobytes. The higher the volume, the higher the scanning accuracy, but on the other hand, the volume of traffic also increases.
+- Set the download speed according to your needs so that it finds the IPs whose download speed is higher than this value. Enter the speed in Mbps.
+- In the next step, set the upload speed according to your needs so that it finds the IPs whose upload speed is higher than this value. Enter this value in Mbps.
+- In the next step, if needed, you can enter the scanned results directly into Cloudflare or ignore it until the scan starts.
+- If you have typed <code>y</code> in the answer to the previous step, you must enter the email connected to your Cloudflare account here.
+     Then copy the <code>Zone ID</code> in the next step. To find the <code>Zone ID</code>, enter the domain settings in your account, then find and copy the <code>Zone ID</code> as shown in the image below.</p>
+<p><img alt="Image" src="https://user-images.githubusercontent.com/125398461/235452066-9be0f0d9-e314-47cc-9565-4e05158b9d00.png" /></p>
+<ul>
+<li>In this step, you need to give your global token to the software. For this, click on <code>Get your API token</code> on the main page of the dashboard.</li>
+</ul>
+<p><img alt="Image" src="https://user-images.githubusercontent.com/125398461/235454090-7a23c21a-fd1a-4fe8-9eb9-d9343402929b.png" /></p>
+<ul>
+<li>Then, on the tokens page in <code>Global API Key</code>, select the <code>View</code> option.</li>
+</ul>
+<p><img alt="Image" src="https://user-images.githubusercontent.com/125398461/235454894-4e8bad4d-6561-4dec-9d5a-859ef0f64932.png" /></p>
+<ul>
+<li>Here it will ask you for your account password and then display your token.</li>
+</ul>
+<p><img alt="Image" src="https://user-images.githubusercontent.com/125398461/235455122-9d39781e-bb9b-4abb-8c77-a4b68a07f048.png" /></p>
+<ul>
+<li>Copy this token into the software.</li>
+<li>Then give the desired subdomain to register these IPs on your domain. For example, <code>cf.yourdomain.com</code></li>
+<li>After that, the scanner will start scanning and at the end, the IPs will be displayed to you based on the given specifications. Also, if you have completed the IP registration section in Cloudflare, these IPs will also be registered in Cloudflare on the desired subdomain. That is, you will have subdomains in Cloudflare that are automatically registered with the name <code>cf.yourdomain.com</code> and with the IPs found by the scanner with the proxy turned off.</li>
+</ul>
+</details>
+<h2 id="using-safa-safarians-scanner">Using Safa Safarian's scanner</h2>
+<p>This scanner has been developed in several versions that you can use according to your needs.</p>
+<p>Versions available until the date of editing this article:
+- Windows
+- Mac
+- Android</p>
+<details>
+<summary>
+<h3 id="script-installation">Script installation</h3>
+</summary>
+<details>
+<summary>
+<h4 id="windows">Windows</h4>
+</summary>
+<ul>
+<li>First, download Python from <a href="https://www.python.org/downloads/windows/">this link</a>.</li>
+<li>When installing Python, don't forget to check pip installation and add Python to PATH.</li>
+<li>Download the <a href="https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/heads/main.zip">original compressed scanner</a> file and extract it.</li>
+<li>Open a <code>Command Prompt</code> terminal in the extracted path. That is, enter the extracted path. Press <code>Shift+Right click</code> to open terminal.</li>
+<li>Use the following command to install the prerequisites.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>pip install -r ./requirements.txt
+</span></code></pre></div>
+<ul>
+<li>After installing the prerequisites, the work is finished and it is time to run the program.</li>
+</ul>
+</details>
+<details>
+<summary>
+<h4 id="android">Android</h4>
+</summary>
+<ul>
+<li>To install on the Android operating system, you need a program called Termux, which you can download <a href="https://github.com/termux/termux-app/releases/">here</a>.</li>
+<li>Here you will come across several apk files from which you should select one based on your device type. If you do not know the type of your Android device, download and install armeabi-v7a version.</li>
+<li>Next, by opening the Termux program, the command line will be shown to you, enter the following commands in order.</li>
+<li>In the installation process, answer all the questions with <code>y</code>.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>pkg update -y; pkg install -y python python-pip openssl python-cryptography
+</span></code></pre></div>
+<ul>
+<li>Then run the following command.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>curl -sLo main.zip https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/heads/main.zip &amp;&amp; unzip -qq main.zip &amp;&amp; rm main.zip
+</span></code></pre></div>
+<ul>
+<li>After that enter the program folder and install the prerequisites.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>cd ss-cloud-scanner-main
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>pip install -r ./requirements.txt
+</span></code></pre></div>
+<ul>
+<li>After installing the prerequisites, the work is finished and it is time to run the program.</li>
+</ul>
+</details>
+</details>
+<details>
+<summary>
+<h3 id="run-the-script_1">Run the script</h3>
+</summary>
+<ul>
+<li>With the following command, the program starts.</li>
+</ul>
+<p>python main.py</p>
+<ul>
+<li>As soon as it runs, the program will ask you for the number of required IPs.</li>
+<li>In the next step, the type of scan can be specified.</li>
+<li>Then it will ask you to scan with <code>https</code> or <code>http</code>.</li>
+<li>And then it starts scanning and after some time healthy IPs (if any) will appear on the screen.</li>
+<li>If type 2 is selected, it will ask you for the <code>uuid</code>, <code>domain</code>, <code>port</code>, and <code>path</code> of the proxy used, and as soon as you enter them in the desired places, the scanning operation will begin. Thus mode 2 will scan with your config settings.</li>
+</ul>
+<p><strong>Speed mode</strong></p>
+<p>This type of scanning uses an alternative worker due to the whitelist of SNI in Iran, which greatly increases the efficiency of this scanning model.</p>
+<p><strong>Vmess mode</strong>
+This scanning model practically simulates a proxy connection by creating a Vmess packet and sending it to the server with Websocket. Alternative scanners do this using V2ray or Xray kernels, but this scanner does this purely with Python. has implemented</p>
+<p><a href="https://github.com/SafaSafari/ss-cloud-scanner">Refrence</a></p>
+</details>
+<h2 id="what-to-do-after-finding-a-clean-ip">What to do after finding a clean IP?</h2>
+<p>After finding a clean IP; You can register it with a DNS record without . That is, create a subdomain on Cloudflare. Turn off the proxy and enter the IP.</p>
+<p><img alt="PICTURE" src="https://user-images.githubusercontent.com/125398461/234565984-a2560018-7106-421f-850d-fb9db5687b26.png" /></p>
+<p>If you need more information about the domain, <a href="/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/">click here</a>.</p>
+<p>Then in the HiddifyManager, you can put it in the CDN domain settings in the <code>Force to use host field in the CDN configuration</code>. <a href="/manager/wiki/How-to-configure-Hiddify-Panel-properly#cdn-domain">More details</a></p>
+<p><img alt="Screenshot_20230427_0656192" src="https://user-images.githubusercontent.com/125398461/234752684-280b90e8-0b00-4106-b744-b06117821b0f.png" /></p>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 27, 2026 05:35:24 UTC">February 27, 2026</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/hiddify/docs.hiddify.com/issues/new/?title=[Feedback]+What%20is%20Cloudflare%27s%20clean%20IP%20and%20how%20to%20find%20it+-+/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+  <h2 id="__comments">Comments</h2>
+
+  <script src="https://giscus.app/client.js"
+  data-repo="hiddify/hiddify-manager"
+  data-repo-id="R_kgDOIEqHxA"
+  data-category-id="DIC_kwDOIEqHxM4CT94H"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="body-font relative bg-transparent py-4 text-secondary border-t border-white px-3 md:px-16 lg:px-28 xl:px-36">
+  <div class="md-footer__inner md-grid flex flex-col flex-wrap md:flex-row md:flex-nowrap text-left">
+
+    <!-- Social media links and description (first for Farsi, last for English) -->
+    <div class="md:w-64 flex-shrink-0 md:mx-0 px-4 order-last">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-start gap-5">
+        <a class="title-font flex items-center font-medium text-white md:justify-start">
+          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="40" />
+        </a>
+        <!-- Social icons for mobile view -->
+        <div class="items-end justify-start gap-5 flex md:hidden">
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://www.youtube.com/@hiddify">
+              <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://twitter.com/hiddify_com">
+              <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://t.me/hiddify">
+              <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://instagram.com/hiddify_com">
+              <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://github.com/hiddify">
+              <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-5 mb-5 text-secondary text-sm text-left">
+        
+          To ensure seamless access to an unrestricted internet experience with a powerful and professional anti-censorship tool, follow us on social media.
+        
+      </p>
+      <!-- Desktop social icons -->
+      <div class="items-end justify-start gap-5 hidden md:flex">
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://www.youtube.com/@hiddify">
+            <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://x.com/hiddify_com">
+            <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://t.me/hiddify">
+            <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://instagram.com/hiddify_com">
+            <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://github.com/hiddify/Hiddify-Manager">
+            <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download section (second in Farsi, first in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-1">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          Get Hiddify app
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        
+          <li><a href="https://app.hiddify.com/ios" target="_blank" class="text-sm text-secondary"> 📲 iOS</a></li>
+          <li><a href="https://app.hiddify.com/play" target="_blank" class="text-sm text-secondary"> 🤖 Android </a></li>
+          <li><a href="https://app.hiddify.com/windows" target="_blank" class="text-sm text-secondary"> 🪟 Windows </a></li>
+          <li><a href="https://app.hiddify.com/mac" target="_blank" class="text-sm text-secondary"> 🍏 macOS</a></li>
+          <li><a href="https://app.hiddify.com/linux" target="_blank" class="text-sm text-secondary"> 🐧 Linux </a></li>
+        
+      </nav>
+    </div>
+
+    <!-- Installation guide section (third in Farsi, second in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-2">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          Setup HiddifyManager
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        
+          <li><a href="https://hiddify.com/manager/installation-and-setup/guide/" class="text-sm text-secondary"> ⚙️ Main Guide </a></li>
+          <li><a class="text-sm text-secondary" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"> 📦 Hetzner</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="text-sm text-secondary"> 🚀 Oracle</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" class="text-sm text-secondary"> 🗺️ Vultre</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" class="text-sm text-secondary"> 🏭 OVH</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="text-sm text-secondary"> 🏢 Azure</a></li>
+          <li><a href="https://hiddify.com/manager/installation-and-setup/Install-Hiddify-using-Docker/" class="text-sm text-secondary"> 🚢 Docker</a></li>
+        
+      </nav>
+    </div>
+
+    <!-- Support section (last in Farsi, third in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-3">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          Support
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        <li>
+          <a class="text-sm text-secondary" href="https://t.me/hiddify">
+            
+              👥 Join Telegram Group
+            
+          </a>
+        </li>
+        <li>
+          <a class="text-sm text-secondary" href="https://youtube.com/@hiddify">
+            
+              🎬 Subscribe To YouTube 
+            
+          </a>
+        </li>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better. Google Analytics needs your consent.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "toc.follow", "navigation.top", "content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "search.suggest", "search.share", "search.highlight", "announce.dismiss", "navigation.footer", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+        <script src="../../../assets/js/site.js"></script>
+      
+        <script src="../../../assets/js/svginject.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="favicon" href="/assets/favicon.ico" />
+  <meta property="description" content="Hiddify, for a free internet" data-rh="true" />
+  <link data-rh="true" rel="canonical" href="https://hiddify.com/" />
+  <meta property="og:title" content="Hiddify | Hiddify" data-rh="true" />
+
+  <title>Hiddify | Internet Freedom Solution</title>
+  <link href="/assets/css/site.css" rel="stylesheet" />
+  <style>
+    html,
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+      /* Set the background image */
+      background-image: url('/assets/background-color.png');
+
+      /* Cover the entire page */
+      background-size: cover;
+
+      /* Center the background image */
+      background-position: center;
+
+      /* Do not repeat the image */
+      background-repeat: no-repeat;
+
+      /* Fix the background (won't scroll with the content) */
+      background-attachment: scroll;
+    }
+  </style>
+
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      border-radius: 20px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: white;
+      border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="md:mb-10 lg:mb-24 px-3 md:px-10 lg:px-20">
+    <nav class="flex items-center justify-between py-10">
+      <div class="justify-start items-center w-full hidden md:flex">
+        <a href="/" class="items-center flex">
+          <img src="/assets/hiddify-logo.png" alt="Hiddify Logo" height="40" />
+        </a>
+      </div>
+      <div class="w-full hidden md:flex items-center justify-end gap-8 text-[#212529]">
+        <a href="/app" class="py-2 w-fit no-underline hover:text-primary">
+          App
+        </a>
+        <a href="/manager" class="py-2 w-fit no-underline hover:text-primary">
+          Manager
+        </a>
+        <a href="/about-us" class="py-2 w-fit no-underline hover:text-primary">
+          About Us
+        </a>
+        <a href="/fa/app" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
+          <img style="display:inline"
+            src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png"
+            alt="Lang_farsi">
+          <span>فارسی</span>
+        </a>
+      </div>
+      <div class="flex justify-start items-center w-fit h-7 md:hidden">
+        <a href="/" class="flex items-center h-7">
+          <img src="/assets/hiddify-logo.png" alt="Hiddify Logo" height="28" class="h-7" />
+        </a>
+      </div>
+      <div id="menu-btn" class="flex justify-center items-center w-fit md:hidden cursor-pointer">
+        <img src="/assets/three-dots.svg" alt="hero" height="24" decoding="async" loading="lazy" />
+      </div>
+    </nav>
+    <div id="sidebar"
+      class="w-[250px] bg-[#e8cff1] hidden max-h-screen h-screen fixed right-0 top-0 px-10 py-20 flex-col gap-5 z-50">
+      <div id="close-sidebar-btn"
+        class="absolute top-5 left-5 flex justify-center items-center w-fit md:hidden cursor-pointer">
+        <img src="/assets/close-button.svg" alt="hero" height="24" decoding="async" loading="lazy" />
+      </div>
+      <div class="flex justify-start items-center w-fit h-7 md:hidden">
+        <a href="/" class="flex items-center h-7">
+          <img src="/assets/hiddify-logo.png" alt="Hiddify Logo" height="28" class="h-7" />
+        </a>
+      </div>
+      <a href="/app" class="py-2 w-fit no-underline hover:text-primary">
+        App
+      </a>
+      <a href="/manager" class="py-2 w-fit no-underline hover:text-primary">
+        Manager
+      </a>
+      <a href="/about-us" class="py-2 w-fit no-underline hover:text-primary">
+        About Us
+      </a>
+      <a href="/fa/app" class="py-2 w-fit px-2 no-underline hover:text-primary flex items-center gap-2">
+        <img style="display:inline"
+          src="https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png"
+          alt="Lang_farsi">
+        <span>فارسی</span>
+      </a>
+    </div>
+  </header>
+  <main class="2xl:flex 2xl:justify-center">
+    <div class="px-3 md:px-10 lg:px-20 2xl:max-w-[1920px]">
+      <h1 class="text-primaryText title-font text-4xl">Hiddify App Guide</h1>
+      <div class="py-10">
+        <p class="text-secondaryText text-xl">
+          HiddifyApp is a client based on <a class="underline underline-offset-2"
+            href="https://github.com/SagerNet/sing-box">Sing-box</a> that serves as a
+          universal proxy tool-chain which offers a wide
+          range
+          of features and protocols. The appropriate and detailed information are accessible <a
+            class="underline underline-offset-2"
+            href="https://github.com/hiddify/hiddify-next/blob/main/README.md">here</a>. This page
+          contains
+          tutorial guides related to this project.
+        </p>
+      </div>
+      <section class="flex flex-col gap-5 items-center justify-center py-10">
+        <section
+          class="relative w-full md:max-w-[900px] rounded-3xl border-2 border-white bg-white bg-opacity-20 shadow-lg">
+          <div class="flex flex-col md:flex-row h-full md:max-h-[450px]" id="section-1">
+            <div class="px-8 py-8 w-full md:w-2/3">
+              <img src="/assets/hiddify-app.png" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
+              <div class="flex flex-col gap-2">
+                <h1 class="text-primaryText title-font text-lg mb-3">Hiddify App</h1>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/app/How-to-install-Hiddify-app/" target="_blank" class="text-secondaryText text-sm">How
+                    to install HiddifyApp</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/app/How-to-use-Hiddify-app" target="_blank" class="text-secondaryText text-sm">How to use
+                    HiddifyApp
+                  </a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/app/HiddifyCli-guide/" target="_blank" class="text-secondaryText text-sm">How to use
+                    HiddifyCli</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/app/How-to-use-UDP-Turn-Relay/" target="_blank" class="text-secondaryText text-sm">How to
+                    use
+                    UDP Turn Relay in HiddifyApp</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/app/How-to-contribute-to-this-project/" target="_blank"
+                    class="text-secondaryText text-sm">How
+                    to contribute to this project</a>
+                </div>
+
+                <div class="flex flex-col gap-2 md:hidden" id="section-content-1">
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                    </div>
+                    <a href="/app/URL-Scheme/" target="_blank" class="text-secondaryText text-sm">
+                      URL scehme in HiddifyApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </div>
+  </main>
+
+  <footer
+    class="body-font relative bg-transparent py-4 text-secondary border-t border-white px-3 md:px-16 lg:px-28 xl:px-36">
+    <div class="flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start">
+      <div class="w-full md:w-64 flex-shrink-0 md:mx-0 px-4 text-left">
+        <div class="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+          <a class="title-font flex items-center font-medium text-white md:justify-start">
+            <img src="/assets/hiddify-logo.png" alt="hero" height="40" />
+          </a>
+          <div class="items-end justify-start gap-5 flex md:hidden">
+            <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+              <a href="https://www.youtube.com/@hiddify">
+                <img src="/assets/socials/youtube.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+              </a>
+            </div>
+            <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+              <a href="https://twitter.com/hiddify_com">
+                <img src="/assets/socials/x.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+              </a>
+            </div>
+            <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+              <a href="https://t.me/hiddify">
+                <img src="/assets/socials/telegram.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+              </a>
+            </div>
+            <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+              <a href="https://github.com/hiddify/Hiddify-Manager">
+                <img src="/assets/socials/github.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="mt-5 mb-10 text-secondary text-sm">
+          To ensure everyone can access the unrestricted internet easily with a powerful and
+          professional anti-censorship tool
+        </p>
+        <div class="items-end justify-start gap-5 hidden md:flex">
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://www.youtube.com/@hiddify">
+              <img src="/assets/socials/youtube.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://twitter.com/hiddify_com">
+              <img src="/assets/socials/x.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://t.me/hiddify">
+              <img src="/assets/socials/telegram.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://github.com/hiddify/Hiddify-Manager">
+              <img src="/assets/socials/github.svg" alt="linux" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="-mb-10 mt-10 flex flex-grow flex-wrap md:mt-0 md:pl-20 text-left">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <h2 class="title-font mb-3 text-lg text-secondary">Download Client</h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> Android </a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> IOS </a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> Windows </a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> MacOS </a>
+            </li>
+            <li>
+              <a href="https://app.hiddify.com/" target="_blank" class="text-sm text-secondary"> Linux </a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <h2 class="title-font mb-3 text-lg text-secondary">Setup Hiddify Manager</h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-On-Ubuntu"
+                class="text-sm text-secondary">
+                Ubuntu
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Install-Hiddify-using-Docker"
+                class="text-sm text-secondary">
+                Docker
+              </a>
+            </li>
+            <li>
+              <a class="text-sm text-secondary"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Hetzner-Servers">
+                Hetzner
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Oracle-Cloud"
+                class="text-sm text-secondary">
+                Oracle Cloud
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Vultr-Servers"
+                class="text-sm text-secondary">
+                Vultr
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-OVH-Servers"
+                class="text-sm text-secondary">
+                OVH
+              </a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <h2 class="title-font mb-3 text-lg text-secondary">Support</h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-sm text-secondary" href="https://github.com/hiddify/Hiddify-Manager/wiki/">
+                Visit GitHub Wiki
+              </a>
+            </li>
+            <li>
+              <a class="text-sm text-secondary" href="https://t.me/hiddify"> Join Telegram Group </a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-center">
+        <p class="text-center text-sm sm:text-left">
+          Powered by 2024 Hiddify team. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var menuBtn = document.getElementById("menu-btn");
+    var sideBar = document.getElementById("sidebar");
+    var closeSideBarBtn = document.getElementById("close-sidebar-btn")
+
+    menuBtn.addEventListener("click", function () {
+      sideBar.classList.remove("hidden");
+      sideBar.classList.add("flex");
+    });
+
+    closeSideBarBtn.addEventListener("click", function () {
+      sideBar.classList.remove("flex");
+      sideBar.classList.add("hidden");
+    });
+
+    function readMore(id) {
+      const readMoreBtn = document.getElementById(`read-more-${id}`)
+      const arrowIcon = document.getElementById(`arrow-${id}`)
+      const hiddenContent = document.getElementById(`section-content-${id}`)
+      const section = document.getElementById(`section-${id}`)
+      const sectionBottom = document.getElementById(`section-bottom-${id}`)
+
+      const btnText = readMoreBtn.getElementsByTagName('span')[0].innerText
+
+      if (btnText.includes('more')) {
+        readMoreBtn.getElementsByTagName('span')[0].innerText = 'Read less'
+        hiddenContent.style.display = 'flex'
+        sectionBottom.classList.remove('absolute')
+
+        const content = document.getElementById(`section-content-${id}`)
+        section.style.maxHeight = content.offsetHeight + 450 + 'px'
+        arrowIcon.style.transform = "rotate(180deg)";
+      } else {
+        readMoreBtn.getElementsByTagName('span')[0].innerText = 'Read more'
+        hiddenContent.style.display = 'none'
+        section.style.maxHeight = 450 + 'px'
+        arrowIcon.style.transform = "rotate(0deg)";
+        sectionBottom.classList.add('absolute')
+      }
+    }
+  </script>
+</body>
+
+</html>

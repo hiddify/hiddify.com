@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://hiddify.com/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/about-us/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/about-us/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/about-us/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/all_elements/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/all_elements/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/all_elements/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/donation-and-support/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/donation-and-support/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/donation-and-support/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/privacy-policy/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/privacy-policy/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/privacy-policy/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/HiddifyCli-guide/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/HiddifyCli-guide/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/HiddifyCli-guide/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-contribute-to-this-project/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-contribute-to-this-project/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-contribute-to-this-project/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-install-Hiddify-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-install-Hiddify-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-install-Hiddify-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-use-Hiddify-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-Hiddify-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-Hiddify-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-use-HiddifyCli-on-OpenWrt/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-HiddifyCli-on-OpenWrt/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-HiddifyCli-on-OpenWrt/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-use-UDP-Turn-Relay/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-UDP-Turn-Relay/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-UDP-Turn-Relay/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/How-to-use-WARP-on-Hiddify-App/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-WARP-on-Hiddify-App/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-WARP-on-Hiddify-App/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/URL-Scheme/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/URL-Scheme/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/URL-Scheme/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/changelog/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/changelog/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/app/old-index/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/old-index/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/old-index/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/2023/09/23/one-year-anniversary-of-hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/2023/09/23/one-year-anniversary-of-hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2023/09/23/one-year-anniversary-of-hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/2024/09/23/hiddifys-second-anniversary/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/2024/09/23/hiddifys-second-anniversary/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2024/09/23/hiddifys-second-anniversary/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/2023/09/23/app-published-on-the-appstore/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/2023/09/23/app-published-on-the-appstore/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2023/09/23/app-published-on-the-appstore/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/2025/07/11/hiddifymanager-version-11-released/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/2025/07/11/hiddifymanager-version-11-released/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2025/07/11/hiddifymanager-version-11-released/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/2023/09/23/hello-world/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/2023/09/23/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2023/09/23/hello-world/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/instagram/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/instagram/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/instagram/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/changelog/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/changelog/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/index-old/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/index-old/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/index-old/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/Basic-Concepts/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/Basic-Concepts/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-android/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-android/Tutorial-for-Nekobox-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-Nekobox-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-android/Tutorial-for-V2rayNG-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-V2rayNG-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-desktop/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-FoXray-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-FoXray-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-FoXray-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-SingBox-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-SingBox-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Stash-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Stash-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Stash-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Streisand/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Streisand/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Streisand/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/client-software-on-ios/Tutorial-for-V2Box-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-V2Box-app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/IPv6-usage-guide/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/IPv6-usage-guide/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/IPv6-usage-guide/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/contribution/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/contribution/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/contribution/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/contribution/How-to-contribute-to-this-project/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/contribution/How-to-contribute-to-this-project/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/contribution/How-to-contribute-to-this-project/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/contribution/How-to-use-API-in-HiddifyManager-project/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/contribution/How-to-use-API-in-HiddifyManager-project/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/contribution/How-to-use-API-in-HiddifyManager-project/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Cloud-init-installation/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Cloud-init-installation/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Cloud-init-installation/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/How-to-connect-to-server-via-SSH/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/How-to-connect-to-server-via-SSH/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Install-Hiddify-using-Docker/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Install-Hiddify-using-Docker/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Installation-prerequisites/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Installation-prerequisites/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Installation-prerequisites/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/manager/installation-and-setup/guide/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/guide/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/guide/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/warp/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/warp/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/warp/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/archive/2025/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/archive/2025/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/archive/2025/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/archive/2024/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/archive/2024/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/archive/2024/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/archive/2023/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/archive/2023/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/archive/2023/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/category/manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/manager/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/category/anniversary/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/anniversary/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/anniversary/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/category/hello/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/hello/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/hello/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/blog/category/app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/app/"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/about-us/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/about-us/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/about-us/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/all_elements/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/all_elements/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/all_elements/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/donation-and-support/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/donation-and-support/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/donation-and-support/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/privacy-policy/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/privacy-policy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/privacy-policy/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/HiddifyCli-guide/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/HiddifyCli-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/HiddifyCli-guide/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-contribute-to-this-project/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-contribute-to-this-project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-contribute-to-this-project/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-install-Hiddify-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-install-Hiddify-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-install-Hiddify-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-use-Hiddify-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-Hiddify-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-Hiddify-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-use-HiddifyCli-on-OpenWrt/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-HiddifyCli-on-OpenWrt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-HiddifyCli-on-OpenWrt/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-use-UDP-Turn-Relay/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-UDP-Turn-Relay/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-UDP-Turn-Relay/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/How-to-use-WARP-on-Hiddify-App/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/How-to-use-WARP-on-Hiddify-App/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/How-to-use-WARP-on-Hiddify-App/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/URL-Scheme/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/URL-Scheme/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/URL-Scheme/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/changelog/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/changelog/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/app/old-index/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/app/old-index/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/app/old-index/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/2023/09/23/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2023/09/23/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/2024/09/23/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2024/09/23/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/2023/09/23/app-published-on-the-appstore/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2023/09/23/app-published-on-the-appstore/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/2025/07/11/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2025/07/11/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/2023/09/23/hello-world/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/2023/09/23/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/2023/09/23/hello-world/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/instagram/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/instagram/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/instagram/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/changelog/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/changelog/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/index-old/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/index-old/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/index-old/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/old-index/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/old-index/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Basic-Concepts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/Basic-Concepts/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-android/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-HiddifyNG-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-Nekobox-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-android/Tutorial-for-V2rayNG-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-desktop/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-FoXray-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-FoXray-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-FoXray-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-SingBox-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Stash-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Stash-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Stash-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Streisand/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-Streisand/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-Streisand/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/client-software-on-ios/Tutorial-for-V2Box-app/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/IPv6-usage-guide/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/IPv6-usage-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/IPv6-usage-guide/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/contribution/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/contribution/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/contribution/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/contribution/How-to-contribute-to-this-project/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/contribution/How-to-contribute-to-this-project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/contribution/How-to-contribute-to-this-project/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/contribution/How-to-use-API-in-HiddifyManager-project/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/contribution/How-to-use-API-in-HiddifyManager-project/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/contribution/How-to-use-API-in-HiddifyManager-project/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Cloud-init-installation/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Cloud-init-installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Cloud-init-installation/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/How-to-connect-to-server-via-SSH/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Install-Hiddify-using-Docker/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Installation-prerequisites/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Installation-prerequisites/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Installation-prerequisites/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/manager/installation-and-setup/guide/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/manager/installation-and-setup/guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/manager/installation-and-setup/guide/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/warp/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/warp/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/warp/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/archive/2025/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/archive/2025/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/archive/2025/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/archive/2024/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/archive/2024/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/archive/2024/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/archive/2023/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/archive/2023/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/archive/2023/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/category/manager/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/manager/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/manager/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/category/anniversary/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/anniversary/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/anniversary/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/category/hello/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/hello/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/hello/"/>
+    </url>
+    <url>
+        <loc>https://hiddify.com/fa/blog/category/app/</loc>
+        <lastmod>2026-02-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://hiddify.com/fa/blog/category/app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://hiddify.com/blog/category/app/"/>
+    </url>
+</urlset>

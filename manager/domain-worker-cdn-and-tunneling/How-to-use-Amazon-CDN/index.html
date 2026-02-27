@@ -1,0 +1,4252 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The proxy manager platform.">
+      
+      
+        <meta name="author" content="Hiddify.com">
+      
+      
+        <link rel="canonical" href="https://hiddify.com/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/">
+      
+      
+        <link rel="prev" href="../How-to-setup-relay-server-using-Hiddify-Relay-Builder/">
+      
+      
+        <link rel="next" href="../How-to-use-Cloudflare-CDN/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/ic_hiddify.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.5">
+    
+    
+      
+        <title>How to use Amazon CDN or Cloudfront - Hiddify</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      
+    
+
+  <script src="https://guru-widget.pages.dev/guru_widget.latest.min.js" 
+  data-text="Ask AI" 
+  data-link="https://gurubase.io/g/hiddify-manager" 
+  data-bg-color="#d5d0f8" 
+  data-icon-url="https://avatars.githubusercontent.com/u/126981719?s=48&v=4" 
+  data-font-color="#958fb5" 
+  data-margins='{"bottom": "1rem", "right": "1rem"}'>
+  </script>
+  <!-- Add scripts that need to run afterwards here -->
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/site.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-1B5433L63G"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-1B5433L63G",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-1B5433L63G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-use-amazon-cdn-or-cloudfront" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  
+  Please follow us to keep pace with the latest news:
+  
+  <a class="text-secondary" href="https://github.com/hiddify/hiddify-manager/wiki">
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> 
+        </span>
+    
+    </a> <a class="text-danger" href="https://youtube.com/@hiddify/videos">
+        &nbsp; 
+        <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg> 
+        </span>
+      </a>
+
+  <a class="text-primary" href="https://instagram.com/hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> 
+          </span>
+      </a>
+
+      <a class="text-primary" href="https://twitter.com/intent/follow?screen_name=hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> 
+          </span>
+      </a>
+      
+      <a class="text-primary" href="https://t.me/hiddify">&nbsp; 
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"/></svg> 
+        </span>  
+    </a>
+
+
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+     
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      </label>
+  
+    <!-- Link to home -->
+    <a
+    href="https://hiddify.com"
+    title="Hiddify"
+    class="md-header__button md-logo"
+    aria-label="Hiddify"
+    data-md-component="logo"
+  >
+    
+  <img src="../../../assets/hiddify-logo.svg" alt="logo">
+
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis" style="display:none">
+            Hiddify
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How to use Amazon CDN or Cloudfront
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette toggle -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+
+    <!-- User preference: color palette -->
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+
+    <!-- Site language selector -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- Site language selector -->
+<div class="md-header__option">
+    <div class="md-select">
+      
+      <button
+        class="md-header__button md-icon"
+        aria-label="Select language"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+      </button>
+      <div class="md-select__inner">
+        <ul class="md-select__list">
+          
+            <li class="md-select__item">
+              <a id="langselect-en"
+                href="./"
+                hreflang="en"
+                class="md-select__link"
+              >
+                English
+              </a>
+            </li>
+            
+          
+            <li class="md-select__item">
+              <a id="langselect-fa"
+                href="../../../fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/"
+                hreflang="fa"
+                class="md-select__link"
+              >
+                فارسی
+              </a>
+            </li>
+            
+                <script>
+                    function detectPersianLanguageOrRegion() {
+                        // List of timezones related to Iran, Afghanistan, and Tajikistan
+                        const relevantTimezones = [
+                            'Asia/Tehran', // Iran
+                            'Asia/Kabul', // Afghanistan
+                            'Asia/Dushanbe' // Tajikistan
+                        ];
+
+                        // Check user languages
+                        const languages = navigator.languages || [navigator.language];
+                        const isPersianLanguage = languages.some(lang => lang.startsWith('fa'));
+
+                        // Check user timezone
+                        const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                        const isRelevantTimezone = relevantTimezones.includes(userTimezone);
+
+                        // Return the result
+                        return isPersianLanguage || isRelevantTimezone;
+                    }
+                    function getCookie(name) {
+                        const value = `; ${document.cookie}`;
+                        const parts = value.split(`; ${name}=`);
+                        if (parts.length === 2) return parts.pop().split(';').shift();
+                    }
+
+                    // Function to set a cookie
+                    function setCookie(name, value, days) {
+                        const expires = new Date(Date.now() + days * 864e5).toUTCString();
+                        document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+                    }
+                    const cookieName = "languagePreference"; // Name of the cookie to check
+                    if (!getCookie(cookieName) && detectPersianLanguageOrRegion() && document.location.href.indexOf("fo1rce_lang")<0){
+                        console.log("rrrrr",document.referrer)
+                        if (document.referrer!=null && document.referrer.indexOf("https://hiddify.com")<0 && document.referrer.indexOf(".app.github.dev")<0)
+                        document.location=document.getElementById("langselect-fa").attributes['href'].value+window.location.hash;
+                    }
+
+                    if ( 0 &&!getCookie(cookieName) && detectPersianLanguageOrRegion())
+                        Swal.fire({
+                        title: "مشاهده سایت به زبان فارسی؟",
+                        text: "به نظر شما فارسی زبان هستید. آیا میخواهید سایت را به زبان فارسی مشاهده کنید؟",
+                        icon: "warning",
+                        showCancelButton: true,
+                        showDenyButton:true,
+                        confirmButtonText: "فارسی",
+                        denyButtonText:"English",
+                        cancelButtonText: "Cancel",
+                        reverseButtons: true,
+                        // input: "checkbox",
+                        // inputValue: 1,
+                        // inputPlaceholder: `
+                        //     Do not show this dialog again
+                        // `,
+                        }).then((result) => {
+                        if (result.isConfirmed) {
+                            document.location=document.getElementById("langselect-fa").attributes['href'].value;
+                        } else if (result.dismiss === Swal.DismissReason.deny) {
+                            Swal.fire({
+                                title: "Show the dialog again?",
+                                text: "Do you want to always show this dialog to select between english and persian?",
+                                icon: "warning",
+                                showDenyButton: true,
+                                denyButtonText:"Keep this dialog",
+                                confirmButtonText: "Always English"
+                                     
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    setCookie(cookieName, "english", 30); // Set cookie to remember th
+                                };
+                             });
+                        }
+                    });
+                </script>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hiddify" target="_blank">
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/hiddify?style=social">
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  Manager Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../app/" class="md-tabs__link">
+          
+  
+  App Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../donation-and-support/" class="md-tabs__link">
+        
+  
+    
+  
+  Donation and support
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about-us/" class="md-tabs__link">
+        
+  
+    
+  
+  About Us
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../privacy-policy/" class="md-tabs__link">
+        
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+
+<script src="https://raw.githubusercontent.com/iconfu/svg-inject/v1.2.3/dist/svg-inject.min.js"></script>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://hiddify.com" title="Hiddify" class="md-nav__button md-logo" aria-label="Hiddify" data-md-component="logo">
+      
+  <img src="../../../assets/hiddify-logo.svg" alt="logo">
+
+    </a>
+    Hiddify
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hiddify" target="_blank">
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/hiddify?style=social">
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Manager Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation and setup
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation and setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation and setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main installation guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide for setting up the domain and finalizing the installation (Initial setting after installation)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Installation-prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation prerequisites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/How-to-connect-to-server-via-SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect to server via SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install different versions of Hiddify Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-installation-on-Hetzner-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Hetzner Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-installation-on-Vultr-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Vultr Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Oracle Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-Installation-on-OVH-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on OVH Servers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick and easy installation on Microsoft Azure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Cloud-init-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Easy installation through the data center (Cloud-init)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/Install-Hiddify-using-Docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing HiddifyManager using Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation-and-setup/How-to-install-HiddifManager-Version-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install HiddifyManager Version 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Configuration and advanced settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration and advanced settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration and advanced settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to configure HiddifyManager properly (Getting familiar with its different parts)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect and troubleshoot via SSH (Working with Hiddify Menu)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Reality on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set up and use Telegram bot on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set up Telegram proxy on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to activate WARP on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to backup and restore HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-update-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to update HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Reset HiddifyManager to default
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup SSH proxy on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use subdomains of a website in Reality
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Hiddify Reality Scanner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/IPv6-usage-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 Usage Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to import X-UI to HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Domain, Worker, CDN and tunneling
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Domain, Worker, CDN and tunneling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain, Worker, CDN and tunneling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Domain-types-and-how-to-register-them/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Domain types and how to register them
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Get-Cloudflare-API/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial on automating subdomain registration on Cloudflare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide-for-domain-fronting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Domain Fronting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide-for-finding-a-clean-Cloudflare-IP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Cloudflare's clean IP and how to find it
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use AutoCDN IP domain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-add-relay-domain-to-Hiddify-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add a relay server (domain) to HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-create-and-use-fake-domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create and use fake domain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-create-subscription-link-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create subscription link on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-set-up-and-use-Cloudflare-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup and use Cloudflare workers (Manual way)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-setup-relay-server-using-Hiddify-Relay-Builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup relay server using Hiddify Relay Builder (all in one app)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to use Amazon CDN or Cloudfront
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    How to use Amazon CDN or Cloudfront
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#domain-registration" class="md-nav__link">
+    Domain registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-a-certificate" class="md-nav__link">
+    Getting a certificate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-Cloudflare-CDN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Cloudflare CDN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-GCore-CDN-on-Cloudflare-registered-domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use GCore CDN on Cloudflare registered domain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-a-PHP-site-for-sub-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use PHP site for sub links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-desired-clean-IPs-based-on-a-specific-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use desired clean IPs based on the specified format (for the forced to use host field)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-multiCDN-domains-in-HiddifyManager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to manage multiCDN domains in HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-use-the-Cloudflare-worker-domain-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use Cloudflare worker domain on HiddifyManager (Automated way)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Setup-ip4toip6-tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4to6 Tunnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The-correct-format-of-admin-link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Explanations about admin link in HiddifyManager and its changes from version 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up Dokodemo-Door tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-GOST-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up GOST tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up HA-Proxy tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up IP-Table tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up IPv6 to improve Relay stability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-WST-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up WST tunnel as relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-setting-up-local-IPv6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for setting up local IPv6 for Relay server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial-for-using-wildcard-subdomains-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use wildcard subdomains on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../What-is-CDN-and-how-does-it-help-us%3F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is CDN and how does it help us?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic concepts and troubelshooting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Basic concepts and troubelshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic concepts and troubelshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Suitable Method for Finding TLS Trick Values and How to Configure Them from HiddifyManager and Hiddify app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/Basic-Concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Disable SSH Password Authentication on SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How MUX works and its usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How the TLS Trick works and its usage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to address VPS abuse issue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change SSH port on your server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to check and prevent DNS leaks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time Zone Leak
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to disable IP version 6 on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to do speed test on server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to enbale Swap on Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to make sure the server's IP or domain is clean
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to monitor server resources on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-set-DNS-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set DNS server on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to setup Firewall on HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to transfer files between a server and a computer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TLS setting for increased security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting connectivity issues with HiddifyManager and proxies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client software on android
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Client software on android
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client software on android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyClashAndroid app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-HiddifyNG-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyNG app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-Nekobox-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Nekobox app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-android/Tutorial-for-V2rayNG-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for V2rayNG app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client software on iOS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Client software on iOS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client software on iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-Fair-VPN-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Fair VPN app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-FoXray-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for FoXray app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-ShadowRocket-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for ShadowRocket app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-SingBox-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for SingBox app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-Stash-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Stash app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-Streisand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for Streisand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-ios/Tutorial-for-V2Box-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for V2Box app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client software on desktop
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Client software on desktop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client software on desktop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyClashDesktop software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/Tutorial-for-HiddifyN-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for HiddifyN software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-software-on-desktop/Tutorial-for-QV2ray-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial for QV2ray software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    contribution
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            contribution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    contribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribution/How-to-contribute-to-this-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to contribute to this project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribution/How-to-use-API-in-HiddifyManager-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use API in HiddifyManager project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index-old/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    App Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            App Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/old-index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/HiddifyCli-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use HiddifyCli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Enable Free Internet Access for Clients Behind an OpenWrt Router Using HiddifyCli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-contribute-to-this-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to contribute to this project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-install-Hiddify-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-Hiddify-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-HiddifyCli-on-OpenWrt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use HiddifyCli on OpenWrt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-UDP-Turn-Relay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to use UDP Turn Relay in HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-WARP-on-Hiddify-App/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Use WARP on HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/URL-Scheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    URL scheme in HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/anniversary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anniversary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/hello/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../donation-and-support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Donation and support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Us
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../privacy-policy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#domain-registration" class="md-nav__link">
+    Domain registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-a-certificate" class="md-nav__link">
+    Getting a certificate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/hiddify/hiddify.com/edit/main/docs/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<div dir="ltr">
+<h1 id="how-to-use-amazon-cdn-or-cloudfront">How to use Amazon CDN or Cloudfront</h1>
+<h2 id="domain-registration">Domain registration</h2>
+<ul>
+<li>
+<p>To do this, first point an A record to your server address in DNS. Suppose you have pointed sub1.domain.com to the IP address of your server.</p>
+</li>
+<li>
+<p>Go to <a href="https://aws.amazon.com/">Amazon AWS</a> and search for Cloudfront service.</p>
+</li>
+<li>Create a destination by clicking create distribution.</li>
+<li>Enter the values in the opened page according to the image below.</li>
+</ul>
+<div align="center">
+<p><img alt="aws settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/9e1623b7-ffdc-4881-be24-b7223c63cb90" width=70% /></p>
+</div>
+<p>All values on this page are default except for the following which should be set as shown in the images.</p>
+<div align="center">
+<p><img alt="protocols policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/322d696e-cc53-4272-87ec-b5f77baa1546" width=70% /></p>
+</div>
+<div align="center">
+<p><img alt="cache policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/404b3134-de2d-4dca-a942-a524b43ed883" width=70% /></p>
+</div>
+<div align="center">
+<p><img alt="waf settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/3139e115-5c4f-41df-9d49-766e973a4d14" width=70% /></p>
+</div>
+<ul>
+<li>At the end, click on <code>create distribution</code> to perform the creation operation.</li>
+<li>In the next step, go to the location of your DNS records. Assuming that you have registered in Cloudflare, enter the DNS section of your domain and create a cname record. Suppose you create <code>sub2.domain.com</code> and set its value equal to the domain created in the previous step in AWS. This value can be seen in the <code>details</code> section under <code>Distribution domain name</code>.</li>
+</ul>
+<p>In fact, this subdomain will be used for our CDN domain.</p>
+<ul>
+<li>Go back to the AWS panel and click on the <code>edit</code> option in the <code>General</code> tab of the <code>setting</code> section and click on <code>Add item</code> in the <code>Alternate domain name (CNAME) - optional</code> section that opens. and enter the cname domain from the previous step, <code>sub2.domain.com</code>.</li>
+</ul>
+<h2 id="getting-a-certificate">Getting a certificate</h2>
+<ul>
+<li>Enter the <code>Custom SSL certificate - optional</code> section and get an <code>ssl certificate</code> for the desired domain. For this, click on <code>Request certificate</code>.</li>
+<li>
+<p>In the newly opened page, continue the process of receiving the certificate and in the <code>domain name</code> section and the address field, enter the details of the subdomain registered in the previous step, namely <code>sub2.domain.com</code> and set the other values as default. and click on <code>Request</code>.</p>
+</li>
+<li>
+<p>On the certificate list page, you can see that the desired domain status is <code>pending validation</code>. Click on the ID and see the <code>Domains</code> section on the opened page.</p>
+</li>
+</ul>
+<div align="center">
+<p><img alt="domain settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/e2a5d38a-efde-45c5-b55b-d2f395aa846a" width=70% /></p>
+</div>
+<ul>
+<li>In this section, two values of this section, <code>Cname name</code> and <code>Cname value</code> are needed to complete the certificate status.</li>
+<li>Go to your DNS records (presumably Cloudflare) and create a <code>Cname name</code> record and enter the values you had in the previous step in AWS. In Cloudflare, enter <code>Cname name</code> instead of <code>name</code> and <code>Cname value</code> instead of <code>Target</code>.</li>
+<li>Now if you go back to AWS and the certificate list page and refresh the page, you will see that the status has changed from <code>pending</code> to <code>issues</code>, which means that our domain has received the certificate correctly.</li>
+<li>Now it is back to the <code>distribution</code> settings page and the certificate derivation stage, and if you click the refresh button for <code>custom ssl</code>, you can see the certificate you received in the previous stage. Select it and leave the other values of this page as default.</li>
+</ul>
+<blockquote>
+<p>[!tip]
+Note: Be careful not to tick the <code>Legacy client support</code> because this option costs $600 per month.</p>
+</blockquote>
+<ul>
+<li>At the end, click the save changes option to save the changes.</li>
+<li>Now wait until the changes are applied and according to the image below, the state of <code>Last modified</code> will change from <code>Depoloying</code> to done to the date and time.</li>
+</ul>
+<div align="center">
+<p><img alt="done page" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/893cfd82-7ccc-4fe6-9b25-09da4272e9a3" width=70% /></p>
+</div>
+<ul>
+<li>
+<p>It usually takes between 2-5 minutes for these changes to be applied, which can be followed by refreshing the screen. Always remember that at any stage you make changes, it should change to this state, which means that the changes are fully applied and usable.</p>
+</li>
+<li>
+<p>Congratulations, the work is done. Amazon Cloudfront CDN is successfully launched. Now just register your CDN domain in your HiFi Manager.</p>
+</li>
+</ul>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 27, 2026 05:35:24 UTC">February 27, 2026</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/hiddify/docs.hiddify.com/issues/new/?title=[Feedback]+How%20to%20use%20Amazon%20CDN%20or%20Cloudfront+-+/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+  <h2 id="__comments">Comments</h2>
+
+  <script src="https://giscus.app/client.js"
+  data-repo="hiddify/hiddify-manager"
+  data-repo-id="R_kgDOIEqHxA"
+  data-category-id="DIC_kwDOIEqHxM4CT94H"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="body-font relative bg-transparent py-4 text-secondary border-t border-white px-3 md:px-16 lg:px-28 xl:px-36">
+  <div class="md-footer__inner md-grid flex flex-col flex-wrap md:flex-row md:flex-nowrap text-left">
+
+    <!-- Social media links and description (first for Farsi, last for English) -->
+    <div class="md:w-64 flex-shrink-0 md:mx-0 px-4 order-last">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-start gap-5">
+        <a class="title-font flex items-center font-medium text-white md:justify-start">
+          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="40" />
+        </a>
+        <!-- Social icons for mobile view -->
+        <div class="items-end justify-start gap-5 flex md:hidden">
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://www.youtube.com/@hiddify">
+              <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://twitter.com/hiddify_com">
+              <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://t.me/hiddify">
+              <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://instagram.com/hiddify_com">
+              <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://github.com/hiddify">
+              <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-5 mb-5 text-secondary text-sm text-left">
+        
+          To ensure seamless access to an unrestricted internet experience with a powerful and professional anti-censorship tool, follow us on social media.
+        
+      </p>
+      <!-- Desktop social icons -->
+      <div class="items-end justify-start gap-5 hidden md:flex">
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://www.youtube.com/@hiddify">
+            <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://x.com/hiddify_com">
+            <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://t.me/hiddify">
+            <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://instagram.com/hiddify_com">
+            <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://github.com/hiddify/Hiddify-Manager">
+            <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download section (second in Farsi, first in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-1">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          Get Hiddify app
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        
+          <li><a href="https://app.hiddify.com/ios" target="_blank" class="text-sm text-secondary"> 📲 iOS</a></li>
+          <li><a href="https://app.hiddify.com/play" target="_blank" class="text-sm text-secondary"> 🤖 Android </a></li>
+          <li><a href="https://app.hiddify.com/windows" target="_blank" class="text-sm text-secondary"> 🪟 Windows </a></li>
+          <li><a href="https://app.hiddify.com/mac" target="_blank" class="text-sm text-secondary"> 🍏 macOS</a></li>
+          <li><a href="https://app.hiddify.com/linux" target="_blank" class="text-sm text-secondary"> 🐧 Linux </a></li>
+        
+      </nav>
+    </div>
+
+    <!-- Installation guide section (third in Farsi, second in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-2">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          Setup HiddifyManager
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        
+          <li><a href="https://hiddify.com/manager/installation-and-setup/guide/" class="text-sm text-secondary"> ⚙️ Main Guide </a></li>
+          <li><a class="text-sm text-secondary" href="https://hiddify.com/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"> 📦 Hetzner</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="text-sm text-secondary"> 🚀 Oracle</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" class="text-sm text-secondary"> 🗺️ Vultre</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" class="text-sm text-secondary"> 🏭 OVH</a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="text-sm text-secondary"> 🏢 Azure</a></li>
+          <li><a href="https://hiddify.com/manager/installation-and-setup/Install-Hiddify-using-Docker/" class="text-sm text-secondary"> 🚢 Docker</a></li>
+        
+      </nav>
+    </div>
+
+    <!-- Support section (last in Farsi, third in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-3">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          Support
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        <li>
+          <a class="text-sm text-secondary" href="https://t.me/hiddify">
+            
+              👥 Join Telegram Group
+            
+          </a>
+        </li>
+        <li>
+          <a class="text-sm text-secondary" href="https://youtube.com/@hiddify">
+            
+              🎬 Subscribe To YouTube 
+            
+          </a>
+        </li>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better. Google Analytics needs your consent.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "toc.follow", "navigation.top", "content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "search.suggest", "search.share", "search.highlight", "announce.dismiss", "navigation.footer", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+        <script src="../../../assets/js/site.js"></script>
+      
+        <script src="../../../assets/js/svginject.js"></script>
+      
+    
+  </body>
+</html>
