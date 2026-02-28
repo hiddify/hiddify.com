@@ -3,7 +3,7 @@ title: How to set up and use Telegram bot on HiddifyManager
 weight: -130
 ---
 
-<div dir="ltr" markdown="1">
+<div dir="ltr" make ="1">
 
 # How to set up and use Telegram bot on HiddifyManager
 In Hidify, you can connect your panel to a Telegram bot and do a series of tasks related to the user section through it.
