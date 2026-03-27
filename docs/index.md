@@ -85,13 +85,13 @@ comments: false
             <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="iOS & macOS (M-Series)">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
-            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
+            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-x64.msix" role="button"  class="platform-button selected" data-platform="Windows">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
             <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS (Intel Series)">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
-            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="Linux">
+            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage" role="button"  class="platform-button" data-platform="Linux">
               <img src="/assets/platforms/linux.svg" alt="Linux">
             </a>
           </div>
