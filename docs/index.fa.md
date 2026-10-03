@@ -86,13 +86,13 @@ comments: false
             <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform=" آیفون و مکد‌اواس (سری ام)">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
-            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="ویندوز">
+            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe" role="button"  class="platform-button selected" data-platform="ویندوز">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
             <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="مک‌اواس (سری اینتل)">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
-            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="لینوکس">
+            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage" role="button" class="platform-button" data-platform="لینوکس">
               <img src="/assets/platforms/linux.svg" alt="Linux">
             </a>
           </div>
