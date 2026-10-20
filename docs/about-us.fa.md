@@ -109,7 +109,8 @@ weight: 5
           <div class="absolute left-0 lg:right-[unset] top-0 lg:top-[unset] lg:left-0 h-1/2 w-1/2 lg:h-full border-l-2 lg:border-l-0 lg:border-t-2 border-[#504A82]"></div>
           <div class="py-5 w-full flex items-center justify-center flex-col">
             <span class="text-black font-light text-sm mb-3">اکنون</span>
-            <h3 class="text-secondaryText font-medium text-base">در حال کار روی نسخه‌های بعدی</h3>
+            <h3 class="text-secondaryText font-medium text-base">هیدیفای‌منیجر نسخه ۱۴ و اپ هیدیفای نسخه ۴</h3>
+            <p class="text-secondaryText text-sm">در حال کار روی نسخه‌های بعدی</p>
           </div>
         </div>
       </div>
@@ -127,8 +128,8 @@ weight: 5
             <h1 class="font-medium text-lg text-primaryText mb-5">توسعه</h1>
             <p class="text-secondaryText text-base font-medium">
               توسعه‌دهندگان ما با <a href="https://github.com/hiddify/Hiddify-Manager"
-                class="underline underline-offset-4">هیدیفای منیجر</a> و <a
-                href="https://github.com/hiddify/hiddify-next" class="underline underline-offset-4">برنامه هیدیفای</a>
+                class="underline underline-offset-4">هیدیفای‌منیجر</a> و <a
+                href="https://github.com/hiddify/hiddify-app" class="underline underline-offset-4">برنامه هیدیفای</a>
               رویاهای ما را به واقعیت تبدیل می‌کنند.
             </p>
           </div>
@@ -147,8 +148,8 @@ weight: 5
             <img src="/assets/content.svg" class="w-full max-w-52 mb-5" />
             <h1 class="font-medium text-lg text-primaryText mb-5">محتوا</h1>
             <p class="text-secondaryText text-base font-medium">
-              ما محتوای جذاب و آموزنده‌ای از جمله <a href="https://github.com/hiddify/Hiddify-Manager/wiki"
-                class="underline underline-offset-4">ویکی جامع ما</a> و <a href="https://www.youtube.com/@hiddify"
+              ما محتوای جذاب و آموزنده‌ای از جمله <a href="/fa/manager/"
+                class="underline underline-offset-4">آموزش‌های جامع ما</a> و <a href="https://www.youtube.com/@hiddify"
                 class="underline underline-offset-4">آموزش‌های یوتیوب</a> گردآوری می‌کنیم.
             </p>
           </div>
@@ -158,7 +159,7 @@ weight: 5
             <img src="/assets/user-support.svg" class="w-full max-w-52 lg:max-w-[185px] mb-5" />
             <h1 class="font-medium text-lg text-primaryText mb-5">پشتیبانی کاربران</h1>
             <p class="text-secondaryText text-base font-medium">
-              ما همیشه برای پاسخ به سوالات شما در <a href="https://t.me/hiddify_board"
+              ما همیشه برای پاسخ به پرسش‌های شما در <a href="https://t.me/hiddify_board"
                 class="underline underline-offset-4">گروه تلگرام</a> در دسترس هستیم.
             </p>
           </div>
@@ -169,7 +170,7 @@ weight: 5
         <div class="flex flex-col gap-5 md:w-1/2">
           <h1 class="text-primaryText font-semibold text-2xl">نیازمند همکاران</h1>
           <p class="text-secondaryText text-base font-medium">
-            ما همیشه به دنبال متخصصانی هستیم که به بهبود هیدیفای کمک کنند. لطفا رزومه خود را برای ما ارسال کنید.
+            ما همیشه به دنبال متخصصانی هستیم که به بهبود هیدیفای کمک کنند. لطفاً رزومه خود را برای ما ارسال کنید.
           </p>
         </div>
 
@@ -231,8 +232,8 @@ weight: 5
             صورت
             داوطلبانه انجام می‌شود و حمایت مالی <br class="hidden md:block" /> برای توسعه پروژه صرف خواهد شد. <br
               class="hidden md:block" />
-            برای مشارکت، لطفا به <a href="https://github.com/hiddify/Hiddify-Manager/wiki/support"
-              class="underline underline-offset-4">صفحه کمک‌های مالی</a> ما در گیت‌هاب مراجعه کنید.
+            برای مشارکت، لطفاً به <a href="/fa/donation-and-support/"
+              class="underline underline-offset-4">صفحه کمک‌های مالی</a> ما مراجعه کنید.
           </p>
         </div>
       </section>

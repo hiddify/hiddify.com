@@ -15,11 +15,24 @@ comments: false
   }
 </style>
 
-# All tutorials and videos related to HiddifyManager
-HiddifyManager is an application for server installation to create a VPN server that supports multiple protocols. translate to farsi:
-The appropriate and detailed information are accessible <a
-  class="underline underline-offset-2"
-  href="https://github.com/hiddify/Hiddify-Manager/blob/main/README.md">here</a>. This page contains all the categorized tutorials related to HiddifyManager.
+# All Hiddify Manager tutorials and videos
+Hiddify Manager is free, open-source software that you install on your own server (a VPS, a rented computer in a data center) to run a VPN and proxy server for you and your users. This page lists every Hiddify Manager tutorial by topic. If you are new, start with the [main installation guide](/manager/installation-and-setup/guide/).
+
+!!! info "Hiddify Manager at a glance"
+    - **Latest version:** v14.0.5 (October 20, 2026). See all [releases on GitHub](https://github.com/hiddify/Hiddify-Manager/releases).
+    - **Supported servers:** Ubuntu 22.04, 24.04 or 26.04, on amd64 (x86_64) or arm64 processors. Ubuntu 20.04 is no longer supported. Installing with Docker is possible but still experimental.
+    - **Protocols:** VLESS, VMess, Trojan, Reality, Shadowsocks, Hysteria2, TUIC, WireGuard, AnyTLS, Snell, Naive, Mieru, xHTTP, DNS tunnels (VayDNS, Slipstream, MasterDnsVPN), Telegram proxy and more.
+    - **Source code and details:** the [Hiddify Manager repository on GitHub](https://github.com/hiddify/Hiddify-Manager).
+
+To install the latest version, connect to your server over SSH and run this command on the server:
+
+```bash
+bash <(curl https://i.hiddify.com/release)
+```
+
+The [main installation guide](/manager/installation-and-setup/guide/) explains every step. If you are upgrading from version 12 or older, take a backup first: see [how to back up and restore](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/) and [how to update](/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/).
+
+To connect to your server from a phone or computer, we recommend the [Hiddify app](/app/).
 
 <section class="flex flex-col gap-5 items-center justify-center py-10">
   <section
@@ -85,7 +98,7 @@ The appropriate and detailed information are accessible <a
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/manager/installation-and-setup/Quick-installation-on-Vultr-Servers" target="_blank"
-                class="text-secondaryText text-sm">Main
+                class="text-secondaryText text-sm">
                 Quick and easy installation on Vultr servers
               </a>
             </div>
@@ -259,7 +272,7 @@ The appropriate and detailed information are accessible <a
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/"
-                target="_blank" class="text-secondaryText text-sm">How to setup SSH proxy on Hiddify Manager
+                target="_blank" class="text-secondaryText text-sm">How to set up SSH proxy on Hiddify Manager (older versions only; removed in v13)
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -384,7 +397,7 @@ The appropriate and detailed information are accessible <a
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/"
-                target="_blank" class="text-secondaryText text-sm">How to use AutoCDN IP domain
+                target="_blank" class="text-secondaryText text-sm">How to use AutoCDN IP domain (called "CDN" domain since v13)
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -408,7 +421,7 @@ The appropriate and detailed information are accessible <a
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
-              <a href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/332?_x_tr_sl=fa&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp"
+              <a href="/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"
                 target="_blank" class="text-secondaryText text-sm">How to manage multiple CDN domains better on
                 Hiddify
               </a>
@@ -512,7 +525,7 @@ The appropriate and detailed information are accessible <a
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
-              <a href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/"
+              <a href="/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"
                 target="_blank" class="text-secondaryText text-sm">How to add a relay server (domain) to
                 Hiddify Manager
               </a>
@@ -522,7 +535,7 @@ The appropriate and detailed information are accessible <a
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/"
-                target="_blank" class="text-secondaryText text-sm">How How to create and use fake domain
+                target="_blank" class="text-secondaryText text-sm">How to create and use a fake domain
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -594,7 +607,7 @@ The appropriate and detailed information are accessible <a
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
-            <a href="/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/"
+            <a href="/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/"
               target="_blank" class="text-secondaryText text-sm">How to make sure the server's IP or domain is
               clean</a>
           </div>
@@ -624,7 +637,7 @@ The appropriate and detailed information are accessible <a
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
-            <a href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"
+            <a href="/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"
               target="_blank" class="text-secondaryText text-sm">How to check and prevent DNS leaks</a>
           </div>
 
@@ -716,7 +729,7 @@ The appropriate and detailed information are accessible <a
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
-              <a href="https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/"
+              <a href="/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/"
                 target="_blank" class="text-secondaryText text-sm">How MUX works and its usage
               </a>
             </div>
@@ -763,7 +776,7 @@ The appropriate and detailed information are accessible <a
         <img src="/assets/android_tutorials.jpg"
           class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
-          <h1 class="text-primaryText title-font text-lg mb-3">Client softwares on Android</h1>
+          <h1 class="text-primaryText title-font text-lg mb-3">Client apps on Android</h1>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
@@ -857,7 +870,7 @@ The appropriate and detailed information are accessible <a
       <div class="px-8 py-8 w-full md:w-2/3">
         <img src="/assets/ios_tutorials.jpg" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
-          <h1 class="text-primaryText title-font text-lg mb-3">Client softwares on iOS</h1>
+          <h1 class="text-primaryText title-font text-lg mb-3">Client apps on iOS</h1>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
@@ -899,7 +912,7 @@ The appropriate and detailed information are accessible <a
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
-              <a href="/manager/client-software-on-ios/Tutorial-for-Streisand/"" target=" _blank"
+              <a href="/manager/client-software-on-ios/Tutorial-for-Streisand/" target="_blank"
                 class="text-secondaryText text-sm">
                 Tutorial for Streisand
               </a>
@@ -947,7 +960,7 @@ The appropriate and detailed information are accessible <a
         <img src="/assets/desktop_tutorials.jpg"
           class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
-          <h1 class="text-primaryText title-font text-lg mb-3">Client softwares on Desktop</h1>
+          <h1 class="text-primaryText title-font text-lg mb-3">Client apps on desktop</h1>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>

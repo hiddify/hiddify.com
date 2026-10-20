@@ -63,7 +63,7 @@ comments: false
     
       
         <div class="hiddify-image">
-          <img src="/assets/hiddify-next-mobile.svg" alt="hiddify next" decoding="async" loading="lazy" />
+          <img src="/assets/hiddify-next-mobile.svg" alt="Hiddify app on a phone" decoding="async" loading="lazy" />
         </div>
         
         <div class="hiddify-content">
@@ -73,8 +73,8 @@ comments: false
           <ul class="md-typeset__list">
             <li>Easy to Use</li>
             <li>Ad-Free, Secure and Open-Source</li>
-            <li>Offers advanced features such as support for IPv6, multiple subscription link types and more
-            <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols-app">and</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
+            <li>Offers advanced features such as support for IPv6, multiple subscription link types and more</li>
+            <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols-app">and</a><span class="hidden-features"> WireGuard, AmneziaWG, Naive, Psiphon, WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, and Sing-box, V2ray, Clash and Xray configs, and many more</span></li>
           </ul>
           <a href="https://github.com/hiddify/hiddify-app" >Read more about the Hiddify and see the source codes</a>
           
@@ -85,13 +85,13 @@ comments: false
             <a id="btn-ios" href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone" role="button"  class="platform-button" data-platform="iOS & macOS (M-Series)">
               <img src="/assets/platforms/apple.svg" alt="iOS">
             </a>
-            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix" role="button"  class="platform-button selected" data-platform="Windows">
+            <a id="btn-windows" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe" role="button"  class="platform-button selected" data-platform="Windows">
               <img src="/assets/platforms/windows.svg" alt="Windows">
             </a>
-            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS (Intel Series)">
+            <a id="btn-macos" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg" role="button"  class="platform-button" data-platform="macOS">
               <img src="/assets/platforms/mac.svg" alt="macOS">
             </a>
-            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage" role="button"  class="platform-button" data-platform="Linux">
+            <a id="btn-linux" href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage" role="button"  class="platform-button" data-platform="Linux">
               <img src="/assets/platforms/linux.svg" alt="Linux">
             </a>
           </div>
@@ -115,46 +115,46 @@ comments: false
     
       
         <div class="hiddify-image">
-          <img src="/assets/hiddify-manager.png" alt="hiddify next" decoding="async" loading="lazy" />
+          <img src="/assets/hiddify-manager.png" alt="Hiddify Manager admin panel" decoding="async" loading="lazy" />
         </div>
 
   <div class="hiddify-content">
   <h1  class="d-md-none"><img src="/assets/hiddify-manager-logo.svg" alt=" Hiddify Manager" height="96"> </h1>
-    <h2>Setup your own personal and dedicated VPN server.</h2>
+    <h2>Set up your own personal and dedicated VPN server.</h2>
 
 
     <ul class="my-4 list-disc ml-4">
       <li>Effortless Installation</li>
       <li>One of the best VPN Servers for Iran, China, Russia, Brazil and the whole world</li>
       <li>Multi-Core, Multi-Domain and Unified User Management</li>
-      <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, SSH, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols-manager">and</a><span class="hidden-features"> WebSocket, Quic, gRPC, http-split, httpupgrade, ECH, Sing-box, V2ray, Xray and many more</span></li>
+      <li>Supports a wide range of proxy protocols including Hysteria2, TUIC, Reality, VMess, VLESS, Trojan <a href="#" id="show-protocols-manager">and</a><span class="hidden-features"> Shadowsocks, WireGuard, AnyTLS, Snell, Naive, Mieru, xHTTP, httpupgrade, gRPC, WebSocket, ECH, DNS tunnels, Telegram proxy, with Xray and sing-box (hiddify-core) cores, and many more</span></li>
       </ul>
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">Read more about the HiddifyManager and see the source code</a>
 
         <div tm="20px" class="button-container">
-            <a href="https://hiddify.com/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
+            <a href="/manager/installation-and-setup/guide/" class="md-button md-button--primary md-button-fill">Install on server</a>
           </div>
   </div>
 </section>
 
 <section markdown=1>
 
-## Why to choose Hiddify?
+## Why choose Hiddify?
 <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
   <div class="w-full flex flex-col items-center justify-center gap-2">
     <img src="/assets/cross-platform.png" alt="cross platform" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Cross-platform</h2>
-    <p>Available on iOS, Android,<br> Window, Linux and macOS.</p>
+    <p>Available on iOS, Android,<br> Windows, Linux and macOS.</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
-    <img src="/assets/secure.png" alt="cross platform" class="lg:max-w-[250px]" />
+    <img src="/assets/secure.png" alt="secure" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Secure and Ad-free</h2>
     <p>Open-source, non-commercial,<br> and security audited.</p>
   </div>
 
   <div class="w-full flex flex-col items-center justify-center gap-2">
-    <img src="/assets/processor.png" alt="cross platform" class="lg:max-w-[250px]" />
+    <img src="/assets/processor.png" alt="powerful features" class="lg:max-w-[250px]" />
     <h2 class="text-xl lg:text-2xl font-semibold">Powerful Features</h2>
     <p>Auto-proxy client <br>providing a wide range of features,<br> Supporting more than 30 protocols.</p>
   </div>
@@ -267,7 +267,7 @@ One of the most secure and trusted solutions for using VPN
     Hiddify is designed to work across a range of devices and operating systems, covering both server-side and client-side needs🌐:
 
     1. **Server-Side Compatibility (Hiddify Manager)** 🖥️  
-       Hiddify includes a server-side application, called **Hiddify Manager**, which installs on an Ubuntu server. Hiddify Manager can be quickly set up with Cloud-init🚀, making it easy to deploy on popular cloud providers and datacenters🌩️. This server-side application manages configurations and connections for clients, offering a powerful backend for those seeking secure and stable internet access🔐.
+       Hiddify includes a server-side application, called **Hiddify Manager**, which installs on an Ubuntu server (Ubuntu 22.04, 24.04 or 26.04). Hiddify Manager can be quickly set up with Cloud-init🚀, making it easy to deploy on popular cloud providers and datacenters🌩️. This server-side application manages configurations and connections for clients, offering a powerful backend for those seeking secure and stable internet access🔐.
 
     2. **Client-Side Compatibility (Hiddify App)** 📱  
        The Hiddify client-side application, simply called **Hiddify**, is versatile and supports all major operating systems, including:
@@ -324,7 +324,7 @@ One of the most secure and trusted solutions for using VPN
 ??? info "How can we support Hiddify?"
 
     1. **Financial Support** 💸  
-    You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](https://hiddify.com/fa/donation-and-support/).
+    You can support the Hiddify project financially to help with its development and continuation. For more information and to contribute, visit the [Hiddify Financial Support page](/donation-and-support/).
         
     2. **Starring the Hiddify Project** ⭐  
     By starring the Hiddify project, especially the repositories for [Hiddify application](https://github.com/hiddify/hiddify-app) and [Hiddify Manager](https://github.com/hiddify/hiddify-manager), you can help increase the project's visibility and credibility on GitHub.
@@ -336,7 +336,7 @@ One of the most secure and trusted solutions for using VPN
     By giving a five-star rating and writing reviews for the Hiddify app in various app stores, you can help increase its credibility and popularity, bringing it to the attention of more users. You can rate the app through the following links:  
     - [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
     - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
-    - [Microsoft Store](https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini)
+    - [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5)
         
     5. **Sharing and Raising Awareness** 📢  
     By sharing Hiddify’s products, especially the Hiddify and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.
@@ -347,7 +347,7 @@ One of the most secure and trusted solutions for using VPN
     7. **Helping with Content Creation, Especially Video Content** 🎥  
     You can help spread awareness and attract new users by creating educational and promotional content about Hiddify. Video content, such as tutorials on how to use and install Hiddify and highlighting its benefits, can be highly valuable for users. These videos can be shared on social media platforms and video-sharing sites like YouTube and Instagram to assist in better outreach and engagement.
         
-    8. **Providing Feedback and Reporting Issues** 📝
+    8. **Providing Feedback and Reporting Issues** 📝  
     By using the Hiddify app and submitting your feedback on the [Hiddify repos](https://github.com/hiddify), you can help improve the app's functionality and identify any issues.
 
 

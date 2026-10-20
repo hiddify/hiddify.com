@@ -86,7 +86,7 @@ weight: 5
                   </span>
                   <span class="text-secondaryText font-medium text-base flex items-center gap-2">
                     <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    Provided 6 protocol
+                    Provided 6 protocols
                   </span>
                 </div>
               </div>
@@ -116,7 +116,7 @@ weight: 5
                   </span>
                   <span class="text-secondaryText font-medium text-base flex items-center gap-2">
                     <div class="h-2 w-2 bg-secondaryText rounded-full"></div>
-                    Documention on Wiki
+                    Documentation on Wiki
                   </span>
                 </div>
               </div>
@@ -130,7 +130,8 @@ weight: 5
                 </div>
                 <div class="py-5 w-full flex items-center justify-center flex-col">
                   <span class="text-black font-light text-sm mb-3">Now</span>
-                  <h3 class="text-secondaryText font-medium text-base">Working on x and y</h3>
+                  <h3 class="text-secondaryText font-medium text-base">Hiddify Manager v14 and Hiddify app v4</h3>
+                  <p class="text-secondaryText text-sm">Working on the next versions</p>
                 </div>
               </div>
             </div>
@@ -148,7 +149,7 @@ weight: 5
             <p class="text-secondaryText text-base font-medium">
               Our developers bring our vision to life through <a href="https://github.com/hiddify/Hiddify-Manager"
                 class="underline underline-offset-4">Hiddify
-                Manager</a> and <a href="https://github.com/hiddify/hiddify-next"
+                Manager</a> and <a href="https://github.com/hiddify/hiddify-app"
                 class="underline underline-offset-4">Hiddify app</a>.
             </p>
           </div>
@@ -168,8 +169,8 @@ weight: 5
             <h1 class="font-medium text-lg text-primaryText mb-5">Content</h1>
             <p class="text-secondaryText text-base font-medium">
               We curate engaging and informative content including <a
-                href="https://github.com/hiddify/Hiddify-Manager/wiki" class="underline underline-offset-4">our
-                comprehensive Wiki </a> & <a href="https://www.youtube.com/@hiddify"
+                href="/manager/" class="underline underline-offset-4">our
+                comprehensive tutorials</a> & <a href="https://www.youtube.com/@hiddify"
                 class="underline underline-offset-4">YouTube tutorials</a>.
             </p>
           </div>
@@ -257,8 +258,8 @@ weight: 5
             financial
             support <br class="hidden md:block" /> will be spent on the development of the project. <br
               class="hidden md:block" />
-            To contribute, please visit our <a href="https://github.com/hiddify/Hiddify-Manager/wiki/support"
-              class="underline underline-offset-4">donation page</a> on GitHub.
+            To contribute, please visit our <a href="/donation-and-support/"
+              class="underline underline-offset-4">donation page</a>.
           </p>
         </div>
       </section>

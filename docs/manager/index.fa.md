@@ -15,10 +15,24 @@ comments: false
   }
 </style>
 
-# همه آموزش‌ها و ویدیوهای مرتبط با هیدیفای‌منیجر
-هیدیفای‌منیجر یک برنامه برای نصب روی سرورها برای ساخت سرور VPN می‌باشد که از پروتکل‌های متعددی پشتیبانی می‌کند. اطلاعات مناسب و کامل از <a
-  class="underline underline-offset-2"
-  href="https://github.com/hiddify/Hiddify-Manager/blob/main/README_fa.md">اینجا</a> قابل دسترسی است.در این صفحه تمامی آموزش‌های مرتبط با هیدیفای‌منیجر به صورت دسته‌بندی شده قرار گرفته شده است.
+# همه آموزش‌ها و ویدیوهای هیدیفای‌منیجر
+هیدیفای‌منیجر نرم‌افزاری رایگان و متن‌باز است که شما روی سرور خودتان (یک VPS، یعنی کامپیوتری که در یک دیتاسنتر اجاره می‌کنید) نصب می‌کنید تا برای خودتان و کاربرانتان یک سرور VPN و پروکسی راه بیندازید. در این صفحه همه آموزش‌های هیدیفای‌منیجر به تفکیک موضوع آمده است. اگر تازه‌کار هستید، از [راهنمای نصب اصلی](/fa/manager/installation-and-setup/guide/) شروع کنید.
+
+!!! info "هیدیفای‌منیجر در یک نگاه"
+    - **آخرین نسخه:** v14.0.5 (۲۸ مهر ۱۴۰۵ / 20 اکتبر 2026). همه [نسخه‌ها در گیت‌هاب](https://github.com/hiddify/Hiddify-Manager/releases).
+    - **سرورهای پشتیبانی‌شده:** Ubuntu 22.04، 24.04 یا 26.04، با پردازنده amd64 (x86_64) یا arm64. از Ubuntu 20.04 دیگر پشتیبانی نمی‌شود. نصب با Docker هم ممکن است، ولی هنوز آزمایشی است.
+    - **پروتکل‌ها:** VLESS، VMess، Trojan، Reality، Shadowsocks، Hysteria2، TUIC، WireGuard، AnyTLS، Snell، Naive، Mieru، xHTTP، تانل‌های DNS (VayDNS، Slipstream، MasterDnsVPN)، پروکسی تلگرام و موارد دیگر.
+    - **کد منبع و جزئیات:** [مخزن هیدیفای‌منیجر در گیت‌هاب](https://github.com/hiddify/Hiddify-Manager).
+
+برای نصب آخرین نسخه، از طریق SSH به سرورتان وصل شوید و این دستور را روی سرور اجرا کنید:
+
+```bash
+bash <(curl https://i.hiddify.com/release)
+```
+
+همه مراحل در [راهنمای نصب اصلی](/fa/manager/installation-and-setup/guide/) توضیح داده شده است. اگر از نسخه ۱۲ یا قدیمی‌تر به‌روزرسانی می‌کنید، اول پشتیبان بگیرید: [آموزش پشتیبان‌گیری و بازیابی](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/) و [آموزش به‌روزرسانی](/fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/) را ببینید.
+
+برای اتصال به سرور از گوشی یا کامپیوتر، [اپلیکیشن هیدیفای](/fa/app/) را پیشنهاد می‌کنیم.
 
 <section class="flex flex-col gap-5 items-center justify-center py-10">
   <section
@@ -240,14 +254,14 @@ comments: false
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/"
-                target="_blank" class="text-secondaryText text-sm">آموزش تنظیم پروکسی SSH در هیدیفای‌منیجر</a>
+                target="_blank" class="text-secondaryText text-sm">آموزش تنظیم پروکسی SSH در هیدیفای‌منیجر (فقط نسخه‌های قدیمی؛ در نسخه ۱۳ حذف شد)</a>
             </div>
             <div class="flex items-center gap-2">
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/"
-                target="_blank" class="text-secondaryText text-sm">نحوه استفاده از چندین زیردامنه یک وبسایت در
+                target="_blank" class="text-secondaryText text-sm">نحوه استفاده از چند زیردامنه یک وب‌سایت در
                 ریالیتی</a>
             </div>
             <div class="flex items-center gap-2">
@@ -321,7 +335,7 @@ comments: false
         <svg id="arrow-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
           <g fill="none" fill-rule="evenodd">
             <path
-              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428ل.005.02ل.01.013ل.104.074ل.015.004ل.012-.004ل.104-.074ل.012-.016ل.004-.017ل-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113ل-.013.002ل-.185.093ل-.01.01ل-.003.011ل.018.43ل.005.012ل.008.007ل.201.093c.012.004.023 0 .029-.008ل.004-.014ل-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006ل-.006.014ل-.034.614c0 .012.007.02.017.024ل.015-.002ل.201-.093ل.01-.008ل.004-.011ل.017-.43ل-.003-.012ل-.01-.01z" />
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
             <path fill="currentColor"
               d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z" />
           </g>
@@ -381,7 +395,151 @@ comments: false
               </div>
               <a href="/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/" target="_blank"
                 class="text-secondaryText text-sm">
-                آموزش اتوماسیون ثبت زیر دامنه در Cloudflare
+                آموزش اتوماسیون ثبت زیردامنه در Cloudflare
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/"
+                target="_blank" class="text-secondaryText text-sm">آموزش استفاده از دامنه AutoCDN IP (از نسخه ۱۳ با نام دامنه «CDN»)
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/"
+                target="_blank" class="text-secondaryText text-sm">آموزش استفاده از زیردامنه‌های متغیر (wildcard) در هیدیفای‌منیجر
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/"
+                target="_blank" class="text-secondaryText text-sm">آموزش استفاده از دامین فرانتینگ (Domain Fronting)
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"
+                target="_blank" class="text-secondaryText text-sm">مدیریت بهتر چند دامنه CDN در هیدیفای
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/"
+                target="_blank" class="text-secondaryText text-sm">آی‌پی تمیز کلادفلر چیست و چگونه آن را پیدا کنیم
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/"
+                target="_blank" class="text-secondaryText text-sm">آموزش ایجاد لینک سابسکریپشن در هیدیفای‌منیجر
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/"
+                target="_blank" class="text-secondaryText text-sm">استفاده از سایت PHP برای لینک سابسکریپشن
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"
+                target="_blank" class="text-secondaryText text-sm">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای‌منیجر (روش خودکار)
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/"
+                target="_blank" class="text-secondaryText text-sm">آموزش راه‌اندازی و استفاده از ورکرهای کلادفلر (روش دستی)
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/"
+                target="_blank" class="text-secondaryText text-sm">راه‌اندازی سرور میانی با سرور میانی‌ساز هیدیفای (همه روش‌ها در یک اپ)
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/"
+                target="_blank" class="text-secondaryText text-sm">راه‌اندازی سرور میانی با روش IP-Tables
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/"
+                target="_blank" class="text-secondaryText text-sm">راه‌اندازی سرور میانی با روش GOST
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/"
+                target="_blank" class="text-secondaryText text-sm">راه‌اندازی سرور میانی با روش WST
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/"
+                target="_blank" class="text-secondaryText text-sm">راه‌اندازی سرور میانی با روش Dokodemo-Door
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/"
+                target="_blank" class="text-secondaryText text-sm">راه‌اندازی سرور میانی با HA-Proxy
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"
+                target="_blank" class="text-secondaryText text-sm">افزودن سرور میانی (دامنه) به هیدیفای‌منیجر
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/"
+                target="_blank" class="text-secondaryText text-sm">نحوه ایجاد و استفاده از دامنه فیک
+              </a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/"
+                target="_blank" class="text-secondaryText text-sm">توضیحاتی درباره لینک ادمین در هیدیفای‌منیجر و تغییرات آن از نسخه ۱۰
               </a>
             </div>
           </div>
@@ -480,7 +638,7 @@ comments: false
         <svg id="arrow-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
           <g fill="none" fill-rule="evenodd">
             <path
-              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428ل.005.02ل.01.013ل.104.074ل.015.004ل.012-.004ل.104-.074ل.012-.016ل.004-.017ل-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113ل-.013.002ل-.185.093ل-.01.01ل-.003.011ل.018.43ل.005.012ل.008.007ل.201.093c.012.004.023 0 .029-.008ل.004-.014ل-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006ل-.006.014ل-.034.614c0 .012.007.02.017.024ل.015-.002ل.201-.093ل.01-.008ل.004-.011ل.017-.43ل-.003-.012ل-.01-.01z" />
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
             <path fill="currentColor"
               d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z" />
           </g>
@@ -501,7 +659,7 @@ comments: false
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
-            <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/"
+            <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/"
               target="_blank" class="text-secondaryText text-sm">چگونه مطمئن شویم IP یا دامنه سرور تمیز است</a>
           </div>
           <div class="flex items-center gap-2">
@@ -516,7 +674,7 @@ comments: false
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"
-              target="_blank" class="text-secondaryText text-sm">آموزش SSH اتصال و رفع عیب از طریق (کار با منوی
+              target="_blank" class="text-secondaryText text-sm">آموزش اتصال و عیب‌یابی از طریق SSH (کار با منوی
               هیدیفای)</a>
           </div>
           <div class="flex items-center gap-2">
@@ -564,7 +722,7 @@ comments: false
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
-              <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/"
+              <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/"
                 target="_blank" class="text-secondaryText text-sm">چگونه تست سرعت سرور را انجام دهیم
               </a>
             </div>
@@ -580,7 +738,7 @@ comments: false
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
-              <a href="/fa/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/"
+              <a href="/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/"
                 target="_blank" class="text-secondaryText text-sm">غیرفعال کردن احراز هویت رمز عبور SSH
               </a>
             </div>
@@ -672,7 +830,7 @@ comments: false
         <svg id="arrow-4" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
           <g fill="none" fill-rule="evenodd">
             <path
-              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428ل.005.02ل.01.013ل.104.074ل.015.004ل.012-.004ل.104-.074ل.012-.016ل.004-.017ل-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113ل-.013.002ل-.185.093ل-.01.01ل-.003.011ل.018.43ل.005.012ل.008.007ل.201.093c.012.004.023 0 .029-.008ل.004-.014ل-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006ل-.006.014ل-.034.614c0 .012.007.02.017.024ل.015-.002ل.201-.093ل.01-.008ل.004-.011ل.017-.43ل-.003-.012ل-.01-.01z" />
+              d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
             <path fill="currentColor"
               d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z" />
           </g>
@@ -789,7 +947,7 @@ comments: false
       <div class="px-8 py-8 w-full md:w-2/3">
         <img src="/assets/ios_tutorials.jpg" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
-          <h1 class="text-primaryText title-font text-lg mb-3">نرم افزارهای کلاینت در iOS</h1>
+          <h1 class="text-primaryText title-font text-lg mb-3">نرم‌افزارهای کلاینت در iOS</h1>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
@@ -930,27 +1088,27 @@ comments: false
         <img src="/assets/desktop_tutorials.jpg"
           class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
-          <h1 class="text-primaryText title-font text-lg mb-3">نرم افزارهای کلاینت در دسکتاپ</h1>
+          <h1 class="text-primaryText title-font text-lg mb-3">نرم‌افزارهای کلاینت در دسکتاپ</h1>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/" target="_blank"
-              class="text-secondaryText text-sm">آموزش نرم افزار HiddifyN</a>
+              class="text-secondaryText text-sm">آموزش نرم‌افزار HiddifyN</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/"
-              target="_blank" class="text-secondaryText text-sm">آموزش نرم افزار HiddifyClashDesktop</a>
+              target="_blank" class="text-secondaryText text-sm">آموزش نرم‌افزار HiddifyClashDesktop</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/manager/client-software-on-desktop/Tutorial-for-QV2ray-software/" target="_blank"
-              class="text-secondaryText text-sm">آموزش نرم افزار QV2ray</a>
+              class="text-secondaryText text-sm">آموزش نرم‌افزار QV2ray</a>
           </div>
 
 
@@ -1006,7 +1164,7 @@ comments: false
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/manager/contribution/How-to-contribute-to-this-project/" target="_blank"
-              class="text-secondaryText text-sm">چگونه می‌توان در این پروژه همکاری نمود</a>
+              class="text-secondaryText text-sm">چگونه در این پروژه مشارکت کنیم</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
