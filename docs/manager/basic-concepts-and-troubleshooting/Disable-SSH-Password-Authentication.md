@@ -55,6 +55,18 @@ Before you disable password authentication, make sure you have key-based authent
 
 4. **Save and Exit the Editor**: If you are using `nano`, you can save by pressing `Ctrl + O` and exit by pressing `Ctrl + X`.
 
+5. **Important — Check for a Cloud-Init Override**: On many cloud servers (for example, Ubuntu images on Azure, AWS, Oracle Cloud, Hetzner, Vultr, etc.), an additional drop-in configuration file re-enables password login. The main `sshd_config` loads these files near its top with a line such as `Include /etc/ssh/sshd_config.d/*.conf`, and SSH uses the **first** value it finds for each option — so a value inside the drop-in file overrides the one you set above. This is the most common reason password login still works even after setting `PasswordAuthentication no` in the main file.
+
+   Check whether this file exists and, if so, open it:
+   ```bash
+   sudo nano /etc/ssh/sshd_config.d/50-cloud-init.conf
+   ```
+   If the file exists and contains `PasswordAuthentication yes`, change it to:
+   ```bash
+   PasswordAuthentication no
+   ```
+   Then save and exit as in the previous step. (If the file does not exist, you can skip this step.)
+
 ### Step 3: Restart the SSH Service
 
 After making changes to the `sshd_config` file, you need to restart the SSH service for the changes to take effect.
