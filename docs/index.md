@@ -186,7 +186,7 @@ One of the most secure and trusted solutions for using VPN
   <div>
     <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone">
     <h3 class="text-xl font-semibold">
-    <img class="badge-value-only" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&cacheSeconds=36000&style=flat-square&suffix=%20/%205&query=message&url=https%3A%2F%2Fbadge.hiddify.com%2Fappstore">
+    <img class="badge-value-only" data-format="rating" src="https://img.shields.io/badge/dynamic/json?color=blue&label=%20&cacheSeconds=36000&style=flat-square&suffix=%20/%205&query=%24.results%5B0%5D.averageUserRating&url=https%3A%2F%2Fitunes.apple.com%2Flookup%3Fid%3D6596777532">
     </h3>
     <p>Hiddify Rating on AppStore</p>
     </a>
@@ -218,7 +218,7 @@ One of the most secure and trusted solutions for using VPN
   <div>
     <a href="https://t.me/hiddify">
     <h3 class="text-xl font-semibold">
-    <img class="badge-value-only" src="https://img.shields.io/endpoint?label=&logo=1&style=flat-square&cacheSeconds=36000&url=https%3A%2F%2Fbadge.hiddify.com%2Ftg">
+    <img class="badge-value-only" data-format="compact" src="https://img.shields.io/badge/dynamic/xml?label=&cacheSeconds=36000&style=flat-square&query=%2F%2Fdiv%5B%40class%3D%27tgme_page_extra%27%5D&url=https%3A%2F%2Ft.me%2Fhiddify">
     </h3>
     <p>Telegram Community Members</p>
     </a>
@@ -226,7 +226,7 @@ One of the most secure and trusted solutions for using VPN
   <div>
     <a href="https://youtube.com/@hiddify">
     <h3 class="text-xl font-semibold">
-    <img class="badge-value-only" src="https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=&style=flat-square&logo=">
+    <img class="badge-value-only" data-format="compact" src="https://img.shields.io/badge/dynamic/json?label=&cacheSeconds=36000&style=flat-square&query=%24.counters.api.viewCount&url=https%3A%2F%2Fapi.socialcounts.org%2Fyoutube-live-subscriber-count%2FUCxrmeMvVryNfB4XL35lXQNg">
     </h3>
     <p>YouTube Tutorials' views</p>
      </a>

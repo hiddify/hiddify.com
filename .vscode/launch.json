@@ -9,8 +9,9 @@
             "name": "MkDocs server",
             "type": "debugpy",
             "request": "launch",
-            "program": "/home/codespace/.python/current/bin/mkdocs",
-            "args": ["serve", "--no-livereload"],
+            "python": "${workspaceFolder}/venv/bin/python",
+            "program": "${workspaceFolder}/venv/bin/mkdocs",
+            "args": ["serve", "--dev-addr", "127.0.0.1:8001"],
             "env": {
               "PYTHONPATH": "." 
             }

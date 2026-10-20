@@ -2687,6 +2687,11 @@ svg.badge-value-only text{
 text-transform: uppercase;
 }
 
+/* Ask AI widget sits on top of the cookie consent buttons; hide it until consent is given */
+body:has(.md-consent:not([hidden])) .guru-widget-container {
+  display: none !important; /* the widget's own style uses display: flex !important */
+}
+
 svg.badge-value-only{
   zoom:4;
   height:20px;

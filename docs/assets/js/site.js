@@ -1,3 +1,30 @@
+// Shorten raw badge values: data-format="compact" (120 604 -> 121K), data-format="rating" (4.44191 -> 4.4)
+function formatBadge(img, svg) {
+    const format = img.dataset.format;
+    if (!format) return;
+    svg.querySelectorAll("text").forEach(text => {
+        let value = text.textContent;
+        if (format === "compact") {
+            const number = Number(value.replace(/\D/g, ""));
+            if (!number) return;
+            value = new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 0 }).format(number);
+        } else if (format === "rating") {
+            value = value.replace(/\d+\.\d+/, rating => Number(rating).toFixed(1));
+        }
+        text.textContent = value;
+        text.removeAttribute("textLength"); // shields stretches text to its original width otherwise
+    });
+
+    // shrink the badge to the new text so it stays centered (shields draws text at scale(.1))
+    const text = svg.querySelector('g[text-anchor="middle"] text');
+    const textWidth = text && text.getComputedTextLength() / 10;
+    if (!textWidth) return;
+    const center = text.x.baseVal[0].value / 10;
+    const width = textWidth + 10;
+    svg.setAttribute("viewBox", `${center - width / 2} 0 ${width} 20`);
+    svg.setAttribute("width", width);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // Check if there's a hash in the URL
     if (window.location.hash) {
@@ -15,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500); 
     }
 
-    SVGInject(document.querySelectorAll("img"));
+    SVGInject(document.querySelectorAll("img"), { afterInject: formatBadge });
 
 document.getElementById('show-protocols-app').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent page jump
