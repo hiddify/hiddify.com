@@ -11,9 +11,10 @@
             "request": "launch",
             "python": "${workspaceFolder}/venv/bin/python",
             "program": "${workspaceFolder}/venv/bin/mkdocs",
-            "args": ["serve", "--dev-addr", "127.0.0.1:8001"],
+            "args": ["serve", "--dirtyreload", "--dev-addr", "127.0.0.1:8001"],
             "env": {
-              "PYTHONPATH": "." 
+              "PYTHONPATH": ".",
+              "GIT_PLUGINS": "false"
             }
           },
     ]

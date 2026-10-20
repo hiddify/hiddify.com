@@ -16,7 +16,7 @@ docs:
 	@$(MKDOCS) serve --no-livereload
 
 live:
-	@env DEV=true $(MKDOCS) serve --dirtyreload
+	@env DEV=true GIT_PLUGINS=false $(MKDOCS) serve --dirtyreload
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 

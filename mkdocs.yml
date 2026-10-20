@@ -166,9 +166,11 @@ plugins:
         - app/*
         - manager/*
       enabled: !ENV [DEV,false]
-  - rss
+  - rss:
+      enabled: !ENV [GIT_PLUGINS, true] # set GIT_PLUGINS=false for fast local previews
   - tags
-  - git-authors
+  - git-authors:
+      enabled: !ENV [GIT_PLUGINS, true]
   
 
   # - privacy
@@ -215,6 +217,7 @@ plugins:
       reconfigure_search: true
       
   - git-revision-date-localized:
+      enabled: !ENV [GIT_PLUGINS, true]
       type: date
       fallback_to_build_date: true
   - blog:
