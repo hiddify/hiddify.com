@@ -12,11 +12,11 @@ comments: false
 
 # همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
 
-هیدیفای یک اپ کلاینت VPN است که به عنوان 
- ابزار پروکسی جهانی عمل می‌کند و ویژگی‌ها و پروتکل‌های متنوعی را ارائه می‌دهد. اطلاعات مناسب و دقیق
+هیدیفای‌اپ یک برنامهٔ رایگان و متن‌باز برای اتصال به پروکسی و VPN است که روی Android، iOS، Windows، macOS و Linux کار می‌کند.
+در این صفحه همهٔ آموزش‌های اپ را می‌بینید: اول «نصب» و بعد «استفاده» را بخوانید.
+فهرست کامل امکانات اپ در
 <a class="underline underline-offset-2"
-  href="https://github.com/hiddify/hiddify-app/blob/main/README_fa.md">اینجا</a> در دسترس است. این صفحه شامل
-راهنماهای آموزشی مرتبط با این پروژه می‌باشد.
+  href="https://github.com/hiddify/hiddify-app/blob/main/README_fa.md">صفحهٔ README اپ در GitHub</a> آمده است.
 
 <section class="flex flex-col gap-5 items-center justify-center py-10">
   <section
@@ -38,7 +38,7 @@ comments: false
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
-            <a href="/fa/app/How-to-use-Hiddify-app" target="_blank" class="text-secondaryText text-sm">چگونه
+            <a href="/fa/app/How-to-use-Hiddify-app/" target="_blank" class="text-secondaryText text-sm">چگونه
               از هیدیفای‌اپ استفاده کنیم
             </a>
           </div>
@@ -61,18 +61,39 @@ comments: false
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
+            <a href="/fa/app/How-to-use-WARP-on-Hiddify-App/" target="_blank" class="text-secondaryText text-sm">چگونه
+              از WARP در هیدیفای‌اپ استفاده کنیم</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/app/How-to-use-HiddifyCli-on-OpenWrt/" target="_blank" class="text-secondaryText text-sm">چگونه
+              از HiddifyCli روی OpenWrt استفاده کنیم</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/" target="_blank" class="text-secondaryText text-sm">اینترنت
+              آزاد برای همهٔ دستگاه‌های پشت روتر OpenWrt</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
             <a href="/fa/app/How-to-contribute-to-this-project/" target="_blank"
               class="text-secondaryText text-sm">
               چگونه به این پروژه کمک کنیم</a>
           </div>
 
-          <div class="flex flex-col gap-2 md:hidden" id="section-content-1">
+          <div class="flex flex-col gap-2" id="section-content-1">
             <div class="flex items-center gap-2">
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/app/URL-Scheme/" target="_blank" class="text-secondaryText text-sm">
-                طرح URL در هیدیفای‌اپ
+                URL Scheme در هیدیفای‌اپ (انگلیسی)
               </a>
             </div>
           </div>
@@ -88,21 +109,21 @@ comments: false
           <div class="flex flex-col gap-3 md:gap-1">
             <a href="https://www.youtube.com/watch?v=vUaA1AEUy1s">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/install_HiddifyApp.png"
+                <img src="/assets/install_HiddifyApp.png" alt="ویدیو: نصب هیدیفای روی ویندوز"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
             <a href="https://www.youtube.com/watch?v=EjHjLQbC40E">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/Use_HiddifyApp.png"
+                <img src="/assets/Use_HiddifyApp.png" alt="ویدیو: کار با هیدیفای‌اپ"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=NtQ0bQlIRrYs">
+            <a href="https://www.youtube.com/watch?v=NtQ0bQlIRrY">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/advanced_setting_HiddifyApp.jpg"
+                <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="ویدیو: تنظیمات پیشرفته هیدیفای‌اپ"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -114,8 +135,6 @@ comments: false
   </section>
 
 </section>
-</div>
-</main>
 
 
 

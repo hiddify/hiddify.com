@@ -6,113 +6,122 @@ weight: -85
 <div dir="ltr" markdown="1">
 
 # Guide for setting up the domain and finalizing the installation
-- [Step 1: Setting up domain and subdomain](#1-how-to-set-domain-and-subdomain)
-- [Step 2: Reaching the admin page after installing the script](#2-reaching-the-admin-page-after-installing-the-script)
-- [Step 3: Finalizing the installation](#step-3-finalize-the-installation)
-***
-After [installing the script](/manager/installation-and-setup/guide/); You must finalize the installation. This is done in 3 steps. First you need to register a domain.
 
-## 1. How to set domain and subdomain
-In the video below, all the steps of setting up the domain and subdomain are described in full detail. This video is in Farsi and if you watch the steps you can handle that. Although We are considering making some English videos for non-Persian people, till then you can visit this or follow the instructions in this article.
+After you [install Hiddify Manager](/manager/installation-and-setup/guide/), you need to finish the setup. This page walks you through it in three steps:
 
-<!--
-<div align=center markdown=1>
- 
-[![subdomain](https://img.youtube.com/vi/l-KKRus2KS0/maxresdefault.jpg)](https://www.youtube.com/watch?v=l-KKRus2KS0)
-</div>
+1. Get a domain (or subdomain) that points to your server.
+2. Open the admin panel.
+3. Enter your domain in the panel and get your connection links.
 
--->
+A **domain** is a name like `example.com` that points to your server's IP address, so you and your users don't have to use the bare IP. A **subdomain** is a name under a domain, like `vpn.example.com`.
 
-<details markdown=1><summary><h3>Steps of setting up domain and subdomain</h3></summary>
-- First, go to [this site](https://freedns.afraid.org/signup/) and create an account (It does not need your real information but the email must be correct)
+!!! note "Screenshots"
+    The screenshots on this page come from older versions of the panel. Your screens may look different, but the steps are the same.
 
- <div align=center markdown=1>
- 
-![224300370-52b9a063-9265-4ff1-83e7-23970b6a4ecf](https://user-images.githubusercontent.com/125398461/228727381-0fb49767-a5dc-4e48-a0a5-21c2bb793e73.png)
-</div>
+## Step 1: Get a domain and subdomain
 
-- Activate the account via the email sent to you.
-- Login to the created account and click on [this link](https://freedns.afraid.org/domain/registry/) and choose one of the publlic domains
+If you already have a domain, create a subdomain for your server's IP address in your domain's DNS settings and skip to step 2.
+
+If you don't have a domain, you can get a free subdomain from FreeDNS. The video below (in Persian) shows all the steps.
 
 <div align=center markdown=1>
- 
-![Screenshot_20230330_081052](https://user-images.githubusercontent.com/125398461/228738584-a12bacc8-9039-454b-8921-43ddee18d092.png)
+
+[![Video: registering a subdomain](https://img.youtube.com/vi/l-KKRus2KS0/maxresdefault.jpg)](https://www.youtube.com/watch?v=l-KKRus2KS0)
 
 </div>
-It is better to choose domains with these extensions:
 
-`com` , `net` , `org`  
+<details markdown=1><summary>Steps to get a free subdomain from FreeDNS</summary>
 
+1. Go to [freedns.afraid.org](https://freedns.afraid.org/signup/) and create an account. You don't need to give real personal information, but the email address must be correct.
 
-- Enter your desired subdomain and the IP of your server.
-<div align=center markdown=1>
- 
-![224301533-6743a65d-e45f-475c-a94d-7b6c428ffd84](https://user-images.githubusercontent.com/125398461/228729855-a95334af-a87e-4668-be7e-643a4d6a0a83.png)
-</div>
- - Copy the created subdomain.
+    ![FreeDNS sign-up page](https://user-images.githubusercontent.com/125398461/228727381-0fb49767-a5dc-4e48-a0a5-21c2bb793e73.png)
 
-> These steps were only for direct domain if you want to know how to register other types of domain; Click [here](/manager/wiki/Domain-types-and-how-to-register-them).
+2. Open the email FreeDNS sent you and click the activation link.
+3. Log in, open the [domain registry](https://freedns.afraid.org/domain/registry/) and choose one of the public domains. Domains ending in `.com`, `.net` or `.org` are a good choice.
+
+    ![FreeDNS public domain list](https://user-images.githubusercontent.com/125398461/228738584-a12bacc8-9039-454b-8921-43ddee18d092.png)
+
+4. Enter the subdomain name you want and your server's IP address, then save.
+
+    ![Adding a subdomain with the server IP](https://user-images.githubusercontent.com/125398461/228729855-a95334af-a87e-4668-be7e-643a4d6a0a83.png)
+
+5. Copy the subdomain you created. You need it in step 3.
 
 </details>
 
-## 2. Reaching the admin page after installing the script
-You have done [the initial installation](https://github-com/hiddify/hiddify-config/wiki/#installation-guide) i.e. the script stage in 2 ways:
-  - You have proceeded through the quick installation script in famous data centers (cloud-init);
-  - or you have run the direct installation script on Ubuntu using SSH;
+These steps create a **direct** domain (it points straight to your server). To learn about other domain types, such as CDN domains, see [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
-So, continue this step based on the method you have chosen.
+## Step 2: Open the admin panel
 
-> Important note: This program can only be installed on Ubuntu server versions 22.04.
+How you open the panel depends on how you installed Hiddify.
 
-<details markdown="1"><summary><h3>1.2. Continue installation in cloud-init mode</h3></summary>
-If you have used quick installation scripts (cloud-init mode) for famous data centers such as Hetzner, Vultr, etc.; Therefore, in this case, a temporary link (valid for one hour) will be created for you.
+<details markdown="1"><summary>If you used cloud-init (Hetzner, Vultr, OVH, ...)</summary>
 
-#### What to do to reach the temporary link?
-Wait at least 10 minutes. Then open the IP address in your browser. 
+The installer creates a temporary link that works for **one hour**.
 
-IP is a 4-part number separated by dot. `http://ip`
-
-For example, if your IP is 1.1.1.1, you should enter the following address in your browser: `http://1.1.1.1`
-
-Note: that temporary address is only active for one hour and after that it becomes inactive.
+1. Wait at least 10 minutes after the server starts.
+2. Open your server's IP address in your browser. An IP address is four numbers separated by dots. For example, if your IP is `1.1.1.1`, open `http://1.1.1.1`.
+3. Click the link on that page to reach the admin panel.
 
 <div align=center markdown=1>
- 
-![Screenshot_20230325_144941en](https://user-images.githubusercontent.com/125398461/228808969-e289d4da-8857-45ec-96e6-353729e129ec.png)
+
+![Temporary setup page opened by IP address](https://user-images.githubusercontent.com/125398461/228808969-e289d4da-8857-45ec-96e6-353729e129ec.png)
+
 </div>
 
-You will reach the admin page by opening one time link.
+If the hour has passed, use the SSH method below to get the admin links.
 
 </details>
 
-<details markdown="1"><summary><h3>2.2. Continue installing directly on Ubuntu</h3></summary>
-If you have used the installation method on Ubuntu; At the end of the installation, admin links will be generated in the terminal for you. Please make sure that the admin link is in the correct format. <a href="/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/">More information</a>
+<details markdown="1"><summary>If you installed over SSH</summary>
 
-Open the link in the browser in order to enter the admin page.
+At the end of the installation, the installer shows your admin links in the terminal. Open one of them in your browser.
+
+- Prefer the links marked **Secure** (with your domain and `https://`). Use the **Not Secure** IP link only if the others don't work yet.
+- An admin link looks like `https://your-domain/admin-path/your-admin-id/`. More about this: [The correct format of the admin link](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/).
+
+To see the admin links again, connect to your server over SSH and run:
+
+```bash
+hiddify admin
+```
+
+If you forgot the admin password, you can reset it with:
+
+```bash
+hiddify reset-password
+```
 
 </details>
 
 ## Step 3: Finalize the installation
-When you open the admin page for the first time, quick installation settings will appears. Place the domain copied in the first step in the specified area as shown in the picture below.
 
-![Screenshot_20230330_114622](https://user-images.githubusercontent.com/125398461/228776688-61847f37-72de-4111-9287-a0a733e62126.png)
+1. The first time you open the admin panel, a quick setup wizard opens. It asks for the panel language, an admin password and your domain.
+2. Enter the domain you copied in step 1 in the domain field.
 
-Click the Submit button and then click `Apply Configs` to save the settings in the panel.
+    ![Quick setup: entering the domain](https://user-images.githubusercontent.com/125398461/228776688-61847f37-72de-4111-9287-a0a733e62126.png)
 
-For making the best use of this panel please view this [article](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
+3. Save. If the panel says that changes need to be applied, apply them and wait until it finishes.
 
-### Reaching the connections for connecting to the proxy
-For this, go to the users section in the software menu. Click on the user link to reach that user's page.
+If something goes wrong, read [How to configure the Hiddify panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
 
-![2](https://user-images.githubusercontent.com/125398461/228784909-0e696cbc-b073-4c66-a660-88b5c0b87ee7.png)
+## Get your connection links
 
+1. In the admin panel, go to the **Users** section.
+2. Click a user's link to open that user's page.
 
-On this page, the applications required for connection are introduced.
+    ![Users list in the admin panel](https://user-images.githubusercontent.com/125398461/228784909-0e696cbc-b073-4c66-a660-88b5c0b87ee7.png)
 
-![apps](https://user-images.githubusercontent.com/125398461/228784738-3e9a2e69-8725-479c-a792-9b84298cb4ff.png)
+3. The user page shows the apps you can use to connect.
 
-You can also see the proxies created for that user at the bottom.
+    ![Apps listed on the user page](https://user-images.githubusercontent.com/125398461/228784738-3e9a2e69-8725-479c-a792-9b84298cb4ff.png)
 
-![Screenshot_20230330_1237592](https://user-images.githubusercontent.com/125398461/228791254-f968a44f-c18a-454b-9927-ac7fe4c32e6d.png)
+4. Lower on the page you see the proxies created for that user. Scan a QR code (highlighted in yellow) with your app, or copy a link into it.
 
-Use the QR codes (highlighted yellow) or links for your client.
+    ![User proxies with QR codes](https://user-images.githubusercontent.com/125398461/228791254-f968a44f-c18a-454b-9927-ac7fe4c32e6d.png)
+
+We recommend [Hiddify App](/app/How-to-install-Hiddify-app/) to connect; it works on Android, iOS, Windows, macOS and Linux.
+
+This page only covers a quick start. The panel can do much more: read [How to configure the Hiddify panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) to get the most out of it.
+
+</div>

@@ -2,83 +2,77 @@
 title: IPv6 Usage Guide
 ---
 
-### IPv6 Usage Guide
+<div dir="ltr" markdown="1">
 
----
+# IPv6 Usage Guide
 
-#### **What is IPv6?**
-IPv6 stands for "Internet Protocol Version 6" and is designed as a replacement for IPv4. Due to its 128-bit addressing, it offers significantly higher security compared to IPv4. In current filtering systems, detecting and limiting IPv6 is costly and challenging, making it virtually unrestricted.
+This page shows you how to give your users configs that connect to your server over IPv6. It is for panel admins whose server has an IPv6 address and whose users' internet supports IPv6.
 
----
+## What is IPv6?
+**IPv6** (Internet Protocol version 6) is the newer kind of internet address. It replaces the older IPv4 addresses (like `1.2.3.4`). An IPv6 address is longer and looks like `2001:db8::1`.
 
-#### **Prerequisites for Using IPv6**
-1. **Activating IPv6 on the Server:**
-   - IPv6 must be enabled by the datacenter. Please contact your server provider to ensure this.
+There are far more IPv6 addresses than IPv4 addresses, so blocking them one by one is harder and costlier for filtering systems. For this reason, IPv6 connections are often blocked less than IPv4 ones.
 
-2. **Operator Support:**
-   - IPv6 is only supported by certain operators. It might be available on others, either regionally or entirely.
+## Prerequisites
+1. **Your server has IPv6.** Your provider (data center) must enable IPv6 on your server. Ask them if you are not sure. To see your server's IPv6 address, run this command on your server over SSH:
 
-3. **Valid IPv6 Format:**
-   - If IPv6 is enabled on the server, its correct format will be displayed on the homepage of Hiddify Manager after installation. Be sure to note it down for use.
+    ```bash
+    ip -6 addr show scope global
+    ```
 
----
+    The address is on the line that starts with `inet6`. If nothing is shown, your server has no public IPv6 address.
 
-#### **Steps to Use IPv6 in the Panel**
+2. **IPv6 is not turned off in the panel.** In the panel sidebar, under **Settings**, click **Settings**. In **General Settings**, make sure **Only IPv4** is off. (If it is on, IPv6 is disabled on the server.)
+3. **Your users' internet supports IPv6.** Only some internet operators support IPv6. In Iran, for example, it was available on Irancell and Rightel, and on Hamrah-e Aval and Mokhaberat only in some regions. Check with your users.
 
-##### **Method 1: Direct (Recommended)**
-1. In the panel's domain section, click "Create" and set the mode to "Direct" (no intermediary).
-2. In Cloudflare, create a record with type **AAAA** and set the server's main IPv6 address to it (proxy off).
-3. Enter the subdomain address you created into the domain field and click save.
+!!! tip
+    The **Max Proxy IPs Per Version** setting (in **General Settings**) controls how many IPv4 and how many IPv6 addresses the panel uses to build proxies for each domain.
 
-**Recommended Proxies:**
-- HTTP TCP Direct Vmess
-- XTLS WS Direct Vless
+## Use IPv6 in the panel
 
-##### **Method 2: Reality**
-1. Create a domain with "Reality" mode in the panel's domain section.
-2. In the "Fallback Domain" field, enter your desired address (recommended: www.speedtest.net).
-3. In the "Reality Server Name" field, enter the fallback domain or subdomain (recommended: www.speedtest.net).
-4. In the "Force to Use..." field, enter the server's IPv6 address.
-   
+### Method 1: Direct domain (recommended)
+1. In your DNS provider (for example Cloudflare), create a record of type **AAAA** for a subdomain (for example `v6.example.com`). Put your server's IPv6 address as its value. In Cloudflare, turn the proxy (orange cloud) **off**, so it says **DNS only**.
+2. In the panel sidebar, under **Settings**, click **Domains**.
+3. Click **Add domain**.
+4. Type the subdomain you created and continue.
+5. For the mode, choose **Direct**. For TLS, choose **Valid TLS**.
+6. Finish the wizard. The panel gets a certificate for the domain.
+7. Apply the changes when the panel asks you to.
 
-**Recommended Proxies:**
-- Reality XTLS Direct Vless
+Leave **Custom proxies** on **Automatic** so the panel uses every proxy that fits this domain.
 
-##### **Method 3: Legacy Direct XTLS**
-1. Log in to your Cloudflare account.
-2. Go to the domain management section and open the DNS menu.
-3. Create a DNS record with type **AAAA** and choose a custom name.
-4. Save the record.
-5. In Hiddify Manager, create a domain with "Legacy Direct XTLS" mode.
-6. Enter the subdomain created in Cloudflare into the domain field and save.
+### Method 2: Reality
+1. In the panel sidebar, under **Settings**, click **Domains**, then **Add domain**.
+2. As the domain, type a Reality-friendly site, for example `www.speedtest.net`.
+3. For the mode, choose **Direct**. For TLS, choose **Reality**.
+4. In **Server names**, enter the same site (for example `www.speedtest.net`).
+5. Open **Advanced**. In **Force configs to use these IPs / domains**, enter your server's IPv6 address.
+6. Save, then apply the changes.
 
-**Recommended Proxies:**
-- TLS_H2 WS Direct Vless
-- TLS WS Direct Vless
-- XTLS WS Direct Vless
+For more about Reality, see [How to use Reality on Hiddify](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
----
+!!! note "Legacy Direct XTLS mode was removed"
+    Older versions had a separate "Legacy Direct XTLS" domain mode. Since Hiddify Manager v13 it no longer exists: such domains were turned into **Direct** domains. Use Method 1 instead.
 
-#### **Client Device Configuration for IPv6**
+## Turn on IPv6 on your users' devices
 
-##### **On Android:**
-1. Search for "APN" in the mobile settings.
-2. Open the default APN and set "Internet Protocol" to "IPv4/IPv6."
+### On Android
+1. Open the phone's **Settings** and search for **APN**.
+2. Open the APN in use and set **APN protocol** (or "Internet Protocol") to **IPv4/IPv6**.
 
-##### **On Windows:**
-1. Open the Control Panel.
-2. Find "Network and Internet Settings" and navigate to "Network and Sharing Center."
-3. Click "Change Adapter Settings" from the side menu.
-4. Right-click on the connected network, select "Properties."
-5. Tick the "Internet Protocol Version 6" checkbox and save.
+### On Windows
+1. Open **Control Panel**.
+2. Go to **Network and Internet**, then **Network and Sharing Center**.
+3. In the side menu, click **Change adapter settings**.
+4. Right-click your connected network and choose **Properties**.
+5. Tick **Internet Protocol Version 6 (TCP/IPv6)** and click **OK**.
 
-##### **On iOS:**
-1. Visit [this website](https://mobileconfig.azurewebsites.net)
-2. Enter "google.com" in the first two fields and check "IPv4/IPv6."
-3. Download the generated profile and install it from the "Profile Downloaded" section in mobile settings.
-4. Search for "APN" in settings and reset network settings from the bottom of the page.
+### On iOS
+1. Open [this website](https://mobileconfig.azurewebsites.net).
+2. Enter `google.com` in the first two fields and tick **IPv4/IPv6**.
+3. Download the profile. Install it from **Settings** → **Profile Downloaded**.
+4. In **Settings**, search for **APN**, and reset the network settings from the bottom of that page.
 
----
+When these steps are done, your users can connect to your server over IPv6. If you do not want IPv6 at all, see [How to disable IPv6 on Hiddify](/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/).
 
-By following these steps, you can fully enable IPv6 functionality.
-
+</div>

@@ -5,69 +5,93 @@ title: How to transfer files between a server and a computer
 <div dir="ltr" markdown="1">
 
 # How to transfer files between a server and a computer
-Many times you need to transfer files to/from server. For example, you want to remove the backup file or import a file from your system to the server. There are several methods for this.
 
+This page shows you how to copy files from your server to your computer and back, for example to keep a copy of a Hiddify backup or to upload a file to the server.
 
-## prerequisites
+!!! tip "Only need a panel backup?"
+    You do not need any commands for that. In the Hiddify admin panel, open the **Backup & restore** page and click **Download backup**. See [How to back up and restore the panel](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
 
-To do this, open one of the following programs according to your operating system.
+## Before you start
 
-- Windows: `PowerShell`
-- Mac: `Terminal`
-- Linux: `Terminal`
-> Note: In Windows, if SSH is not installed, run the following command in PowerShell to install it.
+- You know your server's IP address and SSH username (usually `root`), and you can [connect to it over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
+- Open a terminal on your computer:
+    - Windows: **PowerShell**
+    - macOS: **Terminal**
+    - Linux: **Terminal**
 
-```
-Add-WindowsCapability -Online -Name OpenSSH.Client
-```
+This page uses **scp**, a command that copies files over SSH. It is already included in Windows 10 and 11, macOS and Linux.
 
-<div align=center markdown=1>
-  
-<img src="https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png" />
-</div>
+!!! note "If Windows says `scp` is not recognized"
+    Open PowerShell **as administrator** (right-click PowerShell, then **Run as administrator**) and run this command to install the OpenSSH client:
 
-## Viewing the list of backup files on the server
+    ```powershell
+    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+    ```
 
-To be able to see the list of backup files on the server, first SSH to the server and run the following command.
-
-```
-ls /opt/Hiddify-Manager/hiddify-panel/backup
-```
-
-The output of this command is as follows.
+    Then close PowerShell and open it again.
 
 <div align=center markdown=1>
-  
-<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" />
+
+<img src="https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png" alt="Opening PowerShell from the Windows Start menu" />
 </div>
 
-Select one of the backup files to transfer.
+## Find the file on the server
 
-## Transfering the file from the server to the system via scp command
-Use this command in the terminal.
+Hiddify Manager saves an automatic backup of the panel every 6 hours in `/opt/hiddify-manager/data/backup/`. To see the list, connect to the server over SSH and run:
 
-`scp <user>@<Server's IP>:<path/to/your/file> "Path\in\your\PC"`
-
-For example, if the user of your server is `root` and its IP is `1.1.1.1`, you want to remove the backup panel file from your server and enter it into the `Backup` folder in the `C` drive of your system, in this case you must enter the following command.
-
-```
-scp root@1.1.1.1:/opt/Hiddify-Manager/hiddify-panel/backup/2023_05_06__06_00_03.json "C:\Backup"\
+```bash
+ls /opt/hiddify-manager/data/backup/
 ```
 
-The work is done. The desired file was copied to the Backup folder.
+You will see files named by date and time, like `2026_10_20__06_00_03.json`:
 
-## Transfering the file from the system to the server via scp command
-For this, suppose your server user is `root` and its IP is `1.1.1.1`. Also suppose that the `text.txt` file is located in `C:\File` and you want to transfer it to the server. In this case, use the following command.
+<div align=center markdown=1>
 
+<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" alt="Example list of backup files on the server" />
+</div>
+
+Pick the file you want to copy and note its name.
+
+## Copy a file from the server to your computer
+
+Run this **on your own computer**, not on the server. The general form is:
+
+```bash
+scp <user>@<server-ip>:<path/on/server> "<folder on your computer>"
 ```
-scp "C:\File\text.txt" root@1.1.1.1:/opt/Hiddify-Manager
-```
-In this case, the `text.txt` file will be copied on the server in the desired path and you can view it with the following command.
 
-```
-ls /opt/Hiddify-Manager
-```
-## Using the web to transfer files
+Example: your username is `root`, the server IP is `1.1.1.1`, and you want to copy a backup into the folder `C:\Backup`:
 
-Another way to transfer files is to use SSH service sites. To do this, first enter the details of your server for SSH, and after connecting, the File Manager of the system will open. You can easily transfer your desired files through the web.
+```powershell
+scp root@1.1.1.1:/opt/hiddify-manager/data/backup/2026_10_20__06_00_03.json "C:\Backup"
+```
 
+Type your server password (or key passphrase) when asked. **It worked if** the file now appears in `C:\Backup`.
+
+## Copy a file from your computer to the server
+
+Run this **on your own computer**. Example: the file `C:\File\text.txt` should go to the `/root/` folder on the server:
+
+```powershell
+scp "C:\File\text.txt" root@1.1.1.1:/root/
+```
+
+To check, connect to the server over SSH and run:
+
+```bash
+ls /root/
+```
+
+**It worked if** `text.txt` is in the list.
+
+## If it does not work
+
+- **`No such file or directory`**: the path is wrong. Check it with `ls` on the server, and remember that Linux paths are case-sensitive (`hiddify-manager`, not `Hiddify-Manager`).
+- **`Permission denied`**: the username, password or key is wrong, or the user cannot read or write that folder. Use `root` or a folder your user owns.
+- **`Connection timed out`**: the server IP or SSH port is wrong. If you changed the SSH port, add `-P` with the port number (capital P for scp), for example `scp -P 2222 ...`.
+
+## Use the web panel instead
+
+In Hiddify Manager v14, the admin panel has an **SSH terminal** page with a built-in file browser. You can upload files to the server and download files from it there, without a separate program. Avoid entering your server password on third-party websites.
+
+</div>

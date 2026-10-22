@@ -6,466 +6,390 @@ weight: -150
 <div dir="ltr" markdown="1">
 
 # How to configure HiddifyManager properly
-Before starting the configuration, it is necessary to explain that this panel is not supposed to perform miracles, but it is supposed to make things related to the use of proxies easier, and for this there are some prerequisites that should be available. So if you read this article to the end; And you did the configuration correctly, but your connections were not connected, read [this article](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/).
 
-## prerequisites
-### The server's IP is clean
-You have chosen a server whose IP is clean. To be sure of this issue, read how to [test the IP of server](/manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean). If it is determined after the test that the IP is not clean; You need to change your IP server.
+This page walks you through the first setup of the HiddifyManager admin panel and explains what each part of the panel does. Read it right after you install the panel, or whenever you want to know what a menu or setting is for.
 
-### The panel is installed correctly
-You have successfully installed the panel using the methods mentioned in the [installation guide](/manager/installation-and-setup/guide/) and you have received admin links. These links include the admin address and password. For more information about the correct format of the admin link, read [this article](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/).
+!!! info "Updated for HiddifyManager v14"
+    Since v13 the panel opens **Admin V2** by default, and in v14 the old (classic) admin pages redirect to it. The menu names on this page are the Admin V2 names. Most screenshots below were taken in an older version, so your screen will look different, but the ideas are the same.
 
+The panel makes running proxies easier, but it cannot fix a blocked server or a broken domain. If you finish this page and your users still cannot connect, read [Troubleshooting connectivity issues](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/).
 
-### The domain is registered and accessible
-Before configuring the Manager, you must have a registered domain. If you are wondering about domain types and their registration ways, click [here](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/). You should also make sure that the registered domain is accessible. [how to test](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/)
+There is also a [video walkthrough in Persian](https://www.youtube.com/watch?v=OfvKL9CaOQU). It was recorded for an older version.
 
-## Getting started
-* If you have used the quick installation links for famous data centers such as Vultr, OVH etc; At the end after about 10 minutes, a one-time link will be generated for you, by which you will reach the admin page.
+## Before you start
 
-![Screenshot_20230325_144941en](https://user-images.githubusercontent.com/125398461/227714581-5034c5ac-9204-498c-8195-2ff2d0f66d84.png)
+You need:
 
+1. **A server with a clean IP.** A clean IP is one that is not blocked in your users' country. Check it with [How to make sure the server's IP or domain is clean](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/). If the IP is blocked, get a new IP or a new server.
+2. **HiddifyManager installed**, as described in the [installation guide](/manager/installation-and-setup/guide/). At the end of the install you get your **admin links**. The admin link contains your secret path and your admin ID, so it works like a password. See [the correct format of the admin link](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/).
+3. **A registered domain that is reachable.** A domain is a name such as `example.com` that points to your server. See [domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/), then [check that the domain is clean](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/).
 
-* If you have installed the panel through ssh, in this case the admin links will be displayed in the terminal at the end of installation. Open one of those links in the browser to reach the admin page.
+If a word on this page is new to you, see [Basic concepts](/manager/basic-concepts-and-troubleshooting/Basic-Concepts/).
 
-In both cases, when you enter the admin page for the first time, the quick installation page will open.
+## Open the admin panel for the first time
 
-## Quick Setup
+- If you used a one-click install link from a provider such as Vultr or OVH, wait about 10 minutes. You then get a one-time link that opens the admin page.
 
-Here is a parameter that is very critical; Enter your registered domain in the specified field. You can make other settings later. So enter your domain and click the register button. 
+![One-time admin link after a one-click install](https://user-images.githubusercontent.com/125398461/227714581-5034c5ac-9204-498c-8195-2ff2d0f66d84.png)
 
-![](https://user-images.githubusercontent.com/125398461/236670372-500351a3-d829-4665-af29-651451f45c2d.png)
+- If you installed over SSH, the admin links are printed in the terminal at the end of the install. Open one of the **Secure** (https, domain) links in your browser. Use the IP link only if no domain link works.
+- If you lost the links, connect to your server over SSH and run:
 
-Then click apply changes for saving configurations. If the changes are applied successfully; The panel is almost ready to use, but it is recommended to read the following contents till the end so that you can take the maximum advantages of this panel.
+```bash
+hiddify admin
+```
 
+The first time you open the admin page, the **Quick setup** wizard starts.
 
+## Quick setup
 
+The wizard has a few short steps. You can change everything later in **Settings**.
+
+1. **Welcome:** choose the admin panel language and the country your users are in. The country selects settings that suit its filtering.
+2. **Password:** set a password for the admin area (at least 8 characters).
+3. **Domains:** point your domain to the server IPs shown on the page (an `A` record for IPv4, `AAAA` for IPv6). Then type your domain and press Enter. The panel detects the domain type by itself; tap the type to change it. You need at least one direct, CDN or subscription-only domain.
+4. **Protocols:** pick the protocols you want to offer. Choose as few as you need.
+5. **Nodes** (optional): connect other Hiddify servers to manage them from this panel. You can skip this.
+6. **Finish:** review your choices and click **Finish**. The panel applies the configuration and reinstalls the services. This takes a few minutes. The log and your new admin links are shown while it runs.
+
+When it finishes, the panel is ready to use. Copy the new admin links and keep them somewhere safe.
+
+![Quick setup page in an older version](https://user-images.githubusercontent.com/125398461/236670372-500351a3-d829-4665-af29-651451f45c2d.png)
+
+## The admin menu
+
+The Admin V2 sidebar has three groups:
+
+- **Manager:** Dashboard, Users, Admins, Broadcast, Nodes and Utils.
+- **Settings:** Proxy Editor, Domains, Settings, Backup, Actions (the **Apply & status** page) and, if you set one up, your Telegram bot.
+- **Help:** links to the tutorials, bug reports and donations.
 
 ## Dashboard
-In this menu, information related to system resources is displayed graphically.
 
-![](https://user-images.githubusercontent.com/125398461/236671412-9887bac1-1ce6-45d7-ad9d-8d74ad1a32b2.png)
+The Dashboard shows your server's resources (CPU, RAM, disk, traffic) as charts. If you use several servers (nodes), it also shows the health of each node.
+
+![Dashboard](https://user-images.githubusercontent.com/125398461/236671412-9887bac1-1ce6-45d7-ad9d-8d74ad1a32b2.png)
 
 ## Users
-In this part, you can define accounts for users. Click on the Create button. You can specify Usage Limit, Package days, Mode etc.
 
-<img src="https://user-images.githubusercontent.com/125398461/236673236-3ca6b99a-2586-4755-b21e-4e6f85405135.png">
+Here you create an account for each person who will use your proxies.
 
-You can hit the `Create` button then go to the creating of new user
+1. Open **Users** and click the add button.
+2. Enter a name, the usage limit (in GB), the number of days (package days) and the reset mode.
+3. Save.
 
-<img width="1259" src="https://user-images.githubusercontent.com/125398461/236682495-988f2cc9-52b6-42c0-ac07-d19553425dd4.png">
+<img src="https://user-images.githubusercontent.com/125398461/236673236-3ca6b99a-2586-4755-b21e-4e6f85405135.png" alt="Users list">
 
+<img width="1259" src="https://user-images.githubusercontent.com/125398461/236682495-988f2cc9-52b6-42c0-ac07-d19553425dd4.png" alt="Create user form">
 
-After creating accounts, you can browse dedicated page to each user via links next to them in which you can find all applications and configs. On to top of the page you can find and download client applications based on your OS.
+Each user has their own **user page**. Open it from the link next to the user. At the top of the user page the user can download a client app for their device. Further down are the user's configs.
 
-<img width="1280" src="https://user-images.githubusercontent.com/125398461/236682677-4b72bb63-d4c0-41d2-b0e5-05786770aa00.png">
+<img width="1280" src="https://user-images.githubusercontent.com/125398461/236682677-4b72bb63-d4c0-41d2-b0e5-05786770aa00.png" alt="User page">
 
+![Configs on the user page](https://user-images.githubusercontent.com/125398461/236682704-86f4b740-172f-442e-a31f-73752c7aea43.png)
 
-At the bottom of this page, you can see the configurations related to the user.
+You can give users access in three ways:
 
-![](https://user-images.githubusercontent.com/125398461/236682704-86f4b740-172f-442e-a31f-73752c7aea43.png)
+1. **The user page link (recommended).** The user opens it and finds everything there.
+2. **The subscription link.** A subscription link is one address that the app re-reads to get the latest configs. If you change your settings, the user's app updates itself.
+3. **A single config link.** It does not update. If you change your settings, you must send the user a new link.
 
-Several methods are suggested for providing links to users:
-
-> 1. The link of the related page should be provided to the user: this link can be accessed from the user page in the management panel.
-> 2. The link related to the user's subscription should be provided to them: in this case, it will be possible to update the scanners in case of changes.
-> 3. The connection link should be provided to the user: in this case, it is not possible to update the connections
-
-If you need more information about how to connect the client to the server, please visit our [YouTube Channel](https://www.youtube.com/watch?v=Ml7XeYp70mM&list=PL2DSfh6Z6tTIalRDm3hY7G7ku9-yrCfBL) in order to find a playlist in this regard.
-
+For help connecting client apps, see the [YouTube playlist](https://www.youtube.com/watch?v=Ml7XeYp70mM&list=PL2DSfh6Z6tTIalRDm3hY7G7ku9-yrCfBL) and the client tutorials on the [HiddifyManager tutorials page](/manager/).
 
 ## Admins
-In this section, you can define for the admin panel.
 
-<img width="1201" src="https://user-images.githubusercontent.com/125398461/236682754-91aa4f0e-2b12-483d-a06a-14109adb87bc.png">
+Here you create accounts for other people who help you manage the panel. Click the add button and fill in the form.
 
-Just click the create button and create the desired admin.
+<img width="1201" src="https://user-images.githubusercontent.com/125398461/236682754-91aa4f0e-2b12-483d-a06a-14109adb87bc.png" alt="Admins list">
 
-There are several admin types:
+There are three admin types:
 
-* Super admin: he is the admin of the whole system and has full access to all settings.
-* Admin: has access to a number of settings. Can manage users.
-* Agent: can only manage users.
+- **Super admin:** full access to the whole panel and all settings.
+- **Admin:** can manage users and some settings.
+- **Agent:** can only manage users.
 
-> * For each of the admins, you can set a limit on the number of users and the number of active users.
-> * You can add a sub-admin for each.
-> * You can also change the admin password.
+For each admin you can:
 
-Note:
+- limit the number of users and active users;
+- allow or forbid adding sub-admins;
+- reset their password.
 
-> The admin password is also available in the admin page link, which changes the address of the panel completely. To see more information about the correct format of the admin link, click [here](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/)
+!!! note
+    Each admin's link contains their secret ID. If you change it, that admin's panel address changes completely. See [the correct format of the admin link](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/).
 
-Also, on the page of all tutorials on the wiki, you can see the tutorials on how to use client apps based on the OS type [here](/manager/).
+## Domains
 
+Open **Settings → Domains** to add or edit your domains. Each domain has a **type**, which says how users reach your server, and a **TLS mode**, which says which certificate or disguise it uses.
 
-<details markdown="1"><summary><h2>Settings</h2></summary>
+Domain types:
 
-<details markdown="1"><summary><h3>Domains</h3></summary>
+- **Direct:** the domain points straight to your server's IP. If the domain is on Cloudflare, keep the cloud off (DNS only).
+- **CDN:** the domain goes through a CDN such as Cloudflare (orange cloud on). A **CDN** is a network of servers that sits between your users and your server, so your server's IP stays hidden.
+- **Relay:** users connect to another server in between, which forwards the traffic to this one.
+- **Subscription only:** used only for subscription links, with no proxies.
+- **Cloudflare Worker:** Cloudflare workers are created for this domain automatically.
 
-Go to the Domains menu to add your domains. There are 5 modes here.
-<details markdown="1"><summary><h4>Direct domain</h4></summary>
-Click the Create button. In the opened page, act according to the figure.
+TLS modes: **Valid TLS** (a real certificate issued automatically), **Fake**, **Reality** and **DNS** (DNS tunnel only).
 
-![](https://user-images.githubusercontent.com/125398461/236682821-4b721589-8adc-43e8-b90e-8c096aa27c6e.png)
+!!! info "Changed in v13"
+    The old separate types **Auto CDN IP**, **Fake** and **Reality** are no longer domain types. On upgrade, Auto CDN IP domains became **CDN** domains, and Fake and Reality domains became **Direct** domains with the **Fake** or **Reality** TLS mode.
 
+### Direct domain
 
-Be careful:
+Click the add button and fill in the form.
 
-> If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field.
+![Direct domain form](https://user-images.githubusercontent.com/125398461/236682821-4b721589-8adc-43e8-b90e-8c096aa27c6e.png)
 
-> In this case, there is no need to complete the forced use of host field. This field is only used for CDN domains.
+- **Display name:** shown in the users' apps instead of the domain. Use it if you don't want the domain to appear in the configs.
+- **Force configs to use these IPs / domains:** leave it empty for a direct domain. It is mainly for CDN domains.
+- **Show configs of:** choose which domains' configs users see when they open their user page through this domain.
 
-> In the domain configuration display field from these settings, you can specify the configurations of which domains the users who view the user panel with this domain can view.
+### Subscription-only domain
 
-</details>
+A subscription-only domain only serves subscription links. Because no proxy traffic goes through it, it is less likely to be blocked, so users can always update their configs.
 
-<details markdown="1"><summary><h4>Only for subscription link</h4></summary>
-This is a bonus tip. You can choose a domain to use as subscription only domain. This way you can separate connections from subscription links and your link will never be blocked. Then your links can be updated all the time.
+![Subscription-only domain](https://user-images.githubusercontent.com/125398461/236683456-2e99c6f2-ab23-4c54-a5cf-89e565472e8f.png)
 
-![](https://user-images.githubusercontent.com/125398461/236683456-2e99c6f2-ab23-4c54-a5cf-89e565472e8f.png)
+After you link the subscription-only domain to your connection domains in **Show configs of**, open a user page through it. The configs on that page use your connection domains.
 
-After connecting `Sub-only domain` to the `Connection domains`, you can go to the user page via this sub-only domain. You see the configs are connected to this domain.
+Tip: a subscription domain works best behind a CDN, so users can still update when your proxy domains are blocked. You can also use a PHP website for subscription links: see [How to use a PHP site for sub links](/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/).
 
-Tip: We recommend using direct domains as Sub-only domains because they are fast if your server's IP is clean. Moreover direct domains wont be locked if they are used as Sub-only links. Additionally you can use PHP sites as subscription links. [More info](/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/)
+### CDN domain { #cdn-domain }
 
-</details>
+Click the add button and fill in the form.
 
-<details markdown="1"><summary><h4>CDN domain</h4></summary>
-Click on the create button and follow the instructions on the page that opens.
+![CDN domain form](https://user-images.githubusercontent.com/125398461/236682963-aa6bf603-7449-43f2-9639-436332043e2a.png)
 
-![](https://user-images.githubusercontent.com/125398461/236682963-aa6bf603-7449-43f2-9639-436332043e2a.png)
+- **Display name:** shown in the users' apps instead of the domain.
+- **Force configs to use these IPs / domains:** put a clean Cloudflare IP here, or better, a normal DNS record (cloud off) that points to a clean IP. Then, when you need a new clean IP, you only update that DNS record and the panel and configs stay the same. To find clean IPs, see [Guide for finding a clean Cloudflare IP](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/). This field replaces the old Auto CDN IP mode: see [Guide for using mode Auto_CDN_IP](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/).
+- **Domain fronting:** optional. Users' apps show another site's name (SNI) instead of your domain, so a filter only sees that other site. Use sites on the same CDN as your domain. In older versions this was a global setting; now it is set per CDN domain. See [Guide for domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/).
+- **ECH:** uses Encrypted Client Hello for this CDN domain. Turn on **Enable TLS ECH** in **Settings** first.
+- **Show configs of:** choose which domains' configs users see on this domain's user page.
 
+If you have many users and want to give each group its own domain, read [How to use multi-CDN domains](/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/).
 
+### Other domain setups
 
-Pay attention:
+- **Relay domain:** see [How to add a relay domain](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
+- **Fake TLS mode:** see [How to create and use a fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/).
+- **Reality TLS mode:** see [How to use Reality](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
+- **Cloudflare Worker:** see [How to set up and use Cloudflare workers](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/).
 
- >If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field. If you want the desired domain not to be displayed in the configurations; Enter a custom name in the Display Name field. In the forced to use host field , it is suggested to use a normal domain record (without proxy). In this way, panel settings and configurations remain constant. When changing a new clean IP, it is enough to update the desired DNS record with the new IP (for example, in Cloudflare).
+## Proxies and protocols
 
->If you need more information about how to find clean Cloudflare IPs, read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/).
+You turn protocols on or off in **Settings → Settings**, in the **Proxies Settings** group. The **Proxy Editor** lets advanced users edit each built-in proxy template.
 
->In the domain configuration display field , you can specify which domains users who view the user panel with this domain should see.
+<img width="1188" src="https://user-images.githubusercontent.com/125398461/236683886-a08db1ce-5939-4d96-80ef-4dd1c40e129b.png" alt="Proxy settings in an older version">
 
-> If you use several domains and also a large number of users connect to the panel and you need to assign a specific domain to each user; It is recommended to read [this article](/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/)
+Note: plain HTTP connections are not encrypted. TLS connections are encrypted.
 
-</details>
+## Settings
 
-<details markdown="1"><summary><h4>Automatic CDN IP Selector or AUTO_CDN_IP domain</h4></summary>
- 
-Due to the long and detailed description of this mode; You can read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/) to learn how to set it up.
+Open **Settings → Settings**. Common settings are shown first. Click **Show advanced settings** to see the rest, or use the search box. Settings marked **Reinstall** only take effect after a reinstall (see [Actions](#apply-status)). The groups are described below.
 
-</details>
+### Admin Settings
 
-<details markdown="1"><summary><h4>Relay domain</h4></summary>
- 
-For view more information about this domain, please view [this article](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
+<img width="573" src="https://user-images.githubusercontent.com/125398461/236683990-4bf2b03a-b080-4479-91f2-aff85ef326e0.png" alt="Admin settings">
 
-</details>
+- **Admin Panel Language:** the language of the admin area. Admin V2 is translated into English and Persian; other languages fall back to English.
+- **Parent Panel (Multi Server):** connect this panel to a central (parent) panel. You then define users on the parent panel, and the usage of all servers is added up there.
+- **Node name:** a name for this server when it is part of a multi-server setup.
 
-<details markdown="1"><summary><h4>Fake site</h4></summary>
+### Customizing User Page
 
-For view more information about this domain, please view [this article](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/).
+<img width="574" src="https://user-images.githubusercontent.com/125398461/236684199-cbd46efc-c13b-4263-ba35-c94d5915224f.png" alt="Customizing the user page">
 
-</details>
+- **User Area Language:** the language of the user page.
+- **User Page Title:** your brand name, shown at the top of the user page.
+- **Support Link:** a link to your support channel.
+- **Support Section Text:** a message shown in the support box of the user page.
 
-<details markdown="1"><summary><h4>Reality domain</h4></summary>
+### General Settings
 
-For view more information about this domain, please view [this article](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
+<img width="568" src="https://user-images.githubusercontent.com/125398461/236684249-02f6d52d-09dd-491a-baf2-b18b78241279.png" alt="General settings">
 
-</details>
+- **Country:** the country of your users. It selects settings that suit that country's filtering. Changing it needs a reinstall.
+- **Auto Update:** lets the panel update itself.
+- **Only IPv4:** turns off IPv6 on the server.
+- **Speed Test:** lets users test their connection speed to your server.
+- **Decoy Site:** a fake website. If someone (for example a filtering system) opens your domain directly, they see this site instead of your panel, which makes your server harder to identify. Do not use bank, payment, Iranian or very famous sites.
+- **Firewall:** when on, only the ports Hiddify needs (such as 22, 80 and 443) stay open and all other ports are closed.
+- **DNS Server**, **Show Usage in Sublink**, **Torrent Block** and **Keep Backups (days)** are also here. **Keep Backups (days)** deletes automatic backups older than this number of days; `0` keeps all of them.
 
-<details markdown="1"><summary><h4>Cloudflare worker domain</h4></summary>
- 
-Read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/) in this regard
+### Proxies Settings
 
-</details>
+<img width="575" src="https://user-images.githubusercontent.com/125398461/236684281-c32f4141-ad33-4866-9bf9-99d429758278.png" alt="Proxy settings">
 
+- **Block Domestic Sites:** blocks traffic from your server to Iranian sites and `.ir` domains. This makes it harder for the filtering system to identify your server. We recommend turning it on.
+- **Shared Secret:** a password used by connections whose traffic is not counted per user.
+- On/off switches for protocols and transports, for example **VLess**, **Trojan**, **VMess**, **Reality**, **Websocket**, **gRPC**, **HTTPUpgrade**, **XHTTP**, **TCP**, **QUIC**, **Naive**, **AnyTLS**, **Snell** and **SOCKS**.
 
+Tip: in the Hiddify app, routing rules can send traffic for Iranian sites directly, without the proxy. This saves your server's traffic.
 
-</details>
+!!! info "Removed settings"
+    The old **V2Ray** switch is gone. The browser fingerprint setting (**uTLS**) is now under **Advanced Settings**.
 
+### Domain fronting
 
-<details markdown="1"><summary><h3>Proxies</h3></summary>
-In this part of the panel, you can specify general and detailed settings for proxies and enable or disable each of them. General settings include the following: 
+The old global **Domain Fronting** settings group was removed. Domain fronting is now set on each CDN domain (see [CDN domain](#cdn-domain)). More information: [Guide for domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/).
 
-<img width="1188" src="https://user-images.githubusercontent.com/125398461/236683886-a08db1ce-5939-4d96-80ef-4dd1c40e129b.png">
+<img width="581" src="https://user-images.githubusercontent.com/125398461/236684655-3d8c0123-c66a-44ae-8e83-599b8f8720da.png" alt="Old domain fronting settings (removed)">
 
+### Telegram Configs
 
+A Telegram proxy works only inside the Telegram app and helps users bypass Telegram filtering.
 
+<img width="569" src="https://user-images.githubusercontent.com/125398461/236684736-23daa824-cb42-4a6b-94ed-9c1594f46502.png" alt="Telegram proxy settings in an older version">
 
-In detailed settings, you can enable or disable individual proxies (connections). Connections are grouped.
+- **MTProxy FakeTLS Enable:** turns the Telegram proxy on or off.
+- **Telegram Web Proxy Enable:** turns on the Telegram web proxy.
+- **Telegram AD Tag:** an advertising tag that shows your channel in the user's Telegram chat list.
+- **Telegram Fake Domain:** a domain whose name is used to disguise the proxy traffic.
+- **Telegram Bot Token:** connects the panel to your Telegram bot. See [How to set up and use the Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/).
 
+!!! info "Changed in v14"
+    The Telegram proxy now always uses **telemt**. The old choice of Telegram proxy library (Python, Erlang and others) was removed.
 
-Pay attention:
+### HTTP Configuration
 
-> HTTP connections are unencrypted, but TLS is.
+<img width="578" src="https://user-images.githubusercontent.com/125398461/236684772-39b2fe70-6ea5-4a6a-84dd-bec43ac3232e.png" alt="HTTP settings in an older version">
 
-</details>
+- **Allow HTTP Connection:** allows unencrypted HTTP connections. We don't recommend turning it on.
 
-<details markdown="1"><summary><h3>Other</h3></summary>
+The custom HTTP port list was removed in v14. Proxies are served on ports 80 and 443 whenever possible.
 
+### TLS Settings
 
-#### Admin settings
-Here are the admin settings.
+<img width="563" src="https://user-images.githubusercontent.com/125398461/236684810-8a3c1cdf-f49e-48e6-a059-834c9c8e8a50.png" alt="TLS settings in an older version">
 
-<img width="573" src="https://user-images.githubusercontent.com/125398461/236683990-4bf2b03a-b080-4479-91f2-aff85ef326e0.png">
+- **Certificate (ACME) Email:** the email used when the panel requests certificates.
+- **Enable TLS ECH:** turns on Encrypted Client Hello support. You then enable it per CDN domain.
+- **Allow Invalid SNI**.
 
+The custom TLS port list was removed in v14. Since v14 the panel issues and stores certificates itself.
 
+The **TLS Trick** group (TLS fragment, mixed SNI case, padding) is explained in [How the TLS trick works](/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/).
 
+### Shadowsocks
 
-* You can set the language of the admin page.
+**Shadowsocks FakeTLS** is a simple disguise that wraps data in TLS-looking packets to fool the filter.
 
+<img width="575" src="https://user-images.githubusercontent.com/125398461/236684838-aec3d882-fbeb-46cb-b072-2f1336ab9b63.png" alt="Shadowsocks settings">
 
-#### Customizing user page
-In this section, you can set the page related to users.
+- **Shadowsocks 2022:** turns Shadowsocks 2022 on or off.
+- **Shadowsocks FakeTLS (Simple OBFS):** we don't recommend it.
+- **SS FakeTLS FakeDomain:** the fake domain used to disguise the packets.
 
-<img width="574" src="https://user-images.githubusercontent.com/125398461/236684199-cbd46efc-c13b-4263-ba35-c94d5915224f.png">
+### ShadowTLS
 
+ShadowTLS shows the firewall a real TLS handshake with a valid certificate from a site you choose. Its switch and fake domain are in the **Shadowsocks** group.
 
+!!! warning
+    The ShadowTLS service was removed from HiddifyManager in v13. Whether ShadowTLS configs still work is not confirmed, so don't rely on it.
 
+<img width="572" src="https://user-images.githubusercontent.com/125398461/236684908-91bffbe0-96b9-49a7-8dd1-e51534b02b27.png" alt="ShadowTLS settings in an older version">
 
-* You can enter the message related to the user support department.
+### Advanced Settings
 
-* If you need to provide a link for support, you can put it in the related field.
+These settings are for experienced users.
 
-* You can also enter your brand name in the related field. This title can be seen at the top right of the user page.
+<img width="572" src="https://user-images.githubusercontent.com/125398461/236685004-e2f45048-3dea-48fa-b90e-219905293a23.png" alt="Advanced settings in an older version">
 
-* Finally, you can specify the language of the user page.
+- **Package Update Mode:** choose **Release** (stable) or **Beta** updates.
+- **Common Proxy Core:** which engine serves the shared proxies: `xray`, `hiddify_core` or `both`. It replaces the old **Core** setting.
+- **uTLS:** which browser fingerprint the configs imitate (for example Chrome, Firefox, Safari, iOS or Android).
 
-#### General settings
-In this section, there are some general settings related to the panel.
+The parent panel link and the Telegram bot token moved to **Admin Settings** and **Telegram Configs**.
 
-<img width="568" src="https://user-images.githubusercontent.com/125398461/236684249-02f6d52d-09dd-491a-baf2-b18b78241279.png">
-
-
-
-
-* You can determine how to update the server.
-
-* You can set IP version 6 to be disabled.
-
-* You can enable or disable the speed test for users, which enables them to test configurations and service quality.
-
-* Specify or change the address of the fake site. This site is used to deceive the filtering system and if this system opens your panel, it will be redirected to the defined fake site. In this way, by using this option, it becomes less possible to identify your panel.
-
-* You can enable or disable the firewall. By activating the firewall, the main service ports such as 80,443,22 remain active and other ports are disabled.
-
-
-#### Proxy settings
-In this section, you can make specific proxy settings.
-
-<img width="575" src="https://user-images.githubusercontent.com/125398461/236684281-c32f4141-ad33-4866-9bf9-99d429758278.png">
-
-
-
-
-* Block domestic sites. By activating it, all traffic destined for sites inside Iran or sites that are on the ir domain; They are blocked through the server. This option is very effective for not identifying the server by the filtering system. He suggested that it should be activated.
-
-
-
-> It is also suggested to use lite.yml configuration to connect to proxies. If this configuration is activated on the app client, traffic related to Iranian sites will be sent directly to the user's device without going through a proxy, and only the proxy will be used for filtered sites. This is an optimal mode because the traffic is not sent to the server in vain.
-
-
-* V2Ray mode can be activated or deactivated.
-* Vmess can be enabled or disabled.
-* The shared password can be changed. This password is used for connections that do not calculate traffic volume.
-* You can choose browser fingerprint emulation from Chrome, Android, Safari and Firefox options.
-
-#### domain Fronting
-This option is used to simulate another website instead of your website in SNI. Therefore, the filtering system cannot detect packets whose main destination is your domain, but fakely pretends to be sent to another destination, and as a result, it can be bypassed. This option may not work on all networks. [more information](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
-
-<img width="581" src="https://user-images.githubusercontent.com/125398461/236684655-3d8c0123-c66a-44ae-8e83-599b8f8720da.png">
-
-
-
-
-* For this purpose, you can specify the desired fake website.
-* You can enable this option for HTTP protocol (no encryption).
-* You can enable this option for TLS protocol (with encryption).
-* Please note that this feature is disabled on Cloudflare, and you must use other CDNs to use it.
-
-#### Telegram proxy
-Telegram proxy is designed to be used inside the Telegram app to bypass Telegram filtering.
-
-<img width="569" src="https://user-images.githubusercontent.com/125398461/236684736-23daa824-cb42-4a6b-94ed-9c1594f46502.png">
-
-
-
-
-* It is possible to activate or deactivate it.
-
-* You can define an advertising tag to be displayed in the user's Telegram chats.
-
-* A fake domain can be used to encapsulate packets and bypass filtering, which must be entered in the relevant field.
-
-* Telegram proxy model can also be selected.
-
-* You can choose different Telegram libraries. Note that only Python works correctly on all systems and others may have bugs. Be sure to test after the change.
-
-
-#### HTTP settings
-In this section, the HTTP protocol is enabled or disabled. Due to the lack of encryption, its activation is not recommended.
-
-<img width="578" src="https://user-images.githubusercontent.com/125398461/236684772-39b2fe70-6ea5-4a6a-84dd-bec43ac3232e.png">
-
-
-
-
-* If activated, the port of this service can be specified. Port 80 exists by default and cannot be removed, but other ports can be added to it.
-
-* Commas can be used to add other ports. Also, you should only use cloudflare's http ports. For example, 80,8080. [More information about cloudflare ports](https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/)
-
-#### TLS settings
-In this section you can set TLS.
-
-<img width="563" src="https://user-images.githubusercontent.com/125398461/236684810-8a3c1cdf-f49e-48e6-a059-834c9c8e8a50.png">
-
-
-
-It is possible to enable or disable the TLS protocol in this section.
-    In addition, you can specify the ports used in this regard, port 443 cannot be changed, but you can add other Cloudflare HTTPS ports, which can be separated by commas. For example, 443,2053. [More information about cloudflare ports](https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/)
-
-#### Shadowsocks settings
-ShadowSax FakeTLS is a simple obfuscation method that encapsulates data in a TLS packet to fool the filter.
-
-<img width="575" src="https://user-images.githubusercontent.com/125398461/236684838-aec3d882-fbeb-46cb-b072-2f1336ab9b63.png">
-
-
-* Here, one of the algorithms of this protocol called simple obfs can be activated, which is not recommended.
-
-* You can also set a fake domain to obfuscate packets by ShadowSocks
-
-#### ShadowTLS Settings
-
-A Proxy to expose real tls handshake to the firewall. It works like Trojan but It does not require signing certificate. the firewall will see real tls handshake with valid certificate that you choose.
-
-<img width="572" src="https://user-images.githubusercontent.com/125398461/236684908-91bffbe0-96b9-49a7-8dd1-e51534b02b27.png">
-
-
-#### Advanced settings
-In this section, there are configurations that are needed by a few users and are designed for professional users.
-
-<img width="572" src="https://user-images.githubusercontent.com/125398461/236685004-e2f45048-3dea-48fa-b90e-219905293a23.png">
-
-
-
-* It is possible to choose the type of panel update from the stable version and the latest version.
-
-* It is possible to connect to the central panel (multi server). After connecting to the encrypted panel, users can be defined in an integrated manner on the central panel and the amount of usage of all servers can be added cumulatively.
-
-* The hidden proxy path can be changed in this section. This route is used to hide connections from filtering
-
-* Telegram bot token settings are also located in this section, through which you can connect to a Telegram bot and report user account information.
-
-### Very advanced settings
-In this section, you can set the proxy path.
+### Very Advanced Settings
 
 <img width="614" alt="Very advanced settings" src="https://user-images.githubusercontent.com/125398461/236685035-9d878767-98fb-464d-8a99-0f056352c0e5.png">
 
+- **Proxy Path for Admins** and **Proxy Path for Clients:** the secret paths in your admin and user links. They hide your panel and connections from the filter. The panel sets them for you; change them only if you need to. If you change the admin path, your admin link changes.
+- **Cloudflare API**.
 
+The per-protocol path settings were hidden in v13.
 
+### WARP and Reality
 
-This is especially important when you use proxies with lower security (http and vmess).
+- **WARP:** see [How to activate WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/).
+- **Reality:** see [How to use Reality](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
-This is done automatically by the panel, but you can change it if you want
+### SSH Proxy
 
-#### WARP
-If you need to get some information related to enabling WARP on Hiddify, read [this link](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/).
+The SSH proxy service was removed in v13 and is no longer installed, even though its settings group may still appear. See [SSH proxy setting](/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/).
 
-#### Reality
-For view more information about this protocol, please view [this article](/manager/wiki/How-to-use-Reality-on-Hiddify).
+## Backup
 
-</details>
+Open **Settings → Backup** to make a backup of your panel or restore one.
 
+<img width="1220" src="https://user-images.githubusercontent.com/125398461/236685069-22011cc0-ebdd-4e30-9077-c4237242f32b.png" alt="Backup page in an older version">
 
-<details markdown="1"><summary><h3>Backup</h3></summary>
-In this menu, you can take a backup from the panel or restore your previous backup.
+- **Download backup** saves everything in one `.json` file: settings, users, admins, domains, proxies and certificates. Keep the file safe: it contains passwords and private keys.
+- The panel also makes automatic backups on the server every 6 hours. They are listed under **Backups on the server**. If your Telegram bot is connected, each one is also sent to you on Telegram.
+- When you restore, you choose which parts to bring back: **Settings**, **Users** and **Domains**.
 
-<img width="1220" src="https://user-images.githubusercontent.com/125398461/236685069-22011cc0-ebdd-4e30-9077-c4237242f32b.png">
+Details: [How to back up and restore](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
 
+## Telegram bot
 
+To set up and use the panel's Telegram bot, see [How to set up and use the Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/).
 
-* The output format of the backup file is Json.
-* When restoring the backup on the panel, it is possible to choose the type of restoration from the options of restoring settings, restoring users and restoring domains.
+## Actions (Apply & status) { #apply-status }
 
-</details>
+Open **Settings → Actions**. The **Apply & status** page lets you put changes into effect, update the server and see how everything is doing. Each action shows its log while it runs. You can leave the page; the action keeps running on the server.
 
-</details>
+<img width="97" src="https://user-images.githubusercontent.com/125398461/236685118-f3524067-6251-4835-b50a-4832cb2e5f95.png" alt="Actions menu in an older version">
 
-<details markdown="1"><summary><h2>Actions</h2></summary>
+### Check status
 
-In this menu, a simulated terminal is displayed, through which a series of actions related to maintenance, troubleshooting and installation of the panel can be performed.
+Shows whether each service is running, plus the server's public IP and WARP. It changes nothing.
 
-<img width="97" src="https://user-images.githubusercontent.com/125398461/236685118-f3524067-6251-4835-b50a-4832cb2e5f95.png">
+<img width="1207" src="https://user-images.githubusercontent.com/125398461/236685140-6d0dca77-9d82-4486-92cd-e6020167f9b6.png" alt="Status log">
 
+### Logs
 
-### Status
-This menu executes the system status display script and displays the related logs.
+The **Logs** section lists what each action did. Click **View** to read a log.
 
-<img width="1207" src="https://user-images.githubusercontent.com/125398461/236685140-6d0dca77-9d82-4486-92cd-e6020167f9b6.png">
+<img width="607" src="https://user-images.githubusercontent.com/125398461/236685170-1357ea59-4b89-4f29-840e-8e08b536e4b3.png" alt="Logs in an older version">
 
-### View Logs
-In this section, the service logs will be visible in categories.
+### Apply changes
 
-<img width="607" src="https://user-images.githubusercontent.com/125398461/236685170-1357ea59-4b89-4f29-840e-8e08b536e4b3.png">
+Puts your settings, users and domain changes into effect. It is quick, and it is the usual choice after you change something.
 
+<img width="1185" src="https://user-images.githubusercontent.com/125398461/236685205-372dae9c-63c7-4a54-a72d-e2cd0b23f8cf.png" alt="Applying changes in an older version">
 
+- When it finishes, the page shows your admin links on your domains. They may have changed, so copy them before you leave.
+- If the panel no longer opens after a change, connect to your server over SSH and run `hiddify admin` to see your current admin links:
 
+```bash
+hiddify admin
+```
 
-### Apply Configs
-Settings registered in other menus are applied through this section.
+- If that does not help, see [How to connect and troubleshoot via SSH](/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/).
 
-<img width="1185" src="https://user-images.githubusercontent.com/125398461/236685205-372dae9c-63c7-4a54-a72d-e2cd0b23f8cf.png">
+<img width="371" src="https://user-images.githubusercontent.com/125398461/236685271-67ab8704-b3f2-4f08-970d-bf4dceab5ff3.png" alt="Success message in an older version">
 
+### Update Hiddify
 
-Important points related to applying changes:
+Downloads and installs the latest version, then applies it. It takes a while, and the panel restarts at the end. See [How to update HiddifyManager](/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/).
 
-    When applying changes, you need to wait at least 5 minutes and maximum 10 minutes for the changes to be applied. Do not refresh the browser while performing the operation.
+<img width="1177" src="https://user-images.githubusercontent.com/125398461/236685314-79d9cdda-c04f-4153-a101-a55c770f91c4.png" alt="Update in an older version">
 
-    Be sure to copy the emergency link before leaving this page. If for any reason there is a problem in applying the changes, the only way to access the panel is through the emergency link.
+### Reinstall
 
-    When the changes are applied, a green message will appear indicating that the operation was successful. If for any reason this message does not appear; And the panel won't open anymore; Use the emergency link to access the server.
+Installs everything again and rebuilds all services. Your users and links are not changed. Use it when **Apply changes** is not enough, for example after you change the panel path, protocols or a setting marked **Reinstall**. Connections may drop for a few minutes.
 
-    If you have lost the emergency link, you should solve the problem through ssh. [more information](/manager/wiki/How-to-connect-and-troubleshoot-via-SSH)
+<img width="1182" src="https://user-images.githubusercontent.com/125398461/236685416-c27a0a3e-0a10-49b2-914c-c0765dcadf8d.png" alt="Reinstall in an older version">
 
-<img width="371" src="https://user-images.githubusercontent.com/125398461/236685271-67ab8704-b3f2-4f08-970d-bf4dceab5ff3.png">
+### Restart services
 
-At the end, the panel shows you a message like this. It means every thin applied successfully.
+Restarts all Hiddify services without reinstalling anything. It is a good first try when something misbehaves. Connections drop for a moment.
 
-### Update System
-It is possible to install the update panel in this way.
-
-<img width="1177" src="https://user-images.githubusercontent.com/125398461/236685314-79d9cdda-c04f-4153-a101-a55c770f91c4.png">
-
-
-which usually should be done between 5 and 10 minutes. As a precaution, be sure to copy the emergency link to use in case of a problem.
-
-### Reinstall System
-The panel startup script will be executed again and the corresponding log will be displayed. By doing this, the database of users and links will not change, so there is no need to worry, but be sure to copy the emergency link as a precaution.
-
-<img width="1182" src="https://user-images.githubusercontent.com/125398461/236685416-c27a0a3e-0a10-49b2-914c-c0765dcadf8d.png">
-
-
-
-
-Sometimes the green message that the operation is successful may not be shown, but through the simulated terminal, you can see the completion of the operation.
-
-### Restart System
-If you need to reset the server, you can do it from this section.
-
-<img width="1181" src="https://user-images.githubusercontent.com/125398461/236685466-8f82e0d3-98da-4614-a4ba-37ad3c2d257d.png">
-
-
-
-After performing this operation, because the system will be restarted once; The page format may be messed up, so don't rush at all and wait at least 5 minutes for the service to be restored
-
-</details>
-
-
+<img width="1181" src="https://user-images.githubusercontent.com/125398461/236685466-8f82e0d3-98da-4614-a4ba-37ad3c2d257d.png" alt="Restart in an older version">
 
 ## Help
-Through [this link](/manager/), you will have access to categorized content and all tutorials and videos.
 
+All tutorials and videos are listed on the [HiddifyManager tutorials page](/manager/).
 
-
-
-
-
+</div>

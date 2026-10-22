@@ -2,161 +2,120 @@
 title: آموزش استفاده از اسکنر ریالتی هیدیفای
 ---
 
+<div dir="rtl" markdown="1">
+
 # اسکنر ریالیتی هیدیفای
-این یک اسکنر TLS است که به شما کمک می‌کند شبکه‌های مختلف را اسکن کنید و بر اساس لیستی از SNI‌ها بهترین SNI را برای ریالیتی روی شبکه خود پیدا کنید. برای اطلاعات بیشتر در خصوص توسعه می‌توانید [دستورالعمل‌های مشارکت](https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/CONTRIBUTING.md) در پروژه ما را مطالعه نمایید.
+اسکنر ریالیتی هیدیفای کمک می‌کند سایت‌های مناسبی برای دامنه Reality پیدا کنید. این ابزار فهرستی از نام سایت‌ها (**SNI**، یعنی نام سایتی که اپ هنگام باز کردن اتصال رمزنگاری‌شده می‌فرستد) را از داخل شبکه خود شما تست می‌کند و نشان می‌دهد کدام‌ها بهتر کار می‌کنند. این صفحه برای ادمین‌های هیدیفای‌منیجر است که با اجرای دستور روی سرور و کامپیوتر آشنا هستند. برای اطلاعات بیشتر درباره پروژه، [راهنمای مشارکت](https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/CONTRIBUTING.md) را ببینید.
 
-## ⚙️ نصب
-نصب این اسکنر دارای دو بخش است. بخش نخست یک اپلیکیشن سمت سرور است که باید روی سرور شما نصب شود و بخش دوم نیز یک اسکریپت سمت کلاینت است که باید روی کامپیوتر شما نصب گردد.
+!!! warning "این ابزار دیگر به‌طور فعال نگهداری نمی‌شود"
+    آخرین نسخه اسکنر در PyPI نسخه 1.8.0 است که در نوامبر ۲۰۲۳ منتشر شده است. این ابزار برای نسخه‌های قدیمی هیدیفای‌منیجر نوشته شده و برای نسخه ۱۳ و ۱۴ به‌روز نشده است، پس ممکن است آن‌طور که اینجا آمده کار نکند. در هیدیفای‌منیجر نسخه ۱۴، مراحل **افزودن دامنه** هم خودش بررسی می‌کند که سایت برای Reality مناسب است یا نه (TLS 1.3 و HTTP/2). [آموزش استفاده از Reality در هیدیفای‌منیجر](/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/) را ببینید.
 
+## این ابزار چطور کار می‌کند
+اسکنر دو بخش دارد:
 
-#### 🛠️ نصب سمت سرور
-* ابتدا نیاز است شما هسته Xray کاستوم شده ما را روی سرور خود با استفاده از دستور زیر نصب کنید:
+- **سمت سرور**: یک سرور Reality موقت برای تست که روی سرور شما اجرا می‌شود.
+- **سمت کلاینت**: یک برنامه پایتون که روی کامپیوتر شما و داخل شبکه‌ای که می‌خواهید تست کنید (مثلا اینترنت خانگی شما در ایران) اجرا می‌شود.
 
+## پیش‌نیازها
+- سروری که بتوانید با SSH به آن وصل شوید ([آموزش اتصال به سرور با SSH](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) را ببینید).
+- کامپیوتری که [پایتون](https://www.python.org/downloads/) روی آن نصب باشد.
 
-<div dir=ltr markdown="1">
- 
-```
-# حذف ایکس‌ری قدیمی
-bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove 
+!!! warning "در زمان تست، اتصال‌های Xray کاربران قطع می‌شود"
+    اگر هیدیفای‌منیجر روی همین سرور نصب است، مراحل زیر سرویس `hiddify-xray` را متوقف می‌کنند. تا وقتی این سرویس متوقف است، کانفیگ‌های Xray کاربران شما کار نمی‌کنند. تست را در زمان کم‌ترافیک انجام دهید و در پایان، سرویس را دوباره روشن کنید (آخرین مرحله همین صفحه).
 
-# تنها اگر هیدیفای‌منیجر دارید
-systemctl stop hiddify-xray 
+## نصب سمت سرور
+این دستورها را روی سرور خود و از طریق SSH اجرا کنید.
 
-# نصب ایکس‌ری کاستوم شده هیدیفای
- 
-bash -c "$(curl -L https://github.com/hiddify/Xray-core-custom/raw/main/install-release.sh)" @ install
+1. Xray قدیمی را که با نصب‌کننده رسمی XTLS نصب شده حذف کنید، Xray هیدیفای را متوقف کنید و هسته Xray سفارشی هیدیفای را نصب کنید:
 
-# تنها اگر هیدیفای‌منیجر دارید
-systemctl start hiddify-xray
+    ```bash
+    # remove old xray
+    bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
 
-```
-</div>
+    # only if you have Hiddify Manager on this server
+    systemctl stop hiddify-xray
 
+    # install hiddify custom xray
+    bash -c "$(curl -L https://github.com/hiddify/Xray-core-custom/raw/main/install-release.sh)" @ install
+    ```
 
- 
-* حالا باید یک فایل کانفیگ با SNI خالی را روی پنل خود ایجاد کنید یا از کانفیگ زیر استفاده نمایید:
+2. فایل کانفیگ سرور اسکنر را دانلود کنید و لینک‌های تست را چاپ کنید (یکی برای IPv6 و یکی برای IPv4):
 
-<div dir=ltr markdown="1">
- 
-```
-curl -o server_config.json https://raw.githubusercontent.com/hiddify/Hiddify_Reality_Scanner/main/server_config.json
+    ```bash
+    curl -o server_config.json https://raw.githubusercontent.com/hiddify/Hiddify_Reality_Scanner/main/server_config.json
 
-echo "---------------IPV6---------"
-echo "vless://hiddify@$(curl -6 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+    echo "---------------IPV6---------"
+    echo "vless://hiddify@$(curl -6 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
 
-echo "---------------IPV4---------"
-echo "vless://hiddify@$(curl -4 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+    echo "---------------IPV4---------"
+    echo "vless://hiddify@$(curl -4 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+    ```
 
-```
-</div>
+    لینک `vless://` چاپ‌شده را کپی کنید. این کانفیگ تست شماست و شبیه لینک زیر است، با این تفاوت که به جای `SERVER_IP` آی‌پی سرور شما در آن است:
 
+    ```text
+    vless://hiddify@SERVER_IP:11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.yahoo.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify
+    ```
 
-* سپس می‌بایست کانفیگ را با Xray مثل کامند زیر اجرا نمایید. این کار یک سرور Xray موقت برای تست ایجاد می‌کند:
+3. سرور تست موقت را اجرا کنید. تا پایان اسکن این پنجره را باز نگه دارید:
 
+    ```bash
+    xray run -c server_config.json
+    ```
 
-<div dir=ltr>
- 
-```
-xray run -c server_config.json
-```
-</div>
+    سرور تست روی پورت `11443` کار می‌کند. اگر اسکنر نتوانست وصل شود، مطمئن شوید این پورت در فایروال سرور باز است.
 
- 
-* می‌توانید کانفیگ ریالیتی را به شکل زیر استفاده نمایید:
+## نصب سمت کلاینت
+روی کامپیوتر خود یک ترمینال باز کنید (در ویندوز: Command Prompt یا PowerShell) و اسکنر را نصب کنید:
 
-<div dir=ltr>
- 
-```
-vless://hiddify@SERVER_IP:11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.yahoo.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify
-```
-</div>
-
- 
-
-#### 🛠️ نصب سمت کلاینت
-برای سمت کلاینت کافیه از Pypi استفاده نمایید و کامند زیر را ارا نمایید:
-
-
-<div dir=ltr markdown="1">
- 
 ```bash
 pip install -U hiddify_reality_scanner
 ```
-</div>
 
-<br>
+## استفاده پایه
+روی کامپیوتر خود یکی از دستورهای زیر را اجرا کنید. به جای `vless_link` لینک تستی را که از سرور کپی کردید بگذارید و علامت‌های نقل‌قول را نگه دارید:
 
-
-
-## 🚀 استفاده پایه
-جهت اجرای این اسکنر ابتدا [پایتون](https://www.python.org/downloads/) را روی سیستم خود نصب کنید، سپس یکی از دستورات زیر را روی کلاینت خود اجرا نمایید:
-
-
-<div dir=ltr>
- 
 ```bash
 python -m hiddify_reality_scanner "vless_link"
-#or
+```
+
+یا
+
+```bash
 hiddify_reality_scanner "vless_link"
 ```
-</div>
 
-> دقت شود که به جای `vless_link` می‌بایست کانفیگ ریالیتی خود را جایگزین نمایید.
+برای قطع کردن اسکن، کلیدهای `Ctrl+C` را بزنید.
 
-
- 
-## 🚀 استفاده پیشرفته
-* اگر بخواهید پارامترهای بیشتری را هنگام اسکن در نظر بگیرید، می‌بایست از دستور زیر روی کلاینت خود استفاده نمایید:
-
-
-<div dir=ltr markdown="1">
+## استفاده پیشرفته
+برای اینکه مشخص کنید کدام SNIها تست شوند و چند نتیجه نگه داشته شود، این دستور را اجرا کنید:
 
 ```bash
 hiddify_reality_scanner --jobs 10 --limit 100 --sni yahoo.com,google.com "vless_link"
 ```
 
-</div>
+اگر فهرست SNIها را در یک فایل دارید، مسیر فایل را بعد از `--sni` بنویسید:
 
-
-
-
-- در اینجا:
-  - پارامتر ` jobs 10--` تعداد اسکن همزمان را تعیین می‌کند. اگر از این پارامتر استفاده نکنید، مقدار دیفالت اسکن همزمان ۱۰ می‌باشد.
-  - پارامتر `sni--` نیز SNIهای مورد نظر را برای اسکن مشخص می‌کند.
-  - پارامتر `limit 100--` تعداد دامنه‌هایی که کار می‌کند را در لیست نتایج خروجی به ۱۰۰ دامنه محدود می‌کند.اگر از این پارامتر استفاده نکنید، مقدار دیفالت لیست خروجی ۱۰ می‌باشد.
- 
-* اگر بخواهید لیستی از SNIها را به اسکنر بدهید، می‌بایست از دستور زیر استفاده نمایید:
-
-
-<div dir=ltr markdown="1">
- 
 ```bash
 hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list "vless_link"
 ```
 
-</div>
+معنی این گزینه‌ها:
 
+- `--jobs 10`: تعداد SNIهایی که هم‌زمان تست می‌شوند. پیش‌فرض: 10.
+- `--sni`: SNIهایی که باید تست شوند، جداشده با کاما، یا مسیر فایلی که فهرست آن‌ها را دارد.
+- `--limit 100`: تعداد SNIهای سالمی که در نتیجه نگه داشته می‌شوند. پیش‌فرض: 10.
 
- 
-- در اینجا:
-  - پارامتر ` jobs 10--` تعداد اسکن همزمان را تعیین می‌کند. اگر از این پارامتر استفاده نکنید، مقدار دیفالت اسکن همزمان ۱۰ می‌باشد.
-  - پارامتر `sni path_to_the_list--` مسیر مربوط به لیست SNI مورد نظر را مشخص می‌کند.
-  - پارامتر `limit 100--` تعداد دامنه‌هایی که کار می‌کند را در لیست نتایج خروجی به ۱۰۰ دامنه محدود می‌کند.اگر از این پارامتر استفاده نکنید، مقدار دیفالت لیست خروجی ۱۰ می‌باشد.
- 
-> نکته: در حین اسکن، اگر می خواهید آن را قطع کنید، می‌توانید به سادگی از `cTRL+c` استفاده کنید.
+## نتایج
+اسکنر نتایج را روی کامپیوتر شما در فایل‌های `results.txt` و `results.json` ذخیره می‌کند. از بهترین SNIها به عنوان دامنه Reality و نام‌های سرور در سرور خود استفاده کنید. [آموزش استفاده از Reality در هیدیفای‌منیجر](/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/) را ببینید.
 
-## 📊 نتایج
-خروجی اسکنر در فایل‌های `results.txt` و `results.json` روی کلاینت شما ذخیره می‌گردد. شما می‌توانید از این SNIها برای ایجاد دامنه‌های ریالیتی در سرور خود استفاده نمایید. [نحوه ثبت دامنه ریالیتی در هیدیفای‌منیجر](/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/)
+## پایان کار: روشن کردن دوباره Xray هیدیفای
+اگر هیدیفای‌منیجر روی سرور نصب است، سرور تست را متوقف کنید (در پنجره آن `Ctrl+C` بزنید). سپس این دستور را روی سرور و از طریق SSH اجرا کنید:
 
-> نکته: اگر اسکنر سمت سرور را روی Hiddify Manager خود نصب کرده‌اید، پس از اتمام اسکن باید دستور زیر را اجرا کنید تا هسته اصلی Xray سرور شما فعال گردد.
-
-
-
-<div dir=ltr markdown="1">
- 
-```
+```bash
 systemctl start hiddify-xray
 ```
 
-</div>
+بررسی کنید که کاربران دوباره می‌توانند وصل شوند.
 
+</div>

@@ -3,128 +3,133 @@ title: How to check and prevent DNS leaks
 ---
 
 # How to check and prevent DNS leaks
-One of the most important issues in the Internet world is security and privacy. We daily provide important information through
-We exchange information on the Internet, and the leakage of this information outside the network can cause problems. In this article we
-We are going to discuss two of these problems namely DNS Leakage and WebRTC Leakage.
 
-## What is DNS leakage?
+This page helps you check whether your VPN or proxy is leaking information that can reveal who you are, and how to fix it. It covers two common leaks: **DNS leaks** and **WebRTC leaks**. You can do every test from your phone or computer; no server access is needed for the tests.
 
-Normally, your requests are directed to the DNS servers of your Internet Service Provider (ISP), and the ISP
-usually send requests to public DNS servers. But when connected to VPN
-Yes, these requests are sent to different servers than the ISP servers. A DNS leak occurs when a
-A VPN doesn't protect you properly and exposes your DNS requests, browsing history, and perhaps your device's IP address to others
-put
+## What is a DNS leak?
 
+**DNS** (Domain Name System) is the "phone book" of the Internet: it turns a name such as `google.com` into the IP address of the server behind it. Every time you open a site, your device first sends a DNS request.
 
-## How to test DNS leak
-There are many DNS leak testing websites that you can use. In this article, we examine some examples of them.
+- Without a VPN, these requests go to your Internet provider (ISP).
+- With a VPN or proxy, these requests should go through the VPN to the VPN's DNS server.
 
-### 1. DNSleaktest.com website:
-Your IP will be displayed on the first page of [this site](https://dnsleaktest.com/) when you log in. A little below that, there are two options Standard Test and Extended Test. In the Standard Test, only the local DNS servers and the DNS server of your Internet company are checked, but in the Extended Test, in addition to the DNS server of your Internet company and local DNS servers, DNS servers around the world are also tested. As a result, Extended Test helps you better examine your DNS traffic while using a VPN. In the image below, we click on the Extended Test option to start the evaluation process.
+A **DNS leak** happens when DNS requests skip the VPN and still go to your ISP. Your ISP (and anyone watching your connection) can then see which sites you visit, even though the rest of your traffic is hidden.
 
-![1](https://user-images.githubusercontent.com/125398461/235299493-2a0c4aaf-cd24-4723-b7f6-8ed60845734d.jpg)
+**Symptom:** a DNS leak test (below) shows DNS servers from your own country or your own ISP while you are connected to the VPN.
 
+## How to test for a DNS leak
 
-After the evaluation is complete, if the list of servers displayed in the results section matches the DNS servers of the server provider, you will not have a DNS leak. In simpler terms, if the list of servers shown all match the location of your VPN server, it means that all DNS traffic has passed through your VPN's DNS server and no DNS leaks have occurred. Otherwise you have a DNS leak.
+Connect to your VPN or proxy first, then open one or more of the sites below. Use more than one site, because each site tests a little differently.
 
-In the image below, as you can see, the list of servers displayed corresponds to the DNS servers of the server provider and the location of our VPN server. So as a result we don't have a DNS leak here.
+### 1. dnsleaktest.com
 
-![2](https://user-images.githubusercontent.com/125398461/235299505-d9fb313b-28b5-473a-b211-a1533bd0add5.jpg)
+1. Open [dnsleaktest.com](https://dnsleaktest.com/). The first page shows your current IP address.
+2. Tap **Extended test**. (The **Standard test** checks fewer servers; the extended test is more thorough.)
 
+    ![The dnsleaktest.com home page with the Standard test and Extended test buttons](https://user-images.githubusercontent.com/125398461/235299493-2a0c4aaf-cd24-4723-b7f6-8ed60845734d.jpg)
 
-### 2. Browserleaks.com website
-After entering the [DNS Leakage Test](https://browserleaks.com/dns) section, the website will automatically start evaluating and display the results after the evaluation.
+3. Wait for the test to finish and look at the list of servers:
+    - **No leak:** every server belongs to your VPN server's provider or is in your VPN server's country. All your DNS traffic went through the VPN.
+    - **Leak:** one or more servers belong to your own ISP or show your real country.
 
-In the image below, like the previous site, the list of servers displayed corresponds to the DNS servers of the server provider and the location of our VPN server. So as a result we don't have DNS leak.
+In the picture below, all servers match the VPN server's provider and location, so there is no leak.
 
+![dnsleaktest.com results with no DNS leak](https://user-images.githubusercontent.com/125398461/235299505-d9fb313b-28b5-473a-b211-a1533bd0add5.jpg)
 
-![3](https://user-images.githubusercontent.com/125398461/235299510-6b7fb769-3c3a-49e9-b28f-ef59f52e72e6.jpg)
+### 2. browserleaks.com
 
+Open the [DNS Leak Test page on browserleaks.com](https://browserleaks.com/dns). The test starts by itself and shows the results when it finishes. Read the results the same way as above.
 
-### 3. ipleak.net website
-After logging in, [this website](https://ipleak.net) will automatically start the evaluation and display the results after the evaluation.
-In the image below, as in the previous site, the displayed server corresponds to the DNS server of the server provider and the location of our CPN server. So, as a result, we do not have a leak.
+![browserleaks.com DNS test results with no leak](https://user-images.githubusercontent.com/125398461/235299510-6b7fb769-3c3a-49e9-b28f-ef59f52e72e6.jpg)
 
-![4](https://user-images.githubusercontent.com/125398461/235299557-8dac8205-37e8-4a67-bc2e-c6b0ad83b40d.jpg)
+### 3. ipleak.net
 
+Open [ipleak.net](https://ipleak.net). The test starts by itself. In the picture below, the DNS server matches the VPN server's provider and location, so there is no leak.
 
+![ipleak.net results with no DNS leak](https://user-images.githubusercontent.com/125398461/235299557-8dac8205-37e8-4a67-bc2e-c6b0ad83b40d.jpg)
 
-### 4. Dnsleaktest.org website
-After entering this website, enter the [DNS Leak Test](https://dnsleaktest.org/dns-leak-test) section to start the evaluation automatically. After evaluation, its results are displayed.
+### 4. dnsleaktest.org
 
-![5](https://user-images.githubusercontent.com/125398461/235299689-1efae131-4ca9-4e49-9b15-6f915695c32c.jpg)
+Open the [DNS Leak Test page on dnsleaktest.org](https://dnsleaktest.org/dns-leak-test). The test starts by itself.
 
+![The dnsleaktest.org DNS leak test page](https://user-images.githubusercontent.com/125398461/235299689-1efae131-4ca9-4e49-9b15-6f915695c32c.jpg)
 
+In the picture below, the list contains servers that do **not** belong to the VPN server and show the user's real location. This means there **is** a DNS leak.
 
-In the following image, unlike the previous sites, in addition to the DNS servers of the server provider, there are servers in the list that do not belong to our VPN server and show our real location; So as a result we have a DNS leak.
+![dnsleaktest.org results showing a DNS leak](https://user-images.githubusercontent.com/125398461/235299716-b3d0d789-84be-499c-b03a-b1cd5d2e1c58.jpg)
 
-> Note: It is always recommended to use several different test sites to check your DNS leak to make sure your DNS is not leaking.
+## How to fix a DNS leak
 
-(6)
+**Likely causes:** the client app sends DNS requests outside the tunnel, the device's own DNS settings override the VPN, or IPv6 traffic goes around the VPN.
 
+Try these fixes in order, and run a leak test again after each one.
 
-## DNS leak fix
-To fix the DNS leak, you can use the following methods:
-### 1. Using secure DNS servers:
-It is better to use secure and reliable DNS servers such as Google DNS (8.8.8.8, 8.8.4.4) or Cloudflare DNS (1.1.1.1, 1.0.0.1). You can set your DNS servers on these DNSs.
+### 1. Check the DNS settings in your client app
 
-### Setting DNS on Ubuntu server
+In the **Hiddify app** (v4):
 
-To fix the dns problem in Ubuntu, you must first edit the settings file. Run this code in the terminal:
+1. Open **Settings** and go to the **DNS** section.
+2. Make sure **Remote DNS** is set to a trusted public DNS server, for example Cloudflare (`1.1.1.1`) or Google (`8.8.8.8`). Remote DNS is the DNS server used for requests that go through the proxy.
+3. Reconnect and run a leak test again.
 
-```
-sudo nano /etc/resolv.conf
-```
+In other apps, look for a similar DNS setting and set it to a trusted public DNS server.
 
-The text editor opens the settings file for you. You must put the values of the nameservers on the valid dns. Clear all information Add these two lines:
+### 2. Disable IPv6 if you don't use it
 
-```
-nameserver 8.8.8.8
-nameserver 1.1.1.1
-```
+**IPv6** is the newer kind of IP address. If your VPN only carries IPv4 traffic, IPv6 requests can go around it. If you don't need IPv6, turn it off in your device's network settings. In the Hiddify app, you can also change the **IPv6 route** option in **Settings > Routing**.
 
-Press ctrl+s to save and ctrl+x to exit.
-The work is done!
+On the server side, see [How to disable IP version 6 on HiddifyManager](/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/).
 
-### 2. DNS settings in the client:
-Check that the DNS settings in your client are configured correctly and valid DNS servers are set in it.
+### 3. Set a trusted DNS server on your Hiddify server
 
-### Disable IPv6:
-If you do not use IPV6, you can disable it in your system settings. IPV6 may cause DNS Leakage, so disabling it can help solve the problem.
+Your server also needs a working, trusted DNS server. In HiddifyManager you can set it in the panel. See [How to set DNS server on HiddifyManager](/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/) for the steps and for how to test DNS on the server.
 
-### 4. Using 3rd party programs:
-You can use 3rd party applications such as DNSCryptop or `Simple DNS Crypt 'Simple, allowing you to automatically scan your DNS via DNS safe and encrypted servers.
+### 4. Use an encrypted DNS app
 
+On a computer, you can use tools such as **DNSCrypt** or **Simple DNS Crypt**. They send your DNS requests to secure servers over an encrypted connection, so your ISP cannot read them.
 
-## What is the Webrtc Protocol?
-The word stands for web real time communations and means immediate and real-time communication. Webrtc is an open source project that enables real-time media communication such as sound transmission, video and data naturally between browsers and devices, making it possible to communicate from its main web browser without the need for sophisticated plugins or additional hardware. Typically, applications that use WebRTC are browser -based. However, there are independent applications like Facebook Messenger and WhatsApp that use Webrtc.
+## What is WebRTC?
 
+**WebRTC** (Web Real-Time Communication) is a browser feature for live voice, video and data, for example video calls in a web page. It works without plugins and is built into most browsers.
 
+## What is a WebRTC leak?
 
-## What is a Webrtc leak?
-- This leakage is a weak point in web browsers such as Chrom, Firefox and Edge, which makes it possible to disclose your actual IP address despite the use of VPN. When you go to a website with a browser, the browser and the site communicate and information exchange occurs. Now, in some cases, that website can bypass the encrypted VPN tunnel and reach your real IP.
+To set up calls, WebRTC can ask your device for its IP addresses. In some cases a website can use this to find your **real IP address**, even when you use a VPN. This is a weakness in browsers such as Chrome, Firefox and Edge.
 
-## How webrtc leak test
--There are many sites for this test that you can use. Below we will examine an example of them.
+**Symptom:** a WebRTC test (below) shows your real IP address while you are connected to the VPN.
 
-### Browserleaks.com
+## How to test for a WebRTC leak
 
-After logging in to [Webrtc Leak Test](https://browserleaks.com/webrtc), the website will automatically evaluate and then show the results.
+1. Connect to your VPN or proxy.
+2. Open the [WebRTC Leak Test page on browserleaks.com](https://browserleaks.com/webrtc). The test runs by itself.
+3. Compare the IP addresses on the page with your real IP. If your real IP appears, you have a leak.
 
-In the picture below, we see that despite the use of VPN, the real IP address is recognized, so we have a leak.
+In the picture below, the real IP address is visible even though a VPN is in use, so there is a leak.
 
-![7](https://user-images.githubusercontent.com/125398461/235300245-57e4be56-22fb-4030-989b-a5a49f77d533.jpg)
+![browserleaks.com WebRTC test showing a leak of the real IP address](https://user-images.githubusercontent.com/125398461/235300245-57e4be56-22fb-4030-989b-a5a49f77d533.jpg)
 
+## How to fix a WebRTC leak
 
-## Fix Webrtc leak
+Fix it in each browser you use, then run the test again.
 
-You can use the following methods in your browser to fix the Webrtc leakage in your browser:
+### Firefox
 
-### 1. Firefox browser:
-Just type the word `about: config` in the URL address bar and hit Inter. Then click on `Accept the Risk and Continue` button. Now type `media.peerconnection.enabled` in the search bar and click on the item displayed again to make it `False`.
+1. Type `about:config` in the address bar and press Enter.
+2. Tap **Accept the Risk and Continue**.
+3. In the search box, type `media.peerconnection.enabled`.
+4. Double-click the setting so its value changes from `true` to `false`.
 
-### 2. Chrome and Edge browser:
-In these browsers, simply use the plugin [`Webrtc Leak Prevent`](https://chrome.google.com/webstore/detail/weak-leak-prevent/eiadekoaikejlgdbkbdFeijlgfdalmlml=en). After installing put `IP Handling Policy` settings on `Disbale non-prxied upd`.
+### Chrome and Edge
 
-### 3. Safari browser:
-If you are using Safari, you can disable Webrtc in the Preferences menu. When you enter it, go to the `Advanced` tab at the bottom and tick `Show Desktop Menu in Bar Menu`. Then click `Develop` and select `Experimental Features`. Find the `Remove Lagacy WebRTC API` option and click it to disable Webrtc.
+1. Install the [WebRTC Leak Prevent](https://chrome.google.com/webstore/detail/webrtc-leak-prevent/eiadekoaikejlgdbkbdfeijglgfdalml?hl=en) extension.
+2. Open the extension's options.
+3. Set **IP handling policy** to **Disable non-proxied UDP**.
+
+### Safari
+
+1. Open **Preferences** and go to the **Advanced** tab.
+2. Turn on **Show Develop menu in menu bar**.
+3. In the menu bar, open **Develop** and choose **Experimental Features**.
+4. Find **Remove Legacy WebRTC API** and click it to turn WebRTC off.
+
+Menu names can differ between Safari versions.

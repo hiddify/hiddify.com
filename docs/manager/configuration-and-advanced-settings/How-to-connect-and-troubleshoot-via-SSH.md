@@ -6,145 +6,204 @@ weight: -145
 <div dir="ltr" markdown="1">
 
 
-<details markdown="1"><summary><h1>Prerequisite: Installing ssh on Windows</h1></summary>
-- If your client is Windows; You can use Powershell. First, if you haven't installed the OpenSSH module yet; Open PowerShell with admin access, that is, right-click PowerShell and click Run as Administrator.
+<details markdown="1"><summary><h1>Prerequisite: Installing SSH on Windows</h1></summary>
 
-![image](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
+Windows 10 and 11 usually already include the SSH client. If the `ssh` command does not work in PowerShell, install it like this:
 
-Then run this command:
+1. Open the Start menu and search for **PowerShell**.
+2. Right-click **PowerShell** and choose **Run as Administrator**.
 
-```
-Add-WindowsCapability -Online -Name OpenSSH.Client
-```
-After that you should see something like this:
+    ![PowerShell, Run as Administrator](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
 
-![image](https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png)
+3. Run this command in PowerShell:
 
-Congratulations, ssh installation is complete.
+    ```powershell
+    Add-WindowsCapability -Online -Name OpenSSH.Client
+    ```
+
+4. When it finishes, you should see something like this:
+
+    ![OpenSSH client installed](https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png)
+
+The SSH client is now installed.
 
 </details>
 
 # How to connect and troubleshoot via SSH
-If for any reason access to the panel is not available through the web or your access is cut off and you do not have the emergency link; In this case, the only way to control and apply changes, as well as restore web access, is through the terminal.
 
-In this case, you need to ssh to the server first.
-for this job:
-According to your operating system, open one of the following programs
-- Android: `Termius`
--  Windows: `PowerShell`
-- Mac: `Terminal`
-- Linux: `Terminal`
+This page shows you how to manage Hiddify Manager from your server's command line when the web panel does not open, or when you have lost your admin link. It also explains each option of the Hiddify menu.
 
-Then connect to the server by running the following command: `ssh user@<IP_Address>`
+**SSH** is a secure way to open a text terminal on your server from your own computer or phone. Everything you type runs on the server.
 
-Usually, when you purchase a VPS you get the user ``root'' on the server. suppose your server's IP is 1.1.1.1, so the command is as follows:
+## Prerequisites
+
+- Your server's IP address.
+- The server's username (usually `root`) and password or SSH key. Your server provider gives you these.
+- An SSH app on your device:
+    - Android: `Termius`
+    - Windows: `PowerShell` (or `PuTTY`)
+    - macOS: `Terminal`
+    - Linux: `Terminal`
+
+For a full guide, see [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
+
+## Connect to the server
+
+1. Open your SSH app.
+2. Run this command on your device. Replace `user` with your username and `<IP_Address>` with your server's IP:
+
+    ```bash
+    ssh user@<IP_Address>
+    ```
+
+    For example, if your username is `root` and your server's IP is `1.1.1.1`:
+
+    ```bash
+    ssh root@1.1.1.1
+    ```
+
+3. Type `yes` if you are asked to trust the server, then enter your password. (The password is not shown while you type. This is normal.)
+
+If the connection works, you see the server's command prompt, and the Hiddify menu may open by itself.
+
+!!! warning "Password login warning"
+    If password login is enabled on your server, the menu first shows a **WARNING** that your server is open to abuse. Press Enter to continue. To fix it, follow [Disable SSH password authentication](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/).
+
+## Open the Hiddify menu
+
+Run this command on your server to open the Hiddify menu:
+
+```bash
+hiddify
 ```
-ssh root@1.1.1.1
+
+The menu looks like this (the screenshots on this page are from an older version, so some items may look a little different):
+
+![Hiddify Manager menu](https://github.com/hiddify/hiddify.com/assets/125398461/5b3b47fb-4437-4388-b22d-0d2df6359620)
+
+Use the arrow keys to move, and press Enter to choose an item. The sections below explain each item.
+
+!!! tip "Commands instead of the menu"
+    Most menu items are also available as direct commands, for example `hiddify status`, `hiddify admin`, `hiddify restart`, `hiddify apply` and `hiddify upgrade release`. Run `hiddify --help` to see them all.
+
+## Cancel or Quit
+Choose **Quit** (or press **Cancel** / `Esc`) to leave the menu and go back to the normal server terminal.
+
+To open the menu again, run this command on your server:
+
+```bash
+hiddify
 ```
-After connecting to the server, the panel menu will be shown like this.
 
-![Hiddify-Manager](https://github.com/hiddify/hiddify.com/assets/125398461/5b3b47fb-4437-4388-b22d-0d2df6359620)
-
-For more information, each part will be explained separately.
-
-## Cancel 
-By selecting cancel, you can exit the menu and reach the normal terminal of the server.
-
-Note: To return to the menu, you must run this command in the terminal.
-```
-bash /opt/hiddify-config/menu.sh
-```
 ## Status
-This menu is used to know the status of the system, if everything is normal, the result should be displayed like this.
+Shows whether each Hiddify service is running. If everything is fine, the result looks like this:
 
 ![Status](https://github.com/hiddify/hiddify.com/assets/125398461/bb5072e7-635b-486e-9dce-024b8479adb8)
 
-To return to the main menu, you must press the `q` key.
+Press `q` to return to the main menu.
+
+**When to use it:** to check quickly whether all services are running.
 
 ## Admin
-This section displays admin links. If you need these links for any reason, use this option.
+Shows your admin panel links. Open one of the links marked **Secure** (on your domain) in your browser. Use the **Not Secure** IP link only if no domain link works.
 
 ![Admin](https://github.com/hiddify/hiddify.com/assets/125398461/d15fb764-45b4-40ec-84f2-7dc0ea134f13)
 
-Press a key to return to the main menu.
+On this screen you can also press `r` to reset the owner admin password. Press any other key to return to the main menu.
 
-Most used:
-> > > If you installed the panel but forgot to copy the admin links.
+The same links are printed by this command:
+
+```bash
+hiddify admin
+```
+
+**When to use it:** you installed the panel but forgot to copy the admin link.
 
 ## Log
-Used to view system logs. After selecting it, you must also select the desired log type.
+Shows the system logs. After you choose it, pick the log file you want to read.
 
 ![Log](https://github.com/hiddify/hiddify.com/assets/125398461/4fa52e34-1f2a-4378-ae1a-881dc81e1269)
 
-For example, if we want to see the logs related to the installation, we can choose the `install-log` option.
+For example, choose the install log to see what happened during installation. At its end, it shows the system status and the admin links.
 
-![0-install.log](https://github.com/hiddify/hiddify.com/assets/125398461/6a980bbf-9d7a-4ef6-aa92-7a4bfeeb34e3)
+![Install log](https://github.com/hiddify/hiddify.com/assets/125398461/6a980bbf-9d7a-4ef6-aa92-7a4bfeeb34e3)
 
-Here, the installation logs are displayed as above, at the end of which the system status and admin links are displayed.
+Press `q` to close the log. The log files are stored on the server in `/opt/hiddify-manager/data/log/`.
 
-Most used:
-> > > If one of the services is not working properly and you need to check its log.
+**When to use it:** one of the services is not working and you need to see why.
 
-# Restart
-This option resets all panel services without changing the settings.
+## Restart
+Restarts all Hiddify services without changing any settings.
 
 ![Restart](https://github.com/hiddify/hiddify.com/assets/125398461/d0caf625-9f09-4543-bc22-ae3843bf289a)
 
-You can return to the main menu by pressing any of the buttons on the keyboard.
+Press any key to return to the main menu.
 
-Most used:
-> > > If one of the services is disabled and you need to reset all services at once.
+**When to use it:** a service has stopped and you want to restart all services at once.
 
-## Apply Configs
-This section is used to apply saved settings. After selecting it, the panel will start resetting the values.
+## Apply configs
+The menu no longer has an "Apply Configs" item. To apply the settings you saved in the panel, run this command on your server:
+
+```bash
+hiddify apply
+```
 
 ![Apply Configs](https://github.com/hiddify/hiddify.com/assets/125398461/76446e31-8efd-4d0e-84b9-a1358887a027)
 
-Press any key to return to the main menu.
+**When to use it:** you saved changes in the panel but lost web access before you could apply them.
 
-Most used:
-> > > If you registered changes in the panel, but for any reason you lost web access
+## Install
+Reinstalls Hiddify Manager on the server. Your panel data (users, settings, domains) is kept.
+
+**When to use it:** an install step failed and the panel does not open.
 
 ## Update
-This option is used to update the system. If you select that panel, it will be updated to the latest version available on the project's GitHub. There are three options here as follows.
+Updates Hiddify Manager to the latest version. It offers these options:
 
 ![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
 
-### Default
-By selecting this option, the program will be updated according to the setting of the web panel.
-### Release
-By selecting this option, the program will be updated to the latest stable version.
-### Develop
-By selecting this option, the program will be updated to the latest development version.
+- **default**: updates to the channel chosen in the panel settings.
+- **release**: updates to the latest stable version (recommended).
+- **beta**: updates to the latest pre-release version. It may have bugs.
 
-In all three cases, you will see something like this in the terminal.
+You can also update with a command, for example:
 
-![Develop](https://user-images.githubusercontent.com/125398461/222898474-0d72f442-f19a-40a9-9f35-fcad96807fc4.png)
+```bash
+hiddify upgrade release
+```
 
-Most used:
-> > > If you lost access during the update through the panel.
+While it runs, the terminal shows something like this:
 
+![Update running](https://user-images.githubusercontent.com/125398461/222898474-0d72f442-f19a-40a9-9f35-fcad96807fc4.png)
 
-### Advanced
-This submenu contains several options.
+**When to use it:** an update from the web panel failed and you lost access.
 
-![advanced](https://github.com/hiddify/hiddify.com/assets/125398461/61336508-2dbf-43d8-893c-8d9adbdf3a51)
+## Advanced
+This submenu has several options.
+
+![Advanced](https://github.com/hiddify/hiddify.com/assets/125398461/61336508-2dbf-43d8-893c-8d9adbdf3a51)
+
+### warp
+Shows the status of the WARP service.
 
 ### add_remote
-This option is for when you want to send access to [Hiddifybot](https://t.me/hiddifybot)
+Gives the Hiddify support team SSH access to your server, through the [Hiddify bot](https://t.me/hiddifybot). Use it only when the support team asks you to.
 
 ### remove_remote
-By using this option you can remove SSH access sent to the [bot](https://t.me/hiddifybot)
+Removes the SSH access you gave to the [Hiddify bot](https://t.me/hiddifybot).
 
-### Enable
-This option is for when you have previously disabled the display of this window and want to re-enable its automatic display at server startup.
+### enable
+Shows the Hiddify menu automatically every time you log in to the server over SSH. Use it if you turned this off before.
 
-### Disable
-By selecting this option, the display of this window will be disabled at startup. That is, if the server is restarted, this window will no longer be displayed automatically.
+### disable
+Stops the Hiddify menu from opening automatically when you log in. You can still open it with `hiddify`.
 
-### Uninstall
-If you need to remove the installed panel from the server, use this option. Also, keep in mind that this option does not remove all uninstalled items. If you need the server to return to the default settings before installation; It is better to rebuild it.
+### uninstall
+Removes Hiddify Manager services from the server. It does not remove everything that was installed. If you want the server exactly as it was before the installation, rebuild it from your provider's control panel.
 
-### Purge
-Select this option to completely remove the program and database from the server.
-> If this method did not work for you for any reason, you can `Rebuild` the server through your data center. This will delete all server data.
+### purge
+Removes Hiddify Manager **and its database** completely. All users and settings are deleted, so [take a backup](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/) first.
+
+> If this does not work for any reason, you can **Rebuild** the server from your provider's control panel. This deletes all data on the server.
+
+</div>

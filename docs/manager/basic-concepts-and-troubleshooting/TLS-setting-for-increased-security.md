@@ -5,82 +5,70 @@ title: TLS setting for increased security
 <div dir="ltr" markdown="1">
 
 # TLS setting for increased security
-Due to the intensity of filtering and the ability to detect patterns of Internet packets on TLS-based protocols, it is necessary to devise measures that prevent this. Here are some solutions for this issue.
 
-## Set the TLS version on CDN
+This page shows you how to make TLS connections that go through a CDN harder to detect. You need it if you use a Cloudflare CDN domain with Hiddify and your connections are unstable on some Internet providers.
 
-To use CDN-based connections, you need to set the TLS version to the highest setting in your domain settings.
+**TLS** is the encryption that protects `https` connections. Filtering systems can study patterns in TLS traffic, and older TLS versions show more of these patterns. **TLS 1.3**, the newest version, encrypts more of the connection setup and is harder to recognise.
 
-Log in to your `Cloudflare` account and select `SSL/TLS` in the `Domain` section. Then, in `Edge Certificates`, set the minimum TLS version to `TLS 1.3` using the `Minimum TLS Version` field.
+## Set the minimum TLS version on Cloudflare
+
+**Symptom:** your CDN (Cloudflare) configs connect on some operators but are unstable or don't connect on others.
+
+**Likely cause:** Cloudflare still accepts older TLS versions for your domain.
+
+**Fix:** tell Cloudflare to accept only TLS 1.3.
+
+1. Log in to your Cloudflare account and select your domain.
+2. In the menu, open **SSL/TLS**, then **Edge Certificates**.
+3. Find **Minimum TLS Version** and set it to **TLS 1.3**.
 
 <div align=center markdown=1>
-![](https://user-images.githubusercontent.com/125398461/243977858-69edd121-028f-43f5-87ca-35cb5be00c0f.png)
-
-
+![The Minimum TLS Version setting in Cloudflare set to TLS 1.3](https://user-images.githubusercontent.com/125398461/243977858-69edd121-028f-43f5-87ca-35cb5be00c0f.png)
 </div>
 
-> Please note that if this section is not on the TLS 1.3 option, you may have problems with some operators.
+**What to check:** reconnect from a device on the operator that had problems.
 
-> If you still have problems after changing the TLS version, try a new subdomain, because the previous subdomain may have been detected by the filtering system.
+**If it still doesn't work:** try a new subdomain. The filtering system may have already detected the old subdomain.
 
-## Enable TLS 1.3 on the client
+## TLS 1.3 on your device
 
-TLS 1.3 is enabled by default on Windows 11, Mac OS, and most recent versions of Linux. Here's how to enable this version of TLS for Windows 10.
+The **Hiddify app** and other Xray or sing-box based apps have their own built-in TLS. They don't use your operating system's TLS settings, so you normally don't need to change anything on your phone or computer.
 
-### Enable TLS 1.3 on Windows 10
+Windows 11, macOS and most recent Linux versions already have TLS 1.3 turned on for their own programs.
 
-- First, open a `notepad` file and copy the following registry commands into it.
+??? note "Optional: turn on TLS 1.2 and 1.3 in Windows 10 settings"
+    This only affects programs that use Windows' built-in TLS. Microsoft does not officially support TLS 1.3 in Windows 10, so this may have no effect. Change the Windows registry only if you know what you are doing.
 
-```
-Windows Registry Editor Version 5.00
+    1. Open **Notepad** and paste the text below:
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols]
+        ```ini
+        Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0]
+        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
+        "DisabledByDefault"=dword:00000000
+        "Enabled"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client]
-"DisableBy Default"=dword:00000000
-"Enabled"=dword:00000001
+        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
+        "DisabledByDefault"=dword:00000000
+        "Enabled"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server]
-"DisabledByDefault"=dword:00000000
-"Enabled"=dword:00000001
+        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client]
+        "DisabledByDefault"=dword:00000000
+        "Enabled"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2]
+        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Server]
+        "DisabledByDefault"=dword:00000000
+        "Enabled"=dword:00000001
+        ```
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
-"DisableBy Default"=dword:00000000
-"Enabled"=dword:00000001
+    2. Save the file with a `.reg` extension, for example `tls.reg`. In the **Save as type** list, choose **All files** so the file doesn't end in `.txt`.
+    3. Double-click the file and confirm the prompts.
+    4. Restart your computer.
+    5. To check: press `Win+R`, type `regedit` and press Enter. Go to the path shown in the picture below. The TLS versions you turned on are listed there.
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
-"DisableBy Default"=dword:00000000
-"Enabled"=dword:00000001
+    ![The SCHANNEL Protocols keys in the Windows registry](https://user-images.githubusercontent.com/125398461/243984337-53b259f3-267a-4e7f-90b2-8f5ce3a216ca.png)
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Client]
-"DisabledByDefault"=dword:00000000
-"Enabled"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.3\Server]
-"DisableBy Default"=dword:00000000
-"Enabled"=dword:00000001
-
-```
-- Now save the file with the `.reg` extension so that it becomes executable.
-
-- Make sure that the file does not have a `.txt` extension.
-
-- Now run it by double clicking on the file.
-
-- The work is done. `TLS 1.3` is enabled on Windows 10. You only need to restart the system once.
-
-- To check the correctness of the work, you can enter the Windows registry. To do this, type `regedit` in `Run` and press enter.
-
-- Now go in the path indicated in the image below. TLS-enabled versions are visible like this.
-
-<div align=center markdown=1>
-
-![](https://user-images.githubusercontent.com/125398461/243984337-53b259f3-267a-4e7f-90b2-8f5ce3a216ca.png)
+!!! warning
+    Older versions of this page also turned on **SSL 3.0**. SSL 3.0 is old and insecure. If you used that file, delete the `SSL 3.0` key under the same registry path.
 
 </div>

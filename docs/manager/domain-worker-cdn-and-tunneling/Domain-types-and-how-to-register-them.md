@@ -1,142 +1,185 @@
 ---
 title: Domain types and how to register them
+description: The domain modes in HiddifyManager (Direct, CDN, Relay, Cloudflare Worker, Subscription only, and the TLS modes Fake and Reality) and how to register a domain for each one.
 ---
 
 <div dir="ltr" markdown="1">
 
-# Domain types
+# Domain types and how to register them
 
-## Direct domain
-It means you want to use your server directly (for normal use). In fact, this domain name (subdomain) directly points to the IP address of the server. That is, if you ping it, the IP of the server will be answered.
+This page explains the kinds of domains you can add to HiddifyManager and how to set up each one at your DNS provider. Read it before you add your first domain to the panel.
 
-## CDN domain
-It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/). Also, see [this article](/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/) to view the settings of Amazon CDN domain.
+A **domain** is a name such as `sub.example.com` that points to an IP address. A **subdomain** is the part you add in front of your main domain (`sub` in `sub.example.com`). A **DNS record** is the entry at your DNS provider that tells the internet which IP a name points to. For more basics, see [Basic concepts](/manager/basic-concepts-and-troubleshooting/Basic-Concepts/).
 
-## Relay domain
-This domain is used when you want to use intermediate servers to send user traffic. For example, you have a server in Iran and you have registered a domain (subdomain) for it. You can register this domain in this section so that the relevant settings are applied in the configurations. [More information](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+!!! info "Domain types changed in HiddifyManager v13"
+    Since v13, every domain has a **Mode** and a **TLS mode**. The old modes were moved automatically when you upgraded:
 
-## Fake domain
-This domain is used to use the Header trick. A fake domain is used to bypass the SNI whitelist proxy. In this case, you can see the configurations related to this trick by defining this domain. If you use this trick, there is a possibility that the server will be filtered. [More information](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain)
+    - `auto_cdn_ip` became **CDN** (with "Resolve IP" turned on).
+    - `fake` became **Direct** with TLS mode **Fake**.
+    - `reality` and `special_reality_*` became **Direct** with TLS mode **Reality**.
+    - `old_xtls_direct` became **Direct**.
+    - "Use only for subscription link" became the **Subscription only** mode.
+
+## Domain modes in the panel
+
+In the panel, open the **Domains** page and select **Add domain**. A short wizard asks for the domain, then "How is it set up?" (the mode), then "Which TLS?" (the TLS mode).
+
+| Mode | When to use it | What your DNS record must do |
+|---|---|---|
+| **Direct** | Users connect straight to your server. | Point to your server's IP. On Cloudflare, the proxy must be off (**DNS only**, grey cloud). |
+| **CDN** | Your server sits behind a CDN such as Cloudflare. This hides your server's IP and keeps working when the IP is blocked. | Go through the CDN. On Cloudflare, the proxy must be on (**Proxied**, orange cloud). It must not resolve to your server's IP. |
+| **Relay** | Users connect to another server in between, which passes traffic on to your server. [More about relays](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) | Point to the in-between (relay) server, not to your server. |
+| **Cloudflare Worker** | Traffic reaches your server through a Cloudflare Worker. [More about workers](/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/) | The domain must be on Cloudflare. |
+| **Subscription only** | Only for users' subscription links, no proxies. If your proxy domains get blocked, users can still update their subscription and get new working configs. [More about subscription domains](/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/) | Point to your server or go through a CDN. Behind a CDN is best. |
+
+The **TLS mode** decides which certificate the domain uses:
+
+| TLS mode | Meaning |
+|---|---|
+| **Valid TLS** | A real certificate that the panel gets and renews for you automatically. Use this in almost all cases. CDN, Cloudflare Worker and Subscription only domains always use it. |
+| **Fake** | Decoy TLS with another site's name (for example `soft98.ir`) to pass an SNI whitelist. Not recommended, because it can get your server filtered. Only for Direct or Relay. [More about fake domains](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/) |
+| **Reality** | Borrows another real site's TLS with the Reality protocol. You do not need to own the domain. Only for Direct or Relay. |
+| **DNS** | For DNS tunnels only. |
+
+The panel checks the DNS record when you save. For example, a Direct domain must point to your server's IP, and a CDN domain must **not** point to it directly. If the check fails, fix the DNS record, wait a few minutes, and save again.
+
+!!! tip "Let the panel create the DNS records"
+    If your domain is on Cloudflare, you can give the panel a Cloudflare API token. The panel then creates the DNS record for each new domain (proxy on for CDN, off for Direct). See [Get Cloudflare API](/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/).
 
 # How to register a domain
-Now that we are familiar with the types of domains, how to register these domains will be checked
 
 <details markdown="1"><summary><h2>Direct domain registration</h2></summary>
-You can register the direct domain in several ways. 
 
-### Direct domain registration for free
-Using sites that offer free subdomains: [afarid](https://freedns.afraid.org/) is recommended.
-A number of public domains have already been registered on this site. You can register your desired subdomain on these domains.
-For this, you must first create a profile from [here](https://freedns.afraid.org/signup/?plan=starter). A real email is required.
+You can get a free subdomain or use a domain you bought.
 
-![](https://user-images.githubusercontent.com/125398461/221342760-12dc14ed-9a19-45f3-a3f1-bf7d3f969792.png)
+### Free subdomain (FreeDNS)
 
-After that, the list of domains registered on this site can be seen from [here](http://freedns.afraid.org/domain/registry/). You can choose one of the domains that has fewer hosts. Note that the domain must be public. It is recommended to use `.com`, `.org`, `.net` domains.
+[FreeDNS (afraid.org)](https://freedns.afraid.org/) lets you create a subdomain on domains that other people have shared publicly.
 
-![221343189-1fe98d0d-7f05-4639-9b51-fb6926f76f2b2](https://user-images.githubusercontent.com/125398461/234033584-1c26c485-6ceb-4aa9-a6b6-c1b781e767d1.png)
+1. [Create an account](https://freedns.afraid.org/signup/?plan=starter). You need a real email address.
 
-### Register the purchased direct domain
-After buying the domain, you can use the sites that provide DNS services. e.g. Cloudflare
+    ![FreeDNS sign-up page](https://user-images.githubusercontent.com/125398461/221342760-12dc14ed-9a19-45f3-a3f1-bf7d3f969792.png)
 
-#### Direct domain registration purchased on Cloudflare
-First, you register using [this link](https://dash.cloudflare.com/signup).
+2. Open the [domain registry](https://freedns.afraid.org/domain/registry/). Pick a **public** domain that has few hosts. Domains ending in `.com`, `.org` or `.net` are best.
 
-![](https://user-images.githubusercontent.com/125398461/221563866-d520a39d-15c8-4f88-a756-90e5e08c074a.png)
+    ![FreeDNS domain registry](https://user-images.githubusercontent.com/125398461/234033584-1c26c485-6ceb-4aa9-a6b6-c1b781e767d1.png)
 
+3. Create your subdomain on that domain and set its address to your server's IP.
 
-Log in after creating a profile. You must add your domain here. For this, click on `Add Site` button and add your domain.
+### A domain you bought, on Cloudflare
 
+You can manage a domain you bought with any DNS provider. These steps use Cloudflare.
 
+1. [Create a Cloudflare account](https://dash.cloudflare.com/signup) and log in.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221566504-5ecf714b-940d-4fd5-bc54-be8c37b7c292.png)
+    ![Cloudflare sign-up page](https://user-images.githubusercontent.com/125398461/221563866-d520a39d-15c8-4f88-a756-90e5e08c074a.png)
 
-In the next step, choose your desired plan. The free plan is enough for this. So you choose according to the photo.
+2. Go to **Domains** and select **Onboard a domain**. Enter your main domain (for example `example.com`) and select **Continue**. Older screenshots show this button as **Add Site**.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221567803-26850724-1bc8-480a-8c6f-29b32a6fcfa6.png)
+    ![Adding a domain to Cloudflare](https://user-images.githubusercontent.com/125398461/221566504-5ecf714b-940d-4fd5-bc54-be8c37b7c292.png)
 
-In the next step, we do next according to the figure.
+3. Choose a plan. The **Free** plan is enough.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/222444475-5596de54-3e7f-4fae-a0f0-94c046a21969.png)
+    ![Choosing the free plan](https://user-images.githubusercontent.com/125398461/221567803-26850724-1bc8-480a-8c6f-29b32a6fcfa6.png)
 
-In the last step, put the given DNS servers in your domain settings.
+4. Review the DNS records Cloudflare found and select **Continue**.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221569269-1f4027c7-5815-4dea-876e-326dc0645fe1.png)
+    ![Reviewing DNS records](https://user-images.githubusercontent.com/125398461/222444475-5596de54-3e7f-4fae-a0f0-94c046a21969.png)
 
-Wait a while to register the domain settings. After that, the domain will be activated on the Cloudflare server.
+5. Cloudflare shows you two **nameservers**. Go to the site where you bought the domain and replace its nameservers with these two.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221572305-50e819ea-0fa4-4548-8851-aab91b797f57.png)
+    ![Cloudflare nameservers](https://user-images.githubusercontent.com/125398461/221569269-1f4027c7-5815-4dea-876e-326dc0645fe1.png)
 
-Now you need to go to the registration section of DNS records.
+6. Wait until Cloudflare shows the domain as active. This can take from a few minutes to a day.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/222436778-f80de97b-7d66-4621-8be3-b856fc4e2c75.png)
+    ![Domain active on Cloudflare](https://user-images.githubusercontent.com/125398461/221572305-50e819ea-0fa4-4548-8851-aab91b797f57.png)
 
-In this case, to record records related to IP version 4, follow the figure.
+7. Open your domain and go to **DNS** > **Records**.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/222444012-2fa4a2c2-ff89-493e-b92c-01a26d7788b7.png)
+    ![DNS records page](https://user-images.githubusercontent.com/125398461/222436778-f80de97b-7d66-4621-8be3-b856fc4e2c75.png)
 
-After clicking on Add record, register the details of the desired subdomain by entering the server IP. Note that the proxy must be turned off for the direct domain.
+8. Select **Add record**.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234167251-ceebd61b-5147-4198-98dc-1c5bcd0d9124.png)
+    ![Add record](https://user-images.githubusercontent.com/125398461/222444012-2fa4a2c2-ff89-493e-b92c-01a26d7788b7.png)
 
+9. Fill in the record:
+    - **Type**: `A` (for the server's IPv4 address).
+    - **Name**: the subdomain you want, for example `sub`.
+    - **IPv4 address**: your server's IP.
+    - **Proxy status**: turn it **off** (**DNS only**, grey cloud). A Direct domain must not be proxied.
+    - **TTL**: leave it on Auto. A lower TTL makes changes reach users sooner.
 
-If needed, you can change the TTL from automatic mode. The lower this value is; DNS records cached on the user's system are refreshed sooner.
+10. Select **Save**.
 
-To record the records related to IP version 6 of the server, follow the figure.
+    ![A record with proxy off](https://user-images.githubusercontent.com/125398461/234167251-ceebd61b-5147-4198-98dc-1c5bcd0d9124.png)
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234167507-996c8480-5cf5-4ede-999f-05f74b22499f.png)
+11. If your server also has an IPv6 address, add a second record the same way, with **Type** `AAAA` and the IPv6 address.
 
+    ![AAAA record](https://user-images.githubusercontent.com/125398461/234167507-996c8480-5cf5-4ede-999f-05f74b22499f.png)
 
-All the things mentioned about IP version 4 also apply in this case. The only difference is the record type, which is AAAA.
+### Check that the direct domain works
 
-#### How to  direct domain registration
-The easiest test to ensure domain registration is to use the ping command. Thus, in a terminal, if the desired domain is pinged, the above registered IP must appear in the response. Usually, the DNS record registration process takes some time. More advanced tools such as nslookup and dig can also be used for this test. If you need more information, you can read [this article](https://wikicensorship.github.io/fa/docs/measure-internet-censorship/DNS/).
+DNS changes can take a few minutes to spread. Then, on your own computer, run:
+
+```bash
+ping sub.example.com
+```
+
+You should see your server's IP in the answer. You can also use `nslookup` or `dig`. If you see a different IP or "unknown host", check the record and wait a little longer. To learn more, read [this article on DNS](https://wikicensorship.github.io/fa/docs/measure-internet-censorship/DNS/) (Persian).
 
 </details>
 
 <details markdown="1"><summary><h2>CDN domain registration</h2></summary>
-This domain is registered behind the servers of a CDN provider or so-called proxy. For this, the services of one of these sites should be used.
-### CDN domain registration in Cloudflare
-For example, you can use Cloudflare service. So after following the steps mentioned above; Your domain was activated on the site; You should go to the DNS section and register the desired record. This record is type A for IP version 4 and type AAAA for IP version 6. The only difference with the previous step is that you must turn on the proxy.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234167748-7121af19-f624-4659-9922-50f8e6d3ea2c.png)
+A **CDN** (content delivery network) is a network of servers that sits between your users and your server. Users connect to the CDN, and the CDN passes the traffic to your server. [What is CDN and how does it help us?](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
 
+These steps use Cloudflare. For other CDNs, see [GCore](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/) and [Amazon CloudFront](/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/).
 
-### How to verify CDN domain registration
-When you test this domain using various tools such as ping, nslookup, dig; In response, one of the IPs randomly assigned by Cloudflare will return to your domain and there is no more information about your IP. This provides a level of security for your server.
+### Add the CDN record on Cloudflare
 
-It should be noted that this IP changes in different periods of time and is not fixed.
-Sometimes it happens that the IP assigned by Cloudflare is blocked or disrupted in Iran, and in this regard, methods to bypass this type of filtering should be used.
+1. Add your domain to Cloudflare as described in the direct domain section above (steps 1 to 6).
+2. Go to **DNS** > **Records** and select **Add record**.
+3. Use **Type** `A` (or `AAAA` for IPv6), a new subdomain name, and your server's IP.
+4. Turn **Proxy status** **on** (**Proxied**, orange cloud). This is the only difference from a direct domain.
+5. Select **Save**.
 
-### Certificate settings of CDN domain  
-TLS is an algorithm that encrypts all internet traffic and helps the user stay safe online.
+![A record with proxy on](https://user-images.githubusercontent.com/125398461/234167748-7121af19-f624-4659-9922-50f8e6d3ea2c.png)
 
-to describe precisely; TLS encrypts the communication between the client and the server in the web platform, which uses a set of cryptographic algorithms such as alpn, uTLS, allowInsecure.
+### Check that the CDN domain works
 
-Certificates assigned to domains are also based on the TLS protocol.
+When you `ping` this subdomain, you should see one of Cloudflare's IPs, not your server's IP. This hides your server. The Cloudflare IP can change over time.
 
-To do this, go to the SSL/TLS section on the Cloudflare site and set the certificate mode to Full.
+Sometimes the Cloudflare IPs that your users get are blocked or slow in Iran. In that case, see [Guide for finding a clean Cloudflare IP](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/).
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234168806-26bb12cf-78ad-45a9-89b5-c2f005a9fb86.png)
+### Cloudflare SSL/TLS settings
 
+**TLS** is the encryption that protects the connection between the user and the server. A **certificate** proves that a server really owns a domain. HiddifyManager gets a real certificate for your domain, so Cloudflare can connect to your server over TLS.
 
-Also, activate the SSL/TLS Recommender option to increase connection security. This option checks the connection and gives you security suggestions if it is possible to upgrade the TLS version.
+1. Open your domain in Cloudflare and go to **SSL/TLS** > **Overview**.
+2. Choose the encryption mode **Full** or **Full (strict)**. Do not use **Flexible**. If the mode is set to **Automatic SSL/TLS**, Cloudflare picks the most secure mode that works; you can leave it.
 
-Then go to the Network menu. Here you should check that QUIC, gRPC and WebSockets options are enabled.
+    ![SSL/TLS encryption mode](https://user-images.githubusercontent.com/125398461/234168806-26bb12cf-78ad-45a9-89b5-c2f005a9fb86.png)
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/223041843-7b441805-4aab-4547-b318-7dbbda4cc893.png)
+3. Go to **Network** and turn on **WebSockets** and **gRPC**. HiddifyManager's CDN proxies use WebSocket, gRPC, HTTPUpgrade and XHTTP.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/223042286-e597f169-001e-40a5-b0e8-d34d1b110eab.png)
+    ![Network settings](https://user-images.githubusercontent.com/125398461/223041843-7b441805-4aab-4547-b318-7dbbda4cc893.png)
 
-Checking security status of CDN domain traffic
-To do this, go to the SSL/TLS section of the Cloudflare site. A graph is displayed for passing traffic, the more traffic passed based on the higher version TLS; Communication security has been higher. http traffic passes without using TLS encryption.
+    ![WebSockets and gRPC toggles](https://user-images.githubusercontent.com/125398461/223042286-e597f169-001e-40a5-b0e8-d34d1b110eab.png)
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
+Older guides told you to turn on **SSL/TLS Recommender**. Cloudflare is replacing it with Automatic SSL/TLS, so you do not need it.
+
+The SSL/TLS section of Cloudflare also shows a chart of your traffic by TLS version. More traffic on newer TLS versions means safer connections.
+
+![Traffic by TLS version](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
 
 </details>
 
 ## Relay domain registration
-In fact, it is a direct domain that is considered for intermediate servers, and therefore the way to register such domains is the same as the direct domain. [Read more](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
 
+A relay domain is registered like a direct domain, but its record points to the in-between (relay) server instead of your main server. [Read more](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
 
-## Fake domain registration
-As the name suggests, we want to use a fake domain that is not related to us, so we don't need to register it in advance. But we can only use it in the panel. Click [here](a/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/) to see the article on registering and using fake domains.
+## Fake and Reality domains
+
+With the **Fake** or **Reality** TLS mode, you use the name of another site that you do not own, so you do not register anything at a DNS provider. You only add the name in the panel. See [How to create and use fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/).
+
+</div>

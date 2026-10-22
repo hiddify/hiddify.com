@@ -1,40 +1,66 @@
-# Time Zone Leak
+---
+title: How to check and prevent time zone leaks
+---
 
-A time zone leak occurs when the time obtained from the browser differs from the time zone of your VPN.
+# Time zone leak
 
-## How to Test for a Time Zone Leak
-You can check for time zone leaks using the website [webbrowsertools.com](https://webbrowsertools.com/timezone/). This site uses six different methods to assess the time zone. The last method (aggressive) is particularly effective in accurately identifying the browser's time zone.
+This page shows you how to check whether your browser reveals your real time zone while you use a VPN, and how to stop it. You only need a browser on your computer.
 
-As shown in the image below, without using an extension, a simple JavaScript code run by the site can detect the Iran time zone, which can expose you if it differs from your VPN's time zone.
+## What is a time zone leak?
 
-![timezone](https://github.com/user-attachments/assets/d9eee13e-b903-4977-ba05-e8707671f2dd)
+Websites can read your device's **time zone** (for example `Asia/Tehran`) with a few lines of JavaScript. A **time zone leak** happens when this time zone does not match the country of your VPN server. For example, if your VPN server is in Germany but your browser reports Iran's time zone, a website can guess that you are using a VPN and where you really are.
 
-Another method is using the browser's console. You can find your browser's time zone with the following code snippet in the console:
-```
-console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
-```
-![timezone2](https://github.com/user-attachments/assets/61a3c169-32f0-47e9-b468-c37e1e1d4a4a)
+## How to test for a time zone leak
 
-## Preventing Time Zone Leaks
-To prevent time zone leaks, two methods are recommended.
+### Method 1: a test website
 
-### 1. Using the NoScript Extension
-With this extension in [Chrome](https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm) and [Firefox](https://addons.mozilla.org/addon/noscript/), JavaScript code execution in the browser is blocked, preventing websites from accessing your time zone.
+1. Connect to your VPN.
+2. Open [webbrowsertools.com/timezone](https://webbrowsertools.com/timezone/). The site checks your time zone in six different ways. The last one ("aggressive") is the hardest to fool.
+3. Compare the time zone the site finds with your VPN server's country. If the site shows your real time zone, you have a leak.
 
-![timezone3](https://github.com/user-attachments/assets/2238af19-619d-42ad-a7dc-b6bb7a07e0dd)
+In the picture below, no extension is used, and simple JavaScript on the site detects the Iran time zone. If your VPN server is in another country, this gives you away.
 
-However, using this extension can have some drawbacks. Some sites may not display all their features properly, so use this extension with that in mind.
+![webbrowsertools.com detecting the Iran time zone](https://github.com/user-attachments/assets/d9eee13e-b903-4977-ba05-e8707671f2dd)
 
-### 2. Using the Spoof Timezone Extension
-With this extension in [Chrome](https://chromewebstore.google.com/detail/spoof-timezone/kcabmhnajflfolhelachlflngdbfhboe?hl=en) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/), you can reduce time zone leaks effectively. There are two modes for using this extension:
-- **Mode 1: Greenwich Mean Time (GMT)**  
-  If you don't change the extension settings, it will default to GMT as the system time.
-- **Mode 2: System Time Matching VPN IP**  
-  To set this mode, right-click on the extension, select *Options* from the menu, and check the box for *Automatically update timezone based on my IP address*. To apply the changes, right-click on the extension and select *Update Timezone from IP* to match the VPN's IP. Every time you switch VPN servers, you’ll need to repeat this last step to update the time zone according to the new IP.
+### Method 2: the browser console
 
-![timezone4](https://github.com/user-attachments/assets/dce0eaef-40a3-4079-92f4-4067ea2bbce9)
+1. Press `F12` (or right-click the page and choose **Inspect**), then open the **Console** tab.
+2. Paste this line and press Enter:
 
+    ```js
+    console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+    ```
 
-Note that the mentioned website uses six methods to retrieve the browser's time zone. The sixth method is particularly strict. As shown in the image below, even when using the Spoof Timezone extension, your time zone may still be revealed. However, the NoScript extension completely disables this capability.
+3. The console prints your browser's time zone.
 
-![timezone5](https://github.com/user-attachments/assets/f168398e-5073-4ec3-9994-a83bf53b7cb7)
+![The browser console showing the browser time zone](https://github.com/user-attachments/assets/61a3c169-32f0-47e9-b468-c37e1e1d4a4a)
+
+## How to prevent time zone leaks
+
+There are two recommended methods. After each one, run the test again.
+
+### 1. Use the NoScript extension
+
+**NoScript** blocks websites from running JavaScript, so they cannot read your time zone. Install it for [Chrome](https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm) or [Firefox](https://addons.mozilla.org/addon/noscript/).
+
+![The NoScript extension blocking the time zone test](https://github.com/user-attachments/assets/2238af19-619d-42ad-a7dc-b6bb7a07e0dd)
+
+Keep in mind that many sites need JavaScript, so some features may stop working while NoScript is on.
+
+### 2. Use the Spoof Timezone extension
+
+**Spoof Timezone** makes your browser report a different time zone. Install it for [Chrome](https://chromewebstore.google.com/detail/spoof-timezone/kcabmhnajflfolhelachlflngdbfhboe?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/). It has two modes:
+
+- **Mode 1: Greenwich Mean Time (GMT).** If you don't change any settings, the extension reports GMT.
+- **Mode 2: match your VPN's IP address.** To turn this on:
+    1. Right-click the extension icon and choose **Options**.
+    2. Tick **Automatically update timezone based on my IP address**.
+    3. Right-click the extension icon again and choose **Update Timezone from IP**.
+    4. Each time you switch to a VPN server in a different country, repeat step 3.
+
+![Spoof Timezone options](https://github.com/user-attachments/assets/dce0eaef-40a3-4079-92f4-4067ea2bbce9)
+
+!!! warning "Spoof Timezone does not stop every test"
+    The sixth ("aggressive") method on the test site is very strict. As the picture below shows, it can still find your real time zone even with Spoof Timezone. NoScript blocks this method completely.
+
+![The aggressive method still detecting the real time zone with Spoof Timezone on](https://github.com/user-attachments/assets/f168398e-5073-4ec3-9994-a83bf53b7cb7)

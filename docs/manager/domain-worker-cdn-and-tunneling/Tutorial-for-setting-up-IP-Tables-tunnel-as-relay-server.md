@@ -4,63 +4,82 @@ title: Tutorial for setting up IP-Table tunnel as relay server
 
 # Tutorial for setting up IP-Table tunnel as relay server
 
-<div dir="rtl" markdown="1">
+This page shows you how to turn a server into a relay for your Hiddify Manager server using IP-Tables, the firewall built into Linux. It is the simplest method: one script, no extra software to keep running.
 
-For this you need an relay server to connect to the main server. Usually, this relay server is considered in the country of residence.
-<div align=center dir="rtl" markdown="1">
- 
-![Tunnel usage schematic](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
+A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main Hiddify server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
+
+<div align=center markdown="1">
+
+![Diagram: users connect to the relay server, which forwards traffic to the main server](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
 </div>
 
-It is enough to get a good server with adequate bandwidth and CPU.
-Now you can buy several cheap and low-capacity relay servers, for example, with 256 RAM, which have a healthy IP or are located in the country of origin.
+There is also a [video tutorial in Persian](https://www.youtube.com/watch?v=kz_Ih__jS9c) for this method.
 
+## Prerequisites
 
-## Installation of relay server settings
+- A main server with Hiddify Manager installed. See the [installation guide](/manager/installation-and-setup/guide/).
+- A relay server running Ubuntu or Debian, with a clean IP and enough bandwidth and CPU for your users. RAM matters little: a small, cheap server (for example 256 MB of RAM) is enough, and you can run several of them.
+- SSH access to the relay server as `root`. New to SSH? See [how to connect to a server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
+- The IP address of your main server.
 
-now just run the following command on the Rails server (relay server):
-After running, it will ask you to enter the IP address of the main server.
+## Set up the relay server
 
-In the requested place, you must enter the IP of the main server.
-<div dir="ltr" markdown="1">
- 
+1. Connect to your **relay server** over SSH.
+2. Run this command:
+
+    ```bash
+    bash <(curl https://gist.githubusercontent.com/hiddify-com/63836c9a158eca29bad6c941610028cf/raw/0e4e2138148ab9d3d678723fd904b1cad461ce62/relay.sh)
+    ```
+
+3. When asked `Enter your main server IP like(1.1.1.1):`, type your main server's IP and press `Enter`.
+4. The script installs `iptables` and `iptables-persistent`. If a blue screen asks whether to save the current IPv4 (and IPv6) rules, choose **Yes**.
+
+    The script forwards TCP ports `80` and `443`, and all UDP traffic, to your main server, and saves the rules so they come back after a reboot.
+
+5. The script turns on IP forwarding (needed for the tunnel) only until the next reboot. Make it permanent:
+
+    ```bash
+    echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/99-relay.conf
+    sudo sysctl --system
+    ```
+
+### Check that it worked
+
+Run this on the relay server:
+
 ```bash
-bash <(curl https://gist.githubusercontent.com/hiddify-com/63836c9a158eca29bad6c941610028cf/raw/0e4e2138148ab9d3d678723fd904b1cad461ce62/relay.sh)
+sudo iptables -t nat -L -n
 ```
-</div>
 
-## Adding Relay server to HiddifyManager
-Now, register a subdomain with the proxy off for your relay server IP and register it in Hiddify Manager on `Relay` mode.
-- Put the registered subdomain in the `Domain` field and you can also set a `Alias` to display in the configurations.
+You should see `DNAT` lines that point to your main server's IP. If you do not, run the script again and check the IP you typed.
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed">
+## Add the relay server to Hiddify Manager
 
-## Adding `Relay` configurations to subscription link
+1. Point a subdomain (for example `relay.example.com`) at the **relay server's IP** with an `A` record. On Cloudflare, keep the proxy off (grey cloud).
+2. In the panel, open **Domains**, click **Add domain**, enter the subdomain and choose the mode **Relay**.
+3. Edit your subscription domain, select the relay domain under **Show configs of**, then apply the changes.
 
-As always in HiddifyManager, it is better to separate the configs from the subscription link. Therefore, for the registered `Relay` domain, you can check the `Relay` domain in the subscription domain settings so that its configurations are added to the subscription domain.
+For the full steps, see [How to add a relay server (domain) to HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-Assuming that the subscription domain is `sublink.hiddify.com`, proceed as shown below to get the job done.
+??? note "Screenshots from an older panel version"
+    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed" alt="Adding a relay domain in an older panel version">
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/e9fa3756-bb3a-4ee9-8adb-77a9f58f6354">
+    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/e9fa3756-bb3a-4ee9-8adb-77a9f58f6354" alt="Selecting the relay domain in the subscription domain settings, older panel version">
 
-Now, if you open the user page with the subscription domain (here `sublink.hiddify.com`), you will see that the connections related to the `relay server` have also been added. You can add and use these connections individually or using subscription links to your client.
+## Remove the relay rules
 
-## Delete the named configs in the relay server
-For this, just run the following command and delete the roles
-<div dir="ltr" markdown="1">
- 
+The forwarding rules live in the `nat` table. To delete them and save the empty rule set, run this on the relay server:
+
 ```bash
-iptables -F
+sudo iptables -t nat -F
+sudo iptables-save | sudo tee /etc/iptables/rules.v4
 ```
-</div>
-Or delete the created chains using this command.
-<div dir="ltr" markdown="1">
- 
+
+!!! warning
+    This deletes **every** rule in the `nat` table, including any you added yourself.
+
+To also turn IP forwarding off, delete the file you created:
+
 ```bash
-iptables -X
+sudo rm /etc/sysctl.d/99-relay.conf
 ```
-</div>
-
-
-
-</div>

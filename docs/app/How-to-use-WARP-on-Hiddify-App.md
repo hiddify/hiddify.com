@@ -1,73 +1,114 @@
 # How to Use WARP on HiddifyApp
-WARP is a service based on WireGuard provided by Cloudflare. By using this protocol, you can bypass the filtering system through creating a proxy. The HiddifyApp also supports this protocol. Below are the instructions for setting up and using this protocol.
 
-## WARP Parameters
-In the HiddifyApp, various parameters can be set, which are explained in order below.
+This page explains how to use Cloudflare **WARP** in Hiddify App: the easy way (one switch in the settings) and the advanced way (writing your own `warp://` config). Use it if you want a free connection, or if you want to hide your proxy traffic behind WARP.
 
-### Different Modes:
-There are 6 main modes and 2 advanced modes that create a header (noise) for WARP to help bypass filtering.
+**WARP** is a free VPN service from Cloudflare. It is based on **WireGuard**, a fast and simple VPN protocol. Hiddify App can create a WARP account for you and add "noise" (extra fake packets) so that WARP traffic is harder for filters to detect and block.
 
-- m1: In this mode, the header is created randomly.
-- m2: In this mode, the header is created randomly and remains unchanged, with no traces of WireGuard and WARP in the header.
-- m3: In this mode, the QUIC protocol is used to create the header.
-- m4: This mode uses QUIC and is unchangeable, with no traces of WireGuard and WARP in the header.
-- m5: This mode uses LQUIC.
-- m6: This mode uses LQUIC and remains unchanged, with no traces of WireGuard and WARP in the header.
-- gHEX: This advanced mode uses a HEX number for the WARP header to create noise.
-- hHEX: This advanced mode also uses a HEX number for the WARP header but remains unchanged, with no traces of WireGuard and WARP in the header.
+## Before you start
 
-These headers are defined with the IFPM parameter in WARP. For example: `ifpm=m4` or `ifpm=h04ad5d` or `ifpm=g04ad5d`
+- Install Hiddify App: see [How to install HiddifyApp](How-to-install-Hiddify-app.md).
+- For the advanced way, you should already know how to add a profile: see [How to use HiddifyApp](How-to-use-Hiddify-app.md).
+
+## The easy way: turn on WARP in the settings
+
+1. Open `Settings` and then `WARP`.
+2. Turn on `Enable WARP`. Read the "Cloudflare WARP consent" message and tap `Agree`.
+3. Tap `Generate WARP config`. When it is done, the app shows "Warp config is generated".
+4. Choose a `Detour mode`:
+    - `Detour proxies through WARP` ("Unblock proxies by WARP"): your proxy server is reached through WARP. Use this if your proxy server's IP is blocked.
+    - `Detour WARP through proxies` ("Extra security by WARP"): you connect to your proxy first and then to WARP. Websites see a Cloudflare IP instead of your proxy's IP.
+5. Go back to `Home` and connect as usual. When it works, the connect button turns green.
+
+You can also turn WARP on and off from the quick settings on the `Home` page (the sliders button at the top).
+
+The other options on the `WARP` page are `License key` (a WARP+ key, if you have one), `Clean IP` and `Port` (which Cloudflare address to connect to; `auto` by default), and `Noise count`, `Noise mode`, `Noise size` and `Noise delay`. These four noise options work like the `ifp`, `ifpm`, `ifps` and `ifpd` parameters explained below.
+
+!!! tip "Quick test"
+    To try a ready-made WARP profile, open [hiddify.com/warp](../warp/index.md) on a device that has Hiddify App and tap the link there.
+
+## The advanced way: write your own WARP config
+
+You can build a `warp://` link yourself and add it to the app like any other config (copy it, then tap `+` and `Clipboard`). The parts of the link are explained below.
+
+### Noise modes (`ifpm`)
+
+There are 6 main modes and 2 advanced modes. Each one adds a fake header (noise) in front of WARP traffic to help it get past filtering.
+
+- `m1`: the header is random.
+- `m2`: the header is random and stays the same, with no trace of WireGuard or WARP in it.
+- `m3`: the header uses the QUIC protocol.
+- `m4`: the header uses QUIC and stays the same, with no trace of WireGuard or WARP in it.
+- `m5`: the header uses LQUIC.
+- `m6`: the header uses LQUIC and stays the same, with no trace of WireGuard or WARP in it.
+- `h_HEX`: an advanced mode. You choose the first byte of the fake packet as a hex number (from `00` to `FF`). For example, `ifpm=h_30` makes every fake packet start with `0x30`.
+- `g_HEX_HEX…`: an advanced mode. The app picks one of the hex bytes you list at random each time. For example, `ifpm=g_10_20_30` uses `0x10`, `0x20` or `0x30`.
 
 !!! tip "Tip"
-     The recommended mode is `m4`.
+    The recommended mode is `m4`. It is also the app's default.
 
-### Number, Size, and Delay of Noise Packets
-These parameters are as follows:
+### Number, size and delay of noise packets
 
-- Number of noise packets: The number of noise packets can be defined in WARP using `ifp`, which is defined as a range, and each time a random number within this range is selected. For example: `ifp=40-80` means between 40 to 80 noise packets are created randomly.
-- Size of noise packets: The size of the packets can be defined with the `ifps` parameter, which is also defined as a range, and each time a random size within this range is selected. For example: `ifps=40-100` means each time a noise packet with a random size between 40 to 100 bits is created.
-- Delay in sending noise packets: The delay is defined using the `ifpd` parameter, which is also defined as a range, and each time the packets are sent with a random delay within this range. For example: `ifpd=4-8` means the packets are sent with a random delay between 4 to 8 seconds. Obviously, the smaller this range, the better.
+Each of these is a range (`min-max`). Each time, the app picks a random value inside the range.
 
-### IP Settings
-IP configuration settings are done in several ways:
+- `ifp`: how many noise packets to send. For example, `ifp=40-80` sends between 40 and 80 noise packets.
+- `ifps`: the size of each noise packet, in bytes. For example, `ifps=40-100` makes each packet between 40 and 100 bytes.
+- `ifpd`: the delay between noise packets, in milliseconds. For example, `ifpd=4-8` waits between 4 and 8 ms. Smaller delays usually work better.
 
-- auto4: An automatic IPv4 is assigned to the config by Cloudflare.
-- auto6: An automatic IPv6 is assigned to the config by Cloudflare.
-- auto: Both IPv4 and IPv6 ranges are assigned to the config by Cloudflare.
-- Clean IPv4: IPv4 can be directly entered into the config. For example: `188.114.97.170`
-- Clean IPv6: IPv6 must be entered into the config using `[]`. For example: `[2a01:4ef:f0:10a5::1]`
+### Which Cloudflare IP to use
+
+- `auto4`: Cloudflare gives the config an IPv4 address automatically.
+- `auto6`: Cloudflare gives the config an IPv6 address automatically.
+- `auto`: Cloudflare can give either an IPv4 or an IPv6 address.
+- A clean IPv4 address: type it directly. For example: `188.114.97.170`
+- A clean IPv6 address: put it inside `[]`. For example: `[2a01:4ef:f0:10a5::1]`
+
+A **clean IP** is a Cloudflare IP address that is not blocked on your network.
 
 !!! tip "Tip"
-     To find clean IPs, various scanners can be used. For example, these scanners: [1](https://github.com/MortezaBashsiz/CFScanner), [2](https://github.com/azavaxhuman/Quick_WARP_on_WARP), [3](https://github.com/Ptechgithub/WARP)
+    You can find clean IPs with a scanner, for example: [CFScanner](https://github.com/MortezaBashsiz/CFScanner), [Quick WARP on WARP](https://github.com/azavaxhuman/Quick_WARP_on_WARP), [Ptechgithub WARP](https://github.com/Ptechgithub/WARP). These are community tools, not made by Hiddify.
 
-### Display Name for Config:
-To create a display name or remark the config, a `#` can be used at the end of the config followed by the desired name. The name should be a single piece. For example:
+### Name of the config
 
-`warp://auto#NAME`
+To give the config a name, add `#` and the name at the end. The name must be one word (no spaces). For example:
 
-### WARP in WARP
-With this feature, you can use two different WARPs and place one at the end of the other. In this way, you first connect to the first WARP, then connect to the second WARP from there, and the final IP becomes the IP of the second WARP. To use this feature, the `detour` parameter should be used, and it should be added at the end of the first WARP with `&&`, followed by the second WARP. For example:
+```text
+warp://auto#NAME
+```
 
-`warp://auto&&detour=WARP://auto`
+### WARP in WARP (WoW)
 
-### General Formula for WARP Config:
-The WARP config can be built using this formula. In this case, a fixed config is imported into the software.
+You can chain two WARP connections: you connect to the first WARP, and from there to the second one. Websites then see the IP of the second WARP. Add `&&detour=` after the first WARP config, followed by the second one. For example:
 
-`warp://License@IP:port?ifp=n1-n2&ifps=s1-s2&ifpd=d1-d2&ifpm=mode#name`
+```text
+warp://auto&&detour=warp://auto
+```
+
+### Putting it all together
+
+The general form of a WARP config is:
+
+```text
+warp://License@IP:port?ifp=n1-n2&ifps=s1-s2&ifpd=d1-d2&ifpm=mode#name
+```
 
 Example:
 
-`warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4`
+```text
+warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4
+```
 
-In this case, a WARP config with the display name `m4` is imported into the software.
+This adds a WARP config named `m4` to the app.
 
-You can also detour two WARPs. For example:
-`warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=WARP://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3`
+You can also chain two WARPs. For example:
 
-In this case, a config with the name `m4` and a detoured config for WARP in WARP (WoW) with the name `m3` is created in the software.
+```text
+warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=warp://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3
+```
 
-Finally, it is recommended to check out sample WARP configs from [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP) and [here](https://raw.githubusercontent.com/hiddify/hiddify-next/main/test.configs/WARP2).
+This adds a config named `m4` that goes through a second WARP (WARP in WARP) named `m3`.
 
-!!! tip "Final Tip"
-    - To achieve a suitable configuration, use the above scanners to find a clean IP suitable for your network and then build the Warp configuration according to the formula.
-    - Also, adjust the range of parameters to achieve the desired result.
+For more examples, see the official sample files [warp](https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp) and [warp2](https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp2).
+
+!!! tip "Final tips"
+    - Use one of the scanners above to find a clean IP that works on your network, then build your config with the formula above.
+    - If it does not connect, change the ranges (`ifp`, `ifps`, `ifpd`) or try another mode, and test again.

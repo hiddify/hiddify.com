@@ -1,59 +1,93 @@
 ---
-title: Explanations about admin link in HiddifyManager and its changes from version 10
+title: The admin link in HiddifyManager and its format
+description: What each part of the HiddifyManager admin link means, how sign-in and Admin V2 work, and what to do if you lose the link.
 ---
 
 <div dir="ltr" markdown="1">
-  
-# Explanations about admin link in HiddifyManager and its changes from version 10
-## The correct format of admin link
-Or note that the admin link and other program links are made up of different parts and can be changed in the settings; It is necessary to give an explanation about the correct format of the admin link.
 
-In general, the admin link has the following format:
+# The admin link in HiddifyManager and its format
 
-`https://sub.domain.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/admin/`
+This page explains what each part of your admin link means, what happens when you open it, and how to get it back if you lose it. It is for anyone who manages a HiddifyManager panel.
 
-![](https://user-images.githubusercontent.com/125398461/230102115-65b21ce7-bc9f-4a6f-a450-bc531ce19a31.png)
+## The format of the admin link
 
+The installer prints your admin link at the end of the installation. It looks like this:
 
-Each part is separated from each other with "/" which will be explained below.
+```text
+https://sub.example.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/
+```
 
-> The beginning of the link that specifies the protocol of the site. If `https` is used; It means that the connection between the client and the server is encrypted by a TLS certificate and the connection is secure. If `http` is used; It means that the connection between the client and the server is established without encryption, which is not recommended. Therefore, it is strongly recommended to use `https` links to connect to the server.
+The general form is:
 
-> After that, there is the subdomain address along with the domain, which can be direct, CDN, or Relay. More information about domain types
+```text
+https://<domain>/<admin proxy path>/<admin UUID>/
+```
 
-> After that, there is a hidden proxy path, which is in the settings menu; The advanced settings section is located and can be changed.
+![Parts of the admin link](https://user-images.githubusercontent.com/125398461/230102115-65b21ce7-bc9f-4a6f-a450-bc531ce19a31.png)
 
-> The next part is the admin password or `UUID`, which can be found in the settings menu; Admin settings edited.
+The parts are separated by `/`:
 
-> The last part of the admin link is the page address that ends with admin. Now the sub-pages of this page can be added. For example, the users page can be in this format.
+1. **`https://`**: the connection is encrypted with TLS. Always use `https` links. An `http` link sends everything without encryption.
+2. **Domain** (`sub.example.com`): one of the domains you added in the panel (Direct, CDN or Relay). See [Domain types](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
+3. **Admin proxy path** (`DrtGho0n4b8H9D`): a secret path that hides the panel from bots and filtering systems. It is the setting **Proxy Path for Admins**. Users have a different path (**Proxy Path for Clients**).
+4. **Admin UUID** (`8bncvfb5-...`): your personal secret ID. Each admin has their own. Treat it like a password.
 
-Now the sub-pages of this page can be added. For example, the users page can be in this format:
+!!! warning "Keep your admin link private"
+    Anyone who has your admin link can manage your panel, unless you set a password for your admin account.
 
-`https://sub.domain.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/admin/user/`
+The link changes if you change your domain, the admin proxy path, or your admin UUID. Save the new link before you change any of them.
 
-- If after the end of the initial installation through the terminal; The given admin links were not in the format mentioned above; It turns out that the installation was not done correctly.
+## What happens when you open the link
 
-- Also, if there is a change in the admin password, this link will change
+1. You open the admin link in your browser.
+2. The panel signs you in and opens **Admin V2**, the new admin panel. The address in your browser changes to:
 
-- Also, if the hidden proxy path changes, this address will change
+    ```text
+    https://sub.example.com/DrtGho0n4b8H9D/admin/v2/
+    ```
 
-## Admin link changes in HiddifyManager version 10
-* In version 10, there has been a slight change in the structure of the links, which is in accordance with the following description:
-   * By default, after installing the long link format, it appears as above in the terminal. This link is your main admin link.
-   * When you open it in the browser, for more security, the admin authentication operation is performed based on the password or `UUID` of that admin, and then the long link is converted to a short link:
-     
+    The UUID is removed from the address bar, so it is not shown on your screen.
 
-`https://sub.domain.com/proxy_root/address_of_the_page`
+3. Your sign-in lasts up to 10 days in that browser. After that, or in a new browser, you see the **Sign in** page.
 
-![short link format](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
+On the **Sign in** page:
 
+- In **Admin ID or username**, enter the UUID from your admin link (or the username you were given).
+- In **Password**, enter your password. Leave it empty if your admin account has no password.
+- Select **Sign in**.
 
-  * This shortened link is valid for up to 10 days, in other words, your login with admin user is valid for up to 10 days and then it expires.
-  * After that, if you refresh the shortened link in the browser, the login page with UUID will be displayed. Here you need to enter the `UUID` of that admin in the `Secret Code` filed to perform the login operation.
-  
-  <div align=center>
-  <img alt="login via UUID" src="https://github.com/hiddify/hiddify.com/assets/125398461/d8c66248-5b57-419e-a12f-4195501ee84c" width=70% />
-  </div>
- 
-  * The alternative solution is to open the long link (the link that appeared in the terminal after installation) once again. In this case, you do not need to enter the UUID.
-  > It is recommended to always save the long link in a place where it is available to you when needed and use it.
+The easiest way is to open your full admin link again. It fills in your ID automatically.
+
+![Old short link format (before Admin V2)](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
+
+<div align=center>
+  <img alt="Sign-in page (older version)" src="https://github.com/hiddify/hiddify.com/assets/125398461/d8c66248-5b57-419e-a12f-4195501ee84c" width=70% />
+</div>
+
+The screenshots above are from an older version. The sign-in page now has separate fields for the ID and the password.
+
+## If you lost your admin link
+
+Connect to your server over SSH and run:
+
+```bash
+hiddify admin
+```
+
+It prints your admin links. Use a **Secure** `https` link with your domain. The link with the server's IP is "Not Secure"; use it only if the domain links do not work.
+
+If you set a password and forgot it, reset the owner admin's password on the server with:
+
+```bash
+hiddify reset-password
+```
+
+!!! tip
+    Save your full admin link somewhere safe, such as a password manager, so you always have it when you need it.
+
+## How to change the parts of the link
+
+- **Admin proxy path**: in the panel, open **Settings**, search for "Proxy Path for Admins", change it, and apply the changes. The panel then shows the new admin address.
+- **Admin UUID**: open the **Admins** page, edit the admin, and change the UUID field. The old admin link for that admin stops working.
+
+</div>

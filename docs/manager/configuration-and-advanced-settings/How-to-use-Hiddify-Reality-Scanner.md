@@ -3,87 +3,115 @@ title: How to use Hiddify Reality Scanner
 ---
 
 # How to use Hiddify Reality Scanner
-This is a TLS scanner that helps you scan across different networks and find the best Reality SNI for you based on a list of SNIs. For more information about development, you can read through our [Contribution Guidelines](https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/CONTRIBUTING.md) .
+The Hiddify Reality Scanner helps you find good websites to use as a Reality domain. It tests a list of website names (**SNIs**, the website name a client sends when it opens an encrypted connection) from your own network, and tells you which ones work best. This page is for Hiddify Manager admins who are comfortable running commands on a server and on a computer. For more about the project, see its [Contribution Guidelines](https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/CONTRIBUTING.md).
 
-## ⚙️ Installation
-The installation of this scanner has 2 parts. The first part is a server-side application and the 2nd part is client-side.
+!!! warning "This tool is not actively maintained"
+    The scanner's last release on PyPI is version 1.8.0, from November 2023. It was written for older Hiddify Manager versions and has not been updated for v13 or v14. It may not work as described here. In Hiddify Manager v14, the **Add domain** wizard also checks whether a website is Reality friendly (TLS 1.3 and HTTP/2), see [How to use Reality on HiddifyManager](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
+## How it works
+The scanner has two parts:
 
-#### 🛠️ Server-side Installation
+- **Server side**: a temporary test Reality server that runs on your server.
+- **Client side**: a Python program that runs on your computer, inside the network you want to test (for example, your home internet in Iran).
 
-* First you need to install our custom Xray core on the server using the following command:
-```
-# remove old xray
-bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
+## Before you start
+- A server you can reach over SSH (see [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/)).
+- A computer with [Python](https://www.python.org/downloads/) installed.
 
-#only if you have hiddify manager and hiddify panel
-systemctl stop hiddify-xray
+!!! warning "Your users lose Xray connections during the test"
+    If Hiddify Manager is installed on the same server, the steps below stop the `hiddify-xray` service. While it is stopped, your users' Xray configs don't work. Do the test at a quiet time, and start the service again when you finish (last step of this page).
 
-# install hiddify custom xray
-bash -c "$(curl -L https://github.com/hiddify/Xray-core-custom/raw/main/install-release.sh)" @ install
+## Server-side setup
+Run these commands on your server, over SSH.
 
-#only if you have hiddify manager and hiddify panel
-systemctl start hiddify-xray
-```
+1. Remove any old Xray installed with the official XTLS installer, stop Hiddify's Xray, and install Hiddify's custom Xray core:
 
-* Now you should create a config with empty nameserver in your panel or add the following config:
-```
-curl -o server_config.json https://raw.githubusercontent.com/hiddify/Hiddify_Reality_Scanner/main/server_config.json
+    ```bash
+    # remove old xray
+    bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
 
-echo "---------------IPV6---------"
-echo "vless://hiddify@$(curl -6 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+    # only if you have Hiddify Manager on this server
+    systemctl stop hiddify-xray
 
-echo "---------------IPV4---------"
-echo "vless://hiddify@$(curl -4 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+    # install hiddify custom xray
+    bash -c "$(curl -L https://github.com/hiddify/Xray-core-custom/raw/main/install-release.sh)" @ install
+    ```
 
-```
-* Then you need to run the config via Xray like the command below. This will create a temporary Xray server for you :
-```
-xray run -c server_config.json
-```
-* You can use your Reality config like the the following link:
+2. Download the scanner's server config and print your test links (one for IPv6, one for IPv4):
 
-```
-vless://hiddify@SERVER_IP:11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.yahoo.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify
-```
+    ```bash
+    curl -o server_config.json https://raw.githubusercontent.com/hiddify/Hiddify_Reality_Scanner/main/server_config.json
 
-#### 🛠️ Client-side Installation
-For client-side, you just need to use Pypi and run the following command:
+    echo "---------------IPV6---------"
+    echo "vless://hiddify@$(curl -6 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+
+    echo "---------------IPV4---------"
+    echo "vless://hiddify@$(curl -4 ip.sb):11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify"
+    ```
+
+    Copy the printed `vless://` link. This is your test config. It looks like this, with your server's IP instead of `SERVER_IP`:
+
+    ```text
+    vless://hiddify@SERVER_IP:11443/?fp=chrome&security=reality&pbk=Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw&sid=6ba85179e30d4fc2&sni=www.yahoo.com&type=tcp&flow=xtls-rprx-vision&encryption=none#Hiddify
+    ```
+
+3. Start the temporary test server. Leave this window open while you scan:
+
+    ```bash
+    xray run -c server_config.json
+    ```
+
+    The test server listens on port `11443`. If the scan can't connect, make sure this port is open in your server's firewall.
+
+## Client-side setup
+On your computer, open a terminal (Command Prompt or PowerShell on Windows) and install the scanner:
+
 ```bash
 pip install -U hiddify_reality_scanner
 ```
 
-<br>
+## Basic usage
+On your computer, run one of these commands. Replace `vless_link` with the test link you copied from the server, and keep the quotes:
 
-## 🚀 Basic Usage
-In order to run the scanner you need to [insall python](https://www.python.org/downloads/) first, then use one of the following commands on your client:
 ```bash
 python -m hiddify_reality_scanner "vless_link"
-#or
+```
+
+or
+
+```bash
 hiddify_reality_scanner "vless_link"
 ```
-> Be careful that instead of `vless_link' you have to replace it with your Reality config.
 
-## 🚀 Advanced Usage
-* If you want to consider more items when scanning, use the following command on your client:
+To stop a scan early, press `Ctrl+C`.
+
+## Advanced usage
+To choose which SNIs to test and how many results to keep, run:
+
 ```bash
 hiddify_reality_scanner --jobs 10 --limit 100 --sni yahoo.com,google.com "vless_link"
 ```
-* Here:
-  * `--jobs 10` defines the number of concurrent scans. The(default 10 if you dont use this parameter in the command.
-  * `--sni` defines the desired SNIs for scanning.
-  * `--limit 100` defines the 100 limit for the working SNIs in the result list. The default 10 if you dont use this parameter in the command
- 
-* If you want to add a list of SNIs, use the following command
+
+To test a list of SNIs from a file instead, put the file's path after `--sni`:
+
 ```bash
-hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list vless_link
+hiddify_reality_scanner --jobs 10 --limit 100 --sni path_to_the_list "vless_link"
 ```
-* Here:
-  * `--jobs 10` defines the number of concurrent scans. The(default 10 if you dont use this parameter in the command.
-  * `--sni path_to_the_list` desines the path for the list of SNIs.
-  * `--limit 100` defines the 100 limit for the working SNIs in the result list. The(default 10 if you dont use this parameter in the command.
 
-> Note: during the scan, if you want to intrupt it, you can simply use `ctrl+c` .
+The options mean:
 
-## 📊 Results
-The results will be stored in `results.txt` and `results.json` on your client. You can use these SNIs as a Reality domain in your server. [How to add Reality domain on Hiddify Manager](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/)
+- `--jobs 10`: how many SNIs to test at the same time. Default: 10.
+- `--sni`: the SNIs to test, separated by commas, or the path of a file that lists them.
+- `--limit 100`: how many working SNIs to keep in the results. Default: 10.
+
+## Results
+The scanner saves its results on your computer, in `results.txt` and `results.json`. Use the best SNIs as Reality domains and server names on your server: see [How to use Reality on HiddifyManager](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
+
+## Finish: start Hiddify's Xray again
+If Hiddify Manager is installed on the server, stop the test server (press `Ctrl+C` in its window). Then run this on your server, over SSH:
+
+```bash
+systemctl start hiddify-xray
+```
+
+Check that your users can connect again.

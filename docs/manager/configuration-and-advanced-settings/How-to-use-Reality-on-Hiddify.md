@@ -7,114 +7,111 @@ weight: -140
 
 
 # How to use Reality on HiddifyManager
-Reality is one of the new protocols provided by Xray, which does not have the prerequisites of the previous protocols. This protocol is based on Vless and therefore cannot be used for Vmess or Trojan. On Hiddify, the emphasis is still on simplification, so most of the work is done behind the scenes.
+This page shows you how to add a Reality domain in the Hiddify Manager panel, so your users get Reality configs. It is for panel admins who already have a working Hiddify Manager.
 
-* Very important point: because this protocol is based on TCP, it does not support CDN, so it can only be used in direct or rail modes, and for this reason, it needs a server with a clean IP. If you need information on how to test the server, refer to [this link](https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/).
+**Reality** is a security layer from Xray. Your server borrows the TLS identity (the "fingerprint" of the encrypted connection) of another real website, for example `www.yahoo.com`. To a filter, the traffic looks like a normal visit to that website. You don't need your own domain or certificate for Reality. Hiddify does most of the work behind the scenes.
 
+!!! warning "What changed in Hiddify Manager v13 and v14"
+    - Reality is no longer a separate domain type. You now add a domain with the mode **Direct** and the TLS mode **Reality**.
+    - The old panel-wide "Reality Server Names" and "Reality Fallback Domain" settings were removed. You now set them per domain, in the domain's **Server names** field.
+    - Reality now also works with other transports (TCP, HTTP, gRPC and XHTTP), and with Trojan as well as VLESS.
 
-## Reality setup in settings
-If you go to the panel settings page and enter the Reality settings, you will see the general settings related to this protocol.
+!!! note "Important"
+    Reality can't go through a CDN (a network of servers, such as Cloudflare, that sits between your users and your server). It only works in **Direct** or **Relay** mode, so your server needs a clean IP (an IP that is not blocked in your users' country). To check your server, see [How to make sure the server's IP or domain is clean](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/).
+
+## Before you start
+- You can log in to your panel as the owner (super admin).
+- Your server's IP is clean.
+- You have chosen one or more Reality-friendly websites. A good one supports TLS 1.3 and HTTP/2, is not blocked in your country, and ideally is hosted in the same data center as your server. The [Hiddify Reality Scanner](/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/) can help you find one.
+
+## Panel-wide Reality settings
+In the panel, open **Settings** → **Settings** and find the **Reality** section. You will see these fields:
 </div>
 
 <div align=center markdown=1>
   
-![](https://github.com/hiddify/hiddify-config/assets/125398461/854639a1-01a3-48d8-be28-1d85b715d6dc)
+![The Reality section of the panel settings (screenshot from an older panel version)](https://github.com/hiddify/hiddify-config/assets/125398461/854639a1-01a3-48d8-be28-1d85b715d6dc)
 
 </div>
 
+<div dir="ltr" markdown="1">
 
-These settings include the following.
+- **Short IDs**: used for encryption.
+- **Private Key**: used to encrypt the connection.
+- **Public Key**: given to the client apps so they can talk to your server.
 
-## Short IDs
-This ID is also used for encryption and please do not change it.
+The panel creates these values for you. Don't change them. If you change them, all your users' existing Reality configs stop working.
 
-## Private key
-This key is used to encrypt the connection and please do not change it.
+## Add a Reality domain
+1. In the panel's sidebar, under **Settings**, click **Domains**.
+2. Click **Add domain**.
+3. In the **Domain** step, type the address of the website you chose, for example `www.yahoo.com`. Click **Next**. The panel checks the domain's DNS. If it says the site "Points to another server: good for Reality", you can go on. If it says the site is "not Reality friendly (needs TLS 1.3 and HTTP/2)", go back and choose another website.
+4. In the **Mode** step, choose **Direct**.
+5. Under **Which TLS?**, choose **Reality**.
+6. In the **Name** step, you can type a short name that users will see in their apps. Use plain letters and numbers. Then finish the wizard. A Reality domain needs no certificate.
+7. Open the new domain to see its other fields (see below). Change them only if you need to, then click **Save**.
+8. Apply the changes: when the panel shows "Saved. Apply the configs to put the changes into effect.", click the button to apply. You can also go to **Settings** → **Actions** and click **Apply now**.
 
-## Public key
-This key is also used to encrypt the connection between the server and the client, and please do not change it.
-Settings in the domain section
+If the steps worked, the new domain appears in the **Domains** list, and your users see new Reality configs after they update their subscription.
 
-Go to the `Settings` menu, then `Domains`, and click `Create`.
+### Fields of a Reality domain
 
-## Mode
+#### Server names
+The websites whose TLS identity Reality borrows. Separate several names with commas, for example `www.yahoo.com,blog.yahoo.com`. If you leave this field empty, the panel uses the domain itself.
 
-Here, set the mode to reality so that you can make specific settings related to this protocol.
+Use names that belong to the same website and server as the domain. For example, if your domain is `www.yahoo.com`, `blog.yahoo.com` is a good server name, but `www.google.com` is not.
 
-> Important note: Before continuing, you can click on the domain review and suggestion link to open the domains review page. Here, the panel offers you several sites based on your server location and sites that have TLS1.3. You can choose the sites that have better ping.
+To spread your traffic over many names of one website, see [How to use subdomains of a website in Reality](/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/).
 
+#### Display name
+An optional name that users see in their apps instead of the domain.
+
+#### Force configs to use these IPs / domains
+Put an IP here if you want the configs to use it instead of your server's main IP. Separate several IPs with commas or new lines. This is mainly for **relay servers** (a server in between that passes your users' traffic on to your main server). If you use Reality through a relay server, put the relay server's IP here. For more about relays, see [How to add a relay domain](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
 <div align=center markdown=1>
   
-![](https://user-images.githubusercontent.com/125398461/233787191-cd855014-0ab2-4872-bce2-05d1ae705082.png)
-
+![Warning messages after checking a Reality domain (screenshot from an older panel version)](https://github.com/hiddify/hiddify-config/assets/125398461/2cf9e13b-8091-4a95-ac30-d5a3f9106a58)
 </div>
 
-
-## Fallback Domain 
-This domain, which is also known as Diggs such as Fallback or Destination, is used when the filtering system is visiting your website to be directed to this address if it does not have a valid key. You can put one of the addresses of the review page that had a lower ping time in this field, which is the same as the address in the Server Names or SNI field.
-
-You can also put the address of the site that is supposed to be hosted in the country of origin and supports tls1.3 and H2. By doing this, this site actually plays the role of an intermediate server.
-## Alias
-If you want, enter a custom name to display in the configs.
-
-> Note: It is better to use standard characters such as letters and numbers.
-
-## Reality Server Names
-The server name used to simulate the destination of your traffic. You can choose one or more sites from the list on the review page. To use multiple sites, use `,` . Finally, suppose that the sites `www.yahoo.com` and `www.microsoft.com` are in your data center and have a good test result; Put these addresses in this field and leave a comma between them.
-
-To learn how to use multiple server names or SNI, read [this article](/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/).
-
-## gRPC
-Turn on this button if you need to use gRPC in this protocol.
-
-## Force Config to Use Following IPs
-If you want a specific IP instead of the server's main IP in the configuration, enter that IP in this field. One of the uses of this field is for rail servers. If you want to use Reality on Relay servers , you must enter the IP of those servers here.
-
-> Tip: If you have more than a few IPs, you can put each IP in a row and connect between them.
-
-Finally, press save to save the settings and don't forget to `Apply Changes`.
-
-Yellow messages may be given as a result of the server checking your completed fields.
-
-- In Reality, in order not to be recognized, it is better that the selected domain is in your data center, and also note that the server name field and the returned domain must be on the same server.
-
-- That is, you cannot set the return domain to `www.yahoo.com` , but the server name is `www.google.com`. But if you put the name of the server as `blog.yahoo.com`, it is ok.
+When you save, the panel checks your fields and may show messages. Red messages are errors: fix them before you go on. Yellow messages are only warnings. It is best to change your settings until they go away, but you can ignore them and continue.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/2cf9e13b-8091-4a95-ac30-d5a3f9106a58" />
-</div>
-
-Considering the above, it is better to make the settings so that these messages do not appear, but if you did not receive an error message (red) and only received warning messages (yellow warning); You can ignore them and move on.
-
-<div align=center markdown=1>
-  
-![](https://user-images.githubusercontent.com/125398461/235890855-5b159244-1e83-4eaf-97d5-fef455168911.png)
+![A saved Reality domain (screenshot from an older panel version)](https://user-images.githubusercontent.com/125398461/235890855-5b159244-1e83-4eaf-97d5-fef455168911.png)
 </div>
 
 
 
-## Enabling or disabling Reality Proxy
-For this, go to the proxies menu and view and control Reality proxies in the direct section.
+## Turn Reality on or off
+Reality is controlled by a panel-wide switch:
 
+1. Go to **Settings** → **Settings**.
+2. In the **Proxies Settings** section, turn **Reality** on or off.
+3. Click **Save**, then apply the changes.
 
-> If you still do not receive its connections in the subscription link despite the Reality options being turned on in this section, check the domain settings used for the subscription link. You probably need to tick the direct domain.
+!!! tip "If Reality doesn't work on your network"
+    Reality can behave differently on different networks. If it doesn't work, first make sure your server's IP is clean. Then try another website as the domain and as the server names.
 
-- Important note: because this protocol uses a different algorithm, its settings may be different for different networks, so if you see that it does not work for you, first make sure that your IP server is healthy, and then change the return addresses and the server name. to achieve the desired result.
-
-## Why don't I see these configs in the proxy menu despite enabling the reality protocol?
-If you still don't see these connections in the configuration list despite activating the Reality protocol in the proxies section, you need to go to the subscription domain settings and add your direct domain to that domain.
+## Why don't my users see the Reality configs?
+Users see the configs of the domain they open their user page on. If their subscription link uses another domain, you must tell that domain to also show the Reality domain's configs.
 </div>
 
 <div align=center markdown=1>
   
-![](https://github.com/hiddify/hiddify-config/assets/125398461/9269f0ee-78af-4db6-a75d-64ea01f527fc)
+![The "Show configs of" field in a domain's settings (screenshot from an older panel version)](https://github.com/hiddify/hiddify-config/assets/125398461/9269f0ee-78af-4db6-a75d-64ea01f527fc)
 
 
 </div>
 
+<div dir="ltr" markdown="1">
 
-Suppose your subscription domain is `t1.hiddify.com` and your realty domain is `google.com`. You need to go to the `t1.hiddify.com` domain settings and in `Show Configs of Domains` field; Check the `google.com` domain. Now if you open your subscription link on the `t1.hiddify.com` domain; You will see that there are Reality configs.
+For example, say your subscription domain is `t1.hiddify.com` and your Reality domain is `www.yahoo.com`:
+
+1. Go to **Settings** → **Domains** and open `t1.hiddify.com`.
+2. In the **Show configs of** field, select `www.yahoo.com`.
+3. Click **Save** and apply the changes.
+
+Now open the subscription link on `t1.hiddify.com`. You should see the Reality configs in it.
 
 </div>
