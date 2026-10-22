@@ -1,10 +1,10 @@
 ---
-title: How to install HiddifyApp
+title: How to install the Hiddify app
 ---
 
 <div dir="ltr" markdown="1">
 
-# How to install HiddifyApp
+# How to install the Hiddify app
 
 This page shows you how to download and install Hiddify App on your phone or computer. Hiddify App is a free, ad-free and open-source client that connects you to a proxy or VPN server so you can reach the free internet. You need it if someone (or your own Hiddify server) gave you a config or subscription link.
 
@@ -268,6 +268,6 @@ You should now see the app's home page. Next time you open the app, it goes stra
 
 ## Next step
 
-To add your config or subscription link and connect, read [How to use HiddifyApp](How-to-use-Hiddify-app.md).
+To add your config or subscription link and connect, read [How to use the Hiddify app](How-to-use-Hiddify-app.md).
 
 </div>

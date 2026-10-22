@@ -39,14 +39,14 @@ For the full feature list, see the <a
                   <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
                 </div>
                 <a href="/app/How-to-install-Hiddify-app/" target="_blank" class="text-secondaryText text-sm">How
-                  to install HiddifyApp</a>
+                  to install the Hiddify app</a>
               </div>
               <div class="flex items-center gap-2">
                 <div>
                   <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
                 </div>
                 <a href="/app/How-to-use-Hiddify-app/" target="_blank" class="text-secondaryText text-sm">How to use
-                  HiddifyApp
+                  the Hiddify app
                 </a>
               </div>
               <div class="flex items-center gap-2">
@@ -62,14 +62,14 @@ For the full feature list, see the <a
                 </div>
                 <a href="/app/How-to-use-UDP-Turn-Relay/" target="_blank" class="text-secondaryText text-sm">How to
                   use
-                  UDP Turn Relay in HiddifyApp</a>
+                  UDP Turn Relay in the Hiddify app</a>
               </div>
               <div class="flex items-center gap-2">
                 <div>
                   <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
                 </div>
                 <a href="/app/How-to-use-WARP-on-Hiddify-App/" target="_blank" class="text-secondaryText text-sm">How to
-                  use WARP in HiddifyApp</a>
+                  use WARP in the Hiddify app</a>
               </div>
               <div class="flex items-center gap-2">
                 <div>
@@ -100,7 +100,7 @@ For the full feature list, see the <a
                     <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
                   </div>
                   <a href="/app/URL-Scheme/" target="_blank" class="text-secondaryText text-sm">
-                    URL scheme in HiddifyApp
+                    URL scheme in the Hiddify app
                   </a>
                 </div>
               </div>
@@ -123,14 +123,14 @@ For the full feature list, see the <a
               </a>
               <a href="https://www.youtube.com/watch?v=EjHjLQbC40E">
                 <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/Use_HiddifyApp.png" alt="Video: using HiddifyApp"
+                  <img src="/assets/Use_HiddifyApp.png" alt="Video: using the Hiddify app"
                     class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                   <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
                 </div>
               </a>
               <a href="https://www.youtube.com/watch?v=NtQ0bQlIRrY">
                 <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="Video: advanced settings in HiddifyApp"
+                  <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="Video: advanced settings in the Hiddify app"
                     class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                   <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
                 </div>

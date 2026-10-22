@@ -1,11 +1,11 @@
 ---
-title: How to use HiddifyApp
+title: How to use the Hiddify app
 ---
 
 <div dir="ltr" markdown="1">
 
 
-# How to use HiddifyApp
+# How to use the Hiddify app
 
 This page shows you how to add your connection link to Hiddify App, connect, pick a server and change the most useful settings. It is for anyone who has installed the app and received a link from their provider or from their own Hiddify server.
 
@@ -13,7 +13,7 @@ This page shows you how to add your connection link to Hiddify App, connect, pic
 
 You need:
 
-1. Hiddify App installed on your device. If you have not installed it yet, follow [How to install HiddifyApp](How-to-install-Hiddify-app.md).
+1. Hiddify App installed on your device. If you have not installed it yet, follow [How to install the Hiddify app](How-to-install-Hiddify-app.md).
 2. A connection link from your provider. This is usually your **user page** link (a personal web page that a Hiddify panel makes for each user) or a **subscription link**.
 
 A few words you will see on this page:
@@ -24,7 +24,7 @@ A few words you will see on this page:
 - **Proxy**: one server in your profile that your traffic can go through.
 
 <div align=center>
-<a href="https://www.youtube.com/watch?v=EjHjLQbC40E"><img width="32%" alt="Video (in Persian): using HiddifyApp" src="https://github.com/hiddify/hiddify-next/assets/125398461/ea1480af-e7a8-4add-b0f2-600ace5efd4b" /></a>
+<a href="https://www.youtube.com/watch?v=EjHjLQbC40E"><img width="32%" alt="Video (in Persian): using the Hiddify app" src="https://github.com/hiddify/hiddify-next/assets/125398461/ea1480af-e7a8-4add-b0f2-600ace5efd4b" /></a>
 </div>
 
 !!! note
@@ -155,7 +155,7 @@ On the `Home` page, tap the sliders button at the top of the screen (next to `+`
     - `Proxy`: the app only runs a local proxy. Other apps must be set up to use it.
     - `System proxy` (computers only): browsers and most apps use the proxy automatically. This is the default on computers.
     - `VPN`: all traffic of the device goes through the app. This is the default on phones.
-- Turn **WARP** on or off. See [How to use WARP in HiddifyApp](How-to-use-WARP-on-Hiddify-App.md).
+- Turn **WARP** on or off. See [How to use WARP in the Hiddify app](How-to-use-WARP-on-Hiddify-App.md).
 
 ## General settings
 

@@ -1,4 +1,4 @@
-# How to Use WARP on HiddifyApp
+# How to use WARP in the Hiddify app
 
 This page explains how to use Cloudflare **WARP** in Hiddify App: the easy way (one switch in the settings) and the advanced way (writing your own `warp://` config). Use it if you want a free connection, or if you want to hide your proxy traffic behind WARP.
 
@@ -6,8 +6,8 @@ This page explains how to use Cloudflare **WARP** in Hiddify App: the easy way (
 
 ## Before you start
 
-- Install Hiddify App: see [How to install HiddifyApp](How-to-install-Hiddify-app.md).
-- For the advanced way, you should already know how to add a profile: see [How to use HiddifyApp](How-to-use-Hiddify-app.md).
+- Install Hiddify App: see [How to install the Hiddify app](How-to-install-Hiddify-app.md).
+- For the advanced way, you should already know how to add a profile: see [How to use the Hiddify app](How-to-use-Hiddify-app.md).
 
 ## The easy way: turn on WARP in the settings
 

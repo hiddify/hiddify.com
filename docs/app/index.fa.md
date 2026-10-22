@@ -12,7 +12,7 @@ comments: false
 
 # همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
 
-هیدیفای‌اپ یک برنامهٔ رایگان و متن‌باز برای اتصال به پروکسی و VPN است که روی Android، iOS، Windows، macOS و Linux کار می‌کند.
+اپ هیدیفای یک برنامهٔ رایگان و متن‌باز برای اتصال به پروکسی و VPN است که روی Android، iOS، Windows، macOS و Linux کار می‌کند.
 در این صفحه همهٔ آموزش‌های اپ را می‌بینید: اول «نصب» و بعد «استفاده» را بخوانید.
 فهرست کامل امکانات اپ در
 <a class="underline underline-offset-2"
@@ -26,20 +26,20 @@ comments: false
       <div class="px-8 py-8 w-full md:w-2/3">
         <img src="/assets/hiddify-app.png" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
-          <h1 class="text-primaryText title-font text-lg mb-3">هیدیفای‌اپ</h1>
+          <h1 class="text-primaryText title-font text-lg mb-3">اپ هیدیفای</h1>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/app/How-to-install-Hiddify-app/" target="_blank" class="text-secondaryText text-sm">چگونه
-              هیدیفای‌اپ را نصب کنیم</a>
+              اپ هیدیفای را نصب کنیم</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/app/How-to-use-Hiddify-app/" target="_blank" class="text-secondaryText text-sm">چگونه
-              از هیدیفای‌اپ استفاده کنیم
+              از اپ هیدیفای استفاده کنیم
             </a>
           </div>
           <div class="flex items-center gap-2">
@@ -55,14 +55,14 @@ comments: false
             </div>
             <a href="/fa/app/How-to-use-UDP-Turn-Relay/" target="_blank" class="text-secondaryText text-sm">چگونه
               از
-              UDP Turn Relay در هیدیفای‌اپ استفاده کنیم</a>
+              UDP Turn Relay در اپ هیدیفای استفاده کنیم</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/app/How-to-use-WARP-on-Hiddify-App/" target="_blank" class="text-secondaryText text-sm">چگونه
-              از WARP در هیدیفای‌اپ استفاده کنیم</a>
+              از WARP در اپ هیدیفای استفاده کنیم</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
@@ -93,7 +93,7 @@ comments: false
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/app/URL-Scheme/" target="_blank" class="text-secondaryText text-sm">
-                URL Scheme در هیدیفای‌اپ (انگلیسی)
+                URL Scheme در اپ هیدیفای (انگلیسی)
               </a>
             </div>
           </div>
@@ -116,14 +116,14 @@ comments: false
             </a>
             <a href="https://www.youtube.com/watch?v=EjHjLQbC40E">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/Use_HiddifyApp.png" alt="ویدیو: کار با هیدیفای‌اپ"
+                <img src="/assets/Use_HiddifyApp.png" alt="ویدیو: کار با اپ هیدیفای"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
             <a href="https://www.youtube.com/watch?v=NtQ0bQlIRrY">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="ویدیو: تنظیمات پیشرفته هیدیفای‌اپ"
+                <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="ویدیو: تنظیمات پیشرفته اپ هیدیفای"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
