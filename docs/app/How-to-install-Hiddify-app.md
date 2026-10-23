@@ -64,8 +64,17 @@ Open the section for your device.
 
 1. Download the [universal APK](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk). It works on every Android phone.
 2. Open the downloaded file from your notifications or from the `Downloads` folder.
+
+    <img width=260 alt="The Hiddify APK in the Downloads folder" src="/assets/app-install/android-downloads.webp" style="display:block;margin:0 auto">
+
 3. If Android says it cannot install apps from this source, tap `Settings`, turn on `Allow from this source`, then go back.
-4. Tap `Install`, then `Open`.
+4. Android asks "Do you want to install this app?". Tap `Install`.
+
+    <img width=260 alt="Install prompt for Hiddify" src="/assets/app-install/android-install.webp" style="display:block;margin:0 auto">
+
+5. When you see `App installed`, tap `Open`.
+
+    <img width=260 alt="App installed message" src="/assets/app-install/android-installed.webp" style="display:block;margin:0 auto">
 
 </details>
 <br>
@@ -218,25 +227,30 @@ sudo apt install libfuse2t64
 
 ## First start
 
-The first time you open the app, it asks a few questions:
-
-1. Click `Language` to choose your language.
-2. Click `Region` and choose the country you are in (for example Iran). The app uses this to send local websites directly, without the proxy.
-3. Turn `Enable analytics` on or off. If it is on, the app sends anonymous crash and usage data that helps the developers improve it.
-4. Click `Start`.
+The first time you open the app, a welcome screen with three options opens. The app picks the language and region for you. If they are right, just tap `Start`.
 
 <div align=center>
-<img width=60% alt="First start: language, region and analytics" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/0d50c68f-d6e5-45f3-b86a-0f0217b29867">
+<img width=260 alt="First start: language, region and analytics" src="/assets/app-install/en-first-run.webp">
 </div>
 
-You should now see the app's home page. Next time you open the app, it goes straight to this page.
+1. **Language:** if the app's language is wrong, tap `Language` and choose yours.
+2. **Region:** tap `Region` and choose the country you are in (for example `Iran (ir)`). The app uses this to open local websites directly, without the proxy. If your country is not in the list, choose `Other`.
+3. **Turn on analytics:** this switch is on by default. While it is on, the app sends anonymous crash and usage data that helps the developers improve it. Turn it off if you do not want that.
+4. Tap `Start`.
 
 <div align=center>
-<img width=60% alt="Hiddify App home page" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/9ff5d21c-7fbf-4183-96bb-acd12cebf2a8">
+<img width=260 alt="Language list" src="/assets/app-install/en-language.webp">
+<img width=260 alt="Region list" src="/assets/app-install/en-region.webp">
+</div>
+
+You should now see the app's home page. Next time you open the app, it goes straight to this page. The `+` button at the top adds a config or subscription link, and the big button in the middle (`Tap to connect`) connects you.
+
+<div align=center>
+<img width=260 alt="Hiddify app home page" src="/assets/app-install/en-home.webp">
 </div>
 
 !!! note
-    The screenshots on this page come from an older version of the app. The steps are the same, but some screens in v4 look different.
+    The Android screenshots on this page come from version 5 of the app (a pre-release). On other versions and on computers the steps are the same, but some screens may look a little different.
 
 ## Next step
 
