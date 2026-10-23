@@ -1,0 +1,26 @@
+<div dir="ltr" markdown="1">
+
+```yaml
+#cloud-config
+package_upgrade: true
+packages:
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - wget
+  - gnupg-agent
+  - software-properties-common
+  - git
+  - jq
+
+runcmd:
+  - cd /opt
+  - bash -c "export CREATE_EASYSETUP_LINK='true' NO_UI='true'; curl -s https://i.hiddify.com/release | bash -s -- --no-gui"
+
+final_message: "The system is finally up, after $UPTIME seconds"
+output: { all: "| tee -a /root/cloud-init-output.log" }
+
+# About 10-15 minutes after the server starts, open http://YOUR-SERVER-IP/
+# in your browser. This temporary setup link works for one hour only.
+```
+</div>
