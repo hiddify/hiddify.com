@@ -10,7 +10,7 @@ title: آموزش نصب اپ هیدیفای
 
 اپ هیدیفای بر پایهٔ **sing-box** (موتوری که اتصال‌ها را برقرار می‌کند) ساخته شده است. از پروتکل‌های زیادی پشتیبانی می‌کند، از جمله VLESS، VMess، Trojan، Reality، TUIC، Hysteria، WireGuard، AmneziaWG، Naive و SSH، و لینک‌های سابسکریپشن sing-box، V2ray، Clash و Clash Meta را می‌پذیرد. [فهرست کامل امکانات](https://github.com/hiddify/hiddify-app/blob/main/README_fa.md) را در GitHub ببینید.
 
-آخرین نسخهٔ پایدار **v4.1.1** است.
+آخرین نسخهٔ پایدار **v5** است.
 
 ## پیش از شروع
 
@@ -76,14 +76,26 @@ title: آموزش نصب اپ هیدیفای
 
     <img width=260 alt="پیغام App installed" src="/assets/app-install/android-installed.webp" style="display:block;margin:0 auto">
 
+!!! tip "اگر Google Play Protect سؤال کرد"
+    ممکن است Google Play Protect دربارهٔ برنامه‌ای که از بیرون Google Play نصب می‌شود هشدار بدهد. روی `More details` و بعد `Install without scanning` بزنید.
+
 </details>
 <br>
 
 <details markdown="1"> <summary><b>نصب روی آیفون یا آیپد</b> (کلیک کنید)</summary>
 
 1. [صفحهٔ Hiddify Proxy & VPN در App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) را باز کنید.
-2. روی `Get` بزنید و با Face ID، Touch ID یا رمز عبور تأیید کنید.
-3. برنامه را باز کنید. اولین بار که وصل می‌شوید، iOS اجازهٔ افزودن تنظیمات VPN را می‌خواهد: روی `Allow` بزنید.
+2. روی `Get` بزنید و با Face ID، Touch ID یا رمز عبور تأیید کنید. بعد از نصب، همین دکمه به `Open` تبدیل می‌شود.
+
+    <img width=260 alt="هیدیفای در App Store" src="/assets/app-install/ios-appstore.webp" style="display:block;margin:0 auto">
+
+3. برنامه را باز کنید. اولین بار که وصل می‌شوید، iOS می‌پرسد هیدیفای می‌تواند تنظیمات VPN اضافه کند یا نه: روی `Allow` بزنید.
+
+    <img width=260 alt="اجازهٔ افزودن تنظیمات VPN" src="/assets/app-install/ios-vpn-allow.webp" style="display:block;margin:0 auto">
+
+4. رمز آیفون خود را وارد کنید تا این اجازه تأیید شود. این کار فقط یک بار لازم است و دفعه‌های بعد برنامه مستقیم وصل می‌شود.
+
+    <img width=260 alt="وارد کردن رمز آیفون" src="/assets/app-install/ios-passcode.webp" style="display:block;margin:0 auto">
 
 !!! note "نکته"
     این برنامه در App Store همهٔ کشورها در دسترس نیست. اگر آن را پیدا نمی‌کنید، احتمالاً کشور Apple ID شما کشوری است که برنامه در آن ارائه نمی‌شود.
@@ -149,29 +161,27 @@ winget install Hiddify.Next
 برای نصب با فایل DMG:
 
 1. [فایل DMG](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) (`Hiddify-MacOS.dmg`) را دانلود کنید. این فایل روی مک‌های اینتل و Apple Silicon کار می‌کند.
-2. پوشهٔ `Downloads` را باز کنید و روی فایل دو بار کلیک کنید.
+2. پوشهٔ `Downloads` را باز کنید و روی فایل دو بار کلیک کنید. پنجره‌ای باز می‌شود که مراحل نصب به فارسی و انگلیسی در آن نوشته شده است.
 
-    <img width=60% alt="فایل DMG دانلودشده" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def" style="display:block;margin:0 auto">
+    <img width=60% alt="پنجرهٔ DMG هیدیفای با مراحل نصب" src="/assets/app-install/macos-dmg.webp" style="display:block;margin:0 auto">
 
 3. آیکون هیدیفای را بگیرید و روی پوشهٔ `Applications` رها کنید. با این کار برنامه روی مک شما کپی می‌شود.
+4. قبل از اولین اجرای برنامه، **Terminal** را باز کنید (در `Applications > Utilities`، یا با جست‌وجو در Spotlight) و این دستور را اجرا کنید. این دستور علامت قرنطینه‌ای را که macOS روی برنامه‌های دانلودشده می‌گذارد برمی‌دارد:
 
-    <img width=60% alt="کشیدن برنامه به Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a" style="display:block;margin:0 auto">
+    ```bash
+    sudo xattr -rd com.apple.quarantine /Applications/Hiddify.app
+    ```
 
-4. پوشهٔ `Applications` را باز کنید و روی هیدیفای دو بار کلیک کنید.
+    وقتی رمز خواست، رمز مک خود را وارد کنید (هنگام تایپ چیزی نمایش داده نمی‌شود) و `Return` را بزنید.
 
-    <img width=60% alt="هیدیفای در پوشهٔ Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795" style="display:block;margin:0 auto">
+    <img width=60% alt="دستور xattr در Terminal" src="/assets/app-install/macos-terminal.webp" style="display:block;margin:0 auto">
 
-5. بار اول ممکن است macOS بگوید برنامه را باز نمی‌کند، چون از App Store دانلود نشده است. روی `OK` (یا `Done`) بزنید.
+5. پوشهٔ `Applications` را باز کنید و روی هیدیفای دو بار کلیک کنید.
 
-    <img width=30% alt="هشدار macOS برای باز نکردن برنامه" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1" style="display:block;margin:0 auto">
+!!! warning "پیغام «Hiddify.app is damaged and can't be opened»"
+    اگر مرحلهٔ ۴ را انجام ندهید، macOS این پیغام را نشان می‌دهد. برنامه خراب نیست: روی `Cancel` بزنید (نه `Move to Trash`)، دستور مرحلهٔ ۴ را اجرا کنید و برنامه را دوباره باز کنید.
 
-6. به **System Settings > Privacy & Security** بروید (در نسخه‌های قدیمی‌تر macOS: **System Preferences > Security & Privacy > General**)، پایین بروید و کنار پیغام هیدیفای روی `Open Anyway` بزنید.
-
-    <img width=60% alt="دکمهٔ Open Anyway در تنظیمات امنیتی" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81" style="display:block;margin:0 auto">
-
-7. روی `Open` بزنید.
-
-    <img width=60% alt="تأیید Open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49" style="display:block;margin:0 auto">
+    <img width=30% alt="پیغام آسیب‌دیدن برنامه در macOS" src="/assets/app-install/macos-damaged.webp" style="display:block;margin:0 auto">
 
 از این به بعد می‌توانید هیدیفای را مثل هر برنامهٔ دیگری از `Applications` باز کنید.
 
@@ -250,7 +260,7 @@ sudo apt install libfuse2t64
 </div>
 
 !!! note "نکته"
-    تصاویر اندروید در این صفحه از نسخهٔ ۵ برنامه (نسخهٔ پیش‌انتشار) گرفته شده‌اند. در نسخه‌های دیگر و روی کامپیوتر مراحل همین است، اما ظاهر بعضی صفحه‌ها ممکن است کمی فرق داشته باشد.
+    تصاویر این صفحه از نسخهٔ ۵ برنامه گرفته شده‌اند. در نسخه‌های دیگر و روی کامپیوتر مراحل همین است، اما ظاهر بعضی صفحه‌ها ممکن است کمی فرق داشته باشد.
 
 ## قدم بعدی
 

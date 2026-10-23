@@ -10,7 +10,7 @@ This page shows you how to download and install Hiddify App on your phone or com
 
 Hiddify App is built on **sing-box** (the engine that makes the connections). It supports many protocols, including VLESS, VMess, Trojan, Reality, TUIC, Hysteria, WireGuard, AmneziaWG, Naive and SSH, and it accepts sing-box, V2ray, Clash and Clash Meta subscription links. See the [full feature list](https://github.com/hiddify/hiddify-app/blob/main/README.md) on GitHub.
 
-The latest stable version is **v4.1.1**.
+The latest stable version is **v5**.
 
 ## Before you start
 
@@ -76,14 +76,26 @@ Open the section for your device.
 
     <img width=260 alt="App installed message" src="/assets/app-install/android-installed.webp" style="display:block;margin:0 auto">
 
+!!! tip "If Google Play Protect asks"
+    Google Play Protect may warn about an app from outside Google Play. Tap `More details`, then `Install without scanning`.
+
 </details>
 <br>
 
 <details markdown="1"> <summary><b>Install on iPhone or iPad</b> (click)</summary>
 
 1. Open [Hiddify Proxy & VPN on the App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532).
-2. Tap `Get` and confirm with Face ID, Touch ID or your password.
-3. Open the app. The first time you connect, iOS asks to add a VPN configuration: tap `Allow`.
+2. Tap `Get` and confirm with Face ID, Touch ID or your password. When it is installed, the button changes to `Open`.
+
+    <img width=260 alt="Hiddify Proxy & VPN in the App Store" src="/assets/app-install/ios-appstore.webp" style="display:block;margin:0 auto">
+
+3. Open the app. The first time you connect, iOS asks if Hiddify may add VPN configurations: tap `Allow`.
+
+    <img width=260 alt="Allow Hiddify to add VPN configurations" src="/assets/app-install/ios-vpn-allow.webp" style="display:block;margin:0 auto">
+
+4. Enter your iPhone passcode to confirm. You only do this once; after that, the app connects directly.
+
+    <img width=260 alt="Enter the iPhone passcode" src="/assets/app-install/ios-passcode.webp" style="display:block;margin:0 auto">
 
 !!! note
     The app is not available in the App Store of every country. If you cannot find it, your Apple ID may be set to a country where it is not offered.
@@ -149,29 +161,27 @@ On a Mac with Apple Silicon (M1 or newer) you can also install from the [App Sto
 To install with the DMG file:
 
 1. Download the [DMG file](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) (`Hiddify-MacOS.dmg`). It works on both Intel and Apple Silicon Macs.
-2. Open your `Downloads` folder and double-click the file.
+2. Open your `Downloads` folder and double-click the file. A window opens; the install steps are written in it, in English and Persian.
 
-    <img width=60% alt="Downloaded DMG file" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def" style="display:block;margin:0 auto">
+    <img width=60% alt="The Hiddify DMG window with the install steps" src="/assets/app-install/macos-dmg.webp" style="display:block;margin:0 auto">
 
 3. Drag the Hiddify icon onto the `Applications` folder. This copies the app to your Mac.
+4. Before you open the app for the first time, open **Terminal** (in `Applications > Utilities`, or search for it with Spotlight) and run this command. It removes the quarantine flag that macOS adds to downloaded apps:
 
-    <img width=60% alt="Drag the app into Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a" style="display:block;margin:0 auto">
+    ```bash
+    sudo xattr -rd com.apple.quarantine /Applications/Hiddify.app
+    ```
 
-4. Open `Applications` and double-click Hiddify.
+    Type your Mac password when asked (nothing appears while you type) and press `Return`.
 
-    <img width=60% alt="Hiddify in the Applications folder" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795" style="display:block;margin:0 auto">
+    <img width=60% alt="The xattr command in Terminal" src="/assets/app-install/macos-terminal.webp" style="display:block;margin:0 auto">
 
-5. The first time, macOS may say it cannot open the app because it was not downloaded from the App Store. Click `OK` (or `Done`).
+5. Open `Applications` and double-click Hiddify.
 
-    <img width=30% alt="macOS cannot open the app warning" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1" style="display:block;margin:0 auto">
+!!! warning "\"Hiddify.app\" is damaged and can't be opened"
+    If you skip step 4, macOS shows this message. The app is not damaged: click `Cancel` (not `Move to Trash`), run the command from step 4, and open the app again.
 
-6. Open **System Settings > Privacy & Security** (on older macOS: **System Preferences > Security & Privacy > General**), scroll down and click `Open Anyway` next to the Hiddify message.
-
-    <img width=60% alt="Open Anyway in Security settings" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81" style="display:block;margin:0 auto">
-
-7. Click `Open`.
-
-    <img width=60% alt="Confirm Open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49" style="display:block;margin:0 auto">
+    <img width=30% alt="macOS says Hiddify.app is damaged" src="/assets/app-install/macos-damaged.webp" style="display:block;margin:0 auto">
 
 From now on, you can open Hiddify from `Applications` like any other app.
 
@@ -250,7 +260,7 @@ You should now see the app's home page. Next time you open the app, it goes stra
 </div>
 
 !!! note
-    The Android screenshots on this page come from version 5 of the app (a pre-release). On other versions and on computers the steps are the same, but some screens may look a little different.
+    The screenshots on this page come from version 5 of the app. On other versions and on computers the steps are the same, but some screens may look a little different.
 
 ## Next step
 
