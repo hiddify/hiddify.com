@@ -86,13 +86,9 @@ title: آموزش نصب اپ هیدیفای
 
 می‌توانید برنامه را از [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5) هم نصب کنید، یا **Command Prompt** را باز کنید و این دستور را اجرا کنید:
 
-<div markdown="1" dir="ltr">
-
 ```bash
 winget install Hiddify.Next
 ```
-
-</div>
 
 (`Hiddify.Next` نام قدیمی برنامه است، اما همین نسخهٔ فعلی برنامهٔ هیدیفای را نصب می‌کند.)
 
@@ -101,51 +97,35 @@ winget install Hiddify.Next
 1. [فایل نصب](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) (`Hiddify-Windows-Setup-x64.exe`) را دانلود کنید.
 2. روی فایل دانلودشده دو بار کلیک کنید. وقتی ویندوز پرسید «آیا اجازه می‌دهید این برنامه تغییراتی در دستگاه شما ایجاد کند؟»، روی `Yes` بزنید.
 
-    <div align=center>
-    <img width=30% alt="پیغام User Account Control ویندوز" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e4174de0-10b5-4b46-9baf-2e302162da5a">
-    </div>
+    <img width=30% alt="پیغام User Account Control ویندوز" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e4174de0-10b5-4b46-9baf-2e302162da5a" style="display:block;margin:0 auto">
 
 3. اگر پنجرهٔ آبی «Windows protected your PC» ظاهر شد، روی `More info` بزنید.
 
-    <div align=center>
-    <img width=40% alt="هشدار Windows protected your PC" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a3bc452-004d-4be7-a9bb-21aad90db7fc">
-    </div>
+    <img width=40% alt="هشدار Windows protected your PC" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a3bc452-004d-4be7-a9bb-21aad90db7fc" style="display:block;margin:0 auto">
 
 4. روی `Run anyway` بزنید.
 
-    <div align=center>
-    <img width=40% alt="دکمهٔ Run anyway" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/36293a7c-f56a-4811-8302-474874654b70">
-    </div>
+    <img width=40% alt="دکمهٔ Run anyway" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/36293a7c-f56a-4811-8302-474874654b70" style="display:block;margin:0 auto">
 
 5. نصب‌کننده محل نصب برنامه را نشان می‌دهد. پوشهٔ پیش‌فرض را نگه دارید (یا تغییرش دهید) و روی `Next` بزنید.
 
-    <div align=center>
-    <img width=60% alt="انتخاب محل نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/7196a86f-3f74-4177-b611-19b484e0da9a">
-    </div>
+    <img width=60% alt="انتخاب محل نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/7196a86f-3f74-4177-b611-19b484e0da9a" style="display:block;margin:0 auto">
 
 6. گزینه‌های اضافه، مثل ساخت میان‌بر (Shortcut) روی دسکتاپ یا اجرای خودکار برنامه، را انتخاب کنید و روی `Next` بزنید.
 
-    <div align=center>
-    <img width=60% alt="گزینه‌های اضافهٔ نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/bcac0d1e-f8d8-46d9-bedc-4fe04571a504">
-    </div>
+    <img width=60% alt="گزینه‌های اضافهٔ نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/bcac0d1e-f8d8-46d9-bedc-4fe04571a504" style="display:block;margin:0 auto">
 
 7. روی `Install` بزنید.
 
-    <div align=center>
-    <img width=60% alt="آمادهٔ نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/980314df-c907-407c-aa4d-a94d4d492b66">
-    </div>
+    <img width=60% alt="آمادهٔ نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/980314df-c907-407c-aa4d-a94d4d492b66" style="display:block;margin:0 auto">
 
 8. صبر کنید تا نصب تمام شود.
 
-    <div align=center>
-    <img width=60% alt="در حال نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/1aee90d0-dde1-4bf8-b673-058fc0e9204a">
-    </div>
+    <img width=60% alt="در حال نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/1aee90d0-dde1-4bf8-b673-058fc0e9204a" style="display:block;margin:0 auto">
 
 9. وقتی پنجرهٔ زیر را دیدید، روی `Finish` بزنید. برنامه اجرا می‌شود. اگر اجرا نشد، روی میان‌بر هیدیفای در دسکتاپ دو بار کلیک کنید.
 
-    <div align=center>
-    <img width=60% alt="پایان نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a8849c5-24f0-4376-be4d-355eb754f395">
-    </div>
+    <img width=60% alt="پایان نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a8849c5-24f0-4376-be4d-355eb754f395" style="display:block;margin:0 auto">
 
 !!! tip "اگر برنامه اجرا نشد"
     اگر ویندوز خطایی دربارهٔ نبودن فایلی مثل `MSVCP140.dll` نشان داد، [Microsoft Visual C++ Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) را نصب کنید و دوباره امتحان کنید.
@@ -162,39 +142,27 @@ winget install Hiddify.Next
 1. [فایل DMG](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) (`Hiddify-MacOS.dmg`) را دانلود کنید. این فایل روی مک‌های اینتل و Apple Silicon کار می‌کند.
 2. پوشهٔ `Downloads` را باز کنید و روی فایل دو بار کلیک کنید.
 
-    <div align=center>
-    <img width=60% alt="فایل DMG دانلودشده" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def">
-    </div>
+    <img width=60% alt="فایل DMG دانلودشده" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def" style="display:block;margin:0 auto">
 
 3. آیکون هیدیفای را بگیرید و روی پوشهٔ `Applications` رها کنید. با این کار برنامه روی مک شما کپی می‌شود.
 
-    <div align=center>
-    <img width=60% alt="کشیدن برنامه به Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a">
-    </div>
+    <img width=60% alt="کشیدن برنامه به Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a" style="display:block;margin:0 auto">
 
 4. پوشهٔ `Applications` را باز کنید و روی هیدیفای دو بار کلیک کنید.
 
-    <div align=center>
-    <img width=60% alt="هیدیفای در پوشهٔ Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795">
-    </div>
+    <img width=60% alt="هیدیفای در پوشهٔ Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795" style="display:block;margin:0 auto">
 
 5. بار اول ممکن است macOS بگوید برنامه را باز نمی‌کند، چون از App Store دانلود نشده است. روی `OK` (یا `Done`) بزنید.
 
-    <div align=center>
-    <img width=30% alt="هشدار macOS برای باز نکردن برنامه" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1">
-    </div>
+    <img width=30% alt="هشدار macOS برای باز نکردن برنامه" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1" style="display:block;margin:0 auto">
 
 6. به **System Settings > Privacy & Security** بروید (در نسخه‌های قدیمی‌تر macOS: **System Preferences > Security & Privacy > General**)، پایین بروید و کنار پیغام هیدیفای روی `Open Anyway` بزنید.
 
-    <div align=center>
-    <img width=60% alt="دکمهٔ Open Anyway در تنظیمات امنیتی" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81">
-    </div>
+    <img width=60% alt="دکمهٔ Open Anyway در تنظیمات امنیتی" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81" style="display:block;margin:0 auto">
 
 7. روی `Open` بزنید.
 
-    <div align=center>
-    <img width=60% alt="تأیید Open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49">
-    </div>
+    <img width=60% alt="تأیید Open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49" style="display:block;margin:0 auto">
 
 از این به بعد می‌توانید هیدیفای را مثل هر برنامهٔ دیگری از `Applications` باز کنید.
 
@@ -208,23 +176,15 @@ winget install Hiddify.Next
 1. [فایل AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage) (`Hiddify-Linux-x64-AppImage.AppImage`) را دانلود کنید. لازم نیست آن را از حالت فشرده خارج کنید.
 2. ترمینال را باز کنید و فایل را اجرایی کنید. در این مثال فرض شده فایل در پوشهٔ `Downloads` است:
 
-    <div markdown="1" dir="ltr">
-
     ```bash
     chmod +x ~/Downloads/Hiddify-Linux-x64-AppImage.AppImage
     ```
 
-    </div>
-
 3. برنامه را اجرا کنید:
-
-    <div markdown="1" dir="ltr">
 
     ```bash
     ~/Downloads/Hiddify-Linux-x64-AppImage.AppImage
     ```
-
-    </div>
 
     می‌توانید روی فایل در File Manager هم دو بار کلیک کنید.
 
@@ -232,36 +192,24 @@ winget install Hiddify.Next
 
 در Ubuntu 22.04:
 
-<div markdown="1" dir="ltr">
-
 ```bash
 sudo apt install libfuse2
 ```
 
-</div>
-
 در Ubuntu 24.04 و جدیدتر:
-
-<div markdown="1" dir="ltr">
 
 ```bash
 sudo apt install libfuse2t64
 ```
-
-</div>
 
 **روش ۲: بستهٔ .deb (برای Debian، Ubuntu و Linux Mint)**
 
 1. [بستهٔ .deb](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (`Hiddify-Debian-x64.deb`) را دانلود کنید.
 2. در ترمینال این دستور را اجرا کنید:
 
-    <div markdown="1" dir="ltr">
-
     ```bash
     sudo apt install ~/Downloads/Hiddify-Debian-x64.deb
     ```
-
-    </div>
 
 3. هیدیفای را از منوی برنامه‌ها باز کنید.
 

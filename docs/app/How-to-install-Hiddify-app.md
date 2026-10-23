@@ -97,51 +97,35 @@ To install with the setup file:
 1. Download the [setup file](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) (`Hiddify-Windows-Setup-x64.exe`).
 2. Double-click the downloaded file. When Windows asks "Do you want to allow this app to make changes to your device?", click `Yes`.
 
-    <div align=center>
-    <img width=30% alt="Windows User Account Control prompt" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e4174de0-10b5-4b46-9baf-2e302162da5a">
-    </div>
+    <img width=30% alt="Windows User Account Control prompt" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e4174de0-10b5-4b46-9baf-2e302162da5a" style="display:block;margin:0 auto">
 
 3. If a blue "Windows protected your PC" window appears, click `More info`.
 
-    <div align=center>
-    <img width=40% alt="Windows protected your PC warning" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a3bc452-004d-4be7-a9bb-21aad90db7fc">
-    </div>
+    <img width=40% alt="Windows protected your PC warning" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a3bc452-004d-4be7-a9bb-21aad90db7fc" style="display:block;margin:0 auto">
 
 4. Click `Run anyway`.
 
-    <div align=center>
-    <img width=40% alt="Run anyway button" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/36293a7c-f56a-4811-8302-474874654b70">
-    </div>
+    <img width=40% alt="Run anyway button" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/36293a7c-f56a-4811-8302-474874654b70" style="display:block;margin:0 auto">
 
 5. The installer shows where the app will be installed. Keep the default folder (or change it) and click `Next`.
 
-    <div align=center>
-    <img width=60% alt="Choose install location" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/7196a86f-3f74-4177-b611-19b484e0da9a">
-    </div>
+    <img width=60% alt="Choose install location" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/7196a86f-3f74-4177-b611-19b484e0da9a" style="display:block;margin:0 auto">
 
 6. Choose extra options, such as a desktop shortcut or starting the app automatically, and click `Next`.
 
-    <div align=center>
-    <img width=60% alt="Extra install options" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/bcac0d1e-f8d8-46d9-bedc-4fe04571a504">
-    </div>
+    <img width=60% alt="Extra install options" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/bcac0d1e-f8d8-46d9-bedc-4fe04571a504" style="display:block;margin:0 auto">
 
 7. Click `Install`.
 
-    <div align=center>
-    <img width=60% alt="Ready to install" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/980314df-c907-407c-aa4d-a94d4d492b66">
-    </div>
+    <img width=60% alt="Ready to install" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/980314df-c907-407c-aa4d-a94d4d492b66" style="display:block;margin:0 auto">
 
 8. Wait while the app installs.
 
-    <div align=center>
-    <img width=60% alt="Installation progress" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/1aee90d0-dde1-4bf8-b673-058fc0e9204a">
-    </div>
+    <img width=60% alt="Installation progress" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/1aee90d0-dde1-4bf8-b673-058fc0e9204a" style="display:block;margin:0 auto">
 
 9. When you see the window below, click `Finish`. The app starts. If it does not, double-click the Hiddify shortcut on your desktop.
 
-    <div align=center>
-    <img width=60% alt="Installation finished" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a8849c5-24f0-4376-be4d-355eb754f395">
-    </div>
+    <img width=60% alt="Installation finished" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a8849c5-24f0-4376-be4d-355eb754f395" style="display:block;margin:0 auto">
 
 !!! tip "If the app does not start"
     If Windows shows an error about a missing file such as `MSVCP140.dll`, install the [Microsoft Visual C++ Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) and try again.
@@ -158,39 +142,27 @@ To install with the DMG file:
 1. Download the [DMG file](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) (`Hiddify-MacOS.dmg`). It works on both Intel and Apple Silicon Macs.
 2. Open your `Downloads` folder and double-click the file.
 
-    <div align=center>
-    <img width=60% alt="Downloaded DMG file" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def">
-    </div>
+    <img width=60% alt="Downloaded DMG file" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e6cbdb24-ef18-49a0-9c40-0f4ea4859def" style="display:block;margin:0 auto">
 
 3. Drag the Hiddify icon onto the `Applications` folder. This copies the app to your Mac.
 
-    <div align=center>
-    <img width=60% alt="Drag the app into Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a">
-    </div>
+    <img width=60% alt="Drag the app into Applications" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/07fa37b8-fc37-4613-b148-2eb932a3d53a" style="display:block;margin:0 auto">
 
 4. Open `Applications` and double-click Hiddify.
 
-    <div align=center>
-    <img width=60% alt="Hiddify in the Applications folder" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795">
-    </div>
+    <img width=60% alt="Hiddify in the Applications folder" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a32bcd9-367d-4cf1-8951-c764b5f86795" style="display:block;margin:0 auto">
 
 5. The first time, macOS may say it cannot open the app because it was not downloaded from the App Store. Click `OK` (or `Done`).
 
-    <div align=center>
-    <img width=30% alt="macOS cannot open the app warning" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1">
-    </div>
+    <img width=30% alt="macOS cannot open the app warning" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/a65690ed-e169-4c9d-a908-93a4260fddf1" style="display:block;margin:0 auto">
 
 6. Open **System Settings > Privacy & Security** (on older macOS: **System Preferences > Security & Privacy > General**), scroll down and click `Open Anyway` next to the Hiddify message.
 
-    <div align=center>
-    <img width=60% alt="Open Anyway in Security settings" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81">
-    </div>
+    <img width=60% alt="Open Anyway in Security settings" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/97fa1692-5eb2-436c-9070-804a71c3bc81" style="display:block;margin:0 auto">
 
 7. Click `Open`.
 
-    <div align=center>
-    <img width=60% alt="Confirm Open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49">
-    </div>
+    <img width=60% alt="Confirm Open" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/cbdec7f8-e12e-4613-b51d-9870df2acd49" style="display:block;margin:0 auto">
 
 From now on, you can open Hiddify from `Applications` like any other app.
 

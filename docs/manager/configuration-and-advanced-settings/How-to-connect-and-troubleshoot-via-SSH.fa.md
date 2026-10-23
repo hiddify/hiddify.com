@@ -16,13 +16,9 @@ weight: -145
 
 3. این دستور را در PowerShell اجرا کنید:
 
-    <div dir="ltr" markdown=1>
-
     ```powershell
     Add-WindowsCapability -Online -Name OpenSSH.Client
     ```
-
-    </div>
 
 4. پس از پایان، باید چیزی شبیه این ببینید:
 
