@@ -238,7 +238,7 @@ sudo apt install libfuse2t64
 3. **فعال‌سازی آمار:** این کلید به‌طور پیش‌فرض روشن است. اگر روشن بماند، برنامه گزارش‌های خطا و آمار ناشناس استفاده را می‌فرستد تا سازندگان آن را بهتر کنند. اگر نمی‌خواهید، خاموشش کنید.
 4. روی `شروع` بزنید.
 
-<div markdown="1" align=center>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
 <img width=260 alt="فهرست زبان‌ها" src="/assets/app-install/fa-language.webp">
 <img width=260 alt="فهرست منطقه‌ها" src="/assets/app-install/fa-region.webp">
 </div>

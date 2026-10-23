@@ -238,7 +238,7 @@ The first time you open the app, a welcome screen with three options opens. The 
 3. **Turn on analytics:** this switch is on by default. While it is on, the app sends anonymous crash and usage data that helps the developers improve it. Turn it off if you do not want that.
 4. Tap `Start`.
 
-<div align=center>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
 <img width=260 alt="Language list" src="/assets/app-install/en-language.webp">
 <img width=260 alt="Region list" src="/assets/app-install/en-region.webp">
 </div>
