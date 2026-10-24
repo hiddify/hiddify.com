@@ -1,3 +1,4 @@
+bash <(curl https://i.hiddify.com/docker/latest)
 ---
 title: نصب هیدیفای‌منیجر روی داکر
 weight: -40
