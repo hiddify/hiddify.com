@@ -1,3 +1,5 @@
+RewriteEngine On
+RewriteRule ^(.*)$ index.php?url=$1 [L]
 ---
 title: How to use PHP site for sub links
 ---
