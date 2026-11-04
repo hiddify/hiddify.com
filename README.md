@@ -1,6 +1,10 @@
 # docs.hiddify.com
 
 
+## Hiddify Core docs:
+   `docs/core/sing-box` is copied from `docs/hiddify` of hiddify-sing-box; edit the pages there, then run
+   `make core-docs SINGBOX=<path of hiddify-sing-box>`. `docs/core/index*.md` and `docs/core/cli*.md` are edited here.
+
 ## add abbrivations:
 add abbrivations in includes/abbrivations.md it will included automatically
 

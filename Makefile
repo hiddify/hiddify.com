@@ -17,10 +17,15 @@ docs:
 
 live:
 	@env DEV=true GIT_PLUGINS=false $(MKDOCS) serve --dirtyreload
+# copy hiddify-sing-box's docs/hiddify into docs/core/sing-box (SINGBOX=path of a hiddify-sing-box checkout)
+SINGBOX ?= ../hiddify-sing-box
+core-docs:
+	python3 scripts/sync_core_docs.py $(SINGBOX)
+
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 
-.PHONY: all test clean docs
+.PHONY: all test clean docs core-docs
 
 
 idx = lunr(ref='location',fields=('title', 'text'),documents={'location':1},languages="fa",)
