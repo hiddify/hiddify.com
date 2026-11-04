@@ -5,6 +5,9 @@ title: How to use HiddifyCli
 # How to use HiddifyCli or Hiddify command line
 This app is developed for cases where there is no desktop, such as servers, and it supports all processors.
 
+!!! tip "Full reference"
+    HiddifyCli now has its own section: see [Hiddify Core](../core/index.md) for `run` and `srun`, and the [command-line reference](../core/cli.md) for every command and flag.
+
 ## Download
 To download this app, go to [here](https://github.com/hiddify/hiddify-core/releases) and download the file related to your processor.
 
