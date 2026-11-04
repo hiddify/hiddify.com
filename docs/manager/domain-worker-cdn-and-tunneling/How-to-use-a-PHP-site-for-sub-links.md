@@ -27,7 +27,7 @@ To create a PHP site and use it for the subscription link, you must first do a [
 
 **Code for `.htaccess` file**
 
-```
+```apache
 RewriteEngine On
 RewriteRule ^(.*)$ index.php?url=$1 [L]
 ```
