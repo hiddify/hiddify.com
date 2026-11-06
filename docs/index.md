@@ -336,7 +336,7 @@ One of the most secure and trusted solutions for using VPN
     By giving a five-star rating and writing reviews for the Hiddify app in various app stores, you can help increase its credibility and popularity, bringing it to the attention of more users. You can rate the app through the following links:  
     - [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone)  
     - [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com)  
-    - [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5)
+    - [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk)
         
     5. **Sharing and Raising Awareness** 📢  
     By sharing Hiddify’s products, especially the Hiddify and Hiddify Manager, on social media and introducing them to people who need anti-censorship tools, you can help spread the project and increase its user base.

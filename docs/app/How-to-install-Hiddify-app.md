@@ -35,7 +35,7 @@ Pick the row for your device. Store versions update themselves; the files from G
 |---|---|---|
 | Android | [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com) | APK file: [universal](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk) (works on every phone), [arm64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm64.apk), [arm7](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm7.apk), [x86_64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-x86_64.apk) |
 | iPhone / iPad | [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) | — |
-| Windows | [Setup file (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5), [MSIX package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-x64.msix), [portable ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip), winget |
+| Windows | [Setup file (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk), [MSIX package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-x64.msix), [portable ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip), winget |
 | macOS | [DMG file](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) | [PKG installer](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS-Installer.pkg), [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) (Apple Silicon Macs) |
 | Linux | [AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage) | [.deb package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (Debian, Ubuntu, Mint), [AppImage in a .tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.tar.gz) |
 
@@ -93,7 +93,7 @@ Open the section for your device.
 
 <details markdown="1"> <summary><b>Install on Windows</b> (click)</summary>
 
-You can also install from the [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5), or open **Command Prompt** and run:
+You can also install from the [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk), or open **Command Prompt** and run:
 
 ```bash
 winget install Hiddify.Next

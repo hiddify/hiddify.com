@@ -35,7 +35,7 @@ title: آموزش نصب اپ هیدیفای
 |---|---|---|
 | اندروید | [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com) | فایل APK: [universal](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk) (روی همهٔ گوشی‌ها کار می‌کند)، [arm64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm64.apk)، [arm7](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm7.apk)، [x86_64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-x86_64.apk) |
 | آیفون / آیپد | [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) | — |
-| ویندوز | [فایل نصب (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5)، [بستهٔ MSIX](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-x64.msix)، [نسخهٔ پرتابل ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip)، winget |
+| ویندوز | [فایل نصب (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk)، [بستهٔ MSIX](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-x64.msix)، [نسخهٔ پرتابل ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip)، winget |
 | مک | [فایل DMG](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) | [نصب‌کنندهٔ PKG](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS-Installer.pkg)، [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) (مک‌های Apple Silicon) |
 | لینوکس | [AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage) | [بستهٔ .deb](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (Debian، Ubuntu، Mint)، [AppImage داخل فایل .tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.tar.gz) |
 
@@ -93,7 +93,7 @@ title: آموزش نصب اپ هیدیفای
 
 <details markdown="1"> <summary><b>نصب روی ویندوز</b> (کلیک کنید)</summary>
 
-می‌توانید برنامه را از [Microsoft Store](https://apps.microsoft.com/detail/9pdfnl3qv2s5) هم نصب کنید، یا **Command Prompt** را باز کنید و این دستور را اجرا کنید:
+می‌توانید برنامه را از [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk) هم نصب کنید، یا **Command Prompt** را باز کنید و این دستور را اجرا کنید:
 
 ```bash
 winget install Hiddify.Next
