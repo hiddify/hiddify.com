@@ -1,0 +1,6003 @@
+
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The proxy manager platform.">
+      
+      
+        <meta name="author" content="Hiddify.com">
+      
+      
+        <link rel="canonical" href="https://hiddify.com/fa/core/sing-box/app_considerations/">
+      
+      
+        <link rel="prev" href="../bugfix/v5/">
+      
+      
+        <link rel="next" href="../../cli/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="خوراک آراس‌اس" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="خوراک آراساس محتویات به‌روز شده" href="../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../assets/ic_hiddify.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.5">
+    
+    
+      
+        <title>App considerations - Hiddify</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+  <!-- Add scripts that need to run before here -->
+  
+      
+    
+
+  <script src="https://guru-widget.pages.dev/guru_widget.latest.min.js" 
+  data-text="Ask AI" 
+  data-link="https://gurubase.io/g/hiddify-manager" 
+  data-bg-color="#d5d0f8" 
+  data-icon-url="https://avatars.githubusercontent.com/u/126981719?s=48&v=4" 
+  data-font-color="#958fb5" 
+  data-margins='{"bottom": "1rem", "right": "1rem"}'>
+  </script>
+  <!-- Add scripts that need to run afterwards here -->
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/css/site.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-1B5433L63G"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-1B5433L63G",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-1B5433L63G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#app-considerations" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="این را دیگر نشان نده">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  
+  لطفا جهت دسترسی به آخرین اخبار ما را دنبال کنید: 
+  
+  <a class="text-secondary" href="https://github.com/hiddify/hiddify-manager/wiki">
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> 
+        </span>
+    
+    </a> <a class="text-danger" href="https://youtube.com/@hiddify/videos">
+        &nbsp; 
+        <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg> 
+        </span>
+      </a>
+
+  <a class="text-primary" href="https://instagram.com/hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> 
+          </span>
+      </a>
+
+      <a class="text-primary" href="https://twitter.com/intent/follow?screen_name=hiddify_com">
+        &nbsp; 
+        <span class="twemoji">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> 
+          </span>
+      </a>
+      
+      <a class="text-primary" href="https://t.me/hiddify">&nbsp; 
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"/></svg> 
+        </span>  
+    </a>
+
+
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="سرتیتر"
+  >
+     
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      </label>
+  
+    <!-- Link to home -->
+    <a
+    href="https://hiddify.com"
+    title="Hiddify"
+    class="md-header__button md-logo"
+    aria-label="Hiddify"
+    data-md-component="logo"
+  >
+    
+  <img src="../../../../assets/hiddify-logo.svg" alt="logo">
+
+  </a>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis" style="display:none">
+            Hiddify
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              App considerations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette toggle -->
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+
+    <!-- User preference: color palette -->
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+
+    <!-- Site language selector -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- Site language selector -->
+<div class="md-header__option">
+    <div class="md-select">
+      
+      <button
+        class="md-header__button md-icon"
+        aria-label="انتخاب زبان"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+      </button>
+      <div class="md-select__inner">
+        <ul class="md-select__list">
+          
+            <li class="md-select__item">
+              <a id="langselect-en"
+                href="../../../../core/sing-box/app_considerations/"
+                hreflang="en"
+                class="md-select__link"
+              >
+                English
+              </a>
+            </li>
+            
+          
+            <li class="md-select__item">
+              <a id="langselect-fa"
+                href="./"
+                hreflang="fa"
+                class="md-select__link"
+              >
+                فارسی
+              </a>
+            </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="جستجو" placeholder="جستجو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="جستجو">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="هم‌رسانی" aria-label="هم‌رسانی" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="بازنشانی" aria-label="بازنشانی" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            راه‌اندازی جستجو
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hiddify" target="_blank">
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/hiddify?style=social">
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+    
+      
+<nav class="md-tabs" aria-label="زبانه‌ها" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../" class="md-tabs__link">
+        
+  
+    
+  
+  خانه
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../manager/" class="md-tabs__link">
+          
+  
+  راهنمای منیجر
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../app/" class="md-tabs__link">
+          
+  
+  راهنمای اپ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  راهنمای هسته
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  بلاگ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../donation-and-support/" class="md-tabs__link">
+        
+  
+    
+  
+  پشتیبانی و حمایت مالی
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about-us/" class="md-tabs__link">
+        
+  
+    
+  
+  درباره ما
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../privacy-policy/" class="md-tabs__link">
+        
+  
+    
+  
+  حریم شخصی
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+
+<script src="https://raw.githubusercontent.com/iconfu/svg-inject/v1.2.3/dist/svg-inject.min.js"></script>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://hiddify.com" title="Hiddify" class="md-nav__button md-logo" aria-label="Hiddify" data-md-component="logo">
+      
+  <img src="../../../../assets/hiddify-logo.svg" alt="logo">
+
+    </a>
+    Hiddify
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hiddify" target="_blank">
+<img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/hiddify?style=social">
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    خانه
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    راهنمای منیجر
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            راهنمای منیجر
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    نصب و راه‌اندازی
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            نصب و راه‌اندازی
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب و راه‌اندازی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای نصب اصلی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ثبت دامنه در هیدیفای‌منیجر و نهایی‌سازی نصب (تنظیمات ابتدایی بعد از نصب)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Installation-prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    پیش‌نیازهای نصب
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/How-to-connect-to-server-via-SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش اتصال به سرور از طریق SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب نسخه‌های مختلف هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب سریع و آسان در Hetzner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب سریع و آسان در Vultr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب سریع و آسان در Oracle Cloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب سریع و آسان در OVH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب سریع و آسان در Microsoft Azure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Cloud-init-installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب آسان از طریق دیتاسنتر (Cloud-init)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/Install-Hiddify-using-Docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نصب هیدیفای‌منیجر روی داکر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/installation-and-setup/How-to-install-HiddifManager-Version-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهمای نصب نسخه ۸ هیدیفای منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    پیکربندی و تنظیمات پیشرفته
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            پیکربندی و تنظیمات پیشرفته
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    پیکربندی و تنظیمات پیشرفته
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کامل پیکربندی هیدیفای‌منیجر (آشنایی با بخش‌های مختلف و تنظیمات آن)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش اتصال به سرور و عیب‌یابی از طریق SSH (‌کار با منوی هیدیفای‌منیجر)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تنظیمات ریالیتی در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تنظیم بات تلگرام در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی پروکسی تلگرام در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش فعال‌سازی وارپ در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش پشتیبان‌گیری و بازیابی پنل در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش به‌روزرسانی هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ریست کردن تنظیمات هیدیفای‌منیجر به حالت اولیه
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش تنظیم پروکسی SSH در ‌هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نحوه استفاده از چندین زیردامنه یک وبسایت در ریالیتی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از اسکنر ریالتی هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/IPv6-usage-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای استفاده از IPv6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش ایمپورت کردن پنل X-UI به هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    دامنه، ورکر، CDN و تانل
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            دامنه، ورکر، CDN و تانل
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    دامنه، ورکر، CDN و تانل
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    انواع دامنه و آموزش ثبت آن‌ها
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش خودکار کردن ساخت زیردامنه روی کلادفلر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از دامین فرانتینگ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از دامنه AutoCDN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نحوه افزودن سرور (دامنه) میانی به هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نحوه ایجاد و استفاده از دامنه فیک
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی سرور میانی با استفاده از سرور میانی ساز هیدیفای (همه روش‌ها در یک اپ)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از CDN Amazon یا Cloudfront
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از CDN Cloudflare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از CDN GCore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از سایت PHP برای لینک ساب
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص (برای فیلد اجبار)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    استفاده از آی‌پی تمیز و مدیریت چندین دامنه CDN در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش خودکار)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تونل 4to6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    لینک ادمین در هیدیفای‌منیجر و فرمت آن
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی تانل Dokodemo-Door به عنوان سرور میانی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی تانل GOST به عنوان سرور میانی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی تانل HA-Proxy به عنوان سرور میانی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی تانل IP-Tables به عنوان سرور میانی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    استفاده از IPV6 اصلی سرورها برای مقاوم‌سازی تانلینگ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش راه‌اندازی تانل WST به عنوان سرور میانی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش ایجاد IPv6 لوکال برای سرور میانی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از زیر دامنه‌های متغیر در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    سی‌دی‌ان چیست و چه کمکی به ما می‌کند؟
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    مفاهیم پایه و عیب‌یابی
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            مفاهیم پایه و عیب‌یابی
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    مفاهیم پایه و عیب‌یابی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    یک روش مناسب برای پیدا کردن مقادیر ترفند TLS و نحوه تنظیم آن از سمت هیدیفای‌منیجر و اپ هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/Basic-Concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    مفاهیم پایه
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    غیرفعال کردن ورود با رمز عبور در SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    کاربرد و نحوه عملکرد MUX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    کاربرد و نحوه عملکرد TLS Trick
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    رفع مشکل ایبوز شدن سرورهای مجازی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نحوه تغییر پورت SSH روی سرور
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    چگونه نشتی DNS را بررسی کنیم و از آن جلوگیری کنیم
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    چگونه نشتی تایم‌زون را بررسی کنیم و از آن جلوگیری کنیم
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش غیرفعال‌سازی آی‌پی ورژن ۶ در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش تست سرعت روی سرور
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نحوه فعال‌سازی Swap برای یک VPS لینوکسی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    چک کردن تمیز بودن آیپی یا دامنه سرور
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش نحوه کنترل منابع سرور در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش تنظیم DNS سرور در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش تنظیم فایروال در هیدیفای‌منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش انتقال فایل بین سرور و کامپیوتر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تنظیم TLS برای افزایش امنیت
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    عیب‌یابی مشکلات اتصال با هیدیفای‌منیجر و پراکسی‌ها
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    نرم‌افزارهای کلاینت در اندروید
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            نرم‌افزارهای کلاینت در اندروید
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نرم‌افزارهای کلاینت در اندروید
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار HiddifyClashAndroid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-android/Tutorial-for-HiddifyNG-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار HiddifyNG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-android/Tutorial-for-Nekobox-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌‌افزار Nekobox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-android/Tutorial-for-V2rayNG-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم افزار V2rayNG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    نرم‌افزارهای کلاینت در iOS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            نرم‌افزارهای کلاینت در iOS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نرم‌افزارهای کلاینت در iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-Fair-VPN-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار Fair VPN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-FoXray-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار FoXray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار ShadowRocket شدوراکت
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-SingBox-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار SingBox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-Stash-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار Stash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-Streisand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار Streisand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-ios/Tutorial-for-V2Box-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار V2Box
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    نرم‌افزارهای کلاینت در دسکتاپ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            نرم‌افزارهای کلاینت در دسکتاپ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-desktop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نرم‌افزارهای کلاینت در دسکتاپ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار HiddifyClash برای دسکتاپ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-desktop/Tutorial-for-HiddifyN-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار HiddifyN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/client-software-on-desktop/Tutorial-for-QV2ray-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با نرم‌افزار QV2ray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    مشارکت در توسعه
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            مشارکت در توسعه
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/contribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    مشارکت در توسعه
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/contribution/How-to-contribute-to-this-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    چگونه می‌توان در این پروژه همکاری نمود
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/contribution/How-to-use-API-in-HiddifyManager-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نحوه استفاده از API در پروژه HiddifyManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/index-old/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/old-index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای منیجر
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manager/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    راهنمای اپ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            راهنمای اپ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای اپ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/old-index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای اپ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/HiddifyCli-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از HiddifyCli یا هیدیفای‌کامندلاین
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از اینترنت آزاد در کلاینت‌های پشت روتر OpenWrt با HiddifyCli
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-contribute-to-this-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    چگونه می‌توان در این پروژه همکاری نمود
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-install-Hiddify-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش نصب اپ هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-Hiddify-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کار با اپ هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-HiddifyCli-on-OpenWrt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش کامل نصب و راه‌اندازی HiddifyCli در سیستم‌عامل OpenWrt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-UDP-Turn-Relay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از UDP Turn Relay در هیدیفای‌اپ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/How-to-use-WARP-on-Hiddify-App/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    آموزش استفاده از وارپ روی هیدیفای‌اپ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/URL-Scheme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    URL scheme in HiddifyApp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../app/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change Log
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    راهنمای هسته
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            راهنمای هسته
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای هسته
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    قابلیت‌های sing-box هیدیفای
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            قابلیت‌های sing-box هیدیفای
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    قابلیت‌های sing-box هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_2" >
+        
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    قابلیت‌ها
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            قابلیت‌ها
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    قابلیت‌ها
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_2_2" >
+        
+          <label class="md-nav__link" for="__nav_4_2_2_2" id="__nav_4_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    پروتکل‌ها
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            پروتکل‌ها
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    پروتکل‌ها
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/amneziawg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AmneziaWG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/bond/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bond
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/call/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تونل تماس
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/dnstt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNSTT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/gooserelay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GooseRelay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/masterdns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MasterDNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/mieru/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mieru
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/psiphon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    سایفون (Psiphon)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/soar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Soar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/ssh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SSH: ورودی و افزوده‌های هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/sudoku/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sudoku
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/trusttunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TrustTunnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tunnel (تونل معکوس)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/vless-encryption/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    رمزگذاری VLESS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/warp-masque/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WARP روی MASQUE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/warp-scanner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    اسکنر و noise در WARP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/warp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WARP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/wireguard-hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WireGuard: افزوده‌های هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/protocols/wireguard-legacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    خروجی WireGuard (قالب قدیمی)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_2_3" >
+        
+          <label class="md-nav__link" for="__nav_4_2_2_3" id="__nav_4_2_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ترنسپورت‌ها
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            ترنسپورت‌ها
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ترنسپورت‌ها
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/finalmask/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    finalmask
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/grpc-custom-path/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    مسیرهای دلخواه gRPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/kcp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ترابری mKCP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/raw/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ترنسپورت raw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/rmux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    چندگانه‌سازی rmux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/shadowsocks-obfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    سرور simple-obfs و fallback در Shadowsocks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/xdrive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ترنسپورت XDRIVE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/transports/xhttp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ترنسپورت XHTTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_2_4" >
+        
+          <label class="md-nav__link" for="__nav_4_2_2_4" id="__nav_4_2_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DNS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            DNS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/dns-bypass-if-failed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    قاعده‌های DNS: bypass_if_failed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/dns-group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    گروه DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/ipv6-by-outbound/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IPv6 بر اساس خروجی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/sdns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNSCrypt (استمپ‌های SDNS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/smart-dns-pool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    مجموعهٔ هوشمند resolver (Smart resolver pool)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/dns/sslip-hosts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    نام‌های sslip.io در سرور hosts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_2_5" >
+        
+          <label class="md-nav__link" for="__nav_4_2_2_5" id="__nav_4_2_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    گروه‌ها و پایش
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            گروه‌ها و پایش
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    گروه‌ها و پایش
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/groups/balancer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    متعادل‌کننده (Balancer)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/groups/fallback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    جایگزین (Fallback)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/groups/monitoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    پایش (Monitoring)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/groups/unified-delay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تأخیر یکسان (Unified delay)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/groups/urltest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تست URL: افزوده‌های هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/proxy-protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    پروتکل PROXY
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/reality-hiddify/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REALITY در هیدیفای
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/tls-fragment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    تکه‌تکه کردن TLS (tls_fragment)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/tls-tricks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ترفندهای TLS (tls_tricks)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_3" >
+        
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    رفع باگ‌ها
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            رفع باگ‌ها
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bugfix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    رفع باگ‌ها
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bugfix/v5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    رفع اشکال‌ها در sing-box هیدیفای نسخهٔ ۵
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    App considerations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    App considerations
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-the-app-generates" class="md-nav__link">
+    Configuration the app generates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-changes-and-caches" class="md-nav__link">
+    Network changes and caches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    Reports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#behaviour-the-app-should-know-about" class="md-nav__link">
+    Behaviour the app should know about
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-tunnel-if-shipped" class="md-nav__link">
+    Call tunnel (if shipped)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deferred-needs-the-app" class="md-nav__link">
+    Deferred, needs the app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    راهنمای خط فرمان
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    بلاگ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            بلاگ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    بلاگ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    بایگانی
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            بایگانی
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    دسته‌بندی‌ها
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            دسته‌بندی‌ها
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/anniversary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Anniversary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/hello/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    App
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../donation-and-support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    پشتیبانی و حمایت مالی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    درباره ما
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../privacy-policy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    حریم شخصی
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-the-app-generates" class="md-nav__link">
+    Configuration the app generates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security" class="md-nav__link">
+    Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-changes-and-caches" class="md-nav__link">
+    Network changes and caches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reports" class="md-nav__link">
+    Reports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#behaviour-the-app-should-know-about" class="md-nav__link">
+    Behaviour the app should know about
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-tunnel-if-shipped" class="md-nav__link">
+    Call tunnel (if shipped)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deferred-needs-the-app" class="md-nav__link">
+    Deferred, needs the app
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/hiddify/hiddify.com/edit/main/docs/core/sing-box/app_considerations.md" title="این صفحه را ویرایش کنید" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="app-considerations">App considerations</h1>
+<p>What hiddify-app and hiddify-core need to change or know because of the v5 work in
+hiddify-sing-box. Each item says what changed in the core, and what the app or hiddify-core should
+do about it. Items marked <strong>Required</strong> break or misbehave until they are handled.</p>
+<h2 id="build">Build</h2>
+<ul>
+<li><strong>Submodules.</strong> The core now uses six forks under <code>replace/</code>, each a git submodule on its own
+  branch: <code>wireguard-go</code> (v5), <code>sing-tun</code> (dev), <code>gvisor</code> (go), <code>amneziawg-go</code> (v5), <code>sing-mux</code>
+  (v5), plus the existing ones. <code>go.mod</code> and <code>test/go.mod</code> point at them with <code>replace</code>.
+  <strong>Required:</strong> hiddify-core and every CI or gomobile build must check out submodules recursively
+  (<code>git submodule update --init --recursive</code>), or the build fails on missing modules.</li>
+<li><strong>MasterDnsVPN fork.</strong> <code>replace/MasterDnsVPN</code> (module <code>masterdnsvpn-go</code>, fork
+  <code>github.com/hiddify/MasterDnsVPN</code>, branch <code>hiddify</code>) is the client of the <code>masterdns</code> outbound,
+  with a library API in <code>lib/</code>. <strong>Required:</strong> hiddify-core's <code>go.mod</code> (and ray2sing's) need
+  <code>replace masterdnsvpn-go =&gt; ./hiddify-sing-box/replace/MasterDnsVPN</code>, like the other
+  <code>replace/</code> forks. No build tag.</li>
+<li><strong>Build tags.</strong> <code>with_masque</code> is now in the core Makefile and in hiddify-core's Makefile
+  (hiddify-core commit <code>6bea470</code>). Four new features are behind tags that are <strong>off</strong> by default:
+  <code>with_kcp</code> (mKCP), <code>with_sudoku</code> (Sudoku), <code>with_bond</code> (Bond) and <code>with_call</code> (call tunnel). A
+  config using one of them fails with "… is not included in this build" unless the tag is set.
+  Decide per platform whether to ship them; <code>with_call</code> pulls in a large WebRTC stack. rmux needs
+  no tag.</li>
+<li><strong>XDRIVE and the default tags.</strong> The core Makefile's default tags meant to include
+  <code>with_sudoku</code>, <code>with_call</code>, <code>with_bond</code> and <code>with_kcp</code> but joined them with <code>/</code>, so none of the
+  four was built; they are now separated by commas, and <code>with_xdrive</code> (the XDRIVE transport) is
+  added. hiddify-core's <code>PROTOCOL_TAGS</code> has <code>with_xdrive</code> too. A profile with
+  <code>"transport": {"type": "xdrive"}</code> fails with "XDRIVE is not included in this build" without it.</li>
+<li><strong>Go 1.27 required.</strong> Xray-core v26.10.31, which finalmask and XDRIVE use, needs Go 1.27, so
+  <code>go.mod</code> and <code>test/go.mod</code> now say <code>go 1.27</code>. Every CI and gomobile build must use Go 1.27.3 or
+  newer. (Binaries with Psiphon crashed at start when built with Go 1.27; fixed in <code>bb18926a9</code>.)</li>
+<li><strong>uTLS fork.</strong> <code>github.com/metacubex/utls</code> is replaced by <code>github.com/Leadaxe/utls-lx</code> in
+  <code>go.mod</code> and <code>test/go.mod</code>. The <code>firefox</code> fingerprint is now Firefox 148 and <code>safari</code> is
+  Safari 26.3; <code>chrome</code> stays Chrome 133. Nothing to change in configs.</li>
+<li><strong>Tailscale.</strong> The core Makefile no longer lists <code>with_tailscale</code> (<code>573719dd5</code>), so <code>tailscale</code>
+  configs fail to load in the default build; keep the app from generating them, or build with the
+  tag.</li>
+</ul>
+<h2 id="configuration-the-app-generates">Configuration the app generates</h2>
+<ul>
+<li><strong>Required — WARP by id and auth_token.</strong> A <code>warp</code> profile given by <code>id</code> and <code>auth_token</code> now
+  needs <code>private_key</code> (the device's own key); without it the endpoint fails at start. Before, it
+  started without a key and never worked.</li>
+<li><strong>Required — AmneziaWG on a wireguard endpoint.</strong> A <code>wireguard</code> endpoint with an <code>awg</code> block now
+  fails to load ("use type awg"); before, the block was ignored and the connection was plain
+  WireGuard. Generate <code>"type": "awg"</code> for AmneziaWG, or a <code>warp</code> endpoint with an <code>awg</code> block.</li>
+<li><strong>Required — sdns stamps.</strong> The <code>sdns</code> server accepts only DNSCrypt stamps, and now refuses a
+  DoH, DoT or plain stamp when the config loads. Convert those stamps to <code>https</code>, <code>tls</code> or <code>udp</code>
+  servers.</li>
+<li><strong>SSH and UDP.</strong> The SSH outbound offers UDP only with <code>udp_over_tcp</code>; without it, UDP goes to
+  another outbound. Set <code>udp_over_tcp</code> if UDP should go through SSH. On the SSH inbound,
+  <code>host_key_algorithms</code> and <code>network</code> now take effect.</li>
+<li><strong>XHTTP mode.</strong> An empty or <code>auto</code> mode now behaves as Xray's client: <code>stream-one</code> over REALITY,
+  <code>stream-up</code> over REALITY with a separate <code>download</code>, <code>packet-up</code> otherwise. Before, the client
+  always used <code>packet-up</code>, and an empty mode was an error. Configs that relied on <code>packet-up</code> over
+  REALITY should set it explicitly.</li>
+<li><strong>tls_fragment in the tls block.</strong> The core now moves a <code>tls_fragment</code> written inside an
+  outbound's <code>tls</code> block to the dialer (unless the dialer has its own). hiddify-core's config
+  patching that does the same can stay or be removed.</li>
+<li><strong>REALITY and fragmentation.</strong> <code>tls.fragment</code> and <code>tls.record_fragment</code> now work with REALITY.
+  hiddify-core skips fragmentation for REALITY nodes; that skip can be removed. The new
+  <code>tls.reality.key_share</code> (<code>""</code>, <code>hybrid</code>, <code>classical</code>) is available; <code>classical</code> is refused by
+  Xray 26.9.8 and newer servers.</li>
+<li><strong>TLS tricks.</strong> <code>tls.tls_tricks</code> (mixed-case SNI, padding extension) now works for uTLS clients;
+  padding with a <code>random</code> fingerprint is a config error.</li>
+<li><strong>Balancer.</strong> <code>delay_acceptable_ratio</code> now defaults to 2 when unset or 0 (the app sends 2
+  already). With <code>interrupt_exist_connections</code>, the hashing strategies interrupt only when the
+  set of usable members changes, not on every test round.</li>
+<li><strong>Balancer connections are stable.</strong> <code>lowest-delay</code> now honours <code>tolerance</code> (50 ms when unset;
+  hiddify-core sends 20, with <code>tolerance_ratio</code> 0.3, so the rule is mostly relative) and
+  <code>tolerance_ratio</code> (a tenth of the selected member's delay when unset),
+  and keeps its member until one is faster by more than the larger of the two or it fails a
+  test. Connections are closed only for a member that died (its own connections) and once, 30
+  seconds after start, for the members the first tests left out. A faster member takes new
+  connections only, so <code>interrupt_exist_connections: true</code> no longer cuts calls or downloads on
+  every test round. The balancer starts from the cached results, and the first cycle tests the
+  cached fastest member first.</li>
+<li><strong>Balancer <code>pool</code> strategy.</strong> <code>strategy: "pool"</code> with <code>pool</code> and <code>sticky_hash</code> gives a fixed
+  set of slots with sticky keys that do not move when another member dies (lx's <code>round_robin</code>).
+  <code>tolerance</code> and <code>tolerance_ratio</code> let a faster member outside take a slot, as for lowest-delay;
+  unset, the first working members keep their slots, so hiddify-core sends them to the
+  lowest-delay group only. <code>sticky_hash</code> is <code>sticky-sessions</code>' key too.</li>
+<li><strong>URL test failover.</strong> A failover member that is more than 2 times slower than the fastest
+  other one, twice in a row, is now left for one more than 1.5 times faster.</li>
+<li><strong>A tapped or selected proxy answers at once.</strong> The outbound a group's selection leads to is
+  tested before the first cycle and again when the selection moves; a test asked for runs at
+  once beside the cycle, in stages (<code>experimental.monitoring.on_demand_timeouts</code>, 1 s, 3 s,
+  10 s by default): the app sees the proxy as unavailable after the first mark with no answer,
+  then the answer, however late. A proxy is pinged once; only a failed attempt is tried again,
+  at the next mark. A tap while the proxy is being tested joins that test instead of a second
+  ping, and a selection measured in the last 15 s is not tested again. A ping cached from the
+  previous run decides nothing and is not shown: it orders the members until the real pings
+  arrive, and the app's proxy list sorts by <code>sort_delay</code>, which carries it, while
+  <code>url_test_delay</code> stays 0 for it. hiddify-core sets the
+  lowest-delay groups' <code>tolerance</code> to 20 ms and <code>tolerance_ratio</code> to 0.3: an absolute 100 ms
+  kept a 59 ms member over a 25 ms one. The <code>MONITORING</code> and <code>LOWEST</code> log lines say why each
+  test ran and what the group decided. hiddify-core keeps a profile's proxy tags stable across
+  its updates (an unchanged proxy keeps the tag it had, whatever its new position in the list),
+  so a hot reload after a subscription update keeps the unchanged proxies and their pings and
+  tests only what changed; keep top keeps its pick while every kept proxy is unchanged and none
+  timed out. A proxy that worked in this run skips the first mark: it keeps its ping
+  through a slow answer rather than flicker to unavailable after one second. The delay is
+  published before the IP
+  lookup, so the IP arrives after the ping. Nothing to set; the core's defaults are these.</li>
+<li><strong>IPv6 for the apps is off by default, and verified per proxy when on.</strong> hiddify-core answers
+  the apps with <code>ipv4_only</code> DNS rules and rejects every IPv6 destination before the sniff rule
+  (so before the handshake) unless the IPv6 mode turns IPv6 on; the app's routing page says why
+  (most exits have no IPv6, and a connection the proxy cannot carry dies after it opened, which
+  browsers never retry). When on, the core sets <code>verify_ipv6</code> (each proxy's URL test is followed
+  once per run by the same URL over IPv6, cached per proxy), <code>route.ipv6_fallback</code> (an IPv6
+  connection through a proxy not known yet is carried over IPv4 inside the connection and
+  teaches the proxy's IPv6), <code>ipv6_by_outbound</code> on the DNS rules answering the apps and an
+  <code>ipv6_unavailable_via</code> reject rule on the main selector, both fail-open. A subscription turns
+  IPv6 on for its profile with an <code>ipv6-mode: prefer_ipv4</code> header (the app's override list), and
+  a share link declares its proxy with <code>ipv6=1</code> or <code>ipv6=0</code> (ray2sing, <code>ipv6_declared</code>). No
+  probe of a public address is made (<code>ipv6_probe</code> is retired): the verification uses the user's
+  own test URL. See <a href="../features/dns/ipv6-by-outbound/">IPv6 by outbound</a>.</li>
+<li><strong>MasterDNS outbound.</strong> <code>"type": "masterdns"</code> (display name <code>MasterDNS</code>) is a new outbound
+  type for MasterDnsVPN servers: <code>domains</code>, <code>resolvers</code>, <code>encryption</code>, <code>key</code>, <code>mode</code> and tuning
+  fields, see <a href="../features/protocols/masterdns/">MasterDNS</a>. TCP only; in <code>socks5</code> mode it needs
+  no outbound behind it, in <code>tcp</code> mode the app chains a <code>socks</code> or <code>ssh</code> outbound with <code>detour</code>
+  as for DNSTT. Its status is CONNECTING until the resolvers are tested and the session is open,
+  which can take several seconds; the app should show that rather than an error. ray2sing reads
+  <code>masterdns://</code> links, <code>slipnet://</code> links (SlipNet profiles for DNSTT, NoizDNS and VayDNS) as
+  <code>dnstt</code> outbounds with a <code>socks</code> or <code>ssh</code> outbound in front, and <code>dnst://</code> links (the dnst URL
+  spec, github.com/net2share/dnst-url-spec) for the dnstt, vaydns and masterdns transports.</li>
+<li><strong>Soar outbound.</strong> <code>"type": "soar"</code> (display name <code>Soar</code>) is a new outbound type for Soar
+  servers (<code>github.com/getlantern/soar</code>): <code>domain</code>, <code>public_key</code>, <code>resolvers</code> and tuning fields,
+  see <a href="../features/protocols/soar/">Soar</a>. TCP only, no outbound behind it. The resolvers
+  written go through its smart pool, on by default; <code>auto</code> or no resolvers runs Soar's own
+  discovery. The session
+  opens at the first connection, so the status is CONNECTING until then. ray2sing reads
+  <code>soar://</code> links: WhiteDNS's profile link (base64url JSON, schema <code>whitedns.profile</code>) and a URL
+  form. The JSON editor offers a <code>soar</code> template.</li>
+<li><strong>Links turn the masterdns smart pool on.</strong> ray2sing gives a <code>masterdns://</code> or <code>dnst://</code>
+  masterdns outbound <code>smart_pool</code> unless the link says <code>smart_pool=0</code> or lists an address range,
+  and a link without resolvers gets <code>auto</code>. It also reads WhiteDNS's <code>masterdns://</code> profile link.</li>
+<li><strong>Shared resolver discovery.</strong> <code>smart_pool.discovery</code> (<code>country</code>, <code>sample_ranges</code>, <code>want</code>,
+  <code>concurrency</code>, <code>pace</code>) is the same block for <code>dnstt</code>, <code>masterdns</code> and <code>soar</code>: their <code>auto</code>
+  starts with the candidates of Soar's discovery (device resolvers, the country's bundled list,
+  global resolvers), then the built-in list. hiddify-core fills <code>discovery.country</code> from the
+  app's region when it is empty. Links take <code>country</code>, <code>sample_ranges</code>, <code>discovery_want</code>,
+  <code>discovery_concurrency</code> and <code>discovery_pace</code>.</li>
+<li><strong>Soar fork.</strong> <code>replace/soar</code> (module <code>github.com/getlantern/soar</code>, to be forked as
+  <code>github.com/hiddify/soar</code>, branch <code>hiddify</code>) adds <code>Discovery.List()</code>, so the pool takes Soar's
+  discovery candidates from Soar's own code. hiddify-core's <code>go.mod</code> needs
+  <code>replace github.com/getlantern/soar =&gt; ./hiddify-sing-box/replace/soar</code>, like the other forks.</li>
+<li><strong>Smart resolver pool, per outbound.</strong> <code>dnstt</code>, <code>masterdns</code> and <code>soar</code> take <code>smart_pool</code>, <code>true</code> or an
+  object (<code>load_balance</code>, <code>deadline</code>, <code>per_attempt</code>, <code>probe_interval</code>, <code>down_after</code>); the
+  resolver list, scores, probe and pool of every DNS tunnel are one shared package,
+  <code>common/dnspool</code>, and each outbound runs its own pool. With it, <code>auto</code>, DoT and DoH resolvers
+  work for both tunnels. See <a href="../features/dns/smart-dns-pool/">Smart resolver pool</a>.
+  <strong>Required:</strong> the <code>smart_dns_pool</code> service is removed; a config with it fails to load. Set
+  <code>smart_pool</code> on the outbound instead.</li>
+<li><strong>New options worth exposing:</strong></li>
+<li>DNS group: <code>mode</code> <code>stable</code> and <code>fastest</code>, <code>error_ttl</code>, <code>win_ttl</code>.</li>
+<li>URL test: <code>urls</code> (more test URLs) and <code>mode: "failover"</code>.</li>
+<li>WARP: <code>scanner</code> (endpoint scanner with per-network scores) with <code>search_noise</code> (it also
+    looks for a noise preset that gets through, see the WARP page) and <code>noise_presets</code>;
+    <code>noise.fake_packet.mode</code> <code>"quic"</code> and <code>"raw"</code>, <code>noise.fake_packet.packets</code> (AmneziaWG-style
+    templates, for the "WG Mimic" DNS, QUIC and SIP configs); the <code>awg</code>
+    block with AmneziaWG 3.x settings and the QUIC masquerade (<code>ip</code>, <code>id</code>, <code>ib</code>).</li>
+<li>MASQUE: <code>vhttp</code> (<code>h3</code>, <code>h2</code>, <code>auto</code>), <code>server_name</code>, <code>scanner</code>, <code>mtu</code>, <code>unique_identifier</code>.</li>
+<li>AmneziaWG: 3.x settings (<code>header_protection_key</code>, <code>content_padding_addition</code>, the timers,
+    <code>random_trailers</code>, <code>disable_cookies</code>), <code>s3</code>/<code>s4</code> and <code>h1</code>–<code>h4</code> ranges now work.</li>
+<li>Multiplex: <code>protocol: "rmux"</code>.</li>
+<li>New types (build-tagged): <code>mkcp</code> transport, <code>sudoku</code>, <code>bond</code>, <code>call</code>; new <code>fallback</code> group.</li>
+<li><strong>WARP mode.</strong> A <code>warp</code> endpoint takes <code>mode</code>: <code>wg</code>, <code>awg</code>, <code>masque</code> or <code>auto</code>. <code>auto</code> races
+  one handshake per tunnel and runs the fastest; it needs <code>with_masque</code> for the MASQUE leg. The app
+  can offer <code>auto</code> as the default WARP choice. Its display type is <code>WARP · Auto</code> until it chose,
+  then the chosen tunnel's.</li>
+<li><strong>WARP behind a detour.</strong> Searching for a way in through a detour only measures the detour, so
+  for every <code>warp</code> endpoint with a <code>detour</code> (the extra security hop, WARP in WARP) hiddify-core
+  sets <code>rotate_ports: false</code>, turns the scanner off and gives an IPv6 WARP address as
+  <code>fallback_address</code>: the endpoint tries the profile's IPv4 address, then that IPv6 one. It also
+  turns off the scanner of a <code>masque</code> outbound with a <code>detour</code>. MTU discovery is on for every
+  WireGuard and AmneziaWG tunnel; a config can turn it off with <code>"mtu_discovery": false</code>.</li>
+<li><strong>WARP devices are kept, in a pool.</strong> Registered devices are kept in one pool in the cache file
+  (key <code>warp-profiles</code>), shared by every warp endpoint; each endpoint leases devices of its own,
+  so several warp endpoints in one config never share one. A device is only replaced when
+  Cloudflare says it is gone, disabled or out of quota, not when the network blocks it. Keep
+  <code>store_warp_config</code> on, and a stable <code>unique_identifier</code> per endpoint (it takes its own device
+  back first), or every start registers again (and Cloudflare limits registrations).</li>
+<li><strong>Status in OutboundInfo.</strong> <code>OutboundInfo.status</code> (field 18, enum <code>Status</code>: READY, CONNECTING,
+  RECONNECTING, SEARCHING, FAILED, REGISTERING) mirrors <code>adapter.Status</code>, so the app can show the
+  state without parsing the label (in hiddify-core, uncommitted at the time of writing).</li>
+<li><strong>IP information from the cache.</strong> At start every outbound shows the exit IP and country of
+  the last run, from the cache, until a working test of this run looks them up again (a failed
+  test leaves them as they are). The exit IP of WARP, Psiphon or a rotating proxy can change
+  between runs, so <code>URLTestHistory.IpInfoFromCache</code> says which they are, and hiddify-core sends it
+  as <code>IpInfo.from_cache</code>. Show such an IP as not confirmed yet (dimmed, or with a mark).</li>
+<li><strong>Core STARTED and a single proxy.</strong> hiddify-core moves WAITING → STARTED from the ping of the
+  <code>lowest</code> (lowest-delay) balancer when the profile has 2+ proxies. With only one proxy, <code>lowest</code>
+  is not built; connectivity then uses that proxy's own ping (the select leaf) so the core does
+  not stay WAITING ("Connecting") forever.</li>
+<li><strong>MASQUE devices from links.</strong> The <code>masque</code> outbound never registers a WARP device: it needs
+  <code>device</code>, and a config without one fails to load ("use the warp endpoint with mode masque").
+  A device needs no <code>endpoint_public_key</code>: the edge's fixed key is built in. The port of an
+  endpoint written as <code>ip:port</code> is used. A <code>masque://</code> link to WARP (an endpoint in WARP's ranges
+  or under <code>cloudflareclient.com</code>, or Cloudflare's server name, or none) is a <code>warp</code> endpoint with
+  <code>mode</code> <code>masque</code> (ray2sing): the link's key goes to <code>masque.device</code>, and a link without a key gets
+  a saved or registered device from the WARP pool. When Cloudflare refuses <code>masque.device</code>, WARP
+  remembers it in the cache file (<code>&lt;unique_identifier&gt;/refused-masque-device</code>) and takes a pool
+  device, so the cache file matters for such configs too. ray2sing sets <code>unique_identifier</code> from
+  the link's device id, else a hash of its key or endpoints, so renaming the profile keeps its
+  devices. Only a link to another MASQUE server stays a <code>masque</code> outbound, and needs its key.</li>
+<li><strong>WARP over MASQUE in the warp endpoint.</strong> A <code>warp</code> endpoint can now run MASQUE instead of
+  WireGuard: <code>"masque": {"enabled": true}</code>, or any MASQUE setting (<code>vhttp</code>, <code>server_name</code>,
+  <code>use_ipv6</code>, <code>tls</code>, …). Prefer this to a separate <code>masque</code> outbound: one endpoint handles
+  registration, the scanner and failover for all three tunnels. An empty <code>"masque": {}</code> is
+  dropped by the config parser and gives WireGuard, so always write <code>enabled</code> or a setting.
+  <code>awg</code> and <code>masque</code> together fail the config. MASQUE needs the <code>with_masque</code> tag. The MASQUE
+  device is saved apart from the WireGuard one (<code>&lt;unique_identifier&gt;/masque</code>), so switching an
+  endpoint between the two does not break either.</li>
+<li><strong>Enrolled MASQUE devices (<code>device</code>).</strong> A <code>masque</code> outbound can use a device enrolled
+  elsewhere, as <code>masque://</code> share links carry it, instead of registering one through Cloudflare's
+  API (often blocked). ray2sing writes <code>masque://</code> links to this option, and their <code>inner=</code> link as
+  a second outbound whose detour is the first.</li>
+<li><strong>Self-hosted MASQUE.</strong> Use upstream's <code>masque-client</code> (and <code>masque-server</code>). The Hiddify
+  <code>masque</code> type is WARP only.</li>
+<li><strong>Display types.</strong> WARP shows <code>WARP · WG</code>, <code>WARP · AWG</code> or <code>WARP · MASQUE</code>; the <code>masque</code>
+  outbound shows <code>WARP · MASQUE</code>. After them comes the endpoint the scanner chose
+  (<code>· 🔍 &lt;address:port&gt;</code>, or <code>· 🔍 Not found</code>). If the app maps display types to icons or
+  labels, match on the prefix.</li>
+<li><strong>Status, for every outbound and endpoint.</strong> <code>IsReady() bool</code> is replaced by
+  <code>Status() adapter.Status</code>: <code>StatusReady</code>, <code>StatusConnecting</code>, <code>StatusReconnecting</code>,
+  <code>StatusSearching</code>, <code>StatusFailed</code> and <code>StatusRegistering</code>; <code>adapter.IsReady(o)</code> is the yes/no.
+  <code>adapter.DisplayType(o)</code> is the type and what the status cannot say, nothing more: the
+  resolvers a DNS tunnel uses (<code>MasterDNS · 3 resolvers</code>), the endpoint the WARP scanner chose.
+  It has no status mark (no <code>⏳ Connecting...</code>, no <code>✔️</code>): hiddify-core sends the status on its
+  own (<code>OutboundInfo.status</code>) and the app shows it. A failed outbound adds why it failed,
+  <code>adapter.StatusError(o)</code>: <code>Invalid: bad uuid</code>, <code>WARP · WG: &lt;error&gt;</code>. While it is only
+  connecting, the error of its last attempt goes to <code>OutboundInfo.error</code> and not to the type
+  (SSH's last connection error, for example). The app's <code>typeWithoutStatus</code> still strips the
+  marks an older core sends.</li>
+<li><strong>WARP registration fallback.</strong> When registration through <code>profile.detour</code> fails, WARP (all
+  three tunnels) tries again through every other outbound, direct included. That was already so
+  for WireGuard and is kept; it lets a cold detour group not block registration, but it means
+  Cloudflare's API can be reached outside the detour. If the app must never do that, it should
+  not rely on <code>profile.detour</code> alone, or ask for an option to turn the fallback off. The <code>masque</code>
+  outbound only uses its <code>profile.detour</code>.</li>
+<li><strong>MASQUE profile key.</strong> The saved MASQUE profile is still keyed by the tag unless
+  <code>unique_identifier</code> is set. If the app renames outbounds, set <code>unique_identifier</code> so the device
+  is not registered again.</li>
+<li><strong>Schema.</strong> <code>docs/schema.json</code> is generated again (<code>make schema</code>) and now covers the Hiddify
+  options. Editors or validators that use it should take the new file.</li>
+</ul>
+<h2 id="security">Security</h2>
+<ul>
+<li><strong>MPTCP is off unless asked.</strong> Inbounds and outbounds use Multipath TCP only with
+  <code>tcp_multi_path: true</code>; the Go default (on, for listeners, since Go 1.24) is overridden in
+  the code and by <code>godebug multipathtcp=0</code> in <code>go.mod</code>. A main module that builds sing-box
+  into its own binary needs the same <code>godebug</code> line in its <code>go.mod</code>, as hiddify-core has, or
+  <code>-X runtime.godebugDefault=multipathtcp=0</code> in its link flags; <code>internal/godebug.defaultGODEBUG</code>
+  is not a symbol and does nothing. Keep inbounds on <code>127.0.0.1</code> unless the LAN really needs
+  them, and keep the Linux kernel updated.</li>
+</ul>
+<h2 id="network-changes-and-caches">Network changes and caches</h2>
+<ul>
+<li><strong>Network change callbacks.</strong> WARP and MASQUE now react to network changes: they check the
+  current endpoint and only rescan when it fails, and they name the network by asking
+  <code>cloudflare.com/cdn-cgi/trace</code> (or <code>speedtest.net</code>), not by SSID, so no location permission is
+  needed. The DNS group clears its record of failed servers. All of this relies on the platform
+  reporting interface changes as it does today; keep that working.</li>
+<li><strong>Cache file.</strong> Scanner scores, the WARP config and the MASQUE profile are kept in the cache
+  file. Keep <code>experimental.cache_file</code> enabled, with <code>store_warp_config</code> and <code>store_masque_config</code>
+  where wanted; without the cache file, every start registers a new WARP/MASQUE device and scans
+  from scratch.</li>
+</ul>
+<h2 id="reports">Reports</h2>
+<ul>
+<li><strong>Crash, OOM and power reports are not encrypted.</strong> The <code>encrypt</code> request is accepted and
+  ignored, and archives are always named <code>.zip</code> (no more <code>.age</code>). Instead the archive leaves out
+  the configuration and the list of open connections, and scrubs logs and other text of IP
+  addresses, proxy links and DNS stamps, URL paths and queries, UUIDs, emails and key=value
+  secrets. The app's "include configuration" option no longer adds the configuration. The app
+  should stop showing an "encrypted" state for reports.</li>
+</ul>
+<h2 id="behaviour-the-app-should-know-about">Behaviour the app should know about</h2>
+<ul>
+<li><strong>finalmask follows Xray v26.10.</strong> <code>xdns</code> takes <code>domains</code> as <code>{"names": [...]}</code> and
+  <code>resolvers</code> as <code>{"addrs": [...]}</code>, with DoH resolvers (<code>https://…</code> plus <code>tlsConfig</code>); the older
+  string forms still load. New masks: <code>udphop</code>, noise <code>type: "exp"</code> and <code>script</code>. Masks are now
+  dialed through: <code>xdns</code> and <code>udphop</code> open their own sockets with the outbound's dialer. Links
+  carry finalmask as JSON (<code>fm=</code>), which ray2sing passes through unchanged, so nothing to change
+  in link parsing for the new masks.</li>
+<li>
+<p><strong>XDRIVE.</strong> The <code>xdrive</code> transport needs VLESS with <code>encryption</code> for an Xray server. The
+  outbound's <code>server</code> and <code>server_port</code> are required but unused; the app may show them as
+  meaningless for such a profile. Each proxy connection is its own storage session, since the
+  client has no Mux.Cool: a profile on Google Drive is slow and spends API quota, so a URL test
+  every few minutes costs a session each time.</p>
+</li>
+<li>
+<p><strong>URL test.</strong> A dial that fails because the path is dead moves the group to another member
+  immediately, without closing live connections, so the selected member can change between tests.
+  <code>failover</code> keeps a member until it fails. A URL test or balancer that moves now signals
+  monitoring at once, as a selector does, so the proxy list stream updates without waiting for
+  the next test.</p>
+</li>
+<li><strong>WARP behind a group.</strong> WARP (and the <code>masque</code> outbound) moves at once when the user changes a
+  selector in its detour, but follows a URL test or balancer at most every 30 seconds, through a
+  new tunnel that replaces the old one only once it connects. hiddify-core's chain mode
+  <code>selectable</code> relies on this: in Extra Security its WARP hops dial through <code>select</code>, and the user can move both
+  <code>select</code> and the hop selector on the fly. The app offers <code>selectable</code> as a
+  mode of both hops; the proxy list then has a selectable group named after the hop (<code>🔒 Extra
+  Security · Selectable</code> or <code>🔓 Unblocker · Selectable</code>; its tag ends in <code>§hide§</code> like every chain
+  hop, so do not hide it) whose items are <code>Lowest → &lt;hop&gt;</code> (the
+  default, a lowest-delay balancer) and each WARP tunnel and Psiphon, moved with <code>SelectOutbound</code>.</li>
+<li><strong>Why a proxy failed.</strong> The URL test history keeps the error of a failed test (<code>Error</code>), and an
+  outbound that is not ready says why through <code>adapter.StatusError</code> (WARP and MASQUE: a refused
+  registration, a tunnel that does not connect, with the tunnel's last connect error). hiddify-core
+  passes either to the app as <code>OutboundInfo.error</code>, for the proxy's details. A result loaded from
+  the cache keeps its error only until the next test. See
+  <a href="../features/groups/monitoring/">Monitoring</a>.</li>
+<li><strong>Fake DNS rule.</strong> The DNS rules hiddify-core generates set <code>strategy</code>, which keeps sing-box in
+  legacy DNS mode. A <code>query_type</code> (or <code>ip_version</code>) matcher in any DNS rule then makes the router
+  refuse to start, with "Legacy <code>strategy</code> DNS rule action option is deprecated", and the app
+  stays on Connecting. The fake IP rule therefore matches every query with <code>bypass_if_failed</code>;
+  queries other than A and AAAA fail at the fake IP server, at debug level only, and go on to
+  the remote rule. See <a href="../features/dns/dns-bypass-if-failed/">bypass_if_failed</a>.</li>
+<li><strong>DNS predefined answers.</strong> In legacy DNS mode, A/AAAA records in 10.0.0.0/8 and
+  2001:4188:2:600::/64 are removed from <code>predefined</code> answers (<code>dns/blocked_checker.go</code>). This is
+  deliberate and tested, but a predefined answer in those ranges returns nothing; keep it in mind
+  when generating predefined rules.</li>
+<li><strong>Rule sets.</strong> A remote rule set without a cached copy starts empty and is downloaded once the
+  service is up; a failed download is retried after 1 s, 10 s, 30 s, 1 min, 5 min, 10 min, then
+  every 30 min. Rules that depend on it apply only once it arrives.</li>
+<li><strong>Reverse tunnel.</strong> <code>tunnel_server</code> / <code>tunnel_client</code> now carry traffic: route rules must set
+  <code>override_tunnel_destination</code> on the server.</li>
+</ul>
+<h2 id="call-tunnel-if-shipped">Call tunnel (if shipped)</h2>
+<ul>
+<li>The call link is the tunnel's only key: anyone with it can read the tunnel or use the server as a
+  proxy. Treat join links as secrets in the UI, in shared configs and in logs. The server logs the
+  link of a call it creates, which is how the user learns it.</li>
+<li>Account cookies and the Dion password are stored in the config in plain text; store configs
+  that contain them with the same care as other credentials.</li>
+<li>Only the server side (inbound) needs an account; the client joins as a guest. Bitrix24 has no
+  server side in this build.</li>
+<li>Not tested end to end in Hiddify.</li>
+</ul>
+<h2 id="deferred-needs-the-app">Deferred, needs the app</h2>
+<ul>
+<li><strong>Android auto-redirect rework</strong> (from reF1nd 74f12fb8) is not ported: it changes the gomobile
+  <code>PlatformInterface</code>, so it needs matching changes in hiddify-app's Android code.</li>
+</ul>
+<h2 id="repositories">Repositories</h2>
+<p>All forks have GitHub repos under <code>github.com/hiddify/</code> (<code>sing-tun</code>, <code>gvisor</code>, <code>wireguard-go</code>,
+<code>amneziawg-go</code>, <code>sing-mux</code>, and the older ones). Nothing has been pushed yet: push each fork's
+branch before pushing hiddify-sing-box, or the submodule commits cannot be fetched.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      اخرین بروزرسانی:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 6, 2026 19:45:39 UTC">November 6, 2026</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/hiddify/docs.hiddify.com/issues/new/?title=[Feedback]+App%20considerations+-+/fa/core/sing-box/app_considerations/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+  <h2 id="__comments">نظرات</h2>
+
+  <script src="https://giscus.app/client.js"
+  data-repo="hiddify/hiddify-manager"
+  data-repo-id="R_kgDOIEqHxA"
+  data-category-id="DIC_kwDOIEqHxM4CT94H"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            برگشت به بالا
+          </button>
+        
+      </main>
+      
+        <footer class="body-font relative bg-transparent py-4 text-secondary border-t border-white px-3 md:px-16 lg:px-28 xl:px-36">
+  <div class="md-footer__inner md-grid flex flex-col flex-wrap md:flex-row md:flex-nowrap text-right">
+
+    <!-- Social media links and description (first for Farsi, last for English) -->
+    <div class="md:w-64 flex-shrink-0 md:mx-0 px-4 order-first">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end gap-5">
+        <a class="title-font flex items-center font-medium text-white md:justify-end">
+          <img src="/assets/hiddify-logo.svg" alt="Hiddify Logo" height="40" />
+        </a>
+        <!-- Social icons for mobile view -->
+        <div class="items-end justify-start gap-5 flex md:hidden">
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://www.youtube.com/@hiddify">
+              <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://twitter.com/hiddify_com">
+              <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://t.me/hiddify">
+              <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://instagram.com/hiddify_com">
+              <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+            <a href="https://github.com/hiddify">
+              <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-5 mb-5 text-secondary text-sm text-right">
+        
+          برای اطمینان از دسترسی آسان به اینترنت بدون محدودیت با یک ابزار قدرتمند و حرفه‌ای ضد سانسور، ما را در شبکه‌های اجتماعی دنبال کنید.
+        
+      </p>
+      <!-- Desktop social icons -->
+      <div class="items-end justify-start gap-5 hidden md:flex">
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://www.youtube.com/@hiddify">
+            <img src="/assets/socials/youtube.svg" alt="YouTube" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://x.com/hiddify_com">
+            <img src="/assets/socials/x.svg" alt="X" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://t.me/hiddify">
+            <img src="/assets/socials/telegram.svg" alt="Telegram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://instagram.com/hiddify_com">
+            <img src="/assets/socials/instagram.svg" alt="Instagram" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-6 h-6 rounded-full bg-white text-white">
+          <a href="https://github.com/hiddify/Hiddify-Manager">
+            <img src="/assets/socials/github.svg" alt="GitHub" class="w-6" decoding="async" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download section (second in Farsi, first in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-2">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          دانلود اپ هیدیفای
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        
+          <li><a href="https://app.hiddify.com/ios" target="_blank" class="text-sm text-secondary"> 📲 iOS</a></li>
+          <li><a href="https://app.hiddify.com/play" target="_blank" class="text-sm text-secondary"> 🤖 اندروید </a></li>
+          <li><a href="https://app.hiddify.com/windows" target="_blank" class="text-sm text-secondary"> 🪟 ویندوز </a></li>
+          <li><a href="https://app.hiddify.com/mac" target="_blank" class="text-sm text-secondary"> 🍏 مک‌اواس</a></li>
+          <li><a href="https://app.hiddify.com/linux" target="_blank" class="text-sm text-secondary"> 🐧 لینوکس </a></li>
+        
+      </nav>
+    </div>
+
+    <!-- Installation guide section (third in Farsi, second in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-3">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          نصب هیدیفای‌منیجر
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/guide/" class="text-sm text-secondary"> ⚙️ راهنمای اصلی </a></li>
+          <li><a class="text-sm text-secondary" href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/"> 📦 هتزنر </a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" class="text-sm text-secondary"> 🚀 اوراکل </a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" class="text-sm text-secondary">  🗺️ والتر </a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" class="text-sm text-secondary"> 🏭 OVH </a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" class="text-sm text-secondary"> 🏢 آژور </a></li>
+          <li><a href="https://hiddify.com/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/" class="text-sm text-secondary"> 🚢 داکر </a></li>
+        
+      </nav>
+    </div>
+
+    <!-- Support section (last in Farsi, third in English) -->
+    <div class="px-4 md:w-1/2 lg:w-1/3 order-4">
+      <h2 class="title-font mb-3 text-lg text-secondary">
+        
+          پشتیبانی
+        
+      </h2>
+      <nav class="mb-10 list-none">
+        <li>
+          <a class="text-sm text-secondary" href="https://t.me/hiddify">
+            
+              👥 عضویت در گروه تلگرام
+            
+          </a>
+        </li>
+        <li>
+          <a class="text-sm text-secondary" href="https://youtube.com/@hiddify">
+            
+              🎬 عضویت در کانال یوتیوب
+            
+          </a>
+        </li>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better. Google Analytics needs your consent.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">تایید</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">مدیریت تنظیمات</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "toc.follow", "navigation.top", "content.code.copy", "content.code.select", "content.code.annotate", "content.action.edit", "search.suggest", "search.share", "search.highlight", "announce.dismiss", "navigation.footer", "content.tooltips"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+        <script src="../../../../assets/js/site.js"></script>
+      
+        <script src="../../../../assets/js/svginject.js"></script>
+      
+    
+  </body>
+</html>
