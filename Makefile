@@ -22,10 +22,14 @@ SINGBOX ?= ../hiddify-sing-box
 core-docs:
 	python3 scripts/sync_core_docs.py $(SINGBOX)
 
+# Instagram-style page (docs/instagram): add every YouTube channel video that is not there yet (needs yt-dlp)
+instagram:
+	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/instagram_page.py
+
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 
-.PHONY: all test clean docs core-docs
+.PHONY: all test clean docs core-docs instagram
 
 
 idx = lunr(ref='location',fields=('title', 'text'),documents={'location':1},languages="fa",)

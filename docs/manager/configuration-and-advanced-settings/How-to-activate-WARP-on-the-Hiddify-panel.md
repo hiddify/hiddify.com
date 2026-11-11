@@ -15,42 +15,42 @@ Warp has several levels of service, the free service of which has a traffic volu
 
 
 ## Setting up WARP on Hiddify
-Go to the panel settings section, in this section you can see the WARP settings. Open it.
+Click **Settings** in the panel sidebar and find the **WARP** card. (You can also type "WARP" in the search box at the top of the page.)
 
 <div align=center markdown=1>
-![Warp_settings](https://github.com/hiddify/hiddify-config/assets/125398461/ca7fb053-6a1d-4c3d-aa31-90ec98f85534)
+![The WARP card in Settings](/assets/manager/How-to-activate-WARP-on-the-Hiddify-panel/en-warp.webp)
 
 </div>
 
-When you deactivate it, you need to give it a Warp Plus code, which you need to get this service from Cloudflare. Of course, to get this code, there are different bots in Telegram that give you this code, but none of them are approved by us.
+Choose a **WARP+ Mode** other than `Disable`, then save. To use WARP Plus, enter its key in the **Warp Plus Key** field; you can buy the original key from Cloudflare in the 1.1.1.1 app. There are also different bots in Telegram that give you this key, but none of them are approved by us.
+
+In **Additional WARP Sites** you can add more sites that should pass through WARP (only when the WARP mode is not disabled).
 
 ### Mode "All"
 It passes all traffic through the warp, even the sites that don't have problems pass through the warp.
 
-### Mode "Only blocked and local websites"
-Only domestic sites and `Google, Spotify, Netflix, Openai, ipinfo.io` use Warp.
+### Mode "Only Domestic and Blocked Sites"
+Only domestic sites and `Google, Spotify, Netflix, OpenAI, ipinfo.io` use Warp.
 
-- Note: If for any reason there is an error in the inserted code, the warp will be disabled. So make sure to use the code correctly. Select and copy the code provided by the bot correctly and place it in the desired field.
+- Note: If there is an error in the Warp Plus key, the WARP will be disabled. So make sure to use the key correctly. Select and copy the key correctly and place it in the field.
 
 ## How to check if warp is active or not?
 
-To do this, check the `Status` of the panel from the `Actions` menu.
+To do this, click **Actions** in the sidebar. On the **Apply & Status** page, click **Check now** in the **Check Status** card.
 
 <div align=center markdown=1>
 
-
-![status log](https://github.com/hiddify/hiddify-config/assets/125398461/81bf46b8-c265-4dd9-ae38-2995ee6c70f2)
-
+![The Check Status card on the Apply & Status page](/assets/manager/How-to-activate-WARP-on-the-Hiddify-panel/en-check-status.webp)
 
 </div>
 
-The system status is displayed on this page. Also, the status of the warp connection, the IP allocated for the use of the warp traffic is displayed.
+The status check shows whether each service is running, plus the server's public IP and the status of the warp connection with the IP allocated for the warp traffic. Its output is also kept in the `status.log` file in the **Logs** list at the bottom of the same page.
 
 > * Note that Warp is always active as a service. That is, here even if you have disabled it in the settings, it will be displayed again.
 
 > * When you disable warp from the settings, traffic will not pass through the service even though it is enabled.
 
-> * If you have entered the limited or unlimited Warp Plus code, the type of service will be displayed as `Limited` or `Unlimited` on this page.
+> * If you have entered the limited or unlimited Warp Plus code, the type of service will be displayed as `Limited` or `Unlimited` in the status.
 
 
 You can also use the [ipinfo](https://ipinfo.io/) site. If the IP displayed on this page belongs to Cloudflare despite the filter breaker being turned on; In this case, the warp is activated correctly.

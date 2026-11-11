@@ -13,27 +13,27 @@ As you know, in version 8 of the HiddifyManager, a proxy for the SSH service has
 Continue with this tutorial to learn how to make its settings on Hiddify panel.
 
 ## Configure SSH proxy settings
-First, go to the `SSH proxy` section in the panel `Settings`.
+First, click **Settings** in the panel sidebar and find the **SSH Proxy** card.
 
 <div align=center markdown=1>
   
-![SSH proxy](https://github.com/hiddify/hiddify-config/assets/125398461/427891b5-dc5a-42c8-beaf-a4e004f06a99)
+![The SSH Proxy card in Settings](/assets/manager/SSH-proxy-setting-on-Hiddify-panel/en-ssh-settings.webp)
 
 </div>
 
-Here you can choose your desired port for this proxy. You can also enable or disable this protocol.
+Here you can enable or disable this protocol with the **SSH Proxy** switch. With **Multiplex SSH on TLS Port** on, SSH shares the TLS/HTTPS ports (such as 443) instead of using a dedicated public SSH port; clients connect to the same TLS port.
 
 ## Enable or disable proxy
 
-To do this, go to the `Proxies` section from the `Settings` menu.
+You can also do this from the **Protocols** page: click **Protocols** in the sidebar, turn the **SSH Proxy** card on or off, and save.
 
 <div align=center markdown=1>
   
-![SSH proxy proxy](https://github.com/hiddify/hiddify-config/assets/125398461/bdb7548a-2348-4038-a36e-6e8c37c3e8be)
+![The SSH Proxy switch on the Protocols page](/assets/manager/SSH-proxy-setting-on-Hiddify-panel/en-protocols.webp)
 
 </div>
 
-Here you can enable or disable the SSH proxy.
+If the panel asks you to apply the changes, do it so that they are applied to the server.
 
 ## Use config to connect
 

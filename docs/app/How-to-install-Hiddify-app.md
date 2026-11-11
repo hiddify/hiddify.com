@@ -10,7 +10,7 @@ This page shows you how to download and install Hiddify App on your phone or com
 
 Hiddify App is built on **sing-box** (the engine that makes the connections). It supports many protocols, including VLESS, VMess, Trojan, Reality, TUIC, Hysteria, WireGuard, AmneziaWG, Naive and SSH, and it accepts sing-box, V2ray, Clash and Clash Meta subscription links. See the [full feature list](https://github.com/hiddify/hiddify-app/blob/main/README.md) on GitHub.
 
-The latest stable version is **v5**.
+This page is for version **5.5.6** of the app.
 
 ## Before you start
 
@@ -22,10 +22,10 @@ Check that your device is supported:
 | iPhone / iPad | iOS 15 or later |
 | Windows | Windows 10 (version 1809) or Windows 11, 64-bit |
 | macOS | macOS 10.15 (Catalina) or later, Intel or Apple Silicon |
-| Linux | 64-bit (x64) Linux; Debian/Ubuntu-based systems are best supported |
+| Linux | 64-bit Linux, x64 or ARM64 (arm64); Debian/Ubuntu and Fedora-based systems are best supported |
 
-!!! note "Windows 7, Windows 8 and RPM-based Linux"
-    Hiddify App does not support Windows 7 or 8. There is also no `.rpm` package any more (it was removed in v4): on Fedora, openSUSE and similar systems, use the AppImage file.
+!!! note "Windows 7 and Windows 8"
+    Hiddify App does not support Windows 7 or 8.
 
 ## Which file should I download?
 
@@ -35,17 +35,14 @@ Pick the row for your device. Store versions update themselves; the files from G
 |---|---|---|
 | Android | [Google Play](https://play.google.com/store/apps/details?id=app.hiddify.com) | APK file: [universal](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk) (works on every phone), [arm64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm64.apk), [arm7](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm7.apk), [x86_64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-x86_64.apk) |
 | iPhone / iPad | [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) | — |
-| Windows | [Setup file (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk), [MSIX package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-x64.msix), [portable ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip), winget |
+| Windows | [Setup file (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk), [MSIX package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix), [portable ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip), winget |
 | macOS | [DMG file](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) | [PKG installer](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS-Installer.pkg), [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) (Apple Silicon Macs) |
-| Linux | [AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage) | [.deb package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (Debian, Ubuntu, Mint), [AppImage in a .tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.tar.gz) |
+| Linux | [All-in-one download](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.tar.gz) (picks the right package for your system) | [AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage), [.deb package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (Debian, Ubuntu, Mint), [.rpm package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm) (Fedora, openSUSE), [ARM64 all-in-one](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-arm64.tar.gz) |
 
 All files are also listed on the [GitHub releases page](https://github.com/hiddify/hiddify-app/releases/latest).
 
 <div align=center>
  <a href="https://play.google.com/store/apps/details?id=app.hiddify.com"><img width=20% alt="Get it on Google Play" src="https://raw.githubusercontent.com/hiddify/hiddify-app/main/docs/google-play-badge.png"></a>
-<br>
-<br>
-<a href="https://www.youtube.com/watch?v=vUaA1AEUy1s"><img width="32%" alt="Video (in Persian): installing Hiddify on Windows" src="https://github.com/hiddify/hiddify-next/assets/125398461/0f1e88a7-ecf0-4ba7-8c12-f24f70c68c3d" /></a>
 </div>
 
 ## Install the app
@@ -190,7 +187,24 @@ From now on, you can open Hiddify from `Applications` like any other app.
 
 <details markdown="1"> <summary><b>Install on Linux</b> (click)</summary>
 
-**Option 1: AppImage (works on most 64-bit distributions)**
+**Option 1: All-in-one download (easiest)**
+
+This download has the `.deb`, `.rpm` and AppImage files, and a script that installs the right one for your system.
+
+1. Download [Hiddify-Linux-x64.tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.tar.gz). On an ARM64 computer (for example a Raspberry Pi), download [Hiddify-Linux-arm64.tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-arm64.tar.gz) instead.
+2. Open a terminal in your `Downloads` folder, extract the file and run the installer:
+
+    ```bash
+    cd ~/Downloads
+    tar xzf Hiddify-Linux-x64.tar.gz
+    ./Hiddify-Linux-x64/install.sh
+    ```
+
+    It uses the `.deb` package on Debian and Ubuntu, the `.rpm` package on Fedora and openSUSE, and the AppImage on other systems. Type your password when asked.
+
+3. Open Hiddify from your applications menu.
+
+**Option 2: AppImage (works on most 64-bit distributions)**
 
 1. Download the [AppImage file](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage) (`Hiddify-Linux-x64-AppImage.AppImage`). You do not need to extract it.
 2. Open a terminal and make the file executable. This example assumes the file is in your `Downloads` folder:
@@ -221,13 +235,17 @@ On Ubuntu 24.04 and newer:
 sudo apt install libfuse2t64
 ```
 
-**Option 2: .deb package (Debian, Ubuntu, Linux Mint)**
+**Option 3: .deb or .rpm package**
 
-1. Download the [.deb package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (`Hiddify-Debian-x64.deb`).
-2. In a terminal, run:
+1. Download the [.deb package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (Debian, Ubuntu, Linux Mint) or the [.rpm package](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm) (Fedora, openSUSE).
+2. In a terminal, run the command for your package:
 
     ```bash
     sudo apt install ~/Downloads/Hiddify-Debian-x64.deb
+    ```
+
+    ```bash
+    sudo dnf install ~/Downloads/Hiddify-rpm-x64.rpm
     ```
 
 3. Open Hiddify from your applications menu.
@@ -237,7 +255,7 @@ sudo apt install libfuse2t64
 
 ## First start
 
-The first time you open the app, a welcome screen with three options opens. The app picks the language and region for you. If they are right, just tap `Start`.
+The first time you open the app, a welcome screen with three options opens. The app picks the language from your phone's settings. Check the three options, then tap `Start`.
 
 <div align=center>
 <img width=260 alt="First start: language, region and analytics" src="/assets/app-install/en-first-run.webp">
@@ -245,7 +263,7 @@ The first time you open the app, a welcome screen with three options opens. The 
 
 1. **Language:** if the app's language is wrong, tap `Language` and choose yours.
 2. **Region:** tap `Region` and choose the country you are in (for example `Iran (ir)`). The app uses this to open local websites directly, without the proxy. If your country is not in the list, choose `Other`.
-3. **Turn on analytics:** this switch is on by default. While it is on, the app sends anonymous crash and usage data that helps the developers improve it. Turn it off if you do not want that.
+3. **Turn on analytics:** this switch is off by default. If you turn it on, the app sends anonymous crash and usage data that helps the developers improve it.
 4. Tap `Start`.
 
 <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
@@ -253,14 +271,14 @@ The first time you open the app, a welcome screen with three options opens. The 
 <img width=260 alt="Region list" src="/assets/app-install/en-region.webp">
 </div>
 
-You should now see the app's home page. Next time you open the app, it goes straight to this page. The `+` button at the top adds a config or subscription link, and the big button in the middle (`Tap to connect`) connects you.
+You should now see the app's home page. Next time you open the app, it goes straight to this page. The `+` button at the top adds a config or subscription link, and the big button in the middle (`Tap to connect`) connects you. The small label next to the name shows your app version.
 
 <div align=center>
 <img width=260 alt="Hiddify app home page" src="/assets/app-install/en-home.webp">
 </div>
 
 !!! note
-    The screenshots on this page come from version 5 of the app. On other versions and on computers the steps are the same, but some screens may look a little different.
+    The screenshots on this page come from version 5.5.6 of the app. On other versions and on computers the steps are the same, but some screens may look a little different.
 
 ## Next step
 

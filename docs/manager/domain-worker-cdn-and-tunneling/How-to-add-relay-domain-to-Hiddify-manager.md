@@ -48,12 +48,18 @@ The relay does not run Hiddify Manager. It only forwards traffic, using one of t
 
 1. Log in to your Hiddify Manager admin panel.
 2. In the side menu, open **Domains** (in the **Settings** group).
-3. Click **Add domain**.
-4. Type your relay subdomain (for example `relay.example.com`). The panel checks its DNS. It should say the domain "points to another server" (your relay's IP). That is expected.
-5. Choose the mode **Relay**.
-6. For TLS, keep the default real certificate unless you know you need something else.
-7. Enter a **Display name** if you like. Users see this name in their apps instead of the domain.
-8. Click **Done**, then apply the changes when the panel asks you to.
+3. Click **Add domain**. A wizard opens with four steps: **Domain**, **Mode**, **Name** and **Certificate**.
+4. In **Domain**, type your relay subdomain (for example `relay.example.com`) and click **Check**. The panel checks its DNS. It should say the domain points to another server (your relay's IP). That is expected.
+
+    <img width=600 alt="Add a domain wizard, step 1: type the domain and click Check" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-domain-add.webp" style="display:block;margin:0 auto">
+
+5. In **Mode**, under **How is it set up?**, choose **Relay**.
+6. Under **Which TLS?**, keep **Valid TLS** (a real certificate, issued automatically) unless you know you need something else. Click **Next**.
+
+    <img width=600 alt="Add a domain wizard, step 2: choose Relay and Valid TLS" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-domain-mode.webp" style="display:block;margin:0 auto">
+
+7. In **Name**, enter a display name if you like. Users see this name in their apps instead of the domain.
+8. Finish the **Certificate** step, then apply the changes when the panel asks you to.
 
 If the certificate step fails, check that the relay forwards port `80` to the main server and that the DNS record has had a few minutes to spread.
 
@@ -64,18 +70,14 @@ If the certificate step fails, check that the relay forwards port `80` to the ma
 
 It is good practice to keep the domain users open their subscription on separate from the domains that carry traffic. To add the relay configs to that subscription domain:
 
-1. In **Domains**, click your subscription domain (for example `sublink.example.com`) to edit it.
+1. In **Domains**, click the edit (pencil) button of your subscription domain (for example `sublink.example.com`).
 2. In **Show configs of**, select your relay domain, and any other domains you want users to get.
 3. Save, then apply the changes.
 
 Now open a user's page using the subscription domain. You will see configs that use the relay domain. Users can add them one by one, or simply update their subscription in their app.
 
-??? note "Screenshots from an older panel version"
-    These screenshots come from the older admin pages. Labels and layout in current versions differ; follow the steps above.
-
-    Adding a relay domain:
-
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed" alt="Adding a relay domain in an older panel version">
+??? note "Screenshot from an older panel version"
+    This screenshot comes from the older admin pages. Labels and layout in current versions differ; follow the steps above.
 
     Showing the relay configs on the subscription domain:
 

@@ -58,13 +58,13 @@ On the **Sign in** page:
 
 The easiest way is to open your full admin link again. It fills in your ID automatically.
 
-![Old short link format (before Admin V2)](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
-
 <div align=center>
-  <img alt="Sign-in page (older version)" src="https://github.com/hiddify/hiddify.com/assets/125398461/d8c66248-5b57-419e-a12f-4195501ee84c" width=70% />
+  <img alt="The admin Sign in page" src="/assets/manager/The-correct-format-of-admin-link/en-sign-in.webp" width=40% />
 </div>
 
-The screenshots above are from an older version. The sign-in page now has separate fields for the ID and the password.
+The picture below shows the older short link format, used before Admin V2.
+
+![Old short link format (before Admin V2)](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
 
 ## If you lost your admin link
 
@@ -87,7 +87,7 @@ hiddify reset-password
 
 ## How to change the parts of the link
 
-- **Admin proxy path**: in the panel, open **Settings**, search for "Proxy Path for Admins", change it, and apply the changes. The panel then shows the new admin address.
+- **Admin proxy path**: in the panel, open **Settings** and search for "Proxy Path for Admins" (it is in the **Very Advanced Settings** card). Change it, click **Save**, and apply the changes. The panel then shows the new admin address.
 - **Admin UUID**: open the **Admins** page, edit the admin, and change the UUID field. The old admin link for that admin stops working.
 
 </div>

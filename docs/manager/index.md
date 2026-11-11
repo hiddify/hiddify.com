@@ -148,6 +148,20 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
           </div>
           <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=pt3gOIRgfoo" title="Hiddify Manager X (10). Your all-in-one proxy panel solution! Manage multiple protocols and domains">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/pt3gOIRgfoo.jpg" alt="Hiddify Manager X (10). Your all-in-one proxy panel solution! Manage multiple protocols and domains"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=LEgkCj-FYoE" title="Hiddify Introduction">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/LEgkCj-FYoE.jpg" alt="Hiddify Introduction"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png"
@@ -302,6 +316,20 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
           </div>
           <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=5ude_1SnwtI" title="Use Telegram without filtering using Cloudflare |">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/5ude_1SnwtI.jpg" alt="Use Telegram without filtering using Cloudflare |"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=XM9l-WCjNuo" title="How to set up and use Telegram bot on Hiddify panel">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/XM9l-WCjNuo.jpg" alt="How to set up and use Telegram bot on Hiddify panel"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=nOe7FhajX3g">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png"
@@ -826,6 +854,13 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
           </div>
           <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=qT43zDPev6o" title="HiddifyNG introduction">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/qT43zDPev6o.jpg" alt="HiddifyNG introduction"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/HiddifyNG_Tutorial_en.png"

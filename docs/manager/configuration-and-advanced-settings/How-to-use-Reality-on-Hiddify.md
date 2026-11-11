@@ -25,12 +25,12 @@ This page shows you how to add a Reality domain in the Hiddify Manager panel, so
 - You have chosen one or more Reality-friendly websites. A good one supports TLS 1.3 and HTTP/2, is not blocked in your country, and ideally is hosted in the same data center as your server. The [Hiddify Reality Scanner](/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/) can help you find one.
 
 ## Panel-wide Reality settings
-In the panel, open **Settings** → **Settings** and find the **Reality** section. You will see these fields:
+In the panel's sidebar, under **Settings**, click **Settings** and find the **Reality** card. You can also type `Reality` in the settings search box. You will see these fields:
 </div>
 
 <div align=center markdown=1>
   
-![The Reality section of the panel settings (screenshot from an older panel version)](https://github.com/hiddify/hiddify-config/assets/125398461/854639a1-01a3-48d8-be28-1d85b715d6dc)
+![The Reality card in the panel settings](/assets/manager/How-to-use-Reality-on-Hiddify/en-reality-settings.webp)
 
 </div>
 
@@ -40,19 +40,40 @@ In the panel, open **Settings** → **Settings** and find the **Reality** sectio
 - **Private Key**: used to encrypt the connection.
 - **Public Key**: given to the client apps so they can talk to your server.
 
-The panel creates these values for you. Don't change them. If you change them, all your users' existing Reality configs stop working.
+The panel creates these values for you. Each field says **Do Not Change It**: don't change them. If you change them, all your users' existing Reality configs stop working.
 
 ## Add a Reality domain
 1. In the panel's sidebar, under **Settings**, click **Domains**.
 2. Click **Add domain**.
-3. In the **Domain** step, type the address of the website you chose, for example `www.yahoo.com`. Click **Next**. The panel checks the domain's DNS. If it says the site "Points to another server: good for Reality", you can go on. If it says the site is "not Reality friendly (needs TLS 1.3 and HTTP/2)", go back and choose another website.
-4. In the **Mode** step, choose **Direct**.
-5. Under **Which TLS?**, choose **Reality**.
-6. In the **Name** step, you can type a short name that users will see in their apps. Use plain letters and numbers. Then finish the wizard. A Reality domain needs no certificate.
-7. Open the new domain to see its other fields (see below). Change them only if you need to, then click **Save**.
-8. Apply the changes: when the panel shows "Saved. Apply the configs to put the changes into effect.", click the button to apply. You can also go to **Settings** → **Actions** and click **Apply now**.
+3. In the **Domain** step (**Which domain?**), type the address of the website you chose, for example `www.yahoo.com`, and click **Check**. The panel checks the domain's DNS. If it says the site "Points to another server: good for Reality", you can go on. If it says the site is "not Reality friendly (needs TLS 1.3 and HTTP/2)", go back and choose another website. You don't need to set the DNS record shown under **Point it at this server**: a Reality domain is someone else's website.
 
-If the steps worked, the new domain appears in the **Domains** list, and your users see new Reality configs after they update their subscription.
+    <div align=center markdown=1>
+
+    ![Step 1 of the Add a domain wizard](/assets/manager/How-to-use-Reality-on-Hiddify/en-add-domain.webp)
+
+    </div>
+
+4. In the **Mode** step, under **How is it set up?**, choose **Direct**.
+5. Under **Which TLS?**, choose **Reality**, then click **Next**.
+
+    <div align=center markdown=1>
+
+    ![The Mode step: How is it set up? and Which TLS?](/assets/manager/How-to-use-Reality-on-Hiddify/en-domain-mode.webp)
+
+    </div>
+
+6. In the **Name** step, you can type a short name that users will see in their apps. Use plain letters and numbers. Then finish the wizard. A Reality domain needs no certificate.
+7. To see the domain's other fields (see below), click the pencil (edit) icon of the new domain in the **Domains** list. Change them only if you need to, then click **Save**.
+8. Apply the changes: when the panel shows "Saved. Apply the configs to put the changes into effect.", click the button to apply. You can also click **Actions** in the sidebar (under **Settings**) and, in the **Apply Changes** card, click **Apply now**.
+
+If the steps worked, the new domain appears in the **Domains** list with the badges **Direct** and **Reality**, and your users see new Reality configs after they update their subscription.
+
+<div align=center markdown=1>
+
+![A Reality domain in the Domains list](/assets/manager/How-to-use-Reality-on-Hiddify/en-domains.webp)
+
+</div>
+
 
 ### Fields of a Reality domain
 
@@ -76,30 +97,29 @@ Put an IP here if you want the configs to use it instead of your server's main I
 
 When you save, the panel checks your fields and may show messages. Red messages are errors: fix them before you go on. Yellow messages are only warnings. It is best to change your settings until they go away, but you can ignore them and continue.
 
-<div align=center markdown=1>
-  
-![A saved Reality domain (screenshot from an older panel version)](https://user-images.githubusercontent.com/125398461/235890855-5b159244-1e83-4eaf-97d5-fef455168911.png)
-</div>
-
-
-
 ## Turn Reality on or off
 Reality is controlled by a panel-wide switch:
 
-1. Go to **Settings** → **Settings**.
-2. In the **Proxies Settings** section, turn **Reality** on or off.
+1. In the sidebar, under **Settings**, click **Protocols**.
+2. In the **Security & tricks** section, turn **Reality** on or off. (The same switch is also in the **Proxies Settings** card of the **Settings** page.)
 3. Click **Save**, then apply the changes.
+
+<div align=center markdown=1>
+
+![The Reality switch on the Protocols page](/assets/manager/How-to-use-Reality-on-Hiddify/en-protocols-reality.webp)
+
+</div>
 
 !!! tip "If Reality doesn't work on your network"
     Reality can behave differently on different networks. If it doesn't work, first make sure your server's IP is clean. Then try another website as the domain and as the server names.
 
 ## Why don't my users see the Reality configs?
-Users see the configs of the domain they open their user page on. If their subscription link uses another domain, you must tell that domain to also show the Reality domain's configs.
+Users see the configs of the domain they open their user page on. By default, each domain shows the configs of **All domains**: you can see this under **Show configs of** in the **Domains** list. If you limited the **Show configs of** field of the domain that your users' subscription link uses, you must add the Reality domain to it.
 </div>
 
 <div align=center markdown=1>
   
-![The "Show configs of" field in a domain's settings (screenshot from an older panel version)](https://github.com/hiddify/hiddify-config/assets/125398461/9269f0ee-78af-4db6-a75d-64ea01f527fc)
+!["Show configs of" in the Domains list](/assets/manager/How-to-use-Reality-on-Hiddify/en-show-configs.webp)
 
 
 </div>
@@ -108,8 +128,8 @@ Users see the configs of the domain they open their user page on. If their subsc
 
 For example, say your subscription domain is `t1.hiddify.com` and your Reality domain is `www.yahoo.com`:
 
-1. Go to **Settings** → **Domains** and open `t1.hiddify.com`.
-2. In the **Show configs of** field, select `www.yahoo.com`.
+1. In the sidebar, under **Settings**, click **Domains**, and click the pencil (edit) icon of `t1.hiddify.com`.
+2. In the **Show configs of** field, select `www.yahoo.com` (or all domains).
 3. Click **Save** and apply the changes.
 
 Now open the subscription link on `t1.hiddify.com`. You should see the Reality configs in it.

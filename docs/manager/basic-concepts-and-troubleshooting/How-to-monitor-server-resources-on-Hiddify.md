@@ -24,16 +24,13 @@ This page shows you how to check your server's CPU (processor), RAM (working mem
 
 The quickest check needs no commands.
 
-1. Log in to your Hiddify panel. The dashboard opens first.
-2. Look at the health card of your server (a "node"). It shows CPU use per core, RAM, swap, disk use, load, uptime, network traffic and connections. It also lists the top processes and the largest folders.
+1. Log in to your Hiddify panel. The **Dashboard** opens first.
+2. Scroll down to the **Node Health** card. Each server is a "node"; **This server** is the one the panel runs on. The card shows **CPU**, **RAM** and **Network** charts, and a table with each node's **Uptime**, **Panel version**, **Disk** use, **Uptime Upload**, **Uptime Download**, **Connections** and **Unique IPs**. If you have several nodes, you can pick one in the node filter at the top of the dashboard (**All nodes**).
 
 <div align=center markdown=1>
 
-![Hiddify panel dashboard](https://github.com/hiddify/hiddify-config/assets/125398461/0e3c9cd4-ea9b-4e0e-83a6-425f4fdc212c)
+![The Node Health card on the panel dashboard](/assets/manager/How-to-monitor-server-resources-on-Hiddify/en-node-health.webp)
 </div>
-
-!!! note
-    The screenshot above is from an older version of the panel. Your dashboard looks different, but it shows the same kind of information.
 
 ## Check 2: CPU and RAM with htop
 

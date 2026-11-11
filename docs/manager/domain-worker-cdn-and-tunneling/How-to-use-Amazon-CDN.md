@@ -72,4 +72,15 @@ In fact, this subdomain will be used for our CDN domain.
 
 * It usually takes between 2-5 minutes for these changes to be applied, which can be followed by refreshing the screen. Always remember that at any stage you make changes, it should change to this state, which means that the changes are fully applied and usable.
 
-* Congratulations, the work is done. Amazon Cloudfront CDN is successfully launched. Now just register your CDN domain in your HiFi Manager.
+* Congratulations, the work is done. Amazon Cloudfront CDN is successfully launched. Now just register your CDN domain in your HiddifyManager.
+
+## Adding the CDN domain in HiddifyManager
+* In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`.
+* In the `Domain` step, enter the CDN subdomain, `sub2.domain.com`, and click `Check`.
+* In the `Mode` step, under `How is it set up?`, choose `CDN`, keep `Valid TLS` and click `Next`.
+
+<div align=center markdown=1>
+<img alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-Amazon-CDN/en-domain-mode.webp" width=70% />
+</div>
+
+* Go through the `Name` and `Certificate` steps, then apply the changes when the panel asks you to.

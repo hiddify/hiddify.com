@@ -36,23 +36,23 @@ The fix is one or both of the methods below.
 
 ## Method 1: set the DNS server in the panel
 
-The panel's **DNS Server** setting is the DNS server that Hiddify's proxy service uses to look up sites for your users. The default is `1.1.1.1` (Cloudflare).
+The panel's **DNS Server** setting is the DNS server that the server and its proxies use to look up sites for your users. When you change it, the server's own system DNS changes with it. The default is `1.1.1.1` (Cloudflare).
 
 1. Log in to your Hiddify admin panel.
-2. Open **Settings**.
-3. In the search box (**Search all settings…**), type `DNS Server`. The setting is in the **General Settings** section, among the advanced settings.
-4. Enter the DNS server you want, for example `1.1.1.1` or `8.8.8.8`. The description under the field also suggests `1.1.1.2` (blocks malware) and `1.1.1.3` (blocks malware and adult content).
+2. In the sidebar, under **Settings**, click **Settings**.
+3. **DNS Server** is an advanced setting, so turn on the **Show Advanced Settings** switch at the top of the page. Then type `DNS Server` in the search box (**Search all settings…**). The setting is the first row of the **General Settings** card, with the **Advanced** label.
+4. Open the **DNS Server** list and pick a public DNS, for example **Cloudflare** `1.1.1.1`. To use a DNS server that is not in the list, choose **Custom** and enter its address.
 5. Click **Save**.
 6. When the panel asks, click **Apply Configs** so the change takes effect.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/1145521a-cfd2-492b-99d0-83559c20ab15" alt="The DNS Server field in the panel settings (older panel version; the new panel looks different)" />
+<img src="/assets/manager/How-to-set-DNS-server/en-dns-server.webp" alt="The DNS Server field in General Settings" />
 </div>
 
 ## Method 2: set the server's own DNS over SSH
 
-The server's operating system also uses a DNS server, for example to download updates. On Ubuntu, Hiddify uses the `systemd-resolved` service for this. If the server's DNS doesn't work, set it with the script that comes with Hiddify (the installer uses the same script).
+The server's operating system also uses a DNS server, for example to download updates. On Ubuntu, Hiddify uses the `systemd-resolved` service for this. Method 1 already changes it, but if the server's DNS doesn't work (for example, you can't open the panel), set it with the script that comes with Hiddify (the installer uses the same script).
 
 1. [Connect to your server over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the Hiddify menu opens, press `Ctrl+C` to leave it.
 2. Run this command on your server. It sets the DNS servers to `8.8.8.8` and `1.1.1.1`:

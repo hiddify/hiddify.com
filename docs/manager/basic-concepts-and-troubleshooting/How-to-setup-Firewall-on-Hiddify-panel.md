@@ -24,7 +24,7 @@ On Linux, a common firewall tool is **iptables**. You give it a list of rules. E
 
 Hiddify can manage the server's firewall for you. When it is on:
 
-- Only the ports Hiddify needs stay open: SSH (port `22` and the port your SSH server really uses), `80`, `443`, `53`, and every port your enabled proxies use (the same list as the panel's **Public ports** page).
+- Only the ports Hiddify needs stay open: SSH (port `22` and the port your SSH server really uses), `80`, `443`, `53`, and every port your enabled proxies use (the same list that **Public ports** shows on the panel's **Actions** page).
 - All other incoming connections are blocked.
 - Ping (ICMP) is still allowed, so you can still [test whether your IP is clean](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server%27s-IP-or-domain-is-clean/).
 - When you change a port or turn a proxy on or off in the panel, Hiddify updates the rules for you when you apply the changes.
@@ -34,13 +34,13 @@ The firewall is **off by default**. We recommend turning it on, because it makes
 To turn it on:
 
 1. Log in to your Hiddify panel.
-2. Open **Settings** → **General Settings**.
-3. Turn on **🛡️ Firewall**.
-4. Save, and apply the changes when the panel asks you to.
+2. In the sidebar, under **Settings**, click **Settings**, and find the **General Settings** card. You can also type `Firewall` in the settings search box.
+3. Turn on **Firewall**.
+4. Click **Save**, and apply the changes when the panel asks you to.
 
 <div align=center markdown=1>
 
-![Firewall setting in the panel (older version)](https://github.com/hiddify/hiddify-config/assets/125398461/0a3dce3a-0658-4ecd-887e-bd74c74fea1a)
+![The Firewall switch in General Settings](/assets/manager/How-to-setup-Firewall-on-Hiddify-panel/en-firewall.webp)
 
 </div>
 

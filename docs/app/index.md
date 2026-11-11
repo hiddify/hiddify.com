@@ -114,6 +114,13 @@ For the full feature list, see the <a
               <h1 class="text-secondaryText title-font text-base">Related videos (in Persian)</h1>
             </div>
             <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=NGP_uC8edJI" title="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/NGP_uC8edJI.jpg" alt="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
               <a href="https://www.youtube.com/watch?v=vUaA1AEUy1s">
                 <div class="relative p-2 flex justify-center items-center">
                   <img src="/assets/install_HiddifyApp.png" alt="Video: installing Hiddify on Windows"

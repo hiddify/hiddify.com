@@ -14,7 +14,7 @@ This page shows you how to connect your Hiddify Manager panel to your own Telegr
 - A Telegram account.
 
 !!! note
-    The screenshots on this page are from an older version of the panel and the bot. The menus now look different, but the steps are the same.
+    The Telegram screenshots on this page are from an older version of the bot. The bot's buttons may look a little different now, but the steps are the same.
 
 ## Step 1: Create a Telegram bot
 1. Open Telegram and search for `@BotFather`. This is Telegram's official bot for creating bots.
@@ -58,14 +58,14 @@ This page shows you how to connect your Hiddify Manager panel to your own Telegr
 5. Click **Save**.
 
     <div align=center markdown=1>
-    ![The Telegram Bot Token field](https://user-images.githubusercontent.com/125398461/235904497-84682dd3-8774-4d06-9391-d662d884b64e.png)
+    ![The Telegram Bot Token field](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/en-token.webp)
     </div>
 
 If it worked, the panel shows "Telegram bot connected: @your_bot_username", and a **Telegram Bot** item appears in the sidebar under **Settings**.
 
 <div align=center markdown=1>
 
-![The Telegram Bot item in the menu](https://user-images.githubusercontent.com/125398461/235912447-776ce7fd-65ed-4c4a-b6c8-b7b828ab8aea.png)
+![The Telegram Bot item in the menu](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/en-menu.webp)
 
 </div>
 
@@ -123,7 +123,7 @@ The bot sends you one card per new user, with the user's links. You can forward 
 The new user also appears in the panel's **Users** page.
 
 <div align=center markdown=1>
-![The new user in the panel](https://user-images.githubusercontent.com/125398461/235909045-f7581a57-5cb7-4df3-ad3d-9293bbdc8ba2.png)
+![The new user in the panel](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/en-users.webp)
 </div>
 
 Tap **🔄 Refresh** on a user's card to see their latest data usage and remaining days.
@@ -133,17 +133,17 @@ Tap **🔄 Refresh** on a user's card to see their latest data usage and remaini
 </div>
 
 ### Automatic backups
-When your admin account is linked to the bot, each automatic backup of the panel is also sent to you in Telegram. You can manage backups in the panel under **Settings** → **Backup**. See [How to backup and restore the panel](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
+When your admin account is linked to the bot, each automatic backup of the panel is also sent to you in Telegram. You can manage backups in the panel: in the sidebar, under **Settings**, click **Backup**. See [How to backup and restore the panel](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
 
 ## Users and the bot
 Your users can link their own Telegram to the bot. To do this, a user opens your bot and taps **Start**, then sends their subscription link or UUID, or taps the Telegram button on their account page. After that:
 
 - They can see their remaining data and days, and their links, in the bot.
 - The bot warns them when their package is about to end.
-- You can send them messages from the panel: in the sidebar, under **Manager**, click **Send message**. Only users who have started your bot receive messages.
+- You can send them messages from the panel: in the sidebar, under **Manager**, click **Send Message**. Choose who gets it (for example **Everyone** or **Active**), write the message, optionally add an image, and click **Send**. Only users who have started your bot receive messages.
 
 <div align=center markdown=1>
-![Sending a message to users](https://user-images.githubusercontent.com/125398461/235909375-a9abc059-c4e1-4fe6-ba65-630e3704ba20.png)
+![Sending a message to users](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/en-message.webp)
 </div>
 
 </div>

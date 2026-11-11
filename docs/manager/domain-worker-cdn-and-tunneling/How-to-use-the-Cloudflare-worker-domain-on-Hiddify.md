@@ -14,7 +14,7 @@ For this, you first need to create a Cloudflare development token or key and the
 
 
 ## Add the worker domain to the panel
-Enter the panel `Settings` and click on `Create` in the `Domains` section.
+In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`.
 
 <div align=center markdown=1>
   
@@ -38,7 +38,7 @@ In this field, if needed, you can put your Cloudflare clean IPs or use IRCF clea
 Finally, click Save to save the settings. Then click `Apply Changes`.
 
 ## Use the configs of this domain
-As you probably know, it is recommended that the subscription link be separated from the configurations in Hiddify to prevent the subscription links from being filtered. So if you have already created the subscription link; Here, go to the config settings of that domain and add the new Worker domain in `Show Configs of Domains` field.
+As you probably know, it is recommended that the subscription link be separated from the configurations in Hiddify to prevent the subscription links from being filtered. So if you have already created the subscription link; Here, go to the config settings of that domain and add the new Worker domain in the `Show configs of` field.
 
 
 <div align=center markdown=1>
@@ -48,6 +48,6 @@ As you probably know, it is recommended that the subscription link be separated 
 </div>
 
 
-That is, for example, if `t1.hiddify.com` is your subscription domain, just edit it and in `Show Configs of Domains`, tick the Worker domain.
+That is, for example, if `t1.hiddify.com` is your subscription domain, just edit it and in `Show configs of`, tick the Worker domain.
 
 The work is done. The configs for the new worker domain have been added to your previous configs.

@@ -17,22 +17,22 @@ For IP version 6, you can do the same thing with a record of `AAAA` type.
 ![image](https://user-images.githubusercontent.com/125398461/235923332-af16b27e-e624-4d39-974d-1574ad44ea79.png)
 
 ## Registration of wildcard domain on Hiddify panel
-To do this, go to the domain settings and create a new domain. Create a CDN or AutoCDN domain.
+To do this, open `Domains` in the panel side menu (in the `Settings` group) and click `Add domain`. The wizard has four steps: `Domain`, `Mode`, `Name` and `Certificate`.
 
 
-* Therefore, enter `*.yourdomain.com` in the domain name field of the subdomain you registered in the previous step.
+* In the `Domain` step, enter the subdomain you registered in the previous step, that is `*.yourdomain.com`, and click `Check`.
 
-* Give the alias a name of your choice.
+* In the `Mode` step, under `How is it set up?`, choose `CDN`. The difference between CDN domain and AutoCDN is in the way the address field is applied in the configuration, CDN returns the domain name and AutoCDN returns the IP. [More information on this](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
 
-* Select the mode from CDN or AutoCDN. The difference between CDN domain and AutoCDN is in the way the address field is applied in the configuration, CDN returns the domain name and AutoCDN returns the IP. [More information on this](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
+<img width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/Tutorial-for-using-wildcard-subdomains-on-Hiddify/en-domain-mode.webp" style="display:block;margin:0 auto">
 
-![Screenshot_20230503_164s956](https://user-images.githubusercontent.com/125398461/235928869-3b740a41-ffc0-479a-97a5-65a40ac9de34.png)
+* In the `Name` step, give it a name of your choice.
 
-* Finally, save the settings to register the domain. If the message to apply changes is given, be sure to click the apply changes button so that the settings are fully applied to the server.
+* Finally, finish the `Certificate` step to register the domain. If the message to apply changes is given, be sure to click the apply changes button so that the settings are fully applied to the server.
 
 
 ## Viewing configs of wildcard domain
-First, go to the subscription domain and tick the wildcard domain in the domain configuration field. Suppose that the domain of the subscription links is `t1.hiddify.com`, edit it and tick the wildcard domain as shown below. With this, the configs of wildcard domain are connected to the subscription link.
+First, edit the subscription domain and tick the wildcard domain in its `Show configs of` field. Suppose that the domain of the subscription links is `t1.hiddify.com`, edit it and tick the wildcard domain as shown below. With this, the configs of wildcard domain are connected to the subscription link.
 
 ![](https://user-images.githubusercontent.com/125398461/235927616-6a5829f0-2558-4584-a3af-4b8f7a286213.png)
 

@@ -25,17 +25,17 @@ Because there are so many IPv6 addresses, they are harder to block than IPv4 add
 ## Method 1: in the panel
 
 1. Log in to your Hiddify admin panel.
-2. Open **Settings**.
-3. In the search box (**Search all settings…**), type `IPv4`. The setting **Only IPv4** is in the **General Settings** section, among the advanced settings.
+2. In the sidebar, under **Settings**, click **Settings**.
+3. **Only IPv4** is an advanced setting, so turn on the **Show Advanced Settings** switch at the top of the page. Then type `IPv4` in the search box (**Search all settings…**). The setting **Only IPv4** is in the **General Settings** card, with the **Advanced** label.
 4. Turn **Only IPv4** on.
 5. Click **Save**.
 6. When the panel asks, click **Apply Configs** so the change takes effect.
 
-When this option is on, Hiddify turns off IPv6 on the server's network interfaces and stops adding IPv6 addresses to your users' configs.
+When this option is on ("It will Disable IPv6"), Hiddify turns off IPv6 on the server's network interfaces and stops adding IPv6 addresses to your users' configs.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/6f2d4977-6e79-4849-9d10-0c765051306c" alt="The Only IPv4 option in the panel settings (older panel version; the new panel looks different)" />
+<img src="/assets/manager/How-to-disable-IP-version-6-on-Hiddify/en-only-ipv4.webp" alt="The Only IPv4 option in General Settings" />
 </div>
 
 ## Method 2: over SSH

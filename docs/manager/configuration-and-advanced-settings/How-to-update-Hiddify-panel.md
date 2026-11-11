@@ -11,45 +11,45 @@ weight: -90
 There are 2 ways to update the panel.
 
 ## Update through admin panel
-In the panel, go to the Actions menu and click `Update`.
+In the panel sidebar, under **Settings**, click **Actions**. On the **Apply & Status** page, click **Update** in the **Update Hiddify** card.
 
 <div align=center markdown=1>
   
-![update approach ](https://github.com/hiddify/hiddify-config/assets/125398461/9f482e1c-30ae-4fd3-8d3c-44d72b08155f)
+![The Update Hiddify card on the Apply & Status page](/assets/manager/How-to-update-Hiddify-panel/en-update.webp)
 
 </div>
 
-This may take between 5 and 10 minutes, after which the operation will finish and the panel will be updated with the latest update.
+This may take between 5 and 10 minutes. Hiddify downloads and installs the latest version, then applies it; the panel restarts at the end.
 
 
 
 ## Change the update mode
 
-If you need to change the update mode, you can choose one of the `Release`, `Beta` and `Develop` versions and then `update`.
+If you need to change the update mode, go to **Settings** in the sidebar and find **Package Update Mode** in the **Advanced Settings** card. Choose one of the `Release`, `Beta` and `Develop` versions and then update.
 
 
 <div align=center markdown=1>
 
-![update mode](https://github.com/hiddify/Hiddify-Server/assets/125398461/dd430784-7e78-4dd3-b549-67f653c02f45)
+![Package Update Mode](/assets/manager/How-to-update-Hiddify-panel/en-update-mode.webp)
 
 </div>
 
-For example, in the above picture, set the update mode to the `Beta` mode and click `Submit`.
+For example, set the update mode to `Beta` and save the settings.
 
-Then select the `Update` option from the `Actions` menu. After about 5 minutes, the panel will be updated to the version you want.
+Then open **Actions** in the sidebar and click **Update** in the **Update Hiddify** card. After about 5 minutes, the panel will be updated to the version you want.
 
 ## Automatic update settings in the panel
 
-The panel updates itself daily with the latest version of released version on project's GitHub. Its settings are in the general settings section.
+The panel updates itself daily with the latest released version on the project's GitHub. Its setting is **Auto Update** in the **General Settings** card of the **Settings** page.
 
 
 <div align=center markdown=1>
   
-![auto update](https://github.com/hiddify/hiddify-config/assets/125398461/9ba845b1-2538-44db-90e2-57c7b31e5c8c)
+![Auto Update](/assets/manager/How-to-update-Hiddify-panel/en-auto-update.webp)
 
 </div>
 
-For this, the automatic update option should be enabled in the general settings, the panel will be updated daily.
+When **Auto Update** is on, the panel checks for a new update every day at 3:00 AM and, if there is one, updates itself automatically.
 
 ## Update via SSH
 

@@ -16,7 +16,7 @@ After you [install Hiddify Manager](/manager/installation-and-setup/guide/), you
 A **domain** is a name like `example.com` that points to your server's IP address, so you and your users don't have to use the bare IP. A **subdomain** is a name under a domain, like `vpn.example.com`.
 
 !!! note "Screenshots"
-    The screenshots on this page come from older versions of the panel. Your screens may look different, but the steps are the same.
+    The panel screenshots on this page are from HiddifyManager v14.2. The temporary setup page in step 2 is from an older version.
 
 ## Step 1: Get a domain and subdomain
 
@@ -96,29 +96,32 @@ hiddify reset-password
 
 ## Step 3: Finalize the installation
 
-1. The first time you open the admin panel, a quick setup wizard opens. It asks for the panel language, an admin password and your domain.
-2. Enter the domain you copied in step 1 in the domain field.
+1. The first time you open the admin panel, the **Quick setup** wizard opens. Its steps are **Welcome → Password → Domains → Protocols → Nodes → Finish**.
 
-    ![Quick setup: entering the domain](https://user-images.githubusercontent.com/125398461/228776688-61847f37-72de-4111-9287-a0a733e62126.png)
+    <img width=700 alt="Quick setup wizard" src="/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/en-quick-setup.webp" style="display:block;margin:0 auto">
 
-3. Save. If the panel says that changes need to be applied, apply them and wait until it finishes.
+2. In **Welcome**, choose the admin panel language and your users' country, then click **Next**. In **Password**, set an admin password.
+3. In **Domains**, enter the domain you copied in step 1.
+4. Go through **Protocols** and **Nodes** (you can keep the defaults), then click **Finish** and wait until the panel applies the configuration. Copy the new admin links it shows.
+
+You can add more domains later in **Domains → Add domain**.
 
 If something goes wrong, read [How to configure the Hiddify panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
 
 ## Get your connection links
 
-1. In the admin panel, go to the **Users** section.
-2. Click a user's link to open that user's page.
+1. In the admin panel, open **Users**. If there is no user yet, click **Add user** to make one.
+2. Click the QR code button in a user's row to get the user's link, and open it to see that user's page.
 
-    ![Users list in the admin panel](https://user-images.githubusercontent.com/125398461/228784909-0e696cbc-b073-4c66-a660-88b5c0b87ee7.png)
+    <img alt="Users list in the admin panel" src="/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/en-users.webp" style="display:block;margin:0 auto">
 
-3. The user page shows the apps you can use to connect.
+3. On the user page, tap the connect button. The **Configure Your VPN** window shows the apps you can use to connect, and **Copy Link** copies the subscription link for any other app.
 
-    ![Apps listed on the user page](https://user-images.githubusercontent.com/125398461/228784738-3e9a2e69-8725-479c-a792-9b84298cb4ff.png)
+    <img width=260 alt="Configure Your VPN window on the user page" src="/assets/app-use/en-user-import.webp" style="display:block;margin:0 auto">
 
-4. Lower on the page you see the proxies created for that user. Scan a QR code (highlighted in yellow) with your app, or copy a link into it.
+4. To see the single configs made for that user, open **All Configs** in the menu of the user page and click **Get Link** next to a config. Scan its QR code with your app, or click **Copy Link** and paste the link into it.
 
-    ![User proxies with QR codes](https://user-images.githubusercontent.com/125398461/228791254-f968a44f-c18a-454b-9927-ac7fe4c32e6d.png)
+    <img width="100%" style="display:block;margin:0 auto;max-width:800px" alt="A config's link and QR code on the user page" src="/assets/app-use/en-user-config-link.webp">
 
 We recommend [Hiddify App](/app/How-to-install-Hiddify-app/) to connect; it works on Android, iOS, Windows, macOS and Linux.
 

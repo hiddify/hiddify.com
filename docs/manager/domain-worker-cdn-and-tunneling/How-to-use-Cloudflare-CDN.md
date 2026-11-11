@@ -77,6 +77,20 @@ When you test this domain using various tools such as ping, nslookup, dig; In re
 It should be noted that this IP changes in different periods of time and is not fixed.
 Sometimes it happens that the IP assigned by Cloudflare is blocked or disrupted in Iran, and in this regard, methods to bypass this type of filtering should be used.
 
+### Adding the domain in HiddifyManager
+After the DNS record is registered, add the subdomain in your panel:
+
+1. In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`.
+2. In the `Domain` step, type the subdomain and click `Check`. The `Point it at this server` box shows the `A` and `AAAA` values (your server's IPs) to put in the DNS record.
+
+<img width=600 alt="Add a domain wizard, Domain step" src="/assets/manager/How-to-use-Cloudflare-CDN/en-domain-add.webp" style="display:block;margin:0 auto">
+
+3. In the `Mode` step, under `How is it set up?`, choose `Direct` for a direct domain (proxy off, grey cloud) or `CDN` for a CDN domain (proxy on, orange cloud). The panel checks the DNS and marks the matching mode. Keep `Valid TLS` and click `Next`.
+
+<img width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-Cloudflare-CDN/en-domain-mode.webp" style="display:block;margin:0 auto">
+
+4. Go through the `Name` and `Certificate` steps, then apply the changes when the panel asks you to.
+
 ## Certificate settings of CDN domain  
 TLS is an algorithm that encrypts all internet traffic and helps the user stay safe online.
 

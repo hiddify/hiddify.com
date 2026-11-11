@@ -1,4 +1,4 @@
-![235283674-400d9213-029a-429b-9985-699c0bd40ba3](https://github.com/hiddify/hiddify.com/assets/125398461/0e817e62-ef6c-47fb-a6e2-9703e2cc52c1)---
+---
 title: How to use GCore CDN
 ---
 
@@ -95,8 +95,8 @@ As you probably know, in order to use the HiddifyManager optimally, you need to 
 
 ![](https://user-images.githubusercontent.com/125398461/235284579-898335c0-28d3-477f-b900-3f8a381bcdda.jpg)
 
-22. Now we can use this subdomain as a CDN domain in HiddifyManager.
+22. Now we can use this subdomain as a CDN domain in HiddifyManager. In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`. Enter the subdomain in the `Domain` step and click `Check`. In the `Mode` step, under `How is it set up?`, choose `CDN`, keep `Valid TLS` and click `Next`. Then go through the `Name` and `Certificate` steps and apply the changes.
 
-![](https://github.com/hiddify/hiddify.com/assets/125398461/73d6e924-9a5a-444a-88d1-07c0ef06623c)
+<img width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/en-domain-mode.webp" style="display:block;margin:0 auto">
 
 * Final and important point: Don't forget that CDN GCore has a limit of 1000 GB in the free plan.

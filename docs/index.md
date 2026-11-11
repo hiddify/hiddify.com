@@ -63,7 +63,7 @@ comments: false
     
       
         <div class="hiddify-image">
-          <img src="/assets/hiddify-next-mobile.svg" alt="Hiddify app on a phone" decoding="async" loading="lazy" />
+          <img src="/assets/hiddify-app-mobile-en.webp" alt="Hiddify app on a phone" decoding="async" loading="lazy" />
         </div>
         
         <div class="hiddify-content">
@@ -115,7 +115,7 @@ comments: false
     
       
         <div class="hiddify-image">
-          <img src="/assets/hiddify-manager.png" alt="Hiddify Manager admin panel" decoding="async" loading="lazy" />
+          <img src="/assets/hiddify-manager.webp" alt="Hiddify Manager admin panel" decoding="async" loading="lazy" />
         </div>
 
   <div class="hiddify-content">

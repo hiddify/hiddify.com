@@ -8,23 +8,26 @@ weight: -100
 # How to backup and restore panel on HiddifyManager
 
 Many times you need to backup the panel and restore it on another server. For example, your server is filtered or there is a problem that you cannot continue on that server. In this case, continue the following steps until the end to learn how to do this.
-Backup current panel via web
 
-In the admin panel, enter settings and then backup and click on receive backup file.
+## Backup current panel via web
 
-![backup](https://github.com/hiddify/hiddify-config/assets/125398461/5547180d-e2e6-44b5-a3ec-a651a58a02d3)
+In the admin panel sidebar, under **Settings**, click **Backup**. In the **Make a Backup** card, click **Download Backup**.
 
+![The Backup & Restore page](/assets/manager/How-to-backup-and-restore-panel-on-Hiddify/en-backup.webp)
 
-Here you can specify the storage location of your backup file so that the json file related to the settings is saved.
+The backup is one `.json` file with everything in it: settings, users, admins, domains, proxies and certificates. Choose where to save it on your computer. The file holds passwords, user links and private keys, so keep it somewhere safe.
 
+You can also click **Save on the server** to keep a copy on the server, or **Save on the Telegram** to get the file from your Telegram bot.
 
 ## Sending the backup file to Telegram
 
-Every 6 hours, the panel automatically backs up for you, and if you have activated the [Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel), it will be sent to the bot.
+The panel automatically makes a backup for you every 6 hours, and if you have activated the [Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel), each automatic backup is also sent to you in the bot.
 
-## Backup during important operations
+## Backups on the server
 
-When updating or reinstalling the panel, it is backed up and you can access and use it.
+Automatic backups, and the ones you save with **Save on the server**, are listed in the **Backups on the server** card of the same page. For each backup you can download it, restore it, or delete it with the buttons on its row. Backups are also made when updating or reinstalling the panel.
+
+![Backups on the server](/assets/manager/How-to-backup-and-restore-panel-on-Hiddify/en-server-backups.webp)
 
 > Note: If for any reason the Telegram bot was not available to you and you were not able to backup via the web, you can access the previous backups of the system from the following path.
 
@@ -33,16 +36,16 @@ When updating or reinstalling the panel, it is backed up and you can access and 
 and then transfer the file to your PC. [More info here](/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer)
 
 ## Restoring backup file
-Now install the panel on the new server and do nothing on the `Quick-setup` page.
+Now install the panel on the new server. When the **Quick setup** wizard opens, do not set anything up: click **Skip for now**.
 
-![Screenshot_20230528_084919](https://github.com/hiddify/hiddify-config/assets/125398461/c419c97a-7dad-4f90-9b07-c33453887050)
+![Quick setup: Skip for now](/assets/manager/How-to-backup-and-restore-panel-on-Hiddify/en-quick-setup.webp)
 
 
-Enter the Backup menu in Settings.
+In the sidebar, under **Settings**, click **Backup**.
 
-![restore](https://github.com/hiddify/hiddify-config/assets/125398461/bb83fc32-bbae-4b89-9bbe-b6498488125c)
+![The Restore card](/assets/manager/How-to-backup-and-restore-panel-on-Hiddify/en-restore.webp)
 
-Here, select the backup file that you saved in the previous step. Enable recovery options as per your need. For example, if you want to restore the entire panel, select all 3 options and wait for the operation to finish.
+In the **Restore** card, drop the backup file that you saved in the previous step, or click the box to choose it. Then choose which parts to restore: **Settings**, **Users** and **Domains**. For example, if you want to restore the entire panel, select all 3 options, click **Restore** and wait for the operation to finish. It takes a few minutes. If the backup comes from another panel, the admin link changes; the new links are shown when it finishes.
 
 
 ## Changing subdomain settings

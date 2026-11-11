@@ -10,33 +10,34 @@ title: How to create and use fake domain
 ## Creating fake domain
 As the name suggests, we want to use a fake domain that is not related to us, so we don't need to register it in advance. But we can only use it in the panel.
 
-* To create a misleading or fake domain in the settings section, refer to the domains menu.
+* To create a misleading or fake domain, open `Domains` in the side menu (in the `Settings` group).
 
 <div align=center markdown=1>
-![fake-domain1-en](https://github.com/hiddify/Hiddify-Manager/assets/125398461/3f8ee165-5ea9-41d5-b64d-60cefb95828d)
-
+<img width=800 alt="Domains page in the panel" src="/assets/manager/How-to-create-and-use-fake-domain/en-domains.webp">
 </div>
 
-* Click `Create`.
+* Click `Add domain`. A wizard opens with four steps: `Domain`, `Mode`, `Name` and `Certificate`.
 
-* Select `Fake Site` from the `Mode` field.
+* In the `Domain` step, put the fake domain you want and click `Check`. Since the fake domain is not yours, its DNS does not point to your server, and that is expected.
 
 <div align=center markdown=1>
-![fake-domain2-en](https://github.com/hiddify/Hiddify-Manager/assets/125398461/147cb16c-29ca-40ba-bfdb-1ac6243a34a2)
+<img width=600 alt="Add a domain wizard, Domain step" src="/assets/manager/How-to-create-and-use-fake-domain/en-domain-add.webp">
 </div>
 
-* Put the fake domain you want in the `Domain` field. If you need to use the server domain instead of the IP, complete the `Force Config to Use Following IPs` field to the domain of your direct server.
+* In the `Mode` step, under `How is it set up?` choose `Direct`, and under `Which TLS?` choose `Fake` (decoy TLS with a fake site's name). Then click `Next`.
 
 <div align=center markdown=1>
-![fake-domain3-en](https://github.com/hiddify/Hiddify-Manager/assets/125398461/db2b1523-c954-4203-aebe-76a895c370f2)
+<img width=600 alt="Add a domain wizard, Mode step: How is it set up? and Which TLS?" src="/assets/manager/How-to-create-and-use-fake-domain/en-domain-mode.webp">
 </div>
+
+* If you need to use the server domain instead of the IP, complete the `Force Config to Use Following IPs` field to the domain of your direct server.
 
 [here](https://gist.github.com/ofou/654efe67e173a6bff5c64ba26c09d058) you can see a list of sites and ports to use as fake domains.
 
-* Finally, click on `Save` to register your fake domain.
+* Finally, go through the `Name` and `Certificate` steps to register your fake domain. In the domains list it shows the `Direct` and `Fake` badges.
 
 ## Connecting the fake domain to the subscription domain
-* To use the registered fake domain configurations, you need to edit your subscription domain and add the fake domain from `Show Configs of Domains`.
+* To use the registered fake domain configurations, you need to edit your subscription domain and add the fake domain in its `Show configs of` field.
 
 <div align=center markdown=1>
 ![](https://user-images.githubusercontent.com/125398461/247821040-b0749490-6e4e-43aa-b9b4-ab721cceb6b8.png)
@@ -47,12 +48,12 @@ As the name suggests, we want to use a fake domain that is not related to us, so
 
 
 ## Proxy section settings
-* To make sure that the created fake proxies are active, enter the proxies menu in the settings section.
-* Check that `http` is enabled from the `Global Configs` section.
-*  If you want to use VMess, check that `VMess` is active in the `Global Configs` section.
+* To make sure that the created fake proxies are active, open `Protocols` in the side menu (in the `Settings` group).
+* Check that `Allow HTTP Connection` is enabled.
+*  If you want to use VMess, check that `VMess` is enabled.
 
 <div align=center markdown=1>
-![Global settings of Proxies](https://github.com/hiddify/Hiddify-Manager/assets/125398461/357a290d-799d-4f71-b956-b734915d137b)
+<img width=800 alt="Protocols page: Allow HTTP Connection and VMess switches" src="/assets/manager/How-to-create-and-use-fake-domain/en-protocols.webp">
 
 </div>
 
