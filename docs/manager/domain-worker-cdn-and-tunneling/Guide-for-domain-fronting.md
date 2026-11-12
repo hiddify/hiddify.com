@@ -15,9 +15,9 @@ This feature has been disabled in Cloudflare CDN because malware used to exploit
 
 - After that, register a DNS record and turn on its proxy tick.
 
-## Domain fronting settings on Hiddify panel
+## Domain fronting settings on HiddifyManager panel
 
-To do this, go to the `Settings` and `Domains` section in the Hiddify panel and then click on `Create`.
+To do this, go to the `Settings` and `Domains` section in the HiddifyManager panel and then click on `Create`.
 
 <div align=center markdown=1>
   

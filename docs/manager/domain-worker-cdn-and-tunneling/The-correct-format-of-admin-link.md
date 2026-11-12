@@ -23,7 +23,7 @@ The general form is:
 https://<domain>/<admin proxy path>/<admin UUID>/
 ```
 
-![Parts of the admin link](https://user-images.githubusercontent.com/125398461/230102115-65b21ce7-bc9f-4a6f-a450-bc531ce19a31.png)
+![The parts of the admin link](/assets/manager/The-correct-format-of-admin-link/en-link-parts.webp)
 
 The parts are separated by `/`:
 
@@ -59,12 +59,12 @@ On the **Sign in** page:
 The easiest way is to open your full admin link again. It fills in your ID automatically.
 
 <div align=center>
-  <img alt="The admin Sign in page" src="/assets/manager/The-correct-format-of-admin-link/en-sign-in.webp" width=40% />
+ <img alt="The admin Sign in page" src="/assets/manager/The-correct-format-of-admin-link/en-sign-in.webp" width=40% style="display:block;margin:0 auto" />
 </div>
 
-The picture below shows the older short link format, used before Admin V2.
+After you open the link, the panel opens **Admin V2** and the address in your browser looks like this. The UUID is no longer in the address:
 
-![Old short link format (before Admin V2)](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
+![The address of Admin V2 in the browser after opening the admin link](/assets/manager/The-correct-format-of-admin-link/en-admin-v2-address.webp)
 
 ## If you lost your admin link
 

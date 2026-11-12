@@ -6,10 +6,10 @@ title: How to transfer files between a server and a computer
 
 # How to transfer files between a server and a computer
 
-This page shows you how to copy files from your server to your computer and back, for example to keep a copy of a Hiddify backup or to upload a file to the server.
+This page shows you how to copy files from your server to your computer and back, for example to keep a copy of a HiddifyManager backup or to upload a file to the server.
 
 !!! tip "Only need a panel backup?"
-    You do not need any commands for that. In the Hiddify admin panel, open the **Backup & restore** page and click **Download backup**. See [How to back up and restore the panel](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
+    You do not need any commands for that. In the HiddifyManager admin panel, open the **Backup & restore** page and click **Download backup**. See [How to back up and restore the panel](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
 
 ## Before you start
 

@@ -50,7 +50,7 @@ The wizard has six short steps: **Welcome → Password → Domains → Protocols
 2. **Password:** set a password for the admin area (at least 8 characters).
 3. **Domains:** point your domain to the server IPs shown on the page (an `A` record for IPv4, `AAAA` for IPv6). Then type your domain and press Enter. The panel detects the domain type by itself; tap the type to change it. You need at least one direct, CDN or subscription-only domain.
 4. **Protocols:** pick the protocols you want to offer. Choose as few as you need.
-5. **Nodes** (optional): connect other Hiddify servers to manage them from this panel. You can skip this.
+5. **Nodes** (optional): connect other HiddifyManager servers to manage them from this panel. You can skip this.
 6. **Finish:** review your choices and click **Finish**. The panel applies the configuration and reinstalls the services. This takes a few minutes. The log and your new admin links are shown while it runs.
 
 When it finishes, the panel is ready to use. Copy the new admin links and keep them somewhere safe.
@@ -232,7 +232,7 @@ Some of these are hidden until you click **Show 2 more advanced settings**.
 - **Only IPv4:** turns off IPv6 on the server.
 - **Speed Test:** lets users test their connection speed to your server.
 - **Decoy Site:** a fake website. If someone (for example a filtering system) opens your domain directly, they see this site instead of your panel, which makes your server harder to identify. Do not use bank, payment, Iranian or very famous sites.
-- **Firewall:** when on, only the ports Hiddify uses (at least 22, 443, 80 and SSH) stay open and all other ports are closed.
+- **Firewall:** when on, only the ports HiddifyManager uses (at least 22, 443, 80 and SSH) stay open and all other ports are closed.
 - **DNS Server**, **Show Usage in Sublink**, **Automatic config health checks**, **Default User Agent**, **Max Proxy IPs Per Version**, **Block BitTorrent**, **Config names** and **Keep Backups (days)** are also here (most are **Advanced**). **Keep Backups (days)** deletes automatic backups older than this number of days; `0` keeps all of them.
 
 ### Proxies Settings
@@ -401,7 +401,7 @@ Click **Reinstall**. It installs everything again and rebuilds all services. You
 
 ### Restart Services
 
-Click **Restart**. It restarts all Hiddify services without reinstalling anything. It is a good first try when something misbehaves. Connections drop for a moment.
+Click **Restart**. It restarts all HiddifyManager services without reinstalling anything. It is a good first try when something misbehaves. Connections drop for a moment.
 
 <img width=300 alt="Restart Services" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-action-restart.webp" style="display:block;margin:0 auto">
 

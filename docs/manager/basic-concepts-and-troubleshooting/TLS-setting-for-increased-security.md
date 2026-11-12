@@ -6,7 +6,7 @@ title: TLS setting for increased security
 
 # TLS setting for increased security
 
-This page shows you how to make TLS connections that go through a CDN harder to detect. You need it if you use a Cloudflare CDN domain with Hiddify and your connections are unstable on some Internet providers.
+This page shows you how to make TLS connections that go through a CDN harder to detect. You need it if you use a Cloudflare CDN domain with HiddifyManager and your connections are unstable on some Internet providers.
 
 **TLS** is the encryption that protects `https` connections. Filtering systems can study patterns in TLS traffic, and older TLS versions show more of these patterns. **TLS 1.3**, the newest version, encrypts more of the connection setup and is harder to recognise.
 

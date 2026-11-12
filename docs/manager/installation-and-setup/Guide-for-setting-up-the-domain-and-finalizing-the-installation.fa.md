@@ -32,14 +32,17 @@ weight: -85
 
 <details markdown="1"><summary>مراحل گرفتن زیردامنه‌ی رایگان از FreeDNS</summary>
 
-1. وارد [سایت FreeDNS](https://freedns.afraid.org/signup/?plan=starter) شوید و یک حساب کاربری بسازید. لازم نیست اطلاعاتتان واقعی باشد، فقط ایمیل باید درست باشد.
+!!! warning "شرط تحریم در FreeDNS"
+    طبق شرایط استفادهٔ FreeDNS، ساکنان کشورهای تحریمی آمریکا (از جمله ایران) نمی‌توانند از این سرویس استفاده کنند و هنگام ثبت‌نام باید تأیید کنید که مشمول این شرط نیستید. اگر این شرط شامل حال شما می‌شود، به‌جای FreeDNS یک دامنه‌ی ارزان بخرید و در تنظیمات DNS آن یک زیردامنه برای آی‌پی سرور بسازید؛ [انواع دامنه و نحوه‌ی ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/) را ببینید.
 
-    ![صفحه‌ی ثبت‌نام FreeDNS](https://user-images.githubusercontent.com/125398461/224300370-52b9a063-9265-4ff1-83e7-23970b6a4ecf.png)
+1. وارد [سایت FreeDNS](https://freedns.afraid.org/signup/?plan=starter) شوید و فرم ثبت‌نام را پر کنید: نام، UserID، رمز عبور و ایمیل. ایمیل باید درست باشد، چون لینک فعال‌سازی به آن فرستاده می‌شود. متن تصویر امنیتی را وارد کنید، دو گزینه‌ی تأیید پایین فرم را بخوانید و تیک بزنید، و روی `Send activation email` بزنید.
+
+    ![صفحهٔ ثبت‌نام FreeDNS](/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/freedns-signup.webp)
 
 2. ایمیلی را که FreeDNS برایتان فرستاده باز کنید و روی لینک فعال‌سازی بزنید.
 3. وارد حساب شوید، [فهرست دامنه‌ها](https://freedns.afraid.org/domain/registry/) را باز کنید و یکی از دامنه‌های عمومی را انتخاب کنید. دامنه‌هایی با پسوند `com`، `net` یا `org` انتخاب بهتری هستند.
 
-    ![فهرست دامنه‌های عمومی FreeDNS](https://user-images.githubusercontent.com/125398461/228731969-b673137a-680e-44ba-a50e-a2156bfae822.png)
+    ![فهرست دامنه‌های عمومی FreeDNS](/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/freedns-registry.webp)
 
 4. نام زیردامنه‌ی دلخواه و آی‌پی سرور خود را وارد کنید و ذخیره کنید.
 
@@ -106,7 +109,7 @@ hiddify reset-password
 
 بعداً می‌توانید از **دامنه‌ها ← افزودن دامنه** دامنه‌های بیشتری اضافه کنید.
 
-اگر به مشکل خوردید، [پیکربندی درست پنل هیدیفای](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را بخوانید.
+اگر به مشکل خوردید، [پیکربندی درست پنل هیدیفای‌منیجر](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را بخوانید.
 
 ## گرفتن لینک‌های اتصال
 
@@ -117,7 +120,7 @@ hiddify reset-password
 
 3. در صفحه‌ی کاربر روی دکمه‌ی اتصال بزنید. پنجره‌ی **VPN خود را پیکربندی کنید** اپ‌هایی را که برای اتصال لازم دارید نشان می‌دهد و با **کپی لینک** می‌توانید لینک اشتراک را برای اپ‌های دیگر کپی کنید.
 
-    <img width=260 alt="پنجره‌ی پیکربندی VPN در صفحه‌ی کاربر" src="/assets/app-use/fa-user-import.webp" style="display:block;margin:0 auto">
+    <img width=260 alt="پنجره‌ی پیکربندی VPN در صفحه‌ی کاربر" src="/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/fa-user-import-desk.webp" style="display:block;margin:0 auto">
 
 4. برای دیدن کانفیگ‌های تکی آن کاربر، در منوی صفحه‌ی کاربر **همه تنظیمات** را باز کنید و کنار یک کانفیگ روی **دریافت لینک** بزنید. کد QR آن را با اپ خود اسکن کنید، یا روی **کپی لینک** بزنید و لینک را در اپ وارد کنید.
 
@@ -125,6 +128,6 @@ hiddify reset-password
 
 برای اتصال، [اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/) را پیشنهاد می‌کنیم که روی اندروید، iOS، ویندوز، مک و لینوکس کار می‌کند.
 
-این صفحه فقط برای شروع سریع است و با این پنل کارهای خیلی بیشتری می‌توانید انجام دهید. برای استفاده‌ی حداکثری از پنل، [پیکربندی درست پنل هیدیفای](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را بخوانید.
+این صفحه فقط برای شروع سریع است و با این پنل کارهای خیلی بیشتری می‌توانید انجام دهید. برای استفاده‌ی حداکثری از پنل، [پیکربندی درست پنل هیدیفای‌منیجر](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) را بخوانید.
 
 </div>

@@ -4,7 +4,6 @@ title: How to monitor server resources on HiddifyManager
 
 <div dir="ltr" markdown="1">
 
-
 # How to monitor server resources on HiddifyManager
 
 This page shows you how to check your server's CPU (processor), RAM (working memory) and disk space, and what to do when one of them is full. Use it when the panel or the connections become slow, freeze, or stop responding.
@@ -24,7 +23,7 @@ This page shows you how to check your server's CPU (processor), RAM (working mem
 
 The quickest check needs no commands.
 
-1. Log in to your Hiddify panel. The **Dashboard** opens first.
+1. Log in to your HiddifyManager panel. The **Dashboard** opens first.
 2. Scroll down to the **Node Health** card. Each server is a "node"; **This server** is the one the panel runs on. The card shows **CPU**, **RAM** and **Network** charts, and a table with each node's **Uptime**, **Panel version**, **Disk** use, **Uptime Upload**, **Uptime Download**, **Connections** and **Unique IPs**. If you have several nodes, you can pick one in the node filter at the top of the dashboard (**All nodes**).
 
 <div align=center markdown=1>
@@ -36,7 +35,7 @@ The quickest check needs no commands.
 
 `htop` is a program that shows, live, how much CPU and RAM each running program (each **process**) uses.
 
-Before you start, connect to your server over **SSH** (a secure way to type commands on a remote server). See [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the Hiddify menu opens, press `Cancel` (or `Esc`) to close it. If the menu is still on the screen, type `clear` and press Enter.
+Before you start, connect to your server over **SSH** (a secure way to type commands on a remote server). See [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the HiddifyManager menu opens, press `Cancel` (or `Esc`) to close it. If the menu is still on the screen, type `clear` and press Enter.
 
 1. If `htop` is not installed, install it. Run this on your server, over SSH:
 
@@ -52,11 +51,7 @@ Before you start, connect to your server over **SSH** (a secure way to type comm
     htop
     ```
 
-    <div align=center markdown=1>
-
     ![htop showing processes](https://user-images.githubusercontent.com/125398461/243195292-38c5ab1f-8fed-49c9-9455-04c7a7e83917.jpg)
-
-    </div>
 
 3. To sort the processes by CPU use, click the `CPU%` column header. The process at the top uses the most CPU.
 4. To sort by RAM use, click the `MEM%` column header.
@@ -64,9 +59,9 @@ Before you start, connect to your server over **SSH** (a secure way to type comm
 
 ## How to fix it
 
-### A Hiddify service uses too much CPU or RAM
+### A HiddifyManager service uses too much CPU or RAM
 
-Hiddify's services have names that start with `hiddify-`, for example `hiddify-panel`, `hiddify-xray`, `hiddify-core` and `hiddify-haproxy`. Older guides mention `hiddify-nginx` and `hiddify-singbox`: nginx was removed in v14, and `hiddify-singbox` is now `hiddify-core`.
+HiddifyManager's services have names that start with `hiddify-`, for example `hiddify-panel`, `hiddify-xray`, `hiddify-core` and `hiddify-haproxy`. Older guides mention `hiddify-nginx` and `hiddify-singbox`: nginx was removed in v14, and `hiddify-singbox` is now `hiddify-core`.
 
 If one of these services uses most of the CPU or RAM, restart the services. Run this on your server, over SSH:
 
@@ -74,7 +69,7 @@ If one of these services uses most of the CPU or RAM, restart the services. Run 
 hiddify restart
 ```
 
-You can also run `hiddify` with no options to open the Hiddify menu and choose `restart` with the arrow keys. See [How to connect and troubleshoot via SSH](/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/).
+You can also run `hiddify` with no options to open the HiddifyManager menu and choose `restart` with the arrow keys. See [How to connect and troubleshoot via SSH](/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/).
 
 When the restart is done, check that every service is running:
 
@@ -88,7 +83,7 @@ Then open `htop` again and check whether the usage has gone down. If it goes up 
 
 RAM is short-term memory that running programs and the operating system use. Some facts that help you read the numbers:
 
-- How much RAM is used does not depend directly on how many users you have. Hiddify's services and the operating system need memory whether you have 10 users or 1,000.
+- How much RAM is used does not depend directly on how many users you have. HiddifyManager's services and the operating system need memory whether you have 10 users or 1,000.
 - Linux uses spare RAM as a **cache** (a temporary copy of files, to make things faster). So RAM use of up to about 80% is normal. You do not need to do anything.
 - Do not reboot the server just because RAM looks full.
 
@@ -116,22 +111,18 @@ If your server has very little RAM, adding swap (disk space used as extra memory
 
     You should see a table like this:
 
-    <div align=center markdown=1>
-
     ![df command output](https://user-images.githubusercontent.com/125398461/248637861-f3552ab5-a105-40b5-8210-65487903c6ba.png)
 
-    </div>
-
 2. Look at the line for your main disk (the one mounted on `/`, often called `sda1` or `vda1`). If `Use%` is close to 100%, free some space.
-3. Hiddify keeps its logs in `/opt/hiddify-manager/data/log` (older versions used `/opt/hiddify-manager/log/system`, which no longer exists). To empty all the log files without breaking the services that write to them:
+3. HiddifyManager keeps its logs in `/opt/hiddify-manager/data/log` (older versions used `/opt/hiddify-manager/log/system`, which no longer exists). To empty all the log files without breaking the services that write to them:
 
     ```bash
     find /opt/hiddify-manager/data/log -type f -name "*.log" -exec truncate -s 0 {} +
     ```
 
-    Since v14, Hiddify limits its own logs (each log file is emptied when it grows past 100 MB, and the system journal is capped at 500 MB), so logs rarely fill the disk on their own.
+    Since v14, HiddifyManager limits its own logs (each log file is emptied when it grows past 100 MB, and the system journal is capped at 500 MB), so logs rarely fill the disk on their own.
 
-4. Hiddify also keeps automatic backups in `/opt/hiddify-manager/data/backup`. If that folder is large, download the backups you want to keep, then delete the old ones. Do not delete the rest of `/opt/hiddify-manager/data`: it holds your database and settings.
+4. HiddifyManager also keeps automatic backups in `/opt/hiddify-manager/data/backup`. If that folder is large, download the backups you want to keep, then delete the old ones. Do not delete the rest of `/opt/hiddify-manager/data`: it holds your database and settings.
 5. Run `df -h --total` again to check that space has been freed.
 
 </div>

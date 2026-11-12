@@ -1,0 +1,83 @@
+# Keeps the YouTube video cards on the guide pages and the Instagram-style page in sync with
+# youtube.com/@hiddify. Once a day (and on demand from the Actions tab) it reads the channel's
+# RSS feed, adds new long videos (Shorts are skipped) to:
+#   docs/app/index*.md        (app videos, newest first)
+#   docs/manager/index*.md    (new manager videos at the top of the first category; move them if needed)
+#   docs/instagram/index*.md  (a square tile per video)
+# and opens (or updates) the pull request "youtube-sync" for review. Merging it deploys the site
+# through the existing "ci" workflow. Nothing is pushed to main by this workflow.
+#
+# Repo settings needed: Settings > Actions > General > Workflow permissions:
+#   "Read and write permissions" and "Allow GitHub Actions to create and approve pull requests".
+name: youtube-sync
+
+on:
+  schedule:
+    - cron: '30 5 * * *'   # every day 05:30 UTC (09:00 Tehran)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: youtube-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow and the Persian font
+        run: |
+          pip install pillow
+          sudo apt-get install -y libfribidi0 >/dev/null
+          mkdir -p "$RUNNER_TEMP/fonts"
+          curl -fsSL -o "$RUNNER_TEMP/fonts/Vazirmatn-Bold.ttf" \
+            https://github.com/rastikerdar/vazirmatn/raw/master/fonts/ttf/Vazirmatn-Bold.ttf
+          python -c "from PIL import features; assert features.check('raqm'), 'Pillow without raqm: Persian text would be broken'"
+
+      - name: Update the pages from the channel
+        env:
+          YT_SOURCE: rss
+          INSTAGRAM_FONT: ${{ runner.temp }}/fonts/Vazirmatn-Bold.ttf
+        run: make youtube
+
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain docs)" ]; then
+            echo "No new videos."
+            exit 0
+          fi
+          new=$(git diff -U0 -- docs/app docs/manager docs/instagram \
+                | grep -oE '^\+.*watch\?v=[A-Za-z0-9_-]{11}' | grep -oE '[A-Za-z0-9_-]{11}$' | sort -u)
+          titles=$(python - $new <<'EOF'
+          import sys, os
+          sys.path.insert(0, 'tools')
+          from yt_channel import long_videos
+          ids = set(sys.argv[1:])
+          for v, d, t in long_videos():
+              if v in ids: print(f'- [{t}](https://www.youtube.com/watch?v={v}) ({d[:4]}-{d[4:6]}-{d[6:]})')
+          EOF
+          )
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B youtube-sync
+          git add -A docs
+          git commit -m "Add new YouTube videos to the guide and Instagram pages"
+          git push --force origin youtube-sync
+          body=$(printf 'New videos on youtube.com/@hiddify:\n\n%s\n\nPages updated: app guide, manager guide and Instagram page (fa and en).\n\nA new **manager** video is put at the top of the first category of the manager guide: move it to its category in this branch if needed. Merging deploys the site.\n' "$titles")
+          if gh pr view youtube-sync --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit youtube-sync --body "$body"
+          else
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head youtube-sync \
+              --title "New YouTube videos for the guide and Instagram pages" --body "$body"
+          fi

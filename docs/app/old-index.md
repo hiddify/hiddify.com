@@ -5,10 +5,10 @@ weight: -1
 comments: false
 ---
 
-# :material-home: HiddifyApp Guide
-HiddifyApp is a client based on [Sing-box](https://github.com/SagerNet/sing-box) that serves as a universal proxy tool-chain which offers a wide range of features and protocols. The appropriate and detailed information are accessible [here](https://github.com/hiddify/hiddify-next/blob/main/README.md). This page contains tutorial guides related to this project.
+# :material-home: Hiddify app Guide
+Hiddify app is a client based on [Sing-box](https://github.com/SagerNet/sing-box) that serves as a universal proxy tool-chain which offers a wide range of features and protocols. The appropriate and detailed information are accessible [here](https://github.com/hiddify/hiddify-next/blob/main/README.md). This page contains tutorial guides related to this project.
 
-## HiddifyApp
+## Hiddify app
 
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
@@ -19,22 +19,22 @@ HiddifyApp is a client based on [Sing-box](https://github.com/SagerNet/sing-box)
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
-        <a href="/app/How-to-install-Hiddify-app/" target="_blank">How to install HiddifyApp</a>
+        <a href="/app/How-to-install-Hiddify-app/" target="_blank">How to install Hiddify app</a>
     </li>
     <li>
-        <a href="/app/How-to-use-Hiddify-app/" target="_blank">How to use HiddifyApp</a>
+        <a href="/app/How-to-use-Hiddify-app/" target="_blank">How to use Hiddify app</a>
     </li>
     <li>
         <a href="/app/HiddifyCli-guide/" target="_blank">How to use HiddifyCli</a>
     </li>
     <li>
-        <a href="/app/How-to-use-UDP-Turn-Relay/" target="_blank">How to use UDP Turn Relay in HiddifyApp</a>
+        <a href="/app/How-to-use-UDP-Turn-Relay/" target="_blank">How to use UDP Turn Relay in Hiddify app</a>
     </li>
     <li>
         <a href="/app/How-to-contribute-to-this-project/" target="_blank">How to contribute to this project</a>
     </li>
     <li>
-        <a href="/app/URL-Scheme/" target="_blank">URL scehme in HiddifyApp</a>
+        <a href="/app/URL-Scheme/" target="_blank">URL scehme in Hiddify app</a>
     </li>
     </ul>
 

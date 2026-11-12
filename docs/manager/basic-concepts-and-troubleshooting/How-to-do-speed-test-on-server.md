@@ -15,7 +15,7 @@ Most servers have no desktop or web browser, so you cannot open a speed-test web
 - You can connect to your server over **SSH** (a secure way to type commands on a remote server). If you have never done this, read [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 - You are logged in as `root` or as a user who can use `sudo`.
 
-When you log in, the Hiddify menu may open. Press `Cancel` (or `Esc`) to close it and get to the terminal. If the menu is still on the screen, type `clear` and press Enter.
+When you log in, the HiddifyManager menu may open. Press `Cancel` (or `Esc`) to close it and get to the terminal. If the menu is still on the screen, type `clear` and press Enter.
 
 ## Method 1: Ookla Speedtest
 
@@ -50,21 +50,13 @@ Speedtest by Ookla is the official command-line version of the speedtest.net web
 
 5. The first time you run it, it shows the license terms and a note about the data Speedtest collects. Type `yes` and press Enter for each message.
 
-    <div align=center markdown=1>
-
     ![Speedtest license prompt](https://user-images.githubusercontent.com/125398461/243765156-b897f426-e9d6-4f26-b9fb-9e46f6def820.jpg)
 
     ![Speedtest data collection prompt](https://user-images.githubusercontent.com/125398461/243765299-bab3a3d4-a0c3-478e-8daf-4f3491d44c8b.jpg)
 
-    </div>
-
 6. Wait a few seconds. You should see the ping, the download speed and the upload speed of your server.
 
-    <div align=center markdown=1>
-
     ![Speedtest result](https://user-images.githubusercontent.com/125398461/243765887-054e65db-1f12-428b-b9e9-359a69e99044.jpg)
-
-    </div>
 
 To test again later, just run `speedtest` again.
 
@@ -78,11 +70,7 @@ By default, Speedtest picks a test server close to yours. To test against anothe
     speedtest --servers
     ```
 
-    <div align=center markdown=1>
-
     ![List of Speedtest servers](https://user-images.githubusercontent.com/125398461/243766293-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.jpg)
-
-    </div>
 
 2. In the `ID` column, find the location you want and copy its number.
 3. Run the test against that server. Replace `ID` with the number you copied:
@@ -91,11 +79,7 @@ By default, Speedtest picks a test server close to yours. To test against anothe
     speedtest --server-id=ID
     ```
 
-    <div align=center markdown=1>
-
     ![Speedtest result for a chosen server](https://user-images.githubusercontent.com/125398461/243768284-a319cf89-3ed7-4ea5-90dd-0170cd5926c8.jpg)
-
-    </div>
 
 ## Method 2: the bench.sh script
 
@@ -109,11 +93,7 @@ By default, Speedtest picks a test server close to yours. To test against anothe
 
 2. Wait about 5 to 8 minutes. The script tests speed from several locations on different continents and then prints the results.
 
-    <div align=center markdown=1>
-
     ![bench.sh result](https://user-images.githubusercontent.com/125398461/243768459-b0815e0e-6348-4c0b-9f82-1ae5e6c53646.jpg)
-
-    </div>
 
 ## What the results mean
 

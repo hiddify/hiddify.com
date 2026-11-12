@@ -41,11 +41,11 @@ HiddifyCli run -c <sublink>
 
 Put your subscription link here instead of `<sublink>`.
 
-## Run config or subscription link in HiddifyCli with HiddifyApp settings
-For this, you must first extract the settings related to your HiddifyApp.
-<details markdown="1"><summary><h3>Extract HiddifyApp settings</h3></summary>
+## Run config or subscription link in HiddifyCli with Hiddify app settings
+For this, you must first extract the settings related to your Hiddify app.
+<details markdown="1"><summary><h3>Extract Hiddify app settings</h3></summary>
 
-  - To do this, open HiddifyApp and enter `Config Options` and click the three-dot menu.
+  - To do this, open Hiddify app and enter `Config Options` and click the three-dot menu.
 
 <div align=center>
 
@@ -70,7 +70,7 @@ For this, you must first extract the settings related to your HiddifyApp.
 
 </details>
 
-### Run config or subscription link in HiddifyCli with settings extracted from HiddifyApp
+### Run config or subscription link in HiddifyCli with settings extracted from Hiddify app
 - Also, if you want to use your Hiddify app settings, you should use the following command.
 <div dir="ltr" markdown="1">
   
@@ -79,9 +79,9 @@ HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file>
 ```
 </div>
 
-Here, put your config file or sublink instead of `<config file or sublink>` and enter the configuration file related to HiddifyApp that you extracted in the previous step instead of `<HiddifyApp config file>`.
+Here, put your config file or sublink instead of `<config file or sublink>` and enter the configuration file related to Hiddify app that you extracted in the previous step instead of `<HiddifyApp config file>`.
 
-- Instead of the config file, you can use the link related to the settings in HiddifyApp that you put on Github.
+- Instead of the config file, you can use the link related to the settings in Hiddify app that you put on Github.
 <div dir="ltr" markdown="1">
   
 ```
@@ -89,4 +89,4 @@ HiddifyCli run -c <config file or sublink> -d <HiddifyApp config URL>
 ```
 </div>
 
-Here, put your config file or sublink instead of `<config file or sublink>` and put the link of the desired settings in HiddifyApp instead of `<HiddifyApp config URL>`.
+Here, put your config file or sublink instead of `<config file or sublink>` and put the link of the desired settings in Hiddify app instead of `<HiddifyApp config URL>`.

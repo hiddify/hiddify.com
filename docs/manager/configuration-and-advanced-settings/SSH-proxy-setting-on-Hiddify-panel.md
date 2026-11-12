@@ -10,7 +10,7 @@ weight: -70
 
 As you know, in version 8 of the HiddifyManager, a proxy for the SSH service has been created, which does not have any access to the server and can only be used as a proxy. This proxy is completely secure and has no fingerprints for identification. (except the SSH protocol itself, which is in general use)
 
-Continue with this tutorial to learn how to make its settings on Hiddify panel.
+Continue with this tutorial to learn how to make its settings on HiddifyManager panel.
 
 ## Configure SSH proxy settings
 First, click **Settings** in the panel sidebar and find the **SSH Proxy** card.
@@ -37,13 +37,33 @@ If the panel asks you to apply the changes, do it so that they are applied to th
 
 ## Use config to connect
 
-Now, if you go to your user page in the panel, you will see that the SSH configuration has been added to the previous configurations. This configuration can be added to client app separately.
+After you apply the changes, the SSH configs are added to your users' configs automatically. Users can get them in two ways.
+
+### Through the subscription link (recommended)
+
+The SSH configs are included automatically in these subscription links of the user page: **Auto**, **Hiddify / Singbox** and **Subscription link** (also **Subscription link b64**). Users who already use one of these links only need to update their subscription in their app. The SSH configs then appear in the app's list of proxies, for example `SSH HC D1`.
+
+The **Full Xray** and **Clash Meta** links do not include the SSH configs, because those clients don't support SSH.
 
 <div align=center markdown=1>
-  
-![user link](https://github.com/hiddify/hiddify-config/assets/125398461/61ec5d9d-40e1-4ac8-825a-2b20f60fdfb8)
+
+![The subscription links on the All Configs page of the user page](/assets/manager/SSH-proxy-setting-on-Hiddify-panel/en-user-subscription-links.webp)
+
+*The subscription links on the user page (All Configs). Auto, Hiddify / Singbox and Subscription link include the SSH configs.*
 
 </div>
 
-To use this proxy in the client, you must currently use the SingBox app, which is explained in [this tutorial](/manager/client-software-on-ios/Tutorial-for-SingBox-app/).
+### As a single config
+
+1. On the user page, open **All Configs** in the menu at the top and type `SSH` in the search box. The SSH configs are listed under **Individual Configs**.
+
+    ![The SSH configs on the All Configs page of the user page](/assets/manager/SSH-proxy-setting-on-Hiddify-panel/en-user-ssh-configs.webp)
+
+2. Click **Get Link** next to one of them. A window opens with the config's link, its QR code and a **Copy Link** button. Copy the link and add it to your client app, or scan the QR code with the app.
+
+    ![The Get Link window of an SSH config](/assets/manager/SSH-proxy-setting-on-Hiddify-panel/en-user-ssh-link.webp)
+
+    *The Get Link window of an SSH config. The link and QR code in this picture are examples.*
+
+To use this proxy, use the [Hiddify app](/app/How-to-use-Hiddify-app/) or the [SingBox app](/manager/client-software-on-ios/Tutorial-for-SingBox-app/).
 

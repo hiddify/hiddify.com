@@ -1,5 +1,5 @@
 ---
-title: How to use UDP Turn Relay in HiddifyApp
+title: How to use UDP Turn Relay in Hiddify app
 ---
 
 <div dir="ltr" markdown="1">

@@ -4,9 +4,9 @@ title: How to disable IP version 6 on HiddifyManager
 
 <div dir="ltr" markdown="1">
 
-# How to disable IP version 6 on Hiddify
+# How to disable IP version 6 on HiddifyManager
 
-This page shows you how to turn off IPv6 on your Hiddify server. You need it when IPv6 causes problems, for example when Google shows errors to your users.
+This page shows you how to turn off IPv6 on your HiddifyManager server. You need it when IPv6 causes problems, for example when Google shows errors to your users.
 
 ## What is IPv6?
 
@@ -24,14 +24,14 @@ Because there are so many IPv6 addresses, they are harder to block than IPv4 add
 
 ## Method 1: in the panel
 
-1. Log in to your Hiddify admin panel.
+1. Log in to your HiddifyManager admin panel.
 2. In the sidebar, under **Settings**, click **Settings**.
 3. **Only IPv4** is an advanced setting, so turn on the **Show Advanced Settings** switch at the top of the page. Then type `IPv4` in the search box (**Search all settings…**). The setting **Only IPv4** is in the **General Settings** card, with the **Advanced** label.
 4. Turn **Only IPv4** on.
 5. Click **Save**.
 6. When the panel asks, click **Apply Configs** so the change takes effect.
 
-When this option is on ("It will Disable IPv6"), Hiddify turns off IPv6 on the server's network interfaces and stops adding IPv6 addresses to your users' configs.
+When this option is on ("It will Disable IPv6"), HiddifyManager turns off IPv6 on the server's network interfaces and stops adding IPv6 addresses to your users' configs.
 
 <div align=center markdown=1>
   
@@ -42,7 +42,7 @@ When this option is on ("It will Disable IPv6"), Hiddify turns off IPv6 on the s
 
 Use this method only if you need to turn IPv6 off for the whole operating system.
 
-1. [Connect to your server over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the Hiddify menu opens, press `Ctrl+C` to leave it.
+1. [Connect to your server over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the HiddifyManager menu opens, press `Ctrl+C` to leave it.
 2. Open the system settings file in the **nano** text editor:
 
     ```bash
@@ -66,7 +66,7 @@ Use this method only if you need to turn IPv6 off for the whole operating system
 
     The command prints the three lines you added. If you see an error, open the file again and check for typos.
 
-IPv6 is now off, and the server works only with IPv4. Hiddify detects this and also treats the server as IPv4-only.
+IPv6 is now off, and the server works only with IPv4. HiddifyManager detects this and also treats the server as IPv4-only.
 
 To turn IPv6 back on later, delete the three lines, run `sudo sysctl -p` again, and restart the server.
 

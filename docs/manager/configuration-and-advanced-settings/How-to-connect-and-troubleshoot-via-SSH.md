@@ -1,10 +1,9 @@
 ---
-title: How to connect and troubleshoot via SSH (Working with Hiddify Menu)
+title: How to connect and troubleshoot via SSH (Working with HiddifyManager Menu)
 weight: -145
 ---
 
 <div dir="ltr" markdown="1">
-
 
 <details markdown="1"><summary><h1>Prerequisite: Installing SSH on Windows</h1></summary>
 
@@ -31,7 +30,7 @@ The SSH client is now installed.
 
 # How to connect and troubleshoot via SSH
 
-This page shows you how to manage Hiddify Manager from your server's command line when the web panel does not open, or when you have lost your admin link. It also explains each option of the Hiddify menu.
+This page shows you how to manage Hiddify Manager from your server's command line when the web panel does not open, or when you have lost your admin link. It also explains each option of the HiddifyManager menu.
 
 **SSH** is a secure way to open a text terminal on your server from your own computer or phone. Everything you type runs on the server.
 
@@ -64,14 +63,14 @@ For a full guide, see [How to connect to the server via SSH](/manager/installati
 
 3. Type `yes` if you are asked to trust the server, then enter your password. (The password is not shown while you type. This is normal.)
 
-If the connection works, you see the server's command prompt, and the Hiddify menu may open by itself.
+If the connection works, you see the server's command prompt, and the HiddifyManager menu may open by itself.
 
 !!! warning "Password login warning"
     If password login is enabled on your server, the menu first shows a **WARNING** that your server is open to abuse. Press Enter to continue. To fix it, follow [Disable SSH password authentication](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/).
 
-## Open the Hiddify menu
+## Open the HiddifyManager menu
 
-Run this command on your server to open the Hiddify menu:
+Run this command on your server to open the HiddifyManager menu:
 
 ```bash
 hiddify
@@ -96,7 +95,7 @@ hiddify
 ```
 
 ## Status
-Shows whether each Hiddify service is running. If everything is fine, the result looks like this:
+Shows whether each HiddifyManager service is running. If everything is fine, the result looks like this:
 
 ![Status](https://github.com/hiddify/hiddify.com/assets/125398461/bb5072e7-635b-486e-9dce-024b8479adb8)
 
@@ -133,7 +132,7 @@ Press `q` to close the log. The log files are stored on the server in `/opt/hidd
 **When to use it:** one of the services is not working and you need to see why.
 
 ## Restart
-Restarts all Hiddify services without changing any settings.
+Restarts all HiddifyManager services without changing any settings.
 
 ![Restart](https://github.com/hiddify/hiddify.com/assets/125398461/d0caf625-9f09-4543-bc22-ae3843bf289a)
 
@@ -193,10 +192,10 @@ Gives the Hiddify support team SSH access to your server, through the [Hiddify b
 Removes the SSH access you gave to the [Hiddify bot](https://t.me/hiddifybot).
 
 ### enable
-Shows the Hiddify menu automatically every time you log in to the server over SSH. Use it if you turned this off before.
+Shows the HiddifyManager menu automatically every time you log in to the server over SSH. Use it if you turned this off before.
 
 ### disable
-Stops the Hiddify menu from opening automatically when you log in. You can still open it with `hiddify`.
+Stops the HiddifyManager menu from opening automatically when you log in. You can still open it with `hiddify`.
 
 ### uninstall
 Removes Hiddify Manager services from the server. It does not remove everything that was installed. If you want the server exactly as it was before the installation, rebuild it from your provider's control panel.

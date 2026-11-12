@@ -19,6 +19,10 @@ SIZE = 640
 
 def channel():
     """[(id, title, kind)] newest first: the channel's long videos only (no Shorts)."""
+    if os.environ.get('YT_SOURCE') == 'rss':                     # GitHub Action: the RSS feed, no yt-dlp
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from yt_channel import long_videos
+        return [(v, t, 'video') for v, _, t in long_videos()]
     out = []
     for tab, kind in (('videos', 'video'),):
         r = subprocess.run([YTDLP, '--flat-playlist', '--extractor-args', 'youtubetab:approximate_date',

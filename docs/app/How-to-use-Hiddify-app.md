@@ -4,7 +4,6 @@ title: How to use the Hiddify app
 
 <div dir="ltr" markdown="1">
 
-
 # How to use the Hiddify app
 
 This page shows you how to add your connection link to Hiddify App, connect, pick a server and change the most useful settings. It is for anyone who has installed the app and received a link from their provider or from their own Hiddify server.
@@ -22,7 +21,6 @@ A few words you will see on this page:
 - **Subscription link**: a link that gives the app a list of servers and updates it automatically. It must start with `https://`; the app does not accept plain `http://` subscription links.
 - **Config**: the settings for one single server, for example a link that starts with `vless://` or `vmess://`.
 - **Proxy**: one server in your profile that your traffic can go through.
-
 
 !!! note
     The app screenshots on this page come from version 5.5.6 on Android. On iPhone and on computers the steps are the same, but some screens look a little different.
@@ -190,9 +188,7 @@ If the app still shows "Missing privilege", close it completely (right-click its
 
 1. Right-click the Hiddify icon on the desktop or in the `Start` menu and click `Run as administrator`.
 
-    <div align=center>
-    <img width=30% alt="Run as administrator" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/9db385ec-8aba-47f5-a5b7-d2c34899fbc1">
-    </div>
+  <img width=30% alt="Run as administrator" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/9db385ec-8aba-47f5-a5b7-d2c34899fbc1" style="display:block;margin:0 auto" >
 
 2. Click `Yes` when Windows asks for permission.
 

@@ -6,7 +6,7 @@ title: How to enable Swap on Linux
 
 # How to enable Swap on a Linux VPS
 
-This page shows you how to add **swap** to a Linux server that has none. You can do it while the server is running, without stopping Hiddify.
+This page shows you how to add **swap** to a Linux server that has none. You can do it while the server is running, without stopping HiddifyManager.
 
 **Swap** is space on the disk that Linux uses as extra memory when the RAM is full. It is much slower than RAM, but it stops programs from crashing when memory runs out.
 
@@ -89,7 +89,7 @@ Run all commands **on your server, over SSH**.
 
 ## Notes
 
-- **Size:** pick the swap size based on your server's RAM and free disk space. 2 GB is enough for the Hiddify installer on a small server.
+- **Size:** pick the swap size based on your server's RAM and free disk space. 2 GB is enough for the HiddifyManager installer on a small server.
 - **Watch usage:** check memory and swap use at any time with `free -h` or `htop`. If swap is always heavily used, the server needs more RAM. See [How to monitor server resources](/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/).
 - **Some servers cannot use swap.** On some container-based VPS types (such as OpenVZ or LXC), `swapon` fails with `Operation not permitted`. In that case, ask your provider or choose a plan with more RAM.
 

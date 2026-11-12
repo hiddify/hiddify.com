@@ -49,7 +49,7 @@ Leave **Custom proxies** on **Automatic** so the panel uses every proxy that fit
 5. Open **Advanced**. In **Force configs to use these IPs / domains**, enter your server's IPv6 address.
 6. Save, then apply the changes.
 
-For more about Reality, see [How to use Reality on Hiddify](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
+For more about Reality, see [How to use Reality on HiddifyManager](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
 !!! note "Legacy Direct XTLS mode was removed"
     Older versions had a separate "Legacy Direct XTLS" domain mode. Since Hiddify Manager v13 it no longer exists: such domains were turned into **Direct** domains. Use Method 1 instead.
@@ -73,6 +73,6 @@ For more about Reality, see [How to use Reality on Hiddify](/manager/configurati
 3. Download the profile. Install it from **Settings** → **Profile Downloaded**.
 4. In **Settings**, search for **APN**, and reset the network settings from the bottom of that page.
 
-When these steps are done, your users can connect to your server over IPv6. If you do not want IPv6 at all, see [How to disable IPv6 on Hiddify](/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/).
+When these steps are done, your users can connect to your server over IPv6. If you do not want IPv6 at all, see [How to disable IPv6 on HiddifyManager](/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/).
 
 </div>

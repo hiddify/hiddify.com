@@ -10,7 +10,7 @@ This page shows you how to stop your server from accepting SSH logins with a pas
 
 ## Why you need this
 
-- **Symptom:** the Hiddify admin panel shows the warning *"Your server is vulnerable to abuses because Password Authentication is enabled in your SSH"*, or a **WARNING** box appears when you open the `hiddify` menu on the server.
+- **Symptom:** the HiddifyManager admin panel shows the warning *"Your server is vulnerable to abuses because Password Authentication is enabled in your SSH"*, or a **WARNING** box appears when you open the `hiddify` menu on the server.
 - **Cause:** your server still accepts SSH logins with a password. Bots on the internet try thousands of passwords per day. If one guess works, they can take over your server and use it for attacks, which can get your server suspended by the provider for abuse.
 - **Fix:** log in with an **SSH key** instead, then turn password logins off. An **SSH key** is a pair of files made on your own computer: a *private key* that stays with you, and a *public key* that you copy to the server. The server lets in only the computer that holds the matching private key.
 
@@ -97,7 +97,7 @@ Run these steps **on your server, over SSH**. Keep your current SSH window open 
 
 1. Open a **new** terminal window on your computer and connect again with `ssh root@your_server_ip`. You should get in with your key, without the server password.
 2. Optional: try to connect from another computer that does not have your key. The server should refuse with `Permission denied (publickey)`.
-3. Refresh the Hiddify admin panel. The password warning should be gone.
+3. Refresh the HiddifyManager admin panel. The password warning should be gone.
 
 **If you can no longer log in:** go back to the SSH window you kept open and delete the file you created, then restart SSH:
 
@@ -111,7 +111,7 @@ If you closed every window, use your provider's web console to run the same comm
 ## More ways to protect your server
 
 - [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/) from the default 22 to reduce automated login attempts.
-- [Turn on the Hiddify firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/) so only the ports you use are open.
+- [Turn on the HiddifyManager firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/) so only the ports you use are open.
 - Keep your server updated.
 
 </div>

@@ -9,11 +9,9 @@ This page shows you how to tell your Hiddify Manager panel about a relay server,
 
 ## What is a relay server and why use one?
 
-A **relay server** (also called an intermediate or bridge server) is a second, usually cheap, server that sits between your users and your main Hiddify server. Users connect to the relay; the relay passes their traffic on to the main server, and the main server sends it to the internet.
+A **relay server** (also called an intermediate or bridge server) is a second, usually cheap, server that sits between your users and your main HiddifyManager server. Users connect to the relay; the relay passes their traffic on to the main server, and the main server sends it to the internet.
 
-```
-User  --->  Relay server (often in your own country)  --->  Main Hiddify server (abroad)  --->  Internet
-```
+![Traffic path: user, relay server in your country, main HiddifyManager server abroad, internet](/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-diagram.webp)
 
 You may want one when:
 

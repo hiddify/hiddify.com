@@ -19,7 +19,7 @@ In the panel sidebar, under **Settings**, click **Actions**. On the **Apply & St
 
 </div>
 
-This may take between 5 and 10 minutes. Hiddify downloads and installs the latest version, then applies it; the panel restarts at the end.
+This may take between 5 and 10 minutes. HiddifyManager downloads and installs the latest version, then applies it; the panel restarts at the end.
 
 
 
@@ -53,14 +53,14 @@ When **Auto Update** is on, the panel checks for a new update every day at 3:00 
 
 ## Update via SSH
 
-Connect via [SSH to the server](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) and select Update in the Hiddify menu. There are 3 modes.
+Connect via [SSH to the server](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) and run `hiddify` to open the HiddifyManager menu. Choose `update` and then one of the 3 modes:
 
 <div align=center markdown=1>
 
-![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
+![The Update menu in the HiddifyManager SSH menu](/assets/manager/How-to-update-Hiddify-panel/ssh-update-menu.webp)
 
 </div>
 
-* The `default` option updates the panel based on default.
-* The update `release` option is based on the stable version.
-* The `develop` option is to update the version under development.
+* `default`: updates to the channel set in the panel (**Package Update Mode** in Settings > Advanced Settings).
+* `release`: updates to the latest stable version. This is the suggested option.
+* `beta`: updates to the latest pre-release version. It may have bugs.

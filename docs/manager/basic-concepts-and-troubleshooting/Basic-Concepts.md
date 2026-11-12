@@ -69,7 +69,7 @@ Note: The settings of these 3 items can be different according to the type of co
 
 ## Xray
 
-Hiddify panel uses this platform to pass the filtering system. In fact, Hiddify is recommended by Xray. This platform, which was introduced in 2020, is a modified and better version of the famous V2ray! Due to being more up-to-date and fixing defects, V2ray became the dominant and common platform. In the Xray platform, all v2ray protocols have been added in addition to newer protocols such as Vless.
+HiddifyManager panel uses this platform to pass the filtering system. In fact, Hiddify is recommended by Xray. This platform, which was introduced in 2020, is a modified and better version of the famous V2ray! Due to being more up-to-date and fixing defects, V2ray became the dominant and common platform. In the Xray platform, all v2ray protocols have been added in addition to newer protocols such as Vless.
 
 ## Vmess
 It was one of the first protocols of the V2ray and Xray subcategory, which encodes and sends information packets based on system time, although this protocol can be detected by the filtering system due to weaknesses in its algorithm, and it is recommended not to use it wherever possible.
@@ -87,7 +87,7 @@ For more security and speed, we suggest you to use these two protocols, Vless an
 REALITY is used instead of TLS and it can eliminate the TLS fingerprint characteristics of the server, still have forward secrecy, etc. Moreover the certificate chain attack is invalid, and the security exceeds that of conventional TLS.
 You can point to other websites without having to buy a domain name or configure a TLS server, which is more convenient and realizes the full real TLS of specifying SNI to the middleman.
 
-Note: although Hiddify supports all protocols related to Xray, we suggest using more robust protocols such as Reality, Vless and Trojan like these ones.
+Note: although HiddifyManager supports all protocols related to Xray, we suggest using more robust protocols such as Reality, Vless and Trojan like these ones.
 
 `Reality XTLS`
 

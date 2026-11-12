@@ -3,20 +3,19 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 
 ---
 
-
 <div dir="rtl" markdown="1">
 
 # آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 
-در این صفحه یاد می‌گیرید چطور لینک اشتراک هیدیفای خود را به برنامه **Shadowrocket** (شدوراکت) در آیفون و آیپد اضافه کنید و از تنظیمات مهم آن استفاده کنید. شدوراکت یک برنامه پولی است که با کانفیگ‌های مبتنی بر Xray کار می‌کند.
+در این صفحه یاد می‌گیرید چطور لینک اشتراک هیدیفای‌منیجر خود را به برنامه **Shadowrocket** (شدوراکت) در آیفون و آیپد اضافه کنید و از تنظیمات مهم آن استفاده کنید. شدوراکت یک برنامه پولی است که با کانفیگ‌های مبتنی بر Xray کار می‌کند.
 
 !!! tip "پیشنهاد ما: Hiddify App"
-    ساده‌ترین برنامه برای سرور هیدیفای، برنامه رایگان **Hiddify App** است. آن را از [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) نصب کنید. راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/).
+    ساده‌ترین برنامه برای سرور هیدیفای‌منیجر، برنامه رایگان **Hiddify App** است. آن را از [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) نصب کنید. راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/).
 
 ## پیش از شروع
 
 - برنامه **Shadowrocket** را از [App Store](https://apps.apple.com/us/app/shadowrocket/id932747118) بخرید و نصب کنید.
-- **لینک صفحه کاربری** خود را آماده داشته باشید. این همان لینکی است که مدیر سرور برایتان فرستاده و صفحه شخصی هیدیفای شما را باز می‌کند.
+- **لینک صفحه کاربری** خود را آماده داشته باشید. این همان لینکی است که مدیر سرور برایتان فرستاده و صفحه شخصی هیدیفای‌منیجر شما را باز می‌کند.
 
 **لینک اشتراک** (سابسکریپشن) یک لینک است که همه تنظیمات اتصال (کانفیگ‌ها) را در خود دارد. شدوراکت می‌تواند بعداً آن را به‌روز کند و تنظیمات جدید را از سرور بگیرد.
 
@@ -58,17 +57,13 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 1. «کپی لینک» را بزنید.
 2. شدوراکت را باز کنید و دکمه `+` را در گوشه بالا سمت راست بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="دکمه + در شدوراکت" src="https://github.com/hiddify/hiddify-config/assets/125398461/d116347f-31bc-4ca9-a1fc-bdb9364e5e74" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="دکمه + در شدوراکت" src="https://github.com/hiddify/hiddify-config/assets/125398461/d116347f-31bc-4ca9-a1fc-bdb9364e5e74" />
 
 3. `Type` را روی `Subscribe` بگذارید.
 4. لینک را در فیلد `URL` بچسبانید.
 5. `Save` را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Type روی Subscribe و فیلد URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/c087970e-aebc-479d-8b8a-bc54a78cc7f8" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Type روی Subscribe و فیلد URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/c087970e-aebc-479d-8b8a-bc54a78cc7f8" />
 
 همه کانفیگ‌ها در برنامه بارگذاری می‌شوند.
 
@@ -76,9 +71,7 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 
 1. در صفحه اصلی شدوراکت، دکمه اسکنر را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="دکمه اسکنر" src="https://github.com/hiddify/hiddify-config/assets/125398461/cee3abfe-db05-4e2c-925d-fa57010d3465" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="دکمه اسکنر" src="https://github.com/hiddify/hiddify-config/assets/125398461/cee3abfe-db05-4e2c-925d-fa57010d3465" />
 
 2. QR code صفحه کاربری را اسکن کنید. کانفیگ‌ها به برنامه اضافه می‌شوند.
 
@@ -99,7 +92,6 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 <div align=center markdown=1><img width=30% alt="Test Method روی Connect" src="https://github.com/hiddify/hiddify-config/assets/125398461/8760fd19-9056-4c0c-a4a0-aeebd728656f" />
 </div>
 
-
 ## به‌روزرسانی لینک اشتراک و کانفیگ‌ها
 
 روی نماد به‌روزرسانی بالای کانفیگ‌های هر لینک اشتراک بزنید. کانفیگ‌ها با آخرین اطلاعات سرور به‌روز می‌شوند.
@@ -107,7 +99,6 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 <div align=center markdown=1>
 <img width=30% alt="نماد به‌روزرسانی بالای کانفیگ‌ها" src="https://github.com/hiddify/hiddify-config/assets/125398461/0878e805-a24e-4f19-831a-f526b475db4a" />
 </div>
-
 
 ## تنظیمات لینک اشتراک
 
@@ -137,7 +128,6 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 <img width=30% alt="Sort by ping" src="https://github.com/hiddify/hiddify-config/assets/125398461/afeb9a4d-a12f-49f1-aca7-f5eae5c6bed2" />
 </div>
 
-
 ## جلوگیری از نشت IP
 
 **نشت IP** یعنی سایت‌ها با وجود روشن بودن VPN، IP واقعی شما را ببینند.
@@ -149,7 +139,6 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 <img width=30% alt="Disable STUN" src="https://github.com/hiddify/hiddify-config/assets/125398461/3bd81556-4119-4659-8db7-0826bbdbd6ee" />
 </div>
 
-
 ## رفع مشکل پخش نشدن صدا در بعضی برنامه‌ها
 
 اگر در بعضی برنامه‌ها (مثلاً Clubhouse) صدا پخش نمی‌شود:
@@ -160,7 +149,6 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 <div align=center markdown=1>
 <img width=30% alt="تنظیم Fingerprint" src="https://github.com/hiddify/hiddify-config/assets/125398461/fe7a7a27-016c-45b9-92b5-2e9427ba165a" />
 </div>
-
 
 ## میان‌برها (Shortcuts)
 
@@ -191,9 +179,7 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 2. `Proxy Share` را بزنید.
 3. گزینه `Enable Share` را روشن کنید. برنامه یک آدرس IP و یک پورت نشان می‌دهد.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Proxy Share با IP و پورت" src="https://github.com/hiddify/hiddify-config/assets/125398461/d764b726-6ddd-4a5a-aa76-f9ad8165e4f1" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Proxy Share با IP و پورت" src="https://github.com/hiddify/hiddify-config/assets/125398461/d764b726-6ddd-4a5a-aa76-f9ad8165e4f1" />
 
 4. در دستگاه دیگر، تنظیمات پروکسی شبکه را باز کنید و همان IP و پورت را وارد کنید.
 
@@ -205,15 +191,11 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 
 1. در صفحه اصلی، انگشت خود را روی صفحه نگه دارید و به پایین بکشید. یک منوی مخفی باز می‌شود.
 
-    <div align=center markdown=1>
-    <img width=30% alt="منوی مخفی" src="https://github.com/hiddify/hiddify-config/assets/125398461/59872f56-e9ff-4c50-85a0-65ccd488e704" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="منوی مخفی" src="https://github.com/hiddify/hiddify-config/assets/125398461/59872f56-e9ff-4c50-85a0-65ccd488e704" />
 
 2. دکمه `+` را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="دکمه + برای لودبالانس جدید" src="https://github.com/hiddify/hiddify-config/assets/125398461/b67bc883-e643-465c-85dc-e6eeb719723c" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="دکمه + برای لودبالانس جدید" src="https://github.com/hiddify/hiddify-config/assets/125398461/b67bc883-e643-465c-85dc-e6eeb719723c" />
 
 3. یک نام دلخواه بنویسید.
 4. `Type` را روی `load-balance` بگذارید.
@@ -221,15 +203,11 @@ title: آموزش کار با نرم‌افزار ShadowRocket شدوراکت
 6. `Interval` (فاصله بین تست‌ها) و `Timeout` (مدتی که یک کانفیگ می‌تواند قطع باشد و هنوز سالم حساب شود) را روی مقدار پیش‌فرض بگذارید، مگر اینکه دقیقاً بدانید چه می‌خواهید.
 7. `Save` را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="تنظیمات لودبالانس" src="https://github.com/hiddify/hiddify-config/assets/125398461/be6e132b-d9d4-45ff-ab8a-94b72d764139" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="تنظیمات لودبالانس" src="https://github.com/hiddify/hiddify-config/assets/125398461/be6e132b-d9d4-45ff-ab8a-94b72d764139" />
 
 8. روی لودبالانس ساخته‌شده بزنید و سپس `Test` را بزنید. این کار آن را تست می‌کند و از طریق آن وصل می‌شود.
 
-    <div align=center markdown=1>
-    <img width=30% alt="تست لودبالانس" src="https://github.com/hiddify/hiddify-config/assets/125398461/819da751-8a46-4ab3-88e2-00a5e0b3f724" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="تست لودبالانس" src="https://github.com/hiddify/hiddify-config/assets/125398461/819da751-8a46-4ab3-88e2-00a5e0b3f724" />
 
 با روشن یا خاموش کردن شدوراکت، لودبالانس هم روشن یا خاموش می‌شود.
 

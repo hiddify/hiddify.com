@@ -6,7 +6,7 @@ weight: -120
 <div dir="ltr" markdown="1">
 
 # How to set up Telegram proxy on HiddifyManager
-One of the good features of the Hiddify panel is providing a Telegram proxy. There are two kinds, explained below.
+One of the good features of the HiddifyManager panel is providing a Telegram proxy. There are two kinds, explained below.
 
 - **MTProxy FakeTLS**: a Telegram MTProxy hidden as TLS (`tg://proxy` links). It needs a Direct or Relay domain.
 - **Telegram Web Proxy**: a Telegram proxy over HTTPS on every domain with a real certificate, CDN included (`tg://webproxy` links).
@@ -29,9 +29,9 @@ One of the good features of the Hiddify panel is providing a Telegram proxy. The
 
 - If the message about applying changes is displayed, be sure to press the button so that the changes are applied to the server. You can also do it from **Actions** in the sidebar: click **Apply now** in the **Apply Changes** card.
 
-- Now, if you open the user page, you will see that the Telegram proxy configurations are also displayed (in the user page menu, open **Telegram Proxy**).
+- Now your users can find the proxies on their user page: in the menu at the top they open **Telegram Proxy**. The page lists one proxy per server address and, when **Telegram Web Proxy** is on, a **Web** proxy for each domain. Tapping a row shows its QR code, the link with a copy button, and **Open Telegram**, which adds the proxy to Telegram in one tap.
 
-![Screenshot_20230625_170930](https://github.com/hiddify/hiddify-config/assets/125398461/1437b7ee-af18-4e15-a1a8-c88188339f15)
+![The Telegram Proxy page of the user page](/assets/manager/How-to-set-up-Telegram-proxy-on-Hiddify/en-user-telegram-proxy.webp)
 
 ## Advertising activation
 

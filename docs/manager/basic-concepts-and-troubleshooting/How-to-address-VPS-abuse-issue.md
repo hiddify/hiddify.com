@@ -6,7 +6,7 @@ title: How to address VPS abuse issue
 
 # How to fix abuse reports on your VPS
 
-This page helps you if your server provider (datacenter) has sent you an **abuse report** about your Hiddify server. It explains the usual causes, what to check, and how to stop new reports.
+This page helps you if your server provider (datacenter) has sent you an **abuse report** about your HiddifyManager server. It explains the usual causes, what to check, and how to stop new reports.
 
 An **abuse report** is a warning from your provider saying that traffic from your server looks harmful, for example like a network scan or an attack. If the reports continue, the provider can suspend your server or your account.
 
@@ -23,7 +23,7 @@ An **abuse report** is a warning from your provider saying that traffic from you
 ## What to check
 
 1. Read the abuse email. Note the destination IPs or IP ranges it lists.
-2. In the Hiddify panel, open **Domains**, open each domain, and look at **Advanced → Force configs to use these IPs / domains**. Note any raw IP addresses there.
+2. In the HiddifyManager panel, open **Domains**, open each domain, and look at **Advanced → Force configs to use these IPs / domains**. Note any raw IP addresses there.
 
 ## How to fix it
 
@@ -32,7 +32,7 @@ An **abuse report** is a warning from your provider saying that traffic from you
 Instead of raw IPs in the Force field, use subdomains:
 
 1. In your DNS provider (for example Cloudflare), create a subdomain for each IP, such as `ip1.example.com` pointing to the IP.
-2. In the Hiddify panel, replace each raw IP in **Force configs to use these IPs / domains** with its subdomain.
+2. In the HiddifyManager panel, replace each raw IP in **Force configs to use these IPs / domains** with its subdomain.
 3. Click **Save** and apply the changes.
 4. If you use Cloudflare, check that the SSL/TLS settings of your domain are set up correctly.
 

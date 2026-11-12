@@ -97,30 +97,16 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=-a4tfRUsrNY" title="بهترین و کامل ترین پنل v2ray xray، امکانات پنل هیدیفای جایگزین مطمئن x-ui xui">
+            <a href="https://www.youtube.com/watch?v=sZzXI7BGClI">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/youtube/-a4tfRUsrNY.jpg" alt="بهترین و کامل ترین پنل v2ray xray، امکانات پنل هیدیفای جایگزین مطمئن x-ui xui"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=06fMizOb-DE" title="آموزش نصب پروکسی Bypass Internet with Hiddify on OVH Cloud نصب هایدیفای">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/youtube/06fMizOb-DE.jpg" alt="آموزش نصب پروکسی Bypass Internet with Hiddify on OVH Cloud نصب هایدیفای"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/purchase_domain.jpg"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
             <a href="https://www.youtube.com/watch?v=pydED363X-o">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/install_version8.jpg"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=sZzXI7BGClI">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/purchase_domain.jpg"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -153,9 +139,9 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=l-KKRus2KS0">
+            <a href="https://www.youtube.com/watch?v=tcd1wBUR3cY">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/finalize.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/purchase_vps.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -165,9 +151,23 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=tcd1wBUR3cY">
+            <a href="https://www.youtube.com/watch?v=-a4tfRUsrNY" title="بهترین و کامل ترین پنل v2ray xray، امکانات پنل هیدیفای جایگزین مطمئن x-ui xui">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/purchase_vps.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/youtube/-a4tfRUsrNY.jpg" alt="بهترین و کامل ترین پنل v2ray xray، امکانات پنل هیدیفای جایگزین مطمئن x-ui xui"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=s1QZD1Ujdds">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/oracle_install.png"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=l-KKRus2KS0">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/finalize.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -177,10 +177,10 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=s1QZD1Ujdds">
+            <a href="https://www.youtube.com/watch?v=06fMizOb-DE" title="آموزش نصب پروکسی Bypass Internet with Hiddify on OVH Cloud نصب هایدیفای">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/oracle_install.png"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/youtube/06fMizOb-DE.jpg" alt="آموزش نصب پروکسی Bypass Internet with Hiddify on OVH Cloud نصب هایدیفای"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -221,7 +221,7 @@ bash <(curl https://i.hiddify.com/release)
               <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
             </div>
             <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/"
-              target="_blank" class="text-secondaryText text-sm">تنظیمات ریالیتی در هیدیفای‌منیجر</a>
+              target="_blank" class="text-secondaryText text-sm">تنظیمات ریالتی در هیدیفای‌منیجر</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
@@ -283,14 +283,14 @@ bash <(curl https://i.hiddify.com/release)
               </div>
               <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/"
                 target="_blank" class="text-secondaryText text-sm">نحوه استفاده از چند زیردامنه یک وب‌سایت در
-                ریالیتی</a>
+                ریالتی</a>
             </div>
             <div class="flex items-center gap-2">
               <div>
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/README_fa.md" target="_blank"
-                class="text-secondaryText text-sm">آموزش استفاده از اسکنر ریالیتی هیدیفای</a>
+                class="text-secondaryText text-sm">آموزش استفاده از اسکنر ریالتی هیدیفای</a>
             </div>
           </div>
         </div>
@@ -338,15 +338,15 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=4o4lDfOtpRw">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/Telegram_Bot.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
             <a href="https://www.youtube.com/watch?v=Pzk2Y9Q4n_s">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/HiddifyMenu.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=4o4lDfOtpRw">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/Telegram_Bot.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -476,7 +476,7 @@ bash <(curl https://i.hiddify.com/release)
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"
-                target="_blank" class="text-secondaryText text-sm">مدیریت بهتر چند دامنه CDN در هیدیفای
+                target="_blank" class="text-secondaryText text-sm">مدیریت بهتر چند دامنه CDN در هیدیفای‌منیجر
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -508,7 +508,7 @@ bash <(curl https://i.hiddify.com/release)
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"
-                target="_blank" class="text-secondaryText text-sm">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای‌منیجر (روش خودکار)
+                target="_blank" class="text-secondaryText text-sm">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای‌منیجر
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -641,9 +641,23 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
+            <a href="https://www.youtube.com/watch?v=HHq4EQoUHXY">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/finding_clean_ip_cf.png"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=r2dlt19OybM">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/ws_tunnel.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=147nyGlTuuA">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/cf_worker_tutorial.png"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -656,20 +670,6 @@ bash <(curl https://i.hiddify.com/release)
             <a href="https://www.youtube.com/watch?v=MiD8FYWwHIc">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/iptables_tunnel.png"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=147nyGlTuuA">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/cf_worker_tutorial.png"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=HHq4EQoUHXY">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/finding_clean_ip_cf.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -738,7 +738,7 @@ bash <(curl https://i.hiddify.com/release)
             </div>
             <a href="/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"
               target="_blank" class="text-secondaryText text-sm">آموزش اتصال و عیب‌یابی از طریق SSH (کار با منوی
-              هیدیفای)</a>
+              هیدیفای‌منیجر)</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
@@ -770,7 +770,7 @@ bash <(curl https://i.hiddify.com/release)
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/"
-                target="_blank" class="text-secondaryText text-sm">چگونه فایروال را در پنل هیدیفای تنظیم کنیم
+                target="_blank" class="text-secondaryText text-sm">چگونه فایروال را در پنل هیدیفای‌منیجر تنظیم کنیم
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -778,7 +778,7 @@ bash <(curl https://i.hiddify.com/release)
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/"
-                target="_blank" class="text-secondaryText text-sm">چگونه منابع سرور را در پنل هیدیفای نظارت کنیم
+                target="_blank" class="text-secondaryText text-sm">چگونه منابع سرور را در پنل هیدیفای‌منیجر نظارت کنیم
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -794,7 +794,7 @@ bash <(curl https://i.hiddify.com/release)
                 <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
               </div>
               <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/"
-                target="_blank" class="text-secondaryText text-sm">چگونه IP نسخه ۶ را در هیدیفای غیرفعال کنیم
+                target="_blank" class="text-secondaryText text-sm">چگونه IP نسخه ۶ را در هیدیفای‌منیجر غیرفعال کنیم
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -960,6 +960,13 @@ bash <(curl https://i.hiddify.com/release)
             <h1 class="text-secondaryText title-font text-base">ویدیوهای مرتبط</h1>
           </div>
           <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=qDbI72J-INM">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/hiddifyng_tutorial.png"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=Pqactnz_PdU" title="معرفی برنامه HiddifyNG">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/youtube/Pqactnz_PdU.jpg" alt="معرفی برنامه HiddifyNG"
@@ -974,13 +981,6 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=qDbI72J-INM">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/hiddifyng_tutorial.png"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
             <a href="https://www.youtube.com/watch?v=8P887E-KMls">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/hiddify_clash_android_tutorial.png"
@@ -988,16 +988,16 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=6HncctDHXVs">
+            <a href="https://www.youtube.com/watch?v=7kqprO7M4eM">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/v2rayng_tutorial.png"
+                <img src="/assets/v2flyng_tutorial.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=7kqprO7M4eM">
+            <a href="https://www.youtube.com/watch?v=6HncctDHXVs">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/v2flyng_tutorial.png"
+                <img src="/assets/v2rayng_tutorial.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -1115,16 +1115,16 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=D0Xv54nRSY8">
+            <a href="https://www.youtube.com/watch?v=qFKv4I-MNQc">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/stash_tutorial.png"
+                <img src="/assets/wingx_tutorial.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=qFKv4I-MNQc">
+            <a href="https://www.youtube.com/watch?v=D0Xv54nRSY8">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/wingx_tutorial.png"
+                <img src="/assets/stash_tutorial.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -1200,6 +1200,13 @@ bash <(curl https://i.hiddify.com/release)
         <div class="px-6 overflow-y-auto overflow-x-hidden max-h-[400px] md:h-full">
           <h1 class="text-secondaryText title-font text-base mt-6">ویدئوهای مرتبط</h1>
           <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=jaMkZTLH2QY">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/HiddifyClashDesktop_tutorial.png"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=omGIz97mbzM" title="آموزش کامل نرم‌افزار هیدیفای کلش دسکتاپ">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/youtube/omGIz97mbzM.jpg" alt="آموزش کامل نرم‌افزار هیدیفای کلش دسکتاپ"
@@ -1207,10 +1214,9 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=ORMdAzPNrCA" title="آموزش اضافه کردن لینک‌های سابسکریپشن از پنل هیدیفای در نسخه دسکتاپ برنامه نکوری Nekoray">
+            <a href="https://www.youtube.com/watch?v=01m7w-I4JXE">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/youtube/ORMdAzPNrCA.jpg" alt="آموزش اضافه کردن لینک‌های سابسکریپشن از پنل هیدیفای در نسخه دسکتاپ برنامه نکوری Nekoray"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/nekoray.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -1221,16 +1227,10 @@ bash <(curl https://i.hiddify.com/release)
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=jaMkZTLH2QY">
+            <a href="https://www.youtube.com/watch?v=ORMdAzPNrCA" title="آموزش اضافه کردن لینک‌های سابسکریپشن از پنل هیدیفای در نسخه دسکتاپ برنامه نکوری Nekoray">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/HiddifyClashDesktop_tutorial.png"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=01m7w-I4JXE">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/nekoray.png" class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/youtube/ORMdAzPNrCA.jpg" alt="آموزش اضافه کردن لینک‌های سابسکریپشن از پنل هیدیفای در نسخه دسکتاپ برنامه نکوری Nekoray"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
@@ -1247,7 +1247,7 @@ bash <(curl https://i.hiddify.com/release)
 
     <div class="flex flex-col md:flex-row h-full md:max-h-[450px]" id="section-8">
       <div class="px-8 py-8 w-full md:w-2/3">
-        <img src="/assets/contribution.jpg" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
+        <img src="/assets/contribution.webp" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
           <h1 class="text-primaryText title-font text-lg mb-3">مشارکت در توسعه</h1>
           <div class="flex items-center gap-2">

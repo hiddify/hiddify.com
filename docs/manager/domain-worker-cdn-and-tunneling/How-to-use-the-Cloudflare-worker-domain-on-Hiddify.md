@@ -1,53 +1,64 @@
 ---
-title: How to use Cloudflare worker domain on HiddifyManager (Automated way)
+title: How to use Cloudflare worker domain on HiddifyManager
+description: What changed with the "Cloudflare Worker" mode in the new HiddifyManager panel, and how to add a Cloudflare Worker to the panel as a CDN domain today.
 ---
 
 <div dir="ltr" markdown="1">
 
+# How to use Cloudflare worker domain on HiddifyManager
 
-# How to use Cloudflare worker domain on HiddifyManager (Automated way)
-Previously, in an [article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/), it was taught how to add Cloudflare workers to the panel. To make it easier to work in version 7, the worker domain was introduced as a separate domain. Follow this article till the end to get familiar with this domain.
+A Cloudflare Worker passes your users' requests from Cloudflare's network to your server. This hides your server's IP, and connections keep working when the IP is blocked.
 
-## Add Cloudflare API token
+## What has changed?
 
-For this, you first need to create a Cloudflare development token or key and then add it to the panel. [Follow this article](/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/).
+Older panel versions had a **Cloudflare Worker** domain mode. With your Cloudflare API key, the panel made the worker in your Cloudflare account by itself.
 
+The new HiddifyManager panel (Admin V2) no longer offers this mode for new domains:
 
-## Add the worker domain to the panel
-In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`.
+- **Worker domains you added before** keep working, and their edit window still shows the worker mode.
+- **For a new worker**, make the worker yourself in Cloudflare and add its domain to the panel in **CDN** mode. The steps are below.
+
+## 1. Make the worker in Cloudflare
+
+Make the worker with [How to set up and use Cloudflare Workers (manual way)](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/). At the end you have an address for the worker: either its `workers.dev` address, or a Custom Domain on your own domain in Cloudflare.
+
+## 2. Add the worker domain to the panel
+
+1. In the side menu, in the **Settings** group, open **Domains** and click **Add domain**.
+2. In the **Domain** step, enter the worker's address without `https://` and click **Check**.
+3. In the **Mode** step, under **How is it set up?** choose **CDN**. When the domain is behind Cloudflare, the panel shows a **matches** badge next to CDN. CDN mode always uses a valid certificate. Click **Next**.
+
+    <img style="display:block;margin:0 auto" width=600 alt="Add a domain wizard, Mode step: CDN chosen, the domain is behind Cloudflare" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-domain-cdn.webp">
+
+4. In the **Name** step, you can enter a short name to show in the users' apps (for example `Worker`).
+5. Finish the **Certificate** step to add the domain.
+
+## 3. Clean IPs (optional)
+
+To make the configs connect to clean IPs instead of Cloudflare's default IPs:
+
+1. On the **Domains** page, click the pencil icon next to the worker domain and open **Advanced**.
+2. In the **Force configs to use these IPs / domains** card, enter your clean Cloudflare IPs. With **For** you can set separate IPs for each operator.
+3. Click **Save**.
+
+    <img style="display:block;margin:0 auto" width=600 alt="Force configs to use these IPs / domains card in Advanced" src="/assets/manager/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/en-force.webp">
+
+For the format of the IPs, see [this article](/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/).
+
+## 4. Bring the worker configs into the subscription link
+
+The **Show configs of** setting of the domain your users open their user page with decides which domains' configs are in the subscription link.
+
+- If **All domains** is on (the default), the worker domain's configs are added by themselves. Nothing else is needed.
+- If you show only some domains, edit that domain, tick the worker domain under **Show configs of**, and click **Save**.
 
 <div align=center markdown=1>
-  
-![Screenshot_20230531_143400](https://github.com/hiddify/hiddify-config/assets/125398461/1d3d5365-7598-47fb-8ff1-2fdd44e6c328)
-
+<img width=600 alt="Show configs of with the All domains switch and the list of domains to tick" src="/assets/manager/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/en-show.webp">
 </div>
 
+Then ask your users to update the subscription in their app.
 
-### Mode
-Set domain mode to Cloudflare worker.
-
-### Domain
-In this section, choose the domain name you want for the Worker so that this name is automatically added to your Cloudflare account in the workers section.
-
-### Alias
-If you want, you can choose a name to display in the configs.
-
-### Force Config to Use Following IPs
-In this field, if needed, you can put your Cloudflare clean IPs or use IRCF clean IPs. If you need more information on how to enter IPs in this field, read this [article](/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/).
-
-Finally, click Save to save the settings. Then click `Apply Changes`.
-
-## Use the configs of this domain
-As you probably know, it is recommended that the subscription link be separated from the configurations in Hiddify to prevent the subscription links from being filtered. So if you have already created the subscription link; Here, go to the config settings of that domain and add the new Worker domain in the `Show configs of` field.
-
-
-<div align=center markdown=1>
-  
-![Screenshot_20230531_142541-2](https://github.com/hiddify/hiddify-config/assets/125398461/d40edd3b-1a13-45c4-94e1-e285f28e236a)
+!!! note "Free plan limit"
+    On Cloudflare's free plan, Workers handle 100,000 requests a day. This is not enough for a server with many users.
 
 </div>
-
-
-That is, for example, if `t1.hiddify.com` is your subscription domain, just edit it and in `Show configs of`, tick the Worker domain.
-
-The work is done. The configs for the new worker domain have been added to your previous configs.

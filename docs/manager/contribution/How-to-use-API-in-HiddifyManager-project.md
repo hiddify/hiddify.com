@@ -51,7 +51,7 @@ This section manages admin and server operations:
 - Retrieving current admin information
 - Managing admins (create/edit/delete)
 - Accessing server statistics
-- Viewing Hiddify logs  
+- Viewing HiddifyManager logs  
 
 **Base URL:**  
 ```plaintext

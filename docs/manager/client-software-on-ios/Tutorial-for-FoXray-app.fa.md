@@ -7,7 +7,7 @@ title: آموزش کار با نرم‌افزار FoXray
 
 # آموزش کار با نرم‌افزار FoXray
 
-در این صفحه یاد می‌گیرید چطور لینک اشتراک هیدیفای خود را به برنامه **FoXray** در آیفون و آیپد اضافه کنید و از تنظیمات اصلی آن استفاده کنید. FoXray را تیم سازنده برنامه WingsX منتشر کرد و پس از حذف WingsX از App Store جایگزین آن شد.
+در این صفحه یاد می‌گیرید چطور لینک اشتراک هیدیفای‌منیجر خود را به برنامه **FoXray** در آیفون و آیپد اضافه کنید و از تنظیمات اصلی آن استفاده کنید. FoXray را تیم سازنده برنامه WingsX منتشر کرد و پس از حذف WingsX از App Store جایگزین آن شد.
 
 !!! warning "FoXray دیگر در App Store نیست"
     از مهر 1405 (اکتبر 2026) صفحه FoXray در App Store (شناسه id6448898396) وجود ندارد و دیگر نمی‌توانید آن را نصب کنید. اگر برنامه را از قبل دارید، مراحل زیر همچنان نحوه کار با آن را توضیح می‌دهد. برای نصب جدید از **Hiddify App** ([App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532)، راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/)) یا یکی دیگر از برنامه‌های [فهرست کلاینت‌های iOS](/fa/manager/client-software-on-ios/) استفاده کنید.
@@ -15,7 +15,7 @@ title: آموزش کار با نرم‌افزار FoXray
 ## پیش از شروع
 
 - برنامه FoXray که از قبل روی آیفون یا آیپد نصب شده باشد.
-- **لینک صفحه کاربری** شما. این همان لینکی است که مدیر سرور برایتان فرستاده و صفحه شخصی هیدیفای شما را باز می‌کند.
+- **لینک صفحه کاربری** شما. این همان لینکی است که مدیر سرور برایتان فرستاده و صفحه شخصی هیدیفای‌منیجر شما را باز می‌کند.
 
 **لینک اشتراک** (سابسکریپشن) یک لینک است که همه تنظیمات اتصال (کانفیگ‌ها) را در خود دارد. FoXray می‌تواند بعداً آن را به‌روز کند و تنظیمات جدید را از سرور بگیرد.
 
@@ -26,26 +26,20 @@ title: آموزش کار با نرم‌افزار FoXray
 3. در بخش «لینک‌های اشتراک»، ردیف **Subscription link b64** را پیدا کنید و «دریافت لینک» را بزنید.
 4. «کپی لینک» را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="بخش FoXray در نسخه قدیمی صفحه کاربری" src="https://github.com/hiddify/hiddify-config/assets/125398461/85d44408-cbb3-4250-b1c1-853f71cd0831" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="بخش FoXray در نسخه قدیمی صفحه کاربری" src="https://github.com/hiddify/hiddify-config/assets/125398461/85d44408-cbb3-4250-b1c1-853f71cd0831" />
 
     این تصویر مربوط به نسخه قدیمی صفحه کاربری است که تب **آی‌اواس** داشت. ظاهر صفحه فعلی فرق دارد.
 
 5. برنامه FoXray را باز کنید و از منوی پایین `Subscriptions` را بزنید.
 6. دکمه `+` را بزنید.
 
-    <div align=center markdown=1><img width=30% alt="دکمه + در Subscriptions" src="https://github.com/hiddify/hiddify-config/assets/125398461/f68c3805-989c-434d-b249-b2dea19ec332"/>
-
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="دکمه + در Subscriptions" src="https://github.com/hiddify/hiddify-config/assets/125398461/f68c3805-989c-434d-b249-b2dea19ec332"/>
 
 7. یک نام دلخواه بنویسید.
 8. لینک را در فیلد `URL` بچسبانید.
 9. `Subscribe` را بزنید. کانفیگ‌ها به برنامه اضافه می‌شوند.
 
-    <div align=center markdown=1>
-    <img width=30% alt="فیلدهای نام و URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/f9118614-a8bf-42ae-9341-62c79fd7ffd9" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="فیلدهای نام و URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/f9118614-a8bf-42ae-9341-62c79fd7ffd9" />
 
 ## به‌روزرسانی لینک اشتراک
 

@@ -6,15 +6,15 @@ title: آموزش کار با نرم‌افزار Stash
 
 # آموزش کار با نرم‌افزار Stash
 
-در این صفحه یاد می‌گیرید چطور پروفایل هیدیفای خود را به برنامه **Stash** در آیفون و آیپد اضافه کنید و از حالت‌های اصلی آن استفاده کنید. Stash یک برنامه پولی بر پایه کلش (Clash) است.
+در این صفحه یاد می‌گیرید چطور پروفایل هیدیفای‌منیجر خود را به برنامه **Stash** در آیفون و آیپد اضافه کنید و از حالت‌های اصلی آن استفاده کنید. Stash یک برنامه پولی بر پایه کلش (Clash) است.
 
 !!! tip "پیشنهاد ما: Hiddify App"
-    ساده‌ترین برنامه برای سرور هیدیفای، برنامه رایگان **Hiddify App** است. آن را از [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) نصب کنید. راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/).
+    ساده‌ترین برنامه برای سرور هیدیفای‌منیجر، برنامه رایگان **Hiddify App** است. آن را از [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) نصب کنید. راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/).
 
 ## پیش از شروع
 
 - برنامه **Stash** را از [App Store](https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349) بخرید و نصب کنید. طبق App Store به iOS 16 یا بالاتر نیاز دارد.
-- **لینک صفحه کاربری** خود را آماده داشته باشید. این همان لینکی است که مدیر سرور برایتان فرستاده و صفحه شخصی هیدیفای شما را باز می‌کند.
+- **لینک صفحه کاربری** خود را آماده داشته باشید. این همان لینکی است که مدیر سرور برایتان فرستاده و صفحه شخصی هیدیفای‌منیجر شما را باز می‌کند.
 
 در Stash، **پروفایل** یک فایل (با فرمت YAML) است که همه کانکشن‌ها (کانفیگ‌ها) و قوانین عبور ترافیک از VPN را در خود دارد.
 
@@ -51,15 +51,11 @@ title: آموزش کار با نرم‌افزار Stash
 2. برنامه Stash را باز کنید. در صفحه `Settings` روی `Config File` بزنید.
 3. `Download from URL` را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Download from URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Download from URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
 
 4. لینک را بچسبانید و `Download` را بزنید. پروفایل به برنامه اضافه می‌شود.
 
-    <div align=center markdown=1>
-    <img width=30% alt="چسباندن لینک و زدن Download" src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="چسباندن لینک و زدن Download" src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
 
 ### افزودن پروفایل با QR code
 
@@ -67,9 +63,7 @@ title: آموزش کار با نرم‌افزار Stash
 2. برنامه Stash را باز کنید. در صفحه `Settings` روی `Config File` بزنید.
 3. `Download from QRcode` را بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Download from QRcode" src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Download from QRcode" src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
 
 4. QR code را اسکن کنید. پروفایل به برنامه اضافه می‌شود.
 
@@ -119,9 +113,7 @@ title: آموزش کار با نرم‌افزار Stash
 
 1. در `Settings` روی `More Settings` بزنید.
 
-    <div align=center markdown=1>
-    <img width=30% alt="More Settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="More Settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
 
 2. در بخش `CONFIG FILE`، فاصله زمانی بین به‌روزرسانی‌ها را در `Update Interval` تعیین کنید.
 3. گزینه `Auto Update` را روشن کنید.

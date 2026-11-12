@@ -6,15 +6,15 @@ title: Tutorial for Stash app
 
 # Tutorial for Stash app
 
-This page shows you how to add your Hiddify profile to **Stash** on iPhone and iPad and how to use its main modes. Stash is a paid app based on Clash.
+This page shows you how to add your HiddifyManager profile to **Stash** on iPhone and iPad and how to use its main modes. Stash is a paid app based on Clash.
 
 !!! tip "Recommended: Hiddify App"
-    The easiest app for a Hiddify server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
+    The easiest app for a HiddifyManager server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
 
 ## Before you start
 
 - Buy and install **Stash** from the [App Store](https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349). The App Store lists iOS 16 or later.
-- Have your **user page link** ready. This is the link your server admin sent you. It opens your personal Hiddify page.
+- Have your **user page link** ready. This is the link your server admin sent you. It opens your personal HiddifyManager page.
 
 In Stash, a **profile** is a file (in YAML format) that holds all your connections (configs) and the rules for which traffic goes through the VPN.
 
@@ -51,15 +51,11 @@ First get the link:
 2. Open Stash. On the **Settings** page, tap **Config File**.
 3. Tap **Download from URL**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Download from URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Download from URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
 
 4. Paste the link and tap **Download**. The profile is added to the app.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Paste the link and tap Download" src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Paste the link and tap Download" src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
 
 ### Add the profile with a QR code
 
@@ -67,9 +63,7 @@ First get the link:
 2. Open Stash. On the **Settings** page, tap **Config File**.
 3. Tap **Download from QRcode**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Download from QRcode" src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Download from QRcode" src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
 
 4. Scan the QR code. The profile is added to the app.
 
@@ -119,9 +113,7 @@ Tap the lightning icon to test the connections.
 
 1. In **Settings**, tap **More Settings**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="More Settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="More Settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
 
 2. In the **CONFIG FILE** section, set the time between updates in **Update Interval**.
 3. Turn on **Auto Update**.

@@ -45,7 +45,7 @@ Use this test on a new server that has nothing installed on it yet. A **ping** s
 
 #### TCP test
 
-Use this test when a service is already running on the server, for example after you installed Hiddify Manager. It checks whether a **port** (a numbered "door" that a service listens on) is reachable. Hiddify uses TCP port `443`, so test with `your-ip:443`.
+Use this test when a service is already running on the server, for example after you installed Hiddify Manager. It checks whether a **port** (a numbered "door" that a service listens on) is reachable. HiddifyManager uses TCP port `443`, so test with `your-ip:443`.
 
 ![Check-Host TCP test result](https://user-images.githubusercontent.com/125398461/222426843-82605bb3-d51e-407a-8d92-90bddef896ba.png)
 
@@ -83,7 +83,7 @@ If all locations show `Good`, the IP is very likely clean.
 If the result is `OK`, the IP is very likely clean.
 
 !!! note "The firewall and ping tests"
-    Hiddify's firewall setting (**Settings** → **General Settings** → **🛡️ Firewall**) is off by default. Even when you turn it on, Hiddify still lets ping through, so ping tests keep working. If ping fails but the TCP test on port `443` works, someone may have blocked ping by hand on the server. Use the TCP test in that case. See [How to set up the firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/).
+    HiddifyManager's firewall setting (**Settings** → **General Settings** → **🛡️ Firewall**) is off by default. Even when you turn it on, HiddifyManager still lets ping through, so ping tests keep working. If ping fails but the TCP test on port `443` works, someone may have blocked ping by hand on the server. Use the TCP test in that case. See [How to set up the firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/).
 
 ## How to fix it
 

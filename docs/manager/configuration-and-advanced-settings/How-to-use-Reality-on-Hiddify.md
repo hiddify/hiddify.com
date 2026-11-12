@@ -5,11 +5,10 @@ weight: -140
 
 <div dir="ltr" markdown="1">
 
-
 # How to use Reality on HiddifyManager
 This page shows you how to add a Reality domain in the Hiddify Manager panel, so your users get Reality configs. It is for panel admins who already have a working Hiddify Manager.
 
-**Reality** is a security layer from Xray. Your server borrows the TLS identity (the "fingerprint" of the encrypted connection) of another real website, for example `www.yahoo.com`. To a filter, the traffic looks like a normal visit to that website. You don't need your own domain or certificate for Reality. Hiddify does most of the work behind the scenes.
+**Reality** is a security layer from Xray. Your server borrows the TLS identity (the "fingerprint" of the encrypted connection) of another real website, for example `www.yahoo.com`. To a filter, the traffic looks like a normal visit to that website. You don't need your own domain or certificate for Reality. HiddifyManager does most of the work behind the scenes.
 
 !!! warning "What changed in Hiddify Manager v13 and v14"
     - Reality is no longer a separate domain type. You now add a domain with the mode **Direct** and the TLS mode **Reality**.
@@ -45,24 +44,19 @@ The panel creates these values for you. Each field says **Do Not Change It**: do
 ## Add a Reality domain
 1. In the panel's sidebar, under **Settings**, click **Domains**.
 2. Click **Add domain**.
-3. In the **Domain** step (**Which domain?**), type the address of the website you chose, for example `www.yahoo.com`, and click **Check**. The panel checks the domain's DNS. If it says the site "Points to another server: good for Reality", you can go on. If it says the site is "not Reality friendly (needs TLS 1.3 and HTTP/2)", go back and choose another website. You don't need to set the DNS record shown under **Point it at this server**: a Reality domain is someone else's website.
-
-    <div align=center markdown=1>
+3. In the **Domain** step (**Which domain?**), type the address of the website you chose, for example `www.yahoo.com`, and click **Check**. The panel checks the domain's DNS. If it says the site "Points to another server (…): good for Reality, a relay or Fake TLS", you can go on. If it says the site is "not Reality friendly (needs TLS 1.3 and HTTP/2)", go back and choose another website. You don't need to set the DNS record shown under **Point it at this server**: a Reality domain is someone else's website.
 
     ![Step 1 of the Add a domain wizard](/assets/manager/How-to-use-Reality-on-Hiddify/en-add-domain.webp)
-
-    </div>
 
 4. In the **Mode** step, under **How is it set up?**, choose **Direct**.
 5. Under **Which TLS?**, choose **Reality**, then click **Next**.
 
-    <div align=center markdown=1>
-
     ![The Mode step: How is it set up? and Which TLS?](/assets/manager/How-to-use-Reality-on-Hiddify/en-domain-mode.webp)
 
-    </div>
+6. In the **Name** step (**What should users see?**), type a short name that users will see in their apps, or tap one of the suggestions. Use plain letters and numbers. Then click **Add domain**. A Reality domain needs no certificate.
 
-6. In the **Name** step, you can type a short name that users will see in their apps. Use plain letters and numbers. Then finish the wizard. A Reality domain needs no certificate.
+    ![The Name step of the Add a domain wizard](/assets/manager/How-to-use-Reality-on-Hiddify/en-name-step.webp)
+
 7. To see the domain's other fields (see below), click the pencil (edit) icon of the new domain in the **Domains** list. Change them only if you need to, then click **Save**.
 8. Apply the changes: when the panel shows "Saved. Apply the configs to put the changes into effect.", click the button to apply. You can also click **Actions** in the sidebar (under **Settings**) and, in the **Apply Changes** card, click **Apply now**.
 
@@ -74,8 +68,14 @@ If the steps worked, the new domain appears in the **Domains** list with the bad
 
 </div>
 
-
 ### Fields of a Reality domain
+Open a domain's fields with the pencil (edit) icon in the **Domains** list.
+
+<div align=center markdown=1>
+
+![The Edit domain window of a Reality domain](/assets/manager/How-to-use-Reality-on-Hiddify/en-edit-domain.webp)
+
+</div>
 
 #### Server names
 The websites whose TLS identity Reality borrows. Separate several names with commas, for example `www.yahoo.com,blog.yahoo.com`. If you leave this field empty, the panel uses the domain itself.
@@ -88,11 +88,11 @@ To spread your traffic over many names of one website, see [How to use subdomain
 An optional name that users see in their apps instead of the domain.
 
 #### Force configs to use these IPs / domains
-Put an IP here if you want the configs to use it instead of your server's main IP. Separate several IPs with commas or new lines. This is mainly for **relay servers** (a server in between that passes your users' traffic on to your main server). If you use Reality through a relay server, put the relay server's IP here. For more about relays, see [How to add a relay domain](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
+This field is in the **Advanced** section at the bottom of the window. Put an IP here if you want the configs to use it instead of your server's main IP. Separate several IPs with commas or new lines. This is mainly for **relay servers** (a server in between that passes your users' traffic on to your main server). If you use Reality through a relay server, put the relay server's IP here. For more about relays, see [How to add a relay domain](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
 <div align=center markdown=1>
   
-![Warning messages after checking a Reality domain (screenshot from an older panel version)](https://github.com/hiddify/hiddify-config/assets/125398461/2cf9e13b-8091-4a95-ac30-d5a3f9106a58)
+![The Advanced section of the Edit domain window](/assets/manager/How-to-use-Reality-on-Hiddify/en-edit-advanced.webp)
 </div>
 
 When you save, the panel checks your fields and may show messages. Red messages are errors: fix them before you go on. Yellow messages are only warnings. It is best to change your settings until they go away, but you can ignore them and continue.
@@ -120,7 +120,6 @@ Users see the configs of the domain they open their user page on. By default, ea
 <div align=center markdown=1>
   
 !["Show configs of" in the Domains list](/assets/manager/How-to-use-Reality-on-Hiddify/en-show-configs.webp)
-
 
 </div>
 

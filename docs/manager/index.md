@@ -323,6 +323,13 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
+            <a href="https://www.youtube.com/watch?v=eFNPBSy8_to">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=XM9l-WCjNuo" title="How to set up and use Telegram bot on Hiddify panel">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/youtube/XM9l-WCjNuo.jpg" alt="How to set up and use Telegram bot on Hiddify panel"
@@ -333,13 +340,6 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             <a href="https://www.youtube.com/watch?v=nOe7FhajX3g">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png"
-                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
-                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=eFNPBSy8_to">
-              <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -451,7 +451,7 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
               </div>
               <a href="/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/"
                 target="_blank" class="text-secondaryText text-sm">How to manage multiple CDN domains better on
-                Hiddify
+                HiddifyManager
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -486,7 +486,7 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
               </div>
               <a href="/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/"
                 target="_blank" class="text-secondaryText text-sm">How to use the Cloudflare worker domain on
-                Hiddify Manager (Automated way)
+                HiddifyManager
               </a>
             </div>
             <div class="flex items-center gap-2">
@@ -587,6 +587,13 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
           </div>
           <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=gAyfCJt0jXw" title="How to find clean Cloudflare IP">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/gAyfCJt0jXw.jpg" alt="How to find clean Cloudflare IP"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=ea5C93ynkUs">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png"
@@ -652,7 +659,7 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             </div>
             <a href="/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/"
               target="_blank" class="text-secondaryText text-sm">How to connect and troubleshoot via SSH (Working
-              with Hiddify Menu)</a>
+              with HiddifyManager Menu)</a>
           </div>
           <div class="flex items-center gap-2">
             <div>
@@ -875,16 +882,16 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=5AQgbCwHujk">
+            <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/V2rayNG_Tutorial_en.png"
+                <img src="/assets/V2flyng_Tutorial_en.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM">
+            <a href="https://www.youtube.com/watch?v=5AQgbCwHujk">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/V2flyng_Tutorial_en.png"
+                <img src="/assets/V2rayNG_Tutorial_en.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -1032,16 +1039,16 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             <h1 class="text-secondaryText title-font text-base">Related videos</h1>
           </div>
           <div class="flex flex-col gap-3 md:gap-1">
-            <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs">
+            <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/HiddifyN_Tutorial_en.png"
+                <img src="/assets/HiddifyClashDesktop_tutorial_en.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg">
+            <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs">
               <div class="relative p-2 flex justify-center items-center">
-                <img src="/assets/HiddifyClashDesktop_tutorial_en.png"
+                <img src="/assets/HiddifyN_Tutorial_en.png"
                   class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
@@ -1059,7 +1066,7 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
 
     <div class="flex flex-col md:flex-row h-full md:max-h-[450px]" id="section-8">
       <div class="px-8 py-8 w-full md:w-2/3">
-        <img src="/assets/contribution.jpg" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
+        <img src="/assets/contribution.webp" class="md:max-h-[183px] rounded-xl w-full md:max-w-[326px] mb-5" />
         <div class="flex flex-col gap-2">
           <h1 class="text-primaryText title-font text-lg mb-3">Contribution</h1>
           <div class="flex items-center gap-2">

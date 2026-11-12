@@ -24,7 +24,7 @@ The scanner has two parts:
 ## Server-side setup
 Run these commands on your server, over SSH.
 
-1. Remove any old Xray installed with the official XTLS installer, stop Hiddify's Xray, and install Hiddify's custom Xray core:
+1. Remove any old Xray installed with the official XTLS installer, stop HiddifyManager's Xray, and install Hiddify's custom Xray core:
 
     ```bash
     # remove old xray
@@ -107,7 +107,7 @@ The options mean:
 ## Results
 The scanner saves its results on your computer, in `results.txt` and `results.json`. Use the best SNIs as Reality domains and server names on your server: see [How to use Reality on HiddifyManager](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
 
-## Finish: start Hiddify's Xray again
+## Finish: start HiddifyManager's Xray again
 If Hiddify Manager is installed on the server, stop the test server (press `Ctrl+C` in its window). Then run this on your server, over SSH:
 
 ```bash

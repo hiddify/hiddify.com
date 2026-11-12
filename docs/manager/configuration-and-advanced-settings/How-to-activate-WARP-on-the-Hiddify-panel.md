@@ -5,16 +5,16 @@ weight: -110
 
 <div dir="ltr" markdown="1">
 
-# How to activate WARP on the Hiddify panel
+# How to activate WARP on the HiddifyManager panel
 Many websites, including Google, restrict the access of users through VPN. Because several different connections go from the same IP to Google's server at the same time, this behavior is similar to cyber malicious behavior, and because of this, the connection is disrupted, and Google gives a 403 error, for example. Other websites do not allow communication and use of the service. Here is one way to solve the problem using Cloudflare's WARP service.
 
 ## What is WARP?
 Warp is a Cloudflare service that provides secure and encrypted communication over its network. After performing security checks on the target client and making sure there is no malicious behavior, it opens the connection to the Internet. It assigns an IP to that system and communicates through it. In fact, Warp is a tool that hides your server IP from the sites that your users visit. Because the IP of the server is hidden, so access is established.
 
-Warp has several levels of service, the free service of which has a traffic volume limit, and after crossing the limit, access is limited. It is better to use its special service called WARP Plus, which supports high volume. On Hiddify, it is possible to use this version of Warp, which will be explained later on how to activate it.
+Warp has several levels of service, the free service of which has a traffic volume limit, and after crossing the limit, access is limited. It is better to use its special service called WARP Plus, which supports high volume. On HiddifyManager, it is possible to use this version of Warp, which will be explained later on how to activate it.
 
 
-## Setting up WARP on Hiddify
+## Setting up WARP on HiddifyManager
 Click **Settings** in the panel sidebar and find the **WARP** card. (You can also type "WARP" in the search box at the top of the page.)
 
 <div align=center markdown=1>
@@ -72,7 +72,7 @@ You can also use the [ip.gs](https://ip.gs/) website, and if Cloudflare's IP is 
 
 ## How to reinstall WARP service?
 
-- To do this, SSH to your server; Press `Ctrl+c` or click `Cancel` to exit Hiddify menu.
+- To do this, SSH to your server; Press `Ctrl+c` or click `Cancel` to exit HiddifyManager menu.
 
 - Now run this command.
 

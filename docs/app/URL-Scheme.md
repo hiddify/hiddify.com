@@ -1,8 +1,8 @@
 ---
-title: URL scheme in HiddifyApp
+title: URL scheme in Hiddify app
 ---
 
-# URL Scheme in HiddifyApp
+# URL Scheme in Hiddify app
 We extend the protocol defined [here](https://web.archive.org/web/20230323111527/docs.cfw.lbyczf.com/contents/urlscheme.html#%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE).
 
 ## Download configuration

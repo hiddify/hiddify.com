@@ -4,10 +4,9 @@ title: Tutorial for FoXray app
 
 <div dir="ltr" markdown="1">
 
-
 # Tutorial for FoXray app
 
-This page shows you how to add your Hiddify subscription to the **FoXray** app on iPhone and iPad and how to use its main settings. FoXray comes from the team behind the WingsX app, and replaced WingsX after WingsX was removed from the App Store.
+This page shows you how to add your HiddifyManager subscription to the **FoXray** app on iPhone and iPad and how to use its main settings. FoXray comes from the team behind the WingsX app, and replaced WingsX after WingsX was removed from the App Store.
 
 !!! warning "FoXray is no longer on the App Store"
     As of October 2026, FoXray's App Store page (id6448898396) no longer exists, so you can't install it any more. If you already have it, the steps below still describe how it works. For a new install, use the **Hiddify App** ([App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532), see [How to install Hiddify App](/app/How-to-install-Hiddify-app/)) or another app from the [iOS client list](/manager/client-software-on-ios/).
@@ -15,7 +14,7 @@ This page shows you how to add your Hiddify subscription to the **FoXray** app o
 ## Before you start
 
 - FoXray already installed on your iPhone or iPad.
-- Your **user page link**. This is the link your server admin sent you. It opens your personal Hiddify page.
+- Your **user page link**. This is the link your server admin sent you. It opens your personal HiddifyManager page.
 
 A **subscription link** is one link that holds all your connection settings (configs). FoXray can refresh it later to get new settings from the server.
 
@@ -26,26 +25,20 @@ A **subscription link** is one link that holds all your connection settings (con
 3. In the **Subscription Links** section, find **Subscription link b64** and tap **Get Link**.
 4. Tap **Copy Link**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="FoXray section on an older version of the user page" src="https://github.com/hiddify/hiddify-config/assets/125398461/69e8b710-9f38-444b-a3ce-e9acef54b8c8" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="FoXray section on an older version of the user page" src="https://github.com/hiddify/hiddify-config/assets/125398461/69e8b710-9f38-444b-a3ce-e9acef54b8c8" />
 
     The screenshot shows an older version of the user page, which had an **iOS** tab. The current page looks different.
 
 5. Open FoXray and tap **Subscriptions** in the bottom menu.
 6. Tap the **+** button.
 
-    <div align=center markdown=1><img width=30% alt="The + button in Subscriptions" src="https://github.com/hiddify/hiddify-config/assets/125398461/f68c3805-989c-434d-b249-b2dea19ec332"/>
-
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="The + button in Subscriptions" src="https://github.com/hiddify/hiddify-config/assets/125398461/f68c3805-989c-434d-b249-b2dea19ec332"/>
 
 7. Type any name you like.
 8. Paste the link into the **URL** field.
 9. Tap **Subscribe**. Your configs are added to the app.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Name and URL fields" src="https://github.com/hiddify/hiddify-config/assets/125398461/f9118614-a8bf-42ae-9341-62c79fd7ffd9" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Name and URL fields" src="https://github.com/hiddify/hiddify-config/assets/125398461/f9118614-a8bf-42ae-9341-62c79fd7ffd9" />
 
 ## Update your subscription
 
@@ -84,7 +77,6 @@ We don't recommend this, because a single config can't be updated. Use it only i
 <img width=30% alt="Clipboard icon" src="https://github.com/hiddify/hiddify-config/assets/125398461/02be5d9c-3894-438e-be9b-072489033f2d" />
 </div>
 
-
 ## Test the connections
 
 First choose the test type:
@@ -101,7 +93,6 @@ Then, on the main page of the app, tap the connection test icon.
 <div align=center markdown=1>
 <img width=30% alt="Connection test icon" src="https://github.com/hiddify/hiddify-config/assets/125398461/6851f393-45a1-4cdd-ab77-d09119a99476" />
 </div>
-
 
 ## Limit memory use
 

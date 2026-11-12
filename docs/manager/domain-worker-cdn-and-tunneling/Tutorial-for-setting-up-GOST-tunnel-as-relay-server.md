@@ -6,7 +6,7 @@ title: Tutorial for setting up GOST tunnel as relay server
 
 This page shows you how to turn a server into a relay for your Hiddify Manager server using **GOST** (GO Simple Tunnel), a small open-source program that forwards ports from one server to another.
 
-A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main Hiddify server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
+A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main HiddifyManager server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
 
 <div align="center" dir="ltr" markdown="1">
 
@@ -19,7 +19,7 @@ There is also a [video tutorial in Persian](https://youtu.be/T3yfTqqQqJQ) for th
 
 - You can point the tunnel at your main server's **domain** instead of its IP, so the IP does not appear in the relay's settings.
 - It runs as a system service, so it starts again by itself after a reboot.
-- It works with any protocol Hiddify offers (VLESS, VMess, Trojan, WebSocket, gRPC and others), because it forwards raw TCP traffic. Your proxy traffic stays encrypted by the proxy protocol itself.
+- It works with any protocol HiddifyManager offers (VLESS, VMess, Trojan, WebSocket, gRPC and others), because it forwards raw TCP traffic. Your proxy traffic stays encrypted by the proxy protocol itself.
 - You can forward as many ports as you like, TCP or UDP.
 
 !!! tip "Easier option"

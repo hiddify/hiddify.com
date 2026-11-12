@@ -4,18 +4,17 @@ title: Tutorial for ShadowRocket app
 
 <div dir="ltr" markdown="1">
 
-
 # Tutorial for ShadowRocket app
 
-This page shows you how to add your Hiddify subscription to **Shadowrocket** on iPhone and iPad, and how to use its most useful settings. Shadowrocket is a paid app that works with Xray-based configs.
+This page shows you how to add your HiddifyManager subscription to **Shadowrocket** on iPhone and iPad, and how to use its most useful settings. Shadowrocket is a paid app that works with Xray-based configs.
 
 !!! tip "Recommended: Hiddify App"
-    The easiest app for a Hiddify server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
+    The easiest app for a HiddifyManager server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
 
 ## Before you start
 
 - Buy and install **Shadowrocket** from the [App Store](https://apps.apple.com/us/app/shadowrocket/id932747118).
-- Have your **user page link** ready. This is the link your server admin sent you. It opens your personal Hiddify page.
+- Have your **user page link** ready. This is the link your server admin sent you. It opens your personal HiddifyManager page.
 
 A **subscription link** is one link that holds all your connection settings (configs). Shadowrocket can refresh it later to get new settings from the server.
 
@@ -53,17 +52,13 @@ Then add it to Shadowrocket in one of two ways.
 1. Tap **Copy Link**.
 2. Open Shadowrocket and tap the **+** button in the top-right corner.
 
-    <div align=center markdown=1>
-    <img width=30% alt="The + button in Shadowrocket" src="https://github.com/hiddify/hiddify-config/assets/125398461/d116347f-31bc-4ca9-a1fc-bdb9364e5e74" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="The + button in Shadowrocket" src="https://github.com/hiddify/hiddify-config/assets/125398461/d116347f-31bc-4ca9-a1fc-bdb9364e5e74" />
 
 3. Set **Type** to **Subscribe**.
 4. Paste the link into the **URL** field.
 5. Tap **Save**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Type Subscribe and the URL field" src="https://github.com/hiddify/hiddify-config/assets/125398461/c087970e-aebc-479d-8b8a-bc54a78cc7f8" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Type Subscribe and the URL field" src="https://github.com/hiddify/hiddify-config/assets/125398461/c087970e-aebc-479d-8b8a-bc54a78cc7f8" />
 
 All your configs now load in the app.
 
@@ -71,9 +66,7 @@ All your configs now load in the app.
 
 1. On the Shadowrocket home screen, tap the scanner button.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Scanner button" src="https://github.com/hiddify/hiddify-config/assets/125398461/cee3abfe-db05-4e2c-925d-fa57010d3465" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Scanner button" src="https://github.com/hiddify/hiddify-config/assets/125398461/cee3abfe-db05-4e2c-925d-fa57010d3465" />
 
 2. Scan the QR code shown on your user page. Your configs are added to the app.
 
@@ -94,7 +87,6 @@ For more realistic results:
 <div align=center markdown=1><img width=30% alt="Test Method set to Connect" src="https://github.com/hiddify/hiddify-config/assets/125398461/8760fd19-9056-4c0c-a4a0-aeebd728656f" />
 </div>
 
-
 ## Update your subscription
 
 Tap the update icon above the configs of a subscription. The configs are updated with the latest settings from the server.
@@ -102,7 +94,6 @@ Tap the update icon above the configs of a subscription. The configs are updated
 <div align=center markdown=1>
 <img width=30% alt="Update icon above the configs" src="https://github.com/hiddify/hiddify-config/assets/125398461/0878e805-a24e-4f19-831a-f526b475db4a" />
 </div>
-
 
 ## Subscription settings
 
@@ -132,7 +123,6 @@ Turn on **Sort by ping** to list the configs by their test result, best first.
 <img width=30% alt="Sort by ping" src="https://github.com/hiddify/hiddify-config/assets/125398461/afeb9a4d-a12f-49f1-aca7-f5eae5c6bed2" />
 </div>
 
-
 ## Prevent IP leaks
 
 An **IP leak** means a website can see your real IP address even though the VPN is on.
@@ -144,7 +134,6 @@ An **IP leak** means a website can see your real IP address even though the VPN 
 <img width=30% alt="Disable STUN" src="https://github.com/hiddify/hiddify-config/assets/125398461/3bd81556-4119-4659-8db7-0826bbdbd6ee" />
 </div>
 
-
 ## Fix missing sound in some apps
 
 If some apps (for example Clubhouse) play no sound:
@@ -155,7 +144,6 @@ If some apps (for example Clubhouse) play no sound:
 <div align=center markdown=1>
 <img width=30% alt="Fingerprint setting" src="https://github.com/hiddify/hiddify-config/assets/125398461/fe7a7a27-016c-45b9-92b5-2e9427ba165a" />
 </div>
-
 
 ## Shortcuts
 
@@ -186,9 +174,7 @@ You can share your VPN with another device on the same network, for example a de
 2. Tap **Proxy Share**.
 3. Turn on **Enable Share**. The app shows an IP address and a port.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Proxy Share with IP and port" src="https://github.com/hiddify/hiddify-config/assets/125398461/d764b726-6ddd-4a5a-aa76-f9ad8165e4f1" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Proxy Share with IP and port" src="https://github.com/hiddify/hiddify-config/assets/125398461/d764b726-6ddd-4a5a-aa76-f9ad8165e4f1" />
 
 4. On the other device, open its network proxy settings and enter that IP address and port.
 
@@ -200,15 +186,11 @@ A **load balancer** spreads your traffic over several configs, so one slow or bl
 
 1. On the home screen, hold your finger on the screen and swipe down. A hidden menu opens.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Hidden menu" src="https://github.com/hiddify/hiddify-config/assets/125398461/59872f56-e9ff-4c50-85a0-65ccd488e704" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Hidden menu" src="https://github.com/hiddify/hiddify-config/assets/125398461/59872f56-e9ff-4c50-85a0-65ccd488e704" />
 
 2. Tap the **+** button.
 
-    <div align=center markdown=1>
-    <img width=30% alt="The + button for a new load balancer" src="https://github.com/hiddify/hiddify-config/assets/125398461/b67bc883-e643-465c-85dc-e6eeb719723c" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="The + button for a new load balancer" src="https://github.com/hiddify/hiddify-config/assets/125398461/b67bc883-e643-465c-85dc-e6eeb719723c" />
 
 3. Type any name.
 4. Set **Type** to **load-balance**.
@@ -216,15 +198,11 @@ A **load balancer** spreads your traffic over several configs, so one slow or bl
 6. Leave **Interval** (time between tests) and **Timeout** (how long a config may fail and still count as working) at their default values, unless you know what you need.
 7. Tap **Save**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Load balancer settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/be6e132b-d9d4-45ff-ab8a-94b72d764139" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Load balancer settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/be6e132b-d9d4-45ff-ab8a-94b72d764139" />
 
 8. Tap the new load balancer, then tap **Test**. This tests it and connects through it.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Testing the load balancer" src="https://github.com/hiddify/hiddify-config/assets/125398461/819da751-8a46-4ab3-88e2-00a5e0b3f724" />
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Testing the load balancer" src="https://github.com/hiddify/hiddify-config/assets/125398461/819da751-8a46-4ab3-88e2-00a5e0b3f724" />
 
 When you turn Shadowrocket on or off, the load balancer turns on or off with it.
 

@@ -32,14 +32,17 @@ If you don't have a domain, you can get a free subdomain from FreeDNS. The video
 
 <details markdown=1><summary>Steps to get a free subdomain from FreeDNS</summary>
 
-1. Go to [freedns.afraid.org](https://freedns.afraid.org/signup/) and create an account. You don't need to give real personal information, but the email address must be correct.
+!!! warning "FreeDNS sanctions rule"
+    Under the FreeDNS terms of use, residents of territories under U.S. sanctions (including Iran) may not use the service, and the sign-up form asks you to confirm that this does not apply to you. If it does apply to you, buy a cheap domain instead of using FreeDNS and create a subdomain for your server's IP in its DNS settings; see [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
-    ![FreeDNS sign-up page](https://user-images.githubusercontent.com/125398461/228727381-0fb49767-a5dc-4e48-a0a5-21c2bb793e73.png)
+1. Go to [freedns.afraid.org](https://freedns.afraid.org/signup/) and fill in the sign-up form: name, UserID, password and email. The email address must be correct, because the activation link is sent to it. Type the text of the security image, read and tick the two confirmation boxes at the bottom of the form, and click `Send activation email`.
+
+    ![FreeDNS sign-up page](/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/freedns-signup.webp)
 
 2. Open the email FreeDNS sent you and click the activation link.
 3. Log in, open the [domain registry](https://freedns.afraid.org/domain/registry/) and choose one of the public domains. Domains ending in `.com`, `.net` or `.org` are a good choice.
 
-    ![FreeDNS public domain list](https://user-images.githubusercontent.com/125398461/228738584-a12bacc8-9039-454b-8921-43ddee18d092.png)
+    ![FreeDNS domain registry (public domains)](/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/freedns-registry.webp)
 
 4. Enter the subdomain name you want and your server's IP address, then save.
 
@@ -53,7 +56,7 @@ These steps create a **direct** domain (it points straight to your server). To l
 
 ## Step 2: Open the admin panel
 
-How you open the panel depends on how you installed Hiddify.
+How you open the panel depends on how you installed HiddifyManager.
 
 <details markdown="1"><summary>If you used cloud-init (Hetzner, Vultr, OVH, ...)</summary>
 
@@ -106,7 +109,7 @@ hiddify reset-password
 
 You can add more domains later in **Domains → Add domain**.
 
-If something goes wrong, read [How to configure the Hiddify panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
+If something goes wrong, read [How to configure the HiddifyManager panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
 
 ## Get your connection links
 
@@ -117,7 +120,7 @@ If something goes wrong, read [How to configure the Hiddify panel properly](/man
 
 3. On the user page, tap the connect button. The **Configure Your VPN** window shows the apps you can use to connect, and **Copy Link** copies the subscription link for any other app.
 
-    <img width=260 alt="Configure Your VPN window on the user page" src="/assets/app-use/en-user-import.webp" style="display:block;margin:0 auto">
+    <img width=260 alt="Configure Your VPN window on the user page" src="/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/en-user-import-desk.webp" style="display:block;margin:0 auto">
 
 4. To see the single configs made for that user, open **All Configs** in the menu of the user page and click **Get Link** next to a config. Scan its QR code with your app, or click **Copy Link** and paste the link into it.
 
@@ -125,6 +128,6 @@ If something goes wrong, read [How to configure the Hiddify panel properly](/man
 
 We recommend [Hiddify App](/app/How-to-install-Hiddify-app/) to connect; it works on Android, iOS, Windows, macOS and Linux.
 
-This page only covers a quick start. The panel can do much more: read [How to configure the Hiddify panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) to get the most out of it.
+This page only covers a quick start. The panel can do much more: read [How to configure the HiddifyManager panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) to get the most out of it.
 
 </div>

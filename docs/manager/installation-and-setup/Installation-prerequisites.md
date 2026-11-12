@@ -43,7 +43,7 @@ Ubuntu 20.04 and older, and other Linux distributions, are not supported. Choose
 
 ## 4. Ports
 
-Hiddify needs ports **80** and **443** free; nothing else on the server should use them. If your provider has its own firewall, allow at least ports 22 (SSH), 80 and 443.
+HiddifyManager needs ports **80** and **443** free; nothing else on the server should use them. If your provider has its own firewall, allow at least ports 22 (SSH), 80 and 443.
 
 ## 5. SSH access
 

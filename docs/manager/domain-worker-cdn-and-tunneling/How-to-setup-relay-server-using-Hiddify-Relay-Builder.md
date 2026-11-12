@@ -6,7 +6,7 @@ title: How to setup relay server using Hiddify Relay Builder (all in one app)
 
 Hiddify Relay Builder is a menu-driven script that turns a fresh server into a relay server in a few steps. Use it if you want a relay but do not want to type tunnel commands by hand.
 
-A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main Hiddify server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
+A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main HiddifyManager server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
 
 The script can build the tunnel between the relay and the main server with these methods (a **tunnel** here simply means "a way to pass traffic from one server to the other"):
 

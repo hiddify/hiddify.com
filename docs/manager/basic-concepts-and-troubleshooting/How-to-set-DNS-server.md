@@ -6,7 +6,7 @@ title: How to set DNS server on HiddifyManager
 
 # How to set DNS server
 
-This page shows you how to choose the DNS server that your Hiddify server uses, and how to check that DNS works. You need it if sites don't open through your proxy, or if a DNS leak test shows the wrong DNS servers.
+This page shows you how to choose the DNS server that your HiddifyManager server uses, and how to check that DNS works. You need it if sites don't open through your proxy, or if a DNS leak test shows the wrong DNS servers.
 
 **DNS** (Domain Name System) turns names into IP addresses. For example, when you open `google.com`, your device first asks a DNS server "what is the IP of google.com?". The DNS server answers with the IP address, and only then does your device connect to the site.
 
@@ -38,7 +38,7 @@ The fix is one or both of the methods below.
 
 The panel's **DNS Server** setting is the DNS server that the server and its proxies use to look up sites for your users. When you change it, the server's own system DNS changes with it. The default is `1.1.1.1` (Cloudflare).
 
-1. Log in to your Hiddify admin panel.
+1. Log in to your HiddifyManager admin panel.
 2. In the sidebar, under **Settings**, click **Settings**.
 3. **DNS Server** is an advanced setting, so turn on the **Show Advanced Settings** switch at the top of the page. Then type `DNS Server` in the search box (**Search all settings…**). The setting is the first row of the **General Settings** card, with the **Advanced** label.
 4. Open the **DNS Server** list and pick a public DNS, for example **Cloudflare** `1.1.1.1`. To use a DNS server that is not in the list, choose **Custom** and enter its address.
@@ -52,9 +52,9 @@ The panel's **DNS Server** setting is the DNS server that the server and its pro
 
 ## Method 2: set the server's own DNS over SSH
 
-The server's operating system also uses a DNS server, for example to download updates. On Ubuntu, Hiddify uses the `systemd-resolved` service for this. Method 1 already changes it, but if the server's DNS doesn't work (for example, you can't open the panel), set it with the script that comes with Hiddify (the installer uses the same script).
+The server's operating system also uses a DNS server, for example to download updates. On Ubuntu, HiddifyManager uses the `systemd-resolved` service for this. Method 1 already changes it, but if the server's DNS doesn't work (for example, you can't open the panel), set it with the script that comes with HiddifyManager (the installer uses the same script).
 
-1. [Connect to your server over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the Hiddify menu opens, press `Ctrl+C` to leave it.
+1. [Connect to your server over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/). If the HiddifyManager menu opens, press `Ctrl+C` to leave it.
 2. Run this command on your server. It sets the DNS servers to `8.8.8.8` and `1.1.1.1`:
 
     ```bash
@@ -64,7 +64,7 @@ The server's operating system also uses a DNS server, for example to download up
 3. When it finishes, the last line should say `DNS servers set to 8.8.8.8 and 1.1.1.1`.
 
 !!! warning "Don't delete or lock `/etc/resolv.conf`"
-    Older guides told you to delete `/etc/resolv.conf`, write it by hand, and lock it with `chattr +i`. Don't do this on a current Hiddify server. On Ubuntu this file is managed by `systemd-resolved`, and locking it can stop Hiddify's installer from repairing DNS. If you locked it before, unlock it with `sudo chattr -i /etc/resolv.conf`.
+    Older guides told you to delete `/etc/resolv.conf`, write it by hand, and lock it with `chattr +i`. Don't do this on a current HiddifyManager server. On Ubuntu this file is managed by `systemd-resolved`, and locking it can stop HiddifyManager's installer from repairing DNS. If you locked it before, unlock it with `sudo chattr -i /etc/resolv.conf`.
 
 ## Check DNS on the server
 

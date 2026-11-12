@@ -18,12 +18,12 @@ You need:
 - A way to connect to the server over **SSH** (a secure way to type commands on a remote server). See [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 
 !!! warning "Use a dedicated server"
-    Install Hiddify only on a server that does nothing else. Hiddify changes the server's settings and uses ports 80 and 443, so it can break other services (websites, other panels, other VPNs) on the same server. Hiddify is also not designed for servers shared with other users or applications.
+    Install HiddifyManager only on a server that does nothing else. HiddifyManager changes the server's settings and uses ports 80 and 443, so it can break other services (websites, other panels, other VPNs) on the same server. HiddifyManager is also not designed for servers shared with other users or applications.
 
 ## Installation video
 
 <div align=center markdown=1>
-<a href="https://www.youtube.com/watch?v=XSwCE35lqmU"><img width="32%" src="https://user-images.githubusercontent.com/125398461/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png" alt="Video: How to install Hiddify panel on Ubuntu using SSH" /></a>
+<a href="https://www.youtube.com/watch?v=XSwCE35lqmU"><img width="32%" src="https://user-images.githubusercontent.com/125398461/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png" alt="Video: How to install HiddifyManager panel on Ubuntu using SSH" /></a>
 
 </div>
 
@@ -60,12 +60,12 @@ If the installation fails, the installer shows `Installation Failed!` with an er
 !!! note "Other ways to install"
     - Install on a cloud provider without SSH: [Cloud-init installation](/manager/installation-and-setup/Cloud-init-installation/).
     - Install a beta, development or specific version: [Installing different versions](/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/).
-    - Install with Docker (experimental): [Install Hiddify using Docker](/manager/installation-and-setup/Install-Hiddify-using-Docker/).
+    - Install with Docker (experimental): [Install HiddifyManager using Docker](/manager/installation-and-setup/Install-Hiddify-using-Docker/).
 
 ## After installation
 
 Next, you open the panel and set your domain. Follow [Setting up the domain and finalizing the installation](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/).
 
-To get the most out of the panel, read [How to configure the Hiddify panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
+To get the most out of the panel, read [How to configure the HiddifyManager panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/).
 
 </div>

@@ -29,7 +29,7 @@ https://sub.example.com/DrtGho0n4b8H9D/8bncvfb5-8193-vv76-ab97-4c35965l250m/
 https://<domain>/<admin proxy path>/<admin UUID>/
 ```
 
-![بخش‌های لینک ادمین](https://user-images.githubusercontent.com/125398461/230101702-4c15ce6d-ced7-4e07-83ea-b505fc725b60.png)
+![بخش‌های لینک ادمین](/assets/manager/The-correct-format-of-admin-link/fa-link-parts.webp)
 
 </div>
 
@@ -50,13 +50,9 @@ https://<domain>/<admin proxy path>/<admin UUID>/
 1. لینک ادمین را در مرورگر باز می‌کنید.
 2. پنل شما را وارد می‌کند و **Admin V2** یعنی پنل مدیریت جدید را باز می‌کند. آدرس مرورگر به این شکل تغییر می‌کند:
 
-    <div dir="ltr" markdown="1">
-
     ```text
     https://sub.example.com/DrtGho0n4b8H9D/admin/v2/
     ```
-
-    </div>
 
     UUID از نوار آدرس حذف می‌شود تا روی صفحه نمایش داده نشود.
 
@@ -71,16 +67,12 @@ https://<domain>/<admin proxy path>/<admin UUID>/
 ساده‌ترین راه این است که لینک کامل ادمین را دوباره باز کنید. شناسه شما خودکار پر می‌شود.
 
 <div align=center>
-  <img alt="صفحه ورود ادمین" src="/assets/manager/The-correct-format-of-admin-link/en-sign-in.webp" width=40% />
+ <img alt="صفحه ورود ادمین" src="/assets/manager/The-correct-format-of-admin-link/fa-sign-in.webp" width=40% style="display:block;margin:0 auto" />
 </div>
 
-تصویر زیر فرمت قدیمی لینک کوتاه را نشان می‌دهد که قبل از Admin V2 استفاده می‌شد.
+بعد از باز کردن لینک، پنل **Admin V2** را باز می‌کند و آدرس مرورگر این شکلی می‌شود. UUID دیگر در آدرس نیست:
 
-<div dir="ltr" markdown="1">
-
-![فرمت قدیمی لینک کوتاه (قبل از Admin V2)](https://github.com/hiddify/hiddify.com/assets/125398461/c52bd330-65ee-4c83-b7c7-ddd05f32e6a8)
-
-</div>
+![آدرس Admin V2 در مرورگر بعد از باز کردن لینک ادمین](/assets/manager/The-correct-format-of-admin-link/fa-admin-v2-address.webp)
 
 ## اگر لینک ادمین را گم کردید
 

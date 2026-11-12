@@ -134,7 +134,7 @@ weight: -2
     </li>
     <li>
         <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/" target="_blank">
-        تنظیمات ریالیتی در هیدیفای‌منیجر</a>
+        تنظیمات ریالتی در هیدیفای‌منیجر</a>
     </li>
 
 
@@ -169,11 +169,11 @@ weight: -2
         </li>
         <li>
         <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/" target="_blank">
-            نحوه استفاده از چندین زیردامنه یک وبسایت در ریالیتی</a>
+            نحوه استفاده از چندین زیردامنه یک وبسایت در ریالتی</a>
         </li>
         <li>
         <a href="https://github.com/hiddify/Hiddify-Reality-Scanner/blob/main/README_fa.md" target="_blank">
-            آموزش استفاده از اسکنر ریالیتی هیدیفای</a>
+            آموزش استفاده از اسکنر ریالتی هیدیفای</a>
         </li>
     </div>
     </ul>

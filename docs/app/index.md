@@ -114,6 +114,13 @@ For the full feature list, see the <a
               <h1 class="text-secondaryText title-font text-base">Related videos (in Persian)</h1>
             </div>
             <div class="flex flex-col gap-3 md:gap-1">
+            <a href="https://www.youtube.com/watch?v=HOF6NJa55SI" title="هیدیفای روی تلویزیون اندروید 📺 لینک رو فقط با دوربین گوشی بفرست، بدون تایپ با کنترل">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/HOF6NJa55SI.jpg" alt="هیدیفای روی تلویزیون اندروید 📺 لینک رو فقط با دوربین گوشی بفرست، بدون تایپ با کنترل"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             <a href="https://www.youtube.com/watch?v=NGP_uC8edJI" title="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux">
               <div class="relative p-2 flex justify-center items-center">
                 <img src="/assets/youtube/NGP_uC8edJI.jpg" alt="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux"
@@ -121,9 +128,44 @@ For the full feature list, see the <a
                 <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
               </div>
             </a>
-              <a href="https://www.youtube.com/watch?v=vUaA1AEUy1s">
+            <a href="https://www.youtube.com/watch?v=UsOrJ9wMUMo" title="آموزش کامل اپ هیدیفای نسخهٔ ۵ روی همهٔ دستگاه‌ها 📱💻 اندروید، آیفون، ویندوز، مک و لینوکس">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/UsOrJ9wMUMo.jpg" alt="آموزش کامل اپ هیدیفای نسخهٔ ۵ روی همهٔ دستگاه‌ها 📱💻 اندروید، آیفون، ویندوز، مک و لینوکس"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=ywxx5AzQl-s" title="اینترنت آزاد رایگان با Hiddify! بدون نیاز به خرید VPN!">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/ywxx5AzQl-s.jpg" alt="اینترنت آزاد رایگان با Hiddify! بدون نیاز به خرید VPN!"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=jrvQD5xo6PU" title="🚀 آموزش HiddifyCli برای سرورها و محیط‌های بدون دسکتاپ – سریع و آسان! 🔥">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/jrvQD5xo6PU.jpg" alt="🚀 آموزش HiddifyCli برای سرورها و محیط‌های بدون دسکتاپ – سریع و آسان! 🔥"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Br3lIHIaUVc" title="ساخت کانفیگ رایگان وارپ به صورت حرفه‌ای">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/Br3lIHIaUVc.jpg" alt="ساخت کانفیگ رایگان وارپ به صورت حرفه‌ای"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Xv_7TDo80k4" title="فیلترشکن رایگان هیدیفای">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/Xv_7TDo80k4.jpg" alt="فیلترشکن رایگان هیدیفای"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+              <a href="https://www.youtube.com/watch?v=NtQ0bQlIRrY">
                 <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/install_HiddifyApp.png" alt="Video: installing Hiddify on Windows"
+                  <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="Video: advanced settings in the Hiddify app"
                     class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                   <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
                 </div>
@@ -135,13 +177,90 @@ For the full feature list, see the <a
                   <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
                 </div>
               </a>
-              <a href="https://www.youtube.com/watch?v=NtQ0bQlIRrY">
+              <a href="https://www.youtube.com/watch?v=vUaA1AEUy1s">
                 <div class="relative p-2 flex justify-center items-center">
-                  <img src="/assets/advanced_setting_HiddifyApp.jpg" alt="Video: advanced settings in the Hiddify app"
+                  <img src="/assets/install_HiddifyApp.png" alt="Video: installing Hiddify on Windows"
                     class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" />
                   <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
                 </div>
               </a>
+            <a href="https://www.youtube.com/watch?v=qDbI72J-INM" title="راهنمای استفاده از اپ HiddifyNG">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/qDbI72J-INM.jpg" alt="راهنمای استفاده از اپ HiddifyNG"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg" title="Tutorial for Hiddify Clash Desktop">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/L1VxAcG_7jg.jpg" alt="Tutorial for Hiddify Clash Desktop"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs" title="Tutorial for HiddifyN software">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/Jnnx1VWMlEs.jpg" alt="Tutorial for HiddifyN software"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=omGIz97mbzM" title="آموزش کامل نرم‌افزار هیدیفای کلش دسکتاپ">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/omGIz97mbzM.jpg" alt="آموزش کامل نرم‌افزار هیدیفای کلش دسکتاپ"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Pqactnz_PdU" title="معرفی برنامه HiddifyNG">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/Pqactnz_PdU.jpg" alt="معرفی برنامه HiddifyNG"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=qT43zDPev6o" title="HiddifyNG introduction">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/qT43zDPev6o.jpg" alt="HiddifyNG introduction"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=o9L2sI2T53Q" title="HiddifyN آموزش کار با نرم‌افزار دسکتاپ">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/o9L2sI2T53Q.jpg" alt="HiddifyN آموزش کار با نرم‌افزار دسکتاپ"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ" title="Tutorial for HiddifyNG (Xray based client app)">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/hVcWJ8Qg1GQ.jpg" alt="Tutorial for HiddifyNG (Xray based client app)"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=7B0PO3HM6Vg" title="آموزش کار با نرم‌افزار HiddifyNG">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/7B0PO3HM6Vg.jpg" alt="آموزش کار با نرم‌افزار HiddifyNG"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=mUTfYd1_UCM" title="Tutorial for Hiddify android (Clash-based app)">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/mUTfYd1_UCM.jpg" alt="Tutorial for Hiddify android (Clash-based app)"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=8P887E-KMls" title="آموزش استفاده از نرم‌افزار هیدیفای اندروید (نسخه بر پایه کِلش)">
+              <div class="relative p-2 flex justify-center items-center">
+                <img src="/assets/youtube/8P887E-KMls.jpg" alt="آموزش استفاده از نرم‌افزار هیدیفای اندروید (نسخه بر پایه کِلش)"
+                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />
+                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />
+              </div>
+            </a>
             </div>
           </div>
         </div>

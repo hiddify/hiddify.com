@@ -6,7 +6,7 @@ title: Tutorial for setting up IP-Table tunnel as relay server
 
 This page shows you how to turn a server into a relay for your Hiddify Manager server using IP-Tables, the firewall built into Linux. It is the simplest method: one script, no extra software to keep running.
 
-A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main Hiddify server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
+A **relay server** is a second server, usually inside your own country, that your users connect to. It forwards their traffic to your main HiddifyManager server abroad. This helps when the main server's IP is blocked or slow from your country. [Read more about relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/#what-is-a-relay-server-and-why-use-one).
 
 <div align=center markdown="1">
 

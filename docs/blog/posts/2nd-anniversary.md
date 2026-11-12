@@ -141,8 +141,8 @@ Later, in addition to previous protocols like Vless, Vmess, Trojan, Reality, gRP
 
 ## Hiddify's First Anniversary
 
-### Start of HiddifyApp Multi-Platform Development
-On the client side, we started developing the cross-platform [HiddifyApp for Android, Windows, Linux, and Mac in October 2023](https://app.hiddify.com/), in honor of our first anniversary.
+### Start of Hiddify app Multi-Platform Development
+On the client side, we started developing the cross-platform [Hiddify app for Android, Windows, Linux, and Mac in October 2023](https://app.hiddify.com/), in honor of our first anniversary.
 
 
 Our goal was to make it easy for developers to implement new protocols across all platforms and ensure consistency between systems.

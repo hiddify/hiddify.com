@@ -4,21 +4,20 @@ title: Tutorial for SingBox app
 
 <div dir="ltr" markdown="1">
 
-
 # Tutorial for SingBox app
 
-This page shows you how to add your Hiddify subscription to the official **sing-box** app on iPhone and iPad, and how to connect. It is for users of a Hiddify Manager server who want to use sing-box instead of the Hiddify App.
+This page shows you how to add your HiddifyManager subscription to the official **sing-box** app on iPhone and iPad, and how to connect. It is for users of a Hiddify Manager server who want to use sing-box instead of the Hiddify App.
 
 !!! warning "This page used to be about the SSH proxy"
-    Older versions of this page showed how to add the Hiddify panel's **SSH proxy** to sing-box. The SSH proxy service was removed in Hiddify Manager v13, so that part no longer applies. The steps below add your normal Hiddify subscription instead.
+    Older versions of this page showed how to add the HiddifyManager panel's **SSH proxy** to sing-box. The SSH proxy service was removed in Hiddify Manager v13, so that part no longer applies. The steps below add your normal HiddifyManager subscription instead.
 
 !!! tip "Recommended: Hiddify App"
-    The easiest app for a Hiddify server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
+    The easiest app for a HiddifyManager server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
 
 ## Before you start
 
 - An iPhone or iPad with iOS 15 or later.
-- Your **user page link**. This is the link your server admin sent you. It opens your personal Hiddify page, where your subscription links are.
+- Your **user page link**. This is the link your server admin sent you. It opens your personal HiddifyManager page, where your subscription links are.
 
 A **subscription link** is one link that holds all your connection settings (configs). The app can refresh it later to get new settings from the server.
 
@@ -47,33 +46,21 @@ If the app doesn't open, use the manual way below.
 3. Tap **Copy Link**.
 4. Open the sing-box app and go to the **Profiles** menu.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Profiles menu in sing-box" src="https://github.com/hiddify/hiddify-config/assets/125398461/816fbc46-21c2-4109-b2c9-3d9529a5a0ce" />
-
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Profiles menu in sing-box" src="https://github.com/hiddify/hiddify-config/assets/125398461/816fbc46-21c2-4109-b2c9-3d9529a5a0ce" />
 
 5. Tap **New Profile**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="New Profile button" src="https://github.com/hiddify/hiddify-config/assets/125398461/b9651f36-24db-437e-9a7d-80c2d4a7622a" />
-
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="New Profile button" src="https://github.com/hiddify/hiddify-config/assets/125398461/b9651f36-24db-437e-9a7d-80c2d4a7622a" />
 
 6. Set **Type** to **Remote**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Type set to Remote" src="https://github.com/hiddify/hiddify-config/assets/125398461/e68609dd-d294-44cf-8404-7f6e7091d61e" />
-
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Type set to Remote" src="https://github.com/hiddify/hiddify-config/assets/125398461/e68609dd-d294-44cf-8404-7f6e7091d61e" />
 
 7. Type any name you like in the **Name** field.
 8. Paste the link you copied into the **URL** field.
 9. Tap **Create**.
 
-    <div align=center markdown=1>
-    <img width=30% alt="Name and URL fields" src="https://github.com/hiddify/hiddify-config/assets/125398461/603f8676-b0cf-4e0d-b31a-b272bd6adc03" />
-
-    </div>
+    <img style="display:block;margin:0 auto" width=30% alt="Name and URL fields" src="https://github.com/hiddify/hiddify-config/assets/125398461/603f8676-b0cf-4e0d-b31a-b272bd6adc03" />
 
 The profile now appears in the list of profiles.
 

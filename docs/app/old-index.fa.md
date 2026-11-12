@@ -4,10 +4,10 @@ title: راهنمای اپ
 comments: false
 weight: -1
 ---
-# :material-home: راهنمای هیدیفای‌اپ
-هیدیفای‌اپ یک کلاینت مالتی‌پلتفرم مبتنی بر [سینگ‌باکس](https://github.com/SagerNet/sing-box) که به عنوان یک ابزار عمومی برای پروکسی عمل می‌کند و با دارا بودن قابلیت‌های فراوان از پروتکل‌های زیادی برای دور زدن محدودیت‌های اینترنتی پشتیبانی می‌کند. اطلاعات بیشتر و دقیق‌تر را در [اینجا](https://github.com/hiddify/hiddify-next/blob/main/README_fa.md) ملاحظه فرمایید. این صفحه شامل مطالب آموزشی مرتبط به این برنامه می‌باشد.
+# :material-home: راهنمای اپ هیدیفای
+اپ هیدیفای یک کلاینت مالتی‌پلتفرم مبتنی بر [سینگ‌باکس](https://github.com/SagerNet/sing-box) که به عنوان یک ابزار عمومی برای پروکسی عمل می‌کند و با دارا بودن قابلیت‌های فراوان از پروتکل‌های زیادی برای دور زدن محدودیت‌های اینترنتی پشتیبانی می‌کند. اطلاعات بیشتر و دقیق‌تر را در [اینجا](https://github.com/hiddify/hiddify-next/blob/main/README_fa.md) ملاحظه فرمایید. این صفحه شامل مطالب آموزشی مرتبط به این برنامه می‌باشد.
 
-## هیدیفای‌اپ
+## اپ هیدیفای
 
 <div class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
@@ -18,22 +18,22 @@ weight: -1
 
     <ul class="my-4 list-disc text-secondary ml-5">
     <li>
-        <a href="/fa/app/How-to-install-Hiddify-app/" target="_blank">آموزش نصب هیدیفای‌اپ</a>
+        <a href="/fa/app/How-to-install-Hiddify-app/" target="_blank">آموزش نصب اپ هیدیفای</a>
     </li>
     <li>
-        <a href="/fa/app/How-to-use-Hiddify-app/" target="_blank">آموزش کار با هیدیفای‌اپ</a>
+        <a href="/fa/app/How-to-use-Hiddify-app/" target="_blank">آموزش کار با اپ هیدیفای</a>
     </li>
     <li>
         <a href="/fa/app/HiddifyCli-guide/" target="_blank">آموزش استفاده از HiddifyCli یا هیدیفای‌کامندلاین</a>
     </li>
     <li>
-        <a href="/fa/app/How-to-use-UDP-Turn-Relay/" target="_blank">آموزش استفاده از UDP Turn Relay در هیدیفای‌اپ</a>
+        <a href="/fa/app/How-to-use-UDP-Turn-Relay/" target="_blank">آموزش استفاده از UDP Turn Relay در اپ هیدیفای</a>
     </li>
     <li>
         <a href="/fa/app/How-to-contribute-to-this-project/" target="_blank">چگونه می‌توان در این پروژه همکاری نمود</a>
     </li>
     <li>
-        <a href="/app/URL-Scheme/" target="_blank">ساختار لینک‌ها در هیدیفای‌اپ</a>
+        <a href="/app/URL-Scheme/" target="_blank">ساختار لینک‌ها در اپ هیدیفای</a>
     </li>
     </ul>
 

@@ -8,13 +8,13 @@ title: How to change SSH port on your server
 
 This page shows you how to move SSH from the default port 22 to another port on an Ubuntu server. Bots scan port 22 all day, so a different port means far fewer automated login attempts. It does not replace [turning off password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/), which is the more important step.
 
-A **port** is a numbered door on your server. Each service listens on its own port: SSH uses 22 by default, and Hiddify uses 80 and 443.
+A **port** is a numbered door on your server. Each service listens on its own port: SSH uses 22 by default, and HiddifyManager uses 80 and 443.
 
 ## Before you start
 
 - You can connect to your server over SSH. See [How to connect to the server via SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/).
 - Choose a new port number between 1024 and 65535 that nothing else uses. This page uses `2222` as the example; replace it with your own number everywhere.
-- Do not choose 80, 443, 53 or any port that Hiddify uses for proxies.
+- Do not choose 80, 443, 53 or any port that HiddifyManager uses for proxies.
 
 !!! warning "Keep your current SSH window open"
     Do every step in one SSH window and keep it open until you have logged in on the new port from a second window. If something goes wrong, the open window is your way back in.
@@ -95,7 +95,7 @@ Run all commands **on your server, over SSH**.
     sudo rm /etc/ssh/sshd_config.d/01-port.conf
     ```
 
-!!! note "Hiddify firewall"
-    When the **Firewall** setting is on in the Hiddify panel, Hiddify keeps port 22 open and opens the ports Hiddify needs. The rule you added in step 1 keeps your new SSH port open as well. See [How to set up the firewall on the Hiddify panel](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/).
+!!! note "HiddifyManager firewall"
+    When the **Firewall** setting is on in the HiddifyManager panel, HiddifyManager keeps port 22 open and opens the ports HiddifyManager needs. The rule you added in step 1 keeps your new SSH port open as well. See [How to set up the firewall on the HiddifyManager panel](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/).
 
 </div>

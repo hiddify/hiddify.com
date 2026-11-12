@@ -23,6 +23,9 @@ core-docs:
 	python3 scripts/sync_core_docs.py $(SINGBOX)
 
 # Instagram-style page (docs/instagram): add every YouTube channel video that is not there yet (needs yt-dlp)
+youtube: instagram
+	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/youtube_sections.py
+
 instagram:
 	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/instagram_page.py
 

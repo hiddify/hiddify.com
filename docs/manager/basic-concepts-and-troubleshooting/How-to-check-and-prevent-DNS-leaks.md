@@ -80,7 +80,7 @@ In other apps, look for a similar DNS setting and set it to a trusted public DNS
 
 On the server side, see [How to disable IP version 6 on HiddifyManager](/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/).
 
-### 3. Set a trusted DNS server on your Hiddify server
+### 3. Set a trusted DNS server on your HiddifyManager server
 
 Your server also needs a working, trusted DNS server. In HiddifyManager you can set it in the panel. See [How to set DNS server on HiddifyManager](/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/) for the steps and for how to test DNS on the server.
 

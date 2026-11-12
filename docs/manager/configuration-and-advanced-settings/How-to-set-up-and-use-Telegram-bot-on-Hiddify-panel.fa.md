@@ -21,36 +21,26 @@ weight: -130
 
 1. تلگرام را باز کنید و `@BotFather` را جستجو کنید. این بات رسمی تلگرام برای ساختن بات است.
 
-    <div align=center markdown=1>
     ![BotFather در جستجوی تلگرام](https://user-images.githubusercontent.com/125398461/235900298-c2251db5-2b14-4a45-b4c3-1b1c857a64b4.png)
-    </div>
 
 2. روی **Start** بزنید.
 
-    <div align=center markdown=1>
     ![استارت BotFather](https://user-images.githubusercontent.com/125398461/235900621-1d8143fa-a56d-4c01-9f7c-3b96b1772191.png)
-    </div>
 
 3. دستور `/newbot` را بفرستید (یا از منو انتخاب کنید).
 
-    <div align=center markdown=1>
     ![دستور newbot](https://user-images.githubusercontent.com/125398461/235900712-3f6cb0c2-4107-473c-affa-5af47ff1f2d0.png)
-    </div>
 
 4. یک نام برای بات بفرستید. سپس یک نام کاربری منحصربه‌فرد برای آن بفرستید.
 
-    <div align=center markdown=1>
     ![انتخاب نام و نام کاربری بات](https://user-images.githubusercontent.com/125398461/235904011-8d51583c-3c39-4a88-99c5-ee71d0016631.png)
-    </div>
 
     - نام کاربری باید به `bot` ختم شود (مثلاً `my_vpn_bot`).
     - استفاده از `_` در نام کاربری مجاز است.
 
 5. حالا BotFather یک **توکن** برای شما می‌فرستد: یک کد طولانی مثل `123456789:AA...`. آن را کپی کنید. توکن را به کسی ندهید: هر کس توکن را داشته باشد می‌تواند بات شما را کنترل کند.
 
-    <div align=center markdown=1>
     ![توکن بات](https://user-images.githubusercontent.com/125398461/235904260-f6f582d3-f4e6-4829-951b-0f4f7540f4a0.png)
-    </div>
 
 ## مرحله ۲: وارد کردن توکن در پنل
 
@@ -60,9 +50,7 @@ weight: -130
 4. توکنی که کپی کرده‌اید را در آن بچسبانید.
 5. روی **ذخیره** کلیک کنید.
 
-    <div align=center markdown=1>
     ![فیلد توکن ربات تلگرام](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/fa-token.webp)
-    </div>
 
 اگر درست انجام شده باشد، پنل پیام «ربات تلگرام متصل شد: ‎@نام_کاربری_بات» را نشان می‌دهد و گزینه **بات تلگرام** در منوی کناری زیر **تنظیمات** ظاهر می‌شود.
 
@@ -98,22 +86,16 @@ weight: -130
 1. روی **➕ کاربر جدید** بزنید.
 2. حجم بسته را انتخاب کنید.
 
-    <div align=center markdown=1>
     ![انتخاب حجم](https://user-images.githubusercontent.com/125398461/235907850-1e613a61-6506-45a5-bc8c-eda7a718048c.png)
     ![بسته ۴ گیگابایتی انتخاب شده](https://user-images.githubusercontent.com/125398461/235908017-f4c5b463-c40e-4524-a08d-90e7f7e395c2.png)
-    </div>
 
 3. مدت بسته (تعداد روز) را انتخاب کنید.
 
-    <div align=center markdown=1>
     ![انتخاب تعداد روز](https://user-images.githubusercontent.com/125398461/225084209-6924f927-94d8-4f9a-8fe0-a459aafac120.png)
-    </div>
 
 4. تعداد کاربرانی که با این مشخصات ساخته شوند را انتخاب کنید.
 
-    <div align=center markdown=1>
     ![انتخاب تعداد کاربر](https://user-images.githubusercontent.com/125398461/235908369-39e536f7-150d-4498-828b-b8861089d7b1.png)
-    </div>
 
 5. اختیاری: روی **✏️ نام** بزنید و یک نام برای کاربر بفرستید.
 6. روی **✅ ساختن** بزنید.
