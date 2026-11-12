@@ -1,152 +1,115 @@
 ---
 title: How to setup and use Cloudflare workers (Manual way)
+description: Make a Cloudflare Worker that passes requests on to your HiddifyManager server, and add its address to the panel as a CDN domain.
 ---
 
 <div dir="ltr" markdown="1">
 
-
 # How to set up and use Cloudflare workers (Manual way)
-Workers is one of Cloudflare's famous CDN services, which is actually a server-less service, through which programming codes can be executed without the need for server or infrastructure configuration. In fact, this service is a type of cloud computing based on SaaS.
 
-In other words, the working method of Workers is that instead of trying to open your website (here Hidify panel) directly; You send requests to workers and then workers re-send requests to your domain and server.
+## What are Workers?
 
-![](https://user-images.githubusercontent.com/125398461/224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.png)
+Cloudflare Workers runs a small piece of code on Cloudflare's servers. In this tutorial the worker takes your users' requests and sends them on to your HiddifyManager server. Users only see the worker's address; your server's domain and IP stay hidden behind it.
 
-The purpose here is to hide the domain behind the workers.
+![The user connects to the worker and the worker sends the request to the server](https://user-images.githubusercontent.com/125398461/224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.png)
 
-## How to use a Workers?
-To use a Worker you need to have an active domain on the Cloudflare.
+!!! note "Free plan limit"
+    On Cloudflare's free plan, Workers handle 100,000 requests a day. This is not enough for a server with many users.
 
-## Domain and subdomain registration on Cloudflare
-Here you need a purchased domain and you need to register it in the Cloudflare. If you have any ambiguity about the domain and how it is registered; Read [this](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
+## 1. Requirements on Cloudflare
 
-Sign in to your account in your account according to the description of how to register your domain.
+1. Have an active domain on Cloudflare. If you don't, see [How to use Cloudflare CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/).
+2. Make a subdomain for your server (for example `sub.yourdomain.com`): in **DNS** > **Records**, an `A` record with your server's IP. The worker works with this record's proxy on or off.
+3. In **SSL/TLS** > **Overview**, set the encryption mode to **Full**.
+4. Add the same subdomain to your HiddifyManager panel as a domain, so the panel gets a certificate for it.
 
-![](https://user-images.githubusercontent.com/125398461/224561629-dd0be4b5-9345-43b7-aa81-a3bfaaaf5899.png)
+## 2. Make the worker
 
-Enter the registered domain and register a new subdomain in the DNS section.
+1. In the Cloudflare dashboard side menu, open **Compute** > **Workers & Pages**.
 
-![](https://user-images.githubusercontent.com/125398461/224561952-cbb99885-46f7-49e2-874d-f48e5b0c9b0d.png)
+    <img style="display:block;margin:0 auto" width=700 alt="Compute menu and Workers & Pages in the Cloudflare dashboard" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-menu.webp">
 
-There is no need for the proxy to be `ON`. The Worker works with both proxy modes (ON and OFF).
+2. Click **Create application**. This page also shows the free plan's daily quota (100,000 requests).
 
+    <img style="display:block;margin:0 auto" width=700 alt="Workers & Pages page and the Create application button" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-list.webp">
 
-![](https://user-images.githubusercontent.com/125398461/236729724-3c4c85e9-046b-4285-9d92-4bc4d9506091.png)
+3. Choose **Start with Hello World!**.
 
-After registering a sub domain, you must change certificate settings.
+    <img style="display:block;margin:0 auto" width=600 alt="Start with Hello World! on the Create an app page" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-create.webp">
 
-## Setting up domain certificate
-Set the certificate setting of your domain to `Full`.
+4. In **Worker name**, type a name for the worker (for example `hiddify-worker`). The worker's address is made from it: `worker-name.account-subdomain.workers.dev`. Then click **Deploy**.
 
-<div align=center markdown=1>
-   
-![](https://user-images.githubusercontent.com/125398461/235835085-8d9c9ea5-16f2-4782-bfa2-4cc010d7367c.png)
-</div>
+    <img style="display:block;margin:0 auto" width=600 alt="Worker name field and the Deploy button" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-name.webp">
 
-## Creating Worker service
-Go to the Worker section on your dashboard page on Cloudflare.
+5. The worker's page opens with its `workers.dev` address at the top. Click **Edit code** to open the code editor.
 
-![](https://user-images.githubusercontent.com/125398461/224562657-f433fff0-d4a1-4fe6-95e0-5f4e17337c3d.png)
+    <img style="display:block;margin:0 auto" width=700 alt="Worker page with its workers.dev address and the Edit code button" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-overview.webp">
 
-Then select the `Create a Service` option.
+6. In the editor, delete all the default code in `worker.js` and put this code in its place:
 
-![](https://user-images.githubusercontent.com/125398461/224562813-20dc1a02-8d93-446b-a7d9-d90fbae3cda3.png)
+    ```js
+    addEventListener(
+       "fetch", event => {
 
-Here you can choose the name of your Worker service. Cloudflare also offers you a name. You can change it, but note that this name should be unique.
+           const ip = event.request.headers.get('cf-connecting-ip') || event.request.headers.get('x-forwarded-for') || (event.request.socket && event.request.socket.remoteAddress);
+           let url = new URL(event.request.url);
+           const worker_domain=url.hostname;
+           url.hostname = "sub.yourdomain.com";
+           url.protocol = event.request.headers.get('x-forwarded-proto') || "https";
+           let request = new Request(url, event.request);
+           if (ip)
+            request.headers.set('cf-connecting-ip', ip);
+            request.headers.set('Host', worker_domain);
+           event.respondWith(
+               fetch(request)
+           )
+       }
+    )
+    ```
 
-![Picture](https://user-images.githubusercontent.com/125398461/236729831-7ecba946-b031-46c1-b370-0df1dae47385.png)
+7. On line 7, replace `sub.yourdomain.com` with your server's subdomain from step 1.
+8. Click **Deploy** above the editor. **Version saved** means the code is saved and published.
 
-The `Starter` option should be also on `HTTP Handler`. Finally, by selecting the `Create service`, your Worker service will be created.
+    <img style="display:block;margin:0 auto" width=700 alt="Worker code editor: line 7 with the server domain, and the Deploy button" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-code.webp">
 
-Then you need to click the `Quick Edit` button to put your favorite code in the Worker.
+!!! tip "Errors in the preview"
+    If the editor's preview pane (on the right) shows an error, don't worry: publish the code.
 
+!!! info "Code format"
+    This code uses the older Workers format (`addEventListener`). Cloudflare still supports it, but has marked it deprecated and recommends the newer Module format.
 
-![Imgage](https://user-images.githubusercontent.com/125398461/236729939-ca4f2378-91a2-447f-80fd-9f1ff79f83fe.png)
+## 3. The worker's address
 
+You can see the worker's `workers.dev` address on the worker's **Domains** tab, under **Worker URL**. It is better to give the worker a custom domain on your own domain instead, because `workers.dev` addresses can be blocked:
 
-On the editing page of the Worker, wipe the default codes on the left side.
+1. On the worker's page, open the **Domains** tab.
+2. Under **Custom Domains and Routes**, click **Add Domain**.
+3. In the **Connect domain** window pick your domain, enter a new subdomain in **Subdomain** (for example `w`) and click **Add domain**. Cloudflare makes its DNS record and certificate by itself. The subdomain must not already have a `CNAME` record.
 
-
-![Image](https://user-images.githubusercontent.com/125398461/236730008-7ffa12a1-84de-44d2-8c16-ae8e757d77b6.png)
-
-Then put the following code in its place.
-
-```
-addEventListener(
-   "fetch", event => {
-       
-       const ip = event.request.headers.get('cf-connecting-ip') || event.request.headers.get('x-forwarded-for') || (event.request.socket && event.request.socket.remoteAddress);
-       let url = new URL(event.request.url);
-       const worker_domain=url.hostname;
-       url.hostname = "sub.domain.com";                        
-       url.protocol = event.request.headers.get('x-forwarded-proto') || "https";
-       let request = new Request(url, event.request);
-       if (ip)
-        request.headers.set('cf-connecting-ip', ip);
-        request.headers.set('Host', worker_domain);
-       event.respondWith(
-           fetch(request)
-       )
-   }
-)
-
-```
-
-Note:
-- In the sixth line, you must put the registered domain for the `url.hostname` value. That is, for example, you have registered the subdomain `sub.domain.co`m in Cloudflare according to the description of the first step; Here you need to put that domain for the `url.hostname` value.
-
-![Image](https://user-images.githubusercontent.com/125398461/236730073-2d3a5e99-9a38-4e73-b3b6-9d962acee957.png)
+    <img style="display:block;margin:0 auto" width=600 alt="Connect to window: Subdomain field and the Add domain button" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-connect.webp">
 
 
-Click the `Save and deploy` button.
-
-**A very important note: Do not worry if an error is displayed in the section that displays the result of the code execution (shown in the upper right of the image) at the stage of saving the code. Save the code and continue.**
-
-On the workers page, copy your workers address without `https`. For example, like this:
-
-![Image](https://user-images.githubusercontent.com/125398461/236730138-16641a29-82e8-4276-8f8e-9c16f1bd4348.png)
+    <img style="display:block;margin:0 auto" width=700 alt="Worker Domains tab: Worker URL and the Add Domain button" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-domains.webp">
 
 
-This step was completed successfully. Now you have to register the address of your Workers service on Hiddify panel.
+## 4. Add the worker's address to HiddifyManager
 
+1. In the panel side menu, in the **Settings** group, open **Domains** and click **Add domain**.
+2. In the **Domain** step, enter the worker's address (the custom domain or the `workers.dev` address) without `https://` and click **Check**.
+3. In the **Mode** step, choose **CDN**, keep **Valid TLS** and click **Next**.
 
-## Workers setting up on Hiddify
-Go to the Domains menu and click `Create`.
+    <img style="display:block;margin:0 auto" width=600 alt="Add a domain wizard, Mode step: CDN chosen" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-domain-cdn.webp">
 
-![Image](https://user-images.githubusercontent.com/125398461/236730761-5b3ae32d-c67f-4e54-96b4-fe1a034da834.png)
+4. Finish the **Name** and **Certificate** steps to add the domain.
 
+## 5. Bring the worker configs into the subscription link
 
-Make the settings according to the picture above and save it.
-
-> Note: You can use CDN and AutoCDN modes
-
-Work is finished. A CDN/AutoCDN domain with the details of your workers has been added to your previous domains and you can use its connections.
-
-
-> Important point:
-Workers in the free plan only processes 100,000 requests per day, so this service is useful for those who do not have high traffic on their server.
-
-
+If **Show configs of** on the domain your users open their user page with is set to **All domains** (the default), the worker's configs are added by themselves. If you show only some domains, edit that domain and tick the worker domain under **Show configs of**.
 
 <div align=center markdown=1>
-   
-![](https://user-images.githubusercontent.com/125398461/235835675-e454ba05-29ad-4b53-9cf9-f23f4c225ef6.png)
-
-
+<img width=600 alt="Show configs of with the All domains switch and the list of domains to tick" src="/assets/manager/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/en-show.webp">
 </div>
 
-## Adding the configurations of Workers to the domain related to subscription links
+Then ask your users to update the subscription in their app.
 
-As you probably know, in Hiddify you can put subscription links on a separate domain and add other domains that are set for connections to this domain. The advantage of this is that the domain of subscription links will always be available and will not be filtered because this way separates connections from subscription links.
-
-Well, suppose the domain of our subscription links that you have already registered is `t1.hiddify.com`. Go to the settings related to this domain and in the `Show Configs of Domains` field, check the new domain that you added in the previous step for Workers as shown below.
-
-![](https://github.com/hiddify/hiddify-config/assets/125398461/e0037530-fcb7-4aed-968f-a75d2978c2bb)
-
-Finally, if you go to the users' page and click on the user link as shown below,
-
-![](https://github.com/hiddify/hiddify-config/assets/125398461/72bcfe5a-4761-49a7-b68e-e4e3f75fed48)
-
-You will see that the new configs related to Workers have been added to the previous configs.
-
-![](https://github.com/hiddify/hiddify-config/assets/125398461/9c1f324a-acf1-46b1-9dfe-10fc1313051b)
+</div>

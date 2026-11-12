@@ -1,170 +1,115 @@
 ---
 title: آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)
+description: ساخت یک ورکر کلادفلر که درخواست‌ها را به سرور هیدیفای‌منیجر می‌رساند، و افزودن آدرس آن به پنل به عنوان دامنه CDN.
 ---
 
-
 <div dir="rtl" markdown=1>
-   
+
 # آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)
 
-
 ## ورکرز چیست؟
-ورکرز یکی از سرویس های CDN معروف Cloudflare است که در واقع یک سرویس بدون سرور یا Serverless می باشد و از طریق آن می‌توان کدهای برنامه نویسی را اجرا نمود بدون آنکه نیاز به پیکربندی سرور و یا زیرساخت باشد. در حقیقت این سرویس یک نوع رایانش ابری مبتی بر SaaS می باشد. 
 
-به عبارت دیگه روش کار ورکرز بدین صورت است که به جای اینکه بخواهید مستقیما وبسایت خود (در اینجا پنل هیدیفای) را باز نمایید؛ درخواست ها را به ورکرز می فرستید و سپس ورکرز درخواست ها را مجددا به سمت دامنه و سرور شما ارسال می کند.
+ورکرز (Cloudflare Workers) سرویسی از کلادفلر است که یک قطعه کد کوچک را روی سرورهای کلادفلر اجرا می‌کند. در این آموزش، ورکر درخواست‌های کاربران را می‌گیرد و به سرور هیدیفای‌منیجر شما می‌فرستد. کاربران فقط آدرس ورکر را می‌بینند و دامنه و IP سرور شما پشت آن پنهان می‌ماند.
 
+![کاربر به ورکر وصل می‌شود و ورکر درخواست را به سرور می‌فرستد](https://user-images.githubusercontent.com/125398461/224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.png)
 
-![](https://user-images.githubusercontent.com/125398461/224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.png)
+!!! note "محدودیت پلن رایگان"
+    ورکرز در پلن رایگان کلادفلر روزانه ۱۰۰ هزار درخواست را پردازش می‌کند. برای سرورهایی با کاربران زیاد این مقدار کافی نیست.
 
-در اینجا هدف از این کار مخفی کردن دامنه پشت ورکرز است.
+## ۱. پیش‌نیازها در کلادفلر
 
-## چگونه از ورکرز استفاده کنید؟
-برای استفاده از ورکرز نیاز دارید که یک دامنه فعال روی کلادفلر داشته باشید.
+1. یک دامنه فعال در کلادفلر داشته باشید. اگر ندارید، [آموزش استفاده از CDN کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/) را ببینید.
+2. یک زیردامنه برای سرور خود بسازید (مثلا `sub.yourdomain.com`)؛ در **DNS** > **Records** یک رکورد `A` با آی‌پی سرور. ورکر با پروکسی روشن یا خاموش این رکورد کار می‌کند.
+3. در **SSL/TLS** > **Overview** حالت رمزگذاری را روی **Full** بگذارید.
+4. همین زیردامنه را در پنل هیدیفای‌منیجر به عنوان دامنه اضافه کنید تا پنل برایش گواهی بگیرد.
 
-## ثبت دامنه و زیر دامنه روی کلادفلر
-در اینجا به یک دامنه خریداری شده نیاز دارید و نیاز دارید که آن را در کلادفلر ثبت نمایید.
-اگر در خصوص دامنه و نحوه ثبت آن ابهامی دارید؛ [این مطلب](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/) را مطالعه کنید.
+## ۲. ساخت ورکر
 
-طبق توضیحات مربوط به نحوه ثبت دامنه وارد اکانت خود در کلادفلر شوید.
+1. در داشبورد کلادفلر، از منوی کناری **Compute** > **Workers & Pages** را باز کنید.
 
-![221572305-50e819ea-0fa4-4548-8851-aab91b797f57](https://user-images.githubusercontent.com/125398461/224561629-dd0be4b5-9345-43b7-aa81-a3bfaaaf5899.png)
+    <img style="display:block;margin:0 auto" width=700 alt="منوی Compute و گزینه Workers & Pages در داشبورد کلادفلر" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-menu.webp">
 
+2. **Create application** را بزنید. در همین صفحه سهمیه روزانه پلن رایگان (۱۰۰ هزار درخواست) را هم می‌بینید.
 
-وارد دامنه ثبت شده شوید و در قسمت DNS یک زیردامنه جدید ثبت نمایید.
+    <img style="display:block;margin:0 auto" width=700 alt="صفحه Workers & Pages و دکمه Create application" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-list.webp">
 
-![](https://user-images.githubusercontent.com/125398461/224561952-cbb99885-46f7-49e2-874d-f48e5b0c9b0d.png)
+3. **Start with Hello World!** را انتخاب کنید.
 
+    <img style="display:block;margin:0 auto" width=600 alt="گزینه Start with Hello World! در صفحه Create an app" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-create.webp">
 
-> الزامی وجود ندارد که پروکسی روشن باشد. ورکرز با هر دو حالت پروکسی روشن و خاموش کار می کند.
+4. در فیلد **Worker name** یک نام برای ورکر بنویسید (مثلا `hiddify-worker`). آدرس ورکر از همین نام ساخته می‌شود: `نام-ورکر.زیردامنه-حساب.workers.dev`. سپس **Deploy** را بزنید.
 
-![](https://user-images.githubusercontent.com/125398461/224562373-5201f8b6-5d5c-492f-a6b9-9c4366d4f9db.png)
+    <img style="display:block;margin:0 auto" width=600 alt="فیلد Worker name و دکمه Deploy" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-name.webp">
 
-پس از ثبت ساب دامنه باید تنظیمات سرتیفیکت را انجام دهید..
+5. صفحه ورکر باز می‌شود و آدرس `workers.dev` آن بالای صفحه نمایش داده می‌شود. **Edit code** را بزنید تا ویرایشگر کد باز شود.
 
-## تنظیم سرتیفیکت دامنه
-در تنظیمات سرتیفیکت دامنه در سایت کلادفلر بروید و سرتیفیکت را روی `Full` بگذارید.
-</div>
+    <img style="display:block;margin:0 auto" width=700 alt="صفحه ورکر با آدرس workers.dev و دکمه Edit code" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-overview.webp">
 
-<div align=center markdown=1>
-![](https://user-images.githubusercontent.com/125398461/235835085-8d9c9ea5-16f2-4782-bfa2-4cc010d7367c.png)
+6. در ویرایشگر، کد پیش‌فرض فایل `worker.js` را کامل پاک کنید و این کد را جای آن بگذارید:
 
-</div>
+    ```js
+    addEventListener(
+       "fetch", event => {
 
-<div dir="rtl" markdown=1>
-## ساخت سرویس ورکرز
+           const ip = event.request.headers.get('cf-connecting-ip') || event.request.headers.get('x-forwarded-for') || (event.request.socket && event.request.socket.remoteAddress);
+           let url = new URL(event.request.url);
+           const worker_domain=url.hostname;
+           url.hostname = "sub.yourdomain.com";
+           url.protocol = event.request.headers.get('x-forwarded-proto') || "https";
+           let request = new Request(url, event.request);
+           if (ip)
+            request.headers.set('cf-connecting-ip', ip);
+            request.headers.set('Host', worker_domain);
+           event.respondWith(
+               fetch(request)
+           )
+       }
+    )
+    ```
 
-به بخش ورکرز در صفحه داشبورد خود در کلادفلر بروید.
+7. در خط ۷، به جای `sub.yourdomain.com` زیردامنه سرور خود را که در بخش ۱ ساختید بنویسید.
+8. **Deploy** بالای ویرایشگر را بزنید. پیام **Version saved** یعنی کد ذخیره و منتشر شد.
 
-![](https://user-images.githubusercontent.com/125398461/224562657-f433fff0-d4a1-4fe6-95e0-5f4e17337c3d.png)
+    <img style="display:block;margin:0 auto" width=700 alt="ویرایشگر کد ورکر: خط ۷ با دامنه سرور و دکمه Deploy" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-code.webp">
 
-سپس گزینه Create a Service را انتخاب نمایید.
+!!! tip "خطا در پیش‌نمایش"
+    اگر بخش پیش‌نمایش ویرایشگر (سمت راست) خطا نشان داد، نگران نباشید و کد را منتشر کنید.
 
-![Screenshot_20230312_211625](https://user-images.githubusercontent.com/125398461/224562813-20dc1a02-8d93-446b-a7d9-d90fbae3cda3.png)
+!!! info "قالب کد"
+    این کد با قالب قدیمی ورکرز (`addEventListener`) نوشته شده است. کلادفلر این قالب را هنوز پشتیبانی می‌کند، ولی آن را منسوخ اعلام کرده و قالب جدید (Module) را پیشنهاد می‌دهد.
 
-در اینجا شما می توانید نام سرویس ورکرز خود را انتخاب نمایید. کلادفلر خود نیز یک نام به شما پیشنهاد می دهد. می توانید آن را تغییر دهید اما توجه داشته باشید که این نام باید منحصر به فرد باشد.
+## ۳. آدرس ورکر
 
-![](https://user-images.githubusercontent.com/125398461/224563236-dc4c5497-b179-46f4-ae53-9c003d3789d6.png)
+آدرس `workers.dev` ورکر را در زبانه **Domains** صفحه ورکر، بخش **Worker URL** می‌بینید. بهتر است به جای آن یک دامنه سفارشی روی دامنه خودتان به ورکر بدهید، چون آدرس‌های `workers.dev` ممکن است مسدود شوند:
 
+1. در صفحه ورکر، زبانه **Domains** را باز کنید.
+2. در بخش **Custom Domains and Routes**، **Add Domain** را بزنید.
+3. در پنجره **Connect domain** دامنه خود را انتخاب کنید، در فیلد **Subdomain** یک زیردامنه جدید (مثلا `w`) بنویسید و **Add domain** را بزنید. کلادفلر رکورد DNS و گواهی آن را خودش می‌سازد. این زیردامنه نباید از قبل رکورد `CNAME` داشته باشد.
 
-گزینه Starter نیز روی HTTP handler  باشد. در آخر با انتخاب Create service سرویس ورکرز شما ایجاد می گردد.
-
-بعد از آن باید روی دکمه Quick edit کلیک کنید تا بتوانید کد دلخواه خود را در ورکرز قرار دهید.
-
-
-![](https://user-images.githubusercontent.com/125398461/224563711-3675b1dc-5f50-4c34-94b3-d47f5a00f7c8.png)
-
-در صفحه ادیت ورکرز قسمت سمت چپ کدهای دیفالت را پاک کنید.
-
-![](https://user-images.githubusercontent.com/125398461/224564027-10fb94b7-770f-4a44-82e6-c414469a72f4.png)
-
-سپس کد زیر را به جای آن قرار دهید.
-
-</div>
-
-```
-addEventListener(
-   "fetch", event => {
-       
-       const ip = event.request.headers.get('cf-connecting-ip') || event.request.headers.get('x-forwarded-for') || (event.request.socket && event.request.socket.remoteAddress);
-       let url = new URL(event.request.url);
-       const worker_domain=url.hostname;
-       url.hostname = "sub.domain.com";                        
-       url.protocol = event.request.headers.get('x-forwarded-proto') || "https";
-       let request = new Request(url, event.request);
-       if (ip)
-        request.headers.set('cf-connecting-ip', ip);
-        request.headers.set('Host', worker_domain);
-       event.respondWith(
-           fetch(request)
-       )
-   }
-)
-```
-
-<div dir="rtl" markdown=1>
-> دقت شود:
-* در خط ششم باید دامنه ثبت شده در مرحله اول را برای مقدار `url.hostname` قرار دهید.
-یعنی مثلا ساب دامین `sub.domain.com` را در کلادفلر طبق توضیحات مرحله اول ثبت کرده‌اید؛ در اینجا نیاز دارید آن دامنه را برای مقدار `url.hostname` قرار دهید.
-
-![final_status](https://user-images.githubusercontent.com/125398461/232571080-6e001a84-ec55-42f1-b424-e592a57a4212.png)
+    <img style="display:block;margin:0 auto" width=600 alt="پنجره Connect to: فیلد Subdomain و دکمه Add domain" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-connect.webp">
 
 
-
-دکمه Save and deploy را کلیک کنید.
-
-**نکته خیلی مهم: اگر در مرحله ذخیره کد در قسمتی که نتیجه اجرای کد را نمایش می دهد (که در تصویر بالا سمت راست تصویر مشخص شده) خطایی نمایش داد نگران نباشید. کد را ذخیره کنید.**
-
-در صفحه ورکرز آدرس ورکرز خود را بدون `https` کپی کنید. مثلا اینطوری:
-
-![](https://user-images.githubusercontent.com/125398461/224895042-d6a4e78b-f98f-4b9f-b6ad-a733eff3213a.png)
-
-این مرحله با موفقیت به اتمام رسید. حالا باید آدرس سرویس ورکرز خود را در پنل هیدیفای ثبت کنید.
-
-### ثبت ورکرز در هیدیفای
-
-به منوی دامنه ها بروید و روی ایجاد کلیک کنید.
+    <img style="display:block;margin:0 auto" width=700 alt="زبانه Domains ورکر: Worker URL و دکمه Add Domain" src="/assets/manager/How-to-set-up-and-use-Cloudflare-workers/cf-workers-domains.webp">
 
 
+## ۴. افزودن آدرس ورکر به هیدیفای‌منیجر
 
+1. از منوی کناری پنل، در گروه **تنظیمات**، صفحه **دامنه‌ها** را باز کنید و **افزودن دامنه** را بزنید.
+2. در مرحله **دامنه**، آدرس ورکر (دامنه سفارشی یا آدرس `workers.dev`) را بدون `https://` وارد کنید و **بررسی** را بزنید.
+3. در مرحله **حالت**، گزینه **CDN** را انتخاب کنید، **TLS معتبر** را نگه دارید و **بعدی** را بزنید.
 
-![](https://user-images.githubusercontent.com/125398461/224565137-834f8fbb-5d8f-4fd0-bf98-0571fed2e542.png)
+    <img style="display:block;margin:0 auto" width=600 alt="راهنمای افزودن دامنه، مرحله حالت: انتخاب CDN" src="/assets/manager/How-to-configure-Hiddify-panel-properly/fa-domain-cdn.webp">
 
-تنظیمات را مطابق با عکس بالا انجام دهید و ذخیره نمایید.
+4. مراحل **نام** و **گواهی** را تمام کنید تا دامنه اضافه شود.
 
-> توجه: از هر دو حالت CDN و AutoCDN می‌توانید برای ورکرز استفاده کنید.
+## ۵. آوردن کانفیگ‌های ورکر به لینک اشتراک
 
-کار تمام شد. یک دامنه CDN با مشخصات ورکرز شما به دامین های قبلی شما اضافه شد و می توانید از کانکشن های آن استفاده نمایید.
-
-
-
-> نکته پایانی و مهم:
-*  ورکرز در پلن رایگان به صورت روزانه فقط ۱۰۰ هزار درخواست را پردازش می کند بنابراین این سرویس به درد کسانی میخورد که ترافیک بالایی روی سرور خود ندارند.
-
-</div>
+اگر **نمایش کانفیگ‌های** دامنه‌ای که کاربران صفحه کاربری را با آن باز می‌کنند روی **همه دامنه‌ها** باشد (پیش‌فرض)، کانفیگ‌های ورکر خودکار اضافه می‌شوند. اگر فقط دامنه‌های مشخصی را نشان می‌دهید، آن دامنه را ویرایش کنید و در بخش **نمایش کانفیگ‌های** دامنه ورکر را تیک بزنید.
 
 <div align=center markdown=1>
-![](https://user-images.githubusercontent.com/125398461/235835675-e454ba05-29ad-4b53-9cf9-f23f4c225ef6.png)
-
-
+<img width=600 alt="بخش نمایش کانفیگ‌های با کلید همه دامنه‌ها و لیست دامنه‌ها برای تیک زدن" src="/assets/manager/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/fa-show.webp">
 </div>
 
-<div dir="rtl" markdown=1>
-## اضافه کردن کانفیگ‌های ورکرز به دامین مربوط به لینک‌های سابسکریپشن
+در آخر از کاربران بخواهید لینک اشتراک را در برنامه خود به‌روزرسانی کنند.
 
-
-همانطور که احتمالا می‌دانید، در هیدیفای شما می‌توانید لینک‌های سابسکریپشن را روی یک دامنه مجزا قرار دهید و دامنه‌های دیگر که برای کانکشن‌ها تنظیم شده است را به این دامنه اضافه نمایید. مزیت این کار این است که همیشه دامنه لینک‌ها در دسترس خواهد بود و فیلتر نخواهد شد چون با این روش، کانکشن‌ها  از لینک‌های سابسکریپشن جدا می‌شوند. 
-
-خب فرض کنید دامنه لینک‌های سابسکریپشن ما که قبلا ثبت نموده اید، `t1.hiddify.com` باشد. به تنظیمات مربوط به این دامنه بروید و در فیلد نمایش کانفیگ‌های دامنه، دامنه جدیدی که در مرحله قبل برای ورکرز اضافه نموده بودید را مثل شکل زیر تیک بزنید.
-
-![](https://github.com/hiddify/hiddify-config/assets/125398461/b5fa6070-167b-4143-a4d4-3247fb78f735)
-
-در نهایت اگر به صفحه کاربران بروید و مثل شکل زیر روی لینک کاربر کلیک کنید،
-
-![](https://github.com/hiddify/hiddify-config/assets/125398461/11489c60-e89a-445b-9281-270959869e30)
-
-خواهید دید که کانفیگ‌های جدید مربوط به ورکرز به کانفیگ‌های قبلی اضافه شده‌اند.
-
-
-![Screen Shot 1402-02-29 at 10 46 16](https://github.com/hiddify/hiddify-config/assets/125398461/25ba5f2e-b309-47ad-ad98-35edea4feb83)
-
-
+</div>

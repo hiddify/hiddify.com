@@ -1,43 +1,63 @@
 ---
 title: How to use wildcard subdomains on HiddifyManager
+description: With a * record on Cloudflare and a CDN domain such as *.yourdomain.com in HiddifyManager, each config is made on a random subdomain.
 ---
 
 <div dir="ltr" markdown="1">
 
-
 # How to use wildcard subdomains on HiddifyManager
 
-## Wildcard domain registration on Cloudflare
-First, create a `*` record on your registered domain on Cloudflare. That is, go to the DNS section and click `Add record`. Then enter a star in the opened page. Fill the field type as A and the value of the IP field with the IP of your server. Make sure the proxy tick is on. That is, if, for example, your domain is `yourdomain.com`, finally register a field `*.yourdomain.com`. [More information on how to register a domain](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+A wildcard domain is a domain such as `*.yourdomain.com` that covers every subdomain of `yourdomain.com`. When you add one to HiddifyManager, the panel puts a random name in place of `*` in each config, for example `k3fq9xa.yourdomain.com`. Users then connect on different subdomains, and if one of them is blocked, the others keep working.
 
-![image](https://user-images.githubusercontent.com/125398461/235923115-6eaa6bdd-3032-4a9b-aa98-f2fbd8ec4001.png)
+You need a domain on Cloudflare for this. If you don't have one yet, see [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
-For IP version 6, you can do the same thing with a record of `AAAA` type.
+## 1. Make a `*` record on Cloudflare
 
-![image](https://user-images.githubusercontent.com/125398461/235923332-af16b27e-e624-4d39-974d-1574ad44ea79.png)
+1. Sign in to Cloudflare and select your domain.
+2. In the side menu, go to **DNS** > **Records** and click **Add record**.
+3. Fill in the fields:
+    - **Type**: `A`
+    - **Name**: `*`
+    - **IPv4 address**: your server's IP
+    - **Proxy status**: on (orange cloud, **Proxied**)
+4. Click **Save**.
 
-## Registration of wildcard domain on Hiddify panel
-To do this, open `Domains` in the panel side menu (in the `Settings` group) and click `Add domain`. The wizard has four steps: `Domain`, `Mode`, `Name` and `Certificate`.
+<div align=center markdown=1>
+<img width=700 alt="An A record named * with the proxy on, on Cloudflare" src="/assets/manager/Tutorial-for-using-wildcard-subdomains-on-Hiddify/cf-rec-wild.webp">
+</div>
 
+If your server has an IPv6 address, do the same with an `AAAA` record and your server's IPv6 address.
 
-* In the `Domain` step, enter the subdomain you registered in the previous step, that is `*.yourdomain.com`, and click `Check`.
+!!! tip "SSL setting on Cloudflare"
+    The panel does not get a separate certificate for a wildcard domain; Cloudflare gives the certificate users see. On Cloudflare, go to **SSL/TLS** > **Overview** and make sure the encryption mode is **Full** (not **Flexible**).
 
-* In the `Mode` step, under `How is it set up?`, choose `CDN`. The difference between CDN domain and AutoCDN is in the way the address field is applied in the configuration, CDN returns the domain name and AutoCDN returns the IP. [More information on this](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
+## 2. Add the wildcard domain to the panel
 
-<img width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/Tutorial-for-using-wildcard-subdomains-on-Hiddify/en-domain-mode.webp" style="display:block;margin:0 auto">
+1. In the panel side menu, in the **Settings** group, open **Domains** and click **Add domain**.
+2. In the **Domain** step, enter `*.yourdomain.com` and click **Check**.
+3. In the **Mode** step, the panel sees that the domain is behind Cloudflare and selects **CDN** with a **matches** badge. Click **Next**.
 
-* In the `Name` step, give it a name of your choice.
+    <img style="display:block;margin:0 auto" width=600 alt="Add a domain wizard, Mode step: *.example.com is behind Cloudflare and CDN is selected" src="/assets/manager/Tutorial-for-using-wildcard-subdomains-on-Hiddify/en-domain-mode.webp">
 
-* Finally, finish the `Certificate` step to register the domain. If the message to apply changes is given, be sure to click the apply changes button so that the settings are fully applied to the server.
+4. In the **Name** step, give it a short name to show in the users' apps.
+5. Finish the **Certificate** step to add the domain.
 
+!!! note "Instead of AutoCDN"
+    Older panel versions had a separate AutoCDN mode, which put an IP instead of the domain name in the configs. The new panel no longer has it. To make the configs connect to clean Cloudflare IPs, edit the domain, open **Advanced**, and enter the IPs in the **Force configs to use these IPs / domains** card. [More information](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
 
-## Viewing configs of wildcard domain
-First, edit the subscription domain and tick the wildcard domain in its `Show configs of` field. Suppose that the domain of the subscription links is `t1.hiddify.com`, edit it and tick the wildcard domain as shown below. With this, the configs of wildcard domain are connected to the subscription link.
+## 3. Bring the configs into the subscription link
 
-![](https://user-images.githubusercontent.com/125398461/235927616-6a5829f0-2558-4584-a3af-4b8f7a286213.png)
+The **Show configs of** setting of the domain your users open their user page with decides which domains' configs are in the subscription link.
 
+- If **All domains** is on (the default), the wildcard domain's configs are added by themselves.
+- If you show only some domains, edit that domain, tick the wildcard domain under **Show configs of**, and click **Save**.
 
-## Using configs of wildcard domain
-Now, if you have different users on the server, you will see that the configurations created on the wildcard domain for each user, are created on a random subdomain and a separate subdomain is created for each user on Cloudflare.
+<div align=center markdown=1>
+<img width=600 alt="Show configs of with the All domains switch and the list of domains to tick" src="/assets/manager/Tutorial-for-using-wildcard-subdomains-on-Hiddify/en-show.webp">
+</div>
 
-This helps to prevent the subdomain from being blocked.
+## Result
+
+From now on, each time a user updates the subscription, the wildcard domain's configs are made on new random subdomains. All of them use the `*` record on Cloudflare, so you don't need to make any of them on Cloudflare one by one.
+
+</div>

@@ -1,159 +1,135 @@
 ---
 title: How to use Cloudflare CDN
+description: Add a domain to Cloudflare, make a direct and a CDN record, set SSL, gRPC, WebSockets and HTTP/3, and add the domains to HiddifyManager.
 ---
 
 <div dir="ltr" markdown="1">
 
-
 # How to use Cloudflare CDN
-Cloudflare is the largest provider of CDN services, which has several services that can be used to bypass Internet restrictions. The most important services are explained below.
 
-## Site or domain service
-It means you are using your server behind a CDN provider. In other words, you register your domain (subdomain) with a CDN provider and then proxy it. Here we discuss how to register on cloudflare. If you want to see a tutorial on how to use GCore CDN on a Cloudflare registered domain, see [this link](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/).
+Cloudflare is the largest CDN provider. When your domain is behind Cloudflare, users connect to Cloudflare's servers instead of your server's IP, and Cloudflare passes the traffic on to your server. This hides your server's IP, and if the IP is blocked, connections through the CDN keep working.
 
-### Direct domain registration purchased on Cloudflare
-First, you register using [this link](https://dash.cloudflare.com/signup).
+In this article you:
 
-![](https://user-images.githubusercontent.com/125398461/221563866-d520a39d-15c8-4f88-a756-90e5e08c074a.png)
+1. add your domain to Cloudflare;
+2. make a direct record and a CDN record;
+3. add the domains to HiddifyManager;
+4. set Cloudflare's SSL and network settings.
 
+To use GCore CDN on a domain that is on Cloudflare, see [this tutorial](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/).
 
-Log in after creating a profile. You must add your domain here. For this, click on `Add Site` button and add your domain.
+## 1. Add your domain to Cloudflare
 
+1. Make an account on [Cloudflare's sign-up page](https://dash.cloudflare.com/sign-up) and sign in.
+2. In the side menu, open **Domains** > **Overview** and click **Add domain**.
 
+    <img style="display:block;margin:0 auto" width=700 alt="Domains page and the Add domain button" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-domains-add.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221566504-5ecf714b-940d-4fd5-bc54-be8c37b7c292.png)
+3. Choose **Connect a domain** (for a domain you bought somewhere else).
 
-In the next step, choose your desired plan. The free plan is enough for this. So you choose according to the photo.
+    <img style="display:block;margin:0 auto" width=700 alt="Add a site page and Connect a domain" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-add-site.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221567803-26850724-1bc8-480a-8c6f-29b32a6fcfa6.png)
+4. In **Domain name**, enter your main domain (for example `yourdomain.com`, without `www`). Lower on the same page, keep **Import DNS records** on **Automatic** so Cloudflare finds the domain's current records by itself, and click **Continue**.
 
-In the next step, we do next according to the figure.
+    <img style="display:block;margin:0 auto" width=700 alt="Connect your domain page and the Domain name field" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-connect-domain.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/222444475-5596de54-3e7f-4fae-a0f0-94c046a21969.png)
+5. On the plan page, click **Select plan** under **Free**. The free plan is enough for this.
 
-In the last step, put the given DNS servers in your domain settings.
+    <img style="display:block;margin:0 auto" width=700 alt="Choosing the Free plan" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-plan.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221569269-1f4027c7-5815-4dea-876e-326dc0645fe1.png)
+6. You see the DNS records page (see step 2). Then click **Continue to activation**.
+7. On **Update your nameservers to activate Cloudflare**, you get two Cloudflare nameservers. On the website you bought the domain from, remove the old nameservers and enter these two exactly as written.
 
-Wait a while to register the domain settings. After that, the domain will be activated on the Cloudflare server.
+    <img style="display:block;margin:0 auto" width=700 alt="Update your nameservers page with two Cloudflare nameservers" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-ns.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/221572305-50e819ea-0fa4-4548-8851-aab91b797f57.png)
+8. Wait (up to 24 hours). When the domain is active, Cloudflare sends you an email and the domain changes from **Pending** to **Active** on the **Domains** page.
 
-Now you need to go to the registration section of DNS records.
+## 2. Make the DNS records
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/222436778-f80de97b-7d66-4621-8be3-b856fc4e2c75.png)
+You make the records while adding the domain, or later from the domain's **DNS** > **Records**. Cloudflare explains the two proxy modes itself:
 
-In this case, to record records related to IP version 4, follow the figure.
+<img style="display:block;margin:0 auto" width=700 alt="Cloudflare explaining Proxied (orange cloud) and DNS only (grey cloud)" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-proxy-explain.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/222444012-2fa4a2c2-ff89-493e-b92c-01a26d7788b7.png)
+Click **Add record**, fill in these fields for each subdomain, then click **Save**:
 
-After clicking on Add record, register the details of the desired subdomain by entering the server IP. Note that the proxy must be turned off for the direct domain.
+- **Type**: `A` for IPv4, `AAAA` for IPv6;
+- **Name**: the subdomain, for example `direct` or `cdn`;
+- **IPv4 address** (or **IPv6 address**): your server's IP;
+- **Proxy status**: depends on the domain type, see the table below.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234167251-ceebd61b-5147-4198-98dc-1c5bcd0d9124.png)
+| Domain type | Proxy status | Cloud |
+|---|---|---|
+| Direct | **DNS only** (off) | grey |
+| CDN | **Proxied** (on) | orange |
 
+### Direct domain
 
-If needed, you can change the TTL from automatic mode. The lower this value is; DNS records cached on the user's system are refreshed sooner.
+Turn the proxy off (**DNS only**). Users connect straight to your server's IP. For **DNS only** records you can change the TTL; the lower it is, the sooner an IP change reaches your users.
 
-To record the records related to IP version 6 of the server, follow the figure.
+<img style="display:block;margin:0 auto" width=700 alt="A record named direct with the proxy off (DNS only)" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-rec-direct.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234167507-996c8480-5cf5-4ede-999f-05f74b22499f.png)
+If your server has an IPv6 address, do the same with an `AAAA` record.
 
+### CDN domain
 
-All the things mentioned about IP version 4 also apply in this case. The only difference is the record type, which is AAAA.
+Do the same for another subdomain, but this time leave the proxy on (**Proxied**). The TTL of proxied records is always **Auto** and can't be changed.
 
+<img style="display:block;margin:0 auto" width=700 alt="A record named cdn with the proxy on (Proxied)" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-rec-cdn.webp">
 
+At the end, the records show in the list:
 
-### CDN domain registration in Cloudflare
-This domain is registered behind the servers of a CDN provider or so-called proxy.
+<img style="display:block;margin:0 auto" width=700 alt="Record list: cdn Proxied and direct DNS only" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-records.webp">
 
-For example, you can use Cloudflare service. So after following the steps mentioned above; Your domain was activated on the site; You should go to the DNS section and register the desired record. This record is type A for IP version 4 and type AAAA for IP version 6. The only difference with the previous step is that you must turn on the proxy.
+### Check the CDN domain
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234167748-7121af19-f624-4659-9922-50f8e6d3ea2c.png)
+If you check the CDN domain with `ping`, `nslookup` or `dig`, you see Cloudflare's IPs instead of your server's IP. These IPs can change over time. Some Cloudflare IPs are sometimes blocked or slow in Iran; then you can [use clean IPs](/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/).
 
+## 3. Add the domains to HiddifyManager
 
-### How to verify CDN domain registration
-When you test this domain using various tools such as ping, nslookup, dig; In response, one of the IPs randomly assigned by Cloudflare will return to your domain and there is no more information about your IP. This provides a level of security for your server.
+1. In the panel side menu, in the **Settings** group, open **Domains** and click **Add domain**.
+2. In the **Domain** step, type the subdomain and click **Check**. The **Point it at this server** box shows the `A` and `AAAA` values (your server's IPs) for the DNS record.
 
-It should be noted that this IP changes in different periods of time and is not fixed.
-Sometimes it happens that the IP assigned by Cloudflare is blocked or disrupted in Iran, and in this regard, methods to bypass this type of filtering should be used.
+    <img style="display:block;margin:0 auto" width=600 alt="Add a domain wizard, Domain step" src="/assets/manager/How-to-use-Cloudflare-CDN/en-domain-add.webp">
 
-### Adding the domain in HiddifyManager
-After the DNS record is registered, add the subdomain in your panel:
+3. In the **Mode** step, under **How is it set up?** choose **Direct** for the direct domain (grey cloud) or **CDN** for the CDN domain (orange cloud). The panel checks the DNS and puts a **matches** badge next to the right mode. Keep **Valid TLS** and click **Next**.
 
-1. In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`.
-2. In the `Domain` step, type the subdomain and click `Check`. The `Point it at this server` box shows the `A` and `AAAA` values (your server's IPs) to put in the DNS record.
+    <img style="display:block;margin:0 auto" width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-Cloudflare-CDN/en-domain-mode.webp">
 
-<img width=600 alt="Add a domain wizard, Domain step" src="/assets/manager/How-to-use-Cloudflare-CDN/en-domain-add.webp" style="display:block;margin:0 auto">
+4. Finish the **Name** and **Certificate** steps to add the domain.
 
-3. In the `Mode` step, under `How is it set up?`, choose `Direct` for a direct domain (proxy off, grey cloud) or `CDN` for a CDN domain (proxy on, orange cloud). The panel checks the DNS and marks the matching mode. Keep `Valid TLS` and click `Next`.
+## 4. Set SSL/TLS on Cloudflare
 
-<img width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-Cloudflare-CDN/en-domain-mode.webp" style="display:block;margin:0 auto">
+Cloudflare encrypts the connection from the user to Cloudflare and the connection from Cloudflare to your server separately. The encryption mode must be **Full** so that Cloudflare connects to your server over HTTPS.
 
-4. Go through the `Name` and `Certificate` steps, then apply the changes when the panel asks you to.
+1. In the domain's side menu, open **SSL/TLS** > **Overview**. The current mode is shown next to **Current encryption mode**. If it is not **Full**, click **Configure**.
 
-## Certificate settings of CDN domain  
-TLS is an algorithm that encrypts all internet traffic and helps the user stay safe online.
+    <img style="display:block;margin:0 auto" width=700 alt="SSL/TLS Overview: current encryption mode and the Configure button" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-ssl.webp">
 
-to describe precisely; TLS encrypts the communication between the client and the server in the web platform, which uses a set of cryptographic algorithms such as alpn, uTLS, allowInsecure.
+2. On the encryption mode page, choose **Full**. **Full (Strict)** also works if your server's certificate is valid. Don't choose **Flexible**.
 
-Certificates assigned to domains are also based on the TLS protocol.
+    <img style="display:block;margin:0 auto" width=700 alt="Encryption mode page: the Full option" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-ssl-config.webp">
 
-To do this, go to the SSL/TLS section on the Cloudflare site and set the certificate mode to Full.
+!!! note "Automatic SSL/TLS"
+    Cloudflare's recommended option is **Automatic SSL/TLS**, which picks the most secure mode your server supports and never lowers it. For a HiddifyManager server it usually runs as **Full**; if not, choose **Full** yourself.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234168806-26bb12cf-78ad-45a9-89b5-c2f005a9fb86.png)
+## 5. Turn on gRPC, WebSockets and HTTP/3
 
+CDN configs use gRPC and WebSocket. These are available on all plans, including Free.
 
-Also, activate the SSL/TLS Recommender option to increase connection security. This option checks the connection and gives you security suggestions if it is possible to upgrade the TLS version.
+1. Open **Network** in the domain's side menu:
+    - Turn on **gRPC**. It is off by default. gRPC only works on port 443 and when the SSL mode is at least **Full**; otherwise Cloudflare answers with a `403` error.
+    - Make sure **WebSockets** is on (it is on by default).
 
-Then go to the Network menu. Here you should check that QUIC, gRPC and WebSockets options are enabled.
+    <img style="display:block;margin:0 auto" width=700 alt="Network page: gRPC and WebSockets switches" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-network.webp">
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/223041843-7b441805-4aab-4547-b318-7dbbda4cc893.png)
+2. **HTTP/3 (QUIC)** moved to **Speed** > **Settings**, **Protocol Optimization** tab. Keep **HTTP/3 (with QUIC)** on (it is on by default). HTTP/3 is only between the user and Cloudflare; Cloudflare does not yet connect to your server over HTTP/3.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/223042286-e597f169-001e-40a5-b0e8-d34d1b110eab.png)
+    <img style="display:block;margin:0 auto" width=700 alt="Protocol Optimization tab: HTTP/3 (with QUIC)" src="/assets/manager/How-to-use-Cloudflare-CDN/cf-http3.webp">
 
-Checking security status of CDN domain traffic
-To do this, go to the SSL/TLS section of the Cloudflare site. A graph is displayed for passing traffic, the more traffic passed based on the higher version TLS; Communication security has been higher. http traffic passes without using TLS encryption.
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
+## Other Cloudflare services
 
-## Worker service
-To see details about this service, read [this article](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/).
-
-## Domain fronting service
-To see details about this service, read [this article](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/).
-
-This service is currently disabled in Cloudflare.
-
-
-
-## gRPC service
-This service was introduced by Google in 2015 and is based on `TLS` and `HTTP/2`, and because its packet size is smaller, it requires less bandwidth and is therefore faster. This service is also active in Cloudflare and is compatible with many of its other services. Therefore, you can activate it on the domain service and use this feature to bypass filtering.
-
-- To do this, go to the `Network` section and then enable the `gRPC` option.
-
-![](https://user-images.githubusercontent.com/125398461/223042141-c2456322-7cac-44be-be9c-044a307eeb52.png)
-
-After that, it is possible to send `gRPC` packets from the client to Cloudflare. After the packets reach Cloudflare, they are forwarded to the original destination, which is your server.
-
-## WebSocket wervice
-Another cloudflare service is `WebSocket`, which allows stable communication between the client and the main server. In this case, the client and server can exchange information without the need to re-establish communication and have a stable connection. This service can also be used to bypass filtering.
-
-- For this, go to the `Network` section and then activate the `WebSockets` option.
-
-![](https://user-images.githubusercontent.com/125398461/223042141-c2456322-7cac-44be-be9c-044a307eeb52.png)
-
-After that, it is possible to send `WebSocket` packets from the client to Cloudflare. After the packets reach Cloudflare, they are forwarded to the original destination, which is your server.
-
-
-## QUIC service
-This service is based on HTTP/3 and works with TLS1.3. That's why it's so fast because its handshake is much faster than TCP.
-
-<div align=center markdown=1>
-  
-<img width="60%" alt="http-request-over-quic" src="https://github.com/hiddify/hiddify-config/assets/125398461/5793c28e-7785-4ea5-998d-9695cc11b341" />
+- **Worker**: [How to set up and use Cloudflare Workers](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
+- **Domain fronting**: [Guide for domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/). This method does not currently work on Cloudflare.
 
 </div>
-
-- For this, go to the `Network` section and then activate the `HTTP/3 (with QUIC)` option.
-
-![QUIC](https://user-images.githubusercontent.com/125398461/223041843-7b441805-4aab-4547-b318-7dbbda4cc893.png)
