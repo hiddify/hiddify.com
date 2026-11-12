@@ -1,102 +1,82 @@
 ---
 title: آموزش استفاده از CDN GCore
+description: راه‌اندازی CDN شرکت Gcore برای یک زیردامنه که DNS آن در کلادفلر است، و افزودن آن به هیدیفای‌منیجر.
 ---
 
-
 <div dir="rtl" markdown=1>
-  
+
 # آموزش استفاده از CDN GCore بر روی دامنه ثبت شده در Cloudflare
 
-همانطور که می‌دانید برای استفاده بهینه از هیدیفای‌منیجر نیاز است یک ارائه دهنده CDN استفاده نمایید تا با استفاده از سرویس‌های آن بتوان فیلترینگ را دور زد. در مطالب دیگر ما Cloudflare را معرفی و نحوه کار با آن را آموزش دادیم. این سرویس به دلیل اختلالات گسترده‌ای که در ایران بر روی آن ایجاد می‌شود؛ بعضی اوقات کار را برای کاربران مشکل می‌کند. یک راه جایگزین استفاده از سرویس CDN شرکت GCore می‌باشد. برای آشنایی با نحوه تنظیمات آن این مقاله را تا انتها مطالعه نمایید.
+کلادفلر گاهی در ایران دچار اختلال می‌شود. یک جایگزین، CDN شرکت Gcore است. در این آموزش DNS دامنه شما در کلادفلر می‌ماند و فقط یک زیردامنه (مثلا `gcore.yourdomain.com`) با یک رکورد `CNAME` به Gcore سپرده می‌شود.
 
-۱. ابتدا به [اینجا](https://gcore.com) بروید و اکانت خود را در سایت GCore بسازید. سپس وارد اکانت ساخته شده بشوید و در داشبورد خود گزینه CDN را بزنید.
+پیش از شروع، باید یک دامنه فعال در کلادفلر داشته باشید. [آموزش استفاده از CDN کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/) را ببینید.
 
-![1](https://user-images.githubusercontent.com/125398461/235283540-83a44dbc-6b81-45d2-a04f-be2749cf0429.jpg)
+!!! info "هزینه"
+    طبق [صفحه قیمت Gcore](https://gcore.com/pricing/edge-network)، پلن پرداخت به ازای مصرف (PAYG) ماهانه ۱ ترابایت ترافیک CDN رایگان دارد و بیشتر از آن هزینه دارد. قیمت‌ها ممکن است تغییر کنند؛ پیش از استفاده آن صفحه را چک کنید.
 
-۲. در مرحله بعد پلن رایگان را انتخاب نمایید و `Next` کنید.
+## ۱. ساخت حساب و منبع CDN در Gcore
 
-![2](https://user-images.githubusercontent.com/125398461/235283581-a392f93e-4d8a-44d9-9521-be83fb09564b.jpg)
+1. در [سایت Gcore](https://gcore.com) یک حساب بسازید و وارد داشبورد شوید.
+2. از منوی کناری **CDN** را باز کنید. اولین بار صفحه **Welcome to Gcore CDN** را می‌بینید؛ **Get started for free** را بزنید (کارت بانکی لازم نیست).
 
-۳. پس از تکمیل مشخصات خواسته شده بر روی گزینه `Get started` کلیک کنید.
+    <img style="display:block;margin:0 auto" width=700 alt="صفحه Welcome to Gcore CDN و دکمه Get started for free" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-welcome.webp">
 
-![3](https://user-images.githubusercontent.com/125398461/235283590-6654cae1-cc3b-42c6-ae8c-d4cc26b71a15.jpg)
+3. فرم **Set up your Edge Network resource** باز می‌شود:
+    - در بخش **Domain**، روی **Use your own domain** بزنید و زیردامنه خود را بنویسید، مثلا `gcore.yourdomain.com`.
+    - در بخش **Origin**، **URL / IP** را انتخاب کنید و آی‌پی سرور خود را وارد کنید.
+4. **Set up your resource** را بزنید.
 
-۴. در مرحله بعد بر روی `Create CDN resource` بزنید.
+    <img style="display:block;margin:0 auto" width=700 alt="فرم ساخت منبع CDN: دامنه خودتان، آی‌پی سرور و دکمه Set up your resource" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-create.webp">
 
-![4](https://user-images.githubusercontent.com/125398461/235283617-042ee013-e1a1-4567-aa6c-fcbf1080fa99.jpg)
+5. پیام **Edge Network resource is created!** را می‌بینید. در کادر **DNS change required** رکورد `CNAME` لازم نمایش داده می‌شود: **Host** زیردامنه شماست و **Value** مقداری شبیه `cl-xxxxxxxx.gcorecdn.com`. مقدار **Value** را کپی کنید.
 
-۵. حال در صفحه باز شده بر روی `Confirm` کلیک کنید.
+    <img style="display:block;margin:0 auto" width=700 alt="صفحه ساخته شدن منبع: کادر DNS change required با رکورد CNAME و دکمه Open resource settings" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-created.webp">
 
-![5](https://user-images.githubusercontent.com/125398461/235283626-b7923519-ffbc-425b-a65b-3063e19595a1.jpg)
 
-۶. در این مرحله دامنه‌ای را که در کلاد فلر ثبت نموده‌اید را به همراه ساب‌دامنین دلخواه وارد کنید.
+## ۲. ساخت رکورد CNAME در کلادفلر
 
-![6](https://user-images.githubusercontent.com/125398461/235283639-ef21b5ba-5efd-48d5-a852-7aa8050b4316.jpg)
+1. در کلادفلر دامنه را انتخاب کنید و به **DNS** > **Records** بروید و **Add record** را بزنید.
+2. این‌طور پر کنید و **Save** را بزنید:
+    - **Type**: `CNAME`
+    - **Name**: زیردامنه، مثلا `gcore`
+    - **Target**: مقداری که از Gcore کپی کردید
+    - **Proxy status**: خاموش (**DNS only**، ابر خاکستری). اگر روشن باشد، ترافیک به جای Gcore از کلادفلر عبور می‌کند.
 
-۷. سپس آیپی سرور خود را وارد کنید و بر روی گزینه Add بزنید.
+    ![رکورد CNAME در کلادفلر با پروکسی خاموش](https://user-images.githubusercontent.com/125398461/235284172-560987a3-8528-497a-89c9-58927fddc327.jpg)
 
-![7](https://user-images.githubusercontent.com/125398461/235283674-400d9213-029a-429b-9985-699c0bd40ba3.jpg)
+3. در Gcore، در بخش **Setup guide** منبع (بالای صفحه تنظیمات منبع)، **Check DNS setup status** را بزنید. وقتی پیام **DNS record has been successfully set up** را دیدید، DNS درست است. این کار ممکن است تا ۲۴ ساعت طول بکشد.
 
-۸. در مرحله بعد مجددا بر روی Confirm کلیک کنید.
+    <img style="display:block;margin:0 auto" width=450 alt="پنجره Setup guide: رکورد CNAME و دکمه Check DNS setup status" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-setup-guide.webp">
 
-![8](https://user-images.githubusercontent.com/125398461/235283679-fbb415e0-5b12-4880-be94-3f2a17ba5895.jpg)
+## ۳. تنظیمات منبع CDN در Gcore
 
-۹.  از آنجایی که شما قصد استفاده از CDN GCore را دارید، نیازی به ثبت nameserverهای GCore بر روی دامنه خود ندارید و فقط بر روی `Confirm` کلیک کنید.
+در همان صفحه **Open resource settings** را بزنید (یا منبع را از **CDN** > **CDN resources** باز کنید) و این سه تنظیم را انجام دهید. بعد از هر تغییر **Save changes** را بزنید؛ اعمال تغییرات روی همه سرورهای Gcore حدود ۱۵ دقیقه طول می‌کشد.
 
-![9](https://user-images.githubusercontent.com/125398461/235283686-69d71bb4-2c27-4375-8a04-3a7f2f1fac21.jpg)
+1. **پروتکل اتصال به سرور**: در زبانه **OPTIONS** > **General**، در کارت **Origin pull protocol** گزینه **HTTPS** را انتخاب کنید.
 
-۱۰. در این مرحله مجدد بر روی `Confirm` کلیک کنید.
+    <img style="display:block;margin:0 auto" width=700 alt="کارت Origin pull protocol با گزینه HTTPS و دکمه Save changes" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-origin-https.webp">
 
-![10](https://user-images.githubusercontent.com/125398461/235283803-1ca531c7-efb6-4bf2-ba21-5f68de3cc9df.jpg)
+2. **گواهی SSL**: در بخش **SSL**، **Enable HTTPS** را روشن کنید، **Free Let's Encrypt certificate** را انتخاب کنید و **Get SSL certificate** را بزنید. صدور گواهی تا ۱۵ دقیقه طول می‌کشد و فقط وقتی کار می‌کند که رکورد `CNAME` بخش ۲ درست باشد.
 
-۱۱. سپس بر روی گزینه `Open resource settings` بزنید.
+    <img style="display:block;margin:0 auto" width=700 alt="بخش SSL: Enable HTTPS، Free Let's Encrypt certificate و Get SSL certificate" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-ssl.webp">
 
-![11](https://user-images.githubusercontent.com/125398461/235283807-225d6325-b388-4a21-9b41-5da3f7457ba9.jpg)
+3. **WebSockets**: در بخش **Content** > **WebSockets**، **Enable WebSockets** را روشن کنید و **Save changes** را بزنید. این گزینه به طور پیش‌فرض خاموش است و بدون آن کانفیگ‌های WebSocket وصل نمی‌شوند.
 
-۱۲. در صفحه باز شده بر روی گزینه `DNS` کلیک کنید.
+    <img style="display:block;margin:0 auto" width=700 alt="بخش WebSockets: کلید Enable WebSockets و دکمه Save changes" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-websockets.webp">
 
-![12](https://user-images.githubusercontent.com/125398461/235283814-711cf947-256c-4cda-8cc5-236abe8a6b31.jpg)
+!!! note "محافظت WAAP"
+    Gcore برای منبع جدید محافظت WAAP را در حالت «فقط نظارت» (monitoring mode) روشن می‌کند. اگر بعدها آن را روی حالت مسدودکردن بگذارید، ممکن است اتصال‌های WebSocket با خطای `403` رد شوند.
 
-۱۳. حالا روی دامنه خود کلیک کنید تا لیست رکوردهای ثبت شده را نمایش دهد.
+## ۴. افزودن زیردامنه به هیدیفای‌منیجر
 
-![13](https://user-images.githubusercontent.com/125398461/235283822-62ce802c-d7c2-44e8-8fd6-a418fe6a04c2.jpg)
+1. از منوی کناری پنل، در گروه **تنظیمات**، صفحه **دامنه‌ها** را باز کنید و **افزودن دامنه** را بزنید.
+2. در مرحله **دامنه**، زیردامنه (مثلا `gcore.yourdomain.com`) را وارد کنید و **بررسی** را بزنید.
+3. در مرحله **حالت**، زیر **چطور تنظیم شده است؟** گزینه **CDN** را انتخاب کنید، **TLS معتبر** را نگه دارید و **بعدی** را بزنید.
 
-۱۴. در مرحله بعد برای ویرایش رکورد CDN دکمه مداد را بزنید.
+    <img style="display:block;margin:0 auto" width=600 alt="راهنمای افزودن دامنه، مرحله حالت: انتخاب CDN" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/fa-domain-mode.webp">
 
-![14](https://user-images.githubusercontent.com/125398461/235283921-81cfdb21-b00b-4e94-907d-3a6b95f7b650.jpg)
+4. مراحل **نام** و **گواهی** را تمام کنید تا دامنه اضافه شود.
 
-۱۵. در این مرحله بر روی گزینه `CDN Integration` بزنید تا یکپارچه سازی CDNها را انجام دهید. 
+اگر **نمایش کانفیگ‌های** دامنه صفحه کاربری شما روی **همه دامنه‌ها** است، کانفیگ‌های جدید خودکار به لینک اشتراک اضافه می‌شوند. از کاربران بخواهید اشتراک خود را در برنامه به‌روزرسانی کنند.
 
-![15](https://user-images.githubusercontent.com/125398461/235284019-0301d8e3-d882-4482-9c75-23a30e4fb2f1.jpg)
-
-۱۶. حالا دامنه‌ای که در بخش `CDN Integration` وجود دارد را کپی کنید.
-
-![16](https://user-images.githubusercontent.com/125398461/235284138-6355a421-a7da-46c8-803a-b4b65cdc8fb1.jpg)
-
-۱۷. حالا وارد اکانت کلادفلر خود شوید، وارد تنظیمات دامنه‌ی خود شوید و در بخش DNS یک رکورد `CNAME` با استفاده از دامنه‌ای که خود در بخش قبل کپی کرده بودید، ثبت نمایید. دقت شود که تیک پروکسی برای این رکورد خاموش باشد.
-
-![17](https://user-images.githubusercontent.com/125398461/235284172-560987a3-8528-497a-89c9-58927fddc327.jpg)
-
-۱۸. مجدد وارد داشبورد خود در سایت GCore شده و در بخش CDN پس از اطمینان از Active بودن آن، بر روی دامنه‌ی بر روی دامنه‌ی خود کلیک کنید.
-
-> نکته: ممکن است `Active` شدن کمی زمان بگیرد.
-
-![18](https://user-images.githubusercontent.com/125398461/235284405-71b9fe26-e25c-4750-b349-1fac9cd34efb.jpg)
-
-۱۹. سپس در بخش `Origin`، تنظیمات `Origin pull protocol` را بر روی `HTTPS` تنظیم نمایید.
-
-![19](https://user-images.githubusercontent.com/125398461/235284438-6d4e0c6e-79dc-4175-8718-8a85b68b46d1.jpg)
-
-۲۰. حالا برای گرفتن سرتیفیکت در سربرگ `SSL`، بر روی گزینه `Get SSL certificate` بزنید.
-
-![20](https://user-images.githubusercontent.com/125398461/235284577-e0ee7fbb-31d9-476b-9901-f2fb78c5c22d.jpg)
-
-۲۱. دریافت سرتیفیکت ممکن است حدودا ۱۵ دقیقه زمان ببرد. پس از گرفتن سرتیفیکت، شما پیغامی مبنی بر استفاده و تمدید خودکار آن مشاهده خواهید کرد.
-
-![21](https://user-images.githubusercontent.com/125398461/235284579-898335c0-28d3-477f-b900-3f8a381bcdda.jpg)
-
-۲۲. حالا می‌توانید از این ساب‌دامین به عنوان دامنه CDN در هیدیفای‌منیجر استفاده کنید. از منوی کناری پنل، بخش `دامنه‌ها` (در گروه `تنظیمات`) را باز کنید و روی `افزودن دامنه` بزنید. در مرحله `دامنه`، ساب‌دامین را وارد کنید و روی `بررسی` بزنید. در مرحله `حالت`، زیر `چطور تنظیم شده است؟` گزینه `CDN` را انتخاب کنید، `TLS معتبر` را نگه دارید و روی `بعدی` بزنید. سپس مراحل `نام` و `گواهی` را طی کنید و تغییرات را اعمال کنید.
-
-<img width=600 alt="راهنمای افزودن دامنه، مرحله حالت: انتخاب CDN" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/fa-domain-mode.webp" style="display:block;margin:0 auto">
-
-* نکته پایانی و مهم: یادتون نره که CDN GCore در پلن رایگان محدودیت ۱۰۰۰ گیگابایتی دارد.
+</div>

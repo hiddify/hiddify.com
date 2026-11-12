@@ -1,102 +1,82 @@
 ---
 title: How to use GCore CDN
+description: Set up Gcore CDN for a subdomain whose DNS is on Cloudflare, and add it to HiddifyManager.
 ---
 
 <div dir="ltr" markdown="1">
 
-
 # How to use GCore CDN on Cloudflare registered domain
 
-As you probably know, in order to use the HiddifyManager optimally, you need to use a CDN provider so that filtering can be bypassed using its services. In other articles, we introduced Cloudflare and taught how to work with it. This service is due to widespread disruptions that are applied on it; Sometimes it makes things difficult for users. An alternative way is to use GCore's CDN service. Read this article to the end to learn how to set it up.
+Cloudflare is sometimes disrupted in Iran. One alternative is Gcore's CDN. In this tutorial your domain's DNS stays on Cloudflare, and only one subdomain (for example `gcore.yourdomain.com`) is handed to Gcore with a `CNAME` record.
 
-1. First, go [here](https://gcore.com/) and create your account on GCore website. Then log in to the created account and click on the CDN option in your dashboard.
+Before you start, you need an active domain on Cloudflare. See [How to use Cloudflare CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/).
 
-![](https://user-images.githubusercontent.com/125398461/235283540-83a44dbc-6b81-45d2-a04f-be2749cf0429.jpg)
+!!! info "Cost"
+    According to [Gcore's pricing page](https://gcore.com/pricing/edge-network), the pay-as-you-go (PAYG) plan includes 1 TB of free CDN traffic a month; more than that is paid. Prices can change, so check that page before you start.
 
-2. In the next step, choose the free plan and click `Next`.
+## 1. Make an account and a CDN resource on Gcore
 
-![](https://user-images.githubusercontent.com/125398461/235283581-a392f93e-4d8a-44d9-9521-be83fb09564b.jpg)
+1. Make an account on the [Gcore website](https://gcore.com) and open the dashboard.
+2. Open **CDN** in the side menu. The first time, you see **Welcome to Gcore CDN**: click **Get started for free** (no credit card needed).
 
-3. After completing the requested information, click on the `Get started` option.
+    <img style="display:block;margin:0 auto" width=700 alt="Welcome to Gcore CDN and the Get started for free button" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-welcome.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283590-6654cae1-cc3b-42c6-ae8c-d4cc26b71a15.jpg)
+3. The **Set up your Edge Network resource** form opens:
+    - Under **Domain**, click **Use your own domain** and type your subdomain, for example `gcore.yourdomain.com`.
+    - Under **Origin**, choose **URL / IP** and enter your server's IP.
+4. Click **Set up your resource**.
 
-4. In the next step, click on `Create CDN resource`.
+    <img style="display:block;margin:0 auto" width=700 alt="The CDN resource form: your own domain, your server IP and Set up your resource" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-create.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283617-042ee013-e1a1-4567-aa6c-fcbf1080fa99.jpg)
+5. You see **Edge Network resource is created!**. The **DNS change required** box shows the `CNAME` record you need: **Host** is your subdomain and **Value** looks like `cl-xxxxxxxx.gcorecdn.com`. Copy the **Value**.
 
-5. Now click on `Confirm` on the opened page.
+    <img style="display:block;margin:0 auto" width=700 alt="Resource created: the DNS change required box with the CNAME record, and Open resource settings" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-created.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283626-b7923519-ffbc-425b-a65b-3063e19595a1.jpg)
 
-6. In this step, enter the domain you have registered in Cloudflare along with the desired subdomain.
+## 2. Make the CNAME record on Cloudflare
 
-![](https://github.com/hiddify/hiddify.com/assets/125398461/c206f237-3b9c-411a-9e22-9a7ff048e9ff)
+1. On Cloudflare, select the domain, go to **DNS** > **Records** and click **Add record**.
+2. Fill it in like this and click **Save**:
+    - **Type**: `CNAME`
+    - **Name**: the subdomain, for example `gcore`
+    - **Target**: the value you copied from Gcore
+    - **Proxy status**: off (**DNS only**, grey cloud). If it is on, the traffic goes through Cloudflare instead of Gcore.
 
-7. Then enter your server's IP and click on `Add` button.
+    ![CNAME record on Cloudflare with the proxy off](https://github.com/hiddify/hiddify.com/assets/125398461/519004ac-c33e-4489-a224-47cc9d35b3b1)
 
-![](https://github.com/hiddify/hiddify.com/assets/125398461/2766aadb-eef5-4b14-b6d5-c9543fc0f0d7)
+3. On Gcore, in the resource's **Setup guide** (at the top of the resource settings), click **Check DNS setup status**. When you see **DNS record has been successfully set up**, the DNS is right. This can take up to 24 hours.
 
-8. In the next step, click on `Confirm` again.
+    <img style="display:block;margin:0 auto" width=450 alt="Setup guide: the CNAME record and Check DNS setup status" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-setup-guide.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283679-fbb415e0-5b12-4880-be94-3f2a17ba5895.jpg)
+## 3. Set up the CDN resource on Gcore
 
-9. Since you are going to use GCore's CDN, you don't need to register GCore's nameservers on your domain and just click on `Confirm`.
+On the same page click **Open resource settings** (or open the resource from **CDN** > **CDN resources**) and set these three things. Click **Save changes** after each change; applying it on all Gcore servers takes about 15 minutes.
 
-![](https://user-images.githubusercontent.com/125398461/235283686-69d71bb4-2c27-4375-8a04-3a7f2f1fac21.jpg)
+1. **Protocol to your server**: in the **OPTIONS** tab > **General**, under **Origin pull protocol**, choose **HTTPS**.
 
-10. In this step, click on `Confirm` again.
+    <img style="display:block;margin:0 auto" width=700 alt="Origin pull protocol with HTTPS chosen, and Save changes" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-origin-https.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283803-1ca531c7-efb6-4bf2-ba21-5f68de3cc9df.jpg)
+2. **SSL certificate**: in the **SSL** section, turn on **Enable HTTPS**, choose **Free Let's Encrypt certificate** and click **Get SSL certificate**. Issuing takes up to 15 minutes and only works once the `CNAME` record from step 2 is right.
 
-11. Then click on `Open resource settings` option.
+    <img style="display:block;margin:0 auto" width=700 alt="SSL section: Enable HTTPS, Free Let's Encrypt certificate and Get SSL certificate" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-ssl.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283807-225d6325-b388-4a21-9b41-5da3f7457ba9.jpg)
+3. **WebSockets**: in **Content** > **WebSockets**, turn on **Enable WebSockets** and click **Save changes**. It is off by default, and WebSocket configs don't connect without it.
 
-12. In the opened page, click on the `DNS` option.
+    <img style="display:block;margin:0 auto" width=700 alt="WebSockets section: Enable WebSockets and Save changes" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gcore-websockets.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283814-711cf947-256c-4cda-8cc5-236abe8a6b31.jpg)
+!!! note "WAAP protection"
+    Gcore turns on WAAP protection for a new resource in "monitoring mode". If you later switch it to blocking, WebSocket connections may be refused with a `403` error.
 
-13. Now click on your domain to display the list of registered records.
+## 4. Add the subdomain to HiddifyManager
 
-![13](https://user-images.githubusercontent.com/125398461/235283822-62ce802c-d7c2-44e8-8fd6-a418fe6a04c2.jpg)
+1. In the panel side menu, in the **Settings** group, open **Domains** and click **Add domain**.
+2. In the **Domain** step, enter the subdomain (for example `gcore.yourdomain.com`) and click **Check**.
+3. In the **Mode** step, under **How is it set up?**, choose **CDN**, keep **Valid TLS** and click **Next**.
 
-14. Next, click the pencil button to edit the CDN record.
+    <img style="display:block;margin:0 auto" width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/en-domain-mode.webp">
 
-![](https://user-images.githubusercontent.com/125398461/235283921-81cfdb21-b00b-4e94-907d-3a6b95f7b650.jpg)
+4. Finish the **Name** and **Certificate** steps to add the domain.
 
-15. In this step, click on the `CDN Integration` option to integrate CDNs.
+If **Show configs of** on your user-page domain is set to **All domains**, the new configs are added to the subscription link by themselves. Ask your users to update the subscription in their app.
 
-![](https://user-images.githubusercontent.com/125398461/235284019-0301d8e3-d882-4482-9c75-23a30e4fb2f1.jpg)
-
-16. Now copy the domain that is in the `CDN Integration` section.
-
-![](https://github.com/hiddify/hiddify.com/assets/125398461/fe33cf16-40a4-4782-b4c3-229768ebde86)
-
-17. Now log in to your Cloudflare account, enter your domain settings and register a `CNAME` record in the DNS section using the domain you copied in the previous section.
-
-![17](https://github.com/hiddify/hiddify.com/assets/125398461/519004ac-c33e-4489-a224-47cc9d35b3b1)
-
-18. Go your dashboard on the GCore site again and in the CDN section, after making sure it is Active, click on the domain on your domain.
-
-> Note: It may take some time to become active.
-
-![](https://user-images.githubusercontent.com/125398461/235284405-71b9fe26-e25c-4750-b349-1fac9cd34efb.jpg)
-
-19. Then, in the `Origin` section, set the `Origin pull protocol` setting to `HTTPS`.
-
-![](https://user-images.githubusercontent.com/125398461/235284438-6d4e0c6e-79dc-4175-8718-8a85b68b46d1.jpg)
-
-20. Now, to get the certificate in the `SSL` tab, click on the `Get SSL certificate` option.
-
-![](https://user-images.githubusercontent.com/125398461/235284577-e0ee7fbb-31d9-476b-9901-f2fb78c5c22d.jpg)
-
-21. Receiving the certificate may take about 15 minutes. After getting the certificate, you will see a message about its use and automatic renewal.
-
-![](https://user-images.githubusercontent.com/125398461/235284579-898335c0-28d3-477f-b900-3f8a381bcdda.jpg)
-
-22. Now we can use this subdomain as a CDN domain in HiddifyManager. In the panel side menu, open `Domains` (in the `Settings` group) and click `Add domain`. Enter the subdomain in the `Domain` step and click `Check`. In the `Mode` step, under `How is it set up?`, choose `CDN`, keep `Valid TLS` and click `Next`. Then go through the `Name` and `Certificate` steps and apply the changes.
-
-<img width=600 alt="Add a domain wizard, Mode step: CDN selected" src="/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/en-domain-mode.webp" style="display:block;margin:0 auto">
-
-* Final and important point: Don't forget that CDN GCore has a limit of 1000 GB in the free plan.
+</div>
