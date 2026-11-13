@@ -1,202 +1,283 @@
 ---
 title: Core Guide
-description: Hiddify Core, the proxy core of the Hiddify app, as a command-line tool for servers, routers and desktops
+description: Hiddify Core is the engine of the Hiddify app, and it also runs on its own, from the command line, on servers, routers and computers.
 weight: -18
 comments: false
 ---
 
 # Hiddify Core
 
-Hiddify Core (`hiddify-core`, the `HiddifyCli` binary) is the proxy core that runs inside the
-Hiddify app on Android, iOS, Windows, macOS and Linux. You can also run it on its own, from the
-command line, on a server, a router (OpenWrt) or a desktop without a screen.
+**The engine of the Hiddify app, on its own, on the command line.**
 
-It is built on **hiddify-sing-box**, Hiddify's fork of [sing-box](https://sing-box.sagernet.org/).
-Every sing-box config works in it, and it adds many protocols, transports and anti-censorship
-features that upstream sing-box does not have. Around this core, hiddify-core adds a config
-builder: give it a share link, a subscription or a config in almost any format, and it builds a
-complete client config for you, with a local proxy or a TUN, DNS, routing and proxy groups.
+Hiddify Core (`hiddify-core`) is the part of the Hiddify app that makes the connection. You can run the same engine without the app, with one command, on a server, a router or a computer without a screen.
 
-!!! info "Hiddify Core at a glance"
-    - **Download:** [hiddify-core releases on GitHub](https://github.com/hiddify/hiddify-core/releases), for Linux, Windows and macOS, many processors, and OpenWrt packages.
-    - **Source code:** [hiddify-core](https://github.com/hiddify/hiddify-core) and [hiddify-sing-box](https://github.com/hiddify/hiddify-sing-box).
-    - **Command-line reference:** [every command and flag](cli.md).
-    - **Features of the core:** [Hiddify sing-box features](sing-box/index.md), with a page for each protocol, transport and DNS feature.
+[:material-download: Download](https://github.com/hiddify/hiddify-core/releases){ .md-button .md-button--primary }
+[:material-console: Commands](cli.md){ .md-button }
+[:material-star-four-points: Features](features/index.md){ .md-button }
+
+## Where can I use it?
+
+<div class="grid cards" markdown>
+
+-   :material-cellphone:{ .lg .middle } __Inside the Hiddify app__
+
+    ---
+
+    On Android, iOS, Windows, macOS and Linux, this core works behind the connect button.
+
+-   :material-server:{ .lg .middle } __On a server__
+
+    ---
+
+    A proxy client or server with no desktop, running as an always-on service.
+
+-   :material-router-wireless:{ .lg .middle } __On a router__
+
+    ---
+
+    Install it on OpenWrt so every device at home goes through it.
+    [OpenWrt guide](../app/How-to-use-HiddifyCli-on-OpenWrt.md)
+
+-   :material-laptop:{ .lg .middle } __On a computer__
+
+    ---
+
+    On Linux, Windows and macOS, as a local proxy or a VPN for the whole system.
+
+</div>
+
+## How does it work?
+
+Give the core only your proxies; it builds the rest.
+
+```mermaid
+flowchart LR
+    A["Links, a subscription<br/>or a Clash / Xray config"] --> B(("hiddify-core"))
+    B --> C["Local proxy<br/>127.0.0.1:12334"]
+    B --> D["VPN for the whole system<br/>(TUN)"]
+```
+
+The core is built on **hiddify-sing-box**, Hiddify's version of [sing-box](https://sing-box.sagernet.org/). So every sing-box config works in it, and it adds dozens of protocols and anti-censorship tricks that upstream sing-box does not have.
 
 ## Install
 
-On Linux (Ubuntu, Debian, CentOS, OpenWrt and others), this command finds your system and
-processor, installs `/usr/bin/hiddify-core` and sets up a service (systemd, or procd on OpenWrt):
+=== ":material-linux: Linux and OpenWrt"
 
-```bash
-bash <(curl https://i.hiddify.com/core)
-```
+    This command detects your system and processor, installs the core and sets it up as a service:
 
-The service runs `hiddify-core -D /var/lib/hiddify-core run -c /etc/hiddify-core/config.json`.
-Edit `/etc/hiddify-core/config.json`, then restart it with `systemctl restart hiddify-core`
-(`/etc/init.d/hiddify-core restart` on OpenWrt).
+    ```bash
+    bash <(curl https://i.hiddify.com/core)
+    ```
 
-Other ways:
+    The config is `/etc/hiddify-core/config.json`. After editing it, restart the service:
 
-- **Download by hand:** take the archive for your system from the
-  [releases page](https://github.com/hiddify/hiddify-core/releases) and unpack it. On Linux, keep
-  the `lib` folder next to `HiddifyCli`. On Windows, run `HiddifyCli.exe` from a terminal.
-- **Docker:** `docker pull ghcr.io/hiddify/hiddify-core:latest`, or `docker-compose up -d` in the
-  `docker` folder of the repository.
+    ```bash
+    systemctl restart hiddify-core
+    ```
 
-In the examples on this site the binary is called `HiddifyCli`; after the Linux installer it is
-`hiddify-core`. Both are the same program.
+    On OpenWrt: `/etc/init.d/hiddify-core restart`
 
-## Run a config: `run` or `srun` {#run-or-srun}
+=== ":material-download: Manual download"
 
-hiddify-core has two ways to run a config. Pick the one that matches what you have.
+    Get the file for your system from the [releases page](https://github.com/hiddify/hiddify-core/releases) and unpack it.
 
-| You have | Use | What happens |
-|---|---|---|
-| Share links (`vless://`, `hy2://`, `wg://`…), a subscription link, a Clash or Xray config, or only the outbounds of a sing-box config | `run` | hiddify-core reads the proxies, builds the rest of the config (local proxy or TUN, DNS, routing, groups) from the Hiddify settings, and runs it |
-| A complete sing-box config that must run exactly as written (inbounds, DNS, route and all) | `srun` | hiddify-core runs the config as it is, like `sing-box run`, with every Hiddify feature available |
+    - **Linux:** keep the `lib` folder next to `HiddifyCli`.
+    - **Windows:** run `HiddifyCli.exe` from a terminal.
 
-### `run`: from proxies to a ready client
+=== ":material-docker: Docker"
 
-```bash
-# a file of share links, one per line, or a base64 subscription
-HiddifyCli run -c links.txt
+    ```bash
+    docker pull ghcr.io/hiddify/hiddify-core:latest
+    ```
 
-# a subscription URL; it is updated again when the server sends profile-update-interval
-HiddifyCli run -c https://example.com/sub/abc
+    Or, in the `docker` folder of the repository: `docker-compose up -d`
 
-# only the outbounds of a sing-box config are used
-HiddifyCli run -c outbounds.json
-```
+!!! note "Two names, one program"
+    The examples on this page call the program `HiddifyCli`. After the Linux installer, it is called `hiddify-core`.
 
-By default `run` opens a mixed (HTTP and SOCKS5) proxy on `127.0.0.1:12334`, groups the proxies
-under a selector with automatic tests, and sends DNS to `1.1.1.1`. Point your browser or system at
-that proxy, or let hiddify-core do it:
+## Run: `run` or `srun`? {#run-or-srun}
 
-```bash
-# a system-wide VPN (needs root or administrator)
-sudo HiddifyCli run -c links.txt --tun
+Pick one, depending on what you have:
 
-# set the system proxy of the desktop
-HiddifyCli run -c links.txt --system-proxy
+<div class="grid cards" markdown>
 
-# your Hiddify app settings (Settings → ⋮ → Export → "Export all options to file")
-HiddifyCli run -c links.txt -d hiddify-settings.json
-```
+-   :material-auto-fix:{ .lg .middle } __`run`: you only have proxies__
 
-`run` accepts all of these as input:
+    ---
 
-- share links of every protocol the app supports, one per line, plain or base64;
-- subscription links, also inside a file next to other links;
-- a sing-box JSON config: a whole config (only its `outbounds` and `endpoints` are taken), a list
-  of outbounds, or a single outbound;
-- a Clash or mihomo YAML config (its `proxies`);
-- an Xray JSON config;
-- a WireGuard `.conf` file.
+    Share links, a subscription link, or a Clash or Xray config.
 
-With `--full-config`, `run` also keeps the inbounds, DNS and route rules of a sing-box input and
-builds its own parts next to them. When the config must run without any change, use `srun`.
+    The core builds the rest of the config by itself: a local proxy or a VPN, DNS, routing and automatic choice of the fastest server.
 
-### `srun`: a full sing-box config as it is
+    ```bash
+    HiddifyCli run -c links.txt
+    ```
 
-```bash
-HiddifyCli srun -c config.json
-```
+-   :material-file-code:{ .lg .middle } __`srun`: you have a full sing-box config__
 
-`srun` is the `run` command of sing-box. It takes a complete config, with your own inbounds, DNS,
-route and experimental sections, and adds nothing to it. All sing-box options work, together with
-the Hiddify additions: XHTTP, finalmask, WARP, AmneziaWG, DNS tunnels, the balancer and the rest
-(see [Hiddify sing-box features](sing-box/index.md)).
+    ---
 
-```bash
-# several files are merged, in the order of their names
-HiddifyCli srun -c base.json -c outbounds.json
+    A config that must run exactly as written, such as a **server** config.
 
-# every .json file of a folder
-HiddifyCli srun -C /etc/hiddify-core/conf.d
+    The core adds nothing to it and runs it like sing-box itself, with every Hiddify feature.
 
-# read the config from standard input
-cat config.json | HiddifyCli srun -c stdin
-```
+    ```bash
+    HiddifyCli srun -c config.json
+    ```
 
-Send `SIGHUP` to reload the config without stopping (the new config is checked first); `SIGINT`
-or `SIGTERM` stop it. `srun` is also the way to run a **server** with hiddify-core, since a server
-config is mostly inbounds.
+</div>
 
-!!! tip "Turn proxies into a full config, then edit it"
-    `HiddifyCli parse links.txt -o outbounds.json` converts links to sing-box outbounds, and
-    `HiddifyCli build -c outbounds.json -o config.json` builds the full client config that `run`
-    would use. Edit `config.json` and run it with `srun`. See the [CLI reference](cli.md).
+### `run` examples
 
-## How it differs from sing-box, Xray and mihomo {#differences}
+=== "Local proxy"
 
-| | hiddify-core | sing-box | Xray-core | mihomo |
-|---|---|---|---|---|
-| Based on | a fork of sing-box 1.15, with Hiddify's additions | — | its own core, from the V2Ray family | a fork of Clash |
-| Config format | sing-box JSON | sing-box JSON | Xray JSON | Clash YAML |
-| Inputs it reads | share links, subscriptions, sing-box JSON, Xray JSON, Clash and mihomo YAML, WireGuard `.conf` | sing-box JSON | Xray JSON | Clash YAML, and link subscriptions in proxy providers |
-| Builds a client config from bare proxies | yes, with `run` (TUN or proxy, DNS, rules, groups) | no, you write the whole config | no, you write the whole config | no, you write the whole config |
-| Control API | gRPC (used by the Hiddify app) and the Clash API | Clash API | gRPC | REST (Clash API) |
+    A file of links, one link per line:
 
-### Compared with sing-box
+    ```bash
+    HiddifyCli run -c links.txt
+    ```
 
-hiddify-core runs every sing-box config, and adds:
+    Or a subscription link directly, which updates by itself:
 
-- **Xray's transports in sing-box:** [XHTTP](sing-box/features/transports/xhttp.md),
-  [mKCP](sing-box/features/transports/kcp.md), [XDRIVE](sing-box/features/transports/xdrive.md),
-  [finalmask](sing-box/features/transports/finalmask.md), the
-  [raw transport](sing-box/features/transports/raw.md),
-  [VLESS encryption](sing-box/features/protocols/vless-encryption.md) and
-  [multi-segment gRPC paths](sing-box/features/transports/grpc-custom-path.md), so configs made for
-  Xray load as they are.
-- **More protocols:** [WARP](sing-box/features/protocols/warp.md) with free account registration,
-  an [endpoint scanner and noise](sing-box/features/protocols/warp-scanner.md) and
-  [MASQUE](sing-box/features/protocols/warp-masque.md);
-  [AmneziaWG](sing-box/features/protocols/amneziawg.md);
-  [Psiphon](sing-box/features/protocols/psiphon.md); [Mieru](sing-box/features/protocols/mieru.md);
-  [Sudoku](sing-box/features/protocols/sudoku.md);
-  [TrustTunnel](sing-box/features/protocols/trusttunnel.md);
-  [GooseRelay](sing-box/features/protocols/gooserelay.md);
-  [Bond](sing-box/features/protocols/bond.md); a [reverse tunnel](sing-box/features/protocols/tunnel.md);
-  an [SSH inbound](sing-box/features/protocols/ssh.md); and the
-  [legacy WireGuard outbound](sing-box/features/protocols/wireguard-legacy.md) that upstream removed.
-- **DNS tunnels** that find working public resolvers by themselves:
-  [DNSTT](sing-box/features/protocols/dnstt.md), [MasterDNS](sing-box/features/protocols/masterdns.md)
-  and [Soar](sing-box/features/protocols/soar.md), with a shared
-  [smart resolver pool](sing-box/features/dns/smart-dns-pool.md).
-- **Anti-censorship tricks:** [TLS fragment](sing-box/features/tls-fragment.md),
-  [TLS tricks](sing-box/features/tls-tricks.md) (mixed-case SNI, padding) and
-  [REALITY additions](sing-box/features/reality-hiddify.md).
-- **Groups and monitoring:** a [balancer](sing-box/features/groups/balancer.md) with several
-  strategies, a [fallback](sing-box/features/groups/fallback.md) group,
-  [URL test additions](sing-box/features/groups/urltest.md),
-  [background monitoring](sing-box/features/groups/monitoring.md) of delay and exit IP, and a
-  [unified delay](sing-box/features/groups/unified-delay.md) that compares across protocols.
-- **DNS:** a [DNS group](sing-box/features/dns/dns-group.md),
-  [bypass_if_failed](sing-box/features/dns/dns-bypass-if-failed.md),
-  [DNSCrypt stamps](sing-box/features/dns/sdns.md), [sslip.io names](sing-box/features/dns/sslip-hosts.md)
-  and [IPv6 by outbound](sing-box/features/dns/ipv6-by-outbound.md).
-- **[Bug fixes](sing-box/bugfix/v5.md)** on top of sing-box 1.15, each with its commit.
+    ```bash
+    HiddifyCli run -c https://example.com/sub/abc
+    ```
 
-### Compared with Xray
+    An HTTP and SOCKS5 proxy opens on `127.0.0.1:12334`. Point your browser or apps to it.
 
-hiddify-core has Xray's XHTTP, mKCP, finalmask, XDRIVE, raw transport and VLESS encryption
-written into sing-box. An Xray-style VLESS outbound can therefore run next to Hysteria2, TUIC,
-WireGuard, WARP and the DNS tunnels in one config, under sing-box's TUN, routing, rule sets and
-proxy groups. hiddify-core reads Xray JSON configs and Xray share links (including the `extra`
-field of XHTTP), and `HiddifyCli parse --xray` converts share links to Xray JSON.
+=== "VPN for the whole system"
 
-### Compared with mihomo
+    ```bash
+    sudo HiddifyCli run -c links.txt --tun
+    ```
 
-hiddify-core reads the `proxies` of a Clash or mihomo YAML config and converts them to sing-box,
-so a Clash subscription works with `run` without changes. Its groups cover what mihomo users
-expect (select, URL test, fallback, load balancing) and add the monitoring and failover described
-above. Configs are written in sing-box JSON, not YAML.
+    Every app goes through the VPN. Needs root or administrator rights.
 
-## Read more
+=== "System proxy"
 
-- [Command-line reference](cli.md): every command and flag of `HiddifyCli`.
-- [Hiddify sing-box features](sing-box/index.md): one page per feature, in English and Persian.
-- [App considerations](sing-box/app_considerations.md): what app and core developers need to know
-  about the v5 core.
-- [Using HiddifyCli on OpenWrt](../app/How-to-use-HiddifyCli-on-OpenWrt.md).
+    ```bash
+    HiddifyCli run -c links.txt --system-proxy
+    ```
+
+    Sets the desktop's system proxy by itself.
+
+=== "With your app settings"
+
+    ```bash
+    HiddifyCli run -c links.txt -d hiddify-settings.json
+    ```
+
+    Get the settings file in the app from **Settings → ⋮ → Export → Export all settings to a file**.
+
+??? info "What can `run` read?"
+    - Links of every protocol the app supports, one per line, plain or base64
+    - Subscription links, even inside a file next to other links
+    - A sing-box JSON config (only its `outbounds` and `endpoints` are taken)
+    - A Clash or mihomo YAML config (its `proxies` section)
+    - An Xray JSON config
+    - A WireGuard `.conf` file
+
+    With `--full-config`, the inbounds, DNS and rules of a sing-box config are kept too.
+
+??? info "`srun` tips"
+    | You want | Command |
+    |---|---|
+    | Several files, merged together | `HiddifyCli srun -c base.json -c outbounds.json` |
+    | Every `.json` file in a folder | `HiddifyCli srun -C /etc/hiddify-core/conf.d` |
+    | Read from standard input | `cat config.json \| HiddifyCli srun -c stdin` |
+
+    - **Reload without downtime:** send `SIGHUP`; the new config is checked first.
+    - **Stop:** `SIGINT` or `SIGTERM`.
+
+!!! tip "From proxies to a full config you can edit by hand"
+    1. Turn links into sing-box outbounds: `HiddifyCli parse links.txt -o outbounds.json`
+    2. Build the full client config: `HiddifyCli build -c outbounds.json -o config.json`
+    3. Edit `config.json` and run it: `HiddifyCli srun -c config.json`
+
+## What does it add to sing-box? {#differences}
+
+<div class="grid cards" markdown>
+
+-   :material-transit-connection-variant:{ .lg .middle } __Xray transports__
+
+    ---
+
+    [XHTTP](features/transports/xhttp.md), [mKCP](features/transports/kcp.md), [XDRIVE](features/transports/xdrive.md), [finalmask](features/transports/finalmask.md), [raw](features/transports/raw.md) and [VLESS encryption](features/protocols/vless-encryption.md), inside sing-box itself.
+
+-   :material-shield-lock:{ .lg .middle } __More protocols__
+
+    ---
+
+    Free [WARP](features/protocols/warp.md), [AmneziaWG](features/protocols/amneziawg.md), [Psiphon](features/protocols/psiphon.md), [Mieru](features/protocols/mieru.md), [Sudoku](features/protocols/sudoku.md), [TrustTunnel](features/protocols/trusttunnel.md), [reverse tunnel](features/protocols/tunnel.md) and [more](features/protocols/index.md).
+
+-   :material-dns:{ .lg .middle } __Tunnels over DNS__
+
+    ---
+
+    [DNSTT](features/protocols/dnstt.md), [MasterDNS](features/protocols/masterdns.md) and [Soar](features/protocols/soar.md), which find [working resolvers](features/dns/smart-dns-pool.md) by themselves.
+
+-   :material-incognito:{ .lg .middle } __Anti-censorship tricks__
+
+    ---
+
+    [TLS fragment](features/tls-fragment.md), [TLS tricks](features/tls-tricks.md) and [Reality additions](features/reality-hiddify.md).
+
+-   :material-scale-balance:{ .lg .middle } __Groups and monitoring__
+
+    ---
+
+    [Balancer](features/groups/balancer.md), [fallback](features/groups/fallback.md), [better URL test](features/groups/urltest.md) and [background monitoring](features/groups/monitoring.md) of delay and exit IP.
+
+-   :material-web:{ .lg .middle } __Smart DNS__
+
+    ---
+
+    [DNS group](features/dns/dns-group.md), [bypass_if_failed](features/dns/dns-bypass-if-failed.md), [DNSCrypt](features/dns/sdns.md) and [IPv6 by outbound](features/dns/ipv6-by-outbound.md).
+
+</div>
+
+[:material-format-list-bulleted: Full feature list](features/index.md){ .md-button } [:material-bug-check: Bug fixes](bugfix/v5.md){ .md-button }
+
+### Quick comparison
+
+| | Hiddify Core | sing-box | Xray | mihomo |
+|---|:-:|:-:|:-:|:-:|
+| sing-box configs | :material-check: | :material-check: | :material-close: | :material-close: |
+| Reads links, subscriptions, Clash and Xray | :material-check: | :material-close: | Xray only | Clash only |
+| Builds a client config from proxies by itself | :material-check: | :material-close: | :material-close: | :material-close: |
+| XHTTP and mKCP transports | :material-check: | :material-close: | :material-check: | :material-close: |
+| WARP, AmneziaWG, Psiphon, DNS tunnels | :material-check: | :material-close: | :material-close: | partly |
+| Control API | gRPC and Clash API | Clash API | gRPC | Clash API |
+
+- **Coming from Xray?** Xray links and JSON configs (even the `extra` field of XHTTP) work as they are, and you can use them next to Hysteria2, WARP and DNS tunnels in one config.
+- **Coming from mihomo?** A Clash subscription works with `run` without changes, with the groups you know (select, URL test, fallback, balancer).
+
+## Next steps
+
+<div class="grid cards" markdown>
+
+-   :material-console-line:{ .lg .middle } [__Command-line reference__](cli.md)
+
+    ---
+
+    Every command and flag of `HiddifyCli`.
+
+-   :material-star-four-points:{ .lg .middle } [__Features__](features/index.md)
+
+    ---
+
+    A page for every protocol, transport and DNS feature.
+
+-   :material-router:{ .lg .middle } [__The core on OpenWrt__](../app/How-to-use-HiddifyCli-on-OpenWrt.md)
+
+    ---
+
+    Install it on a router, step by step.
+
+-   :material-code-braces:{ .lg .middle } [__For developers__](app_considerations.md)
+
+    ---
+
+    What the app and the core need to know about version 5. Code: [hiddify-core](https://github.com/hiddify/hiddify-core) and [hiddify-sing-box](https://github.com/hiddify/hiddify-sing-box).
+
+</div>

@@ -82,10 +82,10 @@ Ctrl+C را بزنید اجرا می‌کند. برای اینکه کی از `ru
 | `--in-proxy-port <port>` | `12334` | پورت پروکسی محلی mixed (HTTP و SOCKS5). |
 | `--dns-remote <server>` | `1.1.1.1` | سرور DNS که از طریق پروکسی استفاده می‌شود: `1.1.1.1`، `tcp://…`، `tls://…`، `https://…/dns-query`. |
 | `--dns-direct <server>` | `1.1.1.1` | سرور DNS برای اتصال‌های مستقیم. |
-| `--fragment` | خاموش | روشن کردن [تکه‌تکه کردن TLS](sing-box/features/tls-fragment.md). |
+| `--fragment` | خاموش | روشن کردن [تکه‌تکه کردن TLS](features/tls-fragment.md). |
 | `--fragment-size <range>` | `2-4` | اندازه هر تکه به بایت. |
 | `--fragment-sleep <range>` | `2-4` | مکث میان تکه‌ها به میلی‌ثانیه. |
-| `--padding` | خاموش | افزودن padding به TLS ([ترفندهای TLS](sing-box/features/tls-tricks.md)). |
+| `--padding` | خاموش | افزودن padding به TLS ([ترفندهای TLS](features/tls-tricks.md)). |
 | `--padding-size <range>` | `1300-1400` | اندازه padding. |
 | `--mixed-sni-case` | خاموش | فرستادن نام سرور با حروف بزرگ و کوچک درهم. |
 | `--log`، `--log-level <level>` | `warn` | `trace`، `debug`، `info`، `warn`، `error`، `fatal` یا `panic`. |
@@ -135,7 +135,7 @@ HiddifyCli srun -c <file> [-c <file>…] [-C <folder>…]
 ```
 
 یک کانفیگ کامل sing-box را بدون تغییر اجرا می‌کند، مثل `sing-box run`. همه افزوده‌های هیدیفای به
-sing-box در دسترس‌اند ([قابلیت‌ها](sing-box/index.md)).
+sing-box در دسترس‌اند ([قابلیت‌ها](features/index.md)).
 
 | گزینه | معنی |
 |---|---|
@@ -255,7 +255,7 @@ HiddifyCli warp
 ```
 
 یک حساب رایگان جدید WARP کلادفلر ثبت می‌کند و یک outbound وایرگارد sing-box برای آن چاپ می‌کند. روش
-هیدیفای برای استفاده از WARP در کانفیگ، [اندپوینت `warp`](sing-box/features/protocols/warp.md) است که
+هیدیفای برای استفاده از WARP در کانفیگ، [اندپوینت `warp`](features/protocols/warp.md) است که
 خودش ثبت‌نام می‌کند.
 
 ## vlessenc
@@ -264,7 +264,7 @@ HiddifyCli warp
 HiddifyCli vlessenc [--json]
 ```
 
-یک جفت کلید تازه برای [رمزنگاری VLESS](sing-box/features/protocols/vless-encryption.md)
+یک جفت کلید تازه برای [رمزنگاری VLESS](features/protocols/vless-encryption.md)
 (`mlkem768x25519plus`) می‌سازد: مقدار `decryption` برای سرور و مقدار `encryption` برای کلاینت. `--json`
 آن‌ها را به‌صورت JSON چاپ می‌کند.
 

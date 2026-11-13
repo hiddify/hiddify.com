@@ -17,7 +17,7 @@ docs:
 
 live:
 	@env DEV=true GIT_PLUGINS=false $(MKDOCS) serve --dirtyreload
-# copy hiddify-sing-box's docs/hiddify into docs/core/sing-box (SINGBOX=path of a hiddify-sing-box checkout)
+# merge hiddify-sing-box's docs/hiddify into docs/core (SINGBOX=path of a hiddify-sing-box checkout)
 SINGBOX ?= ../hiddify-sing-box
 core-docs:
 	python3 scripts/sync_core_docs.py $(SINGBOX)

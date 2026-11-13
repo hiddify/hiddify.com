@@ -157,6 +157,7 @@ extra:
             using our <a href="https://github.com/hiddify/docs.hiddify.com/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">feedback form</a>.
 extra_css:
   - assets/css/site.css
+  - assets/css/cards.css
 extra_javascript:
   - assets/js/site.js
   - assets/js/svginject.js    

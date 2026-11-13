@@ -82,10 +82,10 @@ While it runs, the core's gRPC server listens on `127.0.0.1:17078` and the Clash
 | `--in-proxy-port <port>` | `12334` | Port of the local mixed (HTTP and SOCKS5) proxy. |
 | `--dns-remote <server>` | `1.1.1.1` | DNS server used through the proxy: `1.1.1.1`, `tcp://…`, `tls://…`, `https://…/dns-query`. |
 | `--dns-direct <server>` | `1.1.1.1` | DNS server used for direct connections. |
-| `--fragment` | off | Turn on [TLS fragment](sing-box/features/tls-fragment.md). |
+| `--fragment` | off | Turn on [TLS fragment](features/tls-fragment.md). |
 | `--fragment-size <range>` | `2-4` | Size of each fragment in bytes. |
 | `--fragment-sleep <range>` | `2-4` | Pause between fragments in milliseconds. |
-| `--padding` | off | Add a TLS padding extension ([TLS tricks](sing-box/features/tls-tricks.md)). |
+| `--padding` | off | Add a TLS padding extension ([TLS tricks](features/tls-tricks.md)). |
 | `--padding-size <range>` | `1300-1400` | Size of the padding. |
 | `--mixed-sni-case` | off | Send the server name in mixed upper and lower case. |
 | `--log`, `--log-level <level>` | `warn` | `trace`, `debug`, `info`, `warn`, `error`, `fatal` or `panic`. |
@@ -135,7 +135,7 @@ HiddifyCli srun -c <file> [-c <file>…] [-C <folder>…]
 ```
 
 Runs a complete sing-box config without changing it, like `sing-box run`. Every Hiddify addition
-to sing-box is available ([features](sing-box/index.md)).
+to sing-box is available ([features](features/index.md)).
 
 | Flag | Meaning |
 |---|---|
@@ -255,7 +255,7 @@ HiddifyCli warp
 ```
 
 Registers a new free Cloudflare WARP account and prints a sing-box WireGuard outbound for it.
-The Hiddify way to use WARP in a config is the [`warp` endpoint](sing-box/features/protocols/warp.md),
+The Hiddify way to use WARP in a config is the [`warp` endpoint](features/protocols/warp.md),
 which registers by itself.
 
 ## vlessenc
@@ -264,7 +264,7 @@ which registers by itself.
 HiddifyCli vlessenc [--json]
 ```
 
-Makes a new key pair for [VLESS encryption](sing-box/features/protocols/vless-encryption.md)
+Makes a new key pair for [VLESS encryption](features/protocols/vless-encryption.md)
 (`mlkem768x25519plus`): the `decryption` value for the server and the `encryption` value for the
 client. `--json` prints them as JSON.
 
