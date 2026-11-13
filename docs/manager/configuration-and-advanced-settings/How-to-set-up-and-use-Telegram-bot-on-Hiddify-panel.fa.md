@@ -14,33 +14,30 @@ weight: -130
 - دسترسی ادمین به پنل هیدیفای‌منیجر.
 - یک حساب تلگرام.
 
-!!! note "نکته"
-    تصاویر تلگرام در این صفحه از نسخه‌ای قدیمی‌تر از بات هستند. ممکن است دکمه‌های بات الان کمی متفاوت باشند، ولی مراحل همان است.
-
 ## مرحله ۱: ساخت بات تلگرام
 
 1. تلگرام را باز کنید و `@BotFather` را جستجو کنید. این بات رسمی تلگرام برای ساختن بات است.
 
-    ![BotFather در جستجوی تلگرام](https://user-images.githubusercontent.com/125398461/235900298-c2251db5-2b14-4a45-b4c3-1b1c857a64b4.png)
+    
 
 2. روی **Start** بزنید.
 
-    ![استارت BotFather](https://user-images.githubusercontent.com/125398461/235900621-1d8143fa-a56d-4c01-9f7c-3b96b1772191.png)
+    
 
 3. دستور `/newbot` را بفرستید (یا از منو انتخاب کنید).
 
-    ![دستور newbot](https://user-images.githubusercontent.com/125398461/235900712-3f6cb0c2-4107-473c-affa-5af47ff1f2d0.png)
+    
 
 4. یک نام برای بات بفرستید. سپس یک نام کاربری منحصربه‌فرد برای آن بفرستید.
 
-    ![انتخاب نام و نام کاربری بات](https://user-images.githubusercontent.com/125398461/235904011-8d51583c-3c39-4a88-99c5-ee71d0016631.png)
+    
 
     - نام کاربری باید به `bot` ختم شود (مثلاً `my_vpn_bot`).
     - استفاده از `_` در نام کاربری مجاز است.
 
 5. حالا BotFather یک **توکن** برای شما می‌فرستد: یک کد طولانی مثل `123456789:AA...`. آن را کپی کنید. توکن را به کسی ندهید: هر کس توکن را داشته باشد می‌تواند بات شما را کنترل کند.
 
-    ![توکن بات](https://user-images.githubusercontent.com/125398461/235904260-f6f582d3-f4e6-4829-951b-0f4f7540f4a0.png)
+    <img style="display:block;margin:0 auto" width=380 alt="BotFather: دستور /newbot، نام، نام کاربری و توکن (محوشده)" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-botfather.webp">
 
 ## مرحله ۲: وارد کردن توکن در پنل
 
@@ -66,7 +63,7 @@ weight: -130
 2. روی **Start** بزنید.
 
 <div align=center markdown=1>
-![استارت بات](https://user-images.githubusercontent.com/125398461/235907744-d16631e7-aa15-477e-9f05-34c5a90c80bf.png)
+<img style="display:block;margin:0 auto" width=380 alt="ربات پس از Start: پیام اتصال تلگرام و منوی ادمین" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-admin-start.webp">
 </div>
 
 به دلایل امنیتی، بات فقط وقتی شما را ادمین می‌شناسد که آن را از همین لینک باز کنید. هر ادمین می‌تواند حساب تلگرام خودش را به همین روش وصل کند. از مسیر **حساب من** ← **اتصال تلگرام** هم می‌توانید این کار را انجام دهید.
@@ -78,32 +75,42 @@ weight: -130
 - **👥 کاربران**: فهرست کاربران شما. می‌توانید آن‌ها را فیلتر کنید (مثلاً کاربرانی که بسته‌شان رو به اتمام است) یا نامی را بنویسید تا جستجو شود. با باز کردن هر کاربر می‌توانید بسته‌اش را تمدید کنید، روز یا حجم اضافه کنید، مصرفش را ریست کنید، او را فعال، غیرفعال یا حذف کنید و لینک‌ها و کد QR او را ببینید.
 - **➕ کاربر جدید**: ساختن یک یا چند کاربر.
 - **📊 وضعیت سرور**: پردازنده، رم، دیسک، مدت روشن بودن، ترافیک و کاربران آنلاین.
+- **🩺 بررسی وضعیت**: آی‌پی عمومی سرور با کشور و شرکت ارائه‌دهنده آن، و اینکه هر سرویس (Xray، sing-box، HAProxy و بقیه) روشن است یا نه. برای ادمین‌های نماینده نمایش داده نمی‌شود.
+- **🎁 تست رایگان**: لینکی که به دیگران می‌دهید تا یک حساب تست رایگان درخواست کنند ([تست رایگان](#_10) را پایین‌تر ببینید).
 - **💾 بکاپ**: گرفتن فوری فایل پشتیبان از کل پنل (فقط برای سوپرادمین‌ها).
-- **🖥 باز کردن پنل**: باز کردن پنل ادمین.
+- **🖥 باز کردن پنل**: باز کردن پنل ادمین داخل خود تلگرام. با حساب تلگرام وصل‌شده وارد می‌شوید و به لینک ادمین نیازی نیست.
+
+هر وقت خواستید `/menu` را بفرستید تا منوی ادمین دوباره نمایش داده شود.
+
+<div align=center markdown=1>
+<img style="display:block;margin:0 auto" width=380 alt="لیست کاربران با فیلترها" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-users.webp">
+<img style="display:block;margin:0 auto" width=380 alt="وضعیت سرور: CPU، RAM، دیسک، زمان روشن بودن و کاربران" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-status.webp">
+</div>
 
 ### ساختن کاربر از طریق بات
 
 1. روی **➕ کاربر جدید** بزنید.
 2. حجم بسته را انتخاب کنید.
 
-    ![انتخاب حجم](https://user-images.githubusercontent.com/125398461/235907850-1e613a61-6506-45a5-bc8c-eda7a718048c.png)
-    ![بسته ۴ گیگابایتی انتخاب شده](https://user-images.githubusercontent.com/125398461/235908017-f4c5b463-c40e-4524-a08d-90e7f7e395c2.png)
+    <img style="display:block;margin:0 auto" width=380 alt="انتخاب حجم بسته" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-new-data.webp">
 
 3. مدت بسته (تعداد روز) را انتخاب کنید.
 
-    ![انتخاب تعداد روز](https://user-images.githubusercontent.com/125398461/225084209-6924f927-94d8-4f9a-8fe0-a459aafac120.png)
+    <img style="display:block;margin:0 auto" width=380 alt="انتخاب تعداد روز" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-new-days.webp">
 
 4. تعداد کاربرانی که با این مشخصات ساخته شوند را انتخاب کنید.
 
-    ![انتخاب تعداد کاربر](https://user-images.githubusercontent.com/125398461/235908369-39e536f7-150d-4498-828b-b8861089d7b1.png)
+    <img style="display:block;margin:0 auto" width=380 alt="انتخاب تعداد کاربر" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-new-count.webp">
 
 5. اختیاری: روی **✏️ نام** بزنید و یک نام برای کاربر بفرستید.
 6. روی **✅ ساختن** بزنید.
 
+    <img style="display:block;margin:0 auto" width=380 alt="خلاصه کاربر جدید: دکمه Name و Create" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-new-create.webp">
+
 بات برای هر کاربر جدید یک کارت با لینک‌های او می‌فرستد. می‌توانید این کارت را برای کاربر فوروارد کنید.
 
 <div align=center markdown=1>
-![کارت کاربر جدید](https://user-images.githubusercontent.com/125398461/235908927-0835b813-14e1-4c8f-9aa8-3c8398eaa6c1.png)
+<img style="display:block;margin:0 auto" width=380 alt="کارت کاربر جدید با QR، حجم و زمان" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-user-card.webp">
 </div>
 
 کاربر جدید در صفحه **کاربران** پنل هم دیده می‌شود.
@@ -112,11 +119,48 @@ weight: -130
 ![کاربر جدید در پنل](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/fa-users.webp)
 </div>
 
-روی دکمه **🔄 به‌روزرسانی** در کارت هر کاربر بزنید تا آخرین وضعیت حجم مصرفی و روزهای باقی‌مانده او را ببینید.
+روی دکمه **🔄 به‌روزرسانی** در کارت هر کاربر بزنید تا آخرین وضعیت حجم مصرفی و روزهای باقی‌مانده او را ببینید. با دکمه **⚙️ مدیریت** هم لینک‌ها و QR کاربر را می‌گیرید، روز یا حجم اضافه می‌کنید، بسته را تمدید می‌کنید، مصرف را صفر می‌کنید یا کاربر را غیرفعال یا حذف می‌کنید.
 
 <div align=center markdown=1>
-![به‌روزرسانی وضعیت کاربر](https://user-images.githubusercontent.com/125398461/235909484-c3b6064d-afb5-4654-8c01-84acb55becd4.png)
+<img style="display:block;margin:0 auto" width=380 alt="مدیریت کاربر: لینک‌ها، QR، افزودن روز یا حجم، تمدید، صفر کردن مصرف، غیرفعال‌سازی و حذف" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-manage.webp">
 </div>
+
+### جستجوی کاربر
+در **👥 کاربران** روی **🔍 جستجو** بزنید و نام، UUID، توضیح یا شناسه تلگرام کاربر را بفرستید. با **✖️ پاک کردن** به فهرست کامل برمی‌گردید.
+
+<div align=center markdown=1>
+<img style="display:block;margin:0 auto" width=380 alt="نتیجه جستجوی test با دکمه‌های Search و Clear" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-search.webp">
+</div>
+
+
+### بررسی وضعیت
+**🩺 بررسی وضعیت** نشان می‌دهد آی‌پی عمومی سرور شما کجاست (کشور، شهر و شرکت ارائه‌دهنده) و کنار هر سرویسی که روشن است ✅ می‌گذارد. ❌ یعنی آن سرویس از کار افتاده است: در پنل **اقدامات** را باز کنید و ری‌استارت کنید، یا [آموزش اتصال و عیب‌یابی با SSH](/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/) را ببینید.
+
+<div align=center markdown=1>
+<img style="display:block;margin:0 auto" width=380 alt="بررسی وضعیت: فهرست سرویس‌ها؛ بخش آی‌پی محو شده است" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-check.webp">
+</div>
+
+### یادآوری‌های روزانه
+بات هر روز یک بار همه کاربران را بررسی می‌کند:
+
+- به کاربری که **۳ روز یا کمتر** تا پایان بسته‌اش مانده، یا **۸۵ درصد یا بیشتر** از حجمش را مصرف کرده، در بات یادآوری می‌فرستد (اگر تلگرامش را وصل کرده باشد).
+- برای شما یک پیام خلاصه از کاربرانی که بسته‌شان رو به اتمام است (تا ۱۵ نام) می‌فرستد، با دکمه‌ای که فهرست **رو به اتمام** را باز می‌کند.
+
+### تست رایگان
+با **🎁 تست رایگان** می‌توانید اجازه دهید دیگران خودشان از بات یک حساب تست بگیرند. بسته (حجم و روز) و حالت آن را در پنل تنظیم کنید: در منوی کناری، زیر **مدیریت**، **صندوق پیام** → **تست رایگان** را باز کنید.
+
+- **خودکار**: حساب فوراً داده می‌شود، برای هر حساب تلگرام فقط یک بار.
+- **دستی**: هر درخواست با دکمه‌های **✅ تأیید** و **✖️ رد** در بات به شما می‌رسد.
+
+در بات روی **🎁 تست رایگان** بزنید تا لینک اشتراک‌گذاری را بگیرید. هر کس آن را باز کند بسته را می‌بیند و می‌تواند درخواستش را بدهد.
+
+<div align=center markdown=1>
+<img style="display:block;margin:0 auto" width=380 alt="تست رایگان: بسته، حالت و لینک اشتراک‌گذاری (محوشده)" src="/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/tg-free.webp">
+</div>
+
+
+### پیام‌های کاربران
+کاربر می‌تواند در بات پیام بنویسد. پیام به شکل «*نام* نوشت:» با دکمه **↩️ پاسخ** به شما می‌رسد؛ پاسخ خود را بنویسید تا برای کاربر فرستاده شود. همین گفتگوها در **صندوق پیام** پنل هم هست.
 
 ### پشتیبان‌های خودکار
 
