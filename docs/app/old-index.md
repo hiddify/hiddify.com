@@ -1,4 +1,6 @@
 ---
+search:
+  exclude: true
 description: Welcome to the wiki page for Hiddify App.
 title: App Guide
 weight: -1

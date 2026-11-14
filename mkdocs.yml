@@ -158,8 +158,10 @@ extra:
 extra_css:
   - assets/css/site.css
   - assets/css/cards.css
+  - assets/css/guide.css
 extra_javascript:
   - assets/js/site.js
+  - assets/js/search-spelling.js
   - assets/js/svginject.js    
 plugins:  
   - exclude:

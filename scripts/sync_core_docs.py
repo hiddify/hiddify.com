@@ -25,6 +25,9 @@ import shutil
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
+from fa_spelling import fix as fa_spelling  # noqa: E402  one spelling for Persian words
+
 SITE = Path(__file__).resolve().parent.parent
 CORE = SITE / "docs" / "core"
 OLD_TARGET = CORE / "sing-box"  # where the pages lived before they were merged into docs/core
@@ -86,6 +89,8 @@ def convert(text: str, persian: bool, page_source: str) -> str:
             lines.pop()
     lines = [LANGUAGE_LINK.sub("", line) for line in lines]
     text = re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip("\n") + "\n"
+    if persian:
+        text = fa_spelling(text)
     return LINK.sub(lambda m: "](" + fix_link(m.group(1), page_source) + ")", text)
 
 

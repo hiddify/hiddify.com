@@ -1,12 +1,13 @@
 # Keeps the guide pages up to date, in a pull request:
-# 1. New articles: every article of docs/app and docs/manager/<category>/ that its guide page does not
-#    link to yet is added to that page (manager: in the box of its category folder), in English and
-#    Persian (tools/guide_links.py). Runs when articles are pushed to main.
+# The app and manager guide pages (docs/app/index*.md, docs/manager/index*.md) are built from
+# data/guides/*.yml by tools/guide_page.py.
+# 1. Articles: every article of docs/app, docs/manager/<category>/ and the Core main pages that the
+#    data file does not list yet is added, in the category of its folder (group "New"). The pages are
+#    rebuilt too, which refreshes the "added" and "updated" dates behind the New / Updated badges.
+#    Runs when articles or the data files are pushed to main.
 # 2. New videos: once a day (and on demand from the Actions tab) it reads youtube.com/@hiddify's
-#    RSS feed and adds new long videos (Shorts are skipped) to:
-#   docs/app/index*.md        (app videos, newest first)
-#   docs/manager/index*.md    (new manager videos at the top of the first category; move them if needed)
-#   docs/instagram/index*.md  (a square tile per video)
+#    RSS feed and adds new long videos (Shorts are skipped) to the guide pages (first category of
+#    their page; move them if needed) and to docs/instagram/index*.md (a square tile per video).
 # and opens (or updates) the pull request "youtube-sync" for review. Merging it deploys the site
 # through the existing "ci" workflow. Nothing is pushed to main by this workflow.
 #
@@ -21,6 +22,7 @@ on:
       - 'docs/app/**.md'
       - 'docs/manager/**.md'
       - 'docs/core/*.md'
+      - 'data/guides/**'
   schedule:
     - cron: '30 5 * * *'   # every day 05:30 UTC (09:00 Tehran)
   workflow_dispatch:
@@ -38,6 +40,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the whole history: the dates behind the New / Updated badges
 
       - uses: actions/setup-python@v5
         with:
@@ -45,7 +49,7 @@ jobs:
 
       - name: Install Pillow and the Persian font
         run: |
-          pip install pillow
+          pip install pillow pyyaml
           sudo apt-get install -y libfribidi0 >/dev/null
           mkdir -p "$RUNNER_TEMP/fonts"
           curl -fsSL -o "$RUNNER_TEMP/fonts/Vazirmatn-Bold.ttf" \
@@ -67,12 +71,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ -z "$(git status --porcelain docs)" ]; then
+          if [ -z "$(git status --porcelain docs data)" ]; then
             echo "No new videos or articles."
             exit 0
           fi
-          new=$(git diff -U0 -- docs/app docs/manager docs/instagram \
-                | grep -oE '^\+.*watch\?v=[A-Za-z0-9_-]{11}' | grep -oE '[A-Za-z0-9_-]{11}$' | sort -u)
+          new=$( { git diff -U0 -- data/guides/videos.yml | grep -oE '^\+"[A-Za-z0-9_-]{11}"' | tr -d '+"';
+                   git diff -U0 -- docs/instagram | grep -oE '^\+.*watch\?v=[A-Za-z0-9_-]{11}' | grep -oE '[A-Za-z0-9_-]{11}$'; } | sort -u)
           titles=$([ -z "$new" ] || python - $new <<'EOF'
           import sys, os
           sys.path.insert(0, 'tools')
@@ -85,7 +89,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -B youtube-sync
-          git add -A docs
+          git add -A docs data
           git commit -m "Add new videos and articles to the guide pages"
           git push --force origin youtube-sync
           articles=$(grep -E '^  \+ ' "$RUNNER_TEMP/articles.txt" | sed 's/^  + /- /' | sort -u)

@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Keep the YouTube video cards on the app and manager guide pages in sync with the channel.
+"""Add the channel's new videos to the app and manager guide pages.
 
 - Reads the channel's long videos (videos tab, newest first) with yt-dlp, or from --list FILE
-  (lines "id|upload_date|duration|title").
-- App guide pages (docs/app/index*.md): the video group is rebuilt with every app video, newest first.
-- Manager guide pages (docs/manager/index*.md): each existing video group is sorted newest first;
-  a new manager video that is not on the page yet is added to the top of the first group.
-- Existing cards are kept as they are (their thumbnails too); new cards get a 480x270 thumbnail in
-  docs/assets/youtube/<id>.jpg.
+  (lines "id|upload_date|duration|title"), or from the RSS feed (YT_SOURCE=rss, in the GitHub Action).
+- A video that is on neither guide page yet goes to the top of the first category of its page in
+  data/guides/app.yml or data/guides/manager.yml (app videos on both languages of the app page;
+  manager videos on the page of their title's language). Move it to another category if needed.
+- Its title goes to data/guides/videos.yml and its 480x270 thumbnail to docs/assets/youtube/<id>.jpg.
+- Then the pages are rebuilt (tools/guide_page.py).
 """
-import re, sys, subprocess, urllib.request, io, os, argparse
+import re, sys, subprocess, urllib.request, io, os, argparse, json
+import yaml
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH = 'https://www.youtube.com/@hiddify/videos'
 APP_RE = re.compile(r'(اپ هیدیفای|هیدیفای‌اپ|HiddifyApp|Hiddify ?5|Hiddify Next|HiddifyNG|HiddifyN\b|Hiddify ?N |HiddifyCli|کِ?لش|هیدیفای اندروید|Clash|Hiddify android|تلویزیون|فیلترشکن رایگان هیدیفای|اینترنت آزاد رایگان با Hiddify|کانفیگ رایگان وارپ)', re.I)
@@ -35,17 +36,35 @@ def channel(listfile=None):
 
 def is_app(v): return bool(APP_RE.search(v['title'])) and not APP_EXCLUDE.search(v['title'])
 
-def esc(s): return s.replace('&', '&amp;').replace('"', '&quot;').replace('<', '&lt;')
+DATA = os.path.join(ROOT, 'data', 'guides')
 
-def card(v):
-    t = esc(v['title'])
-    return (f'            <a href="https://www.youtube.com/watch?v={v["id"]}" title="{t}">\n'
-            f'              <div class="relative p-2 flex justify-center items-center">\n'
-            f'                <img src="/assets/youtube/{v["id"]}.jpg" alt="{t}"\n'
-            f'                  class="md:max-h-[103px] w-full md:max-w-[184px] rounded-xl" decoding="async" loading="lazy" />\n'
-            f'                <img src="/assets/play-icon.svg" class="absolute" decoding="async" loading="lazy" />\n'
-            f'              </div>\n'
-            f'            </a>\n')
+
+def on_pages():
+    """Every video id already on a guide page."""
+    ids = set()
+    for page in ('app', 'manager'):
+        d = yaml.safe_load(open(os.path.join(DATA, page + '.yml'), encoding='utf-8'))
+        for c in d['categories']:
+            for lang in ('fa', 'en'):
+                ids.update(c.get('videos', {}).get(lang) or [])
+        ids.update((d.get('legacy') or {}).get('videos') or [])
+    return ids
+
+
+def prepend(page, lang, vid):
+    """Put vid first in the videos of the first category of data/guides/<page>.yml (language lang)."""
+    p = os.path.join(DATA, page + '.yml'); s = open(p, encoding='utf-8').read()
+    m = re.search(rf'(?m)^      {lang}: \[(.*)\]$', s)          # the first category's list
+    ids = [x.strip() for x in m.group(1).split(',') if x.strip()]
+    s = s[:m.start()] + f'      {lang}: [' + ', '.join([vid] + ids) + ']' + s[m.end():]
+    open(p, 'w', encoding='utf-8').write(s)
+
+
+def add_title(vid, title):
+    p = os.path.join(DATA, 'videos.yml')
+    with open(p, 'a', encoding='utf-8') as f:
+        f.write(f'{json.dumps(vid)}: {json.dumps(title, ensure_ascii=False)}\n')
+
 
 def thumb(vid):
     out = os.path.join(ROOT, 'docs/assets/youtube', vid + '.jpg')
@@ -60,48 +79,22 @@ def thumb(vid):
             im.resize((480, 270), Image.LANCZOS).save(out, quality=88); return
         except Exception: continue
 
-BLOCK = re.compile(r'[ \t]*<a href="https://www\.youtube\.com/watch\?v=([\w-]+)"[^>]*>.*?</a>\n', re.S)
-
-def groups(s):
-    """Runs of consecutive video cards: list of (start, end, [(id, text)])."""
-    out = []; cur = None
-    for m in BLOCK.finditer(s):
-        if cur and s[cur[1]:m.start()].strip() == '':
-            cur[1] = m.end(); cur[2].append((m.group(1), m.group(0)))
-        else:
-            if cur: out.append(cur)
-            cur = [m.start(), m.end(), [(m.group(1), m.group(0))]]
-    if cur: out.append(cur)
-    return out
-
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--list'); a = ap.parse_args()
-    vids = channel(a.list); order = {v['id']: i for i, v in enumerate(vids)}; by = {v['id']: v for v in vids}
-    app = [v for v in vids if is_app(v)]
-    for fn in ('docs/app/index.fa.md', 'docs/app/index.md'):
-        p = os.path.join(ROOT, fn); s = open(p, encoding='utf-8').read(); g = groups(s)
-        if not g: continue
-        st, en, items = g[0]; have = dict(items)
-        ids = [v['id'] for v in app] + [i for i, _ in items if i not in order]
-        new = ''.join(have.get(i) or card(by[i]) for i in ids)
-        for i in ids:
-            if i not in have: thumb(i)
-        s = s[:st] + new + s[en:]; open(p, 'w', encoding='utf-8').write(s)
-        print(fn, len(ids), 'videos,', sum(i not in have for i in ids), 'new')
-    for fn in ('docs/manager/index.fa.md', 'docs/manager/index.md'):
-        p = os.path.join(ROOT, fn); s = open(p, encoding='utf-8').read()
-        on_page = set(BLOCK.findall(s)); added = []
-        for st, en, items in reversed(groups(s)):
-            items = sorted(items, key=lambda it: order.get(it[0], 10**6))
-            s = s[:st] + ''.join(t for _, t in items) + s[en:]
-        fa = fn.endswith('.fa.md')
-        newm = [v for v in vids if not is_app(v) and v['id'] not in on_page
-                and v['id'] not in open(os.path.join(ROOT, 'docs/manager/index.md' if fa else 'docs/manager/index.fa.md'), encoding='utf-8').read()
-                and (bool(re.search('[؀-ۿ]', v['title'])) == fa)]
-        if newm:
-            g = groups(s); st = g[0][0]
-            s = s[:st] + ''.join(card(v) for v in newm) + s[st:]
-            for v in newm: thumb(v['id'])
-        open(p, 'w', encoding='utf-8').write(s)
-        print(fn, 'sorted;', len(newm), 'new')
-main()
+    have = on_pages(); new = []
+    for v in reversed(channel(a.list)):           # oldest first, so the newest ends up on top
+        if v['id'] in have:
+            continue
+        if is_app(v):
+            prepend('app', 'fa', v['id']); prepend('app', 'en', v['id'])
+        else:
+            prepend('manager', 'fa' if re.search('[\u0600-\u06FF]', v['title']) else 'en', v['id'])
+        add_title(v['id'], v['title']); thumb(v['id']); new.append(v)
+    for v in reversed(new):
+        print(f"new {'app' if is_app(v) else 'manager'} video: {v['title']} ({v['id']})")
+    print(len(new), 'new videos')
+    subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'guide_page.py')], check=True)
+
+
+if __name__ == '__main__':
+    main()

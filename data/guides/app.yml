@@ -1,0 +1,106 @@
+# The app guide page (docs/app/index.md and index.fa.md) is built from this file:
+#   make guide-pages        (tools/guide_page.py)
+# See data/guides/manager.yml for the format.
+
+page: app
+start:
+  - path: app/How-to-install-Hiddify-app
+    icon: download-outline
+    fa: {title: نصب اپ, text: اندروید، iOS، ویندوز، مک و لینوکس}
+    en: {title: Install the app, text: "Android, iOS, Windows, macOS and Linux"}
+  - path: app/How-to-use-Hiddify-app
+    icon: gesture-tap-button
+    fa: {title: کار با اپ, text: افزودن پروفایل و اتصال}
+    en: {title: Use the app, text: Add a profile and connect}
+  - path: app/How-to-use-WARP-on-Hiddify-App
+    icon: weather-cloudy-arrow-right
+    fa: {title: اینترنت آزاد رایگان, text: وارپ رایگان در خود اپ}
+    en: {title: Free WARP, text: Free WARP right in the app}
+  - path: core
+    icon: console-line
+    fa: {title: هستهٔ هیدیفای, text: موتور اپ در خط فرمان}
+    en: {title: Hiddify Core, text: The app's engine on the command line}
+
+categories:
+  - id: app
+    color: "#455fe9"
+    image: /assets/guide/app.svg
+    fa: {title: اپ هیدیفای, text: نصب، اتصال و قابلیت‌های اپ}
+    en: {title: The Hiddify app, text: "Installing, connecting and the app's features"}
+    groups:
+      - fa: شروع
+        en: Getting started
+        articles:
+          - path: app/How-to-install-Hiddify-app
+            fa: نصب اپ هیدیفای
+            en: Install the Hiddify app
+          - path: app/How-to-use-Hiddify-app
+            fa: کار با اپ هیدیفای
+            en: Use the Hiddify app
+      - fa: قابلیت‌ها
+        en: Features
+        articles:
+          - path: app/How-to-use-WARP-on-Hiddify-App
+            fa: وارپ در اپ هیدیفای
+            en: WARP in the Hiddify app
+          - path: app/How-to-use-UDP-Turn-Relay
+            fa: UDP Turn Relay
+            en: UDP Turn Relay
+    videos:
+      fa: [HOF6NJa55SI, UsOrJ9wMUMo, NGP_uC8edJI, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
+      en: [NGP_uC8edJI, HOF6NJa55SI, UsOrJ9wMUMo, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
+
+  - id: core
+    color: "#0d9488"
+    image: /assets/guide/core.svg
+    fa: {title: هسته، خط فرمان و روتر, text: همان موتور اپ، روی سرور، روتر و کامپیوتر بدون صفحه}
+    en: {title: "Core, command line and routers", text: "The app's engine on servers, routers and headless computers"}
+    groups:
+      - fa: هستهٔ هیدیفای
+        en: Hiddify Core
+        articles:
+          - path: core
+            fa: هستهٔ هیدیفای
+            en: Hiddify Core
+          - path: core/cli
+            fa: راهنمای دستورهای HiddifyCli
+            en: HiddifyCli command reference
+          - path: app/HiddifyCli-guide
+            fa: آموزش HiddifyCli
+            en: HiddifyCli tutorial
+      - fa: روتر OpenWrt
+        en: OpenWrt routers
+        articles:
+          - path: app/How-to-use-HiddifyCli-on-OpenWrt
+            fa: نصب HiddifyCli روی OpenWrt
+            en: HiddifyCli on OpenWrt
+          - path: app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli
+            fa: اینترنت آزاد برای همهٔ دستگاه‌های پشت روتر
+            en: Free internet for every device behind the router
+    videos:
+      fa: [jrvQD5xo6PU]
+      en: [jrvQD5xo6PU]
+
+  - id: developers
+    color: "#6366f1"
+    image: /assets/guide/developers.svg
+    fa: {title: برای توسعه‌دهندگان, text: لینک‌های اپ و مشارکت در پروژه}
+    en: {title: For developers, text: The app's links and contributing}
+    groups:
+      - fa: توسعه
+        en: Development
+        articles:
+          - path: app/URL-Scheme
+            fa: URL Scheme اپ (انگلیسی)
+            en: The app's URL scheme
+          - path: app/How-to-contribute-to-this-project
+            fa: مشارکت در پروژه
+            en: Contributing to the project
+    videos:
+      fa: []
+      en: []
+
+legacy:
+  fa: {title: ویدیوهای اپ‌های قدیمی هیدیفای, text: "HiddifyNG، HiddifyN و Hiddify Clash؛ این اپ‌ها دیگر به‌روز نمی‌شوند و اپ هیدیفای جای همه‌شان را گرفته است."}
+  en: {title: Videos of the old Hiddify apps, text: "HiddifyNG, HiddifyN and Hiddify Clash. These apps are no longer updated; the Hiddify app replaces them all."}
+  videos: [qDbI72J-INM, L1VxAcG_7jg, Jnnx1VWMlEs, omGIz97mbzM, Pqactnz_PdU, qT43zDPev6o, o9L2sI2T53Q, hVcWJ8Qg1GQ, 7B0PO3HM6Vg, mUTfYd1_UCM, 8P887E-KMls]

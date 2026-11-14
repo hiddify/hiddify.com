@@ -1,4 +1,6 @@
 ---
+search:
+  exclude: true
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای منیجر
 comments: false
@@ -220,7 +222,7 @@ weight: -2
 <div class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"></div>
 <div class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"></div>
 
-## دامنه، ورکر، CDN و تانل
+## دامنه، ورکر، CDN و تونل
 
 <div class="card-item mt-4 flex gap-16 rounded-xl border border-gray-500  p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20 flex-col lg:flex-row">
 <div class="max-w-[552px]">
@@ -273,10 +275,10 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-multiCDN-domains-in-HiddifyManager/">آموزش استفاده از چندین دامنه CDN در هیدیفای‌منیجر</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">آیپی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/">آی‌پی تمیز کلادفلر چیست و چگونه می‌توان آن را پیدا کرد</a>
         </li>
         <li>
-        <a target="_blank" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/">آموزش قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص (برای فیلد اجبار)</a>
+        <a target="_blank" href="https://hiddify.com/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/">آموزش قرار دادن آی‌پی‌های تمیز دلخواه بر اساس فرمت مشخص (برای فیلد اجبار)</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/">آموزش ایجاد لینک سابسکریپشن در ‌هیدیفای‌منیجر</a>
@@ -288,31 +290,31 @@ weight: -2
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/">آموزش استفاده از دامنه ورکر کلادفلر در هیدیفای‌منیجر (روش خودکار)</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکرز در هیدیفای‌منیجر (روش دستی)</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/">آموزش تنظیم و استفاده از ورکر در هیدیفای‌منیجر (روش دستی)</a>
         </li>
         <li>
         <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/">آموزش راه‌اندازی سرور میانی با استفاده از سرور میانی ساز هیدیفای (همه روش‌ها در یک اپ)</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش IP Tables</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/">آموزش راه‌اندازی تونل به روش IP Tables</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش GOST</a>
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/">آموزش راه‌اندازی تونل به روش GOST</a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش WST
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/">آموزش راه‌اندازی تونل به روش WST
         </a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش Dokodemo-Door
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/">آموزش راه‌اندازی تونل به روش Dokodemo-Door
         </a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">آموزش راه‌اندازی تانل به روش HA-proxy
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/">آموزش راه‌اندازی تونل به روش HA-proxy
         </a>
         </li>
         <li>
-        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/">نحوه افزودن سرور (دامنه) میانی به هیدیفای منیجر
+        <a target="_blank" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/">نحوه افزودن سرور (دامنه) میانی به هیدیفای‌منیجر
         </a>
         </li>
         <li>
@@ -401,7 +403,7 @@ weight: -2
     
     <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/">
-        چک کردن تمیز بودن آیپی یا دامنه سرور
+        چک کردن تمیز بودن آی‌پی یا دامنه سرور
         </a>
     </li>
     <li>
@@ -425,7 +427,7 @@ weight: -2
     <div class="hidden">
      <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/">
-        عیب‌یابی مشکلات اتصال با هیدیفای‌منیجر و پراکسی‌ها
+        عیب‌یابی مشکلات اتصال با هیدیفای‌منیجر و پروکسی‌ها
         </a>
     </li>
     <li>
@@ -445,7 +447,7 @@ weight: -2
         </li>
         <li>
         <a target="_blank" href="/fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/">
-            آموزش غیرفعال‌سازی آیپی ورژن ۶ در هیدیفای‌منیجر
+            آموزش غیرفعال‌سازی آی‌پی ورژن ۶ در هیدیفای‌منیجر
         </a>
         </li>
         <li>

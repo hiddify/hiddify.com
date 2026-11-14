@@ -128,7 +128,7 @@ comments: false
      <li>نصب آسان</li>
      <li>یکی از بهترین سرورهای VPN برای ایران، چین، روسیه، برزیل و سراسر جهان</li>
      <li>پشتیبانی از چند هسته، چند دامنه و مدیریت یکپارچه کاربران</li>
-     <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols-manager">و ...</a><span class="hidden-features"> Shadowsocks، WireGuard، AnyTLS، Snell، Naive، Mieru، xHTTP، httpupgrade، gRPC، WebSocket، ECH، تانل‌های DNS، پروکسی تلگرام، با هسته‌های Xray و sing-box (hiddify-core) و بسیاری دیگر</span></li>
+     <li>پشتیبانی از طیف وسیعی از پروتکل‌های پروکسی از جمله Hysteria2، TUIC، Reality، VMess، VLESS، Trojan <a href="#" id="show-protocols-manager">و ...</a><span class="hidden-features"> Shadowsocks، WireGuard، AnyTLS، Snell، Naive، Mieru، xHTTP، httpupgrade، gRPC، WebSocket، ECH، تونل‌های DNS، پروکسی تلگرام، با هسته‌های Xray و sing-box (hiddify-core) و بسیاری دیگر</span></li>
     </ul>
 
     <a href="https://github.com/hiddify/hiddify-manager" style="margin-bottom: 20px; display: inline-block;">اطلاعات بیشتر درباره هیدیفای‌منیجر و مشاهده کد برنامه</a>
@@ -356,7 +356,7 @@ comments: false
       با اشتراک‌گذاری محصولات هیدیفای، به‌ویژه هیدیفای و هیدیفای‌منیجر، در شبکه‌های اجتماعی و معرفی آن به افرادی که به ابزارهای ضد سانسور نیاز دارند، می‌توانید به گسترش این پروژه و افزایش کاربران آن کمک کنید.
           
       6. **پیوستن به کانال‌ها و گروه‌های اجتماعی** 📲  
-      با عضویت در [کانال تلگرام هیدیفای](https://t.me/hiddify) و [گروه پشتیبانی](https://t.me/hiddify_board)، می‌توانید با دیگر کاربران در ارتباط باشید و از آخرین اخبار و بروزرسانی‌های پروژه مطلع شوید. همچنین آخرین ویدیوهای آموزشی را از [کانال یوتیوب هیدیفای](https://youtube.com/@hiddify) دنبال کنید. ما را در [اینستاگرام](https://instagram.com/hiddify_com) و [ایکس](https://x.com/hiddify_com) دنبال کنید تا از آخرین اطلاعات این پروژه مطلع شوید.
+      با عضویت در [کانال تلگرام هیدیفای](https://t.me/hiddify) و [گروه پشتیبانی](https://t.me/hiddify_board)، می‌توانید با دیگر کاربران در ارتباط باشید و از آخرین اخبار و به‌روزرسانی‌های پروژه مطلع شوید. همچنین آخرین ویدیوهای آموزشی را از [کانال یوتیوب هیدیفای](https://youtube.com/@hiddify) دنبال کنید. ما را در [اینستاگرام](https://instagram.com/hiddify_com) و [ایکس](https://x.com/hiddify_com) دنبال کنید تا از آخرین اطلاعات این پروژه مطلع شوید.
           
       7. **کمک به تولید محتوا، به‌ویژه محتوای ویدیویی** 🎥  
       شما می‌توانید با تولید محتوای آموزشی و تبلیغاتی درباره استفاده از هیدیفای، به گسترش آگاهی و جذب کاربران جدید کمک کنید. محتوای ویدیویی، از جمله آموزش نحوه استفاده و نصب هیدیفای و بیان مزایای آن، می‌تواند برای کاربران بسیار مفید باشد. این محتواها می‌توانند در شبکه‌های اجتماعی و پلتفرم‌های اشتراک ویدیو مانند یوتیوب و اینستاگرام منتشر شوند تا به اطلاع‌رسانی بهتر و جذب مخاطب کمک کنند.

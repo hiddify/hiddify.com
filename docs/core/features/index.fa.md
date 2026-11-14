@@ -24,16 +24,16 @@ weight: 10
 - [WireGuard: افزوده‌های هیدیفای](protocols/wireguard-hiddify.md): بسته‌های نویز پیش از handshake، نام کاربر برای هر peer، بازیابی سوکت و تکه‌تکه کردن UDP که به‌طور پیش‌فرض روشن است.
 - [خروجی WireGuard (قالب قدیمی)](protocols/wireguard-legacy.md): خروجی قدیمی WireGuard که sing-box اصلی حذفش کرد، نگه داشته شده تا کانفیگ‌های قدیمی هنوز بارگذاری شوند.
 - [رمزگذاری VLESS](protocols/vless-encryption.md): رمزگذاری پساکوانتومی VLESS از Xray، با Vision روی آن حتی بدون TLS.
-- [Sudoku](protocols/sudoku.md): یک پراکسی رمزشدهٔ TCP که بایت‌هایش را به شکل سرنخ‌های سودوکو می‌فرستد تا ترافیک شبیه متن باشد یا تصادفی بودن کمی داشته باشد، با تونل‌های HTTP اختیاری (build tag `with_sudoku`).
-- [Mieru](protocols/mieru.md): یک پراکسی کاملاً رمزشده و padding‌دار روی بازه‌های پورت TCP یا UDP، بدون هیچ الگوی ثابت.
-- [TrustTunnel](protocols/trusttunnel.md): ترافیک پراکسی به شکل جریان‌های HTTP CONNECT روی HTTP/2 یا HTTP/3.
+- [Sudoku](protocols/sudoku.md): یک پروکسی رمزشدهٔ TCP که بایت‌هایش را به شکل سرنخ‌های سودوکو می‌فرستد تا ترافیک شبیه متن باشد یا تصادفی بودن کمی داشته باشد، با تونل‌های HTTP اختیاری (build tag `with_sudoku`).
+- [Mieru](protocols/mieru.md): یک پروکسی کاملاً رمزشده و padding‌دار روی بازه‌های پورت TCP یا UDP، بدون هیچ الگوی ثابت.
+- [TrustTunnel](protocols/trusttunnel.md): ترافیک پروکسی به شکل جریان‌های HTTP CONNECT روی HTTP/2 یا HTTP/3.
 - [SSH](protocols/ssh.md): یک ورودی سرور SSH برای port forwarding، به‌علاوهٔ UDP روی TCP و اتصال پس‌زمینه برای خروجی SSH.
 - [سایفون](protocols/psiphon.md): بدون سرور شخصی از راه شبکهٔ سایفون وصل شوید و کشور خروجی را انتخاب کنید.
 - [DNSTT](protocols/dnstt.md): ترافیک را درون پرس‌وجوهای DNS از راه resolverهای عمومی می‌برد و خودش آن‌ها را پیدا می‌کند.
 - [MasterDNS](protocols/masterdns.md): تونل MasterDnsVPN از راه resolverهای عمومی، با سربار کم، تکرار بسته‌ها روی چند resolver و آزمایش MTU؛ سرور خودش به مقصد وصل می‌شود.
 - [Soar](protocols/soar.md): تونل DNS پروژهٔ Lantern، هر resolver یک مسیر جدا با بازیابی سریع از دست رفتن بسته‌ها و کشف resolver، به‌طور پیش‌فرض از راه مجموعهٔ هوشمند؛ لینک‌های `soar://`.
 - [GooseRelay](protocols/gooserelay.md): ترافیک را از راه Google Apps Script به سرور خودتان می‌فرستد، پس شبکه فقط HTTPS به گوگل می‌بیند.
-- [تونل تماس](protocols/call.md): ترافیک پراکسی را درون یک تماس تصویری در VK، Telemost، Dion، WB Stream یا Bitrix24 می‌برد تا شبیه تماس با یک سرویس داخلی مجاز باشد؛ به‌طور کامل تست نشده است (build tag `with_call`).
+- [تونل تماس](protocols/call.md): ترافیک پروکسی را درون یک تماس تصویری در VK، Telemost، Dion، WB Stream یا Bitrix24 می‌برد تا شبیه تماس با یک سرویس داخلی مجاز باشد؛ به‌طور کامل تست نشده است (build tag `with_call`).
 - [Tunnel](protocols/tunnel.md): یک تونل معکوس که از راه یک سرور عمومی به دستگاه‌های پشت NAT می‌رسد.
 - [Bond](protocols/bond.md): هر اتصال را هم‌زمان روی چند خروجی تقسیم می‌کند و در سرور به هم وصل می‌کند تا سرعت اتصال‌های محدودشده جمع شود (build tag `with_bond`).
 

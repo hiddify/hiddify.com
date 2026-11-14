@@ -1,4 +1,6 @@
 ---
+search:
+  exclude: true
 description: Welcome to the wiki page for HiddifyManager
 title: Manager Guide
 comments: false

@@ -157,7 +157,7 @@ WARP روی MASQUE شما را با MASQUE، پروتکلی که اپ‌های �
 بخش‌هایی از این قابلیت از این پروژه‌ها آمده است. از نویسندگان آن‌ها سپاسگزاریم.
 
 - [SagerNet/sing-box](https://github.com/SagerNet/sing-box): پشتیبانی MASQUE که این outbound روی آن کار می‌کند.
-- [Diniboy1123/connect-ip-go](https://github.com/Diniboy1123/connect-ip-go): CONNECT-IP برای WARP کلودفلر، فورکی از [quic-go/connect-ip-go](https://github.com/quic-go/connect-ip-go) که از طریق [shtorm-7/connect-ip-go](https://github.com/shtorm-7/connect-ip-go) استفاده می‌شود.
+- [Diniboy1123/connect-ip-go](https://github.com/Diniboy1123/connect-ip-go): CONNECT-IP برای WARP کلادفلر، فورکی از [quic-go/connect-ip-go](https://github.com/quic-go/connect-ip-go) که از طریق [shtorm-7/connect-ip-go](https://github.com/shtorm-7/connect-ip-go) استفاده می‌شود.
 - [Leadaxe/sing-box-lx](https://github.com/Leadaxe/sing-box-lx): `vhttp` خودکار، `server_name` و جابه‌جایی endpoint از این پروژه پیروی می‌کنند.
 
 پروژه‌های مرتبط:

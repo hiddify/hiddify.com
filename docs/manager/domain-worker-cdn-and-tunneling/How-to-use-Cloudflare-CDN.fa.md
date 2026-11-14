@@ -129,7 +129,7 @@ description: اضافه کردن دامنه به کلادفلر، ساخت رک�
 
 ## سرویس‌های دیگر کلادفلر
 
-- **ورکر**: [آموزش تنظیم و استفاده از ورکرز](/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
+- **ورکر**: [آموزش تنظیم و استفاده از ورکر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
 - **دامین فرانتینگ**: [راهنمای دامین فرانتینگ](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/). این روش فعلا در کلادفلر کار نمی‌کند.
 
 </div>

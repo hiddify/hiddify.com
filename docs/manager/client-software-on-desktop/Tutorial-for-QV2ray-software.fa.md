@@ -15,9 +15,9 @@ title: آموزش کار با نرم‌افزار QV2ray
 
 
 
-* فایل `dll` دانلود شده پلاگین رو در مسیر نصب نرم افزار `QV2ray` در پوشه `Plugins` کپی کنید. از داخل نرم افزار در بخش `Plugins` با کلیک روی `Open Local Plugin Folder` مسیر مذکور باز می‌شود. 
+* فایل `dll` دانلود شده پلاگین رو در مسیر نصب نرم‌افزار `QV2ray` در پوشه `Plugins` کپی کنید. از داخل نرم‌افزار در بخش `Plugins` با کلیک روی `Open Local Plugin Folder` مسیر مذکور باز می‌شود. 
 
-* نرم افزار را بسته و مجددا اجرا کنید. در مسیر `Plugins` گزینه‌ای تحت عنوان `Trojan-GFW Plugins` اضافه می‌شود.
+* نرم‌افزار را بسته و مجددا اجرا کنید. در مسیر `Plugins` گزینه‌ای تحت عنوان `Trojan-GFW Plugins` اضافه می‌شود.
 
 <div align=center markdown=1>
 ![Screenshot-from-2020-08-28-09-18-10](https://github.com/hiddify/hiddify-config/assets/125398461/289c4b06-1436-4549-b331-ada3a668a052)

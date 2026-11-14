@@ -22,12 +22,23 @@ SINGBOX ?= ../hiddify-sing-box
 core-docs:
 	python3 scripts/sync_core_docs.py $(SINGBOX)
 
-# Instagram-style page (docs/instagram): add every YouTube channel video that is not there yet (needs yt-dlp)
-guides:
-	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/guide_links.py
+PY = $(if $(wildcard venv/bin/python),venv/bin/python,python3)
 
+# The app and manager guide pages are built from data/guides/*.yml:
+#   guide-pages: rebuild them; guides: add articles they do not list yet; youtube: add new channel videos
+guide-pages:
+	@$(PY) tools/guide_page.py
+
+guides:
+	@$(PY) tools/guide_links.py
+
+# one spelling for Persian words written in several ways (tools/fa_spelling.py)
+spelling:
+	@$(PY) tools/fa_spelling.py
+
+# Instagram-style page (docs/instagram): add every YouTube channel video that is not there yet (needs yt-dlp)
 youtube: instagram
-	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/youtube_sections.py
+	@$(PY) tools/youtube_sections.py
 
 instagram:
 	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/instagram_page.py
@@ -35,7 +46,7 @@ instagram:
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 
-.PHONY: all test clean docs core-docs instagram youtube guides
+.PHONY: all test clean docs core-docs instagram youtube guides guide-pages spelling
 
 
 idx = lunr(ref='location',fields=('title', 'text'),documents={'location':1},languages="fa",)

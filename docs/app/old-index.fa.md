@@ -1,4 +1,6 @@
 ---
+search:
+  exclude: true
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای اپ
 comments: false
