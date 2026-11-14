@@ -3,7 +3,7 @@
 The feed lists the 15 newest uploads, Shorts included. A Short answers /shorts/<id> itself (200);
 a long video is redirected to /watch (303). Used by the scheduled GitHub Action (YT_SOURCE=rss),
 where yt-dlp is often blocked."""
-import urllib.request, urllib.error, xml.etree.ElementTree as ET
+import time, urllib.request, urllib.error, xml.etree.ElementTree as ET
 
 CHANNEL_ID = 'UCxrmeMvVryNfB4XL35lXQNg'   # youtube.com/@hiddify
 FEED = f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}'
@@ -20,9 +20,19 @@ def is_short(vid):
     except urllib.error.HTTPError as e:
         return False if e.code in (301, 302, 303, 307, 308) else None
 
+def _feed(tries=4, wait=30):
+    """The feed's XML. YouTube's feed answers 404 or 5xx now and then for a while: try again."""
+    for i in range(tries):
+        try:
+            return urllib.request.urlopen(urllib.request.Request(FEED, headers=UA), timeout=30).read()
+        except (urllib.error.URLError, TimeoutError):
+            if i == tries - 1:
+                raise
+            time.sleep(wait)
+
 def long_videos():
     """[(id, 'YYYYMMDD', title)] newest first, long videos only."""
-    root = ET.fromstring(urllib.request.urlopen(urllib.request.Request(FEED, headers=UA), timeout=30).read())
+    root = ET.fromstring(_feed())
     out = []
     for e in root.findall('a:entry', NS):
         vid = e.find('yt:videoId', NS).text

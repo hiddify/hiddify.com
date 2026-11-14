@@ -56,6 +56,8 @@ jobs:
         run: make guides | tee "$RUNNER_TEMP/articles.txt"
 
       - name: Update the pages from the channel
+        # the channel's feed is down now and then: new articles still get their pull request
+        continue-on-error: true
         env:
           YT_SOURCE: rss
           INSTAGRAM_FONT: ${{ runner.temp }}/fonts/Vazirmatn-Bold.ttf
@@ -71,7 +73,7 @@ jobs:
           fi
           new=$(git diff -U0 -- docs/app docs/manager docs/instagram \
                 | grep -oE '^\+.*watch\?v=[A-Za-z0-9_-]{11}' | grep -oE '[A-Za-z0-9_-]{11}$' | sort -u)
-          titles=$(python - $new <<'EOF'
+          titles=$([ -z "$new" ] || python - $new <<'EOF'
           import sys, os
           sys.path.insert(0, 'tools')
           from yt_channel import long_videos
