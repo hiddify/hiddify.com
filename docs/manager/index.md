@@ -82,6 +82,18 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
               target="_blank" class="text-secondaryText text-sm">How to install different versions of Hiddify
               Manager</a>
           </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/" target="_blank" class="text-secondaryText text-sm">How to install HiddifyManager Version 8</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/installation-and-setup/Install-Hiddify-using-Docker/" target="_blank" class="text-secondaryText text-sm">Installing HiddifyManager using Docker</a>
+          </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-1">
             <div class="flex items-center gap-2">
@@ -246,6 +258,24 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
               target="_blank" class="text-secondaryText text-sm">How to set up Telegram proxy on Hiddify
               Manager</a>
           </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/" target="_blank" class="text-secondaryText text-sm">How to use Hiddify Reality Scanner</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/configuration-and-advanced-settings/IPv6-usage-guide/" target="_blank" class="text-secondaryText text-sm">IPv6 Usage Guide</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/" target="_blank" class="text-secondaryText text-sm">How to import X-UI to HiddifyManager</a>
+          </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-2">
             <div class="flex items-center gap-2">
@@ -408,6 +438,30 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             </div>
             <a href="/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/" target="_blank"
               class="text-secondaryText text-sm">How to use Amazon CDN or Cloudfront</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/" target="_blank" class="text-secondaryText text-sm">How to use desired clean IPs based on the specified format (for the forced to use host field)</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/" target="_blank" class="text-secondaryText text-sm">4to6 Tunnel</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/" target="_blank" class="text-secondaryText text-sm">Tutorial-for-setting-up-IPv6-to-improve-Relay-stability</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/" target="_blank" class="text-secondaryText text-sm">Tutorial for setting up local IPv6 for Relay server</a>
           </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-3">
@@ -674,6 +728,30 @@ To connect to your server from a phone or computer, we recommend the [Hiddify ap
             </div>
             <a href="/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"
               target="_blank" class="text-secondaryText text-sm">How to check and prevent DNS leaks</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/" target="_blank" class="text-secondaryText text-sm">A Suitable Method for Finding TLS Trick Values and How to Configure Them from HiddifyManager and Hiddify app</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/" target="_blank" class="text-secondaryText text-sm">How to address VPS abuse issue</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/" target="_blank" class="text-secondaryText text-sm">How to check and prevent time zone leaks</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/" target="_blank" class="text-secondaryText text-sm">How to enable Swap on Linux</a>
           </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-4">

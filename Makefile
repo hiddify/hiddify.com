@@ -23,6 +23,9 @@ core-docs:
 	python3 scripts/sync_core_docs.py $(SINGBOX)
 
 # Instagram-style page (docs/instagram): add every YouTube channel video that is not there yet (needs yt-dlp)
+guides:
+	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/guide_links.py
+
 youtube: instagram
 	@$(if $(wildcard venv/bin/python),venv/bin/python,python3) tools/youtube_sections.py
 
@@ -32,7 +35,7 @@ instagram:
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 
-.PHONY: all test clean docs core-docs instagram
+.PHONY: all test clean docs core-docs instagram youtube guides
 
 
 idx = lunr(ref='location',fields=('title', 'text'),documents={'location':1},languages="fa",)

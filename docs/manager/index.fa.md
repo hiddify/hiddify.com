@@ -80,6 +80,54 @@ bash <(curl https://i.hiddify.com/release)
             <a href="/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/"
               target="_blank" class="text-secondaryText text-sm">نصب نسخه‌های مختلف هیدیفای‌منیجر</a>
           </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Cloud-init-installation/" target="_blank" class="text-secondaryText text-sm">نصب آسان از طریق دیتاسنتر (Cloud-init)</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/How-to-install-HiddifManager-Version-8/" target="_blank" class="text-secondaryText text-sm">راهمای نصب نسخه ۸ هیدیفای منیجر</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/" target="_blank" class="text-secondaryText text-sm">نصب هیدیفای‌منیجر روی داکر</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure/" target="_blank" class="text-secondaryText text-sm">نصب سریع و آسان در Microsoft Azure</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/" target="_blank" class="text-secondaryText text-sm">نصب سریع و آسان در OVH</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/" target="_blank" class="text-secondaryText text-sm">نصب سریع و آسان در Oracle Cloud</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/" target="_blank" class="text-secondaryText text-sm">نصب سریع و آسان در Hetzner</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/" target="_blank" class="text-secondaryText text-sm">نصب سریع و آسان در Vultr</a>
+          </div>
         </div>
       </div>
 
@@ -237,6 +285,24 @@ bash <(curl https://i.hiddify.com/release)
             <a href="/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/"
               target="_blank" class="text-secondaryText text-sm">آموزش راه‌اندازی پروکسی تلگرام در
               هیدیفای‌منیجر</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/" target="_blank" class="text-secondaryText text-sm">آموزش استفاده از اسکنر ریالتی هیدیفای</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/configuration-and-advanced-settings/IPv6-usage-guide/" target="_blank" class="text-secondaryText text-sm">راهنمای استفاده از IPv6</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/" target="_blank" class="text-secondaryText text-sm">آموزش ایمپورت کردن پنل X-UI به هیدیفای‌منیجر</a>
           </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-2">
@@ -435,6 +501,30 @@ bash <(curl https://i.hiddify.com/release)
             </div>
             <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/" target="_blank"
               class="text-secondaryText text-sm">چگونه از Amazon CDN یا Cloudfront استفاده کنیم</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/" target="_blank" class="text-secondaryText text-sm">قرار دادن آیپی‌های تمیز دلخواه بر اساس فرمت مشخص (برای فیلد اجبار)</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/" target="_blank" class="text-secondaryText text-sm">تونل 4to6</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/" target="_blank" class="text-secondaryText text-sm">استفاده از IPV6 اصلی سرورها برای مقاوم‌سازی تانلینگ</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/" target="_blank" class="text-secondaryText text-sm">آموزش ایجاد IPv6 لوکال برای سرور میانی</a>
           </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-3">
@@ -753,6 +843,30 @@ bash <(curl https://i.hiddify.com/release)
             </div>
             <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/"
               target="_blank" class="text-secondaryText text-sm">آموزش تست نشتی DNS</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/" target="_blank" class="text-secondaryText text-sm">یک روش مناسب برای پیدا کردن مقادیر ترفند TLS و نحوه تنظیم آن از سمت هیدیفای‌منیجر و اپ هیدیفای</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-address-VPS-abuse-issue/" target="_blank" class="text-secondaryText text-sm">رفع مشکل ایبوز شدن سرورهای مجازی</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/" target="_blank" class="text-secondaryText text-sm">چگونه نشتی تایم‌زون را بررسی کنیم و از آن جلوگیری کنیم</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <div>
+              <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+            </div>
+            <a href="/fa/manager/basic-concepts-and-troubleshooting/How-to-enable-Swap-on-Linux/" target="_blank" class="text-secondaryText text-sm">نحوه فعال‌سازی Swap برای یک VPS لینوکسی</a>
           </div>
 
           <div class="flex flex-col gap-2 md:hidden" id="section-content-4">

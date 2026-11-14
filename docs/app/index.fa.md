@@ -96,6 +96,18 @@ comments: false
                 URL Scheme در اپ هیدیفای (انگلیسی)
               </a>
             </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/core/" target="_blank" class="text-secondaryText text-sm">هسته هیدیفای</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <div>
+                <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+              </div>
+              <a href="/fa/core/cli/" target="_blank" class="text-secondaryText text-sm">راهنمای خط فرمان HiddifyCli</a>
+            </div>
           </div>
         </div>
       </div>

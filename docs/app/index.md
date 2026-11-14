@@ -103,6 +103,18 @@ For the full feature list, see the <a
                     URL scheme in the Hiddify app
                   </a>
                 </div>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/core/" target="_blank" class="text-secondaryText text-sm">Hiddify Core</a>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div>
+                    <div class="h-2 w-2 rounded-full bg-[#455FE9]"></div>
+                  </div>
+                  <a href="/core/cli/" target="_blank" class="text-secondaryText text-sm">HiddifyCli command-line reference</a>
+                </div>
               </div>
             </div>
           </div>

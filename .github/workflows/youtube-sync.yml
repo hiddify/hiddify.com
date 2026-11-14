@@ -1,6 +1,9 @@
-# Keeps the YouTube video cards on the guide pages and the Instagram-style page in sync with
-# youtube.com/@hiddify. Once a day (and on demand from the Actions tab) it reads the channel's
-# RSS feed, adds new long videos (Shorts are skipped) to:
+# Keeps the guide pages up to date, in a pull request:
+# 1. New articles: every article of docs/app and docs/manager/<category>/ that its guide page does not
+#    link to yet is added to that page (manager: in the box of its category folder), in English and
+#    Persian (tools/guide_links.py). Runs when articles are pushed to main.
+# 2. New videos: once a day (and on demand from the Actions tab) it reads youtube.com/@hiddify's
+#    RSS feed and adds new long videos (Shorts are skipped) to:
 #   docs/app/index*.md        (app videos, newest first)
 #   docs/manager/index*.md    (new manager videos at the top of the first category; move them if needed)
 #   docs/instagram/index*.md  (a square tile per video)
@@ -12,6 +15,12 @@
 name: youtube-sync
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/app/**.md'
+      - 'docs/manager/**.md'
+      - 'docs/core/*.md'
   schedule:
     - cron: '30 5 * * *'   # every day 05:30 UTC (09:00 Tehran)
   workflow_dispatch:
@@ -43,6 +52,9 @@ jobs:
             https://github.com/rastikerdar/vazirmatn/raw/master/fonts/ttf/Vazirmatn-Bold.ttf
           python -c "from PIL import features; assert features.check('raqm'), 'Pillow without raqm: Persian text would be broken'"
 
+      - name: Add new articles to the guide pages
+        run: make guides | tee "$RUNNER_TEMP/articles.txt"
+
       - name: Update the pages from the channel
         env:
           YT_SOURCE: rss
@@ -54,7 +66,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -z "$(git status --porcelain docs)" ]; then
-            echo "No new videos."
+            echo "No new videos or articles."
             exit 0
           fi
           new=$(git diff -U0 -- docs/app docs/manager docs/instagram \
@@ -72,12 +84,13 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -B youtube-sync
           git add -A docs
-          git commit -m "Add new YouTube videos to the guide and Instagram pages"
+          git commit -m "Add new videos and articles to the guide pages"
           git push --force origin youtube-sync
-          body=$(printf 'New videos on youtube.com/@hiddify:\n\n%s\n\nPages updated: app guide, manager guide and Instagram page (fa and en).\n\nA new **manager** video is put at the top of the first category of the manager guide: move it to its category in this branch if needed. Merging deploys the site.\n' "$titles")
+          articles=$(grep -E '^  \+ ' "$RUNNER_TEMP/articles.txt" | sed 's/^  + /- /' | sort -u)
+          body=$(printf 'New videos on youtube.com/@hiddify:\n\n%s\n\nNew articles added to their guide page (fa and en):\n\n%s\n\nA new **manager** video is put at the top of the first category of the manager guide: move it to its category in this branch if needed. Merging deploys the site.\n' "${titles:-none}" "${articles:-none}")
           if gh pr view youtube-sync --json state -q .state 2>/dev/null | grep -q OPEN; then
             gh pr edit youtube-sync --body "$body"
           else
             gh pr create --base "${{ github.event.repository.default_branch }}" --head youtube-sync \
-              --title "New YouTube videos for the guide and Instagram pages" --body "$body"
+              --title "Guide pages: new videos and articles" --body "$body"
           fi
