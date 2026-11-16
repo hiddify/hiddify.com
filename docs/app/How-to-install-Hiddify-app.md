@@ -281,7 +281,7 @@ The first time you open the app, a welcome screen with three options opens. The 
     <img width=640 alt="First start on Windows: language, region and analytics" src="/assets/app-install/en-win-first-run.webp" style="display:block;margin:0 auto">
 
 1. **Language:** if the app's language is wrong, tap `Language` and choose yours.
-2. **Region:** tap `Region` and choose the country you are in (for example `Iran (ir)`). The app uses this to open local websites directly, without the proxy. If your country is not in the list, choose `Other`.
+2. **Region:** tap `Region` and choose the country you are in (for example `Iran (ir)`). Choosing Persian as the language does not change the region by itself; the default is `Other`. The app uses this to open local websites directly, without the proxy. If your country is not in the list, choose `Other`.
 3. **Turn on analytics:** this switch is off by default. If you turn it on, the app sends anonymous crash and usage data that helps the developers improve it.
 4. Tap `Start`.
 

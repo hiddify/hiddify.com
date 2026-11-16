@@ -4,6 +4,8 @@ search:
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای اپ
 comments: false
+headless: true
+redirect: ../
 weight: -1
 ---
 # :material-home: راهنمای اپ هیدیفای

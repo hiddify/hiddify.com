@@ -1,0 +1,109 @@
+# One line about each article, shown under its title in the "Related articles" cards
+# (hooks/related_cards.py). Key: the page path without /fa/. Keep each line short (about 60 characters).
+# A page that is not listed here gets the first sentence of its own text.
+
+app/Chain-Extra-security-and-Proxy-unblocker: {fa: "یک تونل رایگان WARP یا سایفون جلو یا پشت اتصال شما", en: "A free WARP or Psiphon tunnel in front of or behind yours"}
+app/DNS-and-TLS-tricks-in-Hiddify-app: {fa: "تنظیمات DNS و ترفندهای TLS در اپ", en: "DNS settings and TLS tricks in the app"}
+app/Free-profiles-in-Hiddify-app: {fa: "اتصال رایگان بدون سرور و بدون لینک", en: "Connect for free, no server or link needed"}
+app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli: {fa: "اینترنت آزاد برای همهٔ دستگاه‌های خانه از روی روتر", en: "Free internet for every device at home, from the router"}
+app/How-to-contribute-to-this-project: {fa: "کمک به ساخت و ترجمهٔ اپ هیدیفای", en: "Help build and translate the Hiddify app"}
+app/How-to-install-Hiddify-app: {fa: "دانلود و نصب روی گوشی و کامپیوتر", en: "Download and install on phone and computer"}
+app/How-to-use-Hiddify-app: {fa: "افزودن لینک، اتصال و انتخاب سرور", en: "Add your link, connect and pick a server"}
+app/How-to-use-HiddifyCli-on-OpenWrt: {fa: "نصب هستهٔ هیدیفای روی روتر OpenWrt", en: "Install Hiddify Core on an OpenWrt router"}
+app/How-to-use-WARP-on-Hiddify-App: {fa: "وارپ کلادفلر در اپ هیدیفای", en: "Cloudflare WARP in the Hiddify app"}
+app/Import-export-settings-and-edit-profile: {fa: "پشتیبان از تنظیمات اپ و ویرایش پروفایل", en: "Back up the app settings and edit a profile"}
+app/Logs-and-reporting-a-problem: {fa: "دیدن لاگ‌ها و گزارش مشکل به ما", en: "Read the logs and report a problem"}
+app/Routing-in-Hiddify-app: {fa: "کدام ترافیک از پروکسی رد شود و کدام مستقیم", en: "Which traffic goes through the proxy, which goes direct"}
+app/Share-your-connection: {fa: "اشتراک اتصال با برنامه‌ها و دستگاه‌های دیگر", en: "Share the connection with other apps and devices"}
+core: {fa: "قابلیت‌های هستهٔ هیدیفای", en: "Everything Hiddify Core can do"}
+core/cli: {fa: "همهٔ دستورهای خط فرمان هستهٔ هیدیفای", en: "Every command of the Hiddify Core command line"}
+core/features/groups: {fa: "گروه‌های پروکسی: انتخاب خودکار و پشتیبان", en: "Proxy groups: auto-select and fallback"}
+
+manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values: {fa: "پیدا کردن بهترین مقدارهای فرگمنت برای اپراتور شما", en: "Find the best fragment values for your ISP"}
+manager/basic-concepts-and-troubleshooting/Basic-Concepts: {fa: "آی‌پی، دامنه، DNS، پروکسی و CDN به زبان ساده", en: "IP, domain, DNS, proxy and CDN in plain words"}
+manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication: {fa: "ورود به SSH فقط با کلید، بدون رمز", en: "SSH login with a key only, no password"}
+manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage: {fa: "چند اتصال در یک اتصال، برای سرعت بیشتر", en: "Many connections in one, for more speed"}
+manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage: {fa: "فرگمنت و پدینگ برای عبور از فیلترینگ", en: "Fragment and padding to get past the filter"}
+manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server: {fa: "جابه‌جا کردن SSH از پورت ۲۲", en: "Move SSH away from port 22"}
+manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks: {fa: "بررسی و جلوگیری از نشت DNS", en: "Check for and stop DNS leaks"}
+manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks: {fa: "جلوگیری از لو رفتن منطقهٔ زمانی واقعی", en: "Stop your real time zone from showing"}
+manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server: {fa: "اندازه‌گیری سرعت دانلود و آپلود سرور", en: "Measure the server's download and upload speed"}
+manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean: {fa: "آیا آی‌پی یا دامنهٔ سرور مسدود است؟", en: "Is the server's IP or domain blocked?"}
+manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server: {fa: "انتخاب DNS سرور هیدیفای‌منیجر", en: "Choose the DNS your server uses"}
+manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel: {fa: "فایروال داخلی پنل و پورت‌های لازم", en: "The panel's firewall and the ports it needs"}
+manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security: {fa: "اتصال‌های پشت CDN را سخت‌تر قابل‌شناسایی کنید", en: "Make CDN connections harder to detect"}
+manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies: {fa: "وصل نمی‌شود؟ برای هر نشانه، ابزار درست پنل", en: "Not connecting? The right panel tool for each symptom"}
+
+manager/client-software-on-android/Tutorial-for-Nekobox-app: {fa: "افزودن اشتراک به NekoBox در اندروید", en: "Add your subscription to NekoBox on Android"}
+manager/client-software-on-android/Tutorial-for-V2rayNG-app: {fa: "افزودن اشتراک به V2rayNG در اندروید", en: "Add your subscription to V2rayNG on Android"}
+manager/client-software-on-ios/Tutorial-for-FoXray-app: {fa: "برنامهٔ قدیمی آیفون، دیگر در App Store نیست", en: "An older iPhone app, no longer on the App Store"}
+manager/client-software-on-ios/Tutorial-for-ShadowRocket-app: {fa: "افزودن اشتراک به Shadowrocket در آیفون", en: "Add your subscription to Shadowrocket on iPhone"}
+manager/client-software-on-ios/Tutorial-for-SingBox-app: {fa: "برنامهٔ رسمی sing-box روی آیفون و دیگر دستگاه‌ها", en: "The official sing-box app on iPhone and more"}
+manager/client-software-on-ios/Tutorial-for-Streisand: {fa: "افزودن اشتراک به Streisand در آیفون", en: "Add your subscription to Streisand on iPhone"}
+manager/client-software-on-ios/Tutorial-for-V2Box-app: {fa: "افزودن اشتراک به V2Box در آیفون", en: "Add your subscription to V2Box on iPhone"}
+
+manager/configuration-and-advanced-settings/Automatic-config-health-checks-on-HiddifyManager: {fa: "پنل کانفیگ‌های خراب را خودش پیدا می‌کند", en: "The panel finds broken configs by itself"}
+manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default: {fa: "برگرداندن پنل به حالت نصب تازه", en: "Bring the panel back to a fresh install"}
+manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel: {fa: "خروجی وارپ برای سایت‌هایی که آی‌پی سرور را نمی‌پذیرند", en: "WARP outbound for sites that refuse the server IP"}
+manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify: {fa: "پشتیبان‌گیری و انتقال پنل به سرور دیگر", en: "Back up the panel and move it to another server"}
+manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly: {fa: "گشتی در کل پنل و تنظیمات اولیه", en: "A tour of the whole panel and the first setup"}
+manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH: {fa: "منوی هیدیفای‌منیجر روی سرور", en: "The Hiddify Manager menu on the server"}
+manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify: {fa: "پروکسی تلگرام برای کاربران", en: "A Telegram proxy for your users"}
+manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel: {fa: "اعلان، پشتیبان و پیام به کاربران با ربات تلگرام", en: "Alerts, backups and user messages with a Telegram bot"}
+manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel: {fa: "به‌روزرسانی هیدیفای‌منیجر به آخرین نسخه", en: "Update Hiddify Manager to the latest version"}
+manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner: {fa: "پیدا کردن سایت مناسب برای ریالتی", en: "Find a good site for Reality"}
+manager/configuration-and-advanced-settings/How-to-use-Outbounds-on-HiddifyManager: {fa: "ترافیک از کدام مسیر از سرور خارج شود", en: "Which way traffic leaves the server"}
+manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify: {fa: "ریالتی: شبیه بازدید از یک سایت معمولی", en: "Reality: looks like visiting a normal site"}
+manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality: {fa: "پخش ترافیک ریالتی روی زیردامنه‌های یک سایت", en: "Spread Reality over a site's subdomains"}
+manager/configuration-and-advanced-settings/How-to-use-the-Proxy-Editor-in-HiddifyManager: {fa: "ساخت و ویرایش کانفیگ‌های پنل", en: "Build and edit the panel's configs"}
+manager/configuration-and-advanced-settings/How-to-use-the-panel-tools-in-HiddifyManager: {fa: "تست کانفیگ، اسکنر، رمزگشا و ترمینال", en: "Config tester, scanner, decoder and terminal"}
+manager/configuration-and-advanced-settings/IPv6-usage-guide: {fa: "کانفیگ‌هایی که از IPv6 وصل می‌شوند", en: "Configs that connect over IPv6"}
+manager/configuration-and-advanced-settings/Multi-server-with-nodes-on-HiddifyManager: {fa: "چند سرور، یک پنل و یک لینک برای کاربران", en: "Many servers, one panel, one link for users"}
+manager/configuration-and-advanced-settings/My-account-and-admin-security-in-HiddifyManager: {fa: "حساب ادمین، رمز، کلید عبور و محدودیت‌ها", en: "Admin account, password, passkeys and limits"}
+manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel: {fa: "پروکسی SSH در هیدیفای‌منیجر", en: "The SSH proxy in Hiddify Manager"}
+manager/configuration-and-advanced-settings/Settings-reference: {fa: "همهٔ تنظیمات پنل با توضیح هر کدام", en: "Every panel setting, each explained"}
+manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager: {fa: "انتقال کاربران از پنل X-UI", en: "Move your users over from X-UI"}
+
+manager/contribution/How-to-contribute-to-this-project: {fa: "کمک به هیدیفای‌منیجر، با کد یا بدون کد", en: "Help Hiddify Manager, with or without code"}
+manager/contribution/How-to-use-API-in-HiddifyManager-project: {fa: "مدیریت پنل از برنامه یا ربات خودتان", en: "Manage the panel from your own program or bot"}
+
+manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them: {fa: "مستقیم، CDN، رله و... و ثبت هر کدام", en: "Direct, CDN, relay and more, and how to add each"}
+manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API: {fa: "پنل رکوردهای DNS را خودش بسازد", en: "Let the panel make your DNS records"}
+manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting: {fa: "پنهان کردن نام دامنه پشت یک سایت دیگر", en: "Hide your domain behind another site"}
+manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP: {fa: "آی‌پی‌های سالم کلادفلر برای اپراتور شما", en: "Working Cloudflare IPs for your ISP"}
+manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify: {fa: "آی‌پی تمیز جدا برای هر اپراتور", en: "A clean IP per ISP"}
+manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager: {fa: "معرفی سرور میانی به پنل", en: "Tell the panel about your relay server"}
+manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain: {fa: "TLS جعلی با نام یک سایت دیگر", en: "Decoy TLS with another site's name"}
+manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify: {fa: "لینک اشتراکی که جدا از کانفیگ‌ها می‌ماند", en: "A subscription link kept apart from the configs"}
+manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers: {fa: "ساخت ورکر کلادفلر برای سرور شما", en: "Make a Cloudflare Worker for your server"}
+manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder: {fa: "سرور میانی با یک منو، همهٔ روش‌ها", en: "A relay server from one menu, every method"}
+manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN: {fa: "CDN آمازون (CloudFront) برای سرور شما", en: "Amazon CloudFront CDN for your server"}
+manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN: {fa: "دامنه پشت کلادفلر، قدم‌به‌قدم", en: "Put your domain behind Cloudflare, step by step"}
+manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain: {fa: "CDN جی‌کور برای دامنه‌ای روی کلادفلر", en: "GCore CDN for a domain on Cloudflare"}
+manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links: {fa: "لینک اشتراک از طریق یک هاست PHP رایگان", en: "Subscription links through a free PHP host"}
+manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format: {fa: "گذاشتن آی‌پی تمیز دلخواه برای هر اپراتور", en: "Your own clean IPs for each ISP"}
+manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify: {fa: "افزودن دامنهٔ ورکر به پنل", en: "Add a Worker domain to the panel"}
+manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel: {fa: "تونل 4to6 بین سرور میانی و اصلی", en: "A 4to6 tunnel between relay and main server"}
+manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link: {fa: "لینک ادمین درست چه شکلی است", en: "What a correct admin link looks like"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server: {fa: "سرور میانی با تونل Xray (dokodemo)", en: "A relay with an Xray tunnel (dokodemo)"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server: {fa: "سرور میانی با GOST نسخهٔ ۳", en: "A relay server with GOST v3"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server: {fa: "سرور میانی با HAProxy", en: "A relay server with HAProxy"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server: {fa: "ساده‌ترین سرور میانی، با IP-Tables", en: "The simplest relay, with IP-Tables"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability: {fa: "پایداری بیشتر سرور میانی با IPv6", en: "A steadier relay with IPv6"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server: {fa: "سرور میانی با تونل WST", en: "A relay server with a WST tunnel"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6: {fa: "IPv6 محلی بین دو سرور", en: "A local IPv6 link between two servers"}
+manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify: {fa: "یک زیردامنهٔ تازه برای هر کاربر", en: "A fresh subdomain for every user"}
+"manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us?": {fa: "CDN چیست و چطور سرور شما را پنهان می‌کند", en: "What a CDN is and how it hides your server"}
+
+manager/installation-and-setup/Cloud-init-installation: {fa: "نصب خودکار هنگام ساخت سرور، بدون SSH", en: "Installs itself when you create the server, no SSH"}
+manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation: {fa: "افزودن دامنه و تنظیمات اول بعد از نصب", en: "Add a domain and do the first settings"}
+manager/installation-and-setup/How-to-connect-to-server-via-SSH: {fa: "وصل شدن به سرور از ویندوز، مک یا گوشی", en: "Reach your server from Windows, Mac or phone"}
+manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager: {fa: "نصب نسخهٔ پایدار، بتا یا یک نسخهٔ مشخص", en: "Install the stable, beta or a specific version"}
+manager/installation-and-setup/Install-Hiddify-using-Docker: {fa: "نصب در کانتینر، با پشتیبان‌گیری آسان", en: "Run it in containers, easy to back up"}
+manager/installation-and-setup/Installation-prerequisites: {fa: "سرور، سیستم‌عامل و دامنهٔ لازم پیش از نصب", en: "The server, OS and domain you need first"}
+manager/installation-and-setup/Quick-Installation-on-Microsoft-Azure: {fa: "نصب خودکار روی آژور با cloud-init", en: "Automatic install on Azure with cloud-init"}
+manager/installation-and-setup/Quick-Installation-on-OVH-Servers: {fa: "نصب خودکار روی OVH با cloud-init", en: "Automatic install on OVH with cloud-init"}
+manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud: {fa: "نصب خودکار روی اوراکل با cloud-init", en: "Automatic install on Oracle Cloud with cloud-init"}
+manager/installation-and-setup/Quick-installation-on-Hetzner-Servers: {fa: "نصب خودکار روی هتزنر با cloud-init", en: "Automatic install on Hetzner with cloud-init"}
+manager/installation-and-setup/Quick-installation-on-Vultr-Servers: {fa: "نصب خودکار روی والتر با cloud-init", en: "Automatic install on Vultr with cloud-init"}
+manager/installation-and-setup/guide: {fa: "نصب هیدیفای‌منیجر با یک دستور", en: "Install Hiddify Manager with one command"}

@@ -3,6 +3,8 @@ search:
   exclude: true
 description: Welcome to the wiki page for Hiddify App.
 title: App Guide
+headless: true
+redirect: ../
 weight: -1
 comments: false
 ---

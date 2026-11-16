@@ -35,6 +35,8 @@ Automatic backups, and the ones you save with **Save on the server**, are listed
 
 and then transfer the file to your PC. [More info here](/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/)
 
+Finally, keep the backup file somewhere safe on your computer.
+
 ## Restoring backup file
 Now install the panel on the new server. When the **Quick setup** wizard opens, do not set anything up: click **Skip for now**.
 

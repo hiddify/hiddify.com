@@ -221,6 +221,93 @@ This button is used to enable Tun mode or tunneling the entire system traffic.
 #### 10. Current connection specifications
 In this section, the current connection specifications and its ping are displayed.
 
+## Common problems
+
+### Reality configs do not work
+
+If Reality configs do not work, or show a ping of `-1`, after you add the subscription link, open the advanced settings and set `TLS` to `1.3`:
+
+`Settings > Option Setting > v2rayN settings > Enable Security Protocol TLS v1.3`
+
+<div align=center markdown=1>
+![V2rayN settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-1e0df0d2-508e-4a6a-91da-79a015947fd5.webp)
+</div>
+
+Then click `Confirm`.
+
+### Better performance with pre-release updates
+
+To keep the cores the program needs (Xray, sing-box) up to date and working better, go to the same place.
+
+<div align=center markdown=1>
+![Pre-release updates](/assets/manager/Tutorial-for-HiddifyN-software/gh-6bbc59ef-05a8-445d-80df-22222faa1f53.webp)
+</div>
+
+Turn on `Check for pre-release update`, then update the cores with `Check update`.
+
+<div align=center markdown=1>
+![check for update](/assets/manager/Tutorial-for-HiddifyN-software/gh-8ea188b9-e240-48a9-96a8-a1473a9346d3.webp)
+</div>
+
+### Fix DNS leaks
+
+- Turn on `TunMode`. It needs the sing-box core, so first download the sing-box core with the `Check update` button on the main page.
+
+<div align=center markdown=1>
+![SingBox core](/assets/manager/Tutorial-for-HiddifyN-software/gh-c2f94432-0168-40e9-8d8d-43baa2faf0f7.webp)
+</div>
+
+- Then go to:
+
+`Settings > Option Setting > TunMode settings`
+
+<div align=center markdown=1>
+![TunMode settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-af2b9542-e8b2-49e9-932e-b247ef8dc5af.webp)
+</div>
+
+- Turn on `Strict Route`.
+- Set `Stack` to `System`.
+- Now turn on the `TunMode` button on the main page.
+
+> Note: to turn on `TunMode`, the program must be started with `Run as administrator`.
+
+> Note: if `TunMode` does not work for any reason, set `Stack` to `gvisor`.
+
+### Send local sites directly, without the VPN
+
+Even with the panel's `Lite` (green) profile, you may want the traffic of other sites to go straight to them, without the VPN. There are two ways.
+
+#### With the System proxy settings
+
+Go to:
+
+`Settings > Option Setting > v2rayN settings > System proxy settings`
+
+Type the addresses that should not go through the VPN. Separate them with `;`.
+
+<div align=center markdown=1>
+![proxy settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-4c3a9fe5-d641-41e6-8bd1-bd7bfdee19d2.webp)
+</div>
+
+> Note: write `tamin.ir`, not `https://tamin.ir`.
+
+#### With the Routing settings
+
+Go to:
+
+`Settings > Routing setting`
+
+<div align=center markdown=1>
+![Routing settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-acbd0ec2-104a-4b69-a69b-7f37f35ce5a6.webp)
+</div>
+
+When you import the `Lite` (green) profile, the rules for local sites are already added here. To do it by hand with your own sites:
+
+- Turn off `Enable advanced function`.
+- Choose `direct domain or IP`.
+- Type the domains you want. Separate several sites with `,`.
+- With `block domain or ip` you can block the domains you choose.
+
 ## Related articles
 
 - [V2rayNG](/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)

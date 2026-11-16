@@ -4,6 +4,8 @@ search:
 description: Welcome to the wiki page for HiddifyManager
 title: Manager Guide
 comments: false
+headless: true
+redirect: ../
 weight: -2
 ---
 

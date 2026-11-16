@@ -1,5 +1,6 @@
 ---
 description: Welcome to the wiki page for the Hiddify project.
+headless: true
 comments: true
 keywords: [hiddify, hiddify-manager, changelog]
 category: Getting Started

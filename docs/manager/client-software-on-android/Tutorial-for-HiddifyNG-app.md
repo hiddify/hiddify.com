@@ -81,6 +81,7 @@ To do this, click on the connection button in the middle of the screen.
 <img alt="The connect button" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-937d9d96-9f9f-4bfa-8700-858e161a289d.webp" />
 </div>
 
+After you connect, the result of the connection test is shown too.
 
 ## Configs
 Here are the configs that were added using the subscription link.
@@ -91,11 +92,14 @@ Here are the configs that were added using the subscription link.
 </div>
 
 
+### Add a config by hand
+For this, use the `+` button number 1.
+
 ### Update configs
 For this, use the update button number 2.
 
 ### Start or stop configs
-For this, use the update button number 3.
+For this, use the button number 3.
 
 ### Three-dot menu in configs
 In this menu, which is a subset of the config menu, you can do various things that are mentioned below.

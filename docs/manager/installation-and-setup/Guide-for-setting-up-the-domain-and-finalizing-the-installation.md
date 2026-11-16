@@ -29,7 +29,7 @@ If you don't have a domain, you can get a free subdomain from FreeDNS.
 !!! warning "FreeDNS sanctions rule"
     Under the FreeDNS terms of use, residents of territories under U.S. sanctions (including Iran) may not use the service, and the sign-up form asks you to confirm that this does not apply to you. If it does apply to you, buy a cheap domain instead of using FreeDNS and create a subdomain for your server's IP in its DNS settings; see [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 
-1. Go to [freedns.afraid.org](https://freedns.afraid.org/signup/) and fill in the sign-up form: name, UserID, password and email. The email address must be correct, because the activation link is sent to it. Type the text of the security image, read and tick the two confirmation boxes at the bottom of the form, and click `Send activation email`.
+1. Go to [freedns.afraid.org](https://freedns.afraid.org/signup/?plan=starter) and fill in the sign-up form: name, UserID, password and email. The email address must be correct, because the activation link is sent to it. Type the text of the security image, read and tick the two confirmation boxes at the bottom of the form, and click `Send activation email`.
 
     ![FreeDNS sign-up page](/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/freedns-signup.webp)
 

@@ -11,6 +11,8 @@ One of the constant concerns of Cloudflare CDN users is finding clean IPs, and a
 !!! info "Since v13 there is no separate auto_cdn_ip mode"
     In older versions this was a domain mode called `auto_cdn_ip`. Since v13 it is part of the normal **CDN** domain: the field **Force configs to use these IPs / domains**. This page is for Hiddify Manager v14.5.
 
+One big advantage: if the hostname you list the IPs with is itself blocked (for example `ircf.space`), a user with a normal CDN config cannot resolve it and cannot connect; here the panel resolves it itself and puts the IP in the config.
+
 ## Domain registration
 1. Register your subdomain on Cloudflare with the proxy turned on (orange cloud). See [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
 2. In the panel, open **Domains**, click **Add domain**, type the subdomain and click **Check**.

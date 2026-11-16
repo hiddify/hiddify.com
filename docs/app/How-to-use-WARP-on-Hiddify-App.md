@@ -87,19 +87,22 @@ You can build a `warp://` link yourself and add it to the app like any other con
 
 ### Noise modes (`ifpm`)
 
-There are 6 main modes and 2 advanced modes. Each one adds a fake header (noise) in front of WARP traffic to help it get past filtering.
+Noise is a few fake packets that the app sends just before WARP's handshake, so that the start of the connection does not look like WireGuard. `ifpm` sets what these packets look like. These are the same choices as `Noise mode` in the app's `Chain` settings:
 
-- `m1`: the header is random.
-- `m2`: the header is random and stays the same, with no trace of WireGuard or WARP in it.
-- `m3`: the header uses the QUIC protocol.
-- `m4`: the header uses QUIC and stays the same, with no trace of WireGuard or WARP in it.
-- `m5`: the header uses LQUIC.
-- `m6`: the header uses LQUIC and stays the same, with no trace of WireGuard or WARP in it.
-- `h_HEX`: an advanced mode. You choose the first byte of the fake packet as a hex number (from `00` to `FF`). For example, `ifpm=h_30` makes every fake packet start with `0x30`.
-- `g_HEX_HEX…`: an advanced mode. The app picks one of the hex bytes you list at random each time. For example, `ifpm=g_10_20_30` uses `0x10`, `0x20` or `0x30`.
+| `ifpm` | In the app | What the fake packets look like |
+|---|---|---|
+| (not set) | `Auto` | With `Endpoint` set to `Scan`, the scanner finds the noise that gets through on your network. |
+| `m4` | `Standard` | Random bytes after a short header. This is the core's own packet. |
+| `random` | `Random` | Only random bytes, with no header (like Xray's noise). |
+| `quic` | `QUIC (HTTPS)` | Real QUIC Initial packets, like the start of a visit to an HTTPS/3 site. |
+| `quic-mimic` | `QUIC handshake` | A copy of a real QUIC handshake. |
+| `dns` | `DNS (google.com)` | DNS questions about google.com. |
+| `dns-cloudflare` | `DNS (cloudflare.com)` | DNS questions about cloudflare.com. |
+| `sip` | `SIP (VoIP call)` | The start of an internet phone call. |
+| `stun` | `STUN (video call)` | The packets a video call sends first. |
 
 !!! tip "Tip"
-    The recommended mode is `m4`. It is also the app's default.
+    Start with `m4` (`Standard`). If WARP does not connect on your network, try `quic`, `dns` or `sip`. Older articles mention the modes `m1` to `m6` and `h…`/`g…`: the current versions treat these like `Standard`.
 
 ### Number, size and delay of noise packets
 
@@ -157,10 +160,10 @@ This adds a WARP config named `m4` to the app.
 You can also chain two WARPs. For example:
 
 ```text
-warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=warp://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m3#m3
+warp://auto?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#m4&&detour=warp://188.114.97.170:894?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=quic#quic
 ```
 
-This adds a config named `m4` that goes through a second WARP (WARP in WARP) named `m3`.
+This adds a config named `m4` that goes through a second WARP (WARP in WARP) named `quic`.
 
 For more examples, see the official sample files [warp](https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp) and [warp2](https://raw.githubusercontent.com/hiddify/hiddify-app/refs/heads/main/test.configs/warp2).
 

@@ -128,7 +128,7 @@ Shows the system logs. After you choose it, pick the log file you want to read.
 
 ![Log](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-log.webp)
 
-For example, choose the install log to see what happened during installation. At its end, it shows the system status and the admin links.
+For example, choose `0-install.log` (the install log) to see what happened during installation. At its end, it shows the system status and the admin links.
 
 
 Press `q` to close the log. The log files are stored on the server in `/opt/hiddify-manager/data/log/`.
@@ -154,7 +154,7 @@ hiddify apply
 **When to use it:** you saved changes in the panel but lost web access before you could apply them.
 
 ## Install
-Reinstalls Hiddify Manager on the server. Your panel data (users, settings, domains) is kept.
+In the menu it is called **Reinstall the server**. It reinstalls Hiddify Manager on the server. Your panel data (users, settings, domains) is kept.
 
 **When to use it:** an install step failed and the panel does not open.
 

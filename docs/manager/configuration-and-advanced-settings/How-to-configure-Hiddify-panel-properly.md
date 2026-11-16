@@ -197,6 +197,8 @@ Click **Add domain**, type the domain, and choose **Direct** with **Valid TLS**.
 - **Force configs to use these IPs / domains:** leave it empty for a direct domain. It is mainly for CDN domains.
 - **Show configs of:** choose which domains' configs users see when they open their user page through this domain.
 
+Tip: if you have a domain on a separate IP that is not blocked, select all the other domains (but not itself) in **Show configs of** for it. Because this IP is not used for the proxies and is just a plain site, it is unlikely to be blocked, and users can always update their profiles.
+
 ### Subscription-only domain
 
 A subscription-only domain only serves subscription links. Because no proxy traffic goes through it, it is less likely to be blocked, so users can always update their configs.
@@ -233,6 +235,10 @@ If you have many users and want to give each group its own domain, read [How to 
 Open **Protocols** to turn protocols, transports and TLS tricks on or off for the whole panel. Tap a card to switch it, then save. The cards are grouped into **Protocols**, **Transports**, **Security & tricks** and **Other**, and each group has **Enable all** and **Disable all**. Each card's **Settings** link opens its settings. The same switches are also in **Settings → Proxies Settings**. The **Proxy Editor** lets advanced users edit each built-in proxy template.
 
 <img alt="Protocols page" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-protocols.webp" style="display:block;margin:0 auto">
+
+Further down the same page, the transports:
+
+![Protocols and transports](/assets/manager/How-to-configure-Hiddify-panel-properly/en-protocols-transports.webp)
 
 Note: plain HTTP connections are not encrypted. TLS connections are encrypted.
 

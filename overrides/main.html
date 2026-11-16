@@ -49,3 +49,12 @@
   <!-- The "Ask AI" link lives in partials/header.html -->
   <!-- Add scripts that need to run afterwards here -->
 {% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.meta and page.meta.redirect %}
+  <!-- Old page kept for its URL: send visitors to the page that replaced it (front matter "redirect:") -->
+  <meta http-equiv="refresh" content="0; url={{ page.meta.redirect }}">
+  <meta name="robots" content="noindex">
+  {% endif %}
+{% endblock %}

@@ -4,6 +4,8 @@ search:
 description: به ویکی هیدیفای خوش آمدید
 title: راهنمای منیجر
 comments: false
+headless: true
+redirect: ../
 weight: -2
 ---
 
