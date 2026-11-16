@@ -145,6 +145,10 @@ winget install Hiddify.Next
 
     <img width=60% alt="آمادهٔ نصب" src="/assets/app-install/win-setup-ready.webp" style="display:block;margin:0 auto">
 
+    نوار سبز پیشرفت نصب را نشان می‌دهد. معمولاً کمتر از یک دقیقه طول می‌کشد؛ پنجره را نبندید و `Cancel` را نزنید.
+
+    <img width=60% alt="نوار پیشرفت نصب" src="/assets/app-install/win-setup-progress.webp" style="display:block;margin:0 auto">
+
 9. وقتی پنجرهٔ **Completing the Hiddify Setup Wizard** را دیدید، تیک `Launch Hiddify` را نگه دارید و `Finish` را بزنید. برنامه باز می‌شود. بعداً می‌توانید آن را از میان‌بر دسکتاپ یا منوی Start باز کنید.
 
     <img width=60% alt="پایان نصب" src="/assets/app-install/win-setup-finish.webp" style="display:block;margin:0 auto">

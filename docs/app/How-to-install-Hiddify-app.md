@@ -145,6 +145,10 @@ To install with the setup file:
 
     <img width=60% alt="Ready to install" src="/assets/app-install/win-setup-ready.webp" style="display:block;margin:0 auto">
 
+    A green bar shows the progress. It usually takes less than a minute; do not close the window or click `Cancel`.
+
+    <img width=60% alt="Installation progress" src="/assets/app-install/win-setup-progress.webp" style="display:block;margin:0 auto">
+
 9. When you see **Completing the Hiddify Setup Wizard**, keep `Launch Hiddify` ticked and click `Finish`. The app starts. Later you can start it from the desktop shortcut or the Start menu.
 
     <img width=60% alt="Installation finished" src="/assets/app-install/win-setup-finish.webp" style="display:block;margin:0 auto">

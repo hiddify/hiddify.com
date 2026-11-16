@@ -23,8 +23,12 @@ You need: the TV and your phone on the **same Wi-Fi network**, and your subscrip
 3. Scan the code with your phone's camera. A page opens on the phone: **Send to Hiddify on your TV**, with four short steps. (No camera app? Type the address shown under the code, for example `192.168.1.20:40413/098732`, into the phone's browser.)
     <img width=300 alt="The page on the phone" src="/assets/app/Hiddify-on-Android-TV/en-phone-page.webp" style="display:block;margin:0 auto">
 
-4. On the phone, copy your subscription link (or any proxy link or config), tap the box on that page, paste the link, and tap **Send to TV**. The page then says the link was sent.
+4. On the phone, copy your subscription link (or any proxy link or config), tap the box on that page, paste the link, and tap **Send to TV**.
     <img width=300 alt="Link pasted, ready to send" src="/assets/app/Hiddify-on-Android-TV/en-phone-pasted.webp" style="display:block;margin:0 auto">
+
+    Then a green **Sent to your TV** box appears at the top and all three steps get a tick. The page stays open, so you can send another link if you want.
+
+    <img width=300 alt="The green Sent to your TV box" src="/assets/app/Hiddify-on-Android-TV/en-phone-sent.webp" style="display:block;margin:0 auto">
 
 5. The link shows up on the TV (**Received from your phone**). Press **Import** with the remote, or **Discard** if it is the wrong link. Nothing is added until you press **Import**.
     <img width=640 alt="Received from your phone on the TV" src="/assets/app/Hiddify-on-Android-TV/en-tv-received.webp" style="display:block;margin:0 auto">
