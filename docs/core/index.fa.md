@@ -42,7 +42,7 @@ comments: false
 
     ---
 
-    در لینوکس، ویندوز و مک، به‌عنوان پروکسی محلی یا VPN برای کل سیستم.
+    در لینوکس و ویندوز، به‌عنوان پروکسی محلی یا VPN برای کل سیستم (در مک از اپ هیدیفای استفاده کنید).
 
 </div>
 
@@ -59,14 +59,14 @@ flowchart LR
 
 هسته بر پایه **hiddify-sing-box** ساخته شده است، نسخه هیدیفای از [sing-box](https://sing-box.sagernet.org/). یعنی هر کانفیگ sing-box در آن کار می‌کند و ده‌ها پروتکل و ترفند ضدسانسور هم دارد که sing-box اصلی ندارد.
 
-## نصب
+## نصب {#install}
 
 === ":material-linux: لینوکس و OpenWrt"
 
     این دستور سیستم و پردازنده را خودش تشخیص می‌دهد، هسته را نصب می‌کند و آن را به‌صورت سرویس راه می‌اندازد:
 
     ```bash
-    bash <(curl https://i.hiddify.com/core)
+    bash <(curl -fsSL https://raw.githubusercontent.com/hiddify/hiddify-core/main/installer.sh)
     ```
 
     کانفیگ در `/etc/hiddify-core/config.json` است. بعد از ویرایش آن، سرویس را دوباره اجرا کنید:
@@ -81,8 +81,9 @@ flowchart LR
 
     فایل سیستم خود را از [صفحه نسخه‌ها](https://github.com/hiddify/hiddify-core/releases) بگیرید و باز کنید.
 
-    - **لینوکس:** پوشه `lib` را کنار `HiddifyCli` نگه دارید.
-    - **ویندوز:** `HiddifyCli.exe` را از ترمینال اجرا کنید.
+    - **لینوکس:** فایل `hiddify-core-linux-<پردازنده>.tar.gz` را بگیرید (مثلاً `amd64` یا `arm64`). فایل `libcronet.so` را کنار `hiddify-core` نگه دارید و `./hiddify-core` را از ترمینال اجرا کنید.
+    - **ویندوز:** فایل `hiddify-lib-windows-amd64.tar.gz` را بگیرید. برنامهٔ خط فرمان داخل آن `HiddifyCli.exe` است: آن را از ترمینال با همان دستورهای این صفحه اجرا کنید (`HiddifyCli.exe run -c links.txt`).
+    - **مک:** نسخهٔ خط فرمان برای مک وجود ندارد. از [اپ هیدیفای](../app/How-to-install-Hiddify-app.md) یا ایمیج داکر پایین استفاده کنید.
 
 === ":material-docker: داکر"
 
@@ -92,8 +93,8 @@ flowchart LR
 
     یا در پوشه `docker` مخزن: `docker-compose up -d`
 
-!!! note "دو نام، یک برنامه"
-    در نمونه‌های این صفحه نام برنامه `HiddifyCli` است. بعد از نصب با اسکریپت لینوکس، نام آن `hiddify-core` است.
+!!! note "HiddifyCli حالا hiddify-core است"
+    نام قبلی برنامهٔ خط فرمان **HiddifyCli** بود. از نسخهٔ ۵.۹ نام آن `hiddify-core` است و نمونه‌های این صفحه همین نام را به کار می‌برند. فقط در نسخهٔ ویندوز نام فایل هنوز `HiddifyCli.exe` است؛ دستورها یکی است.
 
 ## اجرا: `run` یا `srun`؟ {#run-or-srun}
 
@@ -110,7 +111,7 @@ flowchart LR
     هسته بقیه کانفیگ را خودش می‌سازد: پروکسی محلی یا VPN، DNS، مسیریابی و انتخاب خودکار سریع‌ترین سرور.
 
     ```bash
-    HiddifyCli run -c links.txt
+    hiddify-core run -c links.txt
     ```
 
 -   :material-file-code:{ .lg .middle } __`srun`: کانفیگ کامل sing-box دارید__
@@ -122,7 +123,7 @@ flowchart LR
     هسته چیزی به آن اضافه نمی‌کند و مثل خود sing-box اجرایش می‌کند، با همه قابلیت‌های هیدیفای.
 
     ```bash
-    HiddifyCli srun -c config.json
+    hiddify-core srun -c config.json
     ```
 
 </div>
@@ -134,13 +135,13 @@ flowchart LR
     فایلی از لینک‌ها، هر خط یک لینک:
 
     ```bash
-    HiddifyCli run -c links.txt
+    hiddify-core run -c links.txt
     ```
 
     یا مستقیم لینک سابسکریپشن، که خودکار به‌روز می‌شود:
 
     ```bash
-    HiddifyCli run -c https://example.com/sub/abc
+    hiddify-core run -c https://example.com/sub/abc
     ```
 
     یک پروکسی HTTP و SOCKS5 روی `127.0.0.1:12334` باز می‌شود. مرورگر یا برنامه‌ها را به آن وصل کنید.
@@ -148,7 +149,7 @@ flowchart LR
 === "VPN کل سیستم"
 
     ```bash
-    sudo HiddifyCli run -c links.txt --tun
+    sudo hiddify-core run -c links.txt --tun
     ```
 
     همه برنامه‌ها از VPN رد می‌شوند. دسترسی root یا administrator لازم است.
@@ -156,7 +157,7 @@ flowchart LR
 === "پروکسی سیستم"
 
     ```bash
-    HiddifyCli run -c links.txt --system-proxy
+    hiddify-core run -c links.txt --system-proxy
     ```
 
     پروکسی سیستم در دسکتاپ خودکار تنظیم می‌شود.
@@ -164,10 +165,10 @@ flowchart LR
 === "با تنظیمات اپ شما"
 
     ```bash
-    HiddifyCli run -c links.txt -d hiddify-settings.json
+    hiddify-core run -c links.txt -d hiddify-settings.json
     ```
 
-    فایل تنظیمات را در اپ از **تنظیمات ← ⋮ ← خروجی ← خروجی تمام تنظیمات به فایل** بگیرید.
+    فایل تنظیمات را در اپ از **تنظیمات ← ⋮ ← خروجی گرفتن ← خروجی تمام تنظیمات به فایل** بگیرید.
 
 ??? info "`run` چه ورودی‌هایی را می‌خواند؟"
     - لینک‌های همه پروتکل‌هایی که اپ پشتیبانی می‌کند، هر خط یک لینک، ساده یا base64
@@ -182,17 +183,17 @@ flowchart LR
 ??? info "نکته‌های `srun`"
     | چه می‌خواهید | دستور |
     |---|---|
-    | چند فایل که با هم ادغام شوند | `HiddifyCli srun -c base.json -c outbounds.json` |
-    | همه فایل‌های `.json` یک پوشه | `HiddifyCli srun -C /etc/hiddify-core/conf.d` |
-    | خواندن از ورودی استاندارد | `cat config.json \| HiddifyCli srun -c stdin` |
+    | چند فایل که با هم ادغام شوند | `hiddify-core srun -c base.json -c outbounds.json` |
+    | همه فایل‌های `.json` یک پوشه | `hiddify-core srun -C /etc/hiddify-core/conf.d` |
+    | خواندن از ورودی استاندارد | `cat config.json \| hiddify-core srun -c stdin` |
 
     - **بارگذاری دوباره بدون قطعی:** `SIGHUP` بفرستید؛ کانفیگ جدید اول بررسی می‌شود.
     - **توقف:** `SIGINT` یا `SIGTERM`.
 
 !!! tip "از پروکسی تا کانفیگ کامل، برای ویرایش دستی"
-    1. لینک‌ها را به outboundهای sing-box تبدیل کنید: `HiddifyCli parse links.txt -o outbounds.json`
-    2. کانفیگ کامل کلاینت را بسازید: `HiddifyCli build -c outbounds.json -o config.json`
-    3. `config.json` را ویرایش و اجرا کنید: `HiddifyCli srun -c config.json`
+    1. لینک‌ها را به outboundهای sing-box تبدیل کنید: `hiddify-core parse links.txt -o outbounds.json`
+    2. کانفیگ کامل کلاینت را بسازید: `hiddify-core build -c outbounds.json -o config.json`
+    3. `config.json` را ویرایش و اجرا کنید: `hiddify-core srun -c config.json`
 
 ## چه چیزهایی بیشتر از sing-box دارد؟ {#differences}
 
@@ -260,7 +261,7 @@ flowchart LR
 
     ---
 
-    همه دستورها و گزینه‌های `HiddifyCli`.
+    همه دستورها و گزینه‌های `hiddify-core`.
 
 -   :material-star-four-points:{ .lg .middle } [__قابلیت‌ها__](features/index.md)
 

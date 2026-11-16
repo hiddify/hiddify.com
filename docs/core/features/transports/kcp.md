@@ -1,6 +1,6 @@
 # mKCP transport
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 mKCP carries a proxy protocol (VLESS, VMess, Trojan…) over UDP with KCP, a reliable protocol
 that resends lost packets fast. It is the V2Ray transport `"type": "mkcp"` (or `"kcp"`) of an

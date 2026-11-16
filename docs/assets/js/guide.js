@@ -73,6 +73,33 @@
     });
   }
 
-  function init() { badges(); arrows(); }
+  // ---- opened from search (#video-<id>): bring that video into view and make it pulse --------
+  function target() {
+    // #video-<id> (link to the heading) or ?v=<id> (a video result in the search)
+    var h = decodeURIComponent(location.hash || ""), v = new URLSearchParams(location.search).get("v");
+    var key = h.indexOf("#video-") === 0 ? h.slice(1) : (v ? "video-" + v : "");
+    if (!key) return;
+    var t = document.getElementById(key);
+    var card = t && t.closest(".hg-v");
+    if (!card) return;
+    var d = card.closest("details");
+    if (d) d.open = true;
+    // after the theme's own jump to the anchor: centre the card in its row, then in the window
+    setTimeout(function () {
+      var row = card.closest(".hg-vrow");
+      if (row) {
+        var cr = card.getBoundingClientRect(), rr = row.getBoundingClientRect();
+        row.style.scrollSnapType = "none";
+        row.scrollLeft += (cr.left + cr.width / 2) - (rr.left + rr.width / 2);
+        setTimeout(function () { row.style.scrollSnapType = ""; }, 400);
+      }
+      var r = card.getBoundingClientRect();
+      window.scrollTo(0, r.top + window.scrollY - Math.max(70, (window.innerHeight - r.height) / 2));
+      card.classList.remove("hg-v-target"); void card.offsetWidth; card.classList.add("hg-v-target");
+    }, 700);
+  }
+
+  function init() { badges(); arrows(); target(); }
+  window.addEventListener("hashchange", target);
   if (window.document$) document$.subscribe(init); else document.addEventListener("DOMContentLoaded", init);
 })();

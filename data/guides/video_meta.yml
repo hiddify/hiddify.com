@@ -1,0 +1,94 @@
+# Date, kind and version of each guide-page video. tools/guide_page.py uses it for the "old" and "new" badges.
+# kind: current (no old badge) | manager (ver = HiddifyManager version) | app (ver = Hiddify app version)
+#       legacy-app (retired Hiddify app) | client (another client app, old version) | general (sites/tools may have changed)
+# A video that is not listed here gets no badge. Mark a video old by changing its kind.
+"06fMizOb-DE": {date: 2023-01-07, kind: manager, ver: "5"}
+"hRRg10BURJI": {date: 2023-01-09, kind: manager, ver: "5"}
+"l-KKRus2KS0": {date: 2023-01-09, kind: general}
+"s1QZD1Ujdds": {date: 2023-01-18, kind: manager, ver: "5"}
+"BKLRAHolhvM": {date: 2023-02-09, kind: general}
+"-a4tfRUsrNY": {date: 2023-03-05, kind: manager, ver: "7"}
+"5CyktpUePf0": {date: 2023-03-11, kind: client}
+"D0Xv54nRSY8": {date: 2023-03-11, kind: client}
+"GBywNl2KZMM": {date: 2023-03-11, kind: legacy-app}
+"_LYFqrXVupI": {date: 2023-03-18, kind: manager, ver: "8"}
+"tcd1wBUR3cY": {date: 2023-03-18, kind: general}
+"OO80Nx1bhOo": {date: 2023-03-28, kind: general}
+"YCSwZG3cjAU": {date: 2023-03-28, kind: general}
+"_-Iyr_RtIH0": {date: 2023-03-28, kind: legacy-app}
+"piKS04W6AHE": {date: 2023-03-28, kind: general}
+"OfvKL9CaOQU": {date: 2023-03-29, kind: manager, ver: "8"}
+"kz_Ih__jS9c": {date: 2023-03-29, kind: manager, ver: "8"}
+"qFKv4I-MNQc": {date: 2023-03-31, kind: client}
+"ORMdAzPNrCA": {date: 2023-04-07, kind: client}
+"XSwCE35lqmU": {date: 2023-04-12, kind: manager, ver: "8"}
+"6HncctDHXVs": {date: 2023-04-13, kind: client}
+"7kqprO7M4eM": {date: 2023-04-13, kind: client}
+"cgV6uPBty90": {date: 2023-04-14, kind: general}
+"x44qGcnpBSE": {date: 2023-04-14, kind: manager, ver: "8"}
+"N819QPAtkrk": {date: 2023-04-21, kind: manager, ver: "9"}
+"5AQgbCwHujk": {date: 2023-04-24, kind: client}
+"Ml7XeYp70mM": {date: 2023-04-24, kind: client}
+"147nyGlTuuA": {date: 2023-04-29, kind: manager, ver: "9"}
+"MiD8FYWwHIc": {date: 2023-04-29, kind: manager, ver: "9"}
+"T3yfTqqQqJQ": {date: 2023-04-29, kind: manager, ver: "9"}
+"8P887E-KMls": {date: 2023-04-30, kind: legacy-app}
+"mUTfYd1_UCM": {date: 2023-05-01, kind: legacy-app}
+"7B0PO3HM6Vg": {date: 2023-05-02, kind: legacy-app}
+"hVcWJ8Qg1GQ": {date: 2023-05-02, kind: legacy-app}
+"o9L2sI2T53Q": {date: 2023-05-10, kind: legacy-app}
+"r2dlt19OybM": {date: 2023-05-11, kind: manager, ver: "9"}
+"QtS7595cH30": {date: 2023-05-12, kind: manager, ver: "9"}
+"HHq4EQoUHXY": {date: 2023-05-13, kind: general}
+"nOe7FhajX3g": {date: 2023-05-14, kind: manager, ver: "9"}
+"F2bC_mtbYmQ": {date: 2023-05-15, kind: client}
+"01m7w-I4JXE": {date: 2023-05-19, kind: client}
+"Pqactnz_PdU": {date: 2023-05-21, kind: legacy-app}
+"qT43zDPev6o": {date: 2023-05-21, kind: legacy-app}
+"ea5C93ynkUs": {date: 2023-05-25, kind: manager, ver: "9"}
+"4o4lDfOtpRw": {date: 2023-05-28, kind: manager, ver: "9"}
+"XM9l-WCjNuo": {date: 2023-05-31, kind: manager, ver: "10"}
+"omGIz97mbzM": {date: 2023-06-03, kind: legacy-app}
+"PcCfSkMjx4w": {date: 2023-06-06, kind: manager, ver: "10"}
+"LEgkCj-FYoE": {date: 2023-06-10, kind: manager, ver: "10"}
+"UujtFy8YuB4": {date: 2023-06-10, kind: general}
+"Jnnx1VWMlEs": {date: 2023-06-13, kind: legacy-app}
+"Pzk2Y9Q4n_s": {date: 2023-06-17, kind: manager, ver: "10"}
+"L1VxAcG_7jg": {date: 2023-06-20, kind: legacy-app}
+"DunP8wfctyA": {date: 2023-06-24, kind: manager, ver: "10"}
+"qDbI72J-INM": {date: 2023-07-01, kind: legacy-app}
+"eFNPBSy8_to": {date: 2023-07-06, kind: manager, ver: "10"}
+"vBrD9iYeIrM": {date: 2023-07-09, kind: general}
+"zq2sq43R1i0": {date: 2023-07-12, kind: manager, ver: "10"}
+"h0yk3Vm3hcI": {date: 2023-09-01, kind: manager, ver: "7"}
+"vN5sInIIOpU": {date: 2023-09-18, kind: general}
+"gAyfCJt0jXw": {date: 2023-10-12, kind: general}
+"jaMkZTLH2QY": {date: 2023-11-06, kind: client}
+"vUaA1AEUy1s": {date: 2023-11-18, kind: app, ver: "0"}
+"T1SKHk6HDks": {date: 2023-12-04, kind: manager, ver: "10"}
+"EjHjLQbC40E": {date: 2023-12-11, kind: app, ver: "0"}
+"MRI3HYfayb4": {date: 2023-12-18, kind: general}
+"rdzYoOK6j2U": {date: 2023-12-25, kind: manager, ver: "10"}
+"Xn9qwxpWmWQ": {date: 2024-01-02, kind: general}
+"GVEHJUOojUY": {date: 2024-01-10, kind: general}
+"tRrulSA8rZU": {date: 2024-01-27, kind: general}
+"pydED363X-o": {date: 2024-02-04, kind: manager, ver: "8"}
+"NtQ0bQlIRrY": {date: 2024-02-13, kind: app, ver: "0"}
+"knOxCtgvaDA": {date: 2024-02-19, kind: client}
+"sZzXI7BGClI": {date: 2024-02-27, kind: general}
+"pt3gOIRgfoo": {date: 2024-03-07, kind: manager, ver: "10"}
+"iJPj30yc2ag": {date: 2024-03-25, kind: manager, ver: "10"}
+"ui0PCRfF9v4": {date: 2024-04-02, kind: manager, ver: "10"}
+"G7uB_xSQc3Y": {date: 2024-04-17, kind: manager, ver: "10"}
+"aZEkJ54LIao": {date: 2024-05-08, kind: manager, ver: "10"}
+"Xv_7TDo80k4": {date: 2024-07-08, kind: app, ver: "1"}
+"YPDMFU2nJK0": {date: 2024-08-30, kind: manager, ver: "10"}
+"Br3lIHIaUVc": {date: 2024-09-29, kind: app, ver: "2"}
+"jrvQD5xo6PU": {date: 2025-02-22, kind: app, ver: "2"}
+"ywxx5AzQl-s": {date: 2025-04-21, kind: app, ver: "2"}
+"x5Tb6GUVvI0": {date: 2026-10-18, kind: current}
+"aVrb1pjQbGU": {date: 2026-10-20, kind: current}
+"5ude_1SnwtI": {date: 2026-10-23, kind: current}
+"UsOrJ9wMUMo": {date: 2026-11-06, kind: current}
+"NGP_uC8edJI": {date: 2026-11-07, kind: current}
+"HOF6NJa55SI": {date: 2026-11-11, kind: current}

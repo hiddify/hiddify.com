@@ -1,6 +1,6 @@
 # PROXY protocol
 
-[All Hiddify features](index.md)
+[All Hiddify features](index.md){ .hi-back }
 
 The PROXY protocol is a short header at the start of a TCP connection that says which client
 address the connection really comes from. Upstream sing-box removed it in version 1.6. Hiddify

@@ -1,6 +1,6 @@
 # VLESS encryption
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 VLESS encryption is Xray's encryption layer for VLESS, `mlkem768x25519plus`. It encrypts the
 VLESS stream with keys agreed through a hybrid post-quantum handshake (ML-KEM-768 and X25519), so

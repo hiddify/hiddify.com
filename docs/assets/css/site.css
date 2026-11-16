@@ -2687,9 +2687,31 @@ svg.badge-value-only text{
 text-transform: uppercase;
 }
 
-/* Ask AI widget sits on top of the cookie consent buttons; hide it until consent is given */
-body:has(.md-consent:not([hidden])) .guru-widget-container {
-  display: none !important; /* the widget's own style uses display: flex !important */
+/* Ask AI link in the header (partials/header.html): round icon on small screens, pill with text on desktop */
+.md-header__button.md-ask-ai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: .1rem .2rem;
+  padding: 0;
+  border-radius: 1.1rem;
+  background: rgba(124, 77, 255, .14);
+  color: #5b3fd0;
+  white-space: nowrap;
+  opacity: 1;
+}
+.md-header__button.md-ask-ai svg { width: 1.2rem; height: 1.2rem; flex: none; }
+.md-header__button.md-ask-ai:hover,
+.md-header__button.md-ask-ai:focus-visible { background: rgba(124, 77, 255, .24); }
+[data-md-color-scheme=slate] .md-header__button.md-ask-ai { background: rgba(179, 157, 255, .18); color: #d6ccff; }
+[data-md-color-scheme=slate] .md-header__button.md-ask-ai:hover { background: rgba(179, 157, 255, .3); }
+.md-ask-ai__label { display: none; font-size: .7rem; font-weight: 600; line-height: 1; }
+@media screen and (min-width: 76.25em) {
+  .md-header__button.md-ask-ai { width: auto; padding: 0 .8rem; }
+  .md-ask-ai__label { display: inline; }
 }
 
 svg.badge-value-only{
@@ -2703,3 +2725,18 @@ footer {
   margin: 0;
   padding: 0;
 }
+
+/* Back link at the top of feature pages: [text](index.md){ .hi-back } */
+.md-typeset a.hi-back{display:inline-flex;align-items:center;gap:.6em;padding:.35em 1.05em .35em .4em;margin:.2em 0 1em;border-radius:999px;font-size:.74rem;font-weight:600;line-height:1.6;text-decoration:none;color:var(--md-default-fg-color);
+  background:linear-gradient(var(--md-default-bg-color),var(--md-default-bg-color)) padding-box,linear-gradient(90deg,#455fe9,#10b981,#a78bfa) border-box;border:1.5px solid transparent;
+  box-shadow:0 6px 20px -12px rgba(69,95,233,.55);transition:transform .18s ease,box-shadow .18s ease,color .18s ease}
+.md-typeset a.hi-back::before{content:"";flex:none;width:1.9em;height:1.9em;border-radius:50%;background:linear-gradient(135deg,#455fe9,#a78bfa);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2011h8V3H3m2%202h4v4H5m8%2012h8v-8h-8m2%202h4v4h-4M3%2021h8v-8H3m2%202h4v4H5m8-16v8h8V3m-2%206h-4V5h4Z%22/%3E%3C/svg%3E") center/1.05em no-repeat,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M3%2011h8V3H3m2%202h4v4H5m8%2012h8v-8h-8m2%202h4v4h-4M3%2021h8v-8H3m2%202h4v4H5m8-16v8h8V3m-2%206h-4V5h4Z%22/%3E%3C/svg%3E") center/1.05em no-repeat exclude,linear-gradient(#000 0 0)}
+.md-typeset a.hi-back::after{content:"";flex:none;width:1em;height:1em;background:currentColor;opacity:.55;-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%2011v2h12l-5.5%205.5%201.42%201.42L19.84%2012l-7.92-7.92L10.5%205.5%2016%2011H4Z%22/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%2011v2h12l-5.5%205.5%201.42%201.42L19.84%2012l-7.92-7.92L10.5%205.5%2016%2011H4Z%22/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .18s ease,opacity .18s ease}
+[dir=rtl] .md-typeset a.hi-back::after,.md-typeset [dir=rtl] a.hi-back::after{transform:scaleX(-1)}
+.md-typeset a.hi-back:hover,.md-typeset a.hi-back:focus-visible{transform:translateY(-1px);color:var(--md-accent-fg-color);box-shadow:0 10px 26px -12px rgba(69,95,233,.75)}
+.md-typeset a.hi-back:hover::after{opacity:1;transform:translateX(3px)}
+[dir=rtl] .md-typeset a.hi-back:hover::after,.md-typeset [dir=rtl] a.hi-back:hover::after{transform:scaleX(-1) translateX(3px)}
+.md-typeset a.hi-back:focus-visible{outline:3px solid #fbbf24;outline-offset:3px}
+[data-md-color-scheme=slate] .md-typeset a.hi-back{box-shadow:0 6px 22px -10px rgba(124,140,255,.55)}
+@media (prefers-reduced-motion:reduce){.md-typeset a.hi-back,.md-typeset a.hi-back::after{transition:none}}

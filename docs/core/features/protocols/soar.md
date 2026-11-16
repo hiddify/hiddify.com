@@ -1,6 +1,6 @@
 # Soar
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Soar carries your TCP connections inside DNS queries and answers, through recursive resolvers,
 to a [Soar](https://github.com/getlantern/soar) server that you run as the authority for a

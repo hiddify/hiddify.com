@@ -1,6 +1,6 @@
 # AmneziaWG
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 AmneziaWG is WireGuard with obfuscation added. It sends junk packets before the handshake, pads
 the handshake messages with random bytes and replaces the fixed WireGuard message types with your

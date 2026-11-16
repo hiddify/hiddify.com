@@ -50,6 +50,20 @@
       </div>
     </div>
 
+    <!-- Ask AI (Gurubase): icon on small screens, labelled pill on desktop -->
+    {% set ask_ai = "از هوش مصنوعی بپرس" if config.theme.language == "fa" else "Ask AI" %}
+    <a
+      class="md-header__button md-icon md-ask-ai"
+      href="https://gurubase.io/g/hiddify-manager"
+      target="_blank"
+      rel="noopener"
+      title="{{ ask_ai }}"
+      aria-label="{{ ask_ai }}"
+    >
+      {% include ".icons/material/creation-outline.svg" %}
+      <span class="md-ask-ai__label">{{ ask_ai }}</span>
+    </a>
+
     <!-- Color palette toggle -->
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}

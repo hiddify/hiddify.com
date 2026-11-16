@@ -1,6 +1,6 @@
 # XDRIVE transport
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 XDRIVE is Xray-core's storage transport. The client and the server never connect to each other:
 the client writes the connection's data as files in a storage service, and the server reads them

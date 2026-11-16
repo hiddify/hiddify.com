@@ -54,6 +54,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - content.tabs.link
     - content.action.edit
     - search.suggest
     - search.share
@@ -213,7 +214,8 @@ plugins:
           locale: fa
           name: Persian     
           nav_translations:
-            Hiddify: هیدیفای       
+            Hiddify: هیدیفای
+            Privacy Policy: حریم شخصی
 
   
       reconfigure_material: true
@@ -227,8 +229,11 @@ plugins:
       post_readtime: true
   
 
+hooks:
+  - hooks/search_dedup.py
+
 nav: #docs/app/install.md
   #- Hiddify: index.html
   - ...
-  - privacy-policy.md
+  - Privacy Policy: privacy-policy.md
       

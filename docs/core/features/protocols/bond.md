@@ -1,6 +1,6 @@
 # Bond
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Bond splits every connection over several connections at once, called legs, and joins them
 again on the server. The legs can be any outbounds: different protocols, servers, ports or

@@ -1,6 +1,6 @@
 # Soar
 
-[همهٔ قابلیت‌های هیدیفای](../index.md)
+[همهٔ قابلیت‌های هیدیفای](../index.md){ .hi-back }
 
 Soar اتصال‌های TCP شما را درون پرسش‌ها و پاسخ‌های DNS، از راه resolverهای بازگشتی، به سرور
 [Soar](https://github.com/getlantern/soar) خودتان می‌برد که مرجع (authority) یک zone واگذارشده

@@ -1,6 +1,6 @@
 # Smart resolver pool
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The smart resolver pool is the resolver handling that every DNS tunnel outbound shares: the
 [DNSTT](../protocols/dnstt.md), [MasterDNS](../protocols/masterdns.md) and

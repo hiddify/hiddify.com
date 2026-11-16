@@ -1,6 +1,6 @@
 # Fallback
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The fallback group tries its members in order and uses the first one that connects. A member
 that fails is set aside for a while, so a dead server does not slow down every connection. It is

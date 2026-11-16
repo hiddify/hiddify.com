@@ -23,9 +23,9 @@ OLD_START = '<section class="flex flex-col gap-5 items-center justify-center py-
 
 TEXT = {
     "fa": {"start": "از اینجا شروع کنید", "articles": "مقاله", "videos": "ویدیو", "video_list": "ویدیوها",
-           "new": "جدید", "updated": "به‌روز شد", "old": "قدیمی", "prev": "قبلی", "next": "بعدی", "jump": "دسته‌ها"},
+           "new": "جدید", "updated": "به‌روز شد", "old": "آرشیو", "upto": "تا نسخهٔ {}", "prev": "قبلی", "next": "بعدی", "jump": "دسته‌ها"},
     "en": {"start": "Start here", "articles": "articles", "videos": "videos", "video_list": "Videos",
-           "new": "New", "updated": "Updated", "old": "Old", "prev": "Previous", "next": "Next", "jump": "Categories"},
+           "new": "New", "updated": "Updated", "old": "Archived", "upto": "up to v{}", "prev": "Previous", "next": "Next", "jump": "Categories"},
 }
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 
@@ -118,37 +118,92 @@ def href(path, lang):
 
 
 def article(a, lang):
+    """One article link. "upto: 12" marks an article that is only right for versions up to v12 (muted,
+    with an "up to v12" tag); "old: true" mutes it without a version."""
     title = a.get(lang) or title_of(a["path"], lang)
-    attrs = ""
-    if a.get("old"):
+    attrs, tag = "", ""
+    if a.get("upto"):
+        v = str(a["upto"])
+        tag = f'<span class="hg-ver">{TEXT[lang]["upto"].format(num(v, lang))}</span>'
+    elif a.get("old"):
+        tag = f'<span class="hg-ver">{TEXT[lang]["old"]}</span>'
+    if a.get("old") or a.get("upto"):
         cls = "hg-a hg-old"
     else:
         cls = "hg-a"
         added, updated = dates(a["path"])
         if added:
             attrs = f' data-k="{esc(a["path"])}" data-n="{added}"' + (f' data-u="{updated}"' if updated else "")
-    return f'<li><a class="{cls}" href="{esc(href(a["path"], lang))}"{attrs}>{esc(title)}</a></li>'
+    return f'<li><a class="{cls}" href="{esc(href(a["path"], lang))}"{attrs}>{esc(title)}</a>{tag}</li>'
 
 
-def video(vid, titles, lang):
+VTEXT = {
+    "fa": {"kind_word": "ویدیوی یوتیوب. ", "old": "ویدیوی نسخهٔ قبل", "new": "جدید", "year": "سال {}", "year_in": "در سال {}",
+           "manager": "برای نسخهٔ {} منیجر", "app": "برای اپ نسخهٔ {}", "app0": "برای نسخه‌های اولیهٔ اپ (Hiddify Next)", "legacy-app": "اپ قدیمی، دیگر به‌روز نمی‌شود",
+           "client": "نسخهٔ قدیمی برنامه", "general": "ضبط‌شده",
+           "tip": "این ویدیو برای نسخهٔ قبلی است ({}). ممکن است بخشی یا همهٔ آن با نسخهٔ فعلی فرق داشته باشد.",
+           "tip_new": "ویدیوی جدید، برای نسخهٔ فعلی"},
+    "en": {"kind_word": "YouTube video. ", "old": "Earlier version", "new": "New", "year": "{}",
+           "manager": "For HiddifyManager v{}", "app": "For Hiddify app v{}", "app0": "For early app versions (Hiddify Next)", "legacy-app": "Retired app, no longer updated",
+           "client": "Older version of the app", "general": "Recorded",
+           "tip": "This video is for an earlier version ({}). Parts of it, or all of it, may differ from the current version.",
+           "tip_new": "New video, for the current version"},
+}
+NEW_VIDEO_DAYS = 120
+
+
+def jyear(d):
+    """Solar Hijri (Persian) year of a Gregorian date."""
+    return d.year - 621 if (d.month, d.day) >= (3, 21) else d.year - 622
+
+
+def vinfo(vid, meta, lang):
+    """(css class, badge, line under the title, tooltip) of a video from data/guides/video_meta.yml."""
+    m = meta.get(vid)
+    if not m:
+        return "", "", "", ""
+    V, d, kind = VTEXT[lang], m["date"], m["kind"]
+    year = num(jyear(d), lang) if lang == "fa" else str(d.year)
+    if kind == "current":
+        if (datetime.date.today() - d).days > NEW_VIDEO_DAYS:
+            return "", "", "", ""
+        return "hg-v-new", V["new"], "", V["tip_new"]
+    if kind == "app" and str(m.get("ver")) == "0":
+        what = V["app0"]
+    else:
+        what = V[kind].format(num(m["ver"], lang)) if kind in ("manager", "app") else V[kind]
+    line = f"{what} {V.get('year_in', 'in {}').format(year)}" if kind == "general" else f"{what} · {V['year'].format(year)}"
+    return "hg-v-old", V["old"], line, V["tip"].format(line)
+
+
+def video(vid, titles, lang, meta=None):
     t = titles.get(vid, "")
-    return (f'<a class="hg-v" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener" title="{esc(t)}">'
+    cls, badge, line, tip = vinfo(vid, meta or {}, lang)
+    # the badge text is drawn by CSS (data-label), so it stays out of the search text
+    b = f'<span class="hg-vbadge" data-label="{esc(badge)}"></span>' if badge else ""
+    # "YouTube video" for screen readers and for the search, so searching "video" finds the videos
+    sub = f'<span class="hg-sr">{VTEXT[lang]["kind_word"]}</span>' + (f'<span class="hg-vmeta">{esc(line)}</span>' if line else "")
+    return (f'<a class="hg-v {cls}" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener" title="{esc(tip or t)}">'
             f'<span class="hg-thumb"><img src="/assets/youtube/{vid}.jpg" alt="" loading="lazy" decoding="async">'
-            f'<span class="hg-play"></span></span><span class="hg-vt">{esc(t)}</span></a>')
+            f'<span class="hg-play"></span>{b}</span><h4 class="hg-vt" id="video-{esc(vid)}">{esc(t)}</h4>{sub}</a>')
 
 
-def videos(ids, titles, lang):
+def videos(ids, titles, lang, meta=None):
     if not ids:
         return ""
+    meta = meta or {}
+    # current videos first, then the older ones (newest first); videos without data keep their place
+    ids = sorted(ids, key=lambda v: (meta.get(v, {}).get("kind") not in (None, "current"),
+                                     -(meta[v]["date"].toordinal()) if v in meta and meta[v].get("kind") != "current" else 0))
     T = TEXT[lang]
     return (f'<div class="hg-videos"><div class="hg-vhead"><h3>{T["video_list"]} '
             f'<span class="hg-count">{num(len(ids), lang)}</span></h3>'
             f'<span class="hg-arrows"><button type="button" class="hg-prev" aria-label="{T["prev"]}">{icon("chevron-left")}</button>'
             f'<button type="button" class="hg-next" aria-label="{T["next"]}">{icon("chevron-right")}</button></span></div>'
-            f'<div class="hg-vrow">' + "".join(video(v, titles, lang) for v in ids) + "</div></div>")
+            f'<div class="hg-vrow">' + "".join(video(v, titles, lang, meta) for v in ids) + "</div></div>")
 
 
-def build(data, titles, lang):
+def build(data, titles, lang, vmeta=None):
     T = TEXT[lang]
     out = [START, f'<div class="hg" data-l-new="{T["new"]}" data-l-upd="{T["updated"]}">']
     # start here
@@ -183,12 +238,12 @@ def build(data, titles, lang):
             out.append(f'<div class="hg-g"><h3>{esc(g[lang])}</h3><ul>'
                        + "".join(article(a, lang) for a in g["articles"]) + "</ul></div>")
         out.append("</div>")
-        out.append(videos(vids, titles, lang))
+        out.append(videos(vids, titles, lang, vmeta))
         out.append("</section>")
     if data.get("legacy"):
         L = data["legacy"]
         out.append(f'<details class="hg-legacy"><summary><b>{esc(L[lang]["title"])}</b>'
-                   f'<small>{esc(L[lang]["text"])}</small></summary>{videos(L["videos"], titles, lang)}</details>')
+                   f'<small>{esc(L[lang]["text"])}</small></summary>{videos(L["videos"], titles, lang, vmeta)}</details>')
     out.append("</div>")
     out.append('<script src="/assets/js/guide.js" defer></script>')
     out.append(END)
@@ -206,6 +261,8 @@ def check(data):
 
 def main():
     titles = yaml.safe_load(open(os.path.join(DATA, "videos.yml"), encoding="utf-8")) or {}
+    vm = os.path.join(DATA, "video_meta.yml")
+    meta = (yaml.safe_load(open(vm, encoding="utf-8")) or {}) if os.path.exists(vm) else {}
     for page in ("manager", "app"):
         data = yaml.safe_load(open(os.path.join(DATA, page + ".yml"), encoding="utf-8"))
         check(data)
@@ -216,7 +273,7 @@ def main():
                 head, tail = s.split(START, 1)[0], s.split(END, 1)[1]
             else:  # first run on the old hand-written page: drop its cards and their script
                 head, tail = s.split(OLD_START, 1)[0], "\n"
-            new = head.rstrip("\n") + "\n\n" + fa_spelling(build(data, titles, lang)) + tail
+            new = head.rstrip("\n") + "\n\n" + fa_spelling(build(data, titles, lang, meta)) + tail
             if new != s:
                 open(p, "w", encoding="utf-8").write(new)
             print(f"{page}/{os.path.basename(p)}: built")

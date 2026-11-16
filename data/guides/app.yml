@@ -37,6 +37,9 @@ categories:
           - path: app/How-to-use-Hiddify-app
             fa: کار با اپ هیدیفای
             en: Use the Hiddify app
+          - path: app/Free-profiles-in-Hiddify-app
+            fa: پروفایل‌های رایگان
+            en: Free profiles
       - fa: قابلیت‌ها
         en: Features
         articles:
@@ -46,6 +49,34 @@ categories:
           - path: app/How-to-use-UDP-Turn-Relay
             fa: UDP Turn Relay
             en: UDP Turn Relay
+            upto: 2
+          - path: app/Chain-Extra-security-and-Proxy-unblocker
+            fa: زنجیره، امنیت بیشتر و رفع فیلتر
+            en: Chain, Extra security and unblocker
+          - path: app/Routing-in-Hiddify-app
+            fa: مسیریابی در اپ
+            en: Routing
+          - path: app/Share-your-connection
+            fa: اشتراک‌گذاری اتصال
+            en: Share your connection
+          - path: app/DNS-and-TLS-tricks-in-Hiddify-app
+            fa: DNS و ترفندهای TLS
+            en: DNS and TLS tricks
+          - path: app/Import-export-settings-and-edit-profile
+            fa: ورود و خروج تنظیمات و ویرایش پروفایل
+            en: "Import, export settings and edit a profile"
+          - path: app/Logs-and-reporting-a-problem
+            fa: لاگ‌ها و گزارش مشکل
+            en: Logs and reporting a problem
+      - fa: پلتفرم‌ها
+        en: Platforms
+        articles:
+          - path: app/Hiddify-app-on-desktop
+            fa: اپ روی کامپیوتر (ویندوز، مک، لینوکس)
+            en: "On Windows, macOS and Linux"
+          - path: app/Hiddify-on-Android-TV
+            fa: اپ روی اندروید تی‌وی
+            en: On Android TV
     videos:
       fa: [HOF6NJa55SI, UsOrJ9wMUMo, NGP_uC8edJI, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
       en: [NGP_uC8edJI, HOF6NJa55SI, UsOrJ9wMUMo, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
@@ -63,20 +94,24 @@ categories:
             fa: هستهٔ هیدیفای
             en: Hiddify Core
           - path: core/cli
-            fa: راهنمای دستورهای HiddifyCli
-            en: HiddifyCli command reference
+            fa: راهنمای دستورهای هسته
+            en: Core command reference
           - path: app/HiddifyCli-guide
             fa: آموزش HiddifyCli
             en: HiddifyCli tutorial
+            old: true
       - fa: روتر OpenWrt
         en: OpenWrt routers
         articles:
           - path: app/How-to-use-HiddifyCli-on-OpenWrt
-            fa: نصب HiddifyCli روی OpenWrt
-            en: HiddifyCli on OpenWrt
+            fa: نصب هسته روی OpenWrt
+            en: Hiddify Core on OpenWrt
           - path: app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli
             fa: اینترنت آزاد برای همهٔ دستگاه‌های پشت روتر
             en: Free internet for every device behind the router
+          - path: app/Router-mode-on-Linux
+            fa: حالت روتر در لینوکس
+            en: Router mode on Linux
     videos:
       fa: [jrvQD5xo6PU]
       en: [jrvQD5xo6PU]

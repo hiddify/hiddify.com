@@ -1,6 +1,6 @@
 # WireGuard: Hiddify additions
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Hiddify adds a few things to the upstream WireGuard endpoint (`"type": "wireguard"`): fake
 "noise" packets before each handshake, a user name per peer, automatic recovery when the UDP

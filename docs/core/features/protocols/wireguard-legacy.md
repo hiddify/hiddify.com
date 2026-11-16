@@ -1,6 +1,6 @@
 # WireGuard outbound (legacy format)
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Upstream sing-box removed the WireGuard outbound in version 1.13; WireGuard is now an endpoint.
 Hiddify brings the outbound back under a new type name, so configs written in the old format keep

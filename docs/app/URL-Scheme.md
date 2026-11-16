@@ -2,243 +2,150 @@
 title: URL scheme in Hiddify app
 ---
 
-# URL Scheme in Hiddify app
-We extend the protocol defined [here](https://web.archive.org/web/20230323111527/docs.cfw.lbyczf.com/contents/urlscheme.html#%E4%B8%8B%E8%BD%BD%E9%85%8D%E7%BD%AE).
+# URL scheme and subscription format of the Hiddify app
 
-## Download configuration
+This page is for people who make subscription links, panels or bots for the Hiddify app: the links that open the app, what a subscription may contain, and the headers and link parameters the app reads.
 
-Supports quick import of configuration files using URL Scheme:
+!!! info "Written for Hiddify app 5.9"
+    Everything on this page was checked against the code of Hiddify app 5.9.2 and the Hiddify Core it ships with.
 
-```
-hiddify://import/<sublink>#name
+## Links that open the app { #download-configuration }
 
-vmess://....
-vless://...
-ss://...
-trojan://...
-```
-
-`<sublink>` is either clash link, singbox link, v2ray sublink, or single proxy link 
-
-
-
-<details><summary>deprecated</summary>
+When the Hiddify app is installed, a link of this form opens the app and asks the user to add the profile:
 
 ```
-hiddify://install-sub?url=<encoded v2ray config URI>#<name> 
-hiddify://install-config?url=<encoded v2ray config URI>#<name>
-hiddify://install-proxy?url=<encoded v2ray proxy share link>#<name>
-```
-</details>
-
-
-### Examples:
-#### Example Deeplink
-```
-hiddify://import/https://hiddify.com/autosub#name
-hiddify://import/trojan://your_password@aws-ar-buenosaires-1.f1cflineb.com:443#name
+hiddify://import/<link>#<name>
 ```
 
-##### Example Sub link content 
-###### v2ray format
-```
-# http_WS_direct_vless تست 
-vless://64177752-4266-4e00-94e3-1b8ececc6623@ip.sslip.io:80?security=none&sni=ip.sslip.io&type=ws&alpn=http/1.1&path=/2LBLzR6NsjNkCN830caotU&host=ip.sslip.io&encryption=none&fp=chrome&headerType=None#http_WS_direct_vless_تست
+- `<link>` is a subscription link (in any format the app reads, see [below](#subscription-content)) or a single proxy link such as `vless://…`.
+- `#<name>` (optional) is the profile name. The app asks the user before it adds a profile from an external link.
 
-# http_WS_direct_vmess تست 
-vmess://64177752-4266-4e00-94e3-1b8ececc6623@ip.sslip.io:80?security=none&sni=ip.sslip.io&type=ws&alpn=http/1.1&path=/2LBLzR6NsjNkCN830caotU&host=ip.sslip.io&encryption=none&fp=chrome&headerType=None#http_WS_direct_vless_تست
-
-
-# ssconfig
-ssconf://s3.amazonaws.com/beedynconprd/ng4lf90ip01zstlyle4r0t56x1qli4cvmt2ws6nh0kdz1jpgzyedogxt3mpxfbxi.json#BeePass",
-
-# Reality
-vless://409f106a-b2f2-4416-b186-5429c9979cd9@54.38.144.4:2053?encryption=none&flow=&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&serviceName=xyz&sid=&sni=discordapp.com&type=grpc#رایگان | REALITY | @EliV2ray | FR🇫🇷 | 0️⃣1️⃣
-
-# Vless
-vless://25da296e-1d96-48ae-9867-4342796cd742@172.67.149.95:443?encryption=none&fp=chrome&host=vless.229feb8b52a0e7e117ea76f8b591bcb3.workers.dev&path=%2F%3Fed%3D2048&security=tls&sni=vless.229feb8b52a0e7e117ea76f8b591bcb3.workers.dev&type=ws#رایگان | VLESS | @Helix_Servers | US🇺🇸 | 0️⃣1️⃣
-
-# Vmess
-vmess://eyJhZGQiOiI1MS4xNjEuMTMwLjE3MyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJkNDNlZTVlMy0xYjA3LTU2ZDctYjJlYS04ZDIyYzQ0ZmRjNjYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjgwODAiLCJzY3kiOiJjaGFjaGEyMC1wb2x5MTMwNSIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJwcyI6Ilx1MDYzMVx1MDYyN1x1MDZjY1x1MDZhZlx1MDYyN1x1MDY0NiB8IFZNRVNTIHwgQFdhdGFzaGlfVlBOIHwgQVVcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZmEgfCAwXHVmZTBmXHUyMGUzMVx1ZmUwZlx1MjBlMyJ9"
-
-# ss
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0T3dPeXZsWGlZNUFUSkFVT3BYTlBO@5.35.34.107:55990#%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86+%7C+SS+%7C+%40iP_CF+%7C+RU%F0%9F%87%B7%F0%9F%87%BA+%7C+0%EF%B8%8F%E2%83%A31%EF%B8%8F%E2%83%A3"
-
-# TUIC
-tuic://3618921b-adeb-4bd3-a2a0-f98b72a674b1:dongtaiwang@108.181.24.7:23450?allow_insecure=1&alpn=h3&congestion_control=bbr&sni=www.google.com&udp_relay_mode=native#رایگان | TUIC | @V2rayCollector | CA🇨🇦 | 0️⃣1️⃣
-
-# Hysteria1
-hysteria://host:443?protocol=udp&auth=123456&peer=sni.domain&insecure=1&upmbps=100&downmbps=100&alpn=hysteria&obfs=xplus&obfsParam=123456#remarks",
-
-# Hysteria2
-hysteria2://letmein@example.com/?insecure=1&obfs=salamander&obfs-password=gawrgura&pinSHA256=deadbeef&sni=real.example.com
-
-# SSH
-ssh://user:pass@server:22/?pk=pk&hk=hk"
-
-# Trojan
-trojan://your_password@aws-ar-buenosaires-1.f1cflineb.com:443?host=aws-ar-buenosaires-1.f1cflineb.com&path=%2Ff1rocket&security=tls&sni=aws-ar-buenosaires-1.f1cflineb.com&type=ws#رایگان | TROJAN | @VmessProtocol | RELAY🚩 | 0️⃣1️⃣"
-
-#Wireguard
-wg://[server]:222/?pk=[private_key]&local_address=10.0.0.2/24&peer_pk=[peer_public_key]&pre_shared_key=[pre_shared_key]&workers=[workers]&mtu=[mtu]&reserved=0,0,0
+Examples:
 
 ```
-###### v2ray link format
-```
-#normal exmaple
-hiddify://import/https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/fe3637db4ece53e56ac99ea09dbefa34466f280f/sub/normal/mix
-
-#base64 example
-hiddify://import/https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/fe3637db4ece53e56ac99ea09dbefa34466f280f/sub/base64/mix
-```
-###### Singbox format
-```
-hiddify://import/https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/fe3637db4ece53e56ac99ea09dbefa34466f280f/singbox/sfasfi/mixLite.json
-```
-##### Clash format
-```
-hiddify://import/https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/d6ce7b907eeb58abf503c283af192e7bc915d143/clash/mix.yml
+hiddify://import/https://example.com/sub/abc123#My VPN
+hiddify://import/trojan://password@example.com:443?security=tls&type=ws&path=%2Fws#Server 1
 ```
 
-# Profile Title:
-We use the first item from the following list if it is not empty or null
+### Other forms the app understands { #deprecated }
 
-- "Profile-Title" header 
-- "content-disposition" header (described bellow)
-- URL Fragment (anything after # in the url)
-- the last part of the URL as the configuration file name. Any `.txt` `.json` `.yaml` or `.yml` will be removed
-
-### Response headers
-#### Profile-Title
-You can use base64 encoded UTF8 name for profile title that allows you to have emoji in profile title 😍
-However you use also the ascii name in the header. Example:
+These forms are read when the user adds them in the app (from the clipboard or with **Add profile › Manually**). As a link that opens the app, use `hiddify://import/…` above.
 
 ```
-Profile-Title: base64:SSDinaTvuI8gSGlkZGlmeQ==
-```
-It will show the profile title as `I ❤️ Hiddify`
-
-```
-Profile-Title: I love hiddify
-```
-It will show the profile title as `I love Hiddify`
-
-#### content-disposition
-
-If the `Profile-Title` is not set for backward compatibility with clash configs we use the value corresponding to `filename` as the configuration file name, otherwise use the last part of the URL as the configuration file name. Any `.txt`, `.yaml` or `.yml` will be removed
-
-```
-content-disposition: attachment; filename="abc.txt"
+hiddify://install-sub?url=<URL-encoded link>#<name>
+hiddify://install-config?url=<URL-encoded link>#<name>
+hiddify://install-proxy?url=<URL-encoded link>#<name>
+v2ray://install-config?url=<URL-encoded link>&name=<name>
+clash://install-config?url=<URL-encoded link>&name=<name>
+sing-box://import-remote-profile?url=<URL-encoded link>#<name>
 ```
 
-#### profile-update-interval
+The schemes `hiddify`, `v2ray`, `v2rayn`, `v2rayng`, `clash`, `clashmeta` and `sing-box` all work with a `url=` parameter. A `name=` parameter, when given, is used instead of the `#name` part. A plain `https://…` link may also carry `?name=…`.
 
-If there is a `profile-update-interval` field in the response header, the configuration file automatic update interval is set to the corresponding value, in hours
+### Sharing routing rules { #routing-rules }
 
-```
-profile-update-interval: 12
-```
- 
-#### subscription-userinfo
-
-If the `subscription-userinfo` field exists in the response header, its corresponding traffic and expiration information will be displayed in the Profiles module, [specification reference here](https://github.com/crossutility/Quantumult/blob/master/extra-subscription-feature.md)
+In **Settings › Routing**, the ⋮ menu has **Copy rules to clipboard**. It copies a link of this form:
 
 ```
-subscription-userinfo: upload=455727941; download=6174315083; totl=1073741824000; expire=1671815872
+hiddify:///settings/routing-options?routeRule=<base64 of the rules as JSON>
 ```
 
-#### profile-web-page-url
+Opening it on another device opens **Routing** and, after a warning ("Import route rule?"), adds the rules.
 
-If the `profile-web-page-url` field exists in the response header, the `Open web page` option will be displayed in the profile, allowing the user to jump to the corresponding portal home page
+## What a subscription may contain { #subscription-content }
 
-#### support-url
+The content of a subscription link (or of a file the user imports) can be:
 
-If the `support-url` field exists in the response header, the `support` option will be displayed in the profile, allowing the user to jump to the corresponding portal home page
+- **Share links**, one per line, plain or as one base64 block. The core reads: `vless`, `vmess`, `trojan`, `ss`, `ssconf`, `tuic`, `hysteria`, `hysteria2` (`hy2`), `ssh`, `naive` (`naive+https`, `naive+quic`), `anytls`, `snell`, `mieru` (`mierus`), `socks`, `http`/`https` (also `phttp`/`phttps`), `wg`/`wireguard`/`awg`, `warp`, `psiphon`, `tor`, `ovpn`, `dnstt`, `dnst`, `masterdns`, `soar`, `slipnet`, `masque`, `aether` and `direct`. The `x` prefix (`xvless://`, `xvmess://`, `xtrojan://`) runs a link with the Xray core, and the `s` prefix (`svless://`, …) with sing-box.
+- **A sing-box JSON config**, a **Clash / mihomo YAML config**, an **Xray JSON config**, a **WireGuard `.conf`** file or an **OpenVPN `.ovpn`** file.
+- **Other subscription links**: a line with an `http(s)://` address that has a path is downloaded, and its content takes the place of the line. A line that fails to download is dropped.
 
-#### moved-permanently-to
-
-If the `moved-permanently-to` field exists in the response header, this will update the subscription url. It is useful when your sublink is blocked or you want to change the domain.
-
-
-#### DNS
-
-If the `DNS` field exists in the response header, and the user did not set his/her own preferred DNS,  the application will use this DNS server. (In the clash profile this setting can be override)
-
-#### Example
-
-<div align=center>
-
-![image](https://user-images.githubusercontent.com/114227601/230938537-db2b697c-fa58-41fb-a2d7-b11f749d5de8.png)
-</div>
-
-In this example:
-```
-پروفایل یک = <name>
-usage=<download>+<upload> (if more than 80% of total :yellow,  more than 100% :red)
-total=<total>
-روزباقیمانه=relative date of <expire> (if less than 7 days: yellow, less than zero: red)
-مشاهده= open browser with <profile-web-page-url>
-```
-
-The usage information will be fetched by HEAD option whenever user open the application or every 1 minute (when user is focused in the application)
-If any of those fields are empty the corresponding data will not be shown.
-
-
-
-# if you can not modify HTTP header (e g. In GitHub)
-You can add headers in the first 10 lines of the file with skip characters such as `//` for json  or `#` for Yaml and sub links
-
-E.g.,
+Example of share links:
 
 ```
-#profile-title: Hiddify
-#profile-title: base64:base64string
-#profile-update-interval: 1
-#subscription-userinfo: upload=455727941; download=6174315083; total=1073741824000; expire=1671815872
+#profile-title: My VPN
+vless://11111111-2222-3333-4444-555555555555@example.com:443?security=tls&sni=example.com&type=ws&path=%2Fws#WebSocket TLS
+hysteria2://password@example.com:443?sni=example.com&obfs=salamander&obfs-password=secret#Hysteria2
+tuic://11111111-2222-3333-4444-555555555555:password@example.com:443?alpn=h3&congestion_control=bbr&sni=example.com#TUIC
+```
+
+## Profile name { #profile-title }
+
+The app uses the first of these that is not empty:
+
+1. A name the user typed when editing the profile.
+2. The `profile-title` header.
+3. The file name in the `content-disposition` header.
+4. The `#name` part of the subscription link.
+5. The last part of the link, without `.json`, `.yaml`, `.yml` or `.txt`.
+6. "Remote Profile".
+
+## Subscription headers { #response-headers }
+
+The server can send these HTTP response headers with the subscription. If you can't set headers (for example a file on GitHub), put them as comments in the **first 10 lines** of the content, starting with `#` or `//`:
+
+```
+#profile-title: base64:SSDinaTvuI8gSGlkZGlmeQ==
+#profile-update-interval: 12
+#subscription-userinfo: upload=455727941; download=6174315083; total=1073741824000; expire=1767225600
 #support-url: https://t.me/hiddify
 #profile-web-page-url: https://hiddify.com
-
 ```
 
-# Fragment Parameters 
-If you want to use Fragment in your links, you have to consider the following parameters 
+A real HTTP header wins over the same header in the content. The app reads only these headers:
+
+| Header | Value | What the app does |
+|---|---|---|
+| `profile-title` | text, or `base64:` + UTF-8 text in base64 | The profile name. Use base64 for emoji or non-Latin names: `base64:SSDinaTvuI8gSGlkZGlmeQ==` shows "I ❤️ Hiddify". |
+| `content-disposition` | `attachment; filename="name.txt"` or `filename*=UTF-8''<percent-encoded>` | The profile name, when there is no `profile-title`. |
+| `profile-update-interval` | hours, a whole number above 0 | How often the app updates the profile, unless the user changed it. |
+| `subscription-userinfo` | `upload=…; download=…; total=…; expire=…` | Shows the used and total traffic (bytes) and the days left (`expire` is a Unix time in seconds). `total=0` or no `total` means unlimited; `expire=0` or no `expire` means no expiry. |
+| `profile-web-page-url` | a URL | Shows a button that opens your web page (for example the user page). |
+| `support-url` | a URL | Shows a support button. |
+| `ipinfo-url` | a URL | The address the app uses to show the exit IP and its country. |
+| `extra-security` | `psiphon` or `warp` | Turns on [Extra security](Chain-Extra-security-and-Proxy-unblocker.md) through Psiphon or WARP for this profile. The user's own choice in the app wins. |
+| `fragment` | `size,sleep,method` or `tlshello,size,sleep` | Turns on TLS fragment for this profile, read like the link parameter [below](#fragment-parameters). The user's own setting wins. |
+| `keep-top` | a number, or `-1` | How many of the fastest proxies the app keeps running (default 5). `-1` keeps all. The user's own choice wins. |
+
+!!! note "Not read any more"
+    `moved-permanently-to` and `DNS` were read by older versions. Hiddify app 5.9 ignores them.
+
+## Link parameters { #link-parameters }
+
+Besides the usual parameters of each protocol, Hiddify reads these in a share link. Parameter names don't care about case, `_` or `-`: `mux_type`, `mux-type` and `muxtype` are the same.
+
+### TLS fragment { #fragment-parameters }
 
 ```
-&fragment=size,sleep,hellotls
+&fragment=<size>,<sleep>,<method>
+&fragment=tlshello,<size>,<sleep>
 ```
 
-For example, you just need to put the following information in your links
+`size` is the size of each piece in bytes and `sleep` the pause between pieces in milliseconds, each a number or a range such as `10-100`. All three parts are needed. Example: `&fragment=10-100,100-200,tlshello`. You can also give `fgsize=` and `fgsleep=` on their own. See [How the TLS trick works](/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/).
 
-`&fragment=10-100,100-200,hellotls`
+### Other TLS tricks { #tls-tricks-parameters }
 
-# MUX parameter 
-If you want to setup Mux parameters in your link
+- `mc=1`: mixed-case SNI (for example `ExAmPle.com`).
+- `padsize=<range>`: adds a padding extension of this many bytes before the SNI, for example `padsize=100-200`. It needs a browser fingerprint (`fp=chrome` or another).
 
-```
-mux : "smux/h2mux/yamux"
-mux_max : "number" e.g. 6
-mux_min : "number" e.g. 2
-mux_pad : "true/false"
-mux_down : "number in mbps" e.g. 100
-mux_up : "number in mbps" e.g. 200
+### MUX { #mux-parameter }
 
-```
+| Parameter | Meaning |
+|---|---|
+| `muxtype` | `smux`, `yamux` or `h2mux`. MUX is on only when this is set. |
+| `muxmaxc` | the maximum number of connections |
+| `muxsmax` | the maximum number of streams in one connection |
+| `mux` | the minimum number of streams in one connection |
+| `muxpad` | `true` to add padding (the server must use it too) |
+| `muxup`, `muxdown` | upload and download speed in Mbps for TCP Brutal; both are needed |
 
-Here: 
+Example: `&muxtype=h2mux&muxmaxc=4&muxpad=false&muxup=10&muxdown=50`
 
-- `mux` can be one of `smux`, `yamux`, `h2mux`
+!!! warning "Old parameter names"
+    Older versions of this page wrote `mux=smux`, `mux_max`, `mux_min`, `mux_up` and `mux_down`. The app does not read those names: use the table above.
 
+## Related articles
 
-
-
-- `mux_max` is the maximum number of connections.
-
-- `mux_min` is the minimum number of streams.
-
-- `mux_pad` is a true or false parameter which turns on or off this feature on MUX. It Should be the same with the server.
-
-- `mux_down` is the download bandwidth for MUX in mbps. 
-
-- `mux_up` is the upload bandwidth for MUX in mbps. 
-
-Example: `mux=smux&mux_max=4&mux_min=0&mix_pad=false&mux_up=10&mux_down=10`
+- [Import, export and reset settings, and edit a profile in the Hiddify app](/app/Import-export-settings-and-edit-profile/)
+- [How to use the Hiddify app](/app/How-to-use-Hiddify-app/)
+- [Free profiles in the Hiddify app](/app/Free-profiles-in-Hiddify-app/)

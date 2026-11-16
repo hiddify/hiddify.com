@@ -1,6 +1,6 @@
 # REALITY in Hiddify
 
-[All Hiddify features](index.md)
+[All Hiddify features](index.md){ .hi-back }
 
 Hiddify changes how the REALITY client builds its ClientHello so it connects to current Xray
 servers, and adds one option, `key_share`, in the `reality` object of an outbound's `tls` block.

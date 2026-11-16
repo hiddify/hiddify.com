@@ -1,6 +1,6 @@
 # IPv6 by outbound
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Gives the apps IPv6 only through an outbound that carries it, and never lets them see an IPv6
 connection die. The monitoring learns, for every outbound, whether its exit carries IPv6: from

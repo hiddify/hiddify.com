@@ -1,6 +1,6 @@
 # rmux multiplexing
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 rmux is one more protocol for sing-box multiplexing: `"multiplex": {"protocol": "rmux"}` on an
 outbound. Like `smux`, `yamux` and `h2mux`, it carries many connections inside one connection to

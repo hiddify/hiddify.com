@@ -1,6 +1,6 @@
 # MasterDNS
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 MasterDNS carries your TCP connections inside DNS queries and answers, through public DNS
 resolvers, to a [MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN) server that you run.

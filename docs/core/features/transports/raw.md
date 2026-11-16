@@ -1,6 +1,6 @@
 # Raw transport
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 `raw` is a V2Ray transport that adds nothing: the protocol runs straight over TCP, or over TLS
 when the `tls` block is enabled. It is the same as having no `transport` block, and matches

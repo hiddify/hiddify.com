@@ -10,7 +10,8 @@ title: آموزش نصب اپ هیدیفای
 
 اپ هیدیفای بر پایهٔ **sing-box** (موتوری که اتصال‌ها را برقرار می‌کند) ساخته شده است. از پروتکل‌های زیادی پشتیبانی می‌کند، از جمله VLESS، VMess، Trojan، Reality، TUIC، Hysteria، WireGuard، AmneziaWG، Naive و SSH، و لینک‌های سابسکریپشن sing-box، V2ray، Clash و Clash Meta را می‌پذیرد. [فهرست کامل امکانات](https://github.com/hiddify/hiddify-app/blob/main/README_fa.md) را در GitHub ببینید.
 
-این صفحه برای نسخهٔ **5.5.6** برنامه است.
+!!! note "نوشته‌شده برای اپ هیدیفای نسخهٔ 5.9"
+    این صفحه برای اپ هیدیفای نسخهٔ **5.9** (5.9.2) است که فعلاً پیش‌انتشار است. لینک‌های دانلود زیر همیشه آخرین نسخه را می‌دهند. نسخهٔ فروشگاه‌ها (Google Play، App Store و Microsoft Store) ممکن است تا مدتی هنوز نسخهٔ پایدار 5.5.5 باشد.
 
 ## پیش از شروع
 
@@ -37,7 +38,7 @@ title: آموزش نصب اپ هیدیفای
 | آیفون / آیپد | [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) | — |
 | ویندوز | [فایل نصب (.exe)](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) | [Microsoft Store](https://apps.microsoft.com/detail/9ndgwm32bnxk)، [بستهٔ MSIX](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix)، [نسخهٔ پرتابل ZIP](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip)، winget |
 | مک | [فایل DMG](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS.dmg) | [نصب‌کنندهٔ PKG](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS-Installer.pkg)، [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) (مک‌های Apple Silicon) |
-| لینوکس | [دانلود همه‌کاره](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.tar.gz) (بستهٔ مناسب سیستم شما را خودش نصب می‌کند) | [AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage)، [بستهٔ .deb](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (Debian، Ubuntu، Mint)، [بستهٔ .rpm](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm) (Fedora، openSUSE)، [دانلود همه‌کارهٔ ARM64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-arm64.tar.gz) |
+| لینوکس | دستور نصب (پایین‌تر)، که بستهٔ مناسب سیستم شما را خودش انتخاب می‌کند | [‎.deb x64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb)، [‎.deb ARM64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-arm64.deb) (Debian، Ubuntu، Mint)، [‎.rpm x64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm)، [‎.rpm ARM64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-arm64.rpm) (Fedora، openSUSE)، [AppImage x64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage)، [AppImage ARM64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-arm64.AppImage) |
 
 همهٔ فایل‌ها در [صفحهٔ انتشارها در GitHub](https://github.com/hiddify/hiddify-app/releases/latest) هم هستند.
 
@@ -64,12 +65,15 @@ title: آموزش نصب اپ هیدیفای
 
     <img width=260 alt="فایل APK هیدیفای در پوشهٔ Downloads" src="/assets/app-install/android-downloads.webp" style="display:block;margin:0 auto">
 
-3. اگر اندروید گفت اجازهٔ نصب از این منبع را ندارد، روی `Settings` (تنظیمات) بزنید، گزینهٔ `Allow from this source` را روشن کنید و برگردید.
-4. اندروید می‌پرسد «Do you want to install this app?». روی `Install` بزنید.
+3. اندروید چند لحظه **Preparing app...** را نشان می‌دهد و بعد هشدار می‌دهد که برنامه‌های منبع ناشناس ممکن است خطرناک باشند. روی `Continue` بزنید. (در بعضی گوشی‌ها به‌جایش می‌خواهد گزینهٔ `Allow from this source` را در `Settings` روشن کنید؛ روشنش کنید و برگردید.)
+
+    <img width=260 alt="هشدار دربارهٔ برنامه‌های منبع ناشناس" src="/assets/app-install/android-unknown-apps.webp" style="display:block;margin:0 auto">
+
+4. اندروید می‌پرسد **Install this app?**. روی `Install` بزنید.
 
     <img width=260 alt="پنجرهٔ نصب برنامهٔ هیدیفای" src="/assets/app-install/android-install.webp" style="display:block;margin:0 auto">
 
-5. وقتی پیغام `App installed` را دیدید، روی `Open` بزنید.
+5. وقتی پیغام `App installed` را دیدید، روی `Open` بزنید (یا `Done` برای باز کردن بعدی).
 
     <img width=260 alt="پیغام App installed" src="/assets/app-install/android-installed.webp" style="display:block;margin:0 auto">
 
@@ -112,38 +116,38 @@ winget install Hiddify.Next
 
 برای نصب با فایل نصب:
 
-1. [فایل نصب](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) (`Hiddify-Windows-Setup-x64.exe`) را دانلود کنید.
-2. روی فایل دانلودشده دو بار کلیک کنید. وقتی ویندوز پرسید «آیا اجازه می‌دهید این برنامه تغییراتی در دستگاه شما ایجاد کند؟»، روی `Yes` بزنید.
+1. [فایل نصب](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe) (`Hiddify-Windows-Setup-x64.exe`) را دانلود کنید و روی آن دو بار کلیک کنید.
+2. اگر پنجرهٔ آبی **Windows protected your PC** ظاهر شد، روی `More info` بزنید. ویندوز این پنجره را برای برنامه‌هایی نشان می‌دهد که هنوز آن‌ها را خوب نمی‌شناسد؛ به این معنی نیست که فایل خطرناک است.
 
-    <img width=30% alt="پیغام User Account Control ویندوز" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/e4174de0-10b5-4b46-9baf-2e302162da5a" style="display:block;margin:0 auto">
+    <img width=60% alt="هشدار Windows protected your PC" src="/assets/app-install/win-smartscreen.webp" style="display:block;margin:0 auto">
 
-3. اگر پنجرهٔ آبی «Windows protected your PC» ظاهر شد، روی `More info` بزنید.
+3. روی `Run anyway` بزنید.
 
-    <img width=40% alt="هشدار Windows protected your PC" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/8a3bc452-004d-4be7-a9bb-21aad90db7fc" style="display:block;margin:0 auto">
+    <img width=60% alt="دکمهٔ Run anyway" src="/assets/app-install/win-smartscreen-run.webp" style="display:block;margin:0 auto">
 
-4. روی `Run anyway` بزنید.
+4. ویندوز می‌پرسد «آیا اجازه می‌دهید این برنامه از ناشر ناشناس تغییراتی در دستگاه شما ایجاد کند؟». روی `Yes` بزنید.
 
-    <img width=40% alt="دکمهٔ Run anyway" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/36293a7c-f56a-4811-8302-474874654b70" style="display:block;margin:0 auto">
+    <img width=50% alt="پیغام User Account Control ویندوز" src="/assets/app-install/win-uac.webp" style="display:block;margin:0 auto">
 
-5. نصب‌کننده محل نصب برنامه را نشان می‌دهد. پوشهٔ پیش‌فرض را نگه دارید (یا تغییرش دهید) و روی `Next` بزنید.
+5. زبان برنامهٔ نصب را انتخاب کنید و `OK` را بزنید. (برنامهٔ نصب فارسی ندارد، ولی خود اپ فارسی دارد و زبان آن را در اولین اجرا انتخاب می‌کنید.)
 
-    <img width=60% alt="انتخاب محل نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/7196a86f-3f74-4177-b611-19b484e0da9a" style="display:block;margin:0 auto">
+    <img width=45% alt="انتخاب زبان برنامهٔ نصب" src="/assets/app-install/win-setup-language.webp" style="display:block;margin:0 auto">
 
-6. گزینه‌های اضافه، مثل ساخت میان‌بر (Shortcut) روی دسکتاپ یا اجرای خودکار برنامه، را انتخاب کنید و روی `Next` بزنید.
+6. برنامهٔ نصب محل نصب را نشان می‌دهد. پوشهٔ پیش‌فرض را نگه دارید و `Next` را بزنید.
 
-    <img width=60% alt="گزینه‌های اضافهٔ نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/bcac0d1e-f8d8-46d9-bedc-4fe04571a504" style="display:block;margin:0 auto">
+    <img width=60% alt="انتخاب محل نصب" src="/assets/app-install/win-setup-folder.webp" style="display:block;margin:0 auto">
 
-7. روی `Install` بزنید.
+7. گزینه‌های اضافه را انتخاب کنید: میان‌بر روی دسکتاپ، و **Automatically start Hiddify** برای اجرای خودکار با روشن شدن ویندوز. `Next` را بزنید.
 
-    <img width=60% alt="آمادهٔ نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/980314df-c907-407c-aa4d-a94d4d492b66" style="display:block;margin:0 auto">
+    <img width=60% alt="گزینه‌های اضافهٔ نصب" src="/assets/app-install/win-setup-tasks.webp" style="display:block;margin:0 auto">
 
-8. صبر کنید تا نصب تمام شود.
+8. `Install` را بزنید و صبر کنید تا فایل‌ها کپی شوند.
 
-    <img width=60% alt="در حال نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/1aee90d0-dde1-4bf8-b673-058fc0e9204a" style="display:block;margin:0 auto">
+    <img width=60% alt="آمادهٔ نصب" src="/assets/app-install/win-setup-ready.webp" style="display:block;margin:0 auto">
 
-9. وقتی پنجرهٔ زیر را دیدید، روی `Finish` بزنید. برنامه اجرا می‌شود. اگر اجرا نشد، روی میان‌بر هیدیفای در دسکتاپ دو بار کلیک کنید.
+9. وقتی پنجرهٔ **Completing the Hiddify Setup Wizard** را دیدید، تیک `Launch Hiddify` را نگه دارید و `Finish` را بزنید. برنامه باز می‌شود. بعداً می‌توانید آن را از میان‌بر دسکتاپ یا منوی Start باز کنید.
 
-    <img width=60% alt="پایان نصب" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/4a8849c5-24f0-4376-be4d-355eb754f395" style="display:block;margin:0 auto">
+    <img width=60% alt="پایان نصب" src="/assets/app-install/win-setup-finish.webp" style="display:block;margin:0 auto">
 
 !!! tip "اگر برنامه اجرا نشد"
     اگر ویندوز خطایی دربارهٔ نبودن فایلی مثل `MSVCP140.dll` نشان داد، [Microsoft Visual C++ Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) را نصب کنید و دوباره امتحان کنید.
@@ -175,10 +179,19 @@ winget install Hiddify.Next
 
 5. پوشهٔ `Applications` را باز کنید و روی هیدیفای دو بار کلیک کنید.
 
-!!! warning "پیغام «Hiddify.app is damaged and can't be opened»"
-    اگر مرحلهٔ ۴ را انجام ندهید، macOS این پیغام را نشان می‌دهد. برنامه خراب نیست: روی `Cancel` بزنید (نه `Move to Trash`)، دستور مرحلهٔ ۴ را اجرا کنید و برنامه را دوباره باز کنید.
+!!! warning "پیغام «"Hiddify" Not Opened» (یا «Hiddify.app is damaged»)"
+    اگر مرحلهٔ ۴ را انجام ندهید، macOS برنامه را باز نمی‌کند. در macOS ۱۵ پیغام **"Hiddify" Not Opened: Apple could not verify "Hiddify" is free of malware…** است با دو دکمهٔ `Done` و `Move to Trash`؛ نسخه‌های قدیمی‌تر macOS می‌گویند **"Hiddify.app" is damaged and can't be opened**. برنامه مشکلی ندارد: روی `Done` (یا `Cancel`) بزنید، **نه** `Move to Trash`، دستور مرحلهٔ ۴ را اجرا کنید و برنامه را دوباره باز کنید.
 
-    <img width=30% alt="پیغام آسیب‌دیدن برنامه در macOS" src="/assets/app-install/macos-damaged.webp" style="display:block;margin:0 auto">
+    <img width=300 alt="macOS 15: پیغام Hiddify Not Opened با دکمه‌های Done و Move to Trash" src="/assets/app-install/macos-not-opened.webp" style="display:block;margin:0 auto">
+
+??? tip "راه دیگر: نصب‌کنندهٔ PKG از ترمینال"
+    فایل [Hiddify-MacOS-Installer.pkg](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-MacOS-Installer.pkg) را دانلود کنید و از ترمینال نصبش کنید. برنامه بدون علامت قرنطینه نصب می‌شود و مرحلهٔ ۴ لازم نیست:
+
+    ```bash
+    sudo installer -pkg ~/Downloads/Hiddify-MacOS-Installer.pkg -target /
+    ```
+
+    اگر روی فایل .pkg در Finder دو بار کلیک کنید، همان پیغام «Not Opened» نمایش داده می‌شود، چون نصب‌کننده امضای اپل ندارد.
 
 از این به بعد می‌توانید هیدیفای را مثل هر برنامهٔ دیگری از `Applications` باز کنید.
 
@@ -187,36 +200,34 @@ winget install Hiddify.Next
 
 <details markdown="1"> <summary><b>نصب روی لینوکس</b> (کلیک کنید)</summary>
 
-**روش ۱: دانلود همه‌کاره (ساده‌ترین روش)**
+**روش ۱: دستور نصب (ساده‌ترین روش)**
 
-در این دانلود فایل‌های `.deb`، `.rpm` و AppImage هست، به‌همراه یک اسکریپت که فایل مناسب سیستم شما را نصب می‌کند.
+ترمینال را باز کنید و این دستور را اجرا کنید:
 
-1. فایل [Hiddify-Linux-x64.tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.tar.gz) را دانلود کنید. اگر کامپیوترتان ARM64 است (مثلاً Raspberry Pi)، به‌جای آن [Hiddify-Linux-arm64.tar.gz](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-arm64.tar.gz) را دانلود کنید.
-2. ترمینال را در پوشهٔ `Downloads` باز کنید، فایل را از حالت فشرده خارج کنید و نصب‌کننده را اجرا کنید:
+```bash
+bash <(curl -fsSL https://github.com/hiddify/hiddify-app/releases/latest/download/install.sh)
+```
 
-    ```bash
-    cd ~/Downloads
-    tar xzf Hiddify-Linux-x64.tar.gz
-    ./Hiddify-Linux-x64/install.sh
-    ```
+این اسکریپت سیستم شما را تشخیص می‌دهد (x64 یا ARM64؛ Debian/Ubuntu، Fedora/openSUSE یا سیستم‌های دیگر)، فایل مناسب همان نسخه را دانلود و بررسی می‌کند و نصبش می‌کند: در Debian و Ubuntu بستهٔ `.deb`، در Fedora و openSUSE بستهٔ `.rpm` و در سیستم‌های دیگر AppImage را. اگر سیستمتان بیش از یکی را بپذیرد، می‌پرسد کدام را می‌خواهید. اگر رمز عبور خواست، آن را وارد کنید. همین دستور روی مک هم برنامه را نصب می‌کند.
 
-    این اسکریپت در Debian و Ubuntu بستهٔ `.deb`، در Fedora و openSUSE بستهٔ `.rpm` و در سیستم‌های دیگر AppImage را نصب می‌کند. اگر رمز عبور خواست، آن را وارد کنید.
+در دبیان و اوبونتو می‌پرسد **Choose 1-2 [1]**: برای **۱**، یعنی بستهٔ `.deb` همراه سرویس VPN (پیشنهادی)، `Enter` را بزنید، یا برای AppImage در `~/.local/bin` (فقط برای کاربر خودتان) عدد `2` را بنویسید. وقتی پیغام **Done. Start Hiddify from the app menu.** را نوشت، هیدیفای را از منوی برنامه‌ها باز کنید.
 
-3. هیدیفای را از منوی برنامه‌ها باز کنید.
+<img width=640 alt="دستور نصب در دبیان: می‌پرسد Choose 1-2 و بعد بستهٔ .deb را نصب می‌کند" src="/assets/app-install/linux-install-script.webp" style="display:block;margin:0 auto">
+
 
 **روش ۲: AppImage (روی بیشتر توزیع‌های ۶۴ بیتی کار می‌کند)**
 
-1. [فایل AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64-AppImage.AppImage) (`Hiddify-Linux-x64-AppImage.AppImage`) را دانلود کنید. لازم نیست آن را از حالت فشرده خارج کنید.
+1. [فایل AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage) (`Hiddify-Linux-x64.AppImage`؛ روی کامپیوتر ARM64، [Hiddify-Linux-arm64.AppImage](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-arm64.AppImage)) را دانلود کنید. لازم نیست آن را از حالت فشرده خارج کنید.
 2. ترمینال را باز کنید و فایل را اجرایی کنید. در این مثال فرض شده فایل در پوشهٔ `Downloads` است:
 
     ```bash
-    chmod +x ~/Downloads/Hiddify-Linux-x64-AppImage.AppImage
+    chmod +x ~/Downloads/Hiddify-Linux-x64.AppImage
     ```
 
 3. برنامه را اجرا کنید:
 
     ```bash
-    ~/Downloads/Hiddify-Linux-x64-AppImage.AppImage
+    ~/Downloads/Hiddify-Linux-x64.AppImage
     ```
 
     می‌توانید روی فایل در File Manager هم دو بار کلیک کنید.
@@ -237,7 +248,7 @@ sudo apt install libfuse2t64
 
 **روش ۳: بستهٔ .deb یا .rpm**
 
-1. [بستهٔ .deb](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (برای Debian، Ubuntu و Linux Mint) یا [بستهٔ .rpm](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm) (برای Fedora و openSUSE) را دانلود کنید.
+1. [بستهٔ .deb](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb) (برای Debian، Ubuntu و Linux Mint) یا [بستهٔ .rpm](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm) (برای Fedora و openSUSE) را دانلود کنید. روی کامپیوتر ARM64، [‎.deb ARM64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-arm64.deb) یا [‎.rpm ARM64](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-arm64.rpm) را بردارید.
 2. در ترمینال دستور مربوط به بستهٔ خود را اجرا کنید:
 
     ```bash
@@ -257,12 +268,16 @@ sudo apt install libfuse2t64
 
 اولین بار که برنامه را باز می‌کنید، صفحهٔ خوش‌آمد با سه گزینه باز می‌شود. برنامه زبان را از تنظیمات گوشی برمی‌دارد. سه گزینه را بررسی کنید و بعد روی `شروع` بزنید.
 
-<div markdown="1" align=center>
-<img width=260 alt="صفحهٔ اولین اجرا: زبان، منطقه و فعال‌سازی آمار" src="/assets/app-install/fa-first-run.webp">
-</div>
+=== "گوشی"
+
+    <img width=260 alt="اولین اجرا روی گوشی: زبان، منطقه و فعال‌سازی آمار" src="/assets/app-install/fa-first-run.webp" style="display:block;margin:0 auto">
+
+=== "کامپیوتر"
+
+    <img width=640 alt="اولین اجرا روی ویندوز: زبان، منطقه و فعال‌سازی آمار" src="/assets/app-install/fa-win-first-run.webp" style="display:block;margin:0 auto">
 
 1. **زبان:** اگر زبان برنامه درست نیست، روی `زبان` بزنید و زبان خود را انتخاب کنید.
-2. **منطقه:** وقتی زبان را فارسی کنید، منطقه خودش `ایران (ir)` می‌شود. در غیر این صورت روی `منطقه` بزنید و کشوری را که در آن هستید (مثلاً `ایران (ir)`) انتخاب کنید. برنامه با این تنظیم سایت‌های داخلی را مستقیم و بدون پروکسی باز می‌کند. اگر کشورتان در فهرست نیست، `سایر` را انتخاب کنید.
+2. **منطقه:** روی `منطقه` بزنید و کشوری را که در آن هستید (مثلاً `ایران (ir)`) انتخاب کنید. انتخاب زبان فارسی منطقه را خودکار عوض نمی‌کند و پیش‌فرض آن `سایر` است. برنامه با این تنظیم سایت‌های داخلی را مستقیم و بدون پروکسی باز می‌کند. اگر کشورتان در فهرست نیست، `سایر` را انتخاب کنید.
 3. **فعال‌سازی آمار:** این کلید به‌طور پیش‌فرض خاموش است. اگر روشنش کنید، برنامه گزارش‌های خطا و آمار ناشناس استفاده را می‌فرستد تا سازندگان آن را بهتر کنند.
 4. روی `شروع` بزنید.
 
@@ -278,10 +293,17 @@ sudo apt install libfuse2t64
 </div>
 
 !!! note "نکته"
-    تصاویر این صفحه از نسخهٔ 5.5.6 برنامه گرفته شده‌اند. در نسخه‌های دیگر و روی کامپیوتر مراحل همین است، اما ظاهر بعضی صفحه‌ها ممکن است کمی فرق داشته باشد.
+    تصویرهای گوشی در این صفحه از نسخهٔ ۵.۹.۶ روی اندروید ۱۷ و تصویرهای کامپیوتر از ویندوز ۱۱ هستند. در گوشی‌های دیگر ظاهر صفحه‌های سیستم ممکن است کمی فرق داشته باشد.
 
 ## قدم بعدی
 
 برای افزودن کانفیگ یا لینک سابسکریپشن و وصل شدن، [آموزش کار با اپ هیدیفای](How-to-use-Hiddify-app.md) را بخوانید.
+
+## مقاله‌های مرتبط
+
+- [کار با اپ هیدیفای](/fa/app/How-to-use-Hiddify-app/)
+- [پروفایل‌های رایگان](/fa/app/Free-profiles-in-Hiddify-app/)
+- [وارپ در اپ هیدیفای](/fa/app/How-to-use-WARP-on-Hiddify-App/)
+- [زنجیره، امنیت بیشتر و رفع فیلتر](/fa/app/Chain-Extra-security-and-Proxy-unblocker/)
 
 </div>

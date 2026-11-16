@@ -1,6 +1,6 @@
 # DNSTT
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 DNSTT carries your traffic inside DNS queries and answers. The client sends queries for names
 under a domain you control, through public DNS resolvers, and your DNSTT server answers them. It

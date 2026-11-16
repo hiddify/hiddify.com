@@ -1,210 +1,113 @@
 ---
-title: چگونه می‌توان در این پروژه همکاری نمود
+title: چگونه در پروژهٔ اپ هیدیفای مشارکت کنیم
 ---
 
+# چگونه در پروژهٔ اپ هیدیفای مشارکت کنیم
 
-# چگونه می‌توان در این پروژه همکاری نمود
+اپ هیدیفای متن‌باز است: [github.com/hiddify/hiddify-app](https://github.com/hiddify/hiddify-app). می‌توانید با گزارش مشکل، ترجمه یا تغییر کد کمک کنید. این صفحه هر کدام را توضیح می‌دهد.
 
-برای این کار کافیه شما git را روی سیستم خود نصب نمایید.
+!!! info "نوشته‌شده برای اپ هیدیفای ۵.۹"
+    دستورهای این صفحه با مخزن در نسخهٔ ۵.۹ (Flutter نسخهٔ ۳.۳۸.۵ یا جدیدتر) می‌خوانند.
 
-## نصب git روی سیستم 
-بر اساس سیستم عامل خود یکی از موارد زیر را باز نمایید.
+## گزارش مشکل یا پیشنهاد قابلیت
 
-<br>
+1. اول در [issueها](https://github.com/hiddify/hiddify-app/issues?q=is%3Aissue)، باز و بسته، جستجو کنید. اگر کسی قبلاً گزارشش داده، اطلاعات خودتان را همان‌جا اضافه کنید.
+2. در غیر این صورت یک [issue جدید](https://github.com/hiddify/hiddify-app/issues/new/choose) باز کنید و **Bug report** یا **Feature request** را انتخاب کنید. نسخهٔ اپ (**تنظیمات › درباره**)، دستگاه و سیستم‌عامل و مراحلی را که مشکل را ایجاد می‌کند بنویسید.
+3. لاگ‌ها را اضافه کنید. روش گرفتن لاگ و فرستادن گزارش خطا از داخل اپ: [لاگ‌ها و گزارش مشکل](Logs-and-reporting-a-problem.md). قبل از فرستادن، لینک‌ها، آی‌پی‌ها و رمزهایتان را پاک کنید.
 
-<details markdown="1" dir=rtl><summary><b>ویندوز</b></summary>
+برای یک تغییر بزرگ، قبل از نوشتن کد یک issue باز کنید و با نگه‌دارندگان پروژه درباره‌اش به توافق برسید.
 
+## ترجمه
 
+متن‌های اپ در [`assets/translations`](https://github.com/hiddify/hiddify-app/tree/main/assets/translations) هستند: برای هر زبان یک فایل، مثل `fa.i18n.json`. فایل `en.i18n.json` مبناست و همهٔ فایل‌های دیگر همان کلیدها را دارند.
 
-- ابتدا به [اینجا](https://git-scm.com/download/win) بروید و نسخه مخصوص ویندوز را دانلود کنید.
-- سپس فایل دانلود شده را از حالت فشرده خارج نمایید و برای نصب آن را ارا نمایید.
-<div markdown="1" align=center>
+- برای اصلاح یک ترجمه، فایل زبان خودتان را در گیت‌هاب ویرایش کنید (آیکون مداد) و تغییر را به شکل pull request بفرستید. گیت‌هاب fork و branch را خودش برایتان می‌سازد.
+- کلیدها، جاگذارهای `${…}` و شکستن خط‌ها (`\n`) را دست نزنید؛ فقط متن را ترجمه کنید.
+- اگر روی سیستم خودتان کار می‌کنید، بعد از ویرایش `make translate` را اجرا کنید تا فایل‌ها بررسی و کد ترجمه‌ها دوباره ساخته شود.
 
-![location-git-windows-download](https://github.com/hiddify/hiddify-config/assets/125398461/cd883726-f340-441c-bbca-df98f0389de2)
+## تغییر کد
 
-</div>
+### ۱. گرفتن کد
 
-- سپس wizard نصب را تا انتها با `next` و `yes` دنبال کنید. پیشنهاد می‌شود تنظیمات دیفالت را تغییر ندهید.
+1. در گیت‌هاب [hiddify/hiddify-app](https://github.com/hiddify/hiddify-app) را باز کنید و روی **Fork** بزنید. این کار یک نسخه از مخزن زیر حساب خودتان می‌سازد.
+2. fork خودتان را clone (دانلود) کنید و مخزن اصلی را با نام `upstream` اضافه کنید:
 
-<div markdown="1" align=center>
-
-![read-and-accept-git-license-agreement](https://github.com/hiddify/hiddify-config/assets/125398461/c8220a90-4f88-451f-ac60-ca6280feef20)
-
-</div>
-به صورت دیفالت محل نصب git در این مسیر است.
-<div markdown="1" dir=ltr>
-
-```
-C:/Program Files/Git
-```
-</div>
-یعنی در مراحل بعد، پروژه‌ها در این مسیر قرار می‌گیرند. کار تمام است.
-- برای چک کردن ورژن `git` نصب شده، `command prompt` را باز نمایید و دستور زیر را اجرا کنید.
-
-<div markdown="1" dir=ltr>
-
-```
-git version
+```bash
+git clone https://github.com/<your-username>/hiddify-app.git
+cd hiddify-app
+git remote add upstream https://github.com/hiddify/hiddify-app.git
 ```
 
-</div>
+### ۲. نصب ابزارها
 
-- به صورت دیفالت `git` در پوشه `Home` کاربر نصب می‌گردد.
-</details>
+- [Flutter](https://docs.flutter.dev/get-started/install) نسخهٔ ۳.۳۸.۵ یا جدیدتر (`flutter --version` نسخه را نشان می‌دهد)، همراه ابزارهای پلتفرم مقصد: Android Studio و Android SDK برای اندروید؛ Xcode برای iOS و مک؛ Visual Studio با «Desktop development with C++» برای ویندوز.
+- `make`، `curl` و `tar`. روی Debian یا Ubuntu، دستور `make linux-install-deps` چیزهایی را که ساخت لینوکس لازم دارد نصب می‌کند.
 
-<br>
-<details markdown="1" dir=rtl><summary><b>مک</b></summary>
+### ۳. آماده کردن یک پلتفرم
 
-- ابتدا از [اینجا](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) فایل نصب را دانلود کنید.
-- سپس آن را جارا نمایید. نصب خیلی ساده‌ای دارد.
-- بعد از نصب برای چک کردن ورژن `git` نصب شده، `terminal` را باز نمایید و دستور زیر را اجرا کنید.
+دستور پلتفرمی را که برایش می‌سازید اجرا کنید:
 
-<div markdown="1" dir=ltr>
-
-```
-git version
+```bash
+make android-prepare     # or: windows-prepare, linux-prepare, macos-prepare, ios-prepare
 ```
 
-</div>
+این دستور `flutter pub get` را اجرا می‌کند، کدهای تولیدی (`dart run build_runner build`) و ترجمه‌ها (`dart run slang`) را می‌سازد و کتابخانهٔ هستهٔ هیدیفای را برای آن پلتفرم از [ریلیزهای hiddify-core](https://github.com/hiddify/hiddify-core/releases) دانلود می‌کند. بعد از عوض کردن branch دوباره اجرایش کنید.
 
+در حین کار:
 
-</details>
+- بعد از تغییر یک model، provider یا هر چیزی که کد تولیدی دارد: `make gen`؛
+- بعد از تغییر یک فایل ترجمه: `make translate`.
 
-<br>
-<details markdown="1" dir=rtl><summary><h3>لینوکس</h3></summary>
+### ۴. اجرا
 
-در اکثر توزیع‌های سیستم عامل لینوکس git به صورت دیفالت نصب است و نیاز نیست کار خاصی بکنید. اما اگر به هر دلیلی نیاز بود آن را نصب نمایید باید سرچ بزنید و کامند مناسب مربوط به آن توزیع را پیدا کنید. در ادامه کامند نصب مربوط به ند توزیع معروف قرار می‌گیرد.
-<div markdown="1" dir=ltr>
-
-**Debian/Ubuntu**
-
-```
-sudo apt-get install git-all
+```bash
+flutter devices
+flutter run -d <device-id>
 ```
 
-**Fedora**
+`flutter devices` گوشی‌ها، شبیه‌سازها و کامپیوتر شما را فهرست می‌کند. برای ساخت نسخهٔ release جهت تست: `make android-release` (یا `windows-release`، `linux-release`، `macos-release`).
 
-```
-dnf install git-all
-```
+### ۵. ساختن هسته از سورس (اختیاری)
 
-**Arch**
-````
-pacman -Syu git-all
-````
-</div>
+فقط اگر هستهٔ هیدیفای را هم تغییر می‌دهید لازم است. هسته submodule‌ای به نام `hiddify-core` است و به [Go](https://go.dev/dl/) نیاز دارد:
 
-در همه توزیع‌ها git در مسیر Home کاربر نصب می‌گردد.
-- برای چک کردن نسخه git نصب شده در ترمیال این دستور را اجرا کنید.
-
-<div markdown="1" dir=ltr>
-
-```
-git version
-```
-</div>
-
-</details>
-
-
-
-
-## استفاده از git جهت توسعه پروژه هیدیفای
-
-- ابتدا باید پروژه را fork کنید. برای این کار اگر قصد fork کردن پنل را دارید کامند زیر را اجرا کنید.
-
-<div markdown="1" dir=ltr>
-
-```
-git clone https://github.com/hiddify/hiddify-app.git
+```bash
+git config submodule.hiddify-core.url https://github.com/hiddify/hiddify-core.git
+git submodule update --init --recursive hiddify-core
+make build-android-libs   # or: build-windows-libs, build-linux-libs, build-macos-libs, build-ios-libs
 ```
 
-</div>
+دستور اول فقط وقتی لازم است که روی گیت‌هاب کلید SSH ندارید. تغییرهای خود هسته به [hiddify-core](https://github.com/hiddify/hiddify-core) (و [hiddify-sing-box](https://github.com/hiddify/hiddify-sing-box)) می‌روند، با pull request جداگانه. باگ هسته را در اپ دور نزنید: آن را در خود هسته درست یا همان‌جا گزارش کنید.
 
+### ۶. فرستادن تغییر
 
-- اندکی صبر کنید تا فایل‌های پروژه کپی شود.
+1. یک branch از آخرین کد بسازید:
 
-<div markdown="1" align=center>
+    ```bash
+    git fetch upstream
+    git switch -c fix/short-name upstream/main
+    ```
 
-![Screenshot_20230807_172554](https://github.com/hiddify/hiddify-config/assets/125398461/b4730f3a-3f86-4792-8ccc-6a5789056c1d)
+2. در هر branch فقط یک تغییر بدهید. پیام commitها را به سبک [Conventional Commits](https://www.conventionalcommits.org/) بنویسید، مثلاً `fix(home): keep the connect button disabled while stopping`.
+3. فایل‌های تولیدی (`*.g.dart`، `*.freezed.dart`، ترجمه‌های تولیدشده در `lib/gen`)، کتابخانه‌های دانلودشدهٔ هسته، اشاره‌گر submodule `hiddify-core` و هیچ لینک، آی‌پی یا کلید واقعی را commit نکنید.
+4. روی اندروید و یک سیستم‌عامل دسکتاپ تست کنید.
+5. branch را با آخرین کد به‌روز کنید و به fork خودتان push کنید:
 
-</div>
+    ```bash
+    git fetch upstream
+    git rebase upstream/main
+    git push -u origin fix/short-name
+    ```
 
-- حالا باید یک شاخه یا branch از پروژه درست کنید تا روی آن کار کنید. برای این کار ابتدا برای شاخه یک اسم انتخاب کنید. مثلا فرض کنیم اسم شاخه را `Hiddify-develop` انتخاب می‌کنیم. حالا دستورات زیر را اجرا کنید. 
+6. در گیت‌هاب یک **pull request** از branch خودتان به `hiddify/hiddify-app` با پایهٔ `main` باز کنید. بنویسید چه مشکلی بود، چه چیزی را تغییر دادید و چطور تست کردید. برای تغییری که در ظاهر اپ دیده می‌شود، عکس یا ویدیوی کوتاه قبل و بعد بگذارید.
 
-<div markdown="1" dir="ltr" >
+## ارتباط با تیم
 
-```
-git branch Hiddify-develop
-git checkout Hiddify-develop
-```
+- [گروه هیدیفای در تلگرام](https://t.me/hiddify_board) و [کانال](https://t.me/hiddify)
+- ایمیل: contribute@hiddify.com
 
-</div>
+## مقاله‌های مرتبط
 
-<div markdown="1" dir="rtl" >
-
--  حالا تغییرات مورد نظر خود را روی فایل‌ها با استفاده از هر ابزاری اعمال کنید. توصیه می‌شود از `VSCode` استفاده نمایید.
--  یادتون نره مسیر تمامی فایل‌ها در پوشه‌های گفته شده در مرحله نصب است.
-- 
-- حالا وقتی تغییرات مورد نظر خود را اعمال نمودید باید تغییرات را در `git` نیز ثبت کنید. بنابراین در ترمینال کامند‌های زیر را به ترتیب اجرا نمایید.
-- ابتدا با کامند زیر انجام تغییرات را به `git` اعلام کنید.
-
-
-<div markdown="1" dir=ltr>
-
-```
-git add
-```
-
-</div>
-
-- سپس تغییرات را کامیت نمایید. نیاز است که در اینجا یک توضیح برای تغییرات اعلام نمایید.
-
-<div markdown="1" dir=ltr>
-
-```
-git commit -m "a short description of the change"
-```
-
-</div>
-
-مثلا اگر تغییرات مدنظر شما مربوط به بخش توسعه بات باشد می‌توان چنین توضیحی نوشت.
-
-
-<div markdown="1" dir=ltr>
-
-```
-git commit -m "a short description of the change"
-```
-
-</div> 
-
-هیچ مشکلی ندارد که توضیحات این بخش زیاد باشد و اتفاقا توصیه می‌شود تا جای ممکن توضیحات کامل و جامع باشد.
-در این مرحله تغییرات با موفقیت وارد سیستم git شد. حالا باید تغییرات را به سمت GitHub بفرستید. برای این کار دستور زیر را اجرا کنید. 
-
-<div markdown="1" dir=ltr>
-
-```
-git push
-```
-</div>
-
-در اینجا مشخصات اکانت شما در گیتهاب پرسیده می‌شود. نیاز است `username` و `password` خود در گیتهاب را وارد نمایید.
-
-
-- حالا وارد اکانت خود در گیتهاب شوید و پروژه فورک شده را باز نمایید.
-مسیری به شکل زیر دارد:
-
-<div markdown="1" dir=ltr>
-
-`https://github.com/<your_username>/hiddify-app`
-
-</div>
-
-- حالا یک banner مشاهده می‌کنید که به شما اعلام می‌کند که branch شما از پروژه اصلی یک مرحله جلوتر است. برای اینکه تغییرات با پروژه اصلی merge یا ادغام شود `Contribute` را کلیک کنید و `Open a pull request` را بزنید.
-- کار تمام است تغییرات به پروژه ارسال شد. حالا پس از تایید مدیر پروژه تغییرات شما به پروژه اضافه می‌گردد.
-
-<br>
-
-**این برنامه با استفاده از [Flutter](https://flutter.dev/) و [Go](https://go.dev/) توسعه یافته است. برای اطلاعات بیشتر در خصوص توسعه می‌توانید [دستورالعمل‌های مشارکت](https://github.com/hiddify/hiddify-app/blob/main/CONTRIBUTING.md) در پروژه ما را مطالعه نمایید.**
-
+- [گزارش‌ها (لاگ) و گزارش مشکل در اپ هیدیفای](/fa/app/Logs-and-reporting-a-problem/)
+- [آموزش کار با اپ هیدیفای](/fa/app/How-to-use-Hiddify-app/)
+- [آموزش نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/)

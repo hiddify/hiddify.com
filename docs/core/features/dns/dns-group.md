@@ -1,6 +1,6 @@
 # DNS group
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 A DNS group asks several DNS servers for one query and returns the best answer. It can drop
 answers that point into blocked ranges, so a poisoned reply from a filtered resolver does not

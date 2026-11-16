@@ -2,91 +2,29 @@
 title: How to use HiddifyCli
 ---
 
-# How to use HiddifyCli or Hiddify command line
-This app is developed for cases where there is no desktop, such as servers, and it supports all processors.
+# How to use HiddifyCli (moved)
 
-!!! tip "Full reference"
-    HiddifyCli now has its own section: see [Hiddify Core](../core/index.md) for `run` and `srun`, and the [command-line reference](../core/cli.md) for every command and flag.
+!!! warning "This guide has moved: HiddifyCli is now Hiddify Core"
+    **HiddifyCli** is now called **Hiddify Core** (`hiddify-core`). Its guide has moved and is kept up to date on the Hiddify Core pages. This page is kept so that old links still work.
 
-## Download
-To download this app, go to [here](https://github.com/hiddify/hiddify-core/releases) and download the file related to your processor.
+[:material-arrow-right: Go to the Hiddify Core guide](../core/index.md){ .md-button .md-button--primary }
+[:material-console: Command-line reference](../core/cli.md){ .md-button }
 
-## Execution of config or subscription link in HiddifyCli
+## Where to find what this page used to explain
 
-To use it, the following command should be used.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file or URL>
-```
-</div>
+| You want to | See |
+|---|---|
+| Download and install it | [Install](../core/index.md#install) |
+| Run a subscription link or config links | [`run` or `srun`?](../core/index.md#run-or-srun) |
+| Use the settings of your Hiddify app (`-d`) | [The Hiddify settings file](../core/cli.md#settings-file) |
+| Every command and flag | [Command-line reference](../core/cli.md) |
+| Use it on an OpenWrt router | [Hiddify Core on OpenWrt](How-to-use-HiddifyCli-on-OpenWrt.md) |
 
-- To connect to a specific configuration, just run the above command as follows.
-<div dir="ltr" markdown="1">
+The commands are the same as before, only the program name changed: `HiddifyCli run -c <link>` is now `hiddify-core run -c <link>`. On Windows the file is still called `HiddifyCli.exe`.
 
-```
-HiddifyCli run -c <config file>
-```
-</div>
+## Related articles
 
-Here, put your desired configuration instead of `<config file>`.
-
-- You can also run a subscription in the app.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <sublink>
-```
-</div>
-
-Put your subscription link here instead of `<sublink>`.
-
-## Run config or subscription link in HiddifyCli with Hiddify app settings
-For this, you must first extract the settings related to your Hiddify app.
-<details markdown="1"><summary><h3>Extract Hiddify app settings</h3></summary>
-
-  - To do this, open Hiddify app and enter `Config Options` and click the three-dot menu.
-
-<div align=center>
-
-<img alt="config-options" src="https://github.com/hiddify/hiddify.com/assets/125398461/36986f9b-cf00-4aef-a11e-c0461a48d3a8" />
-
-</div>
-
-
-- Now click the `Export Settings to Clipboard` option to save the settings to the clipboard.
-<div align=center>
-  
-<img alt="export configs" src="https://github.com/hiddify/hiddify.com/assets/125398461/a76e3ed9-cd3d-4746-a5f1-8c8a379856c5" />
-
-</div>
-
-
-- Now you can save these settings in a file with `json` extension.
-  
-- You can also put these settings in Github and use its link as `URL`.
-
-
-
-</details>
-
-### Run config or subscription link in HiddifyCli with settings extracted from Hiddify app
-- Also, if you want to use your Hiddify app settings, you should use the following command.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file>
-```
-</div>
-
-Here, put your config file or sublink instead of `<config file or sublink>` and enter the configuration file related to Hiddify app that you extracted in the previous step instead of `<HiddifyApp config file>`.
-
-- Instead of the config file, you can use the link related to the settings in Hiddify app that you put on Github.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <config file or sublink> -d <HiddifyApp config URL>
-```
-</div>
-
-Here, put your config file or sublink instead of `<config file or sublink>` and put the link of the desired settings in Hiddify app instead of `<HiddifyApp config URL>`.
+- [Hiddify Core](/core/)
+- [Core command reference](/core/cli/)
+- [Hiddify Core on OpenWrt](/app/How-to-use-HiddifyCli-on-OpenWrt/)
+- [Free internet for every device behind the router](/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/)

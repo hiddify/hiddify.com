@@ -1,6 +1,6 @@
 # URL test: Hiddify additions
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The URL test group (`"type": "urltest"`) tests its members and sends traffic through the fastest.
 Hiddify adds more test URLs, a `failover` mode, and a reaction to failed connections, after

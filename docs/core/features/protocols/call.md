@@ -1,6 +1,6 @@
 # Call tunnel
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The call tunnel carries proxy traffic inside a video call on a public conferencing service: VK
 Calls, Yandex Telemost, Dion, WB Stream or Bitrix24. One side runs the inbound

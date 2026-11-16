@@ -1,6 +1,6 @@
 # SSH: inbound and Hiddify additions
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Upstream sing-box can only connect to an SSH server. Hiddify adds an SSH server (inbound,
 `"type": "ssh"` in the `inbounds` list), UDP for the SSH outbound through UDP over TCP, and a

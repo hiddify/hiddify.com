@@ -1,6 +1,6 @@
 # Monitoring
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Monitoring tests every outbound and endpoint in the background: it measures the delay through
 each one and finds the IP address and country it exits from. Groups such as the

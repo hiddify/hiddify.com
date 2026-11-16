@@ -1,6 +1,6 @@
 # MasterDNS
 
-[همهٔ قابلیت‌های هیدیفای](../index.md)
+[همهٔ قابلیت‌های هیدیفای](../index.md){ .hi-back }
 
 MasterDNS اتصال‌های TCP شما را درون پرسش‌ها و پاسخ‌های DNS، از راه resolverهای عمومی، به سرور
 [MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN) خودتان می‌برد. این یک outbound است:

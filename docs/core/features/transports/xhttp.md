@@ -1,6 +1,6 @@
 # XHTTP transport
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 XHTTP is Xray's HTTP transport. It carries a proxy connection as ordinary HTTP requests and
 responses: one long download response, and the upload either as many small requests or as one

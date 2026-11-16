@@ -1,6 +1,6 @@
 # TrustTunnel
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 TrustTunnel is a VPN protocol published at [trusttunnel.org](https://trusttunnel.org/). It carries
 your traffic as HTTP `CONNECT` requests inside an HTTPS connection, over HTTP/2 on TLS or over

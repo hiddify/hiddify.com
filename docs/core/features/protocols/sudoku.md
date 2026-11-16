@@ -1,6 +1,6 @@
 # Sudoku
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Sudoku is an encrypted proxy over TCP that hides its bytes as clues of small sudoku puzzles. You can
 tune the result to look like plain text or to have a fixed, low randomness instead of looking

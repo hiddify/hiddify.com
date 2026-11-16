@@ -1,17 +1,17 @@
 ---
 title: Command-line reference
-description: Every command and flag of HiddifyCli, the hiddify-core command line
+description: Every command and flag of hiddify-core, the Hiddify Core command line (formerly HiddifyCli)
 weight: -10
 ---
 
-# HiddifyCli command-line reference
+# hiddify-core command-line reference
 
-`HiddifyCli` (installed as `hiddify-core` by the Linux installer) is the command line of
-[Hiddify Core](index.md). This page lists every command and flag. `HiddifyCli help` and
-`HiddifyCli <command> --help` print the same list from the program itself.
+`hiddify-core` (called **HiddifyCli** before version 5.9, and still `HiddifyCli.exe` on Windows) is the command line of
+[Hiddify Core](index.md). This page lists every command and flag. `hiddify-core help` and
+`hiddify-core <command> --help` print the same list from the program itself.
 
 ```text
-HiddifyCli [global flags] <command> [flags]
+hiddify-core [global flags] <command> [flags]
 ```
 
 ## Global flags
@@ -49,7 +49,7 @@ These work with every command.
 ## run
 
 ```text
-HiddifyCli run -c <file or URL> [flags]
+hiddify-core run -c <file or URL> [flags]
 ```
 
 Reads proxies from the input, builds a complete client config from the Hiddify settings, and runs
@@ -95,12 +95,12 @@ While it runs, the core's gRPC server listens on `127.0.0.1:17078` and the Clash
 Examples:
 
 ```bash
-HiddifyCli run -c links.txt
-HiddifyCli run -c https://example.com/sub/abc --in-proxy-port 1080 --log info
-sudo HiddifyCli run -c links.txt --tun --dns-remote https://1.1.1.1/dns-query
-HiddifyCli run -c links.txt --fragment --fragment-size 10-100 --fragment-sleep 50-200
-HiddifyCli run -c sing-box.json --full-config
-HiddifyCli -D /var/lib/hiddify-core run -c /etc/hiddify-core/config.json -d settings.json
+hiddify-core run -c links.txt
+hiddify-core run -c https://example.com/sub/abc --in-proxy-port 1080 --log info
+sudo hiddify-core run -c links.txt --tun --dns-remote https://1.1.1.1/dns-query
+hiddify-core run -c links.txt --fragment --fragment-size 10-100 --fragment-sleep 50-200
+hiddify-core run -c sing-box.json --full-config
+hiddify-core -D /var/lib/hiddify-core run -c /etc/hiddify-core/config.json -d settings.json
 ```
 
 ### The Hiddify settings file {#settings-file}
@@ -131,7 +131,7 @@ an exported file. The main keys:
 ## srun
 
 ```text
-HiddifyCli srun -c <file> [-c <file>…] [-C <folder>…]
+hiddify-core srun -c <file> [-c <file>…] [-C <folder>…]
 ```
 
 Runs a complete sing-box config without changing it, like `sing-box run`. Every Hiddify addition
@@ -146,16 +146,16 @@ Signals: `SIGHUP` checks the config and reloads it without stopping (a broken co
 and the running one stays); `SIGINT` and `SIGTERM` stop it.
 
 ```bash
-HiddifyCli srun -c config.json
-HiddifyCli srun -c base.json -c outbounds.json
-HiddifyCli srun -C /etc/hiddify-core/conf.d
-HiddifyCli -D /var/lib/hiddify-core srun -c /etc/hiddify-core/server.json
+hiddify-core srun -c config.json
+hiddify-core srun -c base.json -c outbounds.json
+hiddify-core srun -C /etc/hiddify-core/conf.d
+hiddify-core -D /var/lib/hiddify-core srun -c /etc/hiddify-core/server.json
 ```
 
 ## parse
 
 ```text
-HiddifyCli parse <file> [-o <file>] [--xray]
+hiddify-core parse <file> [-o <file>] [--xray]
 ```
 
 Reads a file in any format `run` understands and prints the proxies as sing-box JSON
@@ -168,15 +168,15 @@ fetched. Use it to see how a link is understood, or as the first step of a hand-
 | `--xray` | Convert share links to Xray JSON instead, with libxray. |
 
 ```bash
-HiddifyCli parse links.txt
-HiddifyCli parse clash.yaml -o outbounds.json
-HiddifyCli parse links.txt --xray -o xray.json
+hiddify-core parse links.txt
+hiddify-core parse clash.yaml -o outbounds.json
+hiddify-core parse links.txt --xray -o xray.json
 ```
 
 ## build
 
 ```text
-HiddifyCli build -c <sing-box json> [-d <settings>] [flags] [-o <file>]
+hiddify-core build -c <sing-box json> [-d <settings>] [flags] [-o <file>]
 ```
 
 Builds the full client config, the one `run` would start, from sing-box outbounds and the
@@ -188,15 +188,15 @@ Hiddify settings, and prints it. The input must be sing-box JSON; convert other 
 | `-o`, `--output <file>` | Write the result to a file (relative to `-D`) instead of the screen. |
 
 ```bash
-HiddifyCli parse links.txt -o outbounds.json
-HiddifyCli build -c outbounds.json --tun -o config.json
-HiddifyCli srun -c config.json
+hiddify-core parse links.txt -o outbounds.json
+hiddify-core build -c outbounds.json --tun -o config.json
+hiddify-core srun -c config.json
 ```
 
 ## instance
 
 ```text
-HiddifyCli instance -c <file> [flags]
+hiddify-core instance -c <file> [flags]
 ```
 
 Starts a small instance of the given proxies with a SOCKS5 port, pings Cloudflare through it a
@@ -206,7 +206,7 @@ few times, prints the SOCKS address and waits for Ctrl+C. Useful to test a confi
 ## health
 
 ```text
-HiddifyCli health [target] [flags]
+hiddify-core health [target] [flags]
 ```
 
 Checks connectivity to a target (default `google.com`), directly or through a SOCKS proxy. With
@@ -223,13 +223,13 @@ none of `--dns`, `--http`, `--quic`, it tests HTTP.
 | `-v`, `--verbose` | | Debug logs; `-vv` for more. |
 
 ```bash
-HiddifyCli health --proxy socks://127.0.0.1:12334 --dns --http --quic cloudflare.com
+hiddify-core health --proxy socks://127.0.0.1:12334 --dns --http --quic cloudflare.com
 ```
 
 ## speedtest
 
 ```text
-HiddifyCli speedtest [flags]
+hiddify-core speedtest [flags]
 ```
 
 Runs a speedtest.net test, directly or through a SOCKS proxy.
@@ -245,13 +245,13 @@ Runs a speedtest.net test, directly or through a SOCKS proxy.
 | `-v`, `--verbose` | | Debug logs; `-vv` for more. |
 
 ```bash
-HiddifyCli speedtest --proxy 127.0.0.1:12334
+hiddify-core speedtest --proxy 127.0.0.1:12334
 ```
 
 ## warp
 
 ```text
-HiddifyCli warp
+hiddify-core warp
 ```
 
 Registers a new free Cloudflare WARP account and prints a sing-box WireGuard outbound for it.
@@ -261,7 +261,7 @@ which registers by itself.
 ## vlessenc
 
 ```text
-HiddifyCli vlessenc [--json]
+hiddify-core vlessenc [--json]
 ```
 
 Makes a new key pair for [VLESS encryption](features/protocols/vless-encryption.md)
@@ -271,7 +271,7 @@ client. `--json` prints them as JSON.
 ## version
 
 ```text
-HiddifyCli version [-n]
+hiddify-core version [-n]
 ```
 
 Prints the hiddify-core and hiddify-sing-box versions, Go version, system, build tags, commit and
@@ -280,7 +280,7 @@ whether CGO is on. `-n`, `--name` prints only the sing-box version name.
 ## admin_bgservice
 
 ```text
-HiddifyCli admin_bgservice <action> [argument]
+hiddify-core admin_bgservice <action> [argument]
 ```
 
 Also called `tunnel`. The desktop app (Windows, macOS, Linux) runs VPN mode through a background
@@ -302,7 +302,7 @@ yourself.
 ## grpcweb
 
 ```text
-HiddifyCli grpcweb [flags]
+hiddify-core grpcweb [flags]
 ```
 
 Starts a core and serves a small HTML page and the core's gRPC API on the same port, to start,
@@ -320,7 +320,7 @@ stop and choose proxies from a browser. Open `http://127.0.0.1:18088`.
 ## extension
 
 ```text
-HiddifyCli extension
+hiddify-core extension
 ```
 
 Starts a test server for [Hiddify extensions](https://github.com/hiddify/hiddify-app-example-extension),
@@ -329,7 +329,7 @@ so you can try an extension's interface in a browser at `https://127.0.0.1:12346
 ## ezytel
 
 ```text
-HiddifyCli ezytel <command> [flags]
+hiddify-core ezytel <command> [flags]
 ```
 
 Reads public Telegram channels through their web preview, as the app's channel viewer does.
@@ -345,13 +345,13 @@ Reads public Telegram channels through their web preview, as the app's channel v
 All of them take `--cache-dir <dir>` (default: a folder in the system's temporary folder).
 
 ```bash
-HiddifyCli ezytel messages --channel hiddify --html-only
+hiddify-core ezytel messages --channel hiddify --html-only
 ```
 
 ## gen-cert
 
 ```text
-HiddifyCli gen-cert
+hiddify-core gen-cert
 ```
 
 Makes a server and a client certificate for the core's gRPC server in `data/cert/`
@@ -365,3 +365,9 @@ These are for developing hiddify-core and may change:
 - `profile <url>`: add a profile from a URL, as the app does, and print the result.
 - `command`: connect to a running core's gRPC API (`127.0.0.1:17078`) and print its status,
   outbounds and logs.
+
+## Related articles
+
+- [Core Guide](/core/)
+- [Groups and monitoring](/core/features/groups/)
+- [Hiddify Core on OpenWrt](/app/How-to-use-HiddifyCli-on-OpenWrt/)

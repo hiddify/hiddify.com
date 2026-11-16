@@ -269,7 +269,7 @@ One of the most secure and trusted solutions for using VPN
     1. **Server-Side Compatibility (Hiddify Manager)** 🖥️  
        Hiddify includes a server-side application, called **Hiddify Manager**, which installs on an Ubuntu server (Ubuntu 22.04, 24.04 or 26.04). Hiddify Manager can be quickly set up with Cloud-init🚀, making it easy to deploy on popular cloud providers and datacenters🌩️. This server-side application manages configurations and connections for clients, offering a powerful backend for those seeking secure and stable internet access🔐.
 
-    2. **Client-Side Compatibility (Hiddify App)** 📱  
+    2. **Client-Side Compatibility (Hiddify app)** 📱  
        The Hiddify client-side application, simply called **Hiddify**, is versatile and supports all major operating systems, including:
        - **iOS** 📲
        - **Android** 🤖

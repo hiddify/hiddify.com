@@ -1,6 +1,6 @@
 # Balancer
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The balancer is an outbound group that spreads connections over its members. It picks a member
 for each connection, using the test results from Hiddify's [monitoring](monitoring.md). It is

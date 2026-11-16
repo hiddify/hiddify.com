@@ -44,13 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     SVGInject(document.querySelectorAll("img"), { afterInject: formatBadge });
 
-document.getElementById('show-protocols-app').addEventListener('click', function(event) {
+document.getElementById('show-protocols-app') && document.getElementById('show-protocols-app').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent page jump
   const hiddenFeatures = document.querySelector('#show-protocols-app + .hidden-features');
   hiddenFeatures.style.display = hiddenFeatures.style.display === 'none' ? 'inline' : 'none';
 });
 
-document.getElementById('show-protocols-manager').addEventListener('click', function(event) {
+document.getElementById('show-protocols-manager') && document.getElementById('show-protocols-manager').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent page jump
   const hiddenFeatures = document.querySelector('#show-protocols-manager + .hidden-features');
   hiddenFeatures.style.display = hiddenFeatures.style.display === 'none' ? 'inline' : 'none';

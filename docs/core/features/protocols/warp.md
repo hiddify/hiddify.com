@@ -1,6 +1,6 @@
 # WARP
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 WARP connects you to Cloudflare's free WARP VPN over WireGuard, over AmneziaWG when you set
 `awg`, or over MASQUE (HTTP/3 or HTTP/2) when you set `masque`. It registers a free WARP account

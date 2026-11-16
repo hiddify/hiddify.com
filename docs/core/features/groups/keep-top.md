@@ -1,6 +1,6 @@
 # Lazy outbounds and keep top
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 A **lazy outbound** (`"lazy": true`) is in the config, in its groups and in the app's list from
 the start, but the core keeps only its options: the real outbound is created when a connection
@@ -134,7 +134,7 @@ Outbound field:
 - Without `keep_top`, lazy outbounds are tested by the cycles like the others: each is created
   for its test and closed after it.
 
-## See also
+## Related articles
 
 - [Monitoring](monitoring.md)
 - [Balancer](balancer.md)

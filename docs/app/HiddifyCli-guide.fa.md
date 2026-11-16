@@ -2,91 +2,29 @@
 title: آموزش استفاده از HiddifyCli یا هیدیفای‌کامندلاین
 ---
 
-<div markdown="1">
+# آموزش استفاده از HiddifyCli (منتقل شد)
 
-# آموزش استفاده از HiddifyCli یا هیدیفای‌کامندلاین
-این اپ برای مواردی که دسکتاپ وجود ندارد مثل سرورها توسعه داده شده است و از همه پردازنده‌ها پشتیبانی می‌کند.
+!!! warning "این آموزش منتقل شده است: HiddifyCli حالا هستهٔ هیدیفای است"
+    **HiddifyCli** حالا **هستهٔ هیدیفای** (`hiddify-core`) نام دارد. آموزش آن به صفحه‌های هستهٔ هیدیفای منتقل شده و همان‌جا به‌روز نگه داشته می‌شود. این صفحه فقط برای این نگه داشته شده که لینک‌های قدیمی خراب نشوند.
 
-!!! tip "راهنمای کامل"
-    HiddifyCli اکنون بخش خودش را دارد: برای `run` و `srun` [هسته هیدیفای](../core/index.md) و برای همه دستورها و گزینه‌ها [راهنمای خط فرمان](../core/cli.md) را ببینید.
+[:material-arrow-left: رفتن به راهنمای هستهٔ هیدیفای](../core/index.md){ .md-button .md-button--primary }
+[:material-console: راهنمای دستورها](../core/cli.md){ .md-button }
 
-## دانلود
-برای دانلود این اپ به [اینجا](https://github.com/hiddify/hiddify-core/releases) بروید و فایل مرتبط به پردازنده خود را دانلود کنید. 
+## مطالب این صفحه حالا کجاست
 
-## اجرای کانفیگ یا لینک سابسکریپشن در HiddifyCli
+| می‌خواهید | ببینید |
+|---|---|
+| دانلود و نصب | [نصب](../core/index.md#install) |
+| اجرای لینک اشتراک یا لینک کانفیگ‌ها | [`run` یا `srun`؟](../core/index.md#run-or-srun) |
+| استفاده از تنظیمات اپ هیدیفای (`-d`) | [فایل تنظیمات هیدیفای](../core/cli.md#settings-file) |
+| همهٔ دستورها و گزینه‌ها | [راهنمای دستورها](../core/cli.md) |
+| استفاده روی روتر OpenWrt | [هستهٔ هیدیفای روی OpenWrt](How-to-use-HiddifyCli-on-OpenWrt.md) |
 
-برای استفاده از آن باید از کامند زیر استفاده شود.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file or URL>
-```
-</div>
+دستورها همان قبلی‌اند و فقط نام برنامه عوض شده: `HiddifyCli run -c <link>` حالا `hiddify-core run -c <link>` است. در ویندوز نام فایل هنوز `HiddifyCli.exe` است.
 
-- برای اتصال به یک کانفیگ خاص کافیه کامند بالا را به شکل زیر اجرا کنید.
-<div dir="ltr" markdown="1">
+## مقاله‌های مرتبط
 
-```
-HiddifyCli run -c <config file>
-```
-</div>
-
-در اینجا کانفیگ مورد نظر خود را به جای `<config file>` قرار دهید.
-
-- همچنین می‌توانید یک سابسکریپشن را در اپ اجرا نمایید.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <sublink>
-```
-</div>
-
-که در اینجا لینک سابسکریپشن خود را به جای `<sublink>` قرار دهید.
-
-## اجرای کانفیگ یا لینک سابسکریپشن در HiddifyCli با تنظیمات Hiddify app
-برای این کار ابتدا می‌بایست تنظیمات مربوط به اپ هیدیفای خود را استخراج نمایید.
-<details markdown="1"><summary><h3>استخراج تنظیمات Hiddify app</h3></summary>
-
-  - برای این کار اپ هیدیفای را باز نمایید و وارد `Config Options` یا `تنظیمات پیکربندی` شوید و منوی سه نقطه را بزنید.
-
-<div align=center>
-
-<img alt="config-options" src="https://github.com/hiddify/hiddify.com/assets/125398461/f1822c80-1e2a-4752-aabe-8306b1124874" />
-
-</div>
-
-- حالا گزینه `صادر کردن تنظیمات به کلیپ‌بورد` را بزنید تا تنظیمات وارد کلیپ‌بورد شوند.
-<div align=center>
-  
-<img alt="export configs" src="https://github.com/hiddify/hiddify.com/assets/125398461/b4ff8a34-4a8a-4d93-9c53-d2d928c095e6" />
-</div>
-
-
-- حالا می‌توانید این تنظیمات را در یک فایل با پسوند `json` ذخیره نمایید.
-  
-- همچنین می‌توانید این تنظیمات در گیتهاب قرار دهید و از لینک آن به عنوان `URL` استفاده نمایید.
-
-
-
-</details>
-
-### اجرای کانفیگ یا لینک سابسکریپشن در HiddifyCli با تنظیمات استخراج شده از Hiddify app
-- همچنین اگر بخواهید از تنظیمات اپ هیدیفای خود استفاده کنید می‌بایست از کامند زیر استفاده نمایید.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <config file or sublink> -d <HiddifyApp config file>
-```
-</div>
-
-که دراینجا فایل کانفیگ یا ساب‌لینک خود  را به جای `<config file or sublink>` قرار دهید و فایل تنظیمات مربوط به اپ هیدیفای را که  در مرحله قبل استخراج کرده بودید را به جای `<HiddifyApp config file>` وارد نمایید. 
-
-- می‌توانید به جای فایل کانفیگ، لینک مربوط به تنظیمات در اپ هیدیفای را که فرضا در گیتهاب قرار داده‌اید، استفاده نمایید.
-<div dir="ltr" markdown="1">
-  
-```
-HiddifyCli run -c <config file or sublink> -d <HiddifyApp config URL>
-```
-</div>
-
-که دراینجا فایل کانفیگ یا ساب‌لینک خود  را به جای `<config file or sublink>` قرار دهید و لینک مربوط به تنظیمات مورد نظر در اپ هیدیفای را به جای `<HiddifyApp config URL>` قرار دهید.
+- [هستهٔ هیدیفای](/fa/core/)
+- [راهنمای دستورهای هسته](/fa/core/cli/)
+- [نصب هسته روی OpenWrt](/fa/app/How-to-use-HiddifyCli-on-OpenWrt/)
+- [اینترنت آزاد برای همهٔ دستگاه‌های پشت روتر](/fa/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/)

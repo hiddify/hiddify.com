@@ -1,17 +1,17 @@
 ---
 title: راهنمای خط فرمان
-description: همه دستورها و گزینه‌های HiddifyCli، خط فرمان hiddify-core
+description: "همه دستورها و گزینه‌های hiddify-core، خط فرمان هستهٔ هیدیفای (نام قبلی: HiddifyCli)"
 weight: -10
 ---
 
-# راهنمای خط فرمان HiddifyCli
+# راهنمای خط فرمان hiddify-core
 
-`HiddifyCli` (که اسکریپت نصب لینوکس آن را با نام `hiddify-core` نصب می‌کند) خط فرمان
-[هسته هیدیفای](index.md) است. این صفحه همه دستورها و گزینه‌ها را فهرست می‌کند. `HiddifyCli help` و
-`HiddifyCli <command> --help` همین فهرست را از خود برنامه چاپ می‌کنند.
+`hiddify-core` (که پیش از نسخهٔ ۵.۹ **HiddifyCli** نام داشت و در ویندوز هنوز `HiddifyCli.exe` است) خط فرمان
+[هسته هیدیفای](index.md) است. این صفحه همه دستورها و گزینه‌ها را فهرست می‌کند. `hiddify-core help` و
+`hiddify-core <command> --help` همین فهرست را از خود برنامه چاپ می‌کنند.
 
 ```text
-HiddifyCli [global flags] <command> [flags]
+hiddify-core [global flags] <command> [flags]
 ```
 
 ## گزینه‌های عمومی
@@ -49,7 +49,7 @@ HiddifyCli [global flags] <command> [flags]
 ## run
 
 ```text
-HiddifyCli run -c <file or URL> [flags]
+hiddify-core run -c <file or URL> [flags]
 ```
 
 پروکسی‌ها را از ورودی می‌خواند، یک کانفیگ کامل کلاینت از تنظیمات هیدیفای می‌سازد و آن را تا وقتی
@@ -95,12 +95,12 @@ Ctrl+C را بزنید اجرا می‌کند. برای اینکه کی از `ru
 نمونه‌ها:
 
 ```bash
-HiddifyCli run -c links.txt
-HiddifyCli run -c https://example.com/sub/abc --in-proxy-port 1080 --log info
-sudo HiddifyCli run -c links.txt --tun --dns-remote https://1.1.1.1/dns-query
-HiddifyCli run -c links.txt --fragment --fragment-size 10-100 --fragment-sleep 50-200
-HiddifyCli run -c sing-box.json --full-config
-HiddifyCli -D /var/lib/hiddify-core run -c /etc/hiddify-core/config.json -d settings.json
+hiddify-core run -c links.txt
+hiddify-core run -c https://example.com/sub/abc --in-proxy-port 1080 --log info
+sudo hiddify-core run -c links.txt --tun --dns-remote https://1.1.1.1/dns-query
+hiddify-core run -c links.txt --fragment --fragment-size 10-100 --fragment-sleep 50-200
+hiddify-core run -c sing-box.json --full-config
+hiddify-core -D /var/lib/hiddify-core run -c /etc/hiddify-core/config.json -d settings.json
 ```
 
 ### فایل تنظیمات هیدیفای {#settings-file}
@@ -131,7 +131,7 @@ HiddifyCli -D /var/lib/hiddify-core run -c /etc/hiddify-core/config.json -d sett
 ## srun
 
 ```text
-HiddifyCli srun -c <file> [-c <file>…] [-C <folder>…]
+hiddify-core srun -c <file> [-c <file>…] [-C <folder>…]
 ```
 
 یک کانفیگ کامل sing-box را بدون تغییر اجرا می‌کند، مثل `sing-box run`. همه افزوده‌های هیدیفای به
@@ -146,16 +146,16 @@ sing-box در دسترس‌اند ([قابلیت‌ها](features/index.md)).
 کانفیگ در حال اجرا می‌ماند)؛ `SIGINT` و `SIGTERM` آن را متوقف می‌کنند.
 
 ```bash
-HiddifyCli srun -c config.json
-HiddifyCli srun -c base.json -c outbounds.json
-HiddifyCli srun -C /etc/hiddify-core/conf.d
-HiddifyCli -D /var/lib/hiddify-core srun -c /etc/hiddify-core/server.json
+hiddify-core srun -c config.json
+hiddify-core srun -c base.json -c outbounds.json
+hiddify-core srun -C /etc/hiddify-core/conf.d
+hiddify-core -D /var/lib/hiddify-core srun -c /etc/hiddify-core/server.json
 ```
 
 ## parse
 
 ```text
-HiddifyCli parse <file> [-o <file>] [--xray]
+hiddify-core parse <file> [-o <file>] [--xray]
 ```
 
 فایلی در هر قالبی که `run` می‌فهمد را می‌خواند، پروکسی‌ها را به‌صورت JSON sing-box (`outbounds` و
@@ -168,15 +168,15 @@ HiddifyCli parse <file> [-o <file>] [--xray]
 | `--xray` | تبدیل لینک‌ها به JSON ایکس‌ری، با libxray. |
 
 ```bash
-HiddifyCli parse links.txt
-HiddifyCli parse clash.yaml -o outbounds.json
-HiddifyCli parse links.txt --xray -o xray.json
+hiddify-core parse links.txt
+hiddify-core parse clash.yaml -o outbounds.json
+hiddify-core parse links.txt --xray -o xray.json
 ```
 
 ## build
 
 ```text
-HiddifyCli build -c <sing-box json> [-d <settings>] [flags] [-o <file>]
+hiddify-core build -c <sing-box json> [-d <settings>] [flags] [-o <file>]
 ```
 
 کانفیگ کامل کلاینت، همان که `run` اجرا می‌کند، را از outboundهای sing-box و تنظیمات هیدیفای می‌سازد و
@@ -188,15 +188,15 @@ HiddifyCli build -c <sing-box json> [-d <settings>] [flags] [-o <file>]
 | `-o`، `--output <file>` | نوشتن نتیجه در فایل (نسبت به `-D`) به‌جای صفحه. |
 
 ```bash
-HiddifyCli parse links.txt -o outbounds.json
-HiddifyCli build -c outbounds.json --tun -o config.json
-HiddifyCli srun -c config.json
+hiddify-core parse links.txt -o outbounds.json
+hiddify-core build -c outbounds.json --tun -o config.json
+hiddify-core srun -c config.json
 ```
 
 ## instance
 
 ```text
-HiddifyCli instance -c <file> [flags]
+hiddify-core instance -c <file> [flags]
 ```
 
 یک نمونه کوچک از پروکسی‌های داده‌شده با یک پورت SOCKS5 راه می‌اندازد، چند بار از طریق آن به کلادفلر
@@ -206,7 +206,7 @@ HiddifyCli instance -c <file> [flags]
 ## health
 
 ```text
-HiddifyCli health [target] [flags]
+hiddify-core health [target] [flags]
 ```
 
 اتصال به یک مقصد (پیش‌فرض `google.com`) را مستقیم یا از طریق یک پروکسی SOCKS بررسی می‌کند. اگر هیچ‌کدام
@@ -223,13 +223,13 @@ HiddifyCli health [target] [flags]
 | `-v`، `--verbose` | | لاگ‌های اشکال‌زدایی؛ `-vv` برای جزئیات بیشتر. |
 
 ```bash
-HiddifyCli health --proxy socks://127.0.0.1:12334 --dns --http --quic cloudflare.com
+hiddify-core health --proxy socks://127.0.0.1:12334 --dns --http --quic cloudflare.com
 ```
 
 ## speedtest
 
 ```text
-HiddifyCli speedtest [flags]
+hiddify-core speedtest [flags]
 ```
 
 یک تست speedtest.net را مستقیم یا از طریق یک پروکسی SOCKS اجرا می‌کند.
@@ -245,13 +245,13 @@ HiddifyCli speedtest [flags]
 | `-v`، `--verbose` | | لاگ‌های اشکال‌زدایی؛ `-vv` برای جزئیات بیشتر. |
 
 ```bash
-HiddifyCli speedtest --proxy 127.0.0.1:12334
+hiddify-core speedtest --proxy 127.0.0.1:12334
 ```
 
 ## warp
 
 ```text
-HiddifyCli warp
+hiddify-core warp
 ```
 
 یک حساب رایگان جدید WARP کلادفلر ثبت می‌کند و یک outbound وایرگارد sing-box برای آن چاپ می‌کند. روش
@@ -261,7 +261,7 @@ HiddifyCli warp
 ## vlessenc
 
 ```text
-HiddifyCli vlessenc [--json]
+hiddify-core vlessenc [--json]
 ```
 
 یک جفت کلید تازه برای [رمزنگاری VLESS](features/protocols/vless-encryption.md)
@@ -271,7 +271,7 @@ HiddifyCli vlessenc [--json]
 ## version
 
 ```text
-HiddifyCli version [-n]
+hiddify-core version [-n]
 ```
 
 نسخه hiddify-core و hiddify-sing-box، نسخه Go، سیستم، تگ‌های ساخت، کامیت و روشن بودن CGO را چاپ
@@ -280,7 +280,7 @@ HiddifyCli version [-n]
 ## admin_bgservice
 
 ```text
-HiddifyCli admin_bgservice <action> [argument]
+hiddify-core admin_bgservice <action> [argument]
 ```
 
 نام دیگر آن `tunnel` است. اپ دسکتاپ (ویندوز، مک، لینوکس) حالت VPN را از طریق یک سرویس پس‌زمینه با
@@ -301,7 +301,7 @@ HiddifyCli admin_bgservice <action> [argument]
 ## grpcweb
 
 ```text
-HiddifyCli grpcweb [flags]
+hiddify-core grpcweb [flags]
 ```
 
 یک هسته راه می‌اندازد و یک صفحه HTML کوچک و API gRPC هسته را روی یک پورت ارائه می‌کند، تا از مرورگر
@@ -319,7 +319,7 @@ HiddifyCli grpcweb [flags]
 ## extension
 
 ```text
-HiddifyCli extension
+hiddify-core extension
 ```
 
 یک سرور آزمایشی برای [افزونه‌های هیدیفای](https://github.com/hiddify/hiddify-app-example-extension) راه
@@ -328,7 +328,7 @@ HiddifyCli extension
 ## ezytel
 
 ```text
-HiddifyCli ezytel <command> [flags]
+hiddify-core ezytel <command> [flags]
 ```
 
 کانال‌های عمومی تلگرام را از طریق پیش‌نمایش وب آن‌ها می‌خواند، مانند نمایشگر کانال اپ.
@@ -344,13 +344,13 @@ HiddifyCli ezytel <command> [flags]
 همه آن‌ها `--cache-dir <dir>` را می‌پذیرند (پیش‌فرض: پوشه‌ای در پوشه موقت سیستم).
 
 ```bash
-HiddifyCli ezytel messages --channel hiddify --html-only
+hiddify-core ezytel messages --channel hiddify --html-only
 ```
 
 ## gen-cert
 
 ```text
-HiddifyCli gen-cert
+hiddify-core gen-cert
 ```
 
 یک گواهی سرور و یک گواهی کلاینت برای سرور gRPC هسته در `data/cert/` می‌سازد (`server-cert.pem`،
@@ -363,3 +363,9 @@ HiddifyCli gen-cert
 - `gen <file>`: ساخت کانفیگ به روش اپ و نوشتن آن در لاگ با سطح debug.
 - `profile <url>`: افزودن یک پروفایل از URL، مانند اپ، و چاپ نتیجه.
 - `command`: اتصال به API gRPC هسته در حال اجرا (`127.0.0.1:17078`) و چاپ وضعیت، outboundها و لاگ‌های آن.
+
+## مقاله‌های مرتبط
+
+- [راهنمای هسته](/fa/core/)
+- [گروه‌ها و پایش](/fa/core/features/groups/)
+- [هستهٔ هیدیفای روی OpenWrt](/fa/app/How-to-use-HiddifyCli-on-OpenWrt/)

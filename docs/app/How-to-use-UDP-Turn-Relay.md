@@ -2,52 +2,54 @@
 title: How to use UDP Turn Relay in Hiddify app
 ---
 
-<div dir="ltr" markdown="1">
-
 # How to use UDP Turn Relay
-Recently, a feature called UDP Turn Relay is used in messengers to bypass filtering. That is, in this case, messengers are used as intermediate servers (relay) and traffic is sent to the main server through them. This can be used for messengers that are active inside Iran and support this protocol, or for foreign messengers that are not filtered. The diagram of free internet connection in this case is as follows.
+
+!!! warning "Not supported in Hiddify app 4 and later"
+    The `relay=` parameter described here works only in the old Hiddify app 2.x (Hiddify Next). Since version 4.0 (February 2026), when the app's core moved to sing-box 1.13, the parameter is ignored, and it is still ignored in Hiddify app 5.9: a link with `relay=` connects directly to the server, without the relay. This page is kept for reference.
+
+## What it was
+
+UDP Turn Relay uses the TURN server of a messenger as a relay. TURN servers carry the voice and video calls of messengers. When a messenger works inside a filtered network (a domestic messenger, or a foreign one that is not blocked), its TURN server can pass your traffic on to your own server. The connection looked like this:
 
 <div align=center>
 
-<img width=100% src="https://github.com/hiddify/hiddify-next/assets/125398461/037262d4-ad89-45c0-bcab-c6504c08d3df">
+<img width=100% alt="UDP Turn Relay diagram" src="https://github.com/hiddify/hiddify-next/assets/125398461/037262d4-ad89-45c0-bcab-c6504c08d3df">
 
 </div>
 
-Note that this feature only works for configurations that are on the UDP protocol. This means that this feature can be used on Hysteria2 or TUIC v5, but it cannot be used for reality.
+It worked only with configs that run over UDP, such as Hysteria2 and TUIC v5. It did not work with Reality or other TCP configs.
 
-To use it, just put the parameters of that messenger at the end of your config link according to the command below.
+## The link format
 
-```
-relay=urlencoded(turn://user:pass@host:port?realm=t)
-```
-
-Where `user` is the username to connect to the protocol in the desired messenger. `pass` is also the password for this account in that messenger. Also, `host` is the host-name for connecting to the messenger, and `port` is the port for connecting to the messenger. The `realm` parameter is related to the authentication area inside the host-name. That is, which area of the messenger can be authenticated with this account.
-
-For example, in Bale messenger (an Iranian Messenger), these parameters are as follows.
+The relay was added to the end of a Hysteria2 or TUIC link as a URL-encoded `relay` parameter:
 
 ```
-relay=urlencoded(turn://balelivekit:GygZPHQSgAV7L5L8@meet-turn.bale.sh:443?realm=bale.ai)
+relay=urlencoded(turn://user:pass@host:port?realm=realm)
 ```
 
-First, you convert this information to UTF-8 using an Encoder. For example, you can use [this Encoder](https://www.urlencoder.org/), the output of which is as follows:
+- `user` and `pass`: the username and password of the messenger's TURN server.
+- `host` and `port`: the address of the TURN server.
+- `realm`: the TURN realm (the authentication area) of the server.
+
+For example, `turn://user:pass@turn.example.com:443?realm=example.com` URL-encoded is:
 
 ```
-relay=turn%3A%2F%2Fbalelivekit%3AGygZPHQSgAV7L5L8%40meet-turn.bale.sh%3A443%3Frealm%3Dbale.ai
+relay=turn%3A%2F%2Fuser%3Apass%40turn.example.com%3A443%3Frealm%3Dexample.com
 ```
 
-Now if we have a hysteria configuration based on UDP as follows:
+It goes before the `#` of the link, after an `&`:
 
 ```
-hysteria2://87543215-15ac-54f6-3895-34e4e931f5b4@45.120.34.46:11464?hiddify=1&obfs=salamander&obfs-password=bdgf!huy678559j89GrTu&sni=www.speedtest.net&insecure=1#test
+hysteria2://password@server.example.com:443?obfs=salamander&obfs-password=secret&sni=www.speedtest.net&insecure=1&relay=turn%3A%2F%2Fuser%3Apass%40turn.example.com%3A443%3Frealm%3Dexample.com#test
 ```
 
-Finally, we add the encoded information related to the relay (messenger) at the end of the hysteria link. For this, we first put an `&` and copy the link exactly before `#` as below:
+Messengers close their TURN servers to this kind of use quickly: the one used in the first examples (Bale) did so within a short time.
 
-```
-hysteria2://87543215-15ac-54f6-3895-34e4e931f5b4@45.120.34.46:11464?hiddify=1&obfs=salamander&obfs-password=bdgf!huy678559j89GrTu&sni=www.speedtest.net&insecure=1&relay=turn%3A%2F%2Fbalelivekit%3AGygZPHQSgAV7L5L8%40meet-turn.bale.sh%3A443%3Frealm%3Dbale.ai#test
-```
+## What to use instead
 
-You can import this link in the Hiddify-Next program and because this program supports the UDP Turn Relay protocol, you can use this feature.
+To reach your server through another path with the current app, see [Chain, Extra security and Proxy unblocker](Chain-Extra-security-and-Proxy-unblocker.md) (WARP or Psiphon before or after your server) and, on the server side, [relay servers](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/).
 
-!!! note "NOTE!"
-    Bale messenger disabled the said feature after a short time. Based on the contents explained above, you should find a messenger that supports this feature from the [list of internal messengers of Iran](https://eservices.ito.gov.ir/Page/IPListMessenger) or non-filtered external messengers.
+## Related articles
+
+- [How to use the Hiddify app](How-to-use-Hiddify-app.md): add a profile, connect, the basic settings
+- [How to install the Hiddify app](How-to-install-Hiddify-app.md)

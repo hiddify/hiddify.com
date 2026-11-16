@@ -1,6 +1,6 @@
 # TLS tricks (tls_tricks)
 
-[All Hiddify features](index.md)
+[All Hiddify features](index.md){ .hi-back }
 
 `tls_tricks` changes the TLS ClientHello an outbound sends: it can send the server name in a
 random mix of upper and lower case, and add a padding extension of a chosen size. It is the

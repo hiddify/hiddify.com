@@ -1,6 +1,6 @@
 # finalmask
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 `finalmask` applies Xray-core's finalmask masks to the connections an outbound opens. A mask
 changes the bytes on the wire: it splits them, adds noise packets, adds headers, or wraps them in

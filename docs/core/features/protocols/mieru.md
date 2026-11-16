@@ -1,6 +1,6 @@
 # Mieru
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 Mieru is a proxy protocol from the [mieru project](https://github.com/enfein/mieru). Every byte it
 sends is encrypted, with random padding, so the traffic has no fixed header or pattern to match.

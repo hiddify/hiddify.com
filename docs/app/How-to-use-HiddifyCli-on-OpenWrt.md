@@ -1,168 +1,120 @@
 ---
-title: How to use HiddifyCli on OpenWrt  
----
-<markdown ="1">
-
-### **Complete Guide to Installing and Setting Up HiddifyCli on OpenWrt**
-
-To install **HiddifyCli** on OpenWrt, follow all the steps below in order. This guide includes downloading, extracting, installing, and full configuration.
-
+title: Hiddify Core on OpenWrt
 ---
 
-#### 1. **Download HiddifyCli File**  
-To download the version suitable for your router’s architecture, use the following command for direct download:  
-<div dir="ltr">  
-   ```bash  
-   wget -O /tmp/HiddifyCli.tar.gz https://github.com/hiddify/hiddify-core/releases/download/latest/hiddify-cli-linux-{ARCH}.tar.gz  
-   ```  
-</div>  
-**Explanation:**  
+# Hiddify Core on OpenWrt
 
-- Replace `{ARCH}` with your router’s architecture (e.g., `mips`, `arm`, or `x86_64`).  
+This page shows how to install **Hiddify Core** on an OpenWrt router, give it your connection link, and send the traffic of your whole home network through it. Hiddify Core (`hiddify-core`, also called HiddifyCli) is the engine of the Hiddify app, without the app: see [Hiddify Core](../core/index.md).
 
----
+!!! note "Written for Hiddify Core 5.9"
+    This page is for Hiddify Core **5.9** (5.9.3) and OpenWrt **23.05 or newer** (OpenWrt 24.10 and 25.12 use the `apk` package manager, older versions `opkg`). Older guides told you to download `hiddify-cli-linux-…tar.gz` and write a service by hand: that is not needed any more, and those files no longer exist.
 
-#### 2. **Extract the File**  
-After downloading, extract the file using the following command:  
+## Before you start
 
-<div dir="ltr">  
-```bash  
-tar -xvzf /tmp/HiddifyCli.tar.gz -C /tmp  
-```  
-</div>  
-**Command Explanation:**  
+- **Free space on the router:** Hiddify Core needs about **105 MB** of free storage. Check it on the router:
 
-- `x-` extracts the file.  
-- `v-` displays extraction details.  
-- `z-` opens gzip-compressed files.  
-- `f-` specifies the file name.  
-- `/tmp/` is the extraction path (you can replace it with your preferred directory).  
+    ```bash
+    df -h /overlay
+    ```
 
----
+    Many small routers have only 16 to 128 MB of flash. If yours has less free space, add a USB drive as extra storage ([extroot](https://openwrt.org/docs/guide-user/additional-software/extroot_configuration)) first, or use a router or mini PC with more storage.
 
-#### 3. **Move the Executable to the Appropriate Directory**  
-Move the `HiddifyCli` executable file to `/usr/bin/` using:  
+- **SSH access** to the router (`ssh root@192.168.1.1`, or the address of your router).
+- **A connection link:** a subscription link or config links, for example from your Hiddify panel.
 
-<div dir="ltr">  
-```bash  
-mv /tmp/HiddifyCli /usr/bin/  
-```  
-</div>  
+## Step 1: install
 
----
+The installer finds your router's processor, downloads the ready package of the latest Hiddify Core release, installs it and starts the service. It needs `bash` and `curl`, which OpenWrt does not have by default.
 
-#### 4. **Set Execution Permissions**  
-To enable execution for the file, enter the following command:  
+1. Install `bash` and `curl`.
 
-<div dir="ltr">  
-```bash  
-chmod +x /usr/bin/HiddifyCli  
-```  
-</div>  
+    On OpenWrt 24.10 and newer (`apk`):
 
----
+    ```bash
+    apk update && apk add bash curl
+    ```
 
-#### 5. **Create an Init Script**  
-To create an automatic service:  
-1. Create a file named `HiddifyCli` in `/etc/init.d/`:  
+    On OpenWrt 23.05 (`opkg`):
 
-<div dir="ltr">  
-   ```bash  
-   touch /etc/init.d/HiddifyCli  
-   ```  
-</div>  
+    ```bash
+    opkg update && opkg install bash curl
+    ```
 
-2. Fill the file with the following content:  
+2. Run the installer:
 
-<div dir="ltr">  
-   ```bash  
-   #!/bin/sh /etc/rc.common  
-   START=91  
-   USE_PROCD=1  
+    ```bash
+    bash <(curl -fsSL https://raw.githubusercontent.com/hiddify/hiddify-core/main/installer.sh)
+    ```
 
-   start_service() {  
-       procd_open_instance  
-       procd_set_param command /usr/bin/HiddifyCli run -c /root/config.conf  
-       procd_set_param stdout 1  
-       procd_set_param stderr 1  
-       procd_set_param respawn  
-       procd_close_instance  
-   }  
-   ```  
-</div>  
+When it finishes, it prints `Installation successful!` and the places of the config and the service.
 
-3. Set the file permissions:  
+??? info "Install the package by hand instead"
+    Each [Hiddify Core release](https://github.com/hiddify/hiddify-core/releases/latest) has a package for every OpenWrt processor type: `.apk` files for OpenWrt 24.10 and newer, `.ipk` files for OpenWrt 23.05.
 
-<div dir="ltr">  
-   ```bash  
-   chmod 755 /etc/init.d/HiddifyCli  
-   ```  
-</div>  
+    1. Find your router's package architecture: `apk --print-arch` (or, on OpenWrt 23.05, `opkg print-architecture`, the last line). For example `mipsel_24kc`, `aarch64_cortex-a53` or `x86_64`.
+    2. Download the file with that name from the release, for example `hiddify-core-5.9.3-r0_mipsel_24kc.apk` or `hiddify-core_5.9.3_mipsel_24kc.ipk`, and copy it to `/tmp` on the router.
+    3. Install it: `apk add --allow-untrusted /tmp/hiddify-core-*.apk` (or `opkg install /tmp/hiddify-core_*.ipk`).
+    4. Start it: `/etc/init.d/hiddify-core enable && /etc/init.d/hiddify-core restart`.
 
----
+## Step 2: give it your connection link
 
-#### 6. **Enable and Start the Service**  
-Run the following commands to enable and start the service:  
+Hiddify Core's `run` command reads your links and builds the rest of the configuration by itself. It reads subscription links, single config links (`vless://`, `vmess://` …), and sing-box, Clash and Xray configs: see [what `run` can read](../core/index.md#run-or-srun).
 
-<div dir="ltr">  
-```bash  
-service HiddifyCli enable  
-service HiddifyCli start  
-```  
-</div>  
+1. Put your subscription link (or your config links, one per line) in a file:
 
----
+    ```bash
+    echo 'https://example.com/your-subscription-link' > /etc/hiddify-core/links.txt
+    ```
 
-#### 7. **Configure the Settings**  
-1. **Extract the Configuration from Hiddify Desktop App:**  
-   - Set up your desired configurations in the app.  
-   - Export the config and save it as a text file.  
-   - Rename the file extension to `.conf` (e.g., `config.conf`).  
+2. Tell the service to use this file, and restart it:
 
-2. **Move the Config File to `/root/` on the Router:**  
+    ```bash
+    uci set hiddify-core.main.conffile='/etc/hiddify-core/links.txt'
+    uci commit hiddify-core
+    /etc/init.d/hiddify-core restart
+    ```
 
-<div dir="ltr">  
-   ```bash  
-   mv config.conf /root/  
-   ```  
-</div>  
+## Step 3: check that it works
 
----
+- The service log:
 
-#### 8. **Reboot the Router**  
-Restart the router to apply the changes:  
+    ```bash
+    logread -e hiddify-core
+    ```
 
-<div dir="ltr">  
-```bash  
-reboot  
-```  
-</div>  
+- On a phone or computer connected to the router, open a site that shows your IP address. It should show the IP of your proxy server, not your own.
 
-After rebooting, the HiddifyCli service will be active, and the **Socks5 Proxy** will be available at:  
+## Router mode and proxy mode
 
-<div dir="ltr">  
-```plaintext  
-127.0.0.1:12334  
-```  
-</div>  
+The service has two modes, set in `/etc/config/hiddify-core` (`option mode`):
 
----
+- `router` (the default): every device behind the router goes through Hiddify Core, for TCP, UDP and ping, with nothing to set up on the devices. Connections from outside still reach the router and its port forwards. See [Free internet for every device behind the router](How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli.md).
+- `proxy`: only a local HTTP and SOCKS5 proxy runs on the router itself, at `127.0.0.1:12334`.
 
-### Additional Notes:  
-- To check the router’s architecture, run the following command:  
+To change the mode:
 
-<div dir="ltr">  
-  ```bash  
-  uname -m  
-  ```  
-</div>  
+```bash
+uci set hiddify-core.main.mode='proxy'
+uci commit hiddify-core
+/etc/init.d/hiddify-core restart
+```
 
-- If any issues arise during the process, check the service logs using:  
+## Manage the service
 
-<div dir="ltr">  
-  ```bash  
-  logread | grep HiddifyCli  
-  ```  
-</div>  
+| You want to | Command |
+|---|---|
+| Stop or start it | `/etc/init.d/hiddify-core stop` / `start` |
+| Restart it after a change | `/etc/init.d/hiddify-core restart` |
+| Turn it off at boot | `/etc/init.d/hiddify-core disable` |
+| See the log | `logread -e hiddify-core` |
+| Update to the newest version | run the installer of step 1 again |
+| Remove it | `apk del hiddify-core` (or `opkg remove hiddify-core`) |
 
-In [another article](/app/How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli/), we will explain how to enable free internet access for clients behind the router.
+The package keeps its settings when you upgrade OpenWrt itself (sysupgrade). Every option of Hiddify Core is explained in [Hiddify Core](../core/index.md) and the [command-line reference](../core/cli.md).
+
+## Related articles
+
+- [Free internet for every device behind an OpenWrt router](How-to-Enable-Free-Internet-Access-for-Clients-Behind-an-OpenWrt-Router-Using-HiddifyCli.md)
+- [Hiddify Core](../core/index.md) and its [command-line reference](../core/cli.md)
+- [Router mode on Linux](Router-mode-on-Linux.md): the same idea on a Linux gateway, with the Hiddify app
+

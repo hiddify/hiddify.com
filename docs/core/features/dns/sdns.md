@@ -1,6 +1,6 @@
 # DNSCrypt (SDNS stamps)
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The `sdns` DNS server sends queries to a DNSCrypt resolver, given by its DNS stamp (a string that
 starts with `sdns://`). DNSCrypt encrypts and signs each query and answer. It is a DNS server:

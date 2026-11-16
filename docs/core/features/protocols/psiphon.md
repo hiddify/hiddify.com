@@ -1,6 +1,6 @@
 # Psiphon
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The Psiphon outbound connects to the Psiphon network through the official Psiphon tunnel core,
 built into sing-box. Psiphon runs the servers, so you only need this outbound. It is an

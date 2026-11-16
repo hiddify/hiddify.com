@@ -1,6 +1,6 @@
 # Custom gRPC paths
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The gRPC transport's `service_name` can be a full custom path, as in Xray. A name that starts with
 `/` is read as `/<service>/<stream>`, so `/my/path/Tun` sends requests to the path

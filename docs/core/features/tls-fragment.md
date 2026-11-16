@@ -1,6 +1,6 @@
 # TLS fragment (tls_fragment)
 
-[All Hiddify features](index.md)
+[All Hiddify features](index.md){ .hi-back }
 
 `tls_fragment` splits the TLS ClientHello an outbound sends into many small pieces, with an
 optional pause between them. It is the `tls_fragment` object in the dial fields of an outbound

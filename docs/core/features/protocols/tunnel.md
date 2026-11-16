@@ -1,6 +1,6 @@
 # Tunnel (reverse tunnel)
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 The tunnel endpoints connect several sing-box instances through one public server, so that a
 machine without a public address (behind NAT or a firewall) can still be reached. The server runs

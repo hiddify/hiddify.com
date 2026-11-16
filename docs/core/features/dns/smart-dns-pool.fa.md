@@ -1,6 +1,6 @@
 # مجموعهٔ هوشمند resolver (Smart resolver pool)
 
-[همهٔ قابلیت‌های هیدیفای](../index.md)
+[همهٔ قابلیت‌های هیدیفای](../index.md){ .hi-back }
 
 مجموعهٔ هوشمند resolver همان مدیریت resolverهاست که همهٔ خروجی‌های تونل DNS در آن مشترک‌اند:
 خروجی‌های [DNSTT](../protocols/dnstt.md)، [MasterDNS](../protocols/masterdns.md) و [Soar](../protocols/soar.md) هر کدام

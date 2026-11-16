@@ -6,13 +6,13 @@ title: How to use the Hiddify app
 
 # How to use the Hiddify app
 
-This page shows you how to add your connection link to Hiddify App, connect, pick a server and change the most useful settings. It is for anyone who has installed the app and received a link from their provider or from their own Hiddify server.
+This page shows you how to add your connection link to Hiddify app, connect, pick a server and change the most useful settings. It is for anyone who has installed the app and received a link from their provider or from their own Hiddify server.
 
 ## Before you start
 
 You need:
 
-1. Hiddify App installed on your device. If you have not installed it yet, follow [How to install the Hiddify app](How-to-install-Hiddify-app.md).
+1. Hiddify app installed on your device. If you have not installed it yet, follow [How to install the Hiddify app](How-to-install-Hiddify-app.md).
 2. A connection link from your provider. This is usually your **user page** link (a personal web page that a Hiddify panel makes for each user) or a **subscription link**. No link yet? The app has free profiles too: see [Add a free profile](#add-a-free-profile).
 
 A few words you will see on this page:
@@ -22,8 +22,8 @@ A few words you will see on this page:
 - **Config**: the settings for one single server, for example a link that starts with `vless://` or `vmess://`.
 - **Proxy**: one server in your profile that your traffic can go through.
 
-!!! note
-    The app screenshots on this page come from version 5.5.6 on Android. On iPhone and on computers the steps are the same, but some screens look a little different.
+!!! note "Written for Hiddify app 5.9"
+    This page is for Hiddify app **5.9** (5.9.2). Version 5.9 is a pre-release for now; the stable version 5.5.5 does not have every feature on this page yet. The screenshots come from Android. On iPhone and on computers the steps are the same, but some screens look a little different.
 
 ## Add a profile to the app
 
@@ -36,7 +36,7 @@ A few words you will see on this page:
     <img width=260 alt="Configure Your VPN window" src="/assets/app-use/en-user-import.webp" style="display:block;margin:0 auto">
 
 3. Tap `HiddifyApp`. The app opens and adds your profile, and you are done. If the app does not open, tap `Copy Link` at the bottom of the same window to copy your profile link, and go on with step 4.
-4. Open Hiddify App. On the `Home` page, tap the `+` button at the top of the screen. The "Add profile" panel opens at the bottom.
+4. Open Hiddify app. On the `Home` page, tap the `+` button at the top of the screen. The "Add profile" panel opens at the bottom.
 
     <img width=260 alt="The Add profile panel" src="/assets/app-use/en-add-sheet.webp" style="display:block;margin:0 auto">
 
@@ -56,11 +56,11 @@ When it worked, your profile appears at the top of the `Home` page. If you see "
 If you have no link, you can still try the app with a free profile:
 
 1. Tap `+` on the `Home` page.
-2. Turn on the `Free` switch at the bottom of the panel. A list of free profiles appears, for example `Warp & Psiphon`.
+2. Turn on the `Free` switch at the bottom of the panel. A list of free profiles appears, for example `WARP & Psiphon`, `Patterniha`, `Anonymous`, `Mahsa` and `Anonymous Serverless`. The list comes from the internet and can change.
 
     <img width=260 alt="Free profiles in the Add profile panel" src="/assets/app-use/en-free.webp" style="display:block;margin:0 auto">
 
-3. Tap a profile. The app shows its terms first (for `Warp & Psiphon`, the terms of Cloudflare WARP). Tap `Continue` to accept them and add the profile.
+3. Tap a profile. Some profiles show their terms first (for `WARP & Psiphon`, the terms of Cloudflare WARP). Tap `Continue` to accept them and add the profile.
 
     <img width=260 alt="Terms of the free WARP profile" src="/assets/app-use/en-free-consent.webp" style="display:block;margin:0 auto">
 
@@ -82,7 +82,7 @@ Use this if you want to add only one server instead of a whole subscription.
 
     <img width="100%" style="display:block;margin:0 auto;max-width:800px;border-radius:8px" alt="Copy the link of one config" src="/assets/app-use/en-user-config-link.webp">
 
-4. Open Hiddify App and tap the `+` button.
+4. Open Hiddify app and tap the `+` button.
 5. Tap `Clipboard`. The config is added to the app.
 
 ## Connect
@@ -131,7 +131,7 @@ If it stays on `Connecting...` or shows an error, try another server on the `Pro
 
     <img width=260 alt="Sort proxies" src="/assets/app-use/en-proxies-sort.webp" style="display:block;margin:0 auto">
 
-6. To see the details of a server, touch and hold it. You can also `Share` that one server or `Edit` it (the app copies it to a new profile of its own).
+6. To see the details of a server, touch and hold it. You can also `Share` that one server or `Edit` it (the app copies it to a new profile of its own), or turn on `Pin proxy` so that it always stays loaded and tested beside the fastest ones.
 
     <img width=260 alt="Details of a proxy" src="/assets/app-use/en-proxy-details.webp" style="display:block;margin:0 auto">
 
@@ -180,15 +180,27 @@ VPN mode needs administrator permission once (called **root** on Linux and macOS
 - `Use VPN mode` (recommended): all apps go through Hiddify. Your computer then asks for administrator permission: click `Yes` on Windows, or enter your password on macOS and Linux. After that, the app connects without asking again. With the AppImage on Linux, it asks once each time you start the app.
 - `Use system proxy`: no administrator permission is needed, but only browsers and most apps go through Hiddify; Telegram and a few other apps are left out. You can switch back to VPN later in `Quick settings` or in `Settings` > `Inbound` > `Service mode`.
 
-Turn off other VPN apps while you use VPN mode: two VPNs at once get in each other's way. On Linux there is also a `Router (whole network)` mode, which sends the traffic of every device that this computer routes through Hiddify.
+<img width=520 alt="Send all apps through the VPN?" src="/assets/app/Hiddify-app-on-desktop/en-vpn-or-proxy.webp" style="display:block;margin:0 auto">
 
-If the app still shows "Missing privilege", close it completely (right-click its icon in the system tray and click `Exit`), then open it as administrator:
+On Linux the password prompt looks like this (its look depends on your desktop):
+
+<img width=420 alt="Linux asks for the password" src="/assets/app-use/linux-polkit.webp" style="display:block;margin:0 auto">
+
+When it is connected, the home page shows `Connected`:
+
+<img width=560 alt="Connected on a computer" src="/assets/app-use/en-desktop-connected.webp" style="display:block;margin:0 auto">
+
+More about the modes, the tray icon and starting with the computer: [The Hiddify app on a computer](Hiddify-app-on-desktop.md).
+
+Turn off other VPN apps while you use VPN mode: two VPNs at once get in each other's way. On Linux there is also a `Router (whole network)` mode, which sends the traffic of every device that this computer routes through Hiddify: see [Router mode on Linux](Router-mode-on-Linux.md).
+
+If you cancelled the permission prompt, just connect again and choose again. If the app still shows "Missing privilege" or "Administrator permission was not given", close it completely (right-click its icon in the system tray and click `Exit`), then open it as administrator:
 
 <details markdown="1"> <summary><b>Open the app as administrator on Windows</b></summary>
 
 1. Right-click the Hiddify icon on the desktop or in the `Start` menu and click `Run as administrator`.
 
-  <img width=30% alt="Run as administrator" src="https://github.com/hiddify/Hiddify-Server/assets/125398461/9db385ec-8aba-47f5-a5b7-d2c34899fbc1" style="display:block;margin:0 auto" >
+  <img width=300 alt="Run as administrator" src="/assets/app-use/win-run-as-admin.webp" style="display:block;margin:0 auto">
 
 2. Click `Yes` when Windows asks for permission.
 
@@ -221,7 +233,15 @@ Keep the Terminal window open while you use the app: if you close Terminal, the 
 
 <details markdown="1"> <summary><b>Open the app as root on Linux</b></summary>
 
-Open a terminal and run the app with `sudo`. This example is for the AppImage in your `Downloads` folder; change the path if your file is somewhere else:
+**With the .deb package** (what the install command installs): install Hiddify's VPN service once from a terminal, then connect again in the app. You do not need to run the app itself with `sudo`:
+
+```bash
+sudo /opt/hiddify/HiddifyCli admin_bgservice install $USER
+```
+
+This is the same command the password prompt runs. It is useful when no password window appears, for example when you started Hiddify from a terminal or over SSH.
+
+**With the AppImage:** open a terminal and run the app with `sudo`. This example is for the AppImage in your `Downloads` folder; change the path if your file is somewhere else:
 
 ```bash
 sudo ~/Downloads/Hiddify-Linux-x64-AppImage.AppImage
@@ -229,5 +249,23 @@ sudo ~/Downloads/Hiddify-Linux-x64-AppImage.AppImage
 
 </details>
 <br>
+
+## Next steps: more settings
+
+- [Free profiles](Free-profiles-in-Hiddify-app.md) and [WARP in the Hiddify app](How-to-use-WARP-on-Hiddify-App.md)
+- [Routing](Routing-in-Hiddify-app.md): send some sites or apps direct, or through the proxy
+- [DNS and TLS tricks](DNS-and-TLS-tricks-in-Hiddify-app.md): when configs don't connect
+- [Chain, Extra security and Proxy unblocker](Chain-Extra-security-and-Proxy-unblocker.md)
+- [Share your connection](Share-your-connection.md) with other devices
+- [Import and export settings, edit a profile](Import-export-settings-and-edit-profile.md)
+- [Logs and reporting a problem](Logs-and-reporting-a-problem.md)
+- On a computer: [The Hiddify app on a computer](Hiddify-app-on-desktop.md), [Router mode on Linux](Router-mode-on-Linux.md); on a TV: [Hiddify on Android TV](Hiddify-on-Android-TV.md)
+
+## Related articles
+
+- [Install the Hiddify app](/app/How-to-install-Hiddify-app/)
+- [Free profiles](/app/Free-profiles-in-Hiddify-app/)
+- [WARP in the Hiddify app](/app/How-to-use-WARP-on-Hiddify-App/)
+- [Chain, Extra security and unblocker](/app/Chain-Extra-security-and-Proxy-unblocker/)
 
 </div>

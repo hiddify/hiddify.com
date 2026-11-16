@@ -1,6 +1,6 @@
 # سرور simple-obfs و fallback در Shadowsocks
 
-[همهٔ قابلیت‌های هیدیفای](../index.md)
+[همهٔ قابلیت‌های هیدیفای](../index.md){ .hi-back }
 
 ورودی Shadowsocks می‌تواند سمت سرور simple-obfs (`obfs-server`) را اجرا کند؛ پس کلاینت‌هایی که افزونهٔ
 `obfs-local` را در حالت `http` یا `tls` به کار می‌برند مستقیم به sing-box وصل می‌شوند. همچنین می‌تواند هر

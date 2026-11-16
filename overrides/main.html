@@ -46,14 +46,6 @@
 {% block libs %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
-
-  <script src="https://guru-widget.pages.dev/guru_widget.latest.min.js" 
-  data-text="Ask AI" 
-  data-link="https://gurubase.io/g/hiddify-manager" 
-  data-bg-color="#d5d0f8" 
-  data-icon-url="https://avatars.githubusercontent.com/u/126981719?s=48&v=4" 
-  data-font-color="#958fb5" 
-  data-margins='{"bottom": "1rem", "right": "1rem"}'>
-  </script>
+  <!-- The "Ask AI" link lives in partials/header.html -->
   <!-- Add scripts that need to run afterwards here -->
 {% endblock %}

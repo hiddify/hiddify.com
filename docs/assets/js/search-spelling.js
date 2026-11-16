@@ -13,7 +13,9 @@
     ["نرم افزار", "نرم‌افزار"],
     ["آیپی|آی پی|ایپی", "آی‌پی"],
     ["تانل", "تونل"],
-    ["ورکرز", "ورکر"]
+    ["ورکرز", "ورکر"],
+    // search only (not a site spelling): the search has no Persian plural, so «ویدیوهای» would not find «ویدیو»
+    ["ویدیوهای|ویدیوها|ویدئوهای|ویدئوها|ویدئو", "ویدیو"]
   ].map(function (r) { return [new RegExp(B + "(?:" + r[0] + ")", "g"), "$1" + r[1]]; });
 
   document.addEventListener("input", function (e) {

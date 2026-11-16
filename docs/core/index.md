@@ -42,7 +42,7 @@ Hiddify Core (`hiddify-core`) is the part of the Hiddify app that makes the conn
 
     ---
 
-    On Linux, Windows and macOS, as a local proxy or a VPN for the whole system.
+    On Linux and Windows, as a local proxy or a VPN for the whole system (on macOS, use the Hiddify app).
 
 </div>
 
@@ -59,14 +59,14 @@ flowchart LR
 
 The core is built on **hiddify-sing-box**, Hiddify's version of [sing-box](https://sing-box.sagernet.org/). So every sing-box config works in it, and it adds dozens of protocols and anti-censorship tricks that upstream sing-box does not have.
 
-## Install
+## Install {#install}
 
 === ":material-linux: Linux and OpenWrt"
 
     This command detects your system and processor, installs the core and sets it up as a service:
 
     ```bash
-    bash <(curl https://i.hiddify.com/core)
+    bash <(curl -fsSL https://raw.githubusercontent.com/hiddify/hiddify-core/main/installer.sh)
     ```
 
     The config is `/etc/hiddify-core/config.json`. After editing it, restart the service:
@@ -81,8 +81,9 @@ The core is built on **hiddify-sing-box**, Hiddify's version of [sing-box](https
 
     Get the file for your system from the [releases page](https://github.com/hiddify/hiddify-core/releases) and unpack it.
 
-    - **Linux:** keep the `lib` folder next to `HiddifyCli`.
-    - **Windows:** run `HiddifyCli.exe` from a terminal.
+    - **Linux:** take `hiddify-core-linux-<processor>.tar.gz` (for example `amd64` or `arm64`). Keep `libcronet.so` next to `hiddify-core`, and run `./hiddify-core` from a terminal.
+    - **Windows:** take `hiddify-lib-windows-amd64.tar.gz`. The command-line program in it is `HiddifyCli.exe`: run it from a terminal, with the same commands as on this page (`HiddifyCli.exe run -c links.txt`).
+    - **macOS:** there is no command-line build for macOS. Use the [Hiddify app](../app/How-to-install-Hiddify-app.md), or the Docker image below.
 
 === ":material-docker: Docker"
 
@@ -92,8 +93,8 @@ The core is built on **hiddify-sing-box**, Hiddify's version of [sing-box](https
 
     Or, in the `docker` folder of the repository: `docker-compose up -d`
 
-!!! note "Two names, one program"
-    The examples on this page call the program `HiddifyCli`. After the Linux installer, it is called `hiddify-core`.
+!!! note "HiddifyCli is now hiddify-core"
+    The command-line program used to be called **HiddifyCli**. Since version 5.9 it is called `hiddify-core`, and the examples on this page use that name. Only the Windows build still names the file `HiddifyCli.exe`; the commands are the same.
 
 ## Run: `run` or `srun`? {#run-or-srun}
 
@@ -110,7 +111,7 @@ Pick one, depending on what you have:
     The core builds the rest of the config by itself: a local proxy or a VPN, DNS, routing and automatic choice of the fastest server.
 
     ```bash
-    HiddifyCli run -c links.txt
+    hiddify-core run -c links.txt
     ```
 
 -   :material-file-code:{ .lg .middle } __`srun`: you have a full sing-box config__
@@ -122,7 +123,7 @@ Pick one, depending on what you have:
     The core adds nothing to it and runs it like sing-box itself, with every Hiddify feature.
 
     ```bash
-    HiddifyCli srun -c config.json
+    hiddify-core srun -c config.json
     ```
 
 </div>
@@ -134,13 +135,13 @@ Pick one, depending on what you have:
     A file of links, one link per line:
 
     ```bash
-    HiddifyCli run -c links.txt
+    hiddify-core run -c links.txt
     ```
 
     Or a subscription link directly, which updates by itself:
 
     ```bash
-    HiddifyCli run -c https://example.com/sub/abc
+    hiddify-core run -c https://example.com/sub/abc
     ```
 
     An HTTP and SOCKS5 proxy opens on `127.0.0.1:12334`. Point your browser or apps to it.
@@ -148,7 +149,7 @@ Pick one, depending on what you have:
 === "VPN for the whole system"
 
     ```bash
-    sudo HiddifyCli run -c links.txt --tun
+    sudo hiddify-core run -c links.txt --tun
     ```
 
     Every app goes through the VPN. Needs root or administrator rights.
@@ -156,7 +157,7 @@ Pick one, depending on what you have:
 === "System proxy"
 
     ```bash
-    HiddifyCli run -c links.txt --system-proxy
+    hiddify-core run -c links.txt --system-proxy
     ```
 
     Sets the desktop's system proxy by itself.
@@ -164,10 +165,10 @@ Pick one, depending on what you have:
 === "With your app settings"
 
     ```bash
-    HiddifyCli run -c links.txt -d hiddify-settings.json
+    hiddify-core run -c links.txt -d hiddify-settings.json
     ```
 
-    Get the settings file in the app from **Settings → ⋮ → Export → Export all settings to a file**.
+    Get the settings file in the app from **Settings → ⋮ → Export → Export all options to file**.
 
 ??? info "What can `run` read?"
     - Links of every protocol the app supports, one per line, plain or base64
@@ -182,17 +183,17 @@ Pick one, depending on what you have:
 ??? info "`srun` tips"
     | You want | Command |
     |---|---|
-    | Several files, merged together | `HiddifyCli srun -c base.json -c outbounds.json` |
-    | Every `.json` file in a folder | `HiddifyCli srun -C /etc/hiddify-core/conf.d` |
-    | Read from standard input | `cat config.json \| HiddifyCli srun -c stdin` |
+    | Several files, merged together | `hiddify-core srun -c base.json -c outbounds.json` |
+    | Every `.json` file in a folder | `hiddify-core srun -C /etc/hiddify-core/conf.d` |
+    | Read from standard input | `cat config.json \| hiddify-core srun -c stdin` |
 
     - **Reload without downtime:** send `SIGHUP`; the new config is checked first.
     - **Stop:** `SIGINT` or `SIGTERM`.
 
 !!! tip "From proxies to a full config you can edit by hand"
-    1. Turn links into sing-box outbounds: `HiddifyCli parse links.txt -o outbounds.json`
-    2. Build the full client config: `HiddifyCli build -c outbounds.json -o config.json`
-    3. Edit `config.json` and run it: `HiddifyCli srun -c config.json`
+    1. Turn links into sing-box outbounds: `hiddify-core parse links.txt -o outbounds.json`
+    2. Build the full client config: `hiddify-core build -c outbounds.json -o config.json`
+    3. Edit `config.json` and run it: `hiddify-core srun -c config.json`
 
 ## What does it add to sing-box? {#differences}
 
@@ -260,7 +261,7 @@ Pick one, depending on what you have:
 
     ---
 
-    Every command and flag of `HiddifyCli`.
+    Every command and flag of `hiddify-core`.
 
 -   :material-star-four-points:{ .lg .middle } [__Features__](features/index.md)
 

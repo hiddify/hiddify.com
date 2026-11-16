@@ -1,6 +1,6 @@
 # چندگانه‌سازی rmux
 
-[همهٔ قابلیت‌های هیدیفای](../index.md)
+[همهٔ قابلیت‌های هیدیفای](../index.md){ .hi-back }
 
 rmux یک پروتکل دیگر برای چندگانه‌سازی (multiplex) در sing-box است: `"multiplex": {"protocol": "rmux"}`
 در یک outbound. مثل `smux`، `yamux` و `h2mux`، چندین اتصال را درون یک اتصال به سرور حمل می‌کند. از

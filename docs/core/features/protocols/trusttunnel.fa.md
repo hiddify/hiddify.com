@@ -1,6 +1,6 @@
 # TrustTunnel
 
-[همهٔ قابلیت‌های هیدیفای](../index.md)
+[همهٔ قابلیت‌های هیدیفای](../index.md){ .hi-back }
 
 TrustTunnel یک پروتکل VPN است که در [trusttunnel.org](https://trusttunnel.org/) منتشر شده. ترافیک
 شما را به‌صورت درخواست‌های HTTP `CONNECT` داخل یک اتصال HTTPS حمل می‌کند؛ با HTTP/2 روی TLS یا با

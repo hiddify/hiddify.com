@@ -2,129 +2,112 @@
 title: How to contribute to this project
 ---
 
+# How to contribute to the Hiddify app
 
-# How to contribute to this project
+The Hiddify app is open source: [github.com/hiddify/hiddify-app](https://github.com/hiddify/hiddify-app). You can help by reporting problems, translating, or changing the code. This page shows each way.
 
-For this, you just need to install git on your system.
+!!! info "Written for Hiddify app 5.9"
+    The commands below match the repository as of version 5.9 (Flutter 3.38.5 or newer).
 
+## Report a problem or suggest a feature
 
-## Install git on the system
-Open one of the following based on your operating system.
+1. Search the [issues](https://github.com/hiddify/hiddify-app/issues?q=is%3Aissue), open and closed. If someone already reported it, add what you know there.
+2. Otherwise open a [new issue](https://github.com/hiddify/hiddify-app/issues/new/choose) and pick **Bug report** or **Feature request**. Write the app version (**Settings › About**), your device and system, and the steps that cause the problem.
+3. Add the logs. How to get them, and how to send a crash report from the app: [Logs and reporting a problem](Logs-and-reporting-a-problem.md). Remove your links, IPs and passwords before you post.
 
-<br>
-<details markdown="1" dir=ltr><summary><b>Install git on Windows</b></summary>
+For a big change, open an issue first and agree on it with the maintainers, before you write code.
 
-- First, go [here](https://git-scm.com/download/win) and download the Windows version.
-- Then unzip the downloaded file and install it.
+## Translate
 
+The app's texts are in [`assets/translations`](https://github.com/hiddify/hiddify-app/tree/main/assets/translations): one file per language, such as `fa.i18n.json`. `en.i18n.json` is the base; every other file has the same keys.
 
+- To fix a translation, edit the file of your language on GitHub (the pencil icon) and send the change as a pull request. GitHub makes the fork and the branch for you.
+- Keep the keys, the `${…}` placeholders and the line breaks (`\n`) as they are; translate only the text.
+- If you work locally, run `make translate` after editing to check the files and regenerate the code.
 
+## Change the code
 
-- Then follow the installation wizard to the end with `Next` and `Yes`. It is recommended not to change the default settings.
+### 1. Get the code
 
+1. On GitHub, open [hiddify/hiddify-app](https://github.com/hiddify/hiddify-app) and click **Fork**. This makes your own copy of the repository under your account.
+2. Clone (download) your fork, and add the original repository as `upstream`:
 
-- By default, the installation location of `git` is in this path.
-
-`C:/Program Files/Git`
-
-- It means that in the next stages, the projects will be placed in this direction. The work is done. 
-
-- To check the version of `git` installed, open `command prompt` and run the following command.
-
-```
-git version
-```
-
-- By default, `git` is installed in the user's `Home` folder.
-
-</details>
-
-<br>
-<details markdown="1" dir=ltr><summary><b>Install git on Mac</b></summary>
-
-- First, go [here](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) and download the Mac version.
-- Then run it. It has a very simple installation.
-- After installation, to check the installed `git` version, open the terminal and run the following command.
-```
-git version
-```
-</details>
-
-<br>
-<details markdown="1" dir=ltr><summary><b>Install git on Linux</b></summary>
-
-In most distributions of the Linux operating system, git is installed by default and you do not need to do anything special. But if you need to install it for any reason, you should search and find the appropriate command for that distribution. Next is the installation command related to the famous Ned distribution.
-
-_**Debian/Ubuntu**_
-```
-sudo apt-get install git-all
+```bash
+git clone https://github.com/<your-username>/hiddify-app.git
+cd hiddify-app
+git remote add upstream https://github.com/hiddify/hiddify-app.git
 ```
 
-_**Fedora**_
-```
-dnf install git-all
+### 2. Install the tools
+
+- [Flutter](https://docs.flutter.dev/get-started/install) 3.38.5 or newer (`flutter --version` shows it), with its tools for your target: Android Studio and the Android SDK for Android; Xcode for iOS and macOS; Visual Studio with "Desktop development with C++" for Windows.
+- `make`, `curl` and `tar`. On Debian or Ubuntu, `make linux-install-deps` installs what a Linux build needs.
+
+### 3. Prepare a platform
+
+Run the command for the platform you build for:
+
+```bash
+make android-prepare     # or: windows-prepare, linux-prepare, macos-prepare, ios-prepare
 ```
 
-_**Arch**_
-```
-pacman -Syu git-all
+It runs `flutter pub get`, generates the code (`dart run build_runner build`) and the translations (`dart run slang`), and downloads the Hiddify Core library for that platform from the [hiddify-core releases](https://github.com/hiddify/hiddify-core/releases). Run it again after you switch branches.
+
+While you work:
+
+- after changing a model, provider or anything with generated code: `make gen`;
+- after changing a translation file: `make translate`.
+
+### 4. Run it
+
+```bash
+flutter devices           # lists phones, emulators and your computer
+flutter run -d <device-id>
 ```
 
-In all distributions, git is installed in the `Home` path of the user.
-- Run this command to check the version of git installed in the terminal.
-```
-git version
-```
-</details>
+A release build for testing: `make android-release` (or `windows-release`, `linux-release`, `macos-release`).
 
-## Using `git` to develop Hiddify app
-- First you need to `fork` the project. For this, if you intend to `fork` the project, execute the following command.
+### 5. Build the core yourself (optional)
 
-```
-git clone https://github.com/hiddify/hiddify-app.git
-```
-- Wait a while for the project files to be copied.
-- Now you have to create a branch of the project to work on it. To do this, first choose a name for the branch. For example, suppose we choose the branch name `Hiddify-develop`. Now run the following commands.
+Only needed if you change Hiddify Core too. The core is the `hiddify-core` submodule; it needs [Go](https://go.dev/dl/):
 
-```
-git branch Hiddify-develop
-git checkout Hiddify-develop
-```
-- Now apply your desired changes to the files using any tool. It is recommended to use `VSCode`.
-- Do not forget that the path of all the files in the mentioned folders is in the installation stage.
-- Now, when you have applied your desired changes, you must also register the changes in `git`. Therefore, run the following commands in the terminal in order.
-- First, announce the changes to `git` with the following command.
-
-```
-git add
+```bash
+git config submodule.hiddify-core.url https://github.com/hiddify/hiddify-core.git   # if you have no SSH key on GitHub
+git submodule update --init --recursive hiddify-core
+make build-android-libs   # or: build-windows-libs, build-linux-libs, build-macos-libs, build-ios-libs
 ```
 
-- Then commit the changes. You need to provide an explanation for the changes here.
-```
-git commit -m "a short description of the change"
-```
-For example, if the changes you are looking for are related to the core department, you can write such an explanation.
-```
-git commit -m "add some features to the core"
-```
+Changes to the core itself go to [hiddify-core](https://github.com/hiddify/hiddify-core) (and [hiddify-sing-box](https://github.com/hiddify/hiddify-sing-box)), as their own pull requests. Don't work around a core bug in the app: fix it in the core, or report it there.
 
-There is no problem if the explanations of this section are many, and by the way, it is recommended that the explanations be as complete and comprehensive as possible.
+### 6. Send your change
 
-At this point, the changes have been successfully imported into the `git` system. Now you need to push the changes to `GitHub`. To do this, run the following command.
+1. Start a branch from the latest code:
 
-```
-git push
-```
+    ```bash
+    git fetch upstream
+    git switch -c fix/short-name upstream/main
+    ```
 
-Here, your GitHub account details will be asked. You need to enter your `username` and `password` on GitHub.
+2. Make one change per branch. Write commit messages in the [Conventional Commits](https://www.conventionalcommits.org/) style, for example `fix(home): keep the connect button disabled while stopping`.
+3. Don't commit generated files (`*.g.dart`, `*.freezed.dart`, the generated translations in `lib/gen`), the downloaded core libraries, the `hiddify-core` submodule pointer, or any real link, IP or key.
+4. Test on Android and on one desktop system.
+5. Bring your branch up to date and push it to your fork:
 
-- Now log in to your GitHub account and open the forked project. It has a path as follows:
+    ```bash
+    git fetch upstream
+    git rebase upstream/main
+    git push -u origin fix/short-name
+    ```
 
-`https://github.com/<your_username>/hiddify-app`
+6. On GitHub, open a **pull request** from your branch to `hiddify/hiddify-app`, base `main`. Say what was wrong, what you changed and how you tested it. For a change you can see, add before and after screenshots or short videos.
 
-- Now you will see a `banner` that informs you that your `branch` is one step ahead of the main project. To `merge` the changes with the main project, click `Contribute` and `Open a pull request`.
-- It's done, the changes have been sent to the project. Now, after the approval of the project manager, your changes will be added to the project.
+## Talk to the team
 
-<br>
+- [Hiddify group on Telegram](https://t.me/hiddify_board) and [channel](https://t.me/hiddify)
+- Email: contribute@hiddify.com
 
-**The app is developed using [Flutter](https://flutter.dev) and [Go](https://go.dev). For more information you can read through our [Contribution Guidelines](https://github.com/hiddify/hiddify-app/blob/main/CONTRIBUTING.md) for development.**
+## Related articles
+
+- [Logs and reporting a problem in the Hiddify app](/app/Logs-and-reporting-a-problem/)
+- [How to use the Hiddify app](/app/How-to-use-Hiddify-app/)
+- [How to install the Hiddify app](/app/How-to-install-Hiddify-app/)

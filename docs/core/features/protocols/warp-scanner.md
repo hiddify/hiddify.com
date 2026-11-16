@@ -1,6 +1,6 @@
 # WARP scanner and noise
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 How a [WARP](warp.md) endpoint finds a way through a network that blocks it: the **endpoint
 scanner** looks for a Cloudflare address and port that answers, **noise** sends a few decoy

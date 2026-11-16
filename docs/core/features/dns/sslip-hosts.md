@@ -1,6 +1,6 @@
 # sslip.io names in the hosts server
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 A name under `sslip.io` carries its own IP address, such as `1-2-3-4.sslip.io` for `1.2.3.4`.
 Hiddify's `hosts` DNS server (`"type": "hosts"` in the `dns.servers` list) reads the address from

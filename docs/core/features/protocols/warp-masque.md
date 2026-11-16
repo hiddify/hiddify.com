@@ -1,6 +1,6 @@
 # WARP over MASQUE
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 WARP over MASQUE connects you to Cloudflare's free WARP VPN with MASQUE, the protocol the
 official WARP apps now use. Your IP packets travel inside an HTTP CONNECT-IP request, over

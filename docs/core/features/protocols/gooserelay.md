@@ -1,6 +1,6 @@
 # GooseRelay
 
-[All Hiddify features](../index.md)
+[All Hiddify features](../index.md){ .hi-back }
 
 GooseRelay sends your traffic through a Google Apps Script web app to your own server. To the
 network, your device only talks HTTPS to a Google address with the name `www.google.com`. It is
