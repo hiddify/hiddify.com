@@ -1,0 +1,5 @@
+# Written by tools/manager_release.py: the Hiddify Manager release the site shows, and the
+# version the settings reference (Settings-reference.md) was made from.
+latest: 14.2.0
+date: '2026-11-06'
+settings_reference: 14.5.0b0

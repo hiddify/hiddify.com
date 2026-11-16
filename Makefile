@@ -17,6 +17,11 @@ docs:
 
 live:
 	@env DEV=true GIT_PLUGINS=false $(MKDOCS) serve --dirtyreload
+# the "All settings" reference of Hiddify Manager, from its code (MANAGER=path of a Hiddify-Manager checkout with submodules)
+MANAGER ?= ../Hiddify-Manager
+manager-settings:
+	python3 scripts/sync_manager_settings.py $(MANAGER)
+
 # merge hiddify-sing-box's docs/hiddify into docs/core (SINGBOX=path of a hiddify-sing-box checkout)
 SINGBOX ?= ../hiddify-sing-box
 core-docs:
@@ -46,7 +51,7 @@ instagram:
 tw:
 	@npx tailwindcss -i ./input.css -o ./docs/assets/css/site.css
 
-.PHONY: all test clean docs core-docs instagram youtube guides guide-pages spelling
+.PHONY: all test clean docs core-docs manager-settings instagram youtube guides guide-pages spelling
 
 
 idx = lunr(ref='location',fields=('title', 'text'),documents={'location':1},languages="fa",)

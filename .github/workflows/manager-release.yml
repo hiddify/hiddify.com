@@ -1,0 +1,89 @@
+# Keeps the site in step with Hiddify Manager releases, in a pull request "manager-release".
+# Once a day (and on demand from the Actions tab) it looks at the latest release of
+# hiddify/Hiddify-Manager. When it is newer than the one the site shows (data/manager/release.yml):
+#   - the "latest version" line of the manager guide page (docs/manager/index.md, index.fa.md);
+#   - the "All settings" reference (Settings-reference.md, made from the release's code), when the
+#     release is at least as new as the version the reference was made from;
+# are updated, and the pull request lists the release notes, the settings that were added or removed,
+# and the panel articles to check against the new version. Merging it deploys the site (workflow "ci").
+#
+# Repo settings needed (same as youtube-sync): "Read and write permissions" and "Allow GitHub Actions
+# to create and approve pull requests".
+name: manager-release
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # every day 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: manager-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml packaging
+
+      - name: Latest Hiddify Manager release
+        id: rel
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/hiddify/Hiddify-Manager/releases/latest > "$RUNNER_TEMP/release.json"
+          tag=$(jq -r .tag_name "$RUNNER_TEMP/release.json")
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "date=$(jq -r .published_at "$RUNNER_TEMP/release.json")" >> "$GITHUB_OUTPUT"
+          python tools/manager_release.py --check "$tag" | tee -a "$GITHUB_OUTPUT"
+
+      - name: Code of the release
+        if: steps.rel.outputs.new == 'true' && steps.rel.outputs.settings == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: hiddify/Hiddify-Manager
+          ref: ${{ steps.rel.outputs.tag }}
+          submodules: recursive
+          path: .manager-src
+
+      - name: Update the site
+        if: steps.rel.outputs.new == 'true'
+        run: |
+          src=""
+          [ -d .manager-src ] && src="--src .manager-src"
+          python tools/manager_release.py --tag "${{ steps.rel.outputs.tag }}" --date "${{ steps.rel.outputs.date }}" $src \
+            | tee "$RUNNER_TEMP/changes.txt"
+          rm -rf .manager-src
+
+      - name: Open or update the pull request
+        if: steps.rel.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${{ steps.rel.outputs.tag }}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B manager-release
+          git add -A docs data
+          git commit -m "Hiddify Manager $tag: latest version and settings reference"
+          git push --force origin manager-release
+          notes=$(jq -r .body "$RUNNER_TEMP/release.json" | head -c 50000)
+          settings=$(grep -E '^settings (added|removed):' "$RUNNER_TEMP/changes.txt" | sed 's/^/- /' || true)
+          body=$(printf '## Hiddify Manager %s\n\nThe manager guide page now shows %s as the latest version.\n\n### Settings reference\n\n%s\n\n### Please check\n\nThe panel articles (Configuration guide and the articles it links to) against the release notes below. Articles written for an older version only: give them `upto:` in data/guides/manager.yml and a notice at the top.\n\n### Release notes\n\n%s\n' \
+            "$tag" "$tag" "${settings:-No settings added or removed (or the reference is made from a newer version).}" "$notes")
+          if gh pr view manager-release --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit manager-release --title "Hiddify Manager $tag" --body "$body"
+          else
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head manager-release \
+              --title "Hiddify Manager $tag" --body "$body"
+          fi
