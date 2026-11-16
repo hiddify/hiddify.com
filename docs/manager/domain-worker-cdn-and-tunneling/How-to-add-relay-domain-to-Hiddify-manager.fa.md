@@ -78,9 +78,16 @@ title: نحوه افزودن سرور (دامنه) میانی به هیدیفا�
 
     نمایش کانفیگ‌های سرور میانی روی دامنه اشتراک:
 
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230" alt="انتخاب دامنه سرور میانی در تنظیمات دامنه اشتراک، نسخه قدیمی پنل">
+    <img src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/gh-3661045d-ced7-4694-916f-6ef160c63230.webp" alt="انتخاب دامنه سرور میانی در تنظیمات دامنه اشتراک، نسخه قدیمی پنل">
 
 ## صفحه‌های مرتبط
 
 - [انواع دامنه و نحوه ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
 - [استفاده از IPv6 برای پایدارتر کردن ارتباط سرور میانی](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/)
+
+## مقاله‌های مرتبط
+
+- [سرور میانی‌ساز هیدیفای (همهٔ روش‌ها)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [روش IP-Tables](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
+- [روش GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [روش WST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)

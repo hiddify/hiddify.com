@@ -85,4 +85,11 @@ title: رفع مشکل ایبوز شدن سرورهای مجازی
 
 به ایمیل ایبوز شرکت میزبانی پاسخ دهید، توضیح دهید چه تغییراتی داده‌اید و بپرسید کدام ترافیک باعث گزارش شده است. همچنین مطمئن شوید خود سرور امن است: [ورود با رمز عبور در SSH را خاموش کنید](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)، چون هک شدن سرور هم یکی از علت‌های رایج گزارش ایبوز است.
 
+## مقاله‌های مرتبط
+
+- [عیب‌یابی مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [تمیز بودن آی‌پی یا دامنه](/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [نشتی DNS](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [نشتی تایم‌زون](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
+
 </div>

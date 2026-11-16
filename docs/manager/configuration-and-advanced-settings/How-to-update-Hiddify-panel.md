@@ -64,3 +64,12 @@ Connect via [SSH to the server](/manager/installation-and-setup/How-to-connect-t
 * `default`: updates to the channel set in the panel (**Package Update Mode** in Settings > Advanced Settings).
 * `release`: updates to the latest stable version. This is the suggested option.
 * `beta`: updates to the latest pre-release version. It may have bugs.
+
+## Related articles
+
+- [Backup and restore](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
+- [Reset to default settings](/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/)
+- [SSH proxy](/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

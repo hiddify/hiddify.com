@@ -20,7 +20,7 @@ title: چگونه نشتی تایم‌زون را بررسی کنیم و از آ
 
 همان‌طور که در تصویر زیر می‌بینید، بدون استفاده از افزونه، یک کد ساده جاوااسکریپت در سایت تایم‌زون ایران را تشخیص می‌دهد. اگر سرور فیلترشکن شما در کشور دیگری باشد، این تفاوت شما را لو می‌دهد.
 
-![تشخیص تایم‌زون ایران در سایت webbrowsertools.com](https://github.com/user-attachments/assets/88378f24-af83-4b20-856a-29aff955219b)
+![تشخیص تایم‌زون ایران در سایت webbrowsertools.com](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-88378f24-af83-4b20-856a-29aff955219b.webp)
 
 ### روش ۲: کنسول مرورگر
 
@@ -33,7 +33,7 @@ title: چگونه نشتی تایم‌زون را بررسی کنیم و از آ
 
 3. کنسول تایم‌زون مرورگر شما را نمایش می‌دهد.
 
-![نمایش تایم‌زون مرورگر در کنسول](https://github.com/user-attachments/assets/50cb908f-1007-4e3e-8a0b-6b506f744302)
+![نمایش تایم‌زون مرورگر در کنسول](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-50cb908f-1007-4e3e-8a0b-6b506f744302.webp)
 
 ## جلوگیری از نشتی تایم‌زون
 
@@ -43,7 +43,7 @@ title: چگونه نشتی تایم‌زون را بررسی کنیم و از آ
 
 افزونه **NoScript** جلوی اجرای جاوااسکریپت را در سایت‌ها می‌گیرد، پس سایت‌ها دیگر نمی‌توانند تایم‌زون شما را بخوانند. آن را برای [Chrome](https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm) یا [Firefox](https://addons.mozilla.org/addon/noscript/) نصب کنید.
 
-![جلوگیری افزونه NoScript از تست تایم‌زون](https://github.com/user-attachments/assets/9b2aeec9-8c40-4106-b9af-2da6195701e1)
+![جلوگیری افزونه NoScript از تست تایم‌زون](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-9b2aeec9-8c40-4106-b9af-2da6195701e1.webp)
 
 توجه کنید که بسیاری از سایت‌ها به جاوااسکریپت نیاز دارند، پس وقتی NoScript فعال است ممکن است بعضی امکانات آن‌ها کار نکند.
 
@@ -58,9 +58,16 @@ title: چگونه نشتی تایم‌زون را بررسی کنیم و از آ
     3. دوباره روی آیکون افزونه راست‌کلیک کنید و **Update Timezone from IP** را بزنید.
     4. هر بار که به سرور فیلترشکنی در کشور دیگری وصل می‌شوید، مرحله ۳ را تکرار کنید.
 
-![تنظیمات افزونه Spoof Timezone](https://github.com/user-attachments/assets/3cffd23f-eaa6-498d-8389-4bf25bc64915)
+![تنظیمات افزونه Spoof Timezone](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-3cffd23f-eaa6-498d-8389-4bf25bc64915.webp)
 
 !!! warning "Spoof Timezone جلوی همه تست‌ها را نمی‌گیرد"
     روش ششم (aggressive) در سایت تست بسیار سخت‌گیرانه است. همان‌طور که در تصویر زیر می‌بینید، حتی با Spoof Timezone هم ممکن است تایم‌زون واقعی شما پیدا شود. افزونه NoScript این روش را کاملاً غیرفعال می‌کند.
 
-![تشخیص تایم‌زون واقعی با روش aggressive با وجود فعال بودن Spoof Timezone](https://github.com/user-attachments/assets/81df96a1-3418-4d10-8b18-3c6a095b3dc9)
+![تشخیص تایم‌زون واقعی با روش aggressive با وجود فعال بودن Spoof Timezone](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-81df96a1-3418-4d10-8b18-3c6a095b3dc9.webp)
+
+## مقاله‌های مرتبط
+
+- [عیب‌یابی مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [تمیز بودن آی‌پی یا دامنه](/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [نشتی DNS](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [تست سرعت سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/)

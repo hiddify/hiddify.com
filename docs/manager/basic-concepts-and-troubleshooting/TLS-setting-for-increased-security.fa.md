@@ -23,7 +23,7 @@ title: تنظیم TLS برای افزایش امنیت
 3. گزینه **Minimum TLS Version** را پیدا کنید و آن را روی **TLS 1.3** بگذارید.
 
 <div align=center markdown=1>
-![تنظیم Minimum TLS Version روی TLS 1.3 در کلادفلر](https://github.com/hiddify/hiddify-config/assets/125398461/69edd121-028f-43f5-87ca-35cb5be00c0f)
+![تنظیم Minimum TLS Version روی TLS 1.3 در کلادفلر](/assets/manager/TLS-setting-for-increased-security/gh-69edd121-028f-43f5-87ca-35cb5be00c0f.webp)
 </div>
 
 **بررسی:** با دستگاهی که روی اپراتور مشکل‌دار است دوباره وصل شوید.
@@ -66,9 +66,16 @@ title: تنظیم TLS برای افزایش امنیت
     4. کامپیوتر را ری‌استارت کنید.
     5. برای بررسی: کلیدهای `Win+R` را بزنید، `regedit` را بنویسید و Enter بزنید. به مسیری که در تصویر زیر می‌بینید بروید. نسخه‌های TLS فعال‌شده آنجا دیده می‌شوند.
 
-    ![کلیدهای SCHANNEL Protocols در رجیستری ویندوز](https://github.com/hiddify/hiddify-config/assets/125398461/53b259f3-267a-4e7f-90b2-8f5ce3a216ca)
+    ![کلیدهای SCHANNEL Protocols در رجیستری ویندوز](/assets/manager/TLS-setting-for-increased-security/gh-53b259f3-267a-4e7f-90b2-8f5ce3a216ca.webp)
 
 !!! warning "هشدار"
     نسخه‌های قبلی این صفحه **SSL 3.0** را هم فعال می‌کردند. SSL 3.0 قدیمی و ناامن است. اگر از آن فایل استفاده کرده‌اید، کلید `SSL 3.0` را در همان مسیر رجیستری پاک کنید.
+
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم DNS سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
 
 </div>

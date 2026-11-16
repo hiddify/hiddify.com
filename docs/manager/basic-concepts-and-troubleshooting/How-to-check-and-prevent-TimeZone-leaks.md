@@ -20,7 +20,7 @@ Websites can read your device's **time zone** (for example `Asia/Tehran`) with a
 
 In the picture below, no extension is used, and simple JavaScript on the site detects the Iran time zone. If your VPN server is in another country, this gives you away.
 
-![webbrowsertools.com detecting the Iran time zone](https://github.com/user-attachments/assets/d9eee13e-b903-4977-ba05-e8707671f2dd)
+![webbrowsertools.com detecting the Iran time zone](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-d9eee13e-b903-4977-ba05-e8707671f2dd.webp)
 
 ### Method 2: the browser console
 
@@ -33,7 +33,7 @@ In the picture below, no extension is used, and simple JavaScript on the site de
 
 3. The console prints your browser's time zone.
 
-![The browser console showing the browser time zone](https://github.com/user-attachments/assets/61a3c169-32f0-47e9-b468-c37e1e1d4a4a)
+![The browser console showing the browser time zone](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-61a3c169-32f0-47e9-b468-c37e1e1d4a4a.webp)
 
 ## How to prevent time zone leaks
 
@@ -43,7 +43,7 @@ There are two recommended methods. After each one, run the test again.
 
 **NoScript** blocks websites from running JavaScript, so they cannot read your time zone. Install it for [Chrome](https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm) or [Firefox](https://addons.mozilla.org/addon/noscript/).
 
-![The NoScript extension blocking the time zone test](https://github.com/user-attachments/assets/2238af19-619d-42ad-a7dc-b6bb7a07e0dd)
+![The NoScript extension blocking the time zone test](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-2238af19-619d-42ad-a7dc-b6bb7a07e0dd.webp)
 
 Keep in mind that many sites need JavaScript, so some features may stop working while NoScript is on.
 
@@ -58,9 +58,16 @@ Keep in mind that many sites need JavaScript, so some features may stop working 
     3. Right-click the extension icon again and choose **Update Timezone from IP**.
     4. Each time you switch to a VPN server in a different country, repeat step 3.
 
-![Spoof Timezone options](https://github.com/user-attachments/assets/dce0eaef-40a3-4079-92f4-4067ea2bbce9)
+![Spoof Timezone options](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-dce0eaef-40a3-4079-92f4-4067ea2bbce9.webp)
 
 !!! warning "Spoof Timezone does not stop every test"
     The sixth ("aggressive") method on the test site is very strict. As the picture below shows, it can still find your real time zone even with Spoof Timezone. NoScript blocks this method completely.
 
-![The aggressive method still detecting the real time zone with Spoof Timezone on](https://github.com/user-attachments/assets/f168398e-5073-4ec3-9994-a83bf53b7cb7)
+![The aggressive method still detecting the real time zone with Spoof Timezone on](/assets/manager/How-to-check-and-prevent-TimeZone-leaks/gh-f168398e-5073-4ec3-9994-a83bf53b7cb7.webp)
+
+## Related articles
+
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [Is the server's IP or domain clean?](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [DNS leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [Server speed test](/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/)

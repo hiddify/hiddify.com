@@ -15,11 +15,11 @@ weight: -60
 ## مراحل
 1. زیردامنه‌های سایتی را که برای Reality استفاده می‌کنید پیدا کنید. می‌توانید از سایت [subdomainfinder.c99.nl](https://subdomainfinder.c99.nl/) استفاده کنید و نام سایت را جستجو کنید. مثلا این [فهرست همه زیردامنه‌های speedtest.net](https://subdomainfinder.c99.nl/scans/2023-11-20/speedtest.net) است.
 
-    ![فهرست زیردامنه‌های speedtest.net در subdomainfinder.c99.nl](https://github.com/hiddify/Hiddify-Manager/assets/125398461/968b94b3-1899-43b2-a45a-19e71379ad17)
+    ![فهرست زیردامنه‌های speedtest.net در subdomainfinder.c99.nl](/assets/manager/How-to-use-subdomains-of-a-website-in-Reality/gh-968b94b3-1899-43b2-a45a-19e71379ad17.webp)
 
     همچنین می‌توانید از سایت [crt.sh](https://crt.sh/) استفاده کنید. مثلا این [زیردامنه‌های mozilla.org](https://crt.sh/?q=mozilla.org)، سایت فایرفاکس، است.
 
-    ![فهرست زیردامنه‌های mozilla.org در crt.sh](https://github.com/hiddify/Hiddify-Manager/assets/125398461/234710c2-dec4-436e-a478-c3bb2b0d2de7)
+    ![فهرست زیردامنه‌های mozilla.org در crt.sh](/assets/manager/How-to-use-subdomains-of-a-website-in-Reality/gh-234710c2-dec4-436e-a478-c3bb2b0d2de7.webp)
 
 2. در منوی کناری پنل، زیر **تنظیمات**، روی **دامنه‌ها** بزنید و دامنه Reality خود را باز کنید.
 3. در فیلد **نام‌های سرور**، زیردامنه‌ها را با کاما `,` جدا از هم وارد کنید. مثلا: `sub1.example.com,sub2.example.com,sub3.example.com`. فقط زیردامنه‌هایی را بگذارید که واقعا به‌عنوان سایت باز می‌شوند.
@@ -27,5 +27,12 @@ weight: -60
 
 ## بعد از آن چه اتفاقی می‌افتد
 هر بار که لینک اشتراک (سابسکریپشن) کاربر به‌روز می‌شود، یکی از این زیردامنه‌ها به عنوان آدرس انتخاب می‌شود. به این شکل ترافیک بین زیردامنه‌ها تقسیم می‌شود. مثلا اگر اپ کاربر هر یک ساعت اشتراک را به‌روز کند، هر ساعت از یک زیردامنه دیگر استفاده می‌کند. این کار احتمال شناسایی سرور توسط سیستم فیلترینگ را کم می‌کند.
+
+## مقاله‌های مرتبط
+
+- [تنظیم ریالتی](/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/)
+- [اسکنر ریالتی هیدیفای](/fa/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [همهٔ تنظیمات پنل، یکی‌یکی](/fa/manager/configuration-and-advanced-settings/Settings-reference/)
 
 </div>

@@ -9,7 +9,7 @@ title: Tutorial for FoXray app
 This page shows you how to add your HiddifyManager subscription to the **FoXray** app on iPhone and iPad and how to use its main settings. FoXray comes from the team behind the WingsX app, and replaced WingsX after WingsX was removed from the App Store.
 
 !!! warning "FoXray is no longer on the App Store"
-    As of October 2026, FoXray's App Store page (id6448898396) no longer exists, so you can't install it any more. If you already have it, the steps below still describe how it works. For a new install, use the **Hiddify App** ([App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532), see [How to install Hiddify App](/app/How-to-install-Hiddify-app/)) or another app from the [iOS client list](/manager/client-software-on-ios/).
+    As of October 2026, FoXray's App Store page (id6448898396) no longer exists, so you can't install it any more. If you already have it, the steps below still describe how it works. For a new install, use the **Hiddify app** ([App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532), see [How to install Hiddify app](/app/How-to-install-Hiddify-app/)) or another app from the [iOS client list](/manager/client-software-on-ios/).
 
 ## Before you start
 
@@ -25,27 +25,27 @@ A **subscription link** is one link that holds all your connection settings (con
 3. In the **Subscription Links** section, find **Subscription link b64** and tap **Get Link**.
 4. Tap **Copy Link**.
 
-    <img style="display:block;margin:0 auto" width=30% alt="FoXray section on an older version of the user page" src="https://github.com/hiddify/hiddify-config/assets/125398461/69e8b710-9f38-444b-a3ce-e9acef54b8c8" />
+    <img style="display:block;margin:0 auto" width=30% alt="FoXray section on an older version of the user page" src="/assets/manager/Tutorial-for-FoXray-app/gh-69e8b710-9f38-444b-a3ce-e9acef54b8c8.webp" />
 
     The screenshot shows an older version of the user page, which had an **iOS** tab. The current page looks different.
 
 5. Open FoXray and tap **Subscriptions** in the bottom menu.
 6. Tap the **+** button.
 
-    <img style="display:block;margin:0 auto" width=30% alt="The + button in Subscriptions" src="https://github.com/hiddify/hiddify-config/assets/125398461/f68c3805-989c-434d-b249-b2dea19ec332"/>
+    <img style="display:block;margin:0 auto" width=30% alt="The + button in Subscriptions" src="/assets/manager/Tutorial-for-FoXray-app/gh-f68c3805-989c-434d-b249-b2dea19ec332.webp"/>
 
 7. Type any name you like.
 8. Paste the link into the **URL** field.
 9. Tap **Subscribe**. Your configs are added to the app.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Name and URL fields" src="https://github.com/hiddify/hiddify-config/assets/125398461/f9118614-a8bf-42ae-9341-62c79fd7ffd9" />
+    <img style="display:block;margin:0 auto" width=30% alt="Name and URL fields" src="/assets/manager/Tutorial-for-FoXray-app/gh-f9118614-a8bf-42ae-9341-62c79fd7ffd9.webp" />
 
 ## Update your subscription
 
 In the **Subscriptions** menu, tap the `↪️` icon. Your links are updated.
 
 <div align=center markdown=1>
-<img width=30% alt="Update icon" src="https://github.com/hiddify/hiddify-config/assets/125398461/9a899074-d180-47a4-9eed-cd56dcef3954" />
+<img width=30% alt="Update icon" src="/assets/manager/Tutorial-for-FoXray-app/gh-9a899074-d180-47a4-9eed-cd56dcef3954.webp" />
 </div>
 
 ## Add a subscription with a QR code
@@ -54,7 +54,7 @@ In the **Subscriptions** menu, tap the `↪️` icon. Your links are updated.
 2. Point the camera at the QR code of the link or config. It is added to the app.
 
 <div align=center markdown=1>
-<img width=30% alt="QR code button" src="https://github.com/hiddify/hiddify-config/assets/125398461/cc0afd0b-5bb5-4215-808c-d9a7e7175dac" />
+<img width=30% alt="QR code button" src="/assets/manager/Tutorial-for-FoXray-app/gh-cc0afd0b-5bb5-4215-808c-d9a7e7175dac.webp" />
 </div>
 
 If the QR code is saved as a photo on your phone:
@@ -63,7 +63,7 @@ If the QR code is saved as a photo on your phone:
 2. Choose the photo. The configs are added.
 
 <div align=center markdown=1>
-<img width=30% alt="Photo button" src="https://github.com/hiddify/hiddify-config/assets/125398461/1c3dfddc-b922-4c93-bb25-256c3fc39339" />
+<img width=30% alt="Photo button" src="/assets/manager/Tutorial-for-FoXray-app/gh-1c3dfddc-b922-4c93-bb25-256c3fc39339.webp" />
 </div>
 
 ## Add a single config
@@ -74,7 +74,7 @@ We don't recommend this, because a single config can't be updated. Use it only i
 2. In FoXray, tap the **Clipboard** icon in the FoXray menu. The copied config is added.
 
 <div align=center markdown=1>
-<img width=30% alt="Clipboard icon" src="https://github.com/hiddify/hiddify-config/assets/125398461/02be5d9c-3894-438e-be9b-072489033f2d" />
+<img width=30% alt="Clipboard icon" src="/assets/manager/Tutorial-for-FoXray-app/gh-02be5d9c-3894-438e-be9b-072489033f2d.webp" />
 </div>
 
 ## Test the connections
@@ -85,13 +85,13 @@ First choose the test type:
 2. Under **PingType**, choose **TCPPing**, **TLSPing** or **RealPing**. **RealPing** gives the most realistic result.
 
 <div align=center markdown=1>
-<img width=30% alt="PingType setting" src="https://github.com/hiddify/hiddify-config/assets/125398461/b6940f2e-5b0d-4c40-a1ab-36ccd6b532d7" />
+<img width=30% alt="PingType setting" src="/assets/manager/Tutorial-for-FoXray-app/gh-b6940f2e-5b0d-4c40-a1ab-36ccd6b532d7.webp" />
 </div>
 
 Then, on the main page of the app, tap the connection test icon.
 
 <div align=center markdown=1>
-<img width=30% alt="Connection test icon" src="https://github.com/hiddify/hiddify-config/assets/125398461/6851f393-45a1-4cdd-ab77-d09119a99476" />
+<img width=30% alt="Connection test icon" src="/assets/manager/Tutorial-for-FoXray-app/gh-6851f393-45a1-4cdd-ab77-d09119a99476.webp" />
 </div>
 
 ## Limit memory use
@@ -99,7 +99,7 @@ Then, on the main page of the app, tap the connection test icon.
 Go to **Setting**, then **ToolBox**, and turn on **Limit Memory Usage**.
 
 <div align=center markdown=1>
-<img width=30% alt="Limit Memory Usage" src="https://github.com/hiddify/hiddify-config/assets/125398461/7f0f8830-5b95-4d1a-9afb-7337309238ff" />
+<img width=30% alt="Limit Memory Usage" src="/assets/manager/Tutorial-for-FoXray-app/gh-7f0f8830-5b95-4d1a-9afb-7337309238ff.webp" />
 </div>
 
 ## Add a DNS server
@@ -113,7 +113,7 @@ A **DNS server** turns website names into IP addresses.
 5. Leave the other fields as they are and save.
 
 <div align=center markdown=1>
-<img width=30% alt="Default DNS Address field" src="https://github.com/hiddify/hiddify-config/assets/125398461/888f5e36-bf2b-4534-9918-dfd1f4fe2ed1" />
+<img width=30% alt="Default DNS Address field" src="/assets/manager/Tutorial-for-FoXray-app/gh-888f5e36-bf2b-4534-9918-dfd1f4fe2ed1.webp" />
 </div>
 
 ## Premium features
@@ -125,7 +125,7 @@ The following features are only available if you bought the premium version of t
 Go to **Setting** and turn on **Auto Update Subscription**.
 
 <div align=center markdown=1>
-<img width=30% alt="Auto Update Subscription" src="https://github.com/hiddify/hiddify-config/assets/125398461/24534c01-ff41-49fc-acb2-4daa47d36635" />
+<img width=30% alt="Auto Update Subscription" src="/assets/manager/Tutorial-for-FoXray-app/gh-24534c01-ff41-49fc-acb2-4daa47d36635.webp" />
 </div>
 
 ### Always On
@@ -133,7 +133,7 @@ Go to **Setting** and turn on **Auto Update Subscription**.
 Go to **Setting**, then **Pro ToolBox**, and turn on **Always On**. Your VPN then stays on all the time.
 
 <div align=center markdown=1>
-<img width=30% alt="Pro ToolBox options" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab49fa85-742a-4002-afee-6f518146d9a4" />
+<img width=30% alt="Pro ToolBox options" src="/assets/manager/Tutorial-for-FoXray-app/gh-ab49fa85-742a-4002-afee-6f518146d9a4.webp" />
 </div>
 
 ### Show the server location
@@ -163,7 +163,7 @@ In **Setting** → **Pro ToolBox**, turn on **Test Outbound before Start**. The 
     ```
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/184d50de-95c8-4086-a2df-6e01c5c5f6fc" alt="Fragment settings in FoXray" width="30%" />
+<img src="/assets/manager/Tutorial-for-FoXray-app/gh-184d50de-95c8-4086-a2df-6e01c5c5f6fc.webp" alt="Fragment settings in FoXray" width="30%" />
 
 </div>
 
@@ -172,5 +172,12 @@ Depending on your internet provider, you may need other values. You can also cha
 ```text
 packets: 1-3
 ```
+
+## Related articles
+
+- [sing-box](/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/manager/client-software-on-ios/Tutorial-for-Streisand/)
+- [V2Box](/manager/client-software-on-ios/Tutorial-for-V2Box-app/)
+- [Shadowrocket](/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/)
 
 </div>

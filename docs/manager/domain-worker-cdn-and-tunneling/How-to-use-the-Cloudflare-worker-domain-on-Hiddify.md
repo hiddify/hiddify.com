@@ -61,4 +61,11 @@ Then ask your users to update the subscription in their app.
 !!! note "Free plan limit"
     On Cloudflare's free plan, Workers handle 100,000 requests a day. This is not enough for a server with many users.
 
+## Related articles
+
+- [Set up a worker by hand](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+
 </div>

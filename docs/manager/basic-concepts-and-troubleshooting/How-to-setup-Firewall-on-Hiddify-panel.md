@@ -14,7 +14,7 @@ A **firewall** is software or hardware that controls which network traffic may r
 
 <div align=center markdown=1>
 
-![How a firewall works](https://github.com/hiddify/hiddify-config/assets/125398461/2b7c93f0-b868-43c6-8e89-60b36ddb6fb8)
+![How a firewall works](/assets/manager/How-to-setup-Firewall-on-Hiddify-panel/gh-2b7c93f0-b868-43c6-8e89-60b36ddb6fb8.webp)
 
 </div>
 
@@ -98,5 +98,12 @@ Remember that online ping tests will fail while ping is blocked. Use a TCP test 
 - **You can't connect over SSH after turning on the firewall:** HiddifyManager opens port `22` and the port your SSH server is using when the firewall rules are applied. If you changed the SSH port afterwards, apply the panel's configuration again, or log in through your hosting provider's web console and run `hiddify apply`.
 - **Another program on the server stopped working:** its port is closed. Open it by hand as shown above.
 - **A port you opened by hand is closed again after a reboot:** you did not save the rules. Run `netfilter-persistent save`.
+
+## Related articles
+
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+- [Set the server's DNS](/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
 
 </div>

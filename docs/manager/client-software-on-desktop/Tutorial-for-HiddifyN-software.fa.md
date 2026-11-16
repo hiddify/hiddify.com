@@ -5,8 +5,11 @@ title: آموزش کار با نرم‌افزار HiddifyN
 <div dir=rtl markdown=1>
 # آموزش کار با نرم‌افزار HiddifyN
 
+!!! warning "HiddifyN دیگر توسعه داده نمی‌شود"
+    HiddifyN یکی از اپ‌های قدیمی هیدیفای است. دیگر توسعه داده نمی‌شود و به‌روز نمی‌شود، و ممکن است پروتکل‌ها و قابلیت‌های جدید هیدیفای‌منیجر در آن کار نکنند. [اپ هیدیفای](/fa/app/) جای آن را گرفته و روی اندروید، iOS، ویندوز، مک و لینوکس کار می‌کند: [نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/) را ببینید. این صفحه برای کسانی نگه داشته شده که هنوز از HiddifyN استفاده می‌کنند.
+
 <!--
-برای استفاده از HiddifyN در پنل کاربری در قسمت دسکتاپ روی HiddifyN کلیک کنین دو قسمت برای ما نمایش داده خواهد شد قسمت اول برای نصب نرم افزار ویندوز هست که وقتی روش کلیک کنین نرم افزار رو دانلود می کنه که بعد از دانلود باید محتویات موجود در فایل فشرده رو از حالت فشرده خارج کنید و نرم افزار رو اجرا کنید، بعد از نصب نرم افزار روی قسمت دوم  جایی که نوشته شده کلیک برای افزودن کانفیگ کنید تا به صورت اتوماتیک اشتراک به نرم افزار افزوده شود. 
+برای استفاده از HiddifyN در پنل کاربری در قسمت دسکتاپ روی HiddifyN کلیک کنین دو قسمت برای ما نمایش داده خواهد شد قسمت اول برای نصب نرم‌افزار ویندوز هست که وقتی روش کلیک کنین نرم‌افزار رو دانلود می‌کنه که بعد از دانلود باید محتویات موجود در فایل فشرده رو از حالت فشرده خارج کنید و نرم‌افزار رو اجرا کنید، بعد از نصب نرم‌افزار روی قسمت دوم جایی که نوشته شده کلیک برای افزودن کانفیگ کنید تا به صورت اتوماتیک اشتراک به نرم‌افزار افزوده شود. 
 -->
 
 این نرم‌افزار بر پایه Xray توسعه داده شده است و دارای قابلیت‌های فراوانی است که در ادامه بررسی می‌شوند.
@@ -15,7 +18,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 برای دانلود برنامه در پنل کاربری خود، تب مربوط به دسکتاپ را باز کنید و بخش مربوط به HiddifyN را باز کنید و سپس روی آیکون ویندوز (دکمه شماره ۳) بزنید تا برنامه دانلود شود.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/86bedd2c-8186-445e-8860-7d1138f081e4" />
+<img alt="دانلود هیدیفای‌ان از پنل کاربری" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-86bedd2c-8186-445e-8860-7d1138f081e4.webp" />
 </div>
 
 ## نصب برنامه
@@ -25,7 +28,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 در پنل کاربری مجددا به بخش HiddifyN بروید و روی `کلیک برای افزودن کانفیگ` بزنید تا کانفیگ‌ها به صورت خودکار به برنامه اضافه شوند.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/502ebb27-b314-411a-9bdc-976c68542eea" />
+<img alt="وارد کردن کانفیگ‌ها از پنل کاربری" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-502ebb27-b314-411a-9bdc-976c68542eea.webp" />
 </div>
 
 
@@ -33,7 +36,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 یکی از مهم‌ترین بخش‌های این اپلیکیشن، حالت‌های پروکسی است که در ادامه درباره هر قسمت آن توضیح داده خواهد شد.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/6d50dc2b-f0a1-43a3-87cd-a65de0c9991e" />
+<img alt="حالت‌های پروکسی هیدیفای‌ان" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-6d50dc2b-f0a1-43a3-87cd-a65de0c9991e.webp" />
 </div>
 
 #### Auto/Smart
@@ -45,18 +48,18 @@ title: آموزش کار با نرم‌افزار HiddifyN
 #### Manual
 برای تنظیم کانفیگ‌ها به صورت دستی استفاده می‌شود. با کلیک روی آن، تنظیمات پیشرفته برنامه باز می‌گردد که در ادامه بیشتر توضیح داده خواهد شد.
 
-##  تغییر زبان نرم‌افزار
+## تغییر زبان نرم‌افزار
 برای تغییر زبان نرم‌افزار روی منوی مشخص شده در تصویر زیر بزنید و زبان را انتخاب کنید. سپس یک بار برنامه را ببندید و مجددا باز کنید.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/42a4aecf-1cd0-4d20-86cc-e245828a0d93" />
+<img alt="تغییر زبان نرم‌افزار" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-42a4aecf-1cd0-4d20-86cc-e245828a0d93.webp" />
 </div>
 
 ## تغییر تم نرم‌افزار
 برای تغییر تم نرم‌افزار روی دکمه مشخص شده کلیک کنید.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/b4318d50-8ee1-4724-b2da-0112530dd76d" />
+<img alt="تغییر پوستهٔ نرم‌افزار" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-b4318d50-8ee1-4724-b2da-0112530dd76d.webp" />
 </div>
 
 
@@ -64,7 +67,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 در بخش نمایش داده شده در زیر اطلاعات مربوط به پروفایل کاربری ایمپورت شده از جمله زمان انقضا و میزان حجم کلی و همینطور حجم مصرف شده نمایش داده می‌شود.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/94dac157-fd58-4c0c-8df7-3c797b75ae80" />
+<img alt="اطلاعات پروفایل کاربر" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-94dac157-fd58-4c0c-8df7-3c797b75ae80.webp" />
 </div>
 
 در این قسمت می‌توانید پروفایل‌های جدید را به صورت دستی نیز اضافه نمایید. کافیست روی `Import` بزنید و لینک کپی شده از پنل را کاربری را اضافه نمایید.
@@ -73,24 +76,24 @@ title: آموزش کار با نرم‌افزار HiddifyN
 برای اتصال به فیلترشکن باید روی دکمه دایره‌ای وسط کلیک کنید. نرم‌افزار بر اساس حالت پروکسی انتخاب شده به کانفیگ‌ها متصل می‌گردد همچنین پینگ مربوط به کانفیگ در کنار این دکمه نمایش داده می‌شود.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/a994a47b-6751-4d6d-9302-684ea7e35680" />
+<img alt="دکمهٔ گرد اتصال در وسط" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-a994a47b-6751-4d6d-9302-684ea7e35680.webp" />
 </div>
 
 ## تنظیمات پیشرفته برنامه
 این بخش با زدن دکمه Manual در قسمت حالت پروکسی باز می‌شود.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/d04a7717-0072-4912-9154-2633ab4dddbd" />
+<img alt="بخش حالت دستی پروکسی" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-d04a7717-0072-4912-9154-2633ab4dddbd.webp" />
 </div>
 
-<details><summary><h4>۱. Settings</h4></summary>
+<details markdown="1"><summary><h4>۱. Settings</h4></summary>
 تنظیمات پیشرفته برنامه در این قسمت قرار دارد.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/0f546c7b-3371-4915-8031-088c89c69e38" />
+<img alt="تنظیمات پیشرفتهٔ هیدیفای‌ان" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-0f546c7b-3371-4915-8031-088c89c69e38.webp" />
 </div>
 
-<details><summary><h6>Option setting</h6></summary>
+<details markdown="1"><summary><h6>Option setting</h6></summary>
 
 در این زیربخش تنظیمات اختیاری برنامه قرار دارد که خود شامل چند بخش متفاوت است.
 
@@ -99,17 +102,17 @@ title: آموزش کار با نرم‌افزار HiddifyN
 که برای استفاده روزمره چندان نیاز به تغییر در این قسمت نیست. تنها آپشن پرکاربرد شاید پورت استفاده شده برای برنامه باشد که در این بخش قابل تغییر است.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/1ca46870-cc5e-4102-9a76-8057fa086d73" />
+<img alt="پورت و تنظیمات عمومی" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-1ca46870-cc5e-4102-9a76-8057fa086d73.webp" />
 </div>
 
-اگر نیاز به استفاده از پروکسی دارید می‌توانید پروکسی socks5  را روی این پورت تنظیم نمایید.
+اگر نیاز به استفاده از پروکسی دارید می‌توانید پروکسی socks5 را روی این پورت تنظیم نمایید.
 
 * تنظیمات V2rayN
 
 در این بخش تنظیمات دیفالت برنامه V2rayN که پایه اصلی برنامه HIddifyN است، قرار دارد.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/462a56f3-6d74-44ff-9301-226b22f51200" />
+<img alt="تنظیمات پیش‌فرض V2rayN" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-462a56f3-6d74-44ff-9301-226b22f51200.webp" />
 </div>
 
 > * که Start on boot برنامه را با بالا آمدن سیستم اجرا می‌کند.
@@ -118,7 +121,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 > * همچنین سایر در تنظیمات که در تصویر زیر می‌بینید که البته برای استفاده روزمره مورد استفاده قرار نمی‌گیرند.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/00b5c622-ab35-42e3-b030-5578458ad0cd" />
+<img alt="تنظیمات دیگر که روزمره استفاده نمی‌شوند" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-00b5c622-ab35-42e3-b030-5578458ad0cd.webp" />
 </div>
 
 
@@ -128,7 +131,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/69b71ac5-dae9-4dca-a937-3cd68719c84c" />
+<img alt="تنظیمات سیستم پروکسی" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-69b71ac5-dae9-4dca-a937-3cd68719c84c.webp" />
 </div>
 
 * تنظیمات حالت Tun
@@ -136,7 +139,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 این قسمت شامل تنظیمات حالت Tun است که برای استفاده روزمره نیاز به تغییر ندارد.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/c17b612a-eff6-4d9c-bb86-2183b5c5756f" />
+<img alt="تنظیمات حالت Tun" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-c17b612a-eff6-4d9c-bb86-2183b5c5756f.webp" />
 </div>
 
 
@@ -145,7 +148,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 در این بخش می‌توانید برای پروتکل‌های مختلف هسته‌ها را تنظیم نمایید که دیفالت آن Xray است.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/602fa4bf-1d18-4855-9eb9-d212c4fbf223" />
+<img alt="انتخاب هسته برای هر پروتکل" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-602fa4bf-1d18-4855-9eb9-d212c4fbf223.webp" />
 </div>
 
 </details>
@@ -155,7 +158,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/b87ec29b-ae7d-4e63-8a7f-d33b53a5c3f7" />
+<img alt="مسیریابی پروفایل واردشده" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-b87ec29b-ae7d-4e63-8a7f-d33b53a5c3f7.webp" />
 </div>
 
 
@@ -164,7 +167,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/d7ca0641-bab2-450b-9510-d21dfcb8e75d" />
+<img alt="تنظیمات DNS" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-d7ca0641-bab2-450b-9510-d21dfcb8e75d.webp" />
 </div>
 
 
@@ -189,7 +192,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 این بخش مربوط به لینک‌های سابسکریپشن می‌باشد. با زدن این دکمه می‌توانید لینک‌های اضافه شده به برنامه را مشاهده کنید و آن‌ها را ویرایش نمایید.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/6e244634-0a3f-4c89-b2fb-8525f79b0bae" />
+<img alt="بخش لینک‌های اشتراک" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-6e244634-0a3f-4c89-b2fb-8525f79b0bae.webp" />
 </div>
 
 
@@ -210,7 +213,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 
 
 ## رفع مشکلات شایع
-### حل مشکل عدم کارکرد کانفیگ های ریالتی
+### حل مشکل عدم کارکرد کانفیگ‌های ریالتی
 درصورتی که بعد از وارد کردن لینک سابسکریپشن با مشکل کار نکردن ریالتی و یا پینگ `1-` مواجه شدید 
 به `تنظیمات پیشرفته` رفته و از مسیر زیر  `TLS`  را روی `1.3` قرار دهید.
 
@@ -220,23 +223,23 @@ title: آموزش کار با نرم‌افزار HiddifyN
 </div>
 
 <div align=center markdown=1>
-![V2rayN settings](https://github.com/hiddify/hiddify-config/assets/125398461/1e0df0d2-508e-4a6a-91da-79a015947fd5)
+![V2rayN settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-1e0df0d2-508e-4a6a-91da-79a015947fd5.webp)
 </div>
 
 و درنهایت `Confirm` را بزنید. 
 
 ### بهبود عملکرد با آپدیت‌های غیررسمی
-برای بهبود عملکرد و همچنین آپدیت بودن هسته های مورد نیاز برنامه همچون Xray, SingBox به همان مسیر گفته شده بروید. 
+برای بهبود عملکرد و همچنین آپدیت بودن هسته‌های مورد نیاز برنامه همچون Xray, SingBox به همان مسیر گفته شده بروید. 
 
 <div align=center markdown=1>
-![Pre-release updates](https://github.com/hiddify/hiddify-config/assets/125398461/6bbc59ef-05a8-445d-80df-22222faa1f53)
+![Pre-release updates](/assets/manager/Tutorial-for-HiddifyN-software/gh-6bbc59ef-05a8-445d-80df-22222faa1f53.webp)
 
 </div>
 
 گزینه   `Check for pre-release update` را فعال کنید و سپس از طریق گزینه `Check update` هسته‌ها را آپدیت کنید.
 
 <div align=center markdown=1>
-![check for update](https://github.com/hiddify/hiddify-config/assets/125398461/8ea188b9-e240-48a9-96a8-a1473a9346d3)
+![check for update](/assets/manager/Tutorial-for-HiddifyN-software/gh-8ea188b9-e240-48a9-96a8-a1473a9346d3.webp)
 
 
 </div>
@@ -247,7 +250,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 
 
 <div align=center markdown=1>
-![SingBox core](https://github.com/hiddify/hiddify-config/assets/125398461/c2f94432-0168-40e9-8d8d-43baa2faf0f7)
+![SingBox core](/assets/manager/Tutorial-for-HiddifyN-software/gh-c2f94432-0168-40e9-8d8d-43baa2faf0f7.webp)
 
 </div>
 
@@ -259,7 +262,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 </div>
 
 <div align=center markdown=1>
-![TunMode settings](https://github.com/hiddify/hiddify-config/assets/125398461/af2b9542-e8b2-49e9-932e-b247ef8dc5af)
+![TunMode settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-af2b9542-e8b2-49e9-932e-b247ef8dc5af.webp)
 
 
 </div>
@@ -277,7 +280,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 -->
 
 ### مجزا کردن ترافیک داخلی یا مستقیم کردن ترافیک سایت‌های داخلی
-اگر علیرغم استفاده از پروفایل‌ `Lite` یا سبزرنگ که در پنل آماده شده است، نیاز داشتید که ترافیک سایت دیگری را بدون عبور از فیلترشکن به مقصد بفرستید، به دو روش می‌توانید این کار را انجام دهید.
+اگر علیرغم استفاده از پروفایل `Lite` یا سبزرنگ که در پنل آماده شده است، نیاز داشتید که ترافیک سایت دیگری را بدون عبور از فیلترشکن به مقصد بفرستید، به دو روش می‌توانید این کار را انجام دهید.
 
 #### با استفاده از تنظیمات System proxy
 
@@ -291,7 +294,7 @@ title: آموزش کار با نرم‌افزار HiddifyN
 در اینجا آدرس‌های مورد نظر خود را که می‌خواهید از فیلترشکن عبور نکنند وارد کنید. بین هر آدرس از `;` استفاده نمایید.
 
 <div align=center markdown=1>
-![proxy settings](https://github.com/hiddify/hiddify-config/assets/125398461/4c3a9fe5-d641-41e6-8bd1-bd7bfdee19d2)
+![proxy settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-4c3a9fe5-d641-41e6-8bd1-bd7bfdee19d2.webp)
 
 </div>
 
@@ -306,15 +309,21 @@ title: آموزش کار با نرم‌افزار HiddifyN
 </div>
 
 <div align=center markdown=1>
-![Routing settings](https://github.com/hiddify/hiddify-config/assets/125398461/acbd0ec2-104a-4b69-a69b-7f37f35ce5a6)
+![Routing settings](/assets/manager/Tutorial-for-HiddifyN-software/gh-acbd0ec2-104a-4b69-a69b-7f37f35ce5a6.webp)
 
 </div>
 
 همانطور که می‌بینید با ایمپورت کردن پروفایل Lite یا سبزرنگ، رول‌های عبور سایت‌های داخلی در اینجا اضافه شده‌اند. اگر خواستید این حالت را به صورت دستی انجام دهید و سایت‌های مدنظر خود را قرار دهید، 
 * برای این کار گزینه enable `Enable advanced function` را خاموش کنید.
-*  سپس گزینه `direct domain or IP` را انتخاب کنید.
+* سپس گزینه `direct domain or IP` را انتخاب کنید.
 * می‌توانید دامنه مورد نظر خود را وارد کنید. برای جداسازی چندین سایت از `,` استفاده نمایید.
-* می‌توانید از طریق گزینه `block domain or ip` دامنه های مورد نظرو خود را بلاک کنید.
+* می‌توانید از طریق گزینه `block domain or ip` دامنه‌های موردنظر خود را بلاک کنید.
 
+## مقاله‌های مرتبط
+
+- [V2rayNG](/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
 
 </div>

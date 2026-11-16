@@ -9,8 +9,8 @@ title: آموزش کار با نرم‌افزار Fair VPN
 
 در این صفحه یاد می‌گیرید چطور لینک اشتراک هیدیفای‌منیجر خود را به برنامه رایگان **Fair VPN** در آیفون و آیپد اضافه کنید، کانفیگ‌ها را تست کنید و VPN خود را با دستگاه‌های دیگر به اشتراک بگذارید.
 
-!!! tip "پیشنهاد ما: Hiddify App"
-    ساده‌ترین برنامه برای سرور هیدیفای‌منیجر، برنامه رایگان **Hiddify App** است. آن را از [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) نصب کنید. راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/).
+<div class="hi-get"><img class="ico" src="/assets/logos/apps/fairvpn.webp" alt="Fair VPN"><div class="meta"><b>Fair VPN</b><small><span>v1.3.4</span><span>iOS 12+</span><span>رایگان</span><span>آبان ۱۴۰۵</span></small></div><div class="stores"><a class="hi-store" href="https://apps.apple.com/us/app/fair-vpn/id1533873488"><img src="/assets/logos/apple-white.svg" alt=""><span><small>Download on the</small><b>App Store</b></span></a></div></div>
+<a class="hi-alt" href="/fa/app/How-to-install-Hiddify-app/"><span class="mk"><img src="/assets/logos/hiddify-mark-white.svg" alt=""></span><span><b>پیشنهاد ما: اپ هیدیفای</b><small>رایگان، ساده‌تر و با پشتیبانی از همهٔ پروتکل‌های هیدیفای‌منیجر</small></span><span class="go">نصب اپ ←</span></a>
 
 ## پیش از شروع
 
@@ -21,6 +21,11 @@ title: آموزش کار با نرم‌افزار Fair VPN
 
 ## دریافت لینک اشتراک
 
+در صفحهٔ کاربری، دکمهٔ گرد بزرگ را بزنید. در پایین پنجرهٔ باز شده، زیر **ورود دستی**، دکمهٔ **کپی لینک** لینک اشتراک را کپی می‌کند. این برنامه در فهرست برنامه‌های صفحهٔ کاربری نیست، برای همین از این دکمه استفاده کنید.
+
+<img width=300 alt="Fair VPN در صفحهٔ کاربری" src="/assets/manager/Tutorial-for-Fair-VPN-app/fa-user-app.webp" style="display:block;margin:0 auto">
+
+
 Fair VPN در فهرست برنامه‌های صفحه کاربری هیدیفای‌منیجر نیست؛ بنابراین لینک را دستی اضافه می‌کنید.
 
 1. لینک صفحه کاربری خود را باز کنید.
@@ -28,7 +33,7 @@ Fair VPN در فهرست برنامه‌های صفحه کاربری هیدیف�
 3. در بخش «لینک‌های اشتراک»، ردیف **Subscription link b64** را پیدا کنید و «دریافت لینک» را بزنید. پنجره کوچکی با یک QR code و دکمه «کپی لینک» باز می‌شود.
 
 <div align=center markdown=1>
-<img width=30% alt="لینک اشتراک در نسخه قدیمی صفحه کاربری" src="https://github.com/hiddify/hiddify-config/assets/125398461/1e4b67ca-ad95-43e1-b9d1-76af7e007822" />
+<img width=300 alt="«همهٔ تنظیمات» در صفحهٔ کاربری" src="/assets/manager/Tutorial-for-Fair-VPN-app/fa-user-configs.webp" style="display:block;margin:0 auto">
 </div>
 
 !!! note "نکته"
@@ -40,15 +45,15 @@ Fair VPN در فهرست برنامه‌های صفحه کاربری هیدیف�
 
 1. «کپی لینک» را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="دکمه کپی" src="https://github.com/hiddify/hiddify-config/assets/125398461/564d5f43-f2dd-4e0c-a79a-a2042a2db738" />
+    <img style="display:block;margin:0 auto" width=30% alt="دکمه کپی" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-564d5f43-f2dd-4e0c-a79a-a2042a2db738.webp" />
 
 2. برنامه Fair VPN را باز کنید. در تب `VPN` روی `Import VPN Configs` بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Import VPN Configs" src="https://github.com/hiddify/hiddify-config/assets/125398461/3631c51e-15d7-44a6-bda0-c8df0b61c9d0" />
+    <img style="display:block;margin:0 auto" width=30% alt="Import VPN Configs" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-3631c51e-15d7-44a6-bda0-c8df0b61c9d0.webp" />
 
 3. لینک را بچسبانید و `OK` را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="چسباندن لینک و زدن OK" src="https://github.com/hiddify/hiddify-config/assets/125398461/16c4e038-ab2f-4f01-86d6-8ed147180c93" />
+    <img style="display:block;margin:0 auto" width=30% alt="چسباندن لینک و زدن OK" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-16c4e038-ab2f-4f01-86d6-8ed147180c93.webp" />
 
 بعد از چند ثانیه کانفیگ‌ها به برنامه اضافه می‌شوند.
 
@@ -58,11 +63,11 @@ Fair VPN در فهرست برنامه‌های صفحه کاربری هیدیف�
 
 1. در Fair VPN، تب `VPN` را باز کنید و از منوی پایین `Add VPN by QR Code` را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Add VPN by QR Code" src="https://github.com/hiddify/hiddify-config/assets/125398461/1107964d-22ff-4fd8-854c-32c09be13b1e" />
+    <img style="display:block;margin:0 auto" width=30% alt="Add VPN by QR Code" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-1107964d-22ff-4fd8-854c-32c09be13b1e.webp" />
 
 2. دوربین گوشی را روی QR code صفحه کاربری بگیرید. کانفیگ‌ها مثل روش ۱ اضافه می‌شوند.
 
-    <img style="display:block;margin:0 auto" width=30% alt="اسکن QR code" src="https://github.com/hiddify/hiddify-config/assets/125398461/a6629f69-cdcc-404f-a8e0-f099a58a290c" />
+    <img style="display:block;margin:0 auto" width=30% alt="اسکن QR code" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-a6629f69-cdcc-404f-a8e0-f099a58a290c.webp" />
 
 ## تست کانفیگ‌ها
 
@@ -72,7 +77,7 @@ Fair VPN در فهرست برنامه‌های صفحه کاربری هیدیف�
 برنامه از طریق هر کانفیگ یک تست واقعی انجام می‌دهد و نتیجه را کنار آن نشان می‌دهد. **Latency** (تأخیر) مدت زمان رسیدن پاسخ است؛ هرچه کمتر باشد بهتر است.
 
 <div align=center markdown=1>
-<img width=30% alt="نتیجه تست کنار هر کانفیگ" src="https://github.com/hiddify/hiddify-config/assets/125398461/322b3680-e908-4a9d-8423-47ef3c50c1ff" />
+<img width=30% alt="نتیجه تست کنار هر کانفیگ" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-322b3680-e908-4a9d-8423-47ef3c50c1ff.webp" />
 </div>
 
 ## مرتب‌سازی کانفیگ‌ها بر اساس نتیجه تست
@@ -83,7 +88,7 @@ Fair VPN در فهرست برنامه‌های صفحه کاربری هیدیف�
 کانفیگ‌ها بر اساس نتیجه تست مرتب می‌شوند و بهترین‌ها بالا قرار می‌گیرند.
 
 <div align=center markdown=1>
-<img width=30% alt="Sort by Latency" src="https://github.com/hiddify/hiddify-config/assets/125398461/04ef4c98-8dde-4da0-b0dd-2250ec32b8c7" />
+<img width=30% alt="Sort by Latency" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-04ef4c98-8dde-4da0-b0dd-2250ec32b8c7.webp" />
 </div>
 
 ## به‌روزرسانی لینک اشتراک
@@ -97,7 +102,7 @@ Fair VPN نمی‌تواند لینک اشتراک را خودش به‌روز �
     برای گرفتن IP تمیز جدید، همه کانفیگ‌ها را با `Delete All VPN` حذف کنید. سپس VPN را خاموش کنید، صفحه کاربری را دوباره بارگذاری کنید و لینک اشتراک را دوباره اضافه کنید.
 
 <div align=center markdown=1>
-<img width=30% alt="Delete All VPN" src="https://github.com/hiddify/hiddify-config/assets/125398461/6aef8018-ee10-414f-b889-f1dde61bdbe9" />
+<img width=30% alt="Delete All VPN" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-6aef8018-ee10-414f-b889-f1dde61bdbe9.webp" />
 </div>
 
 ## اشتراک‌گذاری VPN با دستگاه‌های دیگر
@@ -106,11 +111,22 @@ Fair VPN نمی‌تواند لینک اشتراک را خودش به‌روز �
 
 1. در Fair VPN، گزینه `Local Sharing` را روشن کنید. برنامه یک آدرس IP و یک پورت نشان می‌دهد.
 
-    <img style="display:block;margin:0 auto" width=30% alt="پیام Local Sharing با IP و پورت" src="https://github.com/hiddify/hiddify-config/assets/125398461/781db733-df3f-4190-baaa-5dd4dc529727" />
+    <img style="display:block;margin:0 auto" width=30% alt="پیام Local Sharing با IP و پورت" src="/assets/manager/Tutorial-for-Fair-VPN-app/gh-781db733-df3f-4190-baaa-5dd4dc529727.webp" />
 
 2. در دستگاه دوم، **تنظیمات پروکسی** شبکه را باز کنید.
 3. آدرس IP و پورتی را که Fair VPN نشان داده وارد و ذخیره کنید.
 
 اکنون دستگاه دوم از اتصال VPN گوشی شما استفاده می‌کند.
+
+## مقاله‌های مرتبط
+
+<div class="hi-related" markdown="1">
+
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
+- [V2Box](/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/)
+- [FoXray](/fa/manager/client-software-on-ios/Tutorial-for-FoXray-app/)
+
+</div>
 
 </div>

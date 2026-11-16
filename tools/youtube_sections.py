@@ -31,7 +31,7 @@ def channel(listfile=None):
     vids = []
     for l in lines:
         p = l.split('|', 3)
-        if len(p) == 4 and p[0]: vids.append({'id': p[0], 'title': p[3].strip()})
+        if len(p) == 4 and p[0]: vids.append({'id': p[0], 'date': p[1], 'title': p[3].strip()})
     return vids
 
 def is_app(v): return bool(APP_RE.search(v['title'])) and not APP_EXCLUDE.search(v['title'])
@@ -66,6 +66,16 @@ def add_title(vid, title):
         f.write(f'{json.dumps(vid)}: {json.dumps(title, ensure_ascii=False)}\n')
 
 
+def add_meta(vid, date, product, ver):
+    """New video: made for the product's current major version. tools/guide_page.py gives it the
+    "Earlier version" badge by itself once that product's major version goes up."""
+    d = re.sub(r'\D', '', str(date or ''))[:8]
+    d = f'{d[:4]}-{d[4:6]}-{d[6:]}' if len(d) == 8 else str(__import__('datetime').date.today())
+    p = os.path.join(DATA, 'video_meta.yml')
+    with open(p, 'a', encoding='utf-8') as f:
+        f.write(f'{json.dumps(vid)}: {{date: {d}, kind: current, product: {product}, ver: "{ver}"}}\n')
+
+
 def thumb(vid):
     out = os.path.join(ROOT, 'docs/assets/youtube', vid + '.jpg')
     if os.path.exists(out): return
@@ -81,6 +91,9 @@ def thumb(vid):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--list'); a = ap.parse_args()
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import versions
+    vers = versions.update()                    # a new major release turns older videos into "Earlier version"
     have = on_pages(); new = []
     for v in reversed(channel(a.list)):           # oldest first, so the newest ends up on top
         if v['id'] in have:
@@ -89,7 +102,9 @@ def main():
             prepend('app', 'fa', v['id']); prepend('app', 'en', v['id'])
         else:
             prepend('manager', 'fa' if re.search('[\u0600-\u06FF]', v['title']) else 'en', v['id'])
-        add_title(v['id'], v['title']); thumb(v['id']); new.append(v)
+        product = 'app' if is_app(v) else 'manager'
+        add_title(v['id'], v['title']); add_meta(v['id'], v.get('date'), product, versions.major(vers.get(product, 0)))
+        thumb(v['id']); new.append(v)
     for v in reversed(new):
         print(f"new {'app' if is_app(v) else 'manager'} video: {v['title']} ({v['id']})")
     print(len(new), 'new videos')

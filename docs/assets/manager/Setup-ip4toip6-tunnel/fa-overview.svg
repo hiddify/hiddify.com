@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" font-family="Vazirmatn, Tahoma, sans-serif">
+<rect width="100%" height="100%" rx="18" fill="#f8fafc"/>
+<rect x="40" y="60" width="220" height="230" rx="16" fill="#fff" stroke="#455fe9" stroke-width="2.5"/>
+<text x="150" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b" direction="rtl" unicode-bidi="embed">سرور B</text>
+<text x="150" y="115" text-anchor="middle" font-size="14" font-weight="400" fill="#475569" direction="rtl" unicode-bidi="embed">خارج (توکیو)</text>
+<rect x="60" y="135" width="180" height="60" rx="10" fill="#e0e7ff"/>
+<text x="150" y="160" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b" direction="rtl" unicode-bidi="embed">IPv4 مجازی</text>
+<text x="150" y="180" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b">192.168.1.2</text>
+<rect x="60" y="210" width="180" height="60" rx="10" fill="#dcfce7"/>
+<text x="150" y="245" text-anchor="middle" font-size="15" font-weight="700" fill="#166534" direction="rtl" unicode-bidi="embed">IPv6 واقعی</text>
+<line x1="150" y1="195" x2="150" y2="210" stroke="#64748b" stroke-width="2"/>
+<rect x="700" y="60" width="220" height="230" rx="16" fill="#fff" stroke="#455fe9" stroke-width="2.5"/>
+<text x="810" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b" direction="rtl" unicode-bidi="embed">سرور A</text>
+<text x="810" y="115" text-anchor="middle" font-size="14" font-weight="400" fill="#475569" direction="rtl" unicode-bidi="embed">در ایران (تهران)</text>
+<rect x="720" y="135" width="180" height="60" rx="10" fill="#e0e7ff"/>
+<text x="810" y="160" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b" direction="rtl" unicode-bidi="embed">IPv4 مجازی</text>
+<text x="810" y="180" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b">192.168.1.1</text>
+<rect x="720" y="210" width="180" height="60" rx="10" fill="#dcfce7"/>
+<text x="810" y="245" text-anchor="middle" font-size="15" font-weight="700" fill="#166534" direction="rtl" unicode-bidi="embed">IPv6 واقعی</text>
+<line x1="810" y1="195" x2="810" y2="210" stroke="#64748b" stroke-width="2"/>
+<rect x="260" y="215" width="440" height="50" rx="25" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+<rect x="400" y="227" width="160" height="26" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+<text x="480" y="245" text-anchor="middle" font-size="13" font-weight="400" fill="#1e293b" direction="rtl" unicode-bidi="embed">بستهٔ IPv4</text>
+<text x="480" y="290" text-anchor="middle" font-size="13" font-weight="400" fill="#166534" direction="rtl" unicode-bidi="embed">داخل یک بستهٔ IPv6</text>
+<line x1="480" y1="40" x2="480" y2="205" stroke="#ef4444" stroke-width="4" stroke-dasharray="8 6"/>
+<text x="480" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#b91c1c" direction="rtl" unicode-bidi="embed">فیلتر (GFW)</text>
+<text x="480" y="350" text-anchor="middle" font-size="15" font-weight="400" fill="#334155" direction="rtl" unicode-bidi="embed">IPv4 داخل IPv6 بسته‌بندی می‌شود. اگر آی‌پی IPv6 مسدود شود، فقط آن را عوض می‌کنید؛ آی‌پی IPv6 ارزان است.</text>
+</svg>

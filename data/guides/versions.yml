@@ -1,0 +1,4 @@
+# Latest stable releases; written by tools/versions.py. Used for the 'Earlier version' badges.
+manager: "14.2.0"
+app: "5.5.5"
+checked: "2026-11-16"

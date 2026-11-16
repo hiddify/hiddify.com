@@ -12,7 +12,7 @@ This page shows you how to choose the DNS server that your HiddifyManager server
 
 <div align=center markdown=1>
   
-<img width=50% src="https://github.com/hiddify/hiddify-config/assets/125398461/8b1ce774-3268-4c42-ae0a-02553feb3b26" alt="How a DNS request turns a name into an IP address" />
+<img width=50% src="/assets/manager/How-to-set-DNS-server/gh-8b1ce774-3268-4c42-ae0a-02553feb3b26.webp" alt="How a DNS request turns a name into an IP address" />
 </div>
 
 Your server needs a working, trusted DNS server, just like your phone or computer.
@@ -90,9 +90,16 @@ Run these commands on your server, over SSH.
 
 <div align=center markdown=1>
   
-![Example output of nslookup google.com](https://user-images.githubusercontent.com/125398461/248440247-3ef15d0b-54b0-43ce-8be5-a5229054d1fb.png)
+![Example output of nslookup google.com](/assets/manager/How-to-set-DNS-server/gh-248440247-3ef15d0b-54b0-43ce-8be5-a5229054d1fb.webp)
 </div>
 
 [Learn more about DNS leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
 
 </div>

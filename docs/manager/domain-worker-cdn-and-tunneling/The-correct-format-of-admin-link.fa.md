@@ -106,4 +106,11 @@ hiddify reset-password
 - **مسیر پروکسی ادمین**: در پنل، **تنظیمات** را باز کنید و عبارت «مسیر پروکسی برای مدیران» را جستجو کنید (در کارت **تنظیمات خیلی پیشرفته** است). آن را تغییر دهید، روی **ذخیره** بزنید و تغییرات را اعمال کنید. پنل آدرس جدید ادمین را نشان می‌دهد.
 - **UUID ادمین**: صفحه **ادمین‌ها** را باز کنید، ادمین را ویرایش کنید و فیلد UUID را تغییر دهید. لینک قبلی آن ادمین دیگر کار نمی‌کند.
 
+## مقاله‌های مرتبط
+
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [همهٔ تنظیمات پنل، یکی‌یکی](/fa/manager/configuration-and-advanced-settings/Settings-reference/)
+- [منوی هیدیفای‌منیجر در SSH](/fa/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/)
+- [انتقال کاربران از پنل X-UI](/fa/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/)
+
 </div>

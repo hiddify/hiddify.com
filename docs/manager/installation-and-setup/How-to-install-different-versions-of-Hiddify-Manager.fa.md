@@ -21,7 +21,7 @@ weight: -75
 
 <div align=center markdown="1">
 
-![install versions](https://github.com/hiddify/Hiddify-Manager/assets/125398461/b5c8a60a-88ce-48e5-a0bb-aaec33f2f5d8)
+<img width=760 alt="توسعه، بتا و پایدار" src="/assets/manager/How-to-install-different-versions-of-Hiddify-Manager/fa-channels.svg">
 
 </div>
 
@@ -94,14 +94,20 @@ bash <(curl https://i.hiddify.com/v8)
 ```
 </div>
 
-از نسخه 10 می‌توانید دقیقا یک آپدیت خاص را نصب نمایید. به عنوان مثال برای نصب نسخه `10.7.0` کافیست از دستور زیر استفاده نمایید.
+!!! warning "هشدار"
+    نسخهٔ ۸ خیلی قدیمی است و دیگر به‌روزرسانی امنیتی نمی‌گیرد. فقط اگر واقعاً لازم دارید از آن استفاده کنید؛ برای سرور جدید، آخرین نسخه را نصب کنید.
+
+از نسخه 10 می‌توانید دقیقا یک آپدیت خاص را نصب نمایید. به عنوان مثال برای نصب نسخه `14.0.5` کافیست از دستور زیر استفاده نمایید.
 
 <div dir=ltr>
 
 ```
-bash <(curl https://i.hiddify.com/v10.7.0)
+bash <(curl https://i.hiddify.com/v14.0.5)
 ```
 </div>
+
+!!! warning "برگشت به نسخهٔ قدیمی‌تر پشتیبانی نمی‌شود"
+    نصب نسخهٔ قدیمی‌تر روی نسخهٔ جدیدتر پشتیبانی نمی‌شود. برای برگشت به نسخهٔ قدیمی‌تر، از پنل پشتیبان بگیرید، آن را [کامل حذف کنید](/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/)، نسخهٔ قدیمی‌تر را نصب کنید و پشتیبان را بازیابی کنید (ممکن است پشتیبانِ نسخهٔ جدیدتر روی نسخهٔ قدیمی‌تر بازیابی نشود).
 
 همچنین می‌توان نسخه‌های دلخواه با اجرای دستور زیر به صورت منوی گرافیکی مشاهده نمود و برای نصب انتخاب کرد.
 
@@ -112,9 +118,21 @@ bash <(curl https://i.hiddify.com/custom)
 ```
 </div>
 
-که در نتیجه این منوی گرافیکی ظاهر می‌شود. نسخه مورد نظر خود را انتخاب نمایید تا نصب انجام شود.
+که در نتیجه این منوی گرافیکی (*Custom version Installer*) ظاهر می‌شود. نسخه مورد نظر خود را انتخاب نمایید تا نصب انجام شود. با کلیدهای جهت جابه‌جا شوید، روی نسخه `Enter` بزنید و `<Ok>` را انتخاب کنید.
 
-<div align=center markdown="1">
-  
-![نصب نسخه دلخواه](https://github.com/user-attachments/assets/fa9c1a28-ef58-44b4-8a9f-9afbdb04c40c)
+<img width=720 alt="منوی Custom version Installer با نسخه‌های فعلی" src="/assets/manager/How-to-install-different-versions-of-Hiddify-Manager/version-menu.webp" style="display:block;margin:0 auto">
+
+## تغییر نسخهٔ سرور نصب‌شده به Release یا Beta { #switch }
+روی سروری که هیدیفای‌منیجر نصب است، نیازی به نصب دوباره نیست:
+
+- در پنل: در **تنظیمات** و کارت **تنظیمات پیشرفته**، تنظیم **حالت به‌روزرسانی** (Package Update Mode) تعیین می‌کند به‌روزرسانی‌ها از نسخهٔ Release بیایند یا Beta. بعد در صفحهٔ **اقدامات** روی **به‌روزرسانی** بزنید.
+- روی سرور: دستور `hiddify upgrade release` یا `hiddify upgrade beta` (و `hiddify upgrade dev` برای نسخهٔ در حال توسعه).
+
+## مقاله‌های مرتبط
+
+- [نصب روی داکر](/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/)
+- [نصب خودکار از پنل دیتاسنتر (Cloud-init)](/fa/manager/installation-and-setup/Cloud-init-installation/)
+- [پیش‌نیازهای نصب](/fa/manager/installation-and-setup/Installation-prerequisites/)
+- [اتصال به سرور با SSH](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/)
+
 </div>

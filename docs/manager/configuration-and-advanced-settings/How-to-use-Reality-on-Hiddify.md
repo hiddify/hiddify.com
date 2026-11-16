@@ -133,4 +133,11 @@ For example, say your subscription domain is `t1.hiddify.com` and your Reality d
 
 Now open the subscription link on `t1.hiddify.com`. You should see the Reality configs in it.
 
+## Related articles
+
+- [Hiddify Reality Scanner](/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/)
+- [Several subdomains of a site in Reality](/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [All panel settings, one by one](/manager/configuration-and-advanced-settings/Settings-reference/)
+
 </div>

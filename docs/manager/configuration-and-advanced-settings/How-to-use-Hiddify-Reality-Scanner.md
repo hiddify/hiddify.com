@@ -115,3 +115,10 @@ systemctl start hiddify-xray
 ```
 
 Check that your users can connect again.
+
+## Related articles
+
+- [Set up Reality](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/)
+- [Several subdomains of a site in Reality](/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [All panel settings, one by one](/manager/configuration-and-advanced-settings/Settings-reference/)

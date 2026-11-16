@@ -125,4 +125,11 @@ weight: -140
 
 حالا لینک اشتراک روی `t1.hiddify.com` را باز کنید. باید کانفیگ‌های ریالتی را در آن ببینید.
 
+## مقاله‌های مرتبط
+
+- [اسکنر ریالتی هیدیفای](/fa/manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner/)
+- [چند زیردامنهٔ یک سایت در ریالتی](/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [همهٔ تنظیمات پنل، یکی‌یکی](/fa/manager/configuration-and-advanced-settings/Settings-reference/)
+
 </div>

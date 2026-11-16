@@ -14,7 +14,7 @@ title: آموزش تنظیم فایروال در هیدیفای‌منیجر
 
 <div align=center markdown=1>
 
-<img width="80%" src="https://github.com/hiddify/hiddify-config/assets/125398461/bd646159-3baa-45eb-8e30-810be5faadcb" alt="نحوه‌ی کار فایروال" />
+<img width="80%" src="/assets/manager/How-to-setup-Firewall-on-Hiddify-panel/gh-bd646159-3baa-45eb-8e30-810be5faadcb.webp" alt="نحوه‌ی کار فایروال" />
 
 </div>
 
@@ -106,5 +106,12 @@ iptables -D INPUT -p icmp -j DROP
 - **بعد از روشن کردن فایروال نمی‌توانید با SSH وصل شوید:** هیدیفای‌منیجر هنگام اعمال قانون‌های فایروال، پورت `22` و پورتی را که سرور SSH در آن لحظه استفاده می‌کند باز می‌کند. اگر بعد از آن پورت SSH را عوض کرده‌اید، تنظیمات پنل را دوباره اعمال کنید، یا از کنسول وب سرویس‌دهنده‌ی سرور وارد شوید و دستور `hiddify apply` را اجرا کنید.
 - **برنامه‌ی دیگری روی سرور از کار افتاده:** پورت آن بسته شده است. آن را مثل روش بالا دستی باز کنید.
 - **پورتی که دستی باز کرده بودید بعد از ریبوت دوباره بسته شده:** قانون‌ها را ذخیره نکرده‌اید. دستور `netfilter-persistent save` را اجرا کنید.
+
+## مقاله‌های مرتبط
+
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+- [تنظیم DNS سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
 
 </div>

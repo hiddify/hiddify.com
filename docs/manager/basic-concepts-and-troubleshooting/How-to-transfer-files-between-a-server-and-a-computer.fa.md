@@ -33,7 +33,7 @@ title: آموزش انتقال فایل بین سرور و کامپیوتر
 
 <div align=center markdown=1>
 
-<img src="https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png" alt="باز کردن PowerShell از منوی Start ویندوز" />
+<img src="/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.webp" alt="باز کردن PowerShell از منوی Start ویندوز" />
 </div>
 
 ## پیدا کردن فایل روی سرور
@@ -52,7 +52,7 @@ ls /opt/hiddify-manager/data/backup/
 
 <div align=center markdown=1>
 
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" alt="نمونه فهرست فایل‌های بکاپ روی سرور" />
+<img src="/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-924b149e-6ec8-4b48-8fbb-ad99a234ee5e.webp" alt="نمونه فهرست فایل‌های بکاپ روی سرور" />
 </div>
 
 فایلی را که می‌خواهید منتقل کنید انتخاب کنید و نام آن را یادداشت کنید.
@@ -114,5 +114,12 @@ ls /root/
 ## استفاده از پنل وب
 
 در هیدیفای‌منیجر نسخه ۱۴، پنل مدیریت صفحه‌ای به نام **ترمینال SSH** دارد که یک مرورگر فایل داخلی هم دارد. در آنجا می‌توانید بدون برنامه جداگانه فایل‌ها را روی سرور آپلود یا از آن دانلود کنید. رمز عبور سرور خود را در سایت‌های شخص ثالث وارد نکنید.
+
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
 
 </div>

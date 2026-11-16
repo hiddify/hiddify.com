@@ -26,7 +26,7 @@ Connect to your VPN or proxy first, then open one or more of the sites below. Us
 1. Open [dnsleaktest.com](https://dnsleaktest.com/). The first page shows your current IP address.
 2. Tap **Extended test**. (The **Standard test** checks fewer servers; the extended test is more thorough.)
 
-    ![The dnsleaktest.com home page with the Standard test and Extended test buttons](https://user-images.githubusercontent.com/125398461/235299493-2a0c4aaf-cd24-4723-b7f6-8ed60845734d.jpg)
+    ![The dnsleaktest.com home page with the Standard test and Extended test buttons](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299493-2a0c4aaf-cd24-4723-b7f6-8ed60845734d.webp)
 
 3. Wait for the test to finish and look at the list of servers:
     - **No leak:** every server belongs to your VPN server's provider or is in your VPN server's country. All your DNS traffic went through the VPN.
@@ -34,29 +34,29 @@ Connect to your VPN or proxy first, then open one or more of the sites below. Us
 
 In the picture below, all servers match the VPN server's provider and location, so there is no leak.
 
-![dnsleaktest.com results with no DNS leak](https://user-images.githubusercontent.com/125398461/235299505-d9fb313b-28b5-473a-b211-a1533bd0add5.jpg)
+![dnsleaktest.com results with no DNS leak](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299505-d9fb313b-28b5-473a-b211-a1533bd0add5.webp)
 
 ### 2. browserleaks.com
 
 Open the [DNS Leak Test page on browserleaks.com](https://browserleaks.com/dns). The test starts by itself and shows the results when it finishes. Read the results the same way as above.
 
-![browserleaks.com DNS test results with no leak](https://user-images.githubusercontent.com/125398461/235299510-6b7fb769-3c3a-49e9-b28f-ef59f52e72e6.jpg)
+![browserleaks.com DNS test results with no leak](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299510-6b7fb769-3c3a-49e9-b28f-ef59f52e72e6.webp)
 
 ### 3. ipleak.net
 
 Open [ipleak.net](https://ipleak.net). The test starts by itself. In the picture below, the DNS server matches the VPN server's provider and location, so there is no leak.
 
-![ipleak.net results with no DNS leak](https://user-images.githubusercontent.com/125398461/235299557-8dac8205-37e8-4a67-bc2e-c6b0ad83b40d.jpg)
+![ipleak.net results with no DNS leak](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299557-8dac8205-37e8-4a67-bc2e-c6b0ad83b40d.webp)
 
 ### 4. dnsleaktest.org
 
 Open the [DNS Leak Test page on dnsleaktest.org](https://dnsleaktest.org/dns-leak-test). The test starts by itself.
 
-![The dnsleaktest.org DNS leak test page](https://user-images.githubusercontent.com/125398461/235299689-1efae131-4ca9-4e49-9b15-6f915695c32c.jpg)
+![The dnsleaktest.org DNS leak test page](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299689-1efae131-4ca9-4e49-9b15-6f915695c32c.webp)
 
 In the picture below, the list contains servers that do **not** belong to the VPN server and show the user's real location. This means there **is** a DNS leak.
 
-![dnsleaktest.org results showing a DNS leak](https://user-images.githubusercontent.com/125398461/235299716-b3d0d789-84be-499c-b03a-b1cd5d2e1c58.jpg)
+![dnsleaktest.org results showing a DNS leak](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299716-b3d0d789-84be-499c-b03a-b1cd5d2e1c58.webp)
 
 ## How to fix a DNS leak
 
@@ -106,7 +106,7 @@ To set up calls, WebRTC can ask your device for its IP addresses. In some cases 
 
 In the picture below, the real IP address is visible even though a VPN is in use, so there is a leak.
 
-![browserleaks.com WebRTC test showing a leak of the real IP address](https://user-images.githubusercontent.com/125398461/235300245-57e4be56-22fb-4030-989b-a5a49f77d533.jpg)
+![browserleaks.com WebRTC test showing a leak of the real IP address](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235300245-57e4be56-22fb-4030-989b-a5a49f77d533.webp)
 
 ## How to fix a WebRTC leak
 
@@ -133,3 +133,10 @@ Fix it in each browser you use, then run the test again.
 4. Find **Remove Legacy WebRTC API** and click it to turn WebRTC off.
 
 Menu names can differ between Safari versions.
+
+## Related articles
+
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [Is the server's IP or domain clean?](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [Time zone leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
+- [Server speed test](/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/)

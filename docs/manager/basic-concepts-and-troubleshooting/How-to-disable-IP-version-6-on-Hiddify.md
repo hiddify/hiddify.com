@@ -70,4 +70,11 @@ IPv6 is now off, and the server works only with IPv4. HiddifyManager detects thi
 
 To turn IPv6 back on later, delete the three lines, run `sudo sysctl -p` again, and restart the server.
 
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+
 </div>

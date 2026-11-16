@@ -17,11 +17,11 @@ We have two IP versions. One IP version 4 and one IP version 6
 IP version 4 consists of sections, each section is separated by a `dot`. For example, w.x.y.z, each of which can be between 0 and 255. Finally, an IP version 4 is like this. `54.78.11.14`
 
 ### IP version 6 or IPv6
-This IP address is the new version of IPs based on hex or 16 numbers. It consists of 6 sections, each section is separated by `:` An IP version 6 is like this.
+This IP address is the new version of IPs, written in hexadecimal (base 16). It has 8 sections of up to 4 hex digits, separated by `:`. An IP version 6 is like this.
 
-`2017:c569:54ed:f141:ec49:0567`
-In this version, IPs are reducted in some places. For example, pay attention to the following IP. `2017:c569:0000:0000:0000:0567`
-In this version, you can remove the consecutive zeros and take the factor and finally write it like this. `2017:c569::0567`
+`2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+
+It can be written shorter: the zeros at the start of each section can be left out, and one run of sections that are all zero can be replaced by `::`. The same IP is then written like this. `2001:db8:85a3::8a2e:370:7334`
 
 
 ## HTTP
@@ -33,8 +33,14 @@ The HTTP protocol uses handshaking to send and receive information. In this meth
 
 This protocol is actually the security version of the HTTP protocol. Because information and data are not encrypted in the HTTP protocol, it can be easily hacked and misused. Based on this, if someone like the internet service provider has access to the information exchange route, he can easily see the information that is being exchanged. But in HTTPS, the information exchanged between the website and the user is encrypted. That is, even if someone can access the information exchanged on the site, they cannot use the content on the other side. Because this information is encrypted and can only be seen by someone who has the key to decrypt it. It uses one of two SSL or TLS protocols to encrypt communications, which will be explained later.
 
-## HTTP Upgrade
-Upgarde is a field in HTTP that may be used by clients to request a server to switch to one (or more) of the listed protocols, in descending order of preference. In this way, the client requests the server to upgrade to the HTTP version, which improves the security of the connection. The server can ignore the request for any reason, in which case it MUST respond as if the upgrade header was not sent. If the server supports this feature, the HTTP connection will be upgraded to a higher version. HTTPUpgrade complete a HTTP 1.1 Upgrade request and response before using the connection directly. It is similar to WebSocket in the way it create an direction channel that can be forwarded by many reverse proxies and CDNs, without the need to deal with all the issue around WebSocket Protocol itself. 
+<img width=760 alt="HTTP compared with HTTPS: what the filter can see" src="/assets/manager/Basic-Concepts/en-http-https.svg" style="display:block;margin:0 auto">
+
+<a id="http-upgarde"></a>
+
+## HTTP Upgrade { #http-upgrade }
+**HTTP Upgrade** is a way to turn a normal HTTP connection into a different kind of connection. The client sends an HTTP request with an `Upgrade` header, the server agrees, and from then on the same connection carries other data, in this case your proxy traffic.
+
+The `HTTPUpgrade` transport in Xray and sing-box uses only this first request and reply, and then sends the data directly. It is similar to WebSocket, but simpler and lighter. Because it starts as a normal HTTP request, many CDNs and reverse proxies can pass it on, so it is useful behind a CDN. It does not add encryption by itself; the security comes from TLS around it.
 
 ## Domain
 
@@ -44,7 +50,8 @@ In very simple language, in defining what is domain, it should be said that the 
 ## SSL
 
 This protocol encrypts information using private and public keys. The information encrypted by this protocol is decrypted on the other side. Security in this protocol is maintained at the source and destination of the information, that is, the encryption and decryption process is performed on both sides. Websites that use this protocol to encrypt data usually communicate with clients through the HTTPS protocol. To have a secure HTTPS connection for your site, you need to obtain a valid ssl certificate. In this protocol, the information exchanged between the server and the client is encrypted; Accordingly, this information will not be visible to third parties. Of course, it is still possible to access these data, but due to the fact that they are encrypted, they need to be decrypted to view their data. Decrypting this data is not possible without the key used in the secure communication session. Therefore, this protocol is practically impenetrable.
-TLS
+
+## TLS
 
 It is a security protocol based on the SSL protocol. TLS is an improved version of the SSL protocol, although it has very few differences with SSL, but most of it remains the same. Of course, TLS uses a stronger encryption algorithm than SSL protocol, and TLS is safer and more efficient than SSL in creating public keys and authenticating messages. More precisely, TLS is a protocol used to encrypt web-based communications between a client and a server, using a set of cryptographic algorithms (uTLS, alpn, allowInsecure). Important: "User identification is based on message fields during TLS handshaking."
 
@@ -69,40 +76,40 @@ Note: The settings of these 3 items can be different according to the type of co
 
 ## Xray
 
-HiddifyManager panel uses this platform to pass the filtering system. In fact, Hiddify is recommended by Xray. This platform, which was introduced in 2020, is a modified and better version of the famous V2ray! Due to being more up-to-date and fixing defects, V2ray became the dominant and common platform. In the Xray platform, all v2ray protocols have been added in addition to newer protocols such as Vless.
+Xray is one of the two engines HiddifyManager uses to pass the filtering system; the other is Hiddify Core (based on sing-box), which serves protocols that Xray does not have, such as Hysteria2, TUIC, WireGuard and Mieru. Xray, introduced in 2020, is a modified and better version of the famous V2ray: it has all the V2ray protocols plus newer ones such as VLESS, Reality and XHTTP.
 
-## Vmess
+## VMess
 It was one of the first protocols of the V2ray and Xray subcategory, which encodes and sends information packets based on system time, although this protocol can be detected by the filtering system due to weaknesses in its algorithm, and it is recommended not to use it wherever possible.
 
-## Vless
-Vless protocol is a modified version of Vmess! In Vless, all the disadvantages of Vmess have been fixed and due to the difference in encryption in Vless and its lighter weight, it provides the possibility to have more users than vmess on the same server.
+## VLESS
+VLESS protocol is a modified version of VMess! In VLESS, all the disadvantages of VMess have been fixed and due to the difference in encryption in VLESS and its lighter weight, it provides the possibility to have more users than VMess on the same server.
 
 
 ## Trojan
-This protocol is another safe way to pass through the filtering system. The trojan introduced in 2017 has always been used alongside vless, a powerful protocol to pass through the filtering system.
+This protocol is another safe way to pass through the filtering system. The trojan introduced in 2017 has always been used alongside VLESS, a powerful protocol to pass through the filtering system.
 
-For more security and speed, we suggest you to use these two protocols, Vless and Trojan. According to the received reports, it is recommended to use these protocols in the following situations
+For more security and speed, we suggest you to use these two protocols, VLESS and Trojan. According to the received reports, it is recommended to use these protocols in the following situations
 
 ## Reality
 REALITY is used instead of TLS and it can eliminate the TLS fingerprint characteristics of the server, still have forward secrecy, etc. Moreover the certificate chain attack is invalid, and the security exceeds that of conventional TLS.
 You can point to other websites without having to buy a domain name or configure a TLS server, which is more convenient and realizes the full real TLS of specifying SNI to the middleman.
 
-Note: although HiddifyManager supports all protocols related to Xray, we suggest using more robust protocols such as Reality, Vless and Trojan like these ones.
+Note: HiddifyManager supports many protocols (see the **Protocols** page of the panel). Its defaults already turn on the robust ones. As a rule of thumb (v14.5):
 
-`Reality XTLS`
+- **Direct to the server:** `VLESS + Reality` (no domain needed), or `VLESS` / `Trojan` with TLS on your domain.
+- **Behind a CDN:** `VLESS` or `Trojan` over `XHTTP`, `WebSocket`, `HTTPUpgrade` or `gRPC`.
+- **UDP based, for unstable or lossy networks:** `Hysteria2` and `TUIC`.
+- Avoid `VMess` and unencrypted HTTP where you can.
 
-`Vless CDN WS`
+In the panel, protocols are turned on and off on the **Protocols** page:
 
-`Vless CDN GRPC`
+<img width=760 alt="The Protocols page of the panel" src="/assets/manager/Basic-Concepts/en-protocols.webp" style="display:block;margin:0 auto">
 
-`Vless CDN WS H2`
+## Related articles
 
-`Vless CDN GRPC H2`
+- [How the TLS trick works](/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/)
+- [Finding TLS trick values](/manager/basic-concepts-and-troubleshooting/A-good-way-to-find-TLS-trick-values/)
+- [How MUX works](/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/)
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
 
-`Trojan CDN WS`
-
-`Trojan CDN GRPC`
-
-`Trojan CDN WS H2`
-
-`Trojan CDN GRPC H2`
+</div>

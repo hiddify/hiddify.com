@@ -56,66 +56,77 @@ You can get a free subdomain or use a domain you bought.
 
 [FreeDNS (afraid.org)](https://freedns.afraid.org/) lets you create a subdomain on domains that other people have shared publicly.
 
-1. [Create an account](https://freedns.afraid.org/signup/?plan=starter). You need a real email address.
+1. [Create an account](https://freedns.afraid.org/signup/?plan=starter). You need a real email address. The form asks you to confirm that you do not live in a country under U.S. sanctions (Iran is one of them).
 
-    ![FreeDNS sign-up page](https://user-images.githubusercontent.com/125398461/221342760-12dc14ed-9a19-45f3-a3f1-bf7d3f969792.png)
+    ![FreeDNS sign-up page](/assets/manager/Domain-types-and-how-to-register-them/freedns-signup.webp)
 
 2. Open the [domain registry](https://freedns.afraid.org/domain/registry/). Pick a **public** domain that has few hosts. Domains ending in `.com`, `.org` or `.net` are best.
 
-    ![FreeDNS domain registry](https://user-images.githubusercontent.com/125398461/234033584-1c26c485-6ceb-4aa9-a6b6-c1b781e767d1.png)
+    ![FreeDNS domain registry](/assets/manager/Domain-types-and-how-to-register-them/freedns-registry.webp)
 
-3. Create your subdomain on that domain and set its address to your server's IP.
+3. Create your subdomain on that domain and set its address to your server’s IP.
 
 ### A domain you bought, on Cloudflare
 
 You can manage a domain you bought with any DNS provider. These steps use Cloudflare.
 
-1. [Create a Cloudflare account](https://dash.cloudflare.com/signup) and log in.
+1. [Create a Cloudflare account](https://dash.cloudflare.com/sign-up) and log in.
 
-    ![Cloudflare sign-up page](https://user-images.githubusercontent.com/125398461/221563866-d520a39d-15c8-4f88-a756-90e5e08c074a.png)
+    ![Cloudflare sign-up page](/assets/manager/Domain-types-and-how-to-register-them/cf-new-signup.webp)
 
-2. Go to **Domains** and select **Onboard a domain**. Enter your main domain (for example `example.com`) and select **Continue**. Older screenshots show this button as **Add Site**.
+2. Add the domain to Cloudflare:
+    - In the sidebar, open **Domains** › **Overview** (if the sidebar is collapsed, click the globe icon).
 
-    ![Adding a domain to Cloudflare](https://user-images.githubusercontent.com/125398461/221566504-5ecf714b-940d-4fd5-bc54-be8c37b7c292.png)
+        ![Cloudflare sidebar: Domains › Overview](/assets/manager/Domain-types-and-how-to-register-them/cf-new-menu.webp)
 
-3. Choose a plan. The **Free** plan is enough.
+    - Click **Add domain**.
 
-    ![Choosing the free plan](https://user-images.githubusercontent.com/125398461/221567803-26850724-1bc8-480a-8c6f-29b32a6fcfa6.png)
+        ![The Domains page and the Add domain button](/assets/manager/Domain-types-and-how-to-register-them/cf-new-domains.webp)
 
-4. Review the DNS records Cloudflare found and select **Continue**.
+    - Choose **Connect a domain**.
 
-    ![Reviewing DNS records](https://user-images.githubusercontent.com/125398461/222444475-5596de54-3e7f-4fae-a0f0-94c046a21969.png)
+        ![The Add a site page and Connect a domain](/assets/manager/Domain-types-and-how-to-register-them/cf-new-add-site.webp)
 
-5. Cloudflare shows you two **nameservers**. Go to the site where you bought the domain and replace its nameservers with these two.
+    - Type your main domain (for example `example.com`) in **Domain name**. Leave the other options as they are and click **Continue**.
 
-    ![Cloudflare nameservers](https://user-images.githubusercontent.com/125398461/221569269-1f4027c7-5815-4dea-876e-326dc0645fe1.png)
+        ![The Connect your domain form and the Domain name field](/assets/manager/Domain-types-and-how-to-register-them/cf-new-connect.webp)
 
-6. Wait until Cloudflare shows the domain as active. This can take from a few minutes to a day.
+    The **Add a domain** card on the Account home page does the same.
 
-    ![Domain active on Cloudflare](https://user-images.githubusercontent.com/125398461/221572305-50e819ea-0fa4-4548-8851-aab91b797f57.png)
+3. Choose a plan: click **Select plan** under **Free**. The free plan is enough.
 
-7. Open your domain and go to **DNS** > **Records**.
+    ![Choosing the free plan](/assets/manager/Domain-types-and-how-to-register-them/cf-new-plan.webp)
 
-    ![DNS records page](https://user-images.githubusercontent.com/125398461/222436778-f80de97b-7d66-4621-8be3-b856fc4e2c75.png)
+4. Cloudflare finds the domain’s current DNS records and lists them. Check them and click **Continue to activation**.
 
-8. Select **Add record**.
+    ![Reviewing the DNS records Cloudflare found](/assets/manager/Domain-types-and-how-to-register-them/cf-new-review.webp)
 
-    ![Add record](https://user-images.githubusercontent.com/125398461/222444012-2fa4a2c2-ff89-493e-b92c-01a26d7788b7.png)
+5. Cloudflare shows you two **nameservers**. Go to the site where you bought the domain, delete its current nameservers and put these two in their place.
 
-9. Fill in the record:
-    - **Type**: `A` (for the server's IPv4 address).
+    ![Cloudflare nameservers](/assets/manager/Domain-types-and-how-to-register-them/cf-new-ns.webp)
+
+6. Wait until the domain’s status in **Domains** › **Overview** changes to **Active**. This takes from a few minutes to a day. Until the nameservers are changed, the **Status** column shows a message like **Invalid nameservers**.
+
+    ![The Status column in the domain list](/assets/manager/Domain-types-and-how-to-register-them/cf-new-status.webp)
+
+7. Click the domain, open **DNS** › **Records** in the sidebar and click **Add record**.
+
+    ![The DNS records page and the Add record button](/assets/manager/Domain-types-and-how-to-register-them/cf-new-records.webp)
+
+8. Fill in the record:
+    - **Type**: `A` (for the server’s IPv4 address).
     - **Name**: the subdomain you want, for example `sub`.
-    - **IPv4 address**: your server's IP.
+    - **IPv4 address**: your server’s IP.
     - **Proxy status**: turn it **off** (**DNS only**, grey cloud). A Direct domain must not be proxied.
-    - **TTL**: leave it on Auto. A lower TTL makes changes reach users sooner.
+    - **TTL**: leave it on Auto.
 
-10. Select **Save**.
+    Above the form, Cloudflare sums up the record (for example `sub.example.com points to 203.0.113.10`). Click **Save**.
 
-    ![A record with proxy off](https://user-images.githubusercontent.com/125398461/234167251-ceebd61b-5147-4198-98dc-1c5bcd0d9124.png)
+    ![An A record with the proxy off (DNS only)](/assets/manager/Domain-types-and-how-to-register-them/cf-new-a-direct.webp){ width="600" }
 
-11. If your server also has an IPv6 address, add a second record the same way, with **Type** `AAAA` and the IPv6 address.
+9. If your server also has an IPv6 address, add a second record the same way, with **Type** `AAAA` and the IPv6 address.
 
-    ![AAAA record](https://user-images.githubusercontent.com/125398461/234167507-996c8480-5cf5-4ede-999f-05f74b22499f.png)
+    ![AAAA record](/assets/manager/Domain-types-and-how-to-register-them/cf-new-aaaa.webp){ width="600" }
 
 ### Check that the direct domain works
 
@@ -125,7 +136,15 @@ DNS changes can take a few minutes to spread. Then, on your own computer, run:
 ping sub.example.com
 ```
 
-You should see your server's IP in the answer. You can also use `nslookup` or `dig`. If you see a different IP or "unknown host", check the record and wait a little longer. To learn more, read [this article on DNS](https://wikicensorship.github.io/fa/docs/measure-internet-censorship/DNS/) (Persian).
+You should see your server’s IP in the answer. You can also use `nslookup` or `dig`. If you see a different IP or "unknown host", check the record and wait a little longer. To learn more, read [this article on DNS](https://wikicensorship.github.io/fa/docs/measure-internet-censorship/DNS/) (Persian).
+
+### Add the direct domain to the panel
+
+In the panel, click **Domains** › **Add domain** and type the domain. Under **How is it set up?** choose **Direct**, under **Which TLS?** choose **Valid TLS**, and finish the steps.
+
+![Add Domain in the panel: Direct mode and Valid TLS](/assets/manager/Domain-types-and-how-to-register-them/en-panel-direct.webp){ width="560" }
+
+If the panel shows **DNS does not match** next to the option, the DNS record does not reach this server’s IP yet. Wait a few minutes; the panel checks again when you save.
 
 </details>
 
@@ -138,39 +157,44 @@ These steps use Cloudflare. For other CDNs, see [GCore](/manager/domain-worker-c
 ### Add the CDN record on Cloudflare
 
 1. Add your domain to Cloudflare as described in the direct domain section above (steps 1 to 6).
-2. Go to **DNS** > **Records** and select **Add record**.
-3. Use **Type** `A` (or `AAAA` for IPv6), a new subdomain name, and your server's IP.
-4. Turn **Proxy status** **on** (**Proxied**, orange cloud). This is the only difference from a direct domain.
-5. Select **Save**.
+2. Go to **DNS** › **Records** and click **Add record**.
+3. Use **Type** `A` (or `AAAA` for IPv6), a new subdomain name (for example `cdn`), and your server’s IP.
+4. Leave **Proxy status** **on** (**Proxied**, orange cloud). This is the only difference from a direct domain.
+5. Click **Save**.
 
-![A record with proxy on](https://user-images.githubusercontent.com/125398461/234167748-7121af19-f624-4659-9922-50f8e6d3ea2c.png)
+![An A record with the proxy on (Proxied)](/assets/manager/Domain-types-and-how-to-register-them/cf-new-a-cdn.webp){ width="600" }
 
 ### Check that the CDN domain works
 
-When you `ping` this subdomain, you should see one of Cloudflare's IPs, not your server's IP. This hides your server. The Cloudflare IP can change over time.
+When you `ping` this subdomain, you should see one of Cloudflare’s IPs, not your server’s IP. This hides your server. The Cloudflare IP can change over time.
 
-Sometimes the Cloudflare IPs that your users get are blocked or slow in Iran. In that case, see [Guide for finding a clean Cloudflare IP](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/).
+Sometimes the Cloudflare IPs that your users get are blocked or slow in Iran. In that case, find working IPs with the panel’s own **Scanner** (**Tools** › **Scanner**), or see [Guide for finding a clean Cloudflare IP](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/).
 
 ### Cloudflare SSL/TLS settings
 
 **TLS** is the encryption that protects the connection between the user and the server. A **certificate** proves that a server really owns a domain. HiddifyManager gets a real certificate for your domain, so Cloudflare can connect to your server over TLS.
 
-1. Open your domain in Cloudflare and go to **SSL/TLS** > **Overview**.
-2. Choose the encryption mode **Full** or **Full (strict)**. Do not use **Flexible**. If the mode is set to **Automatic SSL/TLS**, Cloudflare picks the most secure mode that works; you can leave it.
+1. Open your domain in Cloudflare, open **SSL/TLS** in the sidebar and click **Configure**. The same page shows, under **Traffic Served Over TLS**, which TLS versions your traffic used; newer is safer.
 
-    ![SSL/TLS encryption mode](https://user-images.githubusercontent.com/125398461/234168806-26bb12cf-78ad-45a9-89b5-c2f005a9fb86.png)
+    ![The SSL/TLS page and the Configure button](/assets/manager/Domain-types-and-how-to-register-them/cf-new-ssl.webp)
 
-3. Go to **Network** and turn on **WebSockets** and **gRPC**. HiddifyManager's CDN proxies use WebSocket, gRPC, HTTPUpgrade and XHTTP.
+2. Choose the encryption mode **Full (Strict)** or **Full**. Do not use **Flexible**. If **Automatic SSL/TLS (recommended)** is selected, Cloudflare picks the most secure mode that works by itself, and you can leave it.
 
-    ![Network settings](https://user-images.githubusercontent.com/125398461/223041843-7b441805-4aab-4547-b318-7dbbda4cc893.png)
+    ![Choosing the encryption mode](/assets/manager/Domain-types-and-how-to-register-them/cf-new-ssl-mode.webp)
 
-    ![WebSockets and gRPC toggles](https://user-images.githubusercontent.com/125398461/223042286-e597f169-001e-40a5-b0e8-d34d1b110eab.png)
+3. Open **Network** in the sidebar and turn on **gRPC** and **WebSockets**. HiddifyManager’s CDN proxies use WebSocket, gRPC, HTTPUpgrade and XHTTP.
 
-Older guides told you to turn on **SSL/TLS Recommender**. Cloudflare is replacing it with Automatic SSL/TLS, so you do not need it.
+    ![The gRPC and WebSockets toggles in Network](/assets/manager/Domain-types-and-how-to-register-them/cf-new-network.webp)
 
-The SSL/TLS section of Cloudflare also shows a chart of your traffic by TLS version. More traffic on newer TLS versions means safer connections.
+Older guides told you to turn on **SSL/TLS Recommender**. Cloudflare replaced it with Automatic SSL/TLS, so you do not need it.
 
-![Traffic by TLS version](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
+### Add the CDN domain to the panel
+
+In the panel, click **Domains** › **Add domain**, type the domain, and under **How is it set up?** choose **CDN**. CDN domains always use **Valid TLS**.
+
+![Add Domain in the panel: CDN mode](/assets/manager/Domain-types-and-how-to-register-them/en-panel-cdn.webp){ width="560" }
+
+If the panel warns that the domain does not look like it is behind a CDN, turn the proxy (orange cloud) on in Cloudflare.
 
 </details>
 
@@ -181,5 +205,12 @@ A relay domain is registered like a direct domain, but its record points to the 
 ## Fake and Reality domains
 
 With the **Fake** or **Reality** TLS mode, you use the name of another site that you do not own, so you do not register anything at a DNS provider. You only add the name in the panel. See [How to create and use fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/).
+
+## Related articles
+
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+- [Automatic subdomains on Cloudflare](/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/)
+- [Domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
 
 </div>

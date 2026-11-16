@@ -12,7 +12,7 @@ The script can build the tunnel between the relay and the main server with these
 
 1. IP-Tables
 2. GOST
-3. Dokodemo-Door
+3. Dokodemo-Door (called `tunnel` in current Xray)
 4. HA-Proxy
 5. Socat (old, see below)
 6. WST (old, see below)
@@ -42,7 +42,7 @@ It also has a few basic tools: DNS settings, a server update and a connectivity 
 
 <div align=center>
 
-  <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/713801f1-01fb-4bc7-83ca-e1294fa1b149" alt="Relay Builder main menu" />
+  <img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-713801f1-01fb-4bc7-83ca-e1294fa1b149.webp" alt="Relay Builder main menu" />
 </div>
 
 Use the arrow keys to move, `Enter` to select, and `Tab` to jump to the OK/Cancel buttons.
@@ -63,7 +63,7 @@ In the main menu, select `IP-Tables`.
 
 <div align=center>
 
-  <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/80a1ebc9-078b-4e42-844e-6da857e25d62" alt="IP-Tables tunnel menu">
+  <img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-80a1ebc9-078b-4e42-844e-6da857e25d62.webp" alt="IP-Tables tunnel menu">
 
 </div>
 
@@ -96,7 +96,7 @@ In the main menu, select `GOST`. The script installs the latest GOST (v3) from t
 
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796" alt="GOST tunnel menu">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-ebffa5a5-a19f-4147-8389-8f69e5b48796.webp" alt="GOST tunnel menu">
 
 </div>
 
@@ -134,9 +134,12 @@ Returns to the main menu.
 <details markdown="1" dir="ltr"><summary><h3>🛠️ Dokodemo-Door tunnel</h3> (click)</summary>
 In the main menu, select `Dokodemo-Door`. This method uses the Xray core, installed with the official [XTLS installer](https://github.com/XTLS/Xray-install).
 
+!!! note "Dokodemo-Door is now called `tunnel` in Xray"
+    Since 2025 the Xray project calls the `dokodemo-door` inbound **`tunnel`**. The Relay Builder script still uses the old name in its menu and config, but Xray accepts both names, so nothing breaks. To build the tunnel by hand with the new name, see [Dokodemo-Door (tunnel) relay tutorial](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/).
+
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/7cdae822-4fe7-40b1-a2ee-49e7bf555fed" alt="Dokodemo-Door tunnel menu">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-7cdae822-4fe7-40b1-a2ee-49e7bf555fed.webp" alt="Dokodemo-Door tunnel menu">
 
 </div>
 
@@ -182,7 +185,7 @@ In the main menu, select `HA-Proxy`.
 
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/8e94e9d5-6229-46da-afd8-0c1c08787308" alt="HA-Proxy tunnel menu">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-8e94e9d5-6229-46da-afd8-0c1c08787308.webp" alt="HA-Proxy tunnel menu">
 
 
 </div>
@@ -222,7 +225,7 @@ Socat is now under **Options** → **DeprecatedTunnel** → `Socat`. The menu la
 
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/1a7af90d-b8aa-4b5b-84a8-af643e835951" alt="Socat tunnel menu">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-1a7af90d-b8aa-4b5b-84a8-af643e835951.webp" alt="Socat tunnel menu">
 
 </div>
 
@@ -252,7 +255,7 @@ WST is now under **Options** → **DeprecatedTunnel** → `WST`. The menu labels
 
 <div align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/f9686f53-7a34-4085-9504-15aac82a29ce" alt="WST tunnel menu">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-f9686f53-7a34-4085-9504-15aac82a29ce.webp" alt="WST tunnel menu">
 
 </div>
 
@@ -283,7 +286,7 @@ In the main menu, select `Options` for basic server settings and a connection te
 <div align=center>
 
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/aea50ed9-94a8-4884-92dd-24ef15067253" alt="Options menu">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-aea50ed9-94a8-4884-92dd-24ef15067253.webp" alt="Options menu">
 
 </div>
 
@@ -313,3 +316,10 @@ Returns to the main menu.
 ## Next step: add the relay to Hiddify Manager
 
 The tunnel alone is not enough: your panel must also know about the relay, so it can give users configs that use it. Follow [How to add a relay server (domain) to HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
+
+## Related articles
+
+- [Add a relay to the panel](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [IP-Tables method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
+- [GOST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [WST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)

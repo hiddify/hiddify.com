@@ -7,14 +7,12 @@ weight: -150
 
 # How to configure HiddifyManager properly
 
-This page walks you through the first setup of the HiddifyManager admin panel and explains what each part of the panel does. Read it right after you install the panel, or whenever you want to know what a menu or setting is for.
+This page walks you through the first setup of the HiddifyManager admin panel and gives a tour of every menu, in the order of the panel's own menu. Each part says what the page is for and what matters most on it, and links to the full guide of that part. Read it right after you install the panel, or whenever you want to know what a menu or setting is for.
 
-!!! info "Updated for HiddifyManager v14"
-    Since v13 the panel opens **Admin V2** by default, and in v14 the old (classic) admin pages redirect to it. The menu names and screenshots on this page are from the new panel (v14.2).
+!!! info "Written for HiddifyManager v14.5"
+    The menu names and screenshots on this page are from HiddifyManager v14.5. Every option of the **Settings** page is listed, with the panel's own explanation, in [All HiddifyManager settings](Settings-reference.md), which is made from the panel's code for each release.
 
 The panel makes running proxies easier, but it cannot fix a blocked server or a broken domain. If you finish this page and your users still cannot connect, read [Troubleshooting connectivity issues](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/).
-
-There is also a [video walkthrough in Persian](https://www.youtube.com/watch?v=OfvKL9CaOQU). It was recorded for an older version.
 
 ## Before you start
 
@@ -59,14 +57,20 @@ When it finishes, the panel is ready to use. Copy the new admin links and keep t
 
 ## The admin menu
 
-The sidebar on the left has two groups:
+The sidebar on the left has these groups. The sections below follow the same order.
 
-- **Manager:** Dashboard, Users, Admins, Send Message, Inbox, Nodes and Tools (Config tester, Clean IP scanner, Text decoders, QR code, SSH terminal).
-- **Settings:** Domains, Protocols, Outbounds, Settings, Proxy Editor (Custom proxies, Base configs, Templates, Template variables), Backup, Actions (the **Apply & Status** page), Telegram Bot and API.
+- **Manager:** [Dashboard](#dashboard), [Users](#users), [Admins](#admins), [Inbox](#inbox), [Nodes](#nodes) and [Tools](#tools) (Config Tester, Scanner, Text Decoders, QR Code, SSH Terminal).
+- **Settings:** [Domains](#domains), [Protocols](#proxies-and-protocols), [Outbounds](#outbounds), [Settings](#settings), [Proxy Editor](#proxy-editor) (Proxies, Base Configs, Templates, Template Variables), [Backup](#backup), [Actions](#apply-status) (the **Apply & Status** page), [Telegram Bot](#telegram-bot) and [API](#api).
+- **Help** and **Donation**.
+
+Your own account (password, passkeys, language and the defaults for your users) is under the person icon at the top: see [My account](#my-account).
+
+!!! tip "Install the panel as an app"
+    The first time you open the panel, it offers to install itself as an app on your phone or computer (**Install the panel as an app**). It then opens in its own window, one tap away. Tick **Do not show this again** if you don't want it.
 
 ## Dashboard
 
-The Dashboard shows traffic, users and server health at a glance: online users, today's, this week's and this month's usage, and charts of usage and users over time (7, 30, 90 or 180 days). If you use several servers (nodes), pick one in the node filter. Further down, **Config Health** tests every config from the server, and **Node Health** shows CPU, RAM and network for each node.
+The Dashboard shows traffic, users and server health at a glance: online users, today's, this week's and this month's usage, and charts of usage and users over time (7, 30, 90 or 180 days). If you use several servers (nodes), pick one in the node filter. Further down, **Config Health** tests every config from the server, and **Node Health** shows CPU, RAM and network for each node. See [Automatic config health checks](Automatic-config-health-checks-on-HiddifyManager.md).
 
 <img alt="Dashboard" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-dashboard.webp" style="display:block;margin:0 auto">
 
@@ -82,13 +86,17 @@ Here you create an account for each person who will use your proxies.
 
 <img alt="Users list" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-users.webp" style="display:block;margin:0 auto">
 
+Click **Add user** to open the **New user** window:
+
 <img width=600 alt="New user window" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-user-add.webp" style="display:block;margin:0 auto">
 
 The Users page lists everyone with their usage, expiry date and last connection. Use the search box and the filters (Online, Active, Expiring soon, Low on data, …) to find users.
 
 Each user has their own **user page**. Open it with the QR code button in the user's row, which shows the user's link. On the user page the user sees the remaining traffic and time and a big connect button. Tapping it opens **Configure Your VPN**, where the user picks an app or uses **Copy Link**. The menu of the user page also has **All Configs**, with every config of the user.
 
-<img width=260 alt="User page" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-user-home-desk.webp" style="display:block;margin:0 auto">
+<img width=720 alt="User page" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-user-home-desk.webp" style="display:block;margin:0 auto">
+
+Under **All Configs** the user finds every config and subscription link:
 
 <img width="100%" style="display:block;margin:0 auto;max-width:800px" alt="All configs on the user page" src="/assets/app-use/en-user-configs-list.webp">
 
@@ -98,7 +106,7 @@ You can give users access in three ways:
 2. **The subscription link.** A subscription link is one address that the app re-reads to get the latest configs. If you change your settings, the user's app updates itself.
 3. **A single config link.** It does not update. If you change your settings, you must send the user a new link.
 
-For help connecting client apps, see the [YouTube playlist](https://www.youtube.com/watch?v=Ml7XeYp70mM&list=PL2DSfh6Z6tTIalRDm3hY7G7ku9-yrCfBL) and the client tutorials on the [HiddifyManager tutorials page](/manager/).
+For help connecting client apps, see the client tutorials on the [HiddifyManager tutorials page](/manager/).
 
 ## Admins
 
@@ -121,6 +129,32 @@ For each admin you can:
 !!! note
     Each admin's link contains their secret ID. If you change it, that admin's panel address changes completely. See [the correct format of the admin link](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/).
 
+Each admin can also set a password and passkeys, a default outbound, extra configs and a custom user page for their own users on their **My account** page: see [My account](#my-account).
+
+## Inbox { #inbox }
+
+The **Inbox** gathers the people who write to your Telegram bot, their requests for a free test, and the messages you send to your users. Here you make **free test packages** (a link that gives whoever opens it a test account, given automatically or after you approve it), answer conversations, and use **Send Message** to write to all your users, or to the active or expired ones, through the bot. It needs the [Telegram bot](#telegram-bot).
+
+Full guide: [Inbox, free test packages and messages to users](Inbox-free-test-and-messages-on-HiddifyManager.md).
+
+## Nodes { #nodes }
+
+**Nodes** are other HiddifyManager servers connected to this panel. Users and admins are shared with them automatically, so one account works on every server, and the usage of all servers is added up here. The page shows each node's state and lets you add, ping and manage them. The Dashboard can show each node on its own.
+
+Full guide: [Multi-server with nodes](Multi-server-with-nodes-on-HiddifyManager.md).
+
+## Tools { #tools }
+
+The **Tools** menu has helpers that run from the panel:
+
+- **Config Tester:** runs every config of a subscription in its own core and checks that it connects.
+- **Scanner:** finds Cloudflare IPs that work on your internet (with **Fragment** and **REALITY SNI** tests too), to give to the users of your ISP.
+- **Text Decoders:** decodes and edits share links, subscriptions, Base64 and URLs, in your browser.
+- **QR Code:** makes a QR code from any text, or reads one with the camera or from an image.
+- **SSH Terminal:** opens a terminal on any server, and its files, right from the panel.
+
+Full guide: [The panel's tools](How-to-use-the-panel-tools-in-HiddifyManager.md).
+
 ## Domains
 
 Open **Domains** (in the **Settings** group of the menu) to add or edit your domains. The list shows each domain with its mode, its TLS and certificate state, its custom proxies and **Show configs of**. The order matters: drag the handle to sort. Configs list domains in this order, and the first one is used for panel links.
@@ -136,6 +170,8 @@ To add a domain, click **Add domain**. The **Add a domain** window has four step
 3. **Name** and **Certificate:** finish the remaining steps.
 
 <img width=700 alt="Add a domain: Domain step" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-domain-add.webp" style="display:block;margin:0 auto">
+
+In the next step you choose the mode:
 
 <img width=700 alt="Add a domain: Mode step" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-domain-mode.webp" style="display:block;margin:0 auto">
 
@@ -200,143 +236,43 @@ Open **Protocols** to turn protocols, transports and TLS tricks on or off for th
 
 Note: plain HTTP connections are not encrypted. TLS connections are encrypted.
 
+## Outbounds { #outbounds }
+
+**Outbounds** decide where your users' traffic leaves your server: directly, through WARP, blocked, or through a Socks, Tor or Psiphon exit. They are checked from top to bottom: traffic goes out through the first outbound that lists its site, and the last enabled one gets everything else. Each admin can also pick a default outbound for their own users in **My account**.
+
+Full guide: [Outbounds](How-to-use-Outbounds-on-HiddifyManager.md). For WARP itself, see [How to activate WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/).
+
 ## Settings
 
-Open **Settings**. It is one long page of cards (Admin Settings, Customizing User Page, General Settings, Proxies Settings, Telegram Configs, TLS Settings, Advanced Settings, Very Advanced Settings, WARP, Reality and more). Common settings are shown first. Turn on **Show Advanced Settings** at the top to see the settings marked **Advanced**, or use the search box. Settings marked **Reinstall** only take effect after a reinstall (see [Actions](#apply-status)). The cards are described below.
+Open **Settings**. It is one long page of cards; common settings are shown first. Turn on **Show Advanced Settings** at the top to see the rest, or type in the search box. Settings marked **Reinstall** take effect only after a reinstall (see [Actions](#apply-status)).
 
-### Admin Settings
+<img width=640 alt="The WARP card, one of the cards on the Settings page" src="/assets/manager/How-to-use-Outbounds-on-HiddifyManager/en-warp-settings.webp" style="display:block;margin:0 auto">
 
-![Admin Settings](/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-admin.webp)
+What each card is for. Click a card to see **every** setting in it, with a picture, in [All HiddifyManager settings](Settings-reference.md):
 
-- **Admin Panel Language:** the language of the admin area (English, Persian, Chinese, Portuguese, Russian or Burmese).
-- **Parent Panel (Multi Server):** connect this panel to a central (parent) panel. You then define users on the parent panel, and the usage of all servers is added up there.
-- **Node name:** a name for this server when it is part of a multi-server setup.
+| Card | What it is for |
+|---|---|
+| [Admin Settings](Settings-reference.md#admin) | panel language, parent panel for multi-server, node name |
+| [Customizing User Page](Settings-reference.md#branding) | title, support link and text, language of the user page |
+| [General Settings](Settings-reference.md#general) | DNS, country, decoy site, firewall, auto update, backups |
+| [Proxies Settings](Settings-reference.md#proxies) | which transports and protocols go into the configs, domestic-site blocking |
+| [Telegram Configs](Settings-reference.md#telegram) | Telegram proxy (MTProxy / web proxy) |
+| [HTTP / TLS](Settings-reference.md#http) | ports and TLS options of the configs |
+| [MUX, TLS Trick](Settings-reference.md#mux) | connection tricks; see [MUX](/manager/basic-concepts-and-troubleshooting/How-MUX-works-and-its-usage/) and [TLS trick](/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/) |
+| [SSH Proxy, Mieru, TUIC, Hysteria, WireGuard, Shadowsocks, DNSTT](Settings-reference.md#ssh) | options of those protocols |
+| [WARP](Settings-reference.md#warp) | see [How to activate WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/) |
+| [Reality](Settings-reference.md#reality) | see [How to use Reality](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/) |
+| [Advanced / Very Advanced](Settings-reference.md#advanced) | proxy paths, Cloudflare API, update channel and other expert options |
 
-### Customizing User Page
+## Proxy Editor { #proxy-editor }
 
-<img width=600 alt="Customizing User Page" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-branding.webp" style="display:block;margin:0 auto">
+The **Proxy Editor** is for advanced users who want to change how the configs are built:
 
-- **User Area Language:** the language of the user page.
-- **User Page Title:** your brand name, shown at the top of the user page.
-- **Support Link:** a link to your support channel.
-- **Support Section Text:** a message shown in the support box of the user page.
+- **Proxies:** every built-in proxy (protocol, transport, TLS layer and core) with its own switch and settings.
+- **Base Configs** and **Templates:** the server and client configs the proxies are made from.
+- **Template Variables:** values that the templates use.
 
-Some of these are hidden until you click **Show 2 more advanced settings**.
-
-### General Settings
-
-<img width=600 alt="General Settings" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-general.webp" style="display:block;margin:0 auto">
-
-- **Country:** the country of your users. It selects settings that suit that country's filtering. Changing it needs a reinstall.
-- **Auto Update:** lets the panel update itself.
-- **Only IPv4:** turns off IPv6 on the server.
-- **Speed Test:** lets users test their connection speed to your server.
-- **Decoy Site:** a fake website. If someone (for example a filtering system) opens your domain directly, they see this site instead of your panel, which makes your server harder to identify. Do not use bank, payment, Iranian or very famous sites.
-- **Firewall:** when on, only the ports HiddifyManager uses (at least 22, 443, 80 and SSH) stay open and all other ports are closed.
-- **DNS Server**, **Show Usage in Sublink**, **Automatic config health checks**, **Default User Agent**, **Max Proxy IPs Per Version**, **Block BitTorrent**, **Config names** and **Keep Backups (days)** are also here (most are **Advanced**). **Keep Backups (days)** deletes automatic backups older than this number of days; `0` keeps all of them.
-
-### Proxies Settings
-
-<img width=600 alt="Proxies Settings" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-proxies.webp" style="display:block;margin:0 auto">
-
-- **Block Domestic Sites:** blocks traffic from your server to Iranian sites and `.ir` domains. This makes it harder for the filtering system to identify your server. We recommend turning it on.
-- **Shared Secret:** a password used by connections whose traffic is not counted per user.
-- On/off switches for protocols and transports (the same as on the **Protocols** page), for example **VLess**, **Trojan**, **VMess**, **Reality**, **Websocket**, **gRPC**, **HTTPUpgrade**, **XHTTP**, **TCP**, **QUIC**, **Naive**, **AnyTLS**, **Snell** and **SOCKS**.
-
-Tip: in the Hiddify app, routing rules can send traffic for Iranian sites directly, without the proxy. This saves your server's traffic.
-
-!!! info "Removed settings"
-    The old **V2Ray** switch is gone. The browser fingerprint setting (**uTLS**) is now under **Advanced Settings**.
-
-### Domain fronting
-
-The old global **Domain Fronting** settings group was removed. Domain fronting is now set on each CDN domain (see [CDN domain](#cdn-domain)). More information: [Guide for domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/).
-
-### Telegram Configs
-
-A Telegram proxy works only inside the Telegram app and helps users bypass Telegram filtering.
-
-<img width=600 alt="Telegram Configs" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-telegram.webp" style="display:block;margin:0 auto">
-
-- **MTProxy FakeTLS Enable:** turns the Telegram proxy (`tg://proxy` links) on or off. It needs a **Direct** or **Relay** domain.
-- **Telegram Web Proxy Enable:** turns on the Telegram proxy over HTTPS (`tg://webproxy` links). It works on every domain with a real certificate, CDN domains included.
-- **Telegram Bot Token:** connects the panel to your Telegram bot. See [How to set up and use the Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/).
-
-!!! info "Changed in v14"
-    The Telegram proxy now always uses **telemt**. The old choice of Telegram proxy library (Python, Erlang and others) was removed.
-
-### HTTP Configuration
-
-![HTTP Configuration](/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-http.webp)
-
-- **Allow HTTP Connection:** allows unencrypted HTTP connections. We don't recommend turning it on. The same switch is on the **Protocols** page.
-
-The custom HTTP port list was removed in v14. Proxies are served on ports 80 and 443 whenever possible.
-
-### TLS Settings
-
-<img width=600 alt="TLS Settings" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-tls.webp" style="display:block;margin:0 auto">
-
-- **Certificate (ACME) Email:** the email used when the panel requests certificates.
-- **Enable TLS ECH:** adds ECH (Encrypted Client Hello) to the generated TLS subscription links. You then enable it per CDN domain.
-- **Allow Invalid SNI:** lets any domain, not only yours, be used to reach the proxy. Not recommended.
-
-The custom TLS port list was removed in v14. Since v14 the panel issues and stores certificates itself.
-
-The **TLS Trick** group (TLS fragment, mixed SNI case, padding) is explained in [How the TLS trick works](/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/).
-
-### Shadowsocks
-
-**Shadowsocks FakeTLS** is a simple disguise that wraps data in TLS-looking packets to fool the filter.
-
-![Shadowsocks and ShadowTLS settings](/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-shadowsocks.webp)
-
-- **Shadowsocks 2022:** turns Shadowsocks 2022 on or off.
-- **Shadowsocks FakeTLS (Simple OBFS):** we don't recommend it.
-- **SS FakeTLS FakeDomain:** the fake domain used to disguise the packets.
-
-The **Shadowsocks 2022** and **Shadowsocks FakeTLS (Simple OBFS)** switches are also on the **Protocols** page.
-
-### ShadowTLS
-
-ShadowTLS shows the firewall a real TLS handshake with a valid certificate from a site you choose. Its switch is on the **Protocols** page, and its fake domain is in the **Shadowsocks** group.
-
-!!! warning
-    The ShadowTLS service was removed from HiddifyManager in v13. Whether ShadowTLS configs still work is not confirmed, so don't rely on it.
-
-![ShadowTLS setting](/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-shadowsocks.webp)
-
-### Advanced Settings
-
-These settings are for experienced users.
-
-<img width=600 alt="Advanced Settings" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-advanced.webp" style="display:block;margin:0 auto">
-
-- **Package Update Mode:** choose **Release** (stable) or **Beta** updates.
-- **Common Proxy Core:** which engine serves the shared proxies: `xray`, `hiddify_core` or `both`. It replaces the old **Core** setting.
-- **uTLS:** which browser fingerprint the configs imitate (for example Chrome, Firefox, Safari, iOS or Android).
-
-**Common Proxy Core** and **uTLS** are hidden until you click **Show 2 more advanced settings** (or turn on **Show Advanced Settings**).
-
-The parent panel link and the Telegram bot token moved to **Admin Settings** and **Telegram Configs**.
-
-### Very Advanced Settings
-
-<img width=600 alt="Very Advanced Settings" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-set-too-advanced.webp" style="display:block;margin:0 auto">
-
-- **Proxy Path for Admins** and **Proxy Path for Clients:** the secret paths in your admin and user links. They hide your panel and connections from the filter. The panel sets them for you; change them only if you need to. If you change the admin path, your admin link changes.
-- **Cloudflare API:** your Cloudflare API key (follow the instruction link next to it).
-
-The per-protocol path settings were hidden in v13.
-
-### WARP and Reality
-
-- **WARP:** see [How to activate WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/).
-- **Reality:** see [How to use Reality](/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/).
-
-### SSH Proxy
-
-The **SSH Proxy** card has **Multiplex SSH on TLS port** and the **SSH Proxy** switch, which is also on the **Protocols** page. See [SSH proxy setting](/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/).
+A wrong change here can break all configs; **Reset all to defaults** brings back the built-in ones. Full guide: [Proxy Editor](How-to-use-the-Proxy-Editor-in-HiddifyManager.md).
 
 ## Backup
 
@@ -350,9 +286,9 @@ Open **Backup** to make a backup of your panel or restore one. The page is calle
 
 Details: [How to back up and restore](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
 
-## Telegram bot
+## Telegram bot { #telegram-bot }
 
-To set up and use the panel's Telegram bot, see [How to set up and use the Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/).
+**Telegram Bot** in the menu opens your panel's bot in Telegram. With it you and your users get their links, usage, alerts and backups in Telegram, and the [Inbox](#inbox) works through it. To set it up, see [How to set up and use the Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/).
 
 ## Actions (Apply & Status) { #apply-status }
 
@@ -405,8 +341,23 @@ Click **Restart**. It restarts all HiddifyManager services without reinstalling 
 
 <img width=300 alt="Restart Services" src="/assets/manager/How-to-configure-Hiddify-panel-properly/en-action-restart.webp" style="display:block;margin:0 auto">
 
+## API { #api }
+
+**API** opens the documentation of the panel's REST API, to manage users and admins from your own programs or bots. See [How to use the API](/manager/contribution/How-to-use-API-in-HiddifyManager-project/).
+
+## My account { #my-account }
+
+Click the person icon at the top to open **My account**: your admin link, your limits, your language, password and **passkeys** (sign in without a password), and for your users (and your sub-admins' users): the **default outbound**, **configs for my users** that are added to their subscriptions, and **my users' page**, a custom user page. Full guide: [My account and admin security](My-account-and-admin-security-in-HiddifyManager.md).
+
 ## Help
 
-All tutorials and videos are listed on the [HiddifyManager tutorials page](/manager/).
+All tutorials and videos are listed on the [HiddifyManager tutorials page](/manager/). Every setting is explained in [All HiddifyManager settings](Settings-reference.md).
+
+## Related articles
+
+- [All panel settings, one by one](/manager/configuration-and-advanced-settings/Settings-reference/)
+- [The Hiddify Manager menu over SSH](/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/)
+- [Import users from X-UI](/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/)
+- [The admin link and its format](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/)
 
 </div>

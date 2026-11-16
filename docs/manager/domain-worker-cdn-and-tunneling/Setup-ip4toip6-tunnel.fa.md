@@ -1,5 +1,9 @@
 # تونل 4to6
 
+!!! warning "این آموزش برای روش‌های قبلی است"
+    پروژهٔ 4to6-tunnel از شهریور ۱۴۰۳ (سپتامبر ۲۰۲۴) به‌روزرسانی نداشته است. ممکن است هنوز کار کند، ولی نگهداری نمی‌شود. برای سرور میانی‌ای که نگهداری‌اش ساده‌تر است، [استفاده از IPv6 سرورها برای تونل پایدارتر](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/) یا [روش‌های سرور میانی](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) را ببینید. این صفحه برای کسانی که از آن استفاده می‌کنند نگه داشته شده است.
+
+
 تونل 4to6 مشابه تونل 6to4 است با مزایای زیر:
 
 1. آدرس IP مؤثر شما بین دو سرور IPv6 خواهد بود.
@@ -8,20 +12,9 @@
 
 ## نمای فنی
 
-این تنظیم شامل دو نود، A و B است:
+در این روش دو سرور داریم: **A** در ایران و **B** در خارج. بین این دو یک تونل ساخته می‌شود:
 
-```
-Tehran ------------------GFW----------------- Tokyo 
-   A <---------------------------------------> B
-```
-
-یک تونل بین این دو نود ایجاد می‌شود:
-
-```
-Tehran ------------------------------------------GFW----------------------------------------- Tokyo 
-   A                                                                                          B
-| virtual IPv4 <---- 4to6 ----> real IPv6 | <------IPv6-----> | real IPv6 <---- 4to6 ----> virtual IPv4 |
-```
+<img width=800 alt="تونل 4to6 بین سرور A در ایران و سرور B در خارج" src="/assets/manager/Setup-ip4toip6-tunnel/fa-overview.svg" style="display:block;margin:0 auto">
 
 بسته‌های IPv4 در بسته‌های IPv6 کپسوله شده و از طریق شبکه IPv6 منتقل می‌شوند. اگر یک IP مسدود شود، یک آدرس IPv6 خواهد بود که به راحتی می‌توان آن را جایگزین کرد، زیرا آدرس‌های IPv6 معمولاً از IPv4 ارزان‌تر هستند.
 
@@ -101,7 +94,7 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 
 اگر تنظیمات کار کرد، دستورات را به `local.rc` اضافه کنید.
 
-### استفاده از Xray در هر دو سرور
+### استفاده از Xray در هر دو سرور { #use-xray-on-both-servers }
 
 خدمات Xray را روی هر دو سرور نصب کنید و سرور A را طوری تنظیم کنید که داده‌ها را از طریق پروکسی روی سرور B ارسال کند. این تنظیمات با استفاده از 3x-ui ساده‌تر می‌شود. برای کمک، با من تماس بگیرید (من به عنوان meshya در همه جا و meshyah در تلگرام در دسترس هستم).
 
@@ -130,3 +123,10 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 <br>
 
 مقاله و مخزن اصلی توسط [Meshya](https://github.com/meshya/4to6-tunnel)
+
+## مقاله‌های مرتبط
+
+- [IPv6 اصلی سرور برای تونل پایدارتر](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/)
+- [IPv6 لوکال برای سرور میانی](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/)
+- [انواع دامنه و ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [دامنهٔ فیک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)

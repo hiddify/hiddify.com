@@ -73,4 +73,11 @@ title: آموزش غیرفعال‌سازی آی‌پی ورژن ۶ در هید�
 
 اگر بعداً خواستید IPv6 را دوباره روشن کنید، آن سه خط را پاک کنید، دوباره `sudo sysctl -p` را اجرا کنید و سرور را ری‌استارت کنید.
 
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+
 </div>

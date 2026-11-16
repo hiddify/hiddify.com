@@ -90,4 +90,11 @@ hiddify reset-password
 - **Admin proxy path**: in the panel, open **Settings** and search for "Proxy Path for Admins" (it is in the **Very Advanced Settings** card). Change it, click **Save**, and apply the changes. The panel then shows the new admin address.
 - **Admin UUID**: open the **Admins** page, edit the admin, and change the UUID field. The old admin link for that admin stops working.
 
+## Related articles
+
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [All panel settings, one by one](/manager/configuration-and-advanced-settings/Settings-reference/)
+- [The Hiddify Manager menu over SSH](/manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH/)
+- [Import users from X-UI](/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/)
+
 </div>

@@ -231,6 +231,7 @@ plugins:
 
 hooks:
   - hooks/search_dedup.py
+  - hooks/core_links.py
 
 nav: #docs/app/install.md
   #- Hiddify: index.html

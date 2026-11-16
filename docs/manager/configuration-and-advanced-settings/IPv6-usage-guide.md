@@ -75,4 +75,11 @@ For more about Reality, see [How to use Reality on HiddifyManager](/manager/conf
 
 When these steps are done, your users can connect to your server over IPv6. If you do not want IPv6 at all, see [How to disable IPv6 on HiddifyManager](/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/).
 
+## Related articles
+
+- [Telegram proxy](/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/)
+- [The panel's Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/)
+- [Turn on WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
 </div>

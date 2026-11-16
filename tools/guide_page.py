@@ -23,9 +23,9 @@ OLD_START = '<section class="flex flex-col gap-5 items-center justify-center py-
 
 TEXT = {
     "fa": {"start": "از اینجا شروع کنید", "articles": "مقاله", "videos": "ویدیو", "video_list": "ویدیوها",
-           "new": "جدید", "updated": "به‌روز شد", "old": "آرشیو", "upto": "تا نسخهٔ {}", "prev": "قبلی", "next": "بعدی", "jump": "دسته‌ها"},
+           "new": "جدید", "updated": "به‌روز شد", "old": "نسخهٔ پیشین", "upto": "تا نسخهٔ {}", "prev": "قبلی", "next": "بعدی", "jump": "دسته‌ها"},
     "en": {"start": "Start here", "articles": "articles", "videos": "videos", "video_list": "Videos",
-           "new": "New", "updated": "Updated", "old": "Archived", "upto": "up to v{}", "prev": "Previous", "next": "Next", "jump": "Categories"},
+           "new": "New", "updated": "Updated", "old": "Earlier version", "upto": "up to v{}", "prev": "Previous", "next": "Next", "jump": "Categories"},
 }
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
 
@@ -119,9 +119,12 @@ def href(path, lang):
 
 def article(a, lang):
     """One article link. "upto: 12" marks an article that is only right for versions up to v12 (muted,
-    with an "up to v12" tag); "old: true" mutes it without a version."""
+    with an "up to v12" tag); "old: true" mutes it without a version. "ver: 14" (the version the article
+    was written or checked for) does the same by itself once the product's major version goes past it."""
     title = a.get(lang) or title_of(a["path"], lang)
     attrs, tag = "", ""
+    if a.get("ver") and not a.get("upto") and outdated(PRODUCT, a["ver"]):
+        a = dict(a, upto=major(a["ver"]))
     if a.get("upto"):
         v = str(a["upto"])
         tag = f'<span class="hg-ver">{TEXT[lang]["upto"].format(num(v, lang))}</span>'
@@ -138,7 +141,7 @@ def article(a, lang):
 
 
 VTEXT = {
-    "fa": {"kind_word": "ویدیوی یوتیوب. ", "old": "ویدیوی نسخهٔ قبل", "new": "جدید", "year": "سال {}", "year_in": "در سال {}",
+    "fa": {"kind_word": "ویدیوی یوتیوب. ", "old": "نسخهٔ پیشین", "new": "جدید", "year": "سال {}", "year_in": "در سال {}",
            "manager": "برای نسخهٔ {} منیجر", "app": "برای اپ نسخهٔ {}", "app0": "برای نسخه‌های اولیهٔ اپ (Hiddify Next)", "legacy-app": "اپ قدیمی، دیگر به‌روز نمی‌شود",
            "client": "نسخهٔ قدیمی برنامه", "general": "ضبط‌شده",
            "tip": "این ویدیو برای نسخهٔ قبلی است ({}). ممکن است بخشی یا همهٔ آن با نسخهٔ فعلی فرق داشته باشد.",
@@ -163,6 +166,8 @@ def vinfo(vid, meta, lang):
     if not m:
         return "", "", "", ""
     V, d, kind = VTEXT[lang], m["date"], m["kind"]
+    if kind == "current" and m.get("product") and m.get("ver") and outdated(m["product"], m["ver"]):
+        kind = m["product"]   # made for an earlier major version: becomes an "Earlier version" video
     year = num(jyear(d), lang) if lang == "fa" else str(d.year)
     if kind == "current":
         if (datetime.date.today() - d).days > NEW_VIDEO_DAYS:
@@ -259,11 +264,49 @@ def check(data):
     return paths
 
 
+VERSIONS = {}   # latest stable releases, from data/guides/versions.yml (tools/versions.py)
+PRODUCT = "manager"
+
+
+def major(v):
+    m = re.match(r"\d+", str(v))
+    return int(m.group()) if m else 0
+
+
+def outdated(product, ver):
+    """True when ver is an older major version than the product's latest stable release."""
+    cur = VERSIONS.get(product)
+    return bool(cur) and major(ver) < major(cur)
+
+
+def instagram(meta):
+    """Same "Earlier version" badge on the video tiles of docs/instagram (index.md, index.fa.md)."""
+    for lang, name in (("fa", "index.fa.md"), ("en", "index.md")):
+        p = os.path.join(DOCS, "instagram", name)
+        if not os.path.exists(p):
+            continue
+        s = open(p, encoding="utf-8").read()
+
+        def tile(m):
+            cls, badge = vinfo(m.group(2), meta, lang)[:2]
+            extra = f' is-earlier" data-old="{esc(badge)}' if cls == "hg-v-old" else ""
+            return f'{m.group(1)}class="post{extra}"'
+        new = re.sub(r'(<a href="https://www\.youtube\.com/(?:watch\?v=|shorts/)([A-Za-z0-9_-]{11})" target="_blank" )'
+                     r'class="post(?: is-earlier" data-old="[^"]*)?"', tile, s)
+        if new != s:
+            open(p, "w", encoding="utf-8").write(new)
+            print(f"instagram/{name}: badges")
+
+
 def main():
+    global VERSIONS, PRODUCT
+    vf = os.path.join(DATA, "versions.yml")
+    VERSIONS = (yaml.safe_load(open(vf, encoding="utf-8")) or {}) if os.path.exists(vf) else {}
     titles = yaml.safe_load(open(os.path.join(DATA, "videos.yml"), encoding="utf-8")) or {}
     vm = os.path.join(DATA, "video_meta.yml")
     meta = (yaml.safe_load(open(vm, encoding="utf-8")) or {}) if os.path.exists(vm) else {}
     for page in ("manager", "app"):
+        PRODUCT = page
         data = yaml.safe_load(open(os.path.join(DATA, page + ".yml"), encoding="utf-8"))
         check(data)
         for lang in ("en", "fa"):
@@ -277,6 +320,7 @@ def main():
             if new != s:
                 open(p, "w", encoding="utf-8").write(new)
             print(f"{page}/{os.path.basename(p)}: built")
+    instagram(meta)
 
 
 if __name__ == "__main__":

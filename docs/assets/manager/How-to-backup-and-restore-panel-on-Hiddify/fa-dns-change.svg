@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 330" font-family="Vazirmatn, Tahoma, sans-serif" role="img" aria-label="رکورد DNS دامنه از آی‌پی سرور قدیمی به آی‌پی سرور جدید تغییر می‌کند">
+<defs>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#455fe9"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+<filter id="s" x="-10%" y="-20%" width="120%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1e293b" flood-opacity=".16"/></filter>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#10b981"/></marker>
+</defs>
+<rect x="8" y="8" width="844" height="314" rx="26" fill="#f8fafc" stroke="#e2e8f0"/>
+<!-- old server -->
+<g filter="url(#s)"><rect x="40" y="40" width="200" height="110" rx="18" fill="#fff" stroke="#e2e8f0"/></g>
+<g transform="translate(70 62)" fill="none" stroke="#94a3b8" stroke-width="2.4"><rect x="0" y="0" width="44" height="18" rx="4"/><rect x="0" y="26" width="44" height="18" rx="4"/><circle cx="9" cy="9" r="2" fill="#94a3b8"/><circle cx="9" cy="35" r="2" fill="#94a3b8"/></g>
+<text x="128" y="78" font-size="15" font-weight="800" fill="#64748b">سرور قدیمی</text>
+<text x="128" y="100" font-size="13" fill="#94a3b8" font-family="ui-monospace, Menlo, monospace" direction="ltr">198.51.100.7</text>
+<text x="140" y="134" text-anchor="middle" font-size="12.5" fill="#94a3b8">دیگر استفاده نمی‌شود</text>
+<!-- new server -->
+<g filter="url(#s)"><rect x="40" y="180" width="200" height="110" rx="18" fill="#fff" stroke="url(#gg)" stroke-width="2.5"/></g>
+<g transform="translate(70 202)" fill="none" stroke="#059669" stroke-width="2.4"><rect x="0" y="0" width="44" height="18" rx="4"/><rect x="0" y="26" width="44" height="18" rx="4"/><circle cx="9" cy="9" r="2" fill="#059669"/><circle cx="9" cy="35" r="2" fill="#059669"/></g>
+<text x="128" y="218" font-size="15" font-weight="800" fill="#047857">سرور جدید</text>
+<text x="128" y="240" font-size="13" fill="#047857" font-family="ui-monospace, Menlo, monospace" direction="ltr">203.0.113.10</text>
+<text x="140" y="274" text-anchor="middle" font-size="12.5" fill="#047857">پنل بازیابی‌شده</text>
+<!-- DNS record card -->
+<g filter="url(#s)"><rect x="300" y="72" width="520" height="186" rx="20" fill="#fff" stroke="url(#g)" stroke-width="2.5"/></g>
+<rect x="300" y="72" width="520" height="44" rx="20" fill="url(#g)"/><rect x="300" y="96" width="520" height="20" fill="url(#g)"/>
+<text x="560" y="100" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">رکورد DNS دامنه (مثلاً در کلادفلر)</text>
+<g font-size="12" fill="#64748b" direction="ltr" font-family="Inter, Segoe UI, Roboto, sans-serif">
+<text x="330" y="146">Type</text><text x="400" y="146">Name</text><text x="560" y="146">IPv4 address</text><text x="720" y="146">Proxy status</text>
+</g>
+<g direction="ltr">
+<rect x="324" y="156" width="56" height="34" rx="8" fill="#eef2ff"/><text x="352" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#3949d6" font-family="ui-monospace, Menlo, monospace">A</text>
+<text x="400" y="178" font-size="14" fill="#0f172a" font-family="ui-monospace, Menlo, monospace">panel.example.com</text>
+<text x="560" y="174" font-size="12.5" fill="#94a3b8" text-decoration="line-through" font-family="ui-monospace, Menlo, monospace">198.51.100.7</text>
+<rect x="556" y="182" width="138" height="30" rx="8" fill="#ecfdf5" stroke="#10b981"/>
+<text x="625" y="202" text-anchor="middle" font-size="13.5" font-weight="700" fill="#047857" font-family="ui-monospace, Menlo, monospace">203.0.113.10</text>
+<g transform="translate(720 162)"><rect width="34" height="18" rx="9" fill="#f6821f"/><circle cx="25" cy="9" r="7" fill="#fff"/></g>
+<text x="760" y="176" font-size="12" fill="#64748b" font-family="Inter, Segoe UI, Roboto, sans-serif">Proxied</text>
+</g>
+<text x="560" y="240" text-anchor="middle" font-size="13" fill="#475569">فقط آی‌پی را عوض کنید و ذخیره کنید؛ بقیه همان بماند</text>
+<!-- arrows -->
+<path d="M240 235 C 300 235, 300 200, 552 197" fill="none" stroke="#10b981" stroke-width="2.4" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<path d="M240 95 C 280 95, 300 140, 552 168" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 5"/>
+</svg>

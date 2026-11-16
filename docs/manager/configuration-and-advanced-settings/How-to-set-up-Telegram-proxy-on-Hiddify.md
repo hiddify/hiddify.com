@@ -38,7 +38,7 @@ One of the good features of the HiddifyManager panel is providing a Telegram pro
 - For this, search for [MTProxybot](https://t.me/MTProxybot).
 
 <div align=center markdown=1>
-![](https://user-images.githubusercontent.com/125398461/248558462-3fed75f8-0580-469a-a306-e01d385ee6ec.png)
+![Searching for MTProxybot in Telegram](/assets/manager/How-to-set-up-Telegram-proxy-on-Hiddify/gh-248558462-3fed75f8-0580-469a-a306-e01d385ee6ec.webp)
 </div>
 
 - Now enter the created proxy into the bot. It may take some time to fully activate.
@@ -46,3 +46,12 @@ One of the good features of the HiddifyManager panel is providing a Telegram pro
 - Then, in the panel settings, enter the address you want to advertise in the Telegram advertising tag field. For example, you can give your support account address.
 
 - The work is done.
+
+## Related articles
+
+- [The panel's Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/)
+- [Turn on WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/)
+- [Using IPv6](/manager/configuration-and-advanced-settings/IPv6-usage-guide/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

@@ -52,7 +52,7 @@ title: آموزش نحوه کنترل منابع سرور در هیدیفای‌
     htop
     ```
 
-    ![نمایش برنامه‌ها در htop](https://github.com/hiddify/hiddify-config/assets/125398461/38c5ab1f-8fed-49c9-9455-04c7a7e83917)
+    ![نمایش برنامه‌ها در htop](/assets/manager/How-to-monitor-server-resources-on-Hiddify/gh-38c5ab1f-8fed-49c9-9455-04c7a7e83917.webp)
 
 3. برای مرتب کردن برنامه‌ها بر اساس مصرف CPU، روی عنوان ستون `CPU%` کلیک کنید. برنامه‌ای که بالای فهرست است بیشترین CPU را مصرف می‌کند.
 4. برای مرتب کردن بر اساس مصرف RAM، روی عنوان ستون `MEM%` کلیک کنید.
@@ -128,7 +128,7 @@ free && sync && echo 3 > /proc/sys/vm/drop_caches && free
 
     باید جدولی مثل این ببینید:
 
-    ![خروجی دستور df](https://github.com/hiddify/hiddify-config/assets/125398461/f3552ab5-a105-40b5-8210-65487903c6ba)
+    ![خروجی دستور df](/assets/manager/How-to-monitor-server-resources-on-Hiddify/gh-f3552ab5-a105-40b5-8210-65487903c6ba.webp)
 
 2. ردیف دیسک اصلی (دیسکی که روی `/` قرار دارد و معمولا `sda1` یا `vda1` نام دارد) را نگاه کنید. اگر `Use%` نزدیک ۱۰۰٪ است، باید مقداری فضا آزاد کنید.
 3. هیدیفای‌منیجر لاگ‌هایش را در `/opt/hiddify-manager/data/log` نگه می‌دارد (نسخه‌های قدیمی از `/opt/hiddify-manager/log/system` استفاده می‌کردند که دیگر وجود ندارد). برای خالی کردن همه‌ی فایل‌های لاگ، بدون اینکه سرویس‌هایی که در آن‌ها می‌نویسند به مشکل بخورند:
@@ -141,5 +141,12 @@ free && sync && echo 3 > /proc/sys/vm/drop_caches && free
 
 4. هیدیفای‌منیجر بکاپ‌های خودکار را هم در `/opt/hiddify-manager/data/backup` نگه می‌دارد. اگر این پوشه بزرگ است، بکاپ‌هایی را که می‌خواهید نگه دارید دانلود کنید و بعد بکاپ‌های قدیمی را پاک کنید. بقیه‌ی پوشه‌ی `/opt/hiddify-manager/data` را پاک نکنید: دیتابیس و تنظیمات شما در آن است.
 5. دوباره `df -h --total` را اجرا کنید و مطمئن شوید فضا آزاد شده است.
+
+## مقاله‌های مرتبط
+
+- [عیب‌یابی مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [تمیز بودن آی‌پی یا دامنه](/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [نشتی DNS](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [نشتی تایم‌زون](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
 
 </div>

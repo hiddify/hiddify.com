@@ -4,6 +4,10 @@ title: How to install HiddifyManager Version 8
 
 ### HiddifyManager Version 8 Installation Guide
 
+!!! warning "This guide is for an earlier version"
+    It explains how to install HiddifyManager **version 8**, which is no longer updated and does not get security fixes. For a new server, install the latest version: see the [Main installation guide](/manager/installation-and-setup/guide/). This page is kept for people who still need version 8.
+
+
 To install HiddifyManager Version 8, follow these essential steps:
 
 ---
@@ -49,3 +53,9 @@ To install Version 8, execute the following commands in order:
 
 By following this guide, HiddifyManager Version 8 will be correctly installed on your server.
 
+## Related articles
+
+- [Install a specific version](/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/)
+- [Install with Docker](/manager/installation-and-setup/Install-Hiddify-using-Docker/)
+- [Automatic install from the data center (Cloud-init)](/manager/installation-and-setup/Cloud-init-installation/)
+- [Installation prerequisites](/manager/installation-and-setup/Installation-prerequisites/)

@@ -10,7 +10,7 @@ title: آموزش کار با نرم‌افزار FoXray
 در این صفحه یاد می‌گیرید چطور لینک اشتراک هیدیفای‌منیجر خود را به برنامه **FoXray** در آیفون و آیپد اضافه کنید و از تنظیمات اصلی آن استفاده کنید. FoXray را تیم سازنده برنامه WingsX منتشر کرد و پس از حذف WingsX از App Store جایگزین آن شد.
 
 !!! warning "FoXray دیگر در App Store نیست"
-    از مهر 1405 (اکتبر 2026) صفحه FoXray در App Store (شناسه id6448898396) وجود ندارد و دیگر نمی‌توانید آن را نصب کنید. اگر برنامه را از قبل دارید، مراحل زیر همچنان نحوه کار با آن را توضیح می‌دهد. برای نصب جدید از **Hiddify App** ([App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532)، راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/)) یا یکی دیگر از برنامه‌های [فهرست کلاینت‌های iOS](/fa/manager/client-software-on-ios/) استفاده کنید.
+    از مهر 1405 (اکتبر 2026) صفحه FoXray در App Store (شناسه id6448898396) وجود ندارد و دیگر نمی‌توانید آن را نصب کنید. اگر برنامه را از قبل دارید، مراحل زیر همچنان نحوه کار با آن را توضیح می‌دهد. برای نصب جدید از **اپ هیدیفای** ([App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532)، راهنما: [نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/)) یا یکی دیگر از برنامه‌های [فهرست کلاینت‌های iOS](/fa/manager/client-software-on-ios/) استفاده کنید.
 
 ## پیش از شروع
 
@@ -26,27 +26,27 @@ title: آموزش کار با نرم‌افزار FoXray
 3. در بخش «لینک‌های اشتراک»، ردیف **Subscription link b64** را پیدا کنید و «دریافت لینک» را بزنید.
 4. «کپی لینک» را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="بخش FoXray در نسخه قدیمی صفحه کاربری" src="https://github.com/hiddify/hiddify-config/assets/125398461/85d44408-cbb3-4250-b1c1-853f71cd0831" />
+    <img style="display:block;margin:0 auto" width=30% alt="بخش FoXray در نسخه قدیمی صفحه کاربری" src="/assets/manager/Tutorial-for-FoXray-app/gh-85d44408-cbb3-4250-b1c1-853f71cd0831.webp" />
 
     این تصویر مربوط به نسخه قدیمی صفحه کاربری است که تب **آی‌اواس** داشت. ظاهر صفحه فعلی فرق دارد.
 
 5. برنامه FoXray را باز کنید و از منوی پایین `Subscriptions` را بزنید.
 6. دکمه `+` را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="دکمه + در Subscriptions" src="https://github.com/hiddify/hiddify-config/assets/125398461/f68c3805-989c-434d-b249-b2dea19ec332"/>
+    <img style="display:block;margin:0 auto" width=30% alt="دکمه + در Subscriptions" src="/assets/manager/Tutorial-for-FoXray-app/gh-f68c3805-989c-434d-b249-b2dea19ec332.webp"/>
 
 7. یک نام دلخواه بنویسید.
 8. لینک را در فیلد `URL` بچسبانید.
 9. `Subscribe` را بزنید. کانفیگ‌ها به برنامه اضافه می‌شوند.
 
-    <img style="display:block;margin:0 auto" width=30% alt="فیلدهای نام و URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/f9118614-a8bf-42ae-9341-62c79fd7ffd9" />
+    <img style="display:block;margin:0 auto" width=30% alt="فیلدهای نام و URL" src="/assets/manager/Tutorial-for-FoXray-app/gh-f9118614-a8bf-42ae-9341-62c79fd7ffd9.webp" />
 
 ## به‌روزرسانی لینک اشتراک
 
 در منوی `Subscriptions` روی نماد `↪️` بزنید. لینک‌ها به‌روز می‌شوند.
 
 <div align=center markdown=1>
-<img width=30% alt="نماد به‌روزرسانی" src="https://github.com/hiddify/hiddify-config/assets/125398461/9a899074-d180-47a4-9eed-cd56dcef3954" />
+<img width=30% alt="نماد به‌روزرسانی" src="/assets/manager/Tutorial-for-FoXray-app/gh-9a899074-d180-47a4-9eed-cd56dcef3954.webp" />
 </div>
 
 ## افزودن لینک با QR code
@@ -55,7 +55,7 @@ title: آموزش کار با نرم‌افزار FoXray
 2. دوربین را روی QR code لینک یا کانفیگ بگیرید. به برنامه اضافه می‌شود.
 
 <div align=center markdown=1>
-<img width=30% alt="دکمه QR code" src="https://github.com/hiddify/hiddify-config/assets/125398461/cc0afd0b-5bb5-4215-808c-d9a7e7175dac" />
+<img width=30% alt="دکمه QR code" src="/assets/manager/Tutorial-for-FoXray-app/gh-cc0afd0b-5bb5-4215-808c-d9a7e7175dac.webp" />
 </div>
 
 اگر QR code را به‌صورت عکس در گالری گوشی ذخیره کرده‌اید:
@@ -64,7 +64,7 @@ title: آموزش کار با نرم‌افزار FoXray
 2. عکس را انتخاب کنید. کانفیگ‌ها اضافه می‌شوند.
 
 <div align=center markdown=1>
-<img width=30% alt="دکمه عکس" src="https://github.com/hiddify/hiddify-config/assets/125398461/1c3dfddc-b922-4c93-bb25-256c3fc39339" />
+<img width=30% alt="دکمه عکس" src="/assets/manager/Tutorial-for-FoXray-app/gh-1c3dfddc-b922-4c93-bb25-256c3fc39339.webp" />
 </div>
 
 ## افزودن کانفیگ تکی
@@ -75,7 +75,7 @@ title: آموزش کار با نرم‌افزار FoXray
 2. در منوی `FoXray` روی نماد `Clipboard` بزنید. کانفیگ کپی‌شده اضافه می‌شود.
 
 <div align=center markdown=1>
-<img width=30% alt="نماد Clipboard" src="https://github.com/hiddify/hiddify-config/assets/125398461/02be5d9c-3894-438e-be9b-072489033f2d" />
+<img width=30% alt="نماد Clipboard" src="/assets/manager/Tutorial-for-FoXray-app/gh-02be5d9c-3894-438e-be9b-072489033f2d.webp" />
 </div>
 
 ## تست کانکشن‌ها
@@ -86,13 +86,13 @@ title: آموزش کار با نرم‌افزار FoXray
 2. در `PingType` یکی از `TCPPing`، `TLSPing` یا `RealPing` را انتخاب کنید. `RealPing` واقعی‌ترین نتیجه را می‌دهد.
 
 <div align=center markdown=1>
-<img width=30% alt="تنظیم PingType" src="https://github.com/hiddify/hiddify-config/assets/125398461/b6940f2e-5b0d-4c40-a1ab-36ccd6b532d7" />
+<img width=30% alt="تنظیم PingType" src="/assets/manager/Tutorial-for-FoXray-app/gh-b6940f2e-5b0d-4c40-a1ab-36ccd6b532d7.webp" />
 </div>
 
 سپس در صفحه اصلی برنامه روی نماد تست کانکشن بزنید.
 
 <div align=center markdown=1>
-<img width=30% alt="نماد تست کانکشن" src="https://github.com/hiddify/hiddify-config/assets/125398461/6851f393-45a1-4cdd-ab77-d09119a99476" />
+<img width=30% alt="نماد تست کانکشن" src="/assets/manager/Tutorial-for-FoXray-app/gh-6851f393-45a1-4cdd-ab77-d09119a99476.webp" />
 </div>
 
 ## محدود کردن مصرف حافظه
@@ -100,7 +100,7 @@ title: آموزش کار با نرم‌افزار FoXray
 به `Setting` و سپس بخش `ToolBox` بروید و `Limit Memory Usage` را روشن کنید.
 
 <div align=center markdown=1>
-<img width=30% alt="Limit Memory Usage" src="https://github.com/hiddify/hiddify-config/assets/125398461/7f0f8830-5b95-4d1a-9afb-7337309238ff" />
+<img width=30% alt="Limit Memory Usage" src="/assets/manager/Tutorial-for-FoXray-app/gh-7f0f8830-5b95-4d1a-9afb-7337309238ff.webp" />
 </div>
 
 ## افزودن سرور DNS
@@ -114,7 +114,7 @@ title: آموزش کار با نرم‌افزار FoXray
 5. بقیه فیلدها را تغییر ندهید و ذخیره کنید.
 
 <div align=center markdown=1>
-<img width=30% alt="فیلد Default DNS Address" src="https://github.com/hiddify/hiddify-config/assets/125398461/888f5e36-bf2b-4534-9918-dfd1f4fe2ed1" />
+<img width=30% alt="فیلد Default DNS Address" src="/assets/manager/Tutorial-for-FoXray-app/gh-888f5e36-bf2b-4534-9918-dfd1f4fe2ed1.webp" />
 </div>
 
 ## قابلیت‌های پرمیوم
@@ -126,7 +126,7 @@ title: آموزش کار با نرم‌افزار FoXray
 به `Setting` بروید و `Auto Update Subscription` را روشن کنید.
 
 <div align=center markdown=1>
-<img width=30% alt="Auto Update Subscription" src="https://github.com/hiddify/hiddify-config/assets/125398461/24534c01-ff41-49fc-acb2-4daa47d36635" />
+<img width=30% alt="Auto Update Subscription" src="/assets/manager/Tutorial-for-FoXray-app/gh-24534c01-ff41-49fc-acb2-4daa47d36635.webp" />
 </div>
 
 ### روشن بودن همیشگی VPN
@@ -134,7 +134,7 @@ title: آموزش کار با نرم‌افزار FoXray
 به `Setting` و سپس بخش `Pro ToolBox` بروید و `Always On` را روشن کنید. VPN شما همیشه روشن می‌ماند.
 
 <div align=center markdown=1>
-<img width=30% alt="گزینه‌های Pro ToolBox" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab49fa85-742a-4002-afee-6f518146d9a4" />
+<img width=30% alt="گزینه‌های Pro ToolBox" src="/assets/manager/Tutorial-for-FoXray-app/gh-ab49fa85-742a-4002-afee-6f518146d9a4.webp" />
 </div>
 
 ### نمایش موقعیت سرور
@@ -164,7 +164,7 @@ title: آموزش کار با نرم‌افزار FoXray
     ```
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/184d50de-95c8-4086-a2df-6e01c5c5f6fc" alt="تنظیمات فرگمنت در FoXray" width="30%" />
+<img src="/assets/manager/Tutorial-for-FoXray-app/gh-184d50de-95c8-4086-a2df-6e01c5c5f6fc.webp" alt="تنظیمات فرگمنت در FoXray" width="30%" />
 
 </div>
 
@@ -173,5 +173,12 @@ title: آموزش کار با نرم‌افزار FoXray
 ```text
 packets: 1-3
 ```
+
+## مقاله‌های مرتبط
+
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
+- [V2Box](/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/)
+- [Shadowrocket](/fa/manager/client-software-on-ios/Tutorial-for-ShadowRocket-app/)
 
 </div>

@@ -68,4 +68,11 @@ description: با یک رکورد * در کلادفلر و یک دامنه CDN �
 
 از این به بعد، هر بار که کاربر لینک اشتراک را به‌روزرسانی می‌کند، کانفیگ‌های دامنه متغیر روی زیردامنه‌های تصادفی جدید ساخته می‌شوند. چون همه این زیردامنه‌ها از رکورد `*` در کلادفلر استفاده می‌کنند، لازم نیست هیچ‌کدام را جداگانه در کلادفلر بسازید.
 
+## مقاله‌های مرتبط
+
+- [انواع دامنه و ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [دامنهٔ فیک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [ساخت خودکار زیردامنه در کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/)
+- [دامین فرانتینگ](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
+
 </div>

@@ -82,4 +82,11 @@ title: راهنمای استفاده از IPv6
 
 پس از این مراحل، کاربران شما می‌توانند از طریق IPv6 به سرور وصل شوند. اگر اصلاً IPv6 نمی‌خواهید، [آموزش غیرفعال کردن IPv6 در هیدیفای‌منیجر](/fa/manager/basic-concepts-and-troubleshooting/How-to-disable-IP-version-6-on-Hiddify/) را ببینید.
 
+## مقاله‌های مرتبط
+
+- [پروکسی تلگرام](/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/)
+- [بات تلگرام پنل](/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/)
+- [فعال‌سازی وارپ](/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
 </div>

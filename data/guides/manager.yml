@@ -52,15 +52,15 @@ categories:
             fa: نصب نسخه‌های مختلف
             en: Install a specific version
           - path: manager/installation-and-setup/Install-Hiddify-using-Docker
-            fa: نصب روی داکر (آزمایشی)
-            en: Install with Docker (beta)
+            fa: نصب روی داکر
+            en: Install with Docker
           - path: manager/installation-and-setup/Cloud-init-installation
             fa: نصب خودکار از پنل دیتاسنتر (Cloud-init)
             en: Automatic install from the data center (Cloud-init)
           - path: manager/installation-and-setup/How-to-install-HiddifManager-Version-8
-            fa: نصب نسخه ۸ (قدیمی)
-            en: Install version 8 (old)
-            old: true
+            fa: نصب نسخه ۸
+            en: Install version 8
+            upto: 8
       - fa: نصب سریع در دیتاسنترها
         en: Quick install by data center
         articles:
@@ -95,6 +95,9 @@ categories:
           - path: manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly
             fa: آشنایی کامل با پنل و تنظیمات آن
             en: Every part and setting of the panel
+          - path: manager/configuration-and-advanced-settings/Settings-reference
+            fa: همهٔ تنظیمات پنل، یکی‌یکی
+            en: All panel settings, one by one
           - path: manager/configuration-and-advanced-settings/How-to-connect-and-troubleshoot-via-SSH
             fa: منوی هیدیفای‌منیجر در SSH
             en: The Hiddify Manager menu over SSH
@@ -104,6 +107,33 @@ categories:
           - path: manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link
             fa: لینک ادمین و فرمت آن
             en: The admin link and its format
+          - path: manager/configuration-and-advanced-settings/Inbox-free-test-and-messages-on-HiddifyManager
+            fa: صندوق پیام، تست رایگان و پیام به کاربران
+            en: "Inbox, free test and messages"
+          - path: manager/configuration-and-advanced-settings/Automatic-config-health-checks-on-HiddifyManager
+            fa: بررسی خودکار سلامت کانفیگ‌ها
+            en: Automatic config health checks
+      - fa: چندسروره و خروجی‌ها
+        en: Multi-server and outbounds
+        articles:
+          - path: manager/configuration-and-advanced-settings/Multi-server-with-nodes-on-HiddifyManager
+            fa: چندسروره با نودها
+            en: Multi-server with nodes
+          - path: manager/configuration-and-advanced-settings/How-to-use-Outbounds-on-HiddifyManager
+            fa: خروجی‌ها (WARP، Socks، Tor و …)
+            en: "Outbounds (WARP, Socks, Tor…)"
+      - fa: ابزارها و پیشرفته
+        en: Tools and advanced
+        articles:
+          - path: manager/configuration-and-advanced-settings/How-to-use-the-panel-tools-in-HiddifyManager
+            fa: ابزارهای پنل (تست کانفیگ، اسکنر، SSH و …)
+            en: Panel tools (Config Tester, Scanner, SSH…)
+          - path: manager/configuration-and-advanced-settings/How-to-use-the-Proxy-Editor-in-HiddifyManager
+            fa: ویرایشگر پروکسی
+            en: The Proxy Editor
+          - path: manager/configuration-and-advanced-settings/My-account-and-admin-security-in-HiddifyManager
+            fa: حساب من و امنیت ادمین
+            en: My account and admin security
       - fa: ریالتی
         en: Reality
         articles:
@@ -113,6 +143,7 @@ categories:
           - path: manager/configuration-and-advanced-settings/How-to-use-Hiddify-Reality-Scanner
             fa: اسکنر ریالتی هیدیفای
             en: Hiddify Reality Scanner
+            old: true
           - path: manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality
             fa: چند زیردامنهٔ یک سایت در ریالتی
             en: Several subdomains of a site in Reality
@@ -144,9 +175,8 @@ categories:
             fa: برگرداندن تنظیمات به حالت اولیه
             en: Reset to default settings
           - path: manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel
-            fa: پروکسی SSH (تا نسخه ۱۲)
-            en: SSH proxy (up to v12)
-            old: true
+            fa: پروکسی SSH
+            en: SSH proxy
     videos:
       fa: [aVrb1pjQbGU, x5Tb6GUVvI0, OfvKL9CaOQU, aZEkJ54LIao, ui0PCRfF9v4, T1SKHk6HDks, QtS7595cH30, N819QPAtkrk, Pzk2Y9Q4n_s, 4o4lDfOtpRw]
       en: [5ude_1SnwtI, eFNPBSy8_to, XM9l-WCjNuo, nOe7FhajX3g]
@@ -229,6 +259,7 @@ categories:
           - path: manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder
             fa: سرور میانی‌ساز هیدیفای (همهٔ روش‌ها)
             en: Hiddify Relay Builder (every method)
+            old: true
           - path: manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager
             fa: افزودن سرور میانی به پنل
             en: Add a relay to the panel
@@ -259,6 +290,7 @@ categories:
           - path: manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel
             fa: تونل 4to6
             en: 4to6 tunnel
+            old: true
     videos:
       fa: [vBrD9iYeIrM, zq2sq43R1i0, G7uB_xSQc3Y, x44qGcnpBSE, kz_Ih__jS9c, HHq4EQoUHXY, 147nyGlTuuA, rdzYoOK6j2U, Xn9qwxpWmWQ, YPDMFU2nJK0, r2dlt19OybM, T3yfTqqQqJQ, MiD8FYWwHIc]
       en: [gAyfCJt0jXw, ea5C93ynkUs]
@@ -361,12 +393,12 @@ categories:
             fa: NekoBox
             en: NekoBox
           - path: manager/client-software-on-android/Tutorial-for-HiddifyNG-app
-            fa: HiddifyNG (قدیمی)
-            en: HiddifyNG (old)
+            fa: HiddifyNG
+            en: HiddifyNG
             old: true
           - path: manager/client-software-on-android/Tutorial-for-HiddifyClashAndroid-app
-            fa: HiddifyClashAndroid (قدیمی)
-            en: HiddifyClashAndroid (old)
+            fa: HiddifyClashAndroid
+            en: HiddifyClashAndroid
             old: true
       - fa: آیفون و آیپد
         en: iPhone and iPad
@@ -383,6 +415,7 @@ categories:
           - path: manager/client-software-on-ios/Tutorial-for-FoXray-app
             fa: FoXray
             en: FoXray
+            old: true
           - path: manager/client-software-on-ios/Tutorial-for-ShadowRocket-app
             fa: Shadowrocket
             en: Shadowrocket
@@ -396,16 +429,16 @@ categories:
         en: Computer
         articles:
           - path: manager/client-software-on-desktop/Tutorial-for-HiddifyN-software
-            fa: HiddifyN (قدیمی)
-            en: HiddifyN (old)
+            fa: HiddifyN
+            en: HiddifyN
             old: true
           - path: manager/client-software-on-desktop/Tutorial-for-HiddifyClashDesktop-software
-            fa: HiddifyClashDesktop (قدیمی)
-            en: HiddifyClashDesktop (old)
+            fa: HiddifyClashDesktop
+            en: HiddifyClashDesktop
             old: true
           - path: manager/client-software-on-desktop/Tutorial-for-QV2ray-software
-            fa: Qv2ray (قدیمی)
-            en: Qv2ray (old)
+            fa: Qv2ray
+            en: Qv2ray
             old: true
     videos:
       fa: [F2bC_mtbYmQ, D0Xv54nRSY8, knOxCtgvaDA, jaMkZTLH2QY, 01m7w-I4JXE, qFKv4I-MNQc, 6HncctDHXVs, 7kqprO7M4eM, ORMdAzPNrCA, qDbI72J-INM, Pqactnz_PdU, 7B0PO3HM6Vg, 8P887E-KMls, omGIz97mbzM, o9L2sI2T53Q]

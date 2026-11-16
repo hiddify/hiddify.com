@@ -1,5 +1,6 @@
 # Date, kind and version of each guide-page video. tools/guide_page.py uses it for the "old" and "new" badges.
-# kind: current (no old badge) | manager (ver = HiddifyManager version) | app (ver = Hiddify app version)
+# kind: current (no badge; with product + ver it becomes "Earlier version" by itself when that product's
+#       major version goes past ver, see data/guides/versions.yml) | manager (ver = HiddifyManager version) | app (ver = Hiddify app version)
 #       legacy-app (retired Hiddify app) | client (another client app, old version) | general (sites/tools may have changed)
 # A video that is not listed here gets no badge. Mark a video old by changing its kind.
 "06fMizOb-DE": {date: 2023-01-07, kind: manager, ver: "5"}
@@ -86,9 +87,9 @@
 "Br3lIHIaUVc": {date: 2024-09-29, kind: app, ver: "2"}
 "jrvQD5xo6PU": {date: 2025-02-22, kind: app, ver: "2"}
 "ywxx5AzQl-s": {date: 2025-04-21, kind: app, ver: "2"}
-"x5Tb6GUVvI0": {date: 2026-10-18, kind: current}
-"aVrb1pjQbGU": {date: 2026-10-20, kind: current}
-"5ude_1SnwtI": {date: 2026-10-23, kind: current}
-"UsOrJ9wMUMo": {date: 2026-11-06, kind: current}
-"NGP_uC8edJI": {date: 2026-11-07, kind: current}
-"HOF6NJa55SI": {date: 2026-11-11, kind: current}
+"x5Tb6GUVvI0": {date: 2026-10-18, kind: current, product: manager, ver: "14"}
+"aVrb1pjQbGU": {date: 2026-10-20, kind: current, product: manager, ver: "14"}
+"5ude_1SnwtI": {date: 2026-10-23, kind: current, product: manager, ver: "14"}
+"UsOrJ9wMUMo": {date: 2026-11-06, kind: current, product: app, ver: "5"}
+"NGP_uC8edJI": {date: 2026-11-07, kind: current, product: app, ver: "5"}
+"HOF6NJa55SI": {date: 2026-11-11, kind: current, product: app, ver: "5"}

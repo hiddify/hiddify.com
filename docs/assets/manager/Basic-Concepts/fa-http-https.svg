@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="Vazirmatn, Tahoma, sans-serif">
+<rect width="100%" height="100%" rx="18" fill="#f8fafc"/>
+<text x="450" y="42" text-anchor="middle" font-size="19" font-weight="700" fill="#1e293b" direction="rtl" unicode-bidi="embed">HTTP: هر کس در مسیر باشد آن را می‌خواند</text>
+<rect x="40" y="76" width="120" height="52" rx="12" fill="#455fe9"/><text x="100" y="108" text-anchor="middle" font-size="17" fill="#fff" direction="rtl" unicode-bidi="embed">شما</text>
+<rect x="740" y="76" width="120" height="52" rx="12" fill="#1e293b"/><text x="800" y="108" text-anchor="middle" font-size="17" fill="#fff" direction="rtl" unicode-bidi="embed">سایت</text>
+<line x1="160" y1="102" x2="740" y2="102" stroke="#ef4444" stroke-width="4" stroke-dasharray="10 6"/>
+<rect x="250" y="84" width="170" height="36" rx="8" fill="#fff" stroke="#ef4444" stroke-width="2"/><text x="335" y="108" text-anchor="middle" font-size="15" font-family="monospace" fill="#334155">password=1234</text>
+<circle cx="560" cy="102" r="30" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="560" y="108" text-anchor="middle" font-size="20">👁</text>
+<text x="560" y="154" text-anchor="middle" font-size="14" fill="#475569" direction="rtl" unicode-bidi="embed">اپراتور / فیلتر: همه چیز را می‌بیند</text>
+<text x="450" y="222" text-anchor="middle" font-size="19" font-weight="700" fill="#1e293b" direction="rtl" unicode-bidi="embed">HTTPS (TLS): فقط خود سایت آن را می‌خواند</text>
+<rect x="40" y="256" width="120" height="52" rx="12" fill="#455fe9"/><text x="100" y="288" text-anchor="middle" font-size="17" fill="#fff" direction="rtl" unicode-bidi="embed">شما</text>
+<rect x="740" y="256" width="120" height="52" rx="12" fill="#1e293b"/><text x="800" y="288" text-anchor="middle" font-size="17" fill="#fff" direction="rtl" unicode-bidi="embed">سایت</text>
+<line x1="160" y1="282" x2="740" y2="282" stroke="#10b981" stroke-width="4" stroke-dasharray="0"/>
+<rect x="250" y="264" width="170" height="36" rx="8" fill="#fff" stroke="#10b981" stroke-width="2"/><text x="335" y="288" text-anchor="middle" font-size="15" font-family="monospace" fill="#334155">x9#Lq!7@zP…</text>
+<circle cx="560" cy="282" r="30" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="560" y="288" text-anchor="middle" font-size="20">🔒</text>
+<text x="560" y="334" text-anchor="middle" font-size="14" fill="#475569" direction="rtl" unicode-bidi="embed">اپراتور / فیلتر: فقط نام سایت (SNI) را می‌بیند</text>
+</svg>

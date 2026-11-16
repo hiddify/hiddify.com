@@ -12,7 +12,7 @@ title: آموزش راه‌اندازی سرور میانی با استفاده 
 
 1. IP-Tables
 2. GOST
-3. Dokodemo-Door
+3. Dokodemo-Door (در Xray جدید: `tunnel`)
 4. HA-Proxy
 5. Socat (قدیمی، پایین‌تر را ببینید)
 6. WST (قدیمی، پایین‌تر را ببینید)
@@ -42,7 +42,7 @@ title: آموزش راه‌اندازی سرور میانی با استفاده 
 
 <div align=center>
 
- <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/713801f1-01fb-4bc7-83ca-e1294fa1b149" alt="منوی اصلی سرور میانی‌ساز" />
+ <img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-713801f1-01fb-4bc7-83ca-e1294fa1b149.webp" alt="منوی اصلی سرور میانی‌ساز" />
 </div>
 
 با کلیدهای جهت‌نما جابه‌جا شوید، با `Enter` انتخاب کنید و با `Tab` به دکمه‌های OK/Cancel بروید.
@@ -63,7 +63,7 @@ relay
 
 <div align=center>
 
- <img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/80a1ebc9-078b-4e42-844e-6da857e25d62" alt="منوی تانل IP-Tables">
+ <img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-80a1ebc9-078b-4e42-844e-6da857e25d62.webp" alt="منوی تانل IP-Tables">
 
 </div>
 
@@ -96,7 +96,7 @@ relay
 
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/ebffa5a5-a19f-4147-8389-8f69e5b48796" alt="منوی تانل GOST">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-ebffa5a5-a19f-4147-8389-8f69e5b48796.webp" alt="منوی تانل GOST">
 
 </div>
 
@@ -134,9 +134,12 @@ relay
 <details markdown="1" dir="rtl"><summary><h3>🛠️ تونل Dokodemo-Door</h3> (کلیک کنید)</summary>
 در منوی اصلی، گزینه `Dokodemo-Door` را انتخاب کنید. این روش از هسته Xray استفاده می‌کند که با [نصب‌کننده رسمی XTLS](https://github.com/XTLS/Xray-install) نصب می‌شود.
 
+!!! note "نام Dokodemo-Door در Xray حالا `tunnel` است"
+    از سال ۲۰۲۵، پروژهٔ Xray به ورودی `dokodemo-door` می‌گوید **`tunnel`**. اسکریپت سرور میانی‌ساز هنوز نام قدیمی را در منو و کانفیگ به کار می‌برد، ولی Xray هر دو نام را قبول می‌کند و چیزی خراب نمی‌شود. اگر بخواهید تونل را دستی و با نام جدید بسازید، [آموزش تونل Dokodemo-Door (tunnel)](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/) را ببینید.
+
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/7cdae822-4fe7-40b1-a2ee-49e7bf555fed" alt="منوی تانل Dokodemo-Door">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-7cdae822-4fe7-40b1-a2ee-49e7bf555fed.webp" alt="منوی تانل Dokodemo-Door">
 
 </div>
 
@@ -182,7 +185,7 @@ relay
 
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/8e94e9d5-6229-46da-afd8-0c1c08787308" alt="منوی تانل HA-Proxy">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-8e94e9d5-6229-46da-afd8-0c1c08787308.webp" alt="منوی تانل HA-Proxy">
 
 
 </div>
@@ -222,7 +225,7 @@ Socat اکنون در **Options** ← **DeprecatedTunnel** ← `Socat` است. �
 
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/51bb5e9d-9580-454f-90ca-988a95385c4a" alt="منوی تانل Socat">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-51bb5e9d-9580-454f-90ca-988a95385c4a.webp" alt="منوی تانل Socat">
 
 </div>
 
@@ -251,7 +254,7 @@ WST اکنون در **Options** ← **DeprecatedTunnel** ← `WST` است. من�
 
 <div markdown="1" align=center>
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/f9686f53-7a34-4085-9504-15aac82a29ce" alt="منوی تانل WST">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-f9686f53-7a34-4085-9504-15aac82a29ce.webp" alt="منوی تانل WST">
 
 </div>
 
@@ -281,7 +284,7 @@ wstunnel را از هر دو سرور حذف می‌کند. دوباره اطل�
 <div markdown="1" align=center>
 
 
-<img width="80%" src="https://github.com/hiddify/hiddify.com/assets/125398461/aea50ed9-94a8-4884-92dd-24ef15067253" alt="منوی Options">
+<img width="80%" src="/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-aea50ed9-94a8-4884-92dd-24ef15067253.webp" alt="منوی Options">
 
 </div>
 
@@ -310,3 +313,10 @@ DNSهایی را که سرور میانی استفاده می‌کند تنظی�
 ## قدم بعد: سرور میانی را به هیدیفای‌منیجر اضافه کنید
 
 ساختن تونل به‌تنهایی کافی نیست: پنل هم باید سرور میانی را بشناسد تا به کاربران کانفیگ‌هایی بدهد که از آن عبور می‌کنند. [نحوه افزودن سرور (دامنه) میانی به هیدیفای‌منیجر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) را دنبال کنید.
+
+## مقاله‌های مرتبط
+
+- [افزودن سرور میانی به پنل](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [روش IP-Tables](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
+- [روش GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [روش WST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)

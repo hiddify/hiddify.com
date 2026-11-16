@@ -21,7 +21,7 @@ You can also click **Save on the server** to keep a copy on the server, or **Sav
 
 ## Sending the backup file to Telegram
 
-The panel automatically makes a backup for you every 6 hours, and if you have activated the [Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel), each automatic backup is also sent to you in the bot.
+The panel automatically makes a backup for you every 6 hours, and if you have activated the [Telegram bot](/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/), each automatic backup is also sent to you in the bot.
 
 ## Backups on the server
 
@@ -33,7 +33,7 @@ Automatic backups, and the ones you save with **Save on the server**, are listed
 
 `/opt/hiddify-manager/hiddify-panel/backup`
 
-and then transfer the file to your PC. [More info here](/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer)
+and then transfer the file to your PC. [More info here](/manager/basic-concepts-and-troubleshooting/How-to-transfer-files-between-a-server-and-a-computer/)
 
 ## Restoring backup file
 Now install the panel on the new server. When the **Quick setup** wizard opens, do not set anything up: click **Skip for now**.
@@ -49,12 +49,35 @@ In the **Restore** card, drop the backup file that you saved in the previous ste
 
 
 ## Changing subdomain settings
-Change your subdomain settings to the new server's IP. That is, go wherever you have defined your domains and enter the new IPs. For example, enter the DNS settings in Cloudflare and go to the previously registered records and just change the IP.
+
+After the restore, your domains and subdomains still point to the **old server's** IP. Where you manage your domain's DNS, change the records to the **new server's** IP. Only the IP changes; keep the record name and everything else as it is.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/c572da3a-aafb-4457-b06e-c8870a20e171" />
+
+![The DNS record of the domain is changed from the old server IP to the new server IP](/assets/manager/How-to-backup-and-restore-panel-on-Hiddify/en-dns-change.svg)
+
 </div>
 
+In **Cloudflare**:
 
+1. Sign in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and choose your domain.
+2. In the sidebar, open **DNS**, then **Records**.
+3. Next to each record that points to the old server, click **Edit**.
+4. In **IPv4 address**, enter the new server's IP and click **Save**. If the new server has IPv6, change the **AAAA** records to its new IPv6 too.
+5. Keep **Proxy status** (the orange cloud) as it was. CDN domains stay **Proxied** and direct domains stay **DNS only**.
 
-The work is done. The panel with the admin link will come up on the new server.
+Other DNS services work the same way: find the `A` (and `AAAA`) records and change only the IP.
+
+!!! tip
+    A DNS change usually takes a few minutes to reach everyone. If the panel does not open on the domain right away, wait a little.
+
+The work is done. The panel comes up on the new server with your admin link. If the backup came from another panel, use the new links shown after the restore.
+
+## Related articles
+
+- [Update](/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/)
+- [Reset to default settings](/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/)
+- [SSH proxy](/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

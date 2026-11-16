@@ -30,7 +30,7 @@ You test your server from computers in other places, using free websites. Use bo
 1. Open [Check-Host](https://check-host.net/).
 2. Type your server's IP address or domain in the box.
 
-    ![Check-Host home page](https://user-images.githubusercontent.com/125398461/229691501-94fd331f-82ed-4b29-9a84-187fe3b89ee5.png)
+    ![Check-Host home page](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-229691501-94fd331f-82ed-4b29-9a84-187fe3b89ee5.webp)
 
 3. Choose the type of test. Each test is explained below.
 
@@ -38,7 +38,7 @@ You test your server from computers in other places, using free websites. Use bo
 
 Use this test on a new server that has nothing installed on it yet. A **ping** sends a tiny message to the server and waits for a reply.
 
-![Check-Host ping test result](https://user-images.githubusercontent.com/125398461/222420082-2a380c2f-803e-4426-a529-8c09b997c76a.png)
+![Check-Host ping test result](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222420082-2a380c2f-803e-4426-a529-8c09b997c76a.webp)
 
 - **Result `4/4` from the locations in your country:** the IP is most likely clean.
 - **Anything else:** the IP is probably blocked. Ask your hosting provider for a new IP.
@@ -47,7 +47,7 @@ Use this test on a new server that has nothing installed on it yet. A **ping** s
 
 Use this test when a service is already running on the server, for example after you installed Hiddify Manager. It checks whether a **port** (a numbered "door" that a service listens on) is reachable. HiddifyManager uses TCP port `443`, so test with `your-ip:443`.
 
-![Check-Host TCP test result](https://user-images.githubusercontent.com/125398461/222426843-82605bb3-d51e-407a-8d92-90bddef896ba.png)
+![Check-Host TCP test result](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222426843-82605bb3-d51e-407a-8d92-90bddef896ba.webp)
 
 - **The result looks like the picture above (connected, with a time in ms):** the IP is probably fine.
 - **Timeouts or errors from your country:** the IP is probably blocked. Ask for a new IP.
@@ -56,7 +56,7 @@ Use this test when a service is already running on the server, for example after
 
 Use this test to check a service that uses **UDP** (another way of sending data, used for example by DNS on port `53`).
 
-![Check-Host UDP test result](https://user-images.githubusercontent.com/125398461/222426567-20464d00-cb53-4d8d-87f3-6ab28a45bce3.png)
+![Check-Host UDP test result](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222426567-20464d00-cb53-4d8d-87f3-6ab28a45bce3.webp)
 
 If the result looks like the picture above, UDP connections do not get through, and the IP may not be clean.
 
@@ -64,7 +64,7 @@ If the result looks like the picture above, UDP connections do not get through, 
 
 1. Open [Host-Tracker](https://www.host-tracker.com/en/ic).
 
-    ![Host-Tracker home page](https://user-images.githubusercontent.com/125398461/222429170-dbe08724-771e-4910-bbd4-19e3b5bc78f8.png)
+    ![Host-Tracker home page](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222429170-dbe08724-771e-4910-bbd4-19e3b5bc78f8.webp)
 
 2. Type your server's IP address or domain.
 3. Choose the locations in your country (for example, Iran). Results from other countries do not tell you whether your users can reach the server.
@@ -72,13 +72,13 @@ If the result looks like the picture above, UDP connections do not get through, 
 
 #### Ping test
 
-![Host-Tracker ping test result](https://user-images.githubusercontent.com/125398461/229689843-3d68ac6b-2eeb-4154-a445-23a5f4b24b49.png)
+![Host-Tracker ping test result](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-229689843-3d68ac6b-2eeb-4154-a445-23a5f4b24b49.webp)
 
 If all locations show `Good`, the IP is very likely clean.
 
 #### TCP test
 
-![Host-Tracker TCP test result](https://user-images.githubusercontent.com/125398461/229689470-005f8fdc-86d6-4ee8-8283-d2c2c5c766f3.png)
+![Host-Tracker TCP test result](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-229689470-005f8fdc-86d6-4ee8-8283-d2c2c5c766f3.webp)
 
 If the result is `OK`, the IP is very likely clean.
 
@@ -98,7 +98,7 @@ Why can an IP pass every test when you buy the server, and then stop working som
 
 <div align=center markdown=1>
 
-<img width=40% src="https://github.com/hiddify/hiddify-config/assets/125398461/242a64b6-8075-4892-bb0f-de13b158a33a" alt="Red, yellow and green lists of IP addresses" />
+<img width=40% src="/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-242a64b6-8075-4892-bb0f-de13b158a33a.webp" alt="Red, yellow and green lists of IP addresses" />
 </div>
 
 - When the filtering system detects an IP that is used for a proxy, it puts the IP on the **red list** and blocks it.
@@ -106,5 +106,12 @@ Why can an IP pass every test when you buy the server, and then stop working som
 - As soon as the IP gets heavy traffic again, it is blocked or slowed down again.
 
 So an IP that "tests clean" may still be on the yellow list. If a new server stops working soon after you start using it, ask for a new IP.
+
+## Related articles
+
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [DNS leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [Time zone leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
+- [Server speed test](/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/)
 
 </div>

@@ -30,7 +30,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 1. سایت [Check-Host](https://check-host.net/) را باز کنید.
 2. آی‌پی یا دامنه‌ی سرور را در کادر وارد کنید.
 
-    ![صفحه‌ی اصلی Check-Host](https://user-images.githubusercontent.com/125398461/222417159-c62e65e4-b67c-48ca-9f4b-8f1870276308.png)
+    ![صفحه‌ی اصلی Check-Host](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222417159-c62e65e4-b67c-48ca-9f4b-8f1870276308.webp)
 
 3. نوع تست را انتخاب کنید. هر تست در ادامه توضیح داده شده است.
 
@@ -40,7 +40,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 <div align=center markdown=1>
 
-![نتیجه‌ی تست Ping در Check-Host](https://user-images.githubusercontent.com/125398461/222420082-2a380c2f-803e-4426-a529-8c09b997c76a.png)
+![نتیجه‌ی تست Ping در Check-Host](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222420082-2a380c2f-803e-4426-a529-8c09b997c76a.webp)
 </div>
 
 - **اگر نتیجه از لوکیشن‌های داخل کشور `4/4` بود:** آی‌پی به احتمال زیاد تمیز است.
@@ -52,7 +52,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 <div align=center markdown=1>
 
-![نتیجه‌ی تست TCP در Check-Host](https://user-images.githubusercontent.com/125398461/222426843-82605bb3-d51e-407a-8d92-90bddef896ba.png)
+![نتیجه‌ی تست TCP در Check-Host](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222426843-82605bb3-d51e-407a-8d92-90bddef896ba.webp)
 </div>
 
 - **اگر نتیجه مثل تصویر بالا بود (وصل شده و زمان بر حسب ms نشان داده شده):** آی‌پی احتمالا مشکلی ندارد.
@@ -64,7 +64,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 <div align=center markdown=1>
 
-![نتیجه‌ی تست UDP در Check-Host](https://user-images.githubusercontent.com/125398461/222426567-20464d00-cb53-4d8d-87f3-6ab28a45bce3.png)
+![نتیجه‌ی تست UDP در Check-Host](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222426567-20464d00-cb53-4d8d-87f3-6ab28a45bce3.webp)
 </div>
 
 اگر نتیجه مثل تصویر بالا بود، یعنی اتصال روی UDP برقرار نمی‌شود و ممکن است آی‌پی سرور تمیز نباشد.
@@ -73,7 +73,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 1. سایت [Host-Tracker](https://www.host-tracker.com/en/ic) را باز کنید.
 
-    ![صفحه‌ی اصلی Host-Tracker](https://user-images.githubusercontent.com/125398461/222429170-dbe08724-771e-4910-bbd4-19e3b5bc78f8.png)
+    ![صفحه‌ی اصلی Host-Tracker](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222429170-dbe08724-771e-4910-bbd4-19e3b5bc78f8.webp)
 
 2. آی‌پی یا دامنه‌ی سرور را وارد کنید.
 3. حتما لوکیشن‌های داخل کشور خودتان (مثلا ایران) را انتخاب کنید. نتیجه‌ی کشورهای دیگر نشان نمی‌دهد کاربران شما می‌توانند به سرور وصل شوند یا نه.
@@ -83,7 +83,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 <div align=center markdown=1>
 
-![نتیجه‌ی تست Ping در Host-Tracker](https://user-images.githubusercontent.com/125398461/222430534-01d5f14e-bf3e-421e-93f5-832ac68307ab.png)
+![نتیجه‌ی تست Ping در Host-Tracker](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222430534-01d5f14e-bf3e-421e-93f5-832ac68307ab.webp)
 </div>
 
 اگر نتیجه در همه‌ی لوکیشن‌ها `Good` بود، به احتمال خیلی زیاد آی‌پی سرور مشکلی ندارد.
@@ -92,7 +92,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 <div align=center markdown=1>
 
-![نتیجه‌ی تست TCP در Host-Tracker](https://user-images.githubusercontent.com/125398461/222432212-4a496ba1-aa71-4841-949c-449636b94d84.png)
+![نتیجه‌ی تست TCP در Host-Tracker](/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-222432212-4a496ba1-aa71-4841-949c-449636b94d84.webp)
 
 </div>
 
@@ -114,7 +114,7 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 
 <div align=center markdown=1>
 
-<img width=40% src="https://github.com/hiddify/hiddify-config/assets/125398461/242a64b6-8075-4892-bb0f-de13b158a33a" alt="لیست‌های قرمز، زرد و سبز آیپی‌ها" />
+<img width=40% src="/assets/manager/How-to-make-sure-the-servers-IP-or-domain-is-clean/gh-242a64b6-8075-4892-bb0f-de13b158a33a.webp" alt="لیست‌های قرمز، زرد و سبز آیپی‌ها" />
 </div>
 
 - وقتی سیستم فیلترینگ آی‌پی‌ای را که برای پروکسی استفاده می‌شود شناسایی می‌کند، آن را در **لیست قرمز** می‌گذارد و مسدود می‌کند.
@@ -122,5 +122,12 @@ title: چک کردن تمیز بودن آی‌پی یا دامنه سرور
 - به محض اینکه ترافیک آن آی‌پی دوباره زیاد شود، دوباره مسدود یا کند می‌شود.
 
 پس آی‌پی‌ای که در تست‌ها تمیز به نظر می‌رسد، ممکن است هنوز در لیست زرد باشد. اگر سرور جدید کمی بعد از شروع استفاده از کار افتاد، آی‌پی جدید بخواهید.
+
+## مقاله‌های مرتبط
+
+- [عیب‌یابی مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [نشتی DNS](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [نشتی تایم‌زون](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
+- [تست سرعت سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/)
 
 </div>

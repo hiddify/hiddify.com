@@ -42,7 +42,7 @@ description: راه‌اندازی CDN شرکت Gcore برای یک زیردام
     - **Target**: مقداری که از Gcore کپی کردید
     - **Proxy status**: خاموش (**DNS only**، ابر خاکستری). اگر روشن باشد، ترافیک به جای Gcore از کلادفلر عبور می‌کند.
 
-    ![رکورد CNAME در کلادفلر با پروکسی خاموش](https://user-images.githubusercontent.com/125398461/235284172-560987a3-8528-497a-89c9-58927fddc327.jpg)
+    ![رکورد CNAME در کلادفلر با پروکسی خاموش](/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gh-235284172-560987a3-8528-497a-89c9-58927fddc327.webp)
 
 3. در Gcore، در بخش **Setup guide** منبع (بالای صفحه تنظیمات منبع)، **Check DNS setup status** را بزنید. وقتی پیام **DNS record has been successfully set up** را دیدید، DNS درست است. این کار ممکن است تا ۲۴ ساعت طول بکشد.
 
@@ -78,5 +78,12 @@ description: راه‌اندازی CDN شرکت Gcore برای یک زیردام
 4. مراحل **نام** و **گواهی** را تمام کنید تا دامنه اضافه شود.
 
 اگر **نمایش کانفیگ‌های** دامنه صفحه کاربری شما روی **همه دامنه‌ها** است، کانفیگ‌های جدید خودکار به لینک اشتراک اضافه می‌شوند. از کاربران بخواهید اشتراک خود را در برنامه به‌روزرسانی کنند.
+
+## مقاله‌های مرتبط
+
+- [CDN چیست و چه کمکی می‌کند؟](/fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [CDN کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/)
+- [CDN آمازون (CloudFront)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/)
+- [دامنهٔ CDN (آی‌پی خودکار)](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
 
 </div>

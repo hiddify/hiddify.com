@@ -7,7 +7,7 @@ title: How to create subscription link on HiddifyManager
 # How to create subscription link on HiddifyManager
 HiddifyManager is based on the principle of reducing the possibility of server filtering as much as possible. One of the practical ways in this field is to separate the configs from the subscription links. In this case, your client will always receive the latest configuration information through the subscription link. The schematic related to this work is as follows.
 
-![sub link schematic](https://github.com/hiddify/hiddify-config/assets/125398461/9046fa04-81dd-4c98-8e65-30e7b5402d66)
+![sub link schematic](/assets/manager/How-to-create-subscription-link-on-Hiddify/en-sub-connections.svg)
 
 
 
@@ -31,8 +31,16 @@ To do this, in the panel's sidebar, under `Settings`, click `Domains`, and then 
 
 You can also use a PHP site for the subscription link, in which case the schematic will look like this.
 
-![php sub link schematic](https://github.com/hiddify/hiddify-config/assets/125398461/0eb1634e-f6b9-4f67-86ae-9bc8d239a7b4)
+![php sub link schematic](/assets/manager/How-to-create-subscription-link-on-Hiddify/en-sub-php.svg)
 
 
 For its tutorial, go [here](/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/).
 
+## Related articles
+
+- [Subscription link through a PHP site](/manager/domain-worker-cdn-and-tunneling/How-to-use-a-PHP-site-for-sub-links/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+
+</div>

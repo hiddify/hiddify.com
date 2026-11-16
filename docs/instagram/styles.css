@@ -108,3 +108,12 @@
     margin-top: 10px;
   }
 }
+
+/* "Earlier version" badge (tools/guide_page.py marks videos made for an older major version) */
+.instagram .post { position: relative; }
+.instagram .post.is-earlier img { filter: saturate(.55); opacity: .82; }
+.instagram .post.is-earlier::after {
+  content: attr(data-old); position: absolute; top: 18px; inset-inline-start: 10px; z-index: 2;
+  padding: 3px 9px; border-radius: 999px; font: 600 11px/1.5 inherit; color: #fff;
+  background: rgba(30, 41, 59, .78); backdrop-filter: blur(4px); pointer-events: none;
+}

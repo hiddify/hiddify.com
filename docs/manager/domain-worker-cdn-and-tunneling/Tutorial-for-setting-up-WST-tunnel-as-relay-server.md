@@ -2,188 +2,125 @@
 title: Tutorial for setting up WST tunnel as relay server
 ---
 
-# Tutorial for setting up WST tunnel as relay server
+# Tutorial for setting up a WST (wstunnel) relay server
 
-For this you need an relay server to connect to the main server. Usually this relay server is considered in Iran.
-The tunnel usage diagram is as follows.
+!!! info "About this guide"
+    For **wstunnel 11.1** (October 2026) and Hiddify Manager v14.5. wstunnel changed its commands in version 7; if you followed an older version of this page (v5.0), use the new commands below. For an easier way that builds the relay from a menu, see [Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/).
 
-<div align="center" dir="ltr" markdown="1">
-  
-![Tunnel usage schematic](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
-</div>
+A **relay server** is a second server, usually in Iran, that your users connect to. It passes their traffic on to your main server (Hiddify Manager) abroad. **wstunnel** carries that traffic inside a WebSocket connection, which looks like normal web traffic and can also pass through a CDN such as Cloudflare.
 
-Now here, WS tunnel is used for communication between Iran server and main server. After installation, you will connect to the Iranian server, the Iranian server will connect you to the main server, and then you will have free access to the Internet from the main server.
+<img width=760 alt="Users connect to the relay server, which passes the traffic to the main server" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-diagram.webp" style="display:block;margin:0 auto">
 
-> Note: We tested these scripts on Ubuntu 22.04, so it is better to use this version.
+## What you need
 
-On the main server, install HiddifyManager, whose installation guide is available at [here](https://hiddify.com/fa/manager/installation-and-setup/guide/).
+- The main server with Hiddify Manager installed: [installation guide](/manager/installation-and-setup/guide/).
+- A relay server (Ubuntu 22.04 / 24.04 or Debian 12 / 13), usually in Iran.
+- A domain or subdomain for the main server, for example `tunnel.example.com`: direct (DNS only), or behind Cloudflare. Port 8080 works through Cloudflare too.
 
-## Installing the tunnel on the main and relay server (Iran)
-You must install this tunnel program on **both servers**. To do this, first connect to the server with root and run the following codes:
-First, download the program with the following command.
-```
-wget "https://github.com/erebe/wstunnel/releases/download/v5.0/wstunnel-linux-x64"
-```
-Give it execute access.
-```
-sudo chmod +x wstunnel-linux-x64
-```
-Rename the program with the command and move it to the bin/ folder.
-```
-sudo mv wstunnel-linux-x64 /bin/wstunnel
+## Step 1: install wstunnel on both servers
+
+[Connect over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) to the main server, run these commands, and then do the same on the relay server:
+
+```bash
+wget https://github.com/erebe/wstunnel/releases/download/v11.1.0/wstunnel_11.1.0_linux_amd64.tar.gz
+tar xzf wstunnel_11.1.0_linux_amd64.tar.gz wstunnel
+sudo install -m 755 wstunnel /usr/local/bin/wstunnel
+wstunnel --version
 ```
 
-## Running the tunnel on the main server
+The last command prints the version, for example `wstunnel 11.1.0`. On an ARM server, use `linux_arm64` instead of `linux_amd64`.
 
-On the main server where HiddifyManager is installed, you need to run the installed tunnel. Activate it on port 8080 with this command.
+## Step 2: run the server side on the main server
 
-```
-sudo wstunnel --server ws://0.0.0.0:8080 -v
-```
+Create a service, so the tunnel starts by itself after a reboot:
 
-> Note: If you change the tunnel port, the ports must be the same on both servers.
-
-- Pay attention, after entering this command, the message ``WAIT for tcp connection on 0.0.0.0:8080'' is given, which means the successful execution of the tunnel and waiting for the link to be established in the relay server, because this tunnel requires communication from both has the position
-
-The work of setting up the tunnel on the main server is also finished.
-
-
-
-## Running the tunnel on the relay server
-To set up the tunnel on the relay server using this command, you must provide both the required ports for downloading and the port that the tunnel uses to communicate.
-Here, port 8080 is used for the tunnel itself, which was configured on the main server side. Also, the HiddifyManager program uses ports 443 and 80 automatically, so you can put them in the following command.
-
-- If you change the default ports of HiddifyManager panel, change ports 443 and 80 according to the same formula.
-
-* If you want to download another port, you can do it with the same formula.
-
-
-```
-sudo wstunnel -L 0.0.0.0:80:localhost:80 -L 0.0.0.0:443:localhost:443 ws://[cdn_or_direct_domain_of_main_server]:8080
-```
-
-
-
-- Please note that [server_adress_or_domain] should be placed with the CDN or direct domain registered in Hidify or the main IP of the server.
-- If you do this with the CDN domain, you will also prevent the main server from being filtered.
-* Pay attention to the message after typing this command
-  ``WAIT for tcp connection on 0.0.0.0:80, WAIT for tcp connection on 0.0.0.0:443'' is given, which means the successful execution of the tunnel and waiting for the connection to be established from the client side.
-
-- If the main tunnel port (here 8080) is filtered on your Iranian data center, you can use other ports.
-- Very important note: If you use CDN domains to establish a tunnel, you are only allowed to use Cloudflare ports. That is, you can only use Cloudflare's https ports for connection, and you can use Cloudflare's http ports for the tunnel itself. [List of Cloudflare ports](https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/)
-
-Work on setting up the ws tunnel on the relay server is complete.
-
-## Setting up the tunnel service on the main server
-
-You only need to create its service so that if the server is reset, the tunnel will run automatically. To do this, exit the created tunnel with `Ctrl+c`, then with a text editor (here nano) create the service file in the main path of the kernel.
-
-```
+```bash
 sudo nano /etc/systemd/system/wstunnel.service
 ```
 
-Then in the opened file, copy the following text to define the desired service.
+Paste this, save with `Ctrl+S` and close with `Ctrl+X`:
 
-```
+```ini
 [Unit]
-Description=wstunnel
-After=network.target
+Description=wstunnel server
+After=network-online.target
 
 [Service]
-Type=simple
-WorkingDirectory=/bin
-ExecStart= wstunnel --server ws://0.0.0.0:8080 -v
-Restart=on-failure
+ExecStart=/usr/local/bin/wstunnel server ws://[::]:8080 --restrict-to 127.0.0.1:443 --restrict-to 127.0.0.1:80
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-To exit the text editor, press `Ctrl+s` to save the file, then exit the program with `Ctrl+x`.
+`--restrict-to` lets the tunnel reach only ports 443 and 80 of this server, so nobody else can use it as an open proxy.
 
-Now reset the main kernel service and activate and start the created service.
+Then start it and check it:
 
-```
+```bash
 sudo systemctl daemon-reload
-sudo systemctl enable wstunnel.service
-sudo systemctl start wstunnel.service
-```
-Now, to check if the service is activated, type this command and check that the service is active.
-```
-sudo systemctl status wstunnel.service
+sudo systemctl enable --now wstunnel
+sudo systemctl status wstunnel --no-pager
 ```
 
-If for any reason the service was not active, one of the previous steps was probably not done correctly.
+The status must say `active (running)`.
 
+## Step 3: run the client side on the relay server
 
+On the relay server, create the same file with the client command. Replace `tunnel.example.com` with your main server's domain:
 
-## Setting up the tunnel service on relay server
-You only need to create its service so that if the server is reset, the tunnel will run automatically. To do this, create the service file in the main path of the kernel with a text editor (here nano).
-```
+```bash
 sudo nano /etc/systemd/system/wstunnel.service
 ```
-Then in the opened file, copy the following text to define the desired service.
 
-```
+```ini
 [Unit]
-Description=wstunnel
-After=network.target
+Description=wstunnel client (relay)
+After=network-online.target
 
 [Service]
-Type=simple
-WorkingDirectory=/bin
-ExecStart= wstunnel -L 0.0.0.0:80:localhost:80 -L 0.0.0.0:443:localhost:443 ws://[cdn_or_direct_domain_of_main_server]:8080
-Restart=on-failure
+ExecStart=/usr/local/bin/wstunnel client -L tcp://0.0.0.0:443:127.0.0.1:443 -L tcp://0.0.0.0:80:127.0.0.1:80 ws://tunnel.example.com:8080
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-- Make sure to paste `cdn_or_direct_domain_of_main_server` with your direct domain or CDN specification.
-- To exit the text editor, first press `Ctrl + s` to save the file, then exit the program with `Ctrl + x`.
+`-L tcp://0.0.0.0:443:127.0.0.1:443` means: listen on port 443 of the relay server and send everything to port 443 of the main server. Add more `-L` parts for more ports.
 
-Now reset the main kernel service and activate and start the created service.
+Then start it and check it:
 
-```
+```bash
 sudo systemctl daemon-reload
-sudo systemctl enable wstunnel.service
-sudo systemctl start wstunnel.service
-```
-Now, to check if the service is activated, type this command and check that the service is active.
-```
-sudo systemctl status wstunnel.service
+sudo systemctl enable --now wstunnel
+sudo systemctl status wstunnel --no-pager
 ```
 
-If for any reason the service was not active, one of the previous steps was probably not done correctly.
+## Step 4: add the relay to the panel
 
+Register a subdomain with the proxy **off** (DNS only) that points to the **relay server's** IP. In the panel, open **Domains** › **Add domain**, type the subdomain, choose **Relay** (1) in **How is it set up?**, and finish the wizard.
 
-## Adding Relay server to HiddifyManager
-Now, register a subdomain with the proxy off for your relay server IP and register it in Hiddify Manager on `Relay` mode.
-- Put the registered subdomain in the `Domain` field and you can also set a `Alias` to display in the configurations.
+<img width=520 alt="Add a domain: the Relay mode" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-mode.webp" style="display:block;margin:0 auto">
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed">
+Step by step, with pictures: [How to add a relay server (domain) to HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-## Adding `Relay` configurations to subscription link
+## Step 5: add the relay configs to the subscription
 
-As always in HiddifyManager, it is better to separate the configs from the subscription link. Therefore, for the registered `Relay` domain, you can check the `Relay` domain in the subscription domain settings so that its configurations are added to the subscription domain.
+On the **Domains** page, open your subscription domain with the pencil and add the relay domain to **Show configs of**. See [How to create a subscription link](/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/).
 
-Assuming that the subscription domain is `sublink.hiddify.com`, proceed as shown below to get the job done.
+## Remove the tunnel
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/e9fa3756-bb3a-4ee9-8adb-77a9f58f6354">
+On both servers:
 
-Now, if you open the user page with the subscription domain (here `sublink.hiddify.com`), you will see that the connections related to the `relay server` have also been added. You can add and use these connections individually or using subscription links to your client.
-
-## Remove the tunnel from the relay server and the main server
-
-First you need to stop and disable the service.
-```
-sudo systemctl daemon-reload
-sudo systemctl stop wstunnel.service
-sudo systemctl disable wstunnel.service
-```
-Then delete the app and service.
-```
-sudo rm -f /etc/systemd/system/wstunnel.service /bin/wstunnel
+```bash
+sudo systemctl disable --now wstunnel
+sudo rm -f /etc/systemd/system/wstunnel.service /usr/local/bin/wstunnel
 ```
 
-[WS Tunnel project link](https://github.com/erebe/wstunnel)
+## Related articles
+
+- [How to add a relay server (domain)](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [Dokodemo-Door tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/), [HA-Proxy tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/), [GOST tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [wstunnel on GitHub](https://github.com/erebe/wstunnel)
+

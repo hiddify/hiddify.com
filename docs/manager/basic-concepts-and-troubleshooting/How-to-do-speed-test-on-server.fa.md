@@ -50,13 +50,13 @@ title: آموزش تست سرعت روی سرور
 
 5. بار اول، برنامه شرایط استفاده و توضیحی درباره‌ی داده‌هایی که Speedtest جمع‌آوری می‌کند نشان می‌دهد. برای هر پیام `yes` را تایپ کنید و Enter بزنید.
 
-    ![پیام شرایط استفاده‌ی Speedtest](https://github.com/hiddify/hiddify-config/assets/125398461/b897f426-e9d6-4f26-b9fb-9e46f6def820)
+    ![پیام شرایط استفاده‌ی Speedtest](/assets/manager/How-to-do-speed-test-on-server/gh-b897f426-e9d6-4f26-b9fb-9e46f6def820.webp)
 
-    ![پیام جمع‌آوری داده‌ی Speedtest](https://github.com/hiddify/hiddify-config/assets/125398461/bab3a3d4-a0c3-478e-8daf-4f3491d44c8b)
+    ![پیام جمع‌آوری داده‌ی Speedtest](/assets/manager/How-to-do-speed-test-on-server/gh-bab3a3d4-a0c3-478e-8daf-4f3491d44c8b.webp)
 
 6. چند ثانیه صبر کنید. باید پینگ، سرعت دانلود و سرعت آپلود سرور را ببینید.
 
-    ![نتیجه‌ی Speedtest](https://github.com/hiddify/hiddify-config/assets/125398461/054e65db-1f12-428b-b9e9-359a69e99044)
+    ![نتیجه‌ی Speedtest](/assets/manager/How-to-do-speed-test-on-server/gh-054e65db-1f12-428b-b9e9-359a69e99044.webp)
 
 هر وقت خواستید دوباره تست بگیرید، کافی است باز هم `speedtest` را اجرا کنید.
 
@@ -70,7 +70,7 @@ Speedtest به طور پیش‌فرض یک سرور تست نزدیک به سر�
     speedtest --servers
     ```
 
-    ![فهرست سرورهای Speedtest](https://github.com/hiddify/hiddify-config/assets/125398461/c2acefcd-f0f2-43e1-8c90-486b465a7cb4)
+    ![فهرست سرورهای Speedtest](/assets/manager/How-to-do-speed-test-on-server/gh-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.webp)
 
 2. در ستون `ID` لوکیشن مورد نظرتان را پیدا کنید و عدد آن را کپی کنید.
 3. تست را با همان سرور اجرا کنید. به جای `ID` عددی را که کپی کرده‌اید بگذارید:
@@ -79,7 +79,7 @@ Speedtest به طور پیش‌فرض یک سرور تست نزدیک به سر�
     speedtest --server-id=ID
     ```
 
-    ![نتیجه‌ی Speedtest با سرور انتخابی](https://github.com/hiddify/hiddify-config/assets/125398461/a319cf89-3ed7-4ea5-90dd-0170cd5926c8)
+    ![نتیجه‌ی Speedtest با سرور انتخابی](/assets/manager/How-to-do-speed-test-on-server/gh-a319cf89-3ed7-4ea5-90dd-0170cd5926c8.webp)
 
 ## روش دوم: اسکریپت bench.sh
 
@@ -93,11 +93,18 @@ Speedtest به طور پیش‌فرض یک سرور تست نزدیک به سر�
 
 2. حدود ۵ تا ۸ دقیقه صبر کنید. اسکریپت از چند لوکیشن در قاره‌های مختلف تست سرعت می‌گیرد و بعد نتیجه را نشان می‌دهد.
 
-    ![نتیجه‌ی bench.sh](https://github.com/hiddify/hiddify-config/assets/125398461/b0815e0e-6348-4c0b-9f82-1ae5e6c53646)
+    ![نتیجه‌ی bench.sh](/assets/manager/How-to-do-speed-test-on-server/gh-b0815e0e-6348-4c0b-9f82-1ae5e6c53646.webp)
 
 ## معنی نتیجه‌ها
 
 - **سرعت‌ها خیلی کمتر از چیزی است که سرویس‌دهنده‌ی سرور وعده داده:** مشکل از خود سرور یا دیتاسنتر آن است. با سرویس‌دهنده‌ی سرور تماس بگیرید یا سرور دیگری تهیه کنید.
 - **سرعت‌ها خوب است ولی اتصال کاربران هنوز کند است:** پهنای باند سرور مشکلی ندارد. کندی به احتمال زیاد در مسیر بین کاربران و سرور است (مثلا فیلترینگ یا مسیر ضعیف اینترنت کاربر). صفحه‌ی [رفع مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/) را ببینید.
+
+## مقاله‌های مرتبط
+
+- [عیب‌یابی مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [تمیز بودن آی‌پی یا دامنه](/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [نشتی DNS](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [نشتی تایم‌زون](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
 
 </div>

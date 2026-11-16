@@ -132,4 +132,11 @@ description: اضافه کردن دامنه به کلادفلر، ساخت رک�
 - **ورکر**: [آموزش تنظیم و استفاده از ورکر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
 - **دامین فرانتینگ**: [راهنمای دامین فرانتینگ](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/). این روش فعلا در کلادفلر کار نمی‌کند.
 
+## مقاله‌های مرتبط
+
+- [CDN چیست و چه کمکی می‌کند؟](/fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [CDN جی‌کور](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/)
+- [CDN آمازون (CloudFront)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/)
+- [دامنهٔ CDN (آی‌پی خودکار)](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
+
 </div>

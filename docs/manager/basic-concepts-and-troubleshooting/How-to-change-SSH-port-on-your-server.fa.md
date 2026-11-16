@@ -107,4 +107,11 @@ title: نحوه تغییر پورت SSH روی سرور
 !!! note "فایروال هیدیفای‌منیجر"
     وقتی تنظیم **فایروال** در پنل هیدیفای‌منیجر روشن باشد، هیدیفای‌منیجر پورت ۲۲ و پورت‌هایی را که خودش لازم دارد باز نگه می‌دارد. قانونی که در مرحله ۱ اضافه کردید، پورت SSH جدید شما را هم باز نگه می‌دارد. [آموزش راه‌اندازی فایروال در پنل هیدیفای‌منیجر](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/) را ببینید.
 
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+- [تنظیم DNS سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
+
 </div>

@@ -12,7 +12,7 @@ title: آموزش تنظیم DNS سرور در هیدیفای‌منیجر
 
 <div align=center markdown=1>
   
-<img width=50% src="https://github.com/hiddify/hiddify-config/assets/125398461/8b1ce774-3268-4c42-ae0a-02553feb3b26" alt="نحوه تبدیل نام به آدرس IP با درخواست DNS" />
+<img width=50% src="/assets/manager/How-to-set-DNS-server/gh-8b1ce774-3268-4c42-ae0a-02553feb3b26.webp" alt="نحوه تبدیل نام به آدرس IP با درخواست DNS" />
 </div>
 
 سرور شما هم مثل گوشی یا کامپیوترتان به یک سرور DNS سالم و مطمئن نیاز دارد.
@@ -90,9 +90,16 @@ title: آموزش تنظیم DNS سرور در هیدیفای‌منیجر
 
 <div align=center markdown=1>
   
-![نمونه خروجی دستور nslookup google.com](https://github.com/hiddify/hiddify-config/assets/125398461/3ef15d0b-54b0-43ce-8be5-a5229054d1fb)
+![نمونه خروجی دستور nslookup google.com](/assets/manager/How-to-set-DNS-server/gh-3ef15d0b-54b0-43ce-8be5-a5229054d1fb.webp)
 </div>
 
 [اطلاعات بیشتر درباره نشتی DNS](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
 
 </div>

@@ -4,100 +4,202 @@ weight: 3
 comments: false
 ---
 
+<div markdown="1">
+
 # Privacy Policy
 
 This page explains what information Hiddify collects, what it does not collect, and how it is used.
 
-## Summary:
+<div class="hi-pp-hero" markdown="1">
+
+<span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4v6m-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21m2.8-10V9.5C14.8 8.1 13.4 7 12 7S9.2 8.1 9.2 9.5V11c-.6 0-1.2.6-1.2 1.2v3.5c0 .7.6 1.3 1.2 1.3h5.5c.7 0 1.3-.6 1.3-1.2v-3.5c0-.7-.6-1.3-1.2-1.3m-1.3 0h-3V9.5c0-.8.7-1.3 1.5-1.3s1.5.5 1.5 1.3V11Z"/></svg></span>
+
+## Summary { #summary }
+
 Services provided by Hiddify are intended for use as is.
 
 We do not gather any information from you. This app needs a private server from you, and we do not provide any server.
 
 Crash data is sent via Sentry in the Hiddify app, without any sensitive data.
 
-# 1. Data Collection
+</div>
 
-# VPN DATA
-- We DO NOT collect or store any VPN data.
-- We DO NOT modify the contents of your VPN data.
-- We DO NOT share any sensitive or user-specific data with third parties.
+<div class="hi-pp-facts">
+<div class="hi-pp-fact"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m2.75 7 1.28-1.25L13.26 15 20 21.72 18.73 23l-3-3H4v-3c0-1.86 2.61-3.08 5.09-3.64L2.75 7M20 17v2.18l-1.9-1.9V17c0-.26-.5-.65-1.3-1L14 13.18c2.71.45 6 1.73 6 3.82M5.9 17v1.1h7.93L10.72 15c-2.53.3-4.82 1.45-4.82 2M12 4a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L8.07 7.25A4.004 4.004 0 0 1 12 4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"/></svg></span><span><b>No personal data</b><small>No names, addresses, phones or payments</small></span></div>
+<div class="hi-pp-fact"><span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5 8H12v5l4.28 2.54.72-1.21-3.5-2.08V8M13 3a9 9 0 0 0-9 9H1l3.96 4.03L9 12H6a7 7 0 0 1 7-7 7 7 0 0 1 7 7 7 7 0 0 1-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.896 8.896 0 0 0 13 21a9 9 0 0 0 9-9 9 9 0 0 0-9-9"/></svg></span><span><b>No activity logs</b><small>No browsing, destinations, content or DNS</small></span></div>
+<div class="hi-pp-fact"><span class="hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.1 21.5 2.4 1.7 1.1 3l7.8 7.8C5.4 12.9 3.7 16.4 3 20c2.3-3.3 5.6-4.9 10-5.1l1 1V19l1.6-1.6 5.2 5.3M8.3 13.8c.64-.58 1.35-1.09 2.1-1.5l.9.8m2.9-2.1-1.7-1.7L14 9V5l7 7-2.9 2.9-1.4-1.4 1.5-1.5L16 9.8v.9"/></svg></span><span><b>No sharing</b><small>No data goes to third parties</small></span></div>
+<div class="hi-pp-fact"><span class="hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.2 9-2-2H13c1.1 0 2 .9 2 2v2.8l-2-2V9h-.8M23 9V7h-4c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h2v2h-2.8l2 2h.8c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2h-2V9h4m-.9 12.5-1.3 1.3-6.4-6.4c-.3.3-.8.6-1.4.6H9v-6.1l-2-2V17H5v-4H3v4H1V9c0-1.1.9-2 2-2h2.1l-4-4 1.3-1.3 19.7 19.8M5 9H3v2h2V9m8 5.9-2-2V15h2v-.1Z"/></svg></span><span><b>No advertising</b><small>There are no ads in the app</small></span></div>
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.39 1.73 1.11 3l3.1 3.1c-.13.29-.21.59-.21.9v10c0 2.21 3.59 4 8 4 2.3 0 4.38-.5 5.84-1.27l3 3 1.27-1.27L2.39 1.73M6 9.64c.76.43 1.7.78 2.76 1.01L12.11 14H12c-2.42 0-4.7-.6-6-1.55V9.64M12 19c-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23.68 0 1.34-.05 2-.13l2.34 2.36c-1.01.42-2.47.77-4.34.77M8.64 5.44 7.06 3.86C8.42 3.33 10.13 3 12 3c4.42 0 8 1.79 8 4v9.8l-2-2v-.03.01l-1.55-1.53c.6-.22 1.13-.49 1.55-.8V9.64c-1.03.58-2.39 1.01-3.94 1.22L12.19 9C15.94 8.94 18 7.5 18 7s-2.13-2-6-2c-1.34 0-2.46.18-3.36.44Z"/></svg></span>
+
+## 1. Data Collection { #data-collection }
+
+### VPN data { #vpn-data }
+
+- We **DO NOT** collect or store any VPN data.
+- We **DO NOT** modify the contents of your VPN data.
+- We **DO NOT** share any sensitive or user-specific data with third parties.
 
 This app is just a client app that users use to connect to their own servers. This means the app does not modify any VPN data, and users have complete control over, and liability for, their VPN data.
 
-## 1.1 We do not Collect Sensitive Information
+### 1.1 We do not Collect Sensitive Information { #sensitive }
 
 We do not gather, and do not even have access to, the following information:
 
-- Names (including subscriber names, usernames, and screen names)
-- Addresses (residential and business)
-- Telephone numbers
-- Payment details (credit card numbers, bank account info, billing records)
-  We don’t store sensitive data.
+<ul class="hi-pp-no">
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1Z"/></svg></span>Names (including subscriber names, usernames, and screen names)</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3"/></svg></span>Addresses (residential and business)</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 15.5c-1.2 0-2.5-.2-3.6-.6h-.3c-.3 0-.5.1-.7.3l-2.2 2.2c-2.8-1.5-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.4-.5-3.6 0-.5-.5-1-1-1H4c-.5 0-1 .5-1 1 0 9.4 7.6 17 17 17 .5 0 1-.5 1-1v-3.5c0-.5-.5-1-1-1M5 5h1.5c.1.9.3 1.8.5 2.6L5.8 8.8C5.4 7.6 5.1 6.3 5 5m14 14c-1.3-.1-2.6-.4-3.8-.8l1.2-1.2c.8.2 1.7.4 2.6.4V19Z"/></svg></span>Telephone numbers</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 8H4V6h16m0 12H4v-6h16m0-8H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg></span>Payment details (credit card numbers, bank account info, billing records)</li>
+</ul>
+
+We don’t store sensitive data.
 
 No logs are collected on online activities such as:
 
-- Browsing history
-- Traffic destination
-- Data content
-- DNS queries
+<ul class="hi-pp-no">
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span>Browsing history</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 15a3 3 0 0 1 3 3 3 3 0 0 1-3 3 2.99 2.99 0 0 1-2.83-2H14v-2h1.17c.41-1.17 1.52-2 2.83-2m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m0-9a1.43 1.43 0 0 0 1.43-1.43 1.43 1.43 0 1 0-2.86 0A1.43 1.43 0 0 0 18 8m0-5.43a4 4 0 0 1 4 4C22 9.56 18 14 18 14s-4-4.44-4-7.43a4 4 0 0 1 4-4M8.83 17H10v2H8.83A2.99 2.99 0 0 1 6 21a3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V14h2v1.17c.85.3 1.53.98 1.83 1.83M6 17a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M6 3a3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83V10H5V8.83A2.99 2.99 0 0 1 3 6a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m5 14v-2h2v2h-2m-4-6H5v-2h2v2Z"/></svg></span>Traffic destination</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6m0 2h7v5h5v11H6V4m2 8v2h8v-2H8m0 4v2h5v-2H8Z"/></svg></span>Data content</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15v4H5v-4h14m1-2H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1M7 18.5A1.5 1.5 0 0 1 5.5 17 1.5 1.5 0 0 1 7 15.5 1.5 1.5 0 0 1 8.5 17 1.5 1.5 0 0 1 7 18.5M19 5v4H5V5h14m1-2H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M7 8.5A1.5 1.5 0 0 1 5.5 7 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 8.5 7 1.5 1.5 0 0 1 7 8.5Z"/></svg></span>DNS queries</li>
+</ul>
 
-## 1.2 Data Collection
+### 1.2 Data Collection { #collection }
 
-This app needs a private server from your side, and we do not provide any server. So we are not able to gather any information from you.
-Crash data is sent via Sentry in the Hiddify client app, without any sensitive data.
+This app needs a private server from your side, and we do not provide any server. So we are not able to gather any information from you. Crash data is sent via Sentry in the Hiddify client app, without any sensitive data.
+
+<div class="hi-pp-note" markdown="1">
 
 **What information can be sent to your private server that is setup by you or any others?**
+
 To add the server link in your client, you need a subscription link. With the subscription link your server can access:
 
 - Your IP address (as with any HTTP request, so be careful not to trust unknown servers)
 - Your Hiddify version
 
-For your best experience, limited anonymous data can be collected on your server or any other server, after your explicit permission.
-It can include the following:
+For your best experience, limited anonymous data can be collected on your server or any other server, after your explicit permission. It can include the following:
+
 - IP Address information of the Client
 - Operating System Version
 - App Version
 - Connection Status (TCP ping)
 
-## 1.3 App Permissions
+</div>
+
+### 1.3 App Permissions { #permissions }
 
 The app does not need any permissions to access your phone’s contacts, location, device ID, storage, microphone, camera, etc.
+
+<ul class="hi-pp-no hi-pp-row">
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V6h16v12M4 0h16v2H4m0 20h16v2H4m8-12a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 0 0 5m0-3.5c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1m5 7.5c0-2.1-3.31-3-5-3s-5 .9-5 3v1h10v-1m-8.19-.5c.61-.5 2.03-1 3.19-1 1.17 0 2.59.5 3.2 1H8.81Z"/></svg></span>Contacts</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5Z"/></svg></span>Location</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 1c-1.1 0-2 .9-2 2v4h2V4h10v16H7v-3H5v4c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H7M6 9c-1.7 0-3 1.3-3 3s1.3 3 3 3c1.3 0 2.4-.8 2.8-2H11v2h2v-2h2v-2H8.8C8.4 9.8 7.3 9 6 9m0 2c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1Z"/></svg></span>Device ID</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 18H4V8h16m0-2h-8l-2-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"/></svg></span>Storage</li>
+<li><span class="hi-pp-x"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.3 11c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72m-8.2-6.1c0-.66.54-1.2 1.2-1.2.66 0 1.2.54 1.2 1.2l-.01 6.2c0 .66-.53 1.2-1.19 1.2-.66 0-1.2-.54-1.2-1.2M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3 3 3 0 0 0-3 3v6a3 3 0 0 0 3 3Z"/></svg></span>Microphone</li>
+</ul>
+
 When you scan a QR code, the app may explicitly ask for camera permission.
 
-# 2. Data Usage
+</div>
+
+<div class="hi-grid c2 hi-pp-grid" markdown="1">
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 17H7v-7h2v7m4 0h-2V7h2v10m4 0h-2v-4h2v4m2 2H5V5h14v14.1M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Z"/></svg></span>
+
+## 2. Data Usage { #data-usage }
 
 Data is used for:
 
 - We do not collect any data, so we do not use it.
 - Crash data is sent via Sentry without any sensitive data.
 
-# 3. Data Sharing and Transfer
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91-1.31-2.92-2.92-2.92M18 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1M6 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m12 7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1Z"/></svg></span>
+
+## 3. Data Sharing and Transfer { #data-sharing }
 
 We do not share any data with any third parties. Crash data is sent via Sentry without any sensitive data.
 
-# 4. Security Measures
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4v6m-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21m-2-4-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9"/></svg></span>
+
+## 4. Security Measures { #security }
 
 Strong security measures implemented to protect data. Staff access limited.
 
-# 5. Data Retention
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg></span>
+
+## 5. Data Retention { #retention }
 
 We do not collect any data, so this does not apply to us.
 
-# 6. Right to Be Forgotten
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16.24 3.56 4.95 4.94c.78.79.78 2.05 0 2.84L12 20.53a4.008 4.008 0 0 1-5.66 0L2.81 17c-.78-.79-.78-2.05 0-2.84l10.6-10.6c.79-.78 2.05-.78 2.83 0M4.22 15.58l3.54 3.53c.78.79 2.04.79 2.83 0l3.53-3.53-4.95-4.95-4.95 4.95Z"/></svg></span>
+
+## 6. Right to Be Forgotten { #forgotten }
 
 We do not collect any data, so this does not apply to us.
 
-# 7. Third Party Services
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-7v2M4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m5 4h1V5H9v2m0 8h1v-2H9v2M5 5v2h2V5H5m0 8v2h2v-2H5Z"/></svg></span>
+
+## 7. Third Party Services { #third-party }
 
 Hiddify is designed to be used with your own deployed server. However, if you use third-party VPN services in our application, you should check their policies.
 
-# 8. Advertising
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.2 9-2-2H13c1.1 0 2 .9 2 2v2.8l-2-2V9h-.8M23 9V7h-4c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h2v2h-2.8l2 2h.8c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2h-2V9h4m-.9 12.5-1.3 1.3-6.4-6.4c-.3.3-.8.6-1.4.6H9v-6.1l-2-2V17H5v-4H3v4H1V9c0-1.1.9-2 2-2h2.1l-4-4 1.3-1.3 19.7 19.8M5 9H3v2h2V9m8 5.9-2-2V15h2v-.1Z"/></svg></span>
+
+## 8. Advertising { #advertising }
 
 We do not have any advertising.
 
-# 9. Children’s Privacy
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.89 2-2-.89-2-2-2M5 7c-1.11 0-2 .89-2 2v6h2v7h5V11.6l2.53 4.4h2.44L16 14.66V22h4v-5h1v-3c0-1.11-.89-2-2-2h-2.5c-.6 0-1.13.26-1.5.68-.33.42-.68.88-1 1.32h-.31L10 7.66C9.84 7.38 9.22 7 8.5 7H5m13 1c-.83 0-1.5.67-1.5 1.5S17.17 11 18 11s1.5-.67 1.5-1.5S18.83 8 18 8Z"/></svg></span>
+
+## 9. Children’s Privacy { #children }
 
 Parents are encouraged to teach children about online privacy.
 
-# 10. Changes to This Privacy Policy
+</div>
+
+</div>
+
+<div class="hi-pp-sec" markdown="1">
+
+<span class="hi-pp-num hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.887 6.887 0 0 0 0 9.8c2.73 2.7 7.15 2.7 9.88 0 1.36-1.35 2.04-2.92 2.04-4.9h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58a8.987 8.987 0 0 1 12.65 0L21 3v7.12M12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5Z"/></svg></span>
+
+## 10. Changes to This Privacy Policy { #changes }
+
 We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
+</div>
+
+</div>

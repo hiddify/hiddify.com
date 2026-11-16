@@ -1,8 +1,12 @@
 ---
-title: راهمای نصب نسخه ۸ هیدیفای‌منیجر
+title: راهنمای نصب نسخه ۸ هیدیفای‌منیجر
 ---
 
 ### راهنمای نصب نسخه ۸ هیدیفای‌منیجر
+
+!!! warning "این آموزش برای نسخه‌های قبلی است"
+    این صفحه نصب **نسخهٔ ۸** هیدیفای‌منیجر را توضیح می‌دهد که دیگر به‌روز نمی‌شود و اصلاحیهٔ امنیتی نمی‌گیرد. برای سرور جدید آخرین نسخه را نصب کنید: [راهنمای اصلی نصب](/fa/manager/installation-and-setup/guide/). این صفحه برای کسانی که هنوز به نسخهٔ ۸ نیاز دارند نگه داشته شده است.
+
 
 برای نصب نسخه ۸ هیدیفای‌منیجر، رعایت نکات زیر ضروری است:
 
@@ -56,3 +60,9 @@ title: راهمای نصب نسخه ۸ هیدیفای‌منیجر
 
 با رعایت این راهنما، نسخه ۸ هیدیفای‌منیجر به‌درستی روی سرور شما نصب خواهد شد.
 
+## مقاله‌های مرتبط
+
+- [نصب نسخه‌های مختلف](/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/)
+- [نصب روی داکر](/fa/manager/installation-and-setup/Install-Hiddify-using-Docker/)
+- [نصب خودکار از پنل دیتاسنتر (Cloud-init)](/fa/manager/installation-and-setup/Cloud-init-installation/)
+- [پیش‌نیازهای نصب](/fa/manager/installation-and-setup/Installation-prerequisites/)

@@ -67,3 +67,11 @@ The **Full Xray** and **Clash Meta** links do not include the SSH configs, becau
 
 To use this proxy, use the [Hiddify app](/app/How-to-use-Hiddify-app/) or the [SingBox app](/manager/client-software-on-ios/Tutorial-for-SingBox-app/).
 
+## Related articles
+
+- [Update](/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/)
+- [Backup and restore](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
+- [Reset to default settings](/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

@@ -8,8 +8,8 @@ title: آموزش کار با نرم‌افزار Stash
 
 در این صفحه یاد می‌گیرید چطور پروفایل هیدیفای‌منیجر خود را به برنامه **Stash** در آیفون و آیپد اضافه کنید و از حالت‌های اصلی آن استفاده کنید. Stash یک برنامه پولی بر پایه کلش (Clash) است.
 
-!!! tip "پیشنهاد ما: Hiddify App"
-    ساده‌ترین برنامه برای سرور هیدیفای‌منیجر، برنامه رایگان **Hiddify App** است. آن را از [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532) نصب کنید. راهنما: [نصب Hiddify App](/fa/app/How-to-install-Hiddify-app/).
+<div class="hi-get"><img class="ico" src="/assets/logos/apps/stash.webp" alt="Stash"><div class="meta"><b>Stash</b><small><span>v5.0.0</span><span>iOS 16+</span><span>پولی</span><span>آبان ۱۴۰۵</span></small></div><div class="stores"><a class="hi-store" href="https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349"><img src="/assets/logos/apple-white.svg" alt=""><span><small>Download on the</small><b>App Store</b></span></a></div></div>
+<a class="hi-alt" href="/fa/app/How-to-install-Hiddify-app/"><span class="mk"><img src="/assets/logos/hiddify-mark-white.svg" alt=""></span><span><b>پیشنهاد ما: اپ هیدیفای</b><small>رایگان، ساده‌تر و با پشتیبانی از همهٔ پروتکل‌های هیدیفای‌منیجر</small></span><span class="go">نصب اپ ←</span></a>
 
 ## پیش از شروع
 
@@ -23,6 +23,9 @@ title: آموزش کار با نرم‌افزار Stash
 1. در آیفون، لینک صفحه کاربری خود را در Safari باز کنید.
 2. روی دکمه گرد بزرگ وسط صفحه بزنید. پنجره «VPN خود را پیکربندی کنید» باز می‌شود.
 3. در بخش «یکی از برنامه‌های زیر را انتخاب کنید»، روی **Stash** بزنید. اگر آن را نمی‌بینید، «بیشتر...» را بزنید. از همین‌جا می‌توانید برنامه را دانلود هم بکنید.
+
+    <img width=300 alt="Stash در صفحهٔ کاربری" src="/assets/manager/Tutorial-for-Stash-app/fa-user-app.webp" style="display:block;margin:0 auto">
+
 4. «وارد کردن در برنامه» را بزنید. Stash باز می‌شود و پروفایل را اضافه می‌کند.
 
 اگر این روش کار نکرد، طبق مراحل زیر پروفایل را دستی اضافه کنید.
@@ -30,13 +33,6 @@ title: آموزش کار با نرم‌افزار Stash
 !!! note "پروفایل‌های Lite و Normal دیگر وجود ندارند"
     در نسخه‌های قدیمی صفحه کاربری، تب **آی‌اواس** دو پروفایل برای Stash داشت: پروفایل سبز **Lite** (فقط سایت‌های فیلترشده از VPN عبور می‌کنند) و پروفایل نارنجی **Normal** (همه ترافیک از VPN عبور می‌کند). پنل فعلی به جای آن‌ها یک لینک اشتراک **Clash Meta** ارائه می‌دهد. اگر می‌خواهید سایت‌های ایرانی بدون VPN باز شوند، از مدیر سرور بپرسید؛ این مورد روی سرور تنظیم می‌شود.
 
-<div align=center markdown=1>
-<img width=30% alt="بخش Stash در نسخه قدیمی صفحه کاربری" src="https://github.com/hiddify/hiddify-config/assets/125398461/77e91556-27a9-47a8-8c90-8099285a571f" />
-</div>
-
-<div align=center markdown=1>
-<img width=30% alt="پروفایل‌های Lite و Normal در نسخه قدیمی صفحه کاربری" src="https://github.com/hiddify/hiddify-config/assets/125398461/9ae75a32-1700-466c-872b-393edb870462" />
-</div>
 
 ## افزودن پروفایل به‌صورت دستی
 
@@ -51,11 +47,11 @@ title: آموزش کار با نرم‌افزار Stash
 2. برنامه Stash را باز کنید. در صفحه `Settings` روی `Config File` بزنید.
 3. `Download from URL` را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Download from URL" src="https://github.com/hiddify/hiddify-config/assets/125398461/ffbbd7a4-96aa-4331-9987-09f13f46edc8" />
+    <img style="display:block;margin:0 auto" width=30% alt="Download from URL" src="/assets/manager/Tutorial-for-Stash-app/gh-ffbbd7a4-96aa-4331-9987-09f13f46edc8.webp" />
 
 4. لینک را بچسبانید و `Download` را بزنید. پروفایل به برنامه اضافه می‌شود.
 
-    <img style="display:block;margin:0 auto" width=30% alt="چسباندن لینک و زدن Download" src="https://github.com/hiddify/hiddify-config/assets/125398461/84e1e1da-2d09-4b59-ac88-91412746e4ee" />
+    <img style="display:block;margin:0 auto" width=30% alt="چسباندن لینک و زدن Download" src="/assets/manager/Tutorial-for-Stash-app/gh-84e1e1da-2d09-4b59-ac88-91412746e4ee.webp" />
 
 ### افزودن پروفایل با QR code
 
@@ -63,7 +59,7 @@ title: آموزش کار با نرم‌افزار Stash
 2. برنامه Stash را باز کنید. در صفحه `Settings` روی `Config File` بزنید.
 3. `Download from QRcode` را بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Download from QRcode" src="https://github.com/hiddify/hiddify-config/assets/125398461/02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac" />
+    <img style="display:block;margin:0 auto" width=30% alt="Download from QRcode" src="/assets/manager/Tutorial-for-Stash-app/gh-02ca1ecf-3552-4c8e-9a2f-625be8c8b7ac.webp" />
 
 4. QR code را اسکن کنید. پروفایل به برنامه اضافه می‌شود.
 
@@ -72,7 +68,7 @@ title: آموزش کار با نرم‌افزار Stash
 این منو پالیسی‌ها، یعنی کانفیگ‌های پروفایل‌هایی را که وارد کرده‌اید، نشان می‌دهد.
 
 <div align=center markdown=1>
-<img width=30% alt="منوی Policy" src="https://github.com/hiddify/hiddify-config/assets/125398461/7fd169ea-18b4-4f7f-85b4-ee2073b8c25f" />
+<img width=30% alt="منوی Policy" src="/assets/manager/Tutorial-for-Stash-app/gh-7fd169ea-18b4-4f7f-85b4-ee2073b8c25f.webp" />
 </div>
 
 هر حالت در منوی Policy همراه با یکی از حالت‌های بخش **Outbound** کار می‌کند که پایین‌تر توضیح داده شده است.
@@ -96,7 +92,7 @@ title: آموزش کار با نرم‌افزار Stash
 روی نماد رعد و برق بزنید تا کانکشن‌ها تست شوند.
 
 <div align=center markdown=1>
-<img width=30% alt="نماد رعد و برق برای تست" src="https://github.com/hiddify/hiddify-config/assets/125398461/7bdb1519-7179-4c6e-a6e9-ee00c3bc06db" />
+<img width=30% alt="نماد رعد و برق برای تست" src="/assets/manager/Tutorial-for-Stash-app/gh-7bdb1519-7179-4c6e-a6e9-ee00c3bc06db.webp" />
 </div>
 
 ## به‌روزرسانی پروفایل‌ها
@@ -106,14 +102,14 @@ title: آموزش کار با نرم‌افزار Stash
 3. در منوی باز شده `Update Now` را بزنید.
 
 <div align=center markdown=1>
-<img width=30% alt="Update Now" src="https://github.com/hiddify/hiddify-config/assets/125398461/3ecb0ab1-40b9-40e5-8f93-5a37f9b0a1dd" />
+<img width=30% alt="Update Now" src="/assets/manager/Tutorial-for-Stash-app/gh-3ecb0ab1-40b9-40e5-8f93-5a37f9b0a1dd.webp" />
 </div>
 
 ## به‌روزرسانی خودکار پروفایل‌ها
 
 1. در `Settings` روی `More Settings` بزنید.
 
-    <img style="display:block;margin:0 auto" width=30% alt="More Settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/ab8222a0-b24b-487b-bb62-4c5509d27806" />
+    <img style="display:block;margin:0 auto" width=30% alt="More Settings" src="/assets/manager/Tutorial-for-Stash-app/gh-ab8222a0-b24b-487b-bb62-4c5509d27806.webp" />
 
 2. در بخش `CONFIG FILE`، فاصله زمانی بین به‌روزرسانی‌ها را در `Update Interval` تعیین کنید.
 3. گزینه `Auto Update` را روشن کنید.
@@ -125,7 +121,7 @@ Stash همچنین هر بار که برنامه را باز می‌کنید پ�
 در صفحه `Home` برنامه، بخش `Outbound` سه حالت دارد.
 
 <div align=center markdown=1>
-<img width=30% alt="حالت‌های Outbound" src="https://github.com/hiddify/hiddify-config/assets/125398461/51b861c7-2e12-4541-a214-84311270cb8d" />
+<img width=30% alt="حالت‌های Outbound" src="/assets/manager/Tutorial-for-Stash-app/gh-51b861c7-2e12-4541-a214-84311270cb8d.webp" />
 </div>
 
 ### Rule mode
@@ -142,7 +138,7 @@ Stash همچنین هر بار که برنامه را باز می‌کنید پ�
 به `Settings` و سپس `On Demand` بروید.
 
 <div align=center markdown=1>
-<img width=30% alt="تنظیمات On Demand" src="https://github.com/hiddify/hiddify-config/assets/125398461/0854f4f3-3628-41a3-a8b4-3a3a08474370" />
+<img width=30% alt="تنظیمات On Demand" src="/assets/manager/Tutorial-for-Stash-app/gh-0854f4f3-3628-41a3-a8b4-3a3a08474370.webp" />
 </div>
 
 ### Always On
@@ -156,7 +152,18 @@ Stash همچنین هر بار که برنامه را باز می‌کنید پ�
 برای دیدن جزئیات بیشتر اتصال‌ها، منوی `Utilities` را باز کنید و `Network Diagnosis` را بزنید. در اینجا لاگ همه کانکشن‌ها نمایش داده می‌شود که برای پیدا کردن مشکل مفید است. زیربخش‌های `Connectivity` و `Proxy` از همه کاربردی‌ترند.
 
 <div align=center markdown=1>
-<img width=30% alt="Network Diagnosis" src="https://github.com/hiddify/hiddify-config/assets/125398461/3685baf2-5d0f-4305-a151-12bcc761ab23" />
+<img width=30% alt="Network Diagnosis" src="/assets/manager/Tutorial-for-Stash-app/gh-3685baf2-5d0f-4305-a151-12bcc761ab23.webp" />
+</div>
+
+## مقاله‌های مرتبط
+
+<div class="hi-related" markdown="1">
+
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
+- [V2Box](/fa/manager/client-software-on-ios/Tutorial-for-V2Box-app/)
+- [FoXray](/fa/manager/client-software-on-ios/Tutorial-for-FoXray-app/)
+
 </div>
 
 </div>

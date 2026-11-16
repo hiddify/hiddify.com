@@ -6,6 +6,10 @@ title: آموزش استفاده از CDN Amazon یا Cloudfront
 <div dir="rtl" markdown="1">
 
 # استفاده از CDN آمازون یا Cloudfront
+
+!!! note "دربارهٔ این آموزش"
+    بخش هیدیفای‌منیجر برای نسخهٔ ۱۴.۵ است. بخش AWS مطابق کنسول CloudFront در زمان نوشتن این آموزش است؛ آمازون هر از گاهی کنسول خود را تغییر می‌دهد (مثلا حالا اول انتخاب یک پلن قیمت را می‌خواهد)، پس ممکن است بعضی نام‌ها فرق داشته باشند. سرتیفیکت CloudFront باید در منطقهٔ **US East (N. Virginia) `us-east-1`** در AWS Certificate Manager درخواست شود، وگرنه CloudFront آن را نشان نمی‌دهد.
+
 ## ثبت دامنه
 * برای این کار ابتدا یک رکورد A به آدرس سرور خود در  DNS پوینت کنید. فرضا `sub1.domain.com` را به آدرس آی‌پی سرور خود پوینت کرده‌اید.
 
@@ -15,23 +19,28 @@ title: آموزش استفاده از CDN Amazon یا Cloudfront
 * در صفحه باز شده مطابق با تصویر زیر مقادیر را وارد نمایید.
 
 <div align=center markdown=1>
-<img alt="aws settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/9e1623b7-ffdc-4881-be24-b7223c63cb90" width=70% />
+<img alt="aws settings" src="/assets/manager/How-to-use-Amazon-CDN/gh-9e1623b7-ffdc-4881-be24-b7223c63cb90.webp" width=70% />
 </div>
 
 تمام مقادیر در این صفحه به صورت پیش‌فرض است به جز موارد زیر که باید همانند تصاویر تعیین شوند.
 
+سیاست پروتکل (Viewer protocol policy):
 
 <div align=center markdown=1>
-<img alt="protocols policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/322d696e-cc53-4272-87ec-b5f77baa1546" width=70% />
+<img alt="protocols policy" src="/assets/manager/How-to-use-Amazon-CDN/gh-322d696e-cc53-4272-87ec-b5f77baa1546.webp" width=70% />
 </div>
 
 
-<div align=center markdown=1>
-<img alt="cache policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/404b3134-de2d-4dca-a942-a524b43ed883" width=70% />
-</div>
+سیاست کش (Cache policy):
 
 <div align=center markdown=1>
-<img alt="waf settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/3139e115-5c4f-41df-9d49-766e973a4d14" width=70% />
+<img alt="cache policy" src="/assets/manager/How-to-use-Amazon-CDN/gh-404b3134-de2d-4dca-a942-a524b43ed883.webp" width=70% />
+</div>
+
+فایروال وب (WAF):
+
+<div align=center markdown=1>
+<img alt="waf settings" src="/assets/manager/How-to-use-Amazon-CDN/gh-3139e115-5c4f-41df-9d49-766e973a4d14.webp" width=70% />
 </div>
 
 * در انتها بر روی `create distribution` بزنید تا عملیات ایجاد انجام شود.
@@ -49,25 +58,25 @@ title: آموزش استفاده از CDN Amazon یا Cloudfront
 
 
 <div align=center markdown=1>
-<img alt="domain settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/e2a5d38a-efde-45c5-b55b-d2f395aa846a" width=70% />
+<img alt="domain settings" src="/assets/manager/How-to-use-Amazon-CDN/gh-e2a5d38a-efde-45c5-b55b-d2f395aa846a.webp" width=70% />
 </div>
 
 
 * در این قسمت برای تکمیل وضعیت سرتیفیکت به دو مقدار این بخش یعنی `Cname name` و `Cname value` نیاز است.
 * به محل ثبت رکوردهای DNS خود (فرضا کلادفلر) بروید و یک رکورد `Cname name` ایجاد نمایید و مقادیری که در مرحله قبل در AWS داشتید را وارد نمایید. در کلادفلر به جای `name` مقدار `Cname name` و به جای `Target` مقداری `Cname value` را وارد کنید.
-* حالا اگر به AWS و صفحه لیست سرتیفیکت برگشته و صفحه را رفرش کنید، می‌بینید که وضعیت از حالت `pending` به `issues` تغییر یافته است و این بدان معناست که دامنه ما به درستی سرتیفیکت را دریافت نموده است.
+* حالا اگر به AWS و صفحه لیست سرتیفیکت برگشته و صفحه را رفرش کنید، می‌بینید که وضعیت از حالت `Pending validation` به `Issued` تغییر یافته است و این بدان معناست که دامنه ما به درستی سرتیفیکت را دریافت نموده است.
 * حالا به صفحه تنظیمات `distribution` و مرحله دریافت سرتیفیکت برگشته و اگر دکمه رفرش مربوط به `custom ssl` را بزنید، می‌توان سرتیفیکتی که در مرحله قبل دریافت نموده‌اید را مشاهده کنید. آن را انتخاب نمایید و مقادیر دیگر این صفحه را به حالت پیش‌فرض باقی بگذارید.
 
 
 
 > [!نکته]
-> نکته: دقت شود که تیک مربوط به `Legacy client support` را نزید چون این گزینه ماهیانه ۶۰۰ دلار هزینه دارد.
+> نکته: دقت شود که تیک مربوط به `Legacy client support` را نزنید چون این گزینه ماهیانه ۶۰۰ دلار هزینه دارد.
 
 * در انتها گزینه save changes را بزنید تا تغییرات ذخیره گردد.
-* حالا صبر کنید تا تغییرات انجام شده اعمال گردند و طبق تصویر زیر وضعیت `Last modified` از `Depoloying` به حالت انجام شده به تاریخ و ساعت تغییر می‌کند.
+* حالا صبر کنید تا تغییرات انجام شده اعمال گردند و طبق تصویر زیر وضعیت `Last modified` از `Deploying` به حالت انجام شده به تاریخ و ساعت تغییر می‌کند.
 
 <div align=center markdown=1>
-<img alt="done page" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/893cfd82-7ccc-4fe6-9b25-09da4272e9a3" width=70% />
+<img alt="done page" src="/assets/manager/How-to-use-Amazon-CDN/gh-893cfd82-7ccc-4fe6-9b25-09da4272e9a3.webp" width=70% />
 </div>
 
 * معمولا بین ۲-۵ دقیقه زمان می‌برد که این تغییرات اعمال گردند که با صفحه رفرش قابل پگیری است. همیشه به یاد داشته باشید در هر مرحله‌ای که تغییرات ایجاد می‌کنید باید به این وضعیت تغییر پیدا کند که به این مفهوم است که تغییرات کاملا اعمال شده و قابل بهره‌برداری است.
@@ -84,3 +93,12 @@ title: آموزش استفاده از CDN Amazon یا Cloudfront
 </div>
 
 * مراحل `نام` و `گواهی` را طی کنید و وقتی پنل خواست، تغییرات را اعمال کنید.
+
+## مقاله‌های مرتبط
+
+- [CDN چیست و چه کمکی می‌کند؟](/fa/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [CDN کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/)
+- [CDN جی‌کور](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/)
+- [دامنهٔ CDN (آی‌پی خودکار)](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
+
+</div>

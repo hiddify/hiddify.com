@@ -2,199 +2,160 @@
 title: آموزش راه‌اندازی تونل WST به عنوان سرور میانی
 ---
 
-# آموزش راه‌اندازی تونل WST به عنوان سرور میانی
+<div dir="rtl" markdown="1">
 
-<div dir=rtl align=center>
-ابتدا می‌توانید این ویدئو را ببینید
+# آموزش راه‌اندازی سرور میانی با WST (wstunnel)
 
-<a href="https://www.youtube.com/watch?v=r2dlt19OybM"><img width="32%" src="https://github.com/hiddify/hiddify-config/assets/125398461/51e43c11-9192-4856-abe4-45ab0e2aa023" /></a>
+!!! info "دربارهٔ این آموزش"
+    برای **wstunnel نسخهٔ ۱۱.۱** (آبان ۱۴۰۵) و هیدیفای‌منیجر نسخهٔ ۱۴.۵. wstunnel از نسخهٔ ۷ دستورهایش را عوض کرده است؛ اگر نسخهٔ قدیمی این صفحه (v5.0) را دنبال کرده بودید، از دستورهای جدید پایین استفاده کنید. برای روشی ساده‌تر که سرور میانی را از یک منو می‌سازد، [سرور میانی‌ساز هیدیفای](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/) را ببینید.
 
+**سرور میانی** (ریلی) سرور دومی است، معمولاً در ایران، که کاربران به آن وصل می‌شوند و ترافیکشان را به سرور اصلی شما (هیدیفای‌منیجر) در خارج می‌رساند. **wstunnel** این ترافیک را داخل یک اتصال WebSocket می‌برد که شبیه ترافیک معمولی وب است و از CDN مثل کلادفلر هم عبور می‌کند.
 
+<img width=760 alt="کاربران به سرور میانی وصل می‌شوند و آن ترافیک را به سرور اصلی می‌رساند" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/fa-relay-diagram.webp" style="display:block;margin:0 auto">
+
+## چه چیزهایی لازم است
+
+- سرور اصلی که هیدیفای‌منیجر روی آن نصب است: [آموزش نصب](/fa/manager/installation-and-setup/guide/).
+- یک سرور میانی (اوبونتو ۲۲.۰۴ / ۲۴.۰۴ یا دبیان ۱۲ / ۱۳)، معمولاً در ایران.
+- یک دامنه یا زیردامنه برای سرور اصلی، مثلاً `tunnel.example.com`: مستقیم (فقط DNS) یا پشت کلادفلر. پورت ۸۰۸۰ از کلادفلر هم عبور می‌کند.
+
+## قدم ۱: نصب wstunnel روی هر دو سرور
+
+[با SSH](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) به سرور اصلی وصل شوید و این دستورها را اجرا کنید، بعد همین کار را روی سرور میانی هم انجام دهید:
+
+<div dir="ltr" markdown="1">
+
+```bash
+wget https://github.com/erebe/wstunnel/releases/download/v11.1.0/wstunnel_11.1.0_linux_amd64.tar.gz
+tar xzf wstunnel_11.1.0_linux_amd64.tar.gz wstunnel
+sudo install -m 755 wstunnel /usr/local/bin/wstunnel
+wstunnel --version
+```
 
 </div>
 
-برای این کار شما به یک سرور میانی نیاز دارید تا از طریق آن به سرور اصلی متصل شوید. معمولا این سرور میانی در ایران در نظر گرفته می‌شود.
-دیاگرام استفاده از تونل به این شکل است.
+دستور آخر نسخه را چاپ می‌کند، مثلاً `wstunnel 11.1.0`. روی سرور ARM به‌جای `linux_amd64` از `linux_arm64` استفاده کنید.
 
-![شماتیک استفاده از تونل](https://user-images.githubusercontent.com/125398461/235339506-bdd76cec-0378-4942-8352-ebebeb006231.png)
+## قدم ۲: اجرای سمت سرور روی سرور اصلی
 
+یک سرویس بسازید تا تونل بعد از ری‌استارت خودش اجرا شود:
 
-حالا در اینجا برای ارتباط بین سرور ایران و سرور اصلی از تونل WS استفاده می‌شود. بعد از نصب شما به سرور ایران متصل می‌شوید، سرور ایران شما را به سرور اصلی متصل می‌کند و سپس از سرور اصلی به اینترنت آزاد دسترسی خواهید داشت.
+<div dir="ltr" markdown="1">
 
-> نکته: ما این اسکریپت‌ها را روی ابونتو ۲۲.۰۴ تست کردیم بنابراین بهتر هست از این نسخه استفاده کنید.
-
-روی سرور اصلی نیز هیدیفای‌منیجر را نصب کنید که راهنمای نصب آن در [اینجا](/fa/manager/installation-and-setup/guide/) وجود داره.
-
-## نصب تونل روی سرور اصلی و میانی (ایران)
-روی **هر دو سرور** باید برنامه این تونل را نصب کنید. برای این کار ابتدا با روت به سرور متصل شوید و کدهای زیر را اجرا کنید:
-ابتدا برنامه را با کامند زیر دانلود کنید.
-```
-wget "https://github.com/erebe/wstunnel/releases/download/v5.0/wstunnel-linux-x64"
-```
-به آن دسترسی اجرا بدهید.
-```
-sudo chmod +x wstunnel-linux-x64
-```
-برنامه را با کامند تغییر نام داده و به پوشه bin/ انتقال دهید.
-```
-sudo mv wstunnel-linux-x64 /bin/wstunnel
-
-```
-
-## اجرای تونل روی سرور اصلی
-
-روی سرور اصلی که هیدیفای‌منیجر نصب شده است، باید تونل نصب شده را اجرا کنید. با این کامند آن را بر روی پورت ۸۰۸۰ فعال نمایید.
-
-```
-sudo wstunnel --server ws://0.0.0.0:8080 -v
-```
-
-> نکته: دقت کنید اگر پورت تونل را عوض کردید در هر دو سرور باید پورت‌ها یکی باشند.
-
-- دقت کنید بعد از زدن این کامند، پیغام `WAIT for tcp connection on 0.0.0.0:8080` داده می‌شود که به معنای اجرای موفق تونل و در انتظار بودن برقراری لینک در سرور میانی است چون این تونل نیاز به برقرار ارتباط از هر دو سمت را دارد.
-
-کار راه‌اندازی تونل روی سرور اصلی نیز تمام است. 
-
-
-
-## اجرای تونل روی سرور میانی
-برای راه‌اندازی تونل روی سرور میانی با استفاده از این کامند هم پورت‌های مورد نیاز جهت فروارد نمودن را باید بدهید و هم پورتی که تونل برای برقراری  ارتباط استفاده می‌کند.
-در اینجا از پورت ۸۰۸۰ برای خود تونل استفاده شده است که سمت سرور اصلی کانفیگ شد. همینطور برنامه هیدیفای‌منیجر از پورت‌های ۴۴۳و۸۰ به صورت خودکار استفاده می‌کند که آن‌ها را نیز در کامند زیر قرار بدهید.
-
-- اگر پورت‌های دیفالت پنل هیدیفای‌منیجر را عوض نمودید طبق همین فرمول پورت‌های ۴۴۳و۸۰ را تغییر دهید.
-
-* اگر پورت دیگری را خواستید فروارد کنید طبث همین فرمول می‌توانید انجام دهید.
-
-
-```
-sudo wstunnel -L 0.0.0.0:80:localhost:80 -L 0.0.0.0:443:localhost:443 ws://[cdn_or_direct_domain_of_main_server]:8080
-```
-
-
-
-- دقت شود [server_adress_or_domain] را می‌بایست با دامین CDN یا دایرکت ثبت شده در هیدیفای‌منیجر یا آی‌پی اصلی سرور جای‌گذاری کنید.
--  اگر با دامین CDN این کار را انجام بدید، از فیلتر شدن سرور اصلی نیز جلوگیری می‌کنید.
-*    دقت کنید بعد از زدن این کامند، پیغام
- `WAIT for tcp connection on 0.0.0.0:80 , WAIT for tcp connection on 0.0.0.0:443` داده می‌شود که به معنای اجرای موفق تونل و در انتظار بودن برقراری کانکشن از سمت کلاینت است. 
-
-- اگر پورت اصلی تونل (در اینجا ۸۰۸۰) روی دیتاسنتر ایران شما فیلتر شد، می‌توانید پورت‌های دیگر را استفاده نمایید.
-- نکته خیلی مهم: اگر از دامنه‌های CDN برای برقراری تونل استفاده کردید، فق مجاز هستید از پورتهای کلادفلر استفاده کنید. یعنی برای کانکشن پورتهای https کلادفلر را فق می‌توانید استفاده نمایید و برای خود تونل پورت‌های http کلادفلر را می‌توانید استفاده نمایید. [لیست پورتهای کلادفلر](https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/)
-
-کار در راه‌اندازی تونل ws در سرور  میانی تمام است.
-
-## راه‌اندازی سرویس تونل در سرور اصلی
-
-تنها نیاز است سرویس آن را نیز ایجاد نمایید تا در صورت ریست شدن سرور، تونل به صورت خودکار اجرا گردد. برای این کار از تونل ایجاد شده با `Ctrl+c` خارج شوید، سپس با یک ویرایشگر متنی (در اینجا `nano`) فایل سرویس را در مسیر اصلی کرنل ایجاد کنید.
-
-```
+```bash
 sudo nano /etc/systemd/system/wstunnel.service
 ```
 
-سپس در فایل باز شده، متن زیر را کپی کنید تا سرویس مورد نظر تعریف شود.
+</div>
 
-```
+این را بچسبانید، با `Ctrl+S` ذخیره کنید و با `Ctrl+X` خارج شوید:
+
+<div dir="ltr" markdown="1">
+
+```ini
 [Unit]
-Description=wstunnel
-After=network.target
+Description=wstunnel server
+After=network-online.target
 
 [Service]
-Type=simple
-WorkingDirectory=/bin
-ExecStart= wstunnel --server ws://0.0.0.0:8080 -v
-Restart=on-failure
+ExecStart=/usr/local/bin/wstunnel server ws://[::]:8080 --restrict-to 127.0.0.1:443 --restrict-to 127.0.0.1:80
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-برای خروج از ویرایشگر متنی ابتدا `Ctrl+s` بزنید تا فایل ذخیره شود سپس با `Ctrl+x` از برنامه خارج شوید.
+</div>
 
-حالا سرویس اصلی کرنل را ریست کرده و سرویس ساخته شده را فعال و استارت کنید.
+`--restrict-to` اجازه می‌دهد تونل فقط به پورت‌های ۴۴۳ و ۸۰ همین سرور برسد، تا کس دیگری نتواند از آن به‌عنوان پروکسی باز استفاده کند.
 
-```
+بعد آن را اجرا و بررسی کنید:
+
+<div dir="ltr" markdown="1">
+
+```bash
 sudo systemctl daemon-reload
-sudo systemctl enable wstunnel.service
-sudo systemctl start wstunnel.service
-```
-حالا برای چک کردن ایتکه سرویس فعال شده است این کامند را بزنید و چک کنید حتما سرویس Active باشد. 
-```
-sudo systemctl status wstunnel.service
+sudo systemctl enable --now wstunnel
+sudo systemctl status wstunnel --no-pager
 ```
 
-اگر به هر دلیل سرویس فعال نبود، یکی از مراحل قبل احتمالا به درستی انجام نشده است.
+</div>
 
+وضعیت باید `active (running)` باشد.
 
+## قدم ۳: اجرای سمت کلاینت روی سرور میانی
 
-## اراه‌اندازی سرویس تونل در سرور  میانی
+روی سرور میانی همان فایل را با دستور کلاینت بسازید. به‌جای `tunnel.example.com` دامنهٔ سرور اصلی خود را بگذارید:
 
+<div dir="ltr" markdown="1">
 
- تنها نیاز است سرویس آن را نیز ایجاد نمایید تا در صورت ریست شدن سرور، تونل به صورت خودکار اجرا گردد. برای این کار با یک ویرایشگر متنی (در اینجا nano) فایل سرویس را در مسیر اصلی کرنل ایجاد کنید.
-```
+```bash
 sudo nano /etc/systemd/system/wstunnel.service
 ```
-سپس در فایل باز شده، متن زیر را کپی کنید تا سرویس مورد نظر تعریف شود.
 
-```
+</div>
+
+<div dir="ltr" markdown="1">
+
+```ini
 [Unit]
-Description=wstunnel
-After=network.target
+Description=wstunnel client (relay)
+After=network-online.target
 
 [Service]
-Type=simple
-WorkingDirectory=/bin
-ExecStart= wstunnel -L 0.0.0.0:80:localhost:80 -L 0.0.0.0:443:localhost:443 ws://[cdn_or_direct_domain_of_main_server]:8080
-Restart=on-failure
+ExecStart=/usr/local/bin/wstunnel client -L tcp://0.0.0.0:443:127.0.0.1:443 -L tcp://0.0.0.0:80:127.0.0.1:80 ws://tunnel.example.com:8080
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-- دقت کنید که `cdn_or_direct_domain_of_main_server` را با مشخصات دامنه دایرکت یا CDN خود جای‌گذاری کنید.
-- برای خروج از ویرایشگر متنی ابتدا `Ctrl + s` بزنید تا فایل ذخیره شود سپس با `Ctrl + x` از برنامه خارج شوید.
+</div>
 
-حالا سرویس اصلی کرنل را ریست کرده و سرویس ساخته شده را فعال و استارت کنید.
+`-L tcp://0.0.0.0:443:127.0.0.1:443` یعنی: روی پورت ۴۴۳ سرور میانی گوش بده و همه چیز را به پورت ۴۴۳ سرور اصلی بفرست. برای پورت‌های بیشتر، `-L`های بیشتری اضافه کنید.
 
-```
+بعد آن را اجرا و بررسی کنید:
+
+<div dir="ltr" markdown="1">
+
+```bash
 sudo systemctl daemon-reload
-sudo systemctl enable wstunnel.service
-sudo systemctl start wstunnel.service
-```
-حالا برای چک کردن ایتکه سرویس فعال شده است این کامند را بزنید و چک کنید حتما سرویس Active باشد. 
-```
-sudo systemctl status wstunnel.service
+sudo systemctl enable --now wstunnel
+sudo systemctl status wstunnel --no-pager
 ```
 
-اگر به هر دلیل سرویس فعال نبود، یکی از مراحل قبل احتمالا به درستی انجام نشده است.
+</div>
 
+## قدم ۴: افزودن سرور میانی به پنل
 
-## تعریف سرور میانی در هیدیفای‌منیجر
-حالا برای آی‌پی سرور میانی (ایران) خود یک ساب‌دامین با پروکسی خاموش ثبت نمایید و آن را در هیدیفای‌منیجر روی حالت `سرور میانی` ثبت نمایید.
-- ساب‌دامین ثبت شده را در فیلد `دامنه` قرار دهید و یک `نام نمایشی` نیز برای نمایش در کانفیگ‌ها می‌توانید تعیین نمایید.
+یک زیردامنه با پروکسی **خاموش** (فقط DNS) بسازید که به آی‌پی **سرور میانی** اشاره کند. در پنل **دامنه‌ها** › **افزودن دامنه** را باز کنید، زیردامنه را بنویسید، در **چطور تنظیم شده است؟** گزینهٔ **رله** (۱) را انتخاب کنید و مراحل را تمام کنید.
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/3f41d92a-04b9-44fb-b645-ac660601472a">
+<img width=520 alt="افزودن دامنه: حالت رله" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/fa-relay-mode.webp" style="display:block;margin:0 auto">
 
-## افزودن کانفیگ‌های `سرور میانی` جهت استفاده به لینک سابسکریپشن
+قدم‌به‌قدم و با تصویر: [آموزش افزودن سرور میانی (دامنهٔ رله) به هیدیفای‌منیجر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-همانند همیشه در هیدیفای‌منیجر بهتر است کانفیگ‌ها را از لینک سابسکریپشن جدا کنید. بنابراین برای دامنه `سرور میانی` ثبت شده نیز می‌توانید در تنظیمات دامنه مربوط به سابسکریپشن، تیک مربوط به دامنه `سرور میانی` را بزنید تا کانفیگ‌های آن به دامنه سابسکریپشن اضافه گردند.
+## قدم ۵: افزودن کانفیگ‌های سرور میانی به لینک اشتراک
 
-فرض شود که دامنه مربوط به سابسکریپشن `sublink.hiddify.com` باشد، مطابق با تصویر زیر جلو بروید تا کار انجام شود.
+در صفحهٔ **دامنه‌ها**، دامنهٔ اشتراک را با مداد باز کنید و دامنهٔ رله را به **نمایش کانفیگ‌های** اضافه کنید. [آموزش ساخت لینک اشتراک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/) را ببینید.
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230">
+## حذف تونل
 
-حالا اگه صفحه کاربر را با دامین سابسکریپشن (در اینجا `sublink.hiddify.com`) باز نمایید خواهید دید که کانکشن‌های مربوط به `سرور میانی` نیز اضافه شده‌اند. می‌توانید این کانکشن‌ها را به صورت تک تک و یا با استفاده از لینک‌های سابسکریشن به کلاینت خود اضافه نمایید و استفاده نمایید.
+روی هر دو سرور:
 
+<div dir="ltr" markdown="1">
 
-##  حذف تونل از سرور میانی و سرور اصلی
-
-ابتدا باید سرویس را متوقف و غیر فعال کنید.
-```
-sudo systemctl daemon-reload
-sudo systemctl stop wstunnel.service
-sudo systemctl disable wstunnel.service
-```
-سپس برنامه و سرویس ایجاد شده را حذف کنید.
-```
-sudo rm -f /etc/systemd/system/wstunnel.service /bin/wstunnel
+```bash
+sudo systemctl disable --now wstunnel
+sudo rm -f /etc/systemd/system/wstunnel.service /usr/local/bin/wstunnel
 ```
 
-[لینک پروژه WS Tunnel](https://github.com/erebe/wstunnel)
+</div>
+
+## مقاله‌های مرتبط
+
+- [آموزش افزودن سرور میانی (دامنهٔ رله)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [سرور میانی‌ساز هیدیفای](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [تونل Dokodemo-Door](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/)، [تونل HA-Proxy](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/)، [تونل GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [wstunnel در گیت‌هاب](https://github.com/erebe/wstunnel)
+
+</div>

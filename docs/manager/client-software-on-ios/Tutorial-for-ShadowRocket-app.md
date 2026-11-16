@@ -8,8 +8,8 @@ title: Tutorial for ShadowRocket app
 
 This page shows you how to add your HiddifyManager subscription to **Shadowrocket** on iPhone and iPad, and how to use its most useful settings. Shadowrocket is a paid app that works with Xray-based configs.
 
-!!! tip "Recommended: Hiddify App"
-    The easiest app for a HiddifyManager server is the free **Hiddify App**. It is on the [App Store](https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532). See [How to install Hiddify App](/app/How-to-install-Hiddify-app/).
+<div class="hi-get"><img class="ico" src="/assets/logos/apps/shadowrocket.webp" alt="Shadowrocket"><div class="meta"><b>Shadowrocket</b><small><span>v2.2.93</span><span>iOS 13+</span><span>Paid</span><span>Nov 2026</span></small></div><div class="stores"><a class="hi-store" href="https://apps.apple.com/us/app/shadowrocket/id932747118"><img src="/assets/logos/apple-white.svg" alt=""><span><small>Download on the</small><b>App Store</b></span></a></div></div>
+<a class="hi-alt" href="/app/How-to-install-Hiddify-app/"><span class="mk"><img src="/assets/logos/hiddify-mark-white.svg" alt=""></span><span><b>Our suggestion: the Hiddify app</b><small>Free, simpler, and supports every Hiddify Manager protocol</small></span><span class="go">Install →</span></a>
 
 ## Before you start
 
@@ -23,6 +23,9 @@ A **subscription link** is one link that holds all your connection settings (con
 1. On your iPhone, open your user page link in Safari.
 2. Tap the large round button in the middle of the page. A window called **Configure your VPN** opens.
 3. Under **Choose one of the apps below**, tap **Shadowrocket**. If you don't see it, tap **View More**. You can also download the app from here.
+
+    <img width=300 alt="Shadowrocket on the user page" src="/assets/manager/Tutorial-for-ShadowRocket-app/en-user-app.webp" style="display:block;margin:0 auto">
+
 4. Tap **Import To App**. Shadowrocket opens and adds your subscription.
 
 If that doesn't work, add the link by hand as shown below.
@@ -30,13 +33,6 @@ If that doesn't work, add the link by hand as shown below.
 !!! note "Lite and Normal configs no longer exist"
     Older versions of the user page offered two kinds of configs in an **iOS** tab: **Lite** (only blocked sites go through the VPN) and **Normal** (all traffic goes through the VPN). The current user page has no iOS tab and no Lite/Normal choice. If you want local sites to open without the VPN, ask your admin; this is set on the server. If your admin turned on [WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/), local sites can open through WARP.
 
-<div align=center markdown=1>
-<img width=30% alt="Shadowrocket section on an older version of the user page" src="https://github.com/hiddify/hiddify-config/assets/125398461/24520888-2489-499d-b0a4-46c297e9f83f" />
-</div>
-
-<div align=center markdown=1>
-<img width=30% alt="Lite and Normal configs on an older version of the user page" src="https://github.com/hiddify/hiddify-config/assets/125398461/61500b2d-2947-493e-8a9d-3d8f48cb5e7a" />
-</div>
 
 ## Add your subscription by hand
 
@@ -52,13 +48,13 @@ Then add it to Shadowrocket in one of two ways.
 1. Tap **Copy Link**.
 2. Open Shadowrocket and tap the **+** button in the top-right corner.
 
-    <img style="display:block;margin:0 auto" width=30% alt="The + button in Shadowrocket" src="https://github.com/hiddify/hiddify-config/assets/125398461/d116347f-31bc-4ca9-a1fc-bdb9364e5e74" />
+    <img style="display:block;margin:0 auto" width=30% alt="The + button in Shadowrocket" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-d116347f-31bc-4ca9-a1fc-bdb9364e5e74.webp" />
 
 3. Set **Type** to **Subscribe**.
 4. Paste the link into the **URL** field.
 5. Tap **Save**.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Type Subscribe and the URL field" src="https://github.com/hiddify/hiddify-config/assets/125398461/c087970e-aebc-479d-8b8a-bc54a78cc7f8" />
+    <img style="display:block;margin:0 auto" width=30% alt="Type Subscribe and the URL field" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-c087970e-aebc-479d-8b8a-bc54a78cc7f8.webp" />
 
 All your configs now load in the app.
 
@@ -66,7 +62,7 @@ All your configs now load in the app.
 
 1. On the Shadowrocket home screen, tap the scanner button.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Scanner button" src="https://github.com/hiddify/hiddify-config/assets/125398461/cee3abfe-db05-4e2c-925d-fa57010d3465" />
+    <img style="display:block;margin:0 auto" width=30% alt="Scanner button" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-cee3abfe-db05-4e2c-925d-fa57010d3465.webp" />
 
 2. Scan the QR code shown on your user page. Your configs are added to the app.
 
@@ -75,7 +71,7 @@ All your configs now load in the app.
 On the home screen, tap **Connectivity Test**. The app tests each config.
 
 <div align=center markdown=1>
-<img width=30% alt="Connectivity Test" src="https://github.com/hiddify/hiddify-config/assets/125398461/49a37a3c-b1f7-48ba-91e2-0a4ac7dc3e5f" />
+<img width=30% alt="Connectivity Test" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-49a37a3c-b1f7-48ba-91e2-0a4ac7dc3e5f.webp" />
 </div>
 
 For more realistic results:
@@ -84,7 +80,7 @@ For more realistic results:
 2. Set **Test Method** to **Connect**.
 3. Run the test again.
 
-<div align=center markdown=1><img width=30% alt="Test Method set to Connect" src="https://github.com/hiddify/hiddify-config/assets/125398461/8760fd19-9056-4c0c-a4a0-aeebd728656f" />
+<div align=center markdown=1><img width=30% alt="Test Method set to Connect" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-8760fd19-9056-4c0c-a4a0-aeebd728656f.webp" />
 </div>
 
 ## Update your subscription
@@ -92,7 +88,7 @@ For more realistic results:
 Tap the update icon above the configs of a subscription. The configs are updated with the latest settings from the server.
 
 <div align=center markdown=1>
-<img width=30% alt="Update icon above the configs" src="https://github.com/hiddify/hiddify-config/assets/125398461/0878e805-a24e-4f19-831a-f526b475db4a" />
+<img width=30% alt="Update icon above the configs" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-0878e805-a24e-4f19-831a-f526b475db4a.webp" />
 </div>
 
 ## Subscription settings
@@ -104,7 +100,7 @@ Go to **Settings** and tap **Subscribe** near the bottom. Here you can set:
 Turn on **Update on Open**.
 
 <div align=center markdown=1>
-<img width=30% alt="Update on Open" src="https://github.com/hiddify/hiddify-config/assets/125398461/aeb08d16-20d3-424e-8c6d-7d13f06aeb8d" />
+<img width=30% alt="Update on Open" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-aeb08d16-20d3-424e-8c6d-7d13f06aeb8d.webp" />
 </div>
 
 ### Update automatically in the background
@@ -112,7 +108,7 @@ Turn on **Update on Open**.
 Turn on **Auto Background Update**. The app then refreshes your subscriptions at regular intervals.
 
 <div align=center markdown=1>
-<img width=30% alt="Auto Background Update" src="https://github.com/hiddify/hiddify-config/assets/125398461/97540ef0-399f-4260-85a1-af0c0594533b" />
+<img width=30% alt="Auto Background Update" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-97540ef0-399f-4260-85a1-af0c0594533b.webp" />
 </div>
 
 ### Sort by ping
@@ -120,7 +116,7 @@ Turn on **Auto Background Update**. The app then refreshes your subscriptions at
 Turn on **Sort by ping** to list the configs by their test result, best first.
 
 <div align=center markdown=1>
-<img width=30% alt="Sort by ping" src="https://github.com/hiddify/hiddify-config/assets/125398461/afeb9a4d-a12f-49f1-aca7-f5eae5c6bed2" />
+<img width=30% alt="Sort by ping" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-afeb9a4d-a12f-49f1-aca7-f5eae5c6bed2.webp" />
 </div>
 
 ## Prevent IP leaks
@@ -131,7 +127,7 @@ An **IP leak** means a website can see your real IP address even though the VPN 
 2. Turn on **Disable STUN**.
 
 <div align=center markdown=1>
-<img width=30% alt="Disable STUN" src="https://github.com/hiddify/hiddify-config/assets/125398461/3bd81556-4119-4659-8db7-0826bbdbd6ee" />
+<img width=30% alt="Disable STUN" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-3bd81556-4119-4659-8db7-0826bbdbd6ee.webp" />
 </div>
 
 ## Fix missing sound in some apps
@@ -142,7 +138,7 @@ If some apps (for example Clubhouse) play no sound:
 2. Change the **Fingerprint** value.
 
 <div align=center markdown=1>
-<img width=30% alt="Fingerprint setting" src="https://github.com/hiddify/hiddify-config/assets/125398461/fe7a7a27-016c-45b9-92b5-2e9427ba165a" />
+<img width=30% alt="Fingerprint setting" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-fe7a7a27-016c-45b9-92b5-2e9427ba165a.webp" />
 </div>
 
 ## Shortcuts
@@ -154,7 +150,7 @@ Go to **Settings**, then **Shortcuts**. Here you can set a voice command for an 
 Go to **Settings**, then **On Demand**.
 
 <div align=center markdown=1>
-<img width=30% alt="On Demand settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/af641742-dc91-468e-9135-78de911e6703" />
+<img width=30% alt="On Demand settings" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-af641742-dc91-468e-9135-78de911e6703.webp" />
 </div>
 
 #### Always On
@@ -174,7 +170,7 @@ You can share your VPN with another device on the same network, for example a de
 2. Tap **Proxy Share**.
 3. Turn on **Enable Share**. The app shows an IP address and a port.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Proxy Share with IP and port" src="https://github.com/hiddify/hiddify-config/assets/125398461/d764b726-6ddd-4a5a-aa76-f9ad8165e4f1" />
+    <img style="display:block;margin:0 auto" width=30% alt="Proxy Share with IP and port" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-d764b726-6ddd-4a5a-aa76-f9ad8165e4f1.webp" />
 
 4. On the other device, open its network proxy settings and enter that IP address and port.
 
@@ -186,11 +182,11 @@ A **load balancer** spreads your traffic over several configs, so one slow or bl
 
 1. On the home screen, hold your finger on the screen and swipe down. A hidden menu opens.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Hidden menu" src="https://github.com/hiddify/hiddify-config/assets/125398461/59872f56-e9ff-4c50-85a0-65ccd488e704" />
+    <img style="display:block;margin:0 auto" width=30% alt="Hidden menu" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-59872f56-e9ff-4c50-85a0-65ccd488e704.webp" />
 
 2. Tap the **+** button.
 
-    <img style="display:block;margin:0 auto" width=30% alt="The + button for a new load balancer" src="https://github.com/hiddify/hiddify-config/assets/125398461/b67bc883-e643-465c-85dc-e6eeb719723c" />
+    <img style="display:block;margin:0 auto" width=30% alt="The + button for a new load balancer" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-b67bc883-e643-465c-85dc-e6eeb719723c.webp" />
 
 3. Type any name.
 4. Set **Type** to **load-balance**.
@@ -198,11 +194,11 @@ A **load balancer** spreads your traffic over several configs, so one slow or bl
 6. Leave **Interval** (time between tests) and **Timeout** (how long a config may fail and still count as working) at their default values, unless you know what you need.
 7. Tap **Save**.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Load balancer settings" src="https://github.com/hiddify/hiddify-config/assets/125398461/be6e132b-d9d4-45ff-ab8a-94b72d764139" />
+    <img style="display:block;margin:0 auto" width=30% alt="Load balancer settings" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-be6e132b-d9d4-45ff-ab8a-94b72d764139.webp" />
 
 8. Tap the new load balancer, then tap **Test**. This tests it and connects through it.
 
-    <img style="display:block;margin:0 auto" width=30% alt="Testing the load balancer" src="https://github.com/hiddify/hiddify-config/assets/125398461/819da751-8a46-4ab3-88e2-00a5e0b3f724" />
+    <img style="display:block;margin:0 auto" width=30% alt="Testing the load balancer" src="/assets/manager/Tutorial-for-ShadowRocket-app/gh-819da751-8a46-4ab3-88e2-00a5e0b3f724.webp" />
 
 When you turn Shadowrocket on or off, the load balancer turns on or off with it.
 
@@ -217,5 +213,16 @@ If some sites or apps don't open, or Telegram GIFs don't load:
 5. Set **Max Read Length** to **16384**.
 6. Go back to **Home**.
 7. Set **Global Routing** to **Proxy**.
+
+## Related articles
+
+<div class="hi-related" markdown="1">
+
+- [sing-box](/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/manager/client-software-on-ios/Tutorial-for-Streisand/)
+- [V2Box](/manager/client-software-on-ios/Tutorial-for-V2Box-app/)
+- [FoXray](/manager/client-software-on-ios/Tutorial-for-FoXray-app/)
+
+</div>
 
 </div>

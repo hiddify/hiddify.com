@@ -2,205 +2,142 @@
 title: آموزش راه‌اندازی تونل Dokodemo-Door به عنوان سرور میانی
 ---
 
-# آموزش راه‌اندازی تونل Dokodemo-Door به عنوان سرور میانی
+<div dir="rtl" markdown="1">
 
-برای این کار شما به یک سرور میانی نیاز دارید تا از طریق آن به سرور اصلی متصل شوید. معمولا این سرور میانی در کشور محل اقامت شما در نظر گرفته می‌شود.
-<div align=center dir="rtl" markdown="1">
- 
-<img src="https://user-images.githubusercontent.com/125398461/235339506-bdd76cec-0378-4942-8352-ebebeb006231.png">
-</div>
+# آموزش راه‌اندازی سرور میانی با Dokodemo-Door (تونل)
 
+!!! info "دربارهٔ این آموزش"
+    این آموزش سرور میانی را به‌صورت دستی با **Xray** راه‌اندازی می‌کند و برای Xray نسخهٔ ۲۶ و هیدیفای‌منیجر نسخهٔ ۱۴.۵ است. برای روشی ساده‌تر که سرور میانی را از یک منو می‌سازد، [سرور میانی‌ساز هیدیفای](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/) را ببینید.
 
-- به  سرور میانی [SSH بزنید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) و دستور نصب هسته Xray اجرا کنید
+**سرور میانی** (ریلی) سرور دومی است، معمولاً در ایران، که کاربران به آن وصل می‌شوند و ترافیکشان را به سرور اصلی شما (هیدیفای‌منیجر) در خارج می‌رساند. ورودی **Dokodemo-Door** در Xray دقیقاً همین کار را می‌کند: هر چه به یک پورت برسد، بدون تغییر به همان پورتِ سرور اصلی فرستاده می‌شود.
 
-```
+<img width=760 alt="کاربران به سرور میانی وصل می‌شوند و آن ترافیک را به سرور اصلی می‌رساند" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/fa-relay-diagram.webp" style="display:block;margin:0 auto">
+
+!!! note "نام Dokodemo-Door حالا `tunnel` است"
+    از سال ۲۰۲۵، Xray به این ورودی `tunnel` می‌گوید. نام قدیمی `dokodemo-door` هنوز کار می‌کند و کانفیگ‌های قدیمی خراب نمی‌شوند. نمونه‌های پایین نام جدید را به کار می‌برند.
+
+## قدم ۱: نصب Xray روی سرور میانی
+
+[با SSH به سرور میانی وصل شوید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) و نصب‌کنندهٔ رسمی Xray را اجرا کنید:
+
+<div dir="ltr" markdown="1">
+
+```bash
 sudo bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
 ```
 
-- پس از نصب باید فایل `config.json` را با دستور زیر ایجاد نمایید.
+</div>
 
-```
-nano /usr/local/etc/xray/config.json
+## قدم ۲: نوشتن کانفیگ
+
+فایل کانفیگ را باز کنید:
+
+<div dir="ltr" markdown="1">
+
+```bash
+sudo nano /usr/local/etc/xray/config.json
 ```
 
-- حالا کد زیر که مربوط به ترافیک `inbound` و `outbound` تونل dokodemo-Door است را ملاحظه فرمایید.
+</div>
 
-```
+محتوای آن را با نمونهٔ پایین عوض کنید و دو چیز را تغییر دهید:
+
+- `10.10.10.10`: آی‌پی **سرور اصلی** شما.
+- `443` (هر سه جا): پورتی از سرور اصلی که می‌خواهید به آن برسید. هیدیفای‌منیجر به‌طور پیش‌فرض از پورت ۴۴۳ استفاده می‌کند.
+
+<div dir="ltr" markdown="1">
+
+```json
 {
   "inbounds": [
     {
-      "listen": "127.0.0.1",
-      "port": 62789,
-      "protocol": "dokodemo-Door",
-      "settings": {
-        "address": "127.0.0.1"
-      },
-      "tag": "api"
-    },
-    {
-      "listen": null,
-      "port": Main_Server_Port,
-      "protocol": "dokodemo-Door",
-      "settings": {
-        "address": "MAIN_SERVER_IP",
-        "followRedirect": false,
-        "network": "tcp,udp",
-        "port": MAIN_SERVER_PORT
-      },
-      "tag": "inbound-MAIN_SERVER_PORT"
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    },
-    {
-      "protocol": "blackhole",
-      "tag": "blocked"
-    }
-  ]
-}
-```
-   در قسمت پورت `MAIN_SERVER_PORT` پورت سرور اصلی خود (هیدیفای‌منیجر) را قرار دهید که برای اتصال تونل در آن سرور در نظر گرفتید.
-   به طور مثال پورت ۴۴۳ توسط هیدیفای‌منیجر به صورت دیفالت برای کانشکن‌ها استفاده می‌شود.
-   در قسمت `MAIN_SERVER_IP`  بایستی آی‌پی سرور  اصلی خود را قرار دهید.
-
-- به عنوان مثال اگر آی‌پی سرور شما `10.10.10.10` باشد و پورت آن `443` باشد بنابراین کد `inbound` به شکل زیر خواهد بود:
-
-```
-{
-  "inbounds": [
-    {
-      "listen": "127.0.0.1",
-      "port": 62789,
-      "protocol": "dokodemo-Door",
-      "settings": {
-        "address": "127.0.0.1"
-      },
-      "tag": "api"
-    },
-    {
-      "listen": null,
       "port": 443,
-      "protocol": "dokodemo-Door",
+      "protocol": "tunnel",
       "settings": {
         "address": "10.10.10.10",
-        "followRedirect": false,
-        "network": "tcp,udp",
-        "port": 443
+        "port": 443,
+        "network": "tcp,udp"
       },
-      "tag": "inbound-443"
+      "tag": "to-main-443"
     }
   ],
   "outbounds": [
-    {
-      "protocol": "freedom"
-    },
-    {
-      "protocol": "blackhole",
-      "tag": "blocked"
-    }
+    { "protocol": "freedom" }
   ]
 }
 ```
 
+</div>
 
-پس از انجام عملیات کانفیگ دکمه `Ctrl + s` زده تا تغییرات ذخبره شود و `Ctrl + x` بزنید تا از فایل `config.json` خارج شوید.
+با `Ctrl+S` ذخیره کنید و با `Ctrl+X` خارج شوید.
 
-##### تعریف چند inbound مختلف در سرور میانی برای اتصال به چند سرور اصلی
+??? example "چند سرور اصلی روی یک سرور میانی"
+    برای هر سرور اصلی یک ورودی، هر کدام روی پورت خودش، اضافه کنید. مثلاً سرور ۱ با آی‌پی `10.10.10.10` و پورت ۴۴۳، و سرور ۲ با آی‌پی `20.20.20.20` و پورت ۸۴۴۳:
 
-برای این کار کافیه در کد مربوط به `config.json` بعد از اتمام هر `inbound` یک `inbound` جدید تعریف نمایید. به عنوان مثال فرض شود دو سرور اصلی داریم که آی‌پی سرور اول `10.10.10.10` و پورت آن `443` آی‌پی سرور دوم `20.20.20.20` و پورت آن `8443` است. برای ایجاد دو تونل مستقل به این سرورها باید به شکل زیر دو `inbound`  ایجاد شود.
-
-```
-{
-  "inbounds": [
+    ```json
     {
-      "listen": "127.0.0.1",
-      "port": 62789,
-      "protocol": "dokodemo-Door",
-      "settings": {
-        "address": "127.0.0.1"
-      },
-      "tag": "api"
-    },
-    {
-      "listen": null,
-      "port": 443,
-      "protocol": "dokodemo-Door",
-      "settings": {
-        "address": "10.10.10.10",
-        "followRedirect": false,
-        "network": "tcp,udp",
-        "port": 443
-      },
-      "tag": "inbound-443"
+      "inbounds": [
+        {
+          "port": 443,
+          "protocol": "tunnel",
+          "settings": { "address": "10.10.10.10", "port": 443, "network": "tcp,udp" },
+          "tag": "to-server-1"
+        },
+        {
+          "port": 8443,
+          "protocol": "tunnel",
+          "settings": { "address": "20.20.20.20", "port": 8443, "network": "tcp,udp" },
+          "tag": "to-server-2"
+        }
+      ],
+      "outbounds": [
+        { "protocol": "freedom" }
+      ]
     }
-   {
-      "listen": null,
-      "port": 8443,
-      "protocol": "dokodemo-Door",
-      "settings": {
-        "address": "20.20.20.20",
-        "followRedirect": false,
-        "network": "tcp,udp",
-        "port": 8443
-      },
-      "tag": "inbound-8443"
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    },
-    {
-      "protocol": "blackhole",
-      "tag": "blocked"
-    }
-  ]
-}
-```
+    ```
 
-- پس از ذخیره فایل دستور ریستارت هسته Xray را بزنید.
+## قدم ۳: اجرای Xray
 
-```
+<div dir="ltr" markdown="1">
+
+```bash
 sudo systemctl restart xray
+sudo systemctl status xray --no-pager
 ```
 
-## تعریف سرور میانی در هیدیفای‌منیجر
-حالا برای آی‌پی سرور میانی (ایران) خود یک ساب‌دامین با پروکسی خاموش ثبت نمایید و آن را در هیدیفای‌منیجر روی حالت `سرور میانی` ثبت نمایید.
-- ساب‌دامین ثبت شده را در فیلد `دامنه` قرار دهید و یک `نام نمایشی` نیز برای نمایش در کانفیگ‌ها می‌توانید تعیین نمایید.
+</div>
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/3f41d92a-04b9-44fb-b645-ac660601472a">
+وضعیت باید `active (running)` باشد. اگر نبود، دستور `sudo journalctl -u xray -n 30` علت را نشان می‌دهد (معمولاً یک اشتباه تایپی در JSON).
 
-## افزودن کانفیگ‌های `سرور میانی` جهت استفاده به لینک سابسکریپشن
+## قدم ۴: افزودن سرور میانی به پنل
 
-همانند همیشه در هیدیفای‌منیجر بهتر است کانفیگ‌ها را از لینک سابسکریپشن جدا کنید. بنابراین برای دامنه `سرور میانی` ثبت شده نیز می‌توانید در تنظیمات دامنه مربوط به سابسکریپشن، تیک مربوط به دامنه `سرور میانی` را بزنید تا کانفیگ‌های آن به دامنه سابسکریپشن اضافه گردند.
+یک زیردامنه با پروکسی **خاموش** (فقط DNS) بسازید که به آی‌پی **سرور میانی** اشاره کند. در پنل **دامنه‌ها** › **افزودن دامنه** را باز کنید، زیردامنه را بنویسید، در **چطور تنظیم شده است؟** گزینهٔ **رله** (۱) را انتخاب کنید و مراحل را تمام کنید. می‌توانید یک **نام نمایشی** هم بدهید که در اپ کاربران به‌جای دامنه نشان داده شود.
 
-فرض شود که دامنه مربوط به سابسکریپشن `sublink.hiddify.com` باشد، مطابق با تصویر زیر جلو بروید تا کار انجام شود.
+<img width=520 alt="افزودن دامنه: حالت رله" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/fa-relay-mode.webp" style="display:block;margin:0 auto">
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230">
+قدم‌به‌قدم و با تصویر: [آموزش افزودن سرور میانی (دامنهٔ رله) به هیدیفای‌منیجر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-حالا اگه صفحه کاربر را با دامین سابسکریپشن (در اینجا `sublink.hiddify.com`) باز نمایید خواهید دید که کانکشن‌های مربوط به `سرور میانی` نیز اضافه شده‌اند. می‌توانید این کانکشن‌ها را به صورت تک تک و یا با استفاده از لینک‌های سابسکریشن به کلاینت خود اضافه نمایید و استفاده نمایید.
+## قدم ۵: افزودن کانفیگ‌های سرور میانی به لینک اشتراک
 
+بهتر است لینک اشتراک روی دامنهٔ جداگانه‌ای باشد. در صفحهٔ **دامنه‌ها**، دامنهٔ اشتراک را با مداد باز کنید و دامنهٔ رله را به **نمایش کانفیگ‌های** اضافه کنید. حالا کانفیگ‌های سرور میانی در صفحهٔ کاربر و لینک اشتراک دیده می‌شوند. [آموزش ساخت لینک اشتراک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/) را ببینید.
 
+## حذف تونل از سرور میانی
 
-## حذف کانفیگ dokodemo از سرور میانی
+<div dir="ltr" markdown="1">
 
-- برای این کار ابتدا این کامند را اجرا کنید.
-
-```
+```bash
+sudo systemctl disable --now xray
 sudo rm /usr/local/etc/xray/config.json
+sudo bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
 ```
 
-- سپس هسته Xray را متوقف و حذف کنید.
+</div>
 
-```
-sudo systemctl stop xray && systemctl disable xray
-````
+## مقاله‌های مرتبط
 
-- در نهایت برای حذف کامل برنامه و سرویس این کامندها را بزنید.
+- [آموزش افزودن سرور میانی (دامنهٔ رله)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [سرور میانی‌ساز هیدیفای](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [تونل GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)، [تونل HA-Proxy](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-HA-Proxy-tunnel-as-relay-server/)، [تونل WST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
+- [استفاده از IPv6 برای تونل پایدارتر](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/)
 
-```
-bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
-```
-
+</div>

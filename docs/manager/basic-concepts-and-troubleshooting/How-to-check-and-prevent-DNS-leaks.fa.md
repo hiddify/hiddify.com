@@ -26,7 +26,7 @@ title: چگونه نشتی DNS را بررسی کنیم و از آن جلوگی�
 1. سایت [dnsleaktest.com](https://dnsleaktest.com/) را باز کنید. در صفحه اول آدرس IP فعلی شما نمایش داده می‌شود.
 2. روی **Extended test** بزنید. (گزینه **Standard test** سرورهای کمتری را بررسی می‌کند؛ تست Extended دقیق‌تر است.)
 
-    ![صفحه اول dnsleaktest.com با دکمه‌های Standard test و Extended test](https://user-images.githubusercontent.com/125398461/235299493-2a0c4aaf-cd24-4723-b7f6-8ed60845734d.jpg)
+    ![صفحه اول dnsleaktest.com با دکمه‌های Standard test و Extended test](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299493-2a0c4aaf-cd24-4723-b7f6-8ed60845734d.webp)
 
 3. صبر کنید تا تست تمام شود و فهرست سرورها را نگاه کنید:
     - **بدون نشتی:** همه سرورها متعلق به شرکت ارائه‌دهنده سرور VPN شما هستند یا در کشور سرور VPN شما قرار دارند. یعنی تمام ترافیک DNS از VPN عبور کرده است.
@@ -34,29 +34,29 @@ title: چگونه نشتی DNS را بررسی کنیم و از آن جلوگی�
 
 در تصویر زیر همه سرورها با ارائه‌دهنده و موقعیت سرور VPN مطابقت دارند، پس نشتی وجود ندارد.
 
-![نتیجه تست dnsleaktest.com بدون نشتی DNS](https://user-images.githubusercontent.com/125398461/235299505-d9fb313b-28b5-473a-b211-a1533bd0add5.jpg)
+![نتیجه تست dnsleaktest.com بدون نشتی DNS](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299505-d9fb313b-28b5-473a-b211-a1533bd0add5.webp)
 
 ### ۲. سایت browserleaks.com
 
 صفحه [DNS Leak Test در browserleaks.com](https://browserleaks.com/dns) را باز کنید. تست به‌صورت خودکار شروع می‌شود و در پایان نتیجه را نشان می‌دهد. نتیجه را مثل روش بالا بررسی کنید.
 
-![نتیجه تست DNS در browserleaks.com بدون نشتی](https://user-images.githubusercontent.com/125398461/235299510-6b7fb769-3c3a-49e9-b28f-ef59f52e72e6.jpg)
+![نتیجه تست DNS در browserleaks.com بدون نشتی](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299510-6b7fb769-3c3a-49e9-b28f-ef59f52e72e6.webp)
 
 ### ۳. سایت ipleak.net
 
 سایت [ipleak.net](https://ipleak.net) را باز کنید. تست خودکار شروع می‌شود. در تصویر زیر، سرور DNS با ارائه‌دهنده و موقعیت سرور VPN مطابقت دارد، پس نشتی وجود ندارد.
 
-![نتیجه ipleak.net بدون نشتی DNS](https://user-images.githubusercontent.com/125398461/235299557-8dac8205-37e8-4a67-bc2e-c6b0ad83b40d.jpg)
+![نتیجه ipleak.net بدون نشتی DNS](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299557-8dac8205-37e8-4a67-bc2e-c6b0ad83b40d.webp)
 
 ### ۴. سایت dnsleaktest.org
 
 صفحه [DNS Leak Test در dnsleaktest.org](https://dnsleaktest.org/dns-leak-test) را باز کنید. تست خودکار شروع می‌شود.
 
-![صفحه تست نشتی DNS در dnsleaktest.org](https://user-images.githubusercontent.com/125398461/235299689-1efae131-4ca9-4e49-9b15-6f915695c32c.jpg)
+![صفحه تست نشتی DNS در dnsleaktest.org](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299689-1efae131-4ca9-4e49-9b15-6f915695c32c.webp)
 
 در تصویر زیر، در فهرست سرورهایی دیده می‌شوند که متعلق به سرور VPN **نیستند** و موقعیت واقعی کاربر را نشان می‌دهند. یعنی نشتی DNS **وجود دارد**.
 
-![نتیجه dnsleaktest.org که نشتی DNS را نشان می‌دهد](https://user-images.githubusercontent.com/125398461/235299716-b3d0d789-84be-499c-b03a-b1cd5d2e1c58.jpg)
+![نتیجه dnsleaktest.org که نشتی DNS را نشان می‌دهد](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235299716-b3d0d789-84be-499c-b03a-b1cd5d2e1c58.webp)
 
 ## رفع نشتی DNS
 
@@ -106,7 +106,7 @@ WebRTC برای برقراری تماس ممکن است آدرس‌های IP د�
 
 در تصویر زیر با وجود استفاده از VPN، آدرس IP واقعی دیده می‌شود، پس نشتی وجود دارد.
 
-![تست WebRTC در browserleaks.com که IP واقعی را نشان می‌دهد](https://user-images.githubusercontent.com/125398461/235300245-57e4be56-22fb-4030-989b-a5a49f77d533.jpg)
+![تست WebRTC در browserleaks.com که IP واقعی را نشان می‌دهد](/assets/manager/How-to-check-and-prevent-DNS-leaks/gh-235300245-57e4be56-22fb-4030-989b-a5a49f77d533.webp)
 
 ## رفع نشتی WebRTC
 
@@ -133,3 +133,10 @@ WebRTC برای برقراری تماس ممکن است آدرس‌های IP د�
 4. گزینه **Remove Legacy WebRTC API** را پیدا کنید و روی آن کلیک کنید تا WebRTC خاموش شود.
 
 نام منوها ممکن است در نسخه‌های مختلف Safari کمی فرق داشته باشد.
+
+## مقاله‌های مرتبط
+
+- [عیب‌یابی مشکلات اتصال](/fa/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [تمیز بودن آی‌پی یا دامنه](/fa/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [نشتی تایم‌زون](/fa/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
+- [تست سرعت سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-do-speed-test-on-server/)

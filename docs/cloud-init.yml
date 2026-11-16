@@ -20,7 +20,7 @@ runcmd:
 final_message: "The system is finally up, after $UPTIME seconds"
 output: { all: "| tee -a /root/cloud-init-output.log" }
 
-# About 10-15 minutes after the server starts, open http://YOUR-SERVER-IP/
-# in your browser. This temporary setup link works for one hour only.
+# About 10-15 minutes after the server starts, connect to it (SSH or the
+# provider's web console) and run: hiddify admin  -> shows your admin links.
 ```
 </div>

@@ -93,4 +93,11 @@ Run all commands **on your server, over SSH**.
 - **Watch usage:** check memory and swap use at any time with `free -h` or `htop`. If swap is always heavily used, the server needs more RAM. See [How to monitor server resources](/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/).
 - **Some servers cannot use swap.** On some container-based VPS types (such as OpenVZ or LXC), `swapon` fails with `Operation not permitted`. In that case, ask your provider or choose a plan with more RAM.
 
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+
 </div>

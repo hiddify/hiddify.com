@@ -11,7 +11,7 @@ description: Make a Cloudflare Worker that passes requests on to your HiddifyMan
 
 Cloudflare Workers runs a small piece of code on Cloudflare's servers. In this tutorial the worker takes your users' requests and sends them on to your HiddifyManager server. Users only see the worker's address; your server's domain and IP stay hidden behind it.
 
-![The user connects to the worker and the worker sends the request to the server](https://user-images.githubusercontent.com/125398461/224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.png)
+![The user connects to the worker and the worker sends the request to the server](/assets/manager/How-to-set-up-and-use-Cloudflare-workers/gh-224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.webp)
 
 !!! note "Free plan limit"
     On Cloudflare's free plan, Workers handle 100,000 requests a day. This is not enough for a server with many users.
@@ -111,5 +111,12 @@ If **Show configs of** on the domain your users open their user page with is set
 </div>
 
 Then ask your users to update the subscription in their app.
+
+## Related articles
+
+- [Worker domain](/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
 
 </div>

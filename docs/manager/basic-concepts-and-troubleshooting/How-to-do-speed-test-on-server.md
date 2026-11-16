@@ -50,13 +50,13 @@ Speedtest by Ookla is the official command-line version of the speedtest.net web
 
 5. The first time you run it, it shows the license terms and a note about the data Speedtest collects. Type `yes` and press Enter for each message.
 
-    ![Speedtest license prompt](https://user-images.githubusercontent.com/125398461/243765156-b897f426-e9d6-4f26-b9fb-9e46f6def820.jpg)
+    ![Speedtest license prompt](/assets/manager/How-to-do-speed-test-on-server/gh-243765156-b897f426-e9d6-4f26-b9fb-9e46f6def820.webp)
 
-    ![Speedtest data collection prompt](https://user-images.githubusercontent.com/125398461/243765299-bab3a3d4-a0c3-478e-8daf-4f3491d44c8b.jpg)
+    ![Speedtest data collection prompt](/assets/manager/How-to-do-speed-test-on-server/gh-243765299-bab3a3d4-a0c3-478e-8daf-4f3491d44c8b.webp)
 
 6. Wait a few seconds. You should see the ping, the download speed and the upload speed of your server.
 
-    ![Speedtest result](https://user-images.githubusercontent.com/125398461/243765887-054e65db-1f12-428b-b9e9-359a69e99044.jpg)
+    ![Speedtest result](/assets/manager/How-to-do-speed-test-on-server/gh-243765887-054e65db-1f12-428b-b9e9-359a69e99044.webp)
 
 To test again later, just run `speedtest` again.
 
@@ -70,7 +70,7 @@ By default, Speedtest picks a test server close to yours. To test against anothe
     speedtest --servers
     ```
 
-    ![List of Speedtest servers](https://user-images.githubusercontent.com/125398461/243766293-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.jpg)
+    ![List of Speedtest servers](/assets/manager/How-to-do-speed-test-on-server/gh-243766293-c2acefcd-f0f2-43e1-8c90-486b465a7cb4.webp)
 
 2. In the `ID` column, find the location you want and copy its number.
 3. Run the test against that server. Replace `ID` with the number you copied:
@@ -79,7 +79,7 @@ By default, Speedtest picks a test server close to yours. To test against anothe
     speedtest --server-id=ID
     ```
 
-    ![Speedtest result for a chosen server](https://user-images.githubusercontent.com/125398461/243768284-a319cf89-3ed7-4ea5-90dd-0170cd5926c8.jpg)
+    ![Speedtest result for a chosen server](/assets/manager/How-to-do-speed-test-on-server/gh-243768284-a319cf89-3ed7-4ea5-90dd-0170cd5926c8.webp)
 
 ## Method 2: the bench.sh script
 
@@ -93,11 +93,18 @@ By default, Speedtest picks a test server close to yours. To test against anothe
 
 2. Wait about 5 to 8 minutes. The script tests speed from several locations on different continents and then prints the results.
 
-    ![bench.sh result](https://user-images.githubusercontent.com/125398461/243768459-b0815e0e-6348-4c0b-9f82-1ae5e6c53646.jpg)
+    ![bench.sh result](/assets/manager/How-to-do-speed-test-on-server/gh-243768459-b0815e0e-6348-4c0b-9f82-1ae5e6c53646.webp)
 
 ## What the results mean
 
 - **The speeds are much lower than your hosting plan promises:** the problem is the server or its data center. Contact your hosting provider, or move to another server.
 - **The speeds are good, but your users still get slow connections:** the server's bandwidth is not the problem. The slowdown is more likely between your users and the server (for example, filtering or a poor route from their internet provider). See [Troubleshooting connectivity issues](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/).
+
+## Related articles
+
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [Is the server's IP or domain clean?](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [DNS leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [Time zone leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
 
 </div>

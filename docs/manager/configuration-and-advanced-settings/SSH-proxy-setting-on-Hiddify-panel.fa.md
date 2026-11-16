@@ -1,5 +1,5 @@
 ---
-title: آموزش تنظیم پروکسی SSH در ‌هیدیفای‌منیجر
+title: آموزش تنظیم پروکسی SSH در هیدیفای‌منیجر
 weight: -70
 ---
 
@@ -66,3 +66,12 @@ weight: -70
     *پنجرهٔ «دریافت لینک» یک کانفیگ SSH. لینک و کد QR این تصویر نمونه هستند.*
 
 برای استفاده از این پروکسی در کلاینت، در حال حاضر می‌بایست از [اپ هیدیفای](/fa/app/How-to-use-Hiddify-app/) و [اپ SingBox](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/) استفاده نمایید.
+
+## مقاله‌های مرتبط
+
+- [به‌روزرسانی](/fa/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/)
+- [پشتیبان‌گیری و بازیابی](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
+- [برگرداندن تنظیمات به حالت اولیه](/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

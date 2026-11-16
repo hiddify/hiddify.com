@@ -25,7 +25,7 @@ weight: -120
 
 </div>
 
-* در صورت نمایش پیغام مربوط به `اعمال تغییرات` ، حتما دکمه را فشار دهید تا تغییرات در سرور اعمال گردند. این کار را از منوی **اقدامات** هم می‌توانید انجام دهید: در کارت **اعمال تغییرات** روی **الان اعمال کن** بزنید.
+* در صورت نمایش پیغام مربوط به `اعمال تغییرات`، حتما دکمه را فشار دهید تا تغییرات در سرور اعمال گردند. این کار را از منوی **اقدامات** هم می‌توانید انجام دهید: در کارت **اعمال تغییرات** روی **الان اعمال کن** بزنید.
 
 * حالا کاربران پروکسی‌ها را در صفحهٔ کاربری خود پیدا می‌کنند: در منوی بالای صفحه، **پروکسی تلگرام** را باز می‌کنند. این صفحه برای هر آدرس سرور یک پروکسی و اگر **پروکسی وب تلگرام** روشن باشد، برای هر دامنه یک پروکسی **Web** نشان می‌دهد. با زدن روی هر ردیف، کد QR آن، لینک با دکمهٔ کپی و دکمهٔ **بازکردن تلگرام** نمایش داده می‌شود که پروکسی را با یک ضربه به تلگرام اضافه می‌کند.
 
@@ -35,7 +35,7 @@ weight: -120
 برای این کار ربات [MTProxybot](https://t.me/MTProxybot) را جستجو نمایید.
 
 <div align=center markdown=1>
-![proxybot](https://github.com/hiddify/hiddify-config/assets/125398461/3fed75f8-0580-469a-a306-e01d385ee6ec)
+![proxybot](/assets/manager/How-to-set-up-Telegram-proxy-on-Hiddify/gh-3fed75f8-0580-469a-a306-e01d385ee6ec.webp)
 
 </div>
 
@@ -44,3 +44,12 @@ weight: -120
 * سپس در تنظیمات پنل در فیلد `تگ تبلیغاتی تلگرام` آدرس مورد نظر خود برای تبلیغ را وارد نمایید. مثلا می‌توانید آدرس اکانت پشتیبانی خود را بدهید.
 
 * کار تمام است.
+
+## مقاله‌های مرتبط
+
+- [بات تلگرام پنل](/fa/manager/configuration-and-advanced-settings/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/)
+- [فعال‌سازی وارپ](/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/)
+- [استفاده از IPv6](/fa/manager/configuration-and-advanced-settings/IPv6-usage-guide/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

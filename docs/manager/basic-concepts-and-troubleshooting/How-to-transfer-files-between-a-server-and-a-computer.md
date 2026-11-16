@@ -32,7 +32,7 @@ This page uses **scp**, a command that copies files over SSH. It is already incl
 
 <div align=center markdown=1>
 
-<img src="https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png" alt="Opening PowerShell from the Windows Start menu" />
+<img src="/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.webp" alt="Opening PowerShell from the Windows Start menu" />
 </div>
 
 ## Find the file on the server
@@ -47,7 +47,7 @@ You will see files named by date and time, like `2026_10_20__06_00_03.json`:
 
 <div align=center markdown=1>
 
-<img src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/924b149e-6ec8-4b48-8fbb-ad99a234ee5e" alt="Example list of backup files on the server" />
+<img src="/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-924b149e-6ec8-4b48-8fbb-ad99a234ee5e-df19c1f2.webp" alt="Example list of backup files on the server" />
 </div>
 
 Pick the file you want to copy and note its name.
@@ -93,5 +93,12 @@ ls /root/
 ## Use the web panel instead
 
 In Hiddify Manager v14, the admin panel has an **SSH terminal** page with a built-in file browser. You can upload files to the server and download files from it there, without a separate program. Avoid entering your server password on third-party websites.
+
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
 
 </div>

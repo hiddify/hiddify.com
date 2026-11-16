@@ -118,4 +118,11 @@ systemctl start hiddify-xray
 
 بررسی کنید که کاربران دوباره می‌توانند وصل شوند.
 
+## مقاله‌های مرتبط
+
+- [تنظیم ریالتی](/fa/manager/configuration-and-advanced-settings/How-to-use-Reality-on-Hiddify/)
+- [چند زیردامنهٔ یک سایت در ریالتی](/fa/manager/configuration-and-advanced-settings/How-to-use-subdomains-of-a-website-in-Reality/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [همهٔ تنظیمات پنل، یکی‌یکی](/fa/manager/configuration-and-advanced-settings/Settings-reference/)
+
 </div>

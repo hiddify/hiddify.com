@@ -18,10 +18,10 @@ weight: -90
 این کار ممکن است بین ۵ تا ۱۰ دقیقه زمان بگیرد. آخرین نسخه هیدیفای‌منیجر دانلود، نصب و اعمال می‌شود و در پایان پنل دوباره راه‌اندازی می‌شود.
 
 ### تغییر حالت آپدیت
-در صورت نیاز به تغییر حالت آپدیت، از منوی کناری به **تنظیمات** بروید و در کارت **تنظیمات پیشرفته** گزینه **حالت به‌روزرسانی** را پیدا کنید. از بین نسخه‌های `پایدار` ، `در حال توسعه` و `نسخه آزمایشی` یکی را انتخاب نمایید و سپس اقدام به `به‌روزرسانی` نمایید.
+در صورت نیاز به تغییر حالت آپدیت، از منوی کناری به **تنظیمات** بروید و در کارت **تنظیمات پیشرفته** گزینه **حالت به‌روزرسانی** را پیدا کنید. از بین نسخه‌های `پایدار`، `در حال توسعه` و `نسخه آزمایشی` یکی را انتخاب نمایید و سپس اقدام به `به‌روزرسانی` نمایید.
 
 <div align=center markdown=1>
-<img src="/assets/manager/How-to-update-Hiddify-panel/fa-update-mode.webp" alt="حالت به روز رسانی" />
+<img src="/assets/manager/How-to-update-Hiddify-panel/fa-update-mode.webp" alt="حالت به‌روزرسانی" />
 </div>
 
 
@@ -34,7 +34,7 @@ weight: -90
 پنل به صورت روزانه خود را با آخرین نسخه موجود در گیتهاب پروژه به‌روزرسانی می‌کند. تنظیم آن گزینه **به‌روزرسانی خودکار** در کارت **تنظیمات عمومی** در صفحه **تنظیمات** است.
 
 <div align=center markdown=1>
-<img src="/assets/manager/How-to-update-Hiddify-panel/fa-auto-update.webp" alt="به‌روز رسانی خودکار" />
+<img src="/assets/manager/How-to-update-Hiddify-panel/fa-auto-update.webp" alt="به‌روزرسانی خودکار" />
 </div>
 
 وقتی گزینه **به‌روزرسانی خودکار** روشن باشد، هر روز راس ساعت ۳ صبح سیستم برای به‌روزرسانی جدید چک می‌شود و در صورت وجود، پنل به صورت خودکار آپدیت می‌شود.
@@ -47,3 +47,12 @@ weight: -90
 * `default`: بر اساس کانالی که در پنل تنظیم شده آپدیت می‌کند (**حالت به‌روزرسانی** در تنظیمات > تنظیمات پیشرفته).
 * `release`: به آخرین نسخهٔ پایدار آپدیت می‌کند. این گزینه پیشنهادی است.
 * `beta`: به آخرین نسخهٔ پیش‌انتشار آپدیت می‌کند و ممکن است باگ داشته باشد.
+
+## مقاله‌های مرتبط
+
+- [پشتیبان‌گیری و بازیابی](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/)
+- [برگرداندن تنظیمات به حالت اولیه](/fa/manager/configuration-and-advanced-settings/How-to-Reset-Hiddify-panel-to-default/)
+- [پروکسی SSH](/fa/manager/configuration-and-advanced-settings/SSH-proxy-setting-on-Hiddify-panel/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
+</div>

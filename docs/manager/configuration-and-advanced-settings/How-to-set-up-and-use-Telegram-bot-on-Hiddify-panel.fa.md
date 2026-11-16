@@ -178,4 +178,11 @@ weight: -130
 ![ارسال پیام به کاربران](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/fa-message.webp)
 </div>
 
+## مقاله‌های مرتبط
+
+- [پروکسی تلگرام](/fa/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/)
+- [فعال‌سازی وارپ](/fa/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/)
+- [استفاده از IPv6](/fa/manager/configuration-and-advanced-settings/IPv6-usage-guide/)
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
 </div>

@@ -42,7 +42,7 @@ Before you start, you need an active domain on Cloudflare. See [How to use Cloud
     - **Target**: the value you copied from Gcore
     - **Proxy status**: off (**DNS only**, grey cloud). If it is on, the traffic goes through Cloudflare instead of Gcore.
 
-    ![CNAME record on Cloudflare with the proxy off](https://github.com/hiddify/hiddify.com/assets/125398461/519004ac-c33e-4489-a224-47cc9d35b3b1)
+    ![CNAME record on Cloudflare with the proxy off](/assets/manager/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/gh-519004ac-c33e-4489-a224-47cc9d35b3b1.webp)
 
 3. On Gcore, in the resource's **Setup guide** (at the top of the resource settings), click **Check DNS setup status**. When you see **DNS record has been successfully set up**, the DNS is right. This can take up to 24 hours.
 
@@ -78,5 +78,12 @@ On the same page click **Open resource settings** (or open the resource from **C
 4. Finish the **Name** and **Certificate** steps to add the domain.
 
 If **Show configs of** on your user-page domain is set to **All domains**, the new configs are added to the subscription link by themselves. Ask your users to update the subscription in their app.
+
+## Related articles
+
+- [What is a CDN and how does it help?](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [Cloudflare CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/)
+- [Amazon CDN (CloudFront)](/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/)
+- [CDN domain (automatic IP)](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
 
 </div>

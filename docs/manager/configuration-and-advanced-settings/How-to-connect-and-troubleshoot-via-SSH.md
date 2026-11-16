@@ -5,14 +5,16 @@ weight: -145
 
 <div dir="ltr" markdown="1">
 
-<details markdown="1"><summary><h1>Prerequisite: Installing SSH on Windows</h1></summary>
+# Connect over SSH and use the Hiddify Manager menu
+
+<details markdown="1"><summary><b>Prerequisite: Installing SSH on Windows</b> (click)</summary>
 
 Windows 10 and 11 usually already include the SSH client. If the `ssh` command does not work in PowerShell, install it like this:
 
 1. Open the Start menu and search for **PowerShell**.
 2. Right-click **PowerShell** and choose **Run as Administrator**.
 
-    ![PowerShell, Run as Administrator](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
+    ![PowerShell, Run as Administrator](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/gh-222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.webp)
 
 3. Run this command in PowerShell:
 
@@ -22,13 +24,12 @@ Windows 10 and 11 usually already include the SSH client. If the `ssh` command d
 
 4. When it finishes, you should see something like this:
 
-    ![OpenSSH client installed](https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png)
+    ![OpenSSH client installed](/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.webp)
 
 The SSH client is now installed.
 
 </details>
 
-# How to connect and troubleshoot via SSH
 
 This page shows you how to manage Hiddify Manager from your server's command line when the web panel does not open, or when you have lost your admin link. It also explains each option of the HiddifyManager menu.
 
@@ -65,8 +66,6 @@ For a full guide, see [How to connect to the server via SSH](/manager/installati
 
 If the connection works, you see the server's command prompt, and the HiddifyManager menu may open by itself.
 
-!!! warning "Password login warning"
-    If password login is enabled on your server, the menu first shows a **WARNING** that your server is open to abuse. Press Enter to continue. To fix it, follow [Disable SSH password authentication](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/).
 
 ## Open the HiddifyManager menu
 
@@ -76,11 +75,17 @@ Run this command on your server to open the HiddifyManager menu:
 hiddify
 ```
 
-The menu looks like this (the screenshots on this page are from an older version, so some items may look a little different):
+The menu looks like this (Hiddify Manager 14.5):
 
-![Hiddify Manager menu](https://github.com/hiddify/hiddify.com/assets/125398461/5b3b47fb-4437-4388-b22d-0d2df6359620)
+![Hiddify Manager menu](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-main.webp)
 
 Use the arrow keys to move, and press Enter to choose an item. The sections below explain each item.
+
+!!! warning "If you see a warning first"
+    If password sign-in is on for the server, the menu shows this warning before it opens. Press **Ok** to open the menu, and to keep the server safe [turn off password sign-in](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/).
+
+    ![The password sign-in warning in the Hiddify Manager menu](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-warning.webp)
+
 
 !!! tip "Commands instead of the menu"
     Most menu items are also available as direct commands, for example `hiddify status`, `hiddify admin`, `hiddify restart`, `hiddify apply` and `hiddify upgrade release`. Run `hiddify --help` to see them all.
@@ -97,16 +102,16 @@ hiddify
 ## Status
 Shows whether each HiddifyManager service is running. If everything is fine, the result looks like this:
 
-![Status](https://github.com/hiddify/hiddify.com/assets/125398461/bb5072e7-635b-486e-9dce-024b8479adb8)
+![Status](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-status.webp)
 
 Press `q` to return to the main menu.
 
 **When to use it:** to check quickly whether all services are running.
 
 ## Admin
-Shows your admin panel links. Open one of the links marked **Secure** (on your domain) in your browser. Use the **Not Secure** IP link only if no domain link works.
+Shows your admin panel links. The links are shown in three groups: **Secure** (a trusted certificate on your domain; open these), **Self-signed** (the browser warns; use only if the Secure ones do not open) and **Insecure** (not encrypted, http; avoid). A QR code of the link is shown above them.
 
-![Admin](https://github.com/hiddify/hiddify.com/assets/125398461/d15fb764-45b4-40ec-84f2-7dc0ea134f13)
+![Admin](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-admin.webp)
 
 On this screen you can also press `r` to reset the owner admin password. Press any other key to return to the main menu.
 
@@ -121,11 +126,10 @@ hiddify admin
 ## Log
 Shows the system logs. After you choose it, pick the log file you want to read.
 
-![Log](https://github.com/hiddify/hiddify.com/assets/125398461/4fa52e34-1f2a-4378-ae1a-881dc81e1269)
+![Log](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-log.webp)
 
 For example, choose the install log to see what happened during installation. At its end, it shows the system status and the admin links.
 
-![Install log](https://github.com/hiddify/hiddify.com/assets/125398461/6a980bbf-9d7a-4ef6-aa92-7a4bfeeb34e3)
 
 Press `q` to close the log. The log files are stored on the server in `/opt/hiddify-manager/data/log/`.
 
@@ -134,7 +138,6 @@ Press `q` to close the log. The log files are stored on the server in `/opt/hidd
 ## Restart
 Restarts all HiddifyManager services without changing any settings.
 
-![Restart](https://github.com/hiddify/hiddify.com/assets/125398461/d0caf625-9f09-4543-bc22-ae3843bf289a)
 
 Press any key to return to the main menu.
 
@@ -147,7 +150,6 @@ The menu no longer has an "Apply Configs" item. To apply the settings you saved 
 hiddify apply
 ```
 
-![Apply Configs](https://github.com/hiddify/hiddify.com/assets/125398461/76446e31-8efd-4d0e-84b9-a1358887a027)
 
 **When to use it:** you saved changes in the panel but lost web access before you could apply them.
 
@@ -159,7 +161,7 @@ Reinstalls Hiddify Manager on the server. Your panel data (users, settings, doma
 ## Update
 Updates Hiddify Manager to the latest version. It offers these options:
 
-![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
+![Update](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-update.webp)
 
 - **default**: updates to the channel chosen in the panel settings.
 - **release**: updates to the latest stable version (recommended).
@@ -173,14 +175,13 @@ hiddify upgrade release
 
 While it runs, the terminal shows something like this:
 
-![Update running](https://user-images.githubusercontent.com/125398461/222898474-0d72f442-f19a-40a9-9f35-fcad96807fc4.png)
 
 **When to use it:** an update from the web panel failed and you lost access.
 
 ## Advanced
 This submenu has several options.
 
-![Advanced](https://github.com/hiddify/hiddify.com/assets/125398461/61336508-2dbf-43d8-893c-8d9adbdf3a51)
+![Advanced](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-advanced.webp)
 
 ### warp
 Shows the status of the WARP service.
@@ -204,5 +205,12 @@ Removes Hiddify Manager services from the server. It does not remove everything 
 Removes Hiddify Manager **and its database** completely. All users and settings are deleted, so [take a backup](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/) first.
 
 > If this does not work for any reason, you can **Rebuild** the server from your provider's control panel. This deletes all data on the server.
+
+## Related articles
+
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [All panel settings, one by one](/manager/configuration-and-advanced-settings/Settings-reference/)
+- [Import users from X-UI](/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/)
+- [The admin link and its format](/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/)
 
 </div>

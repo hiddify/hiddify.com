@@ -2,98 +2,85 @@
 title: Tutorial for setting up HA-Proxy tunnel as relay server
 ---
 
-# Tutorial for setting up HA-Proxy tunnel as relay server
 
-For this you need an relay server to connect to the main server. Usually, this relay server is considered in the country of residence.
 
-<div align="center" markdown="1">
-  
-![Tunnel usage schematic](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
-</div>
+# Tutorial for setting up an HA-Proxy relay server
 
-Now, HA-proxy tunnel is used here for the communication between the relay server and the main server. After installation, you will connect to the relay server, that server will connect you to the main server, and then you will have free access to the Internet from the main server.
+!!! info "About this guide"
+    This guide sets up the relay server by hand with **HAProxy**, for Ubuntu 22.04 / 24.04 or Debian 12 / 13 and Hiddify Manager v14.5. For an easier way that builds the relay from a menu, see [Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/).
 
-> Note: We tested these scripts on Ubuntu 22.04, so it is better to use this version.
+A **relay server** is a second server, usually in Iran, that your users connect to. It passes their traffic on to your main server (Hiddify Manager) abroad. **HAProxy** is a fast, well-known program that does this for TCP connections.
 
-## Installing the HA-proxy tunnel on the relay server and connecting it to the external server
+<img width=760 alt="Users connect to the relay server, which passes the traffic to the main server" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-diagram.webp" style="display:block;margin:0 auto">
 
-- For this you need an relay server to connect to the main server through it. Usually, this relay server is considered in the country of residence.
+!!! warning "TCP only"
+    HAProxy passes **TCP** only. Configs that use UDP, such as Hysteria2 and TUIC, do not work through this relay. If you need UDP, use [Dokodemo-Door](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/) or [GOST](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/).
 
-- (Connect via SSH to the relay server)[/manager/installation-and-setup/How-to-connect-to-server-via-SSH/] and run the HA-proxy installation command.
+## Step 1: install HAProxy on the relay server
+
+[Connect to the relay server over SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) and install HAProxy:
 
 ```bash
-sudo apt-get install haproxy
+sudo apt-get update && sudo apt-get install -y haproxy
 ```
 
-- After installation, you need to change the `haproxy.cfg` file, run the command to open the `haproxy.cfg` file with the `nano` text editor.
+## Step 2: write the config
+
+Open the config file:
 
 ```bash
-nano /etc/haproxy/haproxy.cfg
+sudo nano /etc/haproxy/haproxy.cfg
 ```
 
-- When the `haproxy.cfg` file opens, go to the end of the file and add the following example:
+Go to the **end** of the file (keep the `global` and `defaults` parts that are already there) and add the lines below. Change two things:
 
-```bash
-frontend myfrontend
-     bind *:RELAY_PORT
-     mode tcp
-     default_backend mybackend
+- `10.10.10.10`: the IP of your **main server**.
+- `443` (both): the port. Users connect to the relay on the first one; the second is the main server's port. Hiddify Manager uses 443 by default.
 
-backend mybackend
-     mode tcp
-     server target_server MAIN_SERVER_IP:MAIN_SERVER_PORT
+```
+frontend relay_in
+    bind *:443
+    mode tcp
+    default_backend main_server
+
+backend main_server
+    mode tcp
+    server main 10.10.10.10:443
 ```
 
-- In the `RELAY_PORT` section, put the port of your relay server that you consider for sending requests to the main server.
+Save with `Ctrl+S` and close with `Ctrl+X`.
 
-- In the field `MAIN_SERVER_IP:MAIN_SERVER_PORT`, you should put the IP and port of your main server. For example, port 443 is used by HiddifyManager by default.
-
-- For example, if the IP of your main server is `10.10.10.10`, in this case, to transfer user traffic on port `443` through the relay server to the main server, the desired file should be as follows:
+## Step 3: check the config and restart HAProxy
 
 ```bash
-frontend myfrontend
-     bind *:443
-     mode tcp
-     default_backend mybackend
-
-backend mybackend
-     mode tcp
-     server target_server 10.10.10.10:443
-```
-
-- After making the changes, save the changes by pressing `Ctrl + s` buttons and exit the file by pressing `Ctrl + x`.
-
-- After saving the file, press the command to restart HAProxy.
-
-```bash
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
 sudo systemctl restart haproxy
 ```
-## Adding Relay server to HiddifyManager
-Now, register a subdomain with the proxy off for your relay server IP and register it in Hiddify Manager on `Relay` mode.
-- Put the registered subdomain in the `Domain` field and you can also set a `Alias` to display in the configurations.
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed">
+The first command checks the file and must print `Configuration file is valid`. If it prints an error instead, fix the line it names and run both commands again.
 
-## Adding `Relay` configurations to subscription link
+## Step 4: add the relay to the panel
 
-As always in HiddifyManager, it is better to separate the configs from the subscription link. Therefore, for the registered `Relay` domain, you can check the `Relay` domain in the subscription domain settings so that its configurations are added to the subscription domain.
+Register a subdomain with the proxy **off** (DNS only) that points to the **relay server's** IP. In the panel, open **Domains** › **Add domain**, type the subdomain, choose **Relay** (1) in **How is it set up?**, and finish the wizard.
 
-Assuming that the subscription domain is `sublink.hiddify.com`, proceed as shown below to get the job done.
+<img width=520 alt="Add a domain: the Relay mode" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-mode.webp" style="display:block;margin:0 auto">
 
-<img src="https://github.com/hiddify/hiddify.com/assets/125398461/e9fa3756-bb3a-4ee9-8adb-77a9f58f6354">
+Step by step, with pictures: [How to add a relay server (domain) to HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-Now, if you open the user page with the subscription domain (here `sublink.hiddify.com`), you will see that the connections related to the `relay server` have also been added. You can add and use these connections individually or using subscription links to your client.
+## Step 5: add the relay configs to the subscription
 
-## Removing the HA-Proxy tunnel from the relay server
+On the **Domains** page, open your subscription domain with the pencil and add the relay domain to **Show configs of**. The relay configs then appear on the user page and in the subscription. See [How to create a subscription link](/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/).
 
-To do this, first run this command.
+## Remove HAProxy from the relay server
 
 ```bash
-sudo systemctl stop haproxy && systemctl disable haproxy
+sudo systemctl disable --now haproxy
+sudo apt-get remove -y haproxy
 ```
 
-Finally, click this command to completely remove the program and service.
+## Related articles
 
-```bash
-sudo apt remove haproxy
-```
+- [How to add a relay server (domain)](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [Dokodemo-Door tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-Dokodemo-Door-tunnel-as-relay-server/), [GOST tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/), [WST tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
+

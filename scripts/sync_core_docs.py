@@ -91,7 +91,14 @@ def convert(text: str, persian: bool, page_source: str) -> str:
     text = re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip("\n") + "\n"
     if persian:
         text = fa_spelling(text)
-    return LINK.sub(lambda m: "](" + fix_link(m.group(1), page_source) + ")", text)
+    text = LINK.sub(lambda m: "](" + fix_link(m.group(1), page_source) + ")", text)
+    # feature pages: a back link to the list of every feature, under the title (.hi-back pill)
+    here = place(re.sub(r"\.(?:en|fa)\.md$", ".md", page_source))
+    if here.startswith("features/") and here != "features/index.md" and "{ .hi-back }" not in text:
+        back = posixpath.relpath("features/index.md", posixpath.dirname(here))
+        label = "همهٔ قابلیت‌های هیدیفای" if persian else "All Hiddify features"
+        text = re.sub(r"^(# .*\n)", lambda m: m.group(1) + f"\n[{label}]({back}){{ .hi-back }}\n", text, count=1, flags=re.M)
+    return text
 
 
 def front_matter(**fields) -> str:

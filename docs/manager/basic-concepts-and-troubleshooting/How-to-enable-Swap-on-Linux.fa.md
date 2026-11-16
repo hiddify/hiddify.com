@@ -102,4 +102,11 @@ title: نحوه فعال‌سازی Swap برای یک VPS لینوکسی
 - **پایش مصرف:** هر وقت خواستید، مصرف رم و Swap را با `free -h` یا `htop` ببینید. اگر Swap همیشه زیاد استفاده می‌شود، سرور به رم بیشتری نیاز دارد. [آموزش پایش منابع سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-monitor-server-resources-on-Hiddify/) را ببینید.
 - **بعضی سرورها نمی‌توانند Swap داشته باشند.** در بعضی انواع VPS مبتنی بر کانتینر (مثل OpenVZ یا LXC)، دستور `swapon` با خطای `Operation not permitted` شکست می‌خورد. در این حالت از شرکت میزبانی بپرسید یا سروری با رم بیشتر انتخاب کنید.
 
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [بستن ورود با رمز در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+
 </div>

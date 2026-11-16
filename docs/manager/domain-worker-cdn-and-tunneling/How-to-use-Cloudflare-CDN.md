@@ -132,4 +132,11 @@ CDN configs use gRPC and WebSocket. These are available on all plans, including 
 - **Worker**: [How to set up and use Cloudflare Workers](/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
 - **Domain fronting**: [Guide for domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/). This method does not currently work on Cloudflare.
 
+## Related articles
+
+- [What is a CDN and how does it help?](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [GCore CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/)
+- [Amazon CDN (CloudFront)](/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/)
+- [CDN domain (automatic IP)](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
+
 </div>

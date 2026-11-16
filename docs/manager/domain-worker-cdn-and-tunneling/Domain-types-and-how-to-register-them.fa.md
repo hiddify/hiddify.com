@@ -56,13 +56,13 @@ description: حالت‌های دامنه در هیدیفای‌منیجر (مس
 
 سایت [FreeDNS (afraid.org)](https://freedns.afraid.org/) اجازه می‌دهد روی دامنه‌هایی که دیگران به صورت عمومی به اشتراک گذاشته‌اند زیردامنه بسازید.
 
-1. [یک حساب بسازید](https://freedns.afraid.org/signup/?plan=starter). به یک ایمیل واقعی نیاز دارید.
+1. [یک حساب بسازید](https://freedns.afraid.org/signup/?plan=starter). به یک ایمیل واقعی نیاز دارید. فرم ثبت‌نام از شما می‌خواهد تأیید کنید که ساکن کشورهای تحریم‌شدهٔ آمریکا (از جمله ایران) نیستید.
 
-    ![صفحه ثبت‌نام FreeDNS](https://user-images.githubusercontent.com/125398461/221342760-12dc14ed-9a19-45f3-a3f1-bf7d3f969792.png)
+    ![صفحهٔ ثبت‌نام FreeDNS](/assets/manager/Domain-types-and-how-to-register-them/freedns-signup.webp)
 
 2. [فهرست دامنه‌ها](https://freedns.afraid.org/domain/registry/) را باز کنید. یک دامنه **عمومی** (public) انتخاب کنید که تعداد هاست کمتری دارد. دامنه‌های `.com`، `.org` یا `.net` بهتر هستند.
 
-    ![فهرست دامنه‌های FreeDNS](https://user-images.githubusercontent.com/125398461/221343189-1fe98d0d-7f05-4639-9b51-fb6926f76f2b.png)
+    ![فهرست دامنه‌های FreeDNS](/assets/manager/Domain-types-and-how-to-register-them/freedns-registry.webp)
 
 3. زیردامنه خود را روی آن دامنه بسازید و آدرس آن را آی‌پی سرور خود قرار دهید.
 
@@ -70,52 +70,63 @@ description: حالت‌های دامنه در هیدیفای‌منیجر (مس
 
 دامنه‌ای را که خریده‌اید می‌توانید در هر سرویس DNS مدیریت کنید. این مراحل برای Cloudflare است.
 
-1. [در Cloudflare حساب بسازید](https://dash.cloudflare.com/signup) و وارد شوید.
+1. [در Cloudflare حساب بسازید](https://dash.cloudflare.com/sign-up) و وارد شوید.
 
-    ![صفحه ثبت‌نام Cloudflare](https://user-images.githubusercontent.com/125398461/221563866-d520a39d-15c8-4f88-a756-90e5e08c074a.png)
+    ![صفحهٔ ثبت‌نام Cloudflare](/assets/manager/Domain-types-and-how-to-register-them/cf-new-signup.webp)
 
-2. به **Domains** بروید و **Onboard a domain** را بزنید. دامنه اصلی (مثلاً `example.com`) را وارد کنید و **Continue** را بزنید. در تصاویر قدیمی این دکمه **Add a site** نام دارد.
+2. دامنه را به Cloudflare اضافه کنید:
+    - از منوی کناری **Domains** › **Overview** را باز کنید (اگر منو جمع است، روی آیکون کره بزنید).
 
-    ![اضافه کردن دامنه به Cloudflare](https://user-images.githubusercontent.com/125398461/221566504-5ecf714b-940d-4fd5-bc54-be8c37b7c292.png)
+        ![منوی کناری Cloudflare: Domains › Overview](/assets/manager/Domain-types-and-how-to-register-them/cf-new-menu.webp)
 
-3. یک پلن انتخاب کنید. پلن **Free** کافی است.
+    - روی **Add domain** بزنید.
 
-    ![انتخاب پلن رایگان](https://user-images.githubusercontent.com/125398461/221567803-26850724-1bc8-480a-8c6f-29b32a6fcfa6.png)
+        ![صفحهٔ Domains و دکمهٔ Add domain](/assets/manager/Domain-types-and-how-to-register-them/cf-new-domains.webp)
 
-4. رکوردهای DNS که Cloudflare پیدا کرده را بررسی کنید و **Continue** را بزنید.
+    - **Connect a domain** را انتخاب کنید.
 
-    ![بررسی رکوردهای DNS](https://user-images.githubusercontent.com/125398461/222444475-5596de54-3e7f-4fae-a0f0-94c046a21969.png)
+        ![صفحهٔ Add a site و گزینهٔ Connect a domain](/assets/manager/Domain-types-and-how-to-register-them/cf-new-add-site.webp)
 
-5. Cloudflare دو **نیم‌سرور** (nameserver) به شما نشان می‌دهد. به سایتی که دامنه را از آن خریده‌اید بروید و نیم‌سرورهای دامنه را با این دو جایگزین کنید.
+    - دامنهٔ اصلی (مثلاً `example.com`) را در **Domain name** بنویسید. بقیهٔ گزینه‌ها را همان‌طور بگذارید و **Continue** را بزنید.
 
-    ![نیم‌سرورهای Cloudflare](https://user-images.githubusercontent.com/125398461/221569269-1f4027c7-5815-4dea-876e-326dc0645fe1.png)
+        ![فرم Connect your domain و فیلد Domain name](/assets/manager/Domain-types-and-how-to-register-them/cf-new-connect.webp)
 
-6. صبر کنید تا Cloudflare دامنه را فعال (Active) نشان دهد. این کار از چند دقیقه تا یک روز طول می‌کشد.
+    در صفحهٔ اصلی حساب (Account home) هم کارت **Add a domain** همین کار را می‌کند.
 
-    ![دامنه فعال در Cloudflare](https://user-images.githubusercontent.com/125398461/221572305-50e819ea-0fa4-4548-8851-aab91b797f57.png)
+3. یک پلن انتخاب کنید: زیر **Free** روی **Select plan** بزنید. پلن رایگان کافی است.
 
-7. دامنه را باز کنید و به **DNS** > **Records** بروید.
+    ![انتخاب پلن رایگان](/assets/manager/Domain-types-and-how-to-register-them/cf-new-plan.webp)
 
-    ![صفحه رکوردهای DNS](https://user-images.githubusercontent.com/125398461/222436778-f80de97b-7d66-4621-8be3-b856fc4e2c75.png)
+4. Cloudflare رکوردهای DNS فعلی دامنه را پیدا می‌کند و نشان می‌دهد. آن‌ها را بررسی کنید و **Continue to activation** را بزنید.
 
-8. **Add record** را بزنید.
+    ![بررسی رکوردهای DNS پیداشده](/assets/manager/Domain-types-and-how-to-register-them/cf-new-review.webp)
 
-    ![دکمه Add record](https://user-images.githubusercontent.com/125398461/222444012-2fa4a2c2-ff89-493e-b92c-01a26d7788b7.png)
+5. Cloudflare دو **نیم‌سرور** (nameserver) به شما نشان می‌دهد. به سایتی که دامنه را از آن خریده‌اید بروید، نیم‌سرورهای فعلی را پاک کنید و این دو را به جایشان بگذارید.
 
-9. رکورد را پر کنید:
+    ![نیم‌سرورهای Cloudflare](/assets/manager/Domain-types-and-how-to-register-them/cf-new-ns.webp)
+
+6. صبر کنید تا وضعیت دامنه در **Domains** › **Overview** به **Active** تغییر کند. این کار از چند دقیقه تا یک روز طول می‌کشد. تا وقتی نیم‌سرورها عوض نشده‌اند، ستون **Status** پیامی مثل **Invalid nameservers** نشان می‌دهد.
+
+    ![ستون Status در فهرست دامنه‌ها](/assets/manager/Domain-types-and-how-to-register-them/cf-new-status.webp)
+
+7. روی دامنه بزنید، از منوی کناری **DNS** › **Records** را باز کنید و **Add record** را بزنید.
+
+    ![صفحهٔ رکوردهای DNS و دکمهٔ Add record](/assets/manager/Domain-types-and-how-to-register-them/cf-new-records.webp)
+
+8. رکورد را پر کنید:
     - **Type**: `A` (برای آی‌پی نسخه ۴ سرور).
     - **Name**: زیردامنه دلخواه، مثلاً `sub`.
     - **IPv4 address**: آی‌پی سرور شما.
     - **Proxy status**: آن را **خاموش** کنید (**DNS only**، ابر خاکستری). دامنه مستقیم نباید پروکسی شود.
-    - **TTL**: روی Auto بماند. TTL کمتر باعث می‌شود تغییرات زودتر به کاربران برسد.
+    - **TTL**: روی Auto بماند.
 
-10. **Save** را بزنید.
+    بالای فرم، Cloudflare خلاصهٔ رکورد را می‌نویسد (مثلاً `sub.example.com points to 203.0.113.10`). **Save** را بزنید.
 
-    ![رکورد A با پروکسی خاموش](https://user-images.githubusercontent.com/125398461/222443477-e8b56c36-7631-44b3-8b8d-c03e43d6ce84.png)
+    ![رکورد A با پروکسی خاموش (DNS only)](/assets/manager/Domain-types-and-how-to-register-them/cf-new-a-direct.webp){ width="600" }
 
-11. اگر سرور آی‌پی نسخه ۶ هم دارد، یک رکورد دوم به همین شکل بسازید، با **Type** برابر `AAAA` و آی‌پی نسخه ۶.
+9. اگر سرور آی‌پی نسخه ۶ هم دارد، یک رکورد دوم به همین شکل بسازید، با **Type** برابر `AAAA` و آی‌پی نسخه ۶.
 
-    ![رکورد AAAA](https://user-images.githubusercontent.com/125398461/222447422-45f9da15-5ce9-4a27-97c8-bb1395ea5cd8.png)
+    ![رکورد AAAA](/assets/manager/Domain-types-and-how-to-register-them/cf-new-aaaa.webp){ width="600" }
 
 ### بررسی کارکرد دامنه مستقیم
 
@@ -126,6 +137,14 @@ ping sub.example.com
 ```
 
 باید آی‌پی سرور خود را در جواب ببینید. از `nslookup` یا `dig` هم می‌توانید استفاده کنید. اگر آی‌پی دیگری یا پیام «unknown host» دیدید، رکورد را بررسی کنید و کمی بیشتر صبر کنید. برای اطلاعات بیشتر [این مقاله درباره DNS](https://wikicensorship.github.io/fa/docs/measure-internet-censorship/DNS/) را بخوانید.
+
+### افزودن دامنه مستقیم به پنل
+
+در پنل، **دامنه‌ها** › **افزودن دامنه** را بزنید و دامنه را بنویسید. در **چطور تنظیم شده است؟** گزینهٔ **مستقیم** و در **کدام TLS؟** گزینهٔ **TLS معتبر** را انتخاب کنید و مراحل را تمام کنید.
+
+![افزودن دامنه در پنل: حالت مستقیم و TLS معتبر](/assets/manager/Domain-types-and-how-to-register-them/fa-panel-direct.webp){ width="560" }
+
+اگر پنل کنار گزینه برچسب **DNS جور نیست** نشان داد، یعنی رکورد DNS هنوز به آی‌پی این سرور نمی‌رسد. چند دقیقه صبر کنید؛ پنل هنگام ذخیره دوباره بررسی می‌کند.
 
 </details>
 
@@ -138,39 +157,44 @@ ping sub.example.com
 ### ساخت رکورد CDN در Cloudflare
 
 1. دامنه را همان‌طور که در بخش دامنه مستقیم گفته شد به Cloudflare اضافه کنید (مراحل ۱ تا ۶).
-2. به **DNS** > **Records** بروید و **Add record** را بزنید.
-3. **Type** را `A` (یا `AAAA` برای آی‌پی نسخه ۶)، یک نام زیردامنه جدید و آی‌پی سرور را وارد کنید.
-4. **Proxy status** را **روشن** کنید (**Proxied**، ابر نارنجی). تنها تفاوت با دامنه مستقیم همین است.
+2. به **DNS** › **Records** بروید و **Add record** را بزنید.
+3. **Type** را `A` (یا `AAAA` برای آی‌پی نسخه ۶)، یک نام زیردامنه جدید (مثلاً `cdn`) و آی‌پی سرور را وارد کنید.
+4. **Proxy status** را **روشن** بگذارید (**Proxied**، ابر نارنجی). تنها تفاوت با دامنه مستقیم همین است.
 5. **Save** را بزنید.
 
-![رکورد A با پروکسی روشن](https://user-images.githubusercontent.com/125398461/222454021-ab8b0162-c608-478c-937c-05e384212c25.png)
+![رکورد A با پروکسی روشن (Proxied)](/assets/manager/Domain-types-and-how-to-register-them/cf-new-a-cdn.webp){ width="600" }
 
 ### بررسی کارکرد دامنه CDN
 
 وقتی این زیردامنه را `ping` کنید، باید یکی از آی‌پی‌های Cloudflare را ببینید، نه آی‌پی سرور خود را. به این ترتیب سرور شما پنهان می‌ماند. این آی‌پی ممکن است با گذشت زمان عوض شود.
 
-گاهی آی‌پی‌هایی که Cloudflare به کاربران شما می‌دهد در ایران مسدود یا کند هستند. در این صورت [راهنمای پیدا کردن آی‌پی تمیز کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/) را ببینید.
+گاهی آی‌پی‌هایی که Cloudflare به کاربران شما می‌دهد در ایران مسدود یا کند هستند. در این صورت از **اسکنر** خود پنل (**ابزارها** › **اسکنر**) آی‌پی‌های سالم را پیدا کنید، یا [راهنمای پیدا کردن آی‌پی تمیز کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/) را ببینید.
 
 ### تنظیمات SSL/TLS در Cloudflare
 
 **TLS** رمزگذاری‌ای است که ارتباط کاربر و سرور را امن می‌کند. **گواهی** (سرتیفیکیت) ثابت می‌کند که یک سرور واقعاً صاحب دامنه است. هیدیفای‌منیجر برای دامنه شما گواهی واقعی می‌گیرد، پس Cloudflare می‌تواند با TLS به سرور وصل شود.
 
-1. دامنه را در Cloudflare باز کنید و به **SSL/TLS** > **Overview** بروید.
-2. حالت رمزگذاری را **Full** یا **Full (strict)** بگذارید. از **Flexible** استفاده نکنید. اگر حالت روی **Automatic SSL/TLS** است، Cloudflare امن‌ترین حالتی را که کار می‌کند انتخاب می‌کند و می‌توانید آن را تغییر ندهید.
+1. دامنه را در Cloudflare باز کنید، از منوی کناری **SSL/TLS** را باز کنید و **Configure** را بزنید. همین صفحه در بخش **Traffic Served Over TLS** نشان می‌دهد ترافیک شما با کدام نسخه‌های TLS عبور کرده است؛ هر چه نسخه جدیدتر، امن‌تر.
 
-    ![حالت رمزگذاری SSL/TLS](https://user-images.githubusercontent.com/125398461/234169021-7201c012-82fb-4511-a7a8-8337e02a5b12.png)
+    ![صفحهٔ SSL/TLS و دکمهٔ Configure](/assets/manager/Domain-types-and-how-to-register-them/cf-new-ssl.webp)
 
-3. به **Network** بروید و **WebSockets** و **gRPC** را روشن کنید. پروکسی‌های CDN هیدیفای‌منیجر از WebSocket، gRPC، HTTPUpgrade و XHTTP استفاده می‌کنند.
+2. حالت رمزگذاری را **Full (Strict)** یا **Full** بگذارید. از **Flexible** استفاده نکنید. اگر **Automatic SSL/TLS (recommended)** انتخاب شده است، Cloudflare امن‌ترین حالتی را که کار می‌کند خودش انتخاب می‌کند و می‌توانید آن را تغییر ندهید.
 
-    ![تنظیمات Network](https://user-images.githubusercontent.com/125398461/223042141-c2456322-7cac-44be-be9c-044a307eeb52.png)
+    ![انتخاب حالت رمزگذاری](/assets/manager/Domain-types-and-how-to-register-them/cf-new-ssl-mode.webp)
 
-    ![گزینه‌های WebSockets و gRPC](https://user-images.githubusercontent.com/125398461/223041843-7b441805-4aab-4547-b318-7dbbda4cc893.png)
+3. از منوی کناری **Network** را باز کنید و **gRPC** و **WebSockets** را روشن کنید. پروکسی‌های CDN هیدیفای‌منیجر از WebSocket، gRPC، HTTPUpgrade و XHTTP استفاده می‌کنند.
 
-آموزش‌های قدیمی می‌گفتند **SSL/TLS Recommender** را روشن کنید. Cloudflare این گزینه را با Automatic SSL/TLS جایگزین می‌کند، پس به آن نیازی ندارید.
+    ![گزینه‌های gRPC و WebSockets در Network](/assets/manager/Domain-types-and-how-to-register-them/cf-new-network.webp)
 
-بخش SSL/TLS در Cloudflare نموداری از ترافیک شما بر اساس نسخه TLS هم نشان می‌دهد. هر چه ترافیک بیشتری با نسخه‌های جدیدتر TLS عبور کند، ارتباط امن‌تر است.
+آموزش‌های قدیمی می‌گفتند **SSL/TLS Recommender** را روشن کنید. Cloudflare این گزینه را با Automatic SSL/TLS جایگزین کرده است، پس به آن نیازی ندارید.
 
-![ترافیک بر اساس نسخه TLS](https://user-images.githubusercontent.com/125398461/223042939-897b7ec0-9700-4bec-8e28-6d8f961657b6.png)
+### افزودن دامنه CDN به پنل
+
+در پنل، **دامنه‌ها** › **افزودن دامنه** را بزنید، دامنه را بنویسید و در **چطور تنظیم شده است؟** گزینهٔ **CDN** را انتخاب کنید. دامنه‌های CDN همیشه از **TLS معتبر** استفاده می‌کنند.
+
+![افزودن دامنه در پنل: حالت CDN](/assets/manager/Domain-types-and-how-to-register-them/fa-panel-cdn.webp){ width="560" }
+
+اگر پنل هشدار داد که دامنه پشت CDN به نظر نمی‌رسد، پروکسی (ابر نارنجی) را در Cloudflare روشن کنید.
 
 </details>
 
@@ -181,5 +205,12 @@ ping sub.example.com
 ## دامنه‌های جعلی و ریالتی
 
 در حالت TLS **جعلی** یا **ریالتی** از نام سایت دیگری استفاده می‌کنید که صاحبش نیستید، پس لازم نیست چیزی در سرویس DNS ثبت کنید. فقط نام را در پنل وارد می‌کنید. [آموزش ساخت و استفاده از دامنه جعلی](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/) را ببینید.
+
+## مقاله‌های مرتبط
+
+- [دامنهٔ فیک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [زیردامنه‌های متغیر (wildcard)](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+- [ساخت خودکار زیردامنه در کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/)
+- [دامین فرانتینگ](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
 
 </div>

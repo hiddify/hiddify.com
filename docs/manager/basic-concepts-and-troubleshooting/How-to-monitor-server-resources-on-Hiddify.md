@@ -51,7 +51,7 @@ Before you start, connect to your server over **SSH** (a secure way to type comm
     htop
     ```
 
-    ![htop showing processes](https://user-images.githubusercontent.com/125398461/243195292-38c5ab1f-8fed-49c9-9455-04c7a7e83917.jpg)
+    ![htop showing processes](/assets/manager/How-to-monitor-server-resources-on-Hiddify/gh-243195292-38c5ab1f-8fed-49c9-9455-04c7a7e83917.webp)
 
 3. To sort the processes by CPU use, click the `CPU%` column header. The process at the top uses the most CPU.
 4. To sort by RAM use, click the `MEM%` column header.
@@ -111,7 +111,7 @@ If your server has very little RAM, adding swap (disk space used as extra memory
 
     You should see a table like this:
 
-    ![df command output](https://user-images.githubusercontent.com/125398461/248637861-f3552ab5-a105-40b5-8210-65487903c6ba.png)
+    ![df command output](/assets/manager/How-to-monitor-server-resources-on-Hiddify/gh-248637861-f3552ab5-a105-40b5-8210-65487903c6ba.webp)
 
 2. Look at the line for your main disk (the one mounted on `/`, often called `sda1` or `vda1`). If `Use%` is close to 100%, free some space.
 3. HiddifyManager keeps its logs in `/opt/hiddify-manager/data/log` (older versions used `/opt/hiddify-manager/log/system`, which no longer exists). To empty all the log files without breaking the services that write to them:
@@ -124,5 +124,12 @@ If your server has very little RAM, adding swap (disk space used as extra memory
 
 4. HiddifyManager also keeps automatic backups in `/opt/hiddify-manager/data/backup`. If that folder is large, download the backups you want to keep, then delete the old ones. Do not delete the rest of `/opt/hiddify-manager/data`: it holds your database and settings.
 5. Run `df -h --total` again to check that space has been freed.
+
+## Related articles
+
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [Is the server's IP or domain clean?](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [DNS leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [Time zone leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
 
 </div>

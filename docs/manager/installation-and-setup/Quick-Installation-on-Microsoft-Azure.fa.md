@@ -3,61 +3,67 @@ title: نصب سریع و آسان در Microsoft Azure
 weight: -50
 ---
 
+<div dir="rtl" markdown="1">
+
+# نصب سریع و آسان در Microsoft Azure
+
+Azure از **cloud-init** پشتیبانی می‌کند: هنگام ساخت ماشین مجازی یک اسکریپت راه‌اندازی می‌چسبانید و هیدیفای‌منیجر بدون نیاز به SSH خودش نصب می‌شود. این صفحه برای هیدیفای‌منیجر نسخهٔ ۱۴.۵ است؛ راهنمای عمومی برای هر دیتاسنتری [نصب آسان از طریق دیتاسنتر (Cloud-init)](/fa/manager/installation-and-setup/Cloud-init-installation/) است.
+
+!!! info "دکمه‌های نصب یک‌کلیکی قدیمی دیگر کار نمی‌کنند"
+    نسخه‌های قبلی این صفحه دو دکمهٔ **Deploy to Azure** داشتند (پروکسی تلگرام و سرور Shadowsocks). قالب‌های آن‌ها دیگر وجود ندارند؛ به جایشان مراحل زیر را انجام دهید. نتیجه یک هیدیفای‌منیجر کامل است که پروکسی تلگرام هم دارد.
+
+## اعتبار رایگان دانشجویی
+
+مایکروسافت با [Azure for Students](https://azure.microsoft.com/en-us/free/students/) به دانشجوها هر سال حدود ۱۰۰ دلار اعتبار می‌دهد که برای یک سرور کوچک برای خانواده و دوستان کافی است. اعتبار باقی‌مانده را [این‌جا](https://www.microsoftazuresponsorships.com/Balance) ببینید.
+
+## قبل از شروع
+
+- ایمیج را **Ubuntu 26.04** یا **24.04** انتخاب کنید. اگر هیچ‌کدام در دسترس نبود، Ubuntu 22.04 هم کار می‌کند. نسخه‌های دیگر پشتیبانی نمی‌شوند.
+- اندازهٔ **x64** یا **Arm64** انتخاب کنید.
+
+## مراحل نصب
+
+### ساخت ماشین مجازی
+
+۱. در [پورتال Azure](https://portal.azure.com/) روی **Create a resource** › **Virtual machine** بزنید.
+
+۲. در تب **Basics** منطقه، ایمیج **Ubuntu Server** و اندازه را انتخاب کنید. در **Inbound port rules** پورت‌های **SSH (22)**، **HTTP (80)** و **HTTPS (443)** را باز کنید.
+
+۳. تب **Advanced** را باز کنید و فیلد **Custom data** را (زیر *Custom data and cloud init*) پیدا کنید.
+
+۴. کد زیر را کپی کنید و همان‌جا بچسبانید.
+
+</div>
+
+{% include 'cloud-init.yml' %}
 
 <div dir="rtl" markdown="1">
-در این مقاله به شما آموزش میدهیم چگونه یک فیلترشکن اختصاصی ایجاد کنید.
 
+### پایان کار
 
-## ایده کلی
-شرکت هایی مثل مایکروسافت و دیجیتال اوشن برای دانشجوها حدود 100 دلار کردیت یکساله رایگان (قابل تمدید) ارائه میکنند
+۱. روی **Review + create** و بعد **Create** بزنید.
 
-ما از این کردیت رایگان استفاده میکنیم تا دو پروکسی برای خانواده خود ایجاد کنیم
+۲. ۱۰ تا ۱۵ دقیقه صبر کنید تا نصب تمام شود. بعد [با SSH به سرور وصل شوید](/fa/manager/installation-and-setup/How-to-connect-to-server-via-SSH/) (**Public IP address** در صفحهٔ **Overview** ماشین مجازی هست)، یا کنسول وب داشبورد ارائه‌دهندهٔ سرور را باز کنید. سپس دستور `hiddify admin` را اجرا کنید. لینک‌های ادمین نمایش داده می‌شوند؛ این همان لینک ادمین همیشگی سرور است. یکی از آن‌ها را در مرورگر باز کنید و جای امنی نگه دارید.
 
-- یک پروکسی برای تلگرام
-- یک پروکسی برای عبور از فیلتر سایر اپلیکیشن ها و برنامه ها
+۳. حالا دامنه را تنظیم کنید و نصب را تمام کنید:
 
-## مراحل
-### مرحله 1: ایجاد یک اکانت دانشجویی در مایکروسافت Azure
-
-
-ابتدا وارد سایت [Microsoft Azure](https://azure.microsoft.com/en-us/free/students/) شوید
-و مراحل زیر را مطابق گیف زیر انجام دهید:
-
-![](http://hiddify.github.io/assets/create_student_account.gif)
-
-برای مشاهده میزان اعتبار باقیمانده در حساب کاربری خود از لینک زیر اقدام کنید
-[مشاهده اعتبار دانشجویی در azure](https://www.microsoftazuresponsorships.com/Balance)
-
-### مرحله 2: ساخت یک ماشین مجازی در Azure برای تلگرام
-
-  
-بر روی این آیکون
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiddify%2Fconfig%2Fmain%2Ftelegram%2Ftelegram-vm-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
-کنید
-و مطابق گیف زیر مراحل را ادامه دهید.
-
-
-![](https://github.com/hiddify/hiddify.github.io/raw/main/assets/azure-auto-deploy.gif)
-<div class="alert alert-success" markdown=1>و لینک پروکسی تلگرام را از قسمت `output` کپی کنید. فراموش نکنید که این لینک پاک می شود پس آن را در جای امنی ذخیره کنید
+<div class="hi-grid c2">
+<a class="hi-card " href="/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/"><span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span><span class="tx"><b>ثبت دامنه و نهایی‌سازی نصب</b><small>قدم بعدی: دامنه را به سرور وصل کنید.</small></span></a>
+<a class="hi-card " href="/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42h-4m1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4h-1.5Z"/></svg></span><span class="tx"><b>پیکربندی کامل پنل</b><small>همهٔ بخش‌های پنل، برای استفادهٔ بهتر.</small></span></a>
 </div>
 
+!!! note "نکته"
+    اگر پروتکلی که از UDP استفاده می‌کند (مثل Hysteria2 یا TUIC) وصل نشد، در تنظیمات **Networking** ماشین مجازی برای پورت آن یک قانون ورودی اضافه کنید. پورتال Azure هر از گاهی تغییر می‌کند؛ اگر نام فیلدی فرق داشت، دنبال *custom data*، *user data* یا *cloud-init* بگردید.
 
+## مقاله‌های مرتبط
 
+<div class="hi-related" markdown="1">
 
+- [![](/assets/logos/hetzner.svg) Hetzner](/fa/manager/installation-and-setup/Quick-installation-on-Hetzner-Servers/)
+- [![](/assets/logos/vultr.svg) Vultr](/fa/manager/installation-and-setup/Quick-installation-on-Vultr-Servers/)
+- [![](/assets/logos/ovh.svg) OVH](/fa/manager/installation-and-setup/Quick-Installation-on-OVH-Servers/)
+- [![](/assets/logos/oracle.svg) Oracle Cloud](/fa/manager/installation-and-setup/Quick-Installation-on-Oracle-Cloud/)
 
-
-  
-### مرحله 3: ساخت یک ماشین مجازی در Azure برای پروکسی سایت ها و اپلیکیشن ها
-
-  
-بر روی این آیکون
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiddify%2Fconfig%2Fmain%2Fshadowsocks%2Fss-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
-کنید
-و مطابق گیف قبل مراحل را ادامه دهید.
-
-<div class="alert alert-success" markdown=1>و لینک پروکسی را از قسمت `output` کپی کنید. فراموش نکنید که این لینک پاک می شود پس آن را در جای امنی ذخیره کنید
 </div>
-سپس لینک را باز کرده تا آموزش استفاده از پروکسی نمایش داده شود. 
-
 
 </div>

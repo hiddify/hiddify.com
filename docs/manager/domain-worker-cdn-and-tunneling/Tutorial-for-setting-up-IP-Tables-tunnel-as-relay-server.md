@@ -10,10 +10,8 @@ A **relay server** is a second server, usually inside your own country, that you
 
 <div align=center markdown="1">
 
-![Diagram: users connect to the relay server, which forwards traffic to the main server](https://github.com/hiddify/hiddify.com/assets/125398461/1ac4e9e4-4529-4c79-8ff5-eb40e2efad54)
+![Users connect to the relay server, and the relay forwards their traffic to the main server with IP-Tables](/assets/manager/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/en-relay-iptables.svg)
 </div>
-
-There is also a [video tutorial in Persian](https://www.youtube.com/watch?v=kz_Ih__jS9c) for this method.
 
 ## Prerequisites
 
@@ -53,18 +51,23 @@ sudo iptables -t nat -L -n
 
 You should see `DNAT` lines that point to your main server's IP. If you do not, run the script again and check the IP you typed.
 
+!!! tip "If ufw is on"
+    If the `ufw` firewall is on on the relay server, it must allow forwarding: in `/etc/default/ufw` set `DEFAULT_FORWARD_POLICY` to `"ACCEPT"` and run `sudo ufw reload`. Your provider’s firewall must also leave ports 80 and 443 open.
+
 ## Add the relay server to Hiddify Manager
 
-1. Point a subdomain (for example `relay.example.com`) at the **relay server's IP** with an `A` record. On Cloudflare, keep the proxy off (grey cloud).
-2. In the panel, open **Domains**, click **Add domain**, enter the subdomain and choose the mode **Relay**.
-3. Edit your subscription domain, select the relay domain under **Show configs of**, then apply the changes.
+1. With an `A` record, point a subdomain (for example `relay.example.com`) at the **relay server’s IP**. In Cloudflare keep the proxy off (**DNS only**).
+2. In the panel, open **Domains** in the sidebar, click **Add Domain**, type the subdomain and click **Check**.
+3. In the **Mode** step, under **How is it set up?**, choose **Relay**. Under **Which TLS?**, **Valid TLS** is usually best; since this script forwards port 80 to the main server too, the panel can get a certificate for the relay domain.
 
-For the full steps, see [How to add a relay server (domain) to HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
+    ![The Add a Domain window: Relay mode and Valid TLS](/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-mode.webp)
 
-??? note "Screenshots from an older panel version"
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/4c0ade4e-394c-4d52-8067-f15d1778c9ed" alt="Adding a relay domain in an older panel version">
+4. If you chose **Reality** or **Fake**, enter the relay server’s IP in that domain’s **Advanced** › **Force Configs to Use These IPs / Domains**.
+5. Edit your subscription domain, also select the relay domain in **Show configs of**, and apply the changes (**Actions** › **Apply Now**).
 
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/e9fa3756-bb3a-4ee9-8adb-77a9f58f6354" alt="Selecting the relay domain in the subscription domain settings, older panel version">
+<div class="hi-grid" style="grid-template-columns:1fr">
+<a class="hi-card" href="/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"><span class="hi-ic"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-7v2M4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m5 4h1V5H9v2m0 8h1v-2H9v2M5 5v2h2V5H5m0 8v2h2v-2H5Z"/></svg></span><span class="tx"><b>The full steps to add a relay to the panel</b><small>Every option of the relay domain, with screenshots.</small></span></a>
+</div>
 
 ## Remove the relay rules
 
@@ -72,7 +75,7 @@ The forwarding rules live in the `nat` table. To delete them and save the empty 
 
 ```bash
 sudo iptables -t nat -F
-sudo iptables-save | sudo tee /etc/iptables/rules.v4
+sudo netfilter-persistent save
 ```
 
 !!! warning
@@ -83,3 +86,14 @@ To also turn IP forwarding off, delete the file you created:
 ```bash
 sudo rm /etc/sysctl.d/99-relay.conf
 ```
+
+## Related articles
+
+<div class="hi-related" markdown="1">
+
+- [Hiddify Relay Builder (every method)](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [Add a relay to the panel](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [GOST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [WST method](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
+
+</div>

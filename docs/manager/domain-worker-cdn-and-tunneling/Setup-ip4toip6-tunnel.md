@@ -1,5 +1,9 @@
 # 4to6 Tunnel
 
+!!! warning "This guide is for an earlier setup"
+    The 4to6-tunnel project has had no update since September 2024. It may still work, but it is not maintained. For a relay that is easier to keep running, see [Using the servers' IPv6 for a steadier tunnel](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/) or [the relay methods](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/). This page is kept for people who already use it.
+
+
 The 4to6 tunnel is similar to the 6to4 tunnel with the following advantages:
 
 1. Your effective IP address between two servers will be IPv6.
@@ -8,20 +12,9 @@ The 4to6 tunnel is similar to the 6to4 tunnel with the following advantages:
 
 ## Technical Overview
 
-The setup involves two nodes, A and B:
+The setup involves two servers: **A** in Iran and **B** abroad. A tunnel is created between them:
 
-```
-Tehran ------------------GFW----------------- Tokyo 
-   A <---------------------------------------> B
-```
-
-A tunnel is created between these two nodes:
-
-```
-Tehran ------------------------------------------GFW----------------------------------------- Tokyo 
-   A                                                                                          B
-| virtual IPv4 <---- 4to6 ----> real IPv6 | <------IPv6-----> | real IPv6 <---- 4to6 ----> virtual IPv4 |
-```
+<img width=800 alt="The 4to6 tunnel between server A in Iran and server B abroad" src="/assets/manager/Setup-ip4toip6-tunnel/en-overview.svg" style="display:block;margin:0 auto">
 
 IPv4 packets are encapsulated within IPv6 packets and transmitted over an IPv6 network. If an IP is blocked, it will be an IPv6 address and can be easily replaced, as IPv6 addresses are generally more cost-effective than IPv4 addresses.
 
@@ -133,3 +126,10 @@ When using [Method 2](#use-xray-on-both-servers), consider adjusting routing rul
 <br>
 
 Article and main repo by [Meshya](https://github.com/meshya/4to6-tunnel)
+
+## Related articles
+
+- [The server's IPv6 for steadier tunnels](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/)
+- [Local IPv6 for the relay server](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)

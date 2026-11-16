@@ -8,19 +8,12 @@ title: آموزش راه‌اندازی تونل IP-Tables به عنوان سر�
 
 **سرور میانی** (Relay) یک سرور دوم، معمولا داخل کشور خودتان است که کاربران به آن وصل می‌شوند و ترافیکشان را به سرور اصلی هیدیفای‌منیجر در خارج می‌رساند. وقتی IP سرور اصلی از کشور شما مسدود یا کند است، این کار کمک می‌کند. [درباره سرور میانی بیشتر بخوانید](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-<div align=center dir="rtl" markdown="1">
-
-ویدئوی آموزشی این روش را هم می‌توانید ببینید:
-
-<a href="https://www.youtube.com/watch?v=kz_Ih__jS9c"><img width="32%" src="https://user-images.githubusercontent.com/125398461/235361165-362e3362-2fd5-4818-95f3-b076801a3135.png" alt="ویدئوی آموزش تانل IP-Tables" /></a>
-
-</div>
 
 <div dir="rtl" markdown="1">
 
 <div align=center dir="rtl" markdown="1">
 
-<img src="https://user-images.githubusercontent.com/125398461/235339506-bdd76cec-0378-4942-8352-ebebeb006231.png" alt="نمودار: کاربران به سرور میانی وصل می‌شوند و سرور میانی ترافیک را به سرور اصلی می‌فرستد">
+![کاربران به سرور میانی وصل می‌شوند و سرور میانی با IP-Tables ترافیک را به سرور اصلی می‌رساند](/assets/manager/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/fa-relay-iptables.svg)
 </div>
 
 ## پیش‌نیازها
@@ -65,18 +58,23 @@ sudo iptables -t nat -L -n
 
 باید خط‌هایی با `DNAT` ببینید که به IP سرور اصلی شما اشاره می‌کنند. اگر ندیدید، اسکریپت را دوباره اجرا کنید و IP واردشده را بررسی کنید.
 
+!!! tip "اگر ufw روشن است"
+    اگر فایروال `ufw` روی سرور میانی روشن است، باید اجازهٔ فوروارد را بدهد: در فایل `/etc/default/ufw` مقدار `DEFAULT_FORWARD_POLICY` را `"ACCEPT"` کنید و `sudo ufw reload` را بزنید. فایروال ارائه‌دهندهٔ سرور هم باید پورت‌های ۸۰ و ۴۴۳ را باز بگذارد.
+
 ## تعریف سرور میانی در هیدیفای‌منیجر
 
-1. با یک رکورد `A`، یک ساب‌دامین (مثلا `relay.example.com`) را به **IP سرور میانی** وصل کنید. در Cloudflare پروکسی را خاموش بگذارید (ابر خاکستری).
-2. در پنل، بخش **دامنه‌ها** را باز کنید، روی **افزودن دامنه** بزنید، ساب‌دامین را وارد کنید و حالت **رله** را انتخاب کنید.
-3. دامنه اشتراک خود را ویرایش کنید، در بخش **نمایش کانفیگ‌های** دامنه سرور میانی را انتخاب کنید و تغییرات را اعمال کنید.
+1. با یک رکورد `A`، یک ساب‌دامین (مثلا `relay.example.com`) را به **آی‌پی سرور میانی** وصل کنید. در کلادفلر پروکسی را خاموش بگذارید (**DNS only**).
+2. در پنل، از منوی کناری **دامنه‌ها** را باز کنید، روی **افزودن دامنه** بزنید، ساب‌دامین را بنویسید و **بررسی** را بزنید.
+3. در مرحلهٔ **حالت**، زیر **چطور تنظیم شده است؟** گزینهٔ **رله** را انتخاب کنید. زیر **کدام TLS؟** معمولا **TLS معتبر** بهترین انتخاب است؛ چون این اسکریپت پورت ۸۰ را هم به سرور اصلی می‌فرستد، پنل می‌تواند برای دامنهٔ سرور میانی گواهی بگیرد.
 
-برای مراحل کامل، [نحوه افزودن سرور (دامنه) میانی به هیدیفای‌منیجر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/) را ببینید.
+    ![پنجرهٔ افزودن دامنه: حالت رله و TLS معتبر](/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/fa-relay-mode.webp)
 
-??? note "تصاویر نسخه قدیمی پنل"
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/3f41d92a-04b9-44fb-b645-ac660601472a" alt="افزودن دامنه سرور میانی در نسخه قدیمی پنل">
+4. اگر **ریالتی** یا **جعلی** را انتخاب کردید، آی‌پی سرور میانی را در **پیشرفته** › **اجبار به استفاده از این IPها یا دامنه‌ها** همان دامنه بنویسید.
+5. دامنهٔ اشتراک خود را ویرایش کنید، در **نمایش کانفیگ‌های** دامنهٔ سرور میانی را هم انتخاب کنید و تغییرات را اعمال کنید (**اقدامات** › **الان اعمال کن**).
 
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230" alt="انتخاب دامنه سرور میانی در تنظیمات دامنه اشتراک، نسخه قدیمی پنل">
+<div class="hi-grid" style="grid-template-columns:1fr">
+<a class="hi-card" href="/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/"><span class="hi-ic"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-7v2M4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m5 4h1V5H9v2m0 8h1v-2H9v2M5 5v2h2V5H5m0 8v2h2v-2H5Z"/></svg></span><span class="tx"><b>مراحل کامل افزودن سرور میانی به پنل</b><small>همهٔ گزینه‌های دامنهٔ رله، با تصویر.</small></span></a>
+</div>
 
 ## حذف قواعد سرور میانی
 
@@ -86,7 +84,7 @@ sudo iptables -t nat -L -n
 
 ```bash
 sudo iptables -t nat -F
-sudo iptables-save | sudo tee /etc/iptables/rules.v4
+sudo netfilter-persistent save
 ```
 
 </div>
@@ -101,6 +99,17 @@ sudo iptables-save | sudo tee /etc/iptables/rules.v4
 ```bash
 sudo rm /etc/sysctl.d/99-relay.conf
 ```
+
+</div>
+
+## مقاله‌های مرتبط
+
+<div class="hi-related" markdown="1">
+
+- [سرور میانی‌ساز هیدیفای (همهٔ روش‌ها)](/fa/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [افزودن سرور میانی به پنل](/fa/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/)
+- [روش GOST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [روش WST](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
 
 </div>
 

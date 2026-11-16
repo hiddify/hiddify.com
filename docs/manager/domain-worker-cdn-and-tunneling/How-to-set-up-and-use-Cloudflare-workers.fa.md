@@ -11,7 +11,7 @@ description: ساخت یک ورکر کلادفلر که درخواست‌ها ر
 
 ورکر (Cloudflare Workers) سرویسی از کلادفلر است که یک قطعه کد کوچک را روی سرورهای کلادفلر اجرا می‌کند. در این آموزش، ورکر درخواست‌های کاربران را می‌گیرد و به سرور هیدیفای‌منیجر شما می‌فرستد. کاربران فقط آدرس ورکر را می‌بینند و دامنه و IP سرور شما پشت آن پنهان می‌ماند.
 
-![کاربر به ورکر وصل می‌شود و ورکر درخواست را به سرور می‌فرستد](https://user-images.githubusercontent.com/125398461/224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.png)
+![کاربر به ورکر وصل می‌شود و ورکر درخواست را به سرور می‌فرستد](/assets/manager/How-to-set-up-and-use-Cloudflare-workers/gh-224561104-dafc3e89-1c0d-4afc-82eb-cce1cec6933a.webp)
 
 !!! note "محدودیت پلن رایگان"
     ورکر در پلن رایگان کلادفلر روزانه ۱۰۰ هزار درخواست را پردازش می‌کند. برای سرورهایی با کاربران زیاد این مقدار کافی نیست.
@@ -111,5 +111,12 @@ description: ساخت یک ورکر کلادفلر که درخواست‌ها ر
 </div>
 
 در آخر از کاربران بخواهید لینک اشتراک را در برنامه خود به‌روزرسانی کنند.
+
+## مقاله‌های مرتبط
+
+- [دامنهٔ ورکر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/)
+- [انواع دامنه و ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [دامنهٔ فیک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [زیردامنه‌های متغیر (wildcard)](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
 
 </div>

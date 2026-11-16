@@ -4,27 +4,29 @@ title: How to manage multiCDN domains in HiddifyManager
 
 ### Managing Clean IPs and Multiple CDN and AutoCDN Domains in Hiddify Manager  
 
-In this article, we explore strategies for managing clean IPs tailored to different operators and setting up multiple CDN domains in **Hiddify Manager**. These methods optimize configuration and improve connection stability for users.  
+In this article, we explore strategies for managing clean IPs tailored to different operators and setting up multiple CDN domains in **Hiddify Manager**. These methods optimize configuration and improve connection stability for users. This page is for Hiddify Manager v14.5, where all of this is set in the **Force configs to use these IPs / domains** field of a CDN domain (**Domains** › pencil › **Advanced**). Since v13 there is no separate AutoCDN domain mode: see [How to use AutoCDN IP domain](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/).  
 
 ---
 
 ### **Using Clean IPs for Different Operators**  
 
 #### **Step 1: Scanning Clean IPs**  
-Use the **Morteza Bashsiz Scanner** with the updated **Xray core** to identify clean IPs. For ease of use, an Android version with a user-friendly interface is also available.  
+The easiest way is the panel's own **Scanner** (**Tools** › **Scanner**, or **Open the scanner** under the field): it scans Cloudflare IPs on your internet and saves the best ones in the field, per operator. You can also use other scanners, such as the **Morteza Bashsiz Scanner** (it also has an Android version). See [Guide for finding a clean Cloudflare IP](/manager/domain-worker-cdn-and-tunneling/Guide-for-finding-a-clean-Cloudflare-IP/).  
 
 #### **Step 2: Clean IP Format for Operators**  
-To define clean IPs for different operators, use the following format:  
+To define clean IPs for different operators, write the address (an IP, a range such as `104.16.0.0/24`, or a host name), then the operator's code:  
 
 ```plaintext
-1.1.1.1 MCI > Hamrah Aval  
-2.2.2.2 MTN > Irancell  
-3.3.3.3 RTL > RighTel  
-4.4.4.4 MKH > Mokhaberat  
-5.5.5.5 SBN > Sabanet  
-6.6.6.6 HWB > HiWeb  
-7.7.7.7 SHT > Shatel Mobile  
+1.1.1.1 MCI
+2.2.2.2 MTN
+3.3.3.3 RTL
+4.4.4.4 MKH
+6.6.6.6 HWB
+7.7.7.7 SHT
+8.8.8.8 OTHER
 ```  
+
+Some codes: `MCI` Hamrah Aval, `MTN` Irancell, `RTL` RighTel, `MKH` Mokhaberat (TCI), `HWB` HiWeb, `SHT` Shatel, `AST` Asiatech, `PRS` ParsOnline. For an operator without a code, use its AS number (for example `AS12345`). `OTHER` (or an address with no code) is for every other operator.  
 
 #### **Alternative Methods for Clean IPs**  
 
@@ -85,14 +87,14 @@ To define clean IPs for different operators, use the following format:
    sub3.domain2.com ==> sub3.domain1.com (proxy off)  
    ```  
 
-#### **Approach 3: AutoCDN with Tags**  
+#### **Approach 3: One CDN domain with operator codes (AutoCDN)**  
 
-1. **Set Up a Single AutoCDN Subdomain:**  
+1. **Set Up a Single CDN Subdomain:**  
    ```plaintext
    sub.domain.com (proxy on)  
    ```  
 
-2. **Define Tags for Operators:**  
+2. **Write per-operator addresses in its Force configs to use these IPs / domains field:**  
    ```plaintext
    mci.ircf.space MCI  
    mtn.ircf.space MTN  
@@ -110,11 +112,18 @@ To integrate clean IPs with AutoCDN features, follow these steps:
 2. **Define Multiple Subdomains with Clean IPs for Each Operator:**  
    Ensure that each subdomain is linked to the clean IPs you scanned.  
 3. **Set Up a CDN Domain in Hiddify Manager:**  
-   Enter three subdomains with distinct clean IPs for different operators in the "Force IP Usage" field.  
+   Enter three subdomains with distinct clean IPs for different operators in the **Force configs to use these IPs / domains** field.  
 
 4. **Assign Compatible Operator Tags:**  
-   Assign operator tags (e.g., MCI, MTN) to each subdomain. This ensures the client scans for the best operator-specific subdomain during configuration.  
+   Assign operator codes (e.g., MCI, MTN) to each subdomain. Each user then gets, in their configs, the subdomain of their own operator (detected from the IP they update their subscription from, so they should update it with the VPN off).  
 
 ---
 
 By applying these methods, you can efficiently manage your domains and IPs in Hiddify Manager, enhancing performance and reliability for your users.
+
+## Related articles
+
+- [What is a CDN and how does it help?](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [Cloudflare CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/)
+- [GCore CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/)
+- [Amazon CDN (CloudFront)](/manager/domain-worker-cdn-and-tunneling/How-to-use-Amazon-CDN/)

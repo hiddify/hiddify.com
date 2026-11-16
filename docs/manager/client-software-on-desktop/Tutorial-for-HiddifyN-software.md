@@ -5,6 +5,10 @@ title: Tutorial for HiddifyN software
 <div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyN software
+
+!!! warning "HiddifyN is no longer developed"
+    HiddifyN is an old Hiddify app. It is no longer developed or updated, and new protocols and features of Hiddify Manager may not work in it. The [Hiddify app](/app/) replaces it, on Android, iOS, Windows, macOS and Linux: see [how to install the Hiddify app](/app/How-to-install-Hiddify-app/). This page is kept for people who still use HiddifyN.
+
 This software is developed based on Xray and has many features that will be reviewed below.
 
 ## Software download
@@ -12,7 +16,7 @@ To download the program in your user panel, open the desktop tab and open the se
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/d3036c0a-2bbd-4e71-a636-06767eb5da45" />
+<img alt="Downloading HiddifyN from the user panel" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-d3036c0a-2bbd-4e71-a636-06767eb5da45.webp" />
 </div>
 
 
@@ -25,7 +29,7 @@ In the user panel, go to the HiddifyN section again and `Click to import` so tha
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/38bb54a9-bdab-45ba-bf0c-cfe1e5592dd9" />
+<img alt="Importing the configs from the user panel" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-38bb54a9-bdab-45ba-bf0c-cfe1e5592dd9.webp" />
 </div>
 
 ## Proxy modes
@@ -33,7 +37,7 @@ One of the most important parts of this application is the proxy modes, which wi
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/6d50dc2b-f0a1-43a3-87cd-a65de0c9991e" />
+<img alt="HiddifyN proxy modes" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-6d50dc2b-f0a1-43a3-87cd-a65de0c9991e.webp" />
 </div>
 
 #### Auto/Smart
@@ -50,7 +54,7 @@ To change the language of the software, click on the menu shown in the image bel
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/42a4aecf-1cd0-4d20-86cc-e245828a0d93" />
+<img alt="Changing the software language" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-42a4aecf-1cd0-4d20-86cc-e245828a0d93.webp" />
 </div>
 
 ## Changing the theme of the software
@@ -58,7 +62,7 @@ Click on the specified button to change the software theme.
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/b4318d50-8ee1-4724-b2da-0112530dd76d" />
+<img alt="Changing the software theme" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-b4318d50-8ee1-4724-b2da-0112530dd76d.webp" />
 </div>
 
 ## User profile information
@@ -66,7 +70,7 @@ In the section displayed below, the information related to the imported user pro
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/94dac157-fd58-4c0c-8df7-3c797b75ae80" />
+<img alt="User profile information" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-94dac157-fd58-4c0c-8df7-3c797b75ae80.webp" />
 </div>
 
 In this section, you can also add new profiles manually. Just click on `Import` and add the user to the copied link from the panel.
@@ -76,7 +80,7 @@ You need to click on the middle circular button to connect to the app. The softw
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/a994a47b-6751-4d6d-9302-684ea7e35680" />
+<img alt="The middle connect button" width=30% src="/assets/manager/Tutorial-for-HiddifyN-software/gh-a994a47b-6751-4d6d-9302-684ea7e35680.webp" />
 </div>
 
 
@@ -85,18 +89,18 @@ This section is opened by pressing the Manual button in the proxy mode section.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/d04a7717-0072-4912-9154-2633ab4dddbd" />
+<img alt="Manual proxy mode section" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-d04a7717-0072-4912-9154-2633ab4dddbd.webp" />
 </div>
 
-<details><summary><h4>1. Settings</h4></summary>
+<details markdown="1"><summary><h4>1. Settings</h4></summary>
 The advanced settings of the program are located in this section.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/0f546c7b-3371-4915-8031-088c89c69e38" />
+<img alt="Advanced settings of HiddifyN" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-0f546c7b-3371-4915-8031-088c89c69e38.webp" />
 </div>
 
-<details><summary><h6>Option setting</h6></summary>
+<details markdown="1"><summary><h6>Option setting</h6></summary>
 In this subsection, there are optional settings of the program, which includes several different sections.
 
 * `Core: basic settings` 
@@ -105,7 +109,7 @@ that do not need to be changed for everyday use. The only widely used option is 
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/1ca46870-cc5e-4102-9a76-8057fa086d73" />
+<img alt="Port and other general settings" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-1ca46870-cc5e-4102-9a76-8057fa086d73.webp" />
 </div>
 
 If you need to use proxy, you can set socks5 proxy on this port.
@@ -116,7 +120,7 @@ This section contains the default settings of the V2rayN program, which is the m
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/462a56f3-6d74-44ff-9301-226b22f51200" />
+<img alt="Default V2rayN settings" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-462a56f3-6d74-44ff-9301-226b22f51200.webp" />
 </div>
 
 
@@ -127,7 +131,7 @@ This section contains the default settings of the V2rayN program, which is the m
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/00b5c622-ab35-42e3-b030-5578458ad0cd" />
+<img alt="Other settings not used daily" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-00b5c622-ab35-42e3-b030-5578458ad0cd.webp" />
 </div>
 
 * System proxy settings
@@ -136,7 +140,7 @@ This section shows the settings related to the proxy system.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/69b71ac5-dae9-4dca-a937-3cd68719c84c" />
+<img alt="Proxy system settings" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-69b71ac5-dae9-4dca-a937-3cd68719c84c.webp" />
 </div>
 
 * Tun mode settings 
@@ -145,7 +149,7 @@ This section contains Tun mode settings that do not need to be changed for every
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/c17b612a-eff6-4d9c-bb86-2183b5c5756f" />
+<img alt="Tun mode settings" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-c17b612a-eff6-4d9c-bb86-2183b5c5756f.webp" />
 </div>
 
 * Core type settings 
@@ -154,7 +158,7 @@ In this section, you can set kernels for different protocols, the default of whi
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/602fa4bf-1d18-4855-9eb9-d212c4fbf223" />
+<img alt="Kernel selection for each protocol" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-602fa4bf-1d18-4855-9eb9-d212c4fbf223.webp" />
 </div>
 
 </details>
@@ -164,7 +168,7 @@ In this section, you can view the routing related to the profile imported to the
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/b87ec29b-ae7d-4e63-8a7f-d33b53a5c3f7" />
+<img alt="Routing of the imported profile" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-b87ec29b-ae7d-4e63-8a7f-d33b53a5c3f7.webp" />
 </div>
 
 ###### DNS setting
@@ -173,7 +177,7 @@ In this section, you can enter your desired DNS into the software.
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/d7ca0641-bab2-450b-9510-d21dfcb8e75d" />
+<img alt="DNS settings" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-d7ca0641-bab2-450b-9510-d21dfcb8e75d.webp" />
 </div>
 
 ###### Reboot as administrator
@@ -198,7 +202,7 @@ This section is related to subscription links. By pressing this button, you can 
 
 <div align=center markdown=1>
   
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/6e244634-0a3f-4c89-b2fb-8525f79b0bae" />
+<img alt="Subscription links section" src="/assets/manager/Tutorial-for-HiddifyN-software/gh-6e244634-0a3f-4c89-b2fb-8525f79b0bae.webp" />
 </div>
 
 #### 7. Configs imported into the program
@@ -217,5 +221,11 @@ This button is used to enable Tun mode or tunneling the entire system traffic.
 #### 10. Current connection specifications
 In this section, the current connection specifications and its ping are displayed.
 
+## Related articles
 
+- [V2rayNG](/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/manager/client-software-on-ios/Tutorial-for-Streisand/)
 
+</div>

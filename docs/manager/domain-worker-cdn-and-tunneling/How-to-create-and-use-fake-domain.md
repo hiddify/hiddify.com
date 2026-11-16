@@ -80,4 +80,11 @@ In the fake domain's edit window, **Custom proxies** decides which proxies are m
 <img width=600 alt="Custom proxies with Choose selected and the list of proxies" src="/assets/manager/How-to-create-and-use-fake-domain/en-choose.webp">
 </div>
 
+## Related articles
+
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+- [Automatic subdomains on Cloudflare](/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/)
+- [Domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
+
 </div>

@@ -16,19 +16,13 @@ After you [install Hiddify Manager](/manager/installation-and-setup/guide/), you
 A **domain** is a name like `example.com` that points to your server's IP address, so you and your users don't have to use the bare IP. A **subdomain** is a name under a domain, like `vpn.example.com`.
 
 !!! note "Screenshots"
-    The panel screenshots on this page are from HiddifyManager v14.2. The temporary setup page in step 2 is from an older version.
+    The panel screenshots on this page are from HiddifyManager v14.2.
 
 ## Step 1: Get a domain and subdomain
 
 If you already have a domain, create a subdomain for your server's IP address in your domain's DNS settings and skip to step 2.
 
-If you don't have a domain, you can get a free subdomain from FreeDNS. The video below (in Persian) shows all the steps.
-
-<div align=center markdown=1>
-
-[![Video: registering a subdomain](https://img.youtube.com/vi/l-KKRus2KS0/maxresdefault.jpg)](https://www.youtube.com/watch?v=l-KKRus2KS0)
-
-</div>
+If you don't have a domain, you can get a free subdomain from FreeDNS.
 
 <details markdown=1><summary>Steps to get a free subdomain from FreeDNS</summary>
 
@@ -46,7 +40,7 @@ If you don't have a domain, you can get a free subdomain from FreeDNS. The video
 
 4. Enter the subdomain name you want and your server's IP address, then save.
 
-    ![Adding a subdomain with the server IP](https://user-images.githubusercontent.com/125398461/228729855-a95334af-a87e-4668-be7e-643a4d6a0a83.png)
+    ![Adding a subdomain with the server IP](/assets/manager/Guide-for-setting-up-the-domain-and-finalizing-the-installation/gh-228729855-a95334af-a87e-4668-be7e-643a4d6a0a83.webp)
 
 5. Copy the subdomain you created. You need it in step 3.
 
@@ -60,19 +54,11 @@ How you open the panel depends on how you installed HiddifyManager.
 
 <details markdown="1"><summary>If you used cloud-init (Hetzner, Vultr, OVH, ...)</summary>
 
-The installer creates a temporary link that works for **one hour**.
+There is no one-hour temporary link any more. A cloud-init install creates the server's normal, permanent admin link, just like a manual install:
 
-1. Wait at least 10 minutes after the server starts.
-2. Open your server's IP address in your browser. An IP address is four numbers separated by dots. For example, if your IP is `1.1.1.1`, open `http://1.1.1.1`.
-3. Click the link on that page to reach the admin panel.
-
-<div align=center markdown=1>
-
-![Temporary setup page opened by IP address](https://user-images.githubusercontent.com/125398461/228808969-e289d4da-8857-45ec-96e6-353729e129ec.png)
-
-</div>
-
-If the hour has passed, use the SSH method below to get the admin links.
+1. After the server starts, wait 10 to 15 minutes for the installation to finish.
+2. [Connect to the server with SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/), or open the web console in your server provider's dashboard.
+3. Run `hiddify admin`. It shows your admin links. Open one of them in your browser and keep it somewhere safe.
 
 </details>
 
@@ -126,8 +112,15 @@ If something goes wrong, read [How to configure the HiddifyManager panel properl
 
     <img width="100%" style="display:block;margin:0 auto;max-width:800px" alt="A config's link and QR code on the user page" src="/assets/app-use/en-user-config-link.webp">
 
-We recommend [Hiddify App](/app/How-to-install-Hiddify-app/) to connect; it works on Android, iOS, Windows, macOS and Linux.
+We recommend [Hiddify app](/app/How-to-install-Hiddify-app/) to connect; it works on Android, iOS, Windows, macOS and Linux.
 
 This page only covers a quick start. The panel can do much more: read [How to configure the HiddifyManager panel properly](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/) to get the most out of it.
+
+## Related articles
+
+- [Installation prerequisites](/manager/installation-and-setup/Installation-prerequisites/)
+- [Connect to your server with SSH](/manager/installation-and-setup/How-to-connect-to-server-via-SSH/)
+- [Main installation guide](/manager/installation-and-setup/guide/)
+- [Install a specific version](/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/)
 
 </div>

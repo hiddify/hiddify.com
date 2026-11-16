@@ -60,4 +60,11 @@ The **Show configs of** setting of the domain your users open their user page wi
 
 From now on, each time a user updates the subscription, the wildcard domain's configs are made on new random subdomains. All of them use the `*` record on Cloudflare, so you don't need to make any of them on Cloudflare one by one.
 
+## Related articles
+
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Automatic subdomains on Cloudflare](/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/)
+- [Domain fronting](/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
+
 </div>

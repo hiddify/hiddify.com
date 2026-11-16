@@ -1,72 +1,67 @@
 ---
-title: آموزش خودکار کردن ساخت زیردامنه روی کلادفلر
+title: گرفتن و استفاده از کلید توسعه کلادفلر
 ---
 
 <div dir="rtl" markdown=1>
 # گرفتن کلید توسعه کلادفلر
 
-هدف از این کار اتصال پنل به کلادفلر است. با انجام این کار وقتی در پنل ساب‌دامین ایجاد می‌نمایید؛ کلادفلر به صورت خودکار آن‌ها را می‌سازد و برایشان سرتیفیکت می‌گیرد. همچنین پروسه ساخت ورکر خودکار می‌گردد. مراحل زیر را به ترتیب انجام دهید تا توکن مربوط به کلید توسعه کلادفلر را دریافت کنید.
+با یک توکن API کلادفلر، پنل رکوردهای DNS دامنه‌های شما را خودش مدیریت می‌کند: وقتی در صفحهٔ **دامنه‌ها** دامنه‌ای اضافه می‌کنید (زیردامنه‌ای از دامنه‌ای که در حساب کلادفلر شماست)، پنل رکورد `A` / `AAAA` آن را با آی‌پی سرور می‌سازد یا به‌روز می‌کند؛ برای دامنه‌های **CDN** با پروکسی (ابر نارنجی) و برای دامنه‌های مستقیم فقط DNS. این صفحه برای هیدیفای‌منیجر نسخهٔ ۱۴.۵ است.
 
-۱. قبل از هر چیز وارد اکانت خود در کلادفلر شوید و دامنه خود را ثبت نمایید. اگر نیاز به اطلاعات بیشتر برای این کار دارید لطفا [این لینک](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/) را مطالعه کنید.
+!!! note "نکته"
+    نسخه‌های قدیمی‌تر با این توکن ورکر کلادفلر هم می‌ساختند. نسخهٔ ۱۴.۵ این کار را نمی‌کند: [آموزش استفاده از دامنهٔ ورکر کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/How-to-use-the-Cloudflare-worker-domain-on-Hiddify/) را ببینید.
 
-۲. از [اینجا](https://dash.cloudflare.com/profile/api-tokens/)، به **My Profile** > **API Tokens** بروید.
-    
-۳. `Create Token` را انتخاب کنید.
+مراحل زیر را به ترتیب انجام دهید تا توکن را بگیرید.
 
-    
-![](https://user-images.githubusercontent.com/125398461/234880340-5f1abcac-9f10-46eb-bb19-204546e3c453.png)
+1. وارد حساب کلادفلر خود شوید و دامنه‌تان را در آن اضافه کنید. اطلاعات بیشتر: [انواع دامنه و نحوهٔ ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
+2. صفحهٔ [My Profile › API Tokens](https://dash.cloudflare.com/profile/api-tokens) را باز کنید (آیکون پروفایل بالا سمت راست › **My Profile** › **API Tokens**). نام این صفحه **User API Tokens** است. روی **Create Token** بزنید.
 
+    <img width=700 alt="صفحهٔ User API Tokens و دکمهٔ Create Token" src="/assets/manager/Get-Cloudflare-API/cf-1-tokens.webp" style="display:block;margin:0 auto">
 
-۴. یک الگو از میان الگوهای موجود انتخاب کنید یا یک نشانه سفارشی ایجاد کنید. ما پیشنهاد می‌کنیم از الگوی `Edit zone DNS` همانند مثال زیر استفاده کنید.
+3. در **Token name** یک نام بنویسید، مثلاً `HiddifyManager`. در بخش **Policies** روی **Edit zone DNS** بزنید.
 
-![](https://user-images.githubusercontent.com/125398461/234880943-80462114-58bd-48df-baef-2addfc740062.png)
+    <img width=700 alt="نام توکن و سیاست Edit zone DNS" src="/assets/manager/Get-Cloudflare-API/cf-2-templates.webp" style="display:block;margin:0 auto">
 
-    
+4. یک **Zone policy** با مجوز **DNS Write** اضافه می‌شود. روی مداد آن بزنید تا مشخص کنید شامل کدام دامنه‌ها شود.
 
+    <img width=700 alt="Zone policy با مجوز DNS Write" src="/assets/manager/Get-Cloudflare-API/cf-3-policy.webp" style="display:block;margin:0 auto">
 
+5. **Include** را نگه دارید و **Specific zone** و دامنهٔ خود را انتخاب کنید، یا اگر چند دامنه دارید **All zones** را. در گروه **DNS & Zones**، **DNS** باید روی **Edit** باشد؛ الگو این کار را از قبل انجام داده است.
 
-۵.  در این مرحله تنظیمات دسترسی و منابع Zone را به شکل زیر انجام دهید.
+    <img width=700 alt="All zones و DNS روی Edit" src="/assets/manager/Get-Cloudflare-API/cf-4-dns-edit.webp" style="display:block;margin:0 auto">
 
+6. **Token expiration** را روی **No expiration** بگذارید (یا تاریخی انتخاب کنید) و پایین صفحه روی **Continue to summary** بزنید.
 
-![](https://user-images.githubusercontent.com/125398461/235046796-2ea8d0ed-4fe4-4060-ae55-683c9d2c0e7c.png)
+    <img width=700 alt="Continue to summary" src="/assets/manager/Get-Cloudflare-API/cf-5-continue.webp" style="display:block;margin:0 auto">
 
-<!--   
-![صفحه نمای کلی الگوی رمز](https://user-images.githubusercontent.com/114227601/229591958-adc4e813-1e04-4de0-9bbb-29b94df4b4d9.png)
--->
-می‌توانید مجوزهای توکن را از بین (_Account_، _User_، یا _Zone_) تغییر دهید. اکثر گروه‌ها گزینه‌های «ویرایش» یا «خواندن» را ارائه می‌کنند. «ویرایش» دسترسی کامل CRUDL (ایجاد، خواندن، به‌روزرسانی، حذف، فهرست) است، در حالی که «خواندن» در صورت لزوم مجوز خواندن و فهرست است. برای اطلاعات بیشتر به [مجوزهای نشانه موجود](/fundamentals/api/reference/permissions/) مراجعه کنید. 
+7. خلاصه را بررسی کنید (**DNS: Edit**) و روی **Create Token** بزنید.
 
-برای اعمال تغییرات روی دامین‌ها و ورکرهای خود به ترتیب زیر جلو بروید.
+    <img width=700 alt="خلاصهٔ توکن و دکمهٔ Create Token" src="/assets/manager/Get-Cloudflare-API/cf-6-summary.webp" style="display:block;margin:0 auto">
 
-* مجوز `Zone` را روی `DNS` و در حالت `Edit` باشد تا امکان اضافه کردن ساب‌دامین‌های مختلف داده شود.
+8. توکن را کپی کنید. کلادفلر آن را فقط یک بار نشان می‌دهد؛ اگر گمش کردید، یک توکن تازه بسازید.
 
-* دکمه Add more را بزنید و در قسمت `Account` گزینه `Workers Scripts` را انتخاب کنید و به آن مجوز Edit دهید.
-
-* در بخش `Account Resources` گزینه `All accounts` را انتخاب نمایید.
-
-* در قسمت `Zone Resources` منابع را به اکانت خود تخصیص دهید. یعنی `All zones from an account` را انتخاب نمایید و سپس اکانت کلادفلر خود را انتخاب کنید.
-
-* در آخر `Continue to summary` را بزنید.
-  
-۶. برای ایجاد توکن `Create Token` را انتخاب کنید.
-
-![صفحه نمایش خلاصه نشانه با نمایش منابع و مجوزهای انتخاب شده](https://user-images.githubusercontent.com/114227601/229592071-3faf93c3-b246-4a08-823b-4680a3a4cf5e.png)
-
-    
-
-    
-۷. توکن را کپی کنید.
-
-![229592139-25482e17-ddef-48b5-9926-265d073669e9](https://user-images.githubusercontent.com/125398461/234892482-293f7505-5c94-4564-b0d6-3337fd435e7c.png)
-
-۸. در نهایت روی `Continue to summary` کلیک کنید.
-
+    <img width=640 alt="توکن تازه که فقط یک بار نشان داده می‌شود (داشبورد قدیمی‌تر)" src="/assets/manager/Get-Cloudflare-API/gh-234892482-293f7505-5c94-4564-b0d6-3337fd435e7c.webp" style="display:block;margin:0 auto">
 
 # استفاده از کلید توسعه کلادفلر در هیدیفای‌منیجر
 
-بعد از ایجاد توکن؛ وارد منیجر شوید و در `تنظیمات خیلی پیشرفته` ؛ توکن را در فیلد مشخص شده مطابق با تصویر زیر جایگذاری کنید.
+بعد از ساختن توکن، در پنل به **تنظیمات** بروید و کلید **نمایش تنظیمات پیشرفته** را بالای صفحه روشن کنید. در کارت **تنظیمات خیلی پیشرفته**، توکن را در فیلد **کلید توسعه کلادفلر** بچسبانید و ذخیره کنید.
 
-![Screenshot_20230427_1758442](https://user-images.githubusercontent.com/125398461/234895891-9a0f71a5-86fd-423c-86a6-3c3acf50818e.png)
+</div>
 
-حالا اگه در قسمت دامنه‌ها در منیجر یک ساب‌دامین جدید روی دامین ثبت شده خود در کلادفلر ایجاد نمایید؛ تنظیمات بخش کلادفلر به صورت خودکار انجام می‌شود. همچنین ورکر به صورت خودکار ساخته می‌شود.
+<div align=center markdown=1>
+
+![فیلد کلید توسعه کلادفلر در تنظیمات خیلی پیشرفته](/assets/manager/Get-Cloudflare-API/fa-cloudflare-api.webp)
+
+</div>
+
+<div dir="rtl" markdown=1>
+
+حالا اگر در صفحهٔ **دامنه‌ها** دامنه‌ای اضافه کنید که دامنهٔ اصلی‌اش در حساب کلادفلر شماست، رکورد DNS آن خودکار ساخته می‌شود. اگر توکن اشتباه باشد یا مجوز کافی نداشته باشد، هنگام ذخیرهٔ دامنه خطای *Cloudflare error* با علت آن نمایش داده می‌شود.
+
+## مقاله‌های مرتبط
+
+- [انواع دامنه و ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [دامنهٔ فیک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [زیردامنه‌های متغیر (wildcard)](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+- [دامین فرانتینگ](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
 
 </div>

@@ -126,4 +126,11 @@ sudo systemctl restart ssh
 - [فایروال هیدیفای‌منیجر را روشن کنید](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/) تا فقط پورت‌هایی که استفاده می‌کنید باز باشند.
 - سرور خود را به‌روز نگه دارید.
 
+## مقاله‌های مرتبط
+
+- [فایروال](/fa/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [تغییر پورت SSH](/fa/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [تنظیم TLS برای امنیت بیشتر](/fa/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+- [تنظیم DNS سرور](/fa/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
+
 </div>

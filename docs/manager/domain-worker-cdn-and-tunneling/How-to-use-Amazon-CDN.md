@@ -6,6 +6,10 @@ title: How to use Amazon CDN or Cloudfront
 
 
 # How to use Amazon CDN or Cloudfront
+
+!!! note "About this guide"
+    The HiddifyManager part is for v14.5. The AWS part follows the CloudFront console as it was when this guide was written; Amazon changes its console from time to time (for example, it now asks you to choose a pricing plan first), so some names may differ. The certificate for CloudFront must be requested in the **US East (N. Virginia) `us-east-1`** region of AWS Certificate Manager, otherwise CloudFront does not list it.
+
 ## Domain registration
 * To do this, first point an A record to your server address in DNS. Suppose you have pointed sub1.domain.com to the IP address of your server.
 
@@ -15,23 +19,28 @@ title: How to use Amazon CDN or Cloudfront
 * Enter the values in the opened page according to the image below.
 
 <div align=center markdown=1>
-<img alt="aws settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/9e1623b7-ffdc-4881-be24-b7223c63cb90" width=70% />
+<img alt="aws settings" src="/assets/manager/How-to-use-Amazon-CDN/gh-9e1623b7-ffdc-4881-be24-b7223c63cb90.webp" width=70% />
 </div>
 
 All values on this page are default except for the following which should be set as shown in the images.
 
+Viewer protocol policy:
 
 <div align=center markdown=1>
-<img alt="protocols policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/322d696e-cc53-4272-87ec-b5f77baa1546" width=70% />
+<img alt="protocols policy" src="/assets/manager/How-to-use-Amazon-CDN/gh-322d696e-cc53-4272-87ec-b5f77baa1546.webp" width=70% />
 </div>
 
 
-<div align=center markdown=1>
-<img alt="cache policy" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/404b3134-de2d-4dca-a942-a524b43ed883" width=70% />
-</div>
+Cache policy:
 
 <div align=center markdown=1>
-<img alt="waf settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/3139e115-5c4f-41df-9d49-766e973a4d14" width=70% />
+<img alt="cache policy" src="/assets/manager/How-to-use-Amazon-CDN/gh-404b3134-de2d-4dca-a942-a524b43ed883.webp" width=70% />
+</div>
+
+Web Application Firewall (WAF):
+
+<div align=center markdown=1>
+<img alt="waf settings" src="/assets/manager/How-to-use-Amazon-CDN/gh-3139e115-5c4f-41df-9d49-766e973a4d14.webp" width=70% />
 </div>
 
 * At the end, click on `create distribution` to perform the creation operation.
@@ -49,13 +58,13 @@ In fact, this subdomain will be used for our CDN domain.
 
 
 <div align=center markdown=1>
-<img alt="domain settings" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/e2a5d38a-efde-45c5-b55b-d2f395aa846a" width=70% />
+<img alt="domain settings" src="/assets/manager/How-to-use-Amazon-CDN/gh-e2a5d38a-efde-45c5-b55b-d2f395aa846a.webp" width=70% />
 </div>
 
 
 * In this section, two values of this section, `Cname name` and `Cname value` are needed to complete the certificate status.
 * Go to your DNS records (presumably Cloudflare) and create a `Cname name` record and enter the values you had in the previous step in AWS. In Cloudflare, enter `Cname name` instead of `name` and `Cname value` instead of `Target`.
-* Now if you go back to AWS and the certificate list page and refresh the page, you will see that the status has changed from `pending` to `issues`, which means that our domain has received the certificate correctly.
+* Now if you go back to AWS and the certificate list page and refresh the page, you will see that the status has changed from `Pending validation` to `Issued`, which means that our domain has received the certificate correctly.
 * Now it is back to the `distribution` settings page and the certificate derivation stage, and if you click the refresh button for `custom ssl`, you can see the certificate you received in the previous stage. Select it and leave the other values of this page as default.
 
 
@@ -64,10 +73,10 @@ In fact, this subdomain will be used for our CDN domain.
 > Note: Be careful not to tick the `Legacy client support` because this option costs $600 per month.
 
 * At the end, click the save changes option to save the changes.
-* Now wait until the changes are applied and according to the image below, the state of `Last modified` will change from `Depoloying` to done to the date and time.
+* Now wait until the changes are applied and according to the image below, the state of `Last modified` will change from `Deploying` to done to the date and time.
 
 <div align=center markdown=1>
-<img alt="done page" src="https://github.com/hiddify/Hiddify-Manager/assets/125398461/893cfd82-7ccc-4fe6-9b25-09da4272e9a3" width=70% />
+<img alt="done page" src="/assets/manager/How-to-use-Amazon-CDN/gh-893cfd82-7ccc-4fe6-9b25-09da4272e9a3.webp" width=70% />
 </div>
 
 * It usually takes between 2-5 minutes for these changes to be applied, which can be followed by refreshing the screen. Always remember that at any stage you make changes, it should change to this state, which means that the changes are fully applied and usable.
@@ -84,3 +93,12 @@ In fact, this subdomain will be used for our CDN domain.
 </div>
 
 * Go through the `Name` and `Certificate` steps, then apply the changes when the panel asks you to.
+
+## Related articles
+
+- [What is a CDN and how does it help?](/manager/domain-worker-cdn-and-tunneling/What-is-CDN-and-how-does-it-help-us%3F/)
+- [Cloudflare CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-Cloudflare-CDN/)
+- [GCore CDN](/manager/domain-worker-cdn-and-tunneling/How-to-use-GCore-CDN-on-Cloudflare-registered-domain/)
+- [CDN domain (automatic IP)](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/)
+
+</div>

@@ -21,7 +21,7 @@ weight: -80
 
 1. روی **PowerShell** راست‌کلیک کنید و **Run as Administrator** را بزنید.
 
-    ![باز کردن PowerShell با دسترسی ادمین](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
+    ![باز کردن PowerShell با دسترسی ادمین](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/gh-222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.webp)
 
 2. این دستور را اجرا کنید:
 
@@ -31,7 +31,7 @@ weight: -80
 
 3. باید نتیجه‌ای شبیه این ببینید:
 
-    ![نتیجه‌ی نصب OpenSSH](https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png)
+    ![نتیجه‌ی نصب OpenSSH](/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.webp)
 
 حالا SSH نصب شده است.
 
@@ -92,5 +92,12 @@ hiddify admin
 ```
 
 برای نصب هیدیفای‌منیجر، [راهنمای نصب اصلی](/fa/manager/installation-and-setup/guide/) را دنبال کنید.
+
+## مقاله‌های مرتبط
+
+- [پیش‌نیازهای نصب](/fa/manager/installation-and-setup/Installation-prerequisites/)
+- [راهنمای نصب اصلی](/fa/manager/installation-and-setup/guide/)
+- [ثبت دامنه و تنظیمات بعد از نصب](/fa/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/)
+- [نصب نسخه‌های مختلف](/fa/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/)
 
 </div>

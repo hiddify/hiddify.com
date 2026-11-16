@@ -98,4 +98,11 @@ Run all commands **on your server, over SSH**.
 !!! note "HiddifyManager firewall"
     When the **Firewall** setting is on in the HiddifyManager panel, HiddifyManager keeps port 22 open and opens the ports HiddifyManager needs. The rule you added in step 1 keeps your new SSH port open as well. See [How to set up the firewall on the HiddifyManager panel](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/).
 
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+- [Set the server's DNS](/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
+
 </div>

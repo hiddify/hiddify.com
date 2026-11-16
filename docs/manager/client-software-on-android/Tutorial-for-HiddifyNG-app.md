@@ -5,6 +5,10 @@ title: Tutorial for HiddifyNG app
 <div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyNG app
+
+!!! warning "HiddifyNG is no longer developed"
+    HiddifyNG is an old Hiddify app. It is no longer developed or updated, and new protocols and features of Hiddify Manager may not work in it. The [Hiddify app](/app/) replaces it, on Android, iOS, Windows, macOS and Linux: see [how to install the Hiddify app](/app/How-to-install-Hiddify-app/). This page is kept for people who still use HiddifyNG.
+
 This app is the best software for connecting to Xray protocols on Android operating system.
 Download and install the software
 
@@ -12,8 +16,8 @@ Enter the `Android` tab in your user panel and open the `HiddifyNG` section.
 
 <div align=center markdown=1>
   
-<img width=30% src="
-https://github.com/hiddify/hiddify-config/assets/125398461/5e2272ae-86e8-487c-8d09-f3866585c436" />
+<img alt="HiddifyNG section in the user panel" width=30% src="
+/assets/manager/Tutorial-for-HiddifyNG-app/gh-5e2272ae-86e8-487c-8d09-f3866585c436.webp" />
 </div>
 
 
@@ -27,7 +31,7 @@ To do this, in the same section related to the `HiddifyNG` program, click on `Cl
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/adf69d91-570b-4fb0-9266-09d3abdd837f" />
+<img alt="Click to Import in the user panel" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-adf69d91-570b-4fb0-9266-09d3abdd837f.webp" />
 </div>
 
 
@@ -40,7 +44,7 @@ This plate is designed for quick connection to the filter breaker, which consist
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3b52550d-4e96-49c7-a966-282dfd48c4cc" />
+<img alt="Profile section of the app" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-3b52550d-4e96-49c7-a966-282dfd48c4cc.webp" />
 </div>
 
 In this section, you can see your imported profiles. 
@@ -60,7 +64,7 @@ You can use the copied link or scan its QR code.
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/a3aa8b25-1500-48c8-8899-b38b31621024" />
+<img alt="Subscription link and its QR code" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-a3aa8b25-1500-48c8-8899-b38b31621024.webp" />
 </div>
 
 
@@ -74,7 +78,7 @@ To do this, click on the connection button in the middle of the screen.
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/937d9d96-9f9f-4bfa-8700-858e161a289d" />
+<img alt="The connect button" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-937d9d96-9f9f-4bfa-8700-858e161a289d.webp" />
 </div>
 
 
@@ -83,7 +87,7 @@ Here are the configs that were added using the subscription link.
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/8d68a8aa-fe9b-4396-a66c-7859a44082b8" />
+<img alt="Configs added from the subscription link" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-8d68a8aa-fe9b-4396-a66c-7859a44082b8.webp" />
 </div>
 
 
@@ -100,7 +104,7 @@ In this menu, which is a subset of the config menu, you can do various things th
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/afdd5488-99dc-4693-b5a8-6d9861e620e3" />
+<img alt="Options of the config menu" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-afdd5488-99dc-4693-b5a8-6d9861e620e3.webp" />
 </div>
 
 
@@ -137,7 +141,7 @@ On this page, there are advanced settings that will be mentioned later.
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/28a6cdeb-5c7c-4e87-b47d-e3121a318c6a" />
+<img alt="Advanced settings page" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-28a6cdeb-5c7c-4e87-b47d-e3121a318c6a.webp" />
 </div>
 
 ## Proxy mode settings
@@ -157,7 +161,7 @@ In addition to the identified filter sites, it also passes through the app the s
 
 ## Fragment
 
-Fragment splits the sent packets into some pieces. In this way, SNI is hidden from the GFW and filtering will be bypassed. [more information](/fa/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/)
+Fragment splits the sent packets into some pieces. In this way, SNI is hidden from the GFW and filtering will be bypassed. [more information](/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/)
 
 The settings in this section determine how information is transmitted in the form of fragmented packets. The purpose of applying these settings is to create resistance against the filtering system.
 
@@ -189,7 +193,7 @@ In this section, there are several general settings, the most useful parts of wh
 
 <div align=center markdown=1>
   
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/34534df8-e9a0-4e0d-886e-eaa15a50deec" />
+<img alt="General settings section" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-34534df8-e9a0-4e0d-886e-eaa15a50deec.webp" />
 </div>
 
 ### Subscription group setting
@@ -205,3 +209,12 @@ Use this option if you need a log file for troubleshooting.
 
 ### Feedback
 Use this menu if you need to report bugs and errors.
+
+## Related articles
+
+- [V2rayNG](/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/manager/client-software-on-ios/Tutorial-for-Streisand/)
+
+</div>

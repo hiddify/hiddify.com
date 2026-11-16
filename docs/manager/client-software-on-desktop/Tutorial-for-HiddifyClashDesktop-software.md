@@ -5,13 +5,17 @@ title: Tutorial for HiddifyClashDesktop software
 <div dir="ltr" markdown="1">
 
 # Tutorial for HiddifyClashDesktop software
+
+!!! warning "HiddifyClashDesktop is no longer developed"
+    HiddifyClashDesktop is an old Hiddify app. It is no longer developed or updated, and new protocols and features of Hiddify Manager may not work in it. The [Hiddify app](/app/) replaces it, on Android, iOS, Windows, macOS and Linux: see [how to install the Hiddify app](/app/How-to-install-Hiddify-app/). This page is kept for people who still use HiddifyClashDesktop.
+
 This software is developed based on Clash and many features are included in it.
 
 ## Downloading the software
 For this, enter the `Desktop` tab in your user panel and open the section related to `HiddifyClash`.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/ae55cc0f-09fe-4569-bcd8-625c68d66fae" />
+<img alt="Downloading HiddifyClash from the user panel" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-ae55cc0f-09fe-4569-bcd8-625c68d66fae.webp" />
 </div>
 
 You can download the software based on your operating system from the section number 3 indicated in the image above.
@@ -33,7 +37,7 @@ For Linux, you only need to give executable access to the downloaded AppImage fi
 For this, enter the `Desktop` tab in your user panel and open the section related to `HiddifyClash`.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/7a1055b3-0313-415b-a00b-2b5301bcd65a" />
+<img alt="HiddifyClash section in the user panel" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-7a1055b3-0313-415b-a00b-2b5301bcd65a.webp" />
 </div>
 
 
@@ -50,7 +54,7 @@ For this, enter the `Desktop` tab in your user panel and open the section relate
 Click on install profile, the profile will be automatically added to the program. You can also import the copied link in the profile section manually in section 1.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3217c5b9-3e18-4bf1-be22-64742e785bbc" />
+<img alt="Installing the profile in the program" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-3217c5b9-3e18-4bf1-be22-64742e785bbc.webp" />
 </div>
 
 In section number 2, the information related to the imported profile, including the expiration date and the total traffic volume and the traffic volume consumed, can be seen.
@@ -59,21 +63,21 @@ In section number 2, the information related to the imported profile, including 
 In this menu, you can turn the filter breaker on or off with the `Enable anti-censorship` button.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/966d10ee-efca-4c33-b15c-cd33fa9f50e1" />
+<img alt="Enable anti-censorship button" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-966d10ee-efca-4c33-b15c-cd33fa9f50e1.webp" />
 </div>
 
 ## Proxy
 In this menu, you can specify how to run proxies (configs), which includes 3 main sections.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/10db0fa5-9b7a-4ffc-81af-79d8a6448bca" />
+<img alt="Menu for how proxies run" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-10db0fa5-9b7a-4ffc-81af-79d8a6448bca.webp" />
 </div>
 
 ## Rule
 This mode executes proxies based on the rules in the imported profile, which contains several sections.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/0ecb441a-4270-415e-a09d-3c419f066e48" />
+<img alt="Rule mode of the proxies" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-0ecb441a-4270-415e-a09d-3c419f066e48.webp" />
 </div>
 
 
@@ -97,7 +101,7 @@ You can test connections by using button number 2.
 This mode is for manual configuration selection and is useful when you want to use a specific configuration.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/d63a2662-2a02-4141-9a3f-e5befc51aa3b" />
+<img alt="Manual configuration selection mode" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-d63a2662-2a02-4141-9a3f-e5befc51aa3b.webp" />
 </div>
 
 ###### Sort by location
@@ -110,14 +114,14 @@ You can test connections by using button number 2.
 This mode sends the traffic directly to the Internet and the traffic does not pass through the filter breaker.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/8c96c53e-a95c-4af5-bab7-572c0d09c88c" />
+<img alt="Direct mode" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-8c96c53e-a95c-4af5-bab7-572c0d09c88c.webp" />
 </div>
 
 ## Settings
 In this menu, the general settings of the software are made.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/6ab482c8-41fb-4ad0-b37f-6cd88f9426cb" />
+<img alt="General settings menu" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-6ab482c8-41fb-4ad0-b37f-6cd88f9426cb.webp" />
 </div>
 
 - Button number 1 or TUN Mode is for tunneling the entire system traffic.
@@ -140,7 +144,7 @@ In this menu, the general settings of the software are made.
 - In section 7, you can determine the core of the software, the default of which is Clash Meta.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3aedd085-b755-4cbb-a61a-301829b69912" />
+<img alt="Selecting the software core, Clash Meta" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-3aedd085-b755-4cbb-a61a-301829b69912.webp" />
 </div>
 
 - In section number 8, you can determine the language.
@@ -154,26 +158,35 @@ In this menu, the general settings of the software are made.
 In this section, the connections established in the software are displayed. That is, if a program uses a filter, it will be displayed in this section, which is very useful for troubleshooting.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/1700bfe0-9a4e-4f4b-ae11-25654d29273b" />
+<img alt="Connections established in the software" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-1700bfe0-9a4e-4f4b-ae11-25654d29273b.webp" />
 </div>
 
 ## Rules
 This menu is related to the rules in the imported profile, which can be seen in this file.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/72b8c5e1-fca5-4f0a-bad0-2e4738975f24" />
+<img alt="Rules of the imported profile" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-72b8c5e1-fca5-4f0a-bad0-2e4738975f24.webp" />
 </div>
 
 ## Logs
 In this section, the log related to the software can be seen, which is very useful during troubleshooting.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/deed841f-24f9-452f-b9fb-84301437223a" />
+<img alt="Software log screen" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-deed841f-24f9-452f-b9fb-84301437223a.webp" />
 </div>
 
 ## Traffic graph
 In the specified section below, the graphic related to the traffic passing through the filter breaker is also displayed.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/2754c9b1-4072-45d7-8326-c1b86c173686" />
+<img alt="Traffic graph of the filter breaker" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-2754c9b1-4072-45d7-8326-c1b86c173686.webp" />
+</div>
+
+## Related articles
+
+- [V2rayNG](/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/manager/client-software-on-ios/Tutorial-for-Streisand/)
+
 </div>

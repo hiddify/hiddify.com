@@ -7,10 +7,13 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
 
 # آموزش کار با نرم‌افزار HiddifyClashAndroid
 
+!!! warning "HiddifyClashAndroid دیگر توسعه داده نمی‌شود"
+    HiddifyClashAndroid یکی از اپ‌های قدیمی هیدیفای است. دیگر توسعه داده نمی‌شود و به‌روز نمی‌شود، و ممکن است پروتکل‌ها و قابلیت‌های جدید هیدیفای‌منیجر در آن کار نکنند. [اپ هیدیفای](/fa/app/) جای آن را گرفته و روی اندروید، iOS، ویندوز، مک و لینوکس کار می‌کند: [نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/) را ببینید. این صفحه برای کسانی نگه داشته شده که هنوز از HiddifyClashAndroid استفاده می‌کنند.
+
 <!--
-این نرم افزار شبیه کلش هست با این تفاوت که از پروتکل‌های بیشتری پشتیبانی می‌کنه
-روی هیدیفای کلش کلیک کنید تا گزینه ها رو برای شما بیاره، اولین گزینه مربوط به نصب نرم افزار هست. دو گزینه دیگه حالت های مختلفی هستن که شما می تونین برای نوع تونل گوشیتون انتخاب کنین، «حالت برای همه سایت‌های خارجی»، اگر این گزینه رو انتخاب کنین ترافیک سایت های ایرانی رو از تونل عبور نمی ده و تمام سایت ها و سرور هایی رو که در خارج از ایران قرار داره رو تونل می کنه اما «حالت فقط برای سایت‌های فیلتر شده»، فقط سایت هایی رو از تونل عبور می ده که فیلتر شدن و بنابراین سرعت شبکه شما بیشتر هست و ترافیکی که روی سرور هست کمتر می شه.
-برای اضافه کردن لینک کافیه روی کزینه مورد نظر خودتون کلیک کنین تا به صورت اتوماتیک وارد نرم افزارتون بشه، در صورتی که می خواین حالت دستی فعال کنین روی علامت QR بارکد کلیک کنید سپس دکمه‌ی «کپی» رو بزنید. بعدش وارد نرم افزار Hiddify Android قسمت پروفایل وارد بشید روی علامت بعلاوه کلیک کنید و بعد از اون url را انتخاب کنید و در قسمت url کد کپی شده رو پیست کنید و در نهایت علامت ذخیره (save)رو بزنید.
+این نرم‌افزار شبیه کلش هست با این تفاوت که از پروتکل‌های بیشتری پشتیبانی می‌کنه
+روی هیدیفای کلش کلیک کنید تا گزینه‌ها رو برای شما بیاره، اولین گزینه مربوط به نصب نرم‌افزار هست. دو گزینه دیگه حالت‌های مختلفی هستن که شما می‌تونین برای نوع تونل گوشیتون انتخاب کنین، «حالت برای همه سایت‌های خارجی»، اگر این گزینه رو انتخاب کنین ترافیک سایت‌های ایرانی رو از تونل عبور نمی‌ده و تمام سایت‌ها و سرورهایی رو که در خارج از ایران قرار داره رو تونل می‌کنه اما «حالت فقط برای سایت‌های فیلتر شده»، فقط سایت‌هایی رو از تونل عبور می‌ده که فیلتر شدن و بنابراین سرعت شبکه شما بیشتر هست و ترافیکی که روی سرور هست کمتر می‌شه.
+برای اضافه کردن لینک کافیه روی گزینه مورد نظر خودتون کلیک کنین تا به صورت اتوماتیک وارد نرم‌افزارتون بشه، در صورتی که می‌خواین حالت دستی فعال کنین روی علامت QR بارکد کلیک کنید سپس دکمه‌ی «کپی» رو بزنید. بعدش وارد نرم‌افزار Hiddify Android قسمت پروفایل وارد بشید روی علامت بعلاوه کلیک کنید و بعد از اون url را انتخاب کنید و در قسمت url کد کپی شده رو پیست کنید و در نهایت علامت ذخیره (save) رو بزنید.
 
 -->
 
@@ -21,7 +24,7 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
  برای این کار در پنل کاربری خود وارد تب اندروید شوید و بخش مربوط به `هیدیفای کلش` را باز کنید.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/52cdca09-d12d-4b17-a214-2e21c6c77eb4" />
+<img alt="بخش اندروید در پنل کاربری" width=30% src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-52cdca09-d12d-4b17-a214-2e21c6c77eb4.webp" />
 </div>
 
 
@@ -33,11 +36,11 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
 ## اضافه کردن پروفایل به برنامه
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/5113a30c-116b-498a-9634-45007e5d1929" />
+<img alt="افزودن پروفایل به برنامه" width=30% src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-5113a30c-116b-498a-9634-45007e5d1929.webp" />
 </div>
 
 
-*  در اینجا نیاز است با مفهومی به اسم پروفایل آشنا شوید. پروفایل یک فایل yml شامل تمامی کانکشن‌هاست که در این بخش قابل دسترسی است. دو نوع پروفایل وجود دارد
+* در اینجا نیاز است با مفهومی به اسم پروفایل آشنا شوید. پروفایل یک فایل yml شامل تمامی کانکشن‌هاست که در این بخش قابل دسترسی است. دو نوع پروفایل وجود دارد
 
 * پروفایل سبز رنگ یا `Lite` برای سایت‌های فیلتر شده که در این حالت فقط سایت‌های فیلترشده از فیلترشکن عبور داده می‌شوند و سایر سایت‌ها از جمله سایت‌های ایرانی بدون فیلترشکن باز می‌شوند که حالت بهتری است. بنابراین برای باز کردن این سایت‌ها نیاز به خاموش کردن VPN ندارید.
 
@@ -46,18 +49,18 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
 * در نهایت یکی از دو پروفایل را انتخاب کنید و `نصب` را بزنید تا پروفایل به صورت خودکار به برنامه اضافه گردد.
 
 
-##  اضافه کردن دستی پروفایل
-* در اپ HiddifyClash در اندروید روی `Profile`‌ بزنید.
+## اضافه کردن دستی پروفایل
+* در اپ HiddifyClash در اندروید روی `Profile` بزنید.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/18a7595d-fe50-4c6b-96cd-871f96c10be9" />
+<img alt="منوی پروفایل در برنامهٔ هیدیفای‌کلش" src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-18a7595d-fe50-4c6b-96cd-871f96c10be9.webp" />
 </div>
 
 
-*  و در صفحه‌ای که باز می‌شود، دکمه `+` را تپ کنید.
+* و در صفحه‌ای که باز می‌شود، دکمه `+` را تپ کنید.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/19501548-8bb9-45f4-bf93-a2a45bf4b052" />
+<img alt="دکمهٔ + برای افزودن پروفایل" src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-19501548-8bb9-45f4-bf93-a2a45bf4b052.webp" />
 </div>
 
 
@@ -65,14 +68,14 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
 * در این صفحه در قسمت `URL` بروید.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/f628a291-fb82-4092-bcc6-7c3afcb05247" />
+<img alt="بخش URL" src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-f628a291-fb82-4092-bcc6-7c3afcb05247.webp" />
 </div>
 
 
 * و لینک پروفایل انتخاب شده را ازز صفحه کاربری کپی کنید و در اینجا قرار دهید و ذخیره نمایید.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/c2719915-f59e-4d7b-989e-6af89be167c9" />
+<img alt="چسباندن لینک پروفایل و ذخیره" src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-c2719915-f59e-4d7b-989e-6af89be167c9.webp" />
 </div>
 
 
@@ -82,7 +85,7 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
 برای اتصال نیز روی دکمه مشخص شده بزنید.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/4c041134-3f97-4126-999b-7507a6207cc9" />
+<img alt="دکمهٔ اتصال" src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-4c041134-3f97-4126-999b-7507a6207cc9.webp" />
 </div>
 
 
@@ -90,5 +93,14 @@ title: آموزش کار با نرم‌افزار HiddifyClashAndroid
 جهت آپدیت پروفایل و کانفیگ‌ها روی پروفایل بزنید و در صفحه باز شده روی علامت آپدیت بزنید تا پروفایل مطابق با آخرین تغییرات سرور آپدیت گردد.
 
 <div align=center markdown=1>
-<img src="https://github.com/hiddify/hiddify-config/assets/125398461/114d34de-9eab-40c6-9f97-b92eca3e24a6" />
+<img alt="به‌روزرسانی پروفایل و کانفیگ‌ها" src="/assets/manager/Tutorial-for-HiddifyClashAndroid-app/gh-114d34de-9eab-40c6-9f97-b92eca3e24a6.webp" />
+</div>
+
+## مقاله‌های مرتبط
+
+- [V2rayNG](/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
+
 </div>

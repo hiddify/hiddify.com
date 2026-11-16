@@ -80,4 +80,11 @@ description: دامنه فیک (TLS جعلی) در هیدیفای‌منیجر �
 <img width=600 alt="بخش پروکسی‌های سفارشی با گزینه انتخاب و لیست پروکسی‌ها" src="/assets/manager/How-to-create-and-use-fake-domain/fa-choose.webp">
 </div>
 
+## مقاله‌های مرتبط
+
+- [انواع دامنه و ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [زیردامنه‌های متغیر (wildcard)](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+- [ساخت خودکار زیردامنه در کلادفلر](/fa/manager/domain-worker-cdn-and-tunneling/Get-Cloudflare-API/)
+- [دامین فرانتینگ](/fa/manager/domain-worker-cdn-and-tunneling/Guide-for-domain-fronting/)
+
 </div>

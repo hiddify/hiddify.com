@@ -23,7 +23,7 @@ This page shows you how to make TLS connections that go through a CDN harder to 
 3. Find **Minimum TLS Version** and set it to **TLS 1.3**.
 
 <div align=center markdown=1>
-![The Minimum TLS Version setting in Cloudflare set to TLS 1.3](https://user-images.githubusercontent.com/125398461/243977858-69edd121-028f-43f5-87ca-35cb5be00c0f.png)
+![The Minimum TLS Version setting in Cloudflare set to TLS 1.3](/assets/manager/TLS-setting-for-increased-security/gh-243977858-69edd121-028f-43f5-87ca-35cb5be00c0f.webp)
 </div>
 
 **What to check:** reconnect from a device on the operator that had problems.
@@ -66,9 +66,16 @@ Windows 11, macOS and most recent Linux versions already have TLS 1.3 turned on 
     4. Restart your computer.
     5. To check: press `Win+R`, type `regedit` and press Enter. Go to the path shown in the picture below. The TLS versions you turned on are listed there.
 
-    ![The SCHANNEL Protocols keys in the Windows registry](https://user-images.githubusercontent.com/125398461/243984337-53b259f3-267a-4e7f-90b2-8f5ce3a216ca.png)
+    ![The SCHANNEL Protocols keys in the Windows registry](/assets/manager/TLS-setting-for-increased-security/gh-243984337-53b259f3-267a-4e7f-90b2-8f5ce3a216ca.webp)
 
 !!! warning
     Older versions of this page also turned on **SSL 3.0**. SSL 3.0 is old and insecure. If you used that file, delete the `SSL 3.0` key under the same registry path.
+
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [Turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/)
+- [Set the server's DNS](/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
 
 </div>

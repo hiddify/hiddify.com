@@ -5,14 +5,16 @@ weight: -145
 
 <div dir="rtl" markdown=1>
 
-<details markdown="1"> <summary><h1> پیش‌نیاز: نصب SSH در ویندوز</h1> (کلیک کنید)</summary>
+# اتصال به سرور با SSH و کار با منوی هیدیفای‌منیجر
+
+<details markdown="1"> <summary><b>پیش‌نیاز: نصب SSH در ویندوز</b> (کلیک کنید)</summary>
 
 ویندوز ۱۰ و ۱۱ معمولاً SSH را از قبل دارند. اگر دستور `ssh` در PowerShell کار نکرد، آن را این‌طور نصب کنید:
 
 1. منوی Start را باز کنید و **PowerShell** را جستجو کنید.
 2. روی **PowerShell** راست‌کلیک کنید و **Run as Administrator** را بزنید.
 
-    ![اجرای PowerShell با دسترسی ادمین](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
+    ![اجرای PowerShell با دسترسی ادمین](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/gh-222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.webp)
 
 3. این دستور را در PowerShell اجرا کنید:
 
@@ -22,12 +24,11 @@ weight: -145
 
 4. پس از پایان، باید چیزی شبیه این ببینید:
 
-    ![نصب OpenSSH](https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png)
+    ![نصب OpenSSH](/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.webp)
 
 حالا SSH روی ویندوز شما نصب است.
 </details>
 
-# نحوه اتصال و عیب‌یابی از طریق SSH
 
 این صفحه به شما نشان می‌دهد وقتی پنل وب باز نمی‌شود یا لینک ادمین را گم کرده‌اید، چطور هیدیفای‌منیجر را از خط فرمان سرور مدیریت کنید. همچنین هر گزینه از منوی هیدیفای‌منیجر را توضیح می‌دهد.
 
@@ -64,8 +65,6 @@ weight: -145
 
 اگر اتصال درست باشد، خط فرمان سرور را می‌بینید و ممکن است منوی هیدیفای‌منیجر خودش باز شود.
 
-!!! warning "هشدار ورود با رمز عبور"
-    اگر ورود با رمز عبور روی سرور فعال باشد، منو ابتدا یک **WARNING** نشان می‌دهد که سرور شما در معرض سوءاستفاده است. Enter را بزنید تا ادامه دهید. برای رفع آن، [غیرفعال کردن ورود با رمز عبور در SSH](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/) را دنبال کنید.
 
 ## باز کردن منوی هیدیفای‌منیجر
 
@@ -79,11 +78,17 @@ hiddify
 
 </div>
 
-منو این شکلی است (تصاویر این صفحه از نسخه‌ای قدیمی‌تر هستند و ممکن است برخی گزینه‌ها کمی فرق داشته باشند):
+منو این شکلی است (هیدیفای‌منیجر ۱۴.۵):
 
-![منوی هیدیفای‌منیجر](https://github.com/hiddify/hiddify.com/assets/125398461/5b3b47fb-4437-4388-b22d-0d2df6359620)
+![منوی هیدیفای‌منیجر](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-main.webp)
 
 با کلیدهای جهت‌نما جابه‌جا شوید و برای انتخاب هر گزینه Enter را بزنید. بخش‌های زیر هر گزینه را توضیح می‌دهند.
+
+!!! warning "اگر اول یک هشدار دیدید"
+    اگر ورود با رمز عبور روی سرور روشن باشد، منو قبل از باز شدن این هشدار را نشان می‌دهد. **Ok** را بزنید تا منو باز شود، و برای امنیت سرور [ورود با رمز عبور را خاموش کنید](/fa/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/).
+
+    ![هشدار ورود با رمز عبور در منوی هیدیفای‌منیجر](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-warning.webp)
+
 
 !!! tip "دستورها به جای منو"
     بیشتر گزینه‌های منو به شکل دستور مستقیم هم در دسترس‌اند، مثلاً `hiddify status`، `hiddify admin`، `hiddify restart`، `hiddify apply` و `hiddify upgrade release`. برای دیدن همه آن‌ها `hiddify --help` را اجرا کنید.
@@ -104,16 +109,16 @@ hiddify
 ## Status
 نشان می‌دهد هر کدام از سرویس‌های هیدیفای‌منیجر در حال اجرا هست یا نه. اگر همه چیز درست باشد، نتیجه این شکلی است:
 
-![Status](https://github.com/hiddify/hiddify.com/assets/125398461/bb5072e7-635b-486e-9dce-024b8479adb8)
+![Status](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-status.webp)
 
 برای بازگشت به منوی اصلی کلید `q` را بزنید.
 
 **کاربرد اصلی:** بررسی سریع اینکه همه سرویس‌ها کار می‌کنند.
 
 ## Admin
-لینک‌های پنل ادمین را نشان می‌دهد. یکی از لینک‌هایی که با **Secure** مشخص شده‌اند (روی دامنه شما) را در مرورگر باز کنید. از لینک IP با برچسب **Not Secure** فقط وقتی استفاده کنید که هیچ لینک دامنه‌ای کار نکند.
+لینک‌های پنل ادمین را نشان می‌دهد. لینک‌ها در سه گروه نمایش داده می‌شوند: **Secure** (با گواهی معتبر روی دامنهٔ شما؛ همین‌ها را باز کنید)، **Self-signed** (مرورگر هشدار می‌دهد؛ فقط اگر لینک‌های Secure باز نشدند) و **Insecure** (بدون رمزنگاری، http؛ از آن استفاده نکنید). QR code لینک هم بالای آن‌ها هست.
 
-![Admin](https://github.com/hiddify/hiddify.com/assets/125398461/d15fb764-45b4-40ec-84f2-7dc0ea134f13)
+![Admin](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-admin.webp)
 
 در همین صفحه می‌توانید کلید `r` را بزنید تا رمز ادمین مالک (owner) ریست شود. با زدن هر کلید دیگری به منوی اصلی برمی‌گردید.
 
@@ -132,11 +137,10 @@ hiddify admin
 ## Log
 لاگ‌های سیستم را نشان می‌دهد. پس از انتخاب آن، فایل لاگ مورد نظر را انتخاب کنید.
 
-![Log](https://github.com/hiddify/hiddify.com/assets/125398461/4fa52e34-1f2a-4378-ae1a-881dc81e1269)
+![Log](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-log.webp)
 
-مثلاً لاگ نصب را انتخاب کنید تا ببینید هنگام نصب چه اتفاقی افتاده است. در انتهای آن، وضعیت سیستم و لینک‌های ادمین نمایش داده می‌شوند.
+مثلاً `0-install.log` را انتخاب کنید تا ببینید هنگام نصب چه اتفاقی افتاده است. در انتهای آن، وضعیت سیستم و لینک‌های ادمین نمایش داده می‌شوند.
 
-![لاگ نصب](https://github.com/hiddify/hiddify.com/assets/125398461/6a980bbf-9d7a-4ef6-aa92-7a4bfeeb34e3)
 
 برای بستن لاگ کلید `q` را بزنید. فایل‌های لاگ روی سرور در مسیر `/opt/hiddify-manager/data/log/` ذخیره می‌شوند.
 
@@ -145,7 +149,6 @@ hiddify admin
 ## Restart
 همه سرویس‌های هیدیفای‌منیجر را بدون تغییر در تنظیمات دوباره راه‌اندازی می‌کند.
 
-![Restart](https://github.com/hiddify/hiddify.com/assets/125398461/d0caf625-9f09-4543-bc22-ae3843bf289a)
 
 برای بازگشت به منوی اصلی هر کلیدی را بزنید.
 
@@ -162,19 +165,18 @@ hiddify apply
 
 </div>
 
-![Apply Configs](https://github.com/hiddify/hiddify.com/assets/125398461/76446e31-8efd-4d0e-84b9-a1358887a027)
 
 **کاربرد اصلی:** تغییراتی را در پنل ذخیره کرده‌اید ولی قبل از اعمال آن‌ها دسترسی وب را از دست داده‌اید.
 
 ## Install
-هیدیفای‌منیجر را روی سرور دوباره نصب می‌کند. اطلاعات پنل شما (کاربران، تنظیمات، دامنه‌ها) حفظ می‌شود.
+در منو با عنوان **Reinstall the server**. هیدیفای‌منیجر را روی سرور دوباره نصب می‌کند. اطلاعات پنل شما (کاربران، تنظیمات، دامنه‌ها) حفظ می‌شود.
 
 **کاربرد اصلی:** یکی از مراحل نصب درست اجرا نشده و پنل باز نمی‌شود.
 
 ## Update
 هیدیفای‌منیجر را به آخرین نسخه به‌روز می‌کند. این گزینه‌ها را دارد:
 
-![Update](https://github.com/hiddify/hiddify.com/assets/125398461/9b24004d-cb44-4137-a573-76eb59d8930a)
+![Update](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-update.webp)
 
 - **default**: به کانالی که در تنظیمات پنل انتخاب شده به‌روز می‌کند.
 - **release**: به آخرین نسخه پایدار به‌روز می‌کند (پیشنهادی).
@@ -190,16 +192,14 @@ hiddify upgrade release
 
 </div>
 
-در حین اجرا، در ترمینال چیزی شبیه این می‌بینید:
 
-![در حال به‌روزرسانی](https://user-images.githubusercontent.com/125398461/222898474-0d72f442-f19a-40a9-9f35-fcad96807fc4.png)
 
 **کاربرد اصلی:** به‌روزرسانی از طریق پنل وب ناموفق بوده و دسترسی را از دست داده‌اید.
 
 ## Advanced
 این زیرمنو چند گزینه دارد.
 
-![Advanced](https://github.com/hiddify/hiddify.com/assets/125398461/61336508-2dbf-43d8-893c-8d9adbdf3a51)
+![Advanced](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/menu-advanced.webp)
 
 ### warp
 وضعیت سرویس WARP را نشان می‌دهد.
@@ -223,5 +223,12 @@ hiddify upgrade release
 هیدیفای‌منیجر را **همراه با دیتابیس** به‌طور کامل حذف می‌کند. همه کاربران و تنظیمات پاک می‌شوند، پس ابتدا [پشتیبان بگیرید](/fa/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/).
 
 > اگر این روش به هر دلیلی کار نکرد، می‌توانید سرور را از پنل ارائه‌دهنده سرور **Rebuild** کنید. با این کار همه اطلاعات سرور پاک می‌شود.
+
+## مقاله‌های مرتبط
+
+- [آشنایی کامل با پنل و تنظیمات آن](/fa/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+- [همهٔ تنظیمات پنل، یکی‌یکی](/fa/manager/configuration-and-advanced-settings/Settings-reference/)
+- [انتقال کاربران از پنل X-UI](/fa/manager/configuration-and-advanced-settings/how-to-import-xui-to-hiddifymanager/)
+- [لینک ادمین و فرمت آن](/fa/manager/domain-worker-cdn-and-tunneling/The-correct-format-of-admin-link/)
 
 </div>

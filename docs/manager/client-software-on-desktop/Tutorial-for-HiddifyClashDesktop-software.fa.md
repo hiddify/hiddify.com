@@ -6,20 +6,23 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 # آموزش کار با نرم‌افزار HiddifyClash برای دسکتاپ
 
+!!! warning "HiddifyClashDesktop دیگر توسعه داده نمی‌شود"
+    HiddifyClashDesktop یکی از اپ‌های قدیمی هیدیفای است. دیگر توسعه داده نمی‌شود و به‌روز نمی‌شود، و ممکن است پروتکل‌ها و قابلیت‌های جدید هیدیفای‌منیجر در آن کار نکنند. [اپ هیدیفای](/fa/app/) جای آن را گرفته و روی اندروید، iOS، ویندوز، مک و لینوکس کار می‌کند: [نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/) را ببینید. این صفحه برای کسانی نگه داشته شده که هنوز از HiddifyClashDesktop استفاده می‌کنند.
+
 این نرم‌افزار بر پایه کلش توسعه داده شده است و امکانات زیادی در آن قرار داده شده است.
 
 <!--
-بعد از انتخاب دسکتاپ در پنل کاربری و بعد از اون HiddifyClash، سه گزینه براتون باز می شه 
-در قسمت اول بسته به سیستم عاملتون از بین سه گزینه ویندوز، مک و لینوکس یکی رو انتخاب کنین . دو گزینه دیگه حالت های مختلفی هستن که شما می تونین برای نوع تونل دسکتاپتون انتخاب کنین، «حالت برای همه سایت‌های خارجی»، اگر این گزینه رو انتخاب کنین ترافیک سایت های ایرانی رو از تونل عبور نمی ده و تمام سایت ها و سرور هایی رو که در خارج از ایران قرار داره رو تونل می کنه اما «حالت فقط برای سایت‌های فیلتر شده»، فقط سایت هایی رو از تونل عبور می ده که فیلتر شدن و بنابر این سرعت نتتون بیشتر هست و ترافیکی که روی سرور هست کمتر می شه.
-برای اضافه کردن لینک کافیه روی کزینه مورد نظر خودتون کلیک کنین تا به صورت اتوماتیک وارد نرم افزارتون بشه، در صورتی که می خواین حالت دستی فعال کنین روی علامت QR بارکد کلیک کنید سپس دکمه‌ی «کپی» رو بزنید. بعدش وارد نرم افزار Hiddify clash قسمت پروفایل وارد بشید در قسمت مربوطه لینک کپی شده رو پیست کنین و روی گزینه import بزنین تا کانفیگ ها اضافه بشن
-اگر مایل هستید به جای هیدیفای کلش، از کلش معمولی استفاده کنید، در قسمت پایینی روی نصب کلش معمولی کلیک کنید تا کانفیگ ها به صورت اتوماتیک به نرم افزار کلش شما اضافه بشه
+بعد از انتخاب دسکتاپ در پنل کاربری و بعد از اون HiddifyClash، سه گزینه براتون باز می‌شه 
+در قسمت اول بسته به سیستم عاملتون از بین سه گزینه ویندوز، مک و لینوکس یکی رو انتخاب کنین. دو گزینه دیگه حالت‌های مختلفی هستن که شما می‌تونین برای نوع تونل دسکتاپتون انتخاب کنین، «حالت برای همه سایت‌های خارجی»، اگر این گزینه رو انتخاب کنین ترافیک سایت‌های ایرانی رو از تونل عبور نمی‌ده و تمام سایت‌ها و سرورهایی رو که در خارج از ایران قرار داره رو تونل می‌کنه اما «حالت فقط برای سایت‌های فیلتر شده»، فقط سایت‌هایی رو از تونل عبور می‌ده که فیلتر شدن و بنابراین سرعت نتتون بیشتر هست و ترافیکی که روی سرور هست کمتر می‌شه.
+برای اضافه کردن لینک کافیه روی گزینه مورد نظر خودتون کلیک کنین تا به صورت اتوماتیک وارد نرم‌افزارتون بشه، در صورتی که می‌خواین حالت دستی فعال کنین روی علامت QR بارکد کلیک کنید سپس دکمه‌ی «کپی» رو بزنید. بعدش وارد نرم‌افزار Hiddify clash قسمت پروفایل وارد بشید در قسمت مربوطه لینک کپی شده رو پیست کنین و روی گزینه import بزنین تا کانفیگ‌ها اضافه بشن
+اگر مایل هستید به جای هیدیفای کلش، از کلش معمولی استفاده کنید، در قسمت پایینی روی نصب کلش معمولی کلیک کنید تا کانفیگ‌ها به صورت اتوماتیک به نرم‌افزار کلش شما اضافه بشه
 -->
 
 ## دانلود برنامه 
 * برای این کار در پنل کاربری خود وارد تب `دسکتاپ` شوید و بخش مربوط به HiddifyClash را باز کنید.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/23039970-ace8-48fd-a5f4-e862577a5bf2" />
+<img alt="دانلود هیدیفای‌کلش از پنل کاربری" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-23039970-ace8-48fd-a5f4-e862577a5bf2.webp" />
 </div>
 
 
@@ -27,7 +30,7 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 ## نصب برنامه
 #### ویندوز
-نصب برنامه بسیار ساده است و با چند next به انتها می رسد.
+نصب برنامه بسیار ساده است و با چند next به انتها می‌رسد.
 #### مک
 برای مک نیز باید برنامه را در بخش privacy تایید نمایید.
 #### لینوکس
@@ -37,7 +40,7 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 * برای این کار در پنل کاربری خود وارد تب `دسکتاپ` شوید و بخش مربوط به HiddifyClash را باز کنید.
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/23039970-ace8-48fd-a5f4-e862577a5bf2" />
+<img alt="بخش هیدیفای‌کلش در پنل کاربری" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-23039970-ace8-48fd-a5f4-e862577a5bf2.webp" />
 </div>
 
 
@@ -54,7 +57,7 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3217c5b9-3e18-4bf1-be22-64742e785bbc" />
+<img alt="نصب پروفایل در برنامه" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-3217c5b9-3e18-4bf1-be22-64742e785bbc.webp" />
 </div>
 
 * در بخش شماره ۲ اطلاعات مربوط به پروفایل ایمپورت شده شامل تاریخ انقضا و حجم ترافیک کلی و حجم ترافیک مصرف شده را می‌توان مشاهده کرد.
@@ -62,21 +65,21 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 ## Home
 در این منو می‌توانید با دکمه `Enable anti-censorship` فیلترشکن را روشن یا خاموش کنید.
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/966d10ee-efca-4c33-b15c-cd33fa9f50e1" />
+<img alt="دکمهٔ فعال‌سازی ضدفیلتر" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-966d10ee-efca-4c33-b15c-cd33fa9f50e1.webp" />
 </div>
 
 
 ## Proxy
 در این منو شما می‌توانید نحوه اجرای پروکسی‌ها (کانفیگ‌ها) را مشخص کنید که شامل ۳ بخش اصلی است.
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/10db0fa5-9b7a-4ffc-81af-79d8a6448bca" />
+<img alt="منوی نحوهٔ اجرای پروکسی‌ها" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-10db0fa5-9b7a-4ffc-81af-79d8a6448bca.webp" />
 </div>
 
 
 #### Rule
 این حالت پروکسی‌ها را بر اساس Ruleهای موجود در پروفایل ایمپورت شده اجرا می‌کند که خود شامل چندین بخش است.
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/0ecb441a-4270-415e-a09d-3c419f066e48" />
+<img alt="حالت قانون‌محور پروکسی‌ها" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-0ecb441a-4270-415e-a09d-3c419f066e48.webp" />
 </div>
 
 
@@ -97,7 +100,7 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 این حالت برای انتخاب کانفیگ به صورت دستی است و برای زمانی مفید است که می‌خواهید از یک کانفیگ خاص استفاده نمایید.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/d63a2662-2a02-4141-9a3f-e5befc51aa3b" />
+<img alt="حالت انتخاب دستی کانفیگ" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-d63a2662-2a02-4141-9a3f-e5befc51aa3b.webp" />
 </div>
 
 
@@ -111,13 +114,13 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/8c96c53e-a95c-4af5-bab7-572c0d09c88c" />
+<img alt="حالت مستقیم" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-8c96c53e-a95c-4af5-bab7-572c0d09c88c.webp" />
 </div>
 
 ## Settings
 در این منو تنظیمات کلی نرم‌افزار انجام می‌شود.
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/6ab482c8-41fb-4ad0-b37f-6cd88f9426cb" />
+<img alt="منوی تنظیمات عمومی" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-6ab482c8-41fb-4ad0-b37f-6cd88f9426cb.webp" />
 </div>
 
 
@@ -134,7 +137,7 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 * در بخش ۶ می‌توان پورت نرم‌افزار را که دیفالت آن ۷۸۹۰ است، تعیین نمود.
 * در بخش ۷ می‌توان هسته نرم‌افزار را تعیین کرد که دیفالت آن Clash Meta است.
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/3aedd085-b755-4cbb-a61a-301829b69912" />
+<img alt="انتخاب هستهٔ نرم‌افزار، Clash Meta" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-3aedd085-b755-4cbb-a61a-301829b69912.webp" />
 </div>
 
 
@@ -143,11 +146,11 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 * در بخش ۱۰ نیز ورژن نرم‌افزار قابل مشاهده است.
 
 ## Connections
-در این بخش کانکشن‌هایی که در نرم‌افزار برقرار می‌شود نمایش داده می‌شود. یعنی اگر برنامه ای از فیلترشکن استفاده می‌کند در این بخش نمایش داده می‌شود که این بخش برای عیب‌یابی بسیار مفید است.
+در این بخش کانکشن‌هایی که در نرم‌افزار برقرار می‌شود نمایش داده می‌شود. یعنی اگر برنامه‌ای از فیلترشکن استفاده می‌کند در این بخش نمایش داده می‌شود که این بخش برای عیب‌یابی بسیار مفید است.
 
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/1700bfe0-9a4e-4f4b-ae11-25654d29273b" />
+<img alt="اتصال‌های برقرارشده در نرم‌افزار" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-1700bfe0-9a4e-4f4b-ae11-25654d29273b.webp" />
 </div>
 
 ## Rules
@@ -155,7 +158,7 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/72b8c5e1-fca5-4f0a-bad0-2e4738975f24" />
+<img alt="قانون‌های پروفایل واردشده" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-72b8c5e1-fca5-4f0a-bad0-2e4738975f24.webp" />
 </div>
 
 ## Logs
@@ -164,13 +167,21 @@ title: آموزش کار با نرم‌افزار HiddifyClash برای دسکت
 
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/deed841f-24f9-452f-b9fb-84301437223a" />
+<img alt="صفحهٔ لاگ نرم‌افزار" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-deed841f-24f9-452f-b9fb-84301437223a.webp" />
 </div>
 
 ## گراف ترافیک
 در بخش مشخص شده زیر نیز گرافیک مربوط به ترافیک عبوری از فیلترشکن نمایش داده می‌شود.
 
 <div align=center markdown=1>
-<img width=80% src="https://github.com/hiddify/hiddify-config/assets/125398461/2754c9b1-4072-45d7-8326-c1b86c173686" />
+<img alt="نمودار ترافیک عبوری از ضدفیلتر" width=80% src="/assets/manager/Tutorial-for-HiddifyClashDesktop-software/gh-2754c9b1-4072-45d7-8326-c1b86c173686.webp" />
 </div>
 
+## مقاله‌های مرتبط
+
+- [V2rayNG](/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
+
+</div>

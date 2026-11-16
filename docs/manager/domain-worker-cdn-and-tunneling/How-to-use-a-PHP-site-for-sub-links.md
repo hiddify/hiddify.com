@@ -4,12 +4,15 @@ title: How to use PHP site for sub links
 
 # Create a PHP site to transfer information of subscription links
 
+!!! info "Checked for Hiddify Manager v14.5"
+    The PHP files are unchanged. The panel part (adding the PHP domain as a **Subscription only** domain) is written for v14.5.
+
 ## The purpose of creating a PHP site for subscription links
 HiddifyManager is based on the principle of reducing the possibility of server filtering as much as possible. One of the practical ways in this field is to separate configurations from subscription links. In this case, your client will always receive the latest configuration information through the subscription link. Now suppose the subscription link was not available for any reason, in this case a PHP site can be brought up and used to transfer the subscription link information (and not the config). The schematic for doing this is as follows.
 
 <div align=center markdown=1>
   
-![php site for sub-link](https://github.com/hiddify/hiddify.com/assets/125398461/88db7524-3ccf-40ca-b6f2-ffc351bedf80)
+![The subscription link through a PHP site](/assets/manager/How-to-use-a-PHP-site-for-sub-links/en-sub-php.svg)
 </div>
 
 ## Steps to do the work
@@ -42,7 +45,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
      exit('Access Forbidden - HTTPS is required.');
 }
 
-$server_domain = "https://hiddify-sub-only-domain.com";
+$server_domain = "https://sub.yourdomain.com";
 
 $domain = $_SERVER['HTTP_HOST'];
 $ip = $_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'];
@@ -88,7 +91,7 @@ echo $response;
 ```
 
 Be careful:
-> Replace your subscription domain in the above PHP code.
+> Replace `https://sub.yourdomain.com` with one of **your server's** domains in the panel (for example your subscription-only or CDN domain).
 
 > In the PHP site settings, the PHP version should be 8 or higher.
 
@@ -97,22 +100,47 @@ Be careful:
 
 - Then save the settings.
 - At this point, if you check the ssl settings for your domain in this PHP provider; You will probably notice that it takes some time for the certificate to be assigned.
-- Now to use; Copy the link related to your created domain in this provider and then copy the section after the address from your admin link in the panel and paste it at the end of your PHP link. The panel returns with the PHP address.
-For example, suppose your PHP domain is:
+## Add the PHP address to the panel
 
-https://hello2freeworld.phpsite.com
+The PHP site sends each request to your server with the PHP site's own name (the `Host`), so the panel must know that name:
 
-And the link of your admin panel should be like this:
+1. In the panel, open **Domains** › **Add domain**, type the PHP site's address (for example `hello2freeworld.phpsite.com`) and choose **Subscription only**.
+2. In **Show configs of**, pick the domains whose configs your users should get (your direct or CDN domains).
+3. Finish the wizard and click **Apply now** on the **Actions** page. The panel cannot get a certificate for this name, because it does not point to your server; that is expected: the PHP host has its own certificate.
 
-https://t1.hiddify.com/koZlk3E8P59Ghf8R/ab56bgt8-737c-4fd6-9oe0-6d4fa4bb84c0/admin/
+See [Subscription-only domain](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/#subscription-only-domain).
 
-Your PHP address to reach the panel will be as follows:
+## Use it
 
-https://hello2freeworld.phpsite.com/koZlk3E8P59Ghf8R/ab56bgt8-737c-4fd6-9oe0-6d4fa4bb84c0/admin/
+Take a user's subscription link (or user page link) from the panel and replace the domain with the PHP site's address.
 
-> **Very important note:** if your PHP domain is not yet certified on the provider's site; This address does not open with https and you can open it with http for testing, but be sure to use https to use. So you have to wait for the certificate to be assigned.
+<div align=center markdown=1>
 
-- After performing the above test, register the domain in your HiFi Manager in the Domains section so that the server will get SSL for it and its connection will be completely secure.
+![In the user link only the domain is replaced with the PHP site address](/assets/manager/How-to-use-a-PHP-site-for-sub-links/en-php-link.svg)
 
-- After doing this, you can add this link as a subscription link to your client apps.
-- The work is done. Now you have an address that is connected to your server and is practically unfilterable.
+</div>
+
+For example, if the PHP address is
+
+`https://hello2freeworld.phpsite.com`
+
+and the user's link is
+
+`https://sub.yourdomain.com/<client proxy path>/<user UUID>/`
+
+the link through the PHP site is
+
+`https://hello2freeworld.phpsite.com/<client proxy path>/<user UUID>/`
+
+Open it in a browser to test: you should see the user's page. Then add it to the user's app as their subscription link.
+
+> **Very important note:** if the PHP host has not issued the certificate for your address yet, the address does not open with https. You can test with http, but give users only the https address, so wait for the certificate.
+
+The work is done. Now the users have a subscription address that is not your server's, so it is much harder to filter.
+
+## Related articles
+
+- [Create a subscription link](/manager/domain-worker-cdn-and-tunneling/How-to-create-subscription-link-on-Hiddify/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)

@@ -173,4 +173,11 @@ Your users can link their own Telegram to the bot. To do this, a user opens your
 ![Sending a message to users](/assets/manager/How-to-set-up-and-use-Telegram-bot-on-Hiddify-panel/en-message.webp)
 </div>
 
+## Related articles
+
+- [Telegram proxy](/manager/configuration-and-advanced-settings/How-to-set-up-Telegram-proxy-on-Hiddify/)
+- [Turn on WARP](/manager/configuration-and-advanced-settings/How-to-activate-WARP-on-the-Hiddify-panel/)
+- [Using IPv6](/manager/configuration-and-advanced-settings/IPv6-usage-guide/)
+- [Every part and setting of the panel](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/)
+
 </div>

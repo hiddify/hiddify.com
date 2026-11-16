@@ -16,6 +16,22 @@ Here are some ways of working for this issue.
 
 
 
+## Using the HiddifyManager scanner (easiest) { #panel-scanner }
+Since v14.5 the panel has its own scanner: **Tools** › **Scanner** (or **Open the scanner** under the **Force configs to use these IPs / domains** field of a CDN domain). It needs a CDN domain on the **Domains** page first.
+
+1. Open the panel **on the operator you want IPs for, with the VPN off** (for example on a phone on MCI). The scan runs in your browser, on the internet it is on now.
+2. **Which domain?** Choose the CDN domain (and, if asked, the operator whose users will get the IPs).
+3. **Find IPs That Work:** press **Start**. The panel tests Cloudflare IP ranges from your browser and keeps the fastest. **Scan Settings** sets how many ranges and IPs are tested.
+4. **Add Them to the Domain:** check the list (remove some, or add your own IPs, ranges or domains) and click **Save to the Domain**. The IPs are written into the domain's **Force configs to use these IPs / domains** field for that operator; the other operators keep theirs.
+
+    <img width=760 alt="The panel scanner: Which domain, Find IPs That Work, Add Them to the Domain" src="/assets/manager/Guide-for-finding-a-clean-Cloudflare-IP/en-panel-scanner.webp" style="display:block;margin:0 auto">
+
+5. Click **Apply now** on the **Actions** page. Repeat on each operator (for example a phone on MCI, then one on Irancell).
+
+The scanner has two more tabs: **Fragment** (try TLS fragment presets for a CDN domain) and **REALITY SNI** (find SNIs that work for Reality). If the IPs found still do not connect, **Full test with upload, from another device** gives you a command to run on a phone or computer on that operator: some operators cut a connection after a little upload, which a browser cannot test.
+
+The external scanners below are still useful if you prefer them.
+
 ## Using Bashsiz's scanner
 Mr. Bashsiz is an Iranian engineer who has developed a program called CFScanner, which can be used to test the list of Cloudflare IPs on different networks and reach the clean Cloudflare IPs.
 
@@ -27,14 +43,14 @@ This program has been released in several versions including Linux and Windows. 
 - Golang
 - Android
 
+The project is still maintained (latest Windows release: April 2026). We suggest the **Bash (Linux)**, **Windows** and **Android** versions; the Python and Go versions have open problems on GitHub.
+
 To do this, first download the desired version [here](https://github.com/MortezaBashsiz/CFScanner) and then follow how to run it based on the desired operating system.
 
 
 <details markdown="1"><summary><h3>Run on Linux version</h3> (Click here)</summary>
 
-Download the program files and first see Mr. Bashsiz's explanation of how to run it in the video below (persian).
-
-[![](https://user-images.githubusercontent.com/125398461/229997889-eaf51d2c-e5e1-4899-aa34-6c2c73375f10.png)](https://www.youtube.com/watch?v=BKLRAHolhvM)
+Download the program files.
 
 This program has prerequisites that must be installed in advance.
 [jq](https://stedolan.github.io/jq/)&nbsp;&nbsp;&nbsp;[git](https://git-scm.com/)&nbsp;&nbsp;&nbsp;[tput](https://command-not-found.com/tput)&nbsp;&nbsp;&nbsp;[bc](https://www.gnu.org/software/bc/)&nbsp;&nbsp;&nbsp;[curl](https://curl.se/download.html)&nbsp;&nbsp;&nbsp;
@@ -56,7 +72,7 @@ curl -s https://raw.githubusercontent.com/MortezaBashsiz/CFScanner/main/bash/Cli
 ```
 It is recommended to change the config.real file based on your configuration.
  
-![PICTURE](https://user-images.githubusercontent.com/125398461/234565256-4ebeb511-4876-483a-84c5-cb39d62a12ae.png)
+![PICTURE](/assets/manager/Guide-for-finding-a-clean-Cloudflare-IP/gh-234565256-4ebeb511-4876-483a-84c5-cb39d62a12ae.webp)
 
 
 If you want to have your own configuration file, save it under a different name that will not change when the script is updated.
@@ -68,7 +84,7 @@ Go to the location of the downloaded script file and then run the script as show
 bash cfScanner.sh SUBNET DOWN threads tryCount config.real speed custom.subnets
 ```
 
-![222946688-bcec3d65-7bf1-495a-b1bf-fe517f69f8822](https://user-images.githubusercontent.com/125398461/234751332-e0fa6e6b-5b97-445b-bd50-12c9d603d556.png)
+![222946688-bcec3d65-7bf1-495a-b1bf-fe517f69f8822](/assets/manager/Guide-for-finding-a-clean-Cloudflare-IP/gh-234751332-e0fa6e6b-5b97-445b-bd50-12c9d603d556.webp)
 
 
 For example:
@@ -105,7 +121,7 @@ Put your subdomain instead of `sub.yourdomain.com`. If handshake `succeeded` mes
 
 Set the TLS version to TLS 1.0 and disable the TLS 1.3 option.
 
-![Image](https://user-images.githubusercontent.com/125398461/234774581-c1a07bdb-352f-43cc-97f7-2ce6c87a761d.png)
+![Image](/assets/manager/Guide-for-finding-a-clean-Cloudflare-IP/gh-234774581-c1a07bdb-352f-43cc-97f7-2ce6c87a761d.webp)
 
 * Note: Don't forget to return these options to the first state after testing.
 * Prepare the config template structures for testing.
@@ -372,7 +388,7 @@ Finally, present your configuration according to the examples for the next step 
 
 Now suppose you have completed the prerequisites; All you need is the config file of the sample program or the config file created by yourself, which is in Json format; From the menu `Tools > Add custom v2ray config`, put it in the program so that the scan is done based on it, otherwise the program will scan with the default configuration.
 
-![App](https://user-images.githubusercontent.com/125398461/234803794-7c7f5bb9-0967-4f1b-b519-9db266b7a0e7.png)
+![App](/assets/manager/Guide-for-finding-a-clean-Cloudflare-IP/gh-234803794-7c7f5bb9-0967-4f1b-b519-9db266b7a0e7.webp)
 
 1. From `Tools > Add custom v2ray config`, you can give the desired file according to the described pattern to the software so that the scan can be done based on it.
 
@@ -391,169 +407,24 @@ Now suppose you have completed the prerequisites; All you need is the config fil
 </details>
 
 
-## Using Vahid Farid's scanner
-This program has been prepared in different versions based on different platforms that you can use according to your needs.
-
-Versions available until the date of editing this article:
-* Mac
-* Windows
-* Android
-* Web
-  
-<details markdown="1"><summary><h3>Prerequisites</h3></summary>
-	
-- First, [download Python](https://www.python.org/downloads/) according to your operating system.
-- Download the compressed file of the code [here](https://github.com/vfarid/cf-ip-scanner-py) and then extract it.
-- Now you need to install requests.
-
-```
-pip install requests
-```
-
-</details>
-
-<details markdown="1"><summary><h3>Run the program</h3></summary>
-	
-- Open the terminal program to run in the extracted folder. That is, for example, in Windows, enter the program folder and `Shift+Right click` and then click `Open in Command Prompt` to enter the terminal from that folder. 
-
-- Now type the following command to run the program.
-
-```
-python start.py
-```
-- At first, you enter the required IP number.
-- In the next step, enter the maximum delay you want in milliseconds. For example, 500 means 500 milliseconds
-- You can choose the range you want to scan. Use comma to select multiple ranges and use `-` to ignore one range.
-- You can exclude multiple sufferings from the search. Use comma to select multiple ranges and use `-` to ignore one range.
-- In the next step, you can specify the size of the packets sent for scanning in kilobytes. The higher the volume, the higher the scanning accuracy, but on the other hand, the volume of traffic also increases.
-- Set the download speed according to your needs so that it finds the IPs whose download speed is higher than this value. Enter the speed in Mbps.
-- In the next step, set the upload speed according to your needs so that it finds the IPs whose upload speed is higher than this value. Enter this value in Mbps.
-- In the next step, if needed, you can enter the scanned results directly into Cloudflare or ignore it until the scan starts.
-- If you have typed `y` in the answer to the previous step, you must enter the email connected to your Cloudflare account here.
-     Then copy the `Zone ID` in the next step. To find the `Zone ID`, enter the domain settings in your account, then find and copy the `Zone ID` as shown in the image below.
-
-![Image](https://user-images.githubusercontent.com/125398461/235452066-9be0f0d9-e314-47cc-9565-4e05158b9d00.png)
-
-- In this step, you need to give your global token to the software. For this, click on `Get your API token` on the main page of the dashboard.
-
-![Image](https://user-images.githubusercontent.com/125398461/235454090-7a23c21a-fd1a-4fe8-9eb9-d9343402929b.png)
-
-- Then, on the tokens page in `Global API Key`, select the `View` option.
-
-![Image](https://user-images.githubusercontent.com/125398461/235454894-4e8bad4d-6561-4dec-9d5a-859ef0f64932.png)
-
-- Here it will ask you for your account password and then display your token.
-
-![Image](https://user-images.githubusercontent.com/125398461/235455122-9d39781e-bb9b-4abb-8c77-a4b68a07f048.png)
-
-- Copy this token into the software.
-- Then give the desired subdomain to register these IPs on your domain. For example, `cf.yourdomain.com`
-- After that, the scanner will start scanning and at the end, the IPs will be displayed to you based on the given specifications. Also, if you have completed the IP registration section in Cloudflare, these IPs will also be registered in Cloudflare on the desired subdomain. That is, you will have subdomains in Cloudflare that are automatically registered with the name `cf.yourdomain.com` and with the IPs found by the scanner with the proxy turned off.
-
-</details>
-
-
-
-## Using Safa Safarian's scanner
-This scanner has been developed in several versions that you can use according to your needs.
-
-Versions available until the date of editing this article:
-- Windows
-- Mac
-- Android
-
-<details markdown="1"><summary><h3>Script installation</h3></summary>
-
-<details markdown="1"><summary><h4>Windows</h4></summary>
-	
-* First, download Python from [this link](https://www.python.org/downloads/windows/).
-* When installing Python, don't forget to check pip installation and add Python to PATH.
-* Download the [original compressed scanner](https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/heads/main.zip) file and extract it.
-* Open a `Command Prompt` terminal in the extracted path. That is, enter the extracted path. Press `Shift+Right click` to open terminal.
-* Use the following command to install the prerequisites.
-
-```
-pip install -r ./requirements.txt
-```
-
-- After installing the prerequisites, the work is finished and it is time to run the program.
-
-</details>
-
-<details markdown="1"><summary><h4>Android</h4></summary>
-
-- To install on the Android operating system, you need a program called Termux, which you can download [here](https://github.com/termux/termux-app/releases/).
-- Here you will come across several apk files from which you should select one based on your device type. If you do not know the type of your Android device, download and install armeabi-v7a version.
-- Next, by opening the Termux program, the command line will be shown to you, enter the following commands in order.
-- In the installation process, answer all the questions with `y`.
-
-```
-pkg update -y; pkg install -y python python-pip openssl python-cryptography
-```
-
-- Then run the following command.
-
-
-```
-curl -sLo main.zip https://github.com/SafaSafari/ss-cloud-scanner/archive/refs/heads/main.zip && unzip -qq main.zip && rm main.zip
-```
-
-- After that enter the program folder and install the prerequisites.
-
-
-```
-cd ss-cloud-scanner-main
-pip install -r ./requirements.txt
-```
-
-- After installing the prerequisites, the work is finished and it is time to run the program.
-
-</details>
-
-</details>
-
-
-
-<details markdown="1"><summary><h3>Run the script</h3></summary>
-
-- With the following command, the program starts.
-
-
-python main.py
-
-
-* As soon as it runs, the program will ask you for the number of required IPs.
-* In the next step, the type of scan can be specified.
-* Then it will ask you to scan with `https` or `http`.
-* And then it starts scanning and after some time healthy IPs (if any) will appear on the screen.
-* If type 2 is selected, it will ask you for the `uuid`, `domain`, `port`, and `path` of the proxy used, and as soon as you enter them in the desired places, the scanning operation will begin. Thus mode 2 will scan with your config settings.
-
-**Speed mode**
-
-This type of scanning uses an alternative worker due to the whitelist of SNI in Iran, which greatly increases the efficiency of this scanning model.
-
-**Vmess mode**
-This scanning model practically simulates a proxy connection by creating a Vmess packet and sending it to the server with Websocket. Alternative scanners do this using V2ray or Xray kernels, but this scanner does this purely with Python. has implemented
-
-[Refrence](https://github.com/SafaSafari/ss-cloud-scanner)
-
-</details>
-
-
-
-
-
-
+!!! info "Older scanners"
+    The scanners by Vahid Farid (cf-ip-scanner-py) and Safa Safarian (ss-cloud-scanner) that used to be on this page have not been updated since 2024 and are no longer maintained, so they were taken out of this guide. Use the [panel scanner](#panel-scanner) or CFScanner instead.
 
 ## What to do after finding a clean IP?
-After finding a clean IP; You can register it with a DNS record without . That is, create a subdomain on Cloudflare. Turn off the proxy and enter the IP.
+If you used the panel's scanner, the IPs are already saved in your CDN domain. For IPs from other scanners:
 
-![PICTURE](https://user-images.githubusercontent.com/125398461/234565984-a2560018-7106-421f-850d-fb9db5687b26.png)
+- Put them straight into the CDN domain's **Force configs to use these IPs / domains** field (**Domains** › pencil › **Advanced**), one per line, optionally with the operator's code after each one (for example `1.1.1.1 MCI`); or
+- Better: create a DNS record on Cloudflare with the **proxy off** that points to the clean IP (for example `mci.yourdomain.com`), and put that name in the field. When you need a new clean IP later, you only change the DNS record.
 
-If you need more information about the domain, [click here](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/).
+<img width=560 alt="An mci record with the proxy off (DNS only) pointing to the clean IP" src="/assets/manager/Guide-for-finding-a-clean-Cloudflare-IP/cf-dns-clean-ip.webp" style="display:block;margin:0 auto">
 
+More: [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/), [CDN domain](/manager/configuration-and-advanced-settings/How-to-configure-Hiddify-panel-properly/#cdn-domain) and [How to use AutoCDN IP domain](/manager/domain-worker-cdn-and-tunneling/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify/) (the format per operator).
 
+## Related articles
 
-Then in the HiddifyManager, you can put it in the CDN domain settings in the `Force to use host field in the CDN configuration`. [More details](/manager/wiki/How-to-configure-Hiddify-Panel-properly#cdn-domain)
+- [Use your own clean IPs](/manager/domain-worker-cdn-and-tunneling/How-to-use-desired-clean-IPs-based-on-a-specific-format/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [Wildcard subdomains](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
 
-![Screenshot_20230427_0656192](https://user-images.githubusercontent.com/125398461/234752684-280b90e8-0b00-4106-b744-b06117821b0f.png)
+</div>

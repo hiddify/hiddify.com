@@ -6,6 +6,9 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 
 # آموزش کار با نرم‌افزار HiddifyNG
 
+!!! warning "HiddifyNG دیگر توسعه داده نمی‌شود"
+    HiddifyNG یکی از اپ‌های قدیمی هیدیفای است. دیگر توسعه داده نمی‌شود و به‌روز نمی‌شود، و ممکن است پروتکل‌ها و قابلیت‌های جدید هیدیفای‌منیجر در آن کار نکنند. [اپ هیدیفای](/fa/app/) جای آن را گرفته و روی اندروید، iOS، ویندوز، مک و لینوکس کار می‌کند: [نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/) را ببینید. این صفحه برای کسانی نگه داشته شده که هنوز از HiddifyNG استفاده می‌کنند.
+
 این اپ بهترین نرم‌افزار برای اتصال به پروتکل‌های Xray در سیستم عامل اندروید است.
 
 ## دانلود و نصب نرم‌افزار
@@ -13,7 +16,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7cf32479-99d4-4a16-90e9-d3bf0998866d" />
+<img alt="بخش هیدیفای‌ان‌جی در پنل کاربری" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-7cf32479-99d4-4a16-90e9-d3bf0998866d.webp" />
 </div>
 
 
@@ -25,7 +28,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 برای این کار در همان بخش مربوط به برنامه `HiddifyNG` روی `کلیک برای افزودن کانفیک` بزنید تا کانفیگ به برنامه اضافه گردد.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/7bbdb8e3-2520-4764-9a27-b53f67c7cd49" />
+<img alt="گزینهٔ Click to Import در پنل کاربری" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-7bbdb8e3-2520-4764-9a27-b53f67c7cd49.webp" />
 </div>
 
 
@@ -35,7 +38,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 ### بخش پروفایل
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/f1562df9-d0bf-4535-b77e-4965ec64e6d6" />
+<img alt="بخش پروفایل برنامه" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-f1562df9-d0bf-4535-b77e-4965ec64e6d6.webp" />
 </div>
 
 
@@ -55,7 +58,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 امکان استفاده از لینک کپی شده یا اسکن `QR code` آن برای شما فراهم می‌شود.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/52642cc0-6580-4533-89f7-fd66a8428fe0" />
+<img alt="لینک اشتراک و کد QR آن" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-52642cc0-6580-4533-89f7-fd66a8428fe0.webp" />
 </div>
 
 
@@ -64,7 +67,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 برای این کار روی دکمه اتصال وسط صفحه بزنید.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/f6ee8a9e-5d58-4767-8eb7-2fb27464809a" />
+<img alt="دکمهٔ اتصال" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-f6ee8a9e-5d58-4767-8eb7-2fb27464809a.webp" />
 </div>
 
 
@@ -76,7 +79,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 در اینجا تک تک کانفیگ‌هایی که با استفاده از لینک سابسکریپشن اضافه شده بودند، نماش داده می‌شوند.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/403c60c9-b53f-4d35-a26b-b49bb61e1493" />
+<img alt="کانفیگ‌های اضافه‌شده با لینک اشتراک" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-403c60c9-b53f-4d35-a26b-b49bb61e1493.webp" />
 </div>
 
 
@@ -95,7 +98,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/3ed0c6ec-31f2-46b0-9a11-bbe57eff02b3" />
+<img alt="گزینه‌های منوی کانفیگ" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-3ed0c6ec-31f2-46b0-9a11-bbe57eff02b3.webp" />
 </div>
 
 
@@ -106,7 +109,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 #### حذف تمام پیکربندی‌ها
 این منوی برای حذف کل فایل کانفیگ‌ها از برنامه می‌باشد.
 #### حذف کانفیگ‌های تکراری
-بعضی وقت‌ها نیاز دارید به دلیل تعدد کانفیگ‌ها یک مرتب سازی صورت بگیرد و کانفیگ‌هایی که تکراری ایمپورت شده‌اند، از برنامه حذف شوند. برای این کار از این گزینه استفاده کنید.
+بعضی وقت‌ها نیاز دارید به دلیل تعدد کانفیگ‌ها یک مرتب‌سازی صورت بگیرد و کانفیگ‌هایی که تکراری ایمپورت شده‌اند، از برنامه حذف شوند. برای این کار از این گزینه استفاده کنید.
 #### حذف تنظیمات نامعتبر پس از آزمایش
 بعضی وقت‌ها کانفیگ‌ها را دست کاری می‌کنید تا با تغییر پارامترها نتیجه بهتری بگیرید. در صورتی که نیاز داشته باشید کانفیگ‌هایی که تنظیم نامعتبر دارند را حذف نمایید، از این گزینه استفاده کنید.
 #### تاخیر واقعی همه پیکربندی‌ها
@@ -122,7 +125,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 ## منوی پیشرفته
 در این صفحه تنظیمات پیشرفته قرار دارد که در ادامه به آن‌ها اشاره خواهد شد.
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/14681ce8-8d61-4b14-9798-7d1e9318f849" />
+<img alt="صفحهٔ تنظیمات پیشرفته" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-14681ce8-8d61-4b14-9798-7d1e9318f849.webp" />
 </div>
 
 
@@ -142,12 +145,12 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 سایت‌های فیلتر شناسایی شده را از فیلترشکن عبور می‌دهد.
 
 #### جز فیلتر نشده
-علاوه بر سایت‌های فیلتر شناسایی شده، سایت‌هایی را هم که وضعیت فیلترشدن یا نشدنشان نا معلوم است، از فیلترشکن عبور می‌دهد.
+علاوه بر سایت‌های فیلتر شناسایی شده، سایت‌هایی را هم که وضعیت فیلترشدن یا نشدنشان نامعلوم است، از فیلترشکن عبور می‌دهد.
 
 
 
 ### فرگمنت
-فرگمنت بسته‌های ارسالی را تکه تکه میکنه. اینطوری SNI از دید سیستم فیلترینگ مخفی میشه و فیلترینگ دور زده می‌شود. [اطلاعات بیشتر](/manager/wiki/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D9%81%D8%B1%DA%AF%D9%85%D9%86%D8%AA)
+فرگمنت بسته‌های ارسالی را تکه تکه میکنه. اینطوری SNI از دید سیستم فیلترینگ مخفی میشه و فیلترینگ دور زده می‌شود. [اطلاعات بیشتر](/fa/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/)
 
 تنظیمات این بخش نحوه انتقال اطلاعات را در قالب بسته‌های تکه تکه شده تعیین می‌کند. هدف از اعمال این تنظیمات ایجاد مقاومت در برابر سیستم فیلترینگ است.
 
@@ -177,7 +180,7 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 در این بخش چندین تنظیم کلی وجود دارد که کاربردی‌ترین قسمت‌ها این‌ها هستند.
 
 <div align=center markdown=1>
-<img width=30% src="https://github.com/hiddify/hiddify-config/assets/125398461/2a70aeda-7188-4bf2-9f2a-94239a3f7dab" />
+<img alt="بخش تنظیمات عمومی" width=30% src="/assets/manager/Tutorial-for-HiddifyNG-app/gh-2a70aeda-7188-4bf2-9f2a-94239a3f7dab.webp" />
 </div>
 
 ### تنظیمات گروهی اشتراک
@@ -188,3 +191,12 @@ title: آموزش کار با نرم‌افزار HiddifyNG
 در صورت نیاز به فایل لاگ جهت عیب‌یابی از این گزینه استفاده کنید.
 ### گزارش ایراد
 در صورت نیاز به گزارش کردن باگ‌ها و اشکالات از این منو استفاده کنید.
+
+## مقاله‌های مرتبط
+
+- [V2rayNG](/fa/manager/client-software-on-android/Tutorial-for-V2rayNG-app/)
+- [NekoBox](/fa/manager/client-software-on-android/Tutorial-for-Nekobox-app/)
+- [sing-box](/fa/manager/client-software-on-ios/Tutorial-for-SingBox-app/)
+- [Streisand](/fa/manager/client-software-on-ios/Tutorial-for-Streisand/)
+
+</div>

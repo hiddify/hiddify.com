@@ -83,4 +83,11 @@ If a service you need stops working after this, use option 4 to see the rules an
 
 Reply to your provider's abuse email, explain what you changed, and ask which traffic caused the report. Also make sure your server itself is secure: [turn off SSH password login](/manager/basic-concepts-and-troubleshooting/Disable-SSH-Password-Authentication/), because a hacked server is another common cause of abuse reports.
 
+## Related articles
+
+- [Connection problems](/manager/basic-concepts-and-troubleshooting/Troubleshooting-connectivity-issues-with-HiddifyManager-and-proxies/)
+- [Is the server's IP or domain clean?](/manager/basic-concepts-and-troubleshooting/How-to-make-sure-the-server's-IP-or-domain-is-clean/)
+- [DNS leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-DNS-leaks/)
+- [Time zone leaks](/manager/basic-concepts-and-troubleshooting/How-to-check-and-prevent-TimeZone-leaks/)
+
 </div>

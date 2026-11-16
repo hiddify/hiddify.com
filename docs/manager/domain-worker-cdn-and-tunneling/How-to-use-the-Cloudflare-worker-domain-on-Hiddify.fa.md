@@ -61,4 +61,11 @@ description: حالت «ورکر کلادفلر» در پنل جدید هیدی�
 !!! note "محدودیت پلن رایگان"
     ورکر در پلن رایگان کلادفلر روزانه ۱۰۰ هزار درخواست را پردازش می‌کند. برای سرورهایی با کاربران زیاد این مقدار کافی نیست.
 
+## مقاله‌های مرتبط
+
+- [ساخت ورکر به روش دستی](/fa/manager/domain-worker-cdn-and-tunneling/How-to-set-up-and-use-Cloudflare-workers/)
+- [انواع دامنه و ثبت آن‌ها](/fa/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [دامنهٔ فیک](/fa/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)
+- [زیردامنه‌های متغیر (wildcard)](/fa/manager/domain-worker-cdn-and-tunneling/Tutorial-for-using-wildcard-subdomains-on-Hiddify/)
+
 </div>

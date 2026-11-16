@@ -1,48 +1,50 @@
 ---
-Title: Using Main Servers' IPV6 for Tunnel Resilience
+title: Using Main Servers' IPV6 for Tunnel Resilience
 ---
 
-### Using Main Servers' IPV6 for Tunnel Resilience
+# Using the servers' IPv6 for a steadier tunnel
 
-Using Tunnel with IPv6 for bypassing filtering systems and creating a stable connection has become an effective and popular method. This approach provides high flexibility, especially for relay servers and main servers, and can improve connection quality.
+!!! info "Checked for Hiddify Manager v14.5"
+    The relay server is built with [Hiddify Relay Builder](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/); the HiddifyManager part is for v14.5.
 
----
+Running the tunnel between the relay server (usually in Iran) and the main server over IPv6 has become an effective way to get a steadier connection: IPv6 routes are often disrupted less than IPv4 ones.
 
-### Tunnel Method with IPV6
+<img width=760 alt="Users connect to the relay server in Iran, which passes the traffic to the main server" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-diagram.webp" style="display:block;margin:0 auto">
 
-Using IPV6 can be done in two different ways for connecting between relay servers and main servers:
+## Two ways to use IPv6
 
-1. **Creating a local IPV6 on two relay and main servers** and connecting the main server IPV6 to the relay server network.
-   
-2. **Using the main server's IPV6 on both relay and main servers** and connecting the main server IPV6 to the Iran network. This method requires that both relay servers have IPV6 enabled on their network cards, which can be verified with the `ip a` command in the server's terminal.
+1. **A local IPv6 on both servers:** you create a private IPv6 network between the relay and the main server, and the tunnel uses it. See [Tutorial for setting up local IPv6 for the relay server](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/).
+2. **The main server's real IPv6:** the tunnel connects to the main server's own IPv6 address. Both servers need IPv6 on their network card; check it with `ip a` on each server (look for an `inet6` address that is not `fe80::…`).
 
-**Note:** The best methods for these two approaches are **Gost** and **Decodemodoor**, which have been practically tested.
+**Note:** in practice, the **GOST** and **Dokodemo-Door** methods work best for both ways.
 
----
+## Steps
 
-### How to Perform the Process
+1. Install **Hiddify Relay Builder** on the relay server, as described in [its guide](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/). When the install finishes, its menu opens.
 
-It doesn’t matter which method you use, for optimal performance, you need to use the relay server mid-scripter on Hiddify Manager.
+    ![Relay Builder menu](/assets/manager/How-to-setup-relay-server-using-Hiddify-Relay-Builder/gh-713801f1-01fb-4bc7-83ca-e1294fa1b149.webp)
 
-1. **Review the related mid-scripter article for Hiddify** for installation instructions on the relay server.
-   
-2. Execute the script installation command, and after installation is complete, the mid-scripter environment will be displayed for you.
+2. Choose **GOST** or **Dokodemo-Door**.
+3. Choose the first option of that method, then **add inbounds**, and enter the main server's IPv6 (or the local IPv6) in the format the menu asks for.
+4. Enter a port of your choice.
+5. **Add the relay to the panel.** Register a subdomain with the proxy off (DNS only) that points to the relay server's **IPv4**. In the panel, open **Domains** › **Add domain**, type the subdomain, choose **Relay** in **How is it set up?** and finish the wizard. Then add the relay domain to **Show configs of** of your subscription domain. Step by step: [How to add a relay server (domain) to HiddifyManager](/manager/domain-worker-cdn-and-tunneling/How-to-add-relay-domain-to-Hiddify-manager/).
 
-![Mid-Scripter Interface](https://github.com/hiddify/hiddify.com/assets/125398461/713801f1-01fb-4bc7-83ca-e1294fa1b149)
+    In **Add domain**, choose **Relay** (1):
 
-This interface contains various tunnel methods and related script settings. Choose either **Gost** or **Decodemodoor**.
+    <img width=520 alt="Add a domain: the Relay mode" src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/en-relay-mode.webp" style="display:block;margin:0 auto">
 
-3. Select the first option based on your chosen method, then choose **add inbounds** and enter the main server’s IPV6 or local IPV6 in the correct format.
+## Suggested proxies
 
-4. After entering the IPV6, proceed to select a port and enter a desired port.
+For this kind of relay, these proxies work well. They are in **Proxy Editor** › **Proxies**:
 
-5. Done! Now, log into Hiddify Manager, select the relay option from the domains section, enter Cloudflare, and create a record A with your desired domain and IPV4 server in Iran. Input the subdomain address in the relay domain section and save it.
+- `tcp relay vmess`
+- `httpupgrade relay vmess`
 
----
+They can help keep the connection stable, especially when filtering is heavy.
 
-### Suggested Proxies
+## Related articles
 
-- http tcp relay vmess
-- http httpupgrade relay vmess
-
-These methods can help create a stable and secure connection, especially in filtering conditions.
+- [Local IPv6 for the relay server](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-local-IPv6/)
+- [4to6 tunnel](/manager/domain-worker-cdn-and-tunneling/Setup-ip4toip6-tunnel/)
+- [Domain types and how to add them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
+- [Fake domain](/manager/domain-worker-cdn-and-tunneling/How-to-create-and-use-fake-domain/)

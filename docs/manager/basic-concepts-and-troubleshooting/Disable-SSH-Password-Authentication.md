@@ -114,4 +114,11 @@ If you closed every window, use your provider's web console to run the same comm
 - [Turn on the HiddifyManager firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/) so only the ports you use are open.
 - Keep your server updated.
 
+## Related articles
+
+- [Firewall](/manager/basic-concepts-and-troubleshooting/How-to-setup-Firewall-on-Hiddify-panel/)
+- [Change the SSH port](/manager/basic-concepts-and-troubleshooting/How-to-change-SSH-port-on-your-server/)
+- [TLS settings for more security](/manager/basic-concepts-and-troubleshooting/TLS-setting-for-increased-security/)
+- [Set the server's DNS](/manager/basic-concepts-and-troubleshooting/How-to-set-DNS-server/)
+
 </div>

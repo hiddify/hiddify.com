@@ -21,7 +21,7 @@ Windows 10 and 11 usually include SSH already. If the `ssh` command is not found
 
 1. Right-click **PowerShell** and choose **Run as Administrator**.
 
-    ![Opening PowerShell as administrator](https://user-images.githubusercontent.com/114227601/222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.png)
+    ![Opening PowerShell as administrator](/assets/manager/How-to-connect-and-troubleshoot-via-SSH/gh-222904592-cd26b3bf-a014-4253-9488-ee9717f006fe.webp)
 
 2. Run this command:
 
@@ -31,7 +31,7 @@ Windows 10 and 11 usually include SSH already. If the `ssh` command is not found
 
 3. You should see a result like this:
 
-    ![Result of installing OpenSSH](https://user-images.githubusercontent.com/114227601/222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.png)
+    ![Result of installing OpenSSH](/assets/manager/How-to-transfer-files-between-a-server-and-a-computer/gh-222904870-e709f69e-1a8d-4a6d-ad6a-3d7bdcd917c3.webp)
 
 SSH is now installed.
 
@@ -92,5 +92,12 @@ hiddify admin
 ```
 
 To install Hiddify Manager, follow the [main installation guide](/manager/installation-and-setup/guide/).
+
+## Related articles
+
+- [Installation prerequisites](/manager/installation-and-setup/Installation-prerequisites/)
+- [Main installation guide](/manager/installation-and-setup/guide/)
+- [Add a domain and finish the installation](/manager/installation-and-setup/Guide-for-setting-up-the-domain-and-finalizing-the-installation/)
+- [Install a specific version](/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/)
 
 </div>

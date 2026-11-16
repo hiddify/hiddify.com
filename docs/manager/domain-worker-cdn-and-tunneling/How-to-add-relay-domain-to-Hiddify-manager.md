@@ -79,9 +79,16 @@ Now open a user's page using the subscription domain. You will see configs that 
 
     Showing the relay configs on the subscription domain:
 
-    <img src="https://github.com/hiddify/hiddify.com/assets/125398461/3661045d-ced7-4694-916f-6ef160c63230" alt="Selecting the relay domain in the subscription domain settings, older panel version">
+    <img src="/assets/manager/How-to-add-relay-domain-to-Hiddify-manager/gh-3661045d-ced7-4694-916f-6ef160c63230.webp" alt="Selecting the relay domain in the subscription domain settings, older panel version">
 
 ## Related pages
 
 - [Domain types and how to register them](/manager/domain-worker-cdn-and-tunneling/Domain-types-and-how-to-register-them/)
 - [Using IPv6 to make the relay connection more stable](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IPv6-to-improve-Relay-stability/)
+
+## Related articles
+
+- [How to setup relay server using Hiddify Relay Builder (all in one app)](/manager/domain-worker-cdn-and-tunneling/How-to-setup-relay-server-using-Hiddify-Relay-Builder/)
+- [Tutorial for setting up IP-Table tunnel as relay server](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-IP-Tables-tunnel-as-relay-server/)
+- [Tutorial for setting up GOST tunnel as relay server](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-GOST-tunnel-as-relay-server/)
+- [Tutorial for setting up WST tunnel as relay server](/manager/domain-worker-cdn-and-tunneling/Tutorial-for-setting-up-WST-tunnel-as-relay-server/)
