@@ -1,0 +1,174 @@
+{#-
+  "Page not found" (user 2026-11-17: elegant, fancy, like the best sites in the world).
+  GitHub Pages serves this one file for every missing address, in both languages, so the text is
+  chosen in the browser: addresses under /fa/ get Persian (right to left), the rest English.
+  "Did you mean" matches the missing address against assets/404-index.json (hooks/notfound_index.py).
+-#}
+{% extends "main.html" %}
+
+{% block site_nav %}{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  <style>
+    .md-main__inner{margin-top:0}
+    .md-content__inner{margin:0 auto;padding-top:0}
+    .md-content__inner>h1:first-child{display:none}
+    .md-content__button,.md-source-file{display:none}
+    .nf{--b1:#455fe9;--b2:#8b5cf6;--b3:#14b8a6;--card:rgba(255,255,255,.72);--line:rgba(69,95,233,.16);--mut:#5b6380;--tx:#141a33;
+      position:relative;isolation:isolate;max-width:1000px;margin:0 auto;padding:3.2rem 1rem 4rem;text-align:center;color:var(--tx)}
+    [data-md-color-scheme=slate] .nf{--card:rgba(22,27,48,.62);--line:rgba(142,162,255,.18);--mut:#a3abc9;--tx:#eef1ff;--b1:#7b8cff;--b2:#a78bfa;--b3:#2dd4bf}
+    .nf [hidden]{display:none!important}
+    .nf-sky{position:absolute;inset:-2rem -20vw 0;z-index:-1;pointer-events:none;overflow:hidden}
+    .nf-sky i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.33;animation:nfdrift 16s ease-in-out infinite alternate}
+    .nf-sky i:nth-child(1){width:420px;height:420px;background:var(--b1);top:-60px;left:calc(50% - 460px)}
+    .nf-sky i:nth-child(2){width:380px;height:380px;background:var(--b2);top:40px;left:calc(50% + 60px);animation-delay:-5s}
+    .nf-sky i:nth-child(3){width:300px;height:300px;background:var(--b3);top:300px;left:calc(50% - 160px);opacity:.22;animation-delay:-10s}
+    [data-md-color-scheme=default] .nf-sky i{opacity:.16}
+    @keyframes nfdrift{to{transform:translate(40px,30px) scale(1.08)}}
+
+    /* the big 404: the zero is a turning ring around the Hiddify mark */
+    .nf-code{display:flex;align-items:center;justify-content:center;gap:clamp(.4rem,2vw,1.2rem);direction:ltr;user-select:none;
+      font-size:clamp(6rem,19vw,12.5rem);font-weight:900;line-height:1;letter-spacing:-.04em}
+    .nf-code b{background:linear-gradient(160deg,var(--tx) 10%,var(--b1) 60%,var(--b2));-webkit-background-clip:text;background-clip:text;color:transparent;
+      animation:nfin .9s cubic-bezier(.2,.8,.2,1) both}
+    .nf-code b:last-child{animation-delay:.12s}
+    .nf-zero{position:relative;width:.72em;height:.92em;border-radius:50%;display:grid;place-items:center;animation:nfin .9s .06s cubic-bezier(.2,.8,.2,1) both}
+    .nf-zero::before{content:"";position:absolute;inset:0;border-radius:50%;padding:.07em;
+      background:conic-gradient(from var(--nfa),var(--b1),var(--b2),var(--b3),var(--b1));
+      -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:nfspin 6s linear infinite}
+    .nf-zero::after{content:"";position:absolute;inset:18%;border-radius:50%;background:radial-gradient(closest-side,rgba(123,140,255,.45),transparent);filter:blur(10px);animation:nfbreath 3.2s ease-in-out infinite alternate}
+    .nf-zero span{position:relative;z-index:1;width:.34em;height:.34em;border-radius:28%;display:grid;place-items:center;
+      background:linear-gradient(135deg,#455fe9,#6d4ad8);box-shadow:0 .06em .18em -.04em rgba(69,95,233,.7);animation:nffloat 4s ease-in-out infinite alternate}
+    .nf-zero img{width:62%;height:62%}
+    @property --nfa{syntax:"<angle>";inherits:false;initial-value:0deg}
+    @keyframes nfspin{to{--nfa:360deg}}
+    @keyframes nfbreath{from{opacity:.55;transform:scale(.9)}to{opacity:1;transform:scale(1.1)}}
+    @keyframes nffloat{from{transform:translateY(-.03em) rotate(-4deg)}to{transform:translateY(.03em) rotate(4deg)}}
+    @keyframes nfin{from{opacity:0;transform:translateY(.15em) scale(.96)}}
+
+    .nf h1.nf-t{margin:1.4rem 0 .5rem;font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:900;color:var(--tx);letter-spacing:-.01em;text-wrap:balance}
+    .nf-sub{margin:0 auto;max-width:34em;color:var(--mut);font-size:1.05rem;line-height:1.8;text-wrap:balance}
+    .nf-path{display:inline-flex;align-items:center;gap:.45rem;max-width:100%;margin:1.1rem auto 0;padding:.35rem .85rem;border-radius:999px;direction:ltr;
+      font:600 .78rem/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--mut);background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+    .nf-path svg{width:16px;height:16px;fill:#f43f5e;flex:none}.nf-path span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+    /* search */
+    .nf-search{display:flex;align-items:center;gap:.5rem;max-width:560px;margin:2rem auto 0;padding:.4rem .4rem .4rem 1rem;border-radius:999px;
+      background:var(--card);box-shadow:inset 0 0 0 1px var(--line),0 20px 50px -30px rgba(69,95,233,.6);backdrop-filter:blur(12px);transition:box-shadow .25s}
+    .nf-search:focus-within{box-shadow:inset 0 0 0 1.5px var(--b1),0 0 0 5px rgba(69,95,233,.14),0 20px 50px -30px rgba(69,95,233,.7)}
+    .nf-search>svg{width:22px;height:22px;fill:var(--mut);flex:none}
+    .nf-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--tx);font:inherit;font-size:1rem;padding:.45rem 0}
+    .nf-search button{border:0;cursor:pointer;padding:.6rem 1.2rem;border-radius:999px;font:inherit;font-weight:800;font-size:.9rem;color:#fff;
+      background:linear-gradient(135deg,#455fe9,#6d4ad8);box-shadow:0 8px 20px -8px rgba(69,95,233,.8);transition:transform .2s}
+    .nf-search button:hover{transform:translateY(-1px)}
+
+    /* did you mean */
+    .nf-h{margin:2.6rem 0 .9rem;font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--b1)}
+    .nf-sug{display:grid;gap:.6rem;max-width:640px;margin:0 auto}
+    .nf-sug a{display:flex;align-items:center;gap:.8rem;padding:.8rem 1rem;border-radius:16px;text-align:start;color:var(--tx);
+      background:var(--card);box-shadow:inset 0 0 0 1px var(--line);transition:transform .2s,box-shadow .2s;animation:nfin .6s both}
+    .nf-sug a:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--b1),0 14px 30px -18px rgba(69,95,233,.7)}
+    .nf-sug svg{width:20px;height:20px;fill:var(--b1);flex:none}
+    .nf-sug b{display:block;font-weight:700;font-size:.95rem}.nf-sug small{display:block;color:var(--mut);font-size:.74rem;direction:ltr;text-align:start}
+    .nf[dir=rtl] .nf-sug small{text-align:right}
+    .nf-sug .go{margin-inline-start:auto;opacity:.5}
+
+    /* ways back */
+    .nf-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem;margin:0 auto}
+    .nf-grid a{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding:1.2rem .6rem 1.1rem;border-radius:20px;color:var(--tx);
+      background:var(--card);box-shadow:inset 0 0 0 1px var(--line);transition:transform .25s,box-shadow .25s}
+    .nf-grid a:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--b1),0 22px 40px -24px rgba(69,95,233,.8)}
+    .nf-grid i{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--c)}
+    .nf-grid i svg{width:24px;height:24px;fill:#fff}
+    .nf-grid b{font-size:.92rem;font-weight:800}.nf-grid small{color:var(--mut);font-size:.74rem;line-height:1.5}
+    .nf-home{display:inline-flex;align-items:center;gap:.4rem;margin-top:2.2rem;font-weight:700;color:var(--b1)}
+    .nf-home svg{width:18px;height:18px;fill:currentColor}
+    .nf[dir=rtl] .nf-home .ar,.nf[dir=rtl] .nf-sug .go{transform:scaleX(-1)}
+    @media (max-width:820px){.nf-grid{grid-template-columns:repeat(2,1fr)}.nf-grid a:last-child{grid-column:1/-1}}
+    @media (max-width:480px){.nf{padding-top:2rem}.nf-search button{padding:.55rem .9rem}}
+    @media (prefers-reduced-motion:reduce){.nf *,.nf *::before,.nf *::after{animation:none!important}}
+  </style>
+{% endblock %}
+
+{% block content %}
+{% set icons = ".icons/material/" %}
+<div class="nf" id="nf" dir="ltr" lang="en">
+  <div class="nf-sky" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="nf-code" aria-hidden="true"><b>4</b><span class="nf-zero"><span><img src="{{ 'assets/logos/hiddify-mark-white.svg' | url }}" alt=""></span></span><b>4</b></div>
+
+  <h1 class="nf-t" data-en="We couldn't find this page." data-fa="این صفحه پیدا نشد.">We couldn't find this page.</h1>
+  <p class="nf-sub" data-en="It may have moved, or the address has a typo. Here are a few ways back." data-fa="شاید آدرسش عوض شده یا اشتباه تایپ شده. نگران نباشید، راه برگشت همین‌جاست.">It may have moved, or the address has a typo. Here are a few ways back.</p>
+  <div class="nf-path">{% include icons ~ "link-variant-off.svg" %}<span id="nf-url">hiddify.com</span></div>
+
+  <form class="nf-search" id="nf-form" role="search">
+    {% include icons ~ "magnify.svg" %}
+    <input id="nf-q" type="search" autocomplete="off" enterkeyhint="search" data-en="Search the guides…" data-fa="جستجو در راهنماها…" placeholder="Search the guides…" aria-label="Search">
+    <button type="submit" data-en="Search" data-fa="جستجو">Search</button>
+  </form>
+
+  <div id="nf-mean" hidden>
+    <p class="nf-h" data-en="Did you mean" data-fa="شاید منظورتان این بود">Did you mean</p>
+    <div class="nf-sug" id="nf-sug"></div>
+  </div>
+
+  <p class="nf-h" data-en="Or start here" data-fa="یا از این‌جا شروع کنید">Or start here</p>
+  <div class="nf-grid">
+    <a data-href="app/" style="--c:linear-gradient(135deg,#455fe9,#6d4ad8)"><i>{% include icons ~ "cellphone-link.svg" %}</i>
+      <b data-en="Hiddify app" data-fa="اپ هیدیفای">Hiddify app</b><small data-en="Guides for every device" data-fa="راهنمای همهٔ دستگاه‌ها">Guides for every device</small></a>
+    <a data-href="manager/" style="--c:linear-gradient(135deg,#0ea5a3,#2563eb)"><i>{% include icons ~ "server-network.svg" %}</i>
+      <b data-en="Hiddify Manager" data-fa="هیدیفای‌منیجر">Hiddify Manager</b><small data-en="Your own server" data-fa="سرور خودتان">Your own server</small></a>
+    <a data-href="app/How-to-install-Hiddify-app/" style="--c:linear-gradient(135deg,#10b981,#059669)"><i>{% include icons ~ "download.svg" %}</i>
+      <b data-en="Download" data-fa="دانلود اپ">Download</b><small data-en="Free, for all systems" data-fa="رایگان، برای همه">Free, for all systems</small></a>
+    <a data-href="blog/" style="--c:linear-gradient(135deg,#f59e0b,#ea580c)"><i>{% include icons ~ "newspaper-variant-outline.svg" %}</i>
+      <b data-en="Blog" data-fa="بلاگ">Blog</b><small data-en="News and releases" data-fa="خبرها و نسخه‌های تازه">News and releases</small></a>
+    <a href="https://t.me/hiddify" rel="noopener" style="--c:linear-gradient(135deg,#2aabee,#1d8fd1)"><i>{% include icons ~ "send-outline.svg" %}</i>
+      <b data-en="Ask for help" data-fa="پرسیدن سؤال">Ask for help</b><small data-en="Telegram group" data-fa="گروه تلگرام">Telegram group</small></a>
+  </div>
+
+  <a class="nf-home" data-href="">{% include icons ~ "home-outline.svg" %}<span data-en="Back to the home page" data-fa="برگشت به صفحهٔ اصلی">Back to the home page</span><span class="ar">{% include icons ~ "arrow-right.svg" %}</span></a>
+</div>
+
+<script>
+(function(){
+  var root={{ (config.site_url or '/') | tojson }}.replace(/^https?:\/\/[^\/]+/,'') || '/';
+  var nf=document.getElementById('nf'),path=decodeURIComponent(location.pathname),
+      rel=path.indexOf(root)===0?path.slice(root.length):path.replace(/^\//,''),
+      fa=/^fa(\/|$)/.test(rel),base=root+(fa?'fa/':'');
+  /* language of the page = language of the missing address */
+  if(fa){nf.dir='rtl';nf.lang='fa';document.title='صفحه پیدا نشد · هیدیفای';
+    nf.querySelectorAll('[data-fa]').forEach(function(e){if(e.placeholder!==undefined&&e.tagName==='INPUT')e.placeholder=e.dataset.fa;else e.textContent=e.dataset.fa})}
+  else document.title='Page not found · Hiddify';
+  nf.querySelectorAll('[data-href]').forEach(function(a){a.href=base+a.dataset.href});
+  document.getElementById('nf-url').textContent=location.host+path;
+  /* search: opens the site search with the words (search.share reads ?q=) */
+  var q=document.getElementById('nf-q');
+  var words=rel.replace(/^fa\//,'').replace(/(index)?\.html?$/,'').split(/[\/_\-.]+/).filter(function(w){return w.length>2&&!/^\d+$/.test(w)});
+  document.getElementById('nf-form').addEventListener('submit',function(e){e.preventDefault();var v=q.value.trim()||words.join(' ');
+    location.href=base+(v?'?q='+encodeURIComponent(v):'')});
+  /* did you mean: the pages whose address or title is closest to the missing address */
+  var STOP={html:1,index:1,the:1,and:1,how:1,for:1,with:1,use:1,using:1,hiddify:1,www:1,com:1};
+  var toks=words.map(function(w){return w.toLowerCase()}).filter(function(w){return !STOP[w]});
+  var last=(rel.replace(/(index)?\.html?$/,'').replace(/\/$/,'').split('/').pop()||'').toLowerCase();
+  if(!last&&!toks.length)return;
+  function grams(s){var g={};for(var i=0;i<s.length-1;i++)g[s.substr(i,2)]=1;return g}
+  function dice(a,b){if(!a||!b)return 0;var A=grams(a),B=grams(b),n=0,t=0,k;for(k in A){t++;if(B[k])n++}for(k in B)t++;return t?2*n/t:0}
+  fetch(root+'assets/404-index.json').then(function(r){return r.json()}).then(function(list){
+    var res=list.filter(function(p){return /^fa\//.test(p[0])===fa&&p[0]!==rel}).map(function(p){
+      var u=p[0].toLowerCase(),t=p[1].toLowerCase(),seg=u.replace(/\/$/,'').split('/').pop()||'',s=0;
+      if(last&&seg===last)s+=10;
+      s+=6*dice(last,seg);
+      toks.forEach(function(w){if(u.indexOf(w)>=0)s+=2;if(t.indexOf(w)>=0)s+=1.5});
+      return [s,p]}).filter(function(x){return x[0]>=3}).sort(function(a,b){return b[0]-a[0]}).slice(0,3);
+    if(!res.length)return;
+    var box=document.getElementById('nf-sug');
+    box.innerHTML=res.map(function(x,i){var p=x[1];
+      return '<a href="'+root+p[0]+'" style="animation-delay:'+(i*.08)+'s">'+document.querySelector('#nf-icons .doc').innerHTML+
+        '<span><b></b><small>'+location.host+root+p[0]+'</small></span><span class="go">'+document.querySelector('#nf-icons .go').innerHTML+'</span></a>'}).join('');
+    box.querySelectorAll('b').forEach(function(b,i){b.textContent=res[i][1][1]});
+    document.getElementById('nf-mean').hidden=false;
+  }).catch(function(){});
+})();
+</script>
+<div id="nf-icons" hidden><span class="doc">{% include icons ~ "file-document-outline.svg" %}</span><span class="go">{% include icons ~ "arrow-right.svg" %}</span></div>
+{% endblock %}

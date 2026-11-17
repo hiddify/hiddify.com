@@ -237,6 +237,7 @@ hooks:
   - hooks/related_cards.py
   - hooks/inline_links.py
   - hooks/blog_cover.py
+  - hooks/notfound_index.py
 
 nav: #docs/app/install.md
   #- Hiddify: index.html
