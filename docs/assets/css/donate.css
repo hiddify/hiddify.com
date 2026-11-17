@@ -60,6 +60,8 @@
 .md-typeset code.hi-dn-addr{display:block;padding:.7rem .8rem;border-radius:12px;font-size:.8rem;line-height:1.6;word-break:break-all;text-align:left;
   color:var(--md-default-fg-color);background:color-mix(in srgb,var(--c) 7%,var(--md-code-bg-color));box-shadow:inset 0 0 0 1px var(--line);user-select:all}
 .hi-dn-act{display:flex;gap:.5rem}
+.md-typeset .hi-dn-warn{margin:-.3rem 0 0;padding:.45rem .7rem;border-radius:10px;font-size:.76rem;font-weight:700;color:#b45309;background:rgba(245,158,11,.12);box-shadow:inset 0 0 0 1px rgba(245,158,11,.3)}
+[data-md-color-scheme=slate] .md-typeset .hi-dn-warn{color:#fbbf24}
 .hi-dn-act button{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:.6rem .9rem;border:0;border-radius:12px;cursor:pointer;
   font:inherit;font-size:.85rem;font-weight:800;transition:transform .15s,background .2s,color .2s}
 .hi-dn-act button svg{width:18px;height:18px;fill:currentColor}
