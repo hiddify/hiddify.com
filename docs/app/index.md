@@ -17,9 +17,11 @@ weight: -19
   }
 </style>
 
-# All tutorials and videos related to Hiddify application
+<p class="hi-eyebrow">Hiddify app guide</p>
 
-Hiddify app is a free, open-source proxy and VPN client for Android, iOS, Windows, macOS and Linux.
+# One tap to the open internet.
+
+<p class="hi-lede">The Hiddify app is free and open source, and works with the same simplicity on Android, iOS, Windows, macOS and Linux. Everything you need to stay connected is right here.</p>
 This page lists every guide for the app: start with "How to install" and then "How to use".
 For the full feature list, see the <a
   class="underline underline-offset-2"

@@ -15,8 +15,13 @@ comments: false
   }
 </style>
 
-# All Hiddify Manager tutorials and videos
-Hiddify Manager is free, open-source software that you install on your own server (a VPS, a rented computer in a data center) to run a VPN and proxy server for you and your users. This page lists every Hiddify Manager tutorial by topic. If you are new, start with the [main installation guide](/manager/installation-and-setup/guide/).
+<p class="hi-eyebrow">Hiddify Manager guide</p>
+
+# Your server. Your rules.
+
+<p class="hi-lede">Hiddify Manager is free and open source, and runs on your own server (a VPS, a rented computer in a data center): a VPN and proxy server, for you and your users. From the very first command to the finest setting, it is all on this page.</p>
+
+Every tutorial is listed by topic. If you are new, start with the [main installation guide](/manager/installation-and-setup/guide/).
 
 !!! info "Hiddify Manager at a glance"
     - **Latest version:** v14.2.0 (November 6, 2026). See all [releases on GitHub](https://github.com/hiddify/Hiddify-Manager/releases).

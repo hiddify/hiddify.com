@@ -10,9 +10,11 @@ comments: false
 <style>
   @media screen and (min-width: 76.1875em) {.md-sidebar{display:none;}} {.md-content__button {display: none;}}</style>
 
-# همه آموزش‌ها و ویدیوهای مرتبط با اپ هیدیفای
+<p class="hi-eyebrow">راهنمای اپ هیدیفای</p>
 
-اپ هیدیفای یک برنامهٔ رایگان و متن‌باز برای اتصال به پروکسی و VPN است که روی Android، iOS، Windows، macOS و Linux کار می‌کند.
+# یک لمس، تا اینترنت آزاد.
+
+<p class="hi-lede">اپ هیدیفای رایگان و متن‌باز است و روی Android، iOS، Windows، macOS و Linux با همان سادگی کار می‌کند. هر آنچه برای وصل ماندن لازم دارید، اینجاست.</p>
 در این صفحه همهٔ آموزش‌های اپ را می‌بینید: اول «نصب» و بعد «استفاده» را بخوانید.
 فهرست کامل امکانات اپ در
 <a class="underline underline-offset-2"

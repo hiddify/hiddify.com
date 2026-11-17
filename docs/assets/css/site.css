@@ -3038,3 +3038,9 @@ footer {
 /* Blog post: cover under the title (hooks/blog_cover.py) */
 .md-typeset .hi-post-cover{margin:.4rem 0 1.4rem;border-radius:20px;overflow:hidden;box-shadow:0 24px 50px -30px rgba(30,41,90,.7);border:1px solid rgba(69,95,233,.15)}
 .md-typeset .hi-post-cover img{display:block;width:100%;height:auto}
+
+/* Guide pages (app, manager): Apple-style eyebrow, headline and lede */
+.md-typeset .hi-eyebrow{margin:0 0 .2rem;font-size:.8rem;font-weight:800;letter-spacing:.02em;
+  background:linear-gradient(90deg,#455fe9,#8b5cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.md-typeset .hi-eyebrow + h1{margin:0 0 .6rem;font-size:2.3rem;font-weight:900;line-height:1.25;letter-spacing:-.01em;color:var(--md-default-fg-color)}
+.md-typeset .hi-lede{margin:0 0 1rem;font-size:.95rem;line-height:1.95;color:var(--md-default-fg-color--light);max-width:60ch}
