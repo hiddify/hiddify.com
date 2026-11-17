@@ -1,0 +1,11 @@
+# Last major version with a blog post, per product; written by tools/blog_draft.py.
+app:
+  date: '2026-11-04'
+  major: 5
+  post: Hiddify-app-v5-is-released
+  tag: v5.5.5
+manager:
+  date: '2026-10-18'
+  major: 14
+  post: Hiddify-Manager-v14-is-released
+  tag: v14.0.0

@@ -1,0 +1,36 @@
+{#- Blog list card (overrides material/partials/post.html): cover picture, category, date, title,
+    one line about the post, read time. The cover comes from the post's front matter `cover:`
+    (made by tools/blog_covers.py); without it the card falls back to the plain excerpt. -#}
+{% set cover = post.meta.cover %}
+<article class="md-post md-post--excerpt hi-pc{% if cover %} hi-pc--cover{% endif %}">
+  {% if cover %}
+    <a class="hi-pc__media" href="{{ post.url | url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ cover | url }}" alt="" loading="lazy" width="1200" height="630">
+    </a>
+  {% endif %}
+  <div class="hi-pc__body">
+    <div class="md-post__meta md-meta hi-pc__meta">
+      {% set fa = config.theme.language == "fa" %}
+      {% set cat_fa = {"Manager": "هیدیفای‌منیجر", "App": "اپ هیدیفای", "Anniversary": "سالگرد", "Hello": "خبر", "Project": "پروژه"} %}
+      {% for category in post.categories %}
+        <a href="{{ category.url | url }}" class="hi-pc__cat hi-pc__cat--{{ category.title | lower }}">{{ cat_fa.get(category.title, category.title) if fa else category.title }}</a>
+      {% endfor %}
+      <time datetime="{{ post.config.date.created }}">{%- if fa and post.meta.date_fa -%}{{ post.meta.date_fa }}{%- else -%}{{ post.config.date.created | date }}{%- endif -%}</time>
+      {% if post.config.readtime %}
+        <span class="hi-pc__dot" aria-hidden="true">·</span>
+        <span>
+          {% set time = post.config.readtime %}
+          {% if time == 1 %}{{ lang.t("readtime.one") }}{% else %}{{ lang.t("readtime.other") | replace("#", time) }}{% endif %}
+        </span>
+      {% endif %}
+      {% if post.config.draft %}<span class="md-draft">{{ lang.t("blog.draft") }}</span>{% endif %}
+    </div>
+    <div class="md-post__content md-typeset hi-pc__content">
+      {{ post.content }}
+    </div>
+    <a class="hi-pc__more" href="{{ post.url | url }}">
+      {{ lang.t("blog.continue") }}
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+    </a>
+  </div>
+</article>

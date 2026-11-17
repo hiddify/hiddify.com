@@ -227,6 +227,8 @@ plugins:
       fallback_to_build_date: true
   - blog:
       post_readtime: true
+      # one page of posts: with mkdocs-static-i18n the plugin's page 2 overwrote the blog index
+      pagination_per_page: 100
   
 
 hooks:
@@ -234,6 +236,7 @@ hooks:
   - hooks/core_links.py
   - hooks/related_cards.py
   - hooks/inline_links.py
+  - hooks/blog_cover.py
 
 nav: #docs/app/install.md
   #- Hiddify: index.html

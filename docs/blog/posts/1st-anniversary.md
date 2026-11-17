@@ -1,19 +1,25 @@
 ---
 draft: false
 date: 2023-09-23 
-# authors:
-#   - hiddify
+authors:
+  - hiddify
 categories:
   - Hello
 
 tags:
   - Hiddify
   - Free Internet Solution
-description: Birthday.
-
+description: One year of Hiddify, from the first server guides to HiddifyNG, HiddifyN and the new cross-platform app.
+slug: one-year-anniversary-of-hiddify
+cover: /assets/blog/covers/1st-anniversary-en.webp
 ---
 
 # One-Year Anniversary of Hiddify
+
+!!! abstract "In 30 seconds"
+    Hiddify was born in September 2022, after the internet in Iran was shut down. In its first year it went from
+    a list of VPS providers and one-click server installs to a multi-user panel, the HiddifyNG and HiddifyN apps,
+    and the first version of a new cross-platform app. All of it was volunteer work.
 
 ## The Story of Hiddify…
 
@@ -64,11 +70,11 @@ Our goal was to make it easy for developers to implement new protocols across al
 
 The new app design is simple, performs efficiently, and uses minimal system resources. We will continue to add more exciting new features to it.
 
-If you are a panel developer, you can read here how to integrate your panel with the app.
+If you are a panel developer, read [the app's URL scheme](/app/URL-Scheme/) to see how to connect your panel to the app.
 
 On the server side, in addition to previous protocols like Vless, Vmess, and Trojan, we introduced newer protocols such as Reality gRPC, WebSocket, H2, and SSH. In the panel’s beta version, protocols like Hysteria2 and TUICv5 with unified user management are now available and can easily be accessed in the beta version. They will be officially released soon.
 
-If you would like to test the beta version and use the newer protocols, you can find out how to upgrade to the beta here. The next stable panel release will be the most bug-free and fastest version yet, so it will remain in beta for a longer period.
+If you would like to test the beta version and use the newer protocols, you can find out how to [upgrade to the beta here](/manager/installation-and-setup/How-to-install-different-versions-of-Hiddify-Manager/#switch). The next stable panel release will be the most bug-free and fastest version yet, so it will remain in beta for a longer period.
 
 Everything that has been done so far has been spontaneous, voluntary, and without any financial gain. All the donations from you have gone toward the project and will continue to do so.
 
@@ -80,6 +86,12 @@ To all of you who have continuously supported and stood by us on this journey, w
 
 We hope for a day when no one is oppressed or controlled by authoritarian regimes.
 
-#Women_Life_Freedom
+\#Women_Life_Freedom
 
 Hiddify, for a free internet.
+
+## Related articles
+
+- [Hiddify's Second Anniversary](2nd-anniversary.md)
+- [Hiddify is now on the App Store](App_published_on_the_AppStore.md)
+- [About us](/about-us/)

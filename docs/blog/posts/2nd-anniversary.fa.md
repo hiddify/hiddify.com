@@ -1,24 +1,31 @@
 ---
 draft: false
 date: 2024-09-23 
-# authors:
-#   - hiddify
+authors:
+  - hiddify
 categories:
   - Anniversary
 
 tags:
-  - Hiddify
-  - Internet Freedom Solution
-description: Hiddify's Second Anniversary
+  - هیدیفای
+  - راهکار آزادی اینترنت
+description: داستان دو سال اول هیدیفای، از ابزارهای اول تا هیدیفای‌منیجر ۱۰ و اپ هیدیفای ۲، و برنامهٔ سال سوم.
+cover: /assets/blog/covers/2nd-anniversary-fa.webp
+date_fa: ۲ مهر ۱۴۰۳
 ---
 
 
 # دو سالگی هیدیفای
 
+!!! abstract "در ۳۰ ثانیه"
+    هیدیفای در ۱ مهر ۱۴۰۱ و پس از قطع اینترنت در ایران متولد شد. در دو سال اول، از چند راهنمای نصب سرور به
+    هیدیفای‌منیجر و اپ هیدیفای رسیدیم: بیش از نیم میلیون نصب فعال در گوگل‌پلی، بیش از ۵.۷ میلیون دانلود اپ
+    از گیت‌هاب و بیش از ۲۴ هزار ستاره. این پست آن مسیر را قدم به قدم مرور می‌کند.
+
 
 <div align=center>
   
-<img src="https://github.com/user-attachments/assets/15e0dba5-bbc0-48e3-b467-916ad1bd93a5" alt="Logo" width="40%" />
+<img src="/assets/blog/2nd-anniversary/15e0dba5.webp" alt="Logo" width="40%" />
 </div>
 
 
@@ -33,6 +40,14 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 
 این ایام، یادآور غمی عمیق است، غمی بزرگ که ما را برای دستیابی به حقی که شایسته آن هستیم، متحد کرد.
+
+<!-- more -->
+
+!!! note "دربارهٔ شمارهٔ نسخه‌ها"
+    «نسخهٔ ۱ تا ۸ HiddifyManager» در این پست، نسخه‌های **پنل هیدیفای** است؛ بستهٔ سرور آن زمان شماره‌های خودش را داشت
+    (۷ تا ۱۰). بعضی تاریخ‌ها و ویژگی‌ها در تاریخچهٔ انتشار کمی فرق دارند: برای جزئیات دقیق هر نسخه، پست خودش را ببینید،
+    از [پنل هیدیفای ۱](Hiddify-Panel-v1.md) تا [پنل هیدیفای ۸](Hiddify-Panel-v8.md).
+
 
 
 **❤️ آزادی**
@@ -60,7 +75,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Initial_version_of_HiddifyManager" src="https://github.com/user-attachments/assets/c6c09eb0-0576-4412-8cd4-7e1719263e70" width=80% />
+<img alt="Initial_version_of_HiddifyManager" src="/assets/blog/2nd-anniversary/c6c09eb0.webp" width=80% />
 </div>
 
 
@@ -72,7 +87,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Initial_version_of_HiddifyManager_II" src="https://github.com/user-attachments/assets/2a12572b-5484-4571-8325-c7a70dad56be" width=80% />
+<img alt="Initial_version_of_HiddifyManager_II" src="/assets/blog/2nd-anniversary/2a12572b.webp" width=80% />
 </div>
 
 
@@ -85,7 +100,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyClash" src="https://github.com/user-attachments/assets/fe8c5236-e66c-4e75-b2c9-ff47da6727c6" width=40% />
+<img alt="HiddifyClash" src="/assets/blog/2nd-anniversary/fe8c5236.webp" width=40% />
 </div>
 
 
@@ -97,9 +112,9 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyMananger_V1" src="https://github.com/user-attachments/assets/f64f9ae1-6569-4459-b3ed-e00ecefa0839" width=80% />
+<img alt="HiddifyMananger_V1" src="/assets/blog/2nd-anniversary/f64f9ae1.webp" width=80% />
 
-<img alt="HiddifyMananger_V1_User_Panel" src="https://github.com/user-attachments/assets/7c4faaf6-45d8-4aef-9854-7a3ccc503949" width=80% />
+<img alt="HiddifyMananger_V1_User_Panel" src="/assets/blog/2nd-anniversary/7c4faaf6.webp" width=80% />
 
 </div>
 
@@ -123,7 +138,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyMananger_V2_AutoCDN_Domains" src="https://github.com/user-attachments/assets/cf286d74-6d50-4c62-982f-46d099aa5d65" width=80% />
+<img alt="HiddifyMananger_V2_AutoCDN_Domains" src="/assets/blog/2nd-anniversary/cf286d74.webp" width=80% />
 </div>
 
 
@@ -138,7 +153,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyMananger_V3" src="https://github.com/user-attachments/assets/3d73e10b-aa00-4af7-bb2d-8ec63e5ec089" width=80% />
+<img alt="HiddifyMananger_V3" src="/assets/blog/2nd-anniversary/3d73e10b.webp" width=80% />
 </div>
 
 
@@ -154,7 +169,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyMananger_V4" src="https://github.com/user-attachments/assets/7876f1e2-3281-47e5-a910-59eb2e2e223c" width=50% />
+<img alt="HiddifyMananger_V4" src="/assets/blog/2nd-anniversary/7876f1e2.webp" width=50% />
 </div>
 
 
@@ -176,7 +191,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyNG" src="https://github.com/user-attachments/assets/0ce0cd67-30cc-49f7-87f8-a8ebfd252844" width=40% />
+<img alt="HiddifyNG" src="/assets/blog/2nd-anniversary/0ce0cd67.webp" width=40% />
 </div>
 
 
@@ -196,7 +211,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyManager_V7" src="https://github.com/user-attachments/assets/0974b130-0fa3-4935-a3c8-96a924778fc3" width=80% />
+<img alt="HiddifyManager_V7" src="/assets/blog/2nd-anniversary/0974b130.webp" width=80% />
 </div>
 
 
@@ -206,7 +221,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyNG_LB_Routing" src="https://github.com/user-attachments/assets/bcb74626-4fbf-4e4c-940c-2f0f4211cc08" width=50% />
+<img alt="HiddifyNG_LB_Routing" src="/assets/blog/2nd-anniversary/bcb74626.webp" width=50% />
 </div>
 
 
@@ -220,7 +235,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
 
-<img alt="HiddifyManager_V8" src="https://github.com/user-attachments/assets/92293f87-80f3-4df6-8db5-7c1c5643dca2" width=80% />
+<img alt="HiddifyManager_V8" src="/assets/blog/2nd-anniversary/92293f87.webp" width=80% />
 </div>
 
 
@@ -238,7 +253,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_Starting" src="https://github.com/user-attachments/assets/34829e2e-89b8-457f-ba8c-b66fe184e9dd" width=40% />
+<img alt="HiddifyApp_Starting" src="/assets/blog/2nd-anniversary/34829e2e.svg" width=40% />
 </div>
 
 
@@ -248,7 +263,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Hiddify_Reality_Scanner" src="https://github.com/user-attachments/assets/18eca2da-48e6-4dfd-beb0-eabf98ea7a2e" width=50% />
+<img alt="Hiddify_Reality_Scanner" src="/assets/blog/2nd-anniversary/18eca2da.webp" width=50% />
 </div>
 
 
@@ -259,7 +274,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp" src="https://github.com/user-attachments/assets/5e61ab89-1329-455f-9aaa-958a99d3c1f3" width=40% />
+<img alt="HiddifyApp" src="/assets/blog/2nd-anniversary/5e61ab89.webp" width=40% />
 </div>
 
 
@@ -289,7 +304,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_V0.13" src="https://github.com/user-attachments/assets/aa7b9d35-f731-4b24-9c7d-10fd485374e6" width=80% />
+<img alt="HiddifyApp_V0.13" src="/assets/blog/2nd-anniversary/aa7b9d35.webp" width=80% />
 </div>
 
 
@@ -303,7 +318,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_on_MicrosoftStore" src="https://github.com/user-attachments/assets/a6272647-6c1d-4082-92a9-aa49f8094afb" width=80% />
+<img alt="HiddifyApp_on_MicrosoftStore" src="/assets/blog/2nd-anniversary/a6272647.webp" width=80% />
 </div>
 
 
@@ -324,10 +339,10 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
 
-<img alt="HiddifyManager_X_1" src="https://github.com/user-attachments/assets/caa0870e-31d3-432f-8db1-701006dee151" width=50% />
+<img alt="HiddifyManager_X_1" src="/assets/blog/2nd-anniversary/caa0870e.webp" width=50% />
 
 
-<img alt="HiddifyManager_X_2" src="https://github.com/user-attachments/assets/a9845527-44b6-4135-b602-07816edee820" width=50% />
+<img alt="HiddifyManager_X_2" src="/assets/blog/2nd-anniversary/a9845527.webp" width=50% />
 </div>
 
 
@@ -344,7 +359,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_on_TestFlight" src="https://github.com/user-attachments/assets/556bd786-678e-4687-84b4-f499c252130b" width=50% />
+<img alt="HiddifyApp_on_TestFlight" src="/assets/blog/2nd-anniversary/556bd786.webp" width=50% />
 </div>
 
 
@@ -364,7 +379,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_v1" src="https://github.com/user-attachments/assets/ffcf1f13-b9cc-47f7-8ec9-2986937256de" width=50% />
+<img alt="HiddifyApp_v1" src="/assets/blog/2nd-anniversary/ffcf1f13.webp" width=50% />
 </div>
 
 
@@ -384,7 +399,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Hiddify_Relay_Builder" src="https://github.com/user-attachments/assets/16171834-1f3d-4fe4-ab90-0666d9487f48" width=50% />
+<img alt="Hiddify_Relay_Builder" src="/assets/blog/2nd-anniversary/16171834.webp" width=50% />
 </div>
 
 
@@ -410,7 +425,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="HiddifyApp_V1.5" src="https://github.com/user-attachments/assets/bfee64bf-4793-4e6d-a6d9-5d4ad6ad727d" width=80% />
+<img alt="HiddifyApp_V1.5" src="/assets/blog/2nd-anniversary/bfee64bf.webp" width=80% />
 </div>
 
 
@@ -431,7 +446,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
   
-<img alt="Stonning_Record_for_HiddifyApp" src="https://github.com/user-attachments/assets/3d6f44b9-1ebf-4fcc-b41d-3d605ebed093" width=50% />
+<img alt="Stonning_Record_for_HiddifyApp" src="/assets/blog/2nd-anniversary/3d6f44b9.webp" width=50% />
 </div>
 
 
@@ -448,7 +463,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
 
-<img alt="Hiddify_History" src="https://github.com/user-attachments/assets/33e00f80-5464-4e1d-bc8b-61a0e92d1fa7" width=80% />
+<img alt="Hiddify_History" src="/assets/blog/2nd-anniversary/33e00f80.webp" width=80% />
 </div>
 
 
@@ -464,7 +479,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 
 <div align=center>
  
-<img src="https://github.com/user-attachments/assets/96e89cf7-7a0c-425f-b08a-f876ddaa9d14" alt="HiddifyApp_Logo" width="40%" />
+<img src="/assets/blog/2nd-anniversary/96e89cf7.webp" alt="HiddifyApp_Logo" width="40%" />
 </div>
 
 
@@ -481,7 +496,7 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 ### در HiddifyManager
 <div align=center>
  
-<img src="https://github.com/user-attachments/assets/1443144c-85df-493d-a979-5282dda9ef92" alt="HiddifyManager_Logo" width="55%" />
+<img src="/assets/blog/2nd-anniversary/1443144c.webp" alt="HiddifyManager_Logo" width="55%" />
 </div>
 
 
@@ -506,8 +521,12 @@ _گزارشی تشریحی به همراهان عزیز از اقدامات صو
 به امید روزی که هیچ فردی محدود و تحت کنترل حکومت‌های تمامیت‌خواه نباشه.
 
 
-#زن_زندگی_آزادی
+\#زن_زندگی_آزادی
 
 🕊️هیدیفای، راهکار آزادی اینترنت🕊️
 
+## مقاله‌های مرتبط
 
+- [یکسالگی هیدیفای](1st-anniversary.md)
+- [هیدیفای چهار ساله شد](4th-anniversary.md)
+- [درباره ما](/fa/about-us/)

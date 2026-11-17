@@ -1,0 +1,22 @@
+# Per-post overrides for tools/blog_covers.py (key = post file name without .md / .fa.md).
+# Any field of the cover can be set: shot (picture), ver (big number), unit_en/unit_fa, title; per language under en:/fa:.
+Hiddify-app-v5-is-released:
+  en: {shot: /assets/app/How-to-use-WARP-on-Hiddify-App/en-connected.webp}
+  fa: {shot: /assets/app/How-to-use-WARP-on-Hiddify-App/fa-connected.webp}
+Hiddify-app-v4-is-released:
+  en: {shot: /assets/app/Free-profiles-in-Hiddify-app/en-free-list.webp}
+  fa: {shot: /assets/app/Free-profiles-in-Hiddify-app/fa-free-list.webp}
+Hiddify-Manager-v14-is-released:
+  en: {shot: /assets/manager/How-to-configure-Hiddify-panel-properly/en-dashboard.webp}
+  fa: {shot: /assets/manager/How-to-configure-Hiddify-panel-properly/fa-dashboard.webp}
+Hiddify-Config-the-first-panel: {ver: "2022"}
+Awesome-Freedom: {icon: list}
+Hiddify-Manager-v11-is-released: {ver: "11"}
+Hiddify-Next-iOS-beta-and-WARP: {ver: "0.14"}
+1st-anniversary: {ver: "1", unit_en: " year", unit_fa: " سال", icon: cake}
+2nd-anniversary: {ver: "2", unit_en: " years", unit_fa: " سال", shot: /assets/blog/2nd-anniversary/33e00f80.webp}
+Hiddify-core: {icon: chip}
+DNS-tunnels-in-Hiddify: {icon: dns}
+Hiddify-Extensions: {icon: puzzle}
+Router-mode: {icon: router}
+HiddifyCli-and-Docker: {icon: console}

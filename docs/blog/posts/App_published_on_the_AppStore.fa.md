@@ -1,51 +1,60 @@
 ---
 draft: false
-date: 2023-09-23 
-# authors:
-#   - hiddify
+date: 2024-10-31
+slug: app-published-on-the-appstore
+authors:
+  - hiddify
 categories:
   - App
-
 tags:
-  - Hiddify
-  - Free Internet Solution
-description: AppStore
-
+  - هیدیفای
+  - راهکار اینترنت آزاد
+description: اپ هیدیفای تأیید شد و حالا در اپ‌استور اپل هست، کنار اندروید، ویندوز، لینوکس و مک.
+cover: /assets/blog/covers/App_published_on_the_AppStore-fa.webp
+date_fa: ۱۰ آبان ۱۴۰۳
 ---
+
+# هیدیفای در اپ‌استور تایید و منتشر شد! 🎆
+
+!!! abstract "در ۳۰ ثانیه"
+    اپ هیدیفای در ۹ آبان ۱۴۰۳ در **اپ‌استور** اپل منتشر شد. با این کار هیدیفای روی همهٔ پلتفرم‌های اصلی کار می‌کند: iOS،
+    اندروید، ویندوز، لینوکس و مک. رایگان، بدون تبلیغ و متن‌باز (GPL v3) است.
 
 <div align=center>
 
-
-
-<img src="https://github.com/user-attachments/assets/df959874-19bb-443b-a8c9-c05228cf401f" alt="App published on the AppStore" width="50%" />
+<img src="/assets/blog/App_published_on_the_AppStore/df959874.webp" alt="App published on the AppStore" width="50%" />
 </div>
-<br>
-# هیدیفای در اپ‌استور تایید و منتشر شد! 🎆
 
-هیدیفای تنها نرم‌افزار رایگان، بدون تبلیغ و متن‌باز با مجوز GPL v3 است که امکان دسترسی بدون فیلتر را فراهم می‌کند و روی تمامی پلتفرم‌ها از جمله iOS ، اندروید، ویندوز، لینوکس و مک قابل استفاده است.
+<!-- more -->
 
-تلاش ما ساخت اپلیکیشنی ساده و کاربرپسند بوده، طوری که حتی مادربزرگ‌ها و پدربزرگ‌ها نیز بتوانند به راحتی از آن استفاده کنند. 💪
+## این یعنی چه برای شما
 
-هدف ما روشن است؛ اینترنت آزاد حق همه مردم است. با حمایت شما می‌توانیم این مسیر را با قدرت بیشتری طی کنیم. 😍
+- **کاربران آیفون و آیپد** هیدیفای را مثل هر اپ دیگری از اپ‌استور نصب می‌کنند.
+- **یک اپ برای همه‌جا**: همان اپ ساده روی iOS، اندروید، ویندوز، لینوکس و مک.
+- **رایگان، بدون تبلیغ، متن‌باز**: کد در گیت‌هاب با مجوز GPL v3 است و هر کسی می‌تواند بررسی‌اش کند.
 
+اپ را آن‌قدر ساده ساختیم که حتی مادربزرگ‌ها و پدربزرگ‌ها هم به‌راحتی از آن استفاده کنند. 💪
 
+هدف ما روشن است: اینترنت آزاد حق همهٔ مردم است. با حمایت شما می‌توانیم این مسیر را با قدرت بیشتری طی کنیم. 😍
 
-[دانلود کنید!](https://app.hiddify.com)
+<div class="hi-cta-wrap"><a class="hi-cta" href="/fa/app/How-to-install-Hiddify-app/">دانلود اپ هیدیفای</a></div>
 
+## روش‌های حمایت از هیدیفای
 
-
-
-## روش‌های حمایت از هیدیفای:
-
-- 🌟 امتیاز ۵ ستاره در اپ استور و گوگل پلی
-- 🌟 ستاره‌ دادن در  [گیت‌هاب](https://github.com/hiddify/hiddify-app)
-- 💬 ریتوییت در [توییتر](https://x.com/hiddify_com)  و به اشتراک‌گذاری پست‌ها و ویدیوها در [یوتیوب](https://youtube.com/@hiddify)
-- 💕 لایک و کامنت گذاشتن در [اینستاگرام](https://www.instagram.com/hiddify_com) 
+- 🌟 امتیاز ۵ ستاره در اپ‌استور و گوگل‌پلی
+- 🌟 ستاره دادن در [گیت‌هاب](https://github.com/hiddify/hiddify-app)
+- 💬 ریتوییت در [توییتر](https://x.com/hiddify_com) و به اشتراک گذاشتن پست‌ها و ویدیوها در [یوتیوب](https://youtube.com/@hiddify)
+- 💕 لایک و کامنت در [اینستاگرام](https://www.instagram.com/hiddify_com)
 - 💢 [مشارکت در توسعه](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDQmbGFuZz1lbg)
 - 💡 [تولید محتوای آموزشی](https://t.me/hiddifybot?start=contribute_Y2lkPS0xMDAyMTYyMTUzNzMxJm1pZD01NDUmbGFuZz1lbg)
-- 💵 [حمایت مالی](https://hiddify.com/fa/donation-and-support/)
+- 💵 [حمایت مالی](/fa/donation-and-support/)
 
-پیشاپیش برای حمایتی که می‌کنید، سپاسگزاریم! ❤️
+پیشاپیش برای حمایتتان سپاسگزاریم! ❤️
 
+🕊️هیدیفای، راهکار آزادی اینترنت🕊️
 
-🕊️هیدیفای‌، راهکار آزادی اینترنت🕊️
+## مقاله‌های مرتبط
+
+- [نصب اپ هیدیفای](/fa/app/How-to-install-Hiddify-app/)
+- [یکسالگی هیدیفای](1st-anniversary.md)
+- [اپ هیدیفای ۵ منتشر شد](Hiddify-app-v5-is-released.md)

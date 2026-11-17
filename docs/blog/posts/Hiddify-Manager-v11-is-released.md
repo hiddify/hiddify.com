@@ -1,76 +1,62 @@
 ---
 draft: false
-date: 2025-07-11 
-# authors:
-#   - hiddify
+date: 2025-07-11
+slug: hiddifymanager-version-11-released
+authors:
+  - hiddify
 categories:
   - Manager
-
 tags:
   - Hiddify
-  - Free Internet Solution
-description: HiddifyManager v11 released
-
+  - Release
+description: Hiddify Manager 11 adds XHTTP with separate upload and download domains, QUIC, a reworked proxy system, and uses up to half the RAM.
+cover: /assets/blog/covers/Hiddify-Manager-v11-is-released-en.webp
 ---
 
-# 🎉 HiddifyManager Version 11 Released!
+# Hiddify Manager 11 is out
 
-Packed with exciting improvements and updates. Here’s a summary of the key changes:
+!!! abstract "In 30 seconds"
+    Hiddify Manager **11.0.0** came out on 10 July 2025. It adds **XHTTP**, which can send upload and
+    download through **different domains**, **QUIC**, a **rebuilt proxy system** where every setting can be
+    changed, and it uses **up to half the RAM** it used before.
 
----
+<!-- more -->
 
-- 🔹 **XHTTP protocol added**
+## What changes for you
 
-- 🔹 **Support for separate domains for upload and download**  
-  Now you can separate upload and download traffic using different domains or ALPNs, helping reduce the chance of detection.
+- **XHTTP protocol**, also with Reality (Reality XHTTP).
+- **Separate domains for upload and download.** Upload and download can use different domains or ALPNs,
+  which makes the traffic harder to detect.
+- **QUIC**, next to H1, H2, WS and HTTPUpgrade, and it works with a CDN.
+- **A rebuilt proxy system**: change every parameter of each proxy as you like.
+- **Bulk actions on users**: delete, turn on, turn off, or reset the days and traffic of many users at once.
+- **A password for the admin panel**, an extra lock on admin access.
+- **Up to 50% less RAM** and lower CPU use.
+- **Faster, simpler installation.**
+- **IP instead of a domain** in proxies, and a custom User-Agent.
+- **Better IP choice for AutoCDN domains**, with random recent User-Agents.
+- **Send chosen sites through WARP** now also for Hysteria, Shadowsocks and TUIC.
+- **A Docker version** (first test version).
+- Many panel improvements in look and use.
 
-- 🔹 **Support for Reality XHTTP**  
-  Combines Reality’s security with the flexibility of XHTTP for a more secure and adaptable proxy experience.
+## Should I update?
 
-- 🔹 **Complete redesign of the proxy system**  
-  You can now fully customize the parameters of each proxy to your preferences. ✨
+Newer versions are out now (12, 13 and 14), and an update takes you straight to the latest one. Take a
+[backup](/manager/configuration-and-advanced-settings/How-to-backup-and-restore-panel-on-Hiddify/) first,
+then follow [How to update HiddifyManager](/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/).
 
-- 🔹 **Xray core upgraded to version 25.6**  
-  Brings improved performance, enhanced security, and new backend features.
+<div class="hi-cta-wrap"><a class="hi-cta" href="/manager/installation-and-setup/guide/">Install or update Hiddify Manager</a></div>
 
-- 🔹 **QUIC protocol support added**  
-  In addition to H1, H2, WS, and HTTPUpgrade, QUIC is now supported with CDN compatibility.
+??? note "For experts: more changes in 11"
+    - Xray core 25.6; Python 3.13.
+    - New HAProxy version (on Ubuntu 24.04 only), for more exact and faster routing.
+    - sing-box subscription updated.
+    - Changes since 10.86.4: [Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager/compare/v10.86.4...v11.0.0)
+      and the [11.0.0 release](https://github.com/hiddify/Hiddify-Manager/releases/tag/v11.0.0).
 
-- 🔹 **Updated HAProxy version (Ubuntu 24.04 only)**  
-  Provides more accurate and faster proxy routing.
+## Related articles
 
-- 🔹 **Admin panel password protection added**  
-  An extra layer of security for admin access.
-
-- 🔹 **Reduced RAM and CPU usage**  
-  RAM consumption reduced by up to 50%, with optimized resource management. 💪
-
-- 🔹 **Added bulk actions for managing users**
-
-  You can now delete, activate, deactivate, or reset day and traffic for selected users — all at once! 🚀
-
-- 🔹 **Improved installation and setup process**  
-  Faster and simpler than ever.
-
-- 🔹 **Better IP selection for AutoCDN domains**  
-  Now supports random selection of the latest User-Agents.
-
-- 🔹 **Use of IP instead of domain in proxies**  
-  You can also set a custom User-Agent.
-
-- 🔹 **Custom site traffic tunneling through WARP**  
-  Now available for Hysteria, Shadowsocks, and Tuic protocols. 🙌
-
-- 🔹 **Sub Sing-box updated**  
-  For easier and better subscription management.
-
-- 🔹 **Docker version added**  
-  *(More details coming soon 😉)*
-
-- 🔹 **Python upgraded to version 3.13**  
-  Better performance and compatibility.
-
-- 🔹 **Extensive panel optimizations**  
-  Improved UI, functionality, and user experience for smoother operation.
-
----
+- [Hiddify Manager 10.80: install with Docker](Hiddify-Manager-v10-80-is-released.md)
+- [Hiddify Manager 12 is out](Hiddify-Manager-v12-is-released.md)
+- [How to update HiddifyManager](/manager/configuration-and-advanced-settings/How-to-update-Hiddify-panel/)
+- [Install Hiddify using Docker](/manager/installation-and-setup/Install-Hiddify-using-Docker/)

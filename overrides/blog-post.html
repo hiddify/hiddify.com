@@ -1,0 +1,110 @@
+{#-
+  Copy of material/blog-post.html (mkdocs-material 9.2.5) with Persian dates and category names on the
+  Persian site: `date_fa` from the front matter (tools/blog_covers.py), and the categories translated.
+-#}
+{% extends "main.html" %}
+{% import "partials/nav-item.html" as item with context %}
+{% block container %}
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="{{ page.parent.url | url }}" class="md-nav__link">
+                  {% include ".icons/material/arrow-left.svg" %}
+                  <span class="md-ellipsis">
+                    {{ lang.t("blog.index") }}
+                  </span>
+                </a>
+              </div>
+            </div>
+            {% if page.authors %}
+              <div class="md-post__authors md-typeset">
+                {% for author in page.authors %}
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="{{ author.avatar }}" alt="{{ author.name }}">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>{{ author.name }}</strong><br>
+                      {{ author.description }}
+                    </span>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__title">
+                <div class="md-nav__link">
+                  <span class="md-ellipsis">
+                    {{ lang.t("blog.meta") }}
+                  </span>
+                </div>
+              </li>
+              <li class="md-nav__item">
+                <div class="md-nav__link">
+                  {% include ".icons/material/calendar.svg" %}
+                  <time datetime="{{ page.config.date.created }}" class="md-ellipsis">
+                    {%- if config.theme.language == "fa" and page.meta.date_fa -%}{{ page.meta.date_fa }}{%- else -%}{{ page.config.date.created | date }}{%- endif -%}
+                  </time>
+                </div>
+              </li>
+              {% if page.config.date.updated %}
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    {% include ".icons/material/calendar-clock.svg" %}
+                    <time datetime="{{ page.config.date.updated }}" class="md-ellipsis">
+                      {{- page.config.date.updated | date -}}
+                    </time>
+                  </div>
+                </li>
+              {% endif %}
+              {% if page.categories %}
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    {% include ".icons/material/bookshelf.svg" %}
+                    <span class="md-ellipsis">
+                      {{ lang.t("blog.categories.in") }}
+                      {% for category in page.categories %}
+                        <a href="{{ category.url | url }}">
+                          {%- set cat_fa = {"Manager": "هیدیفای‌منیجر", "App": "اپ هیدیفای", "Anniversary": "سالگرد", "Hello": "خبر", "Project": "پروژه"} -%}
+                          {{- cat_fa.get(category.title, category.title) if config.theme.language == "fa" else category.title -}}
+                        </a>
+                        {%- if loop.revindex > 1 %}, {% endif -%}
+                      {% endfor -%}
+                    </span>
+                  </div>
+                </li>
+              {% endif %}
+              {% if page.config.readtime %}
+                {% set time = page.config.readtime %}
+                <li class="md-nav__item">
+                  <div class="md-nav__link">
+                    {% include ".icons/material/clock-outline.svg" %}
+                    <span class="md-ellipsis">
+                      {% if time == 1 %}
+                        {{ lang.t("readtime.one") }}
+                      {% else %}
+                        {{ lang.t("readtime.other") | replace("#", time) }}
+                      {% endif %}
+                    </span>
+                  </div>
+                </li>
+              {% endif %}
+            </ul>
+          </nav>
+          {% if "toc.integrate" in features %}
+            {% include "partials/toc.html" %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      {% block content %}
+        {% include "partials/content.html" %}
+      {% endblock %}
+    </article>
+  </div>
+{% endblock %}

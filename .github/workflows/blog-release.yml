@@ -1,0 +1,112 @@
+# Drafts a blog post when the Hiddify app or Hiddify Manager gets a new major version, in a pull
+# request "blog-<product>-v<major>".
+# Once a day (and on demand from the Actions tab) it looks at the latest stable release of
+# hiddify/Hiddify-Manager and hiddify/hiddify-app. When its major version has no post yet
+# (data/blog/releases.yml), tools/blog_draft.py writes docs/blog/posts/<Name>.md and .fa.md as a
+# draft (draft: true, not shown on the site) from the release notes; when the notes are empty, from
+# the commit messages since the previous major version. Someone then rewrites the summary in plain
+# words, translates the Persian file, sets draft: false and merges; merging deploys the site ("ci").
+#
+# Repo settings needed (same as manager-release): "Read and write permissions" and "Allow GitHub
+# Actions to create and approve pull requests".
+name: blog-release
+
+on:
+  schedule:
+    - cron: '30 6 * * *'   # every day 06:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: blog-release
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-24.04
+    strategy:
+      max-parallel: 1
+      matrix:
+        include:
+          - product: manager
+            repo: hiddify/Hiddify-Manager
+            extra: hiddify/hiddifypanel      # most user-visible manager changes are in the panel
+          - product: app
+            repo: hiddify/hiddify-app
+            extra: ''
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml packaging pillow
+
+      - name: Latest release
+        id: rel
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api "repos/${{ matrix.repo }}/releases/latest" > "$RUNNER_TEMP/release.json"
+          tag=$(jq -r .tag_name "$RUNNER_TEMP/release.json")
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          python tools/blog_draft.py --check "${{ matrix.product }}" "$tag" | tee -a "$GITHUB_OUTPUT"
+
+      - name: Draft the post
+        if: steps.rel.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${{ steps.rel.outputs.tag }}"; m="${{ steps.rel.outputs.major }}"
+          gh api "repos/${{ matrix.repo }}/releases?per_page=100" > "$RUNNER_TEMP/all.json"
+          # the first release of the previous major version, to list the commits since then
+          prev=$(jq -r --arg p "$((m-1))" '[.[] | select(.tag_name | ltrimstr("v") | startswith($p + "."))] | sort_by(.published_at) | .[0].tag_name // empty' "$RUNNER_TEMP/all.json")
+          files=()
+          if [ -n "$prev" ]; then
+            for r in ${{ matrix.extra }} ${{ matrix.repo }}; do
+              f="$RUNNER_TEMP/commits-${r//\//_}.txt"
+              gh api "repos/$r/compare/$prev...$tag" --jq '.commits[].commit.message | split("\n")[0]' > "$f" 2>/dev/null || true
+              files+=("$f")
+            done
+          fi
+          python tools/blog_draft.py --product "${{ matrix.product }}" --release "$RUNNER_TEMP/release.json" \
+            --all "$RUNNER_TEMP/all.json" --commits "${files[@]}" | tee "$RUNNER_TEMP/changes.txt"
+          # the cover picture of the new post (blog list card and link preview); google-chrome is on the runner
+          name=$(sed -n 's#^wrote docs/blog/posts/\(.*\)\.md$#\1#p' "$RUNNER_TEMP/changes.txt" | grep -v '\.fa$' | head -1)
+          [ -n "$name" ] && python tools/blog_covers.py "$name" || true
+
+      - name: Open the pull request
+        if: steps.rel.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${{ steps.rel.outputs.tag }}"; m="${{ steps.rel.outputs.major }}"
+          branch="blog-${{ matrix.product }}-v$m"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B "$branch"
+          git add -A docs/blog data/blog docs/assets/blog/covers
+          git commit -m "Blog: draft post for ${{ matrix.product }} $tag"
+          git push --force origin "$branch"
+          {
+            echo "A draft blog post for **${{ matrix.repo }} $tag** (new major version $m)."
+            echo
+            echo "Before merging:"
+            echo "1. Rewrite the \"In 30 seconds\" box and \"What changes for you\" in plain words (users, not developers)."
+            echo "2. Check every point against the release; remove internal changes."
+            echo "3. Translate the Persian file (lines marked \`ترجمه شود\`)."
+            echo "4. Fill in \"Should I update?\", add a screenshot if you can, set \`draft: false\` in both files."
+            echo
+            echo "Change list taken from the release:"
+            echo
+            sed -n '/^- /p' "$RUNNER_TEMP/changes.txt"
+          } > "$RUNNER_TEMP/pr.md"
+          if gh pr view "$branch" >/dev/null 2>&1; then
+            gh pr edit "$branch" --body-file "$RUNNER_TEMP/pr.md"
+          else
+            gh pr create --head "$branch" --base main --title "Blog: ${{ matrix.product }} $m release post (draft)" --body-file "$RUNNER_TEMP/pr.md"
+          fi
