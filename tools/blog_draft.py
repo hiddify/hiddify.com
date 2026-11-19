@@ -216,15 +216,218 @@ def write(product, rel, others=(), commits=()):
         print(f"- {t}")
 
 
+# ---- anniversaries --------------------------------------------------------------------------------
+# Hiddify was born on 1 Mehr 1401 (23 September 2022). Every year after 23 September, --check-anniversary
+# says whether that year's post is missing, and --anniversary writes it as a draft from the GitHub releases
+# of the year (Hiddify Manager, the app, the core) and the blog posts published in it.
+BIRTH = datetime.date(2022, 9, 23)
+WORD_EN = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+WORD_FA = {1: "یک", 2: "دو", 3: "سه", 4: "چهار", 5: "پنج", 6: "شش", 7: "هفت", 8: "هشت", 9: "نه", 10: "ده"}
+ORD_FA = {1: "اول", 2: "دوم", 3: "سوم", 4: "چهارم", 5: "پنجم", 6: "ششم", 7: "هفتم", 8: "هشتم", 9: "نهم", 10: "دهم"}
+JM = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"]
+
+
+def ordinal(n):
+    return {1: "1st", 2: "2nd", 3: "3rd"}.get(n if n < 20 else n % 10, f"{n}th") if not 10 < n % 100 < 14 else f"{n}th"
+
+
+def jalali(d):
+    gy, gm, gd = d.year, d.month, d.day
+    g_d_m = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
+    gy2 = gy + 1 if gm > 2 else gy
+    days = 355666 + 365 * gy + (gy2 + 3) // 4 - (gy2 + 99) // 100 + (gy2 + 399) // 400 + gd + g_d_m[gm - 1]
+    jy = -1595 + 33 * (days // 12053); days %= 12053
+    jy += 4 * (days // 1461); days %= 1461
+    if days > 365:
+        jy += (days - 1) // 365; days = (days - 1) % 365
+    jm, jd = (1 + days // 31, 1 + days % 31) if days < 186 else (7 + (days - 186) // 30, 1 + (days - 186) % 30)
+    return jy, jm, jd
+
+
+def fa_date(d):
+    jy, jm, jd = jalali(d)
+    return f"{jd} {JM[jm - 1]} {jy}".translate(FA_DIGITS)
+
+
+def last_anniversary(today=None):
+    today = today or datetime.date.today()
+    y = today.year if today >= datetime.date(today.year, 9, 23) else today.year - 1
+    return y - BIRTH.year, datetime.date(y, 9, 23)
+
+
+def check_anniversary(today=None):
+    n, day = last_anniversary(today)
+    name = f"{ordinal(n)}-anniversary"
+    print(f"new={'true' if n >= 1 and not (POSTS / (name + '.md')).exists() else 'false'}")
+    print(f"years={n}")
+    print(f"name={name}")
+
+
+def stable(path, start, end):
+    """Stable releases of a GitHub releases JSON list, published in [start, end), oldest first."""
+    if not path or not Path(path).exists():
+        return []
+    out = []
+    for r in json.loads(Path(path).read_text(encoding="utf-8")):
+        if r.get("draft") or r.get("prerelease") or not r.get("published_at"):
+            continue
+        d = datetime.date.fromisoformat(r["published_at"][:10])
+        if start <= d < end and major(r["tag_name"]) is not None:
+            out.append((d, r["tag_name"].lstrip("v")))
+    return sorted(out)
+
+
+def year_posts(start, end, lang):
+    out = []
+    for f in sorted(POSTS.glob("*.fa.md" if lang == "fa" else "*.md")):
+        if lang == "en" and f.name.endswith(".fa.md"):
+            continue
+        s = f.read_text(encoding="utf-8")
+        if re.search(r"^draft:\s*true", s, re.M):
+            continue
+        m = re.search(r"^date:\s*(\S+)", s, re.M)
+        t = re.search(r"^#\s+(.+)$", s, re.M)
+        if not m or not t:
+            continue
+        d = datetime.date.fromisoformat(m.group(1)[:10])
+        if start < d < end and "anniversary" not in f.name:
+            out.append((d, t.group(1).strip(), f.name.replace(".fa.md", ".md")))   # links name the .md file in both languages
+    return sorted(out)
+
+
+def write_anniversary(manager_json, app_json, core_json, today=None):
+    n, day = last_anniversary(today)
+    if n < 1:
+        return
+    name = f"{ordinal(n)}-anniversary"
+    prev = f"{ordinal(n - 1)}-anniversary" if n > 1 else ""
+    start = datetime.date(day.year - 1, 9, 23)
+    rel = {k: stable(p, start, day) for k, p in (("manager", manager_json), ("app", app_json), ("core", core_json))}
+
+    def span(k, fa):
+        r = rel[k]
+        if not r:
+            return "(بدون نسخهٔ پایدار)" if fa else "(no stable release)"
+        a, b = r[0][1], r[-1][1]
+        a = a.translate(FA_DIGITS) if fa else a
+        b = b.translate(FA_DIGITS) if fa else b
+        cnt = str(len(r)).translate(FA_DIGITS) if fa else str(len(r))
+        return (f"{cnt} نسخهٔ پایدار، از {a} تا **{b}**" if fa else f"{cnt} stable releases, from {a} to **{b}**")
+
+    def posts(lang):
+        p = year_posts(start, day, lang)
+        if not p:
+            return "- (TODO)"
+        return "\n".join(f"- [{t}]({f}) ({fa_date(d) if lang == 'fa' else f'{d:%B %Y}'})" for d, t, f in p)
+
+    head = lambda desc, tags: (f"---\ndraft: true\ndate: {day}\nslug: hiddify-turns-{WORD_EN.get(n, n)}\nauthors:\n  - hiddify\n"
+                               f"categories:\n  - Anniversary\ntags:\n{tags}description: {json.dumps(desc, ensure_ascii=False)}\n---\n\n")
+    en = head(f"Hiddify turned {WORD_EN.get(n, n)} on {day:%d %B %Y}: a look back at year {WORD_EN.get(n, n)}.",
+              "  - Hiddify\n  - Internet Freedom Solution\n") + f"""# Hiddify turns {WORD_EN.get(n, n)}
+
+<!-- DRAFT made by tools/blog_draft.py --anniversary. Write the "In 30 seconds" box and one short section per
+     product in plain words from the lists below, check every number, then set draft: false. -->
+
+!!! abstract "In 30 seconds"
+    Hiddify turned {WORD_EN.get(n, n)} on {day:%d %B %Y}. (Two plain sentences: the biggest things of this year.)
+    This post looks back at the year{f", from the [last anniversary]({prev}.md) to today" if prev else ""}.
+
+<!-- more -->
+
+## Year {WORD_EN.get(n, n)} in a few numbers
+
+- **Hiddify Manager**: {span("manager", False)}. ([GitHub](https://github.com/hiddify/Hiddify-Manager/releases))
+- **Hiddify app**: {span("app", False)}. ([GitHub](https://github.com/hiddify/hiddify-app/releases))
+- **Hiddify core**: {span("core", False)}. ([GitHub](https://github.com/hiddify/hiddify-core/releases))
+
+*({start:%d %B %Y} to {day:%d %B %Y}, from the GitHub releases.)*
+
+## This year on the blog
+
+{posts("en")}
+
+## Thank you
+
+Hiddify is made by a small team and many volunteers: people who translate the app, try the test versions, report
+problems and answer questions in the groups. Thank you all. The open internet is a right for everyone.
+
+- Star the projects on [GitHub](https://github.com/hiddify) and rate the app in the stores.
+- Tell a friend and share our guides.
+- If you can, [support us](/donation-and-support/).
+
+<div class="hi-cta-wrap"><a class="hi-cta" href="/app/How-to-install-Hiddify-app/">Download the Hiddify app</a></div>
+"""
+    fa_n = WORD_FA.get(n, str(n).translate(FA_DIGITS))
+    fa = head(f"هیدیفای در {fa_date(day)} {fa_n} ساله شد: مروری بر سال {ORD_FA.get(n, '')}.",
+              "  - هیدیفای\n  - راهکار آزادی اینترنت\n") + f"""# هیدیفای {fa_n} ساله شد
+
+<!-- پیش‌نویس، ساخته‌شده با tools/blog_draft.py --anniversary. کادر «در ۳۰ ثانیه» و برای هر محصول یک بخش کوتاه را
+     از روی فهرست‌های زیر به زبان ساده بنویسید، عددها را چک کنید، بعد draft: false بگذارید. -->
+
+!!! abstract "در ۳۰ ثانیه"
+    هیدیفای در {fa_date(day)} {fa_n} ساله شد. (دو جملهٔ ساده: مهم‌ترین‌های امسال.)
+    این پست سال {ORD_FA.get(n, '')} را{f"، از [سالگرد قبل]({prev}.md) تا امروز،" if prev else ""} مرور می‌کند.
+
+<!-- more -->
+
+## سال {ORD_FA.get(n, '')} در چند عدد
+
+- **هیدیفای‌منیجر**: {span("manager", True)}. ([گیت‌هاب](https://github.com/hiddify/Hiddify-Manager/releases))
+- **اپ هیدیفای**: {span("app", True)}. ([گیت‌هاب](https://github.com/hiddify/hiddify-app/releases))
+- **هستهٔ هیدیفای**: {span("core", True)}. ([گیت‌هاب](https://github.com/hiddify/hiddify-core/releases))
+
+*(از {fa_date(start)} تا {fa_date(day)}، طبق نسخه‌های گیت‌هاب.)*
+
+## امسال در بلاگ
+
+{posts("fa")}
+
+## سپاس
+
+هیدیفای را یک تیم کوچک و داوطلبان زیادی می‌سازند: کسانی که اپ را ترجمه می‌کنند، نسخه‌های آزمایشی را امتحان
+می‌کنند، مشکل‌ها را گزارش می‌دهند و در گروه‌ها به پرسش‌ها جواب می‌دهند. از همه‌تان ممنونیم. اینترنت آزاد حق همهٔ مردم است.
+
+- به پروژه‌ها در [گیت‌هاب](https://github.com/hiddify) ستاره بدهید و در فروشگاه‌ها به اپ امتیاز بدهید.
+- به یک دوست بگویید و راهنماهای ما را به اشتراک بگذارید.
+- اگر می‌توانید، [از ما حمایت کنید](/fa/donation-and-support/).
+
+<div class="hi-cta-wrap"><a class="hi-cta" href="/fa/app/How-to-install-Hiddify-app/">دانلود اپ هیدیفای</a></div>
+"""
+    for suffix, text in ((".md", en), (".fa.md", fa)):
+        f = POSTS / (name + suffix)
+        if f.exists():
+            print(f"{f.relative_to(SITE)} already exists, left as it is")
+        else:
+            f.write_text(text, encoding="utf-8")
+            print(f"wrote {f.relative_to(SITE)}")
+    # the cover: a cake and the big number of years
+    ovr = SITE / "data" / "blog" / "covers.yml"
+    txt = ovr.read_text(encoding="utf-8") if ovr.exists() else ""
+    if not re.search(rf"^{name}:", txt, re.M):
+        unit = " year" if n == 1 else " years"
+        ovr.write_text(txt.rstrip("\n") + f'\n{name}: {{ver: "{n}", unit_en: "{unit}", unit_fa: " سال", icon: cake}}\n', encoding="utf-8")
+    for k in ("manager", "app", "core"):
+        print(f"- {k}: {len(rel[k])} stable releases")
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--check", nargs=2, metavar=("PRODUCT", "TAG"))
+    a.add_argument("--check-anniversary", action="store_true", help="new=true when this year's anniversary post is missing")
+    a.add_argument("--anniversary", nargs=3, metavar=("MANAGER_JSON", "APP_JSON", "CORE_JSON"),
+                   help="write this year's anniversary post as a draft from the releases lists (gh api repos/<repo>/releases)")
+    a.add_argument("--today", help="pretend today is this date (YYYY-MM-DD), for testing")
     a.add_argument("--product", choices=sorted(PRODUCTS))
     a.add_argument("--release", help="GitHub release JSON (gh api repos/<repo>/releases/latest)")
     a.add_argument("--commits", nargs="*", default=[], help="text files with one commit subject per line (gh api .../compare/<prev>...<tag>)")
     a.add_argument("--all", help="list of releases JSON (gh api repos/<repo>/releases): notes of the betas of the same major are added")
     o = a.parse_args()
-    if o.check:
+    today = datetime.date.fromisoformat(o.today) if o.today else None
+    if o.check_anniversary:
+        check_anniversary(today)
+    elif o.anniversary:
+        write_anniversary(*o.anniversary, today=today)
+    elif o.check:
         check(*o.check)
     elif o.product and o.release:
         others = json.loads(Path(o.all).read_text(encoding="utf-8")) if o.all else []

@@ -1,5 +1,6 @@
 # Drafts a blog post when the Hiddify app or Hiddify Manager gets a new major version, in a pull
-# request "blog-<product>-v<major>".
+# request "blog-<product>-v<major>"; and every year after 23 September (1 Mehr, Hiddify's birthday) the
+# anniversary post, in a pull request "blog-anniversary-<years>" (job "anniversary" below).
 # Once a day (and on demand from the Actions tab) it looks at the latest stable release of
 # hiddify/Hiddify-Manager and hiddify/hiddify-app. When its major version has no post yet
 # (data/blog/releases.yml), tools/blog_draft.py writes docs/blog/posts/<Name>.md and .fa.md as a
@@ -109,4 +110,67 @@ jobs:
             gh pr edit "$branch" --body-file "$RUNNER_TEMP/pr.md"
           else
             gh pr create --head "$branch" --base main --title "Blog: ${{ matrix.product }} $m release post (draft)" --body-file "$RUNNER_TEMP/pr.md"
+          fi
+
+  anniversary:
+    # Every year after 23 September: the "Hiddify turns N" post as a draft, with the stable releases of the
+    # year (Hiddify Manager, the app, the core) and the blog posts published in it. Someone writes the
+    # "In 30 seconds" box and the product sections in plain words, sets draft: false and merges; the About
+    # page timeline picks the post up by itself (hooks/about_timeline.py).
+    runs-on: ubuntu-24.04
+    needs: draft
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml packaging pillow
+
+      - name: Is this year's post missing?
+        id: chk
+        run: python tools/blog_draft.py --check-anniversary | tee -a "$GITHUB_OUTPUT"
+
+      - name: Draft the post
+        if: steps.chk.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for r in Hiddify-Manager:manager hiddify-app:app hiddify-core:core; do
+            gh api "repos/hiddify/${r%%:*}/releases?per_page=100" --paginate | jq -s 'add' > "$RUNNER_TEMP/${r##*:}.json"
+          done
+          python tools/blog_draft.py --anniversary "$RUNNER_TEMP/manager.json" "$RUNNER_TEMP/app.json" "$RUNNER_TEMP/core.json" \
+            | tee "$RUNNER_TEMP/changes.txt"
+          python tools/blog_covers.py "${{ steps.chk.outputs.name }}" || true
+
+      - name: Open the pull request
+        if: steps.chk.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          branch="blog-anniversary-${{ steps.chk.outputs.years }}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B "$branch"
+          git add -A docs/blog data/blog docs/assets/blog/covers
+          git commit -m "Blog: draft post, Hiddify turns ${{ steps.chk.outputs.years }}"
+          git push --force origin "$branch"
+          {
+            echo "A draft blog post for Hiddify's anniversary (${{ steps.chk.outputs.years }} years, 23 September)."
+            echo
+            echo "Before merging:"
+            echo "1. Write the \"In 30 seconds\" box: the biggest things of the year, in plain words."
+            echo "2. Add one short section per product (app, Hiddify Manager, core) from the release list and the posts of the year; check every number."
+            echo "3. Do the same in the Persian file, set \`draft: false\` in both files."
+            echo
+            echo "Numbers taken from GitHub:"
+            echo
+            sed -n '/^- /p' "$RUNNER_TEMP/changes.txt"
+          } > "$RUNNER_TEMP/pr.md"
+          if gh pr view "$branch" >/dev/null 2>&1; then
+            gh pr edit "$branch" --body-file "$RUNNER_TEMP/pr.md"
+          else
+            gh pr create --head "$branch" --base main --title "Blog: Hiddify turns ${{ steps.chk.outputs.years }} (draft)" --body-file "$RUNNER_TEMP/pr.md"
           fi
