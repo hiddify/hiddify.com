@@ -9,16 +9,16 @@ categories:
 tags:
   - Hiddify
   - Release
-description: "Panel 2 can be installed as an app, sets up Cloudflare domains by itself, picks clean IPs for each mobile operator, and adds HTTP/2 and many ports."
+description: "Hiddify Manager 2 can be installed as an app, sets up Cloudflare domains by itself, picks clean IPs for each mobile operator, and adds HTTP/2 and many ports."
 cover: /assets/blog/covers/Hiddify-Panel-v2-en.webp
 ---
 
-# Hiddify panel 2: an app on your phone, Cloudflare and AutoCDN
+# Hiddify Manager 2: an app on your phone, Cloudflare and AutoCDN
 
 <!-- made by .cache/blog/history_gen.py -->
 
 !!! abstract "In 30 seconds"
-    **Hiddify panel 2** (published as 2.9 on 30 March 2023) can be **installed like an app** on your phone,
+    **Hiddify Manager 2** (published as 2.9 on 30 March 2023) can be **installed like an app** on your phone,
     creates your domains in **Cloudflare** by itself, and gives each user **clean CDN IPs for their mobile
     operator**. It also added **HTTP/2** and **many ports**.
 
@@ -47,13 +47,13 @@ Hiddify Manager is at version 14 now. Install the latest version, or update your
 <div class="hi-cta-wrap"><a class="hi-cta" href="/manager/installation-and-setup/guide/">Install Hiddify Manager</a></div>
 
 ??? note "For experts"
-    - Until March 2024 the panel had its own version numbers, and the server package (then called Hiddify Config) had others: panel 2 shipped with package 8.0–8.3. Since 10.10 both share one number.
+    - Until March 2024 the panel had its own version numbers, and the server package (then called Hiddify Config) had others: Hiddify Manager 2 shipped with package 8.0–8.3. Since 10.10 both share one number.
     - Panel HISTORY keeps the whole 2.x line under one heading (2.9.0, 30 March 2023); work started before Nowruz.
     - In the same days the Xray developers added the panel to their list of web panels.
     - Sources: [panel HISTORY 2.9.0](https://github.com/hiddify/hiddifypanel/blob/main/HISTORY.md), [package 8.0.0](https://github.com/hiddify/Hiddify-Manager/releases/tag/v8.0.0)
 
 ## Related articles
 
-- [Hiddify panel 1: many users, many domains](Hiddify-Panel-v1.md)
-- [Hiddify panel 3: a new look and dark mode](Hiddify-Panel-v3.md)
+- [Hiddify Manager 1: many users, many domains](Hiddify-Panel-v1.md)
+- [Hiddify Manager 3: a new look and dark mode](Hiddify-Panel-v3.md)
 - [Hiddify Manager 14 is out](Hiddify-Manager-v14-is-released.md)

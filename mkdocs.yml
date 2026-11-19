@@ -238,6 +238,7 @@ hooks:
   - hooks/inline_links.py
   - hooks/blog_cover.py
   - hooks/notfound_index.py
+  - hooks/about_timeline.py
 
 nav: #docs/app/install.md
   #- Hiddify: index.html

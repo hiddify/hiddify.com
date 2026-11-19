@@ -74,5 +74,6 @@ How you can help:
 ## Related articles
 
 - [Hiddify's second anniversary](2nd-anniversary.md)
+- [Hiddify turns three](3rd-anniversary.md)
 - [Hiddify app 5 is out](Hiddify-app-v5-is-released.md)
 - [Hiddify Manager 14 is out](Hiddify-Manager-v14-is-released.md)

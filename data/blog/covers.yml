@@ -15,6 +15,7 @@ Hiddify-Manager-v11-is-released: {ver: "11"}
 Hiddify-Next-iOS-beta-and-WARP: {ver: "0.14"}
 1st-anniversary: {ver: "1", unit_en: " year", unit_fa: " سال", icon: cake}
 2nd-anniversary: {ver: "2", unit_en: " years", unit_fa: " سال", shot: /assets/blog/2nd-anniversary/33e00f80.webp}
+3rd-anniversary: {ver: "3", unit_en: " years", unit_fa: " سال", icon: cake}
 Hiddify-core: {icon: chip}
 DNS-tunnels-in-Hiddify: {icon: dns}
 Hiddify-Extensions: {icon: puzzle}

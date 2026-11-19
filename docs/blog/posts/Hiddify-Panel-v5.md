@@ -9,16 +9,16 @@ categories:
 tags:
   - Hiddify
   - Release
-description: "A short line a week after panel 4: domain types, easier adding of domains, usage in the subscription link, new colours."
+description: "A short line a week after Hiddify Manager 4: domain types, easier adding of domains, usage in the subscription link, new colours."
 cover: /assets/blog/covers/Hiddify-Panel-v5-en.webp
 ---
 
-# Hiddify panel 5: domain types and usage in the link
+# Hiddify Manager 5: domain types and usage in the link
 
 <!-- made by .cache/blog/history_gen.py -->
 
 !!! abstract "In 30 seconds"
-    **Hiddify panel 5** came out on 26 April 2023, one week after panel 4. It made **adding domains** easier with
+    **Hiddify Manager 5** came out on 26 April 2023, one week after Hiddify Manager 4. It made **adding domains** easier with
     **domain types**, put each user's **usage in the subscription link**, and changed the colours.
 
 <!-- more -->
@@ -37,12 +37,12 @@ Hiddify Manager is at version 14 now. Install the latest version, or update your
 <div class="hi-cta-wrap"><a class="hi-cta" href="/manager/installation-and-setup/guide/">Install Hiddify Manager</a></div>
 
 ??? note "For experts"
-    - Until March 2024 the panel had its own version numbers, and the server package (then called Hiddify Config) had others: panel 5 shipped with package 9.0. Since 10.10 both share one number.
-    - The 5.x line lasted only two days (5.0.0–5.0.3), on the way to panel 6.
+    - Until March 2024 the panel had its own version numbers, and the server package (then called Hiddify Config) had others: Hiddify Manager 5 shipped with package 9.0. Since 10.10 both share one number.
+    - The 5.x line lasted only two days (5.0.0–5.0.3), on the way to Hiddify Manager 6.
     - Sources: [panel HISTORY 5.0.0](https://github.com/hiddify/hiddifypanel/blob/main/HISTORY.md)
 
 ## Related articles
 
-- [Hiddify panel 4: Reality and admins with levels](Hiddify-Panel-v4.md)
-- [Hiddify panel 6: fragment, WARP+ and HiddifyNG](Hiddify-Panel-v6.md)
+- [Hiddify Manager 4: Reality and admins with levels](Hiddify-Panel-v4.md)
+- [Hiddify Manager 6: fragment, WARP+ and HiddifyNG](Hiddify-Panel-v6.md)
 - [Hiddify Manager 14 is out](Hiddify-Manager-v14-is-released.md)

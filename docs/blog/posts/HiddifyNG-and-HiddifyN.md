@@ -29,7 +29,7 @@ cover: /assets/blog/covers/HiddifyNG-and-HiddifyN-en.webp
 - **HiddifyNG** (Android) and **HiddifyN** (Windows), built on v2rayNG and v2rayN.
 - **Import a subscription with one tap**, and defaults that suit Iran.
 - **Routing and load balancing** (version 7 of both apps).
-- **TLS fragment** links from the panel (panel 6).
+- **TLS fragment** links from the panel (Hiddify Manager 6).
 - **Fast updates:** 30 HiddifyNG releases in the first month.
 - **On Google Play** as `ang.hiddify.com`; about 519,000 + 174,000 more downloads from GitHub.
 

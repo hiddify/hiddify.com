@@ -51,13 +51,13 @@ date_fa: ۱۷ اسفند ۱۴۰۲
 <div class="hi-cta-wrap"><a class="hi-cta" href="/fa/manager/installation-and-setup/guide/">نصب هیدیفای‌منیجر</a></div>
 
 ??? note "برای کاربران حرفه‌ای"
-    - پنل ۹ هیچ‌وقت نداشتیم: بعد از پنل ۸.۸.۹۹ (۱۲ اسفند ۱۴۰۲) پنل به ۱۰.۱۰ رفت تا با بستهٔ سرور یک شماره داشته باشد.
+    - هیدیفای‌منیجر ۹ هیچ‌وقت نداشتیم: بعد از هیدیفای‌منیجر ۸.۸.۹۹ (۱۲ اسفند ۱۴۰۲) پنل به ۱۰.۱۰ رفت تا با بستهٔ سرور یک شماره داشته باشد.
     - نسخهٔ ۱۰.۱۱ (۲۵ اسفند ۱۴۰۲) HiddifyCli را برای اسکریپت‌های سرور همراه آورد؛ sing-box 1.8.8 و Xray 1.8.9.
     - پست دو سالگی ما به این نسخه «نسخهٔ ۱۰ هیدیفای‌منیجر» می‌گوید.
     - منبع‌ها: [panel HISTORY v10.10.10](https://github.com/hiddify/hiddifypanel/blob/main/HISTORY.md)، [HTTPUpgrade](https://github.com/hiddify/Hiddify-Manager/commit/082de5ca)
 
 ## مقاله‌های مرتبط
 
-- [پنل هیدیفای ۸: پروکسی SSH و یک لینک هوشمند](Hiddify-Panel-v8.md)
+- [هیدیفای‌منیجر ۸: پروکسی SSH و یک لینک هوشمند](Hiddify-Panel-v8.md)
 - [هیدیفای‌منیجر ۱۰.۷۰: SplitHTTP و فرگمنت](Hiddify-Manager-v10-70-is-released.md)
 - [هیدیفای‌منیجر ۱۴ منتشر شد](Hiddify-Manager-v14-is-released.md)

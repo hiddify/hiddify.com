@@ -9,17 +9,17 @@ categories:
 tags:
   - هیدیفای
   - نسخهٔ تازه
-description: "اولین پنل پایدار هیدیفای: چند کاربر و چند دامنه، TUIC و ShadowTLS، ربات تلگرام، و نمایش مصرف در لینک اشتراک."
+description: "اولین نسخهٔ پایدار هیدیفای‌منیجر: چند کاربر و چند دامنه، TUIC و ShadowTLS، ربات تلگرام، و نمایش مصرف در لینک اشتراک."
 cover: /assets/blog/covers/Hiddify-Panel-v1-fa.webp
 date_fa: ۹ اسفند ۱۴۰۱
 ---
 
-# پنل هیدیفای ۱: چند کاربر، چند دامنه
+# هیدیفای‌منیجر ۱: چند کاربر، چند دامنه
 
 <!-- made by .cache/blog/history_gen.py -->
 
 !!! abstract "در ۳۰ ثانیه"
-    اولین **پنل پایدار هیدیفای، نسخهٔ ۱.۰**، در ۹ اسفند ۱۴۰۱ همراه اولین بستهٔ شماره‌دار سرور (۷.۰) منتشر شد. یک
+    اولین نسخهٔ پایدار، **هیدیفای‌منیجر ۱.۰**، در ۹ اسفند ۱۴۰۱ همراه اولین بستهٔ شماره‌دار سرور (Hiddify Config ۷.۰) منتشر شد. یک
     سرور حالا می‌توانست **چند کاربر روی چند دامنه** را سرویس بدهد، با **TUIC** و **ShadowTLS**، یک **ربات تلگرام**
     برای ادمین‌ها، و **مصرف و روزهای باقی‌ماندهٔ** هر کاربر در لینک اشتراکش.
 
@@ -38,12 +38,12 @@ date_fa: ۹ اسفند ۱۴۰۱
 
 <div align=center>
 
-<img src="/assets/blog/2nd-anniversary/f64f9ae1.webp" alt="پنل هیدیفای ۱" width="80%" />
+<img src="/assets/blog/2nd-anniversary/f64f9ae1.webp" alt="هیدیفای‌منیجر ۱" width="80%" />
 </div>
 
 <div align=center>
 
-<img src="/assets/blog/2nd-anniversary/7c4faaf6.webp" alt="صفحهٔ کاربر در پنل ۱" width="60%" />
+<img src="/assets/blog/2nd-anniversary/7c4faaf6.webp" alt="صفحهٔ کاربر در هیدیفای‌منیجر ۱" width="60%" />
 </div>
 
 ## امروز
@@ -53,12 +53,12 @@ date_fa: ۹ اسفند ۱۴۰۱
 <div class="hi-cta-wrap"><a class="hi-cta" href="/fa/manager/installation-and-setup/guide/">نصب هیدیفای‌منیجر</a></div>
 
 ??? note "برای کاربران حرفه‌ای"
-    - تا اسفند ۱۴۰۲ پنل شمارهٔ نسخهٔ خودش را داشت و بستهٔ سرور (که آن موقع Hiddify Config نام داشت) شمارهٔ دیگری: پنل ۱ همراه بستهٔ ۷.۰ آمد. از ۱۰.۱۰ هر دو یک شماره دارند.
+    - تا اسفند ۱۴۰۲ پنل شمارهٔ نسخهٔ خودش را داشت و بستهٔ سرور (که آن موقع Hiddify Config نام داشت) شمارهٔ دیگری: هیدیفای‌منیجر ۱ همراه بستهٔ ۷.۰ آمد. از ۱۰.۱۰ هر دو یک شماره دارند.
     - بستهٔ سرور ۷.x این‌ها را آورد: منوی متنی روی سرور، Let's Encrypt به‌طور پیش‌فرض (و ZeroSSL اگر نشد)، HAProxy در جلو، و پشتیبان خودکار پنل هر ۶ ساعت.
     - منبع‌ها: [panel HISTORY 1.x](https://github.com/hiddify/hiddifypanel/blob/main/HISTORY.md)، [package 7.0.0](https://github.com/hiddify/Hiddify-Manager/releases/tag/v7.0.0)
 
 ## مقاله‌های مرتبط
 
 - [هیدیفای‌منیجر چطور شروع شد: Hiddify Config و اولین پنل](Hiddify-Config-the-first-panel.md)
-- [پنل هیدیفای ۲: اپ روی گوشی، کلودفلر و AutoCDN](Hiddify-Panel-v2.md)
+- [هیدیفای‌منیجر ۲: اپ روی گوشی، کلودفلر و AutoCDN](Hiddify-Panel-v2.md)
 - [هیدیفای‌منیجر ۱۴ منتشر شد](Hiddify-Manager-v14-is-released.md)

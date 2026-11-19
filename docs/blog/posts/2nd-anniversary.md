@@ -40,7 +40,7 @@ These days remind us of a deep sorrow, a great grief that united us in pursuit o
 !!! note "About the version numbers"
     "HiddifyManager version 1 to 8" in this post are the versions of the **Hiddify panel**; the server package had its own
     numbers then (7 to 10). Some dates and features are a little different in the release history: for the exact details
-    of each version, see its own post, from [Hiddify panel 1](Hiddify-Panel-v1.md) to [Hiddify panel 8](Hiddify-Panel-v8.md).
+    of each version, see its own post, from [Hiddify Manager 1](Hiddify-Panel-v1.md) to [Hiddify Manager 8](Hiddify-Panel-v8.md).
 
 
 **❤️ Freedom**

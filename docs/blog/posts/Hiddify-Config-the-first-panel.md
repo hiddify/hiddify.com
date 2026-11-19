@@ -54,5 +54,5 @@ Hiddify Manager is at version 14 now. Install the latest version, or update your
 
 ## Related articles
 
-- [Hiddify panel 1: many users, many domains](Hiddify-Panel-v1.md)
+- [Hiddify Manager 1: many users, many domains](Hiddify-Panel-v1.md)
 - [Hiddify Manager 14 is out](Hiddify-Manager-v14-is-released.md)

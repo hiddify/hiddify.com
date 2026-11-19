@@ -51,13 +51,13 @@ Hiddify Manager is at version 14 now. Install the latest version, or update your
 <div class="hi-cta-wrap"><a class="hi-cta" href="/manager/installation-and-setup/guide/">Install Hiddify Manager</a></div>
 
 ??? note "For experts"
-    - There was never a panel 9: after panel 8.8.99 (2 March 2024) the panel jumped to 10.10 to share one number with the server package.
+    - There was never a Hiddify Manager 9: after Hiddify Manager 8.8.99 (2 March 2024) the panel jumped to 10.10 to share one number with the server package.
     - 10.11 (15 March 2024) bundled HiddifyCli for the server scripts; sing-box 1.8.8 and Xray 1.8.9.
     - Our second-anniversary post calls this "HiddifyManager version 10".
     - Sources: [panel HISTORY v10.10.10](https://github.com/hiddify/hiddifypanel/blob/main/HISTORY.md), [HTTPUpgrade](https://github.com/hiddify/Hiddify-Manager/commit/082de5ca)
 
 ## Related articles
 
-- [Hiddify panel 8: SSH proxy and one smart link](Hiddify-Panel-v8.md)
+- [Hiddify Manager 8: SSH proxy and one smart link](Hiddify-Panel-v8.md)
 - [Hiddify Manager 10.70: SplitHTTP and fragment](Hiddify-Manager-v10-70-is-released.md)
 - [Hiddify Manager 14 is out](Hiddify-Manager-v14-is-released.md)

@@ -74,5 +74,6 @@ date_fa: ۲۵ آبان ۱۴۰۵
 ## مقاله‌های مرتبط
 
 - [دو سالگی هیدیفای](2nd-anniversary.md)
+- [هیدیفای سه ساله شد](3rd-anniversary.md)
 - [اپ هیدیفای ۵ منتشر شد](Hiddify-app-v5-is-released.md)
 - [هیدیفای‌منیجر ۱۴ منتشر شد](Hiddify-Manager-v14-is-released.md)
