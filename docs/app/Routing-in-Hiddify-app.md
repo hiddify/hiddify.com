@@ -64,6 +64,13 @@ On a computer there is no app list to tick. You choose apps with a routing rule,
 !!! tip "How do I find the file name?"
     On Windows, open **Task Manager**, right-click the app and choose **Go to details**: the highlighted name (for example `chrome.exe`) is the one to type. **Process paths** does the same with the full path, for example `C:\Program Files\Google\Chrome\Application\chrome.exe`, when two programs have the same name. **Package names** is for Android only.
 
+??? note "Microsoft Store apps, and why not `.msi`"
+    - Type the name of the program that **runs**, not of the file you installed it with. An `.msi` file, or an `.exe` you downloaded to install, is only the installer. For example, Bing Wallpaper installs with `BingWallpaper.exe`, but the program that runs is `BingWallpaperApp.exe`. The rule only accepts names ending in `.exe` (or `.bat`, `.cmd`, `.com`).
+    - Apps from the Microsoft Store work the same way: open the app, then find its name in **Task Manager → Go to details**. Or open PowerShell, run `tasklist /apps`, and look for the app in the list; the `.exe` name is in the first column.
+    - Some apps run more than one program; add every name you see.
+    - For Store apps, use **Process names**, not **Process paths**: they live in `C:\Program Files\WindowsApps\…` in a folder whose name has the version number in it, so the path changes with every update.
+    - Some Store apps download in the background through Windows itself (for example `svchost.exe`); that part does not carry the app's name and is not caught by the rule.
+
 ## Balancer strategy
 
 When the app balances traffic over several servers, it chooses a server for each connection:
