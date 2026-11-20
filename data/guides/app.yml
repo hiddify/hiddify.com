@@ -77,10 +77,6 @@ categories:
           - path: app/Hiddify-on-Android-TV
             fa: اپ روی اندروید تی‌وی
             en: On Android TV
-      - fa: تازه‌ها
-        en: New
-        articles:
-          - path: app/DNS-tunnels-in-Hiddify-app
     videos:
       fa: [HOF6NJa55SI, UsOrJ9wMUMo, NGP_uC8edJI, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
       en: [NGP_uC8edJI, HOF6NJa55SI, UsOrJ9wMUMo, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]

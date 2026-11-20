@@ -4,6 +4,7 @@ on:
     branches:
       - master 
       - main
+  workflow_dispatch:   # started by youtube-sync after it publishes the guide pages
 permissions:
   contents: write
 jobs:

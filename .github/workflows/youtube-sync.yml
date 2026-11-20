@@ -1,4 +1,4 @@
-# Keeps the guide pages up to date, in a pull request:
+# Keeps the guide pages up to date, by itself (user 2026-11-20: no pull request to wait for):
 # The app and manager guide pages (docs/app/index*.md, docs/manager/index*.md) are built from
 # data/guides/*.yml by tools/guide_page.py.
 # 1. Articles: every article of docs/app, docs/manager/<category>/ and the Core main pages that the
@@ -8,8 +8,10 @@
 # 2. New videos: once a day (and on demand from the Actions tab) it reads youtube.com/@hiddify's
 #    RSS feed and adds new long videos (Shorts are skipped) to the guide pages (first category of
 #    their page; move them if needed) and to docs/instagram/index*.md (a square tile per video).
-# and opens (or updates) the pull request "youtube-sync" for review. Merging it deploys the site
-# through the existing "ci" workflow. Nothing is pushed to main by this workflow.
+# The changes are committed straight to main, and the "ci" workflow is started to deploy the site (a
+# push made with the workflow's own token does not start other workflows by itself, and does not start
+# this one again). A new manager video goes to the top of the first category of the manager guide; move
+# it in data/guides/manager.yml if it belongs elsewhere.
 #
 # Repo settings needed: Settings > Actions > General > Workflow permissions:
 #   "Read and write permissions" and "Allow GitHub Actions to create and approve pull requests".
@@ -29,7 +31,7 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+  actions: write   # to start the "ci" deploy
 
 concurrency:
   group: youtube-sync
@@ -67,7 +69,7 @@ jobs:
           INSTAGRAM_FONT: ${{ runner.temp }}/fonts/Vazirmatn-Bold.ttf
         run: make youtube
 
-      - name: Open or update the pull request
+      - name: Publish (commit to main and deploy)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -75,28 +77,21 @@ jobs:
             echo "No new videos or articles."
             exit 0
           fi
-          new=$( { git diff -U0 -- data/guides/videos.yml | grep -oE '^\+"[A-Za-z0-9_-]{11}"' | tr -d '+"';
-                   git diff -U0 -- docs/instagram | grep -oE '^\+.*watch\?v=[A-Za-z0-9_-]{11}' | grep -oE '[A-Za-z0-9_-]{11}$'; } | sort -u)
-          titles=$([ -z "$new" ] || python - $new <<'EOF'
-          import sys, os
-          sys.path.insert(0, 'tools')
-          from yt_channel import long_videos
-          ids = set(sys.argv[1:])
-          for v, d, t in long_videos():
-              if v in ids: print(f'- [{t}](https://www.youtube.com/watch?v={v}) ({d[:4]}-{d[4:6]}-{d[6:]})')
-          EOF
-          )
+          articles=$(grep -E '^  \+ ' "$RUNNER_TEMP/articles.txt" | sed 's/^  + /- /' | sort -u)
+          new=$(git diff -U0 -- data/guides/videos.yml | grep -oE '^\+"[A-Za-z0-9_-]{11}"' | tr -d '+"' | sort -u)
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git checkout -B youtube-sync
           git add -A docs data
-          git commit -m "Add new videos and articles to the guide pages"
-          git push --force origin youtube-sync
-          articles=$(grep -E '^  \+ ' "$RUNNER_TEMP/articles.txt" | sed 's/^  + /- /' | sort -u)
-          body=$(printf 'New videos on youtube.com/@hiddify:\n\n%s\n\nNew articles added to their guide page (fa and en):\n\n%s\n\nA new **manager** video is put at the top of the first category of the manager guide: move it to its category in this branch if needed. Merging deploys the site.\n' "${titles:-none}" "${articles:-none}")
-          if gh pr view youtube-sync --json state -q .state 2>/dev/null | grep -q OPEN; then
-            gh pr edit youtube-sync --body "$body"
-          else
-            gh pr create --base "${{ github.event.repository.default_branch }}" --head youtube-sync \
-              --title "Guide pages: new videos and articles" --body "$body"
-          fi
+          git commit -q -F - <<EOF
+          Guide pages: new videos and articles
+
+          New articles: ${articles:-none}
+          New videos: ${new:-none}
+          EOF
+          # main may have moved while this ran: rebase and try again
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then break; fi
+            git pull --rebase origin main
+          done
+          gh workflow run manual.yml --ref main
+          echo "Published, and the deploy (ci) started."
