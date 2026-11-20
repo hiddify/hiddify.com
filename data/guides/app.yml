@@ -62,6 +62,10 @@ categories:
           - path: app/DNS-and-TLS-tricks-in-Hiddify-app
             fa: DNS و ترفندهای TLS
             en: DNS and TLS tricks
+          - path: app/DNS-tunnels-in-Hiddify-app
+            fa: تونل‌های DNS (Soar، DNSTT، MasterDNS) و ریزالورها
+            en: DNS tunnels (Soar, DNSTT, MasterDNS) and resolvers
+            ver: 5
           - path: app/Import-export-settings-and-edit-profile
             fa: ورود و خروج تنظیمات و ویرایش پروفایل
             en: "Import, export settings and edit a profile"

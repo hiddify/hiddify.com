@@ -48,5 +48,6 @@ DNS اسم سایت (`google.com`) را به آی‌پی تبدیل می‌کن�
 
 - [کار با اپ هیدیفای](How-to-use-Hiddify-app.md): افزودن پروفایل، اتصال و تنظیمات پایه
 - [نصب اپ هیدیفای](How-to-install-Hiddify-app.md)
+- [تونل‌های DNS و ریزالورها (Soar، DNSTT، MasterDNS)](DNS-tunnels-in-Hiddify-app.md)
 
 </div>

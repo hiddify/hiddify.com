@@ -64,5 +64,6 @@ The profiles list (Home → profile card) also has **Sort** (alphabetically or b
 
 - [How to use the Hiddify app](How-to-use-Hiddify-app.md): add a profile, connect, the basic settings
 - [How to install the Hiddify app](How-to-install-Hiddify-app.md)
+- [DNS tunnels and resolvers (Soar, DNSTT, MasterDNS)](DNS-tunnels-in-Hiddify-app.md)
 
 </div>

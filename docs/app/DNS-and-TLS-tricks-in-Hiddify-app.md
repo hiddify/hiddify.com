@@ -48,5 +48,6 @@ How these tricks work, and how to find good values: [How the TLS trick works](/m
 
 - [How to use the Hiddify app](How-to-use-Hiddify-app.md): add a profile, connect, the basic settings
 - [How to install the Hiddify app](How-to-install-Hiddify-app.md)
+- [DNS tunnels and resolvers (Soar, DNSTT, MasterDNS)](DNS-tunnels-in-Hiddify-app.md)
 
 </div>
