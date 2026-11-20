@@ -3048,3 +3048,9 @@ footer {
 /* Explanatory pictures in articles (light and dark versions, #only-light / #only-dark) */
 .md-typeset figure.hi-diag{margin:1.4rem auto;max-width:100%}
 .md-typeset figure.hi-diag img{width:100%;height:auto;border-radius:22px;vertical-align:top}
+
+/* Numbered steps in articles: the old Tailwind reset above (ol{list-style:none}) hid every number. */
+.md-typeset ol:not([class]){list-style-type:decimal}
+.md-typeset ol:not([class]) ol:not([class]){list-style-type:lower-alpha}
+.md-typeset [dir=rtl] ol:not([class]),[dir=rtl] .md-typeset ol:not([class]){list-style-type:persian}
+.md-typeset ol:not([class]) > li::marker{font-weight:700;color:var(--md-accent-fg-color, var(--md-primary-fg-color))}

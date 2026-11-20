@@ -116,7 +116,7 @@ Tap **+** (**Add rule**). A rule says *which traffic* (the conditions) and *wher
 
 1. **Name**: a name for the rule.
 2. **Outbound if match**: **Proxy**, **Direct**, **Direct with fragment** (direct, with the TLS fragment trick) or **Block**.
-3. **URLset**: ready lists of sites (rule sets) by URL.
+3. **URLset**: links to ready-made rule-set **files** (`.srs` or `.json`), each a long list of sites, for example a list of ad sites. This field is **not** for a site's address; see the warning below.
 4. **Package names** (Android, VPN mode only): apps by their package name. **Process names** and **Process paths** are the same on computers, for example `chrome.exe` or `/usr/lib/chromium/chromium`.
 
 Further down you can also match **Networks** (TCP or UDP), **Destination ports** and **Source ports** (for example `443` or `1:65000`), **Protocol** (TLS, HTTP, QUIC, STUN, DNS, BitTorrent), **Destination IP CIDR** and **Source IP CIDR** (for example `10.0.0.0/24`), and sites by **Domain**, **Domain suffix** (for example `.ir`), **Domain keyword** or **Domain regex**. Fill in only what you need; a rule matches when all the filled fields match. Tap the ✓ at the top to save.
@@ -128,6 +128,59 @@ Further down you can also match **Networks** (TCP or UDP), **Destination ports**
 
 !!! example "Example: send every `.ir` site direct"
     Add a rule, set **Outbound if match** to **Direct**, and under **Domain suffix** add `.ir`.
+
+!!! danger "Don't put a site's address in URLset"
+    **URLset** downloads a rule-set *file* from the link you give it. A site's address such as `https://github.com` is a web page, not a rule-set file, so the whole rule **stops working**: the site is not blocked, even if the domain fields are filled in correctly. To pick a site, use **Domain suffix** (next section), and keep URLset empty.
+
+    <img width=260 alt="Wrong: a site's address in URLset" src="/assets/app/Routing-in-Hiddify-app/en-site-urlset-wrong.webp" style="display:block;margin:0 auto">
+
+## Step by step: block a site, or send it direct or through the proxy
+
+Here we block GitHub as an example. The steps are the same for any site; only step 3 changes:
+
+- **Block**: the site does not open at all.
+- **Direct**: the site opens without the VPN, for example a banking site that does not open from abroad.
+- **Proxy**: the site always goes through the VPN, even if a rule lower in the list (for example "Sites in your region") would send it direct.
+
+The steps:
+
+1. In **Settings → Routing**, scroll down to the rules and tap **+**.
+
+    <img width=260 alt="The + button below the rules" src="/assets/app/Routing-in-Hiddify-app/en-site-add.webp" style="display:block;margin:0 auto">
+
+2. Tap **Name** and write a name you will recognize, for example `Block GitHub`.
+3. Tap **Outbound if match** and choose **Block** (or **Direct** or **Proxy**).
+
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
+    <img width=240 alt="Name and Outbound if match" src="/assets/app/Routing-in-Hiddify-app/en-site-name.webp">
+    <img width=240 alt="Choosing Block" src="/assets/app/Routing-in-Hiddify-app/en-site-outbound.webp">
+    </div>
+
+4. Scroll down and tap **Domain suffix**, then **+**. Write only the site's name, `github.com`: no `https://`, no `www`, no `/` at the end. Tap **OK**, then the back arrow.
+
+    <img width=260 alt="Writing github.com in Domain suffix" src="/assets/app/Routing-in-Hiddify-app/en-site-value.webp" style="display:block;margin:0 auto">
+
+5. Tap the ✓ at the top to save. The new rule appears at the top of the list, switched on.
+
+    <img width=260 alt="Domain suffix filled in and the save button" src="/assets/app/Routing-in-Hiddify-app/en-site-suffix.webp" style="display:block;margin:0 auto">
+
+6. Test it: close the browser completely and open the site again. You don't need to disconnect; the app applies the rule right away. A blocked site shows an error like this:
+
+    <img width=260 alt="GitHub blocked: This site can't be reached" src="/assets/app/Routing-in-Hiddify-app/site-blocked.webp" style="display:block;margin:0 auto">
+
+Which domain field should you use?
+
+- **Domain suffix** `github.com`: the site **and all its subdomains** (`github.com`, `docs.github.com`, `api.github.com`). This is the right choice almost always.
+- **Domain** `github.com`: only this exact address; `docs.github.com` still opens.
+- **Domain keyword** `github`: every address that contains the word, for example `githubusercontent.com` too.
+
+You can put several sites in one rule: add each one as a separate line.
+
+!!! tip "If it does not work"
+    - **URLset** of the rule must be empty (see the warning above).
+    - The ✓ is grey when there is nothing new to save. If you changed something and the ✓ is still grey, go back and open the rule again to check that your values are there.
+    - Rules are checked from top to bottom; if another rule above yours matches the site first, move yours higher with the handle (≡).
+    - In versions before 5.9.9, **Domain suffix** accepts only endings like `.com`. Update the app, or use **Domain** `github.com` together with **Domain keyword** `github`.
 
 The ⋮ menu of the Routing page can **Import rules** from the clipboard or a file, **Copy rules** or **Save rules to file** (to move them to another device), and **Reset to default rules**.
 
