@@ -141,6 +141,26 @@ Further down you can also match **Networks** (TCP or UDP), **Destination ports**
 
     <img width=260 alt="Wrong: a site's address in URLset" src="/assets/app/Routing-in-Hiddify-app/en-site-urlset-wrong.webp" style="display:block;margin:0 auto">
 
+??? note "Where do I get a URLset link?"
+    URLset takes the **raw** link of a rule-set file. It starts with `https://raw.githubusercontent.com/` and ends in `.srs` (or `.json`). The app downloads the file through the VPN and refreshes it every few days.
+
+    Hiddify's own lists are in the [hiddify-geo](https://github.com/hiddify/hiddify-geo/tree/rule-set) repository, branch `rule-set`. The app's built-in rules use them too:
+
+    - `block/`: ads, malware, phishing and crypto miners.
+    - `country/`: the sites (`geosite-…`) and IP addresses (`geoip-…`) of Iran, China, Russia, Turkey, Afghanistan, Brazil and Indonesia.
+
+    For example, every Iranian site:
+
+    ```
+    https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs
+    ```
+
+    To get the link of another file, open it on GitHub, tap **View raw** (or **Raw**) and copy the address of the page that opens.
+
+    You don't need this list to open Iranian sites directly: the built-in **Sites in (your region)** rule already does that.
+
+    Other rule-set files in sing-box format work too. If you find a list you trust somewhere else, test it before you rely on it: with a wrong link, the whole rule stops working.
+
 ## Step by step: block a site, or send it direct or through the proxy
 
 Here we block GitHub as an example. The steps are the same for any site; only step 3 changes:
