@@ -8,6 +8,11 @@ title: مسیریابی در اپ هیدیفای
 
 مسیریابی تعیین می‌کند کدام ترافیک از فیلترشکن عبور کند، کدام مستقیم (بدون فیلترشکن) به اینترنت برود و کدام مسدود شود. این صفحه همهٔ گزینه‌های **تنظیمات ← مسیریابی** را توضیح می‌دهد.
 
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-ways-m-light.webp"><img alt="مسیریابی: هر اتصال از فیلترشکن، مستقیم یا مسدود" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-ways-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-ways-m-dark.webp"><img alt="مسیریابی: هر اتصال از فیلترشکن، مستقیم یا مسدود" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-ways-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
+
 !!! note "نوشته‌شده برای اپ هیدیفای نسخهٔ ۵.۹"
     این صفحه برای اپ هیدیفای **نسخهٔ ۵.۹** (۵.۹.۲) است. تصویرها از اندروید هستند. **مسیریابی بر اساس برنامه** فقط در اندروید هست؛ بقیهٔ گزینه‌ها در همهٔ سیستم‌عامل‌ها یکسان‌اند.
 
@@ -30,6 +35,11 @@ title: مسیریابی در اپ هیدیفای
 
 - **دور زدن**: برنامه‌هایی که انتخاب می‌کنید از VPN **عبور نمی‌کنند** و بقیه عبور می‌کنند. برای اپ‌های بانکی و برنامه‌های داخلی که آی‌پی خارجی را قبول نمی‌کنند مناسب است.
 - **فقط پروکسی**: **فقط** برنامه‌هایی که انتخاب می‌کنید از VPN عبور می‌کنند و بقیه مستقیم وصل می‌شوند.
+
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-modes-m-light.webp"><img alt="دو حالت مسیریابی بر اساس برنامه: دور زدن و فقط پروکسی" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-modes-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-modes-m-dark.webp"><img alt="دو حالت مسیریابی بر اساس برنامه: دور زدن و فقط پروکسی" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-modes-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
 
 با **انتخاب برنامه‌ها** برنامه‌ها را انتخاب کنید. **پنهان کردن برنامه‌های سیستمی** فهرست را کوتاه می‌کند و دکمهٔ جستجو برنامه را با اسمش پیدا می‌کند.
 
@@ -62,6 +72,11 @@ title: مسیریابی در اپ هیدیفای
 - **Consistent hash**: هر سایت همیشه از همان سرور استفاده می‌کند.
 - **Sticky session**: هر سایت تا اتصال دوباره، یک سرور تصادفی را نگه می‌دارد.
 
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-balancer-m-light.webp"><img alt="سه استراتژی Balancer: Round robin، Consistent hash و Sticky session" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-balancer-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-balancer-m-dark.webp"><img alt="سه استراتژی Balancer: Round robin، Consistent hash و Sticky session" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-balancer-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
+
 اگر سایت‌ها مدام از حسابتان خارجتان می‌کنند یا کپچا می‌خواهند، **Consistent hash** یا **Sticky session** را امتحان کنید.
 
 ## پروکسی پیش‌فرض
@@ -88,6 +103,11 @@ title: مسیریابی در اپ هیدیفای
 
 قانون توکار را نمی‌شود تغییر داد. برای تغییرش، آن را **کپی** کنید و نسخهٔ کپی را ویرایش کنید. با دستگیرهٔ ≡ ترتیب قانون‌ها را عوض کنید.
 
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-order-m-light.webp"><img alt="اولین قانونی که جور شود تصمیم می‌گیرد" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-order-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-order-m-dark.webp"><img alt="اولین قانونی که جور شود تصمیم می‌گیرد" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-order-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
+
 ## ساختن قانون دلخواه
 
 **+** (**افزودن قانون**) را بزنید. هر قانون می‌گوید *کدام ترافیک* (شرط‌ها) و *به کجا برود* (**خروجی در صورت تطابق**).
@@ -100,6 +120,11 @@ title: مسیریابی در اپ هیدیفای
 4. **نام‌های بسته** (اندروید، فقط در حالت VPN): برنامه‌ها با اسم بسته‌شان. **نام‌های فرآیند** و **مسیرهای فرآیند** همین کار را در کامپیوتر می‌کنند، مثلاً `chrome.exe` یا `/usr/lib/chromium/chromium`.
 
 پایین‌تر می‌توانید **شبکه‌ها** (TCP یا UDP)، **پورت‌های مقصد** و **پورت‌های مبدأ** (مثلاً `443` یا `1:65000`)، **پروتکل** (TLS، HTTP، QUIC، STUN، DNS، BitTorrent)، **IP CIDR مقصد** و **IP CIDR مبدأ** (مثلاً `10.0.0.0/24`) و سایت‌ها را با **دامنه**، **پسوند دامنه** (مثلاً `.ir`)، **کلمه کلیدی دامنه** یا **عبارت منظم دامنه** هم مشخص کنید. فقط چیزی را پر کنید که لازم دارید؛ قانون وقتی مطابقت دارد که همهٔ فیلدهای پرشده مطابقت داشته باشند. برای ذخیره، ✓ بالای صفحه را بزنید.
+
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-anatomy-m-light.webp"><img alt="ساختار یک قانون دلخواه: اگر شرط‌ها جور بود، از این خروجی برو" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-anatomy-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/fa-diagram-anatomy-m-dark.webp"><img alt="ساختار یک قانون دلخواه: اگر شرط‌ها جور بود، از این خروجی برو" src="/assets/app/Routing-in-Hiddify-app/fa-diagram-anatomy-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
 
 !!! example "مثال: همهٔ سایت‌های `.ir` مستقیم باز شوند"
     یک قانون بسازید، **خروجی در صورت تطابق** را **مستقیم (بدون فیلترشکن)** بگذارید و در **پسوند دامنه** مقدار `.ir` را اضافه کنید.

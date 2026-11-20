@@ -8,6 +8,11 @@ title: Routing in the Hiddify app
 
 Routing decides which traffic goes through the proxy, which goes straight to the internet (direct), and which is blocked. This page explains every option of **Settings → Routing**.
 
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-ways-m-light.webp"><img alt="Routing: each connection goes through the VPN, direct, or is blocked" src="/assets/app/Routing-in-Hiddify-app/en-diagram-ways-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-ways-m-dark.webp"><img alt="Routing: each connection goes through the VPN, direct, or is blocked" src="/assets/app/Routing-in-Hiddify-app/en-diagram-ways-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
+
 !!! note "Written for Hiddify app 5.9"
     This page is for Hiddify app **5.9** (5.9.2). The screenshots come from Android. **App-based routing** is on Android only; the rest is the same on every platform.
 
@@ -30,6 +35,11 @@ Turn on **App-based routing**, then pick a mode:
 
 - **Bypass**: the apps you choose do **not** use the VPN. Everything else does. Good for banking apps and local apps that refuse foreign IPs.
 - **Proxy only**: **only** the apps you choose use the VPN. Everything else goes direct.
+
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-m-light.webp"><img alt="The two per-app routing modes: Bypass and Proxy only" src="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-m-dark.webp"><img alt="The two per-app routing modes: Bypass and Proxy only" src="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
 
 Tap **Choose apps** to pick the apps. **Hide system apps** keeps the list short, and the search button finds an app by its name.
 
@@ -62,6 +72,11 @@ When the app balances traffic over several servers, it chooses a server for each
 - **Consistent hash**: each site always uses the same server.
 - **Sticky session**: each site keeps a random server until you reconnect.
 
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-m-light.webp"><img alt="The three Balancer strategies: Round robin, Consistent hash and Sticky session" src="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-m-dark.webp"><img alt="The three Balancer strategies: Round robin, Consistent hash and Sticky session" src="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
+
 If sites log you out or ask for a captcha again and again, try **Consistent hash** or **Sticky session**.
 
 ## Default proxy
@@ -88,6 +103,11 @@ Below the options is the list of rules. The app checks them from top to bottom, 
 
 A built-in rule can't be changed. To change one, **Duplicate** it and edit the copy. Drag the handle (≡) to change the order.
 
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-order-m-light.webp"><img alt="The first rule that matches decides" src="/assets/app/Routing-in-Hiddify-app/en-diagram-order-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-order-m-dark.webp"><img alt="The first rule that matches decides" src="/assets/app/Routing-in-Hiddify-app/en-diagram-order-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
+
 ## Add your own rule
 
 Tap **+** (**Add rule**). A rule says *which traffic* (the conditions) and *where it goes* (**Outbound if match**).
@@ -100,6 +120,11 @@ Tap **+** (**Add rule**). A rule says *which traffic* (the conditions) and *wher
 4. **Package names** (Android, VPN mode only): apps by their package name. **Process names** and **Process paths** are the same on computers, for example `chrome.exe` or `/usr/lib/chromium/chromium`.
 
 Further down you can also match **Networks** (TCP or UDP), **Destination ports** and **Source ports** (for example `443` or `1:65000`), **Protocol** (TLS, HTTP, QUIC, STUN, DNS, BitTorrent), **Destination IP CIDR** and **Source IP CIDR** (for example `10.0.0.0/24`), and sites by **Domain**, **Domain suffix** (for example `.ir`), **Domain keyword** or **Domain regex**. Fill in only what you need; a rule matches when all the filled fields match. Tap the ✓ at the top to save.
+
+<figure class="hi-diag">
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-m-light.webp"><img alt="A custom rule: if the conditions match, use this outbound" src="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-light.webp#only-light" loading="lazy"></picture>
+<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-m-dark.webp"><img alt="A custom rule: if the conditions match, use this outbound" src="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-dark.webp#only-dark" loading="lazy"></picture>
+</figure>
 
 !!! example "Example: send every `.ir` site direct"
     Add a rule, set **Outbound if match** to **Direct**, and under **Domain suffix** add `.ir`.
