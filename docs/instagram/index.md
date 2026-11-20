@@ -26,12 +26,22 @@ headless: true
     <!-- Post Grid Section -->
     <h1>Instagram Posts</h1>
     <div class="grid">
+      <a href="https://www.youtube.com/watch?v=xNzgSsBVZAs" target="_blank" class="post" title="۵ قابلیت مخفی هیدیفای منیجر ۱۴.۵ که نمی‌دونستی 🕵️ سلامت کانفیگ، تست کانفیگ، اسکنر آی‌پی و SNI">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/xNzgSsBVZAs.webp" alt="۵ قابلیت مخفی هیدیفای منیجر ۱۴.۵ که نمی‌دونستی 🕵️ سلامت کانفیگ، تست کانفیگ، اسکنر آی‌پی و SNI" loading="lazy" decoding="async">
+        </figure>
+      </a>
+      <a href="https://www.youtube.com/watch?v=ocntmajZ_oI" target="_blank" class="post" title="Hiddify on Android TV 📺 Send your link with just your phone camera, no typing with the remote">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/ocntmajZ_oI.webp" alt="Hiddify on Android TV 📺 Send your link with just your phone camera, no typing with the remote" loading="lazy" decoding="async">
+        </figure>
+      </a>
       <a href="https://www.youtube.com/watch?v=HOF6NJa55SI" target="_blank" class="post" title="هیدیفای روی تلویزیون اندروید 📺 لینک رو فقط با دوربین گوشی بفرست، بدون تایپ با کنترل">
         <figure markdown="span">
           <img src="/instagram/img/yt/HOF6NJa55SI.webp" alt="هیدیفای روی تلویزیون اندروید 📺 لینک رو فقط با دوربین گوشی بفرست، بدون تایپ با کنترل" loading="lazy" decoding="async">
         </figure>
       </a>
-      <a href="https://www.youtube.com/watch?v=NGP_uC8edJI" target="_blank" class="post" title="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux">
+<a href="https://www.youtube.com/watch?v=NGP_uC8edJI" target="_blank" class="post" title="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux">
         <figure markdown="span">
           <img src="/instagram/img/yt/NGP_uC8edJI.webp" alt="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux" loading="lazy" decoding="async">
         </figure>
