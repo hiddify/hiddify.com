@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" font-family="Vazirmatn, Tahoma, sans-serif">
+<rect width="100%" height="100%" rx="18" fill="#f8fafc"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker></defs>
+<rect x="40" y="50" width="220" height="90" rx="16" fill="#059669"/>
+<text x="150" y="90" text-anchor="middle" font-size="20" font-weight="700" fill="#fff" direction="rtl" unicode-bidi="embed">پایدار (Release)</text>
+<text x="150" y="117" text-anchor="middle" font-size="14" fill="#fff" direction="rtl" unicode-bidi="embed">پایدار، برای همه</text>
+<rect x="340" y="50" width="220" height="90" rx="16" fill="#34d399"/>
+<text x="450" y="90" text-anchor="middle" font-size="20" font-weight="700" fill="#064e3b" direction="rtl" unicode-bidi="embed">بتا (Beta)</text>
+<text x="450" y="117" text-anchor="middle" font-size="14" fill="#064e3b" direction="rtl" unicode-bidi="embed">کمی تست‌شده</text>
+<rect x="640" y="50" width="220" height="90" rx="16" fill="#a7f3d0"/>
+<text x="750" y="90" text-anchor="middle" font-size="20" font-weight="700" fill="#064e3b" direction="rtl" unicode-bidi="embed">توسعه (Develop)</text>
+<text x="750" y="117" text-anchor="middle" font-size="14" fill="#064e3b" direction="rtl" unicode-bidi="embed">جدیدترین، ممکن است خراب شود</text>
+<line x1="335" y1="95" x2="265" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+<line x1="635" y1="95" x2="565" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+<text x="450" y="185" text-anchor="middle" font-size="15" fill="#475569" direction="rtl" unicode-bidi="embed">تغییرهای تازه در این جهت جلو می‌روند</text></svg>

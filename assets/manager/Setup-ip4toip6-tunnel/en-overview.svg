@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" font-family="Roboto, Arial, sans-serif">
+<rect width="100%" height="100%" rx="18" fill="#f8fafc"/>
+<rect x="40" y="60" width="220" height="230" rx="16" fill="#fff" stroke="#455fe9" stroke-width="2.5"/>
+<text x="150" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b">Server A</text>
+<text x="150" y="115" text-anchor="middle" font-size="14" font-weight="400" fill="#475569">in Iran (Tehran)</text>
+<rect x="60" y="135" width="180" height="60" rx="10" fill="#e0e7ff"/>
+<text x="150" y="160" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b">virtual IPv4</text>
+<text x="150" y="180" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b">192.168.1.1</text>
+<rect x="60" y="210" width="180" height="60" rx="10" fill="#dcfce7"/>
+<text x="150" y="245" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">real IPv6</text>
+<line x1="150" y1="195" x2="150" y2="210" stroke="#64748b" stroke-width="2"/>
+<rect x="700" y="60" width="220" height="230" rx="16" fill="#fff" stroke="#455fe9" stroke-width="2.5"/>
+<text x="810" y="92" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b">Server B</text>
+<text x="810" y="115" text-anchor="middle" font-size="14" font-weight="400" fill="#475569">abroad (Tokyo)</text>
+<rect x="720" y="135" width="180" height="60" rx="10" fill="#e0e7ff"/>
+<text x="810" y="160" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b">virtual IPv4</text>
+<text x="810" y="180" text-anchor="middle" font-size="14" font-weight="400" fill="#1e293b">192.168.1.2</text>
+<rect x="720" y="210" width="180" height="60" rx="10" fill="#dcfce7"/>
+<text x="810" y="245" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">real IPv6</text>
+<line x1="810" y1="195" x2="810" y2="210" stroke="#64748b" stroke-width="2"/>
+<rect x="260" y="215" width="440" height="50" rx="25" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+<rect x="400" y="227" width="160" height="26" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
+<text x="480" y="245" text-anchor="middle" font-size="13" font-weight="400" fill="#1e293b">IPv4 packet</text>
+<text x="480" y="290" text-anchor="middle" font-size="13" font-weight="400" fill="#166534">inside an IPv6 packet</text>
+<line x1="480" y1="40" x2="480" y2="205" stroke="#ef4444" stroke-width="4" stroke-dasharray="8 6"/>
+<text x="480" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#b91c1c">Filter (GFW)</text>
+<text x="480" y="350" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">IPv4 is wrapped inside IPv6. If the IPv6 address gets blocked, you only change it; IPv6 addresses are cheap.</text>
+</svg>

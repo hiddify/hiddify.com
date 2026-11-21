@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f6bff"/><stop offset="1" stop-color="#7a3cf0"/></linearGradient><filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0b1440" flood-opacity=".22"/></filter></defs>
+<rect width="320" height="200" fill="url(#g)"/><circle cx="270" cy="30" r="70" fill="#fff" opacity=".07"/><circle cx="40" cy="190" r="60" fill="#fff" opacity=".06"/>
+<g filter="url(#s)"><rect x="34" y="52" width="92" height="118" rx="10" fill="#eef1ff"/>
+<rect x="44" y="64" width="72" height="22" rx="5" fill="#c9d1ff"/><rect x="44" y="94" width="72" height="22" rx="5" fill="#c9d1ff"/><rect x="44" y="124" width="72" height="22" rx="5" fill="#c9d1ff"/>
+<circle cx="54" cy="75" r="3.5" fill="#2bd67b"/><circle cx="54" cy="105" r="3.5" fill="#2bd67b"/><circle cx="54" cy="135" r="3.5" fill="#2bd67b"/>
+<rect x="64" y="73" width="40" height="4" rx="2" fill="#8b98e8"/><rect x="64" y="103" width="40" height="4" rx="2" fill="#8b98e8"/><rect x="64" y="133" width="40" height="4" rx="2" fill="#8b98e8"/></g>
+<g filter="url(#s)"><rect x="142" y="38" width="148" height="104" rx="10" fill="#141a33"/><rect x="142" y="38" width="148" height="18" rx="9" fill="#232b52"/><rect x="142" y="47" width="148" height="9" fill="#232b52"/>
+<circle cx="154" cy="47" r="3" fill="#ff5f57"/><circle cx="164" cy="47" r="3" fill="#febc2e"/><circle cx="174" cy="47" r="3" fill="#28c840"/>
+<text x="152" y="76" font-family="monospace" font-size="10" fill="#7ee2a8" direction="ltr">$ bash &lt;(curl …/release)</text>
+<rect x="152" y="86" width="96" height="5" rx="2.5" fill="#3a4370"/><rect x="152" y="98" width="70" height="5" rx="2.5" fill="#3a4370"/>
+<rect x="152" y="114" width="128" height="9" rx="4.5" fill="#2a3260"/><rect x="152" y="114" width="104" height="9" rx="4.5" fill="#2bd67b"/></g>
+<g filter="url(#s)"><circle cx="262" cy="150" r="24" fill="#2bd67b"/><path d="M251 150l8 8 15-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

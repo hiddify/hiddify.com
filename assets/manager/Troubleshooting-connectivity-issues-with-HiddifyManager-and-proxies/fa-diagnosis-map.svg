@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 454" font-family="Vazirmatn, Tahoma, sans-serif" role="img" aria-label="نقشهٔ تشخیص: برای هر نشانه، ابزار مناسب پنل">
+<defs><filter id="s" x="-5%" y="-30%" width="110%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#1e293b" flood-opacity=".13"/></filter>
+<marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+<rect x="6" y="6" width="968" height="442" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="946" y="44" direction="rtl" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">نشانه</text>
+<text x="530" y="44" direction="rtl" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">ابزار پنل</text>
+<g filter="url(#s)"><rect x="570" y="64" width="380" height="76" rx="18" fill="#fff" stroke="#ef4444" stroke-width="2"/></g>
+<circle cx="916" cy="102" r="18" fill="#ef4444"/><text x="916" y="108" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">۱</text>
+<text x="886" y="97" direction="rtl" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">هیچ‌کس وصل نمی‌شود</text>
+<text x="886" y="120" direction="rtl" text-anchor="start" font-size="12.5" fill="#64748b">مشکل از سرور یا کانفیگ‌هاست</text>
+<path d="M564 102 H536" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="374" y="84" width="152" height="36" rx="18" fill="#ef44441f" stroke="#ef4444" stroke-width="1.4"/><text x="450.0" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">سلامت کانفیگ‌ها</text>
+<rect x="228" y="84" width="136" height="36" rx="18" fill="#ef44441f" stroke="#ef4444" stroke-width="1.4"/><text x="296.0" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">اعمال و وضعیت</text>
+<rect x="74" y="84" width="144" height="36" rx="18" fill="#ef44441f" stroke="#ef4444" stroke-width="1.4"/><text x="146.0" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">پورت‌های عمومی</text>
+<g filter="url(#s)"><rect x="570" y="160" width="380" height="76" rx="18" fill="#fff" stroke="#f59e0b" stroke-width="2"/></g>
+<circle cx="916" cy="198" r="18" fill="#f59e0b"/><text x="916" y="204" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">۲</text>
+<text x="886" y="193" direction="rtl" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">فقط یک کاربر وصل نمی‌شود</text>
+<text x="886" y="216" direction="rtl" text-anchor="start" font-size="12.5" fill="#64748b">حساب یا اپ همان کاربر</text>
+<path d="M564 198 H536" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="439" y="180" width="87" height="36" rx="18" fill="#f59e0b1f" stroke="#f59e0b" stroke-width="1.4"/><text x="482.5" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#f59e0b" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">کاربران</text>
+<rect x="317" y="180" width="112" height="36" rx="18" fill="#f59e0b1f" stroke="#f59e0b" stroke-width="1.4"/><text x="373.0" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#f59e0b" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">تست کانفیگ</text>
+<g filter="url(#s)"><rect x="570" y="256" width="380" height="76" rx="18" fill="#fff" stroke="#8b5cf6" stroke-width="2"/></g>
+<circle cx="916" cy="294" r="18" fill="#8b5cf6"/><text x="916" y="300" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">۳</text>
+<text x="886" y="289" direction="rtl" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">روی بعضی اپراتورها وصل نمی‌شود یا کند است</text>
+<text x="886" y="312" direction="rtl" text-anchor="start" font-size="12.5" fill="#64748b">فیلترینگ در کشور کاربر</text>
+<path d="M564 294 H536" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="431" y="276" width="95" height="36" rx="18" fill="#8b5cf61f" stroke="#8b5cf6" stroke-width="1.4"/><text x="478.5" y="299" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">اسکنر IP</text>
+<rect x="326" y="276" width="95" height="36" rx="18" fill="#8b5cf61f" stroke="#8b5cf6" stroke-width="1.4"/><text x="373.5" y="299" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">Fragment</text>
+<rect x="204" y="276" width="112" height="36" rx="18" fill="#8b5cf61f" stroke="#8b5cf6" stroke-width="1.4"/><text x="260.0" y="299" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" font-family="Vazirmatn, Tahoma, sans-serif" direction="rtl">SNI ریالتی</text>
+<g filter="url(#s)"><rect x="570" y="352" width="380" height="76" rx="18" fill="#fff" stroke="#0ea5e9" stroke-width="2"/></g>
+<circle cx="916" cy="390" r="18" fill="#0ea5e9"/><text x="916" y="396" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">۴</text>
+<text x="886" y="385" direction="rtl" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">پنل هم باز نمی‌شود</text>
+<text x="886" y="408" direction="rtl" text-anchor="start" font-size="12.5" fill="#64748b">از راه SSH بررسی کنید</text>
+<path d="M564 390 H536" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="379" y="372" width="147" height="36" rx="18" fill="#0ea5e91f" stroke="#0ea5e9" stroke-width="1.4"/><text x="452.5" y="395" text-anchor="middle" font-size="13" font-weight="700" fill="#0ea5e9" font-family="ui-monospace, Menlo, monospace" direction="ltr">hiddify status</text>
+<rect x="230" y="372" width="139" height="36" rx="18" fill="#0ea5e91f" stroke="#0ea5e9" stroke-width="1.4"/><text x="299.5" y="395" text-anchor="middle" font-size="13" font-weight="700" fill="#0ea5e9" font-family="ui-monospace, Menlo, monospace" direction="ltr">hiddify admin</text>
+</svg>
