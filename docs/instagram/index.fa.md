@@ -32,9 +32,14 @@ headless: true
           <img src="/instagram/img/yt/KF9Hn9HSaeU.webp" alt="5 Hidden Features of Hiddify Manager 14.5 🕵️ Config Health, Config Tester, IP &amp; SNI Scanner and more" loading="lazy" decoding="async">
         </figure>
       </a>
-      <a href="https://www.youtube.com/watch?v=xNzgSsBVZAs" target="_blank" class="post" title="۵ قابلیت مخفی هیدیفای منیجر ۱۴.۵ که نمی‌دونستی 🕵️ سلامت کانفیگ، تست کانفیگ، اسکنر آی‌پی و SNI">
+<a href="https://www.youtube.com/watch?v=xNzgSsBVZAs" target="_blank" class="post" title="۵ قابلیت مخفی هیدیفای منیجر ۱۴.۵ که نمی‌دونستی 🕵️ سلامت کانفیگ، تست کانفیگ، اسکنر آی‌پی و SNI">
         <figure markdown="span">
           <img src="/instagram/img/yt/xNzgSsBVZAs.webp" alt="۵ قابلیت مخفی هیدیفای منیجر ۱۴.۵ که نمی‌دونستی 🕵️ سلامت کانفیگ، تست کانفیگ، اسکنر آی‌پی و SNI" loading="lazy" decoding="async">
+        </figure>
+      </a>
+<a href="https://www.youtube.com/watch?v=tbkb20ci-5o" target="_blank" class="post" title="Telegram without filtering via CDN 🔥 Hiddify web proxy #Shorts">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/tbkb20ci-5o.webp" alt="Telegram without filtering via CDN 🔥 Hiddify web proxy #Shorts" loading="lazy" decoding="async">
         </figure>
       </a>
 <a href="https://www.youtube.com/watch?v=ocntmajZ_oI" target="_blank" class="post" title="Hiddify on Android TV 📺 Send your link with just your phone camera, no typing with the remote">
@@ -42,9 +47,24 @@ headless: true
           <img src="/instagram/img/yt/ocntmajZ_oI.webp" alt="Hiddify on Android TV 📺 Send your link with just your phone camera, no typing with the remote" loading="lazy" decoding="async">
         </figure>
       </a>
+      <a href="https://www.youtube.com/watch?v=xWkBmzgiuns" target="_blank" class="post" title="تلگرام بدون فیلتر با CDN 🔥 وب‌پروکسی هیدیفای #shorts">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/xWkBmzgiuns.webp" alt="تلگرام بدون فیلتر با CDN 🔥 وب‌پروکسی هیدیفای #shorts" loading="lazy" decoding="async">
+        </figure>
+      </a>
 <a href="https://www.youtube.com/watch?v=HOF6NJa55SI" target="_blank" class="post" title="هیدیفای روی تلویزیون اندروید 📺 لینک رو فقط با دوربین گوشی بفرست، بدون تایپ با کنترل">
         <figure markdown="span">
           <img src="/instagram/img/yt/HOF6NJa55SI.webp" alt="هیدیفای روی تلویزیون اندروید 📺 لینک رو فقط با دوربین گوشی بفرست، بدون تایپ با کنترل" loading="lazy" decoding="async">
+        </figure>
+      </a>
+<a href="https://www.youtube.com/watch?v=Ry-KWY2R4bU" target="_blank" class="post" title="هیدیفای راحت برای مادربزرگ‌ها پیشرفته برای متخصص ها Hiddify">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/Ry-KWY2R4bU.webp" alt="هیدیفای راحت برای مادربزرگ‌ها پیشرفته برای متخصص ها Hiddify" loading="lazy" decoding="async">
+        </figure>
+      </a>
+<a href="https://www.youtube.com/watch?v=nuNEVziq4_I" target="_blank" class="post" title="Hiddify for iOS, Android, Windows, Linux and macOS">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/nuNEVziq4_I.webp" alt="Hiddify for iOS, Android, Windows, Linux and macOS" loading="lazy" decoding="async">
         </figure>
       </a>
 <a href="https://www.youtube.com/watch?v=NGP_uC8edJI" target="_blank" class="post" title="Hiddify 5 full tutorial on every device 📱💻 Android, iPhone, Windows, Mac and Linux">
@@ -76,21 +96,6 @@ headless: true
       <a href="https://youtu.be/ywxx5AzQl-s" target="_blank" class="post">
         <figure markdown="span">
           <img src="/instagram/img/Hiddify Free VPN_Site_Post.png" alt="Post 5">
-        </figure>
-      </a>
-<a href="https://www.youtube.com/watch?v=tbkb20ci-5o" target="_blank" class="post" title="Telegram without filtering via CDN 🔥 Hiddify web proxy #Shorts">
-        <figure markdown="span">
-          <img src="/instagram/img/yt/tbkb20ci-5o.webp" alt="Telegram without filtering via CDN 🔥 Hiddify web proxy #Shorts" loading="lazy" decoding="async">
-        </figure>
-      </a>
-<a href="https://www.youtube.com/watch?v=Ry-KWY2R4bU" target="_blank" class="post" title="هیدیفای راحت برای مادربزرگ‌ها پیشرفته برای متخصص ها Hiddify">
-        <figure markdown="span">
-          <img src="/instagram/img/yt/Ry-KWY2R4bU.webp" alt="هیدیفای راحت برای مادربزرگ‌ها پیشرفته برای متخصص ها Hiddify" loading="lazy" decoding="async">
-        </figure>
-      </a>
-<a href="https://www.youtube.com/watch?v=nuNEVziq4_I" target="_blank" class="post" title="Hiddify for iOS, Android, Windows, Linux and macOS">
-        <figure markdown="span">
-          <img src="/instagram/img/yt/nuNEVziq4_I.webp" alt="Hiddify for iOS, Android, Windows, Linux and macOS" loading="lazy" decoding="async">
         </figure>
       </a>
 <a href="https://www.youtube.com/watch?v=Edqx3iI0NpY" target="_blank" class="post" title="آموزش کامل HiddifyCli برای سرورها (ویدئوی اصلی را از لینک بالا ببینید)">
