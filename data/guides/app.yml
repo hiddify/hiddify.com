@@ -81,6 +81,8 @@ categories:
         en: New
         articles:
           - path: app/DNS-tunnels-in-Hiddify-app
+          - path: app/Default-proxy-and-Balancer-in-Hiddify-app
+          - path: app/Per-app-routing-in-Hiddify-app
     videos:
       fa: [Edqx3iI0NpY, HOF6NJa55SI, UsOrJ9wMUMo, NGP_uC8edJI, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
       en: [Edqx3iI0NpY, NGP_uC8edJI, HOF6NJa55SI, UsOrJ9wMUMo, ywxx5AzQl-s, Br3lIHIaUVc, Xv_7TDo80k4, NtQ0bQlIRrY, EjHjLQbC40E, vUaA1AEUy1s]
