@@ -62,7 +62,9 @@ description: "برنامهٔ بانک یا بازی را بیرون از VPN ن�
 3. روی **نام‌های فرآیند** بزنید، بعد روی **+**، نام فایل برنامه را بنویسید و **باشه** را بزنید. هر چند نام که لازم دارید اضافه کنید، هر کدام در یک ردیف.
 4. روی ✓ بالای صفحه بزنید تا قانون ذخیره شود.
 
-<img width=640 alt="قانون مسیریابی روی کامپیوتر با نام‌های فرآیند" src="/assets/app/Routing-in-Hiddify-app/fa-desktop-process-rule.webp" style="display:block;margin:0 auto">
+مثلاً قانونی که Steam (و بازی‌هایش) را بیرون از VPN نگه می‌دارد:
+
+<img width=520 alt="قانون روی کامپیوتر: steam.exe در نام‌های فرآیند، خروجی مستقیم" src="/assets/app/Routing-in-Hiddify-app/fa-desktop-process-rule.webp" style="display:block;margin:0 auto">
 
 ### نام برنامه را از کجا پیدا کنم؟
 

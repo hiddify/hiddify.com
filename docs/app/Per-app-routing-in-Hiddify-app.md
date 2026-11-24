@@ -62,7 +62,9 @@ On Windows, macOS and Linux there is no list to tick. Instead you make a routing
 3. Click **Process names**, then **+**, type the program's file name and click **OK**. Add as many names as you need, one per line.
 4. Click the ✓ at the top to save the rule.
 
-<img width=640 alt="A routing rule on a computer, with Process names" src="/assets/app/Routing-in-Hiddify-app/en-desktop-process-rule.webp" style="display:block;margin:0 auto">
+For example, a rule that keeps Steam (and its games) outside the VPN:
+
+<img width=520 alt="A rule on a computer: steam.exe in Process names, Outbound Direct" src="/assets/app/Routing-in-Hiddify-app/en-desktop-process-rule.webp" style="display:block;margin:0 auto">
 
 ### How do I find the program's name?
 
