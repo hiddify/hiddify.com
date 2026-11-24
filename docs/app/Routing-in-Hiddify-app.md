@@ -4,7 +4,7 @@ title: Routing in the Hiddify app
 
 <div dir="ltr" markdown="1">
 
-# Routing in the Hiddify app: per-app routing, regions and your own rules
+# Routing in the Hiddify app: built-in rules and your own rules
 
 Routing decides which traffic goes through the proxy, which goes straight to the internet (direct), and which is blocked. This page explains every option of **Settings → Routing**.
 
@@ -14,154 +14,172 @@ Routing decides which traffic goes through the proxy, which goes straight to the
 </figure>
 
 !!! note "Written for Hiddify app 5.9"
-    This page is for Hiddify app **5.9** (5.9.2). The screenshots come from Android. **App-based routing** is on Android only; the rest is the same on every platform.
+    This page is for Hiddify app **5.9** (5.9.2). The screenshots come from Android. Everything on this page is the same on every platform.
 
 ## Open the routing settings
 
-Open **Settings** and tap **Routing**.
+Open **Settings** and tap **Routing**. At the top are the options, below them the list of rules.
 
 <img width=260 alt="The Routing page" src="/assets/app/Routing-in-Hiddify-app/en-routing.webp" style="display:block;margin:0 auto">
 
-1. **Region**: the country you are in. It decides which sites go direct (the built-in rule **Sites in …**) and which apps the auto selection picks. Choices: Iran, China, Russia, Afghanistan, Indonesia, Türkiye, Brazil and Other.
-2. **App-based routing** (Android): choose apps that skip the VPN, or the only apps that use it.
-3. **Balancer strategy**: how traffic is spread when your profile has several servers.
-4. **Default proxy**: which server is used until you pick one yourself.
-5. **IPv6**: whether IPv6 is used at all.
-6. **Add rule** (the **+** button): make your own rule.
+<div class="hi-grid c2">
+<div class="hi-opt"><span class="hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2Z"/></svg></span><div class="tx"><b>Region</b><span>The country you are in: Iran, China, Russia, Afghanistan, Indonesia, Türkiye, Brazil or Other. It decides which sites go direct (the built-in rule <b>Sites in …</b>) and which apps the ready list for Android picks.</span></div></div>
+<div class="hi-opt"><span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20h4v-4h-4m0-2h4v-4h-4m-6-2h4V4h-4m6 4h4V4h-4m-6 10h4v-4h-4m-6 4h4v-4H4m0 10h4v-4H4m6 4h4v-4h-4M4 8h4V4H4v4Z"/></svg></span><div class="tx"><b>App-based routing</b><span>Android: apps that skip the VPN, or the only apps that use it. See <a href="../Per-app-routing-in-Hiddify-app/">Choose which apps use the VPN</a>.</span></div></div>
+<div class="hi-opt"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4l1.5-3.75m13 0L20 14h-3l1.5-3.75Z"/></svg></span><div class="tx"><b>Balancer strategy and Default proxy</b><span>Which server your traffic uses when the profile has several. See <a href="../Default-proxy-and-Balancer-in-Hiddify-app/">How the Hiddify app picks a server</a>.</span></div></div>
+<div class="hi-opt"><span class="hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9h-2V7h2v2m7 11v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v2h1a1 1 0 0 1 1 1h7M9 5H7v10h2V5m2 10h2v-4h2a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4v10Z"/></svg></span><div class="tx"><b>Resolve destination and IPv6</b><span>Two technical options; the defaults are right for almost everyone. See <a href="#resolve-destination-and-ipv6">below</a>.</span></div></div>
+</div>
 
-## App-based routing (Android)
+## App-based routing (Android) { #app-based-routing-android }
 
-Turn on **App-based routing**, then pick a mode:
+To keep a banking app or a game outside the VPN, or to send only a few apps through it, turn on **App-based routing** and tick the apps. The full guide, with the ready list for your region, is in its own article:
 
-- **Bypass**: the apps you choose do **not** use the VPN. Everything else does. Good for banking apps and local apps that refuse foreign IPs.
-- **Proxy only**: **only** the apps you choose use the VPN. Everything else goes direct.
+<div class="hi-grid c2">
+<a class="hi-card" href="../Per-app-routing-in-Hiddify-app/"><span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20h4v-4h-4m0-2h4v-4h-4m-6-2h4V4h-4m6 4h4V4h-4m-6 10h4v-4h-4m-6 4h4v-4H4m0 10h4v-4H4m6 4h4v-4h-4M4 8h4V4H4v4Z"/></svg></span><span class="tx"><b>Choose which apps use the VPN</b><small>On Android with a list of apps, on computers with a rule</small></span></a>
+</div>
 
-<figure class="hi-diag">
-<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-m-light.webp"><img alt="The two per-app routing modes: Bypass and Proxy only" src="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-light.webp#only-light" loading="lazy"></picture>
-<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-m-dark.webp"><img alt="The two per-app routing modes: Bypass and Proxy only" src="/assets/app/Routing-in-Hiddify-app/en-diagram-modes-dark.webp#only-dark" loading="lazy"></picture>
-</figure>
+## Per-app routing on computers (Windows, macOS, Linux) { #per-app-routing-on-computers-windows-macos-linux }
 
-Tap **Choose apps** to pick the apps. **Hide system apps** keeps the list short, and the search button finds an app by its name.
+On a computer you choose an app with a routing rule that names its program file, for example `chrome.exe`. How to find the name, also for Microsoft Store apps, is explained in [Choose which apps use the VPN](Per-app-routing-in-Hiddify-app.md#on-a-computer).
 
-<img width=260 alt="Choosing apps" src="/assets/app/Routing-in-Hiddify-app/en-apps.webp" style="display:block;margin:0 auto">
+## Balancer strategy { #balancer-strategy }
 
-**Auto selection based on (your region)** adds a ready list of apps for your region to the list of the current mode by itself (for **Bypass**: apps that usually need to stay direct, such as local banking apps), and keeps it up to date. Apps you removed by hand stay removed. Tap the refresh button next to it (**Update now**) to update the list at once. Apps added this way have an **Auto** tag. The ⋮ menu of the app list can import, export or clear your selection.
+When your profile has several servers, the app can spread your connections over them: in turn (**Round robin**), one fixed server per site (**Consistent hash**), or a random server that sticks to each site until you reconnect (**Sticky session**). Simple examples of each one:
 
-!!! tip
-    An app that is not in the VPN does not follow any routing rule (the app list shows **Outside the VPN · rule won't apply**).
+<div class="hi-grid c2">
+<a class="hi-card" href="../Default-proxy-and-Balancer-in-Hiddify-app/"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4l1.5-3.75m13 0L20 14h-3l1.5-3.75Z"/></svg></span><span class="tx"><b>How the Hiddify app picks a server</b><small>Default proxy and the three Balancer strategies, with examples</small></span></a>
+</div>
 
-## Per-app routing on computers (Windows, macOS, Linux)
+## Default proxy { #default-proxy }
 
-On a computer there is no app list to tick. You choose apps with a routing rule, by the name of their program file. This works only in **VPN** mode (the editor shows **Available only in TUN mode**).
+Until you pick a server yourself, the app uses the fastest one (**Lowest ping**), spreads the traffic over all of them (**Balance**), or uses the profile's first server (**First proxy**). The details are in [How the Hiddify app picks a server](Default-proxy-and-Balancer-in-Hiddify-app.md#default-proxy).
 
-1. Open **Settings → Routing** and click **+** (**Add rule**).
-2. Set **Outbound if match**: **Direct** to keep the app outside the VPN (for example a game or a local banking program), **Proxy** to send it through the VPN, or **Block**.
-3. Click **Process names**, then **+**, type the program's file name and click **OK**. On Windows it ends in `.exe`, for example `chrome.exe` or `Telegram.exe`; on Linux and macOS it is the program's name, for example `firefox`. Add as many names as you need.
-4. Click the ✓ at the top to save the rule.
+## Resolve destination and IPv6 { #resolve-destination-and-ipv6 }
 
-<img width=640 alt="A routing rule on a computer, with Process names" src="/assets/app/Routing-in-Hiddify-app/en-desktop-process-rule.webp" style="display:block;margin:0 auto">
+<div class="hi-grid c2">
+<div class="hi-opt"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span><div class="tx"><b>Resolve destination</b><span>Looks up the IP address of each site on your device before the traffic is sent. Leave it <b>off</b> unless someone who knows your setup asks you to turn it on.</span></div></div>
+<div class="hi-opt"><span class="hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9h-2V7h2v2m7 11v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v2h1a1 1 0 0 1 1 1h7M9 5H7v10h2V5m2 10h2v-4h2a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4v10Z"/></svg></span><div class="tx"><b>IPv6</b><span><b>Off (IPv4 only)</b> is the default and the safe choice. Tap the ⓘ next to it in the app for the full story.</span></div></div>
+</div>
 
-!!! tip "How do I find the file name?"
-    On Windows, open **Task Manager**, right-click the app and choose **Go to details**: the highlighted name (for example `chrome.exe`) is the one to type. **Process paths** does the same with the full path, for example `C:\Program Files\Google\Chrome\Application\chrome.exe`, when two programs have the same name. **Package names** is for Android only.
+Why is IPv6 off? IPv6 is the newer kind of internet address. Most proxy servers have no IPv6 on their side, so a site reached over IPv6 cannot pass through them, and sites like Google and YouTube that prefer IPv6 then fail to load. With **Off**, every site uses the older IPv4, which every server carries.
 
-??? note "Microsoft Store apps, and why not `.msi`"
-    - Type the name of the program that **runs**, not of the file you installed it with. An `.msi` file, or an `.exe` you downloaded to install, is only the installer. For example, Bing Wallpaper installs with `BingWallpaper.exe`, but the program that runs is `BingWallpaperApp.exe`. The rule only accepts names ending in `.exe` (or `.bat`, `.cmd`, `.com`).
-    - Apps from the Microsoft Store work the same way: open the app, then find its name in **Task Manager → Go to details**. Or open PowerShell, run `tasklist /apps`, and look for the app in the list; the `.exe` name is in the first column.
-    - Some apps run more than one program; add every name you see.
-    - For Store apps, use **Process names**, not **Process paths**: they live in `C:\Program Files\WindowsApps\…` in a folder whose name has the version number in it, so the path changes with every update.
-    - Some Store apps download in the background through Windows itself (for example `svchost.exe`); that part does not carry the app's name and is not caught by the rule.
+- **On, IPv4 first** and **On, IPv6 first** use IPv6 only through a server that was tested and really carries it.
+- Your IPv6 traffic always stays inside the VPN; it never leaks around it.
 
-## Balancer strategy
+## Built-in rules { #built-in-rules }
 
-When the app balances traffic over several servers, it chooses a server for each connection:
+Below the options is the list of rules. The app has four ready rules; they have a lock icon and you can switch each one on or off:
 
-- **Round robin**: each connection uses the next server, so sites may see your IP change.
-- **Consistent hash**: each site always uses the same server.
-- **Sticky session**: each site keeps a random server until you reconnect.
+<div class="hi-grid c2">
+<div class="hi-opt"><span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.11 0-2 .89-2 2v3c0 1.11.89 2 2 2h1v2H2v2h4v2H5c-1.11 0-2 .89-2 2v3c0 1.11.89 2 2 2h4c1.11 0 2-.89 2-2v-3c0-1.11-.89-2-2-2H8v-2h8v2h-1c-1.11 0-2 .89-2 2v3c0 1.11.89 2 2 2h4c1.11 0 2-.89 2-2v-3c0-1.11-.89-2-2-2h-1v-2h4v-2h-9V9h1c1.11 0 2-.89 2-2V4c0-1.11-.89-2-2-2h-4m0 2h4v3h-4V4M5 17h4v3H5v-3m10 0h4v3h-4v-3Z"/></svg></span><div class="tx"><b>Bypass LAN</b><span>Your home network stays direct: the modem's page, the printer, the TV, file sharing. These devices are in your home, not on the internet, so the VPN would only get in the way.</span></div></div>
+<div class="hi-opt"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8Z"/></svg></span><div class="tx"><b>Android services</b><span>On other systems: <b>Apple services</b>, <b>Microsoft services</b> or <b>Linux updates</b>. System updates, the app store, notifications and cloud sync go direct: they are not filtered and use a lot of data.</span></div></div>
+<div class="hi-opt"><span class="hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7Z"/></svg></span><div class="tx"><b>Ads and malware</b><span>Blocked: ad sites, malware, phishing pages and hidden crypto miners.</span></div></div>
+<div class="hi-opt"><span class="hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2Z"/></svg></span><div class="tx"><b>Sites in (your region)</b><span>Local sites go direct: they are faster that way, and many of them don't open from abroad. It shows only when <b>Region</b> is not <b>Other</b>.</span></div></div>
+</div>
 
-<figure class="hi-diag">
-<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-m-light.webp"><img alt="The three Balancer strategies: Round robin, Consistent hash and Sticky session" src="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-light.webp#only-light" loading="lazy"></picture>
-<picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-m-dark.webp"><img alt="The three Balancer strategies: Round robin, Consistent hash and Sticky session" src="/assets/app/Routing-in-Hiddify-app/en-diagram-balancer-dark.webp#only-dark" loading="lazy"></picture>
-</figure>
+### The first rule that matches decides
 
-If sites log you out or ask for a captcha again and again, try **Consistent hash** or **Sticky session**.
+For every new connection the app reads the rules from the top down, like a checklist, and stops at the first rule that fits. If no rule fits, the connection goes through the VPN.
 
-## Default proxy
-
-Until you choose a server on the proxies page, the app uses:
-
-- **Lowest ping**: the fastest one.
-- **Balance**: connections are spread over all of them (with the balancer strategy above).
-- **First proxy**: the profile's first server.
-
-## Resolve destination and IPv6
-
-- **Resolve destination**: the app finds the IP address of each site before it sends the traffic. Leave it off unless you know you need it.
-- **IPv6**: **Off (IPv4 only)** is the default, because most proxies have no IPv6 at their exit, and a connection the proxy cannot carry breaks sites like Google and YouTube. **On, IPv4 first** and **On, IPv6 first** use IPv6 only through a proxy that was tested to carry it. IPv6 always stays inside the VPN. Tap the ⓘ next to **IPv6** for the full explanation.
-
-## Built-in rules
-
-Below the options is the list of rules. The app checks them from top to bottom, and the first rule that matches decides. Built-in rules have a lock icon; you can turn each one on or off:
-
-- **Bypass LAN**: your home network (router, printer, TV) stays direct.
-- **Android services** (on other platforms: **Apple services**, **Microsoft services** or **Linux updates**): system services go direct.
-- **Ads and malware**: blocked.
-- **Sites in (your region)**: local sites go direct.
-
-A built-in rule can't be changed. To change one, **Duplicate** it and edit the copy. Drag the handle (≡) to change the order.
+<div class="hi-ex"><div class="hd">Example: you open example.ir (Region: Iran)</div>
+<div class="hi-row"><span class="n">1</span><span class="why">Bypass LAN: is it a device at home?</span><span class="hi-sv off">no</span></div>
+<div class="hi-row"><span class="n">2</span><span class="why">Android services: is it a system service?</span><span class="hi-sv off">no</span></div>
+<div class="hi-row"><span class="n">3</span><span class="why">Ads and malware: is it on the block list?</span><span class="hi-sv off">no</span></div>
+<div class="hi-row"><span class="n">4</span><span class="why">Sites in Iran: is it an Iranian site?</span><span class="hi-sv d">yes</span><span class="to"></span><span class="hi-tag">Direct</span></div>
+</div>
 
 <figure class="hi-diag">
 <picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-order-m-light.webp"><img alt="The first rule that matches decides" src="/assets/app/Routing-in-Hiddify-app/en-diagram-order-light.webp#only-light" loading="lazy"></picture>
 <picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-order-m-dark.webp"><img alt="The first rule that matches decides" src="/assets/app/Routing-in-Hiddify-app/en-diagram-order-dark.webp#only-dark" loading="lazy"></picture>
 </figure>
 
-## Add your own rule
+- A rule you add yourself appears at the top, so it wins over the built-in rules.
+- Drag the handle (≡) to change the order.
+- A built-in rule can't be edited. To change one, use **Duplicate rule**, edit the copy, and switch the original off.
 
-Tap **+** (**Add rule**). A rule says *which traffic* (the conditions) and *where it goes* (**Outbound if match**).
+## Add your own rule { #add-your-own-rule }
+
+Tap **+** (**Add rule**). Every rule says two things: *which traffic* (the conditions) and *where it goes* (**Outbound if match**).
 
 <img width=260 alt="The rule editor" src="/assets/app/Routing-in-Hiddify-app/en-add-rule.webp" style="display:block;margin:0 auto">
 
-1. **Name**: a name for the rule.
-2. **Outbound if match**: **Proxy**, **Direct**, **Direct with fragment** (direct, with the TLS fragment trick) or **Block**.
-3. **URLset**: links to ready-made rule-set **files** (`.srs` or `.json`), each a long list of sites, for example a list of ad sites. This field is **not** for a site's address; see the warning below.
-4. **Package names** (Android, VPN mode only): apps by their package name. **Process names** and **Process paths** are the same on computers, for example `chrome.exe` or `/usr/lib/chromium/chromium`.
+### Where the traffic goes: Outbound if match
 
-Further down you can also match **Networks** (TCP or UDP), **Destination ports** and **Source ports** (for example `443` or `1:65000`), **Protocol** (TLS, HTTP, QUIC, STUN, DNS, BitTorrent), **Destination IP CIDR** and **Source IP CIDR** (for example `10.0.0.0/24`), and sites by **Domain**, **Domain suffix** (for example `.ir`), **Domain keyword** or **Domain regex**. Fill in only what you need; a rule matches when all the filled fields match. Tap the ✓ at the top to save.
+<div class="hi-grid c2">
+<div class="hi-opt"><span class="hi-ic "><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4v6m-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21m2.8-10V9.5C14.8 8.1 13.4 7 12 7S9.2 8.1 9.2 9.5V11c-.6 0-1.2.6-1.2 1.2v3.5c0 .7.6 1.3 1.2 1.3h5.5c.7 0 1.3-.6 1.3-1.2v-3.5c0-.7-.6-1.3-1.2-1.3m-1.3 0h-3V9.5c0-.8.7-1.3 1.5-1.3s1.5.5 1.5 1.3V11Z"/></svg></span><div class="tx"><b>Proxy</b><span>Through the VPN, as usual.</span></div></div>
+<div class="hi-opt"><span class="hi-ic green"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 15V9h8V4.16L19.84 12 12 19.84V15H4Z"/></svg></span><div class="tx"><b>Direct</b><span>Straight to the internet, without the VPN.</span></div></div>
+<div class="hi-opt"><span class="hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 10v3h6v5H8v3l-6-5.5L8 10m14-1.5L16 3v3h-6v5h6v3l6-5.5Z"/></svg></span><div class="tx"><b>Direct with fragment</b><span>Direct, but with the TLS fragment trick, which helps some filtered sites open without a VPN. See <a href="../DNS-and-TLS-tricks-in-Hiddify-app/">DNS and TLS tricks</a>.</span></div></div>
+<div class="hi-opt"><span class="hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7Z"/></svg></span><div class="tx"><b>Block</b><span>The connection is cut: the site or app gets no internet.</span></div></div>
+</div>
+
+### Which traffic: the conditions
+
+Fill in only the fields you need. Each field takes one value per line.
+
+| What you want to catch | Field | Example |
+|---|---|---|
+| A site and all its subdomains | **Domain suffix** | `github.com`, `.ir` |
+| One exact address | **Domain** | `github.com` |
+| Every address that contains a word | **Domain keyword** | `github` |
+| Addresses that follow a pattern (for experts) | **Domain regex** | `^ads\.` |
+| A ready-made list of many sites | **URLset** | a rule-set file link ([see below](#urlset)) |
+| IP addresses | **Destination IP CIDR** | `8.8.8.8`, `10.0.0.0/24` |
+| Devices of your network that use your connection | **Source IP CIDR** | `192.168.1.20` |
+| An app | **Package names** (Android), **Process names**, **Process paths** (computers) | `org.telegram.messenger`, `chrome.exe` ([how](Per-app-routing-in-Hiddify-app.md)) |
+| A port | **Destination ports**, **Source ports** | `443`, `1:1024` |
+| A kind of traffic | **Networks** (TCP or UDP), **Protocol** | `QUIC`, `BitTorrent` |
+
+How the fields work together:
+
+- **Inside one field**, any value is enough: `github.com` *or* `gitlab.com`.
+- **The fields about the destination** (the four Domain fields, **URLset** and **Destination IP CIDR**) count as one group: any one of them is enough.
+- **Every other field you fill in must match too.**
+
+<div class="hi-ex"><div class="hd">Example: Domain suffix <code>github.com</code> and Destination ports <code>22</code></div>
+<div class="hi-row"><span class="hi-tag">github.com:22</span><span class="why">a Git connection over SSH: site and port both fit</span><span class="to"></span><span class="hi-sv d">matches</span></div>
+<div class="hi-row"><span class="hi-tag">github.com:443</span><span class="why">the web page: the port does not fit</span><span class="to"></span><span class="hi-sv off">no</span></div>
+</div>
 
 <figure class="hi-diag">
 <picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-m-light.webp"><img alt="A custom rule: if the conditions match, use this outbound" src="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-light.webp#only-light" loading="lazy"></picture>
 <picture><source media="(max-width: 700px)" srcset="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-m-dark.webp"><img alt="A custom rule: if the conditions match, use this outbound" src="/assets/app/Routing-in-Hiddify-app/en-diagram-anatomy-dark.webp#only-dark" loading="lazy"></picture>
 </figure>
 
+Tap the ✓ at the top to save.
+
 !!! example "Example: send every `.ir` site direct"
-    Add a rule, set **Outbound if match** to **Direct**, and under **Domain suffix** add `.ir`.
+    Add a rule, set **Outbound if match** to **Direct**, and under **Domain suffix** add `.ir`. (The built-in rule **Sites in Iran** already does this, and more.)
+
+### URLset: ready-made lists { #urlset }
+
+**URLset** is for long, ready-made lists of sites, such as every ad site or every Iranian site. It takes the **link of a list file**, not a site's address.
 
 !!! danger "Don't put a site's address in URLset"
-    **URLset** downloads a rule-set *file* from the link you give it. A site's address such as `https://github.com` is a web page, not a rule-set file, so the whole rule **stops working**: the site is not blocked, even if the domain fields are filled in correctly. To pick a site, use **Domain suffix** (next section), and keep URLset empty.
+    The app downloads a list file from the link you give it. A site's address such as `https://github.com` is a web page, not a list file, so the whole rule **stops working**: the site is not blocked, even if the domain fields are filled in correctly. To pick a site, use **Domain suffix** and keep URLset empty.
 
     <img width=260 alt="Wrong: a site's address in URLset" src="/assets/app/Routing-in-Hiddify-app/en-site-urlset-wrong.webp" style="display:block;margin:0 auto">
 
-??? note "Where do I get a URLset link?"
-    URLset takes the **raw** link of a rule-set file. It starts with `https://raw.githubusercontent.com/` and ends in `.srs` (or `.json`). The app downloads the file through the VPN and refreshes it every few days.
+The right link is the **raw** link of a rule-set file: it starts with `https://raw.githubusercontent.com/` and ends in `.srs` (or `.json`). The app downloads the file through the VPN and refreshes it every few days.
 
-    Hiddify's own lists are in the [hiddify-geo](https://github.com/hiddify/hiddify-geo/tree/rule-set) repository, branch `rule-set`. The app's built-in rules use them too:
+Hiddify's own lists are in the [hiddify-geo](https://github.com/hiddify/hiddify-geo/tree/rule-set) repository, branch `rule-set`. The app's built-in rules use them too:
 
-    - `block/`: ads, malware, phishing and crypto miners.
-    - `country/`: the sites (`geosite-…`) and IP addresses (`geoip-…`) of Iran, China, Russia, Turkey, Afghanistan, Brazil and Indonesia.
+<div class="hi-grid c2">
+<div class="hi-opt"><span class="hi-ic pink"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m0 2c-1.9 0-3.6.6-4.9 1.7l11.2 11.2c1-1.4 1.7-3.1 1.7-4.9 0-4.4-3.6-8-8-8m4.9 14.3L5.7 7.1C4.6 8.4 4 10.1 4 12c0 4.4 3.6 8 8 8 1.9 0 3.6-.6 4.9-1.7Z"/></svg></span><div class="tx"><b><code>block/</code></b><span>Ads, malware, phishing and crypto miners.</span></div></div>
+<div class="hi-opt"><span class="hi-ic amber"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2Z"/></svg></span><div class="tx"><b><code>country/</code></b><span>The sites (<code>geosite-…</code>) and IP addresses (<code>geoip-…</code>) of Iran, China, Russia, Turkey, Afghanistan, Brazil and Indonesia.</span></div></div>
+</div>
 
-    For example, every Iranian site:
+For example, every Iranian site:
 
-    ```
-    https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs
-    ```
+```
+https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ir.srs
+```
 
-    To get the link of another file, open it on GitHub, tap **View raw** (or **Raw**) and copy the address of the page that opens.
+1. Open the file you want on GitHub.
+2. Tap **View raw** (or **Raw**).
+3. Copy the address of the page that opens, and paste it in **URLset**.
 
-    You don't need this list to open Iranian sites directly: the built-in **Sites in (your region)** rule already does that.
+Other rule-set files in sing-box format work too. If you find a list you trust somewhere else, test it before you rely on it: with a wrong link, the whole rule stops working.
 
-    Other rule-set files in sing-box format work too. If you find a list you trust somewhere else, test it before you rely on it: with a wrong link, the whole rule stops working.
-
-## Step by step: block a site, or send it direct or through the proxy
+## Step by step: block a site, or send it direct or through the proxy { #step-by-step }
 
 Here we block GitHub as an example. The steps are the same for any site; only step 3 changes:
 
@@ -204,21 +222,28 @@ Which domain field should you use?
 You can put several sites in one rule: add each one as a separate line.
 
 !!! tip "If it does not work"
-    - **URLset** of the rule must be empty (see the warning above).
+    - **URLset** of the rule must be empty (see [URLset](#urlset)).
     - The ✓ is grey when there is nothing new to save. If you changed something and the ✓ is still grey, go back and open the rule again to check that your values are there.
     - Rules are checked from top to bottom; if another rule above yours matches the site first, move yours higher with the handle (≡).
     - In versions before 5.9.9, **Domain suffix** accepts only endings like `.com`. Update the app, or use **Domain** `github.com` together with **Domain keyword** `github`.
 
-The ⋮ menu of the Routing page can **Import rules** from the clipboard or a file, **Copy rules** or **Save rules to file** (to move them to another device), and **Reset to default rules**.
+## Save, share and reset your rules
+
+The ⋮ menu at the top of the Routing page can:
+
+- **Import rules from clipboard** or **Import rules from file**,
+- **Copy rules to clipboard** or **Save rules to file**, to move them to another device or share them,
+- **Reset to default rules**, to start again from the built-in rules.
 
 !!! warning
-    Only import rules from a source you trust: rules decide where your traffic goes.
+    Only import rules from a source you trust: rules decide where your traffic goes, and a bad rule can send it somewhere you don't want.
 
 ## Related articles
 
-- [How to install the Hiddify app](How-to-install-Hiddify-app.md)
-- [Chain, Extra security and Proxy unblocker](Chain-Extra-security-and-Proxy-unblocker.md)
+- [Choose which apps use the VPN](Per-app-routing-in-Hiddify-app.md)
+- [How the Hiddify app picks a server](Default-proxy-and-Balancer-in-Hiddify-app.md)
 - [DNS and TLS tricks](DNS-and-TLS-tricks-in-Hiddify-app.md)
+- [Chain, Extra security and Proxy unblocker](Chain-Extra-security-and-Proxy-unblocker.md)
 - [How to use the Hiddify app](How-to-use-Hiddify-app.md)
 
 </div>

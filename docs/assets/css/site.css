@@ -3054,3 +3054,33 @@ footer {
 .md-typeset ol:not([class]) ol:not([class]){list-style-type:lower-alpha}
 .md-typeset [dir=rtl] ol:not([class]),[dir=rtl] .md-typeset ol:not([class]){list-style-type:persian}
 .md-typeset ol:not([class]) > li::marker{font-weight:700;color:var(--md-accent-fg-color, var(--md-primary-fg-color))}
+
+/* Worked examples in articles (Balancer strategies): rows of "connection -> server" with coloured server pills */
+.md-typeset .hi-ex{margin:1em 0 1.3em;padding:.9em 1.1em;border-radius:18px;background:linear-gradient(160deg,rgba(69,95,233,.07),rgba(167,139,250,.06));box-shadow:inset 0 0 0 1px rgba(69,95,233,.18)}
+.md-typeset .hi-ex .hd{font-size:.74em;font-weight:700;letter-spacing:.02em;color:var(--md-default-fg-color--light);margin-bottom:.4em}
+.md-typeset .hi-row{display:flex;flex-wrap:wrap;align-items:center;gap:.35em .55em;padding:.45em 0;font-size:.8em;line-height:1.6}
+.md-typeset .hi-row+.hi-row{border-top:1px dashed rgba(69,95,233,.2)}
+.md-typeset .hi-row .n{display:grid;place-items:center;flex:none;width:1.7em;height:1.7em;border-radius:50%;font-size:.85em;font-weight:800;color:var(--md-default-fg-color--light);box-shadow:inset 0 0 0 1.5px currentColor}
+.md-typeset .hi-tag{padding:.1em .7em;border-radius:999px;font-weight:700;background:var(--md-default-fg-color--lightest);direction:ltr;unicode-bidi:isolate}
+.md-typeset .hi-row .to::before{content:"→";opacity:.55;font-weight:700}
+[dir=rtl] .md-typeset .hi-row .to::before,.md-typeset [dir=rtl] .hi-row .to::before{content:"←"}
+.md-typeset .hi-sv{display:inline-flex;align-items:center;gap:.4em;padding:.1em .75em;border-radius:999px;font-weight:800;color:#fff;white-space:nowrap;background:linear-gradient(135deg,#455fe9,#8b5cf6);box-shadow:0 6px 14px -8px rgba(69,95,233,.9)}
+.md-typeset .hi-sv small{font-weight:600;opacity:.85;font-size:.85em}
+.md-typeset .hi-sv.b{background:linear-gradient(135deg,#0891b2,#14b8a6);box-shadow:0 6px 14px -8px rgba(8,145,178,.9)}
+.md-typeset .hi-sv.c{background:linear-gradient(135deg,#d97706,#f59e0b);box-shadow:0 6px 14px -8px rgba(217,119,6,.9)}
+.md-typeset .hi-sv.d{background:linear-gradient(135deg,#059669,#34d399);box-shadow:0 6px 14px -8px rgba(5,150,105,.9)}
+.md-typeset .hi-sv.down{background:linear-gradient(135deg,#dc2626,#f87171);box-shadow:0 6px 14px -8px rgba(220,38,38,.9)}
+.md-typeset .hi-sv.off{background:none;color:var(--md-default-fg-color--light);box-shadow:inset 0 0 0 1.5px var(--md-default-fg-color--lighter);text-decoration:line-through}
+.md-typeset .hi-row .why{color:var(--md-default-fg-color--light)}
+.md-typeset .hi-servers{display:flex;flex-wrap:wrap;gap:.5em;margin:.2em 0 .3em;font-size:.8em}
+
+/* Option cards (not links): an icon, a title and a short text; used for choices and groups of settings */
+.md-typeset .hi-opt{display:flex;gap:.85em;align-items:flex-start;padding:1em 1.1em;border-radius:18px;background:var(--md-default-bg-color);border:1px solid var(--md-default-fg-color--lightest);box-shadow:0 10px 26px -20px rgba(15,23,42,.6)}
+.md-typeset .hi-opt .tx{flex:1;min-width:0}
+.md-typeset .hi-opt .tx>b{display:block;font-size:.88em;line-height:1.5}
+.md-typeset .hi-opt .tx>span b{color:var(--md-default-fg-color)}
+.md-typeset .hi-opt .tx>span{display:block;font-size:.76em;line-height:1.75;color:var(--md-default-fg-color--light);margin-top:.2em}
+.md-typeset .hi-opt code{font-size:.92em}
+.md-typeset .hi-opt.pick{border-color:rgba(69,95,233,.55);box-shadow:0 0 0 1px rgba(69,95,233,.35),0 14px 30px -18px rgba(69,95,233,.7)}
+[data-md-color-scheme=slate] .md-typeset .hi-opt{background:rgba(255,255,255,.03)}
+.md-typeset .hi-grid>.hi-opt{margin:0}

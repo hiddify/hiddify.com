@@ -64,7 +64,7 @@ In **Settings → General**:
 
 - **Settings → General → Use the system's TLS when available**: connections without a TLS fingerprint use the TLS of Windows or macOS.
 - **Settings → Inbound** has extra ports: **Direct port**, and on Linux and macOS also **Transparent proxy port** and **Redirect port**.
-- Routing rules can match **Process names** and **Process paths** (for example `chrome.exe`): see [Routing in the Hiddify app](Routing-in-Hiddify-app.md).
+- Routing rules can match **Process names** and **Process paths** (for example `chrome.exe`): see [Choose which apps use the VPN](Per-app-routing-in-Hiddify-app.md#on-a-computer).
 
 ## Related articles
 
