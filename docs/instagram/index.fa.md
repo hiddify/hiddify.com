@@ -27,12 +27,17 @@ headless: true
     <!-- Post Grid Section -->
     <h1>پست‌های اینستاگرام</h1>
     <div class="grid">
+      <a href="https://www.youtube.com/watch?v=ECYZs4vxHWs" target="_blank" class="post" title="امنیت بیشتر و رفع فیلتر پروکسی در هیدیفای 🛡️ کی کدوم رو روشن کنیم؟اندروید، آیفون، ویندوز، مک، لینوکس">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/ECYZs4vxHWs.webp" alt="امنیت بیشتر و رفع فیلتر پروکسی در هیدیفای 🛡️ کی کدوم رو روشن کنیم؟اندروید، آیفون، ویندوز، مک، لینوکس" loading="lazy" decoding="async">
+        </figure>
+      </a>
       <a href="https://www.youtube.com/watch?v=AOEb9nQDA1Y" target="_blank" class="post" title="اینترنت آزاد، با یه لمس 🛡️ کانال هیدیفای: آموزش‌های ساده برای همه">
         <figure markdown="span">
           <img src="/instagram/img/yt/AOEb9nQDA1Y.webp" alt="اینترنت آزاد، با یه لمس 🛡️ کانال هیدیفای: آموزش‌های ساده برای همه" loading="lazy" decoding="async">
         </figure>
       </a>
-      <a href="https://www.youtube.com/watch?v=KF9Hn9HSaeU" target="_blank" class="post" title="5 Hidden Features of Hiddify Manager 14.5 🕵️ Config Health, Config Tester, IP &amp; SNI Scanner and more">
+<a href="https://www.youtube.com/watch?v=KF9Hn9HSaeU" target="_blank" class="post" title="5 Hidden Features of Hiddify Manager 14.5 🕵️ Config Health, Config Tester, IP &amp; SNI Scanner and more">
         <figure markdown="span">
           <img src="/instagram/img/yt/KF9Hn9HSaeU.webp" alt="5 Hidden Features of Hiddify Manager 14.5 🕵️ Config Health, Config Tester, IP &amp; SNI Scanner and more" loading="lazy" decoding="async">
         </figure>
