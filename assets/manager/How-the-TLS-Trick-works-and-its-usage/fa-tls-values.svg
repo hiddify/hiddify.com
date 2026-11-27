@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" role="img">
+<defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#455fe9"/><stop offset="1" stop-color="#7c5cf2"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef2ff"/><stop offset="1" stop-color="#ecfdf5"/></linearGradient>
+<filter id="sh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#455fe9" flood-opacity=".18"/></filter></defs>
+<rect width="980" height="430" rx="28" fill="url(#bg)"/>
+<text x="490.0" y="46" font-family="Vazirmatn, Inter, sans-serif" font-size="19" font-weight="800" fill="#0f172a" text-anchor="middle" direction="rtl" opacity="1">TLS Fragment: اولین بستهٔ TLS تکه‌تکه و با فاصله فرستاده می‌شود</text>
+<rect x="90" y="88" width="800" height="54" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="150" y="121" font-family="Vazirmatn, Inter, sans-serif" font-size="15" font-weight="800" fill="#455fe9" text-anchor="middle" direction="ltr" opacity="1">TLS Hello</text>
+<rect x="420" y="100" width="200" height="30" rx="8" fill="#fee2e2"/>
+<text x="520" y="121" font-family="Vazirmatn, Inter, sans-serif" font-size="14" font-weight="700" fill="#b91c1c" text-anchor="middle" direction="ltr" opacity="1">SNI: www.blocked.com</text>
+<text x="830" y="121" font-family="Vazirmatn, Inter, sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle" direction="rtl" opacity="1">یک بسته</text>
+<path d="M490 152 v26" stroke="#455fe9" stroke-width="3" fill="none" marker-end="url(#m)"/><path d="M482 172 l8 12 l8 -12" fill="#455fe9"/>
+<rect x="90" y="196" width="124" height="54" rx="14" fill="url(#g1)" filter="url(#sh)"/>
+<text x="152.0" y="229" font-family="Vazirmatn, Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" direction="ltr" opacity="1">TLS He</text>
+<path d="M220 223 h41" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 5"/>
+<text x="240.5" y="214" font-family="Vazirmatn, Inter, sans-serif" font-size="11" font-weight="700" fill="#059669" text-anchor="middle" direction="ltr" opacity="1">10-20ms</text>
+<rect x="267" y="196" width="124" height="54" rx="14" fill="url(#g1)" filter="url(#sh)"/>
+<text x="329.0" y="229" font-family="Vazirmatn, Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" direction="ltr" opacity="1">llo · S</text>
+<path d="M397 223 h41" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 5"/>
+<text x="417.5" y="214" font-family="Vazirmatn, Inter, sans-serif" font-size="11" font-weight="700" fill="#059669" text-anchor="middle" direction="ltr" opacity="1">10-20ms</text>
+<rect x="444" y="196" width="124" height="54" rx="14" fill="url(#g1)" filter="url(#sh)"/>
+<text x="506.0" y="229" font-family="Vazirmatn, Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" direction="ltr" opacity="1">NI: www.bl</text>
+<path d="M574 223 h41" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 5"/>
+<text x="594.5" y="214" font-family="Vazirmatn, Inter, sans-serif" font-size="11" font-weight="700" fill="#059669" text-anchor="middle" direction="ltr" opacity="1">10-20ms</text>
+<rect x="621" y="196" width="124" height="54" rx="14" fill="url(#g1)" filter="url(#sh)"/>
+<text x="683.0" y="229" font-family="Vazirmatn, Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" direction="ltr" opacity="1">ocked.c</text>
+<path d="M751 223 h41" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 5"/>
+<text x="771.5" y="214" font-family="Vazirmatn, Inter, sans-serif" font-size="11" font-weight="700" fill="#059669" text-anchor="middle" direction="ltr" opacity="1">10-20ms</text>
+<rect x="798" y="196" width="92" height="54" rx="14" fill="url(#g1)" filter="url(#sh)"/>
+<text x="844.0" y="229" font-family="Vazirmatn, Inter, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" direction="ltr" opacity="1">om</text>
+<path d="M90 262 v8 h124 v-8" stroke="#7c5cf2" stroke-width="2" fill="none"/>
+<text x="152" y="290" font-family="Vazirmatn, Inter, sans-serif" font-size="13" font-weight="700" fill="#6d28d9" text-anchor="middle" direction="rtl" opacity="1">هر تکه ۱۰۰ تا ۲۰۰ بایت</text>
+<text x="700" y="290" font-family="Vazirmatn, Inter, sans-serif" font-size="13" font-weight="600" fill="#334155" text-anchor="middle" direction="rtl" opacity="1">فیلتر نام سایت را یک‌جا نمی‌بیند؛ سرور تکه‌ها را دوباره کنار هم می‌گذارد.</text>
+<rect x="70.0" y="318" width="260" height="82" rx="20" fill="#fff" stroke="#059669" stroke-opacity=".35" stroke-width="2" filter="url(#sh)"/>
+<rect x="178.0" y="318" width="44" height="5" rx="2.5" fill="#059669"/>
+<text x="200.0" y="348" font-family="Vazirmatn, Inter, sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle" direction="rtl" opacity="1">تأخیر (میلی‌ثانیه)</text>
+<text x="200.0" y="380" font-family="Vazirmatn, Inter, sans-serif" font-size="22" font-weight="800" fill="#059669" text-anchor="middle" direction="ltr" opacity="1">10-20</text>
+<rect x="360.0" y="318" width="260" height="82" rx="20" fill="#fff" stroke="#7c5cf2" stroke-opacity=".35" stroke-width="2" filter="url(#sh)"/>
+<rect x="468.0" y="318" width="44" height="5" rx="2.5" fill="#7c5cf2"/>
+<text x="490.0" y="348" font-family="Vazirmatn, Inter, sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle" direction="rtl" opacity="1">اندازه (بایت)</text>
+<text x="490.0" y="380" font-family="Vazirmatn, Inter, sans-serif" font-size="22" font-weight="800" fill="#7c5cf2" text-anchor="middle" direction="ltr" opacity="1">100-200</text>
+<rect x="650.0" y="318" width="260" height="82" rx="20" fill="#fff" stroke="#455fe9" stroke-opacity=".35" stroke-width="2" filter="url(#sh)"/>
+<rect x="758.0" y="318" width="44" height="5" rx="2.5" fill="#455fe9"/>
+<text x="780.0" y="348" font-family="Vazirmatn, Inter, sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle" direction="rtl" opacity="1">بسته‌ها</text>
+<text x="780.0" y="380" font-family="Vazirmatn, Inter, sans-serif" font-size="22" font-weight="800" fill="#455fe9" text-anchor="middle" direction="ltr" opacity="1">TLS Hello</text>
+</svg>

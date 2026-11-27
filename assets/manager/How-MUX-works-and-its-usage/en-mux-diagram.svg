@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" font-family="Roboto, Arial, sans-serif">
+<rect width="100%" height="100%" rx="18" fill="#f8fafc"/>
+<line x1="480" y1="30" x2="480" y2="330" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="220" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">Without MUX</text>
+<rect x="20" y="83" width="110" height="44" rx="10" fill="#fff" stroke="#455fe9" stroke-width="2.5"/>
+<text x="75" y="111" text-anchor="middle" font-size="16" fill="#1e293b">Browser</text>
+<rect x="20" y="153" width="110" height="44" rx="10" fill="#fff" stroke="#10b981" stroke-width="2.5"/>
+<text x="75" y="181" text-anchor="middle" font-size="16" fill="#1e293b">Telegram</text>
+<rect x="20" y="223" width="110" height="44" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+<text x="75" y="251" text-anchor="middle" font-size="16" fill="#1e293b">Game</text>
+<rect x="330" y="130" width="100" height="90" rx="12" fill="#1e293b"/><text x="380" y="182" text-anchor="middle" font-size="17" fill="#fff" font-weight="700">Server</text>
+<path d="M130 105 C 230 105, 230 150, 330 150" fill="none" stroke="#455fe9" stroke-width="4"/>
+<path d="M130 175 C 230 175, 230 175, 330 175" fill="none" stroke="#10b981" stroke-width="4"/>
+<path d="M130 245 C 230 245, 230 200, 330 200" fill="none" stroke="#f59e0b" stroke-width="4"/>
+<text x="220" y="310" text-anchor="middle" font-size="17" fill="#475569">3 separate connections</text>
+<text x="700" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">With MUX</text>
+<rect x="500" y="83" width="110" height="44" rx="10" fill="#fff" stroke="#455fe9" stroke-width="2.5"/>
+<text x="555" y="111" text-anchor="middle" font-size="16" fill="#1e293b">Browser</text>
+<rect x="500" y="153" width="110" height="44" rx="10" fill="#fff" stroke="#10b981" stroke-width="2.5"/>
+<text x="555" y="181" text-anchor="middle" font-size="16" fill="#1e293b">Telegram</text>
+<rect x="500" y="223" width="110" height="44" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2.5"/>
+<text x="555" y="251" text-anchor="middle" font-size="16" fill="#1e293b">Game</text>
+<rect x="810" y="130" width="100" height="90" rx="12" fill="#1e293b"/><text x="860" y="182" text-anchor="middle" font-size="17" fill="#fff" font-weight="700">Server</text>
+<rect x="695" y="157" width="115" height="36" rx="18" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+<path d="M610 105 C 660 105, 660 165, 695 165" fill="none" stroke="#455fe9" stroke-width="4"/>
+<line x1="695" y1="165" x2="810" y2="165" stroke="#455fe9" stroke-width="3"/>
+<path d="M610 175 C 660 175, 660 175, 695 175" fill="none" stroke="#10b981" stroke-width="4"/>
+<line x1="695" y1="175" x2="810" y2="175" stroke="#10b981" stroke-width="3"/>
+<path d="M610 245 C 660 245, 660 185, 695 185" fill="none" stroke="#f59e0b" stroke-width="4"/>
+<line x1="695" y1="185" x2="810" y2="185" stroke="#f59e0b" stroke-width="3"/>
+<text x="700" y="310" text-anchor="middle" font-size="17" fill="#475569">1 connection, 3 streams inside</text>
+</svg>

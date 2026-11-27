@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 454" font-family="Inter, Segoe UI, Roboto, sans-serif" role="img" aria-label="Diagnosis map: the right panel tool for each symptom">
+<defs><filter id="s" x="-5%" y="-30%" width="110%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#1e293b" flood-opacity=".13"/></filter>
+<marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker></defs>
+<rect x="6" y="6" width="968" height="442" rx="24" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="34" y="44" direction="ltr" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">Symptom</text>
+<text x="450" y="44" direction="ltr" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">Panel tool</text>
+<g filter="url(#s)"><rect x="26" y="64" width="380" height="76" rx="18" fill="#fff" stroke="#ef4444" stroke-width="2"/></g>
+<circle cx="60" cy="102" r="18" fill="#ef4444"/><text x="60" y="108" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">1</text>
+<text x="90" y="97" direction="ltr" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">Nobody can connect</text>
+<text x="90" y="120" direction="ltr" text-anchor="start" font-size="12.5" fill="#64748b">The server or the configs</text>
+<path d="M412 102 H440" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="450" y="84" width="141" height="36" rx="18" fill="#ef44441f" stroke="#ef4444" stroke-width="1.4"/><text x="520.5" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">Config Health</text>
+<rect x="601" y="84" width="184" height="36" rx="18" fill="#ef44441f" stroke="#ef4444" stroke-width="1.4"/><text x="693.0" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">Apply &amp; Status</text>
+<rect x="795" y="84" width="133" height="36" rx="18" fill="#ef44441f" stroke="#ef4444" stroke-width="1.4"/><text x="861.5" y="107" text-anchor="middle" font-size="13" font-weight="700" fill="#ef4444" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">Public Ports</text>
+<g filter="url(#s)"><rect x="26" y="160" width="380" height="76" rx="18" fill="#fff" stroke="#f59e0b" stroke-width="2"/></g>
+<circle cx="60" cy="198" r="18" fill="#f59e0b"/><text x="60" y="204" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">2</text>
+<text x="90" y="193" direction="ltr" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">Only one user cannot connect</text>
+<text x="90" y="216" direction="ltr" text-anchor="start" font-size="12.5" fill="#64748b">That user’s account or app</text>
+<path d="M412 198 H440" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="450" y="180" width="73" height="36" rx="18" fill="#f59e0b1f" stroke="#f59e0b" stroke-width="1.4"/><text x="486.5" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#f59e0b" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">Users</text>
+<rect x="533" y="180" width="141" height="36" rx="18" fill="#f59e0b1f" stroke="#f59e0b" stroke-width="1.4"/><text x="603.5" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#f59e0b" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">Config Tester</text>
+<g filter="url(#s)"><rect x="26" y="256" width="380" height="76" rx="18" fill="#fff" stroke="#8b5cf6" stroke-width="2"/></g>
+<circle cx="60" cy="294" r="18" fill="#8b5cf6"/><text x="60" y="300" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">3</text>
+<text x="90" y="289" direction="ltr" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">Fails or is slow on some ISPs</text>
+<text x="90" y="312" direction="ltr" text-anchor="start" font-size="12.5" fill="#64748b">Filtering in the user’s country</text>
+<path d="M412 294 H440" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="450" y="276" width="116" height="36" rx="18" fill="#8b5cf61f" stroke="#8b5cf6" stroke-width="1.4"/><text x="508.0" y="299" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">IP Scanner</text>
+<rect x="576" y="276" width="98" height="36" rx="18" fill="#8b5cf61f" stroke="#8b5cf6" stroke-width="1.4"/><text x="625.0" y="299" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">Fragment</text>
+<rect x="684" y="276" width="124" height="36" rx="18" fill="#8b5cf61f" stroke="#8b5cf6" stroke-width="1.4"/><text x="746.0" y="299" text-anchor="middle" font-size="13" font-weight="700" fill="#8b5cf6" font-family="Inter, Segoe UI, Roboto, sans-serif" direction="ltr">REALITY SNI</text>
+<g filter="url(#s)"><rect x="26" y="352" width="380" height="76" rx="18" fill="#fff" stroke="#0ea5e9" stroke-width="2"/></g>
+<circle cx="60" cy="390" r="18" fill="#0ea5e9"/><text x="60" y="396" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">4</text>
+<text x="90" y="385" direction="ltr" text-anchor="start" font-size="15" font-weight="800" fill="#0f172a">The panel does not open either</text>
+<text x="90" y="408" direction="ltr" text-anchor="start" font-size="12.5" fill="#64748b">Check over SSH</text>
+<path d="M412 390 H440" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="450" y="372" width="147" height="36" rx="18" fill="#0ea5e91f" stroke="#0ea5e9" stroke-width="1.4"/><text x="523.5" y="395" text-anchor="middle" font-size="13" font-weight="700" fill="#0ea5e9" font-family="ui-monospace, Menlo, monospace" direction="ltr">hiddify status</text>
+<rect x="607" y="372" width="139" height="36" rx="18" fill="#0ea5e91f" stroke="#0ea5e9" stroke-width="1.4"/><text x="676.5" y="395" text-anchor="middle" font-size="13" font-weight="700" fill="#0ea5e9" font-family="ui-monospace, Menlo, monospace" direction="ltr">hiddify admin</text>
+</svg>
