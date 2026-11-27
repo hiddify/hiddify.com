@@ -26,12 +26,17 @@ headless: true
     <!-- Post Grid Section -->
     <h1>Instagram Posts</h1>
     <div class="grid">
+      <a href="https://www.youtube.com/watch?v=7L-qrI77fNg" target="_blank" class="post" title="Hiddify Extra security &amp; Proxy unblocker 🛡️ Which one should you turn on?">
+        <figure markdown="span">
+          <img src="/instagram/img/yt/7L-qrI77fNg.webp" alt="Hiddify Extra security &amp; Proxy unblocker 🛡️ Which one should you turn on?" loading="lazy" decoding="async">
+        </figure>
+      </a>
       <a href="https://www.youtube.com/watch?v=ECYZs4vxHWs" target="_blank" class="post" title="امنیت بیشتر و رفع فیلتر پروکسی در هیدیفای 🛡️ کی کدوم رو روشن کنیم؟اندروید، آیفون، ویندوز، مک، لینوکس">
         <figure markdown="span">
           <img src="/instagram/img/yt/ECYZs4vxHWs.webp" alt="امنیت بیشتر و رفع فیلتر پروکسی در هیدیفای 🛡️ کی کدوم رو روشن کنیم؟اندروید، آیفون، ویندوز، مک، لینوکس" loading="lazy" decoding="async">
         </figure>
       </a>
-      <a href="https://www.youtube.com/watch?v=AOEb9nQDA1Y" target="_blank" class="post" title="اینترنت آزاد، با یه لمس 🛡️ کانال هیدیفای: آموزش‌های ساده برای همه">
+<a href="https://www.youtube.com/watch?v=AOEb9nQDA1Y" target="_blank" class="post" title="اینترنت آزاد، با یه لمس 🛡️ کانال هیدیفای: آموزش‌های ساده برای همه">
         <figure markdown="span">
           <img src="/instagram/img/yt/AOEb9nQDA1Y.webp" alt="اینترنت آزاد، با یه لمس 🛡️ کانال هیدیفای: آموزش‌های ساده برای همه" loading="lazy" decoding="async">
         </figure>
